@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="../SI_Ref_and_Resp.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1820-09-09">9 September 1820</date></title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+          
+            <editor ref="#lmw">Lisa M. Wilson</editor>
+            
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor> 
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#efp">Elaine Frantz Parsons</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+               
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>who?</persName> <!-- fix when done.  LMW -->
+               <!--ebb: 29 May 2014: Prosop data entered. Need to flesh out the msDesc portion of TEI Header and check transcription.-->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: 29 May 2014. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <placeName >The John Rylands University Library</placeName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Reading Central Library</repository> 
+                  <idno>MS number</idno></msIdentifier> 
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date>9 September 1820</date>.</head>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <p>Mitford’s spelling and punctuation are retained, except where a word is split at the
+              end of a line and the beginning of the next in the manuscript. Where Mitford’s
+              spelling and hyphenation of words deviates from the standard, in order to facilitate
+              searching we are using the TEI elements “choice," “sic," and “reg" to encode both
+              Mitford’s spelling and the regular international standard of Oxford English spelling,
+              following the first listed spelling in the Oxford English Dictionary. The long s and
+              ligatured forms are not encoded.</p>
+        </editorialDecl>
+     </encodingDesc>
+   
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <salute>To <persName ref="#Elford_SirWm">Sir W. Elford</persName></salute> 
+               <add hand="different">16</add> <!--  FIX. Red crayoned etc. LMW-->
+               <dateline>
+                  <name type="place">Three Mile Cross</name>
+                  <date when="1820-09-09">September 9<hi rend="superscript">th</hi> 1820.</date>
+               </dateline>
+            </opener>
+            <p>You will think your poor little friend very naughty indeed, my dear <persName ref="#Elford_SirWm">Sir William</persName> if she do not sometimes write you two letters, so having made no vow by <placeName>Styx</placeName> this time, she will scribble. Having nothing to say, <metamark rend="caret"></metamark> <add rend="superscript">my Dear <persName ref="#Elford_SirWm">Sir William,</persName>,</add>is such an old story between us that there is no need of apologies on that score. I really think we get on quite as well without a subject as with one--the cobweb spins out to a good size--rather flimsy to be sure &amp; not very durable--but there it is looking very happy &amp; comfortable these bright autumn mornings. And the poor little round spider swings herself up in her hole and feels proud of her handywork. <add>&amp; as soon as one is finished away begins another</add>So she shall spin on. Moreover, it behooves me to pay my court very spiderously, or I shall have my nose quite put <del rend="strikethrough">of</del><metamark rend="caret"></metamark> <add>out of</add> joint by that formidable rival Lady <persName><unclear></unclear><supplied resp="#lmw">Madeline</supplied></persName>.  I did wait on her as I told you I should. I think with you that she is a most delightful woman. I did not expect to find her still so very handsome--but the best parts of beauty, grace intelligence &amp; and goodhumor are those which last the longest &amp; and that pretty Scotch voice is enchanting. We talked a great deal of you, &amp; of <placeName ref="#Devonshire_county">Devonshire</placeName>-- which she admires with her whole heart--&amp; she says things of you--It is very well that <persName ref="#Mr_Palmer">Mr. Palmer</persName> was out of hearing there is no love lost beween you I <unclear>Impose</unclear> you. In short I was quite charmed with every thing about her but her <persName ref="#Queen_Caroline">Queen</persName>madness which burst forth suddenly on the appearance of <title ref="#Times_news">the Times</title> and sent me off in a hurry. Had she this frenzy-fever in <placeName>Devonshire</placeName> or has she caught it from her husband? He &amp; his brother members &amp; his previous constituents are alike insane upon this subject. Indeed to do <placeName ref="#Reading_city">Reading</placeName> justice it never is behindhand in any <pb n="2"/> folly stirring. They had a meeting to address the <persName ref="#Queen_Caroline">Queen</persName> &amp; voted said address - &amp; sent up their worthy members to present it - &amp; up they went in all their paraphernalia, and the gracious<persName ref="#Queen_Caroline"> Queen</persName> never spoke to them! Is not this famous? Never said a word, shoved the answer unread into their hands, held her tongue &amp; marched off. "Served them just right--did not she <persName ref="#MRM">Mary</persName>?" Said <persName ref="#Monck_Mrs">Mrs. Monck</persName> to me when she told me the story--"a couple of simpletons." "I only wish the whole meeting had been there to have partaken of the compliment." <persName ref="#Monck_Mrs">Mrs. Monck</persName> you see is <persName ref="#Monck_Mrs">Jane</persName>. Did I ever talk to you of <orgName ref="#Monck_family">the Moncks</orgName>.  <persName ref="#Monck_JB">He</persName> is a very extraordinary man--a great Grecian, &amp; more like an old philosopher than anything you ever saw. I defy anything or anybody to put him out of humor. He has not of course though a clever man <del rend="squiggles">any thing</del> <add>much</add> <!-- added above, no caret LMW -->of <persName>Charles <unclear> I.s's </unclear></persName><!-- unclear, not identified.  LMW --> power of eloquence, but he is more like him in point of character than any man that ever lived. full of kindheartedness and of a tolerant humanity--more generally beloved by man, woman, &amp; child than any person I ever heard of--Dividing his whole time between literature &amp; usefulness &amp; family affection.<persName ref="#Monck_Mrs">His wife</persName> is a pretty lively chatty woman kind &amp; good humored entirely without her husband's largeness and liberality of mind not even understanding the breadth &amp; depth of his character--but in whom good habits and kindly prejudices produce nearly the same effect. She loves his <add>old</add><!-- caret insertion. LMW --> friends because they are old friends and is good to the poor because she has been used to <del><!-- strikethrough, one word --></del> <add><!-- added above, no caret -->be charitable</add>--She has returned from a three years &amp; a half tour through <placeName ref="#France">France</placeName> <placeName ref="#Italy">Italy</placeName> <placeName ref="#Switzerland">Switzerland</placeName> and <placeName ref="#Germany">Germany</placeName> without having brought back a single new feeling or left behind one <unclear>store</unclear>. She is so entirely unchanged in mind and person as to produce an effect more extraordinary &amp; surprising than could have <del rend ="squiggle"><gap quantity="2"></gap>been the</del> resulted from the greatest alteration. She took up her <placeName ref="#Coley_Berks">Coley</placeName> habits as if she had only laid them aside <pb n="3"/> the night before with her clothes, &amp;the presence of a sweet little girl of three years old born in <placeName ref="#France">France</placeName> &amp; and not speaking a word of English seems necessary to convince me that the mother has ever set foot on the continent--This identity of character has a great charm with me. I never liked <persName ref="#Monck_Mrs">Mrs. Monck</persName> half so well in my life as since she returned so perfectly the same as she went. Besides we agree like two drops of water. She hates her husband's parliamenting. So do I. She sickens at the home of <persName ref="#Queen_Caroline">Queen Caroline</persName>. So do I. She thinks <placeName ref="#Mortimer_Comm">Mortimer Common</placeName> the prettiest place in the world. So do I. She detests <placeName ref="#Reading_city">Reading</placeName> and its doings. So do I. <placeName ref="#Reading_city">Reading</placeName> is at present <persName ref="#Queen_Caroline">queen</persName>mad <reg resp="#lmw">queen-mad</reg>. It reads &amp;talks &amp; dreams this of nothing else &amp; engrafts a clumsy and awkward licentiousness on its original vulgarity and dullness. After all the crying evil of the frightful inquiry is its tendency to confound right and wrong. Those who dislike the <persName ref="#GeoIV">King's</persName> immorality think themselves bound by the duty of party to palliate the much grosser and more horrible conduct of the <persName ref="#Queen_Caroline">Queen</persName> and we hear of "little indiscretions" &amp; "too great condescensions" &amp; such paltering with vice from the very lips of the stern mentors who thunder at the crimes of the <persName ref="#GeoIV">King</persName> and the wickedness of ministers. This must be wrong. There can only be one Wickedness. Besides the <persName ref="#Queen_Caroline">Queen's</persName> <del rend="squiggles"><gap quantity="1" unit="word"/><unclear/></del> <add>defense</add><!-- above, no caret LMW --> throws a stain and a slur upon womanhood--she seeks to cover her enormous crime with a cloak of innocence &amp; purity &amp; profanes the sacred &amp; holy name of matronly virtue by asserting her claim to it. Chastity is become a byeword <reg resp="#lmw">byword</reg>and a jest. She is to womanly purity what a false prophet is to religion. She can not alter the eternal truth but she can give mockers and scoffers a preference to doubt its existence. Many years may pass away before the effect of this ceases &amp; modesty shall become <pb n="4"/> again a holy thing. I am astonished when I hear a woman vindicate the <persName ref="#Queen_Caroline">Queen</persName>. Do tell me what you think on this subject? <del rend="squiggles"><gap quantity="1" unit="word"/><!-- this is a different type of symbol, perhaps not a deletion, marks a different day where she picks up the letter again?  LMW --><date when="1820-09-13"> Sept. 13.</date></del>--Since writing the above I have spent a day at <placeName ref="#Coley_Berks">Coley</placeName>. I extracted from <persName ref="#Monck_JB">Mr. Monck</persName> rather more of the Royal Visit than his wife could do, partly by cross-examination--&amp; partly from an effect of character. "You are bad enough, <persName ref="#MRM">Mary</persName>," <del rend="squiggles"><gap quantity="1" unit="word"/><unclear/></del>quoth he "but not quite so bitter as my wife." She really did speak to them. She said "You do me honour--It is an excellent address"--(Daresay she thought so for of all the fulsome nonsense that has been passed on her score this surpassed!)--her presence was announced by a prodigious giggling chattering &amp; romping outside the door--like a parcel of boys let loose from school--Which suddenly ceased &amp; she entered as gravely as <!--  unclear Mrs. Lisson?? in Queen Dolla Colla.?? Sounds like a reference to an actress or character in a play, can't identify. LMW--> Her dress we had a great deal of fun about from the delicious ignorance of the describer.  It was in the midst of the Court morrning &amp; he put <!-- word missing here?  to? LMW -->himself the charges for a black suit, the coat he had to go to the Pope's Court being unluckily of a pure colour--but the Lady herself was it appears in colours--"fawn Colour <persName ref="#MRM">Mary</persName>--the colour of that Cow!"--How was it made <unclear>?</unclear> <!-- scribble LMW -->"So"--buttoning up his Coat--Oh a man's Coat--pray was the rest of her apparel--"Don't be foolish--a woman's coat"--a grey coat--the thing you all wear in winter" --a Pelisse?--"yes--a fawn "coloured pelisse--garnished with gold!"-- <!-- wavy lines here again.  LMW --> Have you read <title ref="#Abbott_WS">the Abbott</title>?  I have just finished it--disappointed--because as every alternate book of his is commonly excellent &amp; the last was bad I had made up my mind that this should be good--&amp; good it would be from any body else but he has accustomed us to such writing that mere mediocrity will not satisfy us.  After all it is remarkably pleasant reading--quite as free from the peculiar faults as the striking beauties of the <persName ref="#Scott_Wal"></persName>Author--no ghost--no prophecies--only one old woman &amp; not much of her--&amp; no fortune scene--a very agreeable book, they 
+            
+            </p>
+  <!-- no closer or address leaf; incomplete letter LMW-->
+         </div>
+      </body>
+    
+     <back>
+      <!--ebb: 29 May 2014: New prosop. from this letter entered into site index.-->
+     </back>
+  </text>
+</TEI>

@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Report of Elements, Attributes, and Context Code</title>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>XSLT to prepare this report written by</resp>
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2014</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0
+                                Unported License</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>TEI XML files coded in the Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="title">
+            <head>Title of this file: Mary Russell Mitford's Notebook of 1819 to 1823</head>
+         </div>
+         <div type="element_list">
+            <head>List of all elements in play in the body of this file, and sort by count from most to least used.</head>
+            <lg>
+               <l>persName</l>
+               <l> Count of this element: 119</l>
+               <l>Attributes: Names and Values</l>
+               <l>ref: Attribute Values:
+       
+            
+             #Elford_SirWm, #Haydon, #Miss_James</l>
+            </lg>
+            <lg>
+               <l>rs</l>
+               <l> Count of this element: 64</l>
+               <l>Attributes: Names and Values</l>
+               <l>subtype: Attribute Values:
+       
+            
+             received</l>
+               <l>type: Attribute Values:
+       
+            
+             event, letter</l>
+            </lg>
+            <lg>
+               <l>date</l>
+               <l> Count of this element: 59</l>
+               <l>Attributes: Names and Values</l>
+               <l>when: Attribute Values:
+       
+            
+             1819, 1819-01-01, 1818-12-31, 1819-01-02, 1819-01-03, 1819-01-04, 1819-01-05, 1819-01-06, 1819-01-07, 1819-01-08, 1819-01-09, 1819-01-10, 1819-01-11, 1819-01-12, 1819-01-13, 1819-01-14, 1819-01-15, 1819-01-16, 1819-01-17, 1819-01-18, 1819-01-19, 1819-01-20, 1819-01-21, 1819-01-22, 1819-01-23, 1819-01-24, 1819-01-25, 1819-01-26, 1819-01-27, 1819-01-28, 1819-01-29, 1819-01-30, 1819-01-31, 1819-02-01, 1819-02-02, 1819-02-11, 1819-02-12, 1819-02-13, 1819-02-14, 1819-02-15, 1819-02-16, 1819-02-17, 1819-02-18, 1819-02-19, 1819-02-20, 1819-02-21, 1819-02-22, 1819-02-23, 1819-02-24, 1819-02-25, 1819-02-26, 1819-02-27, 1819-02-28, 1819-03-01, 1819-03-02, 1819-03-03, 1819-03-04</l>
+            </lg>
+            <lg>
+               <l>div</l>
+               <l> Count of this element: 58</l>
+               <l>Attributes: Names and Values</l>
+               <l>type: Attribute Values:
+       
+            
+             year, entry</l>
+            </lg>
+            <lg>
+               <l>head</l>
+               <l> Count of this element: 58</l>
+            </lg>
+            <lg>
+               <l>placeName</l>
+               <l> Count of this element: 58</l>
+            </lg>
+            <lg>
+               <l>p</l>
+               <l> Count of this element: 57</l>
+            </lg>
+            <lg>
+               <l>title</l>
+               <l> Count of this element: 38</l>
+            </lg>
+            <lg>
+               <l>bibl</l>
+               <l> Count of this element: 23</l>
+            </lg>
+            <lg>
+               <l>author</l>
+               <l> Count of this element: 19</l>
+            </lg>
+            <lg>
+               <l>pb</l>
+               <l> Count of this element: 4</l>
+               <l>Attributes: Names and Values</l>
+               <l>n: Attribute Values:
+       
+            
+             2, 3, 4, 5</l>
+            </lg>
+            <lg>
+               <l>orgName</l>
+               <l> Count of this element: 2</l>
+            </lg>
+            <lg>
+               <l>add</l>
+               <l> Count of this element: 1</l>
+            </lg>
+            <lg>
+               <l>unclear</l>
+               <l> Count of this element: 1</l>
+            </lg>
+            <lg>
+               <l>supplied</l>
+               <l> Count of this element: 1</l>
+            </lg>
+         </div>
+      </body>
+      <back>
+         <div type="hist">
+            <listPerson><!--ebb: Eliminate duplicates in this list, and check each of these against the site index to see what we've already defined, and if so, whether those entries are sufficient. 
+                            Break the listPerson into multiple lists as appropriate to differentiate historical people from fictional characters.
+                            Fill out a new entry here to add new information and indicate if we need to make a correction to an entry. 
+                            Flesh out the entries as best you can, and when you're done, paste this into the back element of your XML file.-->
+               <person>
+                  <persName> Mr. Haydon<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>-Nelly<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Burke<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Drum<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Drum <surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Eliza Webb<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Eliza Webb
+                     <surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Fly<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>George<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Granny<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Jane<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Jeremy<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Jeremy Chamberlaine<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Jesse Clift<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Lord Braybrooke<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Luce<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Lucy<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mama<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mary Webb<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>May
+                     Fly<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mayfly<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miranda<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss
+                        Brooke<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss
+                        James<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss
+                     Booth<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss Booth<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss Brooke<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss Eliza Webb<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss James<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss Ogbourn<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss Valpy<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Miss Webb<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mob<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Moses<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mossy<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr.
+                        Haydon<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr.
+                     Haydon<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr.
+                     Piles<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr. Crowther<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr. D<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr. Haydon<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr. White<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mr. Williams<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs.
+                           Dickinson<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs.
+                        Dick.<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs.
+                        Rowden<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs.
+                     Hofland<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Boyd <surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Clarke<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. D<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Dickinson<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Dickinson <surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. H.<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Hofland<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Newberry<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Rowden<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Tuppen<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs. Tuppin <surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Mrs.Dickinson<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Nell<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Papa<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Pen
+                        Valpy<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Pen Valpy<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Poll<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Selim<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Sir
+                        W.E.<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Sir
+                        William Elford<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Sir W.
+                     Elford<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Sir W. Elford<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Sir W.E.<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Sir William Elford<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Webb<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+               <person>
+                  <persName>Whim<surname/>
+                     <forename/>
+                  </persName>
+                  <birth>
+                     <placeName/>
+                  </birth>
+                  <death>
+                     <placeName/>
+                  </death>
+                  <occupation/>
+                  <note/>
+               </person>
+            </listPerson>
+         </div>
+         <div type="org">
+            <listOrg>
+               <org>
+                  <orgName>the Brookes </orgName>
+                  <note/>
+               </org>
+               <org>
+                  <orgName>the Valpy's </orgName>
+                  <note/>
+               </org>
+            </listOrg>
+         </div>
+         <div type="place">
+            <listPlace>
+               <place>
+                  <placeName>Bertram House</placeName>
+               </place>
+               <place>
+                  <placeName>Billingbear</placeName>
+               </place>
+               <place>
+                  <placeName>Farley
+                     Hill</placeName>
+               </place>
+               <place>
+                  <placeName>Farley Hill</placeName>
+               </place>
+               <place>
+                  <placeName>Hampshire</placeName>
+               </place>
+               <place>
+                  <placeName>home</placeName>
+               </place>
+               <place>
+                  <placeName>Lockinge</placeName>
+               </place>
+               <place>
+                  <placeName>London</placeName>
+               </place>
+               <place>
+                  <placeName>Marshes</placeName>
+               </place>
+               <place>
+                  <placeName>Overton</placeName>
+               </place>
+               <place>
+                  <placeName>park</placeName>
+               </place>
+               <place>
+                  <placeName>park
+                     meadow</placeName>
+               </place>
+               <place>
+                  <placeName>Plantations</placeName>
+               </place>
+               <place>
+                  <placeName>Reading</placeName>
+               </place>
+               <place>
+                  <placeName>Stratford on
+                  Avon</placeName>
+               </place>
+            </listPlace>
+         </div>
+         <div type="bibl">
+            <listBibl><!--ebb; This collects contents of bibl elements. 
+                   The next listBibl collects contents of title elements.-->
+               <bibl>Bisset's Life of
+                        Burke<note/>
+               </bibl>
+               <bibl>Burke<note/>
+               </bibl>
+               <bibl>Burke's works<note/>
+               </bibl>
+               <bibl>Dr. Aikin's
+                        Translation of the Memoirs of Huet<note/>
+               </bibl>
+               <bibl>Duchesse
+                     d'Angoulime's journal while in the
+                  Temple<note/>
+               </bibl>
+               <bibl>Fearon's America<note/>
+               </bibl>
+               <bibl>Forsyth's
+                        Italy <note/>
+               </bibl>
+               <bibl>Got the
+                           Sheffield
+                        Iris
+                        from Mrs. Hofland with some verses from her to
+                           me -- very pretty.<note/>
+               </bibl>
+               <bibl>Malcolm's
+                        Anecdotes of the 17th Century<note/>
+               </bibl>
+               <bibl>Miss Edgeworth's Popular
+                     tales<note/>
+               </bibl>
+               <bibl>Scott's Visit
+                        to Paris<note/>
+               </bibl>
+               <bibl>Sir R. Wilson's Egypt<note/>
+               </bibl>
+               <bibl>Sir Robert
+                        Wlson's Egypt<note/>
+               </bibl>
+               <bibl>the Reviews the B.C. &amp; the
+                  E.R.<note/>
+               </bibl>
+               <bibl>this pretty book
+                  X<note/>
+               </bibl>
+               <bibl>Wrote a sonnet &amp; letter to Mrs.
+                           Dickinson<note/>
+               </bibl>
+            </listBibl>
+            <listBibl>
+               <bibl>"Anecdotes of distinguished persons" 4 Vols<note/>
+               </bibl>
+               <bibl>"Emma"<note/>
+               </bibl>
+               <bibl>Anecdotes of distinguished
+                     persons<note/>
+               </bibl>
+               <bibl>British Critic<note/>
+               </bibl>
+               <bibl>Collectanea Curiosa<note/>
+               </bibl>
+               <bibl>Count Ugolino<note/>
+               </bibl>
+               <bibl>Do. Do.<note/>
+               </bibl>
+               <bibl>Eclectic Review<note/>
+               </bibl>
+               <bibl>Emma<note/>
+               </bibl>
+               <bibl>Florence
+                     Macarthy<note/>
+               </bibl>
+               <bibl>Huet's Memoirs<note/>
+               </bibl>
+               <bibl>Junius<note/>
+               </bibl>
+               <bibl>Monthly
+                     Magazine<note/>
+               </bibl>
+               <bibl>Monthly Magazine<note/>
+               </bibl>
+               <bibl>Nightmare Abbey<note/>
+               </bibl>
+               <bibl>the Antiquary<note/>
+               </bibl>
+               <bibl>the British Critic Review<note/>
+               </bibl>
+               <bibl>the Collectanea
+                     Curiosa<note/>
+               </bibl>
+               <bibl>Where'er you walk<note/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="event">
+            <listEvent type="event">
+               <event>
+                  <label>Date of this event: 1818-12-31</label>
+                  <note>a
+                     dance</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-01-03</label>
+                  <note>the Ball</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-01-26</label>
+                  <note>bought my new crimson bombazine</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-01-26</label>
+                  <note>Poor
+                        Whim lost</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-01-29</label>
+                  <note>Whim found again.</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-01-29</label>
+                  <note>Selim nearly killed a white kitten we have
+                     got for Sir W. Elford.</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-01-31</label>
+                  <note>Dear Drum came back again.</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-02-11</label>
+                  <note>Walked about Farley Hill -- Mrs.
+                        Dick. brought me &amp; Mrs. Hofland home
+                     &amp; dined with us -- Mrs. H. went away at night.</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-02-13</label>
+                  <note>Went to Reading -- called on
+                        Mrs. Tuppin -- the Brookes --
+                        Mrs. Boyd -- Mrs. Newberry &amp;
+                        the Valpy's -- saw a great many people &amp; hired a
+                     Cook.</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-02-15</label>
+                  <note>Mr. Williams called on me</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-02-15</label>
+                  <note>On this day (Monday the 15th)
+                        Papa saw a pheasant's nest with 4 eggs, which was found
+                     by one of Lord Braybrooke's people at
+                        Billingbear whilst a party were coursing in the
+                        park -- very early indeed.</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-02-21</label>
+                  <note>Dear Drum went into
+                        Hampshire.</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-02-22</label>
+                  <note>a new little bitch called
+                        Fly given us by young farmer
+                     Webb</note>
+               </event>
+               <event>
+                  <label>Date of this event: 1819-02-25</label>
+                  <note>dear Drum &amp; the pets came back from
+                        Overton</note>
+               </event>
+            </listEvent>
+            <listEvent type="letter">
+               <event>
+                  <label>Date of Journal entry: 1819-01-04</label>
+                  <note>Who is Mitford writing to? wrote to Miss
+                        James--letter not to go this week</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-04</label>
+                  <note>Who is Mitford writing to? And to
+                        Miss Brooke</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-08</label>
+                  <note>Who is Mitford writing to? Wrote to Sir William Elford not to go till
+                     next week</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-10</label>
+                  <note>Who is Mitford writing to? Wrote to Miss Webb-- not to go till
+                     Tuesday</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-11</label>
+                  <note>Who is Mitford writing to? wrote a letter to  Mr. Haydon</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-12</label>
+                  <note>Who is Mitford writing to? letters to Sir W. Elford</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-12</label>
+                  <note>Who is Mitford writing to? Mr. Haydon</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-12</label>
+                  <note>Who is Mitford writing to? Miss James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-12</label>
+                  <note>Who is Mitford writing to? Miss Webb</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-13</label>
+                  <note>Who is Mitford writing to? Wrote a sonnet &amp; letter to Mrs.
+                           Dickinson</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-14</label>
+                  <note>Who is Mitford writing to?  Wrote to dear Miss
+                        James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-15</label>
+                  <note>Who is Mitford writing to? finish
+                     my letter to dear Miss James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-19</label>
+                  <note>Who is Mitford writing to? Wrote a long note to Miss
+                        Brooke</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-20</label>
+                  <note>Who is Mitford writing to? began an answer</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-22</label>
+                  <note>Who is Mitford writing to? finished my packet for
+                        Mrs. Rowden</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-24</label>
+                  <note>Who is Mitford writing to? answered it </note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-27</label>
+                  <note>Who is Mitford writing to? letters to
+                        Mrs. Rowden</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-27</label>
+                  <note>Who is Mitford writing to? Miss
+                        James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-31</label>
+                  <note>Who is Mitford writing to? wrote to her in
+                     answer</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-12</label>
+                  <note>Who is Mitford writing to? wrote to
+                        Mr. Williams</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-12</label>
+                  <note>Who is Mitford writing to? Miss Eliza Webb</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-14</label>
+                  <note>Who is Mitford writing to? Wrote to Mrs. Clarke</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-14</label>
+                  <note>Who is Mitford writing to? Miss Ogbourn</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-14</label>
+                  <note>Who is Mitford writing to? Miss James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-15</label>
+                  <note>Who is Mitford writing to? wrote to Sir
+                        William Elford</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-21</label>
+                  <note>Who is Mitford writing to? Wrote to Eliza Webb</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-21</label>
+                  <note>Who is Mitford writing to? Mrs. Hofland</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-26</label>
+                  <note>Who is Mitford writing to? wrote to Miss
+                     Booth</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-27</label>
+                  <note>Who is Mitford writing to? Wrote to Sir W.E.</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-27</label>
+                  <note>Who is Mitford writing to? Miss James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-28</label>
+                  <note>Who is Mitford writing to? wrote to Pen
+                        Valpy</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-28</label>
+                  <note>Who is Mitford writing to? Eliza Webb
+                     </note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-03-02</label>
+                  <note>Who is Mitford writing to? wrote to
+                        Mary Webb</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-03-02</label>
+                  <note>Who is Mitford writing to? Pen
+                        Valpy</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-03-02</label>
+                  <note>Who is Mitford writing to? letter to Sir
+                        W.E.</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-03-02</label>
+                  <note>Who is Mitford writing to? finished a letter to
+                        Miss James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-03-03</label>
+                  <note>Who is Mitford writing to? Sent of my letter to
+                        Miss James</note>
+               </event>
+            </listEvent>
+            <listEvent type="letter" subtype="received">
+               <event>
+                  <label>Date of Journal entry: 1819-01-12</label>
+                  <note>Who has sent Mitford a letter? heard from
+                     dear Mrs.Dickinson</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-13</label>
+                  <note>Who has sent Mitford a letter? Heard from dear Miss James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-17</label>
+                  <note>Who has sent Mitford a letter? had a charming letter from Mr.
+                        Haydon</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-20</label>
+                  <note>Who has sent Mitford a letter? Recieved a long letter from Mrs.
+                        Rowden</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-01-24</label>
+                  <note>Who has sent Mitford a letter? Got a letter from dear Miss
+                        James</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-11</label>
+                  <note>Who has sent Mitford a letter? Heard from Sir W.
+                     Elford</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-18</label>
+                  <note>Who has sent Mitford a letter? Had a note from
+                        Miss Valpy.</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-20</label>
+                  <note>Who has sent Mitford a letter? Got the
+                           Sheffield
+                        Iris
+                        from Mrs. Hofland with some verses from her to
+                           me -- very pretty.</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-27</label>
+                  <note>Who has sent Mitford a letter? Had
+                     a delightful letter from Sir William Elford enclosing some
+                     lozenges of his own making.</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-28</label>
+                  <note>Who has sent Mitford a letter? Heard from Mr.
+                     Haydon</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-02-28</label>
+                  <note>Who has sent Mitford a letter? heard from
+                        Mary Webb</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-03-01</label>
+                  <note>Who has sent Mitford a letter? Heard
+                     from Pen Valpy</note>
+               </event>
+               <event>
+                  <label>Date of Journal entry: 1819-03-02</label>
+                  <note>Who has sent Mitford a letter? Heard from
+                        Miss James</note>
+               </event>
+            </listEvent>
+         </div>
+      </back>
+   </text>
+</TEI>
