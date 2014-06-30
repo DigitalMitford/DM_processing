@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="../../MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter to <persName ref="#Talfourd_Thos">T.N. Talfourd</persName>, 12 August 1825</title>
+            <author ref="#MRM">Mary Russel Mitford</author>
+            <editor>Amy Colombo</editor>
+            
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor> 
+            <principal>Elisa Beshero-Bondar</principal>
+            
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#ajc">Amy Colombo</persName> 
+            </respStmt>
+            <respStmt>
+               <resp>Proofreading against the manuscript by</resp>
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName> 
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: 2 June 2014. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2014</date>
+            <availability>
+               <p>Reproduced by courtesy of the <placeName>The John Rylands University Library</placeName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+            
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="#Rylands">The John Rylands University Library</repository>
+                  <collection>Mitford-Talfourd Correspondence: Letters from Mary Russell Mitford to Thomas Noon Talfourd: vol. 665</collection>
+                  <idno>JRL English MS 665 no. 21 Coles no.93</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to T.N. Talfourd, <date when="1825-08-12">1825 AUgust 12</date>.</head>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support> 
+                           <p>Quarto sheet of <material>paper</material> (likely torn from folio sheet folded in half to form four
+                              quarto pages) with correspondence on 1 and address leaf on page 2,
+                              then folded in thirds twice more and sealed for posting.</p> 
+                           <p>Address leaf bears postmarks: 1) black circular mileage stamp<!--Applied upon deposit of letter at local PO; Upper left of paper-->
+                              Reading <stamp>READING AU12 1825<lb/></stamp></p>
+                           <p>A large handwritten X (in another hand than Mitford's) is placed above the name J. B. Monck on the address leaf, indicating this letter was franked through Monck.</p>
+                        </support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+         
+        
+  </teiHeader>         
+  <text>
+      <body>
+         <p>A thousand thanks <persName ref="#Talfourd_Thos">my dear friend</persName> for all your kindness--I am better--the abscess has burst 
+            externally &amp; all will soon be well--I hope you will approve of the enclosed--<emph rend="underline">They</emph> 
+            do not--but it satisfies my own feelings and surely he will not &amp; cannot make an ill use of it.<note resp="#ebb"><q>"<emph rend="underline">They</emph>"</q> perhaps refers to <orgName ref="#Mitfords_Ma_Pa">Mitford's parents</orgName>. "He" likely refers to either <persName ref="#Macready_Wm">William Macready</persName> or <persName ref="#Kemble_C">Charles Kemble</persName>.</note>--Pray tell me 
+            if you approve it for I am very anxious till I hear--You see that I have
+            committed no one.--I shall tell <persName>William Harness</persName> To send <title ref="#CharlesI_MRMplay">"Charles"</title> to you next week on 
+            his return--I write in great haste to save the cross post &amp; am still weak--Tell dear <persName ref="#Talfourd_Mrs">M<hi rend="superscript">rs</hi> 
+            Talfourd</persName> &amp; <persName ref="#Rutt_John">Mr. Rutt</persName> how much I regret having been the occasion of a fresh worry &amp; fright to them &amp;
+            to you--I hope the little girl<!-- Who is this? --> is well--.</p><closer><lb/> Ever <choice><sic>your's</sic><reg resp="#ebb">yours</reg></choice> M.R. Mitford<lb/>
+            I shall desire the play to be sent to the <placeName ref="#Temple">Temple</placeName><pb n="2"/>
+            
+            <date when="1825-08-12"><placeName ref="#Reading_city">Reading</placeName> August twelve 1825</date><lb/> 
+               <address><addrLine><persName ref="#Talfourd_Thos">T.N. Talfourd</persName>Esqure</addrLine><addrLine>Oxford Circuit<persName ref="#Monck_JB">J.B.Monck</persName></addrLine> </address>
+            </closer>
+         
+      </body>
+     
+     <back>
+    <!--ebb: Prosop added to site index.-->
+     </back>
+  </text>
+</TEI>

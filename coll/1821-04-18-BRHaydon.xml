@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--  <?xml-model href="../SI_Ref_and_Resp.rnc" type="application/relax-ng-compact-syntax"?>-->
+<?xml-model href="SI_Ref_and_Resp.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter to Benjamin Robert Haydon 18 April 1821.</title>
+            <author>Mary Russell Mitford</author>
+
+            <editor>Elisa Beshero-Bondar</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by </resp>
+               <persName>Samantha Webb</persName>
+
+            </respStmt>
+            <respStmt>
+               <resp> Date last checked: <date when="2014-06-03">2014-06-03</date>. Proofing and
+                  corrections by: </resp>
+               <persName ref="#ad">Alexandra Drayton</persName>
+
+               <!--ebb: 28 May 2014: Need to update header and review comments. Prosopography refs are now current. Need to check transcription, etc., and some possible new prosop entries in unclear words/names. --><!-- ad: 04 May 2014: I think this is now all up to date -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> This is optional, used to describe this edition, and "should contain phrases
+               describing the edition or version: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+
+
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Reading Central Library</repository>
+                  <idno>MS number</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to B. R. Haydon, <date>18 April
+                  1821</date>.</head>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <handNotes>
+            <handNote xml:id="rc" medium="red_crayon"> Red crayon or thick red pencil. A different
+               from Mitford's, that marks many of her letters, sometimes drawing diagonal lines
+               across pages, and sometimes writing words overtop and perpendicularly across
+               Mitford's writing. This hand has drawn a diagonal line in red pencil down page 3 of
+               the manuscript of this letter. </handNote>
+            <handNote xml:id="black_ink" medium="black_ink"> Someone, apparently other than Mitford,
+               perhaps cataloging letters and describing them. Page 2 of this letter manuscript
+               bears horizontal cross-outs at lines 1 and 24 of paragraph 2, and a vertical line
+               running down the center of the page. The hand has cross-written above the vertical
+               line: <quote>"Omit all this it is told in the next letter."</quote> Page 3 of the
+               manuscript bears horiontal cross-outs at lines 10 and 26, and a vertical line runs
+               down the center of the page. The hand has cross-written above the vertical
+                  line:<quote>"Omit all this it is in the next
+               letter."</quote>
+            </handNote>
+         </handNotes>
+      </profileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <opener>
+               <dateline>
+                  <date when="1821-04-18">April 18<hi rend="superscript" rendition="superscript"/>
+                     1821.</date>
+                  <name type="place">Three Mile Cross</name>
+               </dateline>
+               <salute>My dear Sir</salute>
+            </opener>
+            <p>I have been waiting till <date>Easter</date> should bring home Parliament then into
+               the Country <!--this phrase is unclear>-->to thank you for your delightful account of
+               your <placeName>Glasgow</placeName> excursion--oh what an honour &amp; a pleasure it
+               is to be selected as a friend to whom you like <quote>“to unburthen your
+                  thoughts”</quote>--&amp; how heartily I sympathised with all your feelings whether
+               stern or relenting--I had been waiting for a frank to tell you this--but I suppose
+               indignation is a stonger impulse than pleasure for since I received the
+                  <title>Examiner</title><!--what tag should be used for periodical? #ad I've put in <title> for now until we have an id for the Examiner-->
+               this morning I can no longer refrain from writing. I had read the article in the
+               magazine <!--identify article and author--> wondering who could be meant--thinking
+               how likely it was to be misrepresented but never for an instant dreaming that it
+               could be aimed at you--of all impossible slanders that seemed the most
+               impossible--&amp; I am even now lost in astonishment at such a malicious <add
+                  place="above">falsehood </add><del rend="squiggles"><gap quantity="1" unit="word"
+                  /></del>
+               <!-- #ad there's a deletion here that I can't quite decipher here --> finding a place
+               in so respectable a publication. I suppose that as there is now no regular Editor
+               <!--was not Leigh Hunt the editor at this time? substantiate this.#ad Leigh Hunt was editor of the Examiner from 1808-1821-->
+               the venom slid in undetected. I am almost glad that it did since it has afforded you
+               an opportunity of making a defence &amp; dignified &amp; so spirited--What a
+               necessary thing it is that a great painter should be a good writer! And really in
+               these days when the appetite for anecdote as it is called (that is for scandal) is so
+                     <unclear><supplied>craving</supplied></unclear> &amp; the gossip of a set of
+                     <unclear><supplied>widowed</supplied></unclear> women over a country tea table
+               yields in malice to the slander of literary chit chat, every man should be brought to
+               wield the pen as a weapon of defence against his enemies his rivals &amp; his
+               friends. Do you know to which class the present writer belongs?--I will not talk of
+               him any more for it really gives
+               <unclear><supplied>some</supplied></unclear>unwomanly feelings--to use a womanly
+               phrase <quote>it puts me in a passion</quote>
+               _____<!--a long underline/dash appears on ms--> What became of your
+                  <placeName>Glasgow</placeName> culprit<!--identify this Glasgow culprit-->? Did he
+               come back to London according to your behest? And is he likely to </p>
+               <p>turn honest &amp;
+               make his way in the world? I think if any thing <del rend="squiggles"/> could reform
+               a man your severity of words &amp; kindnesses of
+                  <unclear><supplied>wisdom</supplied></unclear>
+               <!-- #ad vision? --> would do so.
+                  <handShift/><add hand="#black_ink"><quote>"Omit all this it is in the next
+                     letter."</quote></add>
+              <handShift/>  I think you know my friend <persName ref="#Hofland_B">Mrs Hofland</persName> I have
+               just had
+               <!--a cross-out line is drawn on the foregoing line of text likely in a different hand, thus not marked as a deletion by Mitford-->
+               a letter from <persName ref="#Miss_James">Miss James</persName> containing so
+               remarkable an anecdote respecting her that I am tempted to transcribe it--to
+               understand it I must tell you that <persName ref="#Hofland_B">Mrs Hofland</persName>
+               has been for several years involved in a chancery suit on the success of which they
+               had placed great reliance. Ah I could have told them what a miserable thing is a
+               successful Chancery suit.
+               <!--identify the Chancery suit that Barbara Hofland was involved in--> Now for Miss
+               James's letter. <quote>The Hofland suit is decided in their favour--but all the costs
+                  being to be paid out of the property not a sixpence <persName ref="#Hofland_B"
+                     >Mrs. <abbr>Hof.</abbr></persName> says will come to them. Their lawyer had
+                  neglected to write &amp; the news of the decision was brought by a neighbour who
+                  told her only that it was decided in their favour--she went to town to enquire
+                     <sic>was</sic><!--this is noted as sic because the word "and" appears to have been skipped in the ms-->
+                  quite overcome by the information she received--I
+                  <!-- I believe this I refers not to Mitford but Hofland or Mitford's correspondent-->
+                  was about to mount the outside of the <placeName>Twickenham</placeName> coach to
+                  return all <unclear>illegible<supplied>around</supplied></unclear> as you may
+                  suppose when recollecting she should save sixpence in going by the
+                     <placeName>Richmond</placeName> Stage &amp; such an one being on hand, she
+                  withdrew her <unclear>illegible <supplied resp="#ad">boot</supplied></unclear> although a
+                  most respectable woman with her husband at her side affected to make room for
+                  her--Home she came by the Richmond coach &amp; saved her sixpence &amp; her life.
+                  The <placeName>Twickenham</placeName> coach was overturned an hour after &amp;
+                  that decent woman in whose place she would have sat killed on the spot. The
+                  husband had his collar bone &amp; a rib broken. This most striking event gave a
+                  new &amp; <unclear><supplied>just</supplied></unclear> turn to her thoughts--I am
+                  sure you will feel as thankful as I did at the detail which she gave
+                  <!-- is it worth annotating for this coach accident?--> in her most pathetic
+                  manner."</quote> _____
+               <!--a cross-out line is drawn over the foregoing text in a different hand--> Having
+               begun storytelling I must tell
+               you <del rend="strikethrough">another</del> <add place="above">a story</add>
+               <!--this last phrase is written above the deleted word--> which comes from Germany.
+               The King of <placeName>Naples</placeName> having arrived at
+                        <placeName>Laybach</placeName> before the other sovereigns <del rend="squiggles"><unclear><supplied>of</supplied></unclear></del>was
+               desirous to have the amusement of bear hunting which of course was to be provided for
+               him but there being no bears resident in the neighbourhood one
+               was purchased of a <unclear><supplied>
+               Savoyard</supplied></unclear><!--tag Savoyard as nationality?--> <!-- #ad I think Savoyard is a very good reading of this word--> &amp; placed a few
+               miles out of town in a thicket. The King
+                    attended as the story went by a train of
+                  <unclear>illegible <supplied>cars &amp;</supplied></unclear> courtiers arrived near the place &amp; the bear
+               finding himself in the neighbourhood of the <unclear>illegible</unclear> good company
+               fancied he was to perform as usual came out on his hind legs in a most graceful
+               attitude--which alas! had an effect on the hard heart of his Neopolitan majesty who
+               discharged his piece &amp; shot him dead. This story is none of my radical
+               inventions--it came from <persName>Lord <unclear>illegible</unclear></persName> to
+               Mr. <persName ref="#Elford_SirWm"><abbr>W.</abbr>Elford</persName> &amp; from him to
+               me. ____
+               <!--an underline is draw by Mitford which I take to indicate a paragraph break-->
+            </p>
+            <p>I have a great grievance just now which I have nothing <damage rend="smudge" unit="word" quantity="1"/><unclear><supplied>to</supplied></unclear>
+                     
+               <!--a cross-out line is drawn on the foregoing lines of text likely in a different hand-->
+               do with--but which I cannot help thinking a grievance nevertheless. The <persName
+                  ref="#Wellington_Duke">Duke of Wellington</persName>'s sons are at home for the
+               <orgName>Eton</orgName> &amp; they come every day to a little alehouse next
+               door to learn French of a Jew who is lodging there for the purpose of teaching them.
+                  <quote>The poor little lads <persName ref="#MRM"> Ma'am </persName></quote>, says my friend
+               the landlord, <quote>are kept very strict. They never look up but their tutor
+               corrects them, &amp; there they sit in my parlour from eleven to half past
+                  four &amp; never have a glass of anything.</quote> Without sympathising very
+               deeply in the misfortune which my friend the <!-- link to <person xml:id="RoseInnLandlord"> who was the fictional landlord in Our Village --> <roleName>alehouse keeper</roleName> with a true
+                  tap-room feeling considers as
+                     worst of all, I am quite indignant at
+               the poor little boys being cheated of their holidays. Is it not abominable? A worse
+               iniquity than <del rend="squiggle" unit="word" quantity="1"> </del> beating <persName ref="#Napoleon"
+               >Napoleon</persName><!--note Battle of Waterloo-->. When they ought to be playing
+               cricket or stealing birdsnests or doing mischief or doing nothing.
+      <name type="event" ref="#Waterloo">The Battle of Waterloo </name> was 
+               <del rend="squiggles"/><add place="above"> a <unclear>illegible</unclear> to this wickedness.</add> The only
+               thing that even looks like the holidays is
+               their mode of conveyance which is generally <unclear><supplied resp="#ad">five</supplied></unclear> in a gig
+               rain or shine.
+               <!--the cross-out line in another hand falls over "in a gig rain or shine."--></p>
+            <p>Pray did you get a little letter which I sent to you at
+                  <placeName>Glasgow</placeName><sic>.<!-- #ad It looks like an underscore to me, not a full stop? --></sic> It is not worth asking for.--My
+                  <persName ref="#Mitford_Geo">father</persName> &amp; <persName ref="#M_Russell"
+                  >mother</persName> join in kindest remembrances &amp; I am ever<lb/> My dear
+                  <persName ref="#Haydon">Mr. Haydon</persName><lb/>
+               <lb/>Most sincerely and affectionately yours <lb/><persName ref="#MRM"/>MM Mitford
+               <!--I tried to tag this as <signed> but program turned angry red, not sure how to handle that. Also, section would not accept <closer> apparently; it would signal any use of <closer> as disruptive to the <div>.-->
+               Were you not very affected at the death of poor <persName ref="#Keats">John
+                        <unclear><supplied>Keats?</supplied></unclear></persName> There is another
+               proof of the terrible personality of the age. If he had lived I think his name would
+               have been second only to <persName ref="#Wordsworth_Wm">Wordsworth's</persName><!-- #ad the possesive 's at the end of Wordsworth is an educated guess rather than what is actually readable on the document (the photo cuts the page off). -->
+               amongst the Poets of the day--Indeed even now there are parts of
+                  <title>Endymion</title> which surely no other man could have
+               written.</p>
+            <space/>
+            <space/>
+            <space/>
+            <p/>
+            <!--Address and postmarks written vertically-->
+            <p>B.R. Haydon, Esqre <lb/> St. John's Place <lb/> Lisson Grove North <lb/> Regent's
+               Park <lb/>
+               <emph>London</emph><lb/></p>
+            <!--end of vertical text-->
+            <space/>
+            <space/>
+            <space/>
+            <p><lb/>I am happy to tell you that after a great deal of enquiry &amp; some threats we
+               have succeeded in regaining your greyhound puppy &amp; have
+               placed him in very good summer quarters. He is the largest young dog I ever saw in my
+               life &amp; gives promise of great strength--Once more farewell.</p>
+
+         </div>
+      </body>
+
+
+
+
+
+      <back>
+         <!--ebb:28 May 2014: Prosop Data Collected and Current -->
+         <!-- #ad: 04 June 2014: Tagged the Battle of Waterloo but as this already has an xml:id I haven't signalled this change anywhere else -->
+         <listEvent>
+            <event type="battle" xml:id="Waterloo" when="1815-06-18">
+               <label>Battle of Waterloo</label>
+            </event>
+            
+         </listEvent>
+      </back>
+   </text>
+</TEI>
