@@ -3,6 +3,8 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
+
+<?xml-model href="../../../../Desktop/My%20Box%20Files/MRMS%20Project%20Support/Folder-of-Chaos/MRMValidateSimpleAlt.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -417,7 +419,7 @@
               <l>It is a prudent King<app><rdg wit="#pubC1">,</rdg></app> that casts about him</l>
               <l>To rid him of his enemies. Search, I say.</l></sp>
 
-           <sp who="#Downes"><speaker>Dow.</speaker>
+           <sp who="#MRM #Gloucester"><speaker>Dow.</speaker>
               <l><app><rdg wit="#pubC1"></rdg></app>Why<app><rdg wit="#pubC1">,</rdg></app> <persName ref="#Cromwell_MRM">Cromwell</persName><app><rdg wit="#pubC1">,</rdg></app> thou art bitter.</l></sp>
            <sp who="#Cromwell_MRM"><speaker>Crom.</speaker>
               <l>Heaven forfend!</l>
@@ -2392,7 +2394,7 @@
                  <l><app><rdg wit="#pubC1">Hath fallen upon him Harrison.</rdg></app></l></sp>
                  
              
-              <sp who="#Soldiers_MRM"><speaker>Soldiers.</speaker><!--RN June 29 2014: New Model Army Soldiers are not in SI. Entry about them explaining political context of this postwar faction?-->
+              <sp who="#MRM #Gloucester"><speaker>Soldiers.</speaker><!--RN June 29 2014: New Model Army Soldiers are not in SI. Entry about them explaining political context of this postwar faction?-->
                  <l><app><rdg wit="#msC1">To Justice</rdg></app></l>
                  <l><app><rdg wit="#msC1">To Execution.</rdg></app></l></sp>
               

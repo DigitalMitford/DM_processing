@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--  <?xml-model href="../SI_Ref_and_Resp.rnc" type="application/relax-ng-compact-syntax"?>-->
-<?xml-model href="SI_Ref_and_Resp.rnc" type="application/relax-ng-compact-syntax"?>
+
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -19,7 +19,7 @@
 
             <respStmt>
                <resp>Transcription and coding by </resp>
-               <persName>Samantha Webb</persName>
+               <persName ref="#scw">Samantha Webb</persName>
 
             </respStmt>
             <respStmt>
@@ -107,22 +107,18 @@
                </dateline>
                <salute>My dear Sir</salute>
             </opener>
-            <p>I have been waiting till <date>Easter</date> should bring home Parliament then into
-               the Country <!--this phrase is unclear>-->to thank you for your delightful account of
-               your <placeName>Glasgow</placeName> excursion--oh what an honour &amp; a pleasure it
-               is to be selected as a friend to whom you like <quote>“to unburthen your
-                  thoughts”</quote>--&amp; how heartily I sympathised with all your feelings whether
+            <p>I have been waiting till <date>Easter</date> should bring some Parliament men into
+               the Country to thank you for your delightful account of
+               your <placeName>Glasgow</placeName> excursion--Oh what an honour &amp; a pleasure it
+               is to be selected as a friend to whom you like <q>“to unburthen your
+                  thoughts”</q>--&amp; how heartily I sympathised with all your feelings whether
                stern or relenting--I had been waiting for a frank to tell you this--but I suppose
                indignation is a stonger impulse than pleasure for since I received the
-                  <title>Examiner</title><!--what tag should be used for periodical? #ad I've put in <title> for now until we have an id for the Examiner-->
-               this morning I can no longer refrain from writing. I had read the article in the
-               magazine <!--identify article and author--> wondering who could be meant--thinking
+                  <title resp="#Examiner">Examiner</title> this morning I can no longer refrain from writing. I had read the Article in the magazine <!--identify article and author--> wondering who could be meant--thinking
                how likely it was to be misrepresented but never for an instant dreaming that it
                could be aimed at you--of all impossible slanders that seemed the most
-               impossible--&amp; I am even now lost in astonishment at such a malicious <add
-                  place="above">falsehood </add><del rend="squiggles"><gap quantity="1" unit="word"
-                  /></del>
-               <!-- #ad there's a deletion here that I can't quite decipher here --> finding a place
+               impossible--&amp; I am even now lost in astonishment at such a malicious <del rend="squiggles" quantity="1" unit="word"><gap reason="illegible"/></del><add
+                  place="above">falsehood's</add> finding a place
                in so respectable a publication. I suppose that as there is now no regular Editor
                <!--was not Leigh Hunt the editor at this time? substantiate this.#ad Leigh Hunt was editor of the Examiner from 1808-1821-->
                the venom slid in undetected. I am almost glad that it did since it has afforded you
@@ -130,36 +126,27 @@
                necessary thing it is that a great painter should be a good writer! And really in
                these days when the appetite for anecdote as it is called (that is for scandal) is so
                      <unclear><supplied>craving</supplied></unclear> &amp; the gossip of a set of
-                     <unclear><supplied>widowed</supplied></unclear> women over a country tea table
+                     unidea'd women over a country tea table
                yields in malice to the slander of literary chit chat, every man should be brought to
                wield the pen as a weapon of defence against his enemies his rivals &amp; his
                friends. Do you know to which class the present writer belongs?--I will not talk of
-               him any more for it really gives
-               <unclear><supplied>some</supplied></unclear>unwomanly feelings--to use a womanly
-               phrase <quote>it puts me in a passion</quote>
-               _____<!--a long underline/dash appears on ms--> What became of your
-                  <placeName>Glasgow</placeName> culprit<!--identify this Glasgow culprit-->? Did he
-               come back to London according to your behest? And is he likely to </p>
-               <p>turn honest &amp;
+               him any more for it really gives me unwomanly feelings--to use a womanly
+               phrase <q>it puts me in a passion.</q>----<note resp="#ebb">Here Mitford's long dash signals a change of topic, effectively a paragraph break.</note></p><p>What became of your poor
+                  <placeName ref="#Glasgow">Glasgow</placeName> culprit<!--identify this Glasgow culprit-->? Did he 
+               come back to London according to your behest? And is he likely to<pb n="2"/> turn honest &amp;
                make his way in the world? I think if any thing <del rend="squiggles"/> could reform
-               a man your severity of words &amp; kindnesses of
-                  <unclear><supplied>wisdom</supplied></unclear>
-               <!-- #ad vision? --> would do so.
-                  <handShift/><add hand="#black_ink"><quote>"Omit all this it is in the next
-                     letter."</quote></add>
-              <handShift/>  I think you know my friend <persName ref="#Hofland_B">Mrs Hofland</persName> I have
-               just had
-               <!--a cross-out line is drawn on the foregoing line of text likely in a different hand, thus not marked as a deletion by Mitford-->
-               a letter from <persName ref="#Miss_James">Miss James</persName> containing so
-               remarkable an anecdote respecting her that I am tempted to transcribe it--to
+               a man your severity of words &amp; kindness of action would do so.</p>
+                  <handShift/><add hand="#black_ink">Omit all this it is in the next
+                     letter.</add><note resp="#ebb">This is written vertically from bottom center to nearly top center of this second leaf of the letter, and is accompanied by a long vertical line to the right of the inscription, meeting to horizontal lines at either end. The top line crosses out nearly all of the first full line of Mitford's next paragraph: the words: "I think you know my friend Mrs. Hofland--I have", and the bottom line crosses out the fifth line from the bottom of the leaf, the line reading, "in her most pathetic manner.'----Having begun storytelling".</note>
+            <p><handShift/><del rend="strikethrough" hand="#black_ink"><handShift/>I think you know my friend <persName ref="#Hofland_B">Mrs Hofland</persName> I have</del>
+               just had a letter from <persName ref="#James_Miss">Miss James</persName> containing so
+               remarkable an anecdote respecting her that I am tempted to transcribe it--To
                understand it I must tell you that <persName ref="#Hofland_B">Mrs Hofland</persName>
-               has been for several years involved in a chancery suit on the success of which they
-               had placed great reliance. Ah I could have told them what a miserable thing is a
-               successful Chancery suit.
-               <!--identify the Chancery suit that Barbara Hofland was involved in--> Now for Miss
-               James's letter. <quote>The Hofland suit is decided in their favour--but all the costs
+               has been for several years involved in a Chancery suit on the success of which they
+               had placed great reliance. (Ah I could have told them what a miserable thing is a
+               successful Chancery suit!)<!--identify the Chancery suit that Barbara Hofland was involved in--> Now for <rs type="letter"><persName ref="#James_Miss">Miss James's</persName> letter</rs>. <quote cit="#James_Miss">"The Hofland suit is decided in their favour--but all the costs
                   being to be paid out of the property not a sixpence <persName ref="#Hofland_B"
-                     >Mrs. <abbr>Hof.</abbr></persName> says will come to them. Their lawyer had
+                     >Mrs. <abbr>Hof.</abbr></persName> says will come to them. <!--ebb: Proofread to here, 4 July 2014-->Their lawyer had
                   neglected to write &amp; the news of the decision was brought by a neighbour who
                   told her only that it was decided in their favour--she went to town to enquire
                      <sic>was</sic><!--this is noted as sic because the word "and" appears to have been skipped in the ms-->
@@ -199,7 +186,7 @@
                inventions--it came from <persName>Lord <unclear>illegible</unclear></persName> to
                Mr. <persName ref="#Elford_SirWm"><abbr>W.</abbr>Elford</persName> &amp; from him to
                me. ____
-               <!--an underline is draw by Mitford which I take to indicate a paragraph break-->
+               <!--an underline is drawn by Mitford which I take to indicate a paragraph break-->
             </p>
             <p>I have a great grievance just now which I have nothing <damage rend="smudge" unit="word" quantity="1"/><unclear><supplied>to</supplied></unclear>
                      
@@ -227,7 +214,7 @@
                <!--the cross-out line in another hand falls over "in a gig rain or shine."--></p>
             <p>Pray did you get a little letter which I sent to you at
                   <placeName>Glasgow</placeName><sic>.<!-- #ad It looks like an underscore to me, not a full stop? --></sic> It is not worth asking for.--My
-                  <persName ref="#Mitford_Geo">father</persName> &amp; <persName ref="#M_Russell"
+                  <persName ref="#Mitford_Geo">father</persName> &amp; <persName ref="#Russell_M"
                   >mother</persName> join in kindest remembrances &amp; I am ever<lb/> My dear
                   <persName ref="#Haydon">Mr. Haydon</persName><lb/>
                <lb/>Most sincerely and affectionately yours <lb/><persName ref="#MRM"/>MM Mitford
@@ -237,7 +224,7 @@
                proof of the terrible personality of the age. If he had lived I think his name would
                have been second only to <persName ref="#Wordsworth_Wm">Wordsworth's</persName><!-- #ad the possesive 's at the end of Wordsworth is an educated guess rather than what is actually readable on the document (the photo cuts the page off). -->
                amongst the Poets of the day--Indeed even now there are parts of
-                  <title>Endymion</title> which surely no other man could have
+                  <title ref="#Endymion">Endymion</title> which surely no other man could have
                written.</p>
             <space/>
             <space/>
