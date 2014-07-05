@@ -3,6 +3,7 @@
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
+    <xsl:variable name="si" select="document('si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -206,6 +207,11 @@
         <span class="place">
             <xsl:apply-templates/>
         </span>
+        <div class="si">
+        <xsl:value-of select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
+            <!--<xsl:value-of select="$si//place[@xml:id=substring-after(./@ref, '#')]/placeName"/>-->
+          
+        </div>
     </xsl:template>
 
 
