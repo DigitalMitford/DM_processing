@@ -25,7 +25,9 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>First digital edition in TEI, date: 2 June 2014. P5.</edition>
+            <edition>First digital edition in TEI, date: <date when="2014-06-02">2 June 2014</date>. P5.</edition>
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>The Digital Mitford</orgName><resp> editors' photos from this archive are not permitted for public distribution.<!--ebb: This will be the case for most of our archive photos. We can remove the "not permitted for public distribution" phrase from Reading CL letters, since we are permitted to post these.--> Photo files: <idno>DSCN1180.jpg, DSCN1181.jpg, DSCN0942.jpg, DSCN0943.jpg</idno></resp></respStmt>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -48,7 +50,7 @@
                   <collection>Mitford-Talfourd Correspondence: Letters from Mary Russell Mitford to Thomas Noon Talfourd: vol. 665</collection>
                   <idno>JRL English MS 665 no. 21 Coles no.93</idno>
                </msIdentifier>
-               <head>Letter from Mary Russell Mitford to T.N. Talfourd, <date when="1825-08-12">1825 AUgust 12</date>.</head>
+               <head>Letter from Mary Russell Mitford to T.N. Talfourd, <date when="1825-08-12">1825 August 12</date>.</head>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -73,16 +75,17 @@
       <body>
          <p>A thousand thanks <persName ref="#Talfourd_Thos">my dear friend</persName> for all your kindness--I am better--the abscess has burst 
             externally &amp; all will soon be well--I hope you will approve of the enclosed--<emph rend="underline">They</emph> 
-            do not--but it satisfies my own feelings and surely he will not &amp; cannot make an ill use of it.<note resp="#ebb"><q>"<emph rend="underline">They</emph>"</q> perhaps refers to <orgName ref="#Mitfords_Ma_Pa">Mitford's parents</orgName>. "He" likely refers to either <persName ref="#Macready_Wm">William Macready</persName> or <persName ref="#Kemble_C">Charles Kemble</persName>.</note>--Pray tell me 
+            do not--but it satisfies my own feelings and surely he will not &amp; cannot make an ill use of it.<note resp="#ebb"><q>"<emph rend="underline">They</emph>"</q> perhaps refers to <orgName ref="#Mitfords_Ma_Pa">Mitford's parents</orgName>. "He" refers to <persName ref="#Macready_Wm">William Macready</persName>. Mitford enclosed a copy of <rs type="letter">her letter to <persName>Mr. Macready</persName> dated <date when="1825-08-12">August 12th 1825</date></rs> with this letter to <persName>Talfourd</persName>. The letter (in the <orgName ref="#Rylands">Rylands Collection</orgName> immediately following this one, <idno>JRL #22</idno>, and currently being edited for the Digital Mitford project) documents <persName ref="#MRM">Mitford</persName>'s rift with <persName ref="#Macready_Wm">Macready</persName>, who believed she had written <bibl corresp="#Stage">a piece under the pseudonym <persName>"Philo-Dramaticus"</persName> recently published in <title ref="#Blackwoods">Blackwood's Magazine</title>, complaining about the state of the <placeName ref="#London_city">London</placeName> stage, criticizing the excessive power of actor-managers like Macready, and their abuse of authors</bibl>. In the enclosed copy of the letter to Macready, Mitford assures him that she had nothing to do with the piece: <quote cit="#MRM">"In answer to your enquiries I can only say that I knew nothing of the article in question till I saw it with great regret a few days afgter the publication in Blackwood's Magazine."</quote> Mitford appears to have seen <bibl corresp="#Stage">the Philo-Dramaticus letter on the decline of the English stage</bibl> as it was reprinted in <title ref="#Observer">The Observer</title> of <date when="1825-06-20">20 June 1825</date>, based on <ref target="1825-06-29-Talfourd.html"><rs type="letter">her letter to <persName>Talfourd</persName> of <date when="1825-06-29">29 June</date></rs></ref>.</note>--Pray tell me 
             if you approve it for I am very anxious till I hear--You see that I have
-            committed no one.--I shall tell <persName>William Harness</persName> To send <title ref="#CharlesI_MRMplay">"Charles"</title> to you next week on 
+            committed no one.--I shall tell <persName ref="#Harness_Wm">William Harness</persName> To send <title ref="#CharlesI_MRMplay">"Charles"</title> to you next week on 
             his return--I write in great haste to save the cross post &amp; am still weak--Tell dear <persName ref="#Talfourd_Mrs">M<hi rend="superscript">rs</hi> 
             Talfourd</persName> &amp; <persName ref="#Rutt_John">Mr. Rutt</persName> how much I regret having been the occasion of a fresh worry &amp; fright to them &amp;
-            to you--I hope the little girl<!-- Who is this? --> is well--.</p><closer><lb/> Ever <choice><sic>your's</sic><reg resp="#ebb">yours</reg></choice> M.R. Mitford<lb/>
+            to you--I hope the little girl<!-- Who is this? --> is well--.</p><closer><lb/> Ever <choice><sic>your's</sic><reg resp="#ebb">yours</reg></choice> <signed>M.R. Mitford</signed><lb/>
             I shall desire the play to be sent to the <placeName ref="#Temple">Temple</placeName><pb n="2"/>
             
             <date when="1825-08-12"><placeName ref="#Reading_city">Reading</placeName> August twelve 1825</date><lb/> 
-               <address><addrLine><persName ref="#Talfourd_Thos">T.N. Talfourd</persName>Esqure</addrLine><addrLine>Oxford Circuit<persName ref="#Monck_JB">J.B.Monck</persName></addrLine> </address>
+               <address><addrLine><persName ref="#Talfourd_Thos">T.N. Talfourd</persName>Esqure</addrLine><addrLine>Oxford Circuit</addrLine>
+                  <addrLine><persName ref="#Monck_JB">J.B.Monck</persName></addrLine> </address>
             </closer>
          
       </body>
