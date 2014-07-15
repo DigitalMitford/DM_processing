@@ -3,10 +3,19 @@
     <ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>   
  
     <pattern>
-        <rule context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp">
+        <rule context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp | tei:TEI//@wit">
             <assert test="starts-with(., '#')">
-                Attributes @ref, @who, and @corresp must begin with a hashtag.
+                Attributes @ref, @who, @corresp and @wit must begin with a hashtag.
             </assert>
+        </rule>
+    </pattern>
+    
+    <pattern>
+        <rule context="tei:TEI//@wit">
+        <let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
+            <assert test="every $token in $tokens satisfies $token = //tei:TEI//tei:listWit//@xml:id">
+                Every reading witness (@wit) after the hashtag must match an xml:id defined in the list of witnesses in this file!
+          </assert>
         </rule>
     </pattern>
     
