@@ -116,7 +116,7 @@
             <xsl:text>. </xsl:text>
             <xsl:if test="respStmt[2]">
                <xsl:value-of select="respStmt[2]/orgName"/><xsl:text> </xsl:text>
-               <xsl:value-of select="respStmt[2]/orgName/following-sibling::resp"/>
+               <xsl:value-of select="respStmt[2]/orgName/following-sibling::resp/text()"/>
            </xsl:if> 
            
             <xsl:choose>
@@ -382,6 +382,7 @@
             <xsl:choose>
                 <xsl:when test="$siBibl/author/text()">
                     <xsl:value-of select="string-join($siBibl//author, ', ')"/>
+                    <xsl:text>. </xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:variable name="AuthorLookup" select="$siBibl//author/@ref"/> 
@@ -435,7 +436,7 @@
             <xsl:if test="$siBibl//note">
                 <br/><xsl:value-of select="$siBibl//note"/>
                     <xsl:text>--</xsl:text>
-                    <xsl:value-of select="$siBibl/note/@resp"/>
+                    <xsl:value-of select="$siBibl//note/@resp"/>
                
             </xsl:if>
         </span></xsl:if>
