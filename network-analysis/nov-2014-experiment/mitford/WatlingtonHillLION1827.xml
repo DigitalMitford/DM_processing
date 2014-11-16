@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>Watlington Hill: a Descriptive Poem.</title><author ref="#MRM">Mary Russell Mitford</author></titleStmt><publicationStmt><p>Publication Information</p></publicationStmt><sourceDesc><p>From Dramatic Scenes, Sonnets, and Other Poems (1827).</p></sourceDesc></fileDesc></teiHeader><text><body><pb n="346"/><note n="1" resp="#MRM">The two following poems, slight and imperfect as they are, require, perhaps even more than the rest of this little volume, the kind indulgence of the reader. They were written many years ago, and are inserted chiefly from a wish to preserve some sketch, however rude, of very beautiful scenery, and some memorial, however inadequate, of very dear and valuable friends.</note><pb n="347"/><div type="section"><head>I.</head>
+	<!--Need to handle indentations as an attribute of line variation of <l rend="indent(+1)" Is this it?>--><l n="1">  
+		'Tis pleasant to dance in lordly hall 
+
+</l><l n="2">  
+		   When the merry harp is ringing; 
+</l><l n="3">  
+		'Tis sweet in the bower at evening's fall 
+</l><l n="4">  
+		   To list to the night-bird's singing; 
+</l><l n="5">  
+		'Tis lovely to view the autumnal hue 
+</l><l n="6">  
+		   As it gilds the woodland mountain; 
+</l><l n="7">  
+		Or when summer glows to pluck the rose 
+</l><l n="8">  
+		   And quaff from the sparkling fountain. 
+</l><l n="9">  
+		But fatigue in pleasure's guise is clad; 
+</l><l n="10">  
+		And the song so sweet makes the light heart sad; 
+</l><l n="11">  
+		And autumn tells of joys that fly; 
+</l><l n="12">  
+		And summer's charms in languor die: 
+<pb n="348"/></l><l n="13">  
+		If ye would have all hope can bring, 
+</l><l n="14">  
+		Take the first morn of early spring! 
+</l><l n="15">  
+		If ye would warm your life-blood chill, 
+</l><l n="16">  
+		Go course on Watlington's fair hill!</l></div><div type="section"><head>II.</head><l n="17">  
+		The mountain gale the vapour flings 
+</l><l n="18">  
+		Aloft upon his giant wings: 
+</l><l n="19">  
+		And now the sun in high career, 
+</l><l n="20">  
+		Wakens a thousand dew-drops clear, 
+</l><l n="21">  
+		That in their downy moss-couch sleep, 
+</l><l n="22">  
+		Or from the trembling grass-top weep. 
+</l><l n="23">  
+		O lovelier than the brightest gem 
+</l><l n="24">  
+		That shines in princely diadem, 
+</l><l n="25">  
+		   How transient is thy sway; 
+</l><l n="26">  
+		Sportsmen and steeds, and hounds and hare, 
+</l><l n="27">  
+		Hunters and hunted from thy lair 
+</l><l n="28">  
+		Shall drive thee, diamond of the air, 
+</l><l n="29">  
+		   And sweep thy charms away. 
+		
+		<pb n="349"/></l><l n="30">  
+		And yet, in sooth, upon the hill 
+</l><l n="31">  
+		Thy glittering place they better fill: 
+</l><l n="32">  
+		   Upon the shelving mossy side, 
+</l><l n="33">  
+		      And on the furze-clad steep, 
+</l><l n="34">  
+		   The impatient horsemen gaily ride, 
+</l><l n="35">  
+		   The gallant dogs reluctant bide, 
+</l><l n="36">  
+		   And ladies fair, though storms betide, 
+</l><l n="37">  
+		      Their anxious station keep.</l></div><div type="section"><head>III.</head><l n="38">  
+		Greyhounds are there of noble name 
+</l><l n="39">  
+		Coursers who equal praise may claim, 
+</l><l n="40">  
+		And many a bright and gentle dame. 
+</l><l n="41">  
+		   Oh could my rustic string 
+</l><l n="42">  
+		Their beauty and their feats proclaim. 
+</l><l n="43">  
+		And give and steal the minstrel's fame 
+</l><l n="44">  
+		   Of all, of each my harp should ring! 
+</l><l n="45">  
+		   But light as he the strain should spring 
+</l><l n="46">  
+		      That sings the greyhound rare; 
+<pb n="350"/></l><l n="47">  
+		   And soft as beauty's plumy wing 
+</l><l n="48">  
+		      The lay that paints the fair; 
+</l><l n="49">  
+		   Whilst harsh and rude the notes I fling,--- 
+</l><l n="50">  
+		   Coursing nor beauty dare I sing, 
+</l><l n="51">  
+		      The greyhound nor the hare. 
+</l><l n="52">  
+		Yet well each gentle maid may spy 
+</l><l n="53">  
+		Her triumphs in her lover's eye; 
+</l><l n="54">  
+		And ye, kind sportsmen, well may claim 
+</l><l n="55">  
+		For gallant dogs scarce-rivalled fame. 
+</l><l n="56">  
+		And durst I sing, in venturous guise, 
+</l><l n="57">  
+		Of ricks and turns, and falls and byes, 
+</l><l n="58">  
+		And all the courser's mysteries, 
+</l><l n="59">  
+		
+Then should the swan-necked
+<emph>Nancy</emph>
+show
+
+</l><l n="60">  
+		As spotless as her fur of snow; 
+</l><l n="61">  
+		
+Then should the
+<emph>Sharks</emph>
+successive reign
+
+</l><l n="62">  
+		And all their master's fame sustain; 
+</l><l n="63">  
+		
+Nor
+<emph>Windsor</emph>
+shame his breeding high:
+
+</l><l n="64">  
+		
+Nor thou thy name, Northumbrian
+<emph>Fly</emph>
+;
+
+</l><l n="65">  
+		
+Nor thou
+<emph>Prince Hal</emph>
+, thy name-sake old
+
+</l><l n="66">  
+		"The nimble-footed madcap" bold; 
+<pb n="351"/></l><l n="67">  
+		Nor thou the meed thy mother won, 
+</l><l n="68">  
+		
+My golden crested<emph>Marmion</emph><note n="2" resp="#MRM">Celebrated greyhounds belonging to different gentlemen who formed the party.</note></l></div><div type="section"><head>IV.</head><l n="69">  
+		Leave we them all: to stand awhile 
+</l><l n="70">  
+		   Upon the tompost brow, 
+</l><l n="71">  
+		And mark how, many a lengthening mile, 
+</l><l n="72">  
+		   The landscape spreads below. 
+</l><l n="73">  
+		Here let us stand! The breezes chill 
+</l><l n="74">  
+		   A healthful freshness breathe, 
+</l><l n="75">  
+		The blood with stirring quickness fill, 
+</l><l n="76">  
+		   And fancy's garlands aid to wreathe. 
+</l><l n="77">  
+		How pure, how transient is the storm! 
+</l><l n="78">  
+		See in yon furze poor puss's form 
+</l><l n="79">  
+		   A vacant cradle seems, 
+</l><l n="80">  
+		Rocked by the loud wind to and fro; 
+</l><l n="81">  
+		Whilst the coy primrose blooms below 
+</l><l n="82">  
+		   Nursed by the southern beams; 
+<pb n="352"/></l><l n="83">  
+		And overhead in richer gold 
+</l><l n="84">  
+		The gorse's hardy flowers unfold 
+</l><l n="85">  
+		Training wild wreaths most sweet, most fair, 
+</l><l n="86">  
+		To hang above her mountain lair.</l></div><div type="section"><head>V.</head><l n="87">  
+		Methinks I too should love to dwell 
+</l><l n="88">  
+		Within this lone and cloud-capped cell: 
+</l><l n="89">  
+		With all around of vast and rude,--- 
+</l><l n="90">  
+		A wild romantic solitude; 
+</l><l n="91">  
+		With all below to charm the eye; 
+</l><l n="92">  
+		With nought above me but the sky. 
+</l><l n="93">  
+		Here would I watch each sailing cloud 
+</l><l n="94">  
+		Scudding along in grandeur proud; 
+</l><l n="95">  
+		And mark the varying shadows cast 
+</l><l n="96">  
+		On down or fallow as it past; 
+</l><l n="97">  
+		Or view the sudden catching light 
+</l><l n="98">  
+		Now part the shades and now unite; 
+</l><l n="99">  
+		Till noon's refulgent brightness spread 
+</l><l n="100">  
+		Its glories o'er the mountain's head: 
+<pb n="353"/></l><l n="101">  
+		Then would I bend from my high place 
+</l><l n="102">  
+		To gaze upon the horizon's space, 
+</l><l n="103">  
+		A tract sublime of various grace.</l></div><div type="section"><head>VI.</head><l n="104">  
+		Yet first the charmed eye would greet 
+</l><l n="105">  
+		The lowland home-scenes vallies sweet, 
+</l><l n="106">  
+		   Of wood and turf and field; 
+</l><l n="107">  
+		Where the snug cot, the lordly seat 
+</l><l n="108">  
+		Like grandeur and contentment meet 
+</l><l n="109">  
+		   And mutual beauty yield. 
+</l><l n="110">  
+		And first would trace the winding road 
+</l><l n="111">  
+		   Which through the beech-wood leads 
+</l><l n="112">  
+		By red-cloaked maids and ploughmen trod, 
+</l><l n="113">  
+		   Rich wains and prancing steeds. 
+</l><l n="114">  
+		And first admire those beechen trees, 
+</l><l n="115">  
+		Whose upper branches in the breeze 
+</l><l n="116">  
+		All bare and polished seem to freeze; 
+</l><l n="117">  
+		Whilst, feathered like an archer's barb, 
+</l><l n="118">  
+		Each lower bough in saffron garb, 
+<pb n="354"/></l><l n="119">  
+		Catches the rain-drops as they fall 
+</l><l n="120">  
+		And answers to the night-wind's call. 
+</l><l n="121">  
+		Among those woods one chimney white 
+</l><l n="122">  
+		Just glances in the southern light, 
+</l><l n="123">  
+		Deep bosomed in the impervious glades 
+</l><l n="124">  
+		
+The fairy bower of Brittwell's shades
+	<note n="3" resp="#MRM">Brittwell Nunnery. The retreat of several aged nuns, who were driven from France by the Revolution.</note>.
+
+</l><l n="125">  
+		Is it the woodman's fair retreat 
+</l><l n="126">  
+		   Where merry children sport? 
+</l><l n="127">  
+		Or the rough keeper's jovial seat, 
+</l><l n="128">  
+		Where hounds and huntsman frequent meet, 
+</l><l n="129">  
+		   And hold their sylvan court? 
+</l><l n="130">  
+		Is it the laugh of infants gay, 
+</l><l n="131">  
+		Shaking the forest with their play, 
+</l><l n="132">  
+		   That wakes the echoes round? 
+</l><l n="133">  
+		Or trampling steeds at break of day, 
+</l><l n="134">  
+		The noisy pack, the clarion's lay? 
+</l><l n="135">  
+		What wakes thy voice, coy echo, say? 
+</l><l n="136">  
+		   It is a holier sound.</l><pb n="355"/></div><div type="section"><head>VII.</head><l n="137">  
+		There, from their native country driven, 
+</l><l n="138">  
+		The nuns' sweet vespers rise to heaven. 
+</l><l n="139">  
+		Exiles of France! in early life 
+</l><l n="140">  
+		They fled the world's tumultuous strife, 
+</l><l n="141">  
+		To find within a convent's breast 
+</l><l n="142">  
+		The present calm, the future blest. 
+</l><l n="143">  
+		They sought for peace, and peace they found, 
+</l><l n="144">  
+		Till impious Havock glaring round 
+</l><l n="145">  
+		Of earth, of heaven the ties unbound, 
+</l><l n="146">  
+		   And said, maids ye are free! 
+</l><l n="147">  
+		But freedom's prostituted sound 
+</l><l n="148">  
+		   To them was misery. 
+</l><l n="149">  
+		Chased from their voluntary prison, 
+</l><l n="150">  
+		They seemed as from some earthquake risen, 
+</l><l n="151">  
+		Where all they loved, where all they knew 
+</l><l n="152">  
+		Had vanished from their tear-dimmed view. 
+</l><l n="153">  
+		Nor place to sit them down and pray, 
+</l><l n="154">  
+		Nor friends, nor home, nor grave had they. 
+<pb n="356"/></l><l n="155">  
+		Sickening at war's tumultuous din 
+</l><l n="156">  
+		They fled that clime of woe and sin; 
+</l><l n="157">  
+		And here they dwell, the pious band, 
+</l><l n="158">  
+		Honoured and safe in Albion's land; 
+</l><l n="159">  
+		And though perchance a casual tear 
+</l><l n="160">  
+		Fall for the convent once so dear, 
+</l><l n="161">  
+		Yet sweet contentment's patient smile 
+</l><l n="162">  
+		Shall grace each placid cheek the while; 
+</l><l n="163">  
+		Here, where they keep their holy vow, 
+</l><l n="164">  
+		Here is their native country now: 
+</l><l n="165">  
+		For here, though all unknown the tongue, 
+</l><l n="166">  
+		The tenderest sound of welcome rung; 
+</l><l n="167">  
+		Here pity beams in every eye; 
+</l><l n="168">  
+		Here blest they live---more blest shall die.</l></div><div type="section"><head>VIII.</head><l n="169">  
+		From pious Brittwell pass we now 
+</l><l n="170">  
+		At freedom's honoured shrine to bow 
+<pb n="357"/></l><l n="171">  
+		
+		   On Chalgrove's neighbouring field<note n="4" resp="#MRM">The spot where Hampden fell.</note>;
+
+</l><l n="172">  
+		An undistinguished speck it seems 
+</l><l n="173">  
+		Where scarce the sun's refulgent beams 
+</l><l n="174">  
+		   One spark of light can vield; 
+</l><l n="175">  
+		A common spot of earth, where grows 
+</l><l n="176">  
+		   In summer time the yellow corn; 
+</l><l n="177">  
+		Where now his grain the seedsman throws 
+</l><l n="178">  
+		   With careful hand from early morn; 
+</l><l n="179">  
+		Yet pauses midst his toil to tell 
+</l><l n="180">  
+		That in that field bold Hampden fell. 
+</l><l n="181">  
+		   Hampden! thy name from age to age 
+</l><l n="182">  
+		The patriot heart shall fire; 
+</l><l n="183">  
+		   The good, the fair, the brave, the sage 
+</l><l n="184">  
+		All weep thy funeral pyre. 
+</l><l n="185">  
+		Thy very enemy confest 
+</l><l n="186">  
+		
+		The virtues of thy noble breast<note n="5" resp="#MRM">See the character of Hampden in Lord Clarendon's History.</note>;
+
+</l><l n="187">  
+		Hard as it is amid the jar 
+</l><l n="188">  
+		Of falling thrones, of civil war 
+<pb n="358"/></l><l n="189">  
+		To judge of man's inconstant state, 
+</l><l n="190">  
+		Even he confessed thee good and great. 
+</l><l n="191">  
+		How was the Stuart fallen, when thou 
+</l><l n="192">  
+		Didst brave his power with dauntless brow! 
+</l><l n="193">  
+		How raised when Falkland by him stood 
+</l><l n="194">  
+		As great as thou, as wise, as good! 
+</l><l n="195">  
+		   Oh who, by equal fame misled, 
+</l><l n="196">  
+		      Who shall the righteous cause decide, 
+</l><l n="197">  
+		   When for his king Lord Falkland bled, 
+</l><l n="198">  
+		      When Hampden for his country died!</l></div><div type="section"><head>IX.</head><l n="199">  
+		How boldly yonder cloud so bright 
+</l><l n="200">  
+		   Throws out that clump of trees; 
+</l><l n="201">  
+		Scarce, till it crost the ethereal light, 
+</l><l n="202">  
+		Like the wren's plume on snow-ridge white, 
+</l><l n="203">  
+		   The keenest eye that wood could seize. 
+</l><l n="204">  
+		'Tis distant Farringdon I deem; 
+</l><l n="205">  
+		And far below Thames' silver stream 
+<pb n="359"/></l><l n="206">  
+		Thrids through the fair romantic bridge 
+</l><l n="207">  
+		   Of Wallingford's old town; 
+</l><l n="208">  
+		And high above the Whittenham ridge 
+</l><l n="209">  
+		   Seems the gay scene to crown. 
+</l><l n="210">  
+		But what is that, which to the right, 
+</l><l n="211">  
+		   Upon the horizon's utmost verge, 
+</l><l n="212">  
+		A fairy picture glitters bright, 
+</l><l n="213">  
+		   Like sea-foam on the crested surge? 
+</l><l n="214">  
+		Is it the varying fleecy cloud 
+</l><l n="215">  
+		That takes in sport the figure proud, 
+</l><l n="216">  
+		Where domes and turrets seem to rise, 
+</l><l n="217">  
+		And spiry steeples mock our eyes? 
+</l><l n="218">  
+		No; real is that lovely scene, 
+</l><l n="219">  
+		'Tis England's boast, 'tis learning's Queen, 
+</l><l n="220">  
+		'Tis Oxford. Not the unlettered maid 
+</l><l n="221">  
+		May dare approach her hallowed shade; 
+</l><l n="222">  
+		Nor chant a requiem to each name 
+</l><l n="223">  
+		That wakened there to deathless fame; 
+</l><l n="224">  
+		Nor bid the Muse's blessing rest 
+</l><l n="225">  
+		For ever in her honoured breast.</l><pb n="360"/></div><div type="section"><head>X.</head><l n="226">  
+		Oh, when I dared the Muse to name 
+</l><l n="227">  
+		Did it not wake my spirit's flame? 
+</l><l n="228">  
+		Did it not guide my eye, my soul 
+</l><l n="229">  
+		To yonder distant shadowy knoll? 
+</l><l n="230">  
+		And whisper in each joyous thrill 
+</l><l n="231">  
+		
+		'Tis Milton's home, 'tis Forest Hill<note n="6" resp="#MRM">The village from which Milton married his first wife, Miss Mary Powel, and the supposed scene of L'Allegro. For a very interesting account of this interesting spot the reader is referred to a letter from Sir William Jones to Lady Spencer, contained in Lord Teignmouth's edition of Sir William Jones's Works.</note>?
+
+</l><l n="232">  
+		Yes, there he lived, and there he sung, 
+</l><l n="233">  
+		When life and hope and love were young; 
+</l><l n="234">  
+		There, grace and genius at his side, 
+</l><l n="235">  
+		He won his half-disdainful bride; 
+</l><l n="236">  
+		And there the lark "in spite of sorrow," 
+</l><l n="237">  
+		Still at his "window bade good morrow 
+</l><l n="238">  
+		"Through the sweet-briar, or the vine, 
+</l><l n="239">  
+		Or the twisted eglantine." 
+<pb n="361"/></l><l n="240">  
+		Oh happy hill! thy summer vest 
+</l><l n="241">  
+		Lives in his richest colouring drest; 
+</l><l n="242">  
+		Oh happy hill! thou saw'st him blest. 
+</l><l n="243">  
+		Thou saw'st him blest, the greatest man 
+</l><l n="244">  
+		That ever trod life's grovelling span--- 
+</l><l n="245">  
+		Shakspeare alone with him could try, 
+</l><l n="246">  
+		Undazzled and untired the sky. 
+</l><l n="247">  
+		   And thou didst view his blooming charm, 
+</l><l n="248">  
+		      That eagle plumed like the dove, 
+</l><l n="249">  
+		   Whose very sleeping grace could warm 
+</l><l n="250">  
+		
+		      The Italian maiden's heart to love.<note n="7" resp="#MRM">In Mr. Todd's Life of Milton there is a wild romantic story of an Italian lady of high birth, who in travelling through England saw Milton, then very young, asleep upon a bank. Enamoured of his beauty, she wrote some verses expressive of her admiration, laid them on his hand, and left him still sleeping. This incident is said to have occasioned his travels in Italy, where he hoped to meet his unknown fair one; and to have been the first cause of his assiduous cultivation of Italian literature, afterwards so dear to him for its own sake.</note></l><l n="251">  
+		Thou saw'st him in his happier hour, 
+</l><l n="252">  
+		When life was love, and genius power; 
+<pb n="362"/></l><l n="253">  
+		When at his touch the awakened string 
+</l><l n="254">  
+		All joyous hailed the laughing spring; 
+</l><l n="255">  
+		And, like the sun, his radiant eyes 
+</l><l n="256">  
+		Glanced on thy earthly Paradise. 
+</l><l n="257">  
+		Thou didst not see those eyes so bright 
+</l><l n="258">  
+		For ever quenched in cheerless night; 
+</l><l n="259">  
+		Thou didst not hear his anguished lays 
+</l><l n="260">  
+		Of "evil tongues and evil days;" 
+</l><l n="261">  
+		Thou saw'st but his gay youth, fair spot--- 
+</l><l n="262">  
+		Happiest for what thou sawest not. 
+</l><l n="263">  
+		And happy still! Though in thy sod 
+</l><l n="264">  
+		No blade remain by Milton trod; 
+</l><l n="265">  
+		Though the sweet gale that sweeps thy plain 
+</l><l n="266">  
+		No touch of Milton's breath retain; 
+</l><l n="267">  
+		Yet here the bards of later days 
+</l><l n="268">  
+		Shall roam to view thee and to praise. 
+</l><l n="269">  
+		Here Jones, ere yet his voice was fame, 
+</l><l n="270">  
+		A lone romantic votary came; 
+</l><l n="271">  
+		He too is gone, untimely gone! 
+</l><l n="272">  
+		But lured by him full many a one 
+<pb n="363"/></l><l n="273">  
+		Shall tread thy hill on pilgrimage; 
+</l><l n="274">  
+		And minstrel, patriot, or sage, 
+</l><l n="275">  
+		Who bent not o'er his Indian bier, 
+</l><l n="276">  
+		Shall mourn him with his Milton here: 
+</l><l n="277">  
+		For till our English tongue be dead, 
+</l><l n="278">  
+		From freedom's breast till life be fled, 
+</l><l n="279">  
+		Till Poesy's quick pulse be still 
+</l><l n="280">  
+		None shall forsake thee, Forest Hill.</l></div><div type="section"><head>XI.</head><l n="281">  
+		Few are the scenes of power to chain 
+</l><l n="282">  
+		   The rapt enthusiast's mind, 
+</l><l n="283">  
+		Like that where Milton's wondrous strain 
+</l><l n="284">  
+		Still seems to linger o'er the plain 
+</l><l n="285">  
+		   Or whisper in the wind. 
+</l><l n="286">  
+		Not pent within the crowded town, 
+</l><l n="287">  
+		Where meanness sweeps away renown; 
+</l><l n="288">  
+		But fresh, and innocent, and fair, 
+</l><l n="289">  
+		As if the mighty master there 
+</l><l n="290">  
+		Still flung his witch-notes on the air. 
+<pb n="364"/></l><l n="291">  
+		   Yet taste and fancy's visions gay 
+</l><l n="292">  
+		      Life's deeper feelings shun, 
+</l><l n="293">  
+		   And fade at friendship's light away, 
+</l><l n="294">  
+		      Like stars before the sun. 
+</l><l n="295">  
+		The spirits of the honour'd dead 
+</l><l n="296">  
+		Before one living form have fled: 
+</l><l n="297">  
+		
+For here beneath fair Sherburn's shade
+	<note n="8" resp="#MRM">Sherburn Lodge, the seat of the late Countess Dowager of Macclesfield, under whose care Zosia Choynowska, the early and beloved friend of the author was placed for education.</note></l><l n="298">  
+		My Zosia dwelt, my Polish maid, 
+</l><l n="299">  
+		My friend most tender and most true, 
+</l><l n="300">  
+		My friend ere friendship's name we knew; 
+</l><l n="301">  
+		The partner of those blissful hours 
+</l><l n="302">  
+		When the world seemed one bank of flowers, 
+</l><l n="303">  
+		Life but a summer's cloudless morn, 
+</l><l n="304">  
+		And love a rose without a thorn. 
+</l><l n="305">  
+		Fleeting as that illusive day, 
+</l><l n="306">  
+		Was friendship's joy, was Zosia's stay; 
+<pb n="365"/></l><l n="307">  
+		For when o'er her majestic form 
+</l><l n="308">  
+		Youth shed his mantling roses warm, 
+</l><l n="309">  
+		When beauty saw her work matured, 
+</l><l n="310">  
+		And grandeur awed whom grace allured, 
+</l><l n="311">  
+		The imperious mandate harshly bore 
+</l><l n="312">  
+		The finished charmer from our shore; 
+</l><l n="313">  
+		Bore her from friendship, bliss, and love, 
+</l><l n="314">  
+		Envy, neglect, contempt to prove 
+</l><l n="315">  
+		From hearts, who frozen as their clime, 
+</l><l n="316">  
+		Would antedate the work of time, 
+</l><l n="317">  
+		And nip her beauties in their prime. 
+</l><l n="318">  
+		Oh, ever-loved, return again! 
+</l><l n="319">  
+		Return! and soon the blooming train 
+</l><l n="320">  
+		Of childish friends shall meet to share 
+</l><l n="321">  
+		Thy soft caress, my Polish fair! 
+</l><l n="322">  
+		Again shall view thy sparkling eye 
+</l><l n="323">  
+		And Empress-form admiringly; 
+</l><l n="324">  
+		Each emulously crowding round; 
+</l><l n="325">  
+		Each listening for one silver sound; 
+<pb n="366"/></l><l n="326">  
+		And thou to all, with Queen-like smile, 
+</l><l n="327">  
+		Wilt sweet attention shew the while, 
+</l><l n="328">  
+		Of kindness full and courtesy; 
+</l><l n="329">  
+		Though one alone,---Oh happiest she!--- 
+</l><l n="330">  
+		Scarce from thy tongue shall greeting hear, 
+</l><l n="331">  
+		Or find thy love, but in thy tear. 
+</l><l n="332">  
+		The dews of heaven fall not so sweet 
+</l><l n="333">  
+		As friendship's tears with joy replete; 
+</l><l n="334">  
+		Haste on my breast such dews to rain, 
+</l><l n="335">  
+		My ever-loved, return again!</l></div><div type="section"><head>XII.</head><l n="336">  
+		The pause hath checked my spirit glad,--- 
+</l><l n="337">  
+		Deep doubting hope is ever sad; 
+</l><l n="338">  
+		But sadder thoughts now intervene 
+</l><l n="339">  
+		To cloud that sweet and tranquil scene. 
+</l><l n="340">  
+		Direr than absence is the foe 
+</l><l n="341">  
+		Who waits to give the fatal blow; 
+<pb n="367"/></l><l n="342">  
+		Weeping within that mansion fair 
+</l><l n="343">  
+		Sits filial love, Death hovers there. 
+</l><l n="344">  
+		He comes not now to lead the bloom 
+</l><l n="345">  
+		Of youth to an undreaded tomb; 
+</l><l n="346">  
+		He comes not now to tame the pride 
+</l><l n="347">  
+		Of matron health confirmed and tried; 
+</l><l n="348">  
+		Not towering man provokes his rage; 
+</l><l n="349">  
+		'Tis woman, feebleness, and age. 
+</l><l n="350">  
+		And yet nor beauty early cropped, 
+</l><l n="351">  
+		Nor manhood's strength untimely dropped, 
+</l><l n="352">  
+		Could waken more regretful sighs 
+</l><l n="353">  
+		Or more with sorrow blend surprise. 
+</l><l n="354">  
+		For she, his noble prey, had stood 
+</l><l n="355">  
+		Like an old oak in Sherburn wood. 
+</l><l n="356">  
+		In deepest verdure richly decked 
+</l><l n="357">  
+		Whose ample branches waved unchecked; 
+</l><l n="358">  
+		And though dead boughs commingling grew, 
+</l><l n="359">  
+		Abrupt and bare, of darker hue; 
+</l><l n="360">  
+		Though weeds minute and yellow moss 
+</l><l n="361">  
+		With varied tints the bark emboss;--- 
+<pb n="368"/></l><l n="362">  
+		Yet lovely was its pleasant shade; 
+</l><l n="363">  
+		Lovely the trunk with moss inlaid; 
+</l><l n="364">  
+		Lovely the long-haired lichens grey; 
+</l><l n="365">  
+		Lovely its pride and its decay. 
+</l><l n="366">  
+		Such Macclesfield thou wast! Old Time 
+</l><l n="367">  
+		Himself had spared thy beamy prime 
+</l><l n="368">  
+		Uninjured, as on Greece's strand 
+</l><l n="369">  
+		He views the works of Phidias' hand, 
+</l><l n="370">  
+		And bids the sun, the dews, the air 
+</l><l n="371">  
+		Perfection's noblest image spare. 
+</l><l n="372">  
+		So time had passed o'er thee, bright dame; 
+</l><l n="373">  
+		All changed, but thou wast still the same, 
+</l><l n="374">  
+		Still skilled to give the fading flower 
+</l><l n="375">  
+		More brilliant life by painting's power; 
+</l><l n="376">  
+		Still skilled the nimble steel to ply 
+</l><l n="377">  
+		With quick inventive industry; 
+</l><l n="378">  
+		Still skilled to frame the moral rhyme, 
+</l><l n="379">  
+		Or point with Gospel truths the lay sublime. 
+</l><l n="380">  
+		And rarer yet, 'mid age's frost 
+</l><l n="381">  
+		The fire of youth thou had'st not lost; 
+<pb n="369"/></l><l n="382">  
+		Still at another's bliss could'st glow; 
+</l><l n="383">  
+		Still melt to hear another's woe; 
+</l><l n="384">  
+		Still give the poor man's cares relief; 
+</l><l n="385">  
+		Still bend to soothe the mourner's grief. 
+</l><l n="386">  
+		Though near a century's course had sped 
+</l><l n="387">  
+		And bleached thy venerable head, 
+</l><l n="388">  
+		By age's vice and woe untold 
+</l><l n="389">  
+		Thy years remained---thou wast not old! 
+</l><l n="390">  
+		And so to live, and so to die, 
+</l><l n="391">  
+		Is endless rare felicity. 
+</l><l n="392">  
+		
+		But there is one<note n="9" resp="#MRM">The Right Honourable Lady Mary Parker; now, alas! also dead.</note>, whose ready tear
+
+</l><l n="393">  
+		Bedews thy pale cheek on thy bier; 
+</l><l n="394">  
+		One shrinking from the admiring gaze, 
+</l><l n="395">  
+		Whom I may love but dare not praise. 
+</l><l n="396">  
+		Oh friend of Zosia! friend of all 
+</l><l n="397">  
+		Whom misery, pain, and want enthral! 
+</l><l n="398">  
+		Be comforted. Though ne'er again 
+</l><l n="399">  
+		Thy mother's hand thy hand shall strain, 
+<pb n="370"/></l><l n="400">  
+		Though never shall she feel thy cares, 
+</l><l n="401">  
+		Congenial joys her spirit shares,--- 
+</l><l n="402">  
+		Congenial, yet superior, given 
+</l><l n="403">  
+		By sister Angels in her native Heaven. 
+</l><l n="404">  
+		Oh who would weep the loved-one dead 
+</l><l n="405">  
+		When death is bliss! Be comforted.</l></div><div type="section"><head>XIII.</head><l n="406">  
+		Why thus in fond though vain relief 
+</l><l n="407">  
+		With weeping praise perpetuate grief? 
+</l><l n="408">  
+		Why, on the dead, the absent Muse, 
+</l><l n="409">  
+		And joy from present friends refuse? 
+</l><l n="410">  
+		Why dwell on yonder mournful dome, 
+</l><l n="411">  
+		And shun those friends' delightful home? 
+</l><l n="412">  
+		'Twere hard to sing thy varying charm, 
+</l><l n="413">  
+		
+		Thou Cottage, Mansion, Village, Farm<note n="10" resp="#MRM">Watlington Farm, the residence of the late William Hayward, Esq. It is saddening to reflect that of the circle of friends for whose amusement this little poem was originally written, scarcely one now remains alive.</note>,
+
+<pb n="371"/></l><l n="414">  
+		   Thou beautiful epitome 
+</l><l n="415">  
+		Of all that useful is and rare, 
+</l><l n="416">  
+		Where Comfort sits with smiling air, 
+</l><l n="417">  
+		   And laughing Hospitality. 
+</l><l n="418">  
+		'Twere hard to sing,---and harder still 
+</l><l n="419">  
+		The dearer charms those halls that fill. 
+</l><l n="420">  
+		'Twere hard to sing,---the sun is low, 
+</l><l n="421">  
+		Quick to the lovely Farm we go, 
+</l><l n="422">  
+		   Its strongest spells to find; 
+</l><l n="423">  
+		And clustered round the blazing fire, 
+</l><l n="424">  
+		When Beauty, Music, Wit inspire, 
+</l><l n="425">  
+		Oh they that learn not to admire 
+</l><l n="426">  
+		   Dull must they be, and deaf, and blind!
+</l></div></body><back>
+		
+	</back></text></TEI>

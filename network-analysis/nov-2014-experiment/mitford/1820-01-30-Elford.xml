@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, January
+               30th 1820</title><author>Mary Russell Mitford</author><editor>Alexandra Drayton</editor><sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor><sponsor>University of Pittsburgh at Greensburg</sponsor><principal>Elisa Beshero-Bondar</principal><respStmt><resp>Transcription and coding by</resp><persName> Alexandra Drayton </persName></respStmt><respStmt><resp>Proofing and corrections by </resp><persName ref="scw">Samantha
+               Webb</persName><!--scw: a few errors remained when checked--> Date last checked <date when="2014-06-02">2014-06-02</date>. </respStmt></titleStmt><editionStmt><edition>This is optional, used to describe this edition, and "should contain phrases
+               describing the edition or version: First digital edition in TEI, date: 4 June 2013.
+               P5.</edition><respStmt><resp>We can include a respStmt here.</resp><persName>Who?</persName></respStmt></editionStmt><publicationStmt><authority>Digital Mitford: The Mary Russell Mitford Archive</authority><pubPlace>Greensburg, PA, USA</pubPlace><date>2013</date><availability><licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence></availability></publicationStmt><seriesStmt><title>Digital Mitford Letters: The Mary Russell Mitford Archive</title></seriesStmt><notesStmt><note>Any special notes on this text? (optional)</note><note>You can have multiple notes here.</note></notesStmt><sourceDesc><msDesc><msIdentifier><repository>Reading Central Library</repository><idno>MS number</idno></msIdentifier><head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1820-01-30">30 January
+                     1820</date>.</head></msDesc></sourceDesc></fileDesc><encodingDesc><editorialDecl><p>Describes our editorial practice.</p></editorialDecl></encodingDesc></teiHeader><text><body><div type="letter"><opener><dateline>
+                  <!-- In a different hand (black ink) on the top right of the page it says 'To Sir W. Elford' --><name type="place">Bertram House</name><date when="1820-01-30"><choice><abbr>Jany</abbr><expan>Jan<ex>uar</ex>y</expan></choice>
+                     <!-- January is abbreviated, have I shown this correctly? --> 30<emph rend="superscript">st</emph>1820.</date></dateline></opener><p> I have just this moment received your most kind &amp; entertaining letter, <rs type="person" ref="#Elford_SirWm">my dear friend</rs>, &amp; I hasten to answer it on
+               the full gallop that I may catch our flying M.P. <persName ref="#Palmer_F">Mr
+                     Fyshe Palmer</persName>
+               - who was in <placeName>Reading</placeName> yesterday &amp; <del rend="squiggles" unit="word" quantity="1"/><damage rend="smudge"/><unclear><supplied>our</supplied></unclear>
+               (Deuce take that
+               blot - more haste worse speed!) our moveable <rs type="person" ref="#Palmer_F">
+                 Member</rs> who was in <placeName>Reading</placeName> yesterday &amp; <emph rend="underline">therefore</emph> will not be there tomorrow. First let me express how unfeignedly
+               sorry I am - we are - for the sickness you have had to encounter at
+                  <placeName>Birkham</placeName> - I hope this will find your daughter recovering
+               both her strength &amp; her looks - &amp; that your cough will disappear in this mild
+               weather - melt &amp; go off like the snow. <rs type="person" ref="#M_Russell">
+                  Mama</rs> &amp; I have kept quite
+               well this unhealthy winter - <rs type="person" ref="Mitford_Geo">Papa</rs> has not -
+               he has had a great deal of <choice><sic>head ach</sic><reg>headache</reg></choice><!--scw:the correction of "headache"continues to appear in the html transformation--> &amp; heavy cold
+               - &amp; as he takes no manner of care of himself - comes down from
+                  <placeName>London</placeName> at <time>four
+                  <sic>oclock</sic><corr>o'clock</corr></time><!--scw: the corrected version of "o'clock" continues to appear in the html version--> in the morning on the outside of a
+               coach - &amp; other tendencies of the same nature (I hope he is looking over my
+               shoulder) can scarcely expect to be free from complaint. <persName ref="#Mrs_Dickinson">M<emph rend="superscript">rs</emph> Dickinson</persName> is not yet confined &amp; keeps pretty well as to health
+               though a good deal troubled with superstitious forebodings which I do all in my power
+               to drive out of her head by <unclear><supplied>gayer</supplied></unclear> nonsense. Now you have our
+                  bulletin<unclear>s</unclear> all round.<gap rend="wave"/>What you say of
+                  <title ref="#Ivanhoe">Ivanhoe</title> is admirably just and true - <persName ref="#Rowena">Rowena</persName> is a mere woman of straw - a peg to hang <del rend="squiggles"><gap quantity="1" unit="word"/></del>love upon - as almost all <rs type="person" ref="#Scott_Wal">his</rs> heroines are - of that horrible old
+               woman I had before made dishonourable mention -- &amp; those two scenes of burning
+               &amp; of torture are quite unworthy of so great a Poet - He picked up that love of
+               representing bodily suffering though, where<pb n="2"/>
+               <!-- ??? --><resp ref="#scw"><unclear><supplied>by  word</supplied></unclear></resp> syllable by syllable - It is their <emph rend="underline">fault</emph>, that they are of <gap reason="ms photo"/>
+               <!-- AD: page obscured in photograph - check in library letter --> Poems the most
+               recherchés - Moreover <persName ref="#Genlis_Madame">Madame de Genlis</persName><!--scw: As of June 4, 2014, I believe Madame de Genlis needs a hashtag and xml id--> makes
+                  <title>Petrarque</title> out an angel &amp; then says she is just like him! Really
+               these French women are vain of their own vanity! - Do you ever read <persName>Miss
+                  Burney</persName>'s novels? I mean the lesser <persName ref="#Burney_S">Burney</persName><!--scw:The first Burney refered to is Sarah Burney, half sister of Fanny. She needs an xml id--> - not
+                  <persName ref="#Burney_F">Madame D'Arblay</persName><!--scw: I am not sure whether Fanny Burney should be tagged as D'Arblay or Burney. Have tagged as Burney_F.--> but her sister whom I like better. We are
+               reading one now - <title ref="#Country_Neighbours">Country Neighbours</title> - pretty enough I think. <gap reason="illegible" unit="word" quantity="1"/>
+               <!-- this should be easy to find in the original --> by millions - a heroine who is
+               so young so wise so good so beauti <gap rend="                ="/>ful
+               <!-- beautiful is split over a line, looks like beauti=ful --> &amp; so accomplished
+               that she makes one sick even before she saves her lover's life, an iniquity so
+                  <persName>Miss-Porterish</persName>
+               <!-- Miss Porter a name or a character? --> that I quite wonder at <persName ref="#Burney_S">Miss Burney</persName>'s
+               lighting upon it - the plot too is exceedingly disagreeable &amp; entangled - all in a
+                  <emph rend="underline">snarl</emph> as the cotton-spinners say, &amp; mighty
+               difficult to undo. But nevertheless the book is
+               pretty - there is some good observation in it - &amp; a <rs type="person">sarcastic old lady</rs> whom I
+               like exceedingly - to say nothing of a most <rs type="person">amiable old maid</rs> - Well I think I have
+               talked enough of novels - Did you ever read a little book which has been lately
+               reprinted <bibl><title>The Captivity of Captain John Knox
+                        <sic>in</sic><corr>on</corr><!--scw: the correction "on" appears in the htlm transformation-->the Island of
+               Ceylon</title></bibl>?<!-- Account of the Captivity of Robert Knox and Other Englishmen, in the Island of Ceylon: And of the Captain's Miraculous Escape and Return to England in September 1680, After Detention on the Island of Nineteen Years and a Half ???  -->It
+               is charming - If one did not know it to be nothing but a real true history told by
+               the very man to whom it happened one should take it for one of the enchanting
+               fictions of <persName ref="#Defoe_D">Defoe</persName><!--scw: Daniel Defoe needs an xml:id in SI--> - Nothing but <title>Robinson Crusoe</title> was ever so vividly
+                  real<gap rend="squiggle"/> I thought I had done with books - but I find I have not
+               - <persName ref="#Jonson_B">Ben Jonson</persName>'s <title ref="#Sad_Shepherd">Sad Shepherd</title><!--scw:Jonson's Sad Shepherd needs an xml:id--> is a fragment of a
+               Pastoral Drama said to have been left unfinished in consequence of the ill success of
+               his friend <persName ref="#Fletcher_J">Fletcher</persName>'s exquisite <title ref="#Faithful_Shepherdess">Faithful
+                  Shepherdess</title> - only two acts <resp ref="#scw">&amp;</resp><!--scw: deleted "of" for & inserted preceding.--> a scene remain, but they are enchanting -
+               not in <rs type="person" ref="#Jonson_B">old Ben</rs>'s common Dramatic style, so stiff &amp; artificial - but in the sweet
+               &amp; tender manner of some of his beautiful lyrics <supplied>_</supplied>
+               <!-- an underscore here (looks like "_" --> If finished it would have been one of the
+               finest things in the language - the story relates to <title ref="#Robin_Hood">Robin Hood</title> -
+                  <title ref="#Gammer_Gurtons_Needle">Gammer Gurton's Needle</title> is quite another matter - you know that it
+               is the oldest English play - &amp; really it is one of the most diverting - coarse
+               enough to be true but exceedingly fresh &amp; frolicsome &amp; funny &amp; not at all
+               unintelligible - <persName ref="#Miss_James">Miss James</persName> who is <del rend="crossout">by
+                  far</del><hi rend="superscript">one of</hi> the most elegant person of my
+               acquaintance says she likes it better than any comedy in the language - one of the
+               characters in it always put me in mind of <persName ref="#Edie_Olchiltree">Edie
+                  Ochiltree</persName> - not in <add place="above"><metamark function="insertion" rend="caret">his</metamark></add> supernatural
+               capacity - <gap rend="scribble"><!-- illegible word --></gap> which you dislike so
+               much - but in his better vocation of a merry old beggar - that
+                  <title ref="#Antiquary">"Antiquary"</title> after all is my favourite of the whole set of Scotch
+               novels</p><!--scw: proofread and code updated according to new guidelines to this point as of June 4, 2014. Still contains errors in the coding which I'm not up to date on, and some of the corrections as indicated appear in the html version for reasons I cannot glean today.--></div></body><back> </back></text></TEI>
