@@ -7,7 +7,8 @@
     xmlns="http://www.w3.org/1999/xhtml"
     version="3.0">
     
-    <xsl:output method="xhtml" encoding="utf-8" indent="yes"/>
+    <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat"/>
+  
     <xsl:strip-space elements="*"/>
    <!-- <xsl:variable name="si" select="document('http://mitford.pitt.edu/si.xml')" as="document-node()+"/>-->
     <xsl:template match="/">
@@ -254,8 +255,8 @@
         <span class="context" title="place">
             <xsl:apply-templates/>
         
-       <span class="si">
- </span>
+            <xsl:if test="@ref"> <span class="si" title="{substring-after(@ref, '#')}">
+ </span></xsl:if>
         </span>
     </xsl:template>
 
@@ -287,9 +288,10 @@
             <xsl:apply-templates/>
        
        
-           <span class="si">
+           <xsl:if test="@ref"><span class="si" title="{substring-after(@ref, '#')}">
               
         </span>
+           </xsl:if>
        
         </span>
     </xsl:template>
@@ -298,9 +300,9 @@
         <span class="context" title="org">
             <xsl:apply-templates/>
        
-         <span class="si">
+            <xsl:if test="@ref"><span class="si" title="{substring-after(@ref, '#')}">
             
-        </span>
+        </span></xsl:if>
         </span>
     </xsl:template>
     
@@ -309,17 +311,17 @@
             <xsl:apply-templates/>
        
         
-       <span class="si">
+            <xsl:if test="@ref"><span class="si" title="{substring-after(@ref, '#')}">
             
-        </span>
+       </span></xsl:if>
         </span>
     </xsl:template>
     
     <xsl:template match="body//title | body//bibl">
         <span class="context" title="title"><xsl:apply-templates/>
-       <span class="si">
+            <xsl:if test="@ref"> <span class="si" title="{substring-after(@ref, '#')}">
             
-        </span>
+      </span></xsl:if>
         </span>
     </xsl:template>
 

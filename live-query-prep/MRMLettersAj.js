@@ -1,4 +1,12 @@
 function init() {
+// var body = document.querySelector("body");
+//    body.addEventListener('activate', siComplete, false);
+
+    var siComps = document.getElementsByClassName("si");
+    for (var c = 0; c < siComps.length; c++) {
+        siComps[c].addEventListener('activate', siComplete, false)
+    }
+
     var anchors = document.getElementsByClassName("anchor");
     for (var i = 0; i < anchors.length; i++) {
         anchors[i].addEventListener('mouseover', show_footnote, false);
@@ -10,7 +18,9 @@ function init() {
         anchors[i].addEventListener('touchleave', hide_footnote, false);
 
     }
+
     var siEnts = document.getElementsByClassName("context");
+
     for (var s = 0; s < siEnts.length; s++) {
         siEnts[s].addEventListener('mouseover', show_SI, false);
         siEnts[s].addEventListener('click', show_SI, false);
@@ -32,6 +42,40 @@ function init() {
     var checkbox = document.getElementsByTagName("input:)
     checkbox.onclick = */
 }
+
+function siComplete() {
+
+    var title = this.getAttribute("title");
+
+    var xmlhttp = newXMLHttpRequest();
+    xmlhttp.open('GET', 'http://mitford.pitt.edu/si.xml', true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function() {
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var xmldoc = httpRequest.responseXML;
+
+            var entries = xmldoc.querySelector("[xml:id]")
+            for (var e=0; e < entries.length; e++) {
+                if (entries[e].getAttribute("xml:id") == title)
+                    console.log('entries['+ e + '] =' + entries[e]);
+
+
+
+            //var match = xmldoc.querySelector("[xml:id]" == title);
+
+            var matchKids = match.childNodes;
+            var txt = "";
+            for (m = 0; m < matchKids.length; m++) {
+             txt = txt + matchKids[m] + "| "
+
+            }
+            this.innerHTML = "<p>" + txt + "</p>";
+            }
+        }
+        }
+}
+
 
 function show_footnote() {
     var footnote = this.firstElementChild;
