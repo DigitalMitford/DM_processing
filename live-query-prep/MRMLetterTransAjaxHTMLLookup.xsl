@@ -7,7 +7,7 @@
     xmlns="http://www.w3.org/1999/xhtml"
     version="3.0">
     
-    <xsl:output method="xhtml" encoding="utf-8" indent="yes"/>
+    <xsl:output method="xml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat"/>
     <xsl:strip-space elements="*"/>
     <xsl:variable name="si" select="document('http://mitford.pitt.edu/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
