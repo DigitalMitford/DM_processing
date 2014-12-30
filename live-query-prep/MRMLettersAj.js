@@ -1,11 +1,11 @@
 function init() {
-// var body = document.querySelector("body");
-//    body.addEventListener('activate', siComplete, false);
+var body = document.querySelector("body");
+    body.addEventListener('activate', siComplete, false);
 
-    var siComps = document.getElementsByClassName("si");
-    for (var c = 0; c < siComps.length; c++) {
-        siComps[c].addEventListener('activate', siComplete, false)
-    }
+    //var siComps = document.getElementsByClassName("si");
+    //for (var c = 0; c < siComps.length; c++) {
+      //  siComps[c].addEventListener('activate', siComplete, false)
+   // }
 
     var anchors = document.getElementsByClassName("anchor");
     for (var i = 0; i < anchors.length; i++) {
@@ -44,8 +44,10 @@ function init() {
 }
 
 function siComplete() {
+    var siBoxes = document.getElementsByClassName("si");
+    for (var b = 0; b < siBoxes.length; b++) {
 
-    var title = this.getAttribute("title");
+    var title = siBox[b].getAttribute("title");
 
     var xmlhttp = newXMLHttpRequest();
     xmlhttp.open('GET', 'http://mitford.pitt.edu/si.xml', true);
@@ -56,7 +58,7 @@ function siComplete() {
             var xmldoc = httpRequest.responseXML;
 
             var entries = xmldoc.querySelector("[xml:id]")
-            for (var e=0; e < entries.length; e++) {
+            for (var e = 0; e < entries.length; e++) {
                 if (entries[e].getAttribute("xml:id") == title)
                     console.log('entries['+ e + '] =' + entries[e]);
 
@@ -64,16 +66,17 @@ function siComplete() {
 
             //var match = xmldoc.querySelector("[xml:id]" == title);
 
-            var matchKids = match.childNodes;
+            var matchKids = entries[e].childNodes;
             var txt = "";
             for (m = 0; m < matchKids.length; m++) {
              txt = txt + matchKids[m] + "| "
 
             }
-            this.innerHTML = "<p>" + txt + "</p>";
+            siBoxes[b].innerHTML = "<p>" + txt + "</p>";
             }
         }
         }
+    }
 }
 
 
