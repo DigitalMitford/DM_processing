@@ -47,28 +47,30 @@ function siComplete() {
     var siBoxes = document.getElementsByClassName("si");
     for (var b = 0; b < siBoxes.length; b++) {
 
-    var title = siBox[b].getAttribute("title");
+        var title = siBox[b].getAttribute("title");
+        console.log('title = ' + title);
 
     var xmlhttp = newXMLHttpRequest();
-    xmlhttp.open('GET', 'http://mitford.pitt.edu/si.xml', true);
+    xmlhttp.open('GET', 'http://ebeshero.github.io/si.xml', true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            var xmldoc = httpRequest.responseXML;
+            var xmldoc = XMLHttpRequest.responseXML;
 
             var entries = xmldoc.querySelector("[xml:id]")
             for (var e = 0; e < entries.length; e++) {
-                if (entries[e].getAttribute("xml:id") == title)
+                if (entries[e].getAttribute("xml:id") == title);
                     console.log('entries['+ e + '] =' + entries[e]);
 
 
 
-            //var match = xmldoc.querySelector("[xml:id]" == title);
 
+            //var match = xmldoc.querySelector("[xml:id]").getAttribute("xml:id") == title);
+                var txt = "";
             var matchKids = entries[e].childNodes;
-            var txt = "";
-            for (m = 0; m < matchKids.length; m++) {
+
+           for (m = 0; m < matchKids.length; m++) {
              txt = txt + matchKids[m] + "| "
 
             }
