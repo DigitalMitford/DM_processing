@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-    <xsl:output method="xml" indent="yes"/>
+    <xsl:output method="xml" encoding="utf-8" indent="yes"/>
     <xsl:strip-space elements="*"/>
+    
+   
     <xsl:variable name="si" select="document('http://mitford.pitt.edu/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
@@ -26,20 +28,33 @@
                     <hr/>
                 </div>
                 <div id="menubar">
-                    <h2><a href="index.html">Welcome</a> | <a href="about.html">About</a> | <a
-                        href="search.html">Search</a> | <a href="literature.html">Literary
-                            Works</a> | <a href="letters.html">Letters</a> | <a href="visual.html"
-                                >People, Places, and Networks</a> | <a href="maps.html">Maps</a> | <a
-                                    href="contact.html">Contact</a> | <a href="workshop.html">Workshop
-                                        Materials</a></h2>
-                    
+                    <h3>Digital Mitford: The Mary Russell Mitford Archive</h3>
+                    <ul> <li><a href="index.html">Welcome</a></li> 
+                        <li><a href="about.html">About</a></li> 
+                        <li><a href="bibliogType.html">Published Works</a></li>  <li><a href="lettersData.html">Manuscript Locations</a></li> 
+                        <li> <a href="letters.html">Letters</a></li> 
+                        <li><a href="visual.html">People, Places, and Networks</a></li> 
+                        <li><a href="staff.html">Staff</a></li>  
+                        <li><a href="workshop.html">Workshop Materials</a></li></ul>
                 </div>
                 
                 
-                <hr/>
+          
                 <div id="container">
                     
                     <div id="letterHead">
+                        <p class="boilerplate">
+                            <span>
+                                <strong>Maintained by: </strong> Elisa E. Beshero-Bondar (ebb8 at
+                                pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                            </span>
+                            
+                            <span>
+                                <strong>Last modified: </strong>
+                                <xsl:value-of select="current-dateTime()"/>
+                            </span>
+                            
+                        </p> 
                         <div id="fieldset">
                             <fieldset>
                                 <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
@@ -121,7 +136,7 @@
            
             <xsl:choose>
                 <xsl:when test="contains(//msIdentifier/repository, 'Reading Central')"><xsl:for-each select="tokenize(respStmt/resp[idno]/idno, ', ')">       
-                <a href="{current()}"><xsl:value-of select="current()"/> </a>
+                <a href="{current()}"><xsl:value-of select="current()"/> </a><xsl:text>, </xsl:text>
             </xsl:for-each>
                 </xsl:when>
             <xsl:otherwise>
@@ -190,11 +205,19 @@
             <xsl:apply-templates/></span>
         </p>
     </xsl:template>
+    
+    <xsl:template match="rdg">
+        <!--ebb: Be careful of this. I'm writing this template match to suppress rdg elements on the understanding that we are using <lem> to indicate a Mitford editor's authoritative reading of the ms, vs. a misreading or alternate reading by L'Estrange or someone else. I'm not indicating the @wit here; it may need to be adjusted depending on the letter.-->
+    </xsl:template>
 
     <xsl:template match="closer">
-        <div id="closer">
+        <div class="closer">
             <xsl:apply-templates/>
         </div>
+    </xsl:template>
+    
+    <xsl:template match="signed">
+        <xsl:apply-templates/><br/>
     </xsl:template>
     
     <xsl:template match="addrLine">
@@ -507,5 +530,5 @@
     </xsl:template>
     
    
-
 </xsl:stylesheet>
+
