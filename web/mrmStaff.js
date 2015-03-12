@@ -38,6 +38,8 @@
            var mainEntry = document.getElementsByClassName('entry');
            for (var i = 0; i < mainEntry.length; i++) {
                if (mainEntry[i].querySelector("span.more"))
+
+              
                mainEntry[i].addEventListener('mouseover', showMore, false);
                mainEntry[i].addEventListener('click', showMore, false);
              mainEntry[i].addEventListener('mouseout', hideMore, false);
@@ -48,14 +50,20 @@
 
 
            function showMore() {
+               var arrow = this.querySelector("span.arrow");
                var whatMore =  this.querySelector("span.more");
                console.log('whatMore = ' + whatMore);
+               arrow.innerHTML = '&#x21a5;';
                whatMore.style.display = "inline";
+
            }
 
            function hideMore() {
+               var arrow = this.querySelector("span.arrow");
                var whatMore = this.querySelector("span.more");
+
                whatMore.style.display = "none";
+               arrow.innerHTML = '&#x21b4;';
            }
 
        }

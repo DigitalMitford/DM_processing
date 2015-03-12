@@ -120,12 +120,18 @@
      <xsl:if test="persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')]">
          <xsl:text>, </xsl:text>
          <xsl:value-of select="string-join(persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')], ', ')"/>
-         
-     </xsl:if></span>
+        
+     </xsl:if>
+         <xsl:if test="note/text()">
+             <span class="arrow">&#x21b4;</span>
+         </xsl:if>
+     
+     </span>
      
    
            
            <xsl:if test="note/text()">
+        
                <span class="more">
                <xsl:apply-templates select="note"/>
                </span>

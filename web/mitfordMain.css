@@ -76,13 +76,16 @@ span.entry {
     
 }
 span.entry span.head{display:block;
-font-weight:400;
+font-weight:550;
 padding: 5px;
 font-size: 1.02em;
 }
+span.arrow {display:inline; color: #2929A3; font-size:1.2em;}
 
 span.entry span.more{font-size:.8em;
-margin-left:20px;
+
+margin-left: 30px;
+display:block;
 display:none;
 }
 
