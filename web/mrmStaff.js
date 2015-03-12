@@ -39,7 +39,7 @@
            for (var i = 0; i < mainEntry.length; i++) {
                if (mainEntry[i].querySelector("span.more"))
 
-              
+
                mainEntry[i].addEventListener('mouseover', showMore, false);
                mainEntry[i].addEventListener('click', showMore, false);
              mainEntry[i].addEventListener('mouseout', hideMore, false);
