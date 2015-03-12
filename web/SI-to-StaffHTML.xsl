@@ -18,7 +18,7 @@
                 <meta name="Description" content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
                 <meta name="keywords" content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
                 <link rel="stylesheet" type="text/css" href="mitfordMain.css"/>
-                <script type="text/javascript" src="imagerotat.js" xml:space="preserve">***</script>
+                <script type="text/javascript" src="mrmStaff.js" xml:space="preserve">***</script>
                 
                 
             </head>
@@ -48,49 +48,49 @@
                         
                         <div id="editors">
                         <h3>Editors:</h3>
-                        <dl>
+                        
                             <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]">
                                 <xsl:sort select=".//surname"/>
                             </xsl:apply-templates>   
                             
                             
    
-                        </dl>
+                        
                             
                             <h3>Consulting Editors: Data Visualization Group</h3>
 
-                            <dl>
+                           
                                 
                                 <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Data')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
                                 
-                            </dl>
+                            
                             
                             <h3>Student Assistants</h3>
-                            <dl>
+                           
                                 
                                 <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Assistant')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
                                 
-                            </dl>
+                            
                             <h3>Advisory Board</h3>
-                            <dl>
+                           
                                 <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Advisory')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
-                            </dl>
+                            
                         <h3>Consultants</h3>
-                            <dl>
+                            
                                 <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Data'))][matches(., 'Consult')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
-                            </dl>
+                            
                         </div>
             
                     </div>
@@ -102,7 +102,7 @@
     
     <xsl:template match="listPerson[@type='Mitford_Team']/person">
               
-     <dt>  <xsl:choose><xsl:when test="persName/ptr">
+     <span class="entry">  <span class="head"><xsl:choose><xsl:when test="persName/ptr">
              <a href="{persName/ptr/@target}"><xsl:apply-templates select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
              <xsl:apply-templates select="persName/surname"/>
             
@@ -121,16 +121,18 @@
          <xsl:text>, </xsl:text>
          <xsl:value-of select="string-join(persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')], ', ')"/>
          
-     </xsl:if>
+     </xsl:if></span>
      
-     </dt>
+   
            
-           <xsl:if test="note"><dd>
+           <xsl:if test="note/text()">
+               <span class="more">
                <xsl:apply-templates select="note"/>
-               
-           </dd>
+               </span>
+           
            </xsl:if>
   
+     </span>
     </xsl:template>
     
     
