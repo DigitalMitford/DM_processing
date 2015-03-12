@@ -59,7 +59,7 @@
 
                             <dl>
                                 
-                               
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Data')]]"/>  
                                 
                                 
                             </dl>
@@ -67,13 +67,13 @@
                             <h3>Student Assistants</h3>
                             <dl>
                                 
-                                
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Assistant')]]"/>  
                                 
                                 
                             </dl>
                             <h3>Advisory Board</h3>
                             <dl>
-                                
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Advisory')]]"/>  
                                 
                             </dl>
                         <h3>Consultants</h3>
@@ -93,7 +93,7 @@
     <xsl:template match="listPerson[@type='Mitford_Team']/person">
               
      <dt>  <xsl:choose><xsl:when test="persName/ptr">
-             <a href="{persName/ptr/@target}"><xsl:apply-templates select="persName/forename"/><xsl:text> </xsl:text>
+             <a href="{persName/ptr/@target}"><xsl:apply-templates select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
              <xsl:apply-templates select="persName/surname"/></a></xsl:when>
          <xsl:otherwise>
              <xsl:value-of select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
@@ -101,7 +101,15 @@
          </xsl:otherwise>
          </xsl:choose>
              <xsl:text>, </xsl:text>
-           <xsl:apply-templates select="string-join(.//affiliation, ', ')"/></dt>
+           <xsl:apply-templates select="string-join(.//affiliation, ', ')"/>
+     
+     <xsl:if test="persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')]">
+         <xsl:text>, </xsl:text>
+         <xsl:value-of select="string-join(persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')], ', ')"/>
+         
+     </xsl:if>
+     
+     </dt>
            
            <xsl:if test="note"><dd>
                <xsl:apply-templates select="note"/>

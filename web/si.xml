@@ -33,7 +33,7 @@
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
             <pubPlace>Greensburg, PA, USA</pubPlace>
             <date>2013</date>
-            <availability default="false" status="unknown">
+            <availability>
                <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
                   License</licence>
             </availability>
@@ -41,13 +41,13 @@
          <notesStmt>
             <note>Any special notes on this text? (optional)</note>
          </notesStmt>
-         <sourceDesc default="false">
+         <sourceDesc>
             <p>Information on named entities in this file has been extracted from files in the
                Digital Mitford Archive.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl default="false">
+         <editorialDecl>
             <p>Describes our editorial practice.</p>
          </editorialDecl>
       </encodingDesc>
@@ -210,6 +210,7 @@
                      <surname>Beshero-Bondar</surname>
                      <forename>Elisa</forename>
                      <roleName>Principal Editor</roleName>
+                     <roleName>Founding Editor</roleName>
                      <ptr target="http://www.pitt.edu/~ebb8/"/>
                   </persName>
                   <occupation>Associate Professor of English <affiliation>University of Pittsburgh
@@ -6884,9 +6885,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      1822) </title>
                   <author ref="#Franklin_Eleanor"/>
                </bibl>
-               <bibl xml:id="Confessions_OpiumEater_nonfict"
-                     default="false"
-                     status="draft">
+               <bibl xml:id="Confessions_OpiumEater_nonfict">
                   <title>Confessions of an English Opium-Eater</title>
                   <author ref="#DeQuincey_Thos"/>
                </bibl>
