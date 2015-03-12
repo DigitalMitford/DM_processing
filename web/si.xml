@@ -26,8 +26,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T18:24:24.859-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 844. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T22:58:09.435-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 845. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -81,6 +81,7 @@
                      <forename>Mark</forename>
                      <roleName>Consulting Editor: Data Visualization Group</roleName>
                      <roleName>Advisory Board</roleName>
+                     <ptr target="https://english.stanford.edu/people/mark-algee-hewitt"/>
                   </persName>
                   <occupation>
                      <affiliation>Stanford Literary Lab</affiliation>
@@ -96,6 +97,16 @@
                      <affiliation>Virginia Commonwealth University</affiliation>
                   </occupation>
                   <note type="bio"/>
+               </person>
+               <person xml:id="cjb"><!--ebb: note: This is just a placeholder entry until Carol sends hers in with preferred xml:id.-->
+                  <persName>
+                     <surname>Bolton</surname>
+                     <forename>Carol</forename>
+                     <roleName>Editor</roleName>
+                     <ptr target="http://www.lboro.ac.uk/departments/english-drama/staff/dr-carol-bolton.html"/>
+                  </persName>
+                  <occupation>Programme Director: English <affiliation>Loughborough University</affiliation>
+                  </occupation>
                </person>
                <person xml:id="cmm">
                   <persName>
@@ -153,8 +164,10 @@
                   <persName>
                      <surname>Birnbaum</surname>
                      <forename>David</forename>
+                     <forename>J.</forename>
                      <roleName>Consulting Editor: Data Visualization Group</roleName>
                      <roleName>Advisory Board</roleName>
+                     <ptr target="http://obdurodon.org"/>
                   </persName>
                   <occupation>
                      <affiliation>University of Pittsburgh</affiliation>
@@ -182,6 +195,7 @@
                      <surname>Saglia</surname>
                      <forename>Diego</forename>
                      <roleName>Advisory Board</roleName>
+                     <ptr target="https://unipr.academia.edu/DiegoSaglia"/>
                   </persName>
                   <occupation>
                      <affiliation>Università degli Studi di Parma</affiliation>
@@ -195,6 +209,7 @@
                      <surname>Beshero-Bondar</surname>
                      <forename>Elisa</forename>
                      <roleName>Principal Editor</roleName>
+                     <ptr target="http://www.pitt.edu/~ebb8/"/>
                   </persName>
                   <occupation>Associate Professor of English <affiliation>University of Pittsburgh
                         at Greensburg</affiliation>
@@ -265,6 +280,7 @@
                      <surname>Burwick</surname>
                      <forename>Frederick</forename>
                      <roleName>Advisory Board</roleName>
+                     <ptr target="http://www.english.ucla.edu/all-faculty/547-burwick-frederick"/>
                   </persName>
                   <occupation>
                      <affiliation>University of California, Los Angeles</affiliation>
@@ -388,6 +404,7 @@
                      <forename>Kellie</forename>
                      <roleName>Ph.D.</roleName>
                      <roleName>Founding Editor</roleName>
+                     <ptr target="http://www.babson.edu/academics/faculty/profiles/pages/donovan-kellie.aspx"/>
                   </persName>
                   <occupation>
                      <affiliation>Babson College</affiliation>
@@ -553,6 +570,7 @@
                   <persName>
                      <surname>Parker</surname>
                      <forename>Rebecca</forename>
+                     <forename>Jeanne</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
                   <occupation>Green Scholar, B.A. in History and English Literature, in progress
@@ -601,6 +619,7 @@
                      <surname>Lombardi</surname>
                      <forename>Thomas</forename>
                      <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <ptr target="http://csis.pace.edu/~lombardi/"/>
                   </persName>
                   <occupation>
                      <affiliation>Washington and Jefferson College</affiliation>
@@ -626,6 +645,7 @@
                   <persName>
                      <surname>Hays</surname>
                      <forename>Toni</forename>
+                     <forename>N.</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
                   <occupation>
@@ -7065,8 +7085,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <date>1812</date>
                   <note resp="#ebb">
                      <bibl>
-                        <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T18:24:24.859-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 844. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
+                        <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T22:58:09.435-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 845. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
                   </note>
                </bibl>
                <bibl xml:id="Inez_deCastro_MRMplay">
