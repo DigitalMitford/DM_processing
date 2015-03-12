@@ -43,6 +43,42 @@
                         <p class="boilerplate"><span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar (ebb8 at
                             pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></span><span><strong>Last modified:
                             </strong><xsl:value-of select="current-date()"/></span></p>
+                        
+                        <div id="editors">
+                        <h3>Editors:</h3>
+                        <dl>
+                            <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]"/>   
+                            
+                            
+   
+                        </dl>
+                            
+                            <h3>Consulting Editors: Data Visualization Group</h3>
+                            <dl>
+                                
+                                
+                                
+                                
+                            </dl>
+                            
+                            <h3>Student Assistants</h3>
+                            <dl>
+                                
+                                
+                                
+                                
+                            </dl>
+                            <h3>Advisory Board</h3>
+                            <dl>
+                                
+                                
+                            </dl>
+                        <h3>Consultants</h3>
+                            <dl>
+                                
+                                
+                            </dl>
+                        </div>
             
                     </div>
                 </div>
@@ -51,5 +87,35 @@
         </html>
     </xsl:template>
     
+    <xsl:template match="listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]">
+        
+       <xsl:for-each select="."> 
+           
+         <dt>  <xsl:choose><xsl:when test="persName/ptr">
+             <a href="{persName/ptr/@target}"><xsl:apply-templates select="persName/forename"/><xsl:text> </xsl:text>
+             <xsl:apply-templates select="persName/surname"/></a></xsl:when>
+         <xsl:otherwise>
+             <xsl:value-of select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
+             <xsl:apply-templates select="persName/surname"/>
+         </xsl:otherwise>
+         </xsl:choose>
+             <xsl:text>, </xsl:text>
+           <xsl:apply-templates select="string-join(.//affiliation, ', ')"/></dt>
+           
+           <xsl:if test="note"><dd>
+               <xsl:apply-templates select="note"/>
+               
+           </dd>
+           </xsl:if>
+       
+       
+       </xsl:for-each>
+        
+    </xsl:template>
+    
+    <xsl:template match="title">
+        <i><xsl:apply-templates/></i>
+    </xsl:template>
+
     
 </xsl:stylesheet>
