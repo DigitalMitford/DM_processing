@@ -9,6 +9,8 @@
     
     <xsl:output method="xml" encoding="utf-8" indent="yes"
         doctype-system="about:legacy-compat"/>
+    
+    
     <xsl:template match="/">
         <html>
             <head>
@@ -54,9 +56,10 @@
                         </dl>
                             
                             <h3>Consulting Editors: Data Visualization Group</h3>
+
                             <dl>
                                 
-                                
+                               
                                 
                                 
                             </dl>
@@ -75,7 +78,7 @@
                             </dl>
                         <h3>Consultants</h3>
                             <dl>
-                                
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Data'))][matches(., 'Consult')]]"/>  
                                 
                             </dl>
                         </div>
@@ -87,11 +90,9 @@
         </html>
     </xsl:template>
     
-    <xsl:template match="listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]">
-        
-       <xsl:for-each select="."> 
-           
-         <dt>  <xsl:choose><xsl:when test="persName/ptr">
+    <xsl:template match="listPerson[@type='Mitford_Team']/person">
+              
+     <dt>  <xsl:choose><xsl:when test="persName/ptr">
              <a href="{persName/ptr/@target}"><xsl:apply-templates select="persName/forename"/><xsl:text> </xsl:text>
              <xsl:apply-templates select="persName/surname"/></a></xsl:when>
          <xsl:otherwise>
@@ -107,14 +108,20 @@
                
            </dd>
            </xsl:if>
-       
-       
-       </xsl:for-each>
-        
+  
     </xsl:template>
+    
+    
+    
+    
     
     <xsl:template match="title">
         <i><xsl:apply-templates/></i>
+    </xsl:template>
+    
+    <xsl:template match="note//ptr">
+        
+        <a href="{@target}"><xsl:apply-templates select="@target"/></a>
     </xsl:template>
 
     
