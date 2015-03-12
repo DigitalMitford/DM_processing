@@ -1,5 +1,7 @@
 
-
+function init() {
+    rotate(); toggle();
+}
 
             
             function rotate() {
@@ -67,7 +69,7 @@
            }
 
        }
-           window.onload = toggle;
-           rotate;
+           window.onload = init;
+
 
 
