@@ -49,7 +49,9 @@
                         <div id="editors">
                         <h3>Editors:</h3>
                         <dl>
-                            <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]"/>   
+                            <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]">
+                                <xsl:sort select=".//surname"/>
+                            </xsl:apply-templates>   
                             
                             
    
@@ -59,7 +61,9 @@
 
                             <dl>
                                 
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Data')]]"/>  
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Data')]]">
+                                    <xsl:sort select=".//surname"/>
+                                </xsl:apply-templates>  
                                 
                                 
                             </dl>
@@ -67,18 +71,24 @@
                             <h3>Student Assistants</h3>
                             <dl>
                                 
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Assistant')]]"/>  
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Assistant')]]">
+                                    <xsl:sort select=".//surname"/>
+                                </xsl:apply-templates>  
                                 
                                 
                             </dl>
                             <h3>Advisory Board</h3>
                             <dl>
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Advisory')]]"/>  
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Advisory')]]">
+                                    <xsl:sort select=".//surname"/>
+                                </xsl:apply-templates>  
                                 
                             </dl>
                         <h3>Consultants</h3>
                             <dl>
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Data'))][matches(., 'Consult')]]"/>  
+                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Data'))][matches(., 'Consult')]]">
+                                    <xsl:sort select=".//surname"/>
+                                </xsl:apply-templates>  
                                 
                             </dl>
                         </div>
@@ -94,10 +104,14 @@
               
      <dt>  <xsl:choose><xsl:when test="persName/ptr">
              <a href="{persName/ptr/@target}"><xsl:apply-templates select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
-             <xsl:apply-templates select="persName/surname"/></a></xsl:when>
+             <xsl:apply-templates select="persName/surname"/>
+            
+             </a></xsl:when>
          <xsl:otherwise>
              <xsl:value-of select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
              <xsl:apply-templates select="persName/surname"/>
+              
+            
          </xsl:otherwise>
          </xsl:choose>
              <xsl:text>, </xsl:text>
