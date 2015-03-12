@@ -847,7 +847,7 @@
                      <surname>Needham</surname>
                      <forename>Francis R</forename>
                   </persName>
-                  <note type="bio" resp="ad">
+                  <note type="bio" resp="#ad">
                      <persName ref="#Needham_Francis">Francis R. Needham</persName> was librarian
                      and secretary to the Duke Wellington (based at Stratfield Saye in Hampshire).
                      He was a passionate Mitfordian and worked tirelessly to try and collect
@@ -2451,7 +2451,7 @@
                   <persName>
                      <surname>Fitzharris</surname>
                   </persName>
-                  <note type="bio" resp="kdc">An actor in a local theater company in <placeName ref="#Reading_city">Reading</placeName> before going to <placeName ref="#London_city">London</placeName>. He played the title role in <title ref="#Othello_play">Othello</title> and appeared in the
+                  <note type="bio" resp="#kdc">An actor in a local theater company in <placeName ref="#Reading_city">Reading</placeName> before going to <placeName ref="#London_city">London</placeName>. He played the title role in <title ref="#Othello_play">Othello</title> and appeared in the
                         <title>Sentinel</title> at <placeName ref="#Covent_Garden_Theatre">Covent
                         Garden Theater</placeName>. Reviews of his performances in the <title ref="#New_Monthly_Mag">New Monthly Magazine</title> and <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles
                         Lettres</title> were very unfavorable. </note>
@@ -3832,7 +3832,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Monck_Mrs" sex="2">
                   <persName>Mrs. Monck</persName>
-                  <note resp="lmw">wife of <persName ref="#Monck_JB">J.B. Monck, M.P.</persName>
+                  <note resp="#lmw">wife of <persName ref="#Monck_JB">J.B. Monck, M.P.</persName>
                      <!-- Jane?   Check on her name. LMW-->
                   </note>
                </person>
@@ -4171,7 +4171,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>literary</occupation>
                   <occupation>essayist</occupation>
                   <occupation>biographer</occupation>
-                  <note type="bio" resp="kdc">
+                  <note type="bio" resp="#kdc">
                      <p>Studied at the School of Athens, and was a priest at Delphi. Most famous
                         works are <bibl>
                            <title>Lives of the Noble Greeks and Romans</title> or <title type="alt">Parallel Lives</title> and <title>Moralia</title>
@@ -5543,7 +5543,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Doge Foscari</persName>
                   <note resp="#lmw">character in <title ref="#Foscari_MRMplay">Foscari</title>
                   </note>
-                  <note resp="ebb">See also historical counterpart: <persName ref="#Doge_F_hist">Doge Foscari</persName>.</note>
+                  <note resp="#ebb">See also historical counterpart: <persName ref="#Doge_F_hist">Doge Foscari</persName>.</note>
                </person>
                <person xml:id="Donato">
                   <persName>
@@ -5552,7 +5552,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </persName>
                   <note resp="#lmw">character in <title ref="#Foscari_MRMplay">Foscari</title>
                   </note>
-                  <note resp="ebb">See also historical counterpart: <persName ref="#Donato_hist">Senator Donato</persName>.</note>
+                  <note resp="#ebb">See also historical counterpart: <persName ref="#Donato_hist">Senator Donato</persName>.</note>
                </person>
                <person xml:id="Downes">
                   <persName>Downes</persName>
@@ -5594,7 +5594,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </persName>
                   <note resp="#ebb">character in <title ref="#Foscari_MRMplay">Foscari</title>
                   </note>
-                  <note resp="ebb">See also historical counterpart: <persName ref="#Foscari_son_hist">son of Doge Foscari</persName>.</note>
+                  <note resp="#ebb">See also historical counterpart: <persName ref="#Foscari_son_hist">son of Doge Foscari</persName>.</note>
                </person>
                <person xml:id="Frangipani">
                   <persName>Frangipani</persName>
@@ -6610,7 +6610,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <bibl xml:id="Daniells">
                   <title>Rural Sports</title>
                   <author>William Barker Daniel</author>
-                  <note resp="esh">Printed in numerous editions between <date from="1801" to="1817">1801-1817</date>.</note>
+                  <note resp="#esh">Printed in numerous editions between <date from="1801" to="1817">1801-1817</date>.</note>
                </bibl>
                <bibl xml:id="Enc_Metr">
                   <title>Encyclopedia Metropolitana; or, Universal Dictionary of Knowledge (30
