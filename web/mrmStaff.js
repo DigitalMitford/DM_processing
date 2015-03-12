@@ -1,12 +1,12 @@
 
 
-       var thisImage = 0;
-   /*ebb: This javascript rotates images on reload from server*/         
+
             
             function rotate() {
           var images = new Array ('Images/maryrmitford.png', 'Images/MRMchild.png', 'Images/MRMwrit.png', 'Images/letter.png', 'Images/Flush.png', 'Images/MRMJul.png', 'Images/TMC.png', 'Images/Mitford-puzzle-color-1.png', 'Images/Mitford-puzzle-color-1-label.png')
-  
-  /*ebb: This line randomizes the order of the images:*/
+                var thisImage = 0;
+                /*ebb: This javascript rotates images on reload from server*/
+                /*ebb: This line randomizes the order of the images:*/
       var thisImage = Math.floor(Math.random()*(images.length)) ;
 
           document.getElementById("rotator").src = images[thisImage];
