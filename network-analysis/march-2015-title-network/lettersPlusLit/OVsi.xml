@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Special Index of Named Entities in Our Village</title>
+            <author>Digital Mitford Editors</author>
+            <editor>Elisa Beshero-Bondar</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Prosopography data compiled, researched, and written by</resp>
+               <persName type="hist" ref="#ad">Alexandra Drayton</persName>
+               <persName type="hist" ref="#scw">Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName type="hist" ref="#ad">Alexandra Drayton</persName>
+               <persName type="hist" ref="#scw">Samantha Webb</persName>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Data extraction and compiling of this list to the main Digital Mitford prosopography site index (si.xml) by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date begun: 5 May 2014. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson type="hist">
+            <person xml:id="QueenCaroline">
+               <persName/>
+               <!--Go look at some fleshed out entries in our main site index (si.xml) file for models on how to develop this.-->
+            </person>
+            <person xml:id="AustenJane"/> <!--ebb: How weird that she's not in our main site index yet! When we write up this entry, we should focus on how the Mitfords knew the Austens. 
+               We don't need a huge biography for someone so well known, but we do want the particular Mitfordian angle!-->
+            <person xml:id="WhiteGilbert">
+               <persName>
+                  <surname>Gilbert</surname>
+                  <forename>White</forename>
+               </persName>
+               <birth when="1720-07-18"><placeName>Selborne, Hampshire</placeName></birth>
+               <death when="1793-06-26"><placeName>Selborne, Hampshire</placeName></death>
+               <occupation>Curate, writer, naturalist, botanist</occupation>
+               <note type="bio" resp="#scw">White's most famous and widely cited book, <bibl>The Natural History and Antiquities of Selborne</bibl>is cited by <persName ref="#OVNarrator">the narrator of <title ref="OurVillage1st_ed">Our Village</title></persName> in the introductory <rs type="title" ref="#OV">Our Village</rs> sketch as well as in <rs type="title">Frost and Thaw</rs>...<!--I am sure we will come across his name in other sketches-->Because of his botanical work, his name has been accorded a standard abbreviation for citation purposes in the <bibl>International Code of Botanic Nomenclature</bibl>.
+               <!--ebb: We need to make a list of entries of OV sketches with their own xml:ids.--></note>
+            </person>
+         </listPerson>
+
+         <listPerson type="fict" subtype="int">
+            <person xml:id="RetiredPublican"/>
+            <person xml:id="RetiredPublicansWife"/>
+            <person xml:id="Blacksmith"/>
+            <person xml:id="BlacksmithsWife"/>
+            <person xml:id="Shoemaker"/>
+            <person xml:id="ShoemakersWife"/>
+            
+            <listRelation><!--ebb: the listRelation element is optional, but if we use it, it has to sit in the LAST position inside a listPerson element. 
+               In other words, it needs to sit last in the list, after the person elements. -->
+            </listRelation>
+         </listPerson>
+
+         <listPerson type="fict" subtype="ext">
+
+            <person/>
+         </listPerson>
+         <listPlace>
+            <place/>
+         </listPlace>
+      </body>
+   </text>
+</TEI>
