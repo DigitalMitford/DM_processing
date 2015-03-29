@@ -15,6 +15,6 @@ let $noRef := $e[not(@ref)]
 let $Refel := $e[@ref]
 let $elRefIn := ($si//*[@xml:id= tokenize($Refel/@ref, '#')[last()]]/*[not(. = person)] |  $si//*[@xml:id= tokenize($Refel/@ref, '#')[last()]]/*[. = person]/persName[1])[1]/normalize-space(string())
 
-return ($e/normalize-space(string()), '&#x9;', '(SInote:', $elRefIn, ')', '&#x9;'),  '&#10;'
+return ($e/normalize-space(string()), ' (SInote:', $elRefIn, ')', '&#x9;'),  '&#10;'
 
 )
