@@ -26,8 +26,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T22:58:09.435-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 845. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition> Site Index for the Digital Mitford project. Date: 2015-05-25T23:55:29.06-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 850. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -56,6 +56,38 @@
       <body>
          <div type="Mitford_Team" org="uniform" sample="complete">
             <listPerson type="Mitford_Team">
+               <person>
+                  <persName xml:id="hl">
+                     <surname>Long</surname>
+                     <forename>Heather</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
+               <person>
+                  <persName>
+                     <surname>Paine</surname>
+                     <forename>Margo</forename>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing and Secondary English Education, completed 2015.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
+               <person xml:id="ab">
+                  <persName>
+                     <surname>Booth</surname>
+                     <forename>Alison</forename>
+                     <roleName>Advisory Board</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Virginia</affiliation>
+                  </occupation>
+                  <note type="bio">Professor of English, Booth directs the Collective Biographies of Women (CBW) project at the Institute for Advanced Technology in the Humanities and Scholars' Lab, with supported from the English Department, an ACLS Digital Innovation Fellowship, and an NEH Level II Startup Grant, Office of Digital Humanities.  An annotated bibliography, <ptr target="http://womensbios.lib.virginia.edu"/> led to a relational database of the more than 1200 books and 8000 persons represented in the 13,000 biographical chapters in those books. See <ptr target="http://cbw.iath.virginia.edu/public/index.php"/>. With a stand-aside XML schema, Biographical Elements and Structure Schema, the project team analyzes the narrative conventions of women's biographies in documentary social networks, focusing on sample collections of types of personae.  In 2015-2016, CBW collaborates with <ref target="http://socialarchive.iath.virginia.edu">Social Networks in Archival Contexts</ref> to enhance access to archival records of women worldwide. Booth's research on nineteenth-century transatlantic literary reception history includes a chapter on Mitford and women writers in the completed book, "Homes and Haunts: Visting Writers' Shrines and Countries."</note>
+               </person>
                <person xml:id="ad">
                   <persName>
                      <surname>Drayton</surname>
@@ -172,7 +204,6 @@
                      <affiliation>University of Pittsburgh</affiliation>
                   </occupation>
                   <note type="bio"/>
-
                </person>
                <person xml:id="djh">
                   <persName>
@@ -267,7 +298,6 @@
                      a PhD from the University of Kansas. He specializes in literary theory,
                      eighteenth- and nineteenth-century British poetry (particularly, the epic), and
                      intellectual networks. <ptr target="http://academichood.wordpress.com"/>
-                     
                   </note>
                </person>
                <person xml:id="fbur">
@@ -292,7 +322,8 @@
                      <affiliation>UCLA</affiliation>
                   </occupation>
                   <note type="bio">Gracia Amos is a fourth year undergraduate at UCLA, finishing a degree in English with a concentration in poetry. Her areas of interest include mythology, intermedia, critical theory, and postmodern poetry. She has been a poetry editor for <bibl>
-                        <title>Westwind</title>, UCLA's journal of the literary arts</bibl>, and currently publishes a <bibl>zine with an LA-based artists' collective which she co-founded, <title>Nothing New Publications</title></bibl>.
+                        <title>Westwind</title>, UCLA's journal of the literary arts</bibl>, and currently publishes a <bibl>zine with an LA-based artists' collective which she co-founded, <title>Nothing New Publications</title>
+                     </bibl>.
                   </note>
                </person>
                <person xml:id="ghb">
@@ -337,9 +368,10 @@
                      <forename>Heather</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
-                  <occupation>B.A. in English Literature, in progress
+                  <occupation>B.A. in English Literature, completed in 2014.
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
+                  <note type="bio"/>
                </person>
                <person xml:id="jbb">
                   <persName>
@@ -351,7 +383,7 @@
                   <occupation>M.A. in English &amp; Communication, in progress
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
-                  <occupation>M.L.S. in progress
+                  <occupation>M.L.S., received 2015
                      <affiliation>University at Buffalo</affiliation>
                   </occupation>
                   <note type="bio">Jaime is working on an M.A. thesis the reception of the early works of Eliza Haywood.</note>
@@ -372,8 +404,9 @@
                      literature, Creative Writing: Poetry, Creative Writing: Creative Non-Fiction,
                      and Literary Theory at Tiffin University in Tiffin, OH. His research interests
                      include William Blake, Søren Kierkegaard, British and Danish history and
-                     literature, poetry, and theory. His book, Blake and Kierkegaard: Creation and
-                     Anxiety is available in both hardcover and paperback from Bloomsbury/Continuum.
+                     literature, poetry, and theory. His book, <bibl>
+                        <title>Blake and Kierkegaard: Creation and
+                     Anxiety</title> is available in both hardcover and paperback from Bloomsbury/Continuum</bibl>.
                      He currently lives in the greater Columbus area with his wife Sheridan and his
                      children Penn, Grace, and Zoe.</note>
                </person>
@@ -484,6 +517,18 @@
                   </occupation>
                   <note type="bio">Mary Erica Zimmer comes to Digital Mitford through her interests in scholarly editing, data visualization, textual scholarship, literary influence, and media change. She is a Ph.D. Candidate in Editorial Studies at Boston University’s Editorial Institute and is also associated with several projects through the Folger Shakespeare Library’s Early Modern Digital Agendas group (<ptr target="http://emdigitalagendas.folger.edu/2013/12/03/emda-news/"/>).</note>
                </person>
+               <person xml:id="mns">
+                  <persName>
+                     <surname>Smith</surname>
+                     <forename>Martha</forename>
+                     <forename>Nell</forename>
+                     <roleName>Advisory Board</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Maryland</affiliation>
+                  </occupation>
+                  <note type="bio">The founding Director of <ref target="http://www.mith.umd.edu">the Maryland Institute for Technology in the Humanities, or MITH</ref>, Martha Nell Smith is Professor of English and a Distinguished Scholar-Teacher at the University of Maryland. She has published and contributed extensively to print and digital textual scholarship of Emily Dickinson and her circle, especially Susan Huntington Gilbert Dickinson. She launched the <ref target="http://www.emilydickinson.org/">Dickinson Electronic Archives</ref> in 1997 and with Lara Vetter she is developing <ref target="http://rotunda.upress.virginia.edu/edc/">Emily Dickinson's Correspondences: A Born-Digital Textual Inquiry</ref>.</note>
+               </person>
                <person xml:id="mq">
                   <persName>
                      <surname>Kohli</surname>
@@ -525,9 +570,24 @@
                      <forename>Natalie</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
-                  <occupation>B.A. in English Literature, in progress
+                  <occupation>B.A. in English Literature, completed 2015.
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
+                  <occupation>MLS in progress
+                     <affiliation>Syracuse University</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
+               <person xml:id="oa">
+                  <persName>
+                     <surname>Allard</surname>
+                     <forename>Olivia</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Communication, in progress
+                  <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
                </person>
                <person xml:id="pmd">
                   <persName>
@@ -562,6 +622,7 @@
                   <occupation>Green Scholar, B.A. in History and English Literature, in progress
                      <affiliation>University of Pittsburgh at Greensburg</affiliation>
                   </occupation>
+                  <note type="bio">Rebecca Parker is a student at the <ref target="http://www.greensburg.pitt.edu/">University of Pittsburgh at Greensburg</ref>. She is a double major of English Literature and Social Sciences. Rebecca is currently working on a digital archive of her own. Her project,<ref target="http://nell.obdurodon.org/">The Restoration of Nell Nelson</ref>, started as research during Rebecca's Spring 2014 Semester, for her history capstone.The archive intends to restore the importance of a female investigative reporter that exposed the harmful effects of industrialization in Chicago at the turn of the 20th century. Rebecca's interest in Digital Humanities stemmed from her involvement on the Digital Mitford Project working as <ref target="http://www.pitt.edu/~ebb8/">Dr. Beshero-Bondar</ref>'s Green Scholar. Rebecca is an active member of <ref target="http://www.english.org/sigmatd/">Sigma Tau Delta</ref> and <ref target="http://www.phikappaphi.org/">Phi Kappa Phi</ref> on her campus.</note>
                </person>
                <person xml:id="rnes">
                   <persName>
@@ -595,7 +656,6 @@
                   <occupation>
                      <affiliation>University of Montevallo</affiliation>
                   </occupation>
-                  
                   <note type="bio"> Samantha Webb teaches classes in British Romantic literature,
                      children's literature, and global literature. She specializes in British
                      Romanticism, with an interest in food and agricultural politics, ecology,
@@ -619,7 +679,7 @@
                      <forename>Tracy</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
-                  <occupation>B.F.A. in Creative Writing, in progress
+                  <occupation>B.F.A. in Creative Writing, earned 2014. M. A. in English and Communication, in progress.
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
                   <note type="bio"/>
@@ -647,6 +707,17 @@
                   <occupation>B.A. in History and English Literature, in progress
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
+               </person>
+               <person xml:id="ws">
+                  <persName>
+                     <surname>Sainbert</surname>
+                     <forename>Wilmina</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing, in progress
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
                </person>
                <person xml:id="xjw">
                   <persName>
@@ -3232,10 +3303,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="James_Miss" sex="2">
                   <persName>Miss James</persName>
-                  <persName>
-                     <forename>Susan</forename>
-                     <surname>James</surname>
-                  </persName>
                   <note type="bio" resp="#lmw">Close friend of <persName ref="#MRM">MRM</persName>,
                      possibly an educator. According to <persName ref="#coles">Coles</persName> from
                      MRM diary, letters were addressed to her at Bellevue, Lower Road, Richmond
@@ -4704,8 +4771,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <death when="1835-12-21">
                      <placeName>133 George Street, Edinburgh</placeName>
                   </death>
-                  <note type="bio" resp="#ajc">Sir William Sinclair was an agricultural improver, politician, and
-                     codifier of "useful knowledge." His political life ended in 1811 due to bankruptcy (ODNB)</note>
+                  <note type="bio" resp="#ajc #ebb">Sir John Sinclair was perhaps most politically active in the 1780s and 1790s when he represented the district of Caithness and moved to organize an independent body of non-partisan parliamentarians. He took a great interest in political and agricultural economics of England and Scotland and published a <bibl>
+                        <title>History of the Public Revenue of Great Britain</title> in two volumes in 1784 with additions in 1789</bibl>. In 1790 he proposed the idea of a detailed parish-by-parish study of local geography, history, and community culture which became the <bibl>21-volume <title>Statistical Account of Scotland</title>
+                     </bibl>.(Source: ODNB)</note>
                </person>
                <person xml:id="Sloman_Mrs" sex="2">
                   <persName>
@@ -7071,8 +7139,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <date>1812</date>
                   <note resp="#ebb">
                      <bibl>
-                        <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T22:58:09.435-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 845. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
+                        <edition> Site Index for the Digital Mitford project. Date: 2015-05-25T23:55:29.06-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 850. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
                   </note>
                </bibl>
                <bibl xml:id="Inez_deCastro_MRMplay">
