@@ -153,6 +153,11 @@
         
         <a href="{@target}"><xsl:apply-templates select="@target"/></a>
     </xsl:template>
+    
+    <xsl:template match="note//ref">
+        <a href="{@target}"><xsl:apply-templates/></a>
+        
+    </xsl:template>
 
     
 </xsl:stylesheet>
