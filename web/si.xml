@@ -26,8 +26,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2015-05-25T23:55:29.06-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 850. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition> Site Index for the Digital Mitford project. Date: 2015-06-13T13:38:11.945-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 902. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -130,6 +130,30 @@
                   </occupation>
                   <note type="bio"/>
                </person>
+               <person xml:id="alg">
+                  <persName>
+                     <surname>Gates</surname>
+                     <forename>Amy</forename>
+                     <forename>L.</forename>
+                     <roleName>Ph.D.</roleName>
+                     <roleName>Editor</roleName>
+                  </persName>
+                  <occupation>Visiting Assistant Professor of English
+                     <affiliation>Oklahoma State University</affiliation>
+                  </occupation>
+                  <note type="bio">Amy L. Gates, Visiting Assistant Professor of English at Oklahoma State University, earned her Ph.D. from the University of Illinois at Chicago. Her current project examines the future-oriented, progressive impulse behind the depictions of the dead and their disposal in British Romantic literature. She has also begun work on a project examining the concept of "vocation" in relation to social mobility and gender parity in late eighteenth- and early nineteenth century British literature. Her article on Felicia Hemans and Jeremy Bentham appeared in <title>Women's Writing</title>, and an article on Mary Wollstonecraft and Mary Hays is forthcoming.</note>
+               </person>
+               <person xml:id="cfh">
+                  <persName>
+                     <surname>Hunsinger</surname>
+                     <forename>Courtney</forename>
+                     <forename>F.</forename>
+                     <roleName>Consultant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Pittsburgh at Johnstown</affiliation>
+                  </occupation>
+               </person>
                <person xml:id="cjb"><!--ebb: note: This is just a placeholder entry until Carol sends hers in with preferred xml:id.-->
                   <persName>
                      <surname>Bolton</surname>
@@ -150,6 +174,18 @@
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
                   <note type="bio"/>
+               </person>
+               <person xml:id="cmp">
+                  <persName>
+                     <surname>Parisian</surname>
+                     <forename>Catherine</forename>
+                     <forename>M.</forename>
+                     <roleName>Editor</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of North Carolina Pembroke</affiliation>
+                  </occupation>
+                  <note type="bio">Catherine M. Parisian is a book historian and bibliographer whose research has focused on a a range of subjects including the first White House library, <persName>Frances Burney</persName>, <title>Alice in Wonderland</title>, and eighteenth-century book trade ledgers. She is an associate professor in the Department of English, Theatre, and Foreign Languages at UNC Pembroke, where she teaches principles of literary studies, women's literature and composition.</note>
                </person>
                <person xml:id="csc">
                   <persName>
@@ -218,6 +254,17 @@
                      American authors, specifically Nathaniel Hawthorne and Edgar Allan Poe, by
                      European readers. Other interests: issues in composition, the writing process,
                      manuscripts, early short stories, Mitford's connection to <persName ref="#Hawthorne_N">Hawthorne</persName>, and Dark Romanticism. </note>
+               </person>
+               <person xml:id="ds">
+                  <persName>
+                     <surname>Schierenbeck</surname>
+                     <forename>Daniel</forename>
+                     <roleName>Editor</roleName>
+                  </persName>
+                  <occupation>Professor of English
+                     <affiliation>University of Central Missouri</affiliation>
+                  </occupation>
+                  <note type="bio">Daniel Schierenbeck has published essays on Romantic authors including <persName ref="#Austen_Jane">Jane Austen</persName>, William Blake, <persName ref="#Lamb_Chas #Lamb_Mary">Charles and Mary Lamb</persName>, <persName ref="#MRM">Mary Mitford</persName>, <persName ref="#Shelley_MW">Mary Shelley</persName>, and Jane West. He is currently at work on project that examines the impact of conservative religous discourse on the cultural politics and aesthetics of early ninteenth-century British literature.</note>
                </person>
                <person xml:id="dsa">
                   <persName>
@@ -430,7 +477,7 @@
                      <roleName>Founding Editor</roleName>
                      <ptr target="http://www.babson.edu/academics/faculty/profiles/pages/donovan-kellie.aspx"/>
                   </persName>
-                  <occupation>
+                  <occupation>Adjunct Lecturer in English
                      <affiliation>Babson College</affiliation>
                   </occupation>
                   <note type="bio"> Kellie Donovan-Condron writes about the intersection of urban
@@ -486,6 +533,17 @@
                      <affiliation>Loyola Marymount University</affiliation>
                   </occupation>
                   <note type="bio"/>
+               </person>
+               <person xml:id="mc">
+                  <persName>
+                     <surname>Creech</surname>
+                     <forename>Melinda</forename>
+                     <roleName>Editor</roleName>
+                  </persName>
+                  <occupation>Graduate Assistant
+                  <affiliation>Baylor University</affiliation>
+                  </occupation>
+                  <note type="bio">PhD in progress at Baylor University, Graduate Assistant at the Armstrong Browning Library at Baylor University</note>
                </person>
                <person xml:id="mco">
                   <persName>
@@ -630,6 +688,7 @@
                      <forename>Rebecca</forename>
                      <roleName>Founding Editor</roleName>
                      <placeName>University of North Carolina, Chapel Hill</placeName>
+                     <ptr target="http://uwgb.academia.edu/RebeccaNesvet"/>
                   </persName>
                   <occupation>
                      <affiliation>University of Wisconsin, Green Bay</affiliation>
@@ -645,7 +704,19 @@
                      Metzger Award for the best graduate paper. Her dissertation <title>The
                         Vanishing Voyager and the Emerging Outsider, 1818-1930</title>, was directed
                      by Prof. <persName>Jeanne Moskal</persName> and won UNC-Chapel Hill's Thomson
-                     award for the best nineteenth-century literature dissertation <ptr target="http://uwgb.academia.edu/RebeccaNesvet"/>. </note>
+                     award for the best nineteenth-century literature dissertation. </note>
+               </person>
+               <person xml:id="sajj">
+                  <persName>
+                     <surname>Jones</surname>
+                     <forename>Shelley</forename>
+                     <forename>AJ</forename>
+                     <roleName>Editor</roleName>
+                  </persName>
+                  <occupation>Assistant Professor of English
+                     <affiliation>University of South Carolina, Extended University</affiliation>
+                  </occupation>
+                  <note type="bio">Shelley AJ Jones is an Assistant Professor of English at the University of South Carolina-Extended University, Palmetto College, where she teaches online and distance education classes. Her main research interests include the intersections of genre and revision and technology and pedagogy in British Romantic poetry, with a particular focus on Mary Robinson. Most recently, she was an associate editor for a parallel-text version of Helen Maria Williams' <title>Peru and Peruvian Tales</title>, newly out from Broadview Press.&gt;</note>
                </person>
                <person xml:id="scw">
                   <persName>
@@ -660,6 +731,19 @@
                      children's literature, and global literature. She specializes in British
                      Romanticism, with an interest in food and agricultural politics, ecology,
                      and women's writing. </note>
+               </person>
+               <person xml:id="st">
+                  <persName>
+                     <surname>Triplette</surname>
+                     <forename>Stacey</forename>
+                     <roleName>Ph.D.</roleName>
+                     <roleName>Editor</roleName>
+                  </persName>
+                  <occupation>Assistant Professor of Spanish and French
+                     <affiliation>University of Pittsburgh at Greensburg</affiliation>
+                  </occupation>
+                  <note type="bio">Stacey Triplette, Assistant Professor of Spanish and French at the University of Pittsburgh at Greensburg, earned her Ph.D. from the University of California, Berkeley. She studies the literature of medieval and early modern Spain, France, and England. Her articles have been published in <title>Cervantes</title> and <title>Bulletin of Spanish Studies</title>, and she has forthcoming essays in <title>La corónica</title> and an edited volume titled <title>Connecting Past and Present: Exploring the Influence of the Spanish Golden Age in the Twentieth and Twenty-first Centuries</title>. She is currently working on a book titled <title>Reading Chivalry in Spain, England, and France</title>, which explores the influence of <title>Amadís de Gaula</title> and other medieval chivalric works on sixteenth- and seventeenth-century writers including Miguel de Cervantes, Beatriz Bernal, Ana Caro, Nicholas de Hebreray, and Mary Wroth.
+                  </note>
                </person>
                <person xml:id="tel">
                   <persName>
@@ -912,10 +996,45 @@
                      <forename>William</forename>
                      <forename>Allan</forename>
                   </persName>
-                  <note type="bio">Wrote his PhD Dissertation to the Dept. of English at Harvard
+                  <note type="bio" resp="#scw #ebb">Wrote his PhD Dissertation to the Dept. of English at Harvard
                      University of August 1956 as an edition of the correspondence of <persName ref="#MRM">Mary Russell Mitford</persName> and <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, representing parts of
                      the collections at the John Rylands Library and the Harvard and Yale special
-                     collections.</note>
+                     collections. <persName ref="#coles">Coles</persName> taught at the <orgName>University of Virginia</orgName>until <date when="1958">1958</date>, when he moved to the <orgName>University of North Carolina, Chapel Hill</orgName>. He corresponded extensively with <persName ref="#Needham_Francis">Francis Needham</persName>in the <date from="1950" to="1959">1950s</date>, during the course of which they exchanged research on contextual information, and shared transcriptions of <persName ref="#MRM">Mitford</persName>'s letters. Some of <persName ref="#coles">Coles</persName>'s letters are preserved among <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>'s papers, held at the <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.</note>
+               </person>
+               <person xml:id="Harness_Wm" sex="1">
+                  <persName>
+                     <forename>William</forename>
+                     <surname>Harness</surname>
+                  </persName>
+                  <birth when="1790-03-14">
+                     <placeName>near Wickham, Hampshire</placeName>
+                  </birth>
+                  <death when="1869-11-11">
+                     <placeName>the deanery at Battle</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>religious</occupation>
+                  <note resp="#ebb">
+                     <p>A lifelong friend of <persName ref="#MRM">Mary Russell Mitford</persName> who knew her from their childhood in the 1790s, Harness launched the first major effort to collect and edit Mitford's letters into a series of volumes, which was completed by his assistant, <persName ref="#Lestrange">Alfred Guy Kingan L'Estrange</persName> a year after Harness's death, and published as <title ref="#Lestrange_Letters">The Life of Mary Russell Mitford, Related in a Selection from her Letters to her Friends</title>. This collection was originally intended to be six volumes, but was cut back to three by the publishers, to Harness's distress.</p>
+                     <p>Harness and <persName ref="#Byron">Byron</persName> were also friends from their schooling at Harrow, as Byron sympathized with Harness's experience of a disabled foot, crushed in an accident in early childhood. Byron considered dedicating <bibl>the first two cantos of <title>Childe Harold's Pilgrimage</title>
+                        </bibl> to Harness, but refrained so as not to taint Harness's reputation as he was taking orders as an Anglican curate. Harness admired and encouraged Mitford's playwrighting in particular, and she commented that he was one of the few of her friends who thought she should prioritize the drama over prose. When <persName ref="#Macready_Wm">William Macready</persName> was attacked in <bibl corresp="#Stage">an anonymous Blackwood's Magazine piece in 1825</bibl> for his demands and rudeness to Mitford over revisions to <title ref="#Rienzi">Rienzi</title>, Macready assumed that Harness was the author of the anonymous piece, though in <date when="1839">1839</date> after many years of distance, Harness assured Macready in person that he was not the writer, though he may have shared word of the poor treatment his friend had endured.</p> [Sources: <bibl>
+                        <author>Duncan-Jones</author>, <title>Miss Mitford and Mr. Harness</title> (<date when="1955">1955</date>)</bibl>. Lord Byron and His Times: <ptr target="http://lordbyron.cath.lib.vt.edu/contents.php?doc=WiHarne.1871.Contents"/>]</note>
+               </person>
+               <person xml:id="Lestrange">
+                  <persName>
+                     <surname>L'Estrange</surname>
+                     <forename>Alfred</forename>
+                     <forename>Guy</forename>
+                     <forename>Kingan</forename>
+                  </persName>
+                  <birth when="1832"/>
+                  <death when="1915"/>
+                  <note resp="#ebb">L'Estrange was a curate working for William Harness, and assisted him with the first edition of Mary Russell Mitford's letters until Harness's death, at which point L'Estrange took over the editing and produced the collection of letters as <bibl corresp="#Lestrange_Letters">the three-volume <title>The Life of Mary Russell Mitford</title>
+                     </bibl> under his own name. [Sources: <bibl>
+                        <persName ref="#Needham_Francis">Frances Needham</persName>'s notes on <persName ref="#MRM">Mitford</persName>'s papers</bibl> and <bibl corresp="#Lestrange_Letters">the Harness/L'Estrange edition</bibl>. VIAF <ptr target="http://viaf.org/viaf/92050950"/>]
+                  </note>
                </person>
                <person xml:id="Needham_Francis">
                   <persName>
@@ -1006,6 +1125,13 @@
                         Hunt</persName>, and <persName ref="#Haydon">Benjamin Robert
                         Haydon</persName>.</note>
                </org>
+               <org xml:id="Drovers">
+                  <orgName>
+                     <surname>Drover</surname>
+                  </orgName>
+                  <note resp="#ebb">A <rs type="person"
+                         ref="#Drover_James #Drover_Miss #Drover_Mr #Drover_Mrs #Drover_MrsJames">family</rs> who, according to <persName ref="#Needham_Francis">Francis Needham</persName>'s notes, lived on <placeName>Minster Street</placeName>.</note>
+               </org>
                <org xml:id="Eton">
                   <orgName>Eton College</orgName>
                   <note resp="#ebb">Boarding school for boys, located in  <placeName>Eton, Berkshire</placeName>.</note>
@@ -1026,6 +1152,13 @@
                <org xml:id="Medici">
                   <orgName>House of Medici</orgName>
                   <note resp="#rnes">Dynasty that ruled various Italian territories from 1434 to 1737, excepting in 1494-1512 and 1527-30, and also provided <placeName>France</placeName> with several queens.</note>
+               </org>
+               <org xml:id="Mitfords">
+                  <orgName>
+                     <surname>Mitford</surname>
+                  </orgName>
+                  <note resp="#ebb">
+                     <persName ref="#MRM">Mary Russell Mitford</persName> and her <orgName ref="#Mitfords_Ma_Pa">parents</orgName>, and members of her household.</note>
                </org>
                <org xml:id="Mitfords_Ma_Pa">
                   <orgName>Mr.and Mrs.Mitford</orgName>
@@ -1080,10 +1213,10 @@
                   <orgName>
                      <surname>Slade</surname>
                   </orgName>
-                  <note type="bio" resp="#ebb">The Slades are referenced in <persName ref="#MRM">Mitford's</persName> letter to <persName ref="#Talfourd_Thos">Thomas
-                           Noon Talfourd</persName> of <date when="1821-06-21">June 21, 1821</date>,
-                        a family distantly related to Mitford involved as adversaries in a law case
-                        taken on by Talfourd.</note>
+                  <note type="bio" resp="#scw #ebb">
+                     <persName ref="#MRM">Mitford</persName> mentions the Slades in her <rs type="letter">letter to <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName> of <date when="1821-06-21">June 21, 1821</date>, as distant relatives involved in a court case over the execution of their father's will, a case taken on by Talfourd, and which was settled before it got to a jury</rs>. <rs type="letter">
+                        <persName ref="#coles">William Coles</persName>inquires for information about them in a letter to <persName ref="#Needham_Francis">Needham</persName>. He cites an article that appeared in the <title ref="#ReadingMer_per">Reading Mercury</title> on <date when="1822-07-22">July 7, 1822</date>. Source: Unpublished letter from <persName ref="#coles">William Coles</persName> to <persName ref="#Needham_Francis">Needham</persName>, <date when="1958-01-20">January 20, 1958</date>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </rs>.<!--scw: See photo DCSN1175--></note>
                </org>
                <org xml:id="Taylor_Hessey">
                   <orgName>Taylor and Hessey</orgName>
@@ -1111,6 +1244,22 @@
                </org>
                <org xml:id="Twickenham_Coach">
                   <orgName>Twickenham Coach or Stage</orgName>
+               </org>
+               <org xml:id="Valpys">
+                  <orgName>
+                     <surname>Valpy</surname>
+                  </orgName>
+                  <orgName>the Valpys</orgName>
+                  <note resp="#ebb">
+                     <persName ref="#Valpy_Richard">Dr. Richard Valpy</persName> and his family, including his first and second wife, his <rs type="person" ref="#Valpy_Miss">daughters</rs>, including <persName ref="#Valpy_Penelope">Penelope</persName> and <persName ref="#Valpy_Catherine">Catherine</persName>  one or more of whom were friends with with <persName ref="#MRM">Mary Russell Mitford</persName>, and his sons, including <persName ref="#Valpy_John">John Valpy</persName>.</note>
+               </org>
+               <org xml:id="Webbs">
+                  <orgName>
+                     <surname>Webb</surname>
+                     <note resp="#ebb">
+                        <rs type="person"
+                            ref="#Webb_Eliza #Webb_Mary_younger #Webb_James #Webb_Mary_elder">A family</rs> in <placeName>Wokingham</placeName> connected with a brewery there, frequent correspondents with <persName ref="#MRM">Mary Russell Mitford</persName> in <date notBefore="1810" notAfter="1830">the 1810s and 1820s</date>.<!--ebb: The time span here is a rough estimate!--></note>
+                  </orgName>
                </org>
                <org xml:id="Weylandite">
                   <orgName>Weylandite</orgName>
@@ -1163,6 +1312,29 @@
                   <occupation>playwright</occupation>
                   <occupation>literary</occupation>
                   <note type="bio" resp="#ebb">Credited with reviving Italian tragedy in the eighteenth century, Alfieri's plays included <title>Filippo</title>, <title>Polinice</title>, <title>Antigone</title>, <title>Virginia</title>,and the highly acclaimed <title>Saul</title>. He also authored an ode on <rs type="event" ref="#American_Revol">American Independence</rs> and a satirical poem, <title>The Antigallican</title>, on <rs type="event">the French Revolution</rs>.   
+                  </note>
+               </person>
+               <person xml:id="Anne" sex="2">
+                  <persName>
+                     <surname/>
+                     <forename>Anne</forename>
+                  </persName>
+                  <note resp="#scw">Servant in the Mitford household. <!--No other info from Needham.--> Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers</bibl>, <orgName ref="#ReadingCL">Reading Central Library</orgName>. </note>
+               </person>
+               <person xml:id="Annesley_Francis" sex="1">
+                  <persName>
+                     <surname>Annesley</surname>
+                     <forename>Francis</forename>
+                  </persName>
+                  <birth when="1734-05-02">
+                     <placeName>Reading</placeName>
+                  </birth>
+                  <death when="1812-04-12"/>
+                  <occupation>educator</occupation>
+                  <occupation>politian</occupation>
+                  <note type="bio" resp="#scw">
+                     <p>First Master of <orgName>Downing College</orgName>, <orgName>Cambridge University</orgName> from <date when="1800">1800</date> until his death in <date when="1812">1812</date>, <persName ref="#Annesley_Francis">Annesley</persName> also served as Member of <orgName>Parliament</orgName> for the borough of <placeName ref="#Reading_city">Reading</placeName> between <date from="1774" to="1806">1774-1806</date>. In a note among <bibl corresp="#Needham_PapersRCL">his Mitford papers</bibl>, <persName ref="#Needham_Francis">Needham</persName> identifies <persName ref="#Annesley_Francis">Annesley</persName> as the basis for the <persName type="fict" ref="#ModAntiquesBeau">old beau</persName> in <title>"Modern Antiques"</title>, an identification he cites from <bibl corresp="#Lestrange_Letters">Harness (or L'Estrange), I, 20</bibl>. See also <title>History of Parliament Online</title>.</p>
                   </note>
                </person>
                <person xml:id="Ashburton_Lord">
@@ -1253,8 +1425,10 @@
                   <persName>Mr. Bayley</persName>
                   <note resp="#ebb">Editor of the <title ref="#Ladys_Monthly_Museum">Lady's Monthly
                         Museum</title>, married to the <persName ref="#Bayley_Mrs">Mrs.
-                        Bayley</persName> mentioned in <persName ref="#MRM">Mitford</persName>'s
-                     letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1825-05-11">11 May 1825</date>. According to <persName ref="#coles">Coles</persName>, he drafted the as yet unidentified play mentioned in that
+                        Bayley</persName> mentioned in <rs type="letter">
+                        <persName ref="#MRM">Mitford</persName>'s
+                     letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1825-05-11">11 May 1825</date>
+                     </rs>. According to <persName ref="#coles">Coles</persName>, he drafted the as yet unidentified play mentioned in that
                      letter before his death.</note>
                </person>
                <person xml:id="Bayley_Mrs" sex="2">
@@ -1317,7 +1491,7 @@
                      of a son and daughter from consumption in 1824, and remained in exile near Lake
                      Como until his death in 1836.</note>
                </person>
-               <person xml:id="Bennett_Wm_Cox">
+               <person xml:id="Bennett_Wm_Cox" sex="1">
                   <persName>
                      <surname>Bennett</surname>
                      <forename>William</forename>
@@ -1333,18 +1507,30 @@
                   <occupation>literary</occupation>
                   <occupation>watchmaker</occupation>
                   <occupation>journalist</occupation>
-                  <note resp="#ebb">A friend of <persName ref="#MRM">MRM</persName>. Married to
-                        <persName>Elizabeth Sinnock Bennett</persName> and younger sibling of
-                        <persName>Sir John Bennett</persName>. Organizer of very liberal politics in
+                  <note resp="#scw #ebb">
+                     <p>A friend of <persName ref="#MRM">MRM</persName> late in her life, William Cox Bennett addressed a sonnet to her, and a poem entitled <title>
+                           <quote>"Lines Written in Miss Mitford's Garden"</quote>
+                        </title>, both of which appeared in <bibl>his volume, <title>Poems</title> of <date when="1862">1862</date>
+                        </bibl>.</p>
+                     <p>Cox organized the very liberal politics in
                         <placeName>Greenwich</placeName>. In <date>1868</date> he helped stump for
                      the liberal <persName>William Gladstone</persName> in his first successful
-                     campaign for Prime Minister. Lead writer and art critic for the <title>Weekly
+                     campaign for Prime Minister. He was ead writer and art critic for the <title>Weekly
                         Dispatch</title> in <date>1869</date>-<date>1870</date>, contributor to the
-                        <placeName ref="#London_city">London</placeName> paper,
-                        <title>Figaro</title>, and editor of the literary periodical, <title>The
-                        Lark</title>, from <date>1883</date> to <date>1884</date>. Author of
-                        <title>Prometheus the Fire Giver</title> published in <date>1877</date>, and
-                        <title>Songs for Sailors</title> in <date>1878</date>.</note>
+                        <bibl>
+                           <placeName ref="#London_city">London</placeName> paper,
+                        <title>Figaro</title>
+                        </bibl>, and editor of <bibl>the literary periodical, <title>The
+                        Lark</title>, from <date>1883</date> to <date>1884</date>
+                        </bibl>. Author of
+                        <bibl>
+                           <title>Prometheus the Fire Giver</title> published in <date>1877</date>
+                        </bibl>, and
+                        <bibl>
+                           <title>Songs for Sailors</title> in <date>1878</date>
+                        </bibl>.</p>
+                     <p>Married to <persName>Elizabeth Sinnock Bennett</persName> and younger sibling of <persName>Sir John Bennett</persName>. [Source ODNB.]</p>
+                  </note>
                </person>
                <person xml:id="Bennoch_Fr" sex="1">
                   <persName>
@@ -1438,6 +1624,39 @@
                         perhaps died shortly thereafter.</p>
                   </note>
                </person>
+               <person xml:id="Bint_Hannah" sex="2">
+                  <persName>
+                     <surname>Bint</surname>
+                     <forename>Hannah</forename>
+                  </persName>
+                  <birth notBefore="1804-09-16">Baptized on <date when="1804-09-16">September 16, 1804</date> in <placeName>Shinfield Parish</placeName>
+                  </birth>
+                  <occupation>unknown</occupation>
+                  <!--scw: a Bint family blog records that their Hannah Bint became a schoolmistress. See The Bint Family of Shinfield Fiction and Mary Russell Mitford,  http://www.bint-family.com/hannah.htm-->
+                  <note resp="#scw">Daughter of Thomas Bint and Sarah Bint. Baptismal and family data as recorded by <persName ref="#Needham_Francis">Needham</persName> in his <persName ref="#MRM">Mitford </persName>notes, on a list of <placeName>Shinfield</placeName> records. Above <persName ref="#Bint_Hannah">Hannah Bint</persName>'s baptismal record, <persName ref="#Needham_Francis">Needham</persName> has noted, <quote>"a large family followed"</quote>; <quote>"large family"</quote> is crossed out in pencil, and he has written <quote>"several children"</quote>. In an attempt to establish the original for the story character, <persName ref="#Needham_Francis">Needham</persName> also, on the same sheet of paper, lists a <persName>"Hannah Clark"</persName> who married a <persName>"William Bint"</persName> on <date when="1800-04-16">April 16, 1800</date>. A Bint family blog records that their Hannah Bint became a schoolmistress. Source: <bibl>
+                        <title>The Bint Family of Shinfield Fiction and Mary Russell Mitford</title>, <ptr target="http://www.bint-family.com/hannah.htm"/>
+                     </bibl>
+                  </note>
+               </person>
+               <person xml:id="Body_Ann" sex="2">
+                  <persName>
+                     <surname>Body</surname>
+                     <forename>Ann</forename>
+                  </persName>
+                  <occupation>farmer</occupation>
+                  <note resp="#scw">A local farmer of <placeName ref="#Shinfield"> Shinfield</placeName>, farmed at <placeName>Hyde end farm</placeName>. Listed among the traders of <placeName ref="#Shinfield">Shinfield</placeName> village and parish in <date when="1847">1847</date> and <date when="1854">1854</date> in the <bibl corresp="#PO_BerkshireDir">
+                        <title>Post Office Directory of Berkshire</title>
+                     </bibl>, and noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople.</note>
+               </person>
+               <person xml:id="Body_Richard" sex="1">
+                  <persName>
+                     <surname>Body</surname>
+                     <forename>Richard</forename>
+                  </persName>
+                  <death when="1842"/>
+                  <note type="bio" resp="#scw">
+                     <persName ref="#Needham_Francis">Needham</persName> tentatively identifies him as <persName ref="#MRM">Mitford</persName>'s landlord.</note>
+               </person>
                <person xml:id="Bowles_Wm" sex="1">
                   <persName>
                      <surname>Bowles</surname>
@@ -1468,6 +1687,51 @@
                   <note resp="#rnes #ebb">Appointed Judge of the Sheriff's Court at the <placeName ref="#Guildhall_London">Guildhall in London</placeName>, Bradshaw was the presiding judge who <rs type="event">sentenced <persName ref="#ChasI">King Charles I</persName> to death on <date when="1649-01-27">27 January 1649</date> at <placeName ref="#Westmnst_Palace">Westminster Hall</placeName>
                      </rs>.</note>
                </person>
+               <person xml:id="Brent_George" sex="1">
+                  <persName>
+                     <surname>Brent</surname>
+                     <forename>George</forename>
+                  </persName>
+                  <occupation>innkeeper <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                     <orgName>George and Dragon</orgName>
+                  </occupation>
+                  <note resp="#scw">Proprietor or innkeeper of <placeName>the George and Dragon Inn</placeName>, <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. Listed among the traders of <placeName ref="#Shinfield">Shinfield</placeName> in the <bibl corresp="#PO_BerkshireDir">
+                        <title>Post Office Directory of Berkshire, 1847 and 1854</title>
+                     </bibl>, and noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople.</note>
+               </person>
+               <person xml:id="Brent_Joel" sex="1">
+                  <persName>
+                     <surname>Brent</surname>
+                     <forename>Joel</forename>
+                  </persName>
+                  <birth notBefore="1800-04-20">baptized at <placeName ref="#Shinfield">Shinfield parish</placeName>
+                  </birth>
+                  <death notAfter="1876-07-18">buried at <placeName ref="#Shinfield">Shinfield parish</placeName>
+                  </death>
+                  <occupation>possibly beer retailer</occupation>
+                  <note resp="#scw">Son of <persName>John and Anne Brent</persName>. Baptismal data as noted by <persName ref="#Needham_Francis">Needham</persName> on a list of other <placeName>Shinfield parish</placeName> records, and correlated to named characters in <title ref="#OV">Our Village</title>. Among <persName ref="#Needham_Francis">Needham</persName>'s Mitfordiana is a cutting from the <bibl>
+                        <title ref="#ReadingMer_per">Reading Mercury</title>
+                     </bibl>for <date when="1958-10-18">October 10, 1958</date>, reprinting an article from <date when="1808-10-17">October 17, 1808</date> that described a spate of local deaths, including that of <quote>"the wife of John Brent"</quote> on <date when="1808-08-03">August 8, 1808</date>from <quote>"a fit"</quote>
+                     <!--scw: See photo DSCN1088-->. Elsewhere among <persName ref="#Needham_Francis">Needham</persName>'s notes,<!--scw: see photo DSCN1096--> he writes that he found no record of marriage, and lists a burial date. The <bibl corresp="#PO_BerkshireDir">
+                        <title>Post Office Directory of Berkshire</title>, 2nd ed., of <date when="1854">1854</date>
+                     </bibl> lists a <persName ref="#Brent_Joel">Joel Brent</persName>as a beer retailer. Sources: <persName ref="#Needham_Francis">Needham</persName>archive, <orgName ref="#ReadingCL">Reading Central Library</orgName>; <bibl corresp="#PO_BerkshireDir">Post Office Directory of Berkshire, 2nd ed., 1854</bibl>. </note>
+               </person>
+               <person xml:id="Brent_Lizzy" sex="2">
+                  <persName>
+                     <surname>Brent</surname>
+                     <forename>Eliza</forename>
+                  </persName>
+                  <persName>
+                     <surname>Brent</surname>
+                     <forename>Lizzy</forename>
+                  </persName>
+                  <birth when="1818-01-31">
+                     <placeName>Three Mile Cross</placeName>
+                  </birth>
+                  <death notAfter="1827-09-27">buried at <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                  </death>
+                  <note type="bio" resp="#scw">There is no family information provided by <persName ref="#Needham_Francis">Needham</persName> for Lizzy Brent, but she is likely related to others in the <orgName>Brent family</orgName> who are named and unnamed in <title ref="#OV">Our Village</title>. <persName ref="#Brent_Lizzy">Lizzy Brent</persName> was likely the inspiration for <persName type="fict" ref="#Lizzy">Lizzy</persName>, the <persName ref="#OVNarrator">narrator</persName>'s three-year old companion on many of her walks in <title ref="#OV">Our Village</title>. Note that her date of birth is tentative: Needham cites <bibl>the Diary</bibl> for the birth information but places a question mark next to the date of birth. <!--scw: See photo DSCN1096--> Source: <persName ref="#Needham_Francis">Needham</persName>archive, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
+               </person>
                <person xml:id="Broghill" sex="1">
                   <persName>Roger Boyle, Lord Broghill</persName>
                   <persName>
@@ -1494,6 +1758,43 @@
                      allegiances again at the Restoration, and supported <persName>Charles
                         II</persName>. Broghill's literary works include several stage plays and a
                      novel, <title>Parthenissa(1655)</title>.</note>
+               </person>
+               <person xml:id="Bromley_William" sex="1">
+                  <persName>
+                     <surname>Bromley</surname>
+                     <forename>William</forename>
+                  </persName>
+                  <occupation>baker</occupation>
+                  <occupation>shopkeeper in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                  </occupation>
+                  <note resp="#scw">Baker and shopkeeper of <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. Listed among the traders of <placeName ref="#Shinfield">Shinfield</placeName>in the <bibl corresp="#PO_BerkshireDir">
+                        <title>Post Office Directory of Berkshire</title>, <date when="1847">1847</date>
+                     </bibl>, and noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople. The <bibl corresp="#PO_BerkshireDir">
+                        <date when="1854">1854</date> edition of the <title>Post Office Directory</title>
+                     </bibl> omits the "shopkeeper" occupation.</note>
+               </person>
+               <person xml:id="Brooke_Miss" sex="2">
+                  <persName>Miss Brooke
+                  <surname>Brooke</surname>
+                  </persName>
+                  <note resp="#scw">A correspondent of <persName ref="#MRM">Mitford's</persName>, to whom she writes at <placeName>11 East Cliff, Brighton</placeName>. <persName ref="#coles">William Coles</persName>suggests that this could be a summer address, and that she was a resident of <placeName ref="#Reading_city">Reading</placeName>. She was courted by <persName>Dr. Valpy</persName> in <date when="1823-10">October 1823</date>. Source: <rs type="letter">Letter from <persName ref="#coles">William Coles</persName> to <persName ref="#Needham_Francis">Needham</persName>, <date when="1957-11-10">10 November 1957</date>
+                     </rs>, <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL"/>
+                        <!--scw: See photo DSCN1167-->
+                     </bibl>
+                  </note>
+               </person>
+               <person xml:id="Brown_Benjamin" sex="1">
+                  <persName>
+                     <surname>Brown</surname>
+                     <forename>Benjamin</forename>
+                  </persName>
+                  <occupation>blacksmith</occupation>
+                  <occupation>postmaster at <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                  </occupation>
+                  <note resp="#scw">Listed as a blacksmith and postmaster of <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>in <bibl corresp="#PO_BerkshireDir">the <date when="1854">1854</date>
+                        <title>Post Office Directory of Berkshire</title>
+                     </bibl>. <persName ref="#Needham_Francis">Needham</persName> notes his name on a list of local tradespeople taken from <bibl corresp="#PO_BerkshireDir">the <date when="1847">1847</date> edition</bibl>, omitting his occupation as postmaster.</note>
                </person>
                <person xml:id="Browning_Rob">
                   <persName>Robert Browning</persName>
@@ -1587,9 +1888,11 @@
                </person>
                <person xml:id="Burgess">
                   <persName>Mr. Burgess</persName>
-                  <note type="bio" resp="#lmw">A "Mr. Burgess" who recommended a particular volume
+                  <note type="bio" resp="#lmw">
+                     <rs type="letter">A "Mr. Burgess" who recommended a particular volume
                         of<persName ref="#Sophocles"> Sophocles'</persName> plays to <persName ref="#MRM">MRM</persName>, mentioned in her letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date>Nov. 12-13
-                     1821</date>.<!-- Need to identify.  Reading bookseller?  LMW or clergyman? ebb Many possibilities in ODNB.--></note>
+                     1821</date>
+                     </rs>.<!-- Need to identify.  Reading bookseller?  LMW or clergyman? ebb Many possibilities in ODNB.--></note>
                </person>
                <person xml:id="Burns_Rob" sex="1">
                   <persName>
@@ -1617,7 +1920,7 @@
                <person xml:id="Butler_Mr" sex="1">
                   <persName>Butler</persName>
                   <occupation>merchant</occupation>
-                  <note type="bio" resp="#ajc">A <placeName ref="#Reading_city">Reading</placeName> shop owner and <orgName ref="#Palmerite">Palmerite</orgName> mentioned in Mitford's discussion of the Reading elections in her letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date>
+                  <note type="bio" resp="#ajc">A <placeName ref="#Reading_city">Reading</placeName> shop owner and <orgName ref="#Palmerite">Palmerite</orgName> mentioned in <rs type="letter">Mitford's discussion of the Reading elections in her letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date>.</rs>
                      <!-- not sure about him -->
                   </note>
                </person>
@@ -1655,8 +1958,9 @@
                         <author>Cyrus Redding</author>'s <title>Literary Reminiscences and Memoirs
                            of Thomas Campbell</title>
                      </bibl>. Possibly the Mr. Campbell that <persName ref="#MRM">Mitford</persName>
-                     mentions in her letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of
-                        <date when="1822-08-13">13 August 1822</date>.</note>
+                     mentions in <rs type="letter">her letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of
+                        <date when="1822-08-13">13 August 1822</date>
+                     </rs>.</note>
                </person>
                <person xml:id="Canning_George" sex="1">
                   <persName>
@@ -1766,6 +2070,25 @@
                <person xml:id="Christie_JH">
                   <persName>Jonathan Henry Christie</persName>
                   <note resp="#lmw">Fought the duel on <date when="1821-02-27">27 February 1821</date> with <persName ref="#Scott_John">John Scott</persName> that resulted in Scott's death; after trial in April 1821 acquitted of murder; <persName>James Traill</persName> was his second. Christie was the literary agent of <persName ref="#Lockhart_JG">J. G. Lockhart</persName>.  </note>
+               </person>
+               <person xml:id="Clargo_Meremoth">
+                  <persName>
+                     <surname>Meremoth?</surname>
+                     <forename>Clargo?</forename>
+                  </persName>
+                  <occupation>shopkeeper</occupation>
+                  <!--scw: I am leaving this entry as a stub for now. I'm not sure about this name. See photo DSCN 1090. Even Needham seems to have been stumped by it. The name does not appear in the 1854 Post Office Directory, which I've been using to verify Needham's data where I can.-->
+               </person>
+               <person xml:id="Clarke_William" sex="1">
+                  <persName>
+                     <surname>Clarke</surname>
+                     <forename>William</forename>
+                  </persName>
+                  <occupation>baker</occupation>
+                  <occupation>shopkeeper at <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                  </occupation>
+                  <note resp="#scw">Listed as a shopkeeper in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>in <bibl corresp="#PO_BerkshireDir">the 1854 <title>Post Office Directory of Berkshire</title>
+                     </bibl>. <persName ref="#Needham_Francis">Needham</persName> notes his name on a list of local tradespeople taken from <bibl corresp="#PO_BerkshireDir">the <date when="1847">1847</date> edition</bibl>, adding that <persName ref="#Clarke_William">Clarke</persName>was also a baker.</note>
                </person>
                <person xml:id="Cobbett_Wm" sex="1">
                   <persName>
@@ -2007,6 +2330,40 @@
                   <occupation>politician</occupation>
                   <note type="bio" resp="#rnes"> The fourth of <persName ref="#Cromwell">Oliver Cromwell</persName>'s five sons (out of nine children total), Henry served as <roleName>Lord Lieutenant of Ireland</roleName> and in various capacities during his father's rise and regime. He corresponded copiously with his father. [ODNB]</note>
                </person>
+               <person xml:id="Cropp_Mrs" sex="2">
+                  <persName>
+                     <surname>Cropp</surname>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <persName>Croppy</persName>
+                  <death when="1803">
+                     <placeName ref="#London_city">London</placeName>
+                  </death>
+                  <note type="bio" resp="#scw">Longtime servant in the Mitford household, who came to the family with <persName ref="#MRM">Mitford</persName>'s mother. She is the basis for <persName>Mrs. Mosse</persName> in the <title ref="#OV">Our Village</title> sketch of that title. Source: <rs type="letter">
+                        <persName ref="#Needham_Francis">Francis Needham</persName>, letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>
+                     </rs>. <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.</note>
+               </person>
+               <person xml:id="Crowther_Mr" sex="1">
+                  <persName>
+                     <surname>Crowther</surname>
+                     <forename>Phillip?</forename>
+                  </persName>
+                  <note resp="#scw">A correspondent of <persName ref="#MRM">Mitford's</persName>, whom she writes to at <placeName>Whitley cottage</placeName>, near <placeName ref="#Reading_city">Reading</placeName>. He may also have resided at <placeName>Westbury on Trim</placeName> near <placeName>Bristol</placeName>. <persName ref="#coles">William Coles</persName> is uncertain of whether <persName ref="#Crowther_Mr">Crowther</persName>is the same <persName>Phillip Crowther</persName>mentioned in <persName ref="#MRM">Mitford</persName>'s <title>Diary</title>. Source: <rs type="letter">
+                        <persName ref="#coles">William Coles</persName>, Letter to <persName ref="#Needham_Francis">Needham</persName>, <date when="1957-11-10">10 November 1957</date>
+                     </rs>, <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>. <!--scw: See photo DSCN1167--></bibl>
+                  </note>
+               </person>
+               <person xml:id="Culpepper_Mr" sex="1">
+                  <persName>
+                     <surname>Culpepper</surname>
+                  </persName>
+                  <note type="bio" resp="#scw">
+                     <p>He and his wife were associated with, and perhaps related to <orgName ref="#Valpys">the Valpys</orgName>. [Source: Ancestry.com]<!--scw: No more information than this. Ancestry.com does confirm some association between Culpeppers and Valpys, but connection eludes me for the moment.--></p>
+                  </note>
+               </person>
                <person xml:id="Culpepper_Mrs" sex="2">
                   <persName>
                      <surname type="maiden">Valpy</surname>
@@ -2017,12 +2374,12 @@
                      <forename>Cornelia</forename>
                   </persName>
                   <persName>Mrs. Culpepper</persName>
-                  <note type="bio" resp="#ebb #lmw">According to <persName ref="#coles">Coles</persName>,
+                  <note type="bio" resp="#ebb #lmw #scw">According to <persName ref="#coles">Coles</persName>,
                         <persName ref="#Valpy_Richard">Dr. Valpy</persName>'s eldest daughter (Coles
                      #15, p. 90, note 14). A <ref target="http://gen.culpepper.com/ss/p38795.htm"> Culpepper family genealogy site</ref> referencing the Society of Genealogists, London, indicates that Martha Carteretta Valpy was born circa 1779, baptized 16 November 1779, and was first married to <ref target="http://gen.culpepper.com/ss/p60040.htm">
                         <persName>Thomas James Straker</persName>
                      </ref> circa 1797, who died on a sea voyage from <placeName>Lisbon</placeName> to <placeName>London</placeName> on <date when="1814-03-06">6 March 1814</date>. She remarried on 21 November 1815 to <ref target="http://gen.culpepper.com/ss/p38795.htm">
-                        <persName>William Alleyn Culpeper</persName> of Barbados</ref>. <persName ref="#MRM">MRM</persName> spells her married name as "Culpepper" in her journal and letters. Burke's Family Records lists her name as <persName>Carteretta Cornelia Valpy</persName>.</note>
+                        <persName>William Alleyn Culpeper</persName> of Barbados</ref>. <persName ref="#MRM">MRM</persName> spells her married name as "Culpepper" in her journal and letters. Burke's Family Records lists her name as <persName>Carteretta Cornelia Valpy</persName>. </note>
                </person>
                <person xml:id="Cumberland_Rich" sex="1">
                   <persName>
@@ -2071,6 +2428,24 @@
                   <note type="bio" resp="#lmw">
                      <p>English actor (1759-1843). </p>
                   </note>
+               </person>
+               <person xml:id="Davie_William" sex="1">
+                  <persName>
+                     <surname>Davie</surname>
+                     <forename>William</forename>
+                     <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                  </persName>
+                  <occupation>beer retailer</occupation>
+                  <occupation>
+                     <unclear>
+                        <supplied resp="#scw">butcher</supplied>
+                     </unclear>
+                  </occupation>
+                  <note resp="#scw">Noted by <persName ref="#Needham_Francis">Needham</persName> as a beer retailer and possibly a butcher. His source is the 1847 <bibl corresp="#PO_BerkshireDir">
+                        <title>Post Office Directory of Berkshire</title>
+                     </bibl>. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.</note>
                </person>
                <person xml:id="de_Chaboulon" sex="1">
                   <persName>Pierre Alexandre Fleury de Chaboulon</persName>
@@ -2153,7 +2528,9 @@
                </person>
                <person xml:id="Dickinson_Mrs" sex="2">
                   <persName>Mrs. Dickinson</persName>
-                  <note type="bio" resp="#ajc">Mrs. Dickinson, match-maker,from Reading (February 8th, 1821 letter to Elford, L'Estrange). 
+                  <note type="bio" resp="#ajc">Mrs. Dickinson, match-maker,from Reading. (See <rs type="letter">
+                        <persName ref="#MRM">Mitford</persName>'s <date when="1821-02-08">February 8th, 1821</date> letter to <persName ref="#Elford_SirWm">Elford</persName>
+                     </rs>. Source: <bibl corresp="#Lestrange_Letters">L'Estrange</bibl>). 
                      Wife of <persName ref="#Dickinson_Charles">Mr. Charles Dickinson</persName>
                   </note>
                </person>
@@ -2200,6 +2577,39 @@
                      <placeName>Hadleigh, Suffolk</placeName>
                   </death>
                   <note resp="#ajc">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title> (ODNB)</note>
+               </person>
+               <person xml:id="Drover_James" sex="1">
+                  <persName>
+                     <surname>Drover</surname>
+                     <forename>James</forename>
+                  </persName>
+                  <note type="bio" resp="#scw">Lived with his parents and sister on <placeName>Minster Street</placeName>. <!--scw: No further info available from Needham.--></note>
+               </person>
+               <person xml:id="Drover_Miss" sex="2">
+                  <persName>
+                     <surname type="maiden">Drover</surname>
+                  </persName>
+                  <note type="bio" resp="#scw">Lived with <orgName ref="#Drovers">her parents and brother</orgName> on <placeName>Minster Street</placeName>. <!--scw: No further info available from Needham.--></note>
+               </person>
+               <person xml:id="Drover_Mr" sex="1">
+                  <persName>
+                     <surname>Drover</surname>
+                  </persName>
+                  <note type="bio" resp="#scw">Lived with his wife and family on <placeName>Minster Street</placeName>. <!--scw: No further info available from Needham.--></note>
+               </person>
+               <person xml:id="Drover_Mrs" sex="2">
+                  <persName>
+                     <surname type="married">Drover</surname>
+                  </persName>
+                  <note type="bio" resp="#scw">
+                     <p>Lived with <orgName ref="#Drovers">her family</orgName> on <placeName>Minster Street</placeName>. <!--scw: No further info available from Needham.--></p>
+                  </note>
+               </person>
+               <person xml:id="Drover_MrsJames" sex="2">
+                  <persName>
+                     <surname type="married">Drover</surname>
+                  </persName>
+                  <note type="bio" resp="#scw">Lived with <rs type="person" ref="#Drover_James">her husband</rs>'s <orgName ref="#Drovers">family</orgName>on <placeName>Minster Street</placeName>.<!--scw: No further info available from Needham.--></note>
                </person>
                <person xml:id="Dryden" sex="1">
                   <persName>
@@ -2256,6 +2666,13 @@
                         Chamberlain of the Household (George IV, 1827-28; William IV,
                         1830-34)<!-- MRM's Preface to Chas. I in the DW suggests that the D of D became Licensor of Plays after Colman, who died in 1836. CHECK. Leslie Mitchell in Whig World notes that the 6th duke considered himself as great art patron.Lord Chamberlain of the Household served as Licensor of Plays, but the service dates don't quite match.  LMW --></p>
                   </note>
+               </person>
+               <person xml:id="Dukinfield_Mr" sex="1">
+                  <persName>
+                     <surname>Dukinfield</surname>
+                  </persName>
+                  <persName>Henry Duckinfield</persName>
+                  <note type="bio" resp="#scw">A patient of <persName ref="#Sherwood_Mr">Mr. Sherwood</persName>. May be Henry Duckinfield (note alternate spelling), vicar of <placeName>St. Giles</placeName> from <date from="1814" to="1834">1814-1834</date>, according to a handwritten note at the bottom of the same page on which <persName ref="#Needham_Francis">Needham</persName> has typed <persName ref="#Dukinfield_Mr">Dukinfield</persName>'s name.<!--scw: No other info from Needham.--></note>
                </person>
                <person xml:id="Duncan_MR" sex="2">
                   <persName>Maria Rebecca Davison, née Duncan</persName>
@@ -2588,10 +3005,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </persName>
                   <occupation>theatre proprietor</occupation>
                   <note type="bio" resp="#lmw">
-                     <p> British theater proprietor and naval officer. Co-proprietor of <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName> with
+                     <p> British theater proprietor and naval officer, and a former Grand Jury acquaintance of <persName ref="#Mitford_Geo">Mitford's father</persName>. Source: <rs type="letter">Letter from <persName ref="#coles">William Coles</persName> to <persName ref="#Needham_Francis">Needham</persName>, <date when="1957-11-10">10 November 1957</date>
+                        </rs>, <bibl corresp="#Needham_PapersRCL">
+                           <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL"/>
+                        </bibl>. <!--scw: See photo DSCN1167 and 1168--> Co-proprietor of <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName> with
                            <persName>Henry Harris</persName>, <persName ref="#Kemble_C">Charles
                            Kemble</persName>, and <persName>John Willett</persName>, as son-in-law
-                        and heir of <persName>George White</persName>. He held a 1/16 share by 1820.
+                        and heir of <persName>George White</persName>. He held a 1/16 share by 1820. 
                      </p>
                   </note>
                </person>
@@ -2794,6 +3214,20 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>William Godwin</persName>
                   <!--ebb: stub entry-->
                </person>
+               <person xml:id="Goodchild_J">
+                  <persName>
+                     <surname>Goodchild</surname>
+                     <forename>
+                        <supplied>Joseph</supplied>
+                     </forename>
+                  </persName>
+                  <occupation>farmer at <placeName>Hill house farm</placeName>, <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                  </occupation>
+                  <note resp="#scw">Farmer of <placeName>Hill house</placeName> farm, which is mentioned in <title ref="#OV">Our Village</title>. <persName ref="#Goodchild_J">Goodchild</persName> is noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople derived from the <bibl corresp="#PO_BerkshireDir">
+                        <title>Post Office Directory of Berkshire</title>, <date when="1847">1847</date> edition</bibl>. <persName ref="#Goodchild_J">Goodchild</persName> does not appear in the 1854 edition. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.</note>
+               </person>
                <person xml:id="Graham_Maria" sex="2">
                   <persName>
                      <roleName>
@@ -2857,24 +3291,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </death>
                   <note resp="#ajc"> Appointed physician-extraordinary to George III in 1793; he attended George IV, William IV, and Queen Victoria (ODNB) </note>
                </person>
-               <person xml:id="Harness_Wm" sex="1">
-                  <persName>
-                     <forename>William</forename>
-                     <surname>Harness</surname>
-                  </persName>
-                  <birth when="1790-03-14">
-                     <placeName>near Wickham, Hampshire</placeName>
-                  </birth>
-                  <death when="1869-11-11">
-                     <placeName>the deanery at Battle</placeName>
-                  </death>
-                  <occupation>literary</occupation>
-                  <occupation>religious</occupation>
-                  <note resp="#ebb">A lifelong friend of <persName ref="#MRM">MRM</persName> who knew her from their childhood in the 1790s, Harness wrote <bibl>Mitford's biography, which was published after his own death in <date when="1870">1870</date>
-                     </bibl>. Harness and <persName ref="#Byron">Byron</persName> were also friends from their schooling at Harrow, as Byron sympathized with Harness's experience of a disabled foot, crushed in an accident in early childhood. Byron considered dedicating <bibl>the first two cantos of <title>Childe Harold's Pilgrimage</title>
-                     </bibl> to Harness, but refrained so as not to taint Harness's reputation as he was taking orders as an Anglican curate. Harness admired and encouraged Mitford's playwrighting in particular, and she commented that he was one of the few of her friends who thought she should prioritize the drama over prose. When <persName ref="#Macready_Wm">William Macready</persName> was attacked in <bibl corresp="#Stage">an anonymous Blackwood's Magazine piece in 1825</bibl> for his demands and rudeness to Mitford over revisions to <title ref="#Rienzi">Rienzi</title>, Macready assumed that Harness was the author of the anonymous piece, though in <date when="1839">1839</date> after many years of distance, Harness assured Macready in person that he was not the writer, though he may have shared word of the poor treatment his friend had endured. [Source: <bibl>
-                        <author>Duncan-Jones</author>, <title>Miss Mitford and Mr. Harness</title> (<date when="1955">1955</date>)</bibl>.</note>
-               </person>
                <person xml:id="Harrison_hist" sex="1">
                   <persName>Thomas Harrison</persName>
                   <persName>
@@ -2884,6 +3300,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>warrior</occupation>
                   <occupation>Fifth Monarchist</occupation>
                   <death when="1660">1660</death>
+               </person>
+               <person xml:id="Hatch_John" sex="1">
+                  <persName>
+                     <surname>Hatch</surname>
+                     <forename>John</forename>
+                  </persName>
+                  <birth notBefore="1805-11-24">baptized November 24, 1805 in <placeName ref="#Shinfield">Shinfield parish</placeName>
+                  </birth>
+                  <death notAfter="1884-12-24">buried on December 24, 1884 in <placeName ref="#Shinfield">Shinfield parish</placeName>
+                  </death>
+                  <note type="bio" resp="#scw">Son of <persName>George and Sarah Hatch</persName>. Baptismal data as noted by <persName ref="#Needham_Francis">Needham</persName> along with other <placeName ref="#Shinfield">Shinfield parish</placeName> baptisms correlating to named characters in <title ref="#OV"/>. In his research notes, <!--scw: see photo DSCN1091 and photo DSCN1094--><persName ref="#Needham_Francis">Needham</persName> lists a marriage record for a John Hatch to <persName>Maria Bint</persName> dated <date when="1826-10-16">16 October 1826</date>. Among the witnesses to the marriage were <persName ref="#Bint_Hannah">Hannah Bint</persName> and <persName>Sarah Bint</persName> and <persName>James Critcher</persName>. The bride signed the register while <persName ref="#Hatch_John">John Hatch</persName> marked his name with an X. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers</bibl>, <orgName ref="#ReadingCL">Reading Central Library</orgName>. </note>
                </person>
                <person xml:id="Havard_Wm" sex="1">
                   <persName>
@@ -3031,6 +3459,28 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                            Magazine</title> from 1821-1825, and published <persName ref="#Keats">John Keats</persName>. 
                   </note>
                </person>
+               <person xml:id="Hill_Charles" sex="1">
+                  <persName>
+                     <surname>Hill</surname>
+                     <forename>Charles</forename>
+                  </persName>
+                  <occupation>schoolmaster</occupation>
+                  <note resp="#scw">Schoolmaster at <placeName>Silchester</placeName>. Husband of the <orgName ref="#Mitfords">Mitfords</orgName>' servant <persName ref="#Hill_Lucy">Lucy Hill</persName>, whose marriage to him caused her to leave the household. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.</note>
+               </person>
+               <person xml:id="Hill_Lucy" sex="2">
+                  <persName>
+                     <surname type="married">Hill</surname>
+                     <surname type="maiden">Sweatser</surname>
+                     <forename>Lucy</forename>
+                  </persName>
+                  <occupation>servant</occupation>
+                  <birth notBefore="1790-05-02">baptized on May 2, 1790 in <placeName>Stratfield Saye</placeName>
+                  </birth>
+                  <note type="bio" resp="#scw">Beloved servant for 12 years in <orgName ref="#Mitfords">the Mitford household</orgName> who, on <date when="1820-08-07">7 August, 1820</date> married <persName ref="#Hill_Charles">Charles Hill</persName>. She is the basis for the title character in the <title ref="#OV">Our Village</title> story. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers</bibl>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
+               </person>
                <person xml:id="Hofland_B">
                   <persName>
                      <surname type="married">Hofland</surname>
@@ -3088,6 +3538,19 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <p>English author (1745-1809); Author of The Road to Ruin (play, 1792) and Anna
                         St. Ives (novel, 1792)</p>
                   </note>
+               </person>
+               <person xml:id="Holton_Paul" sex="1">
+                  <persName>
+                     <surname>Holton</surname>
+                     <forename>Paul</forename>
+                  </persName>
+                  <occupation>wine and spirits merchant at <placeName>Wokingham</placeName>
+                  </occupation>
+                  <note resp="#scw">According to <persName ref="#Needham_Francis">Francis Needham</persName>'s research, <persName ref="#MRM">Mitford</persName> may have used the name for the character in the late <title ref="#OV">Our Village</title> story, <title level="a">"Lost and Won"</title>. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL"/>
+                     </bibl>. See esp. <rs type="letter">
+                        <persName ref="#Needham_Francis">Needham</persName>'s etter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-11-27">11 November, 1953</date>
+                     </rs>.</note>
                </person>
                <person xml:id="Homer" sex="1">
                   <persName>Homer</persName>
@@ -3402,6 +3865,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         p. 51-53</p>
                   </note>
                </person>
+               <person xml:id="Jones_Thomas" sex="1">
+                  <persName>
+                     <surname>Jones</surname>
+                     <forename>Thomas</forename>
+                  </persName>
+                  <occupation>saddler at <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
+                  </occupation>
+                  <note resp="#scw">A saddler of <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. Noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople derived from the <bibl corresp="#PO_BerkshireDir">
+                        <title>Post Office Directory of Berkshire</title>, <date when="1847">1847</date> edition. Also in the <date when="1854">1854</date> edition</bibl>. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>. </note>
+               </person>
                <person xml:id="Jonson_B" sex="1">
                   <persName>Ben Jonson</persName>
                   <persName>
@@ -3460,6 +3935,15 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <placeName ref="#Rome">Rome</placeName>
                   </death>
                   <occupation>literary</occupation>
+               </person>
+               <person xml:id="Keep_Harriet" sex="2">
+                  <persName>
+                     <surname>Keep</surname>
+                     <forename>Harriet</forename>
+                  </persName>
+                  <occupation>servant</occupation>
+                  <note resp="#scw">Servant in <orgName ref="#Mitfords">the Mitford household</orgName> from around <date from="1822" to="1830">1822-1830</date>. Source: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers</bibl>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
                </person>
                <person xml:id="Kemble_C" sex="1">
                   <persName>
@@ -3701,8 +4185,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <supplied resp="#err">Mr. Locks[?]]</supplied>
                      </unclear>
                   </persName>
-                  <note type="bio" resp="#err">A party concerned in <orgName ref="#Billiard_Club">the Billiard Club</orgName> affair, referenced in <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1822-08-31">31 August
-                     1822</date>.<!-- err: any way we can figure out who Mr. Locks (and his champions) are? I'm not even certain that I've gotten this person's name right. --></note>
+                  <note type="bio" resp="#err">A party concerned in <orgName ref="#Billiard_Club">the Billiard Club</orgName> affair, referenced in <rs type="letter">
+                        <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1822-08-31">31 August
+                     1822</date>
+                     </rs>.<!-- err: any way we can figure out who Mr. Locks (and his champions) are? I'm not even certain that I've gotten this person's name right. --></note>
                </person>
                <person xml:id="Macready_Wm" sex="1">
                   <persName>
@@ -3899,7 +4385,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <date from="1820" to="1830">1820-1830</date>, who frequently franked <persName ref="#MRM">Mary Russell Mitford</persName>'s
                      letters.
                
-                     <persName ref="#MRM">MRM</persName>'s letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date> discusses the election of Monck to Parliament for Reading, and associate him with a shoemaker who brought him from France: <quote>"<persName ref="#Monck_JB">Mr. Monck</persName> an opposition man of large fortune brought from <placeName ref="#France">France</placeName> in a fit of patriotism by our celebrated shoemaker &amp; Patriot <persName>Mr. <unclear unit="chars" quantity="4">
+                     <rs type="letter">
+                        <persName ref="#MRM">MRM</persName>'s letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date>
+                     </rs> discusses the election of Monck to Parliament for Reading, and associates him with a shoemaker who brought him from France: <quote>"<persName ref="#Monck_JB">Mr. Monck</persName> an opposition man of large fortune brought from <placeName ref="#France">France</placeName> in a fit of patriotism by our celebrated shoemaker &amp; Patriot <persName>Mr. <unclear unit="chars" quantity="4">
                               <supplied resp="#ebb">W</supplied>
                               <!--ebb: Could this be Waring? or Maury?-->
                            </unclear>
@@ -3947,7 +4435,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </death>
                   <occupation>literary</occupation>
                   <occupation>physician</occupation>
-                  <note type="bio" resp="#lmw ebb">
+                  <note type="bio" resp="#lmw #ebb">
                      <p>John Moore, M.D. (1729-1802) wrote A View of Society and Manners in Italy
                         (1781)</p>
                   </note>
@@ -4174,7 +4662,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </birth>
                   <death when="1843-01-24"/>
                   <note resp="#ajc">On March 16, 1820, an election in Reading was held. There were three candidates: <persName ref="#Monck_JB">John Berkeley Monck</persName> (418 votes), <persName ref="#Palmer_CF">Charles Fyshe Palmer</persName>(399 votes), and <persName ref="#Weyland_John">John Weyland</persName>(395 votes.) A Whig politician, he began running for Parliament elections as the member for <placeName ref="#Reading_city">Reading</placeName>
-                     <date notBefore="1816">after 1816</date>, and appears to have served off and on in that role until <date notAfter="1841">1841</date>. He led the Berkshire meetings to protest British government's handling of <rs type="event" ref="#Peterloo">the Peterloo Massacre</rs> in <date when="1819">1819</date>. Mitford's letters indicate a pronounced dislike of him as she vastly preferred his opponent <persName ref="#Monck_JB">J. B. Monck</persName>, and she reportedly satirized the Palmer in <date when="1818">1818</date> as <quote defective="false">"vastly like a mop-stick, or, rather, a tall hop-pole, or an extremely long fishing-rod, or anything that is all length and no substance."</quote> Palmer mentioned in connection with a potential legal issue with <orgName ref="#Billiard_Club">the Billiard Club</orgName> in <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1822-08-31">31 August 1822</date>. Palmer's opponents sometimes undermined his Whiggish position by referencing the noble privileges he accrued by marrying <persName ref="#Palmer_Mad">the Lady Madalina Gordon</persName> in <date when="1805">1805</date>. [Source: see <ptr target="http://www.historyofparliamentonline.org/volume/1820-1832/constituencies/reading"/>. See also note 2 in The Browning's Correspondence rendering of <rs type="letter">Mitford's letter of <date when="1842-03-12">12 March 1842</date> to <persName ref="#Barrett_E">Elizabeth Barrett Browning</persName>
+                     <date notBefore="1816">after 1816</date>, and appears to have served off and on in that role until <date notAfter="1841">1841</date>. He led the Berkshire meetings to protest British government's handling of <rs type="event" ref="#Peterloo">the Peterloo Massacre</rs> in <date when="1819">1819</date>. Mitford's letters indicate a pronounced dislike of him as she vastly preferred his opponent <persName ref="#Monck_JB">J. B. Monck</persName>, and she reportedly satirized the Palmer in <date when="1818">1818</date> as <quote defective="false">"vastly like a mop-stick, or, rather, a tall hop-pole, or an extremely long fishing-rod, or anything that is all length and no substance."</quote> Palmer mentioned in connection with a potential legal issue with <orgName ref="#Billiard_Club">the Billiard Club</orgName> in <rs type="letter">
+                        <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1822-08-31">31 August 1822</date>
+                     </rs>. Palmer's opponents sometimes undermined his Whiggish position by referencing the noble privileges he accrued by marrying <persName ref="#Palmer_Mad">the Lady Madalina Gordon</persName> in <date when="1805">1805</date>. [Source: see <ptr target="http://www.historyofparliamentonline.org/volume/1820-1832/constituencies/reading"/>. See also note 2 in The Browning's Correspondence rendering of <rs type="letter">Mitford's letter of <date when="1842-03-12">12 March 1842</date> to <persName ref="#Barrett_E">Elizabeth Barrett Browning</persName>
                      </rs>: <ptr target="http://www.browningscorrespondence.com/correspondence/1066/#D942-00C0002"/>.</note>
                </person>
                <person xml:id="Palmer_Mad" sex="2">
@@ -4214,7 +4704,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Philips_Mr" sex="1">
                   <persName>Mr. Philips</persName>
                   <occupation>miller</occupation>
-                  <note type="bio" resp="#ebb">A <placeName ref="#Reading_city">Reading</placeName> millwright mentioned in Mitford's discussion of the Reading elections in her letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date>.</note>
+                  <note type="bio" resp="#ebb">A <placeName ref="#Reading_city">Reading</placeName> millwright mentioned in <rs type="letter">
+                        <persName ref="#MRM">Mitford</persName>'s discussion of the Reading elections in her letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date>
+                     </rs>.</note>
                </person>
                <person xml:id="Pius7_Pope">
                   <persName>
@@ -4331,7 +4823,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </death>
                   <occupation>literary</occupation>
                   <occupation>government</occupation>
-                  <note type="bio" resp="#lmw, #cmm">
+                  <note type="bio" resp="#lmw #cmm">
                      <p> British author and policitician. Although Praed began his career at
                         Cambridge with Whig sympathies, he was returned to parliament for St.
                         Germans in 1830 as a <orgName ref="#Tory">Tory</orgName> candidate. He later
@@ -4743,6 +5235,20 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         Lane. A prominent Whig politician. </p>
                   </note>
                </person>
+               <person xml:id="Sherwood_Mr" sex="1">
+                  <persName>
+                     <surname>Sherwood</surname>
+                     <forename>
+                        <supplied>Thomas</supplied>
+                     </forename>
+                  </persName>
+                  <occupation>doctor</occupation>
+                  <note type="bio" resp="#scw">Practiced medicine in <placeName ref="#Reading_city">Reading</placeName>. <!--scw: no further info from Needham.-->He was a friend of <persName ref="#Monck_JB">John Berkeley Monck</persName>, and likely others in the <placeName ref="#Reading_city">Reading</placeName> political scene. Sources: <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>; <bibl>
+                        <title>History of Parliament Online</title>. <placeName ref="#Reading_city">Reading</placeName>Borough http://www.historyofparliamentonline.org/volume/1820-1832/constituencies/reading.</bibl>
+                  </note>
+               </person>
                <person xml:id="Siddons_Sarah" sex="2">
                   <persName>
                      <surname type="maiden">Kemble</surname>
@@ -5125,14 +5631,54 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note type="bio" resp="#esh">French painter known for his bucolic landscapes and
                      country scenes in the Late-Baroque, or Roccoco, style.</note>
                </person>
-               <person xml:id="Webb_Eliza" sex="2"><!-- KAB: added Miss Webb on Becca's advice, she also appears in the 1820-09-01 letter done by Karen, Erica and Elizabeth -->
+               <person xml:id="Webb_Eliza" sex="2">
                   <persName>
                      <surname>Webb</surname>
                      <forename>Eliza</forename>
+                     <forename>Elizabeth</forename>
                   </persName>
-                  <note type="bio">Miss Webb is a neighbour of <persName ref="#MRM">Mary Russell
-                        Mitford</persName>
+                  <birth notBefore="1797-03-03">baptized privately on <date when="1797-03-03">3 March, 1797</date>, and publicly on <date when="1797-06-08">8 June 1797</date>.</birth>
+                  <note resp="#scw">A neighbour and friend of <persName ref="#MRM">Mary Russell
+                     Mitford</persName>. In <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>'s papers</bibl>, he notes from the <title>Berkshire Directory</title>that she lived on <placeName>Broad street</placeName>. [Source: <rs type="letter">See <persName ref="#Needham_Francis">Needham</persName>'s letter to <persName ref="#Roberts_Wm">Roberts</persName> on <date when="1953-11-27">November 27, 1953</date>
+                     </rs>.] 
+                    
                   </note>
+               </person>
+               <person xml:id="Webb_James" sex="1">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>James</forename>
+                  </persName>
+                  <death when="1822-01-11">11 January 1822</death>
+                  <occupation>brewer at <placeName>Wokingham</placeName>
+                  </occupation>
+                  <note resp="#scw">Prominent brewer in the <placeName>Wokingham</placeName>brewing industry, father of <persName ref="#Webb_Eliza">Eliza</persName> and <persName ref="#Webb_Mary_younger">Mary Webb</persName>, and brother (or brother-in-law) of another <persName>Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName> suggested that he was the original of the <quote>"gentleman"</quote> in the <title ref="#OV">Our Village</title>sketch <title>
+                        <quote>"Aunt Martha"</quote>
+                     </title>. [Sources: <rs type="letter">
+                        <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>
+                     </rs>. <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.] </note>
+               </person>
+               <person xml:id="Webb_Mary_elder" sex="2">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <note resp="#scw">Friend of <persName ref="#MRM">Mitford. </persName>Sister or sister-in-law of <persName ref="#Webb_James">James Webb</persName> and aunt of <persName ref="#Webb_Eliza">Eliza</persName> and <persName ref="#Webb_Mary_younger">Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName>suggests that she was the basis for the character of <persName>Aunt Martha</persName> in the <title ref="#OV">Our Village</title>story of that title. [Sources: <rs type="letter">
+                        <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>
+                     </rs>. <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.] </note>
+               </person>
+               <person xml:id="Webb_Mary_younger" sex="2">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <birth notBefore="1796-04-15">baptized on 15 April, 1796</birth>
+                  <note resp="#scw">Sister of <persName ref="#Webb_Eliza">Eliza Webb</persName>, daughter of <persName ref="#Webb_James"/>, and niece of <persName ref="#Webb_Mary_elder"/>. Noted by <persName ref="#Needham_Francis">Needham</persName>, referencing the <title>Berkshire Directory</title>, to be living on <placeName>Broad Street</placeName>.</note>
                </person>
                <person xml:id="Webster_John" sex="1">
                   <persName>
@@ -5431,8 +5977,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Alice</persName>
                   <note resp="#kdc">apparently deleted character in <persName ref="#MRM">Mitford's</persName>
                      <title ref="#CharlesI_MRMplay">Charles</title>. <persName ref="#coles">Coles</persName> identifies the undated fragment in which Alice appears as
-                     having been written in <date when="1823-07">July</date> or <date when="1823-08">August, 1823</date>, although in her letter to <persName ref="#Talfourd_Thos">Talfourd</persName> dated <date when="1823-09-09">9
-                        November 1823</date>, <persName ref="#MRM">Mitford</persName> indicates that
+                     having been written in <date when="1823-07">July</date> or <date when="1823-08">August, 1823</date>, although <rs type="letter">in her letter to <persName ref="#Talfourd_Thos">Talfourd</persName> dated <date when="1823-09-09">9
+                        November 1823</date>
+                     </rs>, <persName ref="#MRM">Mitford</persName> indicates that
                      she will delete the scene. The character does not appear in the final version
                      of the play.</note>
                </person>
@@ -5813,6 +6360,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </note>
                </person>
                <person xml:id="Miranda"/>
+               <person xml:id="ModAntiquesBeau">
+                  <persName>ModAntiquesBeau</persName>
+                  <note resp="#scw">Unnamed character in the <title ref="#OV">Our Village</title> sketch, <title>"Modern Antiques"</title>who is rumored to be a former suitor to one of the sisters. In his <bibl corresp="#Needham_PapersRCL">Mitfordiana</bibl>, <persName ref="#Needham_Francis">Needham</persName> identifies the character as being based on <persName ref="#Annesley_Francis">Francis Annesley, LL.D.</persName>.</note>
+               </person>
                <person xml:id="Nuncio">
                   <persName>Nuncio</persName>
                </person>
@@ -6431,6 +6982,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <placeName>Sheffield Castle and Manor Lodge</placeName>
                   <note resp="#ebb">A location in which <persName ref="#MaryQoS">Mary Queen of Scots</persName> was held captive in <date when="1568">1568</date> by order of <persName ref="#ElizI">Queen Elizabeth I</persName>. Here, Mary was guarded by <persName ref="#Talbot_Geo">George Talbot, the Sixth Earl of Shrewsbury</persName>, and his wife, <persName ref="#Bess_of_Hardwick">Elizabeth Talbot or "Bess of Hardwick"</persName> befriended the royal captive.</note>
                </place>
+               <place xml:id="Shinfield">
+                  <placeName>Shinfield</placeName>
+                  <district>village and civil parish south of <placeName ref="#Reading_city">Reading</placeName> in <placeName ref="#Berkshire">Berkshire</placeName>. Shinfield parish encompasses <persName ref="#MRM">Mitford</persName>'s home in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>.</district>
+                  <location>
+                     <geo>0.947 51.408</geo>
+                  </location>
+               </place>
                <place xml:id="Somerset_House">
                   <placeName>Somerset House</placeName>
                   <!--ebb: This needs some explanation: What is the significance of this place?-->
@@ -6692,6 +7250,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>Encyclopedia Metropolitana; or, Universal Dictionary of Knowledge (30
                      vols., 1817-1845)</title>
                   <author><!-- various editors, including Coleridge. LMW --></author>
+               </bibl>
+               <bibl xml:id="PO_BerkshireDir">
+                  <title>Post Office Directory of Berkshire, Northamptonshire, and Oxfordshire; with Bedfordshire, Buckinghamshire, and Huntingdonshire</title>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Kelly and Co.</publisher>
+                  <date when="1847"/>
+                  <date when="1854"/>
+                  <note resp="#ebb">Text and page images of the 1854 edition may be accessed through the <orgName>University of Leicester's Special Collections Online</orgName> at <ptr target="http://specialcollections.le.ac.uk/cdm/ref/collection/p16445coll4/id/167099"/>. </note>
                </bibl>
             </listBibl>
             <listBibl type="per_19thc">
@@ -7139,8 +7705,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <date>1812</date>
                   <note resp="#ebb">
                      <bibl>
-                        <edition> Site Index for the Digital Mitford project. Date: 2015-05-25T23:55:29.06-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 850. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
+                        <edition> Site Index for the Digital Mitford project. Date: 2015-06-13T13:38:11.945-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 902. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
                   </note>
                </bibl>
                <bibl xml:id="Inez_deCastro_MRMplay">
@@ -7519,7 +8085,32 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <author ref="#Voltaire">Voltaire</author>
                </bibl>
             </listBibl>
-            <listBibl type="currSchol">
+            <listBibl type="MRM_Schol">
+               <bibl xml:id="coles_Thesis">
+                  <author ref="#coles">William Allan Coles</author>
+                  <title>The Correspondence of Mary Russell Mitford and Thomas Noon Talfourd (1821-1825)</title>
+                  <pubPlace>Cambridge, Massachusetts</pubPlace>
+                  <publisher>Harvard University</publisher>
+                  <date when="1956-08">August, 1956</date>
+                  <note resp="#ebb">Coles' doctoral dissertation presented to the Department of English at <orgName>Harvard University</orgName>, an edition of <rs type="letter">107 letters between <persName ref="#MRM">Mary Russell Mitford</persName> and <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName> written between <date from="1821" to="1825">1821 and 1825</date>.</rs>, housed at the <orgName ref="#Rylands">John Rylands Library</orgName> and <orgName ref="#HarvardHL">the Harvard University Library</orgName>.</note>
+               </bibl>
+               <bibl xml:id="Lestrange_Letters">
+                  <title>The Life of Mary Russell Mitford, Authoress of "Our Village," Etc, Related in a Selection from Her Letters to Her Friends</title>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <editor ref="#Lestrange">Alfred Guy Kingan L'Estrange</editor>
+                  <editor ref="#Harness_Wm">William Harness</editor>
+                  <biblScope unit="volume">three volumes</biblScope>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Richard Bentley</publisher>
+                  <date when="1870"/>
+               </bibl>
+               <bibl xml:id="Needham_PapersRCL">
+                  <author ref="#Needham_Francis">Francis Needham</author>
+                  <note resp="#ebb">
+                     <persName ref="#Needham_Francis">Francis Needham</persName>'s extensive and unpublished handwritten papers, which we estimate he kept <date notBefore="1940" notAfter="1970">roughly between the 1940s and 1960s</date>, recording his research of <persName ref="#MRM">Mary Russell Mitford</persName>'s letters and the local people of <placeName ref="#Berkshire">Berkshire</placeName> whom she may have known and who may have served as the basis for characters in <title ref="#OV">Our Village</title>. The papers are  held at <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
+               </bibl>
+            </listBibl>
+            <listBibl type="other_current_Schol">
                <bibl xml:id="BannedThtr_Findlater">
                   <title>Banned!: A Review of Theatrical Censorship in Britain</title>
                   <author>Richard Findlater</author>
