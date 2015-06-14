@@ -30,7 +30,7 @@
             <xsl:text>&#x9;</xsl:text>
 
 
-            <xsl:value-of select="persName/roleName"/>
+            <xsl:value-of select="persName/roleName[last()]"/>
             <xsl:text>&#x9;</xsl:text>
 
 
