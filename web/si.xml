@@ -26,8 +26,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2015-06-13T13:38:11.945-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 902. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition> Site Index for the Digital Mitford project. Date: 2015-06-14T09:11:23.853-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 903. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -56,27 +56,6 @@
       <body>
          <div type="Mitford_Team" org="uniform" sample="complete">
             <listPerson type="Mitford_Team">
-               <person>
-                  <persName xml:id="hl">
-                     <surname>Long</surname>
-                     <forename>Heather</forename>
-                     <roleName>Research Assistant</roleName>
-                  </persName>
-                  <occupation>
-                     <affiliation>State University of New York, Potsdam</affiliation>
-                  </occupation>
-                  <note type="bio"/>
-               </person>
-               <person>
-                  <persName>
-                     <surname>Paine</surname>
-                     <forename>Margo</forename>
-                  </persName>
-                  <occupation>B. A. in Literature/Writing and Secondary English Education, completed 2015.
-                     <affiliation>State University of New York, Potsdam</affiliation>
-                  </occupation>
-                  <note type="bio"/>
-               </person>
                <person xml:id="ab">
                   <persName>
                      <surname>Booth</surname>
@@ -409,6 +388,17 @@
                      <persName ref="#hbl">Hailey Lown</persName> is a third year transfer student at UCLA. Originally from Maryland, Hailey finds California to be quite different from her home state, but is enjoying the change. Hailey is an English major, concentrating on British literature and the Classics. She is quite proud of being part of the Digital Mitford Project.
                   </note>
                </person>
+               <person xml:id="hl">
+                  <persName>
+                     <surname>Long</surname>
+                     <forename>Heather</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
                <person xml:id="hsar">
                   <persName>
                      <surname>Sarsfield</surname>
@@ -587,6 +577,16 @@
                   </occupation>
                   <note type="bio">The founding Director of <ref target="http://www.mith.umd.edu">the Maryland Institute for Technology in the Humanities, or MITH</ref>, Martha Nell Smith is Professor of English and a Distinguished Scholar-Teacher at the University of Maryland. She has published and contributed extensively to print and digital textual scholarship of Emily Dickinson and her circle, especially Susan Huntington Gilbert Dickinson. She launched the <ref target="http://www.emilydickinson.org/">Dickinson Electronic Archives</ref> in 1997 and with Lara Vetter she is developing <ref target="http://rotunda.upress.virginia.edu/edc/">Emily Dickinson's Correspondences: A Born-Digital Textual Inquiry</ref>.</note>
                </person>
+               <person xml:id="mp">
+                  <persName>
+                     <surname>Paine</surname>
+                     <forename>Margo</forename>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing and Secondary English Education, completed 2015.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
                <person xml:id="mq">
                   <persName>
                      <surname>Kohli</surname>
@@ -716,7 +716,7 @@
                   <occupation>Assistant Professor of English
                      <affiliation>University of South Carolina, Extended University</affiliation>
                   </occupation>
-                  <note type="bio">Shelley AJ Jones is an Assistant Professor of English at the University of South Carolina-Extended University, Palmetto College, where she teaches online and distance education classes. Her main research interests include the intersections of genre and revision and technology and pedagogy in British Romantic poetry, with a particular focus on Mary Robinson. Most recently, she was an associate editor for a parallel-text version of Helen Maria Williams' <title>Peru and Peruvian Tales</title>, newly out from Broadview Press.&gt;</note>
+                  <note type="bio">Shelley AJ Jones is an Assistant Professor of English at the University of South Carolina-Extended University, Palmetto College, where she teaches online and distance education classes. Her main research interests include the intersections of genre and revision and technology and pedagogy in British Romantic poetry, with a particular focus on Mary Robinson. Most recently, she was an associate editor for a parallel-text version of Helen Maria Williams' <title>Peru and Peruvian Tales</title>, newly out from Broadview Press.</note>
                </person>
                <person xml:id="scw">
                   <persName>
@@ -7705,8 +7705,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <date>1812</date>
                   <note resp="#ebb">
                      <bibl>
-                        <edition> Site Index for the Digital Mitford project. Date: 2015-06-13T13:38:11.945-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 902. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
+                        <edition> Site Index for the Digital Mitford project. Date: 2015-06-14T09:11:23.853-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 903. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
                   </note>
                </bibl>
                <bibl xml:id="Inez_deCastro_MRMplay">
