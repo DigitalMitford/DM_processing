@@ -9,17 +9,10 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="front//lg/l">
-        <l n="{count(preceding::l)+1}">
+    <xsl:template match="s">
+        <s xml:id="{./ancestor::div[@type='chapter']/@xml:id}_S{count(./preceding-sibling::s)+1}">
             <xsl:apply-templates/>
-        </l>
-    </xsl:template>
-    
-    <xsl:template match="body//l">
-        <l n="{count(preceding::l)+1}">
-            <xsl:apply-templates/>
-        </l>
-        
+        </s>
     </xsl:template>
 
 </xsl:stylesheet>
