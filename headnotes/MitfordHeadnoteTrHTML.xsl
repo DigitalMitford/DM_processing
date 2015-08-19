@@ -2,7 +2,27 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.w3.org/1999/xhtml"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-    <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat"/>
+    <xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
+        omit-xml-declaration="yes"/>
+    
+  <!--ebb: 2015-08-19: Updated per Saxonica's recommendation. 
+     
+
+  omit-xml-declaration="yes" Use this if I care about the W3C Validator response, which will say the pages are
+  not valid HTML if they begin with an xml declaration meta-tag. If I want to parse this as html/text, I do want
+  to omit-xml-declaration, yes. 
+  
+  indent="yes"  vs. indent="no" : This affects the human-readability of my output! indent="no"
+  produces an enormous long line of text. If I output as XML this is the only way to prevent added spacing issues with
+  the stretching nested spans problem (parent spans are too long when child spans are hidden; but the difference disappears on mouseover
+  making the lines of text wiggle.)
+  
+     The attribute  html-version="5.0" seems not to be necessary!
+       
+       
+   
+  -->  
+    
     <xsl:strip-space elements="*"/>
     
    
@@ -11,14 +31,17 @@
         <html>
             <head>
                 <title>Digital Mitford: The Mary Russell Mitford Archive</title>
-                <meta charset="UTF-8"/>
+             <!--   <meta charset="UTF-8"/>-->
                 <meta name="Description"
                     content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
                 <meta name="keywords"
                     content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, TEI, Text Encoding Initiative, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
                 <link rel="stylesheet" type="text/css" href="mitfordAnnotText.css"/>
-                <script type="text/javascript" src="MRMAnnotText.js" xml:space="preserve">...</script>
-                
+                <script type="text/javascript" src="MRMAnnotText.js">/**/</script>
+                <!--ebb8 2015-08-19: Removed this attribute: 
+                    xml:space="preserve" 
+                    because the W3C Validator says it's not valid.
+                    But is it necessary for my JavaScript to function?-->
 
 
             </head>
