@@ -5,8 +5,11 @@
     version="2.0" xmlns="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="text"/>
    <!-- <xsl:strip-space elements="persName placeName rs"/>-->
+    
+    <!--ebb: 2015-09-12: An XSLT file to extract a list of xml:ids matched to a string of <title> elements from the collection of files in which they are represented. Reviewing this XSLT, I need to set some variables and build on it.  -->
 
     <!--ebb: we ran this xsl file against itself. Any XML file will do to match a document template, including an XSL. This XSL requires sitting just above a directory named "coll." 30 June 2014: I notice it runs differently depending on what XML file you select to initiate the transformation. If you run from si.xml, it extracts all the xml:ids from the si.xml and then matches against the collection refs. Troubles with running from xsl to xsl: Unless you specify the $coll in the xmlid variable, it won't output the xmlids. And if you do specify $coll in the xmlid and canon name variables, the search for titles won't work. A little gimpy, but this XSLT serves to illustrate how to run XSLT on a collection.-->
+    
 
     <xsl:variable name="coll" select="collection('coll')" as="document-node()+"/>
    <xsl:template match="/">
