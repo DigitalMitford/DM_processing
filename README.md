@@ -1,4 +1,4 @@
 mitford
 =======
 
-The GitHub repository archiving coding development work on the [Digital Mitford Project](http://digitalmitford.org).
+The GitHub repository for coding development work on the [Digital Mitford Project](http://digitalmitford.org).
