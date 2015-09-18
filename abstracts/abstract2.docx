@@ -1,0 +1,25 @@
+Mary Erica Zimmer, Molly O’Donnell, and Elisa Beshero-Bondar
+2015 TEI Conference and Members’ Meeting
+Paper Proposal 
+Finding “Miss James”: Approaches to Annotation in The Mary Russell Mitford Archive 
+
+
+How might editors annotate what they cannot identify? Under such circumstances, might mobilizing a TEI archive’s own markup lead the way to new discoveries? Within Digital Mitford: The Mary Russell Mitford Archive, one might look to the example of locating the mysterious “Miss James.” Referenced solely by patronym, “Miss James” became a topic of conjecture when multiple editors shared questions about the same elusive figure. In letters penned by Mitford in 1819 and after, “Miss James” emerged as Mary Mitford’s trusted friend and advisor. She was also an opinionated humorist, offering assessments of everything from mutual acquaintances to literary works. Yet while her Christian name and profession were eventually discovered by project editors, her history remains largely unearthed.
+
+What insights might processing Digital Mitford’s own markup reveal about such a figure? Inspired by Douglas Duhaime’s visualized co-citations in the EEBO-TCP corpus, we view clusters of related data as forms of annotation—ones that, rendered judiciously, aid both scholars and those newer to Mitford’s oeuvre.[1] Working with XQuery on our eXist database of project files, we first assess the prevalence of relational categories tagged by our editors, then use these counts to weight lists of high-frequency tokens in ranges indexed by a key term.[2] Visualized, the resulting bouquets of knowledge suggest lines of inquiry—ones “locating” the unknown while enhancing perspectives the TEI archive itself may offer.
+
+- -
+
+[1] See Duhaime, Douglas. “Co-Citation Networks in the EEBO-TCP Corpus.” 26 July 2014. <http://douglasduhaime.com/blog/co-citation-networks-in-the-eebo-tcp-corpus>. Our model builds upon Christopher Ricks’ metaphor of scholarly annotation as “supererogation” (Allusion to the Poets, OUP, 2002). While its visualization is in progress, one mock-up may be found at <http://bit.ly/1gJXWsV>.
+
+[2] See The Digital Mitford Codebook <https://docs.google.com/document/d/1r-8NGPJL1pZ20pnfvoX5OT0DkcDi-NBp5urJiZwx1sY/pub>. On ordered lists, see Witmore, Michael. “Finding ‘Distances’ Between Shakespeare’s Plays 2: Projecting Distances onto New Bases with PCA.” 6 July 2015. <http://winedarksea.org/?p=2271>. 
+
+ 
+
+Speaker Bios:
+
+Mary Erica Zimmer is a Ph.D. Candidate in The Editorial Institute at Boston University whose research addresses editorial theories and methods, histories of the book, and intertextuality. She also has a strong interest in models for undergraduate research. Her work on Digital Mitford’s data visualization team is complemented by her development of an online, browsable model of the bookshops and stalls in London’s Paul’s Cross Churchyard before the 1666 Great Fire. Her dissertation will serve as a companion to the Selected Poems of Geoffrey Hill.
+
+Molly O’Donnell is the University of Nevada, Las Vegas, President’s Foundation Graduate Research Fellow. She has recently contributed to Victoriographies and the Norton Anthology, and was formerly associate faculty at Notre Dame of Maryland University. Her dissertation uses contemporary sociolinguistics to examine the nineteenth-century tales novel as a useful mode for exploration in the areas of genre, narrative, and gender studies.
+
+Elisa Beshero-Bondar, Project Director of the Digital Mitford Archive, is Associate Professor of English at the University of Pittsburgh at Greensburg where she has taught since 2004. She is the author of Women, Epic, and Transition in British Romanticism (University of Delaware Press, 2011). At Pitt-Greensburg, she helped to launch a Digital Humanities pedagogy and research initiative that engages faculty and students in electronic text markup, text-mining of digital library databases, and digital project development. She has recently been experimenting with network analysis as applied to complex text and paratext structures in Thalaba the Destroyer, an 1801 epic poem by Robert Southey.
