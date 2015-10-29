@@ -432,8 +432,13 @@
         <span class="date" title="{string-join(@*, '-')}">
             <xsl:apply-templates/>
         </span>
+    </xsl:template>
     
-  
+    <xsl:template match="gap">
+        <span class="gap"><xsl:text>[SOMETHING MISSING HERE!]</xsl:text></span>
+        <br/>
+        [SOMETHING MISSING HERE]
+        
     </xsl:template>
 
   <xsl:template match="emph">
