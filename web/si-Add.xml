@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+                <editor><!--Add your name here! And add an @ref attribute to <editor>, pointing to your xml:id in the si.xml--> </editor>
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+         
+   <div type="Mitford_Team"><!--contains Mitford editors as well as archives identifiers. We may want to add a list of all our files from manuscript, with an xml:id for each. More on this as we figure out how!-->
+      <listPerson type="Mitford_Team">
+         <person/>
+      </listPerson>
+      <listOrg>
+         <org/>
+      </listOrg>
+   </div>    
+       <div type="Past_Editors">
+          <listPerson type="Past_Editors">
+             <person xml:id="whatever"></person>
+          </listPerson>
+       </div>
+         
+       <div type="historical_people">
+          <listOrg type="hist">
+             <org xml:id="whatever1"></org>
+          </listOrg>
+          
+          <listPerson type="hist">
+             <person xml:id="whatever3"><!--This is about as elaborate as we need to be for person entries in our project. Historical people will probably have the most extensive entries. Note: We've decided that named animals count as historical people, so Mitford's pets go into this list.-->
+                <persName>
+                   <surname type="married"></surname><!--takes @type attributes: @type="married" @type="maiden"-->
+                   <forename></forename>
+                   <forename></forename><!--middle names are "forenames" too. Put them in order. First name, then middle name(s)-->
+                   <roleName><!--if any. 6th Earl of Northumberland--></roleName>
+                   <ref target="http://viaf-or-other-reference"/>
+                </persName>
+                <persName/><!--multiple names? collect them, as many persNames, nicknames, etc as we know.-->
+                <birth when="1800-01-16"><placeName><!--where born?--></placeName></birth>
+                <death when="1870-01-16"><placeName><!--where died?--></placeName></death>
+                <occupation><!--one-word or short here, try to use a value in play in the index already: literary, playwright, actor, politician, etc.--></occupation>
+                <occupation><!--Of course there may be multiple occupations.--></occupation>
+                <note resp="#ebb"><!--Your brief, pithy note here (and use your own editor xml:id, commenting on the significance of this person to Mitford, her world, her people.-->
+                </note>
+                
+             </person>
+          </listPerson>
+       </div>
+       <div type="fictional_and_archetypal">
+          <listPerson type="arch">
+             <person/><!--This list is for mythical, legendary entities, 
+                not precisely rooted in a place or time, or in a particular text either. -->
+          </listPerson>
+          <listPerson type="fict">
+             <person/><!--Use this list for fictional characters from particular texts.-->
+          </listPerson>
+          <listOrg type="fict">
+             <org/>
+          </listOrg>
+          <listOrg type="arch">
+             <org/>
+          </listOrg>
+       </div>
+         <div type="places">
+            <listPlace type="hist">
+               <place/>
+            </listPlace>
+            <listPlace type="fict">
+               <place/><!--for any fictional/imaginary/mythical places-->
+            </listPlace>
+         </div>
+         <div type="plant">
+            <list type="plants">
+               <item>
+                  <name>Daphne's favorite plant</name>
+                  <note><persName ref="#Daphne">Daphne</persName>, Mitford's pet dog, enjoyed romping in the woods and finding this plant...</note><!--OK, I'm just playing here, but showing how to point to other references in the site index! Adding cross references is very helpful; please try to do it.-->
+               </item>
+            </list>
+         </div>
+         <div type="events">
+            <listEvent>
+               <event>
+                  <label></label>
+                  <note></note>
+               </event>
+            </listEvent>
+         </div>
+         <div type="art"><!--for graphical works of art, or works that aren't published in print form. Differentiate lists as needed.-->
+            <list type="art">
+               <item/><!--leave this stump in place. Needed for this list to be valid.-->
+              <figure xml:id="whatevs9">
+               <bibl></bibl>
+               <graphic url="whatever.html"/><!--If we find a good, stable URL representing this artwork on the web, point to it here.-->
+               <note></note>
+            </figure>
+            </list>
+         </div>
+         <div type="publications">
+            <listBibl type="ref_19thc"><!--For encyclopedic or reference works from Mitford's time.-->
+               <bibl xml:id="whatevs21">
+               </bibl>        
+            </listBibl>
+            
+            <listBibl type="per_19thc"><!--For 19th-c. periodicals, as well as nonliterary stuff published in periodicals, like reviews, critiques, newspaper articles, etc.-->
+               <bibl/>
+            </listBibl>
+            
+            <listBibl type="literary"><!--Anything literary, not restricted to Mitford's time.-->
+               <bibl/>
+            </listBibl>
+            
+            <listBibl type="currSchol"><!--Scholarship from our time.-->
+               <bibl/>
+            </listBibl>
+            
+         </div>
+         
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+                <editor><!--Add your name here! And add an @ref attribute to <editor>, pointing to your xml:id in the si.xml--> </editor>
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+         
+   <div type="Mitford_Team">
+      <listPerson type="Mitford_Team">
+         
+         
+         <person xml:id="lmw">
+            <persName>
+               <surname>Wilson</surname>
+               <forename>Lisa</forename>
+               <forename>M.</forename>
+               <roleName>Founding Editor</roleName>
+            </persName>
+            <occupation>
+               <affiliation>State University of New York at Potsdam</affiliation>
+            </occupation>
+            <note type="bio">Lisa Wilson is Professor in the Department of English and Communication at SUNY Potsdam, where she has taught since 2005. She is also the Director of interdisciplinary Learning Communities for the campus, and currently serves as Chair of Faculty Senate. Her areas of interest include transatlantic Romantic and Victorian era literature, particularly women’s writing and popular forms such as the Gothic novel and the literary ballad. She is also interested in book history and bibliographical studies, particularly in the study of authorship in the long nineteenth century (1780-1900). She has published in European Romantic Review, Romanticism on the Net (now RaVon), Romantic Circles, Romantic Textualities, and elsewhere. She is currently working on a monograph on Romantic-period authorship and literary celebrity. Her work on Digital Mitford thus far includes editing and coding Mitford’s “Introduction” to her collected Dramatic Works (1854), a critical memoir that recounts the author’s influences and experiences at Covent Garden and Drury Lane in the 1820s and 30s. It also includes researching Mitford’s publication history for the site’s working bibliography, particularly tracking the migration of Mitford’s stories from their first publication to their later reappearances in collections and periodicals. A Founding Editor of Digital Mitford, she and her team of student research assistants have been at work since 2013 on transcribing, coding, and researching Mitford’s letters from 1819 to the early 1820s.
+               <p/>
+            </note>
+         </person>
+         
+         <person xml:id="slc">
+            <persName>
+               <surname>Cantwell</surname>
+               <forename>Sara</forename>
+               <roleName>Research Assistant</roleName>
+            </persName>
+            <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and Communication, in progress 2015.
+               <affiliation>State University of New York, Potsdam</affiliation>
+            </occupation>
+            <note type="bio"/>  <note type="bio">Sara Cantwell received her B.F.A. in Creative Writing from the State University of New York at Potsdam in May 2014. She specializes in the writing of poetry and creative non-fiction. In fall 2015, she began work on an M.A. in English and Communication from SUNY Potsdam and joined the Digital Mitford project. She is particularly interested in Mitford's poetry and letters.
+            </note>
+         </person>
+         
+         <person xml:id="oa">
+            <persName>
+               <surname>Allard</surname>
+               <forename>Olivia</forename>
+               <roleName>Research Assistant</roleName>
+            </persName>
+            <occupation>B. A. in Communication, in progress (expected 2017)
+               <affiliation>State University of New York at Potsdam</affiliation>
+            </occupation>
+            <note type="bio">Olivia Allard expects to graduate in 2017 with a B.A. in Communication from the State University of New York at Potsdam. She is also completing a minor in Women's and Gender Studies. She has worked as a Digital Mitford Research Assistant since Spring 2015. In fall 2015, she wrote a book history of Mitford's 1824 Our Village as a final project for Dr. Wilson's undergraduate course in Victorian literature.
+               <p/>
+            </note></person>
+            
+            <person xml:id="ps">
+               <persName>
+                  <surname>Sasu</surname>
+                  <forename>Perdita</forename>
+                  <roleName>Research Assistant</roleName>
+               </persName>
+               <occupation>B. A. in Communication, in progress (expected 2016)
+                  <affiliation>State University of New York at Potsdam</affiliation>
+               </occupation>
+               <note type="bio">Perdita Sasu expects to graduate in 2016 with a B.A. in Communication from the State University of New York at Potsdam. She began work as a Digital Mitford Research Assistant in Fall 2015, tasked with documenting the physical copies of Mitford's works in Dr. Wilson's collection.
+                  <p/>
+               </note></person>
+         
+         <person xml:id="tlh">
+            <persName>
+               <surname>Harnish</surname>
+               <forename>Tracy</forename>
+               <forename>Lynn</forename>
+               <roleName>Research Assistant</roleName>
+            </persName>
+            <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and Communication, in progress 2015.
+               <affiliation>State University of New York, Potsdam</affiliation>
+            </occupation>
+            <note type="bio"/>  <note type="bio">Tracy Harnish is a native of northern New York. She received her B.F.A. in Creative Writing from the State University of New York at Potsdam in May 2014. She specializes in the writing of creative non-fiction and of historical screenplays. She is at work on an M.A. in English and Communication and an M.S.T. in Secondary English Education from SUNY Potsdam; her M.A. thesis focuses on the changing reception of the story of Olive Oatman, a woman held captive and tattooed by Native American tribes in the American West in the 1850s. Oatman later became a celebrated author and speaker on the subject of her experiences and her story has received fictionalized treatments in print and on television. Tracy has worked on the Digital Mitford project since Fall 2013. She presented with Dr. Wilson on Digital Mitford at the 2015 EC/ASECS meeting in West Chester, PA. She is particularly interested in Mitford's self-representation as a woman writer of varied talents and interests.
+            </note>
+         </person>
+            </listPerson>
+   </div>
+      
+      
+         <div type="Past_Editors">
+            <listPerson type="Past_Editors"> <!--LMW Update and move all these to past editors.  Move Dan Hitt, too? -->
+               
+               
+               <person xml:id="abp">
+                  <persName>
+                     <surname>Parker</surname>
+                     <forename>Ashante</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing and in Communication, completed 2015.
+                     <affiliation>State University of New York at Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Ashante Parker graduated in December 2015 with a B.A., majoring in both in Literature/Writing and in Communication from the State University of New York at Potsdam. She began work as a Digital Mitford Research Assistant in Fall 2015, tasked with researching and developing Site Index entries.
+                     <p/>
+                  </note>
+               </person>
+               
+               <person xml:id="nlh">
+                  <persName>
+                     <surname>Hebert</surname>
+                     <forename>Nathaniel</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing and in Communication, completed 2015.
+                     <affiliation>State University of New York at Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Nathan Hebert graduated in December 2015 with a B.A., majoring in both in Literature/Writing and in Communication from the State University of New York at Potsdam. He worked as a Digital Mitford Research Assistant in Fall 2015, tasked with researching and developing Site Index entries.
+                     <p/>
+                  </note>
+               </person>
+               
+               <person xml:id="cvk">
+                  <persName>
+                     <surname>LaSalle</surname>
+                     <forename>Corie</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>M. A. in English and Communication, in progress 2015.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>  <note type="bio">Corie LaSalle is at work on an M.A. in English and Communication from SUNY Potsdam. As part of Dr. Wilson's Fall 2015 graduate course, "Book History in a Digital Age," she worked on a class project to edit the sonnets from Mitford's Dramatic Scenes, Sonnets, and Other Poems (1827). 
+                  </note>
+               </person>
+               
+               <person xml:id="apc">
+                  <persName>
+                     <surname>Calderwood</surname>
+                     <forename>Austin</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>M. A. in English and Communication, in progress 2015.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>  <note type="bio">Austin Calderwood is at work on an M.A. in English and Communication from SUNY Potsdam. As part of Dr. Wilson's Fall 2015 graduate course, "Book History in a Digital Age," he worked on a class project to edit the sonnets from Mitford's Dramatic Scenes, Sonnets, and Other Poems (1827).  
+                  </note>
+               </person>
+               
+               <person xml:id="knm">
+                  <persName>
+                     <surname>Murphy</surname>
+                     <forename>Kristen</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>M. A. in English and Communication, in progress 2015.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>  <note type="bio">Kristen Murphy is at work on an M.A. in English and Communication from SUNY Potsdam. As part of Dr. Wilson's Fall 2015 graduate course, "Book History in a Digital Age," she worked on a class project to edit the sonnets from Mitford's Dramatic Scenes, Sonnets, and Other Poems (1827).  
+                  </note>
+               </person>
+               
+               <person xml:id="ncl">
+                  <persName>
+                     <surname>LoRusso</surname>
+                     <forename>Natalie </forename>
+                     <forename>Claire</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B.A., English Literature, completed in 2015
+                     <affiliation>State University of New York at Potsdam</affiliation>
+                  </occupation>
+                  <occupation>M.L.I.S, in progress 2015
+                     <affiliation>Syracuse University</affiliation>
+                  </occupation>
+                  <note type="bio">Natalie LoRusso graduated in May 2015 with a B.A. in English Literature from the State University of New York at Potsdam; she also completed minors in Classical Studies and Women's and Gender Studies. Her undergraduate honors thesis in English analyzed gendered cultural responses to professional women's visible body tattoos. She worked on Digital Mitford from Spring 2014 to Spring 2015. She is from Syracuse, New York, and began graduate study in library and information science at Syracuse University in Fall 2015.
+                     <p/>
+                  </note>
+               </person>
+               
+               <person xml:id="ws">
+                  <persName>
+                     <surname>Sainbert</surname>
+                     <forename>Wilmina</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing, in progress (expected 2015)
+                     <affiliation>State University of New York at Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Wilmina Sainbert expects to graduate in 2015 with a B.A. in Literature/Writing from the State University of New York at Potsdam. She is from Valley Stream, New York, and plans to begin graduate study in the teaching of English as a second language at Hofstra in 2016. She worked as a Digital Mitford Research Assistant in Spring and Summer 2015.
+                     <p/>
+                  </note></person>
+                  
+         <person xml:id="cmm">
+            <persName>
+               <surname>Murray</surname>
+               <forename>Chelsie</forename>
+               <roleName>Research Assistant</roleName>
+            </persName>
+            <occupation>M. A. in English &amp; Communication, 2013
+               <affiliation>State University of New York, Potsdam</affiliation>
+            </occupation>
+            <note type="bio">Chelsie Murray received her B.A. in Psychology and her M.A. in English &amp; Communication from the State University of New York at Potsdam. She completed her M.A. in 2013; her thesis 
+               focused on the book and reception history of <bibl><author>Frances Hodgson Burnett</author>'s <title>The Secret Garden</title> and <title>The Little Princess</title></bibl>. 
+               She worked as a Digital Mitford Research Assistant in Summer 2013, writing some of the earliest Site Index entries to emerge from the editing of the 
+               Introduction to Mitford's Dramatic Works.</note>
+         </person>
+               
+               <person>
+                  <persName xml:id="hl">
+                     <surname>Long</surname>
+                     <forename>Heather</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B.A. in Literature/Writing, completed in 2014 &amp; M.S.T. in English Education, in progress 2015.</occupation>
+                  <affiliation>State University of New York at Potsdam</affiliation>
+                  
+                  <note type="bio">Heather Long graduated in 2014 with a B.A. in Literature/Writing from the State University of New York at Potsdam. She worked as a Digital Mitford Research Assistant in Fall 2014. She is completing a Master of Science in Teaching in English Education (grades 7 through 12), and expects to complete her degree in Fall 2015 and to begin a career as a high school English teacher.
+                  </note>
+               </person>
+               
+               <person xml:id="hsar">
+                  <persName>
+                     <surname>Sarsfield</surname>
+                     <forename>Heather</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation> B.A., English Literature, completed in 2014
+                     <affiliation>State University of New York at Potsdam
+                     </affiliation>
+                  </occupation>
+                  <note type="bio">Heather Sarsfield is a native of northern New York. A nontraditional age student, she received her BA in English Literature from the State University of New York at Potsdam in December 2014. Her undergraduate honors thesis in English focused on Sydney Owenson, Lady Morgan, a contemporary of Mary Russell Mitford.  She hopes eventually to go on to graduate work in Irish Literature and History, which is her primary area of scholarly interest. She has worked on the Digital Mitford project from Fall 2013 to Fall 2014.
+                  </note>
+               </person>
+               
+               <person xml:id="jbb">
+                  <persName>
+                     <surname>Burwell</surname>
+                     <forename>Jaime</forename>
+                     <forename>Breanna</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>M.A. in English &amp; Communication, in progress
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <occupation>M.L.S., completed 2015
+                     <affiliation>University at Buffalo</affiliation>
+                  </occupation>
+                  <note type="bio">Jaime Burwell is a native of northern New York. She received her B.A. in English Literature from the State University of New York at Potsdam in 2011 and completed an M.L.S. from the University at Buffalo in 2015.  She is also at work on an M.A. in English and Communication from SUNY Potsdam; her M.A. thesis focuses on the changing reception of early eighteenth-century novelist and playwright Eliza Haywood. Jaime has worked on the Digital Mitford project since 2014. She is particularly interested in British women's authorship and reception during the long eighteenth century, and has given scholarly presentations on Mitford's reception and on the representation of 18th- and 19th-century British women's writing in online archives.</note>
+               </person>
+               
+               <person xml:id="msp">
+                  <persName>
+                     <surname>Paine</surname>
+                     <forename>Margo</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B.A., Literature/Writing &amp; Secondary English Education, completed 2015. 
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Margo Paine graduated in May 2015 from the State University of New York at Potsdam with her B.A. in Literature/Writing and Secondary English Education. She worked with the Digital Mitford Project during Fall 2014. Margo began the M.A. in Literacy at SUNY Potsdam in Fall 2015; she works as a Graduate Assistant in the campus Literacy Center.
+                     <p/>
+                  </note>
+               </person>
+               
+               <person xml:id="wnb">
+                  <persName>
+                     <surname>Barr</surname>
+                     <forename>William</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B.A. in History, English Literature, &amp; Sociology, in progress (expected 2016)
+                     <affiliation>State University of New York at Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">William Barr is a transfer student who expects to graduate in 2016 with a B.A. in English Literature, History, and Sociology from the State University of New York at Potsdam. He worked on Digital Mitford in Fall 2014.
+                     <p/>
+                  </note>
+               </person>
+               
+               <person xml:id="xjw">
+                  <persName>
+                     <surname>Xiong</surname>
+                     <forename>Robin</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">Robin Xiong is Xiong Junwen from China. In 2014, she was an undergraduate student in UCLA majoring in Pre-Asian Studies. Robin loves movies and photography. She worked on Digital Mitford in 2014.<p/>
+                  </note>
+               </person>
+               
+               <person xml:id="tnh">
+                  <persName>
+                     <surname>Hays</surname>
+                     <forename>Toni</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">In 2014, Toni Hays was a student at UCLA, majoring in English Literature with a particular focus on aestheic theory. She is particularly interested in the application of aesthetic theory to British literature of the late Victorian and Modernist periods. She believe in a holistic approach to literature where one combines an understanding of context and content to inform critical analysis. She is also commited to the provision and accessiblity of scholarly research. She worked on Digital Mitford in 2014. <p/>
+                  </note>
+               </person>
+               
+               <person xml:id="rct">
+                  <persName>
+                     <surname>Tang</surname>
+                     <forename>Rebecca</forename>
+                     <roleName>Reseach Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">In 2014, Rebecca Tang was a fourth-year student at UCLA, majoring in English with a particular interest in 19th-century Romantic poetry. Interested in archival work, she was drawn to the Digital Mitford project in order to learn more about the editing and coding process. After graduation, Rebecca hopes to go into the editing and publishing business for book and magazine companies. She worked on Digital Mitford in 2014.<p/>
+                  </note>
+               </person>
+               
+               
+               <person xml:id="mq">
+                  <persName>
+                     <surname>Kohli</surname>
+                     <forename>Mehaque</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">In 2014, Mehaque Kohli was a fourth year International Development Studies major at UCLA. She is originally from New Delhi, India, where she was born and completed her high school education. After graduation she hopes to work with the UN and start her own nonprofit in India someday. She worked on Digital Mitford in 2014.<p/>
+                  </note>
+               </person>
+               
+               <person xml:id="hbl">
+                  <persName>
+                     <surname>Lown</surname>
+                     <forename>Hailey</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">In 2014, Hailey Lown was a third year transfer student at UCLA. She is originally from the state of Maryland. Hailey is an English major, concentrating on British literature and the classics. She worked on Digital Mitford in 2014.<p/>
+                  </note>
+               </person>
+               
+                <person xml:id="ga">
+                  <persName>
+                     <surname>Amos</surname>
+                     <forename>Gracia</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">In 2014, Gracia Amos was a fourth year undergraduate at UCLA, finishing a degree in English with a concentration in poetry. Her areas of interest include mythology, intermedia, critical theory, and postmodern poetry. She has been a poetry editor for Westwind, UCLA's journal of the literary arts, and currently publishes a zine with LA-based artists' collective which she co-founded, Nothing New Publications. She worked on Digital Mitford in 2014.<p/>
+                  </note>
+               </person>
+               
+               <person xml:id="ejb">
+                  <persName>
+                     <surname>Beckman</surname>
+                     <forename>Ella</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA
+                     </affiliation>
+                  </occupation>
+                  <note type="bio">Ella Beckman is an undergraduate at UCLA and plans to graduate in 2017. She is a native of Sacramento and is double majoring in Political Science and Spanish. After she graduates, she plans to attend law school and to one day become a public defender. She worked on Digital Mitford in 2014.
+                  </note>
+               </person>
+               
+               <person xml:id="cyh">
+                  <persName>
+                     <surname>Huang</surname>
+                     <forename>Chi-Ya</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">In 2014, Chi-Ya Huang was studying psychology in UCLA. She also worked on Digital Mitford in 2014.<p/>
+                  </note>
+               </person>
+               
+    </listPerson>
+   </div>
+    </body>
+      
+  </text>
+</TEI>
