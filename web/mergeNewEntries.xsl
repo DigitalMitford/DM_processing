@@ -10,9 +10,9 @@
    
     <xsl:strip-space elements="*"/>
     <!--ebb: This is needed to remove white space that will sit in place of the element tags we're about to remove. -->
-    <xsl:variable name="si" select="doc('si.xml')"/>
+    <xsl:variable name="si" select="doc('si-Add-LMW.xml')"/>
     <xsl:variable name="siId" select="//@xml:id"/>
-    <xsl:variable name="newEntriesFile" select="doc('si-Add-LMW.xml')"/>
+    <xsl:variable name="newEntriesFile" select="doc('si-Add_LMW_2.xml')"/>
     <xsl:variable name="newEntries" select="$newEntriesFile//*[@xml:id][not(@xml:id = $siId)]"/>
     <xsl:variable name="union" select="$si | $newEntriesFile"/>
 
@@ -58,7 +58,7 @@
                             <xsl:for-each-group select="current-group()/*" group-by="@xml:id">
                                 <xsl:choose>
                                     <xsl:when test="count(current-group()) gt 1">
-                                        <xsl:comment><xsl:sequence select="serialize(current-group()[base-uri() = $si/base-uri()])"/></xsl:comment>
+                                        <xsl:comment>FLAG: ORIGINAL ENTRY <xsl:sequence exclude-result-prefixes="#all" select="serialize(current-group()[base-uri() = $si/base-uri()])" /></xsl:comment>
                                         <xsl:copy-of
                                             select="current-group()[base-uri() != $si/base-uri()]"/>
                                     </xsl:when>
