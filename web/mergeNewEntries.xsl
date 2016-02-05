@@ -58,7 +58,7 @@
                             <xsl:for-each-group select="current-group()/*" group-by="@xml:id">
                                 <xsl:choose>
                                     <xsl:when test="count(current-group()) gt 1">
-                                        <xsl:comment>FLAG: ORIGINAL ENTRY <xsl:sequence exclude-result-prefixes="#all" select="serialize(current-group()[base-uri() = $si/base-uri()])" /></xsl:comment>
+                                        <xsl:comment>FLAG: ORIGINAL ENTRY <xsl:sequence select="serialize(current-group()[base-uri() = $si/base-uri()])"/></xsl:comment>
                                         <xsl:copy-of
                                             select="current-group()[base-uri() != $si/base-uri()]"/>
                                     </xsl:when>
