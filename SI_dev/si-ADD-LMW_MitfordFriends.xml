@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor>
+               <persName type="hist" ref="#lmw">Lisa M. Wilson</persName>
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> Site Index for the Digital Mitford project. Date: <!-- fill in -->. Extracted by Elisa Beshero-Bondar.
+               Count of all @xml:ids in the current file: 596. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="historical_people" org="uniform" sample="complete">
+            <listPerson type="hist">
+               <!-- MITFORD AND RUSSELL FAMILY -->
+               <person xml:id="Russell_M" sex="2">
+                  
+                  <persName>
+                     <surname type="married">Mitford</surname>
+                     <surname type="maiden">Russell</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <persName>Mrs. Mitford</persName>
+                  <birth when="1750"><placeName>Ashe, Hampshire, England</placeName></birth>
+                  <death when="1830-01-02"><placeName>Three Mile Cross, parish of Shinfield, Berkshire, England</placeName></death>
+                  <note resp="#ajc #lmw"><persName ref="#Russell_M">Mary Russell</persName> was the youngest child of the <persName ref="#Russell_Richard">Rev. Dr. Richard Russell</persName> and his second wife, <persName>Mary Dicker</persName>; she was born about <date when="1750">1750</date> in <placeName>Ashe, Hampshire</placeName>. (Her birth date is as yet unverified; period sources indicate that she was ten years older than her husband George, born in 1760.) Through the Russells, she was a distant relation of the Dukes of Bedford (sixth creation, 1694). She had two siblings, Charles William and Frances; both predeceased her and their parents, which resulted in <persName ref="#Russell_M">Mary Russell</persName> inheriting her family's entire estate upon her mother's death in <date when="1785">1785</date>. Her father's rectory in <placeName>Ashe</placeName> was only a short distance from <placeName>Steventon</placeName>, and so she was acquainted with the young <persName ref="#Austen_Jane">Jane Austen</persName>. She married <persName ref="#Mitford_Geo">George Mitford</persName> or Midford on <date when="1785-10-17">October 17, 1785</date> at <placeName>New Alresford, Hampshire</placeName>. On the marriage allegation papers, both gave their addresses as <placeName>Old Alresford</placeName>. Their only daughter, <persName ref="#MRM">Mary Russell Mitford</persName>, was born two years later on <date when="1787-12-16">December 16, 1787</date> at <placeName>New Alresford, Hampshire</placeName>. <persName ref="#Russell_M">Mary Russell</persName> died on <date when="1830-01-02">January 2, 1830</date> at <placeName>Three Mile Cross in the parish of Shinfield, Berkshire</placeName>. Her obituary in the <date when="1830">1830</date> New Monthly Magazine gives the "New Year's day" as the date of her death.</note>
+                  <note><ref target="http://viaf.org/viaf/19709107"></ref></note>
+               </person>
+
+               <person xml:id="Russell_MaryDicker" sex="2">
+               <persName>
+                  <surname type="married">Russell</surname>
+                  <surname type="maiden">Dicker</surname>
+                  <forename>Mary</forename>
+               </persName>
+                  <persName>Mrs. Russell</persName>
+               <note resp="#lmw">
+                  <persName ref="#MRM">Mary Russell Mitford</persName>'s maternal grandmother. <persName ref="#Russell_MaryDicker">Mary Dicker</persName> was the daughter of William and Martha Dicker of <placeName>Hampshire</placeName> and was born about <date when="1711">1711</date> in Hampshire. She was the second wife of the <persName ref="#Russell_Richard">Richard Russell</persName>; they married on <date when="1744-05-21">May 21, 1744</date>. They had three children: <persName>Charles William</persName>, <persName>Frances</persName>, and <persName>Mary</persName>. The <persName ref="#Russell_Richard">Rev. Dr. Richard Russell</persName> was the rector of <persName>Ashe</persName> and the Vicar of <persName>Overton</persName> and the family lived at Ashe, Hampshire. She died at <persName>Ashe, Hampshire</persName>, on <date when="1785-03-03">March 3, 1785</date>.
+               </note>
+               </person>
+               
+               <person xml:id="Russell_Richard" sex="1">
+                  <persName>
+                     <surname>Russell</surname>
+                     <forename>Richard</forename>
+                     <roleName>Reverend</roleName>
+                     <roleName>Dr.</roleName>
+                  </persName>
+                  <persName>Rev. Dr. Richard Russell</persName>
+                  <birth when="1695-10-05"><placeName>Basingstoke, Hampshire, England</placeName></birth>
+                  <death when="1783"><placeName>Ashe, Hampshire, England</placeName></death>
+                  <occupation>clergy</occupation>
+                  <note type="bio" resp="#ad #lmw">
+                     <persName ref="#MRM">Mary Russell Mitford</persName>'s maternal grandfather. The <persName ref="#Russell_Richard">Rev. Dr. Richard Russell</persName> was born on <date when="1695-10-05">October 5, 1695</date> at <placeName>Basingstoke, Hampshire</placeName>. He was the son of <persName>William Russell</persName> and <persName>Jane Coleman</persName>, was a distant relation of the Dukes of Bedford (sixth creation, 1694). He was married twice; first, to <persName>Elizabeth Boulte</persName>, by whom he had a daughter, <persName>Ann Russell</persName>; second, to <persName>Mary Dicker</persName>, by whom he had three children: <persName>Charles William</persName>, <persName>Frances</persName>, and <persName>Mary</persName>. The <persName ref="#Russell_Richard">Rev. Dr. Richard Russell</persName> was the rector of <persName>Ashe</persName> and the Vicar of <persName>Overton</persName> and the family lived at Ashe, Hampshire. He died at <persName>Ashe, Hampshire</persName>, in early <date when="1783">1783</date> and his will was probated on <date when="1783-02-25">Feburary 25, 1783.</date></note>
+               </person>
+               
+               <person xml:id="Mitford_Geo" sex="1">
+                  <persName>
+                     <forename>George</forename>
+                     <surname>Mitford</surname>
+                     <roleName>Esq.</roleName>
+                  </persName>
+                  <persName type="alt">George Midford</persName>
+                  <birth><date when="1760-11-15"><placeName>Hexham, Northumberland, England</placeName></date></birth>
+                  <death><date when="1842-12-11"><placeName>Three Mile Cross, Shinfield, Berkshire, England</placeName></date></death>
+                  <occupation>surgeon</occupation>
+                  <occupation>medical</occupation>
+                  <occupation>magistrate</occupation>
+                  <occupation>legal</occupation>
+                  <note type="bio" resp="#lmw">
+                     <p><persName ref="#Mitford_Geo">George Mitford</persName> was born on <date when="1760-11-15">November 15, 1760</date> in <placeName>Hexham, Northumberland</placeName>, the son of <persName>Francis Midford</persName>, surgeon, and <persName>Jane Graham</persName>. He was related to the Mitfords of Mitford Castle, Northumberland. In <date when="1784">1784</date>, he was living in Alresford and is listed in a Hampshire directory as "surgeon (medicine)." Although later sources would claim that he was a graduate of the University of Edinburgh medical school, there is no evidence that he obtained a medical degree; his father and grandfather worked as surgeon-apothecaries and it seems likely that he served a medical apprenticeship with family members. He married <persName ref="#Russell_M">Mary Russell</persName> on <date when="1785-10-17">October 17, 1785</date> at <placeName>New Alresford, Hampshire</placeName>. On the marriage allegation papers, both gave their addresses as <placeName>Old Alresford</placeName>; they later came to live at Broad Street in New Alresford. Their only child to live to adulthood, <persName ref="#MRM">Mary Russell Mitford</persName>, was born two years later on <date when="1787-12-16">December 16, 1787</date> at <placeName>New Alresford, Hampshire</placeName>. <persName ref="#Mitford_Geo">George Mitford</persName> died on <date when="1842-12-11">December 11, 1842</date> at <placeName ref="#ThreeMileCross">Three Mile Cross</placeName> in the <placeName>parish of Shinfield, Berkshire</placeName>. 
+                        </p>
+                  </note></person>
+                  
+                  <person xml:id="MRM" sex="2">
+                     <persName>
+                        <surname type="paternal">Mitford</surname>
+                        <forename>Mary</forename>
+                        <forename>Russell</forename>
+                     </persName>
+                     <birth when="1787-12-16">
+                        <placeName>New Alresford, Hampshire, England</placeName>
+                     </birth>
+                     <death when="1855-01-10">
+                        <placeName>Swallowfield, Berkshire, England</placeName>
+                     </death>
+                     <occupation>literary</occupation>
+                     <occupation>gardener</occupation>
+                     <occupation>playwright</occupation>
+                     <note type="bio" resp="#lmw #ebb">Poet, playwright, writer of prose fiction sketches, <persName ref="#MRM">Mary Russell Mitford</persName> is, of course, the subject of our archive. <persName ref="#MRM">Mary Russell Mitford</persName> was born on <date when="1787-12-16">December 16, 1787</date> at <placeName>New Alresford, Hampshire</placeName>, the only child of <persName ref="#Mitford_Geo">George Mitford (or Midford)</persName> and <persName ref="#Russell_M">Mary Russell</persName>. She was baptized on <date when="1788-02-29">February 29, 1788</date>. Much of her writing was devoted to supporting herself and <orgName ref="#Mitfords_Ma_Pa">her parents</orgName>. She received a civil list pension in <date when="1837">1837</date>. Census records from 1841 indicate that she is living with her father George, three female servants: Kerenhappuch Taylor (Mary's ladies maid), two maids of all work, Mary Bramley and Mary Allaway, and a manservant (probably serving also as gardener), Benjamin Embury. The 1851 census lists her occupation as "authoress," and lists her as living at Three Mile Cross with Kerenhappuch Taylor (lady's maid), Sarah Chernk (maid-of-all-work), and Samuel Swetman (gardener), after the death of her father. Mitford's long life and prolific career ended after injuries from a carriage accident. She died on January 10, 1855 at Swallowfield, Berkshire and she is buried in Swallowfield churchyard. The executor of her will and her literary executor was the Rev. William Harness and her lady's maid, Kerrenhappuch Taylor Sweetman, was residuary legatee of estate.
+                        </note>
+                  </person>
+               
+               <!-- VALPY FAMILY -->
+               <person xml:id="Valpy_Catherine">
+                  <persName>
+                     <surname type="maiden">Valpy</surname>
+                     <surname type="married">French</surname>
+                     <forename>Catherine</forename>
+                     <forename>Elizabeth</forename>
+                     <forename>Blanch</forename>
+                  </persName>
+                  <birth><date notAfter="1795-08-04"><placeName>Reading, Berkshire, England</placeName></date></birth>
+                  <death><date when="1873"><placeName>St. Helier, Jersey, Channel Islands</placeName></date></death>
+                  <note type="bio" resp="#ebb">One of four daughters of Dr. Richard Valpy and his second wife, <persName>Mary Benwell</persName>; she was born about 1795 and was baptized on <date when="1795-08-04">August 4, 1795</date> at <placeName>St. Lawrence parish, Reading, Berkshire</placeName>. <rs type="event">She married <persName>Rev. Philip Filleul</persName>, rector of St. Helier and later vice-dean of Jersey on <date when="1823-10-13">October 13, 1823</date>, on the same day that her sister <persName ref="#Valpy_Penelope">Penelope</persName> married the Rev. Peter French.</rs> Catherine Valpy and Philip Filleul lived at <placeName>St. Helier, Jersey, Channel Islands</placeName>, their children were born there, and Catherine died there in <date when="1873">1873</date>. She was buried there in the Mont à l’Abbaye cemetery.</note>
+               </person>
+               
+               <person xml:id="Valpy_John" sex="1">
+                  <persName>
+                     <surname>Valpy</surname>
+                     <forename>Abraham</forename>
+                     <forename>John</forename>
+                  </persName>
+                  <persName>Abraham John Valpy</persName>
+                  <birth notAfter="1786-10-30"><placeName>Reading, Berkshire, England</placeName></birth>
+                  <death when="1854-11-19"><placeName>St. John's Wood Road, London, England</placeName></death>
+                  <occupation>literary</occupation>
+                  <occupation>printer</occupation>
+                  <occupation>publisher</occupation>
+                  <note type="bio" resp="#lmw #ebb">Abraham John Valpy, called "John" or "A.J." Dr. Richard Valpy's second son, Abraham John was born about <date when="1786">1786</date> and was baptized on <date when="1786-10-30">October 30, 1786</date> in <placeName ref="#Reading_city">Reading, Berkshire</placeName>. He was educated at Reading School and then matriculated at Pembroke College, Oxford on <date when="1805-04-25">April 25, 1805</date>; from that institution, he received his B.A. (1809) and M.A. (1811) and was appointed a Fellow for a short time in 1811. According to the DNB, he was "bound apprentice to a freeman of London, Humphrey Gregory Pridden," a printer.  He was admitted a Liveryman of the Stationer's Company in London in <date when="1807">1807</date>. He worked as a printer-publisher and editor, and owned premises in London at 21 Tooke's Court, Cursitor Street (1811) and later at Red Lion Court, Fleet Street (1821). He published numerous works of ancient and modern literature, and was the printer and publisher of periodical The Museum (1822-1825). He worked with E.H. Barker of Thetford, George Burges, George Dyer, and T.S. Hughes. He retired from the publishing industry in <date when="1837">1837</date>. On <date when="1813-02-25">February 25, 1813</date> he married <persName>Harriet Wylde</persName> at Burrington, Somerset. John and Harriet Wylde lived in greater London and died without issue. John died on <date when="1854-11-19">November 19, 1854</date> at <placeName>St. John's Wood Road, London,</placeName> and is buried at <placeName>All Soul's, Kensal Green, London</placeName>.<!--LMW:  add list of important publications.  --></note>
+                     <note><ref target="http://viaf.org/viaf/13082604"/></note>
+               </person>
+                
+               <person xml:id="Valpy_Richard" sex="1">
+                  <persName>
+                     <surname>Valpy</surname>
+                     <forename>Richard</forename>
+                     <roleName>Doctor of Divinity (DD)</roleName>
+                     <roleName>Fellow of the Society of Antiquaries (FSA)</roleName>
+                  </persName>
+                  <persName>Dr. Valpy</persName>
+                  <birth when="1754-12-07">
+                     <placeName>St. John's, Jersey, Channel Islands</placeName>
+                  </birth>
+                  <death when="1836-03-28">
+                     <placeName>Reading, Berkshire, England</placeName>
+                  </death>
+                  <occupation>educator</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>clergy</occupation>
+                  <note type="bio" resp="#ebb #lmw"><p>Richard Valpy (the fourth of that name) was the eldest son of Richard Valpy [III] and Catherine Chevalier. He was born on December 7, 1754 at St. John's, Jersey, Channel Islands. He was a friend and literary mentor to <persName ref="#MRM">Mary Russell Mitford</persName>. He matriculated at Pembroke College, Oxford University on April 1, 1773, aged eighteen, as a Morley scholar. He received from Oxford a B.A. (1776), M.A. (1784), B.D. &amp; D.D. (1792). He took orders in the Church of England in 1777. Richard Valpy served as Second Master at Bury School, Bury, Huntindonshire from 1771 to 1781, and was also collated to the rectory of Stradishall, Suffolk, in 1787. He became the Headmaster at Reading School, Reading, Berkshire, in 1781 and served until 1830, at which time he turned the Headmastership over to his youngest son Francis E. J. Valpy and continued in semi-retirement until his death in 1836. During his tenure as Headmaster of <placeName ref="#Reading_School">Reading Grammar School</placeName> for boys over the course of fifty years, he expanded the boarding school and added new buildings. He is the author of numerous published works, including Greek and Latin textbooks, sermons, volumes of poetry, and adaptations of plays such as Shakespeare's King John and Sheridan's The Critic. His <bibl>Elements of Greek Grammar</bibl>, <bibl>Elements of Latin Grammar,</bibl>,<bibl>Greek Delectus</bibl> and <bibl>Latin Delectus</bibl>, printed and published by his son <persName ref="#Valpy_John">A. J. Valpy</persName>, were all much used as school texts throughout the nineteenth century. Valpy's students performed his own adaptations of Greek, Latin, and English plays for the triennial visitations and the play receipts went to charitable organizations. Valpy enlisted Mitford to write reviews of the productions for the <title ref="#ReadingMer_per">Reading Mercury</title>. In 1803, his adaptation of Shakespeare's King John was performed at Covent Garden Theatre.</p>
+                     <p>Richard Valpy was married twice and had twelve children, eleven of whom lived to adulthood. His first wife was <persName ref="#Culpepper_Mrs">Martha Cornelia de Cartaret</persName>; Richard and Martha were married about <date when="1778">1778</date> and they had one daughter, <persName ref="#Culpepper_Mrs">Martha Cartaretta Cornelia</persName>, born 1779. His first wife Martha died about <date when="1780">1780</date> and he married <persName>Mary Benwell</persName> of Caversham, Oxfordshire on <date when="1782-05-30">May 30, 1782</date>. Together they had six sons and five daughters and ten of their eleven children survived to adulthood. Richard Valpy and Mary Benwell's sons were <persName>Richard Valpy (the fifth of that name)</persName>, <persName ref="#Valpy_John">Abraham John Valpy</persName>, called John; <persName>Gabriel Valpy</persName>, <persName>Anthony Blagrove Valpy</persName>; and <persName>Francis Edward Jackson Valpy</persName>. His daughters were <persName ref="#Roworth_Mary">Mary Ann Catherine Valpy</persName>; <persName> Sarah Frances Valpy</persName>, called "Frances" or "Fanny"; <persName ref="#Valpy_Catherine">Catherine Elizabeth Blanch Valpy</persName>; <persName ref="#Valpy_Penelope">Penelope Arabella Valpy</persName>; and <persName>Elizabeth Charlotte Valpy</persName>, who died as an infant.</p> Richard Valpy died on <date when="1836-03-28">March 28, 1836</date> in <placeName ref="#Reading_city">Reading, Berkshire</placeName>, and is buried in <placeName>All Souls cemetery, Kensal Green, London</placeName>. Dr. Valpy's students placed a marble bust of him in <placeName>St. Lawrence's church, Reading, Berkshire</placeName>, after his death. <persName>John Opie</persName> painted Dr. Valpy's portrait. See <ref target="http://www.bbc.co.uk/arts/yourpaintings/paintings/dr-richard-valpy-17541836-41504"/>.<!-- LMW:  Add list of important publications and play productions. --></note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/50434313"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Roworth_Mary" sex="2">
+                  <persName>Mary Valpy Roworth</persName>
+                  <persName>Miss Valpy</persName>
+                  <persName>
+                     <surname type="maiden">Valpy</surname>
+                     <surname type="married">Roworth</surname>
+                     <forename>Mary</forename>
+                     <forename>Ann</forename>
+                     <forename>Catherine</forename>
+                  </persName>
+                  <birth><date notAfter="1786">
+                     <placeName>Reading, Berkshire, England</placeName>
+                  </date></birth>
+                  <death><date when="1854-01"/><placeName>Bath, Somerset, England</placeName></death>
+                  <note type="bio" resp="#ebb #lmw #mco">Eldest of the daughters of <persName ref="#Valpy_Richard">Dr. Richard Valpy</persName> and his second wife, <persName>Mary Benwell</persName>, likely born about 1786. <rs type="event">Mary Ann Catherine Valpy married <persName>Thomas Roworth, Esq. </persName> of Blagdon, Somerset on <date when="1810-11-24">24 November 1810</date></rs> at St. Lawrence, Reading, Berkshire. They lived in Blagdon, Somerset, and died without issue. Mary Valpy Roworth died in <date when="1854-01">January 1854</date> at Bath, Somerset.</note>
+               </person>
+               
+               <person xml:id="Valpy_Penelope" sex="2">
+                  <persName>
+                     <surname type="maiden">Valpy</surname>
+                     <surname type="married">French</surname>
+                     <forename>Penelope</forename>
+                     <forename>Arabella</forename>
+                  </persName>
+                  <persName>Penelope Arabella Valpy</persName>
+                  <persName>Penelope Valpy French</persName>
+                  <birth notAfter="1798"><placeName>Reading, Berkshire, England</placeName></birth>
+                  <death when="1869-03-17"><placeName>Burton upon Trent, Staffordshire, England</placeName></death>
+                  <note type="bio" resp="#ebb #mco #lmw">One of the daughters of <persName ref="#Valpy_Richard">Dr. Valpy</persName> by his second wife Mary Benwell, born in 1798. She was baptized on <date when="1798-06-15">June 15, 1798</date> at St. Lawrence, Reading, Berkshire. Penelope Arabella was youngest Valpy child to live to adulthood (a younger sister, Elizabeth Charlotte, died as an infant). She married the Rev. Peter French on October 13, 1823 on the same day that her sister Catherine married the Rev. Philip Filleul. The family lived in Burton upon Trent, Staffordshire, where Penelope also died on March 17, 1869, and was buried. They had five sons and three daughters. <rs type="event">Penelope and Peter's first child, <persName>Thomas Valpy French</persName> was born on <date when="1825-01-01">1 January 1825</date> </rs> and became the first Anglican Bishop of Lahore (now northwestern India and Pakistan).</note></person>
+            
+               <person xml:id="Culpepper_Mrs" sex="2">
+                  <persName>
+                     <surname type="maiden">Valpy</surname>
+                     <surname type="married">Straker</surname>
+                     <surname type="married">Culpeper</surname>
+                     <forename>Martha</forename>
+                     <forename>Carteretta</forename>
+                     <forename>Cornelia</forename>
+                  </persName>
+                  <persName>Mrs. Culpepper</persName>
+                  <birth><date notAfter="1779-11-16"><placeName>St. Mary's, Suffolk, England</placeName></date></birth>
+                  <note type="bio" resp="#ebb #lmw #scw"> <persName ref="#Valpy_Richard">Dr. Valpy</persName>'s eldest daughter by his first wife, Martha Cornelia de Cartaret. Martha Carteretta Cornelia Valpy was born in late 1779 and baptized 16 November 1779 at St Mary's, Suffolk. She was married twice; first to Thomas James Straker, esq. of Barbados on May 3, 1804 at St. Lawrence, Reading, Berkshire, England, and second to William Alleyn Culpeper of Barbados (second of that name) at St. Martin in the Fields, Westminster on November 21, 1815. <persName ref="#MRM">Mitford</persName> spells her married name as "Culpepper" in her journal and letters. <bibl>Burke's Family Records</bibl> erroneously lists her name as "Carteretta Cornelia." Her date of death is unknown; more research needed.</note>
+               </person>
+
+               <person xml:id="Elford_MrsE" sex="2">
+                  <persName>
+                     <surname type="paternal">Hall</surname>
+                     <surname type="married">Walrond</surname>
+                     <surname type="married">Elford</surname>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <persName>Mrs. Elford</persName>
+                  <birth notAfter="1780">
+                     <placeName>Manadon, Devon, England</placeName>
+                  </birth>
+                  <death when="1839">
+                     <placeName>Totnes, Devon, England</placeName>
+                  </death>
+                  <note resp="#ebb #ajc #lmw">Elizabeth was the second wife of <persName ref="#Elford_SirWm">Sir William Elford</persName>; they married after the death of <persName ref="#Elford_MrsM">Mary Davies Elford</persName>, on <date when="1821-07-05">July 5, 1821</date>. She was the daughter and co-heiress of Humphrey Hall of Mandon, Devon, England and his wife, the Hon. Jane St. John, daughter of John St. John, 11th Baron St. John of Bletsoe. She married Maine Swete Waldron, an officer in the Coldstream Guards, in 1803 and they had two children, only one of whom lived to adulthood. Her first husband died around 1817 and she married Sir William Elford four years later. She died at Totnes, Devon in late 1839 and her will was probated on 10 December 1839. Some secondary sources erroneously give the spelling of her first married name as "Waldron;" however, she is not to be confused with the American Elizabeth Waldron (1780 to 21 July 1853).‏ Her birthdate is not given in any standard nineteenth century reference sources, but is likely to be before 1780.</note>
+</person>
+               
+               <person xml:id="Elford_MrsM" sex="2">
+                  <persName>
+                     <surname type="married">Elford</surname>
+                     <surname type="paternal">Davies</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <persName>Mrs. Elford</persName>
+                  <birth when="1753"/>
+                  <death when="1807-08-02"/>
+                  <note resp="#ajc #lmw">Mary was the first wife of <persName ref="#Elford_SirWm">Sir William Elford</persName>; they married on <date when="1776-01-20">January 20, 1776</date> in Plympton. Together they had one son, Johnathan, and two daughters, Grace Chard and Elizabeth. She was the daughter of the Rev. John Davies and Mary Chard of Plympton. Birth and death dates unverified by primary source records, and her son Jonathan's will gives her name as "Jane Mary;" additional research needed.</note>
+               </person>
+          
+               <person xml:id="Elford_SirWm">
+                  <persName>Sir William Elford, F.R.S., F.L.S., M.P.</persName>
+                  <persName>
+                     <surname>Elford</surname>
+                     <forename>William</forename>
+                     <roleName>Sir</roleName>
+                     <roleName>baronet<date notBefore="1800-11-26"/>
+                     </roleName>
+                     <roleName>Recorder for Plymouth</roleName>
+                     <roleName>Recorder for Totnes</roleName>
+                     <roleName><date from="1796" to="1806">Member of Parliament for Plymouth</date></roleName>
+                     <roleName><date from="1807-07" to="1808-07"/>Member of Parliament for Rye</roleName>
+                     <roleName><date notBefore="1790"/>Fellow of the Royal Society (FRS)</roleName>
+                     <roleName><date notBefore="1790"/>Fellow of the Linnaean Society (FLS)</roleName>
+                  </persName>
+                  <birth when="1749-08">
+                     <placeName>Kingsbridge, Devon, England</placeName>
+                  </birth>
+                  <death when="1837-11-30">
+                     <placeName>Totnes, Devon, England</placeName>
+                  </death>
+                  <occupation>legal</occupation>
+                  <occupation>banker</occupation>
+                  <occupation>politician</occupation>
+                  <occupation>military</occupation>
+                  <occupation>naturalist</occupation>
+                  <occupation>painter</occupation>
+                  <note type="bio" resp="#ebb #lmw">William Elford was born in Kingsbridge, Devon in August 1749 to the Rev. Lancelot Elford and Grace Alexander Wills. He was baptised in Kingsbridge on October 31, 1749. He married Mary Davies of Plympton on January 20, 1776 and they had one son, Jonathan, and two daughters, Grace Chard and Elizabeth. After the death of his first wife, he married Elizabeth Hall, widow of Lieutenant-Colonel Maine Swete Walrond of the Coldstream Guards. Elizabeth was the daughter and co-heir of Humphry Hall of Manadon, Devon, and had two children by her previous marriage, although only her son lived to adulthood. Sir William's only son Johnathan died in 1823, leaving him without an heir. He worked as a banker at Plymouth Bank (Elford, Tingcombe and Purchase) in Plymouth, Devon, from its founding in 1782. He was elected a member of Parliament for Plymouth as a supporter of the government and Tory William Pitt, and served from 1796 to 1806. After his election defeat in Plymouth in 1806, he was elected member of Parliament for Rye and served from July 1807 until his resignation in July 1808. For his service in Parliament as a supporter of Pitt, he was made a baronet in 1800; after his son Johnathan came of age, he tried to secure a government post for him but never succeeded. He served as mayor of Plymouth in 1796 and served as Recorder for Plymouth from 1797 to 1833; he was also Recorder for Totnes from 1832 to 1834. Sir William served as an officer in the South Devon militia from 1788, eventually attaining the rank of Lieutenant Colonel; the unit saw active service in Ireland during the Peninsular Wars. Sir William was a talented amateur painter in oils and watercolors who exhibited at the Royal Society from 1774 to 1837; he exhibited still lifes and portraits but preferred landscapes. He was elected to the Royal Academy in 1790. He was also a talented amateur naturalist and was elected to the Royal Linnaean Society in 1790; late in life, he published his findings on an alternative to yeast. According to <persName ref="#Lestrange">L'Estrange</persName>, Elford was a friend of <persName ref="#Mitford_Geo">Mitford's father</persName>, and <persName ref="#MRM">Mitford</persName> met him for the first time in the spring of 1810 when he was a widower nearing the age of 64. They carried on a lively correspondence until his death. He died at Totnes, Devon on November 30, 1837.</note>
+                  <note>
+                     <ref target="http://www.historyofparliamentonline.org/volume/1790-1820/member/elford-william-1749-1837"/>
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/6415021"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Elford_Grace" sex="2">
+                  <persName>
+                     <forename>Grace</forename>
+                     <forename>Chard</forename>
+                     <surname type="paternal">Elford</surname>
+                  </persName>
+                  <persName>Miss Elford</persName>
+                  <birth><date notAfter="1781-11-05"/><placeName>Plympton, Devon, England</placeName></birth>
+                  <death when="1856-02-24"><placeName>St. Thomas, Devon, England</placeName></death>
+                  <note resp="#lmw">Elder daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> and <persName ref="#Elford_MrsM">Mary Davies Elford</persName>; she was baptised at Plympton, Devon on November 11, 1781. Her middle name, "Chard," is derived from her maternal lineage; Grace's maternal grandmother was born Mary Chard. Grace Elford remained unmarried and later came to reside with her sister Elizabeth Elford Adams and her family, according to census records. She died on February 22, 1857 at St. Thomas, Devon.</note>
+               </person>
+               
+               <person xml:id="Elford_Eliz_da" sex="2">
+                  <persName>
+                     <forename>Elizabeth</forename>
+                     <surname type="paternal">Elford</surname>
+                     <surname type="married">Adams</surname>
+                  </persName>
+                  <birth><date notAfter="1785-03-11"><placeName>Plympton, Devon, England</placeName></date></birth>
+                  <death><date notBefore="1856-04"></date></death>
+                  <note resp="#lmw">Second daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> and <persName ref="#Elford_MrsM">Mary Davies Elford</persName>; she was baptised at <placeName>Plympton, Devon</placeName> on <date when="1785-03-11">March 11, 1785</date>. She married <persName ref="#Adams_GP">George Pownoll Adams</persName> of <placeName>Totnes, Devon,</placeName> who later became <persName ref="#Adams_GP">General Sir George Pownoll Adams, KCH</persName>. They had four sons, all of whom were born at <placeName>Ashprington, Devon</placeName>, likely at Bowden House, the estate of George's older brother William Dacres Adams. They later resided at <placeName>Wiveliscombe, Somerset</placeName> and at <placeName>East Budleigh, Devon</placeName>, with their children and with Elizabeth's elder sister <persName ref="#Elford_Grace">Grace</persName>. Elizabeth is mentioned in her husband's <date when="1856-04">April 1856</date> will and presumably died after 1856; she has not been located in the 1861 census.</note>
+               </person>
+               
+               <person xml:id="Adams_GP" sex="1">
+                  <persName>
+                     <forename>George</forename>
+                     <forename>Pownoll</forename>
+                     <surname>Adams</surname>
+                     <roleName>General</roleName>
+                     <roleName>Sir</roleName>
+                     <roleName> Knight Commander of Hanover (KCH)</roleName>
+                 </persName>
+                  <persName>General Sir George Pownoll Adams, KCH</persName>
+                  <birth><date notAfter="1779-01-01"><placeName>Totnes, Devon, England</placeName></date></birth>
+                  <death when="1856-04"></death>
+                  <occupation>military</occupation>
+                  <note resp="#lmw">Husband of Elizabeth Elford, second daughter of Dr. Richard Valpy. He was baptized at Totnes, Devon, on <date when="1779-01-01">January 1, 1779</date> and so was likely born in late <date>1778</date>. He died in <date when="1856-04">April 1856</date> at <placeName>East Budleigh, Devon</placeName>. George was the younger son of merchant William Adams (1752-1811), MP for Plympton Erle (1796-1801) and for Totnes (1801-1811), and Mary Chadder.  He was the younger brother of William Dacres Adams (1775-1862), who became Private Secretary to two Prime Ministers of the United Kingdom: Pitt the Younger (1804–1806) and the Duke of Portland (1807-09). William Dacres Adams inherited the estate of Bowden in the parish of Ashprington, near Totnes in Devon, from his father, who had purchased it from the Trist family about 1800; William Dacres Adams allowed George and his family to live there after his own marriage. Bowden House, the Georgian mansion located on the former estate, is currently a grade I listed building.</note>
+</person>
+               
+               <person xml:id="Elford_MrsC" sex="2">
+                  <persName>
+                     <forename>Charlotte</forename>
+                     <surname type="paternal">Wynne</surname>
+                     <surname type="married">Elford</surname>
+                  </persName>
+                  <persName>Mrs. Elford</persName>
+                 <note resp="#lmw">Daughter of John Wynne of Abercynlleth, Denbigh. Married <persName ref="#Elford_J_WEson">Johnathan Elford</persName> on <date when="1810-05-10">May 10, 1810</date>. Birth and death dates unknown; needs further research.</note>
+               </person>
+           
+               <person xml:id="Elford_J_WEson" sex="1"><!--LMW: different xml:id -->
+                  <persName>
+                     <surname>Elford</surname>
+                     <forename>Jonathan</forename>
+                  </persName>
+                  <persName>
+                     <roleName><date when="1820"/>Member of Parliament for Westbury</roleName>
+                  </persName>
+                  <birth when="1776-11-05">
+                     <placeName>Plympton Erle, Devon, England</placeName>
+                  </birth>
+                  <death when="1823-03-11">
+                     <placeName>Upland, Tamerton Foliott, Devon, England</placeName>
+                  </death>
+                  <occupation>politician</occupation>
+                  <occupation>military</occupation>
+                  <note resp="#kab #ebb #lmw">Born November 5, 1776, the only son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. He entered Oriel College, Oxford on June 3, 1795 and came to reside thereafter at Tamerton Folliot, Devon on an estate he called Upland. He served as a Captain in the South Devonshire militia from 1803, with his father, who was also an officer. On May 10, 1810, he married Charlotte Wynne. He also became a freeman for Plymouth in 1810. He served as Member of Parliament for Westbury from March 10 to November 29, a seat he secured under the patronage of Sir Manasseh Masseh Lopes. At this time, Westbury was a controversial "rotten borough" whose interest Lopes had purchased from Lord Abingdon; he resigned his seat in November 1810 to Lopes. Throughout his adulthood, his father Sir William tried unsuccessfully to secure him a position within the government. He died on March 11, 1823, at his home at Uplands, Tamerton Folliott, Devon. His death at the age of 46 left Sir William without an heir.</note>
+                 <note>
+                     <ref target="http://www.historyofparliamentonline.org/volume/1820-1832/member/elford-jonathan-1776-1823"/>
+                  </note>
+               </person>
+   
+               <!-- DICKINSON FAMILY -->
+               <person xml:id="Dickinson_Charles" sex="1">
+                  <persName>
+                     <surname>Dickinson</surname>
+                     <forename>Charles</forename>
+                  </persName>
+                  <persName>Mr. Dickinson</persName>
+                  <birth when="1755-03-06"><placeName>Pickwick Lodge, Corsham, Wiltshire, England</placeName></birth>
+                  <death when="1827"><placeName>Farley Hill, near Swallowfield, Berkshire, England</placeName></death>
+                  <note type="bio" resp="#ajc #lmw">Friend of the Mitford family. Charles Dickinson was born on <date when="1755-03-06">March 6, 1755</date> at Pickwick Lodge, Corsham, Wiltshire. He was the son of Vikris Dickinson and Elizabeth Marchant. The Dickinson family were Quakers who lived in the vicinity of Bristol, Gloucestershire. On <date when="1807-08-03">August 3, 1807</date>, he married <persName ref="#Dickinson_Mrs">Catherine Allingham</persName> at St Giles, South Mimms, Middlesex. They lived at Farley Hill, near Swallowfield, Berkshire, where their daughter Frances was born, and where the Mitfords visited them. Charles Dickinson owned a private press he employed to print literary works by his friends (See letters to Elford from March 13, 1819 and June 21, 1820). Charles Dickinson died at Farley Hill in <date when="1827">1827</date>.</note>
+               </person>
+               
+               <person xml:id="Dickinson_Daughter" sex="2">
+                  <persName>
+                     <surname type="paternal">Dickinson</surname>
+                     <forename>Frances</forename>
+                     <forename>Vikris</forename>
+                  </persName>
+                  <birth when="1820-03-07"><placeName>Farley Hill, near Swallowfield, Berkshire, England</placeName></birth>
+                  <death when="1898-10-26"><placeName>Siena, Toscana, Italy</placeName></death>
+                  <note type="bio" resp="#ajc #lmw">Frances Dickinson was the only child of Charles Dickinson and Catherine Allingham. She was born on <date when="1820-03-07">7 March 1820</date> at Farley Hill, near Swallowfield, Berkshire, and was baptized on <date when="1820-04-17">April 17</date>. Her father Charles died when she was seven years old. She died at Siena, Toscana, Italy on <date when="1898-10-26">October, 26 1898</date> and is buried in Rome. She was married to and divorced from her first husband, John Edward Geils (1813-1894) and later married the Rev. Gilbert Elliott (1800-1891). </note>
+               </person>
+               
+               <person xml:id="Dickinson_Grandmama" sex="2">
+                  <persName>Grandmama Dickinson</persName>
+                  <note resp="#lmw">More research needed.  Frances Dickinson's paternal grandmother, Elizabeth Marchant Dickinson, died in 1790, and is therefore an unlikely candidate.</note>
+               </person>
+
+               <person xml:id="Dickinson_Mrs" sex="2">
+                  <persName>Mrs. Dickinson</persName>
+                  <persName>
+                     <forename>Catherine</forename>
+                     <surname type="paternal">Allingham</surname>
+                     <surname type="married">Dickinson</surname>
+                  </persName>
+                  <birth><date notAfter="1787"><placeName>Middlesex, England</placeName></date></birth>
+                  <death><date when="1861-09-02"><placeName>St. Marylebone, Middlesex, England</placeName></date></death>
+                  <note type="bio" resp="#ajc #lmw">Catherine Allingham was born about 1787 in Middlesex, the daughter of Thomas Allingham. She married Charles Dickinson on <date when="1807-08-02">August 2, 1807</date> at St. Giles, South Mimms, Middlesex. They lived in Swallowfield, Berkshire, where their daughter Frances was born, and where they were visited by the Mitford family. According to Mitford, Catherine Dickinson was fond of match-making among her friends and acquaintances. (See <rs type="letter"><persName ref="#MRM">Mitford</persName>'s <date when="1821-02-08">February 8th, 1821</date> letter to <persName ref="#Elford_SirWm">Elford</persName></rs>. Her husband Charles died in 1827, when her daughter was seven. She died on September 2, 1861 at St. Marylebone, Middlesex. Source: <bibl corresp="#Lestrange_Letters">L'Estrange</bibl>). 
+                  </note>
+               </person>
+               
+               <!-- JAMES FAMILY -->
+               <person xml:id="James_Miss" sex="2">
+                  <persName>Miss James</persName>
+                  <persName>Elizabeth Mary James</persName>
+                  <persName>
+                     <forename>Elizabeth</forename>
+                     <forename>Mary</forename>
+                     <surname type="paternal">James</surname>
+                  </persName>
+                  <birth><date notAfter="1775"><placeName>Bath, Somerset, England</placeName></date></birth>
+                  <death><date when="1861-11-25"><placeName>3 Pembroke Villas, Richmond, Surrey, England</placeName></date></death>
+                  <note type="bio" resp="#lmw">Close friend and correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. She was born about 1775 in Bath, Somerset, the eldest daughter of Thomas Webb and Susanna Haycock. Her father died in 1818 and her mother in 1835. After her parents' deaths, she lived with her two younger sisters, Emily and Susan, in Green Park Buildings, Bath, Walcot, Somerset; High Street, Mortlake, Surrey; and 3 Pembroke Villas, Richmond, Surrey. According to <persName ref="#coles">Coles</persName>, referring to Mitford's diary, letters were also addressed to her at Bellevue, Lower Road, Richmond (Coles 26). She died on November 25, 1861, at 3 Pembroke Villas, Richmond, Surrey and was buried at St. Mary Magdalene, Richmond, Surrey. In the 1841 census, under "profession, trade, employment, or independent means" she lists "Ind." for "independent means;" in the 1851 census, she lists "landholder;" in the 1861 census, she lists "railway shareholder."</note>
+               </person>
+               
+               <person xml:id="James_Emily" sex="2">
+                  <persName>
+                     <surname type="paternal">James</surname>
+                     <forename>Emily</forename>
+                  </persName>
+                  <birth><date notAfter="1782"><placeName>Bath, Somerset, England</placeName></date></birth>
+                  <death when="1863-08-29"><placeName>3 Pembroke Villas, Richmond, Surrey</placeName></death>
+                  <occupation>education</occupation>
+                  <note resp="#lmw">Friend of Mary Russell Mitford, and sister to <persName ref="#James_Miss">Elizabeth James</persName> and <persName ref="#James_Susan">Susan James</persName> and cared for pupils with her. She was born about 1782 in Bath, Somerset, the daughter of Thomas Webb and Susanna Haycock. Her father died in 1818 and her mother in 1835. After her parents' deaths, she lived with her two sisters in Green Park Buildings, Bath, Walcot, Somerset; High Street, Mortlake, Surrey; and 3 Pembroke Villas, Richmond, Surrey. She died on August 29, 1863, at 3 Pembroke Villas, Richmond, Surrey and was buried at St. Mary Magdalene, Richmond, Surrey.</note>
+               </person>
+               
+               <person xml:id="James_Susan" sex="2">
+                  <persName>
+                     <surname type="paternal">James</surname>
+                     <forename>Susan</forename>
+                     <forename type="alt">Susy</forename>
+                     <forename>Deane</forename>
+                  </persName>
+                  <birth><date notAfter="1788"><placeName>Bath, Somerset, England</placeName></date></birth>
+                  <death when="1860-12-27"><placeName>3 Pembroke Villas, Richmond, Surrey</placeName></death>
+                  
+                  <note resp="#lmw">Friend of Mary Russel Mitford, and sister to <persName ref="#James_Miss">Elizabeth James</persName> and <persName ref="#James_Emily">Emily James</persName> and cared for pupils with her. She was born about 1788 in Bath, Somerset, the daughter of Thomas Webb and Susanna Haycock. She was baptized on <date when="1788-10-03">October 3, 1788</date> at the parish of St James, Bath, Somerset. Her father died in 1818 and her mother in 1835. In 1819, Mitford reports in her letters that Susan has taken a position as a governess, and refers to her by the nickname "Susy." After her parents' deaths, she lived with her two sisters in Green Park Buildings, Bath, Walcot, Somerset; High Street, Mortlake, Surrey; and 3 Pembroke Villas, Richmond, Surrey. She died on December 27, 1860, at 3 Pembroke Villas, Richmond, Surrey and was buried at St. Mary Magdalene, Richmond, Surrey.</note>
+               </person>
+               
+               <person xml:id="James_Mrs" sex="2">
+                  <persName>
+                     <surname type="paternal">Haycock</surname>
+                     <surname type="married">James</surname>
+                     <forename>Susan</forename>
+                     <forename type="alt">Susannah</forename>
+                  </persName>
+                  <persName>Mrs. James</persName>
+                  <birth><date notAfter="1754-10-17"><placeName>Bath, Somerset, England</placeName></date></birth>
+                  <death><date notAfter="1841"/></death>
+                  <note resp="#lmw">Susan or Susannah Haycock, wife of Thomas James and mother of <persName ref="#James_Miss">Elizabeth Mary James</persName>, <persName ref="#James_Susan">Susan James</persName>, and <persName ref="#James_Emily">Emily James</persName>. She was born about 1754 and was baptized at Bath Abbey, Bath, Somerset on <date when="1754-10-17">October 17, 1754</date>, the daughter of Joseph and Mary Haycock. She married Thomas James on <date when="1773-06-22">June 22, 1773</date> at Bath, Somerset. Date of death unknown, but based on census records, it is likely to have been before 1841.</note>
+               </person>
+               
+               <!-- WEBB FAMILY -->
+               <person xml:id="Webb_John" sex="1">
+                  <persName>
+                     <forename>John</forename>
+                     <surname>Webb</surname>
+                  </persName>
+                  <note resp="#lmw">Unidentified.  More research needed. Possibly "Uncle John," uncle to Eliza and Mary Webb and brother to James Webb. He is unlikely to be Aunt Mary's husband, since the elder Mary Webb was unmarried.</note>
+               </person>
+               
+<person xml:id="Webb_Eliza" sex="2">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename type="alt">Eliza</forename>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <birth><date notBefore="1797-03-03"><placeName></placeName></date></birth>
+  <note resp="#scw #lmw">Elizabeth Webb, called "Eliza," was a neighbor and friend of <persName ref="#MRM">Mary Russell Mitford</persName>. Eliza Webb was born about 1797, the youngest daughter of James Webb, Esq., and Jane Elizabeth Ogbourn. She was baptized privately on <date when="1797-03-03">March 3, 1797</date>, and publicly on <date when="1797-06-08">June 8, 1797</date> in Wokingham, Berkshire. She is the sister of Mary Elizabeth and Jane Eleanor Webb. In 1837 she married Henry Walters, Esq., in Wokingham, Berkshire. In <bibl corresp="#Needham_PapersRCL"> <persName ref="#Needham_Francis">Needham</persName>'s papers</bibl>, he notes from the <title>Berkshire Directory</title>that she lived on <placeName>Broad street</placeName>, presumably in Wokingham. Her date of death is unknown. She died after 1822, at which date she is mentioned in papers relating to her father's will and estate. Source: <rs type="letter">See <persName ref="#Needham_Francis">Needham</persName>'s letter to <persName ref="#Roberts_Wm">Roberts</persName> on <date when="1953-11-27">November 27, 1953</date></rs>. More research needed.</note>
+               </person>
+               
+               <person xml:id="Webb_James" sex="1">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>James</forename>
+                  </persName>
+                  <birth when="1769"><placeName>Hurley, Berkshire, England</placeName></birth>
+                  <death when="1822-01-11"><placeName>Wokingham, Berkshire, England</placeName></death>
+                  <occupation>brewer at <placeName>Wokingham</placeName>
+                  </occupation>
+                  <note resp="#scw #lmw">Born about 1769 and baptized on February 19, 1769 in Hurley, Berkshire. Prominent manufacturer in the <placeName>Wokingham</placeName>brewing industry, and community leader in Woking and the county of Berkshire. Father of <persName ref="#Webb_Eliza">Eliza</persName>, <persName ref="#Webb_Jane">Jane</persName>, and <persName ref="#Webb_Mary_younger">Mary Webb</persName>, and brother (or brother-in-law) of his daughters' "Aunt Mary," another <persName>Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName> suggested that he was the original of the <quote>"gentleman"</quote> in the <title ref="#OV">Our Village</title>sketch <title>
+                     <quote>"Aunt Martha"</quote>
+                  </title>. Sources: <rs type="letter">
+                     <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>
+                  </rs>. <bibl corresp="#Needham_PapersRCL">
+                     <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                  </bibl>. </note>
+               </person>
+               
+               <person xml:id="Webb_Mary_elder" sex="2">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <note resp="#scw #lmw">Friend of<persName ref="#MRM">Mary Russell Mitford. </persName>Sister or sister-in-law of <persName ref="#Webb_James">James Webb</persName> and aunt of <persName ref="#Webb_Eliza">Eliza</persName>, <persName ref="#Webb_Jane">Jane</persName> and <persName ref="#Webb_Mary_younger">Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName>suggests that she was the basis for the character of <persName>Aunt Martha</persName> in the <title ref="#OV">Our Village</title>story of that title. [Sources: <rs type="letter">
+                     <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>
+                  </rs>. <bibl corresp="#Needham_PapersRCL">
+                     <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                  </bibl>. Relationship to other Webbs and birth and death dates unknown. More research needed.</note>
+               </person>
+               
+               <person xml:id="Webb_Mary_younger" sex="2">
+                  <persName>
+                     <surname type="paternal">Webb</surname>
+                     <forename>Mary</forename>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                 <persName>Mary Elizabeth Webb</persName>
+                  <birth notBefore="1796-04-15"><placeName>Wokingham, Berkshire, England</placeName></birth>
+                 <note resp="#scw #lmw">Close friend and frequent correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. Mary Webb was born about 1796, the daughter of James Webb, Esq., and Jane Elizabeth Ogbourn. Baptized on <date when="1796-04-15">April 15, 1796</date> in Wokingham, Berkshire. Sister of <persName ref="#Webb_Eliza">Elizabeth</persName> (called "Eliza") and Jane Eleanor Webb and niece of <persName ref="#Webb_Mary_elder">the elder Mary Webb, "Aunt Mary"</persName>.  In <bibl corresp="#Needham_PapersRCL"> <persName ref="#Needham_Francis">Needham</persName>'s papers</bibl>, he notes from the <title>Berkshire Directory</title>that she lived on <placeName>Broad street</placeName>, presumably in Wokingham, Berkshire. She was the wife of Thomas Hawkins, Esq., as she is referred to thus in probate papers of 1858 regarding the wills of her sister Eliza Webb Walter and her husband Henry Walter. Date of death unknown. More research needed.</note>
+</person>
+               
+               <person xml:id="Webb_Jane" sex="2">
+                  <persName>
+                     <surname type="paternal">Webb</surname>
+                     <forename>Jane</forename>
+                     <forename>Eleanor</forename>
+                  </persName>
+                  <persName>Jane Eleanor Webb</persName>
+                  <birth notBefore="1797-03-03"><placeName>Wokingham, Berkshire, England</placeName></birth>
+                  <death when="1851-03-24"><placeName>Sandgate, Kent, England</placeName></death>
+                  <note resp="#scw #lmw">Friend of <persName ref="#MRM">Mary Russell Mitford</persName>. Jane Webb was born about 1795, the daughter of James Webb, Esq., and Jane Elizabeth Ogbourn. Baptized on <date when="1797-03-03">March 3, 1797</date> in Wokingham, Berkshire. Sister of <persName ref="#Webb_Eliza">Elizabeth</persName> (called "Eliza") and Mary Elizabeth Webb and niece of <persName ref="#Webb_Mary_elder">the elder Mary Webb, "Aunt Mary"</persName>. In <bibl corresp="#Needham_PapersRCL"> <persName ref="#Needham_Francis">Needham</persName>'s papers</bibl>, he notes from the <title>Berkshire Directory</title>that she lived on <placeName>Broad street</placeName>, presumably in Wokingham, Berkshire. She married Henry Walters, Esq., a land-surveyor and amateur antiquarian, and they lived at The Willows, near Windsor, Berkshire, according to census and other period records. Their date of marriage is unknown, but is likely between 1822 and 1832, based on her father's 1822 will and 1831 census records.  She died on March 24, 1851 at Sandgate, Kent. More research needed.</note>
+               </person>  
+               
+               <person xml:id="Taylor_K" sex="2">
+               <persName>
+                  <surname type="married">Sweetman</surname>
+                  <surname type="paternal">Taylor</surname>
+                  <forename>Kerenhappuch</forename>
+               </persName>
+               <persName>K.</persName>
+                  <birth notAfter="1824"/>
+                  <death when="1880-04"><placeName>Henley, Oxfordshire, England</placeName></death>
+                  <occupation>servant</occupation>
+                  <occupation>lady's maid</occupation>
+                  <note resp="#scw #lmw"><p>Known as <rs type="person" ref="#Taylor_K">K.</rs>, <persName ref="#Taylor_K">Kerenhappuch Taylor</persName> was born about 1820 She worked as <persName ref="#MRM">Mitford</persName>'s lady's maid intermittently from <date when="1840">1840</date> until the author's death in 1855. In 1843, <persName ref="#Taylor_K">K.</persName> gave birth to a son, <persName ref="#Taylor_JH">James Henry Taylor</persName>, who was rumored to be the son of <persName ref="#Mitford_Geo">George Mitford</persName>. Scholars have disagreed about whether this was the case, although <persName ref="#Roberts_Wm">William Roberts</persName> claimed to have heard it from <persName ref="#Taylor_JH">J.H. Taylor</persName> himself. Sources: <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>. Alexandra Drayton, <title>Unearthing Our Village.</title> <title><quote>"Capers With K"</quote></title>. <date when="2013-03-13">13 March 2013</date>. https://unearthingourvillage.wordpress.com/page/4/. It seems fairly unlikely, although not utterly impossible, that George Mitford, who died in December 11, 1842, aged eighty-eight, could have fathered a son born in April 1843, four months after his death. It is certain that J. H. Taylor could have had no memories of George. Another possible father for K.'s son is Benjamin Embrey, a man of approximately K's own age who worked at the Mitford's home as a manservant and gardener in the early 1840s. He appears with George, Mary Russell, and Kerenhappuch, in the 1841 census. Taylor later married Samuel Sweetman, another Mitford household manservant and gardener, in July 1852 and together they had two children:  Samuel Thomas Sweetman and Mary Russell Mitford Sweetman. Taylor was the residuary legatee in Mitford's 1855 will and later contested William Harness's rights to Mitford's letters in a 1870's lawsuit. At the 1861 census, she lived at Shute End, Wokingham, Berkshire. She died in April, 1880 at Henley, Oxfordshire.</p></note>
+               </person>
+               
+               <person xml:id="Taylor_JH" sex='1'>
+                  <persName>
+                     <surname>Taylor</surname>
+                     <forename>James</forename>
+                     <forename>Henry</forename>
+                  </persName>
+                  <occupation>clergy</occupation>
+                  <birth notAfter="1843-04-09"><placeName>Three Mile Cross, Berkshire, England</placeName></birth>
+              <note resp="#lmw">Reportedly the illegitimate son of <persName ref="#Taylor_K">Kerenhappuch Taylor</persName>. Born about <date when="1843">1843</date> at Three Mile Cross, he was baptized at St. Giles, Reading, Berkshire on April 9, 1843. He consistently gives his birthplace as "Three Mile Cross" on census documents from the second half of the nineteenth century. His occupation is given as "clerk in holy orders." Since he disappears from English census records after 1861, reappearing in 1891, and gives his son Arthur Harry Edmund's birthplace as Isipingo, Natal, South Africa (then a British colony), it seems possible that he emigrated to South Africa between those dates, then returned to England. Further research needed.</note></person>
+           </listPerson>
+         </div>
+       </body>
+  </text>
+</TEI>

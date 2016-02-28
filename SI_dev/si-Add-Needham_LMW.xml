@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+               <editor><persName ref="#scw">Samantha Webb</persName></editor>
+               
+               <!--ebb 2015-06-12: Still working on adding all of these: Have deleted those that I've already entered into the site index.  -->
+               <!--LMW: 2015-01-29. Fixing tagging errors.-->
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+         
+    
+   
+         <div type="historical_people" org="uniform" sample="complete">
+            <listPerson>
+      <person xml:id="Annesley_Francis" sex="1">
+         <persName>
+                <surname>Annesley</surname>
+            <forename>Francis</forename></persName>
+                <birth when="1734-05-02"><placeName>Reading</placeName></birth>
+                <death when="1812-04-12"/>
+                <occupation>educator</occupation>
+                <occupation>politian</occupation>
+                <note type="bio" resp="#scw"><p>First Master of <orgName>Downing College</orgName>, <orgName>Cambridge University</orgName> from <date when="1800">1800</date> until his death in <date when="1812">1812</date>, <persName ref="#Annesley_Francis">Annesley</persName> also served as Member of <orgName>Parliament</orgName> for the borough of <placeName ref="#Reading_city">Reading</placeName> between <date from="1774" to="1806">1774-1806</date>. In a note among his Mitford papers, <persName ref="#Needham_Francis">Needham</persName> identifies <persName ref="#Annesley_Francis">Annesley</persName> as the basis for the <persName type="fict" ref="#ModAntiquesBeau">old beau</persName> in <title>"Modern Antiques"</title>, an identification he cites from <bibl>Harness, I, 20</bibl>. See also <title>History of Parliament Online</title>.</p></note>
+             </person>
+             
+             <person xml:id="Keep_William" sex="1">
+             <persName>
+                <surname>Keep?</surname>
+                <forename>William</forename></persName>
+                <occupation>bootmaker</occupation>
+              <note resp="#scw"><p>Last name is supplied by<persName ref="#Needham_Francis">Needham</persName>; name appears among other local tradespeople, taken from the <bibl><title>Post Office Directory of Berkshire, 1847</title></bibl>. Does not appear in the 1854 edition. Source: <orgName><persName ref="#Needham_Francis">Needham</persName> Papers</orgName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p></note></person>
+             
+             <person xml:id="Kirby_Benjamin" sex="1">
+             <persName>
+                <surname>Kirby</surname>
+                <forename>Benjamin</forename>
+             </persName>
+                <persName><addName>Ben</addName></persName>
+                <birth notBefore="1811-07-11"><placeName>Shinfield parish</placeName></birth>
+                <note resp="#scw">Son of John and Sarah Kirby, and brother of <persName ref="#Kirby_Joseph">Joseph Kirby</persName>, he developed a close relationship with <persName ref="#MRM">Mitford</persName>, becoming a sort of servant in the household. Baptismal data as noted by <persName ref="#Needham_Francis">Needham</persName>, recorded along with other <placeName>Shinfield parish</placeName> baptisms that correlate to named characters in <title ref="#OV">Our Village</title>. A character based on this individual appears in a few sketches in the series, as well as in <title ref="#Country_Stories">Country Stories</title> and <title ref="#Belford_Regis">Belford Regis</title>. <persName ref="#Needham_Francis">Needham</persName> was evidently working on a theory that the historical <persName ref="#Kirby_Benjamin">Benjamin Kirby</persName> was called by other names throughout <persName ref="#MRM">Mitford</persName>'s prose, including <quote><rs type="person" ref="#Kirby_Benjamin">"plain Ben"</rs></quote>, <quote><rs type="person" ref="#Kirby_Benjamin">"Ben Emmery"</rs></quote>, or <quote><rs type="person" ref="#Kirby_Benjamin">"Dick"</rs></quote>. Source: <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-11-27">27 Novembe, 1953</date>. <persName ref="#Needham_Francis">Needham </persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="Kirby_Joseph" sex="1">
+                <persName>
+                   <surname>Kirby</surname>
+                   <forename>Joseph</forename>
+                </persName>
+                   <birth notBefore="1807-08-09"><placeName>Shinfield parish</placeName></birth>
+                   <death notAfter="1877-09-23"><placeName>Shinfield parish</placeName></death>
+                <note resp="#scw"><p>Son of John and Sarah Kirby, and brother of <persName ref="#Kirby_Benjamin">Benjamin Kirby</persName>. Married <persName>Maria Bailey</persName>, spinster of <placeName>Shinfield</placeName> on <date when="1832-10-22">22 October 1832</date>. Only the bride signed the register. Baptismal data as noted by <persName ref="#Needham_Francis">Needham</persName> along with other <placeName>Shinfield parish</placeName> baptisms that correlate to named characters in <title ref="#OV">Our Village</title>. Source: <persName ref="#Needham_Francis">Needham</persName> Papers.<orgName ref="#ReadingCL">Reading Central Library</orgName>.</p></note></person>
+             
+             <person xml:id="Lediard_John" sex="1">
+             <persName>
+                <surname>Lediard</surname>
+                <forename>John</forename>
+             </persName>
+             <occupation>servant</occupation>
+                <note resp="#scw">A young man who worked for the Mitfords during the 1830s and 1840s, and who is featured in later <title ref="#OV">Our Village</title>stories, notably as John in <title><quote>"Children of the Village: Young Master Ben"</quote></title> (which also featured <persName ref="#Kirby_Benjamin">Ben Kirby</persName>. He was particularly noted for playing the fiddle.</note></person>
+             
+             <person xml:id="Lewington_Mr" sex="1">
+             <persName>
+                <surname>Lewington</surname>
+             </persName>
+                <persName>>Mr. Lewington</persName>
+                <note resp="#scw"><p>A business person who worked for <persName>Mr. Payn</persName>. More research needed.<!--scw: no other info from Needham.--></p></note></person>
+             
+             <person xml:id="Lock_Mr" sex="1">
+             <persName>
+                <surname>Lock</surname>
+             </persName>
+               <persName>Mr. Lock</persName>
+                <note resp="#scw">A supporter of <persName ref="#Palmer_CF">Charles Fysshe Palmer</persName>. More research needed. <!--scw: No other info in Needham. Could this be connected to xml:id="Locks"? See photo DSCF9935.--></note></person>
+             
+             <person xml:id="Malton_Mr" sex="1">
+             <persName>
+                <surname>Malton</surname>
+             </persName>
+                <persName>Mr. Malton</persName>
+             <occupation>solicitor</occupation>
+                <note resp="#scw">Solicitor whose services the Mitfords used.</note></person>
+
+             <person xml:id="Martin_Lucy" sex="2">
+             <persName>
+                <surname>Martin</surname>
+                <forename><unclear><supplied>Lucy</supplied></unclear></forename></persName>
+                <occupation>beer retailer</occupation>
+                <note resp="#scw">Lived in  <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. Noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople, compiled from the <bibl><title>Post Office Directory of Berkshire, 1847</title></bibl>. Source: <orgName><persName ref="#Needham_Francis">Needham</persName> Papers</orgName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="Merry_William" sex="1">
+             <persName>
+                <surname>Merry</surname>
+                <forename>William</forename>
+                <roleName>Esquire</roleName>
+             </persName>
+                <note resp="#scw"><p>Listed among the gentry of <placeName>Shinfield village</placeName>, associated with the <placeName>Highlands</placeName> estate, and noted by <persName ref="#Needham_Francis">Needham</persName> in his research. Source: <bibl><title>Post Office Directory of Berkshire, 1854.</title></bibl></p></note></person>
+             
+             <person xml:id="Matthews_George" sex="1">
+             <persName>
+                <surname>Matthews</surname>
+                <forename>George</forename>
+             </persName>
+                <occupation>schoolmaster</occupation>
+                
+                <note resp="#scw">Schoolmaster who worked at the <orgName>Free School</orgName> in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. Noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople, compiled from the <bibl><title>Post Office Directory of Berkshire, 1847</title></bibl>. Source: <orgName><persName ref="#Needham_Francis">Needham</persName> Papers</orgName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="May_William" sex="1">
+             <persName>
+                <surname>May</surname>
+                <forename>William</forename>
+             </persName>
+                <note resp="#scw"><persName ref="#Needham_Francis">Needham</persName> identifies him as <quote>"the Magistrates' Clerk"</quote>. More research needed. <!--scw: Could he be connected to xml:id=May_Joseph of Friar Street? No other details in Needham.--> </note></person>
+             
+                <person xml:id="Monck_JB" sex="1">
+                   <persName>
+                      <forename>John</forename>
+                      <forename>Berkeley</forename>
+                      <surname>Monck</surname>
+                   </persName>
+                   <persName><roleName></roleName></persName>
+                   <note resp="#lmw #ebb #scw">Member of Parliament for <placeName ref="#Reading_city">Reading
+                      area</placeName> <date from="1820" to="1830">1820-1830</date>, who frequently franked <persName ref="#MRM">Mary Russell Mitford</persName>'s
+                      letters. <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date> describes the election of Monck, describing him in context with a shoemaker who brought him from France: <quote defective="false">"<persName ref="#Monck_JB">Mr. Monck</persName> an opposition man of large fortune brought from <placeName ref="#France">France</placeName> in a fit of patriotism by our celebrated shoemaker &amp; Patriot <persName>Mr. <unclear unit="chars" quantity="4"><supplied resp="#ebb">W</supplied><!--ebb: Could this be Waring? or Maury? scw: Warry? See below.--></unclear></persName>."</quote> Monck was the author of <title>General Reflections on the System of the Poor Laws</title> (<date when="1807">1807</date>), in which he argued for a gradual approach to abolishing the Poor Laws, and for the reform of workhouses. <persName ref="#Needham_Francis">Francis Needham</persName> claims that it is he who is referred to in <title>"Violeting"</title>, when the <persName ref="#OVNarrator">narrator</persName> thinks she sees <quote>"Mr. and Mrs. M. and dear B."</quote>. (<quote>"Dear B."</quote> would be their son, <persName>Bligh</persName>.) Dr. Webb's research suggests that "celebrated shoemaker" is Mr. Warry, possibly Joseph <!-- scw: See William Silver Darter [An Octogenarian], who names Warry of Minster Street, "an active liberal," as the person who was sent to France (41), although he says it was the 1812 election. See also the Monthly Magazine 12 (1801): 174 obituary for a Joseph Warry, boot and shoemaker of Reading, for 1801, which suggests the possibility that Mr. Warry may be his son who took over the business. Coles also puzzles over the name in one of Mitford's letters. -->Source: <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1954-03-26">26 March 1954</date>. <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
+                </person>
+               
+                <person xml:id="Monck_Mrs" sex="2">
+                   <persName>
+                      <forename>Mary</forename>
+                      <surname type="paternal">Stephens</surname>
+                      <surname type="married">Monck</surname>
+                   </persName>
+                   <persName>Mrs. Monck</persName>
+                   <note resp="#lmw #scw">Wife of <persName ref="#Monck_JB">John Berkeley Monck</persName>, the Member of Parliament for Reading. <persName ref="#Needham_Francis">Francis Needham</persName> claims that it is she and her husband who are referred to in <title><quote>"Violeting"</quote></title>, when the <persName ref="#OVNarrator">narrator</persName> thinks she sees <quote>"Mr. and Mrs. M. and dear B."</quote>. (<quote>"Dear B."</quote> would be their son, <persName>Bligh</persName>.) Source: <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1954-03-26">26 March, 1954</date>. <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+                   </note>
+                </person>
+               
+               <person xml:id="Montague_Captain" sex="1">
+             <persName>
+                <surname>Montague</surname>
+                </persName>
+                <occupation>naval officer</occupation>
+                 <note resp="#scw">More research needed.<!--scw: His name is on one of Needham's papers among other names who are briefly described. I leave it here in case he pops up later. See photo DSCF9935.--></note></person>
+             
+             <person xml:id="Newberry_J" sex="1">
+             <persName>
+                <forename>Jacob</forename>
+                <surname>Newberry</surname>
+             </persName>
+             <occupation>solicitor</occupation>
+                <note resp="#scw #lmw">According to <persName ref="#Needham_Francis">Francis Needham</persName>, a solicitor. <persName ref="#coles">Coles</persName> identifies him as <q>“Jacob Newberry, attorney, of 35 Great Queen Street Lincoln’s Inn Fields [London] and Friar Street, Reading" ( #17, p. 109, note 32)</q></note></person>
+             
+             <person xml:id="Nicholson_Mrs" sex="2">
+              <persName>
+                <surname type="married">Nicholson</surname>
+                <forename>unknown</forename>
+             </persName>
+             <occupation>vicar's wife</occupation>
+                <occupation>clergy</occupation>
+             <note resp="#scw">According to <persName ref="#Needham_Francis">Francis Needham</persName>, a historical <persName ref="#Nicholson_Mrs">Mrs. Nicholson</persName> is the basis of the character featured in <title ref="#OV">Our Village</title> sketch entitled <title>"Early Recollections: A Widow's Feather"</title>and described there as an old acquaintance. <persName type="hist" ref="#Needham_Francis">Needham</persName> identifies the sketch character, <persName ref="#Nicholson_Mrs">Mrs. Nicholson</persName>, as the wife of <persName ref="#Nicholson_Jeremiah">Jeremiah Nicholson</persName>, the vicar of <placeName ref="#St_Lawrence_Church">St. Lawrence Church</placeName> in <placeName ref="#Reading_city">Reading</placeName>, which <persName ref="#MRM"> Mitford</persName> refers to in her sketch as <placeName type="fict" ref="#St_Johns_Church">St. Johns</placeName>.</note></person>
+             
+             <person xml:id="Nicholson_Jeremiah" sex="1">
+             <persName>
+                <surname>Nicholson</surname>
+                <forename>Jeremiah</forename>
+             </persName>
+                <death when="1771-07-18"><placeName>Reading</placeName></death>
+                <occupation>clergy</occupation>
+               <note resp="#scw"><persName ref="#Needham_Francis">Francis Needham</persName> identifies <persName ref="#Nicholson_Jeremiah">Nicholson</persName> as the husband of <persName ref="#Nicholson_Mrs">Mrs. Nicholson</persName> in <title ref="#OV">Our Village</title>, <title>"Early Recollections: A Widow's Feather"</title>. In real life, according to <persName ref="#Needham_Francis">Needham</persName>, he was vicar at <placeName ref="#Reading_city">Reading</placeName>'s <placeName ref="#St_Lawrence_Church"> St. Lawrence Church </placeName>from <date when="1763-11-25">November 25, 1763</date> until his death on <date when="1771-07-18">July 18, 1771</date>. <persName ref="#MRM"> Mitford</persName> refers to this church as <placeName type="fict" ref="#St_Johns_Church">St. Johns</placeName><persName ref="#Needham_Francis">Needham</persName>'s source for information on <persName ref="#Nicholson_Jeremiah">Jeremiah Nicholson</persName> is C. Kerry, A History of the Municipal Church of St. Lawrence, Reading, 1883, p. 131 and 222.</note></person>
+             
+             
+             <person xml:id="Nooth_C" sex="2">
+             <persName>
+                <surname type="paternal">Nooth</surname>
+                <forename>Charlotte</forename>
+             </persName>
+                <birth notBefore="1780"/>
+                <note resp="#scw #lmw">A friend of <persName ref="#Valpy_Richard">Dr. Richard Valpy</persName>, who resided at <placeName>Kew, Surrey</placeName>, but was often in <placeName>Paris</placeName>. She wrote a poem to <persName ref="#Valpy_Richard">Dr.
+                   Valpy</persName>, published volumes of poetry in <date when="1815">1815</date> &amp; <date when="1816">1816</date>, including a verse tragedy.<ref target="http://viaf.org/viaf/72121073"/> <ref target="http://extra.shu.ac.uk/corvey/corinne/Corinne%20authors/1Nooth/noothbiblio.htm"/></note>
+                   </person>
+                
+              <person xml:id="Patty" sex="2">
+             <persName>
+                <forename>Patty</forename>
+                <note resp="#lmw">More research needed. <!--scw: I leave this as a stub until more info can be filled in. This young woman is discussed in 1953-11-09-NeedhamToRoberts. She is the daughter of a "GL," a man discussed by Needham elsewhere by initial only. Patty was the daughter of GL's first wife, and died of consumption when she was 20. MRM, in a letter (no date ref given), offers her a pony. There is an "OV" story in vol. V entitled "Patty's New Hat."--></note>
+                
+             </persName></person>
+             
+             <person xml:id="Payn_Mr" sex="1">
+             <persName>
+                <surname>Payn</surname>
+             </persName>
+                <persName>Mr. Payn</persName>
+             <note resp="#scw #lmw"><persName ref="#Lewington_Mr">Mr. Lewington</persName> was his man in matters of business. More research needed.<!--No further info from Needham, but I'm leaving him here as I expect he'll turn up.--></note></person>
+             
+             <person xml:id="Price_Stephen" sex="1">
+             <persName>
+                <surname>Price</surname>
+                <forename>Stephen</forename>
+                 </persName>
+                <occupation>theater manager</occupation>
+                <note resp="#scw">American theater manager and leasee of <placeName ref="#Drury_Lane_Theatre">Drury Lane</placeName>between <date from="1826" to="1827">1827 and 1827</date>. <persName ref="#MRM">Mitford</persName>refers to him in a letter of <date when="1823-05-23">May 5, 1823</date>. Attribution from <persName ref="#coles">William Coles</persName>in a letter to <persName ref="#Needham_Francis">Needham</persName>; <persName ref="#coles">Coles</persName> is uncertain of the name, however. Source: Letter from <persName ref="#coles">William Coles</persName>to <persName ref="#Needham_Francis">Francis Needham</persName>, <date when="1958-04-25">April 25, 1958</date>, Needham papers, <orgName ref="#ReadingCL">Reading Central Library</orgName><!--scw: See photo DSCN1181--></note></person>
+             
+             <person xml:id="Rapley_John1" sex="1">
+             <persName>
+                <surname>Rapley</surname>
+                <forename>John</forename>
+                <forename type="alt">Jack</forename>
+             </persName>
+                <birth notBefore="1809-10-25"><placeName>Shinfield parish</placeName></birth>
+                <note resp="#scw"><p>Son of William and Sarah Rapley. Baptismal data as noted by <persName ref="#Needham_Francis">Needham</persName> along with other <placeName>Shinfield parish</placeName> baptisms that correlate to named characters in <title ref="#OV">Our Village</title>.  <!--scw: MEMO TO LETTER EDITORS: Look out for an MRM letter to her father (possibly 1826) wherein she expresses displeasure that Jack Rapley has enlisted in the army. I have a note that I jotted from Needham's file to this effect, but he doesn't give a precise date.--> </p></note></person>
+             
+             <person xml:id="Rapley_John2" sex="1">
+             <persName>
+                <surname>Rapley</surname>
+                <forename>John</forename>
+             </persName>
+                <birth when="1811-12-01"><placeName>Shinfield parish</placeName></birth>
+                 <note resp="#scw">Son of John and Elizabeth Rapley. Baptismal data as noted by <persName ref="#Needham_Francis">Needham</persName> along with other <placeName>Shinfield parish</placeName> baptisms that correlate to named characters in <title ref="#OV">Our Village</title>. Either <rs type="person" ref="#Rapley_John2">he</rs> or <persName ref="#Rapley_John1">John Rapley</persName>, son of William and Sarah, could be the original of the <persName type="fict" ref="#JackRapley">Jack Rapley</persName> in <title ref="#OV">Our Village</title>.</note></person>
+             
+             <person xml:id="Reeve_Mrs" sex="2">
+             <persName>
+                <surname type="married">Reeve</surname>
+             </persName>
+                <persName>Mrs. Reeve</persName>
+                <note resp="#scw">From Whitley. More research needed.<!--scw: No other info from Needham.--></note></person>
+              
+               <person xml:id="Roberts_Wm" sex="1">
+                  <persName>
+                     <surname>Roberts</surname>
+                     <forename>William</forename>
+                     <forename>James</forename>
+                  </persName>
+                  <occupation>literary</occupation>
+                  <occupation>biographer</occupation>
+                  <note resp="#lmw #scw">Early twentieth-century Mitford biographer and author of <title>Mary Russell Mitford: The Tragedy of a Blue
+                     Stocking</title>. He corresponded with <persName ref="#Needham_Francis">Francis Needham</persName> while compiling his biography; some of that correspondence is preserved among the latter's own papers held at the <orgName ref="#ReadingCL">Reading Central Library</orgName>. 
+                  </note>
+               </person>
+             
+             <person xml:id="Skerrett_Marianne" sex="2">
+             <persName>
+                <surname>Skerrett</surname>
+                <forename>Marianne</forename>
+             </persName>
+                <note resp="#scw">An undetermined relative of <persName ref="#Macready_Wm">William Macready</persName>. Source: Letter from <persName ref="#coles">William Coles</persName>to <persName ref="#Needham_Francis">Francis Needham</persName>, <date when="1958-04-25">April 25, 1958</date>, <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             
+             <person xml:id="Strong_Elizabeth" sex="2">
+             <persName>
+                <surname>Strong</surname>
+                <forename>Elizabeth</forename>
+                </persName>
+                <occupation>baker</occupation>
+                <note resp="#scw">Baker of <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>, as noted by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople, drawn from the <bibl><title>Post Office Directory of Berkshire</title></bibl>, 1847 edition. She is not listed in the 1854 edition. Source: <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="Strong_George" sex="1">
+             <persName>
+                <surname>Strong</surname>
+                <forename>George</forename>
+                   </persName>
+                <occupation>bricklayer</occupation>
+                <occupation>beer retailer</occupation>
+                <note resp="#scw"><p>Bricklayer and beer retailer of <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>, as noted by <persName ref="#Needham_Francis">Needham</persName>on a list of local tradespeople, drawn from the <bibl><title>Post Office Directory of Berkshire,</title></bibl>1847 edition. He is not listed in the 1854 edition. Source: <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p></note></person>
+             
+             <person xml:id="Taylor_K" sex="2">
+             <persName>
+                <surname>Taylor</surname>
+                <forename>Kerenhappuch</forename>
+             </persName>
+             <persName>K.</persName>
+                <note resp="#scw">Known as <rs type="person" ref="#Taylor_K">K.</rs>, she was a servant in the Mitford household intermittently from <date when="1840">1840</date> until the author's death. <persName ref="#Taylor_K">K.</persName> gave birth to a son, <persName>James Henry Taylor</persName>, who was rumored to be the son of <persName ref="#Mitford_Geo">George Mitford</persName>. Scholars have disagreed about whether this was the case, although <persName ref="#Roberts_Wm">William Roberts</persName> claimed to have heard it from <persName>J.H. Taylor</persName> himself. Sources: <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>. Alexandra Drayton, <title>Unearthing Our Village.</title> <title><quote>"Capers With K"</quote></title>. <date when="2013-03-13">13 March 2013</date>. See <ref target="https://unearthingourvillage.wordpress.com/page/4/"/>.</note></person>
+             
+             <person xml:id="Thelwall_John" sex="1">
+             <persName>
+                <surname>Thelwall</surname>
+                <forename>John</forename>
+             </persName>
+                <birth when="1764-07-27"><placeName>London</placeName></birth>
+                <death when="1834-02-17"><placeName>Bath</placeName></death>
+                <occupation>literary</occupation>
+                <occupation>journalism</occupation>
+                <occupation>education</occupation>
+                <note type="bio" resp="#scw">Radical political writer, lecturer, poet, and novelist, who was associated with the <orgName>London Corresponding Society</orgName>, as well as <persName ref="#Wordsworth_Wm">William Wordsworth</persName> and <persName ref="#Coleridge_ST">Samuel Taylor Coleridge</persName>in their early years. He, along with <persName>John Horne Tooke</persName> and <persName>Thomas Hardy</persName>, was tried for treason in 1794, and was acquitted. After being hounded out of a prominent political life by government repressions against radical activity, <persName ref="#Thelwall_John">Thelwall</persName>became a teacher of elocution, but he continued to write about politics and to publish. In later life, he published a short-lived journal entitled <bibl><title>Panoramic Miscellany</title></bibl>, to which <persName ref="#MRM">Mitford</persName>contributed three country sketches.</note></person>
+             
+             <person xml:id="Tindal_Mrs_Acton" sex="2">
+             <persName>
+                <surname type="married">Tindal</surname>
+                <surname type="paternal">Harrison</surname>
+                <forename>Henrietta</forename>
+                <forename>Euphemia</forename>
+             </persName>
+             <persName type="pseudo">
+                <surname>Butler</surname>
+                <forename>Diana</forename>
+             </persName>
+                <birth notBefore="1817-07-19"><placeName>Duffield, Darby</placeName></birth>
+                <death when="1879-05-06"><placeName>Aylesbury</placeName></death>
+                <note resp="#scw">Author of volumes of poetry, as well as stories and articles in magazines, and novels under the pseudonym <persName>Diana Butler</persName>. <persName ref="#MRM">Mitford</persName> praised her work in her own <title>Recollections of a Literary Life</title>. The two corresponded warmly and affectionately later in <persName ref="#MRM">Mitford</persName>'s life. Source: <title>ODNB</title>.</note></person>
+             
+             <person xml:id="Tubb_Daniel" sex="1">
+             <persName>
+                <surname>Tubb</surname>
+                <forename>Daniel</forename>
+                <note resp="#scw">Individual identified in the <placeName>Shinfield parish</placeName> register by <persName ref="#Needham_Francis">Francis Needham</persName> whose name may have been used by <persName ref="#MRM">Mitford</persName>for several <title ref="#OV">Our Village</title> characters, including <title><quote>"Dr. Tubb"</quote></title>. Source: <persName ref="#Needham_Francis">Francis Needham</persName>, letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1954-01-16">16 January 1954</date>, <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
+             </persName></person>
+             
+             <person xml:id="Whateley_Elijah" sex="1">
+             <persName>
+                <surname>Whateley</surname>
+                <forename>Elijah</forename>
+                 </persName>
+                <occupation>wheelwright</occupation>
+                <occupation>carpenter</occupation>
+                <note resp="#scw">Wheelwright and carpenter of <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. He is listed by <persName ref="#Needham_Francis">Needham</persName> solely as a wheelwright on a list of local tradespeople, drawn from the <bibl><title>Post Office Directory of Berkshire</title></bibl>, 1847 edition. The 1854 edition lists him also as a carpenter.</note></person>
+
+             <person xml:id="Willis_David" sex="1">
+             <persName>
+                <surname>Willis</surname>
+                <forename>David</forename>
+             </persName>
+                <birth notBefore="1806-12-25"><placeName>Shinfield parish</placeName></birth>
+                <note resp="#scw">Son of John and Elizabeth Willis. Baptismal data noted by <persName ref="#Needham_Francis">Needham</persName> along with other <placeName>Shinfield parish</placeName> baptisms that correlate to named characters in <title ref="#OV">Our Village</title>. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="Willis_John" sex="1">
+             <persName>
+                <surname>Willis</surname>
+                <forename>John</forename>
+                 </persName>
+                <occupation>blacksmith</occupation>
+                
+                <note resp="#scw"><p>Blacksmith recorded by <persName ref="#Needham_Francis">Needham</persName>on a list of local tradespeople drawn from the <bibl><title>Post Office Directory of Berkshire</title></bibl>, 1847 edition. <persName ref="#Willis_John">Willis</persName> is listed by <persName ref="#Needham_Francis">Needham</persName> as having <quote>"no place,"</quote> and his name does not appear in the 1854 edition of the Directory. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p></note></person>
+             
+             <person xml:id="Willis_Thomas" sex="1">
+             <persName>
+                <surname>Willis</surname>
+                <forename>Thomas</forename>
+                </persName>
+                <occupation>blacksmith</occupation>
+                
+                <note resp="#scw">Blacksmith whose name is recorded by <persName ref="#Needham_Francis">Needham</persName> on a list of local tradespeople drawn from the <bibl><title>Post Office Directory of Berkshire</title></bibl>, 1847 edition. His name is listed on the <placeName>Shinfield</placeName> page of the 1854 edition, without place of residence. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="Young_Mr" sex="1">
+             <persName>
+                <surname>Young</surname>
+             </persName>
+                <persName>Mr. Young</persName>
+             <occupation>doctor</occupation>
+                <occupation>medical</occupation>
+                <note resp="#scw #lmw">Doctor from <placeName ref="#Reading_city">Reading</placeName>. More research needed. <!--scw: No other info from Needham.--></note>
+             </person>   
+          </listPerson>
+          
+          <listPerson type="fict">
+             <person xml:id="JackRapley">
+                <persName>
+                   <surname>Rapley</surname>
+                   <forename>Jack</forename>
+                </persName>
+                <note resp="#scw">One of the country boys featured in a number of <title ref="#OV">Our Village</title> stories, and an admitted favorite of the <persName ref="#OVNarrator">narrator</persName> and her greyhound, <persName ref="#May-flower">May-flower</persName>. <persName ref="#Needham_Francis">Needham</persName> identifies two local people of that name. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="Jem_Eusden" sex="1">
+             <persName>
+                <surname>Eusden</surname>
+                <forename>James</forename>
+                <forename type="alt">Jem</forename>
+             </persName>
+                <note resp="#scw">Character described in the <title ref="#OV">Our Village</title>sketch, <title><quote>"The Hard Summer"</quote></title>. He is one of the country boys who populate the village. <persName ref="#Needham_Francis">Francis Needham</persName>speculates that the family name may have been Cusden. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+             
+             <person xml:id="May-flower" sex="2">
+             <persName>May-flower</persName>
+                <note resp="#scw"><p>Greyhound dog who is featured as the <persName ref="#OVNarrator">narrator</persName>'s companion in many <title ref="#OV">Our Village</title>sketches.</p><!-- lmw:  need to move to pet section? --></note></person>
+             
+             <person xml:id="Mosse_Mrs" sex="2">
+             <persName>
+                <surname>Mosse</surname>
+                <forename>Elizabeth</forename>
+             </persName>
+             <persName>Mossy</persName>
+                <note resp="#scw">Title character of the <title ref="#OV">Our Village</title> sketch, <title>Mrs. Mosse</title>. She is a longtime servant in the household of the <persName ref="#OVNarrator">narrator</persName> and, according to <persName ref="#Needham_Francis">Francis Needham</persName>, based on the Mitfords' own servant, <persName ref="#Cropp_Mrs">Mrs. Cropp</persName>. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+                          
+             <person xml:id="OV_Mrs_Nicholson" sex="2">
+                <persName>
+                   <surname type="married">Nicholson</surname>
+                </persName>
+                <persName>Mrs. Nicholson</persName>
+                <note resp="#scw"><p>Character in <title ref="#OV">Our Village</title>, volume 5, <title>Early Recollections: A Widow's Feather</title>. According to <persName ref="#Needham_Francis">Needham</persName>, she is based on a real acquaintance from <persName ref="#MRM">Mitford</persName>'s early years named <persName ref="#Nicholson_Mrs">Mrs. Nicholson</persName>, who was the widow of <persName ref="#Nicholson_Jeremiah">Jeremiah Nicholson, D.D.</persName>, the vicar of <placeName ref="#St_Lawrence_Church"></placeName>. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p></note>
+             </person>
+          </listPerson>
+        </div>
+         
+         <div type="places">
+            <listPlace type="hist">
+               <place xml:id="St_Lawrence_Church">
+               <placeName>St. Lawrence Church</placeName>
+               <note resp="#scw">Ancient church in <placeName ref="#Reading_city">Reading</placeName>. During <persName ref="#MRM">Mitford</persName>'s time, it was the parish church. The spelling varies between <q>"Lawrence"</q> and <q>"Laurence."</q>
+               </note></place>
+            </listPlace>
+            
+            <listPlace type="fict">
+               <place xml:id="St_Johns_Church">
+               <placeName>St. Johns Church</placeName>
+                  <note resp="#scw">According to <persName ref="#Needham_Francis">Needham</persName>, <persName ref="#MRM">Mitford</persName> conceals the name of <placeName type="hist" ref="#St_Lawrence_Church">St. Lawrence Church</placeName> by refering to it as <placeName type="fict" ref="#St_Johns_Church"> St. Johns Church</placeName> in her <title ref="#OV"> sketch</title>, <title> Early Recollections: A Widow's Feather</title>.</note></place>
+            </listPlace>
+         </div>
+         
+         
+         <div type="publications">
+            <listBibl type="ref_19thc">
+               <bibl xml:id="History_Municipal_Church_St_Lawrence">
+               <title>A History of the Municipal Church of St. Lawrence, Reading</title>       
+               <author>Charles Kerry</author>
+               <note resp="#scw"><date when="1883">1883</date> publication used by <persName ref="#Needham_Francis">Needham</persName> to establish local histories and identities of <persName ref="#MRM">Mitford's</persName> <title ref="#OV">Our Village</title> characters. Cited by him on a note making reference to <persName ref="#Nicholson_Jeremiah">Jeremiah Nicholson</persName>.</note></bibl>
+                  
+                  <bibl xml:id="PO_Directory_Berkshire">
+                  <title>The Post Office Directory of Berkshire, Northamptonshire, Oxfordshire, with Bedfordshire, Buckinghamshire, and Huntingdonshire</title>
+                  <publisher>W. Kelly and Co.</publisher>
+                  <note resp="#scw">A series of directories of local gentry and tradespeople in the counties of <placeName>the U.K.</placeName>.</note>
+               </bibl> 
+            </listBibl>
+            
+            <listBibl type="per_19thc">
+               <bibl xml:id="Panoramic_Misc">
+               <title>Panoramic Miscellany, and Review of Literature, Science, Arts, Inventions and Occurrences</title>
+               <editor ref="#Thelwall_John">John Thelwall</editor>
+               <date from="1826-01-31" to="1826-06-01">31 January 1826 to June 1826</date>
+                  <note resp="#scw">Periodical edited by <persName ref="#Thelwall_John">John Thelwall</persName> to which <persName ref="#MRM">Mitford</persName>, signing as "M," contributed three stories to the first three issues of its short run (see <bibl><persName>Esterhammer</persName></bibl>). Source: <bibl><persName>Angela Esterhammer</persName>, <title><quote>"<persName ref="#Thelwall_John">John Thelwall</persName>'s <title ref="#Panoramic_Misc">Panoramic Miscellany</title>: The Lecturer as Journalist."</quote></title><title>Romantic Circles Praxis Series</title>. <title><persName ref="#Thelwall_John">John Thelwall</persName>: Critical Reassessments</title><date when="2011-09">September 2011</date>. <ref target="http://www.rc.umd.edu/praxis/thelwall/HTML/praxis.2011.esterhammer.html"/></bibl></note></bibl>
+            </listBibl>
+            </div>
+         
+      </body>
+  </text>
+</TEI>

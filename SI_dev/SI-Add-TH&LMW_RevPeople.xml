@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index of Named Entities in the Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor>Elisa Beshero-Bondar</editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> Site Index for the Digital Mitford project. Date: 2015-06-12T15:44:06.953-04:00. Extracted by Elisa Beshero-Bondar.
+               Count of all @xml:ids in the current file: 901. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)<!-- File revises notes from existing SI to current format.  File started 2016-02-12 by Lisa Wilson and Tracy Harnish --></note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="historical_people" org="uniform" sample="complete">
+            <listPerson type="hist">
+        
+        <!-- Tracy, consult SI-add-LMW_Merged file in box to review current format. Proof (or add) birth and death dates and places, occupations, develop notes. Look up and add viaf # links when available. I revised the first entry, Henry Vane, as a sample.-->
+                       <person xml:id="Vane_hist" sex="1">
+                  <persName>Henry Vane</persName>
+                  <persName>
+                     <roleName>Sir</roleName>
+                     <forename>Henry</forename>
+                     <surname>Vane</surname>
+                     <roleName>Knight</roleName>
+                  </persName>
+                          <persName>
+                             <roleName>6th Governor of the <placeName>Massachusetts Bay Colony</placeName>
+                     </roleName>
+                             <roleName>Member of Parliament</roleName>
+                             <roleName>Member of the Westminster Assembly</roleName>
+                  </persName>
+                          <birth><date notAfter="1613"><placeName>Debden, Essex, England</placeName></date></birth>
+                  <death when="1662-06-14"><placeName>Tower Hill, London, England</placeName></death>
+                   <occupation>politician</occupation>
+                          <occupation>colonial governor</occupation>
+                          <occupation>orator</occupation>
+                          <occupation>literary</occupation>
+                          <note>Henry Vane (called "Harry" and "Henry Vane the Younger" to distinquish him from his father), was baptized on March 26, 1613 and died on June 14, 1662. A supporter of religious freedom, Vane served as the 6th Governor of the Massachusetts Bay Colony, and supported the creation of Roger Williams' Rhode Island Colony and Harvard College. He became a Parliamentarian political leader and worked closely with Oliver Cromwell, serving on the Council of State during the Interregnum, although he refused to play any part in the executation of King Charles I and he resigned when Cromwell dissolved Parliament in 1653. He briefly returned to power between 1659 and 1660 during the Commonwealth period. He was arrested under orders from Charles II and charged with treason by Parliament. He was ultimately exempted from the Indemnity and Oblivion Act, and was thus denied amnesty granted to most people for their roles in the Civil War and Interregnum. After a lengthy trial, he was executed at Tower Hill, London.</note>
+                          <note><ref target="http://viaf.org/viaf/2817622"/></note>
+                          
+               </person>
+               <person xml:id="Victoria_Queen" sex="2">
+                  <persName>Victoria <roleName>
+                        <date from="1837-06-20" to="1901-01-22">Queen of the United Kingdom</date>
+                     </roleName>
+                     <roleName>
+                        <date from="1876-05-01" to="1901-01-22">Empress of India</date>
+                     </roleName>
+                  </persName>
+                  <persName>
+                     <forename>Alexandrina</forename>
+                     <forename>Victoria</forename>
+                     <surname type="maiden">Hanover</surname>
+                  </persName>
+                  <birth when="1819-05-24">
+                     <placeName>Kensington Palace, London</placeName>
+                  </birth>
+                  <death when="1901-01-22">
+                     <placeName>Osborne House, Isle of Wight</placeName>
+                  </death>
+                  <occupation>monarch</occupation>
+                  <note resp="#ebb">The longest reigning monarch in English history, and the longest reigning female monarch in recorded history.</note>
+               </person>
+               <person xml:id="Voltaire" sex="1">
+                  <persName>
+                     <surname>Voltaire</surname>
+                     <forename>François-Marie</forename>
+                     <forename>Arouet</forename>
+                  </persName>
+                  <note type="bio" resp="#lmw #cmm">
+                     <p> (1694-1778) French Enlightenment author, critic, essayist, historian, and
+                        philosopher. Best-known today for his satirical novel <bibl>
+                           <title>Candide</title> (<date>1759</date>)</bibl>.</p>
+                  </note>
+               </person>
+               <person xml:id="Wakefield_D">
+                  <persName>
+                     <surname>Wakefield</surname>
+                     <forename>Daniel</forename>
+                  </persName>
+                  <birth when="1776">
+                     <placeName>Tottenham, Middlesex</placeName>
+                  </birth>
+                  <death when="1846-07-19">
+                     <placeName ref="#London_city">London</placeName>
+                  </death>
+                  <occupation>barrister</occupation>
+                  <note type="bio" resp="#ebb">Mentioned in letter of <persName ref="#MRM">Mitford</persName> to <persName ref="#Talfourd_Thos">Talfourd</persName> of
+                        <date when="1821-06-21">June 21 1821</date>, known to Mitford and <persName ref="#Mitford_Geo">her father</persName> and Talfourd and privy to law court
+                     gossip. Identified by <persName ref="#coles">Coles</persName> as Daniel
+                     Wakefield, which seems likely, cross-checking with the ODNB. Wakefield's mother
+                     was the Quaker writer Priscella Bell Wakefield, though Wakefield himself
+                     converted to the Church of England. He published <title>An Essay of Political
+                        Economy</title> in 1799, and qualified for the law in 1807. His first wife,
+                        <persName>Isabella Mackie</persName>, swindled him of much of his income and
+                     nearly bankrupted him, before she fatally poisoned herself in August 1813.
+                     Later that year, 11 November 1813, Wakefield married <persName>Elizabeth
+                        Kilgour</persName>. He was eventually very successful and much consulted on
+                     legal cases. </note>
+               </person>
+               <person xml:id="Warde_Mr" sex="1">
+                  <persName>
+                     <surname>Prescott</surname>
+                     <forename>James</forename>
+                     <surname>Warde</surname>
+                  </persName>
+                  <persName>James Prescott Warde</persName>
+                  <persName>Mr. Warde</persName>
+                  <occupation>actor</occupation>
+                  <note type="bio" resp="#lmw">
+                     <p> British actor. (1792-1840). Used the professional name "Mr. Warde".
+                        Appeared at <placeName ref="#Covent_Garden_Theatre">Covent
+                           Garden</placeName>.<!-- NEED DATES & DETAILS--></p>
+                  </note>
+               </person>
+               <person xml:id="Watteau_Wil">
+                  <persName>
+                     <reg>Watteau, Jean-Antoine</reg>
+                     <forename>Jean-Antoine</forename>
+                     <surname>Watteau</surname>
+                  </persName>
+                  <birth when="1684-10-10">born 10 October 1684, Valenciennes, France</birth>
+                  <death when="1721-07-18">death 18 July 1721</death>
+                  <occupation>artist</occupation>
+                  <note type="bio" resp="#esh">French painter known for his bucolic landscapes and
+                     country scenes in the Late-Baroque, or Roccoco, style.</note>
+               </person>
+               <person xml:id="Webb_Eliza" sex="2">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>Eliza</forename>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <birth notBefore="1797-03-03">baptized privately on <date when="1797-03-03">3 March, 1797</date>, and publicly on <date when="1797-06-08">8 June 1797</date>.</birth>
+                  <note resp="#scw">A neighbour and friend of <persName ref="#MRM">Mary Russell
+                     Mitford</persName>. In <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>'s papers</bibl>, he notes from the <title>Berkshire Directory</title>that she lived on <placeName>Broad street</placeName>. [Source: <rs type="letter">See <persName ref="#Needham_Francis">Needham</persName>'s letter to <persName ref="#Roberts_Wm">Roberts</persName> on <date when="1953-11-27">November 27, 1953</date>
+                     </rs>.] 
+                    
+                  </note>
+               </person>
+               <person xml:id="Webb_James" sex="1">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>James</forename>
+                  </persName>
+                  <death when="1822-01-11">11 January 1822</death>
+                  <occupation>brewer at <placeName>Wokingham</placeName>
+                  </occupation>
+                  <note resp="#scw">Prominent brewer in the <placeName>Wokingham</placeName>brewing industry, father of <persName ref="#Webb_Eliza">Eliza</persName> and <persName ref="#Webb_Mary_younger">Mary Webb</persName>, and brother (or brother-in-law) of another <persName>Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName> suggested that he was the original of the <quote>"gentleman"</quote> in the <title ref="#OV">Our Village</title>sketch <title>
+                        <quote>"Aunt Martha"</quote>
+                     </title>. [Sources: <rs type="letter">
+                        <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>
+                     </rs>. <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.] </note>
+               </person>
+               <person xml:id="Webb_Mary_elder" sex="2">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <note resp="#scw">Friend of <persName ref="#MRM">Mitford. </persName>Sister or sister-in-law of <persName ref="#Webb_James">James Webb</persName> and aunt of <persName ref="#Webb_Eliza">Eliza</persName> and <persName ref="#Webb_Mary_younger">Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName>suggests that she was the basis for the character of <persName>Aunt Martha</persName> in the <title ref="#OV">Our Village</title>story of that title. [Sources: <rs type="letter">
+                        <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>
+                     </rs>. <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.] </note>
+               </person>
+               <person xml:id="Webb_Mary_younger" sex="2">
+                  <persName>
+                     <surname>Webb</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <birth notBefore="1796-04-15">baptized on 15 April, 1796</birth>
+                  <note resp="#scw">Sister of <persName ref="#Webb_Eliza">Eliza Webb</persName>, daughter of <persName ref="#Webb_James"/>, and niece of <persName ref="#Webb_Mary_elder"/>. Noted by <persName ref="#Needham_Francis">Needham</persName>, referencing the <title>Berkshire Directory</title>, to be living on <placeName>Broad Street</placeName>.</note>
+               </person>
+               <person xml:id="Webster_John" sex="1">
+                  <persName>
+                     <surname>Webster</surname>
+                     <forename>John</forename>
+                  </persName>
+                  <note type="bio" resp="#lmw">
+                     <p>English author (1580-1634) Born and died London.. Wrote The Duchess of Malfi
+                        (play)</p>
+                  </note>
+               </person>
+               <person xml:id="Wellington_Duke">
+                  <persName>
+                     <surname>Wellesley</surname>
+                     <forename>Arthur</forename>
+                     <roleName>Field Marshal</roleName>
+                     <roleName>
+                        <date from="1814">First Duke of Wellington</date>
+                     </roleName>
+                  </persName>
+                  <persName type="nickname">The Iron Duke</persName>
+                  <birth when="1769-05-01">
+                     <placeName>Dublin, Ireland</placeName>
+                  </birth>
+                  <death when="1852-09-14">
+                     <placeName>Walmer, Kent</placeName>
+                  </death>
+                  <note resp="#ebb">Before his fame in the Napoleonic Wars, Wellesley served in the Irish House of Commons, and after fighting against <persName>Tipu Sultan, the "Tiger of Mysore"</persName> in the <rs type="event">Siege of Seringapatam</rs> he served as the governor of <placeName>Seringapatam</placeName> and <placeName>Mysore</placeName> in <date when="1799">1799</date>. He was promoted to general during the <rs type="event">Peninsular Wars against <persName ref="#Napoleon">Napoleon</persName> (the battles fought in the Iberian Peninsula)</rs>, and was granted the title, the First Duke of Wellingto, after Napoleon's first defeat and exile in <date when="1814">1814</date>. He led the Allied English and European armies in <rs type="event" ref="#Waterloo">Napoleon's decisive defeat at <placeName ref="#Waterloo_Belgium">Waterloo</placeName> on <date when="1815-06-18">18 June 1815</date>
+                     </rs>. A prominent influence on <orgName ref="#Tory">the Tory party</orgName>, he served as <roleName>Prime Minister <date from="1828" to="1830">from 1828 to 1830</date>, <date when="1834">and again in 1834</date>
+                     </roleName>. 
+                  </note>
+               </person>
+               <person xml:id="Weyland_John" sex="1">
+                  <persName>
+                     <surname>Weyland</surname>
+                     <forename>John</forename>
+                  </persName>
+                  <persName>Mr. Weyland</persName>
+                  <note resp="#ajc">On <date when="1820-03-16">March 16, 1820</date>, an election in Reading was held. There were three candidates: <persName ref="#Monck_JB">John Berkeley Monck</persName> (418 votes), <persName ref="#Palmer_CF">Charles Fyshe Palmer</persName>(399 votes), and <persName ref="#Weyland_John">John Weyland</persName> (395 votes.) <ptr target="http://www.historyofparliamentonline.org/volume/1820-1832/constituencies/reading"/>.
+                  </note>
+               </person>
+               <person xml:id="WhiteGilbert">
+                  <persName>
+                     <surname>Gilbert</surname>
+                     <forename>White</forename>
+                  </persName>
+                  <birth when="1720-07-18">
+                     <placeName>Selborne, Hampshire</placeName>
+                  </birth>
+                  <death when="1793-06-26">
+                     <placeName>Selborne, Hampshire</placeName>
+                  </death>
+                  <occupation>Curate, writer, naturalist, botanist</occupation>
+                  <note type="bio" resp="#scw">White's most famous and widely cited book, <bibl>The
+                        Natural History and Antiquities of Selborne</bibl> is cited by the narrator
+                     of <title ref="#Our_Village1st_ed">Our Village</title> in the introductory
+                        <title>Our Village sketch</title> as well as in <title>Frost and
+                        Thaw</title>...<!--I am sure we will come across his name in other sketches-->Because
+                     of his botanical work, his name has been accorded a standard abbreviation for
+                     citation purposes in the <bibl>International Code of Botanic
+                        Nomenclature</bibl>
+                     <!--ebb: Make xml:ids for OV sketches-->.</note>
+               </person>
+               <person xml:id="Wilkie_Wil" sex="1">
+                  <persName>
+                     <reg>Wilkie, William</reg>
+                     <forename>William</forename>
+                     <surname>Wilkie</surname>
+                  </persName>
+                  <birth when="1721-10-05">
+                     <placeName>Echlin, Scotland</placeName>
+                  </birth>
+                  <death when="1772-10-10">
+                     <placeName>St. Andrews, Scotland</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>farmer</occupation>
+                  <occupation>clergy</occupation>
+                  <note type="bio" resp="#esh #ebb">Scottish poet and minister of Ratho, most known
+                     for his epic in nine books, <bibl>
+                        <title>The Epigoniad</title> (<date>1757</date>)</bibl>, written in the
+                     style made popular by <persName>Alexander Pope</persName>. Locally dubbed the
+                     "potatoe minister" for his continuing to work the Fisher's Tryste farm, whose
+                     unexpired lease he inherited from his deceased father. [See ODNB and Electric
+                     Scotland.]</note>
+               </person>
+               <person xml:id="WilliamIII">
+                  <persName>William III <roleName>King of England and Ireland</roleName>
+                  </persName>
+                  <persName>William II <roleName>King of Scotland</roleName>
+                  </persName>
+                  <persName>
+                     <roleName>Stadtholder</roleName> Willem III van Oranje</persName>
+                  <persName>William of Orange</persName>
+                  <persName>King Billy</persName>
+                  <occupation>monarch</occupation>
+                  <note resp="#ebb">(1650-1702) Ousted <persName ref="#JamesII">King James
+                        II</persName> from power during the <rs type="event" ref="#Glorious_Revol">Glorious Revolution of 1688</rs>, and reigned together with <persName ref="#MaryII">Queen Mary II</persName>, his wife and the daughter of James
+                     II. Protestant monarch.</note>
+               </person>
+               <person xml:id="WilliamIV" sex="1">
+                  <persName>William IV <roleName>King of the United Kingdom of Great Britain and Ireland, and King of Hanover</roleName>
+                     <persName>
+                        <forename>William</forename>
+                        <surname>Hanover</surname>
+                     </persName>
+                  </persName>
+                  <birth when="1765-08-21">
+                     <placeName>Buckingham House, Westminster, London</placeName>
+                  </birth>
+                  <death when="1837-06-20">
+                     <placeName>Windsor Castle, Berkshire</placeName>
+                  </death>
+                  <occupation>monarch</occupation>
+                  <note type="bio" resp="#rnes">Successor of his brother <persName ref="#GeoIV">George IV</persName>, William enjoyed comparative popularity, reigned during the Age of Reform, and was succeeded by his niece <persName>Victoria</persName>. Earlier, he was <roleName>Duke of Clarence and St Andrews</roleName>, and <roleName>Earl of Munster</roleName>. His longtime mistress, the Irish actress <persName>Dorothy Jordan</persName> (also known as <persName>Dorothy Jerdan</persName> was the most famous Hanoverian comedian. [ODNB]</note>
+               </person>
+               <person xml:id="Wilson_RT">
+                  <persName>Sir Robert Thomas Wilson </persName>
+                  <persName>
+                     <surname>Wilson</surname>
+                     <forename>Thomas</forename>
+                     <forename>Robert</forename>
+                     <roleName>Sir</roleName>
+                  </persName>
+                  <birth when="1777-08-17">
+                     <placeName ref="#London_city">London</placeName>
+                  </birth>
+                  <death when="1849-05-09"/>
+                  <occupation>military</occupation>
+                  <occupation>government</occupation>
+                  <note type="bio" resp="#lmw">Liberal M.P for Southwark from <date>1818</date> to
+                        <date>1831</date>. Served in British army and diplomatic service; eventually
+                     becoming a General in <date>1841</date>. Served in the French Revolutionary and
+                     Napoleonic Wars.</note>
+               </person>
+               <person xml:id="Wordsworth_Dor">
+                  <persName>Dorothy Wordsworth</persName>
+                  <note resp="#ebb">1771-1855. Sister of <persName ref="#Wordsworth_Wm">William
+                        Wordsworth</persName>,whose diary entries, poems, and sketches were not
+                     published until after her death, but demonstrably influenced her brother's more
+                     famous work. <!--Expand this.--></note>
+               </person>
+               <person xml:id="Wordsworth_Wm">
+                  <persName>
+                     <surname>Wordsworth</surname>
+                     <forename>William</forename>
+                  </persName>
+                  <birth when="1770-04-07">
+                     <placeName>Cockermouth, England</placeName>
+                  </birth>
+                  <death when="1850-04-23">
+                     <placeName>Cumberland, England</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+               </person>
+               <person xml:id="Young_CM" sex="1">
+                  <persName>Charles Mayne Young </persName>
+                  <persName>
+                     <surname>Young</surname>
+                     <forename>Mayne</forename>
+                     <forename>Charles</forename>
+                  </persName>
+                  <occupation>actor</occupation>
+                  <note type="bio" resp="#lmw">
+                     <p> English actor (1777-1856). Performed at <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName> and <placeName ref="#Drury_Lane_Theatre">Drury Lane</placeName> between 1807 and 1832.
+                        Rival of <persName ref="#Kean_Edmund">Kean</persName>. Known for his Hamlet.
+                        Written about by <persName>Washington Irving</persName>.</p>
+                  </note>
+               </person>
+            </listPerson>
+         </div>
+      </body>
+  </text>
+</TEI>
