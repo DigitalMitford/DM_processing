@@ -7,8 +7,7 @@
     xmlns="http://www.w3.org/1999/xhtml"
     version="3.0">
     
-    <xsl:output method="xml" encoding="utf-8" indent="yes"
-        doctype-system="about:legacy-compat"/>
+    <xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/> 
    
     
     <xsl:template match="/">
@@ -94,11 +93,16 @@
                             <xsl:variable name="assistantsPast" select="//listPerson[@sortKey='Past_Editors']/person[.//roleName[matches(., 'Assistant')]]"/>
                              <xsl:text>Thanks to the following students who have helped us with this project in the past: </xsl:text> <!--<xsl:value-of select="concat($assistantsPast//forename, ' ', $assistantsPast//surname)"/>-->
                          <xsl:for-each select="$assistantsPast">
-                            <xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
-                             <xsl:text>. </xsl:text>
+                             <xsl:sort select=".//surname[1]"/>
+                            <xsl:choose><xsl:when test="not(position() = last())"><xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
+                            <xsl:text>, </xsl:text></xsl:when>
+                            <xsl:otherwise><xsl:text>and </xsl:text>
+                                <xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
+                            </xsl:otherwise>
+                            </xsl:choose>
                             
                          </xsl:for-each>
-                       
+                       <xsl:text>. </xsl:text>
                             
                         </div>
             
