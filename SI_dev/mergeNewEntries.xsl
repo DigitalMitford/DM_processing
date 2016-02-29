@@ -7,12 +7,12 @@
     site index entry should we need it. Thanks to djb for valuable assistance while developing this. -->
     
     <!--2016-01-24 ebb: Add and alter the way we're sorting entries! -->
-   
+   <!--2016-02-28 ebb: REMEMBER to add @type to the lists that are about to be merged, or we will lose distinct lists and fail to transfer everything. There are *19* distinctly different list types in the site index.-->
     <xsl:strip-space elements="*"/>
     <!--ebb: This is needed to remove white space that will sit in place of the element tags we're about to remove. -->
-    <xsl:variable name="si" select="doc('si-Add-LMW.xml')"/>
+    <xsl:variable name="si" select="doc('si.xml')"/>
     <xsl:variable name="siId" select="//@xml:id"/>
-    <xsl:variable name="newEntriesFile" select="doc('si-Add_LMW_2.xml')"/>
+    <xsl:variable name="newEntriesFile" select="doc('si-Add-LMW-DMTeam.xml')"/>
     <xsl:variable name="newEntries" select="$newEntriesFile//*[@xml:id][not(@xml:id = $siId)]"/>
     <xsl:variable name="union" select="$si | $newEntriesFile"/>
 
@@ -52,10 +52,18 @@
            <text> <body><xsl:for-each-group select="$union//text//div" group-by="@type">
                 <div type="{current-grouping-key()}">
                     <!-- now inside a <div> of a particular @type -->
-                    <xsl:for-each-group select="current-group()/*" group-by="name()">
-                        <xsl:element name="{current-grouping-key()}">
-                            <!-- now inside a list of a particular sort -->
+                    
+                        
+                        <xsl:for-each-group select="current-group()/*" group-by="@sortKey">
+                        <xsl:element name="{name()}">
+                            <xsl:attribute name="sortKey">
+                                <xsl:value-of select="current-grouping-key()"/>
+                            </xsl:attribute>
+                            <!-- now inside a list of a particular sortKey -->
                             <xsl:for-each-group select="current-group()/*" group-by="@xml:id">
+                                <xsl:if test="current-group()[parent::* = //list[@*='art']]">
+                                    <xsl:element name="item"/>
+                                </xsl:if>
                                 <xsl:choose>
                                     <xsl:when test="count(current-group()) gt 1">
                                         <xsl:comment>FLAG: ORIGINAL ENTRY <xsl:sequence select="serialize(current-group()[base-uri() = $si/base-uri()])"/></xsl:comment>

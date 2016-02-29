@@ -15,11 +15,6 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:variable name="si" select="doc(si.xml)"/>
-    <xsl:variable name="siId" select="$si//@xml:id"/>
-    <xsl:variable name="newEntriesFile" select="doc(si-Add-LMW.xml)"/>
-    <xsl:variable name="newEntriesIds" select="doc(si-Add-LMW.xml)//*[@xml:id[not(. = $siId)]]"/>
-    
     <xsl:template match="edition">
         
        <edition><xsl:text> Site Index for the Digital Mitford project. Date: </xsl:text>
@@ -28,17 +23,9 @@
         Count of all @xml:ids in the current file: </xsl:text> <xsl:value-of select="count(//@xml:id)"/><xsl:text>. First digital edition in TEI P5, launched on 19 August 2013.</xsl:text>
          </edition>
     </xsl:template>
-    
-    <xsl:template match="listPerson | listOrg | listPlace | listEvent | list[@type='art'] | listBibl">
-        <xsl:if test="$newEntriesIds[parent::*/name() = current()/name()]">
-            <xsl:copy-of select="$newEntriesIds"/>
-  
-        </xsl:if>
-        
-        
-    </xsl:template>
-  <!--  <xsl:template match="listPerson">
-        <listPerson type="{@type}">
+
+    <xsl:template match="listPerson">
+        <listPerson sortKey="{@sortKey}">
             <xsl:apply-templates select="person">
                 <xsl:sort select="lower-case(@xml:id)"/>
             </xsl:apply-templates>
@@ -46,7 +33,7 @@
     </xsl:template>
 
     <xsl:template match="listOrg">
-        <listOrg type="{@type}">
+        <listOrg sortKey="{@sortKey}">
             <xsl:apply-templates select="org">
                 <xsl:sort select="lower-case(@xml:id)"/>
             </xsl:apply-templates>
@@ -54,7 +41,7 @@
     </xsl:template>
 
     <xsl:template match="listPlace">
-        <listPlace type="{@type}">
+        <listPlace sortKey="{@sortKey}">
             <xsl:apply-templates select="place">
                 <xsl:sort select="lower-case(@xml:id)"/>
             </xsl:apply-templates>
@@ -62,29 +49,36 @@
     </xsl:template>
 
     <xsl:template match="listEvent">
-        <listEvent>
+        <listEvent sortKey="{@sortKey}">
             <xsl:apply-templates select="event">
                 <xsl:sort select="lower-case(@xml:id)"/>
             </xsl:apply-templates>
         </listEvent>
     </xsl:template>
 
-    <xsl:template match="list[@type='art']">
+    <xsl:template match="list[@sortKey='art']">
 
-        <list type="art">
+        <list sortKey="{@sortKey}">
             <item/>
             <xsl:apply-templates select="figure">
                 <xsl:sort select="lower-case(@xml:id)"/>
             </xsl:apply-templates>
         </list>
     </xsl:template>
+    <xsl:template match="list[@sortKey='plants']">
+        <list sortKey="{@sortKey}">
+            <xsl:apply-templates select="item">
+                <xsl:sort select="lower-case(@xml:id)"/>
+            </xsl:apply-templates>
+        </list>
+    </xsl:template>
 
     <xsl:template match="listBibl">
-       <listBibl type="{@type}">
+       <listBibl sortKey="{@sortKey}">
             <xsl:apply-templates select="bibl">
                 <xsl:sort select="lower-case(@xml:id)"/>
             </xsl:apply-templates>
        </listBibl>
     </xsl:template>
--->
+
 </xsl:stylesheet>

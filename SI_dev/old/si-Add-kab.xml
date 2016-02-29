@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><!--Add your name here! And add an @ref attribute to <editor>, pointing to your xml:id in the si.xml-->
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <div type="historical_people">
+            <listPerson type="hist">
+              <person xml:id="Elford_J" sex="1">
+                  <persName>
+                     <surname>Elford</surname>
+                     <forename>Jonathan</forename>
+                  </persName>
+                  <birth/>
+                  <death when="1823"/>
+                  <note resp="#kab">Son of <persName ref="#Elford_SirWm">Sir Elford</persName> and
+                     his first wife <persName ref="#Elford_MrsM">Mary</persName>.</note>
+               </person>
+               <person xml:id="Miss_Valpy" sex="2">
+                  <persName>
+                     <surname type="maiden">Valpy</surname>
+                     <forename/>
+                     <forename/>
+                  </persName>
+                  <birth/>
+                  <occupation/>
+                  <note resp="#kab">A friend of Mitford's, likely one of two daughters Mary Valpy (1797- ) or Penelope Arabella Valpy (1802- ) of <persName ref="#Valpy_Richard">Dr.
+                     Valpy. </persName>See 1821-07-01_Elford</note>
+               </person>
+               <person xml:id="Newman" sex="1">
+                  <persName>
+                     <surname>Newman</surname>
+                     <forename/>
+                  </persName>
+                  <birth/>
+                  <death/>
+                  <occupation>Butler</occupation>
+                  <note resp="#kab"> The butler of Mitford's acquaintance <persName ref="#Valpy_Richard">Dr. Valpy</persName>.</note>
+                  <person xml:id="Mrs_Hall" sex="2">
+                     <persName>
+                        <surname type="married">Hall</surname>
+                        <forename/>
+                        <forename/>
+                     </persName>
+                     <birth/>
+                     <occupation/>
+                     <note resp="#kab">An acquaintance of Mitford's and <persName ref="#Dickinson_Mrs">Mrs. Dickinson's</persName>.</note>
+                  </person>
+                <person xml:id="FerdinandVII" sex="1">
+                     <persName>
+                        <surname/>
+                        <forename>Ferdinand</forename>
+                        <forename/>
+                        <rolename>King of Spain</rolename>
+                     </persName>
+                     <birth when="1784">
+                        <placeName>Madrid, Spain</placeName>
+                     </birth>
+                     <death when="1833">
+                        <placeName>Madrid, Spain</placeName>
+                     </death>
+                     <occupation>Monarch</occupation>
+                     <note resp="#kab"><persName>Ferdinand VII</persName> was King of Spain in 1808, when he was
+                        overthrown by Napoleon, and again from 1813 until his death in 1833</note>
+                  </person>
+                  <person xml:id="Northmore_Thos" sex="1">
+                     <persName>
+                        <surname>Northmore</surname>
+                        <forename>Thomas</forename>
+                     </persName>
+                     <birth when="1776">
+                        <placeName>Fulham, Middlesex</placeName>
+                     </birth>
+                     <death when="1851"><placeName>Furzebrook House, near Axminster</placeName> See
+                        DNB.</death>
+                     <occupation>Politician</occupation>
+                     <occupation>Geologist</occupation>
+                     <occupation>Writer</occupation>
+                     <note resp="#kab">An acquaintance of Mitford's. In a letter to Haydon dated 9
+                        February 1824, Mitford refers to Mr. Northmore as "a great Devonshire
+                        reformer, one of the bad epic poets and very pleasant men in which that
+                        country abounds" (<title>Life of Mary Russell Mitford</title> ed. L'Estrange Vol II page
+                        22).</note>
+                  </person>
+                  <person xml:id="Johnson_Mrs" sex="2">
+                     <persName>
+                        <surname type="married">Johnson</surname>
+                        <forename/>
+                        <forename/>
+                     </persName>
+                     <birth/>
+                     <occupation/>
+                     <note resp="#kab">The sister of <persName ref="#Johnson_Mr">Mr.
+                           Johnson</persName> and an acquaintance of Mitford's.</note>
+                  </person>
+                  <person xml:id="Johnson_Mr" sex="1">
+                     <persName>
+                        <surname>Johnson</surname>
+                        <forename/>
+                        <forename/>
+                     </persName>
+                     <birth/>
+                     <occupation/>
+                     <note resp="#kab">A friend of Mitford's from Leicester, and the husband of <persName ref="#Johnson_Mrs">Mrs. Johnson</persName>.</note>
+                  </person>
+                  <person xml:id="Bowles_Wm" sex="1">
+                     <persName>
+                        <surname>Bowles</surname>
+                        <forename>William</forename>
+                        <rolename>Sir</rolename>
+                     </persName>
+                     <birth when="1780"/>
+                     <death when="1869"/>
+                     <occupation>Clergyman</occupation>
+                     <occupation>Poet</occupation>
+                     <note resp="#kab">William Bowles, a clergyman and poet, was an acquaintance of
+                        Mitford's father over thirty years.</note>
+                  </person>
+               </person>
+            </listPerson>
+         </div>
+      </body>
+   </text>
+</TEI>

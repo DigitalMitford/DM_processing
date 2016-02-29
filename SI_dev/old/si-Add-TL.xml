@@ -1,0 +1,1754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+               <editor><persName type="hist" ref="#lmw">Lisa M. Wilson</persName></editor>
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+  <text>
+      <body>
+        
+         <div>
+            
+            <listPerson type="hist"> 
+               <!--THese are the samples. Check wikipedia and its source; VIAF (virtual identity authority file), worldcat (worldcat.org), googlebooks, historyofparliamentonline, etc. Skip any you are not sure about.-->
+               
+               <person xml:id="Plumer_Thos" sex="1">
+                  <persName><forename>Thomas</forename><surname>Plumer</surname></persName><!-- tag forenames and surnames -->
+                  <persName>Sir Thomas Plumer</persName><!-- any other names -->
+                  <persName><rolename>Vice Chancellor of England</rolename></persName><!-- any titles -->
+                  <persName><rolename>Master of the Rolls</rolename></persName>
+                  <birth when="1753-10-10"><!-- specific date of birth -->
+                     <placeName>place of birth here</placeName><!-- specific place of birth: city, county, country -->
+                  </birth>
+                  <death when="1824-04-05"> <!-- specific date of death -->
+                     <placeName>place of death here</placeName> <!-- specific place of death: city, county, country -->
+                  </death>
+                  <occupation>legal</occupation><!-- occupations here -->
+                  <occupation>judge</occupation>
+                  <occupation>politician</occupation>
+                  <ref target="http://viaf.org/viaf/77800408"/></person> <!-- If you find a VIAF #, put it here. -->
+               
+               <!-- sample of woman author -->
+               <person xml:id="deStael"><persName><forename>Anne</forename><forename></forename><forename></forename><surname type="paternal">Necker</surname><surname type="married">de Staël-Holstein</surname></persName><persName>Madame de Stael</persName>
+                  <birth when="1766-04-22">
+                     <placeName>Paris, France</placeName>
+                  </birth>
+                  <death when="1817-07-14"></death>
+                  <placeName>Coppet</placeName>
+                  <occupation>literary</occupation></person>
+               
+               <!-- all these need to be done, down to the next comment tag. -->
+               <person xml:id="Junius" sex="1">
+                  <persName><forename>Lucius</forename><surname>Junius</surname><surname>Brutus</surname></persName>
+                  <persName>Junius</persName>
+                  <persName>Consul of the Roman Republic</persName>
+                  <birth>unknown
+                  <placeName>Ancient Rome</placeName>
+                  </birth>
+                  <death when="-0509">509 BC 
+                     <placeName>Silva Arsia, Rome</placeName> 
+                  </death>
+                  <occupation>politician</occupation>
+                  <occupation>literary</occupation>
+                  <ref target="http://viaf.org/viaf/296192012"/></person>
+               
+                            
+              <person xml:id="Cervantes" sex="1"><persName>Don Miguel de Cervantes Saavedra</persName><occupation>literary</occupation></person> <!-- leave for Lisa -->
+               Miguel de Cervantes Cortinas
+               <occupation>literary</occupation>
+               <occupation> military</occupation>
+               <occupation>tax cllector</occupation>
+               <birth when="1547-29-09"></birth>
+              <placeName> Alcalá de Henares, Spain</placeName>
+               <death when="1616-23-04"></death><placeName>Madrid, Spain</placeName>
+               <ref target ="http://viaf.org/viaf/17220427"/></person>
+           
+             
+              <person xml:id="Beresford_James" sex="1">
+                 <persName><forename>James</forename><surname>Beresford</surname></persName>
+                 <occupation>literary</occupation>
+                 <occupation>clergyman</occupation>
+              <persName><birth when="1764-28-05"</birth>
+               <placeName>Upham, Hampshire, United Kingdom</placeName>
+                 <death when="1840-29-11"</death></persName>
+               <placeName>Kibworth, United Kingdom </placeName>
+               <ref target="http://viaf.org/viaf/60258142"/></person>
+               
+              <person xml:id="Pitt_Chris" sex="1">
+                 <persName><foreName>Christopher</foreName><surName>Pitt</surName></persName>
+                 <persName><birth>"1699"</birth>
+                  <placeName>unknown</placeName>
+                  <death when= "1748-13-04"></death>
+                 <placeName>unknown</placeName></persName>
+                 <occupation>literary</occupation>
+                 <ref target="http://viaf.org/viaf/56965872"/></person>
+                  
+               
+               
+               <person xml:id="Palmerston_HJT" sex="1"><persName>Viscount Henry John Temple Palmerston</persName></person><!-- save for lisa -->
+                     
+                      <persName></persName>
+               <birth when="1784-20-10"</birth>
+                     <placeName>Westminster, Middelsex,United Kingdom</placeName>
+                  <death when= "1865-18-10"</death><persName> 
+                     <placeName>Brocket Hall, Hatfield,Hertfordshire, United Kingdom ></placeName></persName>
+                 <ref target="http://viaf.org/viaf/51698419"/></person>
+                     <!-- Prime Minister of the United Kingdom,In office
+12 June 1859 – 18 October 1865, In office
+6 February 1855 – 19 February 1858, Leader of the Opposition
+In office
+19 February 1858 – 11 June 1859, Home Secretary
+In office
+28 December 1852 – 6 February 1855, Secretary of State for Foreign Affairs
+In office
+6 July 1846 – 26 December 1851,In office
+18 April 1835 – 2 September 1841,In office
+22 November 1830 – 15 November 1834-->
+                     
+               
+               <person xml:id="Peel_Rbt" sex="1"><persName>Robert Peel</persName><occupation>politician</occupation></person>
+               <persName><forename>Robert</forename><surname>Peel</surname></persName>
+                    <birth when= "1788-05-02"</birth>
+                     <placeName>Bury, United Kingdom</placeName> 
+                     <death when= "1850-02-07"</death>
+                     <placeName> Westminster,United Kingdom</placeName>
+                    <ref target="http://viaf.org/viaf/64803600"></person>
+                     <!-- became Sir Robert Peel Prime Minister of the United Kingdom from 10 December 1834 to 8 April 1835, and again from 30 August 1841 to 29 June 1846.-->
+                     
+                     
+               
+               <person xml:id="Butler_Sam" sex="1">
+                  <persName><forename>Samuel</forename><surname>Butler</surname></persName>
+                  <occupation>literary</occupation></person>
+                       <birth when="1835-12-04"</birth><placeName>Langar, near Bingham, Nottinghamshire, England</placeName>
+                       <death when="1902-05-18"</death><placeName>London, England</placeName>
+                       <ref target="http://viaf.org/viaf/49578292"></person>
+    
+                          <person xml:id="Fielding_H" sex="1">
+                             <persName><forename>Henry</forename><surname>Fielding</surname></persName>
+                             <birth when="1707-22-04"</birth><placeName>Sharpham, United Kingdom</placeName>
+                             <death when="1754-08-10"</death><placeName>Lisbon, Portugal</placeName>
+                             <occupation>literary</occupation>
+                             <ref target=" http://viaf.org/viaf/61545697"</person>
+                          
+              
+               
+               <person xml:id="Burney_F" sex="2"><persName><forename>Frances</forename><surname type="paternal"></surname>Burney</persName><persName>Madame <surname type="married">d'Arblay</surname></persName>
+                  <birth when="1752-13-06"</birth><placeName>King's Lynn, United Kingdom</placeName>
+                  <death when="1840-06-01"</death><placeName>London,United Kingdom</placeName>
+                   <occupation>literary</occupation>
+                  <ref target= "http://viaf.org/viaf/95297439"</person>
+           
+                          
+                          
+               
+                <person xml:id="Reynolds_JH" sex="1"><persName><forename>John</forename><surname>Hamilton</surname><surname>Reynolds</surname></persName></person>
+                          <birth when="1794-09-09"</birth><placeName>Shrewsbury, United Kingdom</placeName>                     
+                          <death when="1852-15-11"></death><placeName>Newport, Isle of Wight, United Kingdom</placeName>
+                          <occupation>literary</occupation>
+                          <ref target="http://viaf.org/viaf/79365644"</person>
+                       
+                          
+               
+               <person xml:id="Montague_MW" sex="2"><persName>Lady Mary Wortley Montague</persName><forename>Mary</forename><surname>Wortley</surname><surname>Pierrepont</surname><surname type="paternal"<surname>Montague</surname><surname type="married"></surname><persName>Lady Mary Wortley Montague</persName>
+                  <birth when="1689-15-05"</birth><placeName> London, United Kingdom</placeName>
+                  <death when="1762-21-08"</death><placeName>London, United Kingdom</placeName>
+                  <ref target="http://viaf.org/viaf/7394587"</person>
+                   <occupation>literary</occupation></person>
+                             <!-- Parents: Evelyn Pierrepont, 1st Duke of Kingston-upon-Hull-->
+               
+               <person xml:id="Percy_Thos" sex="1">
+                  <persName><forename>Thomas</forename><surname>Percy</surname>
+                  </persName>
+                  
+                  <occupation>literary</occupation></person>
+                             
+                             
+               <person xml:id="Raleigh_Wal" sex="1"><persName>Sir Walter Raleigh</persName><forename>Walter</forename><surmane>Raleigh</surmane><persName>Sir Walter Raleigh</persName>
+                  <occupation>Literary</occupation>
+                  <birth when"unknown"<placeName>East Budleigh, United Kingdom</placeName> 
+                     <death when="1618-29-10"<placeName>London, United Kingdom </placeName>
+                        <ref="http://viaf.org/viaf/107533796" </person>   
+               
+           
+               
+               <person xml:id="Spenser_Edmund" sex="1"><persName>Edmund Spenser</persName></person><forename>Edmund</forename><surmane>Spenser</surmane>
+                             <birth when="1552"></birth><placeName> London, United Kingdom</placeName>
+                             <death when="1599-13-01"></death><placeName>London, United Kingdom</placeName>
+                             <occupation>literary</occupation> <!-- best known for "The Faerie Queene" (1590), an epic poem and fantastical allegory celebrating the Tudor dynasty and Elizabeth I.  -->
+                             <ref target="http://viaf.org/viaf/100170015"</person>
+                        
+               
+                                <person xml:id="Gutch_John" sex="1"><persName><forename>John</forename><surname>Gutch</surname></persName></person>
+                                <birth when="1746-10-01"></birth><placeName>Wells, Somerset</placeName>
+                                <death when="1831-01-07"></death><placeName>unknown</placeName>
+                                <occupation>clergyman</occupation>
+                                <occupation>antiquarian</occupation>
+                                <occupation>Literary</occupation>
+                                <ref target="http://viaf.org/viaf/79251745"</person>
+               
+               <person xml:id="Rousseau" sex="1"><persName>Jean-Jacques Rousseau</persName><forname>Jean-Jacques</forname><surname>Rousseau</surname>
+                  <occupation>literary</occupation>
+                  <occupation>politics</occupation>
+                  <occupation>musical compositionist</occupation>
+                  <occupation>education</occupation>
+                  <birth when="1712-28=06"></birth><placeName>Geneva, Switzerland</placeName>
+                  <death when="1778-02-07"</death><placeName> Ermenonville, France</placeName>
+                  <ref target=" http://viaf.org/viaf/100184045"</person>
+                                   <!-- influenced:Maximilien Robespierre, Jacques Derrida -->
+               
+               <person xml:id="Burke_E" sex="1"><persName>Edmund Burke</persName><forename>Edmund</forename><surname>Burke</surname>
+                  <birth when="1729-12-01"></birth><placeName>Dublin, Republic of Ireland</placeName>
+                  <death when="1797-09-07"></death><planceName>Beaconsfield, United Kingdom</planceName>
+                  <occupation>literary</occupation>
+                  <occupation>politician</occupation>
+                  <ref target="http://viaf.org/viaf/100173535"></ref></person>
+                       <!-- influenced Jean-Jacques Rousseau -->
+               
+               
+               <person xml:id="Howard_John"><persName>John Howard</persName><forename>John</forename><surname>Howard</surname>
+                  <birth when="1726-02-09"</birth><placeName> London Borough of Hackney, United Kingdom</placeName>
+                  <death when="1790-20-01"></death><placeName>Kherson, Ukraine</placeName>
+                  <occupation>phlantrophist</occupation>
+                  <occupation>first English Prison Reformer</occupation>
+                  <ref target="http://viaf.org/viaf/61639520"</person>
+              
+                 <!-- Lisa, I am leaving her for you, i am not sure what to do with all of her names-tlh -->  
+               <person xml:id="Marie_Antionette"><persName>Marie Antoinette, Queen of France</persName></person>
+                                   Full name: Maria Antonia Josepha Johanna
+                                  
+                                   House:	House of Habsburg-Lorraine by birth
+                                   House of Bourbon by marriage
+                                   Father	:Francis I, Holy Roman Emperor
+                                   Mother:	Maria Theresa
+                                   Spouse: Louis XVI of France (m. 1770–1793)
+                                   <birth when="1755-02-11"></birth><placeName>Hofburg Palace, Vienna, Austria</placeName>
+                                   <death when=" 1793-16-10"></death><placeName>Place de la Concorde, Paris, France</placeName>  
+                                   <occupation> Queen consort of France and Navarre
+                                      Tenure	10 May 1774 – 4 September 1791</occupation>
+                                   <occupation>Queen consort of the French
+                                      Tenure	4 September 1791 – 10 August 1792</occupation>
+                                  <ref target="http://viaf.org/viaf/96583693"></person>
+                                
+                                   
+               <person xml:id="Ossian" sex="1"><persName>Ossian</persName></person><!-- Ossian should maybe go in fictional people. Leave for me to do. -->
+               
+               <person xml:id="PembrokeI" sex="1"><persName>first Lord Pembroke</persName></person> <!-- there are alot of men with this name, lots that could be the right one?-help!-tlh -->
+                    
+               <person xml:id="Jonson_Ben" sex="1"><persName>Ben Jonson</persName><forename>Ben</forename><surname>Jonson</surname>
+                  <birth when="1572-11-06"></birth><placeName>Westminster, United Kingdom</placeName>
+                  <death when="1637-06-08"></death><placeName>Westminster, United Kingdom</placeName>
+                 <occupation>literary</occupation>
+                  <ref target=" http://viaf.org/viaf/292789691"</person>
+                    <!--popularised the comedy of humours  -->
+              
+               <person xml:id="Aubrey_John" sex="1"><persName>John Aubrey</persName><forename>John</forename><surname>Aubrey</surname>
+                  <birth when="1626-12-03"></birth><placeName>Kington St Michael, Wiltshire, Malmesbury, United Kingdom</placeName>
+                  <death when="1897-07-06"></death><placeName>Oxford, United Kingdom</placeName>
+                  <occupation>literary</occupation>
+                  <occupation>archaeologist</occupation><!-- recorded numerous of the "firts known" megalithic ad field monuments in Southren England. Aubrey henge monument is a famous find as well as Aubrey holes in Stonehenge, are named after him -->
+                  <occupation>folklorist</occupation>
+                  <ref target="http://viaf.org/viaf/71386625"</person>
+               
+               
+               <person xml:id="Boswell" sex="1"><persName>Boswell</persName><forename>James</forename><surname>Boswell</surname>
+                  <birth when="1740-29-10"></birth><placeName> Edinburgh, United Kingdom</placeName>
+                  <death when="1795-19-05"></death><placeName>London, United Kingdom</placeName>
+                <occupation>literary</occupation>
+                  <occupation>9th Lilard of Auchinlek</occupation>
+                  <ref target=" http://viaf.org/viaf/64002337"</person>
+               
+                                  
+               
+                                     <person xml:id="Titian" sex="1"><persName>Titian</persName><forename> Tiziano</forename><surname>Vecelli </surname><forename>Tiziano</forename><surname>Vecellio</surname>
+                                        <birth when="1488/1490"></birth><placeName>Pieve di Cadore, Italy</placeName>
+                                        <death when="1576-27-08"></death><placeName>Venice, Italy
+                                           Buried: Santa Maria Gloriosa dei Frari, Venice, Italy</placeName>
+                                        <occupation>artist</occupation>
+                                        <ref target="http://viaf.org/viaf/109266837"</person>
+                                     
+                       <person xml:id="Kettle_Dr" sex="1"><persName>Dr. Ralph Kettlle</persName><forename>Ralph</forename><surname>Kettell</surname>
+                          <birth when="1563"></birth><placeName>unknown</placeName>
+                          <death when="1643-17-07"></death><placeName>Garsington, UK</placeName>
+                          <occupation>head of trinity collage</occupation>
+                          <occupation>Kettell Hall, Oxford, built during his regin as head of Trinity College, UK</occupation>
+                          <occupation>private chaplain</occupation>
+                          <ref target="http://www.oxfordhistory.org.uk/broad/buildings/north/54.html" </person> <!--I could not find the viaf on wikki so i looked at oxford history-tlh -->
+                                              
+               
+               <person xml:id="Hervey_Wm" sex="1"><persName>William Hervey</persName><forename>William</forename><surname>Hervey</surname>
+                  <birth when="1732-13-05"></birth><placeName>unknown</placeName>
+                  <death when="1815-15-01"></death><placeName>Ickworth,St.Edmundsbury, Suffolk, UK</placeName>
+                   <occupation>military</occupation>  
+                  <occupation>politics</occupation>
+                  <occupation>philoantrophist</occupation>
+                  <occupation>scientist</occupation>
+                  <ref target="http://www.historyofparliamentonline.org"></ref><ref target="http://wwww.wikipedia.org"></person>
+                                     
+                                    
+               <person xml:id="Hobbes" sex="1"><persName>Hobbes</persName><forename>Thomas</forename><surname>Hobbes</surname>
+                  <birth when="1588-05-04"></birth><plaaceName> Westport near Malmesbury, Wiltshire, England</plaaceName>
+                  <death when="1679-04-12"></death><placeName>Derbyshire,England</placeName>
+                  <occupation>literary</occupation>
+                  <occupation>philosophy</occupation>
+                  <ref target="http://viaf.org/viaf/59083895"></person>
+                              
+               <person xml:id="Croker_JW" sex="1"><persName>John Wilson Croker</persName><forename>John</forename><forename>Wilson</forename><surname>Croker</surname>
+                  <birth when="1780-20-12"></birth><placeName>Galway, Ireland</placeName>
+                  <death when="1857-10-08"></death><placeName>unknown</placeName>
+                  <occupation>literary</occupation><occupation>politics</occupation>
+                  <occupation>Secretary to the Admiralty
+                     1809–1830</occupation>
+                  <occupation> Member of Parliament for Downpatrick
+                     1807–1812</occupation>
+                  <occupation> Member of Parliament for Athlone
+                     1812–1818</occupation>
+                  <occupation>Member of Parliament for Yarmouth
+                     with Sir Peter Pole, Bt
+                     1819–1820</occupation>
+                  <occupation>Member of Parliament for Bodmin
+                     with Davies Gilbert
+                     1820–1826</occupation>
+                  <occupation> Member of Parliament for Aldeburgh
+                     with Joshua Walker
+                     1826–1827</occupation>
+                  <occuparion>Member of Parliament for Dublin University
+                     1827–1830</occupation>
+                     <occupation>Member of Parliament for Aldeburgh
+                        with Marquess of Douro
+                        1830–1832</occupation>
+                     <ref traget=" http://viaf.org/viaf/51766984"> </person> 
+                  
+                                     <person xml:id="Ovid" sex="1"><persName>Ovid</persName><forename>Publius</forename><forename>Ovidius</forename><surname>Naso</surname>
+                                        <birth when="-0043-20-03">43 BC</birth><placeName>Sulmo, Roman Empire. [now Sulmona, Italy]</placeName>
+                                        <death when="0016-30-11">16 AD</death><placeName>Tomis, Moesia [now Constanta, Romania]</placeName>
+                                        <occupation>literary</occupation>
+                                        <ref target="http://viaf.org/viaf/88342447"></person>
+                                     
+                                  
+                                     <person xml:id="Dante" sex="1"><persName>Dante</persName><forename>Durante</forename><forename>degli</forename><surname>Alighieri</surname>
+                                        <birth when="1265"></birth><placeName>Florence, Tuscany, Italy</placeName>
+                                        <death when="1321-14-09"></death><placeName>Ravenna, Emilia-Romagna, Italy</placeName>
+                                        <occupation>literary</occupation>
+                                        <ref target="http://viaf.org/viaf/97105654"></person>
+                                  
+               
+                                     <person xml:id="Virgil" sex="1"><persName>Virgil</persName><forename> Publius</forename><forename>Vergilius</forename><surname>Maro</surname>
+                                        <birth when="-0070-15-10">70 BC</birth><placeName>Virgilio, Lombardy</placeName>
+                                        <death when="-0020-21-09">20 BC</death><placeName> Brindisi, Italy</placeName>
+                                        <occupation>literary</occupation>
+                                        <ref target="http://viaf.org/viaf/8194433"></person>
+                                  
+               
+                                     <person xml:id="Walker_John" sex="1"><persName>John Walker</persName><forename>John</forename><surname>Walker</surname>
+                                        <birth when="1781-29-05"></birth><placeName> Stockton-on-Tees,England</placeName>
+                                        <death when=" 1859-01-05"></death><placeName> Stockton, buried in the grounds of St Mary's Church in Norton, near Stockton</placeName>
+                                        <occupation>English chemist </occupation>
+                                        <ref target="http://viaf.org/viaf/13719124"></person>
+                                     <!--  English chemist who invented the friction match.-tlh -->
+                        
+               <person xml:id="Irving_Wash" sex="1"><persName>Washington Irving</persName>
+                  <birth when="1783-04-03"/>
+                  <death when="1859-11-28"/>
+                  <occupation>literary</occupation>
+                  <nationality>American</nationality>
+               </person>
+               
+               <person xml:id="Rivers_Lord">
+                  <persName><forename>Horace</forename>William<forename></forename><surname>Pitt-Rivers</surname> </persName>
+                  <persName>3rd Baron Rivers </persName>
+                  <birth when="1777"/>
+                  <death when="1831"/> <note resp="#lmw #mco">In Mitford's time, the family estate was in <placeName>Stratfieldsaye, Hampshire</placeName>, roughly five miles from <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. Source: [ODNB] Pitt, George, first Baron Rivers (1721–1803).</note>
+               </person>
+               
+               <person xml:id="Swift_J" sex="1"><persName><forename>Jonathan</forename><surname>Swift</surname></persName>
+                  <persName>Dean Swift</persName>
+                  <occupation>literary</occupation>
+                  <occupation>clergy</occupation>
+               </person>
+               <!-- everything above this comment tag needs to be done. -->
+               <person xml:id="Lorrain_Cl" sex="1"><persName><forename>Claude</forename> <surname>Lorrain</surname></persName>
+                  <persName>Claude Gellée, dit le Lorrain</persName>
+                  <birth when="1600">
+                     <placeName>Chamagne, Vosges, Duchy of Lorraine, France</placeName>
+                  </birth> <!--LMW birth date uncertain -->
+                  <death when="1682-11">
+                     <placeName>Rome, Papal States</placeName>
+                  </death>
+                  <occupation>artist</occupation></person>
+               
+               <person xml:id="Plumer_Thos" sex="1"><persName><forename>Thomas</forename><surname>Plumer</surname></persName>
+                  <persName>Sir Thomas Plumer</persName>
+                  <persName><rolename>Vice Chancellor of England</rolename></persName>
+                  <persName><rolename>Master of the Rolls</rolename></persName>
+                  <birth when="1753-10-10">
+                  </birth>
+                  <death when="1824-04-05">
+                  </death>
+                  <occupation>legal</occupation>
+                  <occupation>judge</occupation>
+                  <occupation>politician</occupation>
+                  <ref target="http://viaf.org/viaf/77800408"/></person>
+                
+               <person xml:id="Hearne_Thos" sex="1"><persName><forename>Thomas</forename><surname>Hearne</surname><surname>Hearn</surname></persName>
+                  <birth when="1678-07">
+                  </birth>
+                  <death when="1735-06-10">
+                  </death>
+                </person>
+               
+               <person xml:id="Rowden_Fr" sex="2"><persName>Frances Rowden</persName>
+                  <note resp="#lmw">In The Queens of Society by Grace and Philip Wharton, the authors note that, while unmarried, Frances Rowden "styled herself Mrs. Rowden" (1860:  148).</note>
+                  <ref target="http://viaf.org/viaf/57349006"/>
+                  <!-- LMW  add to existing. --></person>
+               
+               <person xml:id="Chalmers_Alex" sex="1">
+                  <persName><forename>Alexander</forename><surname>Chalmers</surname></persName>
+                  <birth when="1759-03-29">
+                     <placeName>Abderdeen, Scotland</placeName>
+                  </birth>
+                  <death when="1834-12-29">
+                     <placeName>London, England</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <ref target="http://viaf.org/viaf/20543801"/>
+                </person>
+             
+               <person xml:id="deStael"><persName><forename>Anne</forename><forename></forename><forename></forename><surname type="paternal">Necker</surname><surname type="married">de Staël-Holstein</surname></persName><persName>Madame de Stael</persName>
+                  <birth when="1766-04-22">
+                     <placeName>Paris, France</placeName>
+                  </birth>
+                  <death when="1817-07-14"></death>
+                  <placeName>Coppet</placeName>
+                  <occupation>literary</occupation></person>
+                          
+               <person xml:id="King_Wm"><persName><forename>William</forename><surname>King</surname></persName><persName>Dr. William King</persName><persName>William King, LL.D., Principal of St. Mary's Hall Oxford</persName>
+                  <birth when="1685"></birth>
+                  <death when="1763"></death>
+                  <occupation>academic</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>orator</occupation>
+                  <note resp="#lmw">Leader of the Jacobite interest at Oxford University from 1719.</note>
+                     <ref target="http://viaf.org/viaf/20543801"/>
+                  </person>
+               
+               <person xml:id="Cripps_JM" sex="1"><persName><forename>John</forename><forename>Marten</forename><surname>Cripps</surname></persName>
+                  <birth when="1780">
+                     <placeName>Sussex</placeName></birth>
+                  <death when="1853">
+                     <placeName>Novington, Sussex, England</placeName>
+                  </death>
+                  <occupation>traveller</occupation>
+                  <occupation>antiquary</occupation><note resp="#lmw #tlh"> E.D. Clarke was his tutor; Clarke accompanied Cripps on his travels. Both attended Jesus College, Cambridge. Source:  Alumni Cambridgiensis.</note>
+                     <ref target="http://viaf.org/viaf/31522761"/>
+                  </person>
+               
+               <person xml:id="Scott_John_LdEldon" sex="1">
+                  <persName><forename>John</forename><surname>Scott</surname></persName>
+                  <persName>1st Earl of Eldon</persName>
+                  <persName><roleName>Lord Chancellor of Great Britain</roleName></persName><!-- 1801 to 1806 and 1807 to 1827 -->
+                  <birth when="1751-06-04">
+                     <placeName>Newcastle upon Tyne</placeName>
+                  </birth>
+                  <death when="1838-01-13">
+                     <placeName>London</placeName>
+                  </death>
+                  <occupation>politician</occupation>
+                  <occupation>legal</occupation>
+                  <ref target="http://viaf.org/viaf/20543801"/>
+               </person>
+               
+               <person xml:id="Cartwright_Maj" sex="1">
+                  <persName><forename>John</forename><surname>Cartwright</surname></persName>
+                  <persName></persName>
+                  <persName>Royal Navy officer</persName>
+                  <persName>Major in the Nottinghamshire militia</persName>
+                  <birth when="1740-09-17">
+                     <placeName>Marnham, Nottinghamshire, England</placeName>
+                  </birth>
+                  <death when="1824-09-23">
+                     <placeName>London</placeName>
+                  </death>
+                  <occupation>political reformer</occupation>
+                  <occupation>military</occupation>
+                  <note resp="#lmw">Supported the aims of the American Revolution and radical and reformist causes in Great Britain. Corresponded with Thomas Jefferson. Wrote a pamphlet in 1776 advocating annual parliaments, the secret ballot, and universal manhood suffrage. Founder of the Society for Constutional Information, which developed into the London Corresponding Society. In 1794, witness at the "Treason Trials" supporting Horne Took, Thelwall, and Hardy. Also associated with Sir Francis Burdett, William Cobbett, and Francis Place. In 1812, founded the Hampden Clubs, political clubs designed to bring together like-minded middle-class reformers and working-class radicals. Supporter of Thomas Wooler and the Black Dwarf. The Life and Correspondence of Major Cartwright was published in 1826.</note>
+                     <ref target="http://viaf.org/viaf/15552299"/>
+               </person>
+               
+               <person xml:id="Beechey_W" sex="1">
+                  <persName><forename>William</forename><surname>Beechey</surname></persName><persName>Sir William Beechey</persName>
+                  <persName>Member of the Royal Academy</persName>
+                  <birth when="1753-12-12">
+                     <placeName>Burford, Oxfordshire</placeName>
+                  </birth>
+                  <death when="1839-01-28">
+                     <placeName>London</placeName>
+                  </death>
+                  <occupation>artist</occupation><note resp="#lmw">Official portrait painter to Queen Charlotte, he painted many members of the royal family as well as celebrated figures such as Sarah Siddons and Lord Nelson. He specialized in smaller scale full-length portraits.</note>
+                     <ref target="http://viaf.org/viaf/74124605"/>
+                  </person>
+               
+               <person xml:id="Lucetti"><persName>Lucetti</persName><note resp="#tlh #lmw">Identity unknown. Further research needed.</note></person>
+               
+               <person xml:id="James_oldPretender" sex="1"><persName><forename>James</forename> <forename>Francis</forename> <forename>Edward</forename></persName>
+                  <birth when="1688-06-10">
+                     <placeName>St. James Palace, England</placeName>
+                  </birth>
+                  <death when="1755-01-01">
+                     <placeName>Rome, Italy</placeName>
+                  </death>
+                  <persName>Prince of Wales</persName>
+                  <persName>the Pretender</persName>
+                  <persName>the old Pretender</persName>
+                  <birth when="1688-06-10">
+                     <placeName>St. James Palace, England</placeName>
+                  </birth>
+                  <death when="1755-01-01"></death>
+                  <note resp="lmw">Son of the deposed <persName ref="#JamesII">James II of England and Ireland and James VII of Scotland</persName>. As such, he claimed the English, Scottish and Irish thrones (as James III of England and Ireland and James VIII of Scotland) after the death of his father in 1701. Scottish supporters started "The 'Fifteen" Jacobite rising in Scotland in 1715, aimed at putting him on the British throne, but the uprising failed. After his death, the right to the Stuart succession was  claimed by his son Charles Edward Stuart.</note>
+               </person>
+               
+               <person xml:id="Bellamy_John" sex="1">
+                  <persName><forename>John</forename><surname>Bellamy</surname></persName><birth when="1755"/><death when="1842"/>
+                  <note resp="#lmw">Author of <title ref="#Bibletrans_Bellamy">The Holy Bible newly translated from the original Hebrew: with notes critical and explanatory</title>, published by subscription in <date when="1818">1818</date>.</note>
+                  <occupation>translator</occupation>
+               </person>
+               
+               <person xml:id="Marriott_Mr" sex="1"><persName>Mr. Marriott</persName><note resp="#lmw">In a letter of 1819-04-08, Mitford inquires of Elford whether this Mr. Marriott is the same as the one mentioned in <title ref="#Marmion_WS">Scott's Marmion</title>, the <persName ref="#Marriott_John">Rev. John Marriott, A.M.</persName> We do not have Elford's reply. Exact identity unknown.  Needs further research.</note></person>
+               
+               <person xml:id="Marriott_John" sex="1"><persName><forename>John</forename><surname>Marriott</surname></persName><persName>Rev. John Marriott, A.M.</persName><occupation>clergy</occupation><note resp="#lmw">Mentioned in <title ref="#Marmion_WS">Scott's Marmion</title>.</note></person>
+               
+               <person xml:id="Clarke_ED" sex="1">
+                  <persName><forename>Edward</forename><forename>Daniel</forename><surname>Clarke</surname></persName><persName>Dr. Clarke</persName>
+                  <birth when="1769-06-05"/><death when="1822-03-09"/>    
+                  <occupation>traveller</occupation>
+                  <occupation>literary</occupation>
+               </person>
+               
+               <person xml:id="Acerbi_J" sex="1">
+                  <persName><forename>Giuseppe</forename><surname>Acerbi</surname></persName><persName>Joseph Acerbi</persName><persName>Signor Acerbi</persName>
+                  <occupation>traveller</occupation>
+                  <occupation>literary</occupation>
+                  <note resp="#lmw">Author of Travels through Sweden, Finland, and Lapland to the North Cape, in the years 1798 and 1799; by Joseph Acerbi.</note></person>
+               
+               <person xml:id="Gray_Thos" sex="1"><persName><forename>Thomas</forename><surname>Gray</surname></persName>
+                  <birth when="1716-12-26">
+                     <placeName>Cornhill, London, England</placeName></birth>
+                  <death when="1771-07-30"><placeName>Cambridge, England</placeName></death>
+                  <occupation>literary</occupation>
+                  <ref target="http://viaf.org/viaf/9889965"/>
+                   </person>
+               
+               <person xml:id="Castlereagh_RS" sex="1"><persName><forename>Robert</forename><surname>Stewart</surname></persName>
+                  <persName>Lord Castlereagh</persName>
+                  <persName> 2nd Marquess of Londonderry</persName>
+                  <persName>Secretary of State for Foreign Affairs</persName><!--Under Geo III and Geo IV, 4 March 1812 – 12 August 1822 -->
+                  <persName>Leader of the House of Commons</persName> <!--1812–1822 -->
+                  <persName>Secretary of State for War and the Colonies</persName><!-- 1805-1806 and 1807-1809 -->
+                  <persName>President of the Board of Control</persName><!--1802-1806 -->
+                  <persName>Chief Secretary for Ireland</persName><!--1798–1801-->
+                  <birth when="1769-06-18">
+                     <placeName>Dublin, Ireland</placeName></birth>
+                  <death when="1771-07-30"><placeName>Loring Hall, Kent, England</placeName></death>
+                  <occupation>politician</occupation>
+                  <ref target="http://viaf.org/viaf/15560591"/>
+                  </person>
+               
+               <person xml:id="Moore_Thos" sex="1"><persName><forename>Thomas</forename><surname>Moore</surname></persName>
+                  <birth when="1779-05-28">
+                     <placeName>Dublin, Ireland</placeName></birth>
+                  <death when="1852-02-25"><placeName>Sloperton Cottage, Bromham, Wiltshire, England</placeName></death>
+                  <occupation>literary</occupation>
+                  <ref target="http://viaf.org/viaf/24616222"/>
+                  </person>
+               
+               <person xml:id="Rogers_Sam" sex="1"><persName><forename>Samuel</forename><surname>Rogers</surname></persName>
+                  <birth when="1763-07-30">
+                     <placeName>Newington Green, England</placeName></birth>
+                  <death when="1855-12-18"><placeName>London</placeName></death>
+                  <occupation>literary</occupation>
+                  <ref target="http://viaf.org/viaf/34584260"/>
+                  </person>
+               
+               <person xml:id="Holcroft_Thos" sex="1"><persName><forename>Thomas</forename><surname>Holcroft</surname></persName>
+                  <birth when="1745-12-10">
+                     <placeName>Leicester Fields, London, England</placeName></birth>
+                  <death when="1809-03-23"><placeName>Sloperton Cottage, Bromham, Wiltshire, England</placeName></death>
+                  <occupation>literary</occupation>
+                  <ref target="http://viaf.org/viaf/56644486"/>
+                  </person>
+               
+               <person xml:id="Walpole_Hor" sex="1">
+                  <persName><forename>Horace</forename><surname>Walpole</surname></persName>
+                  <persName>4th Earl of Orford (second creation)</persName>
+                  <persName><roleName>Member of Parliament for Callington<!-- 1742-1754 --></roleName></persName>
+                  <persName><roleName>Member of Parliament for Castle Rising<!-- 1754-1757--></roleName></persName>
+                  <persName><roleName>Member of Parliament for King's Lynn<!-- 1757-1768--></roleName></persName>
+                  <birth when="1745-12-10">
+                     <placeName>London, England</placeName></birth>
+                  <death when="1797-03-02"><placeName>Berkeley Square, London, England</placeName></death>
+                  <occupation>literary</occupation>
+                  <occupation>antiquarian</occupation>
+                  <occupation>politician</occupation>
+                  <note resp="#lmw">Youngest son of Sir Robert Walpole, British Prime Minister and Catherine. Built Strawberry Hill in Twickenham.</note>
+                  <ref target="http://viaf.org/viaf/17231985"/></person>
+               
+               <person xml:id="delaMotte_F"><persName><forename>Friedrich</forename> <forename>Heinrich</forename> <forename>Karl</forename><surname>de la Motte</surname></persName>
+                  <persName>Baron Fouqué</persName>
+                  <birth when="1777-02-12">
+                     <placeName>Brandenburg an der Havel, Brandenburg, Holy Roman Empire</placeName>
+                  </birth>
+                  <death when="1843-01-23">
+                     <placeName>Berlin, Germany</placeName></death>
+                  <occupation>literary</occupation>
+               </person>
+               
+               <person xml:id="Soane_Geo"><persName><forename>George</forename><surname>Soane</surname></persName>
+                  <persName>G. Soane, A.B.</persName>
+                  <birth when="17902">
+                     <placeName>London, England</placeName>
+                  </birth>
+                  <death when="1860-07-12">
+                     <placeName>London, England</placeName></death>
+                  <occupation>literary</occupation>
+                  <note resp="#lmw">Second son of John Soane, architect. He wrote numerous melodramas for the stage between 1817 and 1850. He translated works from the French, German, and Italian, including <persName ref="#delaMotte_F">de la Motte</persName>'s story Undine which he translated into <title ref="#Undine">prose</title> in 1818 and then turned into a play by 1821.</note>
+                  <ref target="http://viaf.org/viaf/315673958"/>
+                  </person>
+               
+               <person xml:id="Leyden_John" sex='1'>
+                  <persName>John Leyden</persName>
+                  <persName><forename>John</forename>
+                     <surname>Leyden</surname></persName>
+                  <birth when="1775-09-08">
+                     <placeName>Denholm, in the parish of Cavers, near Hawick, Roxburghshire</placeName>
+                  </birth>
+                  <death when="1811-08-28">
+                     <placeName>Cornelis, Batavia</placeName>
+                  </death>
+                  <occupation>linguist</occupation>
+                  <occupation>physician</occupation>
+                  <occupation>poet</occupation>
+                  <note resp="#alg">Scottish antiquary, poet, and orientalist who assisted <persName ref="#Scott_Wal">Walter Scott</persName> in compiling the <title>Minstrelsy of the Scottish Border</title>. Sources: LBT, DNB</note>
+               </person>
+               
+               <person xml:id="Alfred" sex="1">
+                  <persName>Alfred</persName>
+                  <persName>Alfred the Great</persName>
+                  <persName>King of England</persName>
+                  <birth when="0848"><!-- b.d. uncertain, 0848 or 49 -->
+                     <placeName>Wantage</placeName>
+                  </birth>
+                  <death when="0899-10-26"/>
+                  <note type="bio" resp="#alg">
+                     <p>King of the West Saxons and of the Anglo-Saxons. In addition to his military victories, including the defeat of the Danes at  the Battle of Edington, Alfred is known as a wise governmental administrator and proponent of learning and literacy. Source: DNB</p></note> </person>
+               
+               <person xml:id="Howard_SirRob" sex="1">
+                  <persName>Sir Robert Howard</persName>
+                  <persName><forename>Robert</forename>
+                     <surname>Howard</surname></persName>
+                  <birth when="1626-01"/>
+                  <death when="1698-09-03"/>
+                  <occupation>playwright</occupation>
+                  <occupation>politician</occupation>
+                  <note type="bio" resp="#alg">
+                     <p>A royalist sympathizer, Sir Robert pursued a profitable political career after the Restoration, in addition to becoming successful poet, dramatist, and critic. Source: DNB</p>
+                  </note>
+               </person>
+               
+               <person xml:id="RichardII" sex="1">
+                  <persName>Richard the 2nd</persName>
+                  <persName>Richard II</persName>
+                  <persName>King of England</persName>
+                  <persName>Lord of Ireland</persName>
+                  <persName>Duke of Aquitaine</persName>
+                  <birth when="1367-01-06">
+                     <placeName>abbey of St. André at Bordeaux</placeName>
+                  </birth>
+                  <death when="1400-02-14"/>
+                  <note type="bio" resp="#alg">
+                     <p>English monarch (1367-1400). House of Plantaganet. Son of <persName>Edward, Prince of Wales, the Black Prince</persName>. Deposed by <persName> Henry Bolingbroke (Henry IV)</persName>. Source: DNB</p>
+                  </note>
+               </person>
+               
+               <person xml:id="Pliny_Elder" sex="1">
+                  <persName>Pliny the elder</persName>
+                  <birth when="0023"/>
+                  <death when="0079"/>
+                  <note type="bio" resp="#alg">
+                     <p>Roman natural historian, author of <title ref="#NaturalisHist">Naturalis Historia</title> in thirty-seven books. Source: LBT</p> </note>
+               </person>
+               
+               <person xml:id="Sunderland_Countess" sex="2">
+                  <persName>Countess of Sunderland</persName>
+                  <persName>Sacharissa</persName>
+                  <persName><forename>Dorothy Sidney</forename>
+                     <surname>Spencer</surname></persName>
+                  <birth when="1617-10">
+                     <placeName>Syon House, London</placeName>
+                  </birth>
+                  <death when="1684-02"/>
+                  <note resp="#alg">As a young woman, Lady Dorothy Sidney was celebrated for her wit and beauty and was the subject of verses to and about "Sacharissa" by poet <persName ref="#Waller_Edmund">Edmund Waller.</persName></note>
+               </person>
+               
+               <person xml:id="Russell_Lady" sex="2">
+               <persName>Rachel Wriothesley, Lady Russell</persName>
+               <persName>
+                  <forename>Rachel Wriothesley</forename>
+                  <surname>Russell</surname>
+               </persName>
+               <birth when="1637-09-19">bap. 1637-09-19</birth>
+               <death when="1723-09-29">1723-09-29</death>
+               <note resp="#alg">The daughter of Thomas Wriothesley, fourth earl of Southampton; her letters involving the trial of second husband, William Russell, Lord Russell, implicated in the Rye House Plot, were published in 1773. Sources: LBT, DNB</note>
+               </person>
+               
+               <person xml:id="Waller_Edmund" sex='1'>
+                  <persName>Edmund Waller</persName>
+                  <persName><forename>Edmund</forename>
+                     <surname>Waller</surname></persName>
+                  <birth when="1606-03-03">
+                     <placeName>Stocks Place, Coleshill, Hertfordshire</placeName>
+                  </birth>
+                  <death when="1687-10-21">
+                     <placeName>St James's Street, London</placeName>
+                  </death>
+                  <occupation>poet</occupation>
+                  <occupation>politician</occupation>
+                  <note resp="#alg">Poet and politician remembered for the deviousness of his politics, the wealth of his estate, and the smoothness of his verse. His lyrics addressed to Sacharissa were much admired. Sources: LBT, DNB</note>
+               </person>
+               
+               <person xml:id="Villiers_Geo" sex="1">
+                  <persName><forename>George</forename><surname>Villiers</surname></persName>
+                  <persName>2nd Duke of Buckingham</persName>
+                  <persName>20th Baron de Ros of Helmsley</persName>
+                  <birth when="1628-01-30"/>
+                  <death when="1687-04-16"/>
+               </person>
+               
+               <person xml:id="Sheffield_John" sex="1"><persName><forename>John</forename><surname>Sheffield</surname></persName>
+                  <persName>1st Duke of Buckingham and Normanby</persName>
+                  <birth when="1648-04-07"/>
+                  <death when="1721-02-24"/>
+               </person>
+               
+               <person xml:id="Spence_Jos" sex="1"><persName><forename>Joseph</forename><surname>Spence</surname></persName>
+                  <birth when="1699-04-28"/>
+                  <death when="1768-08-20"/>
+                  <occupation>clergy</occupation>
+                  <occupation>literary</occupation></person>
+               
+               <person xml:id="Taylor_Jer" sex="1">
+                  <persName><forename>Jeremy</forename><surname>Taylor</surname></persName>
+                  <baptised when="1613-08-15"></baptised>
+                  <death when="1667-08-13"></death>
+                  <occupation>clergy</occupation>
+                  <occupation>literary</occupation>
+                  <ref target="http://viaf.org/viaf/329566831"/>
+               </person>
+               
+               <person xml:id="Sackville_Chas" sex="1">
+                  <persName><forename>Charles</forename><surname>Sackville</surname></persName>
+                   <persName>6th Earl of Dorset</persName>
+                  <persName>1st Earl of Middlesex</persName>
+                  <birth when="1638-01-24"/>
+                  <death when="1706-01-29"/>
+               </person>
+               
+               <person xml:id="Wilmot_John" sex="1">
+                  <persName><forename>John</forename><surname>Wilmot</surname></persName>
+                  <persName>2nd Earl of Rochester</persName>
+                  <birth when="1647-04-01"/>
+                  <death when="1680-07-26"/>
+               </person>
+               
+               <person xml:id="Brown_Thos" sex="1">
+                   <persName>
+                     <surname>Browne</surname>
+                     <forename>Thomas</forename>
+                  </persName>
+                  <birth when="1605-10-19">
+                     <placeName>London, England</placeName>
+                  </birth>
+                  <death when="1682-10-19">
+                     <placeName>Norwich, England</placeName>
+                  </death>
+                  <occupation>medical</occupation>
+                  <occupation>literary</occupation>
+               </person>
+               
+               <person xml:id="Fisher_John" sex="1">
+                  <persName><forename>John</forename><surname>Fisher</surname></persName>
+                  <persName>Bishop of Exeter</persName>
+                  <persName>Bishop of Salisbury</persName>
+                  <birth when="1748"/>
+                  <death when="1825-05-08"/>
+                  <occupation>clergy</occupation>
+                  <note resp="#lmw">Bishop of Exeter and then Bishop of Salisbury from 1807-1825. Art collector and patron of John Constable.</note>
+               </person>
+               
+               <person xml:id="Bolinbroke" sex="1">
+                  <persName><forename>Henry</forename><surname>St. John</surname></persName>
+                  <persName>Lord Bolinbroke</persName>
+                  <persName>1st Viscount Bolingbroke</persName>
+                  <birth when="1678-09-16">
+                     <placeName>Battersea, Surrey</placeName>
+                  </birth>
+                  <death when="1751-12-12">
+                     <placeName>Battersea, Surrey</placeName>
+                  </death>
+                  <occupation>politician</occupation>
+                 </person>
+               
+               <person xml:id="Defoe_D" sex="1">
+                  <persName><forename>Daniel</forename><surname>Defoe</surname>
+                  </persName>
+                  <birth when="1660"><!-- birthdate uncertain -->
+                     <placeName>London, England</placeName>
+                  </birth>
+                  <death when="1731-04-24">
+                     <placeName>London, England</placeName>
+                  </death>
+                  <occupation>literary</occupation></person>
+               
+               <person xml:id="deGenlis_Mme" sex="2">
+                  <persName><forename>Stéphanie</forename><forename>Félicité</forename><surname type="paternal">du Crest de Saint-Aubin</surname></persName>
+                  <persName>Comtesse de Genlis</persName>
+                  <persName>Madame de Genlis</persName>
+                  <birth when="1746-01-25">
+                     <placeName>Issy-l'Évêque, Saône-et-Loire, France</placeName>
+                  </birth>
+                  <death when="1830-12-30">
+                     </death>
+                  <occupation>literary</occupation>
+               <occupation>educator</occupation></person>
+               
+               <person xml:id="Burney_SH" sex="2">
+                  <persName><forename>Sarah</forename><forename>Harriet</forename><surname type="paternal">Burney</surname></persName>
+                  <persName>Miss Burney</persName>
+                  <birth when="1772-08-29">
+                     <placeName>Lynn Regis</placeName>
+                  </birth>
+                     <death when="1844-02-08">
+                        <placeName>Cheltenham</placeName>
+                     </death>
+               <occupation>literary</occupation>
+                  <note resp="#lmw">Daughter of Charles Burney by his second wife, Elizabeth Allen. Half sister to <persName ref="#Burney_F">Frances Burney</persName>.</note>
+                  <ref target="http://viaf.org/viaf/30359830"/>
+                  </person>
+               
+               <person xml:id="Cromwell" sex="1">
+                  <persName>Oliver Cromwell</persName>
+                  <persName>
+                     <surname>Cromwell</surname>
+                     <forename>Oliver</forename>
+                  </persName>
+                  <birth when="1599-04-25">
+                     <placeName>Huntingdon</placeName>
+                  </birth>
+                  <death when="1658-09-03">
+                     <placeName ref="#London_city">Whitehall, London</placeName>
+                  </death>
+                  <occupation>politician</occupation>
+                  <note type="bio" resp="#ejb">British politician who gained prominence as a military general during the <rs type="event" ref="#EngCivilWar">the English Civil War</rs>, leading the <orgName ref="#New_Model_Army">New Model Army</orgName> who supported Parliament against the monarchy, under <persName ref="#ChasI">Charles I</persName>.  Cromwell became the First Protectorate of England, Scotland, and Ireland from 1653 until his death in 1658.  At the time MRM was writign this letter and thorughout the 19th century, Cromwell's reputation was on an upswing.  The trend was towards viewing him as a man guided by devout faith in God, a desire to provide for his country, and a desire to purify the Protestantism in his country.</note>
+               </person><!-- LMW:  add to existing entry? -->
+           
+               <person xml:id="Brougham_H" sex="1">
+                  <persName>Henry Peter Brougham</persName>
+                  <persName>1st Baron Brougham and Vaux</persName>
+                  <persName>Lord Chancellor</persName>
+               <occupation>legal</occupation>
+                  <occupation>political</occupation>
+                  <nationality>Scottish</nationality>
+                  <birth when="1778-09-19"/>
+                  <death when="1868-05-07"/></person>
+               <note resp="#lmw">One of the founders of the Edinburgh Review. Practiced law in Edinburgh and London. Whig reformer and member of Parliament; known for educational and legal reforms. Chief legal advisor to Queen Caroline and defended her in 1820.</note>
+                
+               <person xml:id="Mahomet" sex="1"><persName>Mahomet</persName>
+                  <note resp="#lmw"></note><note resp="#ncl">French spelling of Muhammad, used by Mitford to refer to the prophet. Elsewhere, Mitford refers to "Mahound and Termagaunte" as stereotypically violent Islamic gods.</note></person>
+               
+               <person xml:id="Lee_Nath" sex="1">
+                  <persName><forename>Nathaniel</forename><surname>Lee</surname>
+                  </persName>
+                   <birth when="1653"></birth><!-- birth date uncertain. -->
+                  <death when="1692-05-06"></death>
+                  <occupation>literary</occupation>
+               </person>
+               
+               <person xml:id="Ferrier_Susan" sex="2">
+                  <persName><forename>Susan</forename><forename>Edmonstone</forename><surname>Ferrier</surname></persName>
+                  <occupation>literary</occupation>
+                  <birth when="1782-09-07"></birth>
+                  <death when="1854-11-05"></death>
+                  <occupation>literary</occupation>
+               </person>
+               
+               <person xml:id="Owenson_S" sex="2">
+                  <persName><forename>Sydney</forename><surname>Owenson</surname></persName>
+                  <persName>Lady Morgan</persName>
+                  <birth when="1781-12-25"><!-- LMW:  birth year uncertain? --></birth>
+                  <death when="1859-04-14"></death>
+                  <occupation>literary</occupation></person>
+               
+               <person xml:id="Geo_SpencerChurchill" sex="1">
+                  <persName><forename>George</forename><surname>Spencer-Churchill</surname>
+                  </persName><persName>6th Duke of Marlborough</persName>
+                  <occupation>patron of the arts</occupation>
+                  <birth when="1793-12-27"></birth>
+                  <death when="1857-01-07"></death>
+               </person>
+               
+               <person xml:id="Griffin_Rich">
+                  <persName>>Lord Braybrooke</persName>
+                  <persName>Richard Griffin, 2nd Baron Braybrooke</persName>
+                  <note resp="#lmw">Until 1797, known as <persName>Richard Aldworth-Neville</persName> or <persName>Richard Aldworth Griffin-Neville.</persName>Came into possession of estates <placeName ref="#BillingbearPk">Billingbear Park</placeName> in <placeName ref="#Berkshire">Berkshire</placeName> and <placeName ref="#Audley_End">Audley End</placeName> in <placeName ref="#Essex_county">Essex</placeName>.</note>
+               </person>
+               
+               <person xml:id="Chas_SpencerChurchill" sex="1">
+                  <persName><forename>Charles</forename><surname>Spencer-Churchill</surname></persName>
+                  <persName>9th Duke of Malborough</persName>
+                  <note resp="#mco">Son of <persName ref="#Geo_SpencerChurchill">George</persName></note>
+               </person>
+               
+               <person xml:id="Walker_CE" sex="1"><persName><surname>Walker</surname><forename>Charles</forename></persName>
+                  <persName>Charles E. Walker</persName>
+                   <note type="bio" resp="#lmw">Charles E. Walker, dramatist; he wrote Wallace:  a Tragedy (1820) in which <persName ref="#Macready_Wm">Macready</persName> performed the title role.</note>
+               </person>
+               
+               <person xml:id="Smith_Ad" sex="1"><persName><forename>Adam</forename><surname>Smith</surname> </persName>
+                  <birth when="1723-06-16">16 June 1723 NS (5 June 1723 OS)
+                  <placeName>Scotland</placeName></birth>
+                  <death when="1790-07-17"/>
+                  <nationality>Scottish</nationality>
+               </person>
+               
+               <person xml:id="Murray_John" sex="1"><persName>John Murray</persName><note resp="#lmw">John Murray (1778-1843), <persName ref="#Byron">Byron</persName>'s friend and publisher. Founded the <title ref="#QuarterlyRev_per"></title>Quarterly Review.</note></person>
+               <!-- LMW:  add to existing entry. -->
+               
+               <person xml:id="Cowslade_F" sex="1"><persName><forename>Francis</forename><surname>Cowslade</surname></persName><persName>Frank Cowslage</persName><note resp="#lmw">As <persName ref="#coles">Coles</persName> notes, Francis or "Frank" Cowslade was one of the publishers of the <title ref="#ReadingMer_per">Reading Mercury newspaper</title> (Coles # 16, p.95, note 11).</note></person>
+             
+               <person xml:id="Harris_Henry" sex="1"><persName><forename>Henry</forename><surname>Harris</surname></persName><note resp="#lmw">At the time of Foscari's composition, Henry Harris was manager of Covent Garden Theatre. He took over the management from October 1820, following the death of his father, Thomas Harris, and the transfer by John Kemble of his one-sixth share to his younger brother Charles. Source: 'Covent Garden Theatre and the Royal Opera House: Management.' Survey of London: Volume 35, the theatre Royal, Drury Lane, and the Royal Opera House, Covent Garden. Ed. F. H. W. Shepard. London: London County Council, 1970. 71-85. British History Online. Web. 9 June 2015. <ref target="http://www.british-history.ac.uk/survey-london/vol35/pp71-85"/>.</note>
+               </person>  
+               
+               <person xml:id="WindsorEE_ed" sex="1"><persName><placeName ref="#Windsor_city">Windsor</placeName> paper man</persName><note resp="#lmw">Presumably the editor or publisher of the Windsor and Eton Express newspaper. As yet unidentified. Needs further research.</note></person>
+               
+               <person xml:id="postman_TMC" sex="1"><persName>The Three Mile Cross postman (in 1821)</persName><note resp="#lmw">As yet unidentified. Needs further research.</note></person>
+               
+               <person xml:id="Fox_HRV" sex="1"><persName><forename>Henry</forename><forename>Richard</forename><surname>Vassal</surname><surname>Fox</surname></persName>
+                  <persName>3rd Baron Holland, of Holland</persName>
+                  <persName>3rd Baron Holland, of Foxley, PC</persName>
+                  <persName>Right Honourable Lord Holland, PC</persName>
+                  <birth when="1773-11-21"/>
+                  <death when="1840-10-22"/><note resp="#lmw">He was the grandson of Henry Fox, first Baron Holland, and nephew of Charles James Fox. He served in several Whig administrations between 1806 and his death in 1840. Mitford may have known him through her father's political connections.</note>
+               </person>
+               
+               <person xml:id="Byron_Annab" sex="2">
+                  <persName> <forename>Annabella</forename> <forename>Anne</forename><forename>Isabella</forename> 
+                     <surname type="paternal">Milbanke</surname>
+                     <surname type="paternal">Noel</surname>
+                     <surname type="married">Byron</surname>
+               </persName>
+                  <persName>Baroness Byron</persName>
+                  <persName>Baroness Wentworth</persName>
+                  <persName>Baroness Noel-Byron</persName>
+                  <persName>A. I. Noel Byron</persName>
+                  <birth when="1792-05-17"/>
+                  <death when="1860-05-16"/>
+               </person>
+               
+                <person xml:id="Drake_Nathan_younger" sex="1">
+                  <persName><forename>Nathan</forename><surname>Drake</surname>
+                  </persName><persName>Dr. Drake</persName>
+                  <persName>Nathan Drake, M.D.</persName>
+               <birth when="1766-01-15"/>
+               <placeName>York</placeName>
+               <death when="1836"/>
+               <occupation>medical</occupation>
+                  <occupation>literary</occupation>
+               </person>
+               
+               <person xml:id="Coxe_Wm" sex="1">
+                  <persName><forename>William</forename><surname>Coxe</surname></persName>
+                  <persName>William Coxe, M.A., F.R.S., F.S.A., Archdeacon of Wilts</persName>
+               <birth when="1748"/>
+               <placeName ref="#London_city"/>
+               <death when="1828-05-08"/>
+               <occupation>clergy</occupation>
+               <occupation>historian</occupation>
+               </person>
+             
+               <person xml:id="Holford_Marg_younger" sex="2"><persName><forename>Margaret</forename><surname type="paternal">Holford</surname><surname type="married">Hodgson</surname></persName>
+               <persName>Miss Holford</persName>
+                  <persName>Margaret Hodgson</persName>
+                  <birth when="1778-06-01"/>
+                  <placeName>Chester</placeName>
+                  <death when="1852-09-11"/>
+                  <placeName>Dawlish, Devon</placeName>
+                  <occupation>literary</occupation>
+                  <note resp="#lmw">Associated with <persName ref="#Baillie_Joanna">Joanna Baillie</persName> and <persName ref="#Southey_R">Robert Southey</persName>. Her mother, also named Margaret Holford (1757–1834), was also an author.</note>
+               </person>
+              
+               <person xml:id="Hill_Charles" sex="1">
+               <persName>
+                  <surname>Hill</surname>
+                  <forename>Charles</forename>
+               </persName>
+               <occupation>schoolmaster</occupation>
+               <note resp="#scw">Schoolmaster at <placeName>Silchester</placeName>. Husband of Mitford servant <persName ref="#Hill_Lucy">Lucy Hill</persName>, whose marriage to him caused her to leave the household. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note></person>
+               
+               <person xml:id="Hill_Lucy" sex="2">
+               <persName>
+                  <surname type="married">Hill</surname>
+                  <surname type="paternal">Sweatser</surname>
+                  <forename>Lucy</forename>
+               </persName>
+               <occupation>servant</occupation>
+               <bap when="1790-05-02"><placeName>Stratfield Saye</placeName></bap>
+               <note type="bio" resp="#scw"><p>Beloved servant for 12 years in the Mitford household who, on <date when="1820-08-07">7 August, 1820</date> married <persName ref="#Hill_Charles">Charles Hill</persName>. She is the basis for the title character in the <title ref="#OV">Our Village</title> story. Source: <orgName><persName ref="#Needham_Francis">Needham</persName> Papers</orgName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p></note></person>
+               
+               <person xml:id="Chantrey_F" sex="1">
+               <persName><forename>Francis</forename><forename>Legatt</forename><surname>Chantrey</surname></persName>
+                  <birth when="1781-04-07"/>
+                  <placeName>Jordanthorpe</placeName>
+                  <death when="1841-11-25"/>
+                  <placeName ref="#London_city">London</placeName>
+                  <occupation>sculptor</occupation></person>
+                  
+                  <person xml:id="Southey_R" sex="1"><persName><forename>Robert</forename><surname>Southey</surname></persName>
+                  August 12, 1774 in Bristol – March 21, 1843 in London
+                  <birth when="1774-08-12"/>
+                  <placeName/>Bristol
+                  <death when="1843-03-21"/>
+                  <placeName ref="#London_city"/>
+                  <occupation>literary</occupation></person>
+               
+               <person xml:id="Hobhouse_JC" sex="1">
+                  <persName>John Cam Hobhouse</persName>
+                  <persName>
+                     <forename>John</forename>
+                     <forename>Cam</forename>
+                     <surname>Hobhouse</surname>
+                  </persName>
+                  <persName>1st Baron Broughton</persName>
+                  <birth when="1786-06-27">
+                     <placeName>Redland</placeName>
+                  </birth>
+                  <death when="1869-06-03">
+                     <placeName ref="#London_city">Berkeley Square, London</placeName>
+                  </death>
+                  <occupation>politician</occupation>
+                  <note type="bio" resp="#err #lmw">A friend and traveling companion of Lord Byron who contributed notes to the fourth canto of Childe Harold's Pilgrimage, John Cam Hobhouse was elected to the House of Commons in 1820 as a member of the Whig party. In 1851, he became the First Baron Broughton.</note>
+               </person>
+               
+               <person xml:id="Morpeth_GH" sex="1">
+                  <persName>George Howard</persName><persName>Viscount Morpeth</persName>
+                  <birth when="1773"/>
+                  <death when="1848"/></person>
+               
+               <person xml:id="Fuseli_H" sex="1"><persName><forename>Henry</forename><surname>Fuesli</surname></persName>
+                  <persName>Johann Heinrich Füssli</persName>
+                  <birth when="1741-02-07">
+                     <placeName>Zürich, Switzerland</placeName>
+                  </birth>
+                  <death when="1825-04-17">
+                     <placeName>Putney Hill, London, England</placeName>
+                  </death>
+                  <occupation>artist</occupation>
+                  <occupation>literary</occupation>
+                  <nationality>Anglo-Swiss</nationality></person>
+               
+               <person xml:id="Patemore_PG" sex="1"><persName><forename>Peter</forename><forename>George</forename><surname>Patemore</surname></persName>
+                  <occupation>literary</occupation>
+                  <birth when="1786"/>
+                  <placeName>Ludgate Hill, London</placeName>
+                  <death when="1855"/>
+                  <note resp="#ajc #lmw">Writer and journalist. In 1821 Patmore acted as second to journalist John Scott in the duel in which Scott was killed. [ODB].</note></person>
+               
+               <person xml:id="Murray_John"><persName>John Murray</persName><note resp="#lmw">John Murray (1778-1843), Byron's friend and publisher. Founded the <title ref="#QuarterlyRev_per">Quarterly Review</title>.</note></person>
+               <!-- LMW:  add to existing entry. -->
+              
+               <person xml:id="Hunt_Robert" sex="1"><persName><forename>Robert</forename><surname>Hunt</surname></persName> 
+                  <occupation>literary</occupation>
+                 <note resp="#ajc">Writer and critic. Brother of Leigh Hunt and John Hunt who founded The Examiner. One of the earliest critics of William Blake.</note></person>
+               
+               <person xml:id="Richardson_Sam" sex="1">
+                  <persName><forename>Samuel</forename><surname>Richardson</surname></persName> 
+                  <birth when="1689-08-19">
+                     <placeName>Mackworth, Derbyshire, England</placeName>
+                  </birth>
+                  <death when="1761-07-04">
+                     <placeName>London, England</placeName>
+                  </death>
+                  <occupation>literary</occupation></person>
+               
+               <person xml:id="Goldsmith" sex="1">
+                  <persName><forename>Oliver</forename><surname>Goldsmith</surname></persName>
+               <birth when="1728-11-10">
+                  <placeName>Ireland</placeName>
+               </birth>
+               <death when="1774-04-04">
+                  <placeName>London, England</placeName>
+               </death>
+               <occupation>literary</occupation>
+               </person>
+               
+               <person xml:is="Collins_Wm" sex="1">
+               <persName><forename>William</forename><surname>Collins</surname></persName>
+                  <birth when="1721-12-25"/>
+                  <placeName>Chichester, Sussex</placeName>
+                  <death when="1759-06-12"/>
+                  <occupation>literary</occupation>
+                 </person>
+              
+               <person xml:is="Cowper" sex="1">
+               <persName><forename>William</forename><surname>Cowper</surname></persName>
+               <birth when="1731-11-26">
+                  <placeName>Berkhamsted, Hertfordshire, England</placeName>
+               </birth>
+               <death when="1800-04-25">
+                  <placeName>East Dereham, Norfolk, England</placeName>
+               </death>
+               <occupation>literary</occupation>
+               </person>
+               
+               <person xml:id="Johnson_Mr" sex="1">
+                  <persName><surname>Johnson</surname></persName>
+                  <persName>Mr. Johnson</persName>
+                  <persName>the Junius of Marlow</persName>
+                  <persName>Timothy Trueman</persName>
+                  <death when="1821"></death>
+                  <note resp="#lmw">Friend who leaves his collection of political books to <persName ref="#Northmore_Thos">Northmore</persName> upon his death in <date when="1821">1821</date>. <persName ref="#MRM">Mitford</persName> helps his sister, <persName ref="#Johnson_Miss">Miss Johnson</persName>, sort out the books that are part of the estate, according to her letter of <date when="1821-07-01">1 July 1821</date>. Lived at <placeName ref="#SeymourCt">Seymour Court</placeName> before his death. <persName ref="#MRM">Mitford</persName> reports meeting Mr. Johnson and <persName ref="#Northmore_Thos">Mr. Northmore</persName> for the first time in <date when="1819-03">March 1819</date> in a letter to <persName ref="#Elford_SirWm">Elford</persName>. She describes him as "one of those delightful old men that render age so charming--mild playful kind &amp; wise--talking just as <persName ref="#Walton_I">Isaac Walton</persName> would have talked if we were to [have] gone out fishing with him." More research needed.<!--LMW See 1819-10-18 for more description. Joseph Johnson the radical publisher died in 1809. Have checked all Johnsons in worldcat and none seem to fit.--></note></person>
+               
+               <person xml:id="Johnson_Miss" sex="2"><persName><surname>Johnson</surname></persName><persName>Miss Johnson</persName><note resp="#lmw">Friend of <persName ref="#MRM">Mitford</persName>'s. Unmarried sister of <persName ref="#Johnson_Miss">Miss Johnson</persName>. <persName ref="#MRM">Mitford</persName> helps her sort out the books that are part of her brother's estate, according to her letter of <date when="1821-07-01">1 July 1821</date>. More research needed.<!--See 1819-10-18 for more description-->.</note></person>
+               
+               <person xml:id="Valpy_Dr">
+                  <ref target="http://viaf.org/viaf/50434313"/>
+                  <note resp="#lmw">John Opie painted Dr. Richard Valpy's portrait. See <ref target="http://www.bbc.co.uk/arts/yourpaintings/paintings/dr-richard-valpy-17541836-41504"/></note>
+               </person>
+               
+               <person xml:id="Valpy_Mary" sex="2"><persName><surname>Valpy</surname><forename>Mary</forename></persName><persName>Miss Valpy</persName><birth when="1797">1797</birth><note resp="#mco #lmw">Eldest daughter of <persName ref="#Valpy_Richard">Dr. Valpy</persName>. More research needed.</note></person>
+               
+               <person xml:id="Valpy_Pen" sex="2"><persName><surname>Valpy</surname><forename>Penelope</forename><forename>Arabella</forename></persName><birth when="1802">1802</birth><note resp="#mco #lmw">Eldest daughter of <persName ref="#Valpy_Richard">Dr. Valpy</persName>. More research needed.<!--LMW I thought we had an entry on the Valpy daughters, but I am not finding it. Putting these in case we need. 2015-09-30. --></note></person>
+       
+               <person xml:id="Newman" sex="1"><persName><surname>Newman</surname></persName><note resp="#mco #lmw">Butler to <persName ref="#Valpy_Richard">Dr. Valpy</persName> in <date when="1821">1821</date> and likely earlier. <persName ref="#MRM">Mitford</persName> calls him "the old butler" in a her letter of <date when="1821-07-01">1 July 1821</date>. More research needed.</note></person>
+               
+               <person xml:id="James_Emily" sex="2"><persName><surname type="paternal">James</surname><forename>Emily</forename></persName><note resp="#lmw">Sister to <persName ref="#James_Miss">Miss James</persName> and <persname ref="#James_Susan">Susan James</persname> and cared for pupils with her. More research needed.</note></person>
+               
+               <person xml:id="James_Susan" sex="2"><persName><surname type="paternal">James</surname><forename>Susan</forename></persName><note resp="#lmw">Sister to <persName ref="#James_Miss">Miss James</persName> and <persName ref="#James_Emily">Emily James</persName>. Mitford reports that she has taked a position as a governess in 1819. Nicknamed "Susy." More research needed.</note></person>
+               
+               <person xml:id="James_Mrs" sex="2"><persName><surname type="married">James</surname></persName><persName>Mrs. James</persName><note resp="#lmw">Mother of <persName ref="#James_Miss">Miss James</persName>, <persname ref="#James_Susan">Susan James</persname>, and <persName ref="#James_Emily">Emily James</persName>. Mitford reports that she has taken a position as a governess in 1819. Nicknamed "Susy." More research needed.</note></person>
+        
+               <person xml:id="Webb_John" sex="1"><persName><forename>John</forename><surname>Webb</surname></persName>
+                  <note resp="#lmw">Unidentified.  More research needed. Possibly "Uncle John," uncle to Eliza and Mary Webb and brother to James Webb. He is unlikely to be Aunt Mary's husband, since the elder Mary Webb was unmarried.</note></person>
+               
+               <person xml:id="Wheeler_Kate" sex="2"><persName><forename>Kate</forename><surname>Wheeler</surname></persName>
+                  <persName>Miss Wheeler</persName>
+                  <note resp="#lmw">Friend of <persName ref="#James_Miss">Miss James</persName>.  <persName ref="#MRM">Mitford</persName> refers to her as providing home remedies and advice. See <date when="1821-01-29">29 January 1821</date> letter to <persName ref="#Webb_Mary_younger">Mary Webb.</persName> More research needed.</note></person>
+               
+               <person xml:id="Crowther_Mr" sex="1"><persName>Mr. <surname>Crowther</surname></persName>
+                  <note resp="#lmw #scw"><p>The "dandy" Mitford pokes fun at in her letters of <date when="1819-01-09"><date when="1819-01-10">January 9 and 10, 1819</date></date>. Possibly husband to Isabelle Crowther. According to <persName ref="#coles">Coles</persName>, forename may be Phillip; Coles is not completely confident that the "dandy" Mr. Crowther and Mr. [Phillip?] Crowther are the same person. The second Mr. Crowther is a correspondent of <persName ref="#MRM">Mitford's</persName>, whom she writes to at <placeName>Whitley cottage</placeName>, near <placeName ref="#Reading_city">Reading</placeName>. He may also have resided at <placeName>Westbury on Trim</placeName> near <placeName>Bristol</placeName>. <persName ref="#coles">William Coles</persName> is uncertain of whether <persName ref="#Crowther_Mr">Crowther</persName>is the same <persName>Phillip Crowther</persName>mentioned in <persName ref="#MRM">Mitford</persName>'s <title>Diary</title>. Source: <persName ref="#coles">William Coles</persName>, Letter to <persName ref="#Needham_Francis">Needham</persName>, <date when="1957-11-10">10 November 1957</date>, <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>. <!--scw: See photo DSCN1167--></p></note></person>
+               
+               <person xml:id="Sevigne_Mad" sex="2"><persName><forename>Marie</forename><surname>de Rabutin-Chantal</surname></persName> <occupation>literary</occupation>
+                  <note resp="#ncl">An aristocrat otherwise known as Marquise de Sevigne, she is famous in French literature for her letter-writing to her daughter.</note></person>
+               
+               <person xml:id="Birkbeck_M" sex="1"><persName><forename>Morris</forename><surname>Birkbeck</surname></persName> 
+                  <note resp="#ncl">Author of <title></title>Notes on a Journey in America and <title>Letters from Illinois</title>. </note></person>
+         
+               <person xml:id="Peacock_TL" sex="1"><persName><forename>Thomas</forename><forename>Love</forename> <surname>Peacock</surname></persName>              
+                  <occupation>literary</occupation>
+                  <note resp="#ncl">Poet, essayist, satiric novelist. Most famous novels were published between 1815 and 1822.</note></person>
+               
+               <person xml:id="Fearon_HB" sex="1"><persName><forename>Henry</forename> <forename>Bradshaw</forename> <surname>Fearon</surname></persName> 
+                  <note resp="#ncl">London surgeon who wrote <title ref="#Sketches_of_America">Sketches of America. A Narrative of a Journey of Five Thousand Miles through the Eastern and Western States of America</title></note></person>
+               
+               <person xml:id="Chaucer" sex="1"><persName><forename>Geoffrey</forename> <surname>Chaucer</surname></persName> <occupation>literary</occupation>
+                  <note resp="#ncl">Born in London circa 1340. Wrote "The Canterbury Tales", "The Legend of Good Women", "Roman de la Rose", and other works.</note></person>
+               
+               <person xml:id="Brunton_Mary" sex="2"><persName><forename>Mary</forename> <surname>Brunton</surname></persName> 
+                  <occupation>literary</occupation>
+                  <note resp="#ncl">Contemporary of Jane Austen's. Called "The Forgotten Scottish Novelist."</note></person>
+               
+               <person xml:id="Brunton_Alexander" sex="1"><persName><forename>Alexander</forename><surname>Brunton</surname></persName>
+                  <note resp="#ncl">Husband of <persName ref="#Brunton_Mary">Mary Brunton</persName>; he was a clergyman from Edinburgh.</note></person>
+               
+               <person xml:id="Washington_Geo" sex="1"><persName><forename>George</forename> <surname>Washington</surname></persName> 
+                  <note resp="#lmw">General. Political figure. First President of United States.</note></person>
+               
+               <person xml:id="Franklin_Ben" sex="1"><persName><forename>Benjamin</forename> <surname>Franklin</surname></persName> 
+                  <note resp="#lmw">Political Figure. Ambassador. Author. Inventor.</note></person>
+               
+               <person xml:id="Bacon" sex="1"><persName><forename>Francis</forename> <surname>Bacon</surname></persName> 
+                  <note resp="#ncl">One of the leading figures in Renaissance philosophy.</note></person>
+               
+                <person xml:id="Hunt" sex="1"><persName><forename>Leigh</forename><surname>Hunt</surname></persName>
+                  <occupation>literary</occupation>
+                  <note resp="#ncl">English poet, writer, and essayist from Southgate, London.</note></person>
+               
+               <person xml:id="Handel" sex="1"><persName><forename>George</forename><forename>Frederic</forename> <surname>Handel</surname></persName> 
+                  <occupation>Musician</occupation><occupation>composer</occupation>
+                  <note resp="#ncl">Anglo-German composer, greatly influenced by the Italian Baroque period.</note></person>
+               
+               <person xml:id="Parfitt_Sarah" sex="2"><persName><forename>Sarah</forename><surname>Parfitt</surname></persName>
+                  <note resp="#ncl">Friend of Mitford's who was enchanted by her upon their meeting.</note></person>
+               
+               <person xml:id="Parfitt_Jos" sex="1"><persName><forename>Joseph</forename><surname>Parfitt</surname></persName>
+                  <note resp="#ncl">Friend of <persName ref="#MRM">Mitford</persName>'s, who admired <persName ref="#Webb_Eliza">Eliza Webb</persName>.</note></person>
+               
+               <person xml:id="Homer" sex="1"><persName>Homer</persName>
+                  <note resp="#ncl">Epic poet from the Late Bronze Age.</note></person>
+               
+               <person xml:id="Walton_I" sex="1"><persName><forename>Isaac</forename><surname>Walton</surname></persName>
+                  <note resp="#ncl">Wrote <title>The Complete Angler</title>.</note></person>
+               
+               <person xml:id="Taylor_Jer" sex="1"><persName><forename>Jeremy</forename><surname>Taylor</surname></persName><occupation>clergy</occupation>
+                  <note resp="#ncl">Famous writer and Church of England clergyman, known as the "Shakespeare of Divines."</note></person>
+               
+               <person xml:id="Brown_Thos" sex="1"><persName><forename>Thomas</forename><surname>Brown</surname></persName><occupation>literary</occupation>
+                  <note resp="#ncl">Scottish philosopher and poet.</note></person>
+               
+               <person xml:id="Froissart" sex="1"><persName><forename>Jean</forename><surname>Froissart</surname></persName><occupation>literary</occupation>
+                  <note resp="#ncl">Medieval French author.</note></person>
+               
+               <person xml:id="DeJoineville" sex="1"><persName><forename>Jean</forename><surname>Joinville</surname></persName><occupation>literary</occupation>
+                  <note resp="#ncl">Author of <title>Life of St. Louis</title>, chronicler of medieval France.</note></person>
+               
+               <person xml:id="Pulci" sex="1"><persName><forename>Luigi</forename><surname>Pulci</surname></persName><occupation>literary</occupation>
+                  <note resp="#ncl">Italian poet.</note></person>
+               
+               <person xml:id="Seward_Martha" sex="2"><persName><forename>Martha</forename><surname>Seward</surname></persName>
+                  <note resp="#lmw">An acquaintance of <persName ref="#Webb_Mary_younger">Mary Webb</persName>. Needs additional research.</note></person>
+               
+               <person xml:id="Coffin_Mrs" sex="2"><persName>Mrs.<surname>Coffin</surname></persName>
+                  <note>Unidentified. Needs additional research.</note></person>
+           
+                     <person xml:id="Bewick_Wm" sex="1">
+                        <persName>William Bewick</persName>
+                        <persName>
+                           <forename>William</forename>
+                           <surname>Bewick</surname>
+                        </persName>
+                        <birth when="1795-10-20">
+                           <placeName>Danlington, county Durham</placeName>
+                        </birth>
+                        <death when="1866-06-08">
+                           <placeName>Haughton-le-Skerne, county Durham</placeName>
+                        </death>
+                        <occupation>portrait and history painter</occupation>
+                        <note type="bio" resp="#xjw">He was the pupil of <persName ref="#Haydon">Benjamin Robert Haydon</persName> with whom he remained for about three years. At Haydon's studio he met many famous men of the day, including <persName ref="#Wordsworth_Wm">Wordsworth</persName>, <persName ref="#Hazlitt_Wm">Hazlitt</persName>, and <persName ref="#Keats">Keats</persName>. He worked hard under <persName ref="#Haydon">Haydon</persName>'s influence, and besides working in his master's studio attended the <orgName>Royal Academy</orgName> Schools, and the dissecting teams of the physiologist and surgeon <persName>Sir Charles Bell</persName>. When he died, he was a substantial property owner in the village. His portrait work is extensively represented in the National Portrait Gallery and the British Museum, London, and the Scottish National Portrait Gallery, <placeName ref="#Edinburgh">Edinburgh</placeName>. Bewick was not a member of the family of <persName>Thomas Bewick</persName>, the engraver, as is sometimes believed.</note>
+                     </person>
+               
+                     <person xml:id="Chatfield_Mr" sex="1">
+                        <persName>Edward Chatfield</persName>
+                        <persName>
+                           <forename>Edward</forename>
+                           <surname>Chatfield</surname>
+                        </persName>
+                        <birth when="1800"></birth>
+                        <death when="1839-01-22">
+                           <placeName ref="#London_city">66 Judd Street Brunswick Square, London</placeName>
+                        </death>
+                        <occupation>painter and author</occupation>
+                        <note type="bio" resp="#xjw">Chatfield was a pupil at an early age, by 1816, along with <persName ref="#Bewick_Wm">William Bewick</persName>, of <persName ref="#Haydon">Benjamin Robert Haydon</persName> who was to have an overmastering influence on his life. Under <persName ref="#Haydon">Haydon</persName>'s teaching he went through a full course of practical anatomy. He began his artistic career with some portrait studies. In 1821 he started upon his first ambitious picture, The Death of Moses in Sight of the Promised Land. This was exhibited in January 1823 at the British Institution and was well received by the public, and gained warm commendation by <persName ref="#Haydon">Haydon</persName>. In June 1823 <persName ref="#Haydon">Haydon</persName> was arrested for debt, and his effects sold. Some of his pupils had put their names to bills at his request, and suffered considerable pecuniary loss. Chatfield was among the number, but was fortunately able to provide the amount due (£210), and, though impoverished, did not begrudge <persName ref="#Haydon">Haydon</persName> the loss and remained loyal to his master, whose instruction had always been given gratis. Thrown on his own resources, Chatfield was compelled to supplement his slender income by portrait painting. Among his sitters were several members of the Russell family (the duke of Bedford's family).</note>
+                     </person>
+                     
+                     <person xml:id="Macready_Laetitia" sex="2"> 
+                        <persName>Laetitia Macready</persName>
+                        <persName>
+                           <surname>Macready</surname>
+                           <forename>Laetitia</forename>
+                        </persName>
+                        <note type="bio" resp="#xjw"><persName ref="#Macready_Wm">William Charles Macready</persName>'s sister who live with him and his wife throughout their married life. </note>
+                     </person>
+               
+               <person xml:id="Magnay_C" sex="1">
+                  <persName>Christopher Magnay</persName>
+                  <persName>Lord Mayor of London</persName>
+                  <note resp="#lmw">Lord Mayor of London from 1821 to 1822.</note>
+               </person>
+               
+               <person xml:id="Elford_MrsE" sex="2">
+                  <persName>
+                     <surname type="paternal">Hall</surname>
+                     <surname type="married">Waldron</surname>
+                     <surname type="married">Elford</surname>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <persName>Mrs. Elford</persName>
+                  <note resp="#ebb #ajc #lmw">Elizabeth is the second wife of <persName ref="#Elford_SirWm">Sir William Elford</persName>; they married four years after the death of <persName ref="#Elford_MrsM">Mrs. Mary Elford</persName> on <date when="1821-07-05">July 5, 1821</date>. The ODNB's entry on Sir William Elford incorrectly gives her name as  <persName>Elizabeth Walrond (née Hall)</persName>, as parish records of 1822 accord with the spelling in Mitford's letters, and describe Elizabeth Hall Waldron as the heiress of an estate in Devonshire, formerly married to a Colonel Waldron. Source: <ref target="http://www.british-history.ac.uk/report.aspx?compid=50587">'Parishes: Pancras Week - Plymouth', Magna Britannia: volume 6: Devonshire (1822), pp. 381-408.</ref></note>
+               </person>
+               <!-- update entry -->
+               
+               <person xml:id="Elford_MrsM" sex="2">
+                  <persName>
+                     <surname type="married">Elford</surname>
+                     <surname type="paternal">Davies</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <persName>Mrs. Elford</persName>
+                  <birth when="1753"/>
+                  <death when="1817"/>
+                  <note resp="#ajc #lmw">Mary was the first wife of <persName ref="#Elford_SirWm">Sir William Elford</persName>; they married on <date when="1776-01-20">January 20, 1776.</date> (ODNB)</note>
+               </person>
+               <!-- update entry -->
+               
+               <person xml:id="Elford_SirWm">
+                  <persName>Sir William Elford</persName>
+                  <!--ebb: make sure this is written per standardized editorial guidelines-->
+                  <persName>
+                     <surname>Elford</surname>
+                     <forename>William</forename>
+                     <roleName>Sir</roleName>
+                     <roleName when="1800-26-11">baronet</roleName>
+                  </persName>
+                  <birth when="1749-08">
+                     <placeName>Kingsbridge, Devon</placeName>
+                  </birth>
+                  <death when="1837-11-30">
+                     <placeName>Totnes</placeName>
+                  </death>
+                  <note type="bio" resp="#ebb">According to <persName>L'Estrange</persName>, Elford
+                     was a friend of <persName ref="#Mitford_Geo">Mitford's father</persName>, and
+                     <persName ref="#MRM">Mitford</persName> met him for the first time in the
+                     spring of 1810 when he was nearing the age of 64. "He was a fellow of the Royal
+                     and Linnaean Societies, and recorder of <placeName>Plymouth</placeName>, which
+                     borough he also represented in Parliament for many years. <persName>Mr.
+                        Pitt</persName> had created him a baronet in 1800." [L'Estrange vol. 1 of 3,
+                     pp. 104-105]</note>
+               </person>
+               <!--LMW: update entry -->
+             
+               <person xml:id="Elford_Jon" sex="1">
+                  <persName><forename>Johnathan</forename><surname>Elford</surname></persName>
+                  <persName>Mr. Elford</persName>
+                  <birth when="1776-11-05"/>
+                  <death when="1823-03-11"/>
+                  <note resp="#lmw">Only son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and <persName ref="#Elford_MrsM">Mary Davies Elford</persName>; married <persName ref="#Elford_MrsC">Charlotte Wynne</persName>Charlotte Wynne on <date when="1810-05-10">May 10, 1810</date>. Was briefly a Member of Parliament.</note>
+               </person>
+               
+               <person xml:id="Elford_Grace" sex="2">
+                  <persName><forename>Grace</forename><forename>Chard</forename><surname type="paternal">Elford</surname></persName>
+                  <persName>Miss Elford</persName>
+                  <death when="1856-02-24"/>
+                  <note resp="#lmw">Only daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> and <persName ref="#Elford_MrsM">Mary Davies Elford</persName>; unmarried. Birthdate needs additional research.</note>
+               </person>
+               
+              <person xml:id="Elford_Eliz_da" sex="2">
+               <persName><forename>Elizabeth</forename><surname type="paternal">Elford</surname><surname type="married">Adams</surname></persName>
+               <persName>Miss Elford</persName>
+               <death when="1856-02-24"/>
+                 <note resp="#lmw">Only daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> and <persName ref="#Elford_MrsE">Elizabeth Hall Waldron Elford</persName>. Married General Sir George Pownoll Adams, RCH.</note>
+               </person>
+               
+               <person xml:id="Elford_MrsC" sex="2">
+                  <persName><forename>Charlotte</forename><surname type="paternal">Wynne</surname><surname type="married">Elford</surname></persName>
+                  <persName>Mrs. Elford</persName>
+                  <note resp="#lmw">Married <persName ref="#Elford_Jon">Johnathon Elford</persName> on <date when="1810-05-10">May 10, 1810</date>.<!-- LMW;  birth and death dates need further research. They seem to have had at least one child. She was widowed in 1823. --></note>
+               </person>
+               
+               <person xml:id="Foote_Maria" sex="2">
+                  <persName>Maria Foote</persName>
+                  <persName>
+                     <surname type="married">Stanhope</surname>
+                     <surname type="paternal">Foote</surname>
+                     <forename>Maria</forename>
+                  </persName>
+                  <birth when="1797-07-24">
+                     <placeName>Plymouth</placeName>
+                  </birth>
+                  <death when="1867-12-27">
+                     <placeName ref="#London_city">Whitehall, London</placeName>
+                  </death>
+                  <occupation>actress</occupation>
+                  <note type="bio" resp="#ejb">a well known English theater actress. She was the daughter of <persName ref="#Foote_Samuel">Samuel Foote</persName>. She played Alfonso, the King of Sicily in <title ref="#Julian_MRMplay">Julian</title>.  She performed at <placeName ref="#Drury_Lane_Theatre"> Drury Lane</placeName> from 1814-1825 and then began to perform at <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName> in 1826.</note>
+               </person>
+               
+               <person xml:id="Hanson_MA" sex="2">
+                  <persName><forename>Mary</forename> <forename>Anne</forename> <surname type="paternal">Hanson</surname><surname type="married">Portsmouth</surname></persName><persName>Lady Portsmouth</persName><persName>Countess of Portsmouth</persName><note resp="#lmw">Mary Ann Hanson was the daughter of solicitor <persName ref="#Hanson_John">John Hanson</persName>. She was the second wife of <persName ref="#Portsmouth_JCW">John Charles Walopp, 3rd Earl of Portsmouth</persName>, until their marriage was annulled in <date when="1823">1823</date> on the grounds of the Earl's insanity.</note></person>
+               
+               <person xml:id="Hanson_John" sex="1">
+                  <persName><forename>John</forename><surname>Hanson</surname>.<note resp="#lmw"> <persName ref="#Hanson_John">John Hanson</persName> was solicitor for <persName ref="#Byron">Byron</persName> as well as solicitor and trustee for <persName ref="#Portsmouth_JCW">John Charles Walopp, 3rd Earl of Portsmouth</persName>. In 1814 his daughter <persName ref="#Hanson_MA">Mary Anne</persName> married <persName ref="#Portsmouth_JCW">Lord Portsmouth</persName>; the marriage was later annulled.</note></persName>
+               </person>
+               
+               <person xml:id="Portsmouth_JCW" sex="1">
+                  <persName>John Charles Walopp Portsmouth</persName>
+                  <persName>3rd Earl of Portsmouth</persName>
+                  <persName>Lord Portsmouth</persName>
+                  <persName>Viscount Lymington</persName>
+                  <birth when="1767-12-18"/>
+                  <death when="1853-07-14"/>
+                  <note resp="#lmw">Legally declared insane since <date when="1809">1809</date> in a well-publicized series of court hearings in <date when="1823">1823</date>. After this case, his second marriage to <persName ref="#Hanson_MA">Mary Anne Hanson</persName>, the daughter of his solicitor and trustee, was annulled. They married on <date when="1814-03-07">7 March 1814</date>.</note>
+               </person>
+               
+               <person xml:id="Young_Ed" sex="1">
+                  <persName><forename>Edward</forename><surname>Young</surname></persName>
+                  <birth when="1683-07-03"/>
+                  <death when="1765-04-05"/>
+                  <occupation>literary</occupation>
+               </person>
+            
+               <person xml:id="LeCamus_Antoine" sex="1">
+                  <persName>Antoine Le Camus</persName>
+                  <birth when="1722">1722</birth>
+                  <death when="1772">1772</death>
+                  <occupation>author</occupation>
+               </person>
+               
+               <person xml:id="Hogarth" sex="1">
+                  <persName>William Hogarth</persName>
+                  <persName>
+                     <surname>Hogarth</surname>
+                     <forename>William</forename>
+                  </persName>
+                   <birth when="1697-11-10">
+                     <placeName>London</placeName>
+                  </birth>
+                  <death when="1764-10-26">
+                     <placeName>London</placeName>
+                  </death>
+                  <occupation>artist</occupation>
+                  <note type="bio" resp="#lmw">English painter, printmaker, and caricaturist.</note>
+               </person>
+               
+               <person xml:id="Allan_SrWm" sex="1">
+                  <persName>Sir William Allan
+                     <surname>Allan</surname>
+                     <forename>William</forename>
+                     <roleName>Sir</roleName>
+                  </persName>
+                  <birth when="1878-10-04">
+                     <placeName>Edinburgh Scotland</placeName> 
+                  </birth>
+                  <death when="1850-02-23">
+                     <placeName>Edinburgh Scotland</placeName>
+                  </death>
+                  <occupation>artist</occupation>
+                  <note type="bio" resp="#ajc">Allan was a painter. In 1838 he was appointed president of the Royal Scottish Academy. In 1841 he became the queen's limner in Scotland and was knighted (ODNB). Mitford mentions his painting <title ref="#BrokenFiddle_WA">A Broken Fiddle</title> in her letter to Elford, 1821-11-21 <!--ajc:  I haven't been able to locate this work.  lmw:  me neither.--></note> 
+               </person>
+               
+               <person xml:id="Haydon_Father" sex="1">
+                  <persName>Benjamin Robert Haydon
+                     <surname>Haydon</surname>
+                     <forename>Robert</forename>
+                     <forename>Benjamin</forename>
+                  </persName>
+                  <birth when="1758"></birth>
+                  <death when="1813"></death>
+                  <note type="bio" resp="#ajc">Mr. Haydon was the father of painter <persName ref="#Haydon">Benjamin Robert Haydon</persName>
+                     and was a printer, publisher, and bookseller in Devon (ODNB).</note>
+               </person>
+               
+               <person xml:id="Haydon_Mother" sex="2">
+                  <persName>Mrs. Sarah Haydon
+                     <surname type="paternal">Cobley</surname>
+                     <surname type="married">Haydon</surname>
+                     <forename>Sarah</forename>
+                  </persName>
+                  <death when="1808"></death>
+                  <note type="bio" resp="#ajc">Sarah Haydon was the mother of painter <persName ref="#Haydon">Benjamin Robert Haydon</persName>
+                     (ODNB).</note>
+               </person>
+               
+               <person xml:id="Heber_Rich" sex="1">
+                  <persName>Richard Heber
+                     <surname>Heber</surname>
+                     <forename>Richard</forename>
+                  </persName>
+                  <birth when="1773-01-05">
+                     <placeName>London</placeName>
+                  </birth>
+                  <death when="1833-10-04"></death>
+                  <note type="bio" resp="#ajc">Heber was a book collector</note></person>
+               
+               <person xml:id="Adolphus_JL" sex="1">
+                  <persName>John Leycester Adolphus
+                     <surname>Adolphus</surname>
+                     <forename>John</forename>
+                     <forename>Leycester</forename>
+                     <occupation>barrister</occupation>
+                     <occupation>judge</occupation>
+                     <occupation>author</occupation>
+                  </persName>
+                  <birth when="1795"></birth>
+                  <death when="1862"></death>
+               </person>
+               
+               <person xml:id="Palmer_Mad" sex="2">
+                  <persName>"Right Honourable Lady"</persName><!-- alg: Add this as another persName for xml:id="Palmer_Mad" -->
+               </person>
+               
+               <person xml:id="George" sex="1">
+                  <persName>
+                     <surname/>
+                     <forename>George</forename>
+                  </persName>
+                  <note resp="#alg">Possibly ervant in the Mitford household. More research needed. <!--alg: "George" is referenced in 1819-04-19-MWebb letter as being sent by Mr. Mitford to give his excuses for missing an appointment. I presume this is a servant. LMW:  Could this be the George Matthews, schoolmaster, noted by Needham?--></note>
+               </person>
+               
+               <person xml:id="Frere_JH" sex="1">
+                  <persName>J.H. Frere</persName>
+                  <persName>
+                     <surname>Frere</surname>/>
+                     <forename>J.H.</forename>/>
+                     <forename>John Hookham</forename>
+                  </persName>
+                  <persName>Whistlecraft</persName>
+                  <birth when="1769-05-21">
+                     <placeName>London</placeName>/>
+                  </birth>
+                  <death when="1846-01-07">
+                     <placeName>Pietà Valletta, Malta</placeName>/>
+                  </death>
+                  <occupation>diplomatist</occupation>
+                  <occupation>author</occupation>
+                  <note resp="#alg">John Hookham Frere, diplomat and author, was a founder of the <title ref="#QuarterlyRev_per">Quarterly Review</title> and is known for his humorous poetry and translations of Aristophanes and the poet Theognis. He wrote under the name "Whistlecraft." (Source: ODNB)</note>
+               </person>
+               
+               <person xml:id="Dobbs_Mrs" sex="2">
+                  <persName>Mrs. Dobbs</persName>
+                  <persName>
+                     <surname>Dobbs</surname>
+                     <forename/>
+                  </persName>
+                  <note resp="#alg">An associate of both <persName ref="#MRM">Mitford</persName> and <persName ref="#James_Miss">Miss James</persName>, presumably older than either. Possibly housekeeper to the James sisters. Need further research.</note>
+               </person>
+               
+               <person xml:id="Webb_James" sex="1">
+               <persName>
+                  <surname>Webb</surname>
+                  <forename>James</forename>
+                  <death when="1822-01-11">11 January 1822</death>
+                  <occupation>brewer</occupation>
+                  <placeName>Wokingham</placeName>
+               </persName>
+                  <note resp="#scw #lmw"><p>Prominent brewer in the <placeName ref="#Wokingham_city">Wokingham</placeName>brewing industry, father of <persName ref="#Webb_Eliza">Eliza</persName> and <persName ref="#Webb_Mary_younger">Mary Webb</persName>, and brother of another <persName ref="#Webb_Mary_elder">Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName> suggested that he was the original of the <quote>"gentleman"</quote> in the <title ref="#OV">Our Village</title>sketch <title><quote>"Aunt Martha"</quote></title>. Source: <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>. <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>. </p></note></person>
+               
+               <person xml:id="Webb_Mary_younger" sex="2">
+               <persName>
+                  <surname>Webb</surname>
+                  <forename>Mary</forename>
+                  <bap when="1796-04-15">15 April 1796</bap>
+               </persName>
+                  <note resp="scw"><p>Sister of <persName ref="#Webb_Eliza">Eliza Webb</persName>, daughter of <persName ref="#Webb_James"></persName>, and niece of <persName ref="#Webb_Mary_elder"></persName>. Noted by <persName ref="#Needham_Francis">Needham</persName>, referencing the <title>Berkshire Directory</title>, to be living on <placeName>Broad Street</placeName>.</p></note><!--scw: I have no other info in my notes about where this Broad street is.  LMW:  In Wokingham, presumably?--></person>
+               
+               <person xml:id="Webb_Mary_elder" sex="2">
+               <persName>
+                  <surname>Webb</surname>
+                  <forename>Mary</forename>
+               </persName>
+                  <note resp="#scw"><p>Friend of <persName ref="#MRM">Mitford. </persName>Sister of <persName ref="#Webb_James">James Webb</persName> and aunt of <persName ref="#Webb_Eliza">Eliza</persName> and <persName ref="#Webb_Mary_younger">Mary Webb</persName>. <persName ref="#Needham_Francis">Francis Needham</persName>suggests that she was the basis for the character of <persName>Aunt Martha</persName> in the <title ref="#OV">Our Village</title>story of that title. Source: <persName ref="#Needham_Francis">Francis Needham</persName>, Letter to <persName ref="#Roberts_Wm">William Roberts</persName>, <date when="1953-06-16">16 June 1953</date>. <persName ref="#Needham_Francis">Needham Papers</persName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>. </p></note></person>
+               
+               <person xml:id="Frankland_Mrs" sex="2">
+                  <persName>Mrs. Frankland</persName>
+                  <persName>
+                     <surname>Frankland</surname>
+                     <forename/>
+                  </persName>
+                  <note resp="#alg">A friend of <persName xml:id="Russell_M">Mrs. Mitford</persName>. Needs further research. </note><!-- alg: I don't know who this is, and I don't know how to go about finding her. If this is the same person as Eleanor Franklin, then eliminate this new si tag and retag above for "Franklin_Eleanor". LMW:  Not the same. This one definitely spelled Frankland. -->
+               </person>
+               
+               <person xml:id="Steele_Richard" sex="1">
+                  <persName>Sir Richard Steele</persName>
+                  <persName>
+                     <surname>Steele</surname>
+                     <forename>Richard</forename>
+                  </persName>
+                  <birth when="1672-03-12">
+                     <placeName>Dublin, Ireland</placeName>/>
+                  </birth>
+                  <death when="1729-09-01">
+                     <placeName>Carmarthen, Carmarthenshire, Wales</placeName>/>
+                  </death>
+                  <occupation>essayist</occupation>
+                  <occupation>playwright</occupation>
+                  <occupation>politician</occupation>
+                  <note resp="#alg">English playwright and essayist who founded the journal <title ref="#Tatler">The Tatler</title> and later, with <persName ref="#Addison_Joseph">Joseph Addison</persName>, the journals <title ref="#Spectator">The Spectator</title> and <title>The Guardian</title>.</note>
+               </person>
+               
+               <person xml:id="Addison_Joseph" sex="1">
+                  <persName>Joseph Addison</persName>
+                  <persName>
+                     <surname>Addison</surname>
+                     <forename>Joseph</forename>
+                  </persName>
+                  <birth when="1672-05-01">
+                     <placeName>Millstone, Wiltshire</placeName>/>
+                  </birth>
+                  <death when="1719-06-17">
+                     <placeName>Holland House, London</placeName>/>
+                  </death>
+                  <occupation>writer</occupation>
+                  <occupation>politician</occupation>
+                  <note resp="#alg">English politician and writer who, with his friend <persName ref="#Steele_Richard">Sir Richard Steele</persName>, edited the journal <title ref="#Spectator">The Spectator</title>.</note>
+               </person>
+               
+               <person xml:id="Vanbrugh" sex="1">
+                  <persName>Sir John Vanbrugh</persName>
+                  <persName>
+                     <surname>Vanbrugh</surname>/>
+                     <forename>John</forename>/>
+                  </persName>
+                  <birth when="1664-01-24">
+                     <placeName>St Nicholas Acons, London</placeName>
+                  </birth>
+                  <death when="1726-03-26">
+                     <placeName>Whitehall house, London</placeName>
+                  </death>
+                  <occupation>playwright</occupation>
+                  <occupation>architect</occupation>
+                  <note resp="#alg">Sir John Vanbrugh was a noted architect and successful playwright who wrote original comedies and adapted others. His <title ref="#City_Wives_play">The City Wives' Confederacy</title> was first staged in 1705. (Source: ODNB)</note>
+               </person>
+               
+               <person xml:id="Bennett_GJ" sex="1">
+                  <persName>
+                     <surname>Bennett</surname>
+                     <forename>George</forename>
+                     <forename>John</forename></persName>
+                  <occupation>actor</occupation>
+               </person>
+               
+               <person xml:id="Bulley_F" sex="1">
+                  <persName>
+                     <surname>Bulley</surname>
+                     <forename>Frederick</forename></persName>
+                  <birth when="1818-08-16"/>
+                  <death when="1885-09-03"/>
+                  <occupation>scholar</occupation>
+                  <note resp="#kdc">President of <placeName ref="#Magdalen_Coll">Magdalen College</placeName>, 
+                     <placeName ref="#Oxford_Univ">Oxford University</placeName></note>
+               </person>
+               
+               <person xml:id="Harness_Mary" sex="2">
+                  <persName>
+                     <surname>Harness</surname>
+                     <forename>Mary</forename></persName>
+                  <note type="bio" resp="#kdc">Sister of <persName ref="#Harness_Wm">William
+                     Harness</persName>; she lived with her brother.</note>
+               </person>
+               
+               <person xml:id="Lane_Wm" sex="1">
+                  <persName>William Lane
+                     <surname>Lane</surname>
+                     <forename>William</forename></persName>
+                  <birth notBefore="1745" notAfter="1746"/>
+                  <death when="1814-01-29"/>
+                  <occupation>Publisher</occupation>
+                  <note resp="#kdc">William Lane pioneered the circulating library, and was
+                     the founder of the <orgName ref="#Minerva_Press">Minerva Press</orgName>, a
+                     major publisher of Gothic novels and other popular fiction.</note>
+               </person>
+               
+               <person xml:id="Richardson_H" sex ="1">
+                  <person><forename>Henry</forename><forename>Kemp</forename><surname>Richardson</surname></person>
+                  <note resp="#kdc #lmw"><persName ref="#coles">Coles</persName> says this is Henry Kemp Richardson of <placeName ref="#Reading_city">Reading</placeName>, see p.471, note 5.  One of the 1827 sonnets is address to a Henry Richardson. Needs further research.</note>
+               </person>
+             
+                <person xml:id="Robinson_H" sex="1">
+                  <persName>
+                     <surname>Robinson</surname>
+                     <forename>Henry</forename></persName>
+                  <note resp="#kdc #lmw"><persName ref="#coles">Coles</persName> says <persName ref="#MRM">Mitford</persName> is probably correct that this is Henry Crabbe Robinson, although the record only shows that the attorney was Mr. Robinson. See p. 525, note 13.  Needs additional research.</note>
+               </person>
+               
+               <person xml:id="Vines_Mr" sex="1">
+                  <persName>Mr. Vines</persName>
+                  <note resp="#kdc #lmw"><persName ref="#coles">Coles</persName> says this is the son of Edward Vines, possibly named Jacob, see p. 524, note 9. Needs additional research.</note>
+               </person>
+ 
+               <person xml:id="Wilson_John" sex="1"> <note resp="#lmw">John Wilson wrote under the pseudonym <persName ref="#North_Christopher">Christopher North</persName> for <title ref="#Blackwoods">Blackwood's Magazine</title>.</note>
+                  </person>
+                  
+                  <person xml:id="Swan_Mr" sex="1"><persName>Mr. Swan</persName><note resp="#lmw">"On the 17th, convicted of bribery at an election for the borough of Penrhyn, in Cornwall, was sentenced to be confined in the King's Bench Prison for one year." See Edinburgh Magazine 5 (July-Dec. 1819): 568.</note></person>
+                  
+               <person xml:id="Phillips_Chas" sex="1">
+                     <persName><forename>Charles</forename><surname>Phillips</surname></persName>
+                     <birth when="1787">
+                        <placeName>Sligo, Ireland</placeName>
+                     </birth>
+                     <death when="1859-02-01"><placeName ref="#London_city">London</placeName></death>
+                     <occupation>literary</occupation>
+                     <occupation>barrister</occupation>
+                     <occupation>judge</occupation>
+                  </person> 
+                  
+                  
+               <person xml:id="Maturin_Charles" sex="1">
+                     <persName><forename>Charles</forename><surname>Maturin</surname></persName>
+                     <birth when="1782-09-25"/>
+                     <death when="1824-10-30"/>
+                     <occupation>clergy</occupation>
+                     <occupation>literary</occupation>
+                  </person> 
+                  
+                  <person xml:id="Dickinson_Daughter" sex="2">
+                     <!--Already has xml:id; add this identification of first name to existing entry-->
+                     <persName>Dickinson girl</persName>
+                     <note type="bio" resp="#lmw"> Mr. and Mrs. Charles Dickinson's young daughter Frances</note>
+                  </person>
+                  
+                  <person xml:id="Broughton_Betsy" sex="2">
+                     <persName>Betsy Broughton</persName>
+                     <note resp="#lmw">Local beauty, engaged to <persName ref="#Hawley_Mr">Mr. Hawley</persName> through <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName>'s matchmaking.</note>
+                  </person>
+                  
+                  <person xml:id="Hawley_Mr" sex="1">
+                     <persName>Mr. Hawley</persName>
+                     <note resp="#lmw">Descendant of <persName ref="#Hawley_GeneralSr">General Hawley</persName>, engaged to <persName ref="#Broughton_Betsy">Betsy Broughton</persName> through <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName>'s matchmaking.</note>
+                  </person>
+                  
+                  <person xml:id= "Hawley_GeneralSr" sex="1">
+                     <persName>General Hawley</persName><note resp="#lmw">Possibly Lieutenant General Henry Hawley (c. 1679-24 March 1759), British army officer who served during the War of Spanish Succession as well as the Jacobite Rebellion.</note>
+                  </person>
+                  
+                  <person xml:id="Queen_Anne" sex="2"><persName>Queen Anne</persName>
+                     <birth when="1655-02-06">6 Feb. 1665</birth>
+                     <death when="1714-08-01">1 Aug. 1714</death>
+                     <note resp="#lmw">Queen of England, Scotland, and Ireland on 8 March 1702. In 1707, after the Acts of Union uniting England and Scotland into Great Britain, she reigned as Queen of Great Britain and Ireland.</note></person>
+           </listPerson>
+         </div>
+          
+      </body>
+  </text>
+</TEI>

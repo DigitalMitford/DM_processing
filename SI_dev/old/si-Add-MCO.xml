@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+               <editor><persName type="hist" ref="#mco">Molly C. O'Donnell</persName></editor>
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+  <text>
+      <body>
+         
+         <div type="historical_people">
+            <listPerson type="hist">
+               <person xml:id="LeCamus_Antoine" sex="1">
+                  <persName>Antoine Le Camus</persName>
+                  <birth when="1722">1722</birth>
+                  <death when="1772">1772</death>
+                  <occupation>author</occupation>
+               </person>
+               
+               <person xml:id="Hogarth" sex="1">
+                  <persName>William Hogarth</persName>
+                  <persName>
+                     <surname>Hogarth</surname>
+                     <forename>William</forename>
+                  </persName>
+                     <birth when="1697-11-10">
+                     <placeName>London</placeName>
+                  </birth>
+                  <death when="1764-10-26">
+                  <placeName>London</placeName>
+                  </death>
+                  <occupation>artist</occupation>
+                  <note type="bio" resp="#lmw">English painter, printmaker, and caricaturist.</note>
+               </person>
+               
+               <person xml:id="MRM_maledog_pet"><persName></persName><note resp="#lmw">An unnamed male dog owned by Mitford in 1819 (a different dog from the female greyhound Miranda.</note></person>
+                  
+               <person xml:id="Miranda_pet"><persName>Miranda</persName><note resp="#lmw">A greyhound owned by <persName ref="#MRM">Mitford</persName>, described by her as "blue all sprinkled with little white spots just like a starry night" in her <date when="1819-02-13">February 13, 1819</date> letter to <persName ref="#Haydon"></persName>Haydon.<!-- lmw:  add reference to the letter itself. --></note></person>
+               
+               <person xml:id="George Spencer-Churchill"><persName><forename>George</forename><surname>Spencer-Churchill</surname></persName></person>
+               <note>6th Duke of Marlborough, 27-12-1793 to 1-7-1857</note>
+               
+               <person xml:id="Charles Spencer-Churchill"><persName><forename>Charles</forename><surname>Spencer-Churchill</surname></persName></person><note>9th Duke of Malborough, son of George</note>
+               
+               <person xml:id="Lady Morgan"><persName><forename>Sydney</forename><surname>Owenson</surname></persName></person>
+               
+               <person xml:id="John Aubrey"><persName><forename>John</forename><surname>Aubrey</surname></persName></person><Note resp="#wnb">Author of <bibl>Brief Lives, a collection of biographies that is famous for its comment on the unofficial sides of British subjects, such as Francis Bacon, Robert Boyle, Thomas Hobbes, William Shakespeare, and more</bibl></Note>
+               
+               <person xml:id="Susan Ferrier"><persName><forename>Susan</forename><surname>Ferrier</surname></persName><Note resp="#wnb"> Scottish novelist, Author of <bibl>Marriage</bibl></Note></person>
+            </listPerson>
+            
+            </div>
+         
+         <div type="fictional_and_archetypal">
+         <listPerson type="fict"> 
+            <person xml:id="Miss Dexter"><persName><forename>Miss</forename><surname>Dexter</surname></persName></person> 
+            
+            <person xml:id="Miss Crowley"><persName><surname>Miss</surname><forename>Crowley</forename></persName></person><note resp="#wnb">her last name is most likey spelled "Crowlay"</note>
+            
+            <person xml:id="Bedridden Hossan"><persName><surname>Bedriddin></surname><forename>Hossan</forename></persName></person><note resp="#wnb">reference to the story <title>Noureddin' and his Son</title> from the <title>Arabian Nights; son of Noureddin; www.wollamshram.ca/1001/Payne/tnon/p01_tale005.htm</title></note>
+            
+            <person xml:id="Mahound"><persName>Mahound</persName></person><note resp="#wnb">another name for <persName>Muhammad</persName> in used to villify him; usually a generic pagan god worshipped by theives and villains; sometimes identified with Satan.</note>
+            
+            <person xml:id="Teragante"><persName>Termagant</persName></person><note resp="#wnb">Name of unknown origins; Also spelled Termagunte and known as the god of the Saracens, thought be early chrisitans to be among the Islamic Gods; originally used in medieval english to portray an overly violent and turbulent character; used today to describe a quarrelsome woman.</note>
+            
+            <person xml:id="Master Fuller"><persName><surname>Master</surname><forename>Fuller</forename></persName></person>
+           </listPerson>
+         </div>
+         
+         <div type="organizations">
+            <listOrg>
+               <org xml:id="House_Lords">
+                  <orgName>House of Lords</orgName>
+                  <note resp="#lmw">. In Mitford's time, the "upper" house of the bicameral Parliament of Great Britain.</note>
+               </org>
+               
+               <org xml:id="Clarendon Press"></org>
+            </listOrg>
+         </div>
+            
+         <div type="places">
+            <listPlace>
+               <place xml:id="Basingstoke">
+                  <placeName type="town">Basingstoke</placeName></place>
+         <note resp="#lmw">Town in <placeName ref="Hampshire_county">Hampshire</placeName>, in south central England. It lies near the source of the River Loddon.</note>
+             
+                <place xml:id="Stratford_upon_Avon_city"><placeName>Stratford upon Avon</placeName></place>
+                     
+                <place xml:id="Ilchester_city"><placeName>Ilchester</placeName></place>
+ 
+                <place xml:id="Hampshire_county"><placeName>Hampshire</placeName></place>
+            </listPlace>
+           </div>
+         
+         <div type="publications">
+            <listBibl>
+               <bibl xml:id="Medecine_esprit">
+                  <title>La Médecine de l'esprit</title>
+                  <author ref="#LeCamus_Antoine">Antoine Le Camus</author>
+                  <pubPlace>Paris</pubPlace>
+                  <date when="1753"/>
+               </bibl>
+               
+               <bibl>
+                  <title type="poem" xml:id="Beauty_MRM">Beauty</title></bibl> from <title ref="#Poems_1st_ed_MRM">Poems, 1st edition</title> by <author ref="#MRM">Mary Russell Mitford</author> <!-- lmw:  add page numbers from the original. -->
+                  
+               <bibl>
+               <title type="poem" xml:id="Sun_Set_MRM">Sun-Set</title></bibl> from <title ref="#Poems_1st_ed_MRM">Poems, 1st edition</title> by <author ref="#MRM">Mary Russell Mitford</author><!-- lmw:  add page numbers from the original. -->
+                 
+               <bibl>
+               <title type="poem" xml:id="VoiceofPraise_MRM">Voice of Praise</title></bibl> from <title ref="#Poems_1st_ed_MRM">Poems, 1st edition</title> by <author ref="#MRM">Mary Russell Mitford</author><!-- lmw:  add page numbers from the original. -->
+            </listBibl>
+         </div>
+         
+      <div type="art"><!--for graphical works of art, or works that aren't published in print form. Differentiate lists as needed.-->
+            <list type="song">
+               <item/>
+               <figure xml:id="Te_Deum" type="hymn">
+               <bibl>
+                  <title>Te Deum</title>
+                  <note resp="#lmw">"Te Deum, also sometimes called the Ambrosian Hymn because if its association with St. Ambrose, is a traditional hymn of joy and thanksgiving." [Source: www.preces-latinae.org/thesaurus/Trinitas/TeDeum.html.]</note></bibl>
+               </figure>
+            </list>
+         </div>
+       </body>
+  </text>
+</TEI>

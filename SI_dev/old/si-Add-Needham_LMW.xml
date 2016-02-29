@@ -60,7 +60,7 @@
     
    
          <div type="historical_people" org="uniform" sample="complete">
-            <listPerson>
+            <listPerson sortKey="histPersons">
       <person xml:id="Annesley_Francis" sex="1">
          <persName>
                 <surname>Annesley</surname>
@@ -397,7 +397,7 @@
              </person>   
           </listPerson>
           
-          <listPerson type="fict">
+          <listPerson sortKey="fictPersons">
              <person xml:id="JackRapley">
                 <persName>
                    <surname>Rapley</surname>
@@ -436,7 +436,7 @@
         </div>
          
          <div type="places">
-            <listPlace type="hist">
+            <listPlace sortKey="histPlaces">
                <place xml:id="St_Lawrence_Church">
                <placeName>St. Lawrence Church</placeName>
                <note resp="#scw">Ancient church in <placeName ref="#Reading_city">Reading</placeName>. During <persName ref="#MRM">Mitford</persName>'s time, it was the parish church. The spelling varies between <q>"Lawrence"</q> and <q>"Laurence."</q>
@@ -452,7 +452,7 @@
          
          
          <div type="publications">
-            <listBibl type="ref_19thc">
+            <listBibl sortKey="ref_19thc">
                <bibl xml:id="History_Municipal_Church_St_Lawrence">
                <title>A History of the Municipal Church of St. Lawrence, Reading</title>       
                <author>Charles Kerry</author>
@@ -465,7 +465,7 @@
                </bibl> 
             </listBibl>
             
-            <listBibl type="per_19thc">
+            <listBibl sortKey="per_19thc">
                <bibl xml:id="Panoramic_Misc">
                <title>Panoramic Miscellany, and Review of Literature, Science, Arts, Inventions and Occurrences</title>
                <editor ref="#Thelwall_John">John Thelwall</editor>

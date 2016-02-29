@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+                <editor ref="#kab">Karen Bourrier</editor>
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName ref="#kab">Karen Bourrier</persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+         <div>
+            <listPerson type="hist">
+               <person xml:id="Rivers_Lord" sex="1">
+                  <persName>
+                     <surname>Pitt-Rivers</surname>
+                     <forename>Horace</forename>
+                     <forename>William</forename>
+                     <roleName>Lord</roleName>
+                  </persName>
+                  <birth when="1777"/>
+                  <death when="1831"/>
+                  <note resp="#mco">Horace William Pitt-Rivers, 3rd Baron Rivers, was an aristocrat whose family's estate was at one time at <placeName>Stratfieldsaye, Hampshire</placeName>, roughly five miles from <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>. ODNB.</note>
+               </person>
+               <person xml:id="Bewick_Wm" sex="1">
+                  <persName>
+                     <surname>Bewick</surname>
+                     <forename>William</forename>
+                  </persName>
+                  <birth when="1795"/>
+                  <death when="1866"/>
+                  <note resp="#kab">William Bewick was a portrait and history painter. He studied with <persName ref="#MRM">Mary Russell Mitford</persName>'s close friend, the history painter <persName ref="#Haydon">Benjamin Robert Haydon</persName>, for three years beginning in <date when="1815">1815</date>. ODNB.</note>
+               </person>
+            </listPerson>  
+            <listPlace> 
+               <place xml:id="StratfordUponAvon">
+                  <placeName>Stratford-Upon-Avon</placeName>
+                  <note resp="#mco">Stratford-Upon-Avon is a market town in south Warwickshire, England. It is best known the birthplace of <persName ref="#Shakespeare">William Shakespeare</persName>.</note></place>
+            </listPlace>
+            <listPlace> 
+               <place xml:id="Northumberland">
+                  <placeName>Northumberland</placeName>
+                  <note resp="#mco">Northumberland is the northernmost county of England.</note></place>
+            </listPlace>
+            <listOrg>
+               <org xml:id="Reading_Coach">
+                  <orgName>Reading Coach</orgName>
+                  <note resp="#kab">Before the advent of the first <placeName ref="#London_city">London</placeName> railway in <date when="1836">1836</date>, stagecoaches such as the Reading Coach were the main form of public transportation for long-distance travel. These four-wheeled enclosed carriages made frequent stops to pick up and drop off passengers, and to change horses.</note>
+               </org>
+            </listOrg>
+         </div>
+      </body>
+  </text>
+</TEI>
