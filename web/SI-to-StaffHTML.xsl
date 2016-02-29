@@ -9,7 +9,7 @@
     
     <xsl:output method="xml" encoding="utf-8" indent="yes"
         doctype-system="about:legacy-compat"/>
-    
+   
     
     <xsl:template match="/">
         <html>
@@ -49,7 +49,7 @@
                         <div id="editors">
                         <h3>Editors:</h3>
                         
-                            <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]">
+                            <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[not(matches(., 'Consult'))][matches(., 'Editor')]]">
                                 <xsl:sort select=".//surname"/>
                             </xsl:apply-templates>   
                             
@@ -61,7 +61,7 @@
 
                            
                                 
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Data')]]">
+                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[matches(., 'Data')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
@@ -71,7 +71,7 @@
                             <h3>Student Assistants</h3>
                            
                                 
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Assistant')]]">
+                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[matches(., 'Assistant')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
@@ -79,17 +79,26 @@
                             
                             <h3>Advisory Board</h3>
                            
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[matches(., 'Advisory')]]">
+                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[matches(., 'Advisory')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
                             
                         <h3>Consultants</h3>
                             
-                                <xsl:apply-templates select="//listPerson[@type='Mitford_Team']/person[.//roleName[not(matches(., 'Data'))][matches(., 'Consult')]]">
+                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[not(matches(., 'Data'))][matches(., 'Consult')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
-                                
+                            
+                            <h4>Past helpers with the project</h4>
+                            <xsl:variable name="assistantsPast" select="//listPerson[@sortKey='Past_Editors']/person[.//roleName[matches(., 'Assistant')]]"/>
+                             <xsl:text>Thanks to the following students who have helped us with this project in the past: </xsl:text> <!--<xsl:value-of select="concat($assistantsPast//forename, ' ', $assistantsPast//surname)"/>-->
+                         <xsl:for-each select="$assistantsPast">
+                            <xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
+                             <xsl:text>. </xsl:text>
+                            
+                         </xsl:for-each>
+                       
                             
                         </div>
             
@@ -100,7 +109,7 @@
         </html>
     </xsl:template>
     
-    <xsl:template match="listPerson[@type='Mitford_Team']/person">
+    <xsl:template match="listPerson[@sortKey='Mitford_Team']/person">
               
      <span class="entry">  <span class="head"><xsl:choose><xsl:when test="persName/ptr">
              <a href="{persName/ptr/@target}"><xsl:apply-templates select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
