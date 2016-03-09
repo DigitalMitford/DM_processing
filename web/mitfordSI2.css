@@ -1,0 +1,152 @@
+html{
+    background-color: #FFFAE6; 
+;
+   
+    color: #580000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
+}
+
+body{
+   /*background-color: #BBD6F1;*/ 
+   
+    text-align:left;
+    width:100%;
+   
+/*padding: 10px 10px 40px 10px;*/
+border-radius: 10px;
+}
+div#images img{
+
+width:352px;
+display:inline-block
+}
+div#menubar{
+   
+   background-color: #FFEBC2;
+    text-align:left;
+    width:100%;
+    margin-left: auto;
+margin-right:auto;
+padding: 5px 5px 5px 5px;
+border-radius: 5px;
+border-radius: 5px;
+   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
+h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
+h2 {color:#330000; display:block; font-size: 1.5em; text-align:center
+
+}
+
+div#container{
+width: 100%; 
+display:inline-block
+}
+
+div#lists{
+width: 25%; float:left    
+}
+
+div#names{
+width:25%; float:left;
+height:350px;
+overflow-y:scroll
+}
+
+div#entries{
+width:50%; float:left    
+}
+
+
+h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
+}
+
+h2 {color:#00005C; display:block; text-align:left; font-size:18px;}
+h3 {color:#00005C; display:block; text-indent:3em; text-align:left; font-size:16px;
+}
+
+/*img{
+border-radius:10px;
+}*/
+
+
+a{
+color: #2929A3;
+text-decoration:none;}
+a:hover{
+text-decoration:underline;}
+
+
+
+
+span.anchor {
+color:blue;
+ text-decoration:underline;   
+}
+span.anchor span.note {
+ position:absolute;
+    color:black;
+    text-decoration:none;
+    
+    background:white;
+    border:solid blue 1px;
+    width:350px;
+   display:none;
+    }
+
+/*section#hist_persons {display:none}
+section#hist_persons.on {display:inline}
+
+section#histOrgs {display:none}
+section#histOrgs.on {display:inline}
+
+section#histPlaces {display:none}
+section#histPlaces.on {display:inline}
+
+section#events {display:none}
+section#events.on {display:inline}
+
+section#plants {display:none}
+section#plants.on {display:inline}
+
+section#fict_chars {display:none}
+section#fict_chars.on {display:inline}
+
+section#fictOrgs {display:none}
+section#fictOrgs.on {display:inline}
+
+section#archetypes {display:none}
+section#archetypes.on {display:inline}
+
+section#fictPlaces {display:none}
+section#fictPlaces.on {display:inline}
+
+section#artWorks {display:none}
+section#artWorks.on {display:inline}
+
+section#refWorks {display:none}
+section#refWorks.on {display:inline}
+
+section#periodical {display:none}
+section#periodical.on {display:inline}
+
+section#litWorks {display:none}
+section#litWorks.on {display:inline}
+
+section#currSchol {display:none}
+section#currSchol.on {display:inline}
+
+section#archives {display:none}
+section#archives.on {display:inline}
+
+section#pastEditors {display:none}
+section#pastEditors.on {display:inline}
+
+section#Mitford_Team {display:none}
+section#Mitford_Team.on {display:inline}
+*/
+

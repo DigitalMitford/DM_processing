@@ -34,22 +34,43 @@ border-radius: 5px;
    color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
 h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
 h2 {color:#330000; display:block; font-size: 1.5em; text-align:center}
-h3 {color:#330000; display:block; text-align:center
+h3 {color:#A04747; display:block; text-align:left; font-size:1.1em;
 }
+p.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+    
+    p.boilerplate img {position: relative; top:3px; right: -2px }
 
 div#container{
 width: 90%; 
 display:inline-block
 }
+div#menubar{
+   
+   background-color: #FFEBC2;
+    text-align:left;
+    width:15%;
+   float:right;
+padding: 10px;
+border-radius: 5px;
+border-radius: 5px;
+   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   
+   position:fixed; 
+   right:1%
+  }
 
 div#letterHead{
 display:block;
 overflow-y:auto;
 width: 30%;
 height:70%;
-
+position:fixed;
 font-size: .75em;   
- position:fixed;  
+
 }
 
  div#fieldset
@@ -68,23 +89,24 @@ white-space:normal; font-size:.9em}
 
 div#floatright{
 float:right;
-width: 60%;
+width: 45%;
 margin-left: 75px;
-margin-right:auto;
+margin-right:20%;
 padding: 10px 5px 50px 20px;    
-    
+display: inline-block    
 }
 
-/*
+
 div#letter{
-position:absolute;
+
     margin: auto;
     display:inline-block;
     vertical-align:top;
-    overflow-y:scroll;
+  
 }
-*/
 
+/*ebb: Note: two forms: old form from Mitford Letter Transform before 2014-12-4 was 
+<div id="closer">, but we sometimes have multiple TEI closer elements separated by a postscript element that's not allowed inside closer, so we really need <div class="closer">. I'm keeping both rules until we batch transform. */
 div#closer{text-align:right;}
 h1 {
 color:#A04747;
@@ -92,11 +114,19 @@ letter-spacing:3px;
 display:block;
 text-align:center;
 font-size:38px}
+
+div.closer{text-align:right;}
+h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+
 h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
 }
 
-h3 {color:#00005C; display:block; text-indent:3em; text-align:left; font-size:16px;
-}
+
 
 /*img{
 border-radius:10px;
@@ -177,15 +207,17 @@ color:blue;
 }
 
 span.si{
-position:absolute;
+position: absolute;
+right:15%;
 color: #000041;
 text-decoration:none;
 font-size: .75em;
+text-align:left;
 font-weight: normal;
 background: #CCE0EB;
 border:solid #440029 2px;
 width:300px;
-height:100px;
+height:auto;
 padding:5px;
 overflow-y:scroll;
 z-index: 3;
@@ -194,14 +226,16 @@ display:none;
 
 span.anchor span.note {
  position:absolute;
+right:12%;
     color:black;
     line-height:normal;
     text-decoration:none;
     font-size: .75em;
+    text-align:left;
     background:white;
     border:solid blue 1px;
     width:350px;
-    height:100px;
+    height:auto;
     padding:5px;
     overflow-y:scroll;
    display:none;

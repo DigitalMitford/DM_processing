@@ -1,0 +1,150 @@
+html{
+    background-color: #FFFAE6; 
+;
+   
+    color: #580000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
+}
+
+body{
+   /*background-color: #BBD6F1;*/ 
+   
+    text-align:left;
+    width:100%;
+   
+/*padding: 10px 10px 40px 10px;*/
+border-radius: 10px;
+}
+div#images img{
+
+width:352px;
+display:inline-block
+}
+div#menubar{
+   
+   background-color: #FFEBC2;
+    text-align:left;
+    width:15%;
+   float:right;
+padding: 10px;
+border-radius: 5px;
+border-radius: 5px;
+   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   
+   position:fixed; 
+   right:1%
+  }
+   
+   
+
+
+div#container{
+width: 90%; 
+display:inline-block
+}
+
+
+div#content{
+width: 85%;
+display:inline-block;
+padding:15px;
+}
+div#content img {width:100%}
+
+div.graph {width: 100%}
+
+div.graph img {width:100%}
+
+div.feature{
+    width:50%;
+    display:inline-block;
+    margin-left:25%;
+    margin-right:auto;
+    padding:5px
+}
+/*div#images{
+float:left;
+
+width: 30%;
+    
+ }   */
+/*
+div#floatright{
+float:left;
+width: 60%;
+margin-left: 75px;
+margin-right:auto;
+padding: 10px 5px 50px 20px;    
+    
+}*/
+
+p.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+    
+    p.boilerplate img {position: relative; top:3px; right: -2px }
+    
+    p {padding:0px 20px 0px 20px;}
+    
+    span.iframe {margin-left: 30%; margin-right: 30%}
+
+div#twitter{
+margin-left: 75px;
+margin-right:auto;
+padding: 10px 5px 5px 500px;    
+    
+}
+span.smaller
+{font-size:smaller}
+
+
+h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+/*h2 {color:#00005C; font-size:2em; padding:0; display:block; text-align:center; 
+}*/
+h2 {color:#330000; display:block; font-size: 2em; text-align:center}
+
+
+h3 {color:#A04747; display:block; text-align:left; font-size:1.1em;
+}
+
+/*img{
+border-radius:10px;
+}*/
+
+
+a{
+color: #2929A3;
+text-decoration:none;}
+a:hover{
+text-decoration:underline;}
+
+
+
+
+span.anchor {
+color:blue;
+ text-decoration:underline;   
+}
+span.anchor span.note {
+ position:absolute;
+    color:black;
+    text-decoration:none;
+    
+    background:white;
+    border:solid blue 1px;
+    width:350px;
+   display:none;
+   text-align:left;
+    }
+ 
+        
+/*span.anchor span.note:hover span, span.anchor span.note:active span {
+    display:inline;
+}*/
