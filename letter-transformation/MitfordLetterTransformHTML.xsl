@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
+    xmlns="http://www.w3.org/1999/xhtml"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-    <xsl:output method="xml" encoding="utf-8" indent="yes"/>
-    <xsl:strip-space elements="*"/>
+    <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
+    <!--<xsl:strip-space elements="*"/>-->
     
    
-    <xsl:variable name="si" select="document('http://mitford.pitt.edu/si.xml')" as="document-node()+"/>
+    <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -16,7 +17,8 @@
                 <meta name="keywords"
                     content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, TEI, Text Encoding Initiative, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
                 <link rel="stylesheet" type="text/css" href="mitfordletter.css"/>
-                <script type="text/javascript" src="MRMLetters.js" xml:space="preserve">...</script>
+                <!--<script type="text/javascript" src="MRMLetters.js" xml:space="preserve">...</script>-->
+                <script type="text/javascript" src="MRMLetters.js">/**/</script>
                 
 
 
