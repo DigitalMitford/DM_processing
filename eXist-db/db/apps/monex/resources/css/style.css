@@ -1,0 +1,75 @@
+/* Application styles could go here */
+.profiling .nav {
+    margin-top: 10px;
+}
+
+body > .header .logo {
+    /* background-color: #FFFFFF; */
+    text-align: left;
+}
+
+#console tr>td:nth-child(1) {
+    width: 10%;
+}
+
+#console tr>td:nth-child(2) {
+    width: 10%;
+}
+
+#console tr>td:nth-child(3) {
+    width: 10%;
+}
+
+#console tr>td:nth-child(4), #console tr>th:nth-child(4) {
+    width: 65%;
+}
+
+#console tr>td:nth-child(5), #console tr>th:nth-child(5) {
+    width: 5%;
+}
+
+#console .source {
+    cursor: pointer;
+}
+
+#visualizer .node {
+    border: solid 1px Ghostwhite;
+    font: 10px;
+    line-height: 16px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 2px;
+    color:Ghostwhite;
+}
+
+.sidebar .powered-by img {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .svg .sidebar .powered-by img {
+        position: fixed;
+        display: block;
+        bottom: 10px;
+        width: 120px;
+        left: 15px;
+        margin: 0 auto;
+    }
+}
+
+.sidebar .sidebar-menu .treeview-menu {
+    display: block;
+}
+
+.sidebar .sidebar-menu .treeview-menu li {
+    padding-left: 10px;
+}
+
+.skin-black .sidebar > .sidebar-menu > li > .treeview-menu {
+    background: inherit;
+}
+
+.treeview-menu .active {
+    color: #f6f6f6;
+    background: #444;
+}

@@ -1,0 +1,75 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/monex" version="1" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:33.854-05:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="visualizer.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.885-05:00" modified="2015-10-23T17:48:33.885-05:00" filename="visualizer.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.042-05:00" modified="2015-10-23T17:48:34.042-05:00" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.854-05:00" modified="2015-10-23T17:48:33.854-05:00" filename="collection.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.854-05:00" modified="2015-10-23T17:48:33.854-05:00" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="console.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.854-05:00" modified="2015-10-23T17:48:33.854-05:00" filename="console.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:33.854-05:00" modified="2015-10-23T17:48:33.854-05:00" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.854-05:00" modified="2015-10-23T17:48:33.854-05:00" filename="error-page.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="exist.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.854-05:00" modified="2015-10-23T17:48:33.854-05:00" filename="exist.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="index-keys.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="index-keys.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="index.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="indexes.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="indexes.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="instances.xml" skip="no" owner="admin" group="dba" mode="660" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="instances.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="login.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="login.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="monex.iml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="monex.iml" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="notifications.xml" skip="no" owner="admin" group="dba" mode="660" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="notifications.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="post-install.xql" skip="no" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:33.87-05:00" modified="2015-10-23T17:48:33.87-05:00" filename="post-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:33.885-05:00" modified="2015-10-23T17:48:33.885-05:00" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="profiling.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.885-05:00" modified="2015-10-23T17:48:33.885-05:00" filename="profiling.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="Readme.md" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.885-05:00" modified="2015-10-23T17:48:33.885-05:00" filename="Readme.md" mimetype="text/x-markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="remotes.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:33.885-05:00" modified="2015-10-23T17:48:33.885-05:00" filename="remotes.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="resources" filename="resources"/>
+    <subcollection name="data" filename="data"/>
+    <subcollection name="content" filename="content"/>
+    <subcollection name=".exist" filename=".exist"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="modules" filename="modules"/>
+</collection>

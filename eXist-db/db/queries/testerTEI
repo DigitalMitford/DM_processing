@@ -1,0 +1,64 @@
+xquery version "3.0";
+declare default element namespace "http://www.tei-c.org/ns/1.0";
+declare namespace local = "http://newtfire.org";
+
+declare variable $mitford := collection ('/db/mitford');
+declare variable $MissJames := $mitford//TEI//text//p//*[@ref="#James_Miss"];  
+declare function local:getRefsForCat($catNames as xs:string+, $refList as element()*, $label as xs:string) as element()
+{element {$label}{
+ $refList[local-name()=$catNames or @type=$catNames]  } 
+}; 
+declare function local:getTopThree($cats as element()+) as element()+ {
+    let $sorted := for $cat in $cats order by count($cat/*) descending
+    return $cat[position() lt 4]
+    
+    return $sorted 
+    
+};
+declare function local:getTopThreeRefs($catResults as element()+, $attrNames as xs:QName+, $attrValues as xs:anyAtomicType+, $label as xs:string) as element()
+{element {$label}
+{
+ let $refs := distinct-values(($catResults/*/@ref, $catResults/*/@corresp))
+  let $sorted := 
+  for $ref in $refs
+ let $refMatch := $catResults//*[@* = $ref]
+  order by count($refMatch) descending
+  return (tokenize($ref, '#')[last()]) 
+ return $sorted[position() lt 4] }
+  
+};
+(:ebb: THANK YOU MARTIN HOLMES!!! Here's what I need to do next: Get the results of the topthreeCats. generate a new element to contain (with attributes) the following information: @ref, the count, and the base-uri()   :)
+
+        
+        let $MJcoCited := $MissJames/ancestor::p//*[@ref | @corresp] except $MissJames 
+      
+        
+       let $MJPersons := local:getRefsForCat(('persName', 'person'), $MJcoCited, 'people')
+       let $MJPeepRef := distinct-values(($MJPersons/@ref, $MJPersons/@corresp))
+      
+       
+       let $MJOrgs := local:getRefsForCat(('orgName', 'org'), $MJcoCited, 'organizations')
+       let $MJOrgRef := distinct-values($MJOrgs)
+      
+      let $MJPlaces := local:getRefsForCat(('placeName', 'place'), $MJcoCited, 'places')
+      let $MJPlaceRef := distinct-values(($MJPlaces/@ref, $MJPlaces/@corresp ))
+      
+      let $MJTitles := local:getRefsForCat(('bibl', 'title', 'art', 'fict', 'song', 'letter'), $MJcoCited, 'works')
+      let $MJTitleRef := distinct-values($MJTitles)
+      
+      let $MJLetters := local:getRefsForCat(('letter'), $MJcoCited, 'letters')
+      let $MJLettersRef := distinct-values($MJLetters)
+       
+      let $MJEvents := local:getRefsForCat(('event'), $MJcoCited, 'events')
+      let $MJEventRef := distinct-values($MJEvents)
+      
+      let $MJPlants := local:getRefsForCat(('plant'), $MJcoCited, 'plants')
+      let $MJPlantRef := distinct-values($MJPlants)
+      
+      let $topThree := local:getTopThree(($MJPersons, $MJOrgs, $MJPlaces, $MJTitles, $MJLetters, $MJEvents, $MJPlants))
+      for $topT in $topThree
+      let $top := $topT/*
+      let $topThreeRefs := local:getTopThreeRefs($top, ('n', 'url'), ($top), 'mostPop')
+    return $topThree
+    
+    

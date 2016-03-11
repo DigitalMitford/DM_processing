@@ -1,0 +1,102 @@
+xquery version "3.0";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace local = "http://newtfire.org";
+
+declare variable $mitford := collection ('/db/mitford');
+declare variable $MissJames := $mitford//tei:TEI//tei:text//tei:p//*[@ref="#James_Miss"];
+(: Some "unknown knowns": #Byron, #Scott_Walter, #Austen_Jane, #Napoleon :)
+declare variable $siteindexID := doc('/db/si.xml')//@xml:id;
+declare variable $spacer := 10;
+declare variable $spacerInner := 5;
+
+(:ebb: Thanks to Martin Holmes for guidance with these functions. :)
+declare function local:getRefsForCat($catNames as xs:string+, $refList as element()*, $label as xs:string) as element()
+{element {$label}{
+ $refList[local-name()=$catNames or @type=$catNames]  } 
+}; 
+declare function local:getTopThree($cats as element()+) as element()+ {
+   let $count := count($cats/*)
+   order by $count descending
+    return $cats[position() lt 4]
+
+};
+declare function local:getTopThreeRefs($catResults as element()+, $treeMatches as element()+, $label as xs:string) as element()+
+{element {$label}
+{for $catResult at $pos in $catResults
+let $names := distinct-values(($catResult//@ref, $catResult//@corresp))
+order by count($catResult//*) descending
+return 
+    <g transform="translate({$pos*10}, 20)" id="{$catResult/name()}"><text x="{$pos * $spacer}" y="20">{$catResult/name()}</text>
+      
+     {let $allofThem :=
+         for $name at $pos in $names
+ let $nameMatch := $catResult//*[@* = $name]
+ let $countMatch := count($nameMatch)
+ order by $countMatch descending 
+
+return 
+  
+ <g class="shape"> <rect x="{$pos + $spacerInner}" y="200" height="{$countMatch}" width="3"/>
+  <text class="count">{$countMatch}</text>
+       <text class="canonName">{$siteindexID[. = substring-after($name, '#')]/parent::*/*[1]/string()}</text>
+       <text class="altName">{string-join(distinct-values($nameMatch/string()), ', ')}</text>
+<text class="SInote">{$siteindexID[. = substring-after($name, '#')]/parent::*//note/string()}</text>
+ <text class="URI">{let $treeURI := for $treeMatch in $treeMatches
+where $name eq ($treeMatch/@ref | $treeMatch/@corresp)
+return $treeMatch/tokenize(base-uri(), '/')[last()]
+    
+    return string-join(distinct-values($treeURI), ', ')}
+        
+    </text></g>
+     for $item in $allofThem[position() lt 4]
+   return $item
+     }
+
+    </g>
+
+}
+};
+<html>
+    <head><title>Annotation Development Tool</title></head>
+    <body>
+<h1>Annotation Development Tool</h1>
+<h2>Top Three Co-Cited Categories and Top Three Co-Cited Names Within Each Category</h2>
+<svg xmlns="http://www.w3.org/2000/svg">
+        {
+        let $MJcoCited := $MissJames/ancestor::tei:p//*[@ref | @corresp] except $MissJames 
+        let $MJcoCitURLs := $MJcoCited/tokenize(base-uri(), '/')[last()]
+      
+        
+       let $MJPersons := local:getRefsForCat(('persName', 'person'), $MJcoCited, 'people')
+       let $MJPeepRef := distinct-values(($MJPersons/@ref, $MJPersons/@corresp))
+      
+       
+       let $MJOrgs := local:getRefsForCat(('orgName', 'org'), $MJcoCited, 'organizations')
+       let $MJOrgRef := distinct-values($MJOrgs)
+      
+      let $MJPlaces := local:getRefsForCat(('placeName', 'place'), $MJcoCited, 'places')
+      let $MJPlaceRef := distinct-values(($MJPlaces/@ref, $MJPlaces/@corresp ))
+      
+      let $MJTitles := local:getRefsForCat(('bibl', 'title', 'art', 'fict', 'song', 'letter'), $MJcoCited, 'works')
+      let $MJTitleRef := distinct-values($MJTitles)
+      
+      let $MJLetters := local:getRefsForCat(('letter'), $MJcoCited, 'letters')
+      let $MJLettersRef := distinct-values($MJLetters)
+       
+      let $MJEvents := local:getRefsForCat(('event'), $MJcoCited, 'events')
+      let $MJEventRef := distinct-values($MJEvents)
+      
+      let $MJPlants := local:getRefsForCat(('plant'), $MJcoCited, 'plants')
+      let $MJPlantRef := distinct-values($MJPlants)
+      
+      let $topThree := local:getTopThree(($MJPersons, $MJOrgs, $MJPlaces, $MJTitles, $MJLetters, $MJEvents, $MJPlants))
+  
+     let $topThreeRefs := local:getTopThreeRefs($topThree, $MJcoCited, 'g')
+     return $topThreeRefs
+        }
+        </svg>
+        </body>
+        </html>
+    
+    
+    
