@@ -22,7 +22,7 @@
     
     </xsl:template>-->
     
-    <xsl:template match="app/rdg[@wit='#pub_1823']"/>
+    <xsl:template match="app/rdg[@wit='#ms']"/>
     
     <xsl:template match="app">
         <xsl:apply-templates/>
@@ -30,7 +30,7 @@
     <!--ebb: This preserves the children of the app without the tags themselves. -->   
    
 
-    <xsl:template match="app/rdg[@wit='#ms']">
+    <xsl:template match="app/rdg[@wit='#pub_1823']">
        <xsl:apply-templates/>
    </xsl:template>
         
