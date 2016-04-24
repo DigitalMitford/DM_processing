@@ -1,10 +1,12 @@
 Welcome to the Sandbox in the Digital Mitford project's GitHub. 
 This is designed to be a safe area for project collaborators to practice with committing and pushing files into our GitHub repository. 
 
-* **Read and follow the instructions** here to get started with GitHub: http://dh.obdurodon.org/github.xhtml
+* **Read and follow the instructions** here to get started with GitHub using the Desktop client: http://dh.obdurodon.org/github.xhtml
+* We also recommend using the Command Line for GitHub: Here's a tutorial to orient you to that: http://newtfire.org/dh/explainGitShell.html
+
 * Try to "clone" our Mitford repository ([from the main webpage here](https://github.com/ebeshero/mitford/)) on your local computer 
 * In order for you to push files and open issues here, I need to add you as a collaborator. Set up your own GitHub account and write to me to tell me how to find you.
-* We recommend installing a free desktop client for convenient use of GitHub as a repository to manage shared project files: https://desktop.github.com/. The desktop client helps you with synchronizing local Github directories on your computer(s) with the central repository in the GitHub cloud.
+* As you are starting out with GitHub you may find the free desktop client for convenient use of GitHub as a repository to manage shared project files: https://desktop.github.com/. The desktop client helps you with synchronizing local Github directories on your computer(s) with the central repository in the GitHub cloud.
 * When you have set up an account and have a desktop client to work with, you are ready to experiment with pushing (or committing) new files to this repository. Save a file in your local folder (or the "clone" of this repository), and then use your GitHub client to "push" a file into this online collaboration space. To do this, first commit your changes and write the required commit message. Then you must sync in order to push these to the GitHub cloud.
 
 * **Always be sure to "sync"** your local folder to receive any changes pushed to this GitHub repository. Always sync your local directory with our cloud directory here on the web **when you begin work**, and **when you conclude work** at a local computer.
