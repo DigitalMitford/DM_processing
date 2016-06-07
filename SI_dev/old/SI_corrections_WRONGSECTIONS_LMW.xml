@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><persName ref="#lmw">Lisa M. Wilson</persName>
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   
+   <text>
+      <body>      
+         <!-- These entries are in the wrong sections and need to be moved: -->
+         <!-- move from arch people to fict people: 
+            
+
+
+         
+         <!-- AND . . . . if we are separating period nonfiction from fiction through the sections labeled 19th c. ref and literary, then we need to move all nonfiction out of literary.-->
+  
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><persName ref="#lmw">Lisa M. Wilson</persName>
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   
+   <text>
+      <body>      
+         <div type="historical_people">
+            
+            <listPerson sortKey="histPersons">
+               
+               <!-- ?? what to do with entries like these, where we are uncertain about the name itself? -->
+             <!-- ebb: 2016-06-06: Incorrect entry; subsumed into preexisting entry for Lock.  <person xml:id="Locks">
+                  <persName>
+                     <unclear>
+                        <supplied resp="#err">Mr. Locks[?]]</supplied>
+                     </unclear>
+                  </persName>
+                  <note type="bio" resp="#err">A party concerned in <orgName ref="#Billiard_Club">the Billiard Club</orgName> affair, referenced in <rs type="letter">
+                     <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1822-08-31">31 August
+                        1822</date>
+                  </rs>.<!-\- err: any way we can figure out who Mr. Locks (and his champions) are? I'm not even certain that I've gotten this person's name right. -\-></note>
+               </person>
+               -->
+               <!-- ?? we listed this under historical people. We put pets in their own section, and we have a section for plants, but we do not have a section for other, unnamed animals. Move? Delete? -->
+               <person xml:id="Long_tailed_wren">
+                  <persName>Long Tailed Wren</persName>
+                  <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species
+                     in the family Timaliidae.</note>
+               </person>
+               
+               <!-- Entry to be deleted: -->
+               <person xml:id="Johnson_Mrs" sex="2"><!-- LMW:  Delete this entry!  It is Miss Johnson; there is no Mrs. Johnson. -->
+               <persName>
+                  <surname type="married">Johnson</surname>
+                  <forename/>
+                  <forename/>
+               </persName>
+               <birth/>
+               <occupation/>
+               <note resp="#kab">The sister of <persName ref="#Johnson_Mr">Mr.
+                  Johnson</persName> and an acquaintance of <persName ref="#MRM">Mitford</persName>.</note></person>
+               
+               
+               <!--SI entries that are duplicates (two xml:ids for the same person/text; one to keep, one to delete.: -->
+               
+               <person xml:id="Elford_J" sex="1">  <!--LMW: Delete this one. Content is merged into the entry below. -->
+                  <persName>
+                     <surname>Elford</surname>
+                     <forename>Jonathan</forename>
+                  </persName>
+                  <birth when="1776-11-28">
+                     <placeName>Plympton Erle</placeName>
+                  </birth>
+                  <death when="1823-03-11">
+                     <placeName>Uplands, Tamerton Foliott</placeName>
+                  </death>
+                  <note resp="#kab #ebb">Son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary</persName>. His death at the age of 46 left Sir William without an heir. Source: ODNB and Ancestry.com</note>
+               </person>
+               
+               <person xml:id="Elford_J_WEson" sex="1"><!--LMW: Use this one.-->   
+                  <persName>Jonathan Elford</persName>
+                  <persName>
+                  <surname>Elford</surname>
+                  <forename>Jonathan</forename>
+               </persName>
+                  <persName>
+                     <roleName><date when="1820"/>Member of Parliament for Westbury</roleName>
+                  </persName>
+                  <birth when="1776-11-05">
+                     <placeName>Plympton Erle, Devon, England</placeName>
+                  </birth>
+                  <death when="1823-03-11">
+                     <placeName>Upland, Tamerton Foliott, Devon, England</placeName>
+                  </death>
+                  <occupation>politician</occupation>
+                  <occupation>military</occupation>
+                  <note resp="#kab #ebb #lmw">Born November 5, 1776, the only son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. He entered Oriel College, Oxford on June 3, 1795 and came to reside thereafter at Tamerton Folliot, Devon on an estate he called Upland. He served as a Captain in the South Devonshire militia from 1803, with his father, who was also an officer. On May 10, 1810, he married Charlotte Wynne. He also became a freeman for Plymouth in 1810. He served as Member of Parliament for Westbury from March 10 to November 29, a seat he secured under the patronage of Sir Manasseh Masseh Lopes. At this time, Westbury was a controversial "rotten borough" whose interest Lopes had purchased from Lord Abingdon; he resigned his seat in November 1810 to Lopes. Throughout his adulthood, his father Sir William tried unsuccessfully to secure him a position within the government. He died on March 11, 1823, at his home at Uplands, Tamerton Folliott, Devon. His death at the age of 46 left Sir William without an heir.</note>
+                  <note>
+                     <ref target="http://www.historyofparliamentonline.org/volume/1820-1832/member/elford-jonathan-1776-1823"/><!--LMW No VIAF #. -->
+                  </note>
+               </person>
+               
+               <person xml:id="Drake_Nathan" sex="1"> <!-- LMW:  Delete this one. -->
+                  <persName>
+                     <forename>Nathan</forename>
+                     <surname>Drake</surname>
+                  </persName>
+                  <persName>Dr. Drake</persName>
+                  <persName>Nathan Drake, M.D.</persName>
+                  <birth when="1766-01-15">
+                     <placeName>York, Yorkshire, England</placeName>
+                  </birth>
+                  <death when="1836">
+                     <placeName>Hadleigh, Suffolk, England</placeName>
+                  </death>
+                  <occupation>medical</occupation>
+                  <occupation>literary</occupation>
+                  <note resp="#ajc">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title> Source: ODNB. <ref target="http://viaf.org/viaf/15551790"/>     <!--LMW: two different ids, same person. Need to merge.  -->
+                  </note>
+               </person>
+               <person xml:id="Drake_Nathan_younger" sex="1"><!-- LMW: Use this one. It merges content from above.-->
+                  <persName>
+                     <forename>Nathan</forename>
+                     <surname>Drake</surname>
+                     <roleName>Dr.</roleName>
+                  </persName>
+                  <persName>Dr. Drake</persName>
+                  <persName>Nathan Drake, M.D.</persName>
+                  <birth when="1766-01-15">
+                     <placeName>York, Yorkshire, England</placeName>
+                  </birth>
+                  <death when="1836">
+                     <placeName>Hadleigh, Suffolk, England</placeName>
+                  </death>
+                  <occupation>medical</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>essayist</occupation>
+                  <note resp="#ajc #lmw">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title></note>
+                  <note><ref target="http://viaf.org/viaf/15551790"/></note>
+                </person>
+               
+               <person xml:id="Bayley" sex="1"> <!-- LMW:  Delete this one. -->
+                  <persName>
+                     <forename>Peter</forename>
+                     <surname>Bayley</surname>
+                  </persName>
+                  <birth notBefore="1778"/>
+                  <death when="1823-01-25">
+                     <placeName>London, England</placeName>
+                  </death>
+                  <occupation>legal</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>playwright</occupation>
+                  <occupation>poet</occupation>
+                  <note resp="#ebb #lmw">Editor of the <title ref="#Museum_per">The Museum</title>, married to the <persName ref="#Bayley_Mrs">Mrs. Bayley</persName> mentioned in <rs type="letter">
+                     <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1825-05-11">11 May 1825</date>
+                  </rs>. Source: DNB. <ref target="http://viaf.org/viaf/3828982"/>
+                  </note>
+               </person>
+               
+               
+               <person xml:id="Bayley_P" sex="1"><!-- LMW: Use this one.-->
+                  <persName>Peter Bayley</persName>
+                  <persName>
+                     <forename>Peter</forename>
+                     <surname>Bayley</surname>
+                  </persName>
+                  <birth notBefore="1778"/>
+                  <death when="1823-01-25">
+                     <placeName>London, England</placeName>
+                  </death>
+                  <occupation>legal</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>playwright</occupation>
+                  <occupation>poet</occupation>
+                  <note resp="#ebb #lmw">Editor of the <title ref="#Museum_per">The Museum</title>, married to the <persName ref="#Bayley_Mrs">Mrs. Bayley</persName> mentioned in <rs type="letter">
+                     <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1825-05-11">11 May 1825</date>
+                  </rs>. Source: DNB. <ref target="http://viaf.org/viaf/3828982"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Daphne" sex="2"><!-- LMW:  Delete this one; it's in the old format for pet names -->
+                  <note resp="#ebb">
+                     <p>A pet dog. <persName type="animal">Daphne</persName>
+                        <!--What do we know about Daphne the dog?-->
+                     </p>
+                  </note>
+               </person>
+               <person xml:id="Daphne_pet" sex="2"><!-- LMW: Use this one. -->
+                  <persName>Daphne</persName>
+                  <note resp="#lmw">Mitford's dog, a female greyhound. However, there is also a pug named Daphne in the Our Village sketch "Our Godmothers" (from <title ref="#OurVillage_3rd">volume 3</title>, 1828, 266-287). That Daphne was "a particularly ugly, noisy pug, that barked at every body that came into the house, and bit at most." </note></person>
+               
+               <person xml:id="Flush"><!--LMW: We need to make a new xml:id for this Flush using the format Flush_pet. If there is more than one Flush, we may need to designate them Flush_1825_pet, or something similar. I need help finding all references to Flush currently in the db in order to fix; I couldn't figure it out from a simple search of my files.-->
+                  <persName>Flush</persName>
+                  <note resp="#lmw">There appear to be a series of spaniels all named Flush.</note>
+               </person>
+               
+               <person xml:id="Holcroft" sex="1"> <!--LMW: Delete this one. -->
+               <persName>
+                  <surname>Holcroft</surname>
+                  <forename>Thomas</forename>
+               </persName>
+               <birth when="1745"/>
+               <death when="1809"/>
+               <note type="bio" resp="#lmw">
+                  <p>English author (1745-1809); Author of The Road to Ruin (play, 1792) and Anna
+                     St. Ives (novel, 1792)</p>
+               </note>
+            </person>
+            
+            <person xml:id="Holcroft_Thos" sex="1"><!--LMW: Use this one. -->
+               <persName>Thomas Holcroft</persName>
+               <persName>
+                  <forename>Thomas</forename>
+                  <surname>Holcroft</surname>
+               </persName>
+               <birth when="1745-12-10">
+                  <placeName>Orange Court, Leicester Fields, London, England</placeName>
+               </birth>
+               <death when="1809-03-23"/>
+               <occupation>literary</occupation>
+               <occupation>playwright</occupation>
+               <occupation>novelist</occupation>
+               <occupation>journalist</occupation>
+               <note type="bio" resp="#lmw">British author and journalist, friend and associate of literary-political radicals such as William Godwin. Author of the plays The Road to Ruin (1792) and Deaf and Dumb (1801), his work is important in the development of early nineteenth-century melodrama. He was also the author of Anna St. Ives (1792), considered the first "Jacobin" political novel of the 1790s. Arrested along with Hardy and Horne Tooke as part of the "Treason Trials" of 1794, he was later released without being brought to trial. William Hazlitt later edited his memoirs (1816, 1852).</note>
+               <note>
+                  <ref target="http://viaf.org/viaf/56644486"/>
+               </note>
+            </person>
+               
+               <person xml:id="Jonson_B" sex="1"> <!-- LMW: Use this one -->
+                  <persName>Ben Jonson</persName>
+                  <persName>
+                     <forename>Benjamin</forename>
+                     <surname>Jonson</surname>
+                  </persName>
+                  <birth when="1572-11-06">
+                     <placeName>Westminster, England</placeName>
+                  </birth>
+                  <death when="1637-06-08">
+                     <placeName>Westminster, England</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>playwright</occupation>
+                  <note resp="#ebb">Renaissance English playwright and contemporary of <persName ref="#Shakespeare">William Shakespeare</persName>. Jonson was known for satirical plays, including  <bibl>
+                     <title>Every Man in His Humour</title> (<date when="1598">1598</date>)</bibl>, <bibl>
+                        <title>Volpone, or The Foxe</title> (<date when="1605">1605</date>)</bibl>, and <bibl>
+                           <title>The Alchemist</title> (<date when="1610">1610</date>)</bibl>.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/292789691"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Jonson_Ben" sex="1"> <!-- LMW:  Delete this one. -->
+                  <persName>
+                     <forename>Ben</forename>
+                     <surname>Jonson</surname>
+                  </persName>
+                  <birth when="1572-11-06">
+                     <placeName>Westminster, England</placeName>
+                  </birth>
+                  <death when="1637-06-08">
+                     <placeName>Westminster, England</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <note>
+                     <ref target="http://viaf.org/viaf/292789691"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Robertson_William"> <!-- LMW:  delete this one -->
+                  <persName>
+                     <surname>Robertson</surname>
+                     <forename>William</forename>
+                  </persName>
+                  <birth when="1721"/>
+                  <death when="1793"/>
+                  <note>A Scottish historian, and author of <title ref="#CharlesV">Charles the Fifth</title>.</note>
+               </person>
+               
+               <person xml:id="Robertson_Wm" sex="1"> <!-- LMW:  Use this one -->
+                  <persName>William Robertson</persName>
+                  <persName>
+                     <forename>William</forename>
+                     <surname>Robertson</surname>
+                  </persName>
+                  <persName>
+                     <roleName>Fellow of the Royal Society of Edinburgh</roleName>
+                     <roleName>Fellow of the Society of Antiquaries of Scotland</roleName>
+                     <roleName>Doctor of Divinity</roleName>
+                     <roleName>minister of the Church of Scotland</roleName>
+                     <roleName>King's Chaplain</roleName>
+                     <roleName>Chaplain of Stirling Castle</roleName>
+                     <roleName>Principal of the University of Edinburgh</roleName>
+                  </persName>
+                  <birth when="1721-09-19">
+                     <placeName>Borthwick, Midlothian, Scotland</placeName>
+                  </birth>
+                  <death when="1793-06-01">
+                     <placeName>Edinburgh, Scotland</placeName>
+                  </death>
+                <occupation>literary</occupation>
+                  <occupation>historian</occupation>
+                  <occupation>antiquarian</occupation>
+                  <occupation>clergy</occupation>
+                  <occupation>educator</occupation>
+                  <note resp="#lmw">Scottish historian, clergyman, and Principal of the University of Edinburgh, author of The History of Scotland, 1542-1603 (1759) and The History of Charles V (1769), considered his most important work.</note>
+                  <note> <ref target="http://viaf.org/viaf/59177542"/></note>
+               </person>
+               
+               <person xml:id="Patemore_PG" sex="1"><!-- LMW:  Delete this one. It's spelled wrong.-->
+                  <persName>
+                     <forename>Peter</forename>
+                     <forename>George</forename>
+                     <surname>Patmore</surname>
+                  </persName>
+                  <birth notBefore="1786">
+                     <placeName>Ludgate Hill, London, England</placeName>
+                  </birth>
+                  <death when="1855"/>
+                  <occupation>literary</occupation>
+                  <occupation>essayist</occupation>
+                  <occupation>editor</occupation>
+                  <occupation>biographer</occupation>
+                  <note resp="#ajc #lmw">Frequent periodical contributer. In the early 1820s, he authored, "Picture Galleries of England," a series of art criticism essays in the <title>New Monthly Magazine</title>. In 1821 Patmore acted as second to journalist <persName ref="#Scott_John">John Scott</persName> in the duel in which Scott was killed. Tried for murder and acquitted for his role in the duel. Editor of the New Monthly Magazine from 1841. Source: ODB.</note>
+               </person>
+               
+               <person xml:id="Patmore_PG" sex="1"><!-- LMW:  USe this one-->
+                  <persName>Peter Patmore</persName>
+                  <persName>
+                     <forename>Peter</forename>
+                     <forename>George</forename>
+                     <surname>Patmore</surname>
+                  </persName>
+                  <birth notBefore="1786">
+                     <placeName>Ludgate Hill, London, England</placeName>
+                  </birth>
+                  <death when="1855"/>
+                  <occupation>literary</occupation>
+                  <occupation>essayist</occupation>
+                  <occupation>editor</occupation>
+                  <occupation>biographer</occupation>
+                  <note resp="#ajc #lmw">Frequent periodical contributer. In the early 1820s, he authored, "Picture Galleries of England," a series of art criticism essays in the <title>New Monthly Magazine</title>. In 1821 Patmore acted as second to journalist <persName ref="#Scott_John">John Scott</persName> in the duel in which Scott was killed. Tried for murder and acquitted for his role in the duel. Editor of the New Monthly Magazine from 1841. Source: ODB.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/57356529"/>
+                  </note>
+               </person>
+            </listPerson>
+         </div>
+         
+       <div type="places">
+            <listPlace sortKey="histPlaces">
+               
+               <place xml:id="Barton_street"><!-- LMW:  Delete this one. -->
+                  <!-- If this is in London, I wonder if it is actually Burton Street? --><!--ebb: This needs some explanation: What is the significance of this place?-->
+                  <placeName>No. 10 Barton Street</placeName>
+               </place>
+               <place xml:id="BartonSt"> <!--LMW: Use this one. I found the specific address on google maps. -->
+                  <placeName>Barton Street</placeName>
+                  <note resp="#lmw">A street in <placeName ref="#Westmnstr">Westminster</placeName>.</note>
+               </place>
+            </listPlace>
+       </div>
+         
+         <div type="publications">
+            <listBibl sortKey="literary">
+          
+               <bibl xml:id="Queens_Wake"><!-- Delete this one -->
+                  <title>The Queen's Wake: a Legendary Poem</title>
+                  <title>The Queen's Wake</title>
+                  <author ref="#Hogg_J">James Hogg</author>
+                  <pubPlace>Edinburgh</pubPlace>
+                  <publisher>Blackwood</publisher>
+                  <date when="1813">1813</date>
+                  <note resp="#alg">A collection of poems and ballads presented by fictional Scottish bards to Mary Queen of Scots at Holyrood. Source: LBT</note>
+               </bibl>
+               
+          <bibl xml:id="QueensWake"> <!-- Use this one. -->
+             <title>The Queen's Wake: a Legendary Poem</title>
+             <title>The Queen's Wake</title>
+             <author ref="#Hogg_J">James Hogg</author>
+             <pubPlace>Edinburgh</pubPlace>
+             <publisher>A. Balfour, for G. Goldie</publisher>
+             <date>1813</date>
+             <note resp="#alg #ebb #lmw">A long poem, first published in 1813, purporting to be a collection of poems and ballads presented by Scottish bards to <persName ref="#MaryQoS">Mary, Queen of Scots</persName> at Holyrood. The poem became an unexpected commercial and literary success, and Hogg published a series of successively revised editions, the most influential of which was the fifth edition, which appeared in 1819. <persName ref="#MRM">Mitford</persName> mentions the poem in a letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1819-10-18">October 18, 1819</date>.</note>
+          </bibl>
+            </listBibl>
+               
+         </div>
+      </body>
+   </text>
+</TEI>

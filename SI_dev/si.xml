@@ -4383,10 +4383,10 @@
                   <note resp="#lmw">Bishop of Exeter and then Bishop of Salisbury from 1807-1825. Art collector and patron of John Constable.  <!--LMW:  no VIAF #--></note>
                </person>
                <person xml:id="Fitzharris" sex="1">
-                  <persName>Mr. Fitzharris</persName>
                   <persName>
                      <surname>Fitzharris</surname>
                   </persName>
+                  <persName>Mr. Fitzharris</persName>
                   <note resp="#kdc #lmw">An Irish actor who began his career in <placeName ref="#Reading_city">Reading</placeName> before going to <placeName ref="#London_city">London</placeName>. He played the title role in <title ref="#Othello_play">Othello</title> in both Reading and London, and appeared the following season (1826) as the Sentinel in <title ref="#Pizarro_play">Pizarro</title> at <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName>. Reviews of his London performances in the <title ref="#New_Monthly_Mag">New Monthly Magazine</title> and <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres</title> from 1825 and 1826 were very unfavorable, indicating that his voice and presence were not sufficiently robust to sustain major roles in London. <persName ref="#MRM">Mitford</persName> saw him perform in <title ref="#Othello_play">Othello</title> at <placeName ref="#Reading_city">Reading</placeName>. She was impressed with his talents and he later created the role of Celso in <title ref="#CharlesI_MRMplay">Charles the First</title>. In an <date when="1867">1867</date> letter to <persName ref="#Lestrange">L'Estrange</persName> (reprinted in <title>The Literary Life of the Rev. William Harness)</title>, <persName ref="#Harness_Wm">Harness</persName> mentions Fitzharris as a failed "protege" of Mitford's (279).
                      <!--lmw: Fitzharris references:
 New Monthly Magazine 15 (1825): 534.  Drama section mentions Fitzharris
@@ -6469,11 +6469,15 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <!-- LMW See Folger "Mrs. Liston as Dollalolla," "I'll spit, I'll squall, /And tear the eyes out of you all." TOM THUMB.  "Drawn and Etched expressly for the British Stage, June 1817" Handcolored image of full-figured actress in full rant.  Source Call Number: ART File L773.3 no.3 (size XS); Digital Image File Name: 30323 Digital Image Type: FSL collection Hamnet Bib ID: 253288 Hamnet Holdings ID:330629.  (Folger says TT by Henry Fielding)  LMW--></note>
                </person>
                <person xml:id="Lock_Mr" sex="1">
+                  <persName>Mr. Lock</persName>
                   <persName>
                      <surname>Lock</surname>
+                     <forename>Edward</forename>
                   </persName>
                   <persName>Mr. Lock</persName>
-                  <note resp="#scw">A supporter of <persName ref="#Palmer_CF">Charles Fysshe Palmer</persName>. More research needed. <!--scw: No other info in Needham. Could this be connected to xml:id="Locks"? See photo DSCF9935.--></note>
+                  <note resp="#scw #err #ebb">A supporter of <persName ref="#Palmer_CF">Charles Fysshe Palmer</persName>. More research needed. <!--scw: No other info in Needham. Could this be connected to xml:id="Locks"? See photo DSCF9935.-->
+                     The identification of Mr. Lock is uncertain, but <persName ref="#coles">Coles</persName> suggests this may be a butcher named Edward Lock, located on <placeName>Friar Street</placeName> in <placeName ref="#Reading_city">Reading</placeName>. A supporter of <persName ref="#Palmer_CF">Charles Fysshe Palmer</persName>, Lock is concerned in <orgName ref="#Billiard_Club">the Billiard Club</orgName> affair referenced in <rs type="letter">
+                        <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1822-08-31">31 August 1822</date></rs>. See <bibl corresp="#coles_Thesis">Coles p. 206</bibl>.</note>
                </person>
                <person xml:id="Lockhart_JG">
                   <persName>
@@ -6497,17 +6501,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <biblScope unit="volume" from="1" to="7">7-volume</biblScope> biography, <date>Life of Walter Scott</date>, published in <date from="1837" to="1838">1837-1838</date>
                      </bibl>.</note>
                </person>
-               <person xml:id="Locks">
-                  <persName>
-                     <unclear>
-                        <supplied resp="#err">Mr. Locks[?]]</supplied>
-                     </unclear>
-                  </persName>
-                  <note type="bio" resp="#err">A party concerned in <orgName ref="#Billiard_Club">the Billiard Club</orgName> affair, referenced in <rs type="letter">
-                        <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1822-08-31">31 August
-                     1822</date>
-                     </rs>.<!-- err: any way we can figure out who Mr. Locks (and his champions) are? I'm not even certain that I've gotten this person's name right. --></note>
-               </person>
+             
                <person xml:id="Long_tailed_wren">
                   <persName>Long Tailed Wren</persName>
                   <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species
@@ -8189,9 +8183,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>
                      <surname>Robinson</surname>
                      <forename>Henry</forename>
+                     <forename>Crabb</forename>
                   </persName>
-                  <note resp="#kdc #lmw">
-                     <persName ref="#coles">Coles</persName> says <persName ref="#MRM">Mitford</persName> is probably correct that this is Henry Crabbe Robinson, although the record only shows that the attorney was Mr. Robinson. See p. 525, note 13.  Needs additional research.</note>
+                  <birth when="1775"><placeName>Bury St. Edmunds, England</placeName></birth>
+                  <death when="1867"/>
+                  <note resp="#ebb">Lawyer, diarist, and newspaper correspondent for <title level="s" ref="#Times_news">The Times</title>, helped <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName> to secure a position with <title level="s">The Times</title> as a legal report correspondent.</note>
                </person>
                <person xml:id="Rogers_Sam" sex="1">
                   <persName>
@@ -8938,14 +8934,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <death when="1590-11-18"/>
                   <note resp="#ebb">Appointed by Queen Elizabeth I to imprison Mary Queen of Scots in 1568 at <placeName ref="#Sheffield_Castle">Sheffield Castle and Manor Lodge</placeName>. <persName ref="#Bess_of_Hardwick">Bess of Hardwick</persName> was his second wife, and he was her fourth husband.</note>
                </person>
-               <person xml:id="Talfourd_Mrs">
+               <person xml:id="Talfourd_Mrs" sex="2">
                   <persName>
                      <surname type="married">Talfourd</surname>
                      <surname type="paternal">Rutt</surname>
                      <forename>Rachel</forename>
                   </persName>
                   <persName>Mrs. Thomas Talfourd</persName>
-                  <note resp="#ajc"> She's the eldest daughter of <persName ref="#Rutt_John">John Rutt</persName>.<!-- Reference in Coles page 476 letter 93, footnote 2; letter 38 page 393, footnote 4 --></note>
+                  <note resp="#ajc #ebb">The eldest daughter of <persName ref="#Rutt_John">John Towill Rutt</persName>, <rs type="event">she married <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName> in <date when="1822">1822</date></rs>. <persName ref="#coles">Coles</persName> observes that Talfourd secured a position through <persName>Henry Crabb Robinson</persName> to write legal reports for <title level="s" ref="#Times_news">The Times</title> to afford this marriage. Coles cites <bibl><author>Vera Watson</author>'s two-part <title level="s">Times' Literary Supplement</title> piece of <date from="1956-04-20" to="1956-04-27">April 20 and April 27, 1956</date>, <title level="a">Thomas Noon Talfourd and His Friends</title></bibl> for more information (<bibl corresp="#coles_Thesis">Coles p. 193, note 2</bibl>).</note>
                </person>
                <person xml:id="Talfourd_Thos" sex="1">
                   <persName>Thomas Noon Talfourd </persName>
@@ -9934,6 +9930,52 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </org>
             </listOrg>
             <listPerson sortKey="archPersons">
+               <person xml:id="Prometheus_Aes_char" sex="1">
+                  <persName>Prometheus</persName>
+                  <note resp="#lmw">Prometheus, the title character in the tragedies attributed to <persName ref="#Aeschylus">Aeschylus</persName> such as <title ref="#PromBound_Aesch"/>Prometheus Bound.</note>
+               </person>
+               <person xml:id="Hassan_Bedreddin" sex="1">
+                  <persName>Prince Bedreddin Hassan</persName>
+                  <note resp="#lmw">A character in <title ref="#Arabian_Tales">Arabian tales</title> (also known as One Thousand and One Nights) who appears in the story variously titled "Noureddin Ali of Cairo" or "Noureddin and his Son."</note>
+               </person>
+               <person xml:id="Punch" sex="1">
+                  <persName>Punch</persName>
+                  <persName>Mr. Punch</persName>
+                  <note resp="#lmw">The Punch and Judy slapstick puppet shows of England had their roots in the 16th-century Italian commedia dell'arte tradition. The figure of Punch derives from the Neapolitan stock character of Pulcinella, whose name was anglicized "Punchinello" and shortened to "Punch." 17th- and 18th-century shows in England were performed with marionettes on fixed stages. By the end of the 18th century, shows were performed using glove puppets on mobile puppet booths and found a home on the nineteenth century on the beaches of English seaside resorts and evolved into children's entertainments in the Victorian era. Mr. Punch is the traditional protagonist of such shows; episodic plots normally involve Punch beating his wife and other characters with his "slapstick" and end with him defeating even the Devil himself.</note>
+                  <note>
+                     <ref target="http://www.vam.ac.uk/content/articles/t/thats-the-way-to-do-it!-a-history-of-punch-and-judy/"/>
+                  </note>
+               </person>
+               <person xml:id="Pygmalion" sex="1">
+                  <persName>Pygmalion</persName>
+                  <note resp="#lmw">Mitford generally refers to the version of the myth from <persName ref="#Ovid">Ovid</persName>'s <title ref="#Metamorphoses">Metamorphoses</title> in which Pygmalion is a sculptor who carves a female statue out of ivory, falls in love with the statue, and Aphrodite brings the statue to life.</note>
+               </person>
+               <person xml:id="Master_Fuller" sex="1">
+                  <persName>
+                     <surname>Fuller</surname>
+                     <forename>Master</forename>
+                  </persName>
+                  <note resp="#lmw">"Old Master Fuller" is a figure found in <title ref="#Collectanea">Collectanea Curiosa</title>, where he appears as "Mr. Fuller," in no. XXIII:  "Mr. Fuller's Observations of the Shires;" his name becomes proverbial.</note>
+               </person>
+               <person xml:id="Judy" sex="2">
+                  <persName>Judy</persName>
+                  <note resp="#lmw">Wife of Mr. Punch in manifestations of the Punch and Judy slapstick puppet show tradition from the late eighteenth century onward. Earlier, the character was named "Joan."</note>
+               </person>
+               <person xml:id="Cupid">
+                  <persName>Cupid</persName>
+                  <persName>Eros</persName>
+                  <note resp="#ebb">Classical god of sexual desire and erotic love, known as Eros in ancient Greece and Cupid in ancient Rome.</note>
+               </person>
+               <person xml:id="Cassandra">
+                  <persName>Cassandra </persName>
+                  <note resp="#err">Daughter of King Priam and Queen Hecuba of Troy, Cassandra was a prophet in Greek mythology whose prophecies were never believed.</note>
+               </person>
+               <person xml:id="Bluebeard_fict" sex="1">
+                  <persName>
+                     <surname>Bluebeard</surname>
+                  </persName>
+                  <note resp="#lmw">Title character in French folktale of the same name. Story was best known in Mitford's time through a frequently-performed melodrama version, <title ref="#Bluebeard_GC">Bluebeard, or Female Curiosity:  a Dramatic Romance in Three Acts</title> by <persName ref="#Colman_the_Younger">George Colman the younger</persName>.</note>
+               </person>
                <person xml:id="Ahab" sex="1">
                   <persName>Ahab</persName>
                   <note resp="#ebb">Historic and legendary ancient King of Israel, married to
@@ -9991,21 +10033,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Lazarus of Bethany</persName>
                   <note resp="#ebb">According to <title ref="#JohnGospel_NewTest">the Gospel of St. John the Evangelist</title>, Jesus Christ raised or resurrected Lazarus from the grave four days after his death. The raising of Lazarus is the subject of <bibl corresp="#Lazarus_Haydon">a painting</bibl> by <persName ref="#Haydon">Benjamin Robert Haydon</persName>, mentioned in his correspondence with <persName ref="#MRM">MRM</persName>.</note>
                </person>
-               <person xml:id="May-flower" sex="2">
-                  <persName>May-flower</persName>
-                  <note resp="#scw">
-                     <p>Greyhound dog who is featured as the <persName ref="#OVNarrator">narrator</persName>'s companion in many <title ref="#OV">Our Village</title>sketches.</p>
-                     <!-- lmw:  need to move to pet section? -->
-                  </note>
-               </person>
-               <person xml:id="Mosse_Mrs" sex="2">
-                  <persName>
-                     <surname>Mosse</surname>
-                     <forename>Elizabeth</forename>
-                  </persName>
-                  <persName>Mossy</persName>
-                  <note resp="#scw">Title character of the <title ref="#OV">Our Village</title> sketch, <title>Mrs. Mosse</title>. She is a longtime servant in the household of the <persName ref="#OVNarrator">narrator</persName> and, according to <persName ref="#Needham_Francis">Francis Needham</persName>, based on the Mitfords' own servant, <persName ref="#Cropp_Mrs">Mrs. Cropp</persName>. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
-               </person>
                <person xml:id="Nathan" sex="1">
                   <persName>
                      <forename>Nathan</forename>
@@ -10013,15 +10040,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>warrior</occupation>
                   <occupation>prophet</occupation>
                </person>
-               <person xml:id="OV_Mrs_Nicholson" sex="2">
-                  <persName>
-                     <surname type="married">Nicholson</surname>
-                  </persName>
-                  <persName>Mrs. Nicholson</persName>
-                  <note resp="#scw">
-                     <p>Character in <title ref="#OV">Our Village</title>, volume 5, <title>Early Recollections: A Widow's Feather</title>. According to <persName ref="#Needham_Francis">Needham</persName>, she is based on a real acquaintance from <persName ref="#MRM">Mitford</persName>'s early years named <persName ref="#Nicholson_Mrs">Mrs. Nicholson</persName>, who was the widow of <persName ref="#Nicholson_Jeremiah">Jeremiah Nicholson, D.D.</persName>, the vicar of <placeName ref="#St_Lawrence_Church"/>. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p>
-                  </note>
-               </person>
+               
                <person xml:id="Rehoboam" sex="1">
                   <persName>
                      <forename>Rehoboam</forename>
@@ -10038,6 +10057,29 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
             </listPerson>
             <listPerson sortKey="fictPersons">
+               <person xml:id="OV_Mrs_Nicholson" sex="2">
+                  <persName>
+                     <surname type="married">Nicholson</surname>
+                  </persName>
+                  <persName>Mrs. Nicholson</persName>
+                  <note resp="#scw">
+                     <p>Character in <title ref="#OV">Our Village</title>, volume 5, <title>Early Recollections: A Widow's Feather</title>. According to <persName ref="#Needham_Francis">Needham</persName>, she is based on a real acquaintance from <persName ref="#MRM">Mitford</persName>'s early years named <persName ref="#Nicholson_Mrs">Mrs. Nicholson</persName>, who was the widow of <persName ref="#Nicholson_Jeremiah">Jeremiah Nicholson, D.D.</persName>, the vicar of <placeName ref="#St_Lawrence_Church"/>. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p>
+                  </note>
+               </person>
+               <person xml:id="May-flower" sex="2">
+                  <persName>May-flower</persName>
+                  <note resp="#scw">
+                     <p>Greyhound dog who is featured as the <persName ref="#OVNarrator">narrator</persName>'s companion in many <title ref="#OV">Our Village</title>sketches.</p>
+                  </note>
+               </person>
+               <person xml:id="Mosse_Mrs" sex="2">
+                  <persName>
+                     <surname>Mosse</surname>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <persName>Mossy</persName>
+                  <note resp="#scw">Title character of the <title ref="#OV">Our Village</title> sketch, <title>Mrs. Mosse</title>. She is a longtime servant in the household of the <persName ref="#OVNarrator">narrator</persName> and, according to <persName ref="#Needham_Francis">Francis Needham</persName>, based on the Mitfords' own servant, <persName ref="#Cropp_Mrs">Mrs. Cropp</persName>. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
+               </person>
                <person xml:id="Abbe_de_L_Epee_DD">
                   <persName>Abbé de L'Épée</persName>
                   <note resp="#lmw">character in <title ref="#Deaf_Dumb_play"> Deaf and Dumb</title>
@@ -10123,13 +10165,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </note>
                </person>
                <person xml:id="Blacksmith"/>
-               <person xml:id="BlacksmithsWife"/>
-               <person xml:id="Bluebeard_fict" sex="1">
-                  <persName>
-                     <surname>Bluebeard</surname>
-                  </persName>
-                  <note resp="#lmw">Title character in French folktale of the same name. Story was best known in Mitford's time through a frequently-performed melodrama version, <title ref="#Bluebeard_GC">Bluebeard, or Female Curiosity:  a Dramatic Romance in Three Acts</title> by <persName ref="#Colman_the_Younger">George Colman the younger</persName>.</note>
-               </person>
+               <person xml:id="BlacksmithsWife"/> 
                <person xml:id="Bradshaw">
                   <persName>Lord President Bradshaw</persName>
                   <note resp="#ebb">A Judge appointed by Parliament to try the <persName ref="#Chas1_MRM">King</persName> in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles
@@ -10145,7 +10181,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">Character in <title ref="#Evelina_FB">Evelina</title>; Mitford admires Burney's characterization of him in her a letter to Elford from <date when="1819-05-30">30 May 1819</date>.</note>
                </person>
                <person xml:id="BriggsMr_Cecilia" sex="1">
-                  <persName>Mr. Smith</persName>
+                  <persName>Mr. Briggs</persName>
                   <note resp="#lmw">Character in <title ref="#Cecilia_FB">Cecilia</title>; Mitford admires Burney's characterization of him in her a letter to Elford from <date when="1819-05-30">30 May 1819</date>.</note>
                </person>
                <person xml:id="Brulgruddery_D" sex="1">
@@ -10187,11 +10223,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      </title>, a satirical version of <title ref="#Tartuffe">Tartuffe</title> by
                         <persName ref="#Moliere">Molière</persName>
                   </note>
-               </person>
-               <person xml:id="Cassandra">
-                  <persName>Cassandra </persName>
-                  <note resp="#err">Daughter of King Priam and Queen Hecuba of Troy, Cassandra was a
-                     prophet in Greek mythology whose prophecies were never believed.</note>
                </person>
                <person xml:id="Catherine_Ab">
                   <persName>
@@ -10276,7 +10307,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Oliver Cromwell</persName>
                   <note resp="#ebb">Cromwell's character in <persName ref="#Chas1_MRM">King</persName> in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles I</title>.</note>
                </person>
-               <person xml:id="Cupid"/>
                <person xml:id="Curate"/>
                <person xml:id="Cypress_Mr" sex="1">
                   <persName>Mr. Cypress</persName>
@@ -10452,10 +10482,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#ebb">A Judge appointed by Parliament to try the <persName ref="#Chas1_MRM">King</persName> in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles
                      I</title>.</note>
                </person>
-               <person xml:id="Hassan_Bedreddin" sex="1">
-                  <persName>Prince Bedreddin Hassan</persName>
-                  <note resp="#lmw">A character in <title ref="#Arabian_Tales">Arabian tales</title> (also known as One Thousand and One Nights) who appears in the story variously titled "Noureddin Ali of Cairo" or "Noureddin and his Son."</note>
-               </person>
                <person xml:id="Helen_H">
                   <persName>Helen</persName>
                   <note resp="#lmw">character in <title ref="#Helen_play">Helen</title>
@@ -10514,10 +10540,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="JohnEvans"/>
                <person xml:id="JohnEvansWife"/>
-               <person xml:id="Judy" sex="2">
-                  <persName>Judy</persName>
-                  <note resp="#lmw">Wife of Mr. Punch in manifestations of the Punch and Judy slapstick puppet show tradition from the late eighteenth century onward. Earlier, the character was named "Joan."</note>
-               </person>
                <person xml:id="Julian">
                   <persName>Julian</persName>
                   <note resp="#ebb">
@@ -10618,14 +10640,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Mason"/>
                <person xml:id="MasonsWife"/>
-               <person xml:id="Master_Fuller" sex="1">
-                  <persName>
-                     <surname>Fuller</surname>
-                     <forename>Master</forename>
-                  </persName>
-                  <note resp="#lmw">"Old Master Fuller" is a figure found in <title ref="#Collectanea">Collectanea Curiosa</title>, where he appears as "Mr. Fuller," in no. XXIII:  "Mr. Fuller's Observations of the Shires;" his name becomes proverbial.</note>
-               </person>
-               <person xml:id="Mayflower"/>
                <person xml:id="Meg_Merrilies">
                   <persName>Meg Merrilies</persName>
                   <note resp="#esh">character in <title ref="#Guy_Mannering">Guy
@@ -10751,26 +10765,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         Maria</persName> and <persName ref="#Chas1_MRM">King Charles I</persName>, a
                      girl aged 12, in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles I</title>.</note>
                </person>
-               <person xml:id="Prometheus_Aes_char" sex="1">
-                  <persName>Prometheus</persName>
-                  <note resp="#lmw">Prometheus, the title character in the tragedies attributed to <persName ref="#Aeschylus">Aeschylus</persName> such as <title ref="#PromBound_Aesch"/>Prometheus Bound.</note>
-               </person>
                <person xml:id="Prospero">
                   <persName>Prospero</persName>
                   <note resp="#ebb">magician in <persName ref="#Shakespeare">Shakespeare</persName>'s play, <title ref="#Tempest_play">The Tempest</title>
                   </note>
-               </person>
-               <person xml:id="Punch" sex="1">
-                  <persName>Punch</persName>
-                  <persName>Mr. Punch</persName>
-                  <note resp="#lmw">The Punch and Judy slapstick puppet shows of England had their roots in the 16th-century Italian commedia dell'arte tradition. The figure of Punch derives from the Neapolitan stock character of Pulcinella, whose name was anglicized "Punchinello" and shortened to "Punch." 17th- and 18th-century shows in England were performed with marionettes on fixed stages. By the end of the 18th century, shows were performed using glove puppets on mobile puppet booths and found a home on the nineteenth century on the beaches of English seaside resorts and evolved into children's entertainments in the Victorian era. Mr. Punch is the traditional protagonist of such shows; episodic plots normally involve Punch beating his wife and other characters with his "slapstick" and end with him defeating even the Devil himself.</note>
-                  <note>
-                     <ref target="http://www.vam.ac.uk/content/articles/t/thats-the-way-to-do-it!-a-history-of-punch-and-judy/"/>
-                  </note>
-               </person>
-               <person xml:id="Pygmalion" sex="1">
-                  <persName>Pygmalion</persName>
-                  <note resp="#lmw">Mitford generally refers to the version of the myth from <persName ref="#Ovid">Ovid</persName>'s <title ref="#Metamorphoses">Metamorphoses</title> in which Pygmalion is a sculptor who carves a female statue out of ivory, falls in love with the statue, and Aphrodite brings the statue to life.</note>
                </person>
                <person xml:id="Queen_Ch1">
                   <persName>Queen Henrietta Maria</persName>

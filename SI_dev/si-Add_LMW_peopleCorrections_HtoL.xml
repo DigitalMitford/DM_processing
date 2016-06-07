@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><persName ref="#lmw">Lisa M. Wilson</persName>
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <div type="historical_people">
+            
+            <listPerson sortKey="histPersons">
+                   
+               <person xml:id="Hood_Thos" sex="1">
+                  <persName>Thomas Hood</persName>
+                  <persName>
+                     <surname>Hood</surname>
+                     <forename>Thomas</forename>
+                  </persName>
+                  <birth when="1799-05-23">
+                     <placeName ref="#London_city">London, England</placeName>
+                  </birth>
+                  <death when="1845-05-03">
+                     <placeName ref="#London_city">London, England</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>poet</occupation>
+                  <note resp="#lmw #cmm">Poet, humorist, and frequent contributor to periodicals such as The London Magazine, the Athenaeum, and Punch. Recognized for his collaboration with his brother-in-law <persName>John
+                        Hamilton Reynolds</persName> on <bibl>
+                           <title>Odes and Addresses to a Great People</title> (<date>1825</date>)</bibl> and for his well-known poem <bibl>
+                              <title level="a">"The Song of the Shirt"</title> (<date>1843</date>),
+                              first published anonymously in <title level="s">Punch magazine</title>
+                           </bibl>.
+                  </note>
+                  <note><ref target="http://viaf.org/viaf/71512169"/></note>
+               </person>
+               
+               <person xml:id="Horace" sex="1">
+                  <persName>Horace</persName>
+                  <persName>
+                     <forename>Quintus</forename>
+                     <forename>Horatius</forename>
+                     <surname>Flaccus</surname>
+                  </persName>
+                  <birth when="-0065-12-08"><placeName>Venusia, Italy, Roman Republic
+                  </placeName>
+                  </birth>
+                  <death when="-0008-11-27">
+                     <placeName>
+                     <placeName>Rome, Italy, Roman Republic</placeName>
+                  </placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>poet</occupation>
+                  <occupation>memoirist</occupation>
+                  <occupation>critic</occupation>
+                  <occupation>military</occupation>
+                  <occupation>politican</occupation>
+                  <note><ref target="http://viaf.org/viaf/100227522"/></note>
+               </person>
+              
+               <person xml:id="Howard_John" sex="1">
+                  <persName>John Howard</persName>
+                  <persName>
+                     <forename>John</forename>
+                     <surname>Howard</surname>
+                  </persName>
+                  <persName><roleName>Fellow of the Royal Society</roleName></persName>
+                  <birth when="1726-02-09">
+                     <placeName>London, England</placeName>
+                  </birth>
+                  <death when="1790-01-20">
+                     <placeName>Kherson, Ukraine</placeName>
+                  </death>
+                  <occupation>philanthrophist</occupation>
+                  <occupation>reformer</occupation>
+                  <note>
+                     <ref target="http://viaf.org/viaf/61639520"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Howard_SirRob" sex="1">
+                  <persName>Sir Robert Howard</persName>
+                  <persName>
+                     <forename>Robert</forename>
+                 <surname>Howard</surname>
+                     <roleName>Sir</roleName>
+                  </persName>
+                  <persName>
+                     <roleName>Member of Parliament</roleName>
+                     <roleName>secretary to the Treasury</roleName>
+                     <roleName>auditor of the Exchequer</roleName>
+                  </persName>
+                  <birth when="1626-01">
+                     <placeName>England</placeName>
+                  </birth>
+                  <death when="1698-09-03">
+                     <placeName>England</placeName>
+                  </death>
+                 <occupation>playwright</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>politician</occupation>
+                  <occupation>military</occupation>
+                  <note type="bio" resp="#alg #lmw">A royalist sympathizer knighted in the field during the English Civil War, Sir Robert pursued a profitable political career after the Restoration, in addition to becoming successful poet, dramatist, and critic. He is buried in Westminster Abbey. <!--LMW: Standard reference source do not explicitly indicate places of birth and death.-->
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/117377"/>
+                     <ref target="http://www.historyofparliamentonline.org/volume/1690-1715/member/howard-hon-sir-robert-1626-98"/>
+                     <ref target="http://www.historyofparliamentonline.org/volume/1660-1690/member/howard-sir-robert-1626-98"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Howard_Tho" sex="1">
+                  <persName>Thomas Howard</persName>
+                  <persName>
+                      <forename>Thomas</forename>
+                     <surname>Howard</surname>
+                     <roleName>fourth duke of Norfolk</roleName>
+                  </persName>
+                  <birth when="1538-03-10">
+                     <placeName>Kenninghall Palace, Norfolk, England</placeName>
+                  </birth>
+                  <death when="1572-06-02">
+                     <placeName>Tower Hill, London, England</placeName>
+                  </death>
+                  <occupation>military</occupation>
+                  <occupation>politician</occupation>
+                  <note resp="#esh">Convicted of treason and
+                     executed for the charge of involvement in the Ridolfi plot against <persName ref="#ElizI">Queen Elizabeth I</persName>, to place <persName ref="#MaryQoS">Mary, Queen of Scots</persName>, on the English throne and to restore
+                     Catholicism in England. The fourth Duke also wrote the first complete set of English
+                     coursing rules.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/117377"/>
+                  </note>
+               </person>
+               
+               <person xml:id="HowardBrenton" sex="1">
+                  <persName>Howard Brenton</persName>
+                  <persName>
+                     <forename>Howard</forename>
+                     <forename>John</forename>
+                     <surname>Brenton</surname>
+                  </persName>
+                  <birth when="1942-12-13">
+                     <placeName>Portsmouth, Hampshire, England</placeName></birth>
+                  <occupation>playwright</occupation>
+                  <note resp="#rnes">Brenton's plays include <title>The Romans in Britain</title> and <title>Bloody Poetry</title>.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/66476558"/>
+                  </note>
+               </person>
+               
+               <person xml:id="HughPeters" sex="1">
+                  <persName>Hugh Peters</persName>
+                  <persName>
+                     <forename>Hugh</forename>
+                     <surname>Peters</surname>
+                  </persName>
+                  <birth when="1598-06-29">
+                     <placeName>Fowey, Cornwall, England</placeName>
+                  </birth>
+                  <death when="1660-10-16">
+                  <placeName>Charing Cross, London, England</placeName></death>
+                  <occupation>clergy</occupation>
+                  <occupation>military</occupation>
+                  <note resp="#rnes">Chaplain to the <orgName>New Model Army. Executed as a regicide for his role in the trial and death of Charles I.</orgName>
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/5362815"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Hugo_Victor" sex="1">
+                  <persName>Victor Hugo</persName>
+                  <persName>
+                     <surname>Hugo</surname>
+                     <forename>Victor</forename>
+                     <forename>Marie</forename>
+                  </persName>
+                  <birth when="1802-02-26">
+                     <placeName>Besançon, Doubs, France</placeName>
+                  </birth>
+                  <death when="1885-05-22">
+                     <placeName>Paris, France</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>novelist</occupation>
+                  <occupation>playwright</occupation>
+                  <occupation>poet</occupation>
+                  <occupation>essayist</occupation>
+                  <occupation>artist</occupation>
+                  <note>
+                     <ref target="http://viaf.org/viaf/5362815"/>
+                  </note>
+               </person>
+               
+               <person xml:id="hume" sex="1">
+                  <persName>David Hume</persName>
+                  <persName>
+                     <forename>David</forename>
+                     <surname>Hume</surname>
+                  </persName>
+                  <birth when="1711-05-07"><placeName>Edinburgh, Scotland
+                     </placeName>
+                  </birth>
+                  <death when="1776-08-25">
+                     <placeName>Edinburgh, Scotland
+                     </placeName></death>
+                  <occupation>philosopher</occupation>
+                  <occupation>historian</occupation>
+                  <occupation>librarian</occupation>
+                  <note resp="#rnes">The most influential philosopher of the Scottish Enlightenment,
+                     Hume championed skepticism in various contexts. He also wrote a celebrated
+                     <bibl corresp="#HistEngland_Hume">
+                        <title>History of England</title> (<date from="1754" to="1761">1754-61</date>), which covered English history
+                        from the Roman Invasion through the reign of <persName ref="#JamesII">James
+                           II</persName>
+                     </bibl>.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/49226972"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Hume_Jos" sex="1">
+                  <persName>Joseph Hume</persName>
+                  <persName>
+                     <surname>Hume</surname>
+                     <forename>Joseph</forename>
+                  </persName>
+                  <persName><roleName>Member of Parliament</roleName>
+                  <roleName>Fellow of the Royal Society</roleName></persName>
+                  <birth when="1777-01-22">
+                     <placeName>Montrose, Scotland</placeName>
+                  </birth>
+                  <death when="1855-02-20">
+                     <placeName>Burnley Hall, Norfolk, England</placeName>
+                  </death>
+                  <occupation>politician</occupation>
+                  <occupation>medical</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>philanthropist</occupation>
+                  <occupation>reformer</occupation>
+                  <note resp="#ebb">Known as "the Apothecary," a radical M.P.,
+                     represented Aberdeen in the House of Commons from 1818, part of a network of
+                     radical leadership in the Commons over the next 30 years. Criticized the
+                     government's role in <rs type="event" ref="#Peterloo">the Peterloo massacre</rs>, the Cato Street conspiracy, and
+                     the Queen Caroline affair, and worked to repeal the Combination Acts
+                     (1824-1825). Defender of the Chartists. Source: ODNB.</note>
+                  <note>
+                  <ref target="http://viaf.org/viaf/10644699"/>
+                  <ref target="http://www.historyofparliamentonline.org/volume/1790-1820/member/hume-joseph-1777-1855"/>
+                  <ref target="http://www.historyofparliamentonline.org/volume/1820-1832/member/hume-joseph-1777-1855"/>
+                  </note>   
+               </person>
+               
+               <person xml:id="Ingoldsby" sex="1">
+                  <persName>Sir Richard Ingoldsby</persName>
+                  <persName>
+                     <forename>Richard</forename>
+                     <surname>Ingoldsby</surname>
+                     <roleName>Colonel</roleName>
+                     <roleName>Sir</roleName>
+                  </persName>
+                  <persName><roleName>Member of Parliament</roleName></persName>
+                  <birth when="1617">
+                     <placeName>Lenborough, Buckinghamshire, England</placeName>
+                  </birth>
+                  <death when="1685">
+                     <placeName>England</placeName>
+                  </death>
+                  <occupation>military</occupation>
+                  <occupation>politician</occupation>
+                  <note resp="#rnes">A Colonel in the <orgName ref="#New_Model_Army">New Model Army</orgName>, Member of Parliament representing <placeName>Buckinghamshire</placeName>, and regicide, Ingoldsby is perhaps most famous for having claimed, after <rs type="event">the Restoration</rs>, to have signed the king's death warrant under physical duress, <persName ref="#Cromwell">Cromwell</persName> having held his hand to the pen and traced his name. This explanation is not currently considered credible. One of few signers of the death warrant of Charles I who was pardoned and avoided execution. He was a first cousin of Oliver Cromwell. Source: ODNB.</note>
+                  <note>
+                  <ref target="http://viaf.org/viaf/26045333"/>
+                  <ref target="http://www.historyofparliamentonline.org/volume/1660-1690/member/ingoldsby-richard-1617-85"/>
+                  </note>
+                      </person>
+               
+               <person xml:id="Ireton_hist" sex="1">
+                  <persName>Henry Ireton</persName>
+                  <persName>
+                     <forename>Henry</forename>
+                     <surname>Ireton</surname>
+                  </persName>
+                 <persName><roleName>Lord Deputy of Ireland</roleName></persName>
+                  <birth when="1611">
+                     <placeName>Attenborough, Nottinghamshire, England</placeName>
+                  </birth>
+                  <death when="1651">
+                     <placeName>Limerick, Ireland</placeName>
+                  </death>
+                  <occupation>legal</occupation>
+                  <occupation>politician</occupation>
+                  <occupation>military</occupation>
+                  <note resp="#rnes">A prominent leader of the Parliamentary faction against <persName ref="#ChasI">Charles I</persName> and, after the
+                     <rs type="event" ref="#EngCivilWar">English Civil War</rs>, leader of the regicides. Ireton was <persName ref="#Cromwell">Cromwell</persName>'s son-in-law, married to Cromwell's daughter <persName>Elizabeth</persName>. He was one of the signers of the death warrant of Charles I. He died of the plague in 1651 while on duty as Lord Deputy in charge of subduing Ireland; he was exhumed and posthumously executed by Charles II in 1661.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/67638215"/>
+                  </note> 
+               </person>
+               
+               <person xml:id="JamesI" sex="1">
+                  <persName>James I of England and Ireland</persName>
+                  <persName>James VI of Scotland</persName>
+                  <persName>
+                     <roleName>King of Scots</roleName>
+                     <roleName>King of England, Scotland, France and Ireland, Defender of the Faith</roleName>
+                  </persName>
+                  <birth when="1566-06-19">
+                     <placeName>Edinburgh Castle, Edinburgh, Scotland</placeName>
+                  </birth>
+                  <death when="1625-03-27">
+                     <placeName>Theobalds House, Hertfordshire, England</placeName>
+                  </death>
+                  <occupation>monarch</occupation>
+                  <occupation>literary</occupation>
+                  <note resp="#lmw #cmm">James VI of Scotland from 24 July 1567 and James I of England and Ireland from 24 March 1603, following the union of the Scottish and English crowns. Born in Edinburgh Castle to Mary Stuart ("Queen of Scots"), he was the first Stuart king of England. Author of Daemonologie (1597), The True Law of Free Monarchies (1598), and Basilikon Doron (1599); he also sponsored the translation of the Bible that was named after him, completed in 1611. Buried in Westminster Abbey.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/88905668"/>
+                  </note> 
+               </person>
+               
+               <person xml:id="JamesII" sex="1">
+                  <persName>James II of England and Ireland
+                  </persName>
+                  <persName>James VII of Scotland
+                  </persName>
+                  <persName><roleName>King of England and Ireland</roleName>
+                     <roleName>King of Scotland</roleName>
+                     <roleName>King of England, Scotland, France and Ireland, Defender of the Faith</roleName>
+                  </persName>
+                  <birth when="1633-10-14">
+                     <placeName>St. James Palace, London, England</placeName>
+                  </birth>
+                  <death when="1701-09-16">
+                     <placeName>Château de Saint-Germain-en-Laye, France</placeName>
+                  </death>
+                  <occupation>monarch</occupation>
+                  <note resp="#ebb">Last Roman Catholic and Stuart king of England, he succeeded
+                     the throne after the death of <persName ref="#ChasII">Charles II</persName>,
+                     his brother, and reigned from <date from="1685" to="1688">1685 to 1688</date>,
+                     when he was deposed during the <rs type="event" ref="#Glorious_Revol">Glorious
+                        Revolution</rs>.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/3265477"/>
+                  </note> 
+               </person>
+               
+               <person xml:id="Jerrold_Doug" sex="1">
+                  <persName>Douglas William Jerrold</persName>
+                  <persName>
+                     <surname>Jerrold</surname>
+                     <forename>Douglas</forename>
+                     <forename>William</forename>
+                  </persName>
+                  <birth when="1803-01-03">
+                     <placeName>Cranbrook, Kent, England</placeName>
+                  </birth>
+                  <death when="1857-06-08">
+                     <placeName>Kilburn Priory, London, England</placeName>
+                  </death>
+                  <occupation>military</occupation>
+                  <occupation>printer</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>journalist</occupation>
+                  <occupation>playwright</occupation>
+                  <note resp="#lmw #ebb">Served as a midshipman under captaincy of Jane Austen's brother Francis; after 1815, apprenticed as a printer. Contributor to the Monthly Magazine, Blackwood's, the New Monthly, and the Athenaeum, as well as frequent contributor to Punch. Writer of aqua dramas, topical melodramas, and comedies. He also founded and edited the Illuminated Magazine, Jerrold's Shilling Magazine, and Douglas Jerrold's Weekly Newspaper. Friend of Charles Dickens.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/76447934"/>
+                  </note> 
+               </person>
+              
+               <person xml:id="John_Apostle" sex="1">
+                  <persName>John the Apostle</persName>
+                  <persName>John the Evangelist</persName>
+                  <persName>Saint John</persName>
+                  <birth notBefore="0006">
+                     <placeName>Bethsaida, Judaea, Roman Empire</placeName>
+                  </birth>
+                  <death>
+                     <placeName>Ephesus, Asia, Roman Empire</placeName>
+                  </death>
+                  <note resp="#ebb">Presumably (and contestedly) the author of the fourth book of <bibl corresp="#NewTestament_Bible">the New Testament</bibl>, <bibl corresp="#JohnGospel_NewTest">the Gospel of John</bibl>.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/40648922"/>
+                  </note></person>
+                  
+                  <person xml:id="Johnson" sex="1">
+                     <persName>Samuel Johnson</persName>
+                     <persName>
+                          <forename>Samuel</forename>
+                        <surname>Johnson</surname>
+                     </persName>
+                     <birth when="1709-09-18">
+                        <placeName>Lichfield, Staffordshire, England</placeName>
+                     </birth>
+                     <death when="1784-12-13">
+                        <placeName>London, England</placeName>
+                     </death>
+                     <occupation>literary</occupation>
+                     <occupation>essayist</occupation>
+                     <occupation>lexicographer</occupation>
+                     <occupation>biographer</occupation>
+                     <occupation>poet</occupation>
+                     <note type="bio" resp="#esh">English writer and "man of letters." His many
+                        well-known works include <title>A Dictionary of the English
+                           Language</title> (1755), <title>Lives of the Most Eminent English
+                              Poets</title> (1781), and <title>A Journey to the Western Islands of
+                                 Scotland</title> (1775).</note>
+                     <note>
+                        <ref target="http://viaf.org/viaf/7406725"/>
+                     </note>
+                  </person>
+               
+               <person xml:id="Johnstone_Jack" sex="1">
+                  <persName>John "Jack" Johnstone</persName>
+                  <persName>
+                     <surname>Johnstone</surname>
+                     <forename>John</forename>
+                     <forename>Henry</forename>
+                     <addName>Jack</addName>
+                     <addName>Irish</addName>
+                  </persName>
+                  <birth notBefore="1749-08-01">
+                     <placeName>Kilkenny, Kilkenny, Ireland</placeName>
+                  </birth>
+                  <death when="1828-12-26">
+                     <placeName>Tavistock Row, Covent Garden, London, England</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <occupation>singer</occupation>
+                  <note resp="#lmw">Irish actor, primarily a comedian; also a singer of tenors parts, called "Jack" or "Irish" Johnstone. Performed at Smock Alley Theatre, Dublin; Covent Garden Theatre, London; and Drury Lane Theatre, London. See also Old Drury Lane, vol. 2, p. 51-53.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/75020727"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Jordan_Dorothea" sex="2">
+                  <persName>Dolly Jordan</persName>
+                  <persName>
+                     <surname type="paternal">Bland</surname>
+                     <surname>Jordan</surname><!-- LMW:  This is not her "married" name, but an assumed surname. -->
+                     <forename>Dorothea</forename>
+                     <addName>Dolly</addName>
+                     <addName>Dora</addName>
+                  </persName>
+                  <birth when="1761-11-22">
+                     <placeName>county Waterford, Ireland</placeName>
+                  </birth>
+                  <death when="1816-07-05">
+                     <placeName>St. Cloud, France</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <note type="bio" resp="#lmw">Anglo-Irish actor, specializing in comic roles and "breeches" parts. Born Dorothea Bland, frequently called "Dora" or "Dolly" Jordan; she adopted the name "Mrs. Jordan" in the 1780s as a stage name. Courtesan and longtime mistress of <persName>William, Duke of Clarence (later William IV)</persName>, with whom she lived at Bushy House, London, and with whom she had ten illegitimate children; she also had three illegitimate children by Sir Richard Ford. Appeared in London at Haymarket, Covent Garden, and Drury Lane Theatres.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/817367"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Julius_Caesar" sex="1">
+                  <persName>Julius Caesar</persName>
+                  <persName>
+                     <forename>Gaius</forename>
+                     <forename>Julius</forename>
+                     <surname>Caesar</surname></persName>
+                  <persName>          
+                     <roleName>Dictator of the Roman Republic</roleName>
+                     <roleName>Consul of the Roman Republic</roleName>
+                  </persName>
+         <birth when="-0100-07-13">100 BC
+                  <placeName>Rome, Roman Republic</placeName>
+                  </birth>
+                  <death when="-0044-03-15">44 BC
+                     <placeName>Rome, Roman Republic
+                </placeName></death>
+                  <occupation>military</occupation>
+                  <occupation>politician</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>orator</occupation>
+                  <occupation>priest</occupation>
+                  <occupation>legal</occupation>
+                  <note resp="#ebb">Roman military commander and emperor, assassinated on
+                     <rs type="event">the Ides of March</rs>, as documented by <persName ref="#Plutarch">Plutarch</persName>.</note>
+                <note>
+                  <ref target="http://viaf.org/viaf/100227925"/>
+               </note>
+               </person>
+               
+               <person xml:id="Kean_Edmund" sex="1">
+                  <persName>Edmund Kean</persName>
+                  <persName>
+                     <surname>Kean</surname>
+                     <forename>Edmund</forename>
+                  </persName>
+                  <birth when="1787-11-04">
+                     <placeName>Westminster, London, England</placeName>
+                  </birth>
+                  <death when="1833-05-15">
+                     <placeName>Richmond, Surrey, England</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <note resp="#lmw">Considered one of the greatest actors of Mitford's era; known for tragic roles, including original interpretations of Shakespearean roles such as Shylock. Performed in London at Drury Lane Theatre, and also toured the United States and Canada.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/20476434"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Keats" sex="1">
+                  <persName>John Keats</persName>
+                  <persName>
+                     <surname>Keats</surname>
+                     <forename>John</forename>
+                  </persName>
+                  <birth when="1795-10-31">
+                     <placeName>Moorgate, London, England</placeName>
+                  </birth>
+                  <death when="1821-02-23">
+                     <placeName ref="#Rome">Rome, Papal States</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>poet</occupation>
+                  <note>
+                     <ref target="http://viaf.org/viaf/66508882"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Kemble_C" sex="1">
+                  <persName>Charles Kemble</persName>
+                  <persName>
+                     <surname>Kemble</surname>
+                     <forename>Charles</forename>
+                  </persName>
+                  <birth when="1775-11-25">
+                     <placeName>Brecon, South Wales</placeName>
+                  </birth>
+                  <death when="1854-11-12"><!--LMW. Place of death not listed in standard reference sources. -->
+                     <placeName>England</placeName>
+                  </death>
+              <note resp="#lmw">British actor, the younger brother of John Phillip Kemble and Sarah Siddons. Although he was considered by some to be as fine an actor as his sister and brother, he mostly appeared in secondary rather than leading roles. Father of Frances "Fanny" Kemble. One of the co-proprietors of Covent Garden Theatre. He served as Examiner of Plays in the early nineteenth-century, reviewing plays for the Lord Chamberlain.</note>
+               <note>
+                  <ref target="http://viaf.org/viaf/59345857"/>
+               </note></person>
+            
+               <person xml:id="Kemble_Frances" sex="2">
+                  <persName>Frances Kemble</persName>
+                  <persName>
+                     <surname>Kemble</surname>
+                     <forename>Frances</forename>
+                     <forename>Anne</forename>
+                     <addName>Fanny</addName>
+                  </persName>
+                  <persName>Fanny Kemble</persName>
+                  <birth when="1809-11-27"/><!--LMW: birth place not listed in standard reference sources.-->
+                  <death when="1893-01-15">
+                     <placeName>London, England</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>memoirist</occupation>
+                  <occupation>playwright</occupation>
+                  <occupation>poet</occupation>
+                  <note type="bio" resp="#lmw">Frances "Fanny" Kemble was a member of the Kemble acting clan, the daughter of Charles Kemble and the niece of Sarah Siddons. One of the best-known women performers of her generation, she worked as both an actor and a platform performer in London and also toured the United States. She was also a prolific author, particulary known for her memoirs and travel writing.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/66594114"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Kemble_JP" sex="1">
+                  <persName>John Philip Kemble</persName>
+                  <persName>
+                     <surname>Kemble</surname>
+                     <forename>John</forename>
+                     <forename>Philip</forename>
+                  </persName>
+                  <birth when="1757-02-01">
+                     <placeName>Prescot, Lancashire, England</placeName>
+                  </birth>
+                  <death when="1823-02-26">
+                     <placeName>Lausanne, Switzerland</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <occupation>theater manager</occupation>
+                  <note resp="#lmw">Member of Kemble acting clan, brother of Sarah Siddons. One of the best-known actors of his generation, perhaps second only in reputation to his sister, until the advent of Edmund Kean. Corialanus and Cato were two of his best-known roles. Served as manager of both Drury Lane and of Covent Garden Theatres.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/74763759"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Kemble_MrsC" sex="2">
+                  <persName>Maria Therese de Camp Kemble</persName>
+                  <persName>
+                     <surname type="married">Kemble</surname>
+                     <surname type="maiden">
+                        <nameLink>de</nameLink> Camp</surname>
+                     <forename>Maria</forename>
+                     <forename>Theresa</forename>
+                  </persName>
+                  <persName>Mrs. Charles Kemble</persName>
+                  <persName>Miss <nameLink>de</nameLink>Camp</persName>
+                  <birth when="1777-01-17">
+                     <placeName>Vienna, Austria</placeName>
+                  </birth>
+                  <death when="1838-09-03">
+                     <placeName>Addlestone, Surrey, England</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>playwright</occupation>
+                  <note resp="#lmw #cmm">British actor, later Mrs. Charles Kemble. Likely born Marie Thérèse de Camp or du Fleury. Acted under "Miss deCamp." (sometimes spelled "duCamp.") Married actor Charles Kemble 2 July 1806.
+                        Starred in a travestied version of <title>The Beggar’s Opera</title> in
+                        <date>1792</date> and went on to star in <title>Miss in her
+                           Teens</title>, <title>The Recruiting Officer</title> and <title>The Iron
+                              Chest</title>. After her marriage, she appeared at <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName>, assisted <persName ref="#Kemble_C">Charles Kemble</persName> with productions, and
+                        authored several comedies. Mother of <persName>Frances Kemble</persName> and
+                        <persName>Adelaide Kemble</persName>.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/122326367"/>
+                  </note>
+               </person>
+               
+               <person xml:id="King_Wm" sex="1">
+                  <persName>Dr. William King</persName>
+                  <persName>
+                     <forename>William</forename>
+                     <surname>King</surname>
+                  </persName>
+                  <persName>
+                     <roleName>Doctor of Laws (LL.D.)</roleName>
+                  </persName>
+                  <birth when="1685-03-16">
+                     <placeName>Stepney, Middlesex, London, England</placeName>
+                  </birth>
+                  <death when="1763">
+                     <placeName>England</placeName>
+                  </death>
+                  <occupation>academic</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>orator</occupation>
+                  <note resp="#lmw">Principal of St. Mary's Hall, University of Oxford, and leader of the Jacobite interest at Oxford.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/20492585"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Knowles_Sheridan" sex="1">
+                  <persName>James Sheridan Knowles</persName>
+                  <persName>
+                     <surname>Knowles</surname>
+                     <forename>James</forename>
+                     <forename>Sheridan</forename>
+                  </persName>
+                  <birth when="1784-05-12">
+                     <placeName>Cork, Ireland</placeName>
+                  </birth>
+                  <death when="1862-11-30">
+                     <placeName>Torquay, England</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <occupation>literary</occupation>
+                  <occupation>clergy</occupation>
+                  <note resp="#lmw">Irish author and actor, known as "Sheridan" Knowles. Friend of Hazlitt, Lamb, and
+                        Coleridge. His father James Knowles was the cousin of Richard Brinsley
+                        Sheridan. Wrote William Tell (1825) for Macready. Also wrote The Hunchback
+                        (Covent Garden, 1832). Later became a Baptist preacher.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/59352010"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Kotzebue" sex="1">
+                  <persName>August von Kotzebue</persName>
+                  <persName>
+                     <surname>
+                        <nameLink>von</nameLink> Kotzebue</surname>
+                     <forename>August</forename>
+                     <forename>Friedrich</forename>
+                     <forename>Ferdinand</forename>
+                  </persName>
+                  <birth when="1761-05-03">
+                     <placeName>Weimar, German confederation</placeName>
+                  </birth>
+                  <death when="1819-03-23">
+                     <placeName>Mannheim, German confederation</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>playwright</occupation>
+                  <occupation>memoirist</occupation>
+                  <occupation>novelist</occupation>
+                  <occupation>ambassador</occupation>
+                  <note resp="#lmw">German author. Kotzebue was a prolific playwright and <persName ref="#Kemble_C">Charles
+                     Kemble</persName> adapted many of his comedies and melodramas for the English stage. He was assassinated by a nationalist liberal student in 1819 and Prince Metternich used his death to encourage the German confederation to further restrict academic freedoms and freedom of the press.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/14771963"/>
+                  </note>
+                 </person>
+               
+               <person xml:id="Lady_Fairfax_hist" sex="2">
+                  <persName>Anne, Lady Fairfax</persName>
+                  <persName>
+                     <forename>Anne</forename>
+                     <surname type="paternal">Vere</surname>
+                     <surname type="married">Fairfax</surname>
+                  </persName>
+                  <occupation>politician</occupation>
+                  <occupation>prisoner of war</occupation>
+                  <death when="1665">1665</death>
+                  <note resp="#lmw">Anne was the fourth daughter of Horace Vere, first Baron Vere of Tilbury and Mary Tracy. She married Thomas Fairfax, third Lord Fairfax of Cameron, Lord General and Parliamentary commander-in-chief of the New Model Army; they had one daughter. <!-- LMW:  no VIAF #. --></note>
+               </person>
+               
+               <person xml:id="Lamb_Caro" sex="2">
+                  <persName>Caroline Lamb</persName>
+                  <persName>
+                     <surname type="paternal">Ponsonby</surname>
+                     <surname type="married">Lamb</surname>
+                     <forename>Caroline</forename>
+                     <roleName>Lady</roleName>
+                  </persName>
+                  <birth when='1785-11-13'/>
+                 <death when="1828-01-25">
+                     <placeName>Brocket Hall, Hatfield, Hertfordshire, England</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>novelist</occupation>
+                  <occupation>poet</occupation>
+                  <note type="bio" resp="#lmw">English author. Daughter of Frederick Ponsonby, 3rd Earl of Bessborough and Lady Henrietta Spencer. Wife of William Lamb, 2nd Viscount Melbourne and mistress of <persName ref="#Byron">Lord Byron</persName>. Author of <title ref="#Glenarvon_fict">Glenarvon</title> and other satirical novels. She attended the St. Quintin School, 22 Hans Place, London, and was taught by Frances Rowden, along with Mary Russell Mitford and Laetitia Elizabeth Landon.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/76413276"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Lamb_Chas" sex="1">
+                  <persName>Charles Lamb</persName>
+                  <persName>
+                     <surname>Lamb</surname>
+                     <forename>Charles</forename>
+                  </persName>
+                  <birth when="1775-02-10">
+                     <placeName>Inner Temple, London, England</placeName>
+                  </birth>
+                  <death when="1834-12-27">
+                     <placeName>Edmonton, Middlesex, London, England</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>essayist</occupation>
+                  <occupation>poet</occupation>
+                  <occupation>memoirist</occupation>
+                  <occupation>clerk</occupation>
+                 <note resp="#lmw #cmm">British author, best known for his Essays of Elia (1823-1833), many of which originally appeared in the <title ref="#LondonMag">London Magazine</title>, and Tales from Shakespeare, written with his sister Mary Lamb. Friend of Wordsworth and Coleridge.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/64007908"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Lamb_Mary" sex="2">
+                  <persName>Mary Lamb</persName>
+                  <persName>
+                     <surname>Lamb</surname>
+                     <forename>Mary</forename>
+                  </persName>
+                  <birth when="1764-12-03">
+                     <placeName>London, England</placeName>
+                  </birth>
+                  <death when="1847-05-20">
+                     <placeName>London, England</placeName>
+                  </death>
+                  <occupation>author</occupation>
+                  <note type="bio" resp="#err">An elder sister of <persName ref="#Lamb_Chas">Charles
+                     Lamb</persName>, Mary Lamb was a noted author of prose fiction and poetry
+                     who was a member of literary circles that included her brother Charles,
+                     <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, <persName ref="#Wordsworth_Wm">William Wordsworth</persName>, <persName ref="#Wordsworth_Dor">Dorothy Wordsworth</persName>, <persName ref="#Coleridge_ST">Samuel Taylor Coleridge</persName>, and, presumably,
+                     <persName ref="#MRM">Mary Russell Mitford</persName>. Was also infamous for
+                     having murdered her mother in a fit of insanity in <date>1796</date>. She lived mostly with her brother, although she was periodically insitutionalized for mental illness.</note>
+                  
+                  <note>
+                     <ref target="http://viaf.org/viaf/24603799"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Landon_LE" sex="2">
+                  <persName>Laetitia Elizabeth Landon</persName>
+                  <persName>
+                     <surname type="paternal">Landon</surname>
+                     <surname type="married">Maclean</surname>
+                     <forename>Laetitia</forename>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <birth when="1802-08-14">
+                     <placeName>Chelsea, London, England</placeName>
+                  </birth>
+                  <death when="1838-10-15">
+                     <placeName>Cape Coast Castle, Gold Coast, West Africa</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>poet</occupation>
+                  <occupation>novelist</occupation>
+                  <note resp="#lmw">Landon attended the St. Quintin School, 22 Hans Place, London, and was taught by Frances Rowden, along with Mary Russell Mitford and Caroline Lamb. Wrote poetry under L.E.L. or "Miss Landon". Contributed to many giftbooks and annuals in the 1830s, and also anonymously authored numerous reviews and essays. Married <persName>George Maclean</persName>, governor of the British colony Gold Coast in West Africa (now Ghana) in 1838 and died two months later.
+                  </note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/25409486"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Lane_Wm" sex="1">
+                  <persName>William Lane</persName>
+                  <persName>
+                     <surname>Lane</surname>
+                     <forename>William</forename>
+                  </persName>
+                  <birth notBefore="1745" notAfter="1746">
+                     <placeName>United Kingdom</placeName>
+                  </birth>
+                  <death when="1814-01-29">
+                     <placeName>United Kingdom</placeName>
+                  </death>
+                  <occupation>publisher</occupation>
+                  <occupation>bookseller</occupation>
+                  <note resp="#kdc #lmw">London bookseller and publisher William Lane pioneered the circulating library, and was the founder of the <orgName ref="#Minerva_Press">Minerva Press</orgName>, a major publisher of Gothic novels and other popular fiction in the late eighteenth-century. He retired about 1804.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/17088379"/>
+                  </note>
+                </person>
+               
+               <person xml:id="LeCamus_Antoine" sex="1">
+                  <persName>Antoine Le Camus</persName>
+                  <persName>
+                     <forename>Antoine</forename>
+                     <surname><nameLink>Le</nameLink> Camus</surname>
+                  </persName>
+                  <birth when="1722">1722</birth>
+                  <death when="1772">1772</death>
+                  <occupation>literary</occupation>
+                  <occupation>medical</occupation>
+                  <note resp="#lmw">French physician and author.</note>
+                  <note>
+                     <ref target=" http://viaf.org/viaf/66776769"/>
+                  </note>
+               </person>
+              
+               <person xml:id="Lewington_Mr" sex="1">
+                  <persName>
+                     <surname>Lewington</surname>
+                  </persName>
+                  <persName>Mr. Lewington</persName>
+                  <note resp="#scw">A business person who worked for <persName>Mr. Payn</persName>. More research needed.<!--scw: no other info from Needham.-->
+                  </note>
+               </person>
+               
+               <person xml:id="Lewis_William_Thomas" sex="1">
+                  <persName>William Thomas Lewis</persName>
+                  <persName>
+                     <surname>Lewis</surname>
+                     <forename>William</forename>
+                     <forename>Thomas</forename>
+                  </persName>
+                  <birth notAfter="1748">
+                     <placeName>Ormskirk, Lancashire, England</placeName>
+                  </birth>
+                  <death when="1811-01-13">
+                     <placeName>Westbourne Place, London, England</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <occupation>theater manager</occupation>
+                  <note resp="#lmw">English actor, called "Gentleman" Lewis, known for "fop" roles.  Appeared at Haymarket and Covent Garden Theatres in London as well as in Dublin and the provinces. He later became the deputy-manager of Covent Garden and later leased the Manchester and Liverpool Theatres with Thomas Knight. He retired in 1809.<!-- LMW: No VIAF #. --></note>
+               </person>
+               
+               <person xml:id="Leyden_John" sex="1">
+                  <persName>John Leyden</persName>
+                  <persName>
+                     <forename>John</forename>
+                     <surname>Leyden</surname>
+                  </persName>
+                  <birth when="1775-09-08">
+                     <placeName>Denholm, Roxburghshire, Scotland</placeName>
+                  </birth>
+                  <death when="1811-08-28">
+                     <placeName>Cornelis, Batavia, Java</placeName>
+                  </death>
+                  <occupation>linguist</occupation>
+                  <occupation>physician</occupation>
+                  <occupation>poet</occupation>
+                  <note resp="#alg">Scottish antiquary, poet, and orientalist who assisted <persName ref="#Scott_Wal">Walter Scott</persName> in compiling the <title ref="#Minstrelsy_WS">Minstrelsy of the Scottish Border</title>. Sources: LBT, DNB.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/54362232"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Liston_John" sex="1">
+                  <persName>John Liston</persName>
+                  <persName>
+                     <surname>Liston</surname>
+                     <forename>John</forename>
+                  </persName>
+                  <birth notAfter="1776">
+                     <placeName>London, England</placeName>
+                  </birth>
+                  <death when="1846-03-22">
+                     <placeName>England</placeName>
+                  </death>
+                  <occupation>actor</occupation>
+                  <note resp="#lmw">English actor, specializing in comedy. His most famous role was Paul
+                        Pry. <bibl> <persName ref="#Lamb_Chas">Charles Lamb</persName> wrote a fictional
+                           "Memoir" of the actor in the <title ref="#LondonMag">London
+                              Magazine</title> (<date>1825</date>)</bibl>.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/3915614"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Lockhart_JG" sex="1">
+                  <persName>John Gibson Lockhart</persName>
+                  <persName>
+                     <surname>Lockhart</surname>
+                     <forename>John</forename>
+                     <forename>Gibson</forename>
+                  </persName>
+                  <persName>John Gibson Lockhart</persName>
+                  <birth when="1794-07-12">
+                     <placeName>Lanarkshire, Scotland</placeName>
+                  </birth>
+                  <death when="1854-11-25">
+                     <placeName>Abbotsford, Scotland</placeName>
+                  </death>
+                  <occupation>journalist</occupation>
+                  <occupation>editor</occupation>
+                  <occupation>literary</occupation>
+                  <note resp="#ebb">A prominent writer for <title ref="#Blackwoods">Blackwood's Magazine</title> in its early years, Lockhart joined the staff of the magazine in <date when="1817">1817</date>, and came to be associated with its abrasive style and particularly (though without verification) its insulting characterization of London artists and literary figures as a <orgName ref="#CockneyS">Cockney School</orgName> in <date from="1820" to="1821">1820 and 1821</date>. Assumptions and bitter accusations in the matter led to a bitter personal conflict aired in the pages of Blackwood's and <title ref="#LondonMag">The London Magazine</title> resulting in <rs type="event" ref="#ScottChristie_Duel">the death by duel of The London Magazine's editor, <persName ref="#Scott_John">John Scott</persName> in <date when="1821-02">February 1821</date>, at the hands of Lockhart's literary agent <persName ref="#Christie_JH">Jonathan Christie</persName>
+                  </rs>. Lockhart married <persName ref="#Scott_Wal">Walter Scott</persName>'s daughter <persName>Sophia</persName> in <date when="1820">1820</date>, which caused John Scott and others to assume that Walter Scott had some involvement with Blackwood's campaign against the Cockneys. Lockhart took over the editorship of the <title ref="#QuarterlyRev_per">Quarterly Review</title>
+                     <date from="1826" to="1853">from March 1826 until June 1853</date>, shortly before his death. He is perhaps best known as the author of his father-in-law's <bibl>
+                        <biblScope unit="volume" from="1" to="7">7-volume</biblScope> biography, <date>Life of Walter Scott</date>, published in <date from="1837" to="1838">1837-1838</date>
+                     </bibl>.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/32120479"/>
+                  </note>
+               </person>
+               
+               <person xml:id="Lucetti" sex="1">
+                  <persName>Lucetti</persName>
+                  <note resp="#tlh #lmw">May be a fellow traveller with <persName ref="#Acerbi_J">Joseph Acerbi</persName>; however, he is not mentioned by name in <title ref="#Travels_Acerbi">Travels through Sweden, Finland, and Lapland to the North Cape, in the years 1798 and 1799</title>. Further research needed.<!--LMW No VIAF #, not listed in standard reference works. --></note>
+               </person>
+              
+           </listPerson>
+         </div>
+      </body>
+   </text>
+</TEI>
