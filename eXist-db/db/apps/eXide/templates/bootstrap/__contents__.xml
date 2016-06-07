@@ -1,18 +1,18 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/templates/bootstrap" version="1" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:32.213-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/templates/bootstrap" version="1" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.996-04:00">
     <acl entries="0" version="1"/>
-    <resource type="XMLResource" name="collection.xconf" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.213-05:00" modified="2015-10-23T17:48:32.213-05:00" filename="collection.xconf" mimetype="application/xml">
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.996-04:00" modified="2015-03-27T19:31:03.996-04:00" filename="pre-install.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="controller.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:32.213-05:00" modified="2015-10-23T17:48:32.213-05:00" filename="controller.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.996-04:00" modified="2015-03-27T19:31:03.996-04:00" filename="controller.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="error-page.html" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.213-05:00" modified="2015-10-23T17:48:32.213-05:00" filename="error-page.html" mimetype="text/html">
+    <resource type="XMLResource" name="index.html" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.997-04:00" modified="2015-03-27T19:31:03.997-04:00" filename="index.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="index.html" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.213-05:00" modified="2015-10-23T17:48:32.213-05:00" filename="index.html" mimetype="text/html">
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:04.003-04:00" modified="2015-03-27T19:31:04.003-04:00" filename="collection.xconf" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:32.213-05:00" modified="2015-10-23T17:48:32.213-05:00" filename="pre-install.xql" mimetype="application/xquery">
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:04.004-04:00" modified="2015-03-27T19:31:04.004-04:00" filename="error-page.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
     <subcollection name="resources" filename="resources"/>

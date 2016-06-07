@@ -1,15 +1,15 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/templating" version="1" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.385-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/templating" version="1" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.404-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="examples.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.385-05:00" modified="2015-10-23T17:48:25.385-05:00" filename="examples.xql" mimetype="application/xquery">
+    <resource type="XMLResource" name="templates.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.404-04:00" modified="2015-03-27T19:30:51.404-04:00" filename="templates.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="restxq-demo.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.401-05:00" modified="2015-10-23T17:48:25.401-05:00" filename="restxq-demo.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="restxq-demo.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.411-04:00" modified="2015-03-27T19:30:51.411-04:00" filename="restxq-demo.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="restxq-page.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.417-05:00" modified="2015-10-23T17:48:25.417-05:00" filename="restxq-page.html" mimetype="text/html">
+    <resource type="XMLResource" name="restxq-page.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.421-04:00" modified="2015-03-27T19:30:51.421-04:00" filename="restxq-page.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="templates.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.417-05:00" modified="2015-10-23T17:48:25.417-05:00" filename="templates.html" mimetype="text/html">
+    <resource type="BinaryResource" name="examples.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.424-04:00" modified="2015-03-27T19:30:51.424-04:00" filename="examples.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

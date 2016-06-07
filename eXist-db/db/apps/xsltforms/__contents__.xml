@@ -1,183 +1,183 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/xsltforms" version="1" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:34.463-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/xsltforms" version="1" owner="monex" group="monex" mode="775" created="2015-03-27T19:31:05.23-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="README.txt" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="README.txt" mimetype="text/plain">
+    <resource type="BinaryResource" name="zip_deflate.js" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.638-04:00" modified="2015-03-27T19:31:05.638-04:00" filename="zip_deflate.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="returnasattachment.txs" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="returnasattachment.txs" mimetype="application/octet-stream">
+    <resource type="XMLResource" name="config_sk.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.639-04:00" modified="2015-03-27T19:31:05.639-04:00" filename="config_sk.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="rev.594" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="rev.594" mimetype="application/octet-stream">
+    <resource type="BinaryResource" name="html-echo.php" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.64-04:00" modified="2015-03-27T19:31:05.64-04:00" filename="html-echo.php" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="savetodisk.txs" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="savetodisk.txs" mimetype="application/octet-stream">
+    <resource type="BinaryResource" name="put.php" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.64-04:00" modified="2015-03-27T19:31:05.64-04:00" filename="put.php" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="svg2xaml.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="svg2xaml.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="poweredbyXSLTForms.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.643-04:00" modified="2015-03-27T19:31:05.643-04:00" filename="poweredbyXSLTForms.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="tab.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.588-05:00" modified="2015-10-23T17:48:34.588-05:00" filename="tab.png" mimetype="image/png">
+    <resource type="BinaryResource" name="returnasattachment.txs" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.644-04:00" modified="2015-03-27T19:31:05.644-04:00" filename="returnasattachment.txs" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="thBackground.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.588-05:00" modified="2015-10-23T17:48:34.588-05:00" filename="thBackground.png" mimetype="image/png">
+    <resource type="XMLResource" name="config_zh_TW.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.644-04:00" modified="2015-03-27T19:31:05.644-04:00" filename="config_zh_TW.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="titleBackground.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.588-05:00" modified="2015-10-23T17:48:34.588-05:00" filename="titleBackground.png" mimetype="image/png">
+    <resource type="XMLResource" name="config_ru.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.645-04:00" modified="2015-03-27T19:31:05.645-04:00" filename="config_ru.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="txs.php" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.588-05:00" modified="2015-10-23T17:48:34.588-05:00" filename="txs.php" mimetype="application/octet-stream">
+    <resource type="BinaryResource" name="savetodisk.txs" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.649-04:00" modified="2015-03-27T19:31:05.649-04:00" filename="savetodisk.txs" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="valid-xforms11.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.604-05:00" modified="2015-10-23T17:48:34.604-05:00" filename="valid-xforms11.png" mimetype="image/png">
+    <resource type="XMLResource" name="xsltforms_profiler.xhtml" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.65-04:00" modified="2015-03-27T19:31:05.65-04:00" filename="xsltforms_profiler.xhtml" mimetype="application/xhtml+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="xsltchain.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.604-05:00" modified="2015-10-23T17:48:34.604-05:00" filename="xsltchain.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="focus.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.656-04:00" modified="2015-03-27T19:31:05.656-04:00" filename="focus.gif" mimetype="image/gif">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="xsltforms.css" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.604-05:00" modified="2015-10-23T17:48:34.604-05:00" filename="xsltforms.css" mimetype="text/css">
+    <resource type="BinaryResource" name="empty.xlsx" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.656-04:00" modified="2015-03-27T19:31:05.656-04:00" filename="empty.xlsx" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="xsltforms.jar" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.604-05:00" modified="2015-10-23T17:48:34.604-05:00" filename="xsltforms.jar" mimetype="application/octet-stream">
+    <resource type="XMLResource" name="config_ro.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.656-04:00" modified="2015-03-27T19:31:05.656-04:00" filename="config_ro.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="xsltforms.js" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.62-05:00" modified="2015-10-23T17:48:34.62-05:00" filename="xsltforms.js" mimetype="application/x-javascript">
+    <resource type="XMLResource" name="xsltchain.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.658-04:00" modified="2015-03-27T19:31:05.658-04:00" filename="xsltchain.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="xsltforms.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.62-05:00" modified="2015-10-23T17:48:34.62-05:00" filename="xsltforms.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="svg2xaml.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.673-04:00" modified="2015-03-27T19:31:05.673-04:00" filename="svg2xaml.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="xsltforms_profiler.xhtml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.698-05:00" modified="2015-10-23T17:48:34.698-05:00" filename="xsltforms_profiler.xhtml" mimetype="application/xhtml+xml">
+    <resource type="BinaryResource" name="echo-zip.php" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.734-04:00" modified="2015-03-27T19:31:05.734-04:00" filename="echo-zip.php" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="xsltforms_tracelog.xhtml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.713-05:00" modified="2015-10-23T17:48:34.713-05:00" filename="xsltforms_tracelog.xhtml" mimetype="application/xhtml+xml">
+    <resource type="XMLResource" name="config_nl.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.739-04:00" modified="2015-03-27T19:31:05.739-04:00" filename="config_nl.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="zip_deflate.js" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.713-05:00" modified="2015-10-23T17:48:34.713-05:00" filename="zip_deflate.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="icon_hint.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.747-04:00" modified="2015-03-27T19:31:05.747-04:00" filename="icon_hint.gif" mimetype="image/gif">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="zip_inflate.js" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.713-05:00" modified="2015-10-23T17:48:34.713-05:00" filename="zip_inflate.js" mimetype="application/x-javascript">
+    <resource type="XMLResource" name="config_gl.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.747-04:00" modified="2015-03-27T19:31:05.747-04:00" filename="config_gl.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="repo.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.713-05:00" modified="2015-10-23T17:48:34.713-05:00" filename="repo.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.754-04:00" modified="2015-03-27T19:31:05.754-04:00" filename="repo.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="ball.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.463-05:00" modified="2015-10-23T17:48:34.463-05:00" filename="ball.png" mimetype="image/png">
+    <resource type="XMLResource" name="config.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.23-04:00" modified="2015-03-27T19:31:05.23-04:00" filename="config.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="beautify.txs" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.463-05:00" modified="2015-10-23T17:48:34.463-05:00" filename="beautify.txs" mimetype="application/octet-stream">
+    <resource type="BinaryResource" name="rev.594" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.236-04:00" modified="2015-03-27T19:31:05.236-04:00" filename="rev.594" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="build.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.479-05:00" modified="2015-10-23T17:48:34.479-05:00" filename="build.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="config_en_us.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.236-04:00" modified="2015-03-27T19:31:05.236-04:00" filename="config_en_us.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.479-05:00" modified="2015-10-23T17:48:34.479-05:00" filename="config.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.245-04:00" modified="2015-03-27T19:31:05.245-04:00" filename="expath-pkg.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_cz.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.479-05:00" modified="2015-10-23T17:48:34.479-05:00" filename="config_cz.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="xsltforms.jar" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.245-04:00" modified="2015-03-27T19:31:05.245-04:00" filename="xsltforms.jar" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_de.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.479-05:00" modified="2015-10-23T17:48:34.479-05:00" filename="config_de.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="xsltforms.js" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.246-04:00" modified="2015-03-27T19:31:05.246-04:00" filename="xsltforms.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_el.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.479-05:00" modified="2015-10-23T17:48:34.479-05:00" filename="config_el.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="ball.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.246-04:00" modified="2015-03-27T19:31:05.246-04:00" filename="ball.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_en.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.479-05:00" modified="2015-10-23T17:48:34.479-05:00" filename="config_en.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="dump.php" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.249-04:00" modified="2015-03-27T19:31:05.249-04:00" filename="dump.php" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_en_us.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.495-05:00" modified="2015-10-23T17:48:34.495-05:00" filename="config_en_us.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="tab.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.249-04:00" modified="2015-03-27T19:31:05.249-04:00" filename="tab.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_es.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.495-05:00" modified="2015-10-23T17:48:34.495-05:00" filename="config_es.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="valid-xforms11.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.249-04:00" modified="2015-03-27T19:31:05.249-04:00" filename="valid-xforms11.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_fr.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.495-05:00" modified="2015-10-23T17:48:34.495-05:00" filename="config_fr.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="xsltforms.css" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.249-04:00" modified="2015-03-27T19:31:05.249-04:00" filename="xsltforms.css" mimetype="text/css">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_gl.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.495-05:00" modified="2015-10-23T17:48:34.495-05:00" filename="config_gl.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="config_ko.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.249-04:00" modified="2015-03-27T19:31:05.249-04:00" filename="config_ko.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_it.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.495-05:00" modified="2015-10-23T17:48:34.495-05:00" filename="config_it.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="build.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.255-04:00" modified="2015-03-27T19:31:05.255-04:00" filename="build.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_ja.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.495-05:00" modified="2015-10-23T17:48:34.495-05:00" filename="config_ja.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="beautify.txs" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.259-04:00" modified="2015-03-27T19:31:05.259-04:00" filename="beautify.txs" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_ko.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.51-05:00" modified="2015-10-23T17:48:34.51-05:00" filename="config_ko.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="xsltforms.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.259-04:00" modified="2015-03-27T19:31:05.259-04:00" filename="xsltforms.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_nb_no.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.51-05:00" modified="2015-10-23T17:48:34.51-05:00" filename="config_nb_no.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="config_de.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.586-04:00" modified="2015-03-27T19:31:05.586-04:00" filename="config_de.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_nl.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.51-05:00" modified="2015-10-23T17:48:34.51-05:00" filename="config_nl.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="titleBackground.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.593-04:00" modified="2015-03-27T19:31:05.593-04:00" filename="titleBackground.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_nn_no.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.51-05:00" modified="2015-10-23T17:48:34.51-05:00" filename="config_nn_no.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="config_el.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.593-04:00" modified="2015-03-27T19:31:05.593-04:00" filename="config_el.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_pt.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.51-05:00" modified="2015-10-23T17:48:34.51-05:00" filename="config_pt.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="icon_error.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.594-04:00" modified="2015-03-27T19:31:05.594-04:00" filename="icon_error.gif" mimetype="image/gif">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_ro.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.526-05:00" modified="2015-10-23T17:48:34.526-05:00" filename="config_ro.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="txs.php" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.594-04:00" modified="2015-03-27T19:31:05.594-04:00" filename="txs.php" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_ru.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.526-05:00" modified="2015-10-23T17:48:34.526-05:00" filename="config_ru.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="config_en.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.595-04:00" modified="2015-03-27T19:31:05.595-04:00" filename="config_en.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_si.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.526-05:00" modified="2015-10-23T17:48:34.526-05:00" filename="config_si.xsl" mimetype="application/xslt+xml">
+    <resource type="BinaryResource" name="zip_inflate.js" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.596-04:00" modified="2015-03-27T19:31:05.596-04:00" filename="zip_inflate.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_sk.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.526-05:00" modified="2015-10-23T17:48:34.526-05:00" filename="config_sk.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="config_zh.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.599-04:00" modified="2015-03-27T19:31:05.599-04:00" filename="config_zh.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_zh.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.526-05:00" modified="2015-10-23T17:48:34.526-05:00" filename="config_zh.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="config_cz.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.605-04:00" modified="2015-03-27T19:31:05.605-04:00" filename="config_cz.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_zh_CN.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.526-05:00" modified="2015-10-23T17:48:34.526-05:00" filename="config_zh_CN.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="config_fr.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.607-04:00" modified="2015-03-27T19:31:05.607-04:00" filename="config_fr.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="config_zh_TW.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="config_zh_TW.xsl" mimetype="application/xslt+xml">
+    <resource type="XMLResource" name="xsltforms_tracelog.xhtml" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.611-04:00" modified="2015-03-27T19:31:05.611-04:00" filename="xsltforms_tracelog.xhtml" mimetype="application/xhtml+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="dump.php" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="dump.php" mimetype="application/octet-stream">
+    <resource type="XMLResource" name="config_ja.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.612-04:00" modified="2015-03-27T19:31:05.612-04:00" filename="config_ja.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="echo-zip.php" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="echo-zip.php" mimetype="application/octet-stream">
+    <resource type="XMLResource" name="config_nb_no.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.618-04:00" modified="2015-03-27T19:31:05.618-04:00" filename="config_nb_no.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="echo.php" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="echo.php" mimetype="application/octet-stream">
+    <resource type="XMLResource" name="config_it.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.619-04:00" modified="2015-03-27T19:31:05.619-04:00" filename="config_it.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="empty.xlsx" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="empty.xlsx" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+    <resource type="XMLResource" name="config_si.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.62-04:00" modified="2015-03-27T19:31:05.62-04:00" filename="config_si.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="expath-pkg.xml" mimetype="application/xml">
+    <resource type="BinaryResource" name="icon_help.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.625-04:00" modified="2015-03-27T19:31:05.625-04:00" filename="icon_help.gif" mimetype="image/gif">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="F1.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="F1.png" mimetype="image/png">
+    <resource type="BinaryResource" name="thBackground.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.626-04:00" modified="2015-03-27T19:31:05.626-04:00" filename="thBackground.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="focus.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="focus.gif" mimetype="image/gif">
+    <resource type="BinaryResource" name="F1.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.626-04:00" modified="2015-03-27T19:31:05.626-04:00" filename="F1.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="html-echo.php" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.542-05:00" modified="2015-10-23T17:48:34.542-05:00" filename="html-echo.php" mimetype="application/octet-stream">
+    <resource type="XMLResource" name="config_es.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.626-04:00" modified="2015-03-27T19:31:05.626-04:00" filename="config_es.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="icon_error.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="icon_error.gif" mimetype="image/gif">
+    <resource type="BinaryResource" name="README.txt" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.63-04:00" modified="2015-03-27T19:31:05.63-04:00" filename="README.txt" mimetype="text/plain">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="icon_help.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="icon_help.gif" mimetype="image/gif">
+    <resource type="XMLResource" name="config_pt.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.631-04:00" modified="2015-03-27T19:31:05.631-04:00" filename="config_pt.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="icon_hint.gif" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="icon_hint.gif" mimetype="image/gif">
+    <resource type="BinaryResource" name="magnify.png" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.632-04:00" modified="2015-03-27T19:31:05.632-04:00" filename="magnify.png" mimetype="image/png">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="magnify.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="magnify.png" mimetype="image/png">
+    <resource type="BinaryResource" name="echo.php" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.633-04:00" modified="2015-03-27T19:31:05.633-04:00" filename="echo.php" mimetype="application/octet-stream">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="poweredbyXSLTForms.png" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="poweredbyXSLTForms.png" mimetype="image/png">
+    <resource type="XMLResource" name="config_zh_CN.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.633-04:00" modified="2015-03-27T19:31:05.633-04:00" filename="config_zh_CN.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="put.php" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:34.557-05:00" modified="2015-10-23T17:48:34.557-05:00" filename="put.php" mimetype="application/octet-stream">
+    <resource type="XMLResource" name="config_nn_no.xsl" skip="no" owner="monex" group="monex" mode="664" created="2015-03-27T19:31:05.634-04:00" modified="2015-03-27T19:31:05.634-04:00" filename="config_nn_no.xsl" mimetype="application/xslt+xml">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

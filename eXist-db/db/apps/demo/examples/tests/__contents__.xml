@@ -1,12 +1,12 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/tests" version="1" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.417-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/tests" version="1" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.173-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="shakespeare-tests.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.417-05:00" modified="2015-10-23T17:48:25.417-05:00" filename="shakespeare-tests.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="shakespeare.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.173-04:00" modified="2015-03-27T19:30:51.173-04:00" filename="shakespeare.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="shakespeare.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.432-05:00" modified="2015-10-23T17:48:25.432-05:00" filename="shakespeare.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="shakespeare-tests.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.389-04:00" modified="2015-03-27T19:30:51.389-04:00" filename="shakespeare-tests.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="test.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.526-05:00" modified="2015-10-23T17:48:25.526-05:00" filename="test.html" mimetype="text/html">
+    <resource type="XMLResource" name="test.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:51.396-04:00" modified="2015-03-27T19:30:51.396-04:00" filename="test.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

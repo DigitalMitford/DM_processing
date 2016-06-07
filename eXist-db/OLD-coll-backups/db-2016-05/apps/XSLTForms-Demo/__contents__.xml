@@ -1,0 +1,28 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/XSLTForms-Demo" version="1" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:35.245-05:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:35.604-05:00" modified="2015-10-23T17:48:35.604-05:00" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="build.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:35.245-05:00" modified="2015-10-23T17:48:35.245-05:00" filename="build.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:35.245-05:00" modified="2015-10-23T17:48:35.245-05:00" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:35.26-05:00" modified="2015-10-23T17:48:35.26-05:00" filename="error-page.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:35.26-05:00" modified="2015-10-23T17:48:35.26-05:00" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="index.html" skip="no" owner="monex" group="monex" mode="664" created="2015-10-23T17:48:35.26-05:00" modified="2015-10-23T17:48:35.26-05:00" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="monex" group="monex" mode="775" created="2015-10-23T17:48:35.26-05:00" modified="2015-10-23T17:48:35.26-05:00" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="data" filename="data"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="modules" filename="modules"/>
+    <subcollection name="resources" filename="resources"/>
+</collection>

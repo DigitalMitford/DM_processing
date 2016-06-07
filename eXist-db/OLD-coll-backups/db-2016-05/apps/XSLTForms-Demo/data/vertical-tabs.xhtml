@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms"><head><title>XForms Colored Vertical Tab Menu</title><style>
+        @namespace xf url("http://www.w3.org/2002/xforms");
+        /* all the attributes of each tab, except the background color */
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* instructions for styling the vertontal tabs at the top of the form */
+        #vert-tab-menu {
+           float: left; /* this keeps the tabs to the left and allow the swap views to appear on the right side of the menus */
+           width: 100px; /* this must be the same as the margin-left of the swapped views */
+           height: 200px; /* the height of the entire swap view */
+        }
+        #vert-tab-menu xf|trigger {
+            display: block; /* this forces each tab to a new line i.e. not inline */
+            border-left: gray solid 1px;
+            border-top: gray solid 1px;
+            border-bottom: gray solid 1px;
+            border-right: 0px; /* so the tab blends into the region under the tab */
+            font-weight: bold;
+            margin-bottom: 3px; /* spacing between the tabs */
+            padding: 3px;
+            /* round corners on the left edges of the tab - does not work on older versions of IE */
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-bottomright: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        /* properties common to all the swapped views */
+        #div-1,#div-2,#div-3 {
+             position: absolute;
+             margin-left:100px; /* must match the width of the float left menu */
+             width: 400px;
+             padding: 5px;
+             border-top: solid gray 1px;
+             border-right: solid gray 1px;
+             border-bottom: solid gray 1px;
+        }
+        #tab-1, #div-1  {
+            background-color: #DDD; /* light gray */
+        }
+        #tab-2, #div-2  {
+            background-color: lightblue;
+        }
+        #tab-3, #div-3  {
+            background-color: khaki;
+        }
+        .clear {clear:both;} /* put a div with this to make sure we don't have elements under this */
+        </style></head><body><h2>Using switch and case to simulate a vertical tab-view.</h2><div><div id="vert-tab-menu"><xf:trigger id="tab-1" appearance="minimal"><xf:label>Tab 1 Title</xf:label><xf:toggle case="case-1" ev:event="DOMActivate"/></xf:trigger><xf:trigger id="tab-2" appearance="minimal"><xf:label>Tab 2 Title</xf:label><xf:toggle case="case-2" ev:event="DOMActivate"/></xf:trigger><xf:trigger id="tab-3" appearance="minimal"><xf:label>Tab 3 Title</xf:label><xf:toggle case="case-3" ev:event="DOMActivate"/></xf:trigger></div><xf:switch><xf:case id="case-1" selected="true"><div id="div-1">
+                    This view is only displayed when tab 1 is selected.<br/>
+                    This view is only displayed when tab 1 is selected.<br/>
+                    This view is only displayed when tab 1 is selected.<br/>
+                    This view is only displayed when tab 1 is selected.<br/></div></xf:case><xf:case id="case-2"><div id="div-2">
+                    This view is only displayed when tab 2 is selected.<br/>
+                    This view is only displayed when tab 2 is selected.<br/>
+                    This view is only displayed when tab 2 is selected.<br/>
+                    This view is only displayed when tab 2 is selected.<br/></div></xf:case><xf:case id="case-3"><div id="div-3">
+                    This view is only displayed when tab 3 is selected.<br/>
+                    This view is only displayed when tab 3 is selected.<br/>
+                    This view is only displayed when tab 3 is selected.<br/>
+                    This view is only displayed when tab 3 is selected.<br/></div></xf:case></xf:switch></div><div class="clear"/><p>This XForms example shows how the switch and case statements can be
+        used to simulate a multi-part form with a row of vertical tabs at
+        the left side of the form.  Background colors are used to show which
+        tab is the currently selected tab.</p></body></html>

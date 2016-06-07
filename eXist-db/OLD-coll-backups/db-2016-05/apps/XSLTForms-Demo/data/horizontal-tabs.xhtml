@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms"><head><title>XForms Colored Horizontal Tab Menu</title><style>
+        @namespace xf url("http://www.w3.org/2002/xforms");
+        /* all the attributes of each tab, except the background color */
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* instructions for styling the horizontal tabs at the top of the form */
+        #horiz-tab-menu {
+        padding-bottom: 2px;
+        }
+        #horiz-tab-menu xf|trigger {
+            border-left: gray solid 1px;
+            border-top: gray solid 1px;
+            border-right: gray solid 1px;
+            border-bottom: 0px; /* so the tab blends into the region under the tab */
+            font-weight: bold;
+            font-size: .9em;
+            /* spacing between the tabs */
+            margin-right: 9px;
+            padding: 3px;
+            /* round corners at the top of the tab - does not work on older versions of IE */
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+                    }
+
+        /* properties common to all the swapped views */
+        #div-1,#div-2,#div-3 {
+             width: 500px;
+             padding: 5px;
+             border-left: solid gray 1px;
+             border-right: solid gray 1px;
+             border-bottom: solid gray 1px;
+        }
+        #tab-1, #div-1  {
+            background-color: #DDD; /* light gray */
+        }
+        #tab-2, #div-2  {
+            background-color: lightblue;
+        }
+        #tab-3, #div-3  {
+            background-color: khaki;
+        }
+
+        </style></head><body><h2>Using switch and case to simulate a tab-view.</h2><div id="horiz-tab-menu"><xf:trigger id="tab-1" appearance="minimal"><xf:label>Tab 1 Title</xf:label><xf:toggle case="case-1" ev:event="DOMActivate"/></xf:trigger><xf:trigger id="tab-2" appearance="minimal"><xf:label>Tab 2 Title</xf:label><xf:toggle case="case-2" ev:event="DOMActivate"/></xf:trigger><xf:trigger id="tab-3" appearance="minimal"><xf:label>Tab 3 Title</xf:label><xf:toggle case="case-3" ev:event="DOMActivate"/></xf:trigger></div><xf:switch><xf:case id="case-1" selected="true"><div id="div-1">
+                    This view is only displayed when tab 1 is selected.<br/>
+                    This view is only displayed when tab 1 is selected.<br/>
+                    This view is only displayed when tab 1 is selected.<br/>
+                    This view is only displayed when tab 1 is selected.<br/></div></xf:case><xf:case id="case-2"><div id="div-2">
+                    This view is only displayed when tab 2 is selected.<br/>
+                    This view is only displayed when tab 2 is selected.<br/>
+                    This view is only displayed when tab 2 is selected.<br/>
+                    This view is only displayed when tab 2 is selected.<br/></div></xf:case><xf:case id="case-3"><div id="div-3">
+                    This view is only displayed when tab 3 is selected.<br/>
+                    This view is only displayed when tab 3 is selected.<br/>
+                    This view is only displayed when tab 3 is selected.<br/>
+                    This view is only displayed when tab 3 is selected.<br/></div></xf:case></xf:switch><p>This XForms example shows how the switch and case statements can be
+        used to simulate a multi-part form with a row of horizontal tabs at
+        the top of the form.  Background colors are used to show which
+        tab is the currently selected tab.</p></body></html>

@@ -1,12 +1,21 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/security/exist/groups" version="1" owner="SYSTEM" group="dba" mode="770" created="2015-10-23T17:47:02.281-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/security/exist/groups" version="1" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:29:57.705-04:00">
     <acl entries="0" version="1"/>
-    <resource type="XMLResource" name="eXide.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-10-23T17:48:31.807-05:00" modified="2015-10-23T17:48:31.854-05:00" filename="eXide.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="eXide.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:31:03.533-04:00" modified="2015-03-27T19:31:03.646-04:00" filename="eXide.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="demo.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-10-23T17:48:23.463-05:00" modified="2015-10-23T17:48:23.495-05:00" filename="demo.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="demo.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:30:43.467-04:00" modified="2015-03-27T19:30:43.552-04:00" filename="demo.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="monex.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-10-23T17:48:33.807-05:00" modified="2015-10-23T17:48:33.823-05:00" filename="monex.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="monex.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:31:04.851-04:00" modified="2015-03-27T19:31:04.888-04:00" filename="monex.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="kdc.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2016-04-23T10:12:48.307-04:00" modified="2016-04-23T10:12:48.396-04:00" filename="kdc.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="admin.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-05-02T15:19:07.66-04:00" modified="2015-05-02T15:19:08.053-04:00" filename="admin.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="djb.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2016-05-08T10:13:30.425-04:00" modified="2016-05-08T10:13:30.474-04:00" filename="djb.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <subcollection name="removed" filename="removed"/>

@@ -1,18 +1,18 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/shared-resources/resources/scripts" version="1" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:19.82-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/shared-resources/resources/scripts" version="1" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:38.589-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="bootstrap-3.0.3.min.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:19.82-05:00" modified="2015-10-23T17:48:19.82-05:00" filename="bootstrap-3.0.3.min.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="highlight.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:38.594-04:00" modified="2015-03-27T19:30:38.594-04:00" filename="highlight.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="bootstrap.min.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:19.836-05:00" modified="2015-10-23T17:48:19.836-05:00" filename="bootstrap.min.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="bootstrap.min.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:38.594-04:00" modified="2015-03-27T19:30:38.594-04:00" filename="bootstrap.min.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="emmet.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:19.836-05:00" modified="2015-10-23T17:48:19.836-05:00" filename="emmet.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="bootstrap-3.0.3.min.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:38.595-04:00" modified="2015-03-27T19:30:38.595-04:00" filename="bootstrap-3.0.3.min.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="highlight.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:19.836-05:00" modified="2015-10-23T17:48:19.836-05:00" filename="highlight.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="loadsource.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:38.6-04:00" modified="2015-03-27T19:30:38.6-04:00" filename="loadsource.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="loadsource.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:19.851-05:00" modified="2015-10-23T17:48:19.851-05:00" filename="loadsource.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="emmet.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:38.601-04:00" modified="2015-03-27T19:30:38.601-04:00" filename="emmet.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
     <subcollection name="jquery" filename="jquery"/>

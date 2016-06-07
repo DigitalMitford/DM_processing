@@ -1,102 +1,102 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/src" version="1" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:32.151-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/src" version="1" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.971-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="visitor.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="visitor.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="templates.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.984-04:00" modified="2015-03-27T19:31:03.984-04:00" filename="templates.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="xml-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="xml-helper.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="eXide.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.984-04:00" modified="2015-03-27T19:31:03.984-04:00" filename="eXide.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="xquery-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="xquery-helper.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="popup.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.984-04:00" modified="2015-03-27T19:31:03.984-04:00" filename="popup.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="xquery-utils.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.198-05:00" modified="2015-10-23T17:48:32.198-05:00" filename="xquery-utils.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="editor.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.984-04:00" modified="2015-03-27T19:31:03.984-04:00" filename="editor.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="ace-modes.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="ace-modes.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="javascript-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.972-04:00" modified="2015-03-27T19:31:03.972-04:00" filename="javascript-helper.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="codevalidator.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="codevalidator.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="history.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.972-04:00" modified="2015-03-27T19:31:03.972-04:00" filename="history.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="commands.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="commands.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="xml-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.972-04:00" modified="2015-03-27T19:31:03.972-04:00" filename="xml-helper.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="css-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="css-helper.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="layout.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.972-04:00" modified="2015-03-27T19:31:03.972-04:00" filename="layout.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="debuger.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="debuger.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="snippets.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.975-04:00" modified="2015-03-27T19:31:03.975-04:00" filename="snippets.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="deployment.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="deployment.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="deployment.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.976-04:00" modified="2015-03-27T19:31:03.976-04:00" filename="deployment.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="directory.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="directory.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="snippet-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.976-04:00" modified="2015-03-27T19:31:03.976-04:00" filename="snippet-helper.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="dnd.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="dnd.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="preferences.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.976-04:00" modified="2015-03-27T19:31:03.976-04:00" filename="preferences.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="editor.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="editor.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="resources.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.976-04:00" modified="2015-03-27T19:31:03.976-04:00" filename="resources.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="events.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.151-05:00" modified="2015-10-23T17:48:32.151-05:00" filename="events.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="util.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.977-04:00" modified="2015-03-27T19:31:03.977-04:00" filename="util.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="eXide.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="eXide.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="ace-modes.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.977-04:00" modified="2015-03-27T19:31:03.977-04:00" filename="ace-modes.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="find.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="find.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="dnd.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.977-04:00" modified="2015-03-27T19:31:03.977-04:00" filename="dnd.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="help.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="help.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="find.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.977-04:00" modified="2015-03-27T19:31:03.977-04:00" filename="find.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="history.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="history.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="codevalidator.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.978-04:00" modified="2015-03-27T19:31:03.978-04:00" filename="codevalidator.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="javascript-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="javascript-helper.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="commands.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.978-04:00" modified="2015-03-27T19:31:03.978-04:00" filename="commands.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="layout.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="layout.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="debuger.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.978-04:00" modified="2015-03-27T19:31:03.978-04:00" filename="debuger.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="less-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="less-helper.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="visitor.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.978-04:00" modified="2015-03-27T19:31:03.978-04:00" filename="visitor.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="menu.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="menu.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="splitter.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.978-04:00" modified="2015-03-27T19:31:03.978-04:00" filename="splitter.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="mode-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="mode-helper.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="css-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.981-04:00" modified="2015-03-27T19:31:03.981-04:00" filename="css-helper.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="outline.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="outline.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="quickfix.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.982-04:00" modified="2015-03-27T19:31:03.982-04:00" filename="quickfix.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="popup.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="popup.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="events.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.982-04:00" modified="2015-03-27T19:31:03.982-04:00" filename="events.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="preferences.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.166-05:00" modified="2015-10-23T17:48:32.166-05:00" filename="preferences.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="help.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.982-04:00" modified="2015-03-27T19:31:03.982-04:00" filename="help.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="quickfix.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="quickfix.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="directory.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.982-04:00" modified="2015-03-27T19:31:03.982-04:00" filename="directory.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="resources.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="resources.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="mode-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.982-04:00" modified="2015-03-27T19:31:03.982-04:00" filename="mode-helper.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="snippet-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="snippet-helper.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="outline.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.983-04:00" modified="2015-03-27T19:31:03.983-04:00" filename="outline.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="snippets.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="snippets.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="menu.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.983-04:00" modified="2015-03-27T19:31:03.983-04:00" filename="menu.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="splitter.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="splitter.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="less-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.983-04:00" modified="2015-03-27T19:31:03.983-04:00" filename="less-helper.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="templates.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="templates.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="xquery-utils.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.983-04:00" modified="2015-03-27T19:31:03.983-04:00" filename="xquery-utils.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="util.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.182-05:00" modified="2015-10-23T17:48:32.182-05:00" filename="util.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="xquery-helper.js" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:03.983-04:00" modified="2015-03-27T19:31:03.983-04:00" filename="xquery-helper.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

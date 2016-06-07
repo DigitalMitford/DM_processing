@@ -1,21 +1,21 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/modules" version="1" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:29.663-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/modules" version="1" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:57.868-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="docbook.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:29.757-05:00" modified="2015-10-23T17:48:29.757-05:00" filename="docbook.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="review.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:57.868-04:00" modified="2015-03-27T19:30:57.868-04:00" filename="review.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="review.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:29.882-05:00" modified="2015-10-23T17:48:29.882-05:00" filename="review.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="config.xqm" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:57.927-04:00" modified="2015-03-27T19:30:57.927-04:00" filename="config.xqm" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="search.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:29.913-05:00" modified="2015-10-23T17:48:29.913-05:00" filename="search.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="view.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:58.15-04:00" modified="2015-03-27T19:30:58.15-04:00" filename="view.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="view.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:30.195-05:00" modified="2015-10-23T17:48:30.195-05:00" filename="view.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="diagnostics.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:58.347-04:00" modified="2015-03-27T19:30:58.347-04:00" filename="diagnostics.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="config.xqm" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:29.663-05:00" modified="2015-10-23T17:48:29.663-05:00" filename="config.xqm" mimetype="application/xquery">
+    <resource type="BinaryResource" name="search.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:58.372-04:00" modified="2015-03-27T19:30:58.372-04:00" filename="search.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="diagnostics.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:29.742-05:00" modified="2015-10-23T17:48:29.742-05:00" filename="diagnostics.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="docbook.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:58.936-04:00" modified="2015-03-27T19:30:58.936-04:00" filename="docbook.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

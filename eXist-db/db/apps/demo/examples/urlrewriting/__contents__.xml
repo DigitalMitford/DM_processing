@@ -1,15 +1,15 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/urlrewriting" version="1" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.526-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/urlrewriting" version="1" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.097-04:00">
     <acl entries="0" version="1"/>
-    <resource type="XMLResource" name="bad-page.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.526-05:00" modified="2015-10-23T17:48:25.526-05:00" filename="bad-page.html" mimetype="text/html">
+    <resource type="XMLResource" name="bad-page.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.097-04:00" modified="2015-03-27T19:30:52.097-04:00" filename="bad-page.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="index.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.542-05:00" modified="2015-10-23T17:48:25.542-05:00" filename="index.html" mimetype="text/html">
+    <resource type="XMLResource" name="protected.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.098-04:00" modified="2015-03-27T19:30:52.098-04:00" filename="protected.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="login.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.542-05:00" modified="2015-10-23T17:48:25.542-05:00" filename="login.html" mimetype="text/html">
+    <resource type="XMLResource" name="index.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.099-04:00" modified="2015-03-27T19:30:52.099-04:00" filename="index.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="protected.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.542-05:00" modified="2015-10-23T17:48:25.542-05:00" filename="protected.html" mimetype="text/html">
+    <resource type="XMLResource" name="login.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.103-04:00" modified="2015-03-27T19:30:52.103-04:00" filename="login.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

@@ -5,7 +5,7 @@ declare namespace local = "http://newtfire.org";
 declare variable $mitford := collection ('/db/mitford');
 declare variable $MissJames := $mitford//tei:TEI//tei:text//tei:p//*[@ref="#James_Miss"];
 (: Some "unknown knowns": #Byron, #Scott_Wal, #Austen_Jane, #Napoleon :)
-(: Output at http://localhost:8080/exist/rest/db/output/AnnotationTool.html :)
+(: Output at http://dxcvm10.psc.edu:8080/exist/rest/db/output/AnnotationTool.html :)
 declare variable $siteindexID := doc('/db/si.xml')//@xml:id;
 
 (:ebb: Thanks to Martin Holmes for guidance with these functions. :)

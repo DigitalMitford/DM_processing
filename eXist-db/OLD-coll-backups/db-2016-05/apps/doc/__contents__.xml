@@ -1,0 +1,43 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc" version="1" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:28.61-05:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:30.619-05:00" modified="2015-10-23T17:48:30.619-05:00" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="build.xml" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.61-05:00" modified="2015-10-23T17:48:28.61-05:00" filename="build.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.61-05:00" modified="2015-10-23T17:48:28.61-05:00" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:28.625-05:00" modified="2015-10-23T17:48:28.625-05:00" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="diagnostics.html" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.641-05:00" modified="2015-10-23T17:48:28.641-05:00" filename="diagnostics.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="editorial-view.html" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.641-05:00" modified="2015-10-23T17:48:28.641-05:00" filename="editorial-view.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.641-05:00" modified="2015-10-23T17:48:28.641-05:00" filename="error-page.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.641-05:00" modified="2015-10-23T17:48:28.641-05:00" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.641-05:00" modified="2015-10-23T17:48:28.641-05:00" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:28.641-05:00" modified="2015-10-23T17:48:28.641-05:00" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.656-05:00" modified="2015-10-23T17:48:28.656-05:00" filename="README.md" mimetype="text/x-markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="search.html" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:28.656-05:00" modified="2015-10-23T17:48:28.656-05:00" filename="search.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="data" filename="data"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="modules" filename="modules"/>
+    <subcollection name="resources" filename="resources"/>
+</collection>

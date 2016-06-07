@@ -1,81 +1,81 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/modules" version="1" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.948-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/modules" version="1" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.818-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="find.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="find.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="error-handler.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.821-04:00" modified="2015-03-27T19:31:03.821-04:00" filename="error-handler.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="get-template.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="get-template.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="util.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.821-04:00" modified="2015-03-27T19:31:03.821-04:00" filename="util.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="git.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="git.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="debuger.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.821-04:00" modified="2015-03-27T19:31:03.821-04:00" filename="debuger.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="load.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="load.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="apply-config.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.822-04:00" modified="2015-03-27T19:31:03.822-04:00" filename="apply-config.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="outline.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="outline.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="deployment.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.822-04:00" modified="2015-03-27T19:31:03.822-04:00" filename="deployment.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="pretty-print.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="pretty-print.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="compile.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.822-04:00" modified="2015-03-27T19:31:03.822-04:00" filename="compile.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="run-test.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="run-test.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="dates.xqm" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.822-04:00" modified="2015-03-27T19:31:03.822-04:00" filename="dates.xqm" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="search.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="search.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="view.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.825-04:00" modified="2015-03-27T19:31:03.825-04:00" filename="view.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="session.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="session.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="collections.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.826-04:00" modified="2015-03-27T19:31:03.826-04:00" filename="collections.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="store.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="store.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="find.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.826-04:00" modified="2015-03-27T19:31:03.826-04:00" filename="find.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="synchronize.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="synchronize.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="upload.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.826-04:00" modified="2015-03-27T19:31:03.826-04:00" filename="upload.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="tmpl.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="tmpl.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="get-template.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.826-04:00" modified="2015-03-27T19:31:03.826-04:00" filename="get-template.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="upload.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="upload.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="load.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.826-04:00" modified="2015-03-27T19:31:03.826-04:00" filename="load.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="util.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="util.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="search.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.827-04:00" modified="2015-03-27T19:31:03.827-04:00" filename="search.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="validate-xml.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="validate-xml.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="store.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.819-04:00" modified="2015-03-27T19:31:03.819-04:00" filename="store.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="view.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.979-05:00" modified="2015-10-23T17:48:31.979-05:00" filename="view.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="git.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.819-04:00" modified="2015-03-27T19:31:03.819-04:00" filename="git.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="apply-config.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.948-05:00" modified="2015-10-23T17:48:31.948-05:00" filename="apply-config.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="outline.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.819-04:00" modified="2015-03-27T19:31:03.819-04:00" filename="outline.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="collections.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.948-05:00" modified="2015-10-23T17:48:31.948-05:00" filename="collections.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="session.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.819-04:00" modified="2015-03-27T19:31:03.819-04:00" filename="session.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="compile.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.948-05:00" modified="2015-10-23T17:48:31.948-05:00" filename="compile.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="tmpl.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.819-04:00" modified="2015-03-27T19:31:03.819-04:00" filename="tmpl.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="config.xqm" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.948-05:00" modified="2015-10-23T17:48:31.948-05:00" filename="config.xqm" mimetype="application/xquery">
+    <resource type="BinaryResource" name="run-test.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.82-04:00" modified="2015-03-27T19:31:03.82-04:00" filename="run-test.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="dates.xqm" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="dates.xqm" mimetype="application/xquery">
+    <resource type="BinaryResource" name="config.xqm" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.82-04:00" modified="2015-03-27T19:31:03.82-04:00" filename="config.xqm" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="debuger.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="debuger.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="validate-xml.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.82-04:00" modified="2015-03-27T19:31:03.82-04:00" filename="validate-xml.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="deployment.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="deployment.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="pretty-print.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.82-04:00" modified="2015-03-27T19:31:03.82-04:00" filename="pretty-print.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="docs.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="docs.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="synchronize.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.82-04:00" modified="2015-03-27T19:31:03.82-04:00" filename="synchronize.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="documentation.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="documentation.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="documentation.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.821-04:00" modified="2015-03-27T19:31:03.821-04:00" filename="documentation.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="error-handler.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:31.963-05:00" modified="2015-10-23T17:48:31.963-05:00" filename="error-handler.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="docs.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:03.821-04:00" modified="2015-03-27T19:31:03.821-04:00" filename="docs.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

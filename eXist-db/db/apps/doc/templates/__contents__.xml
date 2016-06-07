@@ -1,9 +1,9 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/templates" version="1" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:30.604-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/templates" version="1" owner="admin" group="dba" mode="775" created="2015-03-27T19:31:02.599-04:00">
     <acl entries="0" version="1"/>
-    <resource type="XMLResource" name="content.html" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:30.604-05:00" modified="2015-10-23T17:48:30.604-05:00" filename="content.html" mimetype="text/html">
+    <resource type="XMLResource" name="page.html" skip="no" owner="admin" group="dba" mode="664" created="2015-03-27T19:31:02.599-04:00" modified="2015-03-27T19:31:02.599-04:00" filename="page.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="page.html" skip="no" owner="admin" group="dba" mode="664" created="2015-10-23T17:48:30.604-05:00" modified="2015-10-23T17:48:30.604-05:00" filename="page.html" mimetype="text/html">
+    <resource type="XMLResource" name="content.html" skip="no" owner="admin" group="dba" mode="664" created="2015-03-27T19:31:02.606-04:00" modified="2015-03-27T19:31:02.606-04:00" filename="content.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
 </collection>

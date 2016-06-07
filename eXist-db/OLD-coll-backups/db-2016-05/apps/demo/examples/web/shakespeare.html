@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content"><h1>Searching Shakespeare</h1><p>Demonstrates basic full text indexing features, search results processing, keywords in context display.</p><div class="source-links"><p>View source: <a href="examples/web/shakespeare.html" class="templates:load-source">this page</a>,
+        <a href="examples/web/shakespeare.xql" class="templates:load-source">shakespeare.xql</a>.</p></div><form action="" method="POST" class="form form-horizontal"><div class="form-group"><label for="mode" class="col-md-1 hidden-xs control-label">Query:</label><div class="col-md-4 col-xs-12"><span class="input-group"><input name="query" type="search" data-template="templates:form-control" class="form-control" placeholder="Search string"/><span class="input-group-btn"><button id="f-btn-search" type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"/></button></span></span></div></div><div class="form-group"><label for="mode" class="col-md-1 hidden-xs control-label">Mode:</label><div class="col-md-4 col-xs-12"><select name="mode" data-template="templates:form-control" class="form-control"><option value="all">All</option><option value="any">Any</option><option value="phrase">Phrase</option><option value="near">Near</option></select></div></div></form><div id="results" class="shakespeare:query"><p>Found: <span id="hit-count" class="shakespeare:hit-count"/> matches.</p><div class="shakespeare:show-hits?howmany=20"/></div><script type="text/javascript">
+        /*
+         * We use the onScrollBeyond jQuery plugin to dynamically load
+         * additional search results when the users scrolls down the page.
+         */
+        var itemsPerPage = 10;
+        var current = 1;
+        var loading = false;
+        jQuery(document).ready(function () {
+            $("#results").onScrollBeyond(function () {
+                if (loading) {
+                    return;
+                }
+                loading = true;
+                current = current + itemsPerPage;
+                $.ajax("shakespeare-ajax.html", {
+                    data: { start: current },
+                    success: function (data) {
+                        $("#results").append(data);
+                        loading = false;
+                    }
+                });
+            });
+        });
+    </script></div>

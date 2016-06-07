@@ -1,12 +1,12 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins" version="1" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:22.441-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins" version="1" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:43-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="uploader.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:22.441-05:00" modified="2015-10-23T17:48:22.441-05:00" filename="uploader.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="util.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:43.001-04:00" modified="2015-03-27T19:30:43.001-04:00" filename="util.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="util.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:22.441-05:00" modified="2015-10-23T17:48:22.441-05:00" filename="util.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="uploader.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:43.005-04:00" modified="2015-03-27T19:30:43.005-04:00" filename="uploader.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="base.js" skip="no" owner="admin" group="dba" mode="775" created="2015-10-23T17:48:22.441-05:00" modified="2015-10-23T17:48:22.441-05:00" filename="base.js" mimetype="application/x-javascript">
+    <resource type="BinaryResource" name="base.js" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:43.006-04:00" modified="2015-03-27T19:30:43.006-04:00" filename="base.js" mimetype="application/x-javascript">
         <acl entries="0" version="1"/>
     </resource>
     <subcollection name="images" filename="images"/>

@@ -1,24 +1,24 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/markdown" version="1" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:32.744-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/markdown" version="1" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:04.098-04:00">
     <acl entries="0" version="1"/>
-    <resource type="XMLResource" name="build.xml" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.744-05:00" modified="2015-10-23T17:48:32.744-05:00" filename="build.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:04.101-04:00" modified="2015-03-27T19:31:04.101-04:00" filename="expath-pkg.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="controller.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:32.744-05:00" modified="2015-10-23T17:48:32.744-05:00" filename="controller.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:04.103-04:00" modified="2015-03-27T19:31:04.103-04:00" filename="controller.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.76-05:00" modified="2015-10-23T17:48:32.76-05:00" filename="expath-pkg.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="build.xml" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:04.114-04:00" modified="2015-03-27T19:31:04.114-04:00" filename="build.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="parse.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-10-23T17:48:32.76-05:00" modified="2015-10-23T17:48:32.76-05:00" filename="parse.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="parse.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:04.115-04:00" modified="2015-03-27T19:31:04.115-04:00" filename="parse.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="readme.md" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.76-05:00" modified="2015-10-23T17:48:32.76-05:00" filename="readme.md" mimetype="text/x-markdown">
+    <resource type="BinaryResource" name="readme.md" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:04.124-04:00" modified="2015-03-27T19:31:04.124-04:00" filename="readme.md" mimetype="text/x-markdown">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="test.md" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.76-05:00" modified="2015-10-23T17:48:32.76-05:00" filename="test.md" mimetype="text/x-markdown">
+    <resource type="BinaryResource" name="test.md" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:04.124-04:00" modified="2015-03-27T19:31:04.124-04:00" filename="test.md" mimetype="text/x-markdown">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="repo.xml" skip="no" owner="eXide" group="eXide" mode="664" created="2015-10-23T17:48:32.838-05:00" modified="2015-10-23T17:48:32.838-05:00" filename="repo.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="eXide" group="eXide" mode="664" created="2015-03-27T19:31:04.437-04:00" modified="2015-03-27T19:31:04.437-04:00" filename="repo.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <subcollection name="content" filename="content"/>

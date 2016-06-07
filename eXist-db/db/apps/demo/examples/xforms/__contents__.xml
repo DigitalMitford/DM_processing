@@ -1,12 +1,12 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/xforms" version="1" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.605-05:00">
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/xforms" version="1" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.441-04:00">
     <acl entries="0" version="1"/>
-    <resource type="BinaryResource" name="controller.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.605-05:00" modified="2015-10-23T17:48:25.605-05:00" filename="controller.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="restxq-demo.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.442-04:00" modified="2015-03-27T19:30:52.442-04:00" filename="restxq-demo.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="demo.html" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.605-05:00" modified="2015-10-23T17:48:25.605-05:00" filename="demo.html" mimetype="text/html">
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.695-04:00" modified="2015-03-27T19:30:52.695-04:00" filename="controller.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="restxq-demo.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-10-23T17:48:25.62-05:00" modified="2015-10-23T17:48:25.62-05:00" filename="restxq-demo.xql" mimetype="application/xquery">
+    <resource type="XMLResource" name="demo.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.962-04:00" modified="2015-03-27T19:30:52.962-04:00" filename="demo.html" mimetype="text/html">
         <acl entries="0" version="1"/>
     </resource>
 </collection>
