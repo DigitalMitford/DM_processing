@@ -75,6 +75,7 @@
                -->
                <!-- ?? we listed this under historical people. We put pets in their own section, and we have a section for plants, but we do not have a section for other, unnamed animals. Move? Delete? -->
                <person xml:id="Long_tailed_wren">
+                  <!--2016-06-07 ebb: moved into new SI list, added new @sortKey for animals species.-->
                   <persName>Long Tailed Wren</persName>
                   <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species
                      in the family Timaliidae.</note>
@@ -96,6 +97,7 @@
                <!--SI entries that are duplicates (two xml:ids for the same person/text; one to keep, one to delete.: -->
                
                <person xml:id="Elford_J" sex="1">  <!--LMW: Delete this one. Content is merged into the entry below. -->
+                  <!--ebb: I'm doing the reverse, because this xml:id is already in use and is easier to read. -->
                   <persName>
                      <surname>Elford</surname>
                      <forename>Jonathan</forename>
@@ -109,7 +111,7 @@
                   <note resp="#kab #ebb">Son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary</persName>. His death at the age of 46 left Sir William without an heir. Source: ODNB and Ancestry.com</note>
                </person>
                
-               <person xml:id="Elford_J_WEson" sex="1"><!--LMW: Use this one.-->   
+               <person xml:id="Elford_J_WEson" sex="1"><!--2016-06-07 ebb: Merged the two entries and using the original id.--><!--LMW: Use this one.-->   
                   <persName>Jonathan Elford</persName>
                   <persName>
                   <surname>Elford</surname>
@@ -119,10 +121,10 @@
                      <roleName><date when="1820"/>Member of Parliament for Westbury</roleName>
                   </persName>
                   <birth when="1776-11-05">
-                     <placeName>Plympton Erle, Devon, England</placeName>
+                     <placeName>Plympton Erle, Plymouth, Devon, England</placeName>
                   </birth>
                   <death when="1823-03-11">
-                     <placeName>Upland, Tamerton Foliott, Devon, England</placeName>
+                     <placeName>Upland, Tamerton Foliott, Plymouth, Devon, England</placeName>
                   </death>
                   <occupation>politician</occupation>
                   <occupation>military</occupation>
@@ -132,7 +134,7 @@
                   </note>
                </person>
                
-               <person xml:id="Drake_Nathan" sex="1"> <!-- LMW:  Delete this one. -->
+               <person xml:id="Drake_Nathan" sex="1"> <!--2016-06-07 ebb: using this one-->
                   <persName>
                      <forename>Nathan</forename>
                      <surname>Drake</surname>
@@ -147,10 +149,14 @@
                   </death>
                   <occupation>medical</occupation>
                   <occupation>literary</occupation>
-                  <note resp="#ajc">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title> Source: ODNB. <ref target="http://viaf.org/viaf/15551790"/>     <!--LMW: two different ids, same person. Need to merge.  -->
+                  <occupation>essayist</occupation>
+                  
+                  <note resp="#ajc">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title> Source: ODNB. <ref target="http://viaf.org/viaf/15551790"/>     
                   </note>
+                  <note resp="#ajc #lmw #ebb">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title>. Disambiguation note: Nathan Drake the essayist is the son of the portrait and artist of the same name, who was known for his painting of provincial hunting and sporting scenes and lived from 1728 to 1778.</note>
+                  <note><ref target="http://viaf.org/viaf/15551790"/></note>
                </person>
-               <person xml:id="Drake_Nathan_younger" sex="1"><!-- LMW: Use this one. It merges content from above.-->
+               <person xml:id="Drake_Nathan_younger" sex="1"><!--ebb: Not using this id, but merging the note. The original id is in use in three letters. --><!-- LMW: Use this one. It merges content from above.-->
                   <persName>
                      <forename>Nathan</forename>
                      <surname>Drake</surname>
@@ -167,8 +173,7 @@
                   <occupation>medical</occupation>
                   <occupation>literary</occupation>
                   <occupation>essayist</occupation>
-                  <note resp="#ajc #lmw">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title></note>
-                  <note><ref target="http://viaf.org/viaf/15551790"/></note>
+                 
                 </person>
                
                <person xml:id="Bayley" sex="1"> <!-- LMW:  Delete this one. -->
@@ -191,7 +196,7 @@
                </person>
                
                
-               <person xml:id="Bayley_P" sex="1"><!-- LMW: Use this one.-->
+               <person xml:id="Bayley_P" sex="1"><!-- LMW: Use this one.--><!--2016-06-07 ebb: YES. this one's used in five letters-->
                   <persName>Peter Bayley</persName>
                   <persName>
                      <forename>Peter</forename>
@@ -218,11 +223,12 @@
                      </p>
                   </note>
                </person>
-               <person xml:id="Daphne_pet" sex="2"><!-- LMW: Use this one. -->
+               <person xml:id="Daphne_pet" sex="2"><!-- LMW: Use this one. --><!--2016-06-07 ebb: Yes. This is in use in all the files and the other one not.-->
                   <persName>Daphne</persName>
-                  <note resp="#lmw">Mitford's dog, a female greyhound. However, there is also a pug named Daphne in the Our Village sketch "Our Godmothers" (from <title ref="#OurVillage_3rd">volume 3</title>, 1828, 266-287). That Daphne was "a particularly ugly, noisy pug, that barked at every body that came into the house, and bit at most." </note></person>
+                  <note resp="#lmw">Mitford's dog, a female greyhound. However, there is also a pug named Daphne in the Our Village sketch "Our Godmothers" (from <title ref="#OurVillage_3rd">volume 3</title>, 1828, 266-287). That Daphne was "a particularly ugly, noisy pug, that barked at every body that came into the house, and bit at most."</note></person>
                
                <person xml:id="Flush"><!--LMW: We need to make a new xml:id for this Flush using the format Flush_pet. If there is more than one Flush, we may need to designate them Flush_1825_pet, or something similar. I need help finding all references to Flush currently in the db in order to fix; I couldn't figure it out from a simple search of my files.-->
+                  <!--2016-06-07 ebb: Just looked it up, and so far the only file that that has coded Flush is the Intro to the Dramatic Works. I'll change it there. My thought of putting the pets in a separate list seems problematic since they are part of MRM's "real" historical reality, and that matters for pulling data on her social networks. So, yeah, let's run with "_pet" around all the pets as we've discussed.--> 
                   <persName>Flush</persName>
                   <note resp="#lmw">There appear to be a series of spaniels all named Flush.</note>
                </person>
@@ -240,7 +246,7 @@
                </note>
             </person>
             
-            <person xml:id="Holcroft_Thos" sex="1"><!--LMW: Use this one. -->
+            <person xml:id="Holcroft_Thos" sex="1"><!--LMW: Use this one. --><!--ebb 2016-06-07 OK, and changing in two files.-->
                <persName>Thomas Holcroft</persName>
                <persName>
                   <forename>Thomas</forename>
@@ -283,7 +289,7 @@
                   </note>
                </person>
                
-               <person xml:id="Jonson_Ben" sex="1"> <!-- LMW:  Delete this one. -->
+               <person xml:id="Jonson_Ben" sex="1"> <!-- LMW:  Delete this one. --><!--2016-06-07 ebb: Done.-->
                   <persName>
                      <forename>Ben</forename>
                      <surname>Jonson</surname>
@@ -300,7 +306,7 @@
                   </note>
                </person>
                
-               <person xml:id="Robertson_William"> <!-- LMW:  delete this one -->
+               <person xml:id="Robertson_William"> <!-- LMW:  delete this one --><!--2016-06-07: ebb:No. KEEPING this one, because it's in use and the other is not. Merging entries.-->
                   <persName>
                      <surname>Robertson</surname>
                      <forename>William</forename>
@@ -336,7 +342,7 @@
                   <occupation>antiquarian</occupation>
                   <occupation>clergy</occupation>
                   <occupation>educator</occupation>
-                  <note resp="#lmw">Scottish historian, clergyman, and Principal of the University of Edinburgh, author of The History of Scotland, 1542-1603 (1759) and The History of Charles V (1769), considered his most important work.</note>
+                  <note resp="#lmw">Scottish historian, clergyman, and Principal of the University of Edinburgh, author of The History of Scotland, 1542-1603 (1759) and The History of the Reign of the Emperor Charles V (1769), considered his most important work.</note>
                   <note> <ref target="http://viaf.org/viaf/59177542"/></note>
                </person>
                
@@ -384,6 +390,7 @@
             <listPlace sortKey="histPlaces">
                
                <place xml:id="Barton_street"><!-- LMW:  Delete this one. -->
+                  <!--2016-06-07 ebb: keeping this id because it's easier to read, but merging entries. Repaired letter file associated with it.-->
                   <!-- If this is in London, I wonder if it is actually Burton Street? --><!--ebb: This needs some explanation: What is the significance of this place?-->
                   <placeName>No. 10 Barton Street</placeName>
                </place>
@@ -414,7 +421,7 @@
              <pubPlace>Edinburgh</pubPlace>
              <publisher>A. Balfour, for G. Goldie</publisher>
              <date>1813</date>
-             <note resp="#alg #ebb #lmw">A long poem, first published in 1813, purporting to be a collection of poems and ballads presented by Scottish bards to <persName ref="#MaryQoS">Mary, Queen of Scots</persName> at Holyrood. The poem became an unexpected commercial and literary success, and Hogg published a series of successively revised editions, the most influential of which was the fifth edition, which appeared in 1819. <persName ref="#MRM">Mitford</persName> mentions the poem in a letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1819-10-18">October 18, 1819</date>.</note>
+             <note resp="#alg #ebb #lmw">A long poem, first published in 1813, purporting to be a collection of poems and ballads presented by Scottish bards to <persName ref="#MaryQoS">Mary, Queen of Scots</persName> at Holyrood. The poem became an unexpected commercial and literary success, and Hogg published a series of successively revised editions, the most influential of which was the fifth edition, which appeared in 1819. <persName ref="#MRM">Mitford</persName> mentions the poem in a letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <!--ebb: CHANGED THIS to Sept. 20, 1820, because I don't find a letter to Elford on this date, but did not a ref to it in the later letter. <date when="1819-10-18">October 18, 1819</date>.--></note>
           </bibl>
             </listBibl>
                

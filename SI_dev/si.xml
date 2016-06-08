@@ -1733,7 +1733,9 @@
                      <!--ebb: Expand further this note and entry-->
                   </note>
                </person>
-               <person xml:id="Bayley" sex="1">
+               
+               <person xml:id="Bayley_P" sex="1">
+                  <persName>Peter Bayley</persName>
                   <persName>
                      <forename>Peter</forename>
                      <surname>Bayley</surname>
@@ -1747,18 +1749,15 @@
                   <occupation>playwright</occupation>
                   <occupation>poet</occupation>
                   <note resp="#ebb #lmw">Editor of the <title ref="#Museum_per">The Museum</title>, married to the <persName ref="#Bayley_Mrs">Mrs. Bayley</persName> mentioned in <rs type="letter">
-                        <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1825-05-11">11 May 1825</date>
-                     </rs>. Source: DNB. <ref target="http://viaf.org/viaf/3828982"/>
+                     <persName ref="#MRM">Mitford</persName>'s letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1825-05-11">11 May 1825</date>
+                  </rs>. Source: DNB. <ref target="http://viaf.org/viaf/3828982"/>
                   </note>
                </person>
                <person xml:id="Bayley_Mrs" sex="2">
                   <persName>Mrs. Bayley</persName>
-                  <note type="bio" resp="#lmw">Mrs. Bayley, spouse of <persName ref="#Bayley">Peter Bayley</persName>. After his sudden death in 1823, she arranged to publish posthumously his poems and to have performed and published his tragedy <title ref="#Orestes_PB">Orestes in Argos</title>.</note>
+                  <note type="bio" resp="#lmw">Mrs. Bayley, spouse of <persName ref="#Bayley_P">Peter Bayley</persName>. After his sudden death in 1823, she arranged to publish posthumously his poems and to have performed and published his tragedy <title ref="#Orestes_PB">Orestes in Argos</title>.</note>
                </person>
-               <person xml:id="Bayley_P" sex="1">
-                  <persName>Peter Bayley</persName>
-                  <note type="bio" resp="#lmw">Peter Bayley (1778?-1823) Editor of <title ref="#Museum_per">the Museum</title>.</note>
-               </person>
+               
                <person xml:id="Beaumont_Fr" sex="1">
                   <persName>
                      <surname>Beaumont</surname>
@@ -3387,7 +3386,7 @@
                </person>
                <person xml:id="Culpepper_Mrs" sex="2">
                   <persName>
-                     <surname type="maiden">Valpy</surname>
+                     <surname type="paternal">Valpy</surname>
                      <surname type="married">Straker</surname>
                      <surname type="married">Culpeper</surname>
                      <forename>Martha</forename>
@@ -3467,16 +3466,10 @@
                      <ref target="http://viaf.org/viaf/97105654"/>
                   </note>
                </person>
-               <person xml:id="Daphne" sex="2">
-                  <note resp="#ebb">
-                     <p>A pet dog. <persName type="animal">Daphne</persName>
-                        <!--What do we know about Daphne the dog?-->
-                     </p>
-                  </note>
-               </person>
+              
                <person xml:id="Daphne_pet" sex="2">
                   <persName>Daphne</persName>
-                  <note resp="#lmw">Mitford's dog, a female greyhound. There is also a pug named Daphne in the Our Village sketch "Our Godmothers" (from <title ref="#OurVillage_3rd">volume 3</title>, 1828, 266-287). This Daphne was "a particularly ugly, noisy pug, that barked at every body that came into the house, and bit at most." ( </note>
+                  <note resp="#lmw">Mitford's dog, a female greyhound. However, there is also a pug named Daphne in <bibl corresp="#OurVillage_3rd">the Our Village sketch <title level="a">Our Godmothers</title> from <biblScope unit="volume">3</biblScope>: <date when="1828">1828</date>, <biblScope unit="page">266-287</biblScope></bibl>. That Daphne was <quote>a particularly ugly, noisy pug, that barked at every body that came into the house, and bit at most</quote>.</note>
                </person>
                <person xml:id="Davenport_MA" sex="2">
                   <persName>
@@ -3786,28 +3779,11 @@
                   </death>
                   <occupation>medical</occupation>
                   <occupation>literary</occupation>
-                  <note resp="#ajc">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title> Source: ODNB. <ref target="http://viaf.org/viaf/15551790"/>
-                  </note>
+                  <occupation>essayist</occupation>
+                  <note resp="#ajc #lmw #ebb">Essayist and physician; his most ambitious work was <title ref="#Shakespeare_Times_nonfict">Shakespeare and his Times</title>. Disambiguation note: Nathan Drake the essayist is the son of the portrait and artist of the same name, who was known for his painting of provincial hunting and sporting scenes and lived from 1728 to 1778.</note>
+                  <note><ref target="http://viaf.org/viaf/15551790"/></note>
                </person>
-               <person xml:id="Drake_Nathan_younger" sex="1">
-                  <persName>
-                     <forename>Nathan</forename>
-                     <surname>Drake</surname>
-                  </persName>
-                  <persName>Dr. Drake</persName>
-                  <persName>Nathan Drake, M.D.</persName>
-                  <birth when="1766-01-15">
-                     <placeName>York, Yorkshire, England</placeName>
-                  </birth>
-                  <death when="1836">
-                     <placeName>Hadleigh, Suffolk, England</placeName>
-                  </death>
-                  <occupation>medical</occupation>
-                  <occupation>literary</occupation>
-                  <note>
-                     <ref target="http://viaf.org/viaf/15551790"/>
-                  </note>
-               </person>
+              
                <person xml:id="Drover_James" sex="1">
                   <persName>
                      <surname>Drover</surname>
@@ -3817,7 +3793,7 @@
                </person>
                <person xml:id="Drover_Miss" sex="2">
                   <persName>
-                     <surname type="maiden">Drover</surname>
+                     <surname type="paternal">Drover</surname>
                   </persName>
                   <note type="bio" resp="#scw">Lived with <orgName ref="#Drovers">her parents and brother</orgName> on <placeName>Minster Street</placeName>. <!--scw: No further info available from Needham.--></note>
                </person>
@@ -3998,7 +3974,7 @@
                   <death>
                      <date notBefore="1856-04"/>
                   </death>
-                  <note resp="#lmw">Second daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> and <persName ref="#Elford_MrsM">Mary Davies Elford</persName>; she was baptised at <placeName>Plympton, Devon</placeName> on <date when="1785-03-11">March 11, 1785</date>. She married <persName ref="#Adams_GP">George Pownoll Adams</persName> of <placeName>Totnes, Devon,</placeName> who later became <persName ref="#Adams_GP">General Sir George Pownoll Adams, KCH</persName>. They had four sons, all of whom were born at <placeName>Ashprington, Devon</placeName>, likely at Bowden House, the estate of George's older brother William Dacres Adams. They later resided at <placeName>Wiveliscombe, Somerset</placeName> and at <placeName>East Budleigh, Devon</placeName>, with their children and with Elizabeth's elder sister <persName ref="#Elford_Grace">Grace</persName>. Elizabeth is mentioned in her husband's <date when="1856-04">April 1856</date> will and presumably died after 1856; she has not been located in the 1861 census.</note>
+                 
                </person>
                <person xml:id="Elford_Elizabeth" sex="2">
                   <persName>
@@ -4007,13 +3983,11 @@
                      <forename>Elizabeth</forename>
                   </persName>
                   <birth when="1782-03-11">
-                     <placeName>Plympton Erle</placeName>
+                     <placeName>Plympton Erle, Plymouth, Devon</placeName>
                   </birth>
                   <death when="1837"/>
-                  <note resp="#ebb">Second daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> by his first wife, <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. <rs type="event">Elizabeth married <persName>George Pownoll Adams</persName> (1779-1856) on <date when="1821-07-21">23 July 1821</date>.</rs>
-                     
-                  
-                     Source: ODNB and Ancestry.com</note>
+                  <note resp="#ebb #lmw">Second daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> by his first wife, <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. On <date when="1821-07-21">23 July 1821</date> <rs type="event">Elizabeth married <persName ref="#Adams_GP">George Pownoll Adams</persName> (1779-1856) of <placeName>Totnes, Devon,</placeName> who later became General Sir George Pownoll Adams, KCH. They had four sons, all of whom were born at <placeName>Ashprington, Devon</placeName>, likely at Bowden House, the estate of George's older brother <persName>William Dacres Adams</persName>. They later resided at <placeName>Wiveliscombe, Somerset</placeName> and at <placeName>East Budleigh, Devon</placeName>, with their children and with Elizabeth's elder sister <persName ref="#Elford_Grace">Grace</persName>. Elizabeth is mentioned in her husband's <date when="1856-04">April 1856</date> will and presumably died after 1856; she has not been located in the 1861 census.</rs> Source: ODNB and Ancestry.com</note>
+                
                </person>
                <person xml:id="Elford_Grace" sex="2">
                   <persName>
@@ -4031,37 +4005,25 @@
                   </death>
                   <note resp="#lmw">Elder daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> and <persName ref="#Elford_MrsM">Mary Davies Elford</persName>; she was baptised at Plympton, Devon on November 11, 1781. Her middle name, "Chard," is derived from her maternal lineage; Grace's maternal grandmother was born Mary Chard. Grace Elford remained unmarried and later came to reside with her sister Elizabeth Elford Adams and her family, according to census records. She died on February 22, 1857 at St. Thomas, Devon.</note>
                </person>
+          
                <person xml:id="Elford_J" sex="1">
-                  <persName>
-                     <surname>Elford</surname>
-                     <forename>Jonathan</forename>
-                  </persName>
-                  <birth when="1776-11-28">
-                     <placeName>Plympton Erle</placeName>
-                  </birth>
-                  <death when="1823-03-11">
-                     <placeName>Uplands, Tamerton Foliott</placeName>
-                  </death>
-                  <note resp="#kab #ebb">Son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary</persName>. His death at the age of 46 left Sir William without an heir. Source: ODNB and Ancestry.com</note>
-               </person>
-               <person xml:id="Elford_J_WEson" sex="1"><!--LMW: different xml:id -->
                   <persName>
                      <surname>Elford</surname>
                      <forename>Jonathan</forename>
                   </persName>
                   <persName>
                      <roleName>
-                        <date when="1820"/>Member of Parliament for Westbury</roleName>
+                        <date from="1820-03-10" to="1820-11-29"/>Member of Parliament for Westbury</roleName>
                   </persName>
                   <birth when="1776-11-05">
-                     <placeName>Plympton Erle, Devon, England</placeName>
+                     <placeName>Plympton Erle, Plymouth, Devon, England</placeName>
                   </birth>
                   <death when="1823-03-11">
-                     <placeName>Upland, Tamerton Foliott, Devon, England</placeName>
+                     <placeName>Upland, Tamerton Foliott, Plymouth, Devon, England</placeName>
                   </death>
                   <occupation>politician</occupation>
                   <occupation>military</occupation>
-                  <note resp="#kab #ebb #lmw">Born November 5, 1776, the only son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. He entered Oriel College, Oxford on June 3, 1795 and came to reside thereafter at Tamerton Folliot, Devon on an estate he called Upland. He served as a Captain in the South Devonshire militia from 1803, with his father, who was also an officer. On May 10, 1810, he married Charlotte Wynne. He also became a freeman for Plymouth in 1810. He served as Member of Parliament for Westbury from March 10 to November 29, a seat he secured under the patronage of Sir Manasseh Masseh Lopes. At this time, Westbury was a controversial "rotten borough" whose interest Lopes had purchased from Lord Abingdon; he resigned his seat in November 1810 to Lopes. Throughout his adulthood, his father Sir William tried unsuccessfully to secure him a position within the government. He died on March 11, 1823, at his home at Uplands, Tamerton Folliott, Devon. His death at the age of 46 left Sir William without an heir.</note>
+                  <note resp="#kab #ebb #lmw">The only son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. <rs type="event">He joined <placeName>Oriel College, Oxford</placeName> on <date when="1795-06-03">June 3, 1795</date></rs> and later moved to Tamerton Folliot, Devon on an estate he called Upland. He served as a Captain in the <orgName>South Devonshire militia</orgName> from <date when="1803">1803</date> with his father, who was also an officer. <rs type="event">On <date when="1810-05-10">May 10, 1810</date>, he married <persName ref="#Elford_MrsC">Charlotte Wynne</persName></rs>. He also became a freeman for Plymouth in 1810. Throughout his adulthood, his father tried unsuccessfully to secure him a position within the government. <rs type="event">He served briefly as Member of <orgName ref="#Parliament_UK">Parliament</orgName> for <placeName>Westbury</placeName> <date from="1820-03-10" to="1820-11-29">from March 10 to November 29, 1820</date>, a seat he secured under the patronage of <persName>Sir Manasseh Masseh Lopes</persName>. At this time, <placeName>Westbury</placeName> was a controversial "rotten borough" whose interest Lopes had purchased from <persName>Lord Abingdon</persName>, and Jonathan Elford secured the position likely in the place of Lopes who was serving a prison sentence for electoral corruption. When the sentence was lifted, Elford resigned his seat in November 1820 so Lopes could return.</rs> His death at the age of 46 left Sir William without an heir and his debts contributed to his father's financial collapse in 1825.</note>
                   <note>
                      <ref target="http://www.historyofparliamentonline.org/volume/1820-1832/member/elford-jonathan-1776-1823"/>
                   </note>
@@ -4073,14 +4035,14 @@
                      <surname type="married">Elford</surname>
                   </persName>
                   <persName>Mrs. Elford</persName>
-                  <note resp="#lmw">Daughter of John Wynne of Abercynlleth, Denbigh. Married <persName ref="#Elford_J_WEson">Johnathan Elford</persName> on <date when="1810-05-10">May 10, 1810</date>. Birth and death dates unknown; needs further research.</note>
+                  <note resp="#lmw">Daughter of John Wynne of Abercynlleth, Denbigh. Married <persName ref="#Elford_J">Jonathan Elford</persName> on <date when="1810-05-10">May 10, 1810</date>. Birth and death dates unknown; needs further research.</note>
                </person>
                <person xml:id="Elford_MrsE" sex="2">
                   <persName>
                      <surname type="paternal">Hall</surname>
                      <surname type="married">Walrond</surname>
                      <surname type="married">Elford</surname>
-                     <forename>Elizabeth</forename>
+                     <forename>Eliza=beth</forename>
                   </persName>
                   <persName>Mrs. Elford</persName>
                   <birth notAfter="1780">
@@ -4412,7 +4374,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <ref target="http://viaf.org/viaf/12323361"/>
                   </note>
                </person>
-               <person xml:id="Flush">
+               <person xml:id="Flush_pet">
                   <persName>Flush</persName>
                   <note resp="#lmw">There appear to be a series of spaniels all named Flush.</note>
                </person>
@@ -4877,7 +4839,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <surname type="married">
                         <date from="1809-12-09" to="1827-02-19">Graham</date>
                      </surname>
-                     <surname type="maiden">Dundas</surname>
+                     <surname type="paternal">Dundas</surname>
                      <forename>Maria</forename>
                   </persName>
                   <birth when="1785-07-19">
@@ -5173,7 +5135,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>
                      <surname type="married">Haydon</surname>
                      <surname type="married">Hyman</surname>
-                     <surname type="maiden">Cawse</surname>
+                     <surname type="paternal">Cawse</surname>
                      <addName>Mrs. Haydon</addName>
                      <forename>Mary</forename>
                   </persName>
@@ -5388,7 +5350,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Hofland_B">
                   <persName>
                      <surname type="married">Hofland</surname>
-                     <surname type="maiden">Wreaks</surname>
+                     <surname type="paternal">Wreaks</surname>
                      <forename>Barbara</forename>
                   </persName>
                   <birth notAfter="1770">
@@ -5449,19 +5411,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <title>The Private Memoirs and Confessions of a Justified Sinner</title>, anonymously published in <date when="1824">1824</date>
                      </bibl>.</note>
                </person>
-               <person xml:id="Holcroft" sex="1">
-                  <persName>
-                     <surname>Holcroft</surname>
-                     <forename>Thomas</forename>
-                  </persName>
-                  <birth when="1745"/>
-                  <death when="1809"/>
-                  <note type="bio" resp="#lmw">
-                     <p>English author (1745-1809); Author of The Road to Ruin (play, 1792) and Anna
-                        St. Ives (novel, 1792)</p>
-                  </note>
-               </person>
+            
                <person xml:id="Holcroft_Thos" sex="1">
+                  <persName>Thomas Holcroft</persName>
                   <persName>
                      <forename>Thomas</forename>
                      <surname>Holcroft</surname>
@@ -5471,6 +5423,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </birth>
                   <death when="1809-03-23"/>
                   <occupation>literary</occupation>
+                  <occupation>playwright</occupation>
+                  <occupation>novelist</occupation>
+                  <occupation>journalist</occupation>
+                  <note type="bio" resp="#lmw">British author and journalist, friend and associate of literary-political radicals such as <persName ref="#Godwin_Wm">William Godwin</persName>. Author of the plays <bibl><title level="m">The Road to Ruin</title> (<date when="1792">1792</date>)</bibl> and <bibl><title level="m">Deaf and Dumb</title> (<date when="1801">1801</date>)</bibl>, his work is important in the development of early nineteenth-century melodrama. He was also the author of <bibl><title level="m">Anna St. Ives</title> (<date when="1792">1792</date>)</bibl>, considered the first "Jacobin" political novel of the 1790s. <rs type="event">Arrested along with <persName>Hardy</persName> and <persName>Horne Tooke</persName> during the Treason Trials of <date when="1794">1794</date></rs>, he was later released without being brought to trial. <persName ref="#Hazlitt_Wm">William Hazlitt</persName> later edited his memoirs (1816, 1852).</note>
                   <note>
                      <ref target="http://viaf.org/viaf/56644486"/>
                   </note>
@@ -6004,22 +5960,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <title>Volpone, or The Foxe</title> (<date when="1605">1605</date>)</bibl>, and <bibl>
                         <title>The Alchemist</title> (<date when="1610">1610</date>)</bibl>.</note>
                </person>
-               <person xml:id="Jonson_Ben" sex="1">
-                  <persName>
-                     <forename>Ben</forename>
-                     <surname>Jonson</surname>
-                  </persName>
-                  <birth when="1572-11-06">
-                     <placeName>Westminster, England</placeName>
-                  </birth>
-                  <death when="1637-06-08">
-                     <placeName>Westminster, England</placeName>
-                  </death>
-                  <occupation>literary</occupation>
-                  <note>
-                     <ref target="http://viaf.org/viaf/292789691"/>
-                  </note>
-               </person>
                <person xml:id="Jordan_Dorothea" sex="2">
                   <persName>
                      <surname type="married">Jordan</surname>
@@ -6145,7 +6085,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Maria Therese de Camp Kemble</persName>
                   <persName>
                      <surname type="married">Kemble</surname>
-                     <surname type="maiden">
+                     <surname type="paternal">
                         <nameLink>de</nameLink> Camp</surname>
                      <forename>Maria</forename>
                      <forename>Therese</forename>
@@ -6288,7 +6228,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Lamb_Caro" sex="2">
                   <persName>
-                     <surname type="maiden">Ponsonby</surname>
+                     <surname type="paternal">Ponsonby</surname>
                      <surname type="married">Lamb</surname>
                      <forename>Caroline</forename>
                      <roleName>Lady</roleName>
@@ -6333,7 +6273,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Landon_LE" sex="2">
                   <persName>
-                     <surname type="maiden">Landon</surname>
+                     <surname type="paternal">Landon</surname>
                      <surname type="married">Maclean</surname>
                      <forename>Laetitia</forename>
                      <forename>Elizabeth</forename>
@@ -6454,7 +6394,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Liston_SarahT" sex="2">
                   <persName>
                      <surname type="married">Liston</surname>
-                     <surname type="maiden">Tyrer</surname>
+                     <surname type="paternal">Tyrer</surname>
                      <forename>Sarah</forename>
                   </persName>
                   <persName>Sarah Liston</persName>
@@ -6500,12 +6440,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <date from="1826" to="1853">from March 1826 until June 1853</date>, shortly before his death. He is perhaps best known as the author of his father-in-law's <bibl>
                         <biblScope unit="volume" from="1" to="7">7-volume</biblScope> biography, <date>Life of Walter Scott</date>, published in <date from="1837" to="1838">1837-1838</date>
                      </bibl>.</note>
-               </person>
-             
-               <person xml:id="Long_tailed_wren">
-                  <persName>Long Tailed Wren</persName>
-                  <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species
-                     in the family Timaliidae.</note>
                </person>
                <person xml:id="Lorrain_Cl" sex="1">
                   <persName>
@@ -7287,7 +7221,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="ONeill_Eliz" sex="2">
                   <persName>
-                     <surname type="maiden">O'Neill</surname>
+                     <surname type="paternal">O'Neill</surname>
                      <forename>Elizabeth</forename>
                   </persName>
                   <occupation>actor</occupation>
@@ -7300,7 +7234,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Mary Ann Orger</persName>
                   <persName>
                      <surname type="married">Orger</surname>
-                     <surname type="maiden">Ivers</surname>
+                     <surname type="paternal">Ivers</surname>
                      <forename>Mary</forename>
                      <forename>Ann</forename>
                   </persName>
@@ -7316,6 +7250,19 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         "Mrs. Orger." The Biography of the British Stage. New York: Collins and
                         Hannay, 1824. 187-188.</p>
                   </note>
+               </person>
+               <person xml:id="Porter_AM">
+                  <persName>L'Allegra</persName>
+                  <persName>Anna Maria Porter</persName>
+                  <persName>
+                     <surname>Porter</surname>
+                     <forename>Anna</forename>
+                     <forename>Maria</forename>
+                  </persName>
+                  <birth when="1780"/>
+                  <death when="1832"/>
+                  <note resp="#ebb">Sister of the popular historical novelist <persName>Jane Porter</persName>, Anna Maria Porter wrote prolifically in verse romance. Both sisters were friends of <persName ref="#Scott_Wal">Walter Scott</persName>. See the Orlando Project's sujmation of major themes in her work: <ptr target="http://orlando.cambridge.org/public/svPeople?person_id=portan"/> and History's Women for a biographical sketch of both sisters <ptr target="http://www.historyswomen.com/thearts/Porters.htm"/>.</note>
+                  <note><ref target="http://viaf.org/viaf/35192440/"/></note>
                </person>
                <person xml:id="Otway_Thos" sex="1">
                   <persName>
@@ -7387,7 +7334,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Palmer_Mad" sex="2">
                   <persName>
                      <surname type="married">Palmer</surname>
-                     <surname type="maiden">Gordon</surname>
+                     <surname type="paternal">Gordon</surname>
                      <forename>Madelina</forename>
                      <roleName>the Lady</roleName>
                   </persName>
@@ -7437,7 +7384,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </persName>
                   <note resp="#ncl">Friend of Mitford's who was enchanted by her upon their meeting.</note>
                </person>
-               <person xml:id="Patemore_PG" sex="1"><!-- LMW:  change id? this name is wrong.  Spelled Patmore. Which letter? Does Mitford spell it Patemore?-->
+               <person xml:id="Patmore_PG" sex="1">
                   <persName>
                      <forename>Peter</forename>
                      <forename>George</forename>
@@ -7451,7 +7398,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>essayist</occupation>
                   <occupation>editor</occupation>
                   <occupation>biographer</occupation>
-                  <note resp="#ajc #lmw">Frequent periodical contributer. In the early 1820s, he authored, "Picture Galleries of England," a series of art criticism essays in the <title>New Monthly Magazine</title>. In 1821 Patmore acted as second to journalist <persName ref="#Scott_John">John Scott</persName> in the duel in which Scott was killed. Tried for murder and acquitted for his role in the duel. Editor of the New Monthly Magazine from 1841. Source: ODB.</note>
+                  <note resp="#ajc #lmw">Frequent periodical contributer. In the early 1820s, he authored, "Picture Galleries of England," a series of art criticism essays in the <title level="s" ref="#New_Monthly_Mag">New Monthly Magazine</title>. In 1821 Patmore acted as second to journalist <persName ref="#Scott_John">John Scott</persName> in the duel in which Scott was killed. Tried for murder and acquitted for his role in the duel. <rs type="event">Editor of the <title level="s" ref="#New_Monthly_Mag">New Monthly Magazine</title> from <date notBefore="1841">1841</date></rs>. Source: ODNB.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/57356529"/>
+                  </note>
                </person>
                <person xml:id="Patty" sex="2">
                   <persName>
@@ -7752,7 +7702,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Pope_Jane" sex="2">
                   <persName>
-                     <surname type="maiden">Pope</surname>
+                     <surname type="paternal">Pope</surname>
                      <forename>Jane</forename>
                   </persName>
                   <occupation>actor</occupation>
@@ -7954,6 +7904,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <ref target="http://viaf.org/viaf/88809641"/>
                   </note>
                </person>
+               <person xml:id="Rembrandt">
+                  <persName>Rembrandt</persName>
+                  <persName><surname>van Rijn</surname>
+                  <surname>Harmenszoon</surname>
+                     <forename>Rembrandt</forename>
+                  </persName>
+                  <birth when="1606-07-15"><placeName>Leiden, Netherlands</placeName></birth>
+                  <death when="1669-10-04"><placeName>Amsterdam, Netherlands</placeName></death>
+                  <note resp="#ebb">Famous Dutch Golden Age painter and printmaker. See The Met's Rembrandt site at <ptr target="http://www.metmuseum.org/toah/hd/rmbt/hd_rmbt.htm"/>. 
+                  </note>
+                  <note><ref target="http://viaf.org/viaf/64013650/"/></note>
+               </person>
                <person xml:id="Radcliffe_Ann" sex="2">
                   <persName>
                      <surname type="married">Radcliffe</surname>
@@ -8150,20 +8112,33 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw #mco">Before inheriting the title, Horace Beckford was a member of Crockford's and a notorious gambler. Part of the family estate was in <placeName ref="#Stratfield_Saye">Stratfield Saye, Hampshire</placeName>, roughly five miles from <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>; he inherited the title from his uncle, <persName ref="#Pitt_Geo">George Pitt, the 2nd Baron Rivers</persName>, in 1811. The family sold a portion of the estate to the crown in 1814; the crown in turned awarded the estate to the <persName ref="#Wellington_Duke">Duke of Wellington</persName>. In 1831, he committed suicide by throwing himself into the Serpentine in Hyde Park. Source: ODNB. <!-- LMW:  no VIAF #. --></note>
                </person>
                <person xml:id="Robertson_William">
-                  <persName>
-                     <surname>Robertson</surname>
-                     <forename>William</forename>
-                  </persName>
-                  <birth when="1721"/>
-                  <death when="1793"/>
-                  <note>A Scottish historian, and author of <title ref="#CharlesV">Charles the Fifth</title>.</note>
-               </person>
-               <person xml:id="Robertson_Wm">
+                  <persName>William Robertson</persName>
                   <persName>
                      <forename>William</forename>
                      <surname>Robertson</surname>
                   </persName>
-                  <note resp="#lmw">Scottish historian (1721-1793) Author of The History of Scotland, 1542-1603 (1759) and The History of Charles V (1769), considered his most important work.</note>
+                  <persName>
+                     <roleName>Fellow of the Royal Society of Edinburgh</roleName>
+                     <roleName>Fellow of the Society of Antiquaries of Scotland</roleName>
+                     <roleName>Doctor of Divinity</roleName>
+                     <roleName>minister of the Church of Scotland</roleName>
+                     <roleName>King's Chaplain</roleName>
+                     <roleName>Chaplain of Stirling Castle</roleName>
+                     <roleName>Principal of the University of Edinburgh</roleName>
+                  </persName>
+                  <birth when="1721-09-19">
+                     <placeName>Borthwick, Midlothian, Scotland</placeName>
+                  </birth>
+                  <death when="1793-06-01">
+                     <placeName>Edinburgh, Scotland</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>historian</occupation>
+                  <occupation>antiquarian</occupation>
+                  <occupation>clergy</occupation>
+                  <occupation>educator</occupation>
+                  <note resp="#lmw">Scottish historian, clergyman, and Principal of the University of Edinburgh, author of <bibl><title level="m">The History of Scotland, 1542-1603</title> (<date when="1759">1759</date>)</bibl> and <bibl corresp="#CharlesV"><title level="m">The History of the Reign of the Emperor Charles V</title> (<date when="1769">1769</date>)</bibl>, considered his most important work.</note>
+                  <note> <ref target="http://viaf.org/viaf/59177542"/></note>
                </person>
                <person xml:id="Robins_Geo" sex="1">
                   <persName>
@@ -8247,7 +8222,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Mary Valpy Roworth</persName>
                   <persName>Miss Valpy</persName>
                   <persName>
-                     <surname type="maiden">Valpy</surname>
+                     <surname type="paternal">Valpy</surname>
                      <surname type="married">Roworth</surname>
                      <forename>Mary</forename>
                      <forename>Ann</forename>
@@ -8282,7 +8257,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Russell_M" sex="2">
                   <persName>
                      <surname type="married">Mitford</surname>
-                     <surname type="maiden">Russell</surname>
+                     <surname type="paternal">Russell</surname>
                      <forename>Mary</forename>
                   </persName>
                   <persName>Mrs. Mitford</persName>
@@ -8301,7 +8276,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Russell_MaryDicker" sex="2">
                   <persName>
                      <surname type="married">Russell</surname>
-                     <surname type="maiden">Dicker</surname>
+                     <surname type="paternal">Dicker</surname>
                      <forename>Mary</forename>
                   </persName>
                   <persName>Mrs. Russell</persName>
@@ -8620,7 +8595,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Siddons_Sarah" sex="2">
                   <persName>
-                     <surname type="maiden">Kemble</surname>
+                     <surname type="paternal">Kemble</surname>
                      <surname type="married">Siddons</surname>
                      <forename>Sarah</forename>
                   </persName>
@@ -9144,7 +9119,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Valpy_Catherine">
                   <persName>
-                     <surname type="maiden">Valpy</surname>
+                     <surname type="paternal">Valpy</surname>
                      <surname type="married">French</surname>
                      <forename>Catherine</forename>
                      <forename>Elizabeth</forename>
@@ -9185,7 +9160,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Valpy_Miss" sex="2"><!--ebb: This is the first record I have entered that makes an "umbrella" entry for a few different possible people with more specific entries in the site index. Where Mitford indicates a "Miss Valpy" it's unclear which of the unmarried daughters of Richard Valpy she means, so we have made a general entry that points to each possible daughter this could refer to.-->
                   <persName>
-                     <surname type="maiden">Valpy</surname>
+                     <surname type="paternal">Valpy</surname>
                   </persName>
                   <note resp="#kab #mco #ebb">A friend of <persName ref="#MRM">MRM</persName>, and one of Dr. Richard Valpy's as yet unmarried daughters by his second wife, <persName>Mary Benwell</persName>, though it is unclear which of his daughters this is. All of Dr. Valpy's daughters eventually married, and of the daughters by his second wife, <rs type="event">
                         <persName ref="#Roworth_Mary">Mary</persName> was married by <date when="1810">1810</date>
@@ -9194,7 +9169,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Valpy_Penelope" sex="2">
                   <persName>
-                     <surname type="maiden">Valpy</surname>
+                     <surname type="paternal">Valpy</surname>
                      <surname type="married">French</surname>
                      <forename>Penelope</forename>
                      <forename>Arabella</forename>
@@ -9276,7 +9251,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>
                      <forename>Alexandrina</forename>
                      <forename>Victoria</forename>
-                     <surname type="maiden">Hanover</surname>
+                     <surname type="paternal">Hanover</surname>
                   </persName>
                   <birth when="1819-05-24">
                      <placeName>Kensington Palace, London</placeName>
@@ -11000,10 +10975,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      the scene of <rs type="event" ref="#regicide">the Regicide</rs> in
                         <date>1649</date>.</note>
                </place>
-               <place xml:id="Barton_street"><!-- If this is in London, I wonder if it is actually Burton Street? --><!--ebb: This needs some explanation: What is the significance of this place?-->
-                  <placeName>No. 10 Barton Street</placeName>
-               </place>
-               <place xml:id="BartonSt">
+               <place xml:id="Barton_street">
                   <placeName>Barton Street</placeName>
                   <note resp="#lmw">A street in <placeName ref="#Westmnstr">Westminster</placeName>.</note>
                </place>
@@ -11954,7 +11926,16 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </place>
             </listPlace>
          </div>
-         <div type="plant">
+         <div type="nature">
+            <!--ebb 2016-06-07 Changed from div type="plant" to add animal species list-->
+            <list sortKey="animals">
+               <item xml:id="Long_tailed_wren">
+                  <name>Long Tailed Wren</name>
+                  <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species in the family Timaliidae.</note>
+               </item>
+               
+            </list>
+            
             <list sortKey="plants">
                <item xml:id="anemone">
                   <name>anemone</name>
@@ -12804,10 +12785,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <author ref="#MRM"/>
                </bibl>
                <bibl xml:id="CharlesV">
-                  <title>Charles the Fifth</title>
+                  <title>The History of the Reign of the Emperor Charles V</title>
                   <author>
                      <persName ref="#Robertson_William">William Robertson</persName>
                   </author>
+                  <date when="1769">1769</date>
                   <!--ebb: This needs more info.-->
                </bibl>
                <bibl xml:id="Chas_Grandison_novel">
@@ -12939,7 +12921,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </bibl>
                <bibl xml:id="Deaf_Dumb_play">
                   <title>Deaf and Dumb </title>
-                  <author ref="#Holcroft"/>
+                  <author ref="#Holcroft_Thos"/>
                </bibl>
                <bibl xml:id="DeafasPost_play">
                   <title>Deaf as a Post (Drury Lane, 1823)</title>
@@ -13198,9 +13180,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <bibl xml:id="HenryVIII_play">
                   <title>Henry VIII</title>
                   <author ref="#Shakespeare"/>
-               </bibl>
-               <bibl xml:id="Hist_of_ChasV">
-                  <title>The History of Charles the Fifth</title> by <author ref="#Robertson_Wm">William Robertson</author>
                </bibl>
                <bibl xml:id="HistEdRichII_Howard">
                   <title>History of the Reigns of Edward and Richard II</title>
@@ -13617,12 +13596,12 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <bibl xml:id="Orestes_PB">
                   <title>Orestes in Argos; a Tragedy in Five Acts, by the late Peter Bayley, Esq.</title>
                   <author>
-                     <persName ref="#Bayley">Peter Bayley</persName>
+                     <persName ref="#Bayley_P">Peter Bayley</persName>
                   </author>
                   <pubPlace ref="#London_city">London</pubPlace>
                   <publisher>Thomas Dolby</publisher>
                   <date when="1825">1825</date>
-                  <note resp="#lmw">After his sudden death in 1823, <persName ref="#Bayley">Peter Bayley</persName>'s wife arranged to have his work performed at <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName> and then published.</note>
+                  <note resp="#lmw">After his sudden death in 1823, <persName ref="#Bayley_P">Peter Bayley</persName>'s wife arranged to have his work performed at <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName> and then published.</note>
                </bibl>
                <bibl xml:id="Orestes_play">
                   <title>Orestes</title>
@@ -13781,23 +13760,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>Prometheus Bound</title>
                   <note resp="#ebb">The authorship of this influential ancient Greek tragedy was classically attributed to <persName ref="#Aeschylus">Aeschylus</persName>, but this has been disputed since the mid-19th century.</note>
                </bibl>
-               <bibl xml:id="Queens_Wake">
+               <bibl xml:id="QueensWake"> <!-- Use this one. -->
                   <title>The Queen's Wake: a Legendary Poem</title>
                   <title>The Queen's Wake</title>
                   <author ref="#Hogg_J">James Hogg</author>
                   <pubPlace>Edinburgh</pubPlace>
-                  <publisher>Blackwood</publisher>
-                  <date when="1813">1813</date>
-                  <note resp="#alg">A collection of poems and ballads presented by fictional Scottish bards to Mary Queen of Scots at Holyrood. Source: LBT</note>
-               </bibl>
-               <bibl xml:id="QueensWake">
-                  <title>The Queen's Wake: a legendary poem</title>
-                  <author ref="#Hogg_J">James Hogg</author>
-                  <pubPlace>Edinburgh</pubPlace>
                   <publisher>A. Balfour, for G. Goldie</publisher>
                   <date>1813</date>
-                  <note resp="#ebb">long poem on <persName ref="#MaryQoS">Mary, Queen of Scots</persName>
-                  </note>
+                  <note resp="#alg #ebb #lmw">A long poem, first published in 1813, purporting to be a collection of poems and ballads presented by Scottish bards to <persName ref="#MaryQoS">Mary, Queen of Scots</persName> at Holyrood. The poem became an unexpected commercial and literary success, and Hogg published a series of successively revised editions, the most influential of which was the fifth edition, which appeared in 1819. <persName ref="#MRM">Mitford</persName> mentions the poem in <rs type="letter">a letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-09-09">September 20, 1820</date></rs>.</note>
                </bibl>
                <bibl xml:id="Recoll_Reign_GeoIII">
                   <title>Recollections and Reflections, Personal and Political, as Connected with Public Affairs, During the Reign of George III </title> by <author ref="#Nicholls_John">John Nicholls</author>
