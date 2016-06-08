@@ -65,6 +65,13 @@
             </xsl:apply-templates>
         </list>
     </xsl:template>
+    <xsl:template match="list[@sortKey='animals']">
+        <list sortKey="{@sortKey}">
+            <xsl:apply-templates select="item">
+                <xsl:sort select="lower-case(@xml:id)"/>
+            </xsl:apply-templates>
+        </list>
+    </xsl:template>
     <xsl:template match="list[@sortKey='plants']">
         <list sortKey="{@sortKey}">
             <xsl:apply-templates select="item">

@@ -57,34 +57,35 @@
    <text>
       <body>
          
-    
+  <!--ebb 2016-06-07 Note: Commented out means I've entered it into the Site Index.-->  
      
          <div type="historical_people">
             <listOrg sortKey="histOrgs">
-               <org xml:id="Marylebone_Cricket_Club">
+          <!--     <org xml:id="Marylebone_Cricket_Club">
                   <orgName>Marylebone Cricket Club</orgName>
                   <note resp="#rct #lmw">Founded in <placeName ref="#London_city">London</placeName>in 1787, the Marylebone Cricket Club ("MCC") is still in existence today. It owns and has been based at Lord's Cricket Ground in St John's Wood, London since 1814. It was formerly the governing body for cricket worldwide, as well as in England and Wales, and retains the copyright for the Laws of Cricket, first published in 1788.</note>
                   <note><ref target="https://www.lords.org/mcc"/></note> 
-               </org>
-               
+               </org>-->
+              <!-- 
                <org xml:id="Royal_Academy">
                   <orgName>Royal Academy of Arts</orgName>
                   <note resp="#lmw">The private arts institution The Royal Academy of Arts was founded by George III on 10 December 1768, at the behest of architect Sir William Chambers. Chambers and other artists and architects sought to establish a British national "society for promoting the Arts of Design," a society that would sponsor an annual exhibition (later the Summer Exhibition) as well as a School of Design (later the Royal Academy Schools.) Thirty-four founding members were elected; today, the society elects no more than 80 members at one time as Royal Academicians (Members of the Royal Academy, RA). During Mitford's time, the Royal Academy was housed at <placeName ref="#Somerset_House">Somerset House</placeName>, a building designed and built by Chambers beginning in 1776 and likely not completed until after 1819. The institution moved to Trafalgar Square in the 1830s, to share space with the newly-founded National Gallery, and remained there until 1867. Mitford's friend and correspondent <persName ref="#Haydon">Benjamin Robert Haydon</persName>, was a Member of the Royal Academy.</note>
                      <note><ref target="http://royalacademy.org.uk"/></note>
-               </org>
+               </org>-->
             </listOrg>
 
             <listPerson sortKey="histPersons">
+               <!--ebb 2016-06-07: This is an editorial note that belongs within the letter it mentions, not the SI. The SI gets a general entry on Robert Marsham.-->
+               <!--<person xml:id="Marsham_Robt" sex="1">
+                  <persName><surname>Marsham</surname>
+                  <forename>Robert</forename>
+                  </persName>
+                 <birth when="1708-01-27"/>
+                  <death when="1797-09-04"/>
+                  <note resp="#lmw">English naturalist and author of <bibl><title level="m">Indications of Spring</title> (<date when="1789">1789</date>)</bibl>, a founding work in the field of phenology, the study of the effects of the seasons on plants and animals. Likely the Marsham mentioned in <rs type="letter">Mitford's letter to Sir William Elford of <date when="1820-09-30">30 September 1820</date></rs>. </note>
+               </person>-->
                
-               <person xml:id="Marsham_Mr" sex="1">
-                  <persName>Mr. Marsham</persName>
-                  <persName>
-                     <surname type="paternal">Marsham</surname>
-                     <roleName>Mr.</roleName></persName>
-                  <note resp="#lmw">In Mitford's letter to Sir William Elford of <date when="1820-09-30">30 September 1820</date>, she mentions <persName ref="#Marsham_Mr">Mr. Marsham.</persName>.  She and Elford are discussing the merits of Austen and Edgeworth as novelists, and she teasingly asks of Elford, "And will you rank me any longer with your <persName ref="#Marsham_Mr">Mr. Marsham</persName>s? or such unwise scorners &amp; scoffers you dear faithless Correspondent?" Possibly a reference to Robert Marsham, (1708-1797), English naturalist and author of Indications of Spring (1789), a founding work in the field of phenology, the study of the effects of the seasons on plants and animals. Gilbert White described Marsham as a "painful and accurate naturalist," so it is possible that Mitford here pokes fun at such painstaking realism. More research needed.</note>
-               </person>
-               
-               <person xml:id="Jackson_Mr" sex="1">
+           <!--    <person xml:id="Jackson_Mr" sex="1">
                   <persName>Mr. Jackson</persName>
                   <persName>
                      <surname type="paternal">Jackson</surname>
@@ -92,25 +93,11 @@
                   <occupation>medical</occupation>
                   <occupation>surgeon</occupation>
                   <note resp="#lmw">In Mitford's letter of <date when="1819-07-05">July 5, 1819</date>, she mentions <persName ref="#Jackson_Mr">Mr. Jackson</persName> as the surgeon who unsuccessfully attempts to treat <persName ref="#Dickinson_Charles">Charles Dickinson</persName>'s shoulder dislocation. More research needed.</note>
-               </person>
+               </person>-->
                
-               <person xml:id="Porter_AM" sex="2">
-                  <persName>Anna Maria Porter</persName>
-                  <persName>
-                     <surname type="paternal">Porter</surname>
-                     <forename>Anna</forename>
-                     <forename>Maria</forename></persName>
-                  <birth when="1780"><placeName>Durham, England</placeName></birth>
-                  <death when="1832"></death>
-                  <occupation>literary</occupation>
-                     <occupation>poet</occupation>
-                     <occupation>novelist</occupation>
-                  <note resp="#lmw">Sister of Jane Porter, she was a prolific writer of poetry, short stories, and novels.  Her best-known novel is The Hungarian Brothers (1807).</note>
-                 <note>
-                    <ref target="http://viaf.org/viaf/39730902"/></note>
-                  </person>
+            
                
-               <person xml:id="More_Hannah" sex="2">
+             <!--  <person xml:id="More_Hannah" sex="2">
                   <persName>Hannah More</persName>
                   <persName>
                      <surname type="paternal">More</surname>
@@ -122,13 +109,12 @@
                   <occupation>novelist</occupation>
                      <occupation>philanthropist</occupation>
                      <occupation>educator</occupation>
-                  <note resp="#lmw">Hannah More began her career in 1770s London as a successful playwright and associate of David Garrick, Samuel Johnson, Elizabeth Montagu, and Joshua Reynolds. She was a prominent member of the "Bluestocking" group of women following Montagu's salon. In the 1780s, she brought the working-class Bristol poet Ann Yearsley to public attention, and became increasingly active with abolitionists and evangelicals such as William Willberforce and Beilby Porteus, Bishop of London. With her sister Martha, More became active in philanthropic activities intended to improve the living conditions and education of the poor, including setting up "Sunday Schools" to teach reading. Between the 1780s and the 1830s she was a prolific and popular author of novels, conduct books, and ethical tracts, including: Strictures on the Modern System of Female Education (1799) and Practical Piety (1811). She wrote numerous moralistic poems and prose sketches aimed at literate working-class poor audiences, including: Village Politics, by Will Chip (1792), and later worked with Porteus on the series Cheap Repository Tracts (1795 to 1797), the most famous of which is "The Shepherd of Salisbury Plain."
-                     </note>
+                  <note resp="#lmw">Hannah More began her career in 1770s London as a successful playwright and associate of David Garrick, Samuel Johnson, Elizabeth Montagu, and Joshua Reynolds. She was a prominent member of the "Bluestocking" group of women following Montagu's salon. In the 1780s, she brought the working-class Bristol poet Ann Yearsley to public attention, and became increasingly active with abolitionists and evangelicals such as William Willberforce and Beilby Porteus, Bishop of London. With her sister Martha, More became active in philanthropic activities intended to improve the living conditions and education of the poor, including setting up "Sunday Schools" to teach reading. Between the 1780s and the 1830s she was a prolific and popular author of novels, conduct books, and ethical tracts, including: Strictures on the Modern System of Female Education (1799) and Practical Piety (1811). She wrote numerous moralistic poems and prose sketches aimed at literate working-class poor audiences, including: Village Politics, by Will Chip (1792), and later worked with Porteus on the series Cheap Repository Tracts (1795 to 1797), the most famous of which is "The Shepherd of Salisbury Plain."</note>
                   <note>
                      <ref target="http://viaf.org/viaf/51802053"/></note>
-               </person>
+               </person>-->
                
-               <person xml:id="Drummond_Wm" sex="1">
+            <!--   <person xml:id="Drummond_Wm" sex="1">
                   <persName>William Drummond</persName>
                   <persName>
                      <surname>Drummond</surname>
@@ -143,8 +129,8 @@
                   </note>
                   <note><ref target="http://viaf.org/viaf/http://viaf.org/viaf/6176613"/></note>
                    </person>
-
-               <person xml:id="Dallas_RC" sex="1">
+-->
+            <!--   <person xml:id="Dallas_RC" sex="1">
                   <persName>R.C. Dallas</persName>
                <persName>
                   <surname>Dallas</surname>
@@ -164,12 +150,11 @@
                <occupation>translator</occupation>
                   <occupation>legal</occupation>
                   <occupation>judge</occupation>
-                  <note resp="#lmw">R.C. Dallas was a prominent barrister and judge who worked on many parliamentary and privy council cases, including those on disputed parliamentary elections. His most notable legal accomplishments were serving as junior counsel at the trial of Warren Hastings (1787), defending General Thomas Picton (1806-1808), and representing Jamaican merchants and planters to oppose the 1807 Slave Trade Act.  In 1818, he was appointed Chief Justice of the Common Pleas and was sworn to the Privy Council; between 1818 and 1823 he headed the special commission that tried the Cato Street conspirators, presided over the trial of James Ings, and advised Parliament on the 1820 Pains and Penalties Bill. He served briefly as a Member of Parliament in the Tory interest in two constitencies. He also wrote poetry, plays, novels, and nonfiction works such as History of the Maroons, from their Origin to their Establishment in Sierra Leone (1803) and Recollections of the Life of Lord Byron from the year 1808 to the end of 1814 (1824). Mitford mentions his 1820 novel Sir Francis Darrell, or the Vortex, in her letters. Dallas is perhaps best known today as a Byron correspondent and biographer.  His sister, Charlotte Henrietta Dallas, married Captain George Anson Byron, and their son George Anson Byron (1789-1868) inherited Byron's title upon his death in 1824.
-                  </note>
+                  <note resp="#lmw">R.C. Dallas was a prominent barrister and judge who worked on many parliamentary and privy council cases, including those on disputed parliamentary elections. His most notable legal accomplishments were serving as junior counsel at the trial of Warren Hastings (1787), defending General Thomas Picton (1806-1808), and representing Jamaican merchants and planters to oppose the 1807 Slave Trade Act.  In 1818, he was appointed Chief Justice of the Common Pleas and was sworn to the Privy Council; between 1818 and 1823 he headed the special commission that tried the Cato Street conspirators, presided over the trial of James Ings, and advised Parliament on the 1820 Pains and Penalties Bill. He served briefly as a Member of Parliament in the Tory interest in two constitencies. He also wrote poetry, plays, novels, and nonfiction works such as History of the Maroons, from their Origin to their Establishment in Sierra Leone (1803) and Recollections of the Life of Lord Byron from the year 1808 to the end of 1814 (1824). Mitford mentions his 1820 novel Sir Francis Darrell, or the Vortex, in her letters. Dallas is perhaps best known today as a Byron correspondent and biographer. His sister, Charlotte Henrietta Dallas, married Captain George Anson Byron, and their son George Anson Byron (1789-1868) inherited Byron's title upon his death in 1824.</note>
                   <note><ref target="http://viaf.org/viaf/25774123"/></note>
                   <note><ref target="http://www.historyofparliamentonline.org/volume/1790-1820/member/dallas-robert-1756-1824"/></note>
-               </person>
-               
+               </person>-->
+          <!--     
                <person xml:id="Cowley_H" sex="2">
                   <persName>Hannah Cowley</persName>
                      <persName>
@@ -185,9 +170,9 @@
                   <note resp="#lmw">Successful playwright at Drury Lane and Covent Garden from the 1770s to the 1790s, she was the associate of David Garrick and Richard Brinsley Sheridan upon launching her career as a playwright in the late 1770s with The Runaway (1776). In 1779, she was embroiled in a literary dispute with Hannah More over whether More's play Fatal Falsehood was plagiarised from her Albina (both 1779). Her best-known play, The Belle's Strategem, was produced at Covent Garden in 1780 and continued on London stages until 1800. In the 1780s, she became part of the Della Cruscan circle of poets by corresponding as "Anna Matilda" with Robert Merry ("Della Crusca") and Mary Robinson, "Laura Maria," among others. Della Cruscan publisher John Bell featured her poetry in his literary newspapers and reprinted them in several volumes, including The Poetry of Anna Matilda (1788). Her collected works were published in 1813.</note>
                      <note>
                         <ref target=" http://viaf.org/viaf/34730405"/></note>
-                  </person>
+                  </person>-->
                
-               <person xml:id="Tasso" sex="1">
+               <!--<person xml:id="Tasso" sex="1">
                <persName>
                   <surname>Tasso</surname>
                   <forename>Torquato</forename>
@@ -200,10 +185,10 @@
                   <note resp="#lmw">Tasso was a poet and courtier born in Naples. He was the author of pastoral drama Aminta (1573) and epic poem Gerusalemme Liberata ("Jerusalem Delivered") (1574). Tasso's life and work continued to be the subject of much attention during Mitford's lifetime. Byron's poem "The Lament of Tasso," written in Florence, appeared in 1817; a translation of Gerusalemme Liberata in Spenserian stanzas by Jeremiah Holmes Wiffen appeared in 1821; Donizetti wrote an opera on the subject of Tasso in 1833, incorporating some of the poet's work into the libretto; and Franz Liszt composed a symphonic poem, Tasso, Lamento e Trionfo in commemoration of the centenary of Goethe's birth in 1849.
                   </note>
                   <note>
-                     <ref target="http://viaf.org/viaf/34730405"/></note>
-               </person>
+                     <ref target="http://viaf.org/viaf/4936996/"/></note>
+               </person>-->
                
-               <person xml:id="Ariosto" sex="1">
+            <!--   <person xml:id="Ariosto" sex="1">
                   <persName>
                      <surname>Ludovico</surname>
                      <forename>Arisoto</forename>
@@ -218,9 +203,9 @@
                   <note resp="#lmw">Italian poet, courtier, and diplomat; Author of the epic Orlando Furioso (1516), written in ottava rima rhyme scheme.</note>
                   <note>
                      <ref target=" http://viaf.org/viaf/71386455"/></note>
-               </person>
+               </person>-->
                
-               <person xml:id="Anacreon" sex="1">
+          <!--     <person xml:id="Anacreon" sex="1">
                   <persName>
                      <surname>Anacreon</surname>
                   </persName> 
@@ -231,9 +216,9 @@
                  <note resp="#lmw">Ancient Greek lyric poet, later considered one of nine canonical poets; known for composing bacchanalian and amatory lyrics and also composed hymns.</note>
                   <note>
                      <ref target="http://viaf.org/viaf/100165204"/></note>
-               </person>
+               </person>-->
 
-               <person xml:id="Rembrandt" sex="1">
+    <!--           <person xml:id="Rembrandt" sex="1">
                  <persName>
                      <forename>Rembrandt</forename>
                      <forename>Harmenszoon</forename>
@@ -251,8 +236,8 @@
                   <note resp="#hbl #lmw">A prolific painter and printmaker, Rembrandt is usually regarded as the greatest artist of Holland's "Golden Age." Best known for his portraits in oil, particularly his many self-portraits, he also painted landscapes and narratives, including biblical and mythological scenes. He was also a skilled printmaker, employing etching as well as dry point techniques.</note>
              <note>
                   <ref target="http://viaf.org/viaf/64013650"/></note>
-               </person>
-
+               </person>-->
+<!--
                <person xml:id="Rubens" sex="1">
                   <persName>
                      <forename>Peter</forename>
@@ -273,46 +258,47 @@
                   <occupation>diplomat</occupation>
                   <note resp="#lmw">A portrait, landscape, and history painter in oils, Rubens is best-known for his female nudes of biblical, allegorical, and mythological subjects; he also produced commissioned Counter-Reformation altarpieces. At the height of his career, he ran a large studio in Antwerp, and he was knighted by both Charles I of England and Philip IV of Spain. He used the production of prints and book title-pages, based on his drawings, to extend his fame in Europe, working with the renowned Plantin-Moretus publishing house. In 1630, Rubens married his second wife, Hélène Fourment, who inspired the voluptuous figures in many of the best-known paintings from his later career.</note>
                   <note><ref target="http://viaf.org/viaf/56647196"/></note>
-               </person>
+               </person>-->
             </listPerson>
          </div>
          
          <div type="fictional_and_archetypal">
             <listPerson sortKey="fictPersons">
-          
+          <!--
                <person xml:id="Denison_Jenny_WS">
                   <persName>Jenny Denison</persName>
-                  <note resp="#lmw">Character in Old Mortality by Walter Scott, spelled there Denison. Edith Bellenden's maid.  Mitford spells "Dennison" in 1820-09-30 letter to Elford.</note></person>
-               
+                  <note resp="#lmw">Character in <bibl corresp="#Old_Mortality"><title level="m">Old Mortality</title> by <author ref="#Scott_Wal">Walter Scott</author></bibl>. Edith Bellenden's maid.  </note></person>-->
+              <!-- 
                <person xml:id="Deans_Jeanie_WS">
                   <persName>Jeanie Deans</persName>
                   <note resp="#lmw">character in the Heart of Midlothian by Walter Scott, heroine and sister of Effie Deans. She walks to London to secure a pardon for her sister on a charge of infanticide.</note></person>
-               
-               <person xml:id="Bradwardine_Baron_WS">
+               -->
+              <!-- <person xml:id="Bradwardine_Baron_WS">
                   <persName>Baron of Bradwardine</persName>
                   <note resp="#lmw">Jacobite character in Walter Scott's Waverley; He lives at Tully-Veolan, and is the friend of protagonist Edward Waverley's uncle.</note>
-               </person>
+               </person>-->
                
-               <person xml:id="Balfours_WS"><persName>Balfours of Burleys</persName>
-                  <note resp="#lmw">The Balfours of Burley are a family in Walter Scott's Old Mortality.</note></person>
+               <!--ebb 2016-06-07: turning this next (Balfours_WS) into an orgName for list of fictional organizations-->
+              <!-- <person xml:id="Balfours_WS"><persName>Balfours of Burleys</persName>
+                  <note resp="#lmw">The Balfours of Burley are a family in Walter Scott's Old Mortality.</note></person>-->
                
-               <person xml:id="Elspeth"><persName>Elspeth</persName>
-                  <note resp="#mw">The character of Elspeth is Steenie's grandmother in Walter Scott's The Antiquary.  Mitford refers to her as "old Elspeth" in her 1820-09-30 letter to Elford.</note></person>
+           <!--    <person xml:id="Elspeth"><persName>Elspeth</persName>
+                  <note resp="#mw">The character of Elspeth is Steenie's grandmother in Walter Scott's The Antiquary.  Mitford refers to her as "old Elspeth" in her 1820-09-30 letter to Elford.</note></person>-->
                
-               <person xml:id="White_Spirit_WS"><persName>the White Spirit</persName>
+              <!-- <person xml:id="White_Spirit_WS"><persName>the White Spirit</persName>
                   <note resp="lmw">The White Spirit is a supernatural guardian spirit character in Walter Scott's The Monastery.</note>
-               </person> 
+               </person> -->
                
-               <person xml:id="BriggsMr_Cecilia" sex="1">
+           <!--    <person xml:id="BriggsMr_Cecilia" sex="1">
                   <persName>Mr. Briggs</persName>
                   <note resp="#lmw">Character in <title ref="#Cecilia_FB">Cecilia</title>; Mitford admires Burney's characterization of him in her a letter to Elford from <date when="1819-05-30">30 May 1819</date>.</note>
-               </person>
+               </person>-->
             </listPerson>
          </div>
          
          <div type="places">
             <listPlace sortKey="histPlaces">
-     <place xml:id="Lisbon_city">
+    <!-- <place xml:id="Lisbon_city">
                <placeName>Lisbon, Portugal</placeName>
                <note resp="#err">The capital city of <placeName>Portugal</placeName>.</note>
             </place>
@@ -339,7 +325,7 @@
                <place xml:id="Hertfordshire_county">
                   <placeName>Hertfordshire</placeName>
                   <note resp="#rct">A county in southeast <placeName ref="#England">England</placeName>.</note>
-               </place>
+               </place>-->
                
             </listPlace>
          </div>
@@ -349,7 +335,7 @@
             <list sortKey="art">
                <item/>
                <!--leave this stump in place. Needed for this list to be valid.-->
-               <figure xml:id="Apollo_Belvedere">
+               <!--<figure xml:id="Apollo_Belvedere">
                   <bibl>
                      <title>Apollo Belvedere</title>
                      <title>Apollo of the Belvedere</title>
@@ -357,43 +343,43 @@
                   </bibl>
                   <graphic url="http://www.pbase.com/bmcmorrow/image/115469993"/>
                   <note resp="#rct #lmw">A marble sculpture from classical antiquity, believed to have been created around 120-150 A.D. as a copy of an earlier bronze original by Leochares.  The statue was rediscovered near Rome in the fifteenth century, and restored. The statue was much admired in the 18th- and 19th-century, when the statue was held up ax exemplifying the aesthetic ideals of the neoclassical tradition.  It depicts the Greek god Apollo as an archer. It has variously been suggested as illustrating Apollo having slain the serpent Python, or as slaying the gian Tityos.</note>
-              </figure>
+              </figure>-->
             </list>
          </div>
          
          <div type="publications">
             <listBibl sortKey="literary">
-               <bibl xml:id="Two_N_Kinsman">
+              <!-- <bibl xml:id="Two_N_Kinsman">
                   <title>Two Noble Kinsman</title>
                   <author ref="#Shakespeare"/>
                   <author ref="#Fletcher_John"/>
                   <note resp="#lmw">Tragicomedy likely first performed around <date notBefore="1613">1613</date> and first printed in <date when="1634"></date>1634; generally accepted as being co-authored by <persName ref="#Fletcher_John">John Fletcher</persName> and <persName ref="#Shakespeare">William Shakespeare</persName>.</note>
-               </bibl>
-               
+               </bibl>-->
+        <!--       
                <bibl xml:id="AllsWellTEW">
                   <title>All's Well that Ends Well</title>
                   <author ref="#Shakespeare"/>
-                  <note resp="#lmw">Drama likely first performed around <date notBefore="1604">1604</date> and first printed in <date when="1623"></date>1623.</note></bibl>
+                  <note resp="#lmw">Drama likely first performed around <date notBefore="1604">1604</date> and first printed in <date when="1623"></date>1623.</note></bibl>-->
             
-            <bibl xml:id="Agamemnon_play">
+           <!-- <bibl xml:id="Agamemnon_play">
                <title>Agamemnon</title>
                <author ref="#Aeschylus"/>
-               <note resp="#lmw">Athenian tragedy attributed to <persName ref="#Aeschylus">Aeschylus</persName>; the first play of <title>the Oresteia</title></note></bibl>
+               <note resp="#lmw">Athenian tragedy attributed to <persName ref="#Aeschylus">Aeschylus</persName>; the first play of <title>the Oresteia</title></note></bibl>-->
          
-         <bibl xml:id="Letter_to_HM_1820">
+      <!--   <bibl xml:id="Letter_to_HM_1820">
             <title>An Englishwoman's Letter to <persName ref="#More_Hannah">Mrs. Hannah More</persName> on the Present Crisis</title>
             <pubPlace ref="#London_city">London</pubPlace>
             <publisher>J. Hatchard</publisher>
             <date>1820</date>
             <note resp="#lmw">Anonymously published eighteen-page pamphlet on the Queen Caroline Affair. WorldCat attributes the second edition of the pamplet to Jane Alice Sargant; Mitford's letters of 1820 indicate that she believed it to have been written by her friend <persName ref="#Hofland_B"></persName>Barbara Hofland.</note>
-         </bibl>
+         </bibl>-->
          
-         <bibl xml:id="Epilogue_Orestes_TNT">
+        <!-- <bibl xml:id="Epilogue_Orestes_TNT">
             <title>Epilogue to Orestes by Euripides</title>
             <author ref="#Talfourd_Thos"/>
-            <note resp="#lmw">Talfourd wrote an "Epilogue" for a performance of Orestes by Euripides. Later printed in <title ref="#PoemsOdes_Valpy1826">Richard Valpy's Poems, Odes, Prologues, and Epilogues Spoken on Public Occasions at Reading School. Second edition.</title></note></bibl>
+            <note resp="#lmw">Talfourd wrote an "Epilogue" for a performance of Orestes by Euripides. Later printed in <title ref="#PoemsOdes_Valpy1826">Richard Valpy's Poems, Odes, Prologues, and Epilogues Spoken on Public Occasions at Reading School. Second edition.</title></note></bibl>-->
             
-            <bibl xml:id="InvariablePrin_WLB">
+           <!-- <bibl xml:id="InvariablePrin_WLB">
                <title>The Invariable Principles of Poetry, in a Letter Addressed to Thomas Campbell, Esq.; Occasioned by Some Critical Observations in his Specimens of British Poets, Particularly Relating to the Poetical Character of Pope.</title>
                <author ref="#Bowles_Wm"/>
                <pubPlace>Bath</pubPlace>
@@ -402,32 +388,32 @@
                   <publisher>Longman, Hurst, Rees, Orme and Brown</publisher>
                <date>1819</date>
                   <note resp="#lmw">Part of a controversy over the significance poetry of <persName ref="#Pope_Alex">Alexander Pope</persName> in the early 1800s, the essay responds to a previous publication by <persName ref="#Campbell_Thos">Thomas Campbell</persName>.</note>
-            </bibl>
+            </bibl>-->
                
-               <bibl xml:id="Sir_Fr_Darrell">
+               <!--<bibl xml:id="Sir_Fr_Darrell">
                   <title>Sir Francis Darrell; or, the Vortex. A Novel</title>
                   <author ref="#Dallas_RC"/>
                   <pubPlace ref="#London_city">London</pubPlace>
                   <publisher>Longman, Hurst, Rees, Orme and Brown</publisher>
                   <date>1819</date></bibl>
-               
-               <bibl xml:id="Beauty_MRM">
+               -->
+               <!--<bibl xml:id="Beauty_MRM">
                   <title>Beauty</title>
                   <author ref="#MRM"/>
                   <note resp="#lmw">Poem by Mary Russell Mitford, first collected in her <title ref="#Poems_1st_ed_MRM">1810 Poems</title>, mentioned in a <date when="1821-02-13">13 February 1821</date> letter to <persName ref="#Haydon">Haydon</persName> as one of three poems from that volume that are "not better, that is too vain a word, but less bad than the rest."</note>
-               </bibl>
+               </bibl>-->
                
-               <bibl xml:id="Sun_Set_MRM">
+             <!--  <bibl xml:id="Sun_Set_MRM">
                   <title>Sun-Set</title>
                   <author ref="#MRM"/>
                   <note resp="#lmw">Poem by Mary Russell Mitford, first collected in her <title ref="#Poems_1st_ed_MRM">1810 Poems</title>, mentioned in a <date when="1821-02-13">13 February 1821</date> letter to <persName ref="#Haydon">Haydon</persName> as one of three poems from that volume that are "not better, that is too vain a word, but less bad than the rest."</note>
-               </bibl>
+               </bibl>-->
                
-               <bibl xml:id="VoiceofPraise_MRM">
+             <!--  <bibl xml:id="VoiceofPraise_MRM">
                   <title>Sun-Set</title>
                   <author ref="#MRM"/>
                   <note resp="#lmw">Poem by Mary Russell Mitford, first collected in her <title ref="#Poems_1st_ed_MRM">1810 Poems</title>, mentioned in a <date when="1821-02-13">13 February 1821</date> letter to <persName ref="#Haydon">Haydon</persName> as one of three poems from that volume that are "not better, that is too vain a word, but less bad than the rest." "Voice of Praise,"in particular, is reprinted more frequently than other Mitford poems in nineteenth-century newspapers and other periodicals.</note>
-               </bibl>
+               </bibl>-->
             </listBibl>
          </div>
 
