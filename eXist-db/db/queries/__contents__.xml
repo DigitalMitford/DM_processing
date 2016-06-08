@@ -9,7 +9,7 @@
     <resource type="BinaryResource" name="timeline.xql" skip="no" owner="admin" group="admin" mode="755" created="2016-03-21T00:13:07.319-04:00" modified="2016-03-28T09:18:15.766-04:00" filename="timeline.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="rsTypesandQuants.xql" skip="no" owner="admin" group="admin" mode="644" created="2016-03-11T10:24:20.608-05:00" modified="2016-03-11T10:24:20.608-05:00" filename="rsTypesandQuants.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="postLetterDates.xql" skip="no" owner="admin" group="admin" mode="755" created="2016-05-09T15:11:11.461-04:00" modified="2016-05-09T21:27:22.322-04:00" filename="postLetterDates.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="BinaryResource" name="AnnotationTool.xql" skip="no" owner="admin" group="admin" mode="644" created="2016-03-11T10:24:20.463-05:00" modified="2016-03-11T10:27:41.595-05:00" filename="AnnotationTool.xql" mimetype="application/xquery">
@@ -27,7 +27,10 @@
     <resource type="BinaryResource" name="letterDates.xql" skip="no" owner="admin" group="admin" mode="755" created="2016-05-08T10:27:11.104-04:00" modified="2016-05-08T10:51:11.901-04:00" filename="letterDates.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="BinaryResource" name="postLetterDates.xql" skip="no" owner="admin" group="admin" mode="755" created="2016-05-09T15:11:11.461-04:00" modified="2016-05-09T21:27:22.322-04:00" filename="postLetterDates.xql" mimetype="application/xquery">
+    <resource type="BinaryResource" name="rsTypesandQuants.xql" skip="no" owner="admin" group="admin" mode="644" created="2016-03-11T10:24:20.608-05:00" modified="2016-03-11T10:24:20.608-05:00" filename="rsTypesandQuants.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="idRefChecker.xql" skip="no" owner="admin" group="admin" mode="755" created="2016-06-07T16:03:18.73-04:00" modified="2016-06-07T17:38:32.016-04:00" filename="idRefChecker.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="BinaryResource" name="TopTenMostRefdPeople.xql" skip="no" owner="admin" group="admin" mode="755" created="2016-03-14T01:27:16.977-04:00" modified="2016-03-14T02:06:18.799-04:00" filename="TopTenMostRefdPeople.xql" mimetype="application/xquery">

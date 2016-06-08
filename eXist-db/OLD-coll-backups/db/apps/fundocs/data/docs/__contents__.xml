@@ -1,0 +1,7 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/fundocs/data/docs" version="1" owner="eXide" group="eXide" mode="775" created="2015-03-27T19:31:04.547-04:00">
+    <acl entries="0" version="1"/>
+    <subcollection name="process" filename="process"/>
+    <subcollection name="xproc" filename="xproc"/>
+    <subcollection name="fn" filename="fn"/>
+    <subcollection name="util" filename="util"/>
+</collection>

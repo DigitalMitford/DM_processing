@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xf="http://www.w3.org/2002/xforms"><head><title>Books</title><xf:model xmlns="http://www.w3.org/2002/xforms"><xf:instance><data xmlns=""><book year="2013" title="XForms with XSLTForms"/></data></xf:instance></xf:model></head><body><xf:repeat nodeset="book"><xf:output value="@year"/> - <xf:output value="@title"/></xf:repeat></body></html>

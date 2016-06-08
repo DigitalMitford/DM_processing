@@ -1,0 +1,13 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db" version="1" owner="SYSTEM" group="dba" mode="755" created="2015-03-27T19:29:56.11-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="si.xml" skip="no" owner="admin" group="admin" mode="644" created="2016-03-11T10:20:49.986-05:00" modified="2016-03-11T10:20:49.986-05:00" filename="si.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="mitford" filename="mitford"/>
+    <subcollection name="queries" filename="queries"/>
+    <subcollection name="testing" filename="testing"/>
+    <subcollection name="apps" filename="apps"/>
+    <subcollection name="xslt" filename="xslt"/>
+    <subcollection name="output" filename="output"/>
+    <subcollection name="system" filename="system"/>
+</collection>
