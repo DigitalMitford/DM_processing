@@ -2430,7 +2430,7 @@
                      <ref target="http://viaf.org/viaf/61539796"/>
                   </note>
                </person>
-               <person xml:id="Browning_Rob">
+               <person xml:id="Browning_Rob" sex="1">
                   <persName>
                      <forename>Robert</forename>
                      <surname>Browning</surname>
@@ -2926,7 +2926,7 @@
                      <ref target="http://viaf.org/viaf/121983436"/>
                   </note>
                </person>
-               <person xml:id="CharlesSpencer">
+               <person xml:id="CharlesSpencer" sex="1">
                   <persName>Charles Spencer</persName>
                   <persName>
                      <forename>Charles</forename>
@@ -3944,7 +3944,7 @@
                   </persName>
                   <note resp="#alg">An associate of both <persName ref="#MRM">Mitford</persName> and <persName ref="#James_Miss">Miss James</persName>, presumably older than either. Possibly friend or housekeeper to the James sisters. Needs additional research.</note>
                </person>
-               <person xml:id="Doge_F_hist">
+               <person xml:id="Doge_F_hist" sex="1">
                   <persName>
                      <surname>Foscari</surname>
                      <!-- fix full name -->
@@ -3956,7 +3956,7 @@
                      <persName ref="#MRM">Mitford's</persName> declared historical source is <title ref="#Moore_ViewItaly">A View of Society and Manners in Italy</title> by
                         <persName ref="#Moore_DrJ">Dr. John Moore</persName>.</note>
                </person>
-               <person xml:id="Donato_hist">
+               <person xml:id="Donato_hist" sex="1">
                   <persName>
                      <surname>Donato</surname>
                      <roleName>Senator</roleName>
@@ -5919,7 +5919,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      </placeName>
                   </death>
                </person>
-               <person xml:id="Howard_John">
+               <person xml:id="Howard_John" sex="1">
                   <persName>
                      <forename>John</forename>
                      <surname>Howard</surname>
@@ -6280,7 +6280,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <birth when="0001"/>
                   <death when="0034"/>
                </person>
-               <person xml:id="John_Apostle">
+               <person xml:id="John_Apostle" sex="1">
                   <persName>John the Apostle</persName>
                   <persName>John the Evangelist</persName>
                   <persName>Saint John</persName>
@@ -8908,7 +8908,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         performed.</p>
                   </note>
                </person>
-               <person xml:id="Scott_John">
+               <person xml:id="Scott_John" sex="1">
                   <persName>
                      <forename>John</forename>
                      <surname>Scott</surname>
@@ -8976,7 +8976,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <title>Quarterly Review</title>, <title>Blackwood's Edinburgh
                         Magazine</title>, and the <title>Foreign Quarterly Review</title>.</note>
                </person>
-               <person xml:id="Sedgwick_Cath">
+               <person xml:id="Sedgwick_Cath" sex="2">
                   <persName>Catherine Maria Sedgwick</persName>
                   <note resp="#ebb">American writer, correspondent of Mitford's.</note>
                </person>
@@ -9071,9 +9071,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Mary Wollstonecraft Godwin Shelley</persName>
                   <!--ebb: stub entry-->
                </person>
-               <person xml:id="Shelley_PB">
+               <person xml:id="Shelley_PB" sex="1">
                   <persName>Percy Bysshe Shelley</persName>
-                  <!--ebb: stub entry-->
+                  <persName>
+                     <surname>Shelley</surname>
+                     <forename>Percy</forename>
+                     <forename>Bysshe</forename>
+                  </persName>
+                  <birth when="1792-08-04">Horsham, Sussex, England</birth>
+                  <death when="1822-07-08"><placeName>Gulf of La Spezia, Sardinia</placeName></death>
+                  <note resp="#ebb">Radical English poet, friend of <persName ref="#Peacock_TL">Thomas Love Peacock</persName>, <persName ref="#Hunt">Leigh Hunt</persName>, and <persName ref="#Byron">Lord Byron</persName>, married to <persName>Mary Wollstonecraft</persName>'s and <persName ref="#Godwin_Wm">William Godwin</persName>'s daughter <persName ref="#Shelley_MW">Mary Wollstonecraft Godwin Shelley</persName>. This influential and unconventional group of writers is sometimes known as <q>England's first family of writers</q> . 
+                     See <ref target="http://shelleygodwinarchive.org/about/#firstfamily">the Shelley-Godwin Archive's biographical page on the group and their circle</ref>.</note>
+                  <note>http://viaf.org/viaf/95159449/</note>
                </person>
                <person xml:id="Shepherd_HJ" sex="1">
                   <persName>
@@ -9206,8 +9215,22 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <ref target="http://viaf.org/viaf/49231791"/>
                   </note>
                </person>
-               <person xml:id="Smith_Horace">
+               <person xml:id="Smith_Horace" sex="1">
                   <persName>Horace Smith</persName>
+                  <persName>
+                     <surname>Smith</surname>
+                     <forename>Horace</forename>
+                  </persName>
+                  <persName type="birth">
+                     <surname>Smith</surname>
+                     <forename>Horatio</forename>
+                  </persName>
+             
+               <birth when="1779-12-31"><placeName>London</placeName></birth>
+               <death when="1849-07-12"><placeName>Tunbridge Wells</placeName></death>
+                  <note resp="#ebb"><p>Poet, parodist, playwright, and successful stockbroker, friend of <persName ref="#Shelley_PB">Percy Bysshe Shelley</persName>, and member of <persName ref="#Hunt">Leigh Hunt</persName>'s circle. Horace and his older brother James wrote and published <bibl><title level="m">Rejected Addresses: Or, The New Theatrum Poetarum</title> in <date when="1812">1812</date></bibl>, which parodied the styles of 21 poets and dramatists in a series of fake addresses to be delivered on stage and supposedly rejected by the managers of <placeName ref="#Drury_Lane_Theatre">Drury Lane Theatre</placeName> for <rs type="event">a competition they had sponsored to celebrate the rebuilding of their theater in <date when="1812-10">October 1812</date> following a fire</rs>. Poets parodied by the Smith brothers included <persName ref="#Byron">Lord Byron</persName>, <persName ref="#Scott_Wal">Walter Scott</persName>, <persName ref="#Southey_R">Robert Southey</persName>, <persName ref="#Coleridge_ST">Samuel Taylor Coleridge</persName>, and <persName ref="#Wordsworth_Wm">William Wordsworth</persName>.</p> 
+                     <p>Horace Smith and Percy Shelley drafted a competing pair of sonnets on Egyptian antiquities, each published in <bibl><title level="s">The Examiner</title> (Shelley's was published on <date when="1818-01-11">11 January</date> and Smith's on <date when="1818-02-01">1 February of 1818</date>)</bibl>, and of the two, Shelley's <title level="a">Ozymandias</title> became far better known. Romantic Circles hosts <ref target="http://www.rc.umd.edu/sites/default/RCOldSite/www/rchs/reader/smith.html">a digital edition of Smith's sonnet, <title level="a">On a Stupendous Leg of Granite, Discovered Standing by Itself in the Deserts of Egypt, with the Inscription Inserted Below</title></ref>.</p></note>
+                  <note>http://viaf.org/viaf/207338554/</note>
                </person>
                <person xml:id="Smollett_Tob" sex="1">
                   <persName>
@@ -9244,7 +9267,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <persName ref="#coles">Coles</persName> posits George Soane, "(1790-1860),
                      miscellaneous writer" (Coles p. 172, note 14)</note>
                </person>
-               <person xml:id="Soane_Geo">
+               <person xml:id="Soane_Geo" sex="1">
                   <persName>
                      <forename>George</forename>
                      <surname>Soane</surname>
@@ -9257,7 +9280,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <placeName>London, England</placeName>
                   </death>
                   <occupation>literary</occupation>
-                  <note resp="#lmw">Second son of John Soane, architect. He wrote numerous melodramas for the stage between 1817 and 1850. He translated works from the French, German, and Italian, including <persName ref="#delaMotte_F">de la Motte</persName>'s story Undine which he translated into <title ref="#Undine">prose</title> in 1818 and then turned into a play by 1821.</note>
+                  <note resp="#lmw #ebb">Second son of the architect <persName>John Soane</persName>. He wrote numerous melodramas for the stage <date from="1817" to="1850">between 1817 and 1850</date>, and translated works from the French, German, and Italian, including <bibl>the first English translation of <author ref="#delaMotte_F">de la Motte</author>'s <title ref="#Undine">prose</title> in <date when="1818">1818</date></bibl>, which he turned into a three-act play, <bibl><title level="m">Undine, or, The Spirit of the Waters</title> by <date notBefore="1821">1821</date></bibl>.</note>
                   <note>
                      <ref target="http://viaf.org/viaf/315673958"/>
                   </note>
@@ -9691,7 +9714,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         death.<!-- ADD INFO --></p>
                   </note>
                </person>
-               <person xml:id="Traill_James">
+               <person xml:id="Traill_James" sex="1">
                   <persName>James Traill</persName>
                </person>
                <person xml:id="Tubb_Daniel" sex="1">
@@ -9711,7 +9734,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>literary</occupation>
                   <note resp="#lmw">According to the Preface to <title ref="#TenYearsatTripoli"/>, Miss Tully is the sister of Richard Tully, Esq., "his Brittanic Majesty's Counsul at the Court of Tripoly," who edited her correspondence.</note>
                </person>
-               <person xml:id="Valpy_Catherine">
+               <person xml:id="Valpy_Catherine" sex="2">
                   <persName>
                      <surname type="paternal">Valpy</surname>
                      <surname type="married">French</surname>
@@ -9909,7 +9932,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                            <title>Candide</title> (<date>1759</date>)</bibl>.</p>
                   </note>
                </person>
-               <person xml:id="Wakefield_D">
+               <person xml:id="Wakefield_D" sex="1">
                   <persName>
                      <surname>Wakefield</surname>
                      <forename>Daniel</forename>
@@ -10068,7 +10091,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <ref target="http://viaf.org/viaf/31432428"/>
                   </note>
                </person>
-               <person xml:id="Watteau_Wil">
+               <person xml:id="Watteau_Wil" sex="1">
                   <persName>
                      <reg>Watteau, Jean-Antoine</reg>
                      <forename>Jean-Antoine</forename>
@@ -10173,7 +10196,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         (play)</p>
                   </note>
                </person>
-               <person xml:id="Wellington_Duke">
+               <person xml:id="Wellington_Duke" sex="1">
                   <persName>
                      <surname>Wellesley</surname>
                      <forename>Arthur</forename>
@@ -10222,7 +10245,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Miss Wheeler</persName>
                   <note resp="#lmw">Friend of <persName ref="#James_Miss">Miss James</persName>. <persName ref="#MRM">Mitford</persName> refers to her as providing home remedies and advice. See <date when="1821-01-29">29 January 1821</date> letter to <persName ref="#Webb_Mary_younger">Mary Webb.</persName> More research needed.</note>
                </person>
-               <person xml:id="WhiteGilbert">
+               <person xml:id="WhiteGilbert" sex="1">
                   <persName>
                      <surname>Gilbert</surname>
                      <forename>White</forename>
@@ -10273,7 +10296,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      unexpired lease he inherited from his deceased father. [See ODNB and Electric
                      Scotland.]</note>
                </person>
-               <person xml:id="WilliamIII">
+               <person xml:id="WilliamIII" sex="1">
                   <persName>William III <roleName>King of England and Ireland</roleName>
                   </persName>
                   <persName>William II <roleName>King of Scotland</roleName>
@@ -10372,7 +10395,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <ref target="http://viaf.org/viaf/47566585"/>
                   </note>
                </person>
-               <person xml:id="Wilson_RT">
+               <person xml:id="Wilson_RT" sex="1">
                   <persName>Sir Robert Thomas Wilson </persName>
                   <persName>
                      <surname>Wilson</surname>
@@ -10396,14 +10419,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <placeName ref="#Windsor_city">Windsor</placeName> "paper man"</persName>
                   <note resp="#lmw">Mitford refers to this person as the "Windsor paper man." Presumably the editor or publisher of the Windsor and Eton Express newspaper. As yet unidentified. Needs further research.</note>
                </person>
-               <person xml:id="Wordsworth_Dor">
+               <person xml:id="Wordsworth_Dor" sex="2">
                   <persName>Dorothy Wordsworth</persName>
                   <note resp="#ebb">1771-1855. Sister of <persName ref="#Wordsworth_Wm">William
                         Wordsworth</persName>,whose diary entries, poems, and sketches were not
                      published until after her death, but demonstrably influenced her brother's more
                      famous work. <!--Expand this.--></note>
                </person>
-               <person xml:id="Wordsworth_Wm">
+               <person xml:id="Wordsworth_Wm" sex="1">
                   <persName>
                      <surname>Wordsworth</surname>
                      <forename>William</forename>
@@ -10526,11 +10549,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </persName>
                   <note resp="#lmw">Title character in French folktale of the same name. Story was best known in Mitford's time through a frequently-performed melodrama version, <title ref="#Bluebeard_GC">Bluebeard, or Female Curiosity:  a Dramatic Romance in Three Acts</title> by <persName ref="#Colman_the_Younger">George Colman the younger</persName>.</note>
                </person>
-               <person xml:id="Cassandra">
+               <person xml:id="Cassandra" sex="2">
                   <persName>Cassandra </persName>
                   <note resp="#err">Daughter of King Priam and Queen Hecuba of Troy, Cassandra was a prophet in Greek mythology whose prophecies were never believed.</note>
                </person>
-               <person xml:id="Cupid">
+               <person xml:id="Cupid" sex="1">
                   <persName>Cupid</persName>
                   <persName>Eros</persName>
                   <note resp="#ebb">Classical god of sexual desire and erotic love, known as Eros in ancient Greece and Cupid in ancient Rome.</note>
@@ -10546,7 +10569,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Prince Bedreddin Hassan</persName>
                   <note resp="#lmw">A character in <title ref="#Arabian_Tales">Arabian tales</title> (also known as One Thousand and One Nights) who appears in the story variously titled "Noureddin Ali of Cairo" or "Noureddin and his Son."</note>
                </person>
-               <person xml:id="JackRapley">
+               <person xml:id="JackRapley" sex="1">
                   <persName>
                      <surname>Rapley</surname>
                      <forename>Jack</forename>
@@ -10568,11 +10591,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <quote>"The Hard Summer"</quote>
                      </title>. He is one of the country boys who populate the village. <persName ref="#Needham_Francis">Francis Needham</persName>speculates that the family name may have been Cusden. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
                </person>
-               <person xml:id="Jezebel">
+               <person xml:id="Jezebel" sex="2">
                   <persName>Jezebel</persName>
                   <note resp="#ebb">Queen of the Israelites, married to <persName ref="#Ahab">King Ahab</persName>, who influenced him to worship multiple gods, <persName ref="#Baal">Baal</persName> and <persName>Asherah</persName>, instead of the Hebrew god. She is generally associated with pagan worship and likened to a prostitute in dress and the use of "painted" cosmetics: hence, the phrase, "a painted Jezebel."</note>
                </person>
-               <person xml:id="Jonah">
+               <person xml:id="Jonah" sex="1">
                   <persName>Jonah</persName>
                   <note resp="#ebb">Prophet from <bibl corresp="#OldTestament_Bible">the Hebrew Bible and Old Testament</bibl> famous for surviving the experience of being swallowed by a whale.</note>
                </person>
@@ -10580,7 +10603,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Judy</persName>
                   <note resp="#lmw">Wife of Mr. Punch in manifestations of the Punch and Judy slapstick puppet show tradition from the late eighteenth century onward. Earlier, the character was named "Joan."</note>
                </person>
-               <person xml:id="Lazarus">
+               <person xml:id="Lazarus" sex="1">
                   <persName>Lazarus</persName>
                   <persName>Lazarus of Bethany</persName>
                   <note resp="#ebb">According to <title ref="#JohnGospel_NewTest">the Gospel of St. John the Evangelist</title>, Jesus Christ raised or resurrected Lazarus from the grave four days after his death. The raising of Lazarus is the subject of <bibl corresp="#Lazarus_Haydon">a painting</bibl> by <persName ref="#Haydon">Benjamin Robert Haydon</persName>, mentioned in his correspondence with <persName ref="#MRM">MRM</persName>.</note>
@@ -10631,24 +10654,24 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
             </listPerson>
             <listPerson sortKey="fictPersons">
-               <person xml:id="Abbe_de_L_Epee_DD">
+               <person xml:id="Abbe_de_L_Epee_DD" sex="1">
                   <persName>Abbé de L'Épée</persName>
                   <note resp="#lmw">character in <title ref="#Deaf_Dumb_play"> Deaf and Dumb</title>
                   </note>
                </person>
-               <person xml:id="Abbot_J">
+               <person xml:id="Abbot_J" sex="1">
                   <persName>An Abbot</persName>
                   <note resp="#ebb">character in <title ref="#Julian_MRMplay">Julian</title>.</note>
                </person>
                <person xml:id="Alberti">
                   <persName>Alberti</persName>
                </person>
-               <person xml:id="Alfonso_J">
+               <person xml:id="Alfonso_J" sex="1">
                   <persName>Alfonso</persName>
                   <note resp="#ebb">King of <placeName ref="#Naples">Naples</placeName>, disguised
                      as "Theodore," in <title ref="#Julian_MRMplay">Julian</title>.</note>
                </person>
-               <person xml:id="Alice">
+               <person xml:id="Alice" sex="2">
                   <persName>Alice</persName>
                   <note resp="#kdc">apparently deleted character in <persName ref="#MRM">Mitford's</persName>
                      <title ref="#CharlesI_MRMplay">Charles</title>. <persName ref="#coles">Coles</persName> identifies the undated fragment in which Alice appears as
@@ -10661,20 +10684,20 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Ambassador_R">
                   <persName>Ambassador</persName>
                </person>
-               <person xml:id="Annabel_J">
+               <person xml:id="Annabel_J" sex="2">
                   <persName>Annabel</persName>
                   <note resp="#ebb">Wife of <persName ref="#Julian">Julian</persName>, in <title ref="#Julian_MRMplay">Julian</title>.</note>
                </person>
-               <person xml:id="Antigone_A">
+               <person xml:id="Antigone_A" sex="2">
                   <persName>Antigone</persName>
                   <note resp="#lmw">character in <title ref="#Antigone_play">Antigone</title>
                   </note>
                </person>
-               <person xml:id="ArchBishop_Jul">
+               <person xml:id="ArchBishop_Jul" sex="1">
                   <persName>An Archbishop</persName>
                   <note resp="#ebb">character in <title ref="#Julian_MRMplay">Julian</title>.</note>
                </person>
-               <person xml:id="Ariel"/>
+               <person xml:id="Ariel" sex="9"/>
                <person xml:id="Ascanius" sex="1">
                   <persName>
                      <forename>Ascanius</forename>
@@ -10682,17 +10705,17 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">Character from <persName ref="#Virgil">Virgil</persName>'s <title ref="#Aeneid_Virgil">Aeneid</title>
                   </note>
                </person>
-               <person xml:id="Aspatia">
+               <person xml:id="Aspatia" sex="2">
                   <persName>Aspatia</persName>
                   <note resp="#esh">character in <title ref="#Maids_Tragedy_play">The Maid's
                         Tale</title>.</note>
                </person>
-               <person xml:id="Balfour_John">
+               <person xml:id="Balfour_John" sex="1">
                   <persName>John Balfour</persName>
                   <note resp="#esh">character in <title ref="#Old_Mortality">Old
                      Mortality</title>.</note>
                </person>
-               <person xml:id="Bellario">
+               <person xml:id="Bellario" sex="1">
                   <persName>Bellario (Euphrasia)</persName>
                   <note resp="#esh">character in <title ref="#Philaster_play">Philaster</title>.</note>
                </person>
@@ -10704,7 +10727,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Mrs. Bennet</persName>
                   <note resp="#lmw">Character in <persName ref="#Austen_Jane">Austen</persName>'s novel <title ref="#Pride_and_Prejudice">Pride and Prejudice</title>.</note>
                </person>
-               <person xml:id="Berta_R">
+               <person xml:id="Berta_R" sex="2">
                   <persName>Berta</persName>
                   <note resp="#ebb">Attendant to <persName ref="#Claudia_R">Claudia</persName> in
                         <title ref="#Rienzi">Rienzi</title>
@@ -10715,14 +10738,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#ebb">Servant to <persName ref="#DAlba">Count D'Alba</persName>
                   </note>
                </person>
-               <person xml:id="Blacksmith"/>
-               <person xml:id="BlacksmithsWife"/>
-               <person xml:id="Bradshaw">
+               <person xml:id="Blacksmith" sex="1"/>
+               <person xml:id="BlacksmithsWife" sex="2"/>
+               <person xml:id="Bradshaw" sex="1">
                   <persName>Lord President Bradshaw</persName>
                   <note resp="#ebb">A Judge appointed by Parliament to try the <persName ref="#Chas1_MRM">King</persName> in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles
                      I</title>.</note>
                </person>
-               <person xml:id="Bradwardine_Baron_WS">
+               <person xml:id="Bradwardine_Baron_WS" sex="1">
                   <persName>Baron of Bradwardine</persName>
                   <note resp="#lmw">Jacobite character in <bibl corresp="#Waverley">
                         <author ref="#Scott_Wal">Walter Scott</author>'s <title level="m">Waverley</title>
