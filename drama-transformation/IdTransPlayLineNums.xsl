@@ -9,10 +9,10 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="s">
-        <s xml:id="{./ancestor::div[@type='chapter']/@xml:id}_S{count(./preceding-sibling::s)+1}">
+    <xsl:template match="body//l">
+        <l xml:id="Rienzi_l_{count(./preceding::l)+1}">
             <xsl:apply-templates/>
-        </s>
+        </l>
     </xsl:template>
 
 </xsl:stylesheet>
