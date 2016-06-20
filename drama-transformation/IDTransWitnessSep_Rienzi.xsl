@@ -24,7 +24,7 @@
     
     </xsl:template>-->
     
-    <xsl:template match="app/rdg[contains(@wit, '#msR') and not(matches(@wit, 'R\d{4}'))]"/>
+    <xsl:template match="app/rdg[not(contains(@wit, '#R1828'))]"/>
     
     <xsl:template match="app">
         <xsl:apply-templates/>
@@ -33,7 +33,7 @@
    
 
     <xsl:template match="app/rdg[contains(@wit, '#R1828')]">
-       <xsl:apply-templates/>
+       <app><rdg wit="{@wit}"><xsl:apply-templates/></rdg></app>
    </xsl:template>
         
     
