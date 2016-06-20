@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><!--Add your name here! And add an @ref attribute to <editor>, pointing to your xml:id in the si.xml-->
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <div type="Mitford_Team">
+            <!--contains Mitford editors as well as archives identifiers. We may want to add a list of all our files from manuscript, with an xml:id for each. More on this as we figure out how!-->
+            <listPerson sortKey="Mitford_Team">
+               <person/>
+            </listPerson>
+            
+            <listOrg sortKey="archives">
+               <org/>
+            </listOrg>
+         </div>
+
+         <div type="Past_Editors">
+            <listPerson sortKey="Past_Editors">
+               <person xml:id="whatever"/>
+            </listPerson>
+         </div>
+
+
+         <div type="historical_people">
+            <listOrg sortKey="histOrgs">
+               <org xml:id="whatever1"/>
+            </listOrg>
+
+            <listPerson sortKey="histPersons">
+  
+               <person xml:id="Clement6_Pope" sex="1">
+                  <persName>
+                     <roleName>Pope</roleName> Clement 6</persName>
+                  <persName>
+                     <surname>Roger</surname>
+                     <forename>Pierre</forename>
+                  </persName>
+                  <birth when="1291">
+                     <placeName>Maumont, France</placeName>
+                  </birth>
+                  <death when="1352-12-06">
+                     <placeName>Avignon, Papal States</placeName>
+                  </death>
+                  <occupation>religion</occupation>
+                  <note resp="#esh">Clement the VI reigned the Pope, or patriarch of the Catholic Church, from <date from="1329" to="1352">1329 to 1352</date>. He is mentioned in Mitford's <title ref="#Rienzi">Rienzi</title>, as an influential political power outside of the city of Rome, although he does he not appear on the stage. </note>
+                  <note>VIAF record: http://viaf.org/viaf/121108971/</note>
+               </person>
+            </listPerson>
+         </div>
+         <div type="fictional_and_archetypal">
+            <listPerson sortKey="archPersons">
+               <person xml:id="Vesta" sex="2">
+                  <persName>Vesta</persName>
+                  <note resp="#esh">Vesta is the Roman goddess of hearth and domesticity. The temple to Vesta was kept by priestesses known as Vestal Virgins, who took vows of chastity, a vow enforced under penalty of death. In <title ref="#Rienzi">Rienzi</title>, Claudia's dedication to Liberty is compared to the life-long commitment of the Vestal Virgins.</note>
+               </person>
+               <!--This list is for mythical, legendary entities, 
+                not precisely rooted in a place or time, or in a particular text either. -->
+            </listPerson>
+            <listPerson sortKey="fictPersons">
+               <person/>
+               <!--Use this list for fictional characters from particular texts.-->
+            </listPerson>
+            <listOrg sortKey="fictOrgs">
+               <org xml:id="Chorus_R">
+                  <orgName>Chorus</orgName>
+                  <note resp="#esh">Chorus in <title ref="#Rienzi">Rienzi</title>.</note>
+               </org>
+            </listOrg>
+            <listOrg sortKey="archOrgs">
+               <org/>
+            </listOrg>
+         </div>
+         <div type="places">
+            <listPlace sortKey="histPlaces">
+               <place/>
+            </listPlace>
+            <listPlace sortKey="fict">
+               <place/>
+               <!--for any fictional/imaginary/mythical places-->
+            </listPlace>
+         </div>
+         <div type="plant">
+            <list sortKey="plants">
+               <item>
+                  <name>Daphne's favorite plant</name>
+                  <note><persName ref="#Daphne">Daphne</persName>, Mitford's pet dog, enjoyed
+                     romping in the woods and finding this
+                  plant...</note><!--OK, I'm just playing here, but showing how to point to other references in the site index! Adding cross references is very helpful; please try to do it.-->
+               </item>
+            </list>
+         </div>
+         <div type="events">
+            <listEvent sortKey="histEvents">
+               <event>
+                  <label/>
+                  <note/>
+               </event>
+            </listEvent>
+         </div>
+         <div type="art">
+            <!--for graphical works of art, or works that aren't published in print form. Differentiate lists as needed.-->
+            <list sortKey="art">
+               <item/>
+               <!--leave this stump in place. Needed for this list to be valid.-->
+               <figure xml:id="whatevs9">
+                  <bibl/>
+                  <graphic url="whatever.html"/>
+                  <!--If we find a good, stable URL representing this artwork on the web, point to it here.-->
+                  <note/>
+               </figure>
+            </list>
+         </div>
+         <div type="publications">
+            <listBibl sortKey="ref_19thc">
+               <!--For encyclopedic or reference works from Mitford's time.-->
+               <bibl xml:id="whatevs21"> </bibl>
+            </listBibl>
+
+            <listBibl sortKey="per_19thc">
+               <!--For 19th-c. periodicals, as well as nonliterary stuff published in periodicals, like reviews, critiques, newspaper articles, etc.-->
+               <bibl/>
+            </listBibl>
+
+            <listBibl sortKey="literary">
+               <bibl xml:id="Bees_Fable">
+                  <title>The fable of the bees, or, Private vices, public benefits : containing several discourses to demonstrate that human frailties, during the degeneracy of mankind, may be turn'd to the advantage of the civil society, and made to supply the place of moral virtues.</title>
+                  <author>Bernard Mandeville</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Printed for J. Roberts</publisher>
+                  <date when="1714"/>
+               </bibl>
+            </listBibl>
+
+            <listBibl sortKey="MRM_Schol">
+               <!--Scholarship from our time.-->
+               <bibl/>
+            </listBibl>
+
+            <listBibl sortKey="other_current_Schol">
+               <!--Scholarship from our time.-->
+               <bibl/>
+            </listBibl>
+
+         </div>
+
+      </body>
+   </text>
+</TEI>
