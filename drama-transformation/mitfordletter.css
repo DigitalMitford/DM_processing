@@ -1,0 +1,347 @@
+@media screen {
+html{
+    background-color: #FFFAE6; 
+;
+   
+    color: #580000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
+}
+
+body{
+   /*background-color: #BBD6F1;*/ 
+   
+    text-align:left;
+    width:100%;
+   
+/*padding: 10px 10px 40px 10px;*/
+border-radius: 10px;
+}
+div#images img{
+
+width:352px;
+display:inline-block
+}
+div#menubar{
+   
+   background-color: #FFEBC2;
+    text-align:left;
+    width:100%;
+    margin-left: auto;
+margin-right:auto;
+padding: 5px 5px 5px 5px;
+border-radius: 5px;
+border-radius: 5px;
+   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
+h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
+h2 {color:#330000; display:block; font-size: 1.5em; text-align:center}
+h3 {color:#A04747; display:block; text-align:left; font-size:1.1em;
+}
+p.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+    
+    p.boilerplate img {position: relative; top:3px; right: -2px }
+
+div#container{
+width: 90%; 
+display:inline-block
+}
+div#menubar{
+   
+   background-color: #FFEBC2;
+    text-align:left;
+    width:15%;
+   float:right;
+padding: 10px;
+border-radius: 5px;
+border-radius: 5px;
+   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   
+   position:fixed; 
+   right:1%
+  }
+
+div#letterHead{
+display:block;
+overflow-y:auto;
+width: 30%;
+height:70%;
+position:fixed;
+font-size: .75em;   
+
+}
+
+ div#fieldset
+   {
+ background-color: #FFEBC2;
+  text-align:left; 
+    white-space: normal;
+    
+   }
+   
+span.dipNorm {display:block;
+ white-space: normal;
+}
+span.dipNormSmall {display:block;
+white-space:normal; font-size:.9em}
+
+div#floatright{
+float:right;
+width: 45%;
+margin-left: 75px;
+margin-right:20%;
+padding: 10px 5px 50px 20px;    
+display: inline-block    
+}
+
+
+div#letter{
+
+    margin: auto;
+    display:inline-block;
+    vertical-align:top;
+  
+}
+
+/*ebb: Note: two forms: old form from Mitford Letter Transform before 2014-12-4 was 
+<div id="closer">, but we sometimes have multiple TEI closer elements separated by a postscript element that's not allowed inside closer, so we really need <div class="closer">. I'm keeping both rules until we batch transform. */
+div#closer{text-align:right;}
+h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+
+div.closer{text-align:right;}
+h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+
+h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
+}
+
+
+
+/*img{
+border-radius:10px;
+}*/
+
+
+a{
+color: #2929A3;
+text-decoration:none;}
+a:hover{
+text-decoration:underline;}
+
+em{
+text-decoration:underline    
+    
+}
+
+span.context[title=person]  {
+color:  #990099;
+border-bottom:1px dotted
+}
+
+
+span.context[title=org] {
+color: #006600;
+ border-bottom:1px dotted    
+    
+}
+
+span.context[title=place] {
+color: #003399; 
+border-bottom:1px dotted 
+}
+
+span.context[title=title] {
+color:#CC0000;
+border-bottom:1px dotted 
+}
+
+span.prose {line-height:25px}
+span.prose.on{line-height:normal}
+
+span.pagebreak {font-size: .75em; text-align:center; display:block}
+span.pagebreak.on {display:none;}
+
+span.reg {display:none;}
+span.reg.on {display:inline;}
+span.sic.on {display:none;}
+
+span.add {vertical-align:super;}
+span.add.on {vertical-align:baseline;}
+
+span.caret {vertical-align:sub;}
+span.caret.on {display:none}
+
+span.jerk {display:inline}
+span.jerk.on {display:none}
+
+span.del { color:red;
+text-decoration:line-through;    
+}
+span.del.on { display:none;  
+}
+
+span.above-line {
+vertical-align:super;      
+}
+
+span.damage{background-color:#CCCCFF; font-size:.75em; font-style:italic;}
+span.damage.on{display:none;}
+
+span.supplied{background-color:#CCCCFF}
+span.supplied.on{background-color:#FFFAE6}
+
+span.anchor {
+color:blue;
+ text-decoration:underline;   
+}
+
+span.si{
+position: absolute;
+right:15%;
+color: #000041;
+text-decoration:none;
+font-size: .75em;
+text-align:left;
+font-weight: normal;
+background: #CCE0EB;
+border:solid #440029 2px;
+width:300px;
+height:auto;
+padding:5px;
+overflow-y:scroll;
+z-index: 3;
+display:none;
+}
+
+span.anchor span.note {
+ position:absolute;
+right:12%;
+    color:black;
+    line-height:normal;
+    text-decoration:none;
+    font-size: .75em;
+    text-align:left;
+    background:white;
+    border:solid blue 1px;
+    width:350px;
+    height:auto;
+    padding:5px;
+    overflow-y:scroll;
+   display:none;
+    }
+    }
+ 
+ @media print {
+ div#menubar {display:none}
+  div#fieldset{display:none}
+ 
+ div#letterHead{
+display:block;
+font-size: .6em;
+position: absolute;
+top:100%
+}
+
+div#floatright{
+margin-left: 1%;
+margin-right:50%;  
+  
+}
+ 
+ span.si {display:none}
+  span.anchor {
+color:blue;
+ text-decoration:underline;
+ position:relative;
+}
+   span.note {
+ position:relative;
+left:100%;
+margin-left:90%;
+    color:black;
+    line-height:normal;
+    text-decoration:none;
+    font-size: .6em;
+    
+    }  
+ 
+
+div#closer{text-align:right;}
+
+a{
+color: #2929A3;
+text-decoration:none;}
+
+em{
+text-decoration:underline    
+    
+}
+
+span.context[title=person]  {
+color:  #990099;
+}
+
+
+span.context[title=org] {
+color: #006600;
+     
+    
+}
+
+span.context[title=place] {
+color: #003399; 
+
+}
+
+span.context[title=title] {
+color:#CC0000;
+
+}
+
+span.prose {line-height:25px}
+span.prose.on{line-height:normal}
+
+span.pagebreak {font-size: .75em; text-align:center; display:block}
+span.pagebreak.on {display:none;}
+
+span.reg {display:none;}
+span.reg.on {display:inline;}
+span.sic.on {display:none;}
+
+span.add {vertical-align:super;}
+span.add.on {vertical-align:baseline;}
+
+span.caret {vertical-align:sub;}
+span.caret.on {display:none}
+
+span.jerk {display:inline}
+span.jerk.on {display:none}
+
+span.del { color:red;
+text-decoration:line-through;    
+}
+span.del.on { display:none;  
+}
+
+span.above-line {
+vertical-align:super;      
+}
+
+span.damage{background-color:#CCCCFF; font-size:.75em; font-style:italic;}
+span.damage.on{display:none;}
+
+span.supplied{background-color:#CCCCFF}
+span.supplied.on{background-color:#FFFAE6}    
+}
+        
