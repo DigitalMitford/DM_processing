@@ -1,5 +1,8 @@
 <collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/queries" version="1" owner="admin" group="admin" mode="755" created="2016-03-11T10:19:43.365-05:00">
     <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="si.xml" skip="no" owner="admin" group="admin" mode="644" created="2016-06-09T13:01:06.682-04:00" modified="2016-06-09T13:01:06.682-04:00" filename="si.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
     <resource type="BinaryResource" name="TesterMissJames.xql" skip="no" owner="admin" group="admin" mode="644" created="2016-03-11T10:24:20.246-05:00" modified="2016-03-11T10:24:20.246-05:00" filename="TesterMissJames.xql" mimetype="application/xquery">
         <acl entries="0" version="1"/>
     </resource>
