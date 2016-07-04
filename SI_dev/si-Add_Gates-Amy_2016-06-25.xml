@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><!--Add your name here! And add an @ref attribute to <editor>, pointing to your xml:id in the si.xml-->
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <div type="Mitford_Team">
+            <listPerson><person xml:id="alg">
+               <persName>
+                  <surname>Gates</surname>
+                  <forename>Amy</forename>
+                  <forename>L.</forename>
+                  <roleName>Ph.D.</roleName>
+                  <roleName>Editor</roleName>
+               </persName>
+               <occupation>Assistant Professor of English
+                  <affiliation>Missouri Southern State University</affiliation>
+               </occupation>
+               <note type="bio">Amy L. Gates is an Assistant Professor in the Department of English and Philosophy at Missouri Southern State University. Her teaching and research are centered around eighteenth- and nineteenth-century British literature, with a focus on British Romanticism. For the Digital Mitford project, she works on letters and is the editor of Mitford's play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title>. </note>
+            </person></listPerson>
+         </div>
+
+      </body>
+   </text>
+</TEI>

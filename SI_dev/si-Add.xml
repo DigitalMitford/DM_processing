@@ -124,7 +124,7 @@
             <listPlace sortKey="histPlaces">
                <place/>
             </listPlace>
-            <listPlace sortKey="fict">
+            <listPlace sortKey="fictPlaces">
                <place/>
                <!--for any fictional/imaginary/mythical places-->
             </listPlace>
@@ -133,7 +133,7 @@
             <list sortKey="plants">
                <item>
                   <name>Daphne's favorite plant</name>
-                  <note><persName ref="#Daphne">Daphne</persName>, Mitford's pet dog, enjoyed
+                  <note><persName ref="#Daphne_pet">Daphne</persName>, Mitford's pet dog, enjoyed
                      romping in the woods and finding this
                   plant...</note><!--OK, I'm just playing here, but showing how to point to other references in the site index! Adding cross references is very helpful; please try to do it.-->
                </item>
