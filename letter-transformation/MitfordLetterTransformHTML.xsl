@@ -4,8 +4,7 @@
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
     <!--<xsl:strip-space elements="*"/>-->
-    
-   
+      
     <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
@@ -19,9 +18,6 @@
                 <link rel="stylesheet" type="text/css" href="mitfordletter.css"/>
                 <!--<script type="text/javascript" src="MRMLetters.js" xml:space="preserve">...</script>-->
                 <script type="text/javascript" src="MRMLetters.js">/**/</script>
-                
-
-
             </head>
             <body>
 
@@ -39,23 +35,17 @@
                         <li><a href="staff.html">Staff</a></li>  
                         <li><a href="workshop.html">Workshop Materials</a></li></ul>
                 </div>
-                
-                
-          
-                <div id="container">
-                    
+              <div id="container">                   
                     <div id="letterHead">
                         <p class="boilerplate">
                             <span>
                                 <strong>Maintained by: </strong> Elisa E. Beshero-Bondar (ebb8 at
                                 pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
                             </span>
-                            
                             <span>
                                 <strong>Last modified: </strong>
                                 <xsl:value-of select="current-dateTime()"/>
-                            </span>
-                            
+                            </span>  
                         </p> 
                         <div id="fieldset">
                             <fieldset>
@@ -63,52 +53,22 @@
                                 <input type="checkbox"
                                     id="REGtoggle"
                                     style="cursor:pointer"/>
-                                
                                 <br/>
                             </fieldset>
                         </div>
-                       
-                        <xsl:apply-templates select="//teiHeader"/>
-                        
-                        
-                       
+                        <xsl:apply-templates select="//teiHeader"/>   
                     </div>
                     <div id="floatright">
-                       
-
                         <div id="letter">
-
                          <xsl:apply-templates select="//body"/>
-
-
                         </div>
-
-
-                        <hr/>
-
-
-                    </div>
-                  
-                    
-                    
+                       <hr/>
+                    </div>                  
                 </div>
-                
-
-
             </body>
         </html>
-
-
     </xsl:template>
-    
-    <!--<xsl:template match="titleStmt/title">
-        <h2><xsl:apply-templates/></h2>
-    </xsl:template>
-
-<xsl:template match="editor">
-    <h3><xsl:text>Edited by </xsl:text><xsl:apply-templates/><xsl:text>. </xsl:text></h3>
-</xsl:template>-->
-    
+       
     <xsl:template match="titleStmt">
         <h3><xsl:apply-templates select="title"/></h3>
         <p><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></p>
@@ -174,9 +134,7 @@
         
         <xsl:apply-templates select=".//condition"/>
         
-        <xsl:apply-templates select=".//sealDesc"/>
-        
-        
+        <xsl:apply-templates select=".//sealDesc"/>      
     </xsl:template>
     
     <xsl:template match="profileDesc">
@@ -199,9 +157,7 @@
             <xsl:apply-templates select=".//date/following-sibling::*"/><br/>
         </div>
     </xsl:template>
-    
-   
-
+  
     <xsl:template match="body//p">
         <p><span class="prose">
             <xsl:apply-templates/></span>
@@ -249,9 +205,6 @@
 
     </xsl:template>
 
-
-   
-
     <xsl:template match="placeName | name[@type='place']">
         <span class="context" title="place">
             <xsl:apply-templates/>
@@ -263,10 +216,7 @@
             <xsl:value-of select="$siPlace/note/@resp"/>
             <xsl:if test="$siPlace//geo">
                 <xsl:value-of select="$siPlace//geo"/>
-            </xsl:if>
-         
-                  
-              
+            </xsl:if>          
         </span></xsl:if>
         </span>
     </xsl:template>
@@ -472,8 +422,6 @@
         <span class="date" title="{string-join(@*, '-')}">
             <xsl:apply-templates/>
         </span>
-    
-  
     </xsl:template>
 
   <xsl:template match="emph">

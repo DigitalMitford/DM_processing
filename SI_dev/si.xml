@@ -25,7 +25,7 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2016-08-14T06:02:14.524-04:00. Extracted by Elisa Beshero-Bondar.
+            <edition>Site Index for the Digital Mitford project. Date: 2016-08-14T13:27:47.368-04:00. Extracted by Elisa Beshero-Bondar.
         Count of all @xml:ids in the current file: 1495. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
@@ -7819,8 +7819,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      February 1824</date>
                      </rs>, Mitford refers to Mr. Northmore as "a great <placeName ref="#Devonshire">Devonshire</placeName>
                      reformer, one of the bad epic poets and very pleasant men in which that
-                     country abounds" (<bibl>
-                        <title>Life of Mary Russell Mitford</title> ed. L'Estrange Vol II, page 22</bibl>).</note>
+                     country abounds" (<bibl corresp="#Lestrange_Letters">
+                        <title level="s">Life of Mary Russell Mitford</title> ed. L'Estrange <biblScope unit="volume" n="2">Vol II</biblScope>, <biblScope unit="page" n="22">page 22</biblScope>
+                     </bibl>).</note>
                </person>
                <person xml:id="OHara_Kane" sex="1">
                   <persName>
@@ -8882,21 +8883,38 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </note>
                </person>
                <person xml:id="Rowden_Fr" sex="2">
+                  <persName>Fanny Rowden</persName>
+                  <persName>Mrs. Rowden</persName>
                   <persName>
-                     <surname type="paternal">Rowden</surname>
-                     <surname type="married">St. Quintin</surname>
+                     <surname type="paternal">Rowden<date from="1774" to="1825-04-06"/>
+                     </surname>
+                     <surname type="married">St. Quentin<date from="1825-04-06"/>
+                     </surname>
                      <forename>Frances</forename>
                      <forename>Arabella</forename>
-                     <addName>Fanny</addName>
                   </persName>
+                  <birth when="1774">
+                     <placeName>London</placeName>
+                  </birth>
+                  <death notAfter="1840"><!--ebb: source: ODNB--></death>
                   <occupation>educator</occupation>
-                  <note resp="#lmw">English schoolmistress, author, and <persName ref="#MRM">Mitford</persName>
-                        tutor. Also taught <persName ref="#Lamb_Caro">Caroline Lamb</persName> and
-                        <persName ref="#Landon_LE">L.E.L.</persName>. Worked at <placeName>M. St. Quintin School</placeName> at 22 Hans Place, <placeName ref="#London_city">London</placeName>, started by <persName>M. St. Quintin</persName>, a French emigre. St. Quintin and his wife originally ran a school in Reading; after his wife's death, Frances Rowden became his second wife. In <bibl>
-                        <title>The Queens of Society</title>
-                     </bibl> by Grace and Philip Wharton, the authors note that, while unmarried, Frances Rowden "styled herself Mrs. Rowden" (1860:  148). Rowden wrote poetry, including <bibl>
-                        <title ref="#St_Botany">Poetical Introduction to the Study of Botany</title> (<date>1801</date>)</bibl> and <bibl>
-                        <title ref="#Pl_Friendship">The Pleasures of Friendship: A Poem, in two parts</title> (<date>1810</date>, rpt. 1812, 1818)</bibl>; also wrote textbooks, including <bibl>A Christian Wreath for the Pagan Dieties (1820, illus. Caroline Lamb)</bibl>, and <bibl>A Biographical Sketch of the Most Distinguished Writers of Ancient and Modern Times (1821, illus. Caroline Lamb)</bibl>. (See <bibl>Landon Memoirs</bibl>; See also <bibl>L'Estrange, ed. The Life of Mary Russell Mitford: Told by Herself,(21)</bibl>.</note>
+                  <note resp="#lmw #ebb">
+                     <p>English school teacher, author, and <persName ref="#MRM">Mitford</persName>
+                     tutor. Also taught <persName ref="#Lamb_Caro">Caroline Lamb</persName>, <persName ref="#Kemble_Frances">Fanny Kemble</persName>, and
+                     <persName ref="#Landon_LE">L.E.L.</persName>. Worked at <placeName>M. St. Quentin School</placeName> at 22 Hans Place, <placeName ref="#London_city">London</placeName>, where <persName ref="#MRM">Mary Russell Mitford</persName> attended as a student, and where she in company with Rowden, attended plays at the London theatres. The <placeName>St. Quentin school at Hans Place</placeName> was founded by <persName>Dominique de St. Quentin</persName>, a French emigre, whose name (and the school's name) is spelled "Quintin" in the <bibl corresp="#Lestrange_Letters">L'Estrange edition of Mitford's letters</bibl>. St. Quentin and his wife, <persName>Ann Pitts</persName>, originally ran a school in <placeName ref="#Reading_city">Reading</placeName>, where he first hired Frances Rowden to teach, but according to the ODNB, St. Quentin had to sell the Reading school due to gambling debts he accumulated in the company of <persName ref="#Valpy_Richard">Richard Valpy</persName> and <persName ref="#Mitford_Geo">George Mitford</persName>. When the St. Quentins moved to Paris following <persName ref="#Napoleon">Napoleon</persName>'s defeat, <rs type="event">Rowden followed them there in <date when="1818">1818</date> and started a school at the <placeName>rue d'Angoulême</placeName> which later moved to <placeName>Champs-Elysées</placeName>
+                        </rs>, and <rs type="event">it was in her <placeName ref="#Paris">Paris</placeName> school that she taught <persName ref="#Kemble_Frances">Fanny Kemble</persName>
+                           <date from="1821" to="1825">between 1821 and 1825</date>
+                        </rs>. <rs type="event">After the death of St. Quentin's wife, Frances Rowden married him in <date when="1825">1825</date>
+                        </rs> but little is known of her following this point, and <rs type="event">the ODNB indicates that <date when="1840">the death date of 1840</date> supplied for her is speculative</rs>.</p>
+                     <p>In <bibl>
+                           <title>The Queens of Society</title>
+                        </bibl> by Grace and Philip Wharton, the authors note that, while unmarried, Frances Rowden "styled herself Mrs. Rowden" (1860:  148). Rowden wrote poetry, including <bibl>
+                           <title ref="#St_Botany">Poetical Introduction to the Study of Botany</title> (<date>1801</date>)</bibl> and <bibl>
+                           <title ref="#Pl_Friendship">The Pleasures of Friendship: A Poem, in two parts</title> (<date>1810</date>, rpt. 1812, 1818)</bibl>; also wrote textbooks, including <bibl>A Christian Wreath for the Pagan Dieties (1820, illus. Caroline Lamb)</bibl>, and <bibl>A Biographical Sketch of the Most Distinguished Writers of Ancient and Modern Times (1821, illus. Caroline Lamb)</bibl>. (See <bibl>Landon Memoirs</bibl>; See also <bibl corresp="#Lestrange_Letters">
+                           <editor>L'Estrange, ed.</editor>
+                           <title level="s">The Life of Mary Russell Mitford: Told by Herself</title>, <biblScope unit="volume" n="1">Volume I</biblScope>, <biblScope unit="page" from="11" to="17">pages 11-17</biblScope>
+                        </bibl>.</p>
+                  </note>
                   <note>
                      <ref target="http://viaf.org/viaf/57349006"/>
                   </note>
@@ -11720,7 +11738,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <forename>Peregrine</forename>
                   </persName>
                   <note type="bio" resp="#ajc"> Protagonist of <bibl>
-                        <author ref="#Smollett_Tob">Tobias Smollett’s</author>
+                        <author ref="#Smollett_Tob">Tobias Smollett</author>'s 
                         <title ref="#Peregrine_Pickle">The Adventures of Peregrine Pickle, In Which are Included Memoirs of a Lady of Quality</title> (<date when="1751">1751</date>)</bibl>
                   </note>
                </person>
