@@ -11,7 +11,7 @@
         <html>
             <head>
                 <title>Digital Mitford: The Mary Russell Mitford Archive</title>
-                <meta charset="UTF-8"/>
+               <!-- <meta charset="UTF-8"/>-->
                 <meta name="Description"
                     content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
                 <meta name="keywords"

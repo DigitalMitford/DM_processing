@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2016-06-20T17:21:29.7-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1453. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2016-08-14T03:15:56.751-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1494. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -597,7 +597,7 @@
                      <forename>Sara</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
-                  <occupation>B.F.A. in Creative Writing, completed <date>2014</date>. M. A. in English and Communication, in progress 2015.
+                  <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and Communication, in progress 2015.
                <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
                   <note type="bio"/>
@@ -1192,6 +1192,7 @@
             <listOrg sortKey="histOrgs">
                <org xml:id="Americans">
                   <orgName>Americans</orgName>
+                  <note>people of the former British colonies recently become the United States in Mitford's day, or more generally of North America.</note>
                </org>
                <org xml:id="Billiard_Club">
                   <orgName>Billiard Club</orgName>
@@ -1265,6 +1266,10 @@
                <org xml:id="Italians">
                   <orgName>Italians</orgName>
                   <note>People from Italy</note>
+               </org>
+               <org xml:id="Jesuits">
+                  <orgName>The Society of Jesus</orgName>
+                  <note resp="#ajc">A male religious congregation of the Catholic Church. Their missionary efforts between the 16th and 17th centuries played a significant role in the transmission of knowledge and culture between China and the West.</note>
                </org>
                <org xml:id="Kemble_family">
                   <orgName>the Kembles</orgName>
@@ -1522,6 +1527,22 @@
                      <persName ref="#Victoria_Queen">Queen Victoria</persName>'s first cousin and spouse, whose death at the age of 48 led her to a prolonged period of mourning as the "Widow at Windsor."  <ref target="http://viaf.org/viaf/25395950"/>
                   </note>
                </person>
+               <person xml:id="Alexander_I_Rus" sex="1">
+                  <persName>Alexander I</persName>
+                  <persName>
+                     <surname>Pavlovich</surname>
+                     <forename>Aleksandr</forename>
+                  </persName>
+                  <birth when="1777-12-12">
+                     <placeName>St. Petersburg, Russia</placeName>
+                  </birth>
+                  <death when="1825-12-01">
+                     <placeName>Taganrog</placeName>
+                  </death>
+                  <occupation>ruler</occupation>
+                  <note resp="#ajc">Emperor of Russia, <date from="1801" to="1825">1801-25</date>
+                  </note>
+               </person>
                <person xml:id="Alfieri_Vittorio" sex="1">
                   <persName>
                      <surname>Alfieri</surname>
@@ -1566,7 +1587,7 @@
                      <placeName>Edinburgh, Scotland</placeName>
                   </death>
                   <occupation>artist</occupation>
-                  <note type="bio" resp="#ajc #ebb">Allan was a artist who painted portraits of Scott, Byron, and Burns, as well as Scottish, English, and Russian historical subjects. Mitford was aware through Benjamin Robert Haydon of his painting, <title level="m" ref="#BrokenFiddle_WA">The Broken Fiddle</title>. In <date when="1838">1838</date> he was appointed president of the Royal Scottish Academy, and in <date when="1841">1841</date> he became the queen's limner in Scotland and was knighted [Source: ODNB]. <!--ajc/lmw: I have found only secondary references to this work in period journals thus far. More research needed. ebb 2016-02-28: Shortened this entry and created a new one with detail on the painting Mitford mentions to Elford, "The Broken Fiddle."--></note>
+                  <note type="bio" resp="#ajc #ebb">Allan was a artist who painted portraits of Scott, Byron, and Burns, as well as Scottish, English, and Russian historical subjects. Mitford was aware through Benjamin Robert Haydon of his painting, <title level="m" ref="#BrokenFiddle_WA">The Broken Fiddle</title>. In <date when="1838">1838</date> he was appointed president of the Royal Scottish Academy, and in <date when="1841">1841</date> he became the queen's limner in Scotland and was knighted. Source: ODNB <!--ajc/lmw: I have found only secondary references to this work in period journals thus far. More research needed. ebb 2016-02-28: Shortened this entry and created a new one with detail on the painting Mitford mentions to Elford, "The Broken Fiddle."--></note>
                   <note>
                      <ref target="http://viaf.org/viaf/74124260"/>
                   </note>
@@ -1787,6 +1808,24 @@
                      Mary Russell Mitford. <ref target="http://viaf.org/viaf/66464493"/>
                      <!--ebb: Expand further this note and entry-->
                   </note>
+               </person>
+               <person xml:id="Barrow_John" sex="1">
+                  <persName>Sir John Barrow</persName>
+                  <persName>
+                     <surname>Barrow</surname>
+                     <forename>John</forename>
+                  </persName>
+                  <birth when="1764-06-19">
+                     <placeName>Dragley Beck, Ulverston, Lancashire</placeName>
+                  </birth>
+                  <death when="1848-11-23">
+                     <placeName>London</placeName>
+                  </death>
+                  <occupation>explorer</occupation>
+                  <occupation>author</occupation>
+                  <note resp="#ajc #ebb">
+                     <rs type="event">Served as comptroller to <persName ref="#Macartney_Geo">Lord Macartney</persName>'s embassy to <placeName ref="#China">China</placeName> (<date from="1792" to="1794">1792-4</date>)</rs>. Known for writing <bibl>
+                        <title level="m">Mutiny on the Bounty</title> (<date when="1831">1831</date>)</bibl>, the first published account of the mutiny after <persName>William Bligh</persName>'s Journal. ODNB</note>
                </person>
                <person xml:id="Bayley_Mrs" sex="2">
                   <persName>Mrs. Bayley</persName>
@@ -2445,6 +2484,23 @@
                      Barrett Browning</persName>. <ref target="http://viaf.org/viaf/24598774"/>
                      <!--Expand this note and entry!-->
                   </note>
+               </person>
+               <person xml:id="Bruce_James" sex="1">
+                  <persName>James Bruce of Kinnaird</persName>
+                  <persName>
+                     <surname>Bruce</surname>
+                     <forename>James</forename>
+                  </persName>
+                  <birth when="1730-12-14">
+                     <placeName>Kinnaird House, Kinnaird, Stirlingshire</placeName>
+                  </birth>
+                  <death when="1794-04-26">
+                     <placeName>Kinnaird House</placeName>
+                  </death>
+                  <occupation>Traveller in Africa</occupation>
+                  <note resp="#ajc">Bruce was only the second European to visit the isolated mountain kingdom of <placeName>Abyssinia</placeName> since the 1630s, and he authored the highly popular five-volume <bibl>
+                        <title ref="#Travels_Nile" level="s">Travels to Discover the Source of the Nile</title> in <date when="1790">1790</date>
+                     </bibl>.</note>
                </person>
                <person xml:id="Brumoy_Pierre" sex="1">
                   <persName>
@@ -4392,6 +4448,25 @@
                      <ref target="http://viaf.org/viaf/97107753"/>
                   </note>
                </person>
+               <person xml:id="Ellis_Hen" sex="1">
+                  <persName>Sir Henry Ellis</persName>
+                  <persName>
+                     <surname>Ellis</surname>
+                     <forename>Henry</forename>
+                  </persName>
+                  <birth when="1788-09-01">
+                     <placeName>Dublin, Ireland</placeName>
+                  </birth>
+                  <death when="1855-09-28">
+                     <placeName>Brighton</placeName>
+                  </death>
+                  <occupation>diplomatist</occupation>
+                  <note resp="#ajc">A commissioner in <persName>Lord Amherst</persName>’s embassy to <placeName ref="#China">China</placeName>
+                     <date from="1816" to="1817">1816-17</date>. Author of <bibl>
+                        <title level="m">Journal of the Proceedings if the Late Embassy to China, Comprising a Correct Narrative of the Public Transactions of the Embassy, of the Voyage to and From China, and of the Journey from the Mouth of the Pei-Ho to the Return to Canton. Interspersed with Observations Upon the Face of the Country, the Policy, Moral Character, and
+                     Manners of the Chinese Nation.</title> (<date when="1817">1817</date>)</bibl>
+                  </note>
+               </person>
                <person xml:id="Elliston_Robt" sex="1">
                   <persName>Robert Elliston</persName>
                   <persName>
@@ -4425,6 +4500,15 @@
                   <note type="bio" resp="#lmw">English actor and musician. Performed <placeName ref="#Covent_Garden_Theatre">Covent Garden Theatre</placeName>. 
                      <ref target="http://viaf.org/viaf/63571188"/>
                   </note>
+               </person>
+               <person xml:id="Esther_Ozoro" sex="2">
+                  <persName>Ozoro Esther</persName>
+                  <persName>
+                     <surname/>
+                     <forename>Esther</forename>
+                  </persName>
+                  <note resp="#ajc">According to James Bruce in <bibl corresp="#Travels_Nile">Travels to Discover the Source of the Nile, In the Years 1768, 1769, 1770, 1771
+                     1772, and 1773</bibl>, Ozoro Esther was the first daughter of <persName>Iteghe</persName>, or queen-mother. Friend of <persName ref="#Bruce_James">James Bruce</persName> while in <placeName>Abyssinia</placeName>.</note>
                </person>
                <person xml:id="Euripides" sex="1">
                   <persName>Euripides</persName>
@@ -5705,7 +5789,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <forename>Charles</forename>
                   </persName>
                   <occupation>schoolmaster</occupation>
-                  <note resp="#scw">Schoolmaster at <placeName ref="#Silchester">Silchester, Berkshire, Englad</placeName>. Spouse of Mitford servant <persName ref="#Hill_Lucy">Lucy Hill</persName>, whose marriage to him caused her to leave her position in the Mitford household. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
+                  <note resp="#scw">Schoolmaster at <placeName ref="#Silchester">Silchester, Berkshire, England</placeName>. Spouse of Mitford servant <persName ref="#Hill_Lucy">Lucy Hill</persName>, whose marriage to him caused her to leave her position in the Mitford household. Source: <persName ref="#Needham_Francis">Needham</persName>Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</note>
                </person>
                <person xml:id="Hill_Lucy" sex="2">
                   <persName>
@@ -5717,9 +5801,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <birth notBefore="1790-05-02">
                      <placeName ref="#Stratfield_Saye">Stratfield Saye, Berkshire, England</placeName>
                   </birth>
-                  <note type="bio" resp="#scw">
-                     <p>Beloved servant for twelve years in the Mitford household who, on <date when="1820-08-07">7 August 1820</date> married <persName ref="#Hill_Charles">Charles Hill</persName>. She is the basis for the title character in the <title ref="#OV">Our Village</title> story. Source: <orgName>
-                           <persName ref="#Needham_Francis">Needham</persName> Papers</orgName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p>
+                  <note type="bio" resp="#scw">Beloved servant for twelve years in the Mitford household who, on <date when="1820-08-07">7 August 1820</date> married <persName ref="#Hill_Charles">Charles Hill</persName>. She is the basis for the title character in the <title ref="#OV">Our Village</title> story. Source: <orgName>
+                        <persName ref="#Needham_Francis">Needham</persName> Papers</orgName>, <orgName ref="#ReadingCL">Reading Central Library</orgName>.
                   </note>
                </person>
                <person xml:id="Hobbes" sex="1">
@@ -5845,6 +5928,17 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note>
                      <ref target="http://viaf.org/viaf/56644486"/>
                   </note>
+               </person>
+               <person xml:id="Holden_Henry">
+                  <persName>Dr. Holden</persName>
+                  <persName>
+                     <surname>Holden</surname>
+                     <forename>Henry</forename>
+                  </persName>
+                  <birth when="1596"/>
+                  <death when="1662-03">March 1662</death>
+                  <occupation>theologian</occupation>
+                  <note resp="#ebb">When the practice of Catholicism was officially banned in England and Catholic leaders were fleeing the country, Holden went to Rome to argue against the Jesuits and other orders for maintaining an official Catholic presence in England.</note>
                </person>
                <person xml:id="Holford_Marg_younger" sex="2">
                   <persName>
@@ -6725,6 +6819,22 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>publisher</occupation>
                   <note resp="#kdc">William Lane pioneered the circulating library, and was the founder of the <orgName ref="#Minerva_Press">Minerva Press</orgName>, a major publisher of Gothic novels and other popular fiction.</note>
                </person>
+               <person xml:id="Lavater_Johann" sex="1">
+                  <persName>Johann Kaspar Lavater</persName>
+                  <persName>
+                     <surname>Lavater</surname>
+                     <forename>Johann</forename>
+                     <forename>Kaspar</forename>
+                  </persName>
+                  <birth when="1741-11-15">
+                     <placeName>Zurich</placeName>
+                  </birth>
+                  <death when="1801-01-02">
+                     <placeName>Zurich</placeName>
+                  </death>
+                  <occupation>author</occupation>
+                  <note resp="#ajc">Swiss poet, writer, philosopher, physiognomist, and theologian.</note>
+               </person>
                <person xml:id="LeCamus_Antoine" sex="1">
                   <persName>
                      <forename>Antoine</forename>
@@ -6888,6 +6998,23 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Lucetti</persName>
                   <note resp="#tlh #lmw">May be a fellow traveller with <persName ref="#Acerbi_J">Joseph Acerbi</persName>; however, he is not mentioned by name in <title ref="#Travels_Acerbi">Travels through Sweden, Finland, and Lapland to the North Cape, in the years 1798 and 1799</title>. Further research needed.</note>
                </person>
+               <person xml:id="Macartney_Geo" sex="1">
+                  <persName>Sir George Macartney</persName>
+                  <persName>
+                     <surname>Macartney</surname>
+                     <forename>George</forename>
+                  </persName>
+                  <birth when="1737-05-03">
+                     <placeName>Dublin</placeName>
+                  </birth>
+                  <death when="1806-03-31">
+                     <placeName>Chiswick</placeName>
+                  </death>
+                  <occupation>diplomat</occupation>
+                  <occupation>colonial governor</occupation>
+                  <note resp="#ajc">
+                     <orgName>The East India Company</orgName> and the British government sent Macartney on an embassy to <placeName>Peking</placeName> in order to facilitate trade with <placeName ref="#China">China</placeName> (ODB).</note>
+               </person>
                <person xml:id="Macpherson_J" sex="1">
                   <persName>
                      <forename>James</forename>
@@ -6980,6 +7107,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      </rs>, during which she and her son vied with <persName>Edward, Duke of York</persName> for control of the English throne. She was exiled, restored, and ultimately defeated at <rs type="event">the Battle of Tewkesbury on <date when="1471-05-04">4 May 1471</date>
                      </rs>, and she died in exile in France. She was immortalized by <persName ref="#Shakespeare">Shakespeare</persName> as an unfaithful wife but grieving, vengeful, and prophetic royal widow, and in Mitford's time, she was the subject of <bibl>a romance poem by <author>Margaret Holford</author> in <date when="1816">1816</date>
                      </bibl>.</note>
+               </person>
+               <person xml:id="Mariam_Tecla" sex="1">
+                  <persName>Tecla Mariam or Haseb Nanya</persName>
+                  <persName>
+                     <surname/>
+                     <forename>Mariam</forename>
+                  </persName>
+                  <note resp="#ajc">According to James Bruce in <bibl corresp="#Travels_Nile">Travels to Discover the Source of the Nile, In the Years 1768, 1769, 1770, 1771
+                     1772, and 1773</bibl>, "Tecla Mariam or Haseb Nanya...was the third son of David, and succeeded his nephew. He reigned
+                     four years, and took for his inaugration name, Haseb Nanya" (67).</note>
+                  <!--ajc: In Bruce's book, Tecla Mariam appears to be male; in illustrations and according to
+              MRM, Tecla Mariam is female-->
                </person>
                <person xml:id="Marie_Antoinette" sex="2">
                   <persName>
@@ -7158,6 +7297,24 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#scw">
                      <persName ref="#Needham_Francis">Needham</persName> identifies him as <quote>"the Magistrates' Clerk"</quote>. More research needed. <!--scw: Could he be connected to xml:id=May_Joseph of Friar Street? No other details in Needham.--></note>
                </person>
+               <person xml:id="McLeod_John" sex="1">
+                  <persName>John McLeod</persName>
+                  <persName>
+                     <surname>McLeod/MacLeod</surname>
+                     <forename>John</forename>
+                  </persName>
+                  <birth when="1777">
+                     <placeName>Parish of Bonhill, Dunbartonshire</placeName>
+                  </birth>
+                  <death when="1820-11-08">
+                     <placeName>While on board the Royal Sovereign</placeName>
+                  </death>
+                  <occupation>naval surgeon</occupation>
+                  <occupation>author</occupation>
+                  <note resp="#ajc">Author of <bibl>
+                        <title level="m">Narrative of a Voyage, in His Majesty's Late Ship Alceste, to the Yellow Sea, Along the Coast of Corea and Through its Numerous Hitherto Undiscovered Islands, to the Island of Lewchew; with an Account of Her Shipwreck in the Straits of Gaspar</title> (<date when="1817">1817</date>)</bibl>
+                  </note>
+               </person>
                <person xml:id="Merry_William" sex="1">
                   <persName>
                      <surname>Merry</surname>
@@ -7170,6 +7327,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         </bibl>
                      </p>
                   </note>
+               </person>
+               <person xml:id="Michael_Ras" sex="1">
+                  <persName>Ras Michael</persName>
+                  <note resp="#ajc">Governor of <placeName>Tigré</placeName>, <placeName>Abyssinia</placeName> during <persName ref="#Bruce_James">James Bruce</persName>'s expedition (ODB)</note>
                </person>
                <person xml:id="Michelangelo" sex="1">
                   <persName>Michelangelo</persName>
@@ -9384,6 +9545,22 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <ref target="http://viaf.org/viaf/100170015"/>
                   </note>
                </person>
+               <person xml:id="Staunton_Geo" sex="1">
+                  <persName>Sir George Staunton</persName>
+                  <persName>
+                     <surname>Staunton</surname>
+                     <forename>George</forename>
+                  </persName>
+                  <birth when="1737-04-10">
+                     <placeName>Cargin, County Galway, Ireland</placeName>
+                  </birth>
+                  <death when="1801-01-14">
+                     <placeName>London</placeName>
+                  </death>
+                  <occupation>physician</occupation>
+                  <occupation>diplomat</occupation>
+                  <note resp="#ajc">In <date when="1792">1792</date> Staunton was apointed principal secretary to <persName ref="#Macartney_Geo">Lord Macartney</persName>'s embassy to <placeName ref="#China">China</placeName>. Source: ODNB</note>
+               </person>
                <person xml:id="Steele_Richard" sex="1">
                   <persName>Sir Richard Steele</persName>
                   <persName>
@@ -9557,6 +9734,23 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note>
                      <ref target="http://viaf.org/viaf/61904095"/>
                   </note>
+               </person>
+               <person xml:id="Talma_Francois" sex="1">
+                  <persName>Francois Joseph Talma</persName>
+                  <persName>
+                     <surname>Talma</surname>
+                     <forename>Francois</forename>
+                     <forename>Joseph</forename>
+                  </persName>
+                  <birth when="1763-01-15">
+                     <placeName>Paris, France</placeName>
+                  </birth>
+                  <death when="1826-10-19">
+                     <placeName>Paris, France</placeName>
+                  </death>
+                  <occupation>dentist</occupation>
+                  <occupation>actor</occupation>
+                  <note resp="#ajc">French actor and dentist who was a favorite of <persName ref="#Napoleon">Napoleon Bonaparte</persName>.</note>
                </person>
                <person xml:id="Tasso" sex="1">
                   <persName>
@@ -10731,6 +10925,26 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Annabel</persName>
                   <note resp="#ebb">Wife of <persName ref="#Julian">Julian</persName>, in <title ref="#Julian_MRMplay">Julian</title>.</note>
                </person>
+               <person xml:id="Annaly_Lady_char" sex="2">
+                  <persName>
+                     <surname>Annaly</surname>
+                     <forename/>
+                  </persName>
+                  <note type="bio" resp="#ajc">Character in <bibl>
+                        <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
+                        <title ref="#Ormond_novel">Ormond</title> (<date when="1817">1817</date>)</bibl>
+                  </note>
+               </person>
+               <person xml:id="Annaly_Miss_char" sex="2">
+                  <persName>
+                     <surname>Annaly</surname>
+                     <forename/>
+                  </persName>
+                  <note type="bio" resp="#ajc">Daughter of <persName ref="#Annaly_Lady_char"> Lady Annaly</persName> in <bibl>
+                        <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
+                        <title ref="#Ormond_novel">Ormond</title> (<date when="1817">1817</date>)</bibl>
+                  </note>
+               </person>
                <person xml:id="Antigone_A" sex="2">
                   <persName>Antigone</persName>
                   <note resp="#lmw">character in <title ref="#Antigone_play">Antigone</title>
@@ -10757,6 +10971,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>John Balfour</persName>
                   <note resp="#esh">character in <title ref="#Old_Mortality">Old
                      Mortality</title>.</note>
+               </person>
+               <person xml:id="Bardolph_WS" sex="1">
+                  <persName>Bardolph</persName>
+                  <note type="bio" resp="#ajc"> Character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#HenryV_play">Henry V</bibl>
+                     and <bibl corresp="#HenryIVpt1_play">Henry IV Part I</bibl>, <bibl corresp="#HenryIVpt2_play">Henry IV Part II</bibl>, and the <bibl corresp="#Merry_Wives_play">Merry Wives of Windsor</bibl>. </note>
+               </person>
+               <person xml:id="Beatrice_MuchAdo" sex="2">
+                  <persName>Beatrice</persName>
+                  <note type="bio" resp="#ajc">Niece of Leonato, character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#Much_Ado_play">Much Ado About Nothing.</bibl>
+                  </note>
                </person>
                <person xml:id="Bellario" sex="1">
                   <persName>Bellario (Euphrasia)</persName>
@@ -11061,8 +11287,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Falstaff_WS" sex="1">
                   <persName>Falstaff</persName>
-                  <note>Character in <persName ref="#Shakespeare">Shakespeare's</persName>
-                     <title ref="#HenryIVpt1_play">Henry IV part one</title>.</note>
+                  <note type="bio" resp="#ajc #ebb">Character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <title ref="#HenryIVpt1_play">Henry IV, part one</title>, <title ref="#HenryIVpt2_play">Henry IV, part two</title>, and <title ref="#Merry_Wives_play">Merry Wives of Windsor</title>
+                  </note>
                </person>
                <person xml:id="Ferdinand" sex="1"/>
                <person xml:id="Fiesco_fict" sex="1">
@@ -11171,6 +11398,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </persName>
                   <note resp="#ncl #lmw">Character from <persName ref="#Dante">Dante</persName>'s <title ref="#Inferno_Dante">Inferno</title>.</note>
                </person>
+               <person xml:id="Isabella_Meas4Meas" sex="2">
+                  <persName>Isabella</persName>
+                  <note type="bio" resp="#ajc">Sister of Claudio, character in <bibl>
+                        <author ref="#Shakespeare">Shakespeare's</author>
+                        <title ref="#Measure_Measure_play">Measure for Measure</title>
+                     </bibl>.</note>
+               </person>
                <person xml:id="Jacky_Marriage" sex="2">
                   <persName>Miss Jacky</persName>
                   <note resp="#lmw">Character in <title ref="#Marriage_SF">Marriage</title>; Mitford admires Ferrier's characterization of her.</note>
@@ -11188,9 +11422,24 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <persName ref="#Melfi">Melfi's</persName> son in <title ref="#Julian_MRMplay">Julian</title>
                   </note>
                </person>
+               <person xml:id="Justice_Lord" sex="1">
+                  <persName>The Lord Chief Justice</persName>
+                  <note type="bio" resp="#ajc">Most powerful official of the law in England. Character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#HenryIVpt2_play">Henry IV Part II</bibl>.</note>
+               </person>
                <person xml:id="Katharine_H8" sex="2">
                   <persName>Katharine</persName>
                   <note resp="#lmw">character in <title ref="#HenryVIII_play"> Henry VIII</title>
+                  </note>
+               </person>
+               <person xml:id="King_Corny" sex="1">
+                  <persName>
+                     <surname>Corny</surname>
+                     <forename/>
+                  </persName>
+                  <note type="bio" resp="#ajc"> King Corny was the king of Ireland in <bibl>
+                        <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
+                        <title ref="#Ormond_novel">Ormond</title> (<date when="1817">1817</date>)</bibl>
                   </note>
                </person>
                <person xml:id="King_Philip_WS" sex="1">
@@ -11288,6 +11537,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <p>Greyhound dog who is featured as the <persName ref="#OVNarrator">narrator</persName>'s companion in many <title ref="#OV">Our Village</title>sketches.</p>
                   </note>
                </person>
+               <person xml:id="MCrule_Mrs" sex="2">
+                  <persName>Mrs. M'Crule</persName>
+                  <note type="bio" resp="#ajc"> Character in <bibl>
+                        <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
+                        <title ref="#Ormond_novel">Ormond</title> (<date when="1817">1817</date>)</bibl>
+                  </note>
+               </person>
                <person xml:id="Meg_Merrilies" sex="2">
                   <persName>Meg Merrilies</persName>
                   <note resp="#esh">character in <title ref="#Guy_Mannering">Guy
@@ -11299,7 +11555,12 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      Regent of the Kingdom of <placeName ref="#Naples">Naples</placeName> in <title ref="#Julian_MRMplay">Julian</title>
                   </note>
                </person>
-               <person xml:id="Miranda" sex="2"/>
+               <person xml:id="Miranda" sex="2">
+                  <persName>Miranda</persName>
+                  <note type="bio" resp="#ajc">
+                     <persName ref="#Prospero">Prospero's</persName> daughter, character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#Tempest_play">Tempest</bibl>.</note>
+               </person>
                <person xml:id="Miss_Crawley_fict" sex="2">
                   <persName>Miss Crawley</persName>
                   <note resp="#lmw">A character in <persName ref="#Owenson_S">Lady Morgan</persName>'s novel <title ref="#Florence_Macarthy_SO">Florence Macarthy</title>.</note>
@@ -11324,6 +11585,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Mr. Dexter</persName>
                   <note resp="#lmw">A character in <persName ref="#Owenson_S">Lady Morgan</persName>'s novel <title ref="#ODonnel_SO">The O'Donnel's</title>.</note>
                </person>
+               <person xml:id="Nerissa_MerchVenice" sex="2">
+                  <persName>Nerissa</persName>
+                  <note type="bio" resp="#ajc">Portia's maid, character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#Merchant_of_Venice_play">Merchant of Venice.
+                     Nerissa disguises herself as a male law clerk when Portia disguises herself as a lawyer. </bibl>
+                  </note>
+               </person>
                <person xml:id="Nicky_Marriage" sex="2">
                   <persName>Miss Nicky</persName>
                   <note resp="#lmw">Character in <title ref="#Marriage_SF">Marriage</title>; Mitford admires Ferrier's characterization of her.</note>
@@ -11337,6 +11605,19 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Nuncio">
                   <persName>Nuncio</persName>
+               </person>
+               <person xml:id="Nym_WS" sex="1">
+                  <persName>Corporal Nym</persName>
+                  <note type="bio" resp="#ajc">Character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#HenryV_play">Henry V</bibl> and
+                     <bibl corresp="#Merry_Wives_play">Merry Wives of Windsor</bibl>.</note>
+               </person>
+               <person xml:id="OFaley_Miss_char" sex="2">
+                  <persName>Miss O'Faley</persName>
+                  <note type="bio" resp="#ajc"> Character in <bibl>
+                        <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
+                        <title ref="#Ormond_novel">Ormond</title> (<date when="1817">1817</date>)</bibl>
+                  </note>
                </person>
                <person xml:id="Officer" sex="1"/>
                <person xml:id="OfficersEldestSon" sex="1"/>
@@ -11357,6 +11638,26 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Orestes_Eur_char" sex="1">
                   <persName>Orestes</persName>
                   <note resp="#lmw">Orestes, title character in the play <title ref="#Orestes_play">Orestes</title> attributed to <persName ref="#Euripides">Euripides</persName>.</note>
+               </person>
+               <person xml:id="Orlando_AsYouLikeIt_char" sex="1">
+                  <persName>Orlando de Boys</persName>
+                  <persName>
+                     <surname>de Boys</surname>
+                     <forename>Orlando</forename>
+                  </persName>
+                  <note type="bio" resp="#ajc"> Orlando de Boys who falls in love with <persName>Rosalind</persName> in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#As_You_Like_It_play">As You Like It</bibl>.</note>
+                  <!--ajc: assuming MRM is referring to this Orlando in this letter-->
+               </person>
+               <person xml:id="Ormond_H" sex="1">
+                  <persName>
+                     <surname>Ormond</surname>
+                     <forename>Harry</forename>
+                     <note type="bio" resp="#ajc"> Protagonist of <bibl>
+                           <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
+                           <title level="m" ref="#Ormond_novel">Ormond</title> (<date when="1812">1812</date>)</bibl>
+                     </note>
+                  </persName>
                </person>
                <person xml:id="Ossian" sex="1">
                   <persName>Ossian</persName>
@@ -11406,6 +11707,16 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">Character in <title ref="#Metamorphoses">Metamorphoses</title>, book two. Phaeton attempts to drive his father the Sun's chariot and winged horses and must be killed by Jupiter when he loses control of the vehicle and endangers the earth.</note>
                </person>
                <person xml:id="Phoebe" sex="2"/>
+               <person xml:id="Pickle_P" sex="1">
+                  <persName>
+                     <surname>Pickle</surname>
+                     <forename>Peregrine</forename>
+                  </persName>
+                  <note type="bio" resp="#ajc"> Protagonist of <bibl>
+                        <author ref="#Smollett_Tob">Tobias Smollett’s</author>
+                        <title ref="#Peregrine_Pickle">The Adventures of Peregrine Pickle, In Which are Included Memoirs of a Lady of Quality</title> (<date when="1751">1751</date>)</bibl>
+                  </note>
+               </person>
                <person xml:id="Pierce_G" sex="1">
                   <persName>Pierce</persName>
                   <note resp="#lmw">character in <title ref="#Gaston_deBlondeville">Gaston de
@@ -11421,6 +11732,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Pleydell</persName>
                   <note resp="#esh">character in <title ref="#Guy_Mannering">Guy
                      Mannering</title>.</note>
+               </person>
+               <person xml:id="Polonius_Shakes" sex="1">
+                  <persName>Polonius</persName>
+                  <note type="bio" resp="#ajc">Chief counselor of the king; character in <persName ref="#Shakespeare">Shakespeare's</persName>
+                     <bibl corresp="#Hamlet_play">Hamlet</bibl>. </note>
                </person>
                <person xml:id="Pride_Ch1" sex="1">
                   <persName>Pride</persName>
@@ -11544,6 +11860,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Mr. Smith</persName>
                   <note resp="#lmw">Character in <title ref="#Evelina_FB">Evelina</title>; Mitford admires Burney's characterization of him in her a letter to Elford from <date when="1819-05-30">30 May 1819</date>.</note>
                </person>
+               <person xml:id="Sophy_PPchar" sex="2">
+                  <persName>
+                     <surname/>
+                     <forename>Sophy</forename>
+                  </persName>
+                  <note type="bio" resp="#ajc">Character in <persName ref="#Smollett_Tob">Tobias Smollett’s</persName>
+                     <bibl corresp="#Peregrine_Pickle">The Adventures of Peregrine Pickle</bibl> (1751)</note>
+               </person>
                <person xml:id="Teresa_R" sex="2">
                   <persName>Teresa</persName>
                   <note resp="#ebb">Attendant to <persName ref="#Claudia_R">Claudia</persName> in
@@ -11602,6 +11926,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Volumnia</persName>
                   <note resp="#lmw">character in <title ref="#Coriolanus_play"> Coriolanus</title>
                   </note>
+               </person>
+               <person xml:id="Western_Sophia_TJchar" sex="2">
+                  <persName>
+                     <surname>Western</surname>
+                     <forename>Sophia</forename>
+                  </persName>
+                  <note type="bio" resp="#ajc"> Squire Western’s daughter, model of virtue, beauty, and all good qualities. Character in <bibl corresp="#TomJones_HF">The History of Tom Jones, A Foundling</bibl> by <persName ref="#Fielding_Henry">Henry Fielding</persName> (1749)</note>
                </person>
                <person xml:id="Wheeler" sex="1"/>
                <person xml:id="WheelersWife" sex="2"/>
@@ -11824,6 +12155,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </location>
                   <note resp="#lmw">County in the northwest of England. Its county town is Chester. </note>
                </place>
+               <place xml:id="China">
+                  <placeName>China</placeName>
+                  <note resp="#ebb">spacious and populous land in <placeName>East Asia</placeName> with an ancient history, of interest to the English in the nineteenth century for trade in tea, porcelain, and silk, for which the <orgName>East India Company</orgName> supplied opium against Chinese law.</note>
+               </place>
                <place xml:id="Chippenham">
                   <placeName>Chippenham</placeName>
                </place>
@@ -11930,6 +12265,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note/>
                </place>
                <place xml:id="Europe"/>
+               <place xml:id="Exeter">
+                  <placeName>Exeter</placeName>
+                  <note resp="#ebb">Exeter is a cathedral city in the southwest of England, in the county of <placeName ref="#Devonshire">Devon</placeName>.
+                  </note>
+               </place>
                <place xml:id="Farley_Hill">
                   <placeName>Farley Hill</placeName>
                   <location>
@@ -12255,6 +12595,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>48.8567 2.3508</geo>
                   </location>
+                  <note>Capital city of the country <placeName ref="#France">France</placeName>
+                  </note>
                </place>
                <place xml:id="Penge_Wood">
                   <placeName>Penge Wood</placeName>
@@ -13099,6 +13441,16 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <publisher>Joseph Mawman</publisher>
                   <date when="1802">1802</date>
                </bibl>
+               <bibl xml:id="Travels_Nile">
+                  <title level="m">Travels to Discover the Source of the Nile, In the Years 1768, 1769, 1770, 1771
+                     1772, and 1773</title>
+                  <author>
+                     <persName ref="#Bruce_James">James Bruce</persName>
+                  </author>
+                  <biblScope unit="volume" from="1" to="6">six volumes</biblScope>
+                  <publisher>G.G.J. and J. Robinson</publisher>
+                  <date when="1790"/>
+               </bibl>
                <bibl xml:id="Visit_Paris">
                   <title>A Visit To Paris in 1814: Being a Review of the Moral, Political, Intellectual, and Social Condition of the French Capital</title>
                   <author ref="#Scott_John"/>
@@ -13349,6 +13701,16 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <publisher>Archibald Constable and Company, and John Ballantyne</publisher>
                   <note resp="#ebb">Historical novel: One of Scott's series of <title level="s">Tales from Benedictine Sources</title>, <title>The Abbot</title> introduces the character <persName>Roland Graeme</persName>, and renders <rs type="event">the experiences of <persName ref="#MaryQoS">Mary, Queen of Scots</persName> during her imprisonment and escape from <placeName>Loch Leven Castle</placeName> in <date when="1567">1567</date>
                      </rs>.</note>
+               </bibl>
+               <bibl xml:id="Absentee">
+                  <title level="m">The Absentee</title>
+                  <title level="s">Tales of Fashionable Life, second series</title>
+                  <author>
+                     <persName ref="#Edgeworth_Maria">Maria Edgeworth</persName>
+                  </author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>J. Johnson</publisher>
+                  <date when="1812"/>
                </bibl>
                <bibl xml:id="Aeneid_CP">
                   <title>The Works of Virgil, in Latin and English. The original Text correctly printed from the most authentic Editions, collated for this Purpose. The Æneid Translated By the Rev. Mr. Christopher Pitt, The Eclogues and Georgics, with Notes on the Whole, By the Rev. Mr. Joseph Warton. With several New Observations By Mr. Holdsworth, Mr. Spence, and Others. Also, A Dissertation on the Sixth Book of the Æneid, by Mr. Warburton. On the Shield of Æneas, by Mr. W. Whitehead. On the Character of Japis, by the late Dr. Atterbury, Bishop of Rochester. And, Three Essays on Pastoral, Didactic and Epic Poetry, by the Editor</title>
@@ -13765,6 +14127,16 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>The Essays of Elia</title>
                   <author ref="#Lamb_Chas"/>
                </bibl>
+               <bibl xml:id="Eunice">
+                  <title level="m">Eunice</title>
+                  <title level="s">Tales of Fashionable Life, first series</title>
+                  <author>
+                     <persName ref="#Edgeworth_Maria">Maria Edgeworth</persName>
+                  </author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>J. Johnson</publisher>
+                  <date when="1809"/>
+               </bibl>
                <bibl xml:id="Euro_Settlements_in_Am">
                   <title>An Account of the European Settlements in America, in six parts</title>
                   <author>
@@ -13941,6 +14313,15 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>Henry IV, part one</title>
                   <author ref="#Shakespeare">William Shakespeare</author>
                   <note resp="#lmw">First printed in <date when="1598">1598</date>; likely in performance before that date.</note>
+               </bibl>
+               <bibl xml:id="HenryIVpt2_play">
+                  <title>Henry IV, part two</title>
+                  <author>
+                     <persName ref="#Shakespeare">William Shakespeare</persName>
+                  </author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Printed by V.S. for Andrew Wise and William Aspley</publisher>
+                  <date when="1600"/>
                </bibl>
                <bibl xml:id="HenryV_play">
                   <title>Henry V</title>
@@ -14206,6 +14587,15 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <pubPlace ref="#London_city">London</pubPlace>
                   <date when="1818">1818</date>
                </bibl>
+               <bibl xml:id="Measure_Measure_play">
+                  <author ref="#Shakespeare">William Shakespeare</author>
+                  <title level="m">Measure for Measure</title>
+                  <pubPlace>London</pubPlace>
+                  <date when="1623">1623</date>
+                  <note resp="#ebb">Comedy likely written in <date notBefore="1603" notAfter="1604">1603 or 1604</date>, first known to be published in the <bibl>
+                        <title level="s">First Folio</title> collection of <date when="1623">1623</date>
+                     </bibl>.</note>
+               </bibl>
                <bibl xml:id="Medecine_esprit">
                   <title>La Médecine de l'esprit</title>
                   <author ref="#LeCamus_Antoine">Antoine Le Camus</author>
@@ -14238,6 +14628,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <bibl xml:id="Merry_Wives_play">
                   <title>The Merry Wives of Windsor</title>
                   <author ref="#Shakespeare">William Shakespeare</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Printed for T.C. by Arthur Johnson</publisher>
+                  <date when="1602"/>
                   <note resp="#lmw">First printed in <date when="1602">1602</date>; believed to have been written prior to <date when="1597">1597</date>.</note>
                </bibl>
                <bibl xml:id="Metamorphoses">
@@ -14387,6 +14780,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <author ref="#Euripides">Euripides</author>
                   <date when="-0408">408 B.C.</date>
                </bibl>
+               <bibl xml:id="Ormond_novel">
+                  <title>Harrington, A Tale, and Ormond, A Tale. In Three Volumes. Vol.I</title>
+                  <author ref="#Edgeworth_Maria">Maria Edgeworth</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>R. Hunter</publisher>
+                  <date when="1817"/>
+               </bibl>
                <bibl xml:id="Othello_play">
                   <title>Othello</title>
                   <author ref="#Shakespeare"/>
@@ -14432,6 +14832,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <pubPlace ref="#London_city">London</pubPlace>
                   <publisher>J. Dodsley</publisher>
                   <date when="1765">1765</date>
+               </bibl>
+               <bibl xml:id="Peregrine_Pickle">
+                  <title>The Adventures of Peregrine Pickle, In Which are Included Memoirs of a Lady of Quality </title>
+                  <author ref="#Smollett_Tob">Tobias Smollett</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>D. Wilson</publisher>
+                  <date when="1751"/>
                </bibl>
                <bibl xml:id="PeterBell_JHR">
                   <title>Peter Bell: A Lyrical Ballad</title>
@@ -14823,6 +15230,16 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>Virginius</title>
                   <author ref="#Knowles_Sheridan">Sheridan Knowles</author>
                </bibl>
+               <bibl xml:id="Vivian">
+                  <title level="m">Vivian</title>
+                  <title level="s">Tales of Fashionable Life, second series</title>
+                  <author>
+                     <persName ref="#Edgeworth_Maria">Maria Edgeworth</persName>
+                  </author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>J. Johnson</publisher>
+                  <date when="1812"/>
+               </bibl>
                <bibl xml:id="VoiceofPraise_MRM">
                   <title level="a">Sun-Set</title>
                   <author ref="#MRM"/>
@@ -14891,8 +15308,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <date when="1820">1820</date>
                </bibl>
                <bibl xml:id="Winters_Tale_play">
-                  <title>The Winter's Tale</title>
-                  <author ref="#Shakespeare"/>
+                  <title level="m">The Winter's Tale</title>
+                  <author ref="#Shakespeare">William Shakespeare</author>
+                  <pubPlace>London</pubPlace>
+                  <date when="1623">1623</date>
+                  <note resp="#ebb">Classed as a dark comedy or romance play, <title level="m">The Winter's Tale</title> was first known to be published in the <bibl>
+                        <title level="s">First Folio</title> collection of <date when="1623">1623</date>
+                     </bibl>.</note>
                </bibl>
                <bibl xml:id="WmTell_play">
                   <title>William Tell</title>

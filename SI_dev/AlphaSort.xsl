@@ -17,7 +17,7 @@
     
     <xsl:template match="edition">
         
-       <edition><xsl:text> Site Index for the Digital Mitford project. Date: </xsl:text>
+       <edition><xsl:text>Site Index for the Digital Mitford project. Date: </xsl:text>
         <xsl:value-of select="current-dateTime()"/>
         <xsl:text>. Extracted by Elisa Beshero-Bondar.
         Count of all @xml:ids in the current file: </xsl:text> <xsl:value-of select="count(//@xml:id)"/><xsl:text>. First digital edition in TEI P5, launched on 19 August 2013.</xsl:text>

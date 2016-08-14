@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM1756">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, March 20, 1820. 
+               </title>
+         <author ref="#MRM">Mary Russell Mitford</author>
+         <editor ref="#ajc">Amy Colombo</editor>
+         <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+            Project</orgName></sponsor>
+         <sponsor>University of Pittsburgh at Greensburg</sponsor>
+         <principal>Elisa Beshero-Bondar</principal>
+         <respStmt>
+            <resp>Transcription and coding by</resp>
+            <persName ref="#ajc">Amy Colombo</persName>
+         </respStmt>
+            <respStmt>
+               <resp>Proofread against manuscript by</resp>
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: 5 June 2014. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2014</date>
+            <availability>
+               <p>Reproduced by courtesy of the <placeName>Reading Central Library</placeName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 400</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1820-03-20">20 March 1820</date>. </head>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><!--ebb: Great job describing the manuscript! :-) -->
+                           <p>Two folio sheets of <material>paper</material>, folded in half, with correspondence on recto and verso 1-4; one folio sheet
+                              of <material>paper</material> with correspondence on recto and verso 5-6. There is a gap on page
+                              6 intended for an address. The pages are
+                              folded in half and thirds twice more and were sealed for posting. It appears that pages 1-4 are two large sheets folded
+                           in half; the last page (5-6) is one sheet. This letter is glued into a scrapbook. </p>
+                           <p>Address leaf (back of page 5) bears a black circular
+                              wax stamp; there is a mileage stamp <!--Applied upon deposit of letter at local PO--> reading<stamp>READING<lb/>
+                              <unclear><gap n="1" unit="chars" reason="illegible"/></unclear></stamp>.</p>
+                           <p>Address leaf is written in another hand.</p>
+                        </support>
+                        <condition>
+                           <p>Page 5/6: has a piece torn away on the side of the page and a small hole is
+                              seen above the wax seal on page 6; there is a small tear on the
+                           bottom. This page is also wrinkled - possibly due to the seal.</p>
+                        </condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <sealDesc>
+                     <p>Black wax seal on page 6.</p>
+                  </sealDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote xml:id="rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a
+              different hand from Mitford's drawing a diagonal line (from upper-left corner to lower-right) across pages 1-6.</handNote>
+           <handNote corresp="#pencil" medium="pencil">Someone cataloging the letters, apparently
+              other than Mitford, wrote the number "4" on page 1 (upper left corner) below "To Sir W. Elford."</handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <p>Mitford's spelling and punctuation are retained, except where a word is split at the
+              end of a line and the beginning of the next in the manuscript. Where Mitford's
+              spelling and hyphenation of words deviates from the standard, in order to facilitate
+              searching we are using the TEI elements "choice," "sic," and "reg" to encode both
+              Mitford's spelling and the regular international standard of Oxford English spelling,
+              following the first listed spelling in the Oxford English Dictionary. The long s and
+              ligatured forms are not encoded.</p>
+        </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener>
+               To <persName ref="#Elford_SirWm">Sir W. Elford</persName><lb/><placeName ref="#Bertram_house">Bertram House</placeName><lb/>
+               <date when="1820-03-20"> March 20th 1820</date></opener>
+               <p>The first part of your delightful letter, my dear <persName ref="#Elford_SirWm">Sir William</persName>, to which I shall reply is your supposition respecting <persName ref="#Dickinson_Mrs"> Mrs. Dickinson</persName>. You never were so much mistaken in your life. She has the finest &amp; the prettiest little <persName ref="#Dickinson_Daughter">girl</persName> that ever was seen, &amp; is herself quite well--that is <q>"as well as can be expected."</q> The young lady is quite a beauty &amp; will be a fortnight old tomorrow--I did not think it possible for so young a child to be so pretty--perhaps I
+               did not think it possible for me to be so interested in a young child--but really <choice><sic>every body</sic><reg resp="#ajc">everybody</reg></choice> calls this brat lovely--its <persName ref="#Dickinson_Charles">Papa</persName>--its <persName ref="#Dickinson_Mrs">Mama</persName>--its <persName ref="#Dickinson_Grandmama">Grandmama</persName>--its <persName ref="#Dickinson_Nurse">nurse</persName>--&amp; I who stand for a sort of maiden Aunt I think it loveliest of all--quite a She-<persName ref="#Cupid">Cupid</persName>.--After all your supposition was far from being unreasonable--for <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> had made so great a mistake as to the time that half the <choice><sic>neighbourhood</sic><reg resp="#ajc">neighborhood</reg></choice> was of your opinion.</p>
+            
+            <closer><lb/><signed>Mary Russell Mitford.</signed><lb/>
+            <address>
+               <addrLine>March, twenty two, <placeName ref="#Reading_city">Reading</placeName> 1820</addrLine>
+               <addrLine><persName ref="#Elford_SirWm">S<hi rend="superscript">r</hi> W<hi rend="superscript">m</hi> Elford</persName>Brn<hi rend="superscript"></hi>t</addrLine>
+               <addrLine><placeName ref="#Bickham_village">Bickham</placeName></addrLine>
+               <addrLine><placeName ref="#Plymouth_city">Plymouth</placeName></addrLine>
+               <addrLine><persName ref="#Monck_JB">J.B. Monck</persName></addrLine>
+            </address>
+            </closer>
+         </div>
+      </body>
+     <back>
+      
+        <div> <!--ebb: 24 June 2014: Prosop entered into site index.-->
+        </div>
+        
+        
+     </back>
+  </text>
+</TEI>
