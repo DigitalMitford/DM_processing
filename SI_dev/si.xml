@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2016-08-14T03:15:56.751-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1494. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2016-08-14T06:02:14.524-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1495. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -11585,6 +11585,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Mr. Dexter</persName>
                   <note resp="#lmw">A character in <persName ref="#Owenson_S">Lady Morgan</persName>'s novel <title ref="#ODonnel_SO">The O'Donnel's</title>.</note>
                </person>
+               <person xml:id="Mrs_MCrule">
+                  <persName>Mrs. MCrule</persName>
+                  <note resp="#ebb">Character in <bibl>
+                        <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
+                        <title level="m" ref="#Ormond_novel">Ormond</title> (<date when="1812">1812</date>)</bibl>
+                  </note>
+               </person>
                <person xml:id="Nerissa_MerchVenice" sex="2">
                   <persName>Nerissa</persName>
                   <note type="bio" resp="#ajc">Portia's maid, character in <persName ref="#Shakespeare">Shakespeare's</persName>
@@ -11653,7 +11660,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>
                      <surname>Ormond</surname>
                      <forename>Harry</forename>
-                     <note type="bio" resp="#ajc"> Protagonist of <bibl>
+                     <note type="bio" resp="#ajc">Protagonist of <bibl>
                            <author ref="#Edgeworth_Maria"> Maria Edgeworth’s</author>
                            <title level="m" ref="#Ormond_novel">Ormond</title> (<date when="1812">1812</date>)</bibl>
                      </note>
