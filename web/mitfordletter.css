@@ -160,7 +160,7 @@ color:#CC0000;
 border-bottom:1px dotted 
 }
 
-span.prose {line-height:25px}
+span.prose {line-height:25px;}
 span.prose.on{line-height:normal}
 
 span.pagebreak {font-size: .75em; text-align:center; display:block}
@@ -211,17 +211,21 @@ text-align:left;
 font-weight: normal;
 background: #CCE0EB;
 border:solid #440029 2px;
-width:300px;
-height:auto;
+/*width:300px;*/
+min-width:10vw;
+max-width:30vw;
+min-height:auto;
+max-height:50vh;
 padding:5px;
 overflow-y:scroll;
+overflow-x:scroll;
 z-index: 3;
 display:none;
 }
 
 span.anchor span.note {
  position:absolute;
-right:12%;
+/*right:12%;*/
     color:black;
     line-height:normal;
     text-decoration:none;
