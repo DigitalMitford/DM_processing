@@ -66,6 +66,7 @@ border-radius: 5px;
 div#letterHead{
 display:block;
 overflow-y:auto;
+max-width:500px;
 width: 30%;
 height:70%;
 position:fixed;
@@ -205,6 +206,7 @@ position: absolute;
 /*right:15%;*/
 color: #000041;
 text-decoration:none;
+cursor:context-menu;
 line-height:normal;
 font-size: .75em;
 text-align:left;
@@ -227,6 +229,7 @@ span.anchor span.note {
  position:absolute;
 /*right:12%;*/
     color:black;
+    cursor:context-menu;
     line-height:normal;
     text-decoration:none;
     font-size: .75em;
