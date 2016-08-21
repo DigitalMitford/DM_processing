@@ -21,7 +21,7 @@ div#images img{
 width:352px;
 display:inline-block
 }
-div#menubar{
+/*div#menubar{
    
    background-color: #FFEBC2;
     text-align:left;
@@ -35,7 +35,7 @@ border-radius: 5px;
 h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
 h2 {color:#330000; display:block; font-size: 1.5em; text-align:center}
 h3 {color:#A04747; display:block; text-align:left; font-size:1.1em;
-}
+}*/
 p.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
@@ -108,12 +108,6 @@ div#letter{
 /*ebb: Note: two forms: old form from Mitford Letter Transform before 2014-12-4 was 
 <div id="closer">, but we sometimes have multiple TEI closer elements separated by a postscript element that's not allowed inside closer, so we really need <div class="closer">. I'm keeping both rules until we batch transform. */
 div#closer{text-align:right;}
-h1 {
-color:#A04747;
-letter-spacing:3px;
-display:block;
-text-align:center;
-font-size:38px}
 
 div.closer{text-align:right;}
 h1 {
@@ -146,7 +140,7 @@ text-decoration:underline
 
 span.context[title=person]  {
 color:  #990099;
-border-bottom:1px dotted
+border-bottom:1px dotted;
 }
 
 
@@ -208,9 +202,10 @@ color:blue;
 
 span.si{
 position: absolute;
-right:15%;
+/*right:15%;*/
 color: #000041;
 text-decoration:none;
+line-height:normal;
 font-size: .75em;
 text-align:left;
 font-weight: normal;
