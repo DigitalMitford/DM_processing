@@ -132,7 +132,7 @@
      
      <xsl:if test="persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')]">
          <xsl:text>, </xsl:text>
-         <xsl:value-of select="string-join(persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')], ', ')"/>
+         <xsl:value-of select="string-join(persName/roleName[matches(., 'Princ')] | persName/roleName[matches(., 'Found')] | persName/roleName[matches(., 'Bib')], ', ')"/>
         
      </xsl:if>
          <xsl:if test="note/text()">
