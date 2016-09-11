@@ -90,7 +90,7 @@
                                 </xsl:apply-templates>  
                             
                             <h4>Past helpers with the project</h4>
-                            <xsl:variable name="assistantsPast" select="//listPerson[@sortKey='Past_Editors']/person[.//roleName[matches(., 'Assistant')]]"/>
+                            <xsl:variable name="assistantsPast" select="//listPerson[@sortKey='Past_Assistants']/person[.//roleName[matches(., 'Assistant')]]"/>
                              <xsl:text>Thanks to the following students who have helped us with this project in the past: </xsl:text> <!--<xsl:value-of select="concat($assistantsPast//forename, ' ', $assistantsPast//surname)"/>-->
                          <xsl:for-each select="$assistantsPast">
                              <xsl:sort select=".//surname[1]"/>
