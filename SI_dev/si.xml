@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2016-09-03T16:45:01.876-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1497. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2016-09-11T16:15:37.619-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1498. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -118,6 +118,21 @@
                      <affiliation>Missouri Southern State University</affiliation>
                   </occupation>
                   <note type="bio">Amy L. Gates is an Assistant Professor in the Department of English and Philosophy at Missouri Southern State University. Her teaching and research are centered around eighteenth- and nineteenth-century British literature, with a focus on British Romanticism. For the Digital Mitford project, she works on letters and is the editor of Mitford's play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title>. </note>
+               </person>
+               <person xml:id="bas">
+                  <persName>
+                     <surname>Stewart</surname>
+                     <forename>Brooke</forename>
+                     <forename>Ann</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>Green Scholar, B. A. in English Literature, in progress (expected 2018)
+                     <affiliation>University of Pittsburgh at Greensburg</affiliation>
+                  </occupation>
+                  <note type="bio">Brooke A. Stewart is a student at the University of Pittsburgh at Greensburg, where she is pursuing a bachelor's degree in English Literature and a <ref target="http://www.greensburg.pitt.edu/academics/info/digital-studies">Digital Studies Certificate</ref>. Brooke is currently working on another digital archive that focuses on Emily Dickinson. Her project, <ref target="http://dickinson16.newtfire.org/">
+                        <title level="m">Emily Dickinson</title>
+                     </ref>, looks closely at Dickinson's original poem manuscripts and compares them to published versions, which often differ in significant ways from Dickinson's original work. Brooke is a member of Phi Eta Sigma, Sigma Tau Delta, and Habitat for Humanity on her campus. She is currently working on the Digital Mitford Project as Dr. Beshero-Bondar's Green Scholar.
+                  </note>
                </person>
                <person xml:id="cfh">
                   <persName>
@@ -828,7 +843,7 @@
             </listOrg>
          </div>
          <div type="Past_Editors">
-            <listPerson sortKey="Past_Editors">
+            <listPerson sortKey="Past_Assistants">
                <person xml:id="abp">
                   <persName>
                      <surname>Parker</surname>
@@ -862,27 +877,14 @@
                      <roleName>Research Assistant</roleName>
                   </persName>
                   <occupation>M. A. in English &amp; Communication, 2013
-               <affiliation>State University of New York, Potsdam</affiliation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
                   <note type="bio">Chelsie Murray received her B.A. in Psychology and her M.A. in English &amp; Communication from the State University of New York at Potsdam. She completed her M.A. in 2013; her thesis 
-               focused on the book and reception history of <bibl>
+                     focused on the book and reception history of <bibl>
                         <author>Frances Hodgson Burnett</author>'s <title>The Secret Garden</title> and <title>The Little Princess</title>
                      </bibl>. 
-               She worked as a Digital Mitford Research Assistant in Summer 2013, writing some of the earliest Site Index entries to emerge from the editing of the 
-               Introduction to Mitford's Dramatic Works.</note>
-               </person>
-               <person xml:id="coles">
-                  <persName>
-                     <surname>Coles</surname>
-                     <forename>William</forename>
-                     <forename>Allan</forename>
-                  </persName>
-                  <note type="bio" resp="#scw #ebb">Wrote his PhD Dissertation to the Dept. of English at Harvard
-                     University of August 1956 as an edition of the correspondence of <persName ref="#MRM">Mary Russell Mitford</persName> and <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, representing parts of
-                     the collections at the John Rylands Library and the Harvard and Yale special
-                     collections. <persName ref="#coles">Coles</persName> taught at the <orgName>University of Virginia</orgName>until <date when="1958">1958</date>, when he moved to the <orgName>University of North Carolina, Chapel Hill</orgName>. He corresponded extensively with <persName ref="#Needham_Francis">Francis Needham</persName>in the <date from="1950" to="1959">1950s</date>, during the course of which they exchanged research on contextual information, and shared transcriptions of <persName ref="#MRM">Mitford</persName>'s letters. Some of <persName ref="#coles">Coles</persName>'s letters are preserved among <bibl corresp="#Needham_PapersRCL">
-                        <persName ref="#Needham_Francis">Needham</persName>'s papers, held at the <orgName ref="#ReadingCL">Reading Central Library</orgName>
-                     </bibl>.</note>
+                     She worked as a Digital Mitford Research Assistant in Summer 2013, writing some of the earliest Site Index entries to emerge from the editing of the 
+                     Introduction to Mitford's Dramatic Works.</note>
                </person>
                <person xml:id="cvk">
                   <persName>
@@ -932,30 +934,6 @@
                      <affiliation>UCLA</affiliation>
                   </occupation>
                   <note type="bio">In 2014, Gracia Amos was a fourth year undergraduate at UCLA, finishing a degree in English with a concentration in poetry. Her areas of interest include mythology, intermedia, critical theory, and postmodern poetry. She has been a poetry editor for Westwind, UCLA's journal of the literary arts, and currently publishes a zine with LA-based artists' collective which she co-founded, Nothing New Publications. She worked on Digital Mitford in 2014.<p/>
-                  </note>
-               </person>
-               <person xml:id="Harness_Wm" sex="1">
-                  <persName>
-                     <forename>William</forename>
-                     <surname>Harness</surname>
-                  </persName>
-                  <birth when="1790-03-14">
-                     <placeName>near Wickham, Hampshire</placeName>
-                  </birth>
-                  <death when="1869-11-11">
-                     <placeName>the deanery at Battle</placeName>
-                  </death>
-                  <occupation>literary</occupation>
-                  <occupation>religious</occupation>
-                  <note resp="#ebb #lmw">
-                     <p>A lifelong friend of <persName ref="#MRM">Mary Russell Mitford</persName> who knew her from their childhood in the 1790s, Harness launched the first major effort to collect and edit Mitford's letters into a series of volumes, which was completed by his assistant, <persName ref="#Lestrange">Alfred Guy Kingan L'Estrange</persName> a year after Harness's death, and published as <title ref="#Lestrange_Letters">The Life of Mary Russell Mitford, Related in a Selection from her Letters to her Friends</title>. This collection was originally intended to be six volumes, but was cut back to three by the publishers, to Harness's distress.</p>
-                     <p>Harness and <persName ref="#Byron">Byron</persName> were also friends from their schooling at Harrow, as Byron sympathized with Harness's experience of a disabled foot, crushed in an accident in early childhood. Byron considered dedicating <bibl>the first two cantos of <title>Childe Harold's Pilgrimage</title>
-                        </bibl> to Harness, but refrained so as not to taint Harness's reputation as he was taking orders as an Anglican curate. Harness admired and encouraged Mitford's playwrighting in particular, and she commented that he was one of the few of her friends who thought she should prioritize the drama over prose. When <persName ref="#Macready_Wm">William Macready</persName> was attacked in <bibl corresp="#Stage">an anonymous Blackwood's Magazine piece in 1825</bibl> for his demands and rudeness to Mitford over revisions to <title ref="#Rienzi">Rienzi</title>, Macready assumed that Harness was the author of the anonymous piece, though in <date when="1839">1839</date> after many years of distance, Harness assured Macready in person that he was not the writer, though he may have shared word of the poor treatment his friend had endured.</p>
-                     <p>William Harness was born on March 14, 1790 in Wickham, Berkshire to John Harness, M.D. and Sarah Dredge; he was baptized at Whitchurch, Hampshire on April 13, 1790. He received his B.A. in 1812 and his M.A. in 1816 from Christ's College, Cambridge. He served as curate at Kelmeston, Hampshire (1812) and Dorking (1814-1816). He was preacher at Trinity Chapel, Conduit Stree, London and minister and lecturer at St. Anne's in Soho. He was Boyle lecturer in London (1822) and was curate at Hampstead from 1828 to 1844. In 1825, he published an eight-volume edition of Shakespeare, including a biography; his friends would later endow a prize in his name at Cambridge for the study of Shakespearean literature. He also authored numerous essays and reviews, some for the Quarterly Review. From 1844 to 1847 he was minister of Brompton Chapel in London. He undertook to raise the funds to build the church of All Saints, Knightsbridge, in the parish of St. Margaret's Westminster, which opened in 1849, and became perpetual curate of that congregation. At the 1851 and 1861 censuses, he lived at 3 Hyde Park Terrace, Westminster St. Margaret, Middlesex, with his sister Mary Harness and his first cousin Jemima Harness, daughter of his uncle William. He died on November 11, 1869 while on a visit to one of his former curates in Battle, Sussex. At the time of his death he living at the same address at 3 Hyde Park Terrace; he is buried in Bath.
-                     </p>[Sources: <bibl>
-                        <author>Duncan-Jones</author>, <title>Miss Mitford and Mr. Harness</title> (<date when="1955">1955</date>)</bibl>. Lord Byron and His Times: <ptr target="http://lordbyron.cath.lib.vt.edu/contents.php?doc=WiHarne.1871.Contents"/>]</note>
-                  <note>
-                     <ref target="http://viaf.org/viaf/3342920"/>
                   </note>
                </person>
                <person xml:id="hbl">
@@ -1011,20 +989,6 @@
                   <note type="bio">Kristen Murphy is at work on an M.A. in English and Communication from SUNY Potsdam. As part of Dr. Wilson's Fall 2015 graduate course, "Book History in a Digital Age," she worked on a class project to edit the sonnets from Mitford's Dramatic Scenes, Sonnets, and Other Poems (1827).  
                   </note>
                </person>
-               <person xml:id="Lestrange">
-                  <persName>
-                     <surname>L'Estrange</surname>
-                     <forename>Alfred</forename>
-                     <forename>Guy</forename>
-                     <forename>Kingan</forename>
-                  </persName>
-                  <birth when="1832"/>
-                  <death when="1915"/>
-                  <note resp="#ebb">L'Estrange was a curate working for William Harness, and assisted him with the first edition of Mary Russell Mitford's letters until Harness's death, at which point L'Estrange took over the editing and produced the collection of letters as <bibl corresp="#Lestrange_Letters">the three-volume <title>The Life of Mary Russell Mitford</title>
-                     </bibl> under his own name. [Sources: <bibl>
-                        <persName ref="#Needham_Francis">Frances Needham</persName>'s notes on <persName ref="#MRM">Mitford</persName>'s papers</bibl> and <bibl corresp="#Lestrange_Letters">the Harness/L'Estrange edition</bibl>. VIAF <ptr target="http://viaf.org/viaf/92050950"/>]
-                  </note>
-               </person>
                <person xml:id="mq">
                   <persName>
                      <surname>Kohli</surname>
@@ -1067,22 +1031,6 @@
                      <p/>
                   </note>
                </person>
-               <person xml:id="Needham_Francis">
-                  <persName>
-                     <surname>Needham</surname>
-                     <forename>Francis R</forename>
-                  </persName>
-                  <note type="bio" resp="#ad">
-                     <persName ref="#Needham_Francis">Francis R. Needham</persName> was librarian
-                     and secretary to the Duke Wellington (based at Stratfield Saye in Hampshire).
-                     He was a passionate Mitfordian and worked tirelessly to try and collect
-                     Mitford's letters. He corresponded with <persName ref="#coles">W. A.
-                        Coles</persName> and <persName ref="#Roberts_Wm">W. J. Roberts</persName>,
-                     two Mitford biographers, and may have also corresponded with <persName ref="#Watson_Vera">Vera Watson</persName>, the most reliable of Mitford's
-                     biographer. He attempted to set up a Mitford Society and is largely responsible
-                     for the Mitford collection at <orgName ref="#ReadingCL">Reading Central Library</orgName>
-                  </note>
-               </person>
                <person xml:id="nlh">
                   <persName>
                      <surname>Hebert</surname>
@@ -1096,24 +1044,6 @@
                      <p/>
                   </note>
                </person>
-               <person xml:id="pencil">
-                  <persName>unknown</persName>
-                  <note resp="#ebb">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who
-                     left grey pencil marks on her letters now in the Reading Central Library's
-                     collection. </note>
-               </person>
-               <person xml:id="pencilRy">
-                  <persName>unknown</persName>
-                  <note resp="#ebb">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who
-                     left grey pencil marks on her letters now in the <placeName>The John Rylands
-                        Library</placeName> collection. </note>
-               </person>
-               <person xml:id="rc">
-                  <persName>unknown</persName>
-                  <note resp="#kab">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who
-                     left red crayon marks on her letters now in the Reading Central Library's
-                     collection. </note>
-               </person>
                <person xml:id="rct">
                   <persName>
                      <surname>Tang</surname>
@@ -1126,18 +1056,6 @@
                   <note type="bio">In 2014, Rebecca Tang was a fourth-year student at UCLA, majoring in English with a particular interest in 19th-century Romantic poetry. Interested in archival work, she was drawn to the Digital Mitford project in order to learn more about the editing and coding process. After graduation, Rebecca hopes to go into the editing and publishing business for book and magazine companies. She worked on Digital Mitford in 2014.<p/>
                   </note>
                </person>
-               <person xml:id="Roberts_Wm" sex="1">
-                  <persName>
-                     <surname>Roberts</surname>
-                     <forename>William</forename>
-                     <forename>James</forename>
-                  </persName>
-                  <occupation>literary</occupation>
-                  <occupation>biographer</occupation>
-                  <note resp="#lmw #scw">Early twentieth-century Mitford biographer and author of <title>Mary Russell Mitford: The Tragedy of a Blue
-                     Stocking</title>. He corresponded with <persName ref="#Needham_Francis">Francis Needham</persName> while compiling his biography; some of that correspondence is preserved among the latter's own papers held at the <orgName ref="#ReadingCL">Reading Central Library</orgName>. 
-                  </note>
-               </person>
                <person xml:id="tnh">
                   <persName>
                      <surname>Hays</surname>
@@ -1147,18 +1065,8 @@
                   <occupation>
                      <affiliation>UCLA</affiliation>
                   </occupation>
-                  <note type="bio">In 2014, Toni Hays was a student at UCLA, majoring in English Literature with a particular focus on aestheic theory. She is particularly interested in the application of aesthetic theory to British literature of the late Victorian and Modernist periods. She believe in a holistic approach to literature where one combines an understanding of context and content to inform critical analysis. She is also commited to the provision and accessiblity of scholarly research. She worked on Digital Mitford in 2014. <p/>
+                  <note type="bio">In 2014, Toni Hays was a student at UCLA, majoring in English Literature with a particular focus on aestheic theory. She is particularly interested in the application of aesthetic theory to British literature of the late Victorian and Modernist periods. She believes in a holistic approach to literature where one combines an understanding of context and content to inform critical analysis. She is also commited to the provision and accessiblity of scholarly research. She worked on Digital Mitford in 2014. <p/>
                   </note>
-               </person>
-               <person xml:id="Watson_Vera" sex="2">
-                  <persName>
-                     <surname>Watson</surname>
-                     <forename>Vera</forename>
-                  </persName>
-                  <note>Early Mitford critic and author of the biography <title>Mary Russell
-                        Mitford</title>
-                  </note>
-                  <occupation>Scholar</occupation>
                </person>
                <person xml:id="wnb">
                   <persName>
@@ -1197,6 +1105,115 @@
                   </occupation>
                   <note type="bio">Robin Xiong is Xiong Junwen from China. In 2014, she was an undergraduate student in UCLA majoring in Pre-Asian Studies. Robin loves movies and photography. She worked on Digital Mitford in 2014.<p/>
                   </note>
+               </person>
+            </listPerson>
+            <listPerson sortKey="Past_Editors">
+               <person xml:id="coles">
+                  <persName>
+                     <surname>Coles</surname>
+                     <forename>William</forename>
+                     <forename>Allan</forename>
+                  </persName>
+                  <note type="bio" resp="#scw #ebb">Wrote his PhD Dissertation to the Dept. of English at Harvard
+                     University of August 1956 as an edition of the correspondence of <persName ref="#MRM">Mary Russell Mitford</persName> and <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, representing parts of
+                     the collections at the John Rylands Library and the Harvard and Yale special
+                     collections. <persName ref="#coles">Coles</persName> taught at the <orgName>University of Virginia</orgName>until <date when="1958">1958</date>, when he moved to the <orgName>University of North Carolina, Chapel Hill</orgName>. He corresponded extensively with <persName ref="#Needham_Francis">Francis Needham</persName>in the <date from="1950" to="1959">1950s</date>, during the course of which they exchanged research on contextual information, and shared transcriptions of <persName ref="#MRM">Mitford</persName>'s letters. Some of <persName ref="#coles">Coles</persName>'s letters are preserved among <bibl corresp="#Needham_PapersRCL">
+                        <persName ref="#Needham_Francis">Needham</persName>'s papers, held at the <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                     </bibl>.</note>
+               </person>
+               <person xml:id="Harness_Wm" sex="1">
+                  <persName>
+                     <forename>William</forename>
+                     <surname>Harness</surname>
+                  </persName>
+                  <birth when="1790-03-14">
+                     <placeName>near Wickham, Hampshire</placeName>
+                  </birth>
+                  <death when="1869-11-11">
+                     <placeName>the deanery at Battle</placeName>
+                  </death>
+                  <occupation>literary</occupation>
+                  <occupation>religious</occupation>
+                  <note resp="#ebb #lmw">
+                     <p>A lifelong friend of <persName ref="#MRM">Mary Russell Mitford</persName> who knew her from their childhood in the 1790s, Harness launched the first major effort to collect and edit Mitford's letters into a series of volumes, which was completed by his assistant, <persName ref="#Lestrange">Alfred Guy Kingan L'Estrange</persName> a year after Harness's death, and published as <title ref="#Lestrange_Letters">The Life of Mary Russell Mitford, Related in a Selection from her Letters to her Friends</title>. This collection was originally intended to be six volumes, but was cut back to three by the publishers, to Harness's distress.</p>
+                     <p>Harness and <persName ref="#Byron">Byron</persName> were also friends from their schooling at Harrow, as Byron sympathized with Harness's experience of a disabled foot, crushed in an accident in early childhood. Byron considered dedicating <bibl>the first two cantos of <title>Childe Harold's Pilgrimage</title>
+                        </bibl> to Harness, but refrained so as not to taint Harness's reputation as he was taking orders as an Anglican curate. Harness admired and encouraged Mitford's playwrighting in particular, and she commented that he was one of the few of her friends who thought she should prioritize the drama over prose. When <persName ref="#Macready_Wm">William Macready</persName> was attacked in <bibl corresp="#Stage">an anonymous Blackwood's Magazine piece in 1825</bibl> for his demands and rudeness to Mitford over revisions to <title ref="#Rienzi">Rienzi</title>, Macready assumed that Harness was the author of the anonymous piece, though in <date when="1839">1839</date> after many years of distance, Harness assured Macready in person that he was not the writer, though he may have shared word of the poor treatment his friend had endured.</p>
+                     <p>William Harness was born on March 14, 1790 in Wickham, Berkshire to John Harness, M.D. and Sarah Dredge; he was baptized at Whitchurch, Hampshire on April 13, 1790. He received his B.A. in 1812 and his M.A. in 1816 from Christ's College, Cambridge. He served as curate at Kelmeston, Hampshire (1812) and Dorking (1814-1816). He was preacher at Trinity Chapel, Conduit Stree, London and minister and lecturer at St. Anne's in Soho. He was Boyle lecturer in London (1822) and was curate at Hampstead from 1828 to 1844. In 1825, he published an eight-volume edition of Shakespeare, including a biography; his friends would later endow a prize in his name at Cambridge for the study of Shakespearean literature. He also authored numerous essays and reviews, some for the Quarterly Review. From 1844 to 1847 he was minister of Brompton Chapel in London. He undertook to raise the funds to build the church of All Saints, Knightsbridge, in the parish of St. Margaret's Westminster, which opened in 1849, and became perpetual curate of that congregation. At the 1851 and 1861 censuses, he lived at 3 Hyde Park Terrace, Westminster St. Margaret, Middlesex, with his sister Mary Harness and his first cousin Jemima Harness, daughter of his uncle William. He died on November 11, 1869 while on a visit to one of his former curates in Battle, Sussex. At the time of his death he living at the same address at 3 Hyde Park Terrace; he is buried in Bath.
+                     </p>[Sources: <bibl>
+                        <author>Duncan-Jones</author>, <title>Miss Mitford and Mr. Harness</title> (<date when="1955">1955</date>)</bibl>. Lord Byron and His Times: <ptr target="http://lordbyron.cath.lib.vt.edu/contents.php?doc=WiHarne.1871.Contents"/>]</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/3342920"/>
+                  </note>
+               </person>
+               <person xml:id="Lestrange">
+                  <persName>
+                     <surname>L'Estrange</surname>
+                     <forename>Alfred</forename>
+                     <forename>Guy</forename>
+                     <forename>Kingan</forename>
+                  </persName>
+                  <birth when="1832"/>
+                  <death when="1915"/>
+                  <note resp="#ebb">L'Estrange was a curate working for William Harness, and assisted him with the first edition of Mary Russell Mitford's letters until Harness's death, at which point L'Estrange took over the editing and produced the collection of letters as <bibl corresp="#Lestrange_Letters">the three-volume <title>The Life of Mary Russell Mitford</title>
+                     </bibl> under his own name. [Sources: <bibl>
+                        <persName ref="#Needham_Francis">Frances Needham</persName>'s notes on <persName ref="#MRM">Mitford</persName>'s papers</bibl> and <bibl corresp="#Lestrange_Letters">the Harness/L'Estrange edition</bibl>. VIAF <ptr target="http://viaf.org/viaf/92050950"/>]
+                  </note>
+               </person>
+               <person xml:id="Needham_Francis">
+                  <persName>
+                     <surname>Needham</surname>
+                     <forename>Francis R</forename>
+                  </persName>
+                  <note type="bio" resp="#ad">
+                     <persName ref="#Needham_Francis">Francis R. Needham</persName> was librarian
+                     and secretary to the Duke Wellington (based at Stratfield Saye in Hampshire).
+                     He was a passionate Mitfordian and worked tirelessly to try and collect
+                     Mitford's letters. He corresponded with <persName ref="#coles">W. A.
+                        Coles</persName> and <persName ref="#Roberts_Wm">W. J. Roberts</persName>,
+                     two Mitford biographers, and may have also corresponded with <persName ref="#Watson_Vera">Vera Watson</persName>, the most reliable of Mitford's
+                     biographer. He attempted to set up a Mitford Society and is largely responsible
+                     for the Mitford collection at <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                  </note>
+               </person>
+               <person xml:id="pencil">
+                  <persName>unknown</persName>
+                  <note resp="#ebb">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who
+                     left grey pencil marks on her letters now in the Reading Central Library's
+                     collection. </note>
+               </person>
+               <person xml:id="pencilRy">
+                  <persName>unknown</persName>
+                  <note resp="#ebb">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who
+                     left grey pencil marks on her letters now in the <placeName>The John Rylands
+                        Library</placeName> collection. </note>
+               </person>
+               <person xml:id="rc">
+                  <persName>unknown</persName>
+                  <note resp="#kab">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who
+                     left red crayon marks on her letters now in the Reading Central Library's
+                     collection. </note>
+               </person>
+               <person xml:id="Roberts_Wm" sex="1">
+                  <persName>
+                     <surname>Roberts</surname>
+                     <forename>William</forename>
+                     <forename>James</forename>
+                  </persName>
+                  <occupation>literary</occupation>
+                  <occupation>biographer</occupation>
+                  <note resp="#lmw #scw">Early twentieth-century Mitford biographer and author of <title>Mary Russell Mitford: The Tragedy of a Blue
+                     Stocking</title>. He corresponded with <persName ref="#Needham_Francis">Francis Needham</persName> while compiling his biography; some of that correspondence is preserved among the latter's own papers held at the <orgName ref="#ReadingCL">Reading Central Library</orgName>. 
+                  </note>
+               </person>
+               <person xml:id="Watson_Vera" sex="2">
+                  <persName>
+                     <surname>Watson</surname>
+                     <forename>Vera</forename>
+                  </persName>
+                  <note>Early Mitford critic and author of the biography <title>Mary Russell
+                        Mitford</title>
+                  </note>
+                  <occupation>Scholar</occupation>
                </person>
             </listPerson>
          </div>
@@ -7456,7 +7473,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <forename>Berkeley</forename>
                      <surname>Monck</surname>
                   </persName>
-            
                   <note resp="#lmw #ebb #scw">Member of Parliament for <placeName ref="#Reading_city">Reading
                       area</placeName>
                      <date from="1820" to="1830">1820-1830</date>, who frequently franked <persName ref="#MRM">Mary Russell Mitford</persName>'s
@@ -13044,21 +13060,41 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
          <div type="nature"><!--ebb 2016-06-07 Changed from div type="plant" to add animal species list-->
             <list sortKey="animals">
                <item xml:id="Long_tailed_wren">
-                  <name>Long Tailed Wren</name>
+                  <name>long-tailed wren</name>
+                  <name>Naga wren-babbler</name>
+                  <name>
+                     <rs type="genus">Spelaeornis</rs>
+                     <rs type="species">chocolatinus</rs>
+                     <rs type="family">Timaliidae</rs>
+                  </name>
                   <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species in the family Timaliidae.</note>
                </item>
             </list>
             <list sortKey="plants">
                <item xml:id="anemone">
                   <name>anemone</name>
+                  <name>
+                     <rs type="genus">Anemone</rs>
+                     <rs type="family">Ranunculaceae</rs>
+                  </name>
                   <note resp="#lmw"> Mitford may refer to the European wood anemone (Anemone nemorosa), an early-spring flowering plant in the genus Anemone in the family Ranunculaceae, native to Europe. Common names include wood anemone, windflower, thimbleweed, and smell fox, an allusion to the musky smell of the leaves. However, she may also refer to one of the cultivated varieties not native to England, such as the poppy anemone (Anemone coronaria), which is native to the Mediterranean region but was cultivated in France beginning in the eighteenth century. Unlike the wood anemone, the poppy anemone appears in bright shades of red and blue.</note>
                </item>
                <item xml:id="beech">
                   <name>beech</name>
+                  <name>
+                     <rs type="genus">Fagus</rs>
+                     <rs type="family">Fagaceae</rs>
+                     <rs type="species">sylvatica</rs>
+                  </name>
                   <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite trees. Beech (Fagus) is a genus of deciduous trees in the family Fagaceae, native to temperate Europe, Asia and North America. Mitford likely refers to the European beech, Fagus sylvatica. The bark is smooth and light grey and the tree bears nuts that are edible, though bitter.</note>
                </item>
                <item xml:id="Cabbage_red">
                   <name>red cabbage</name>
+                  <name>
+                     <rs type="genus">Brassica</rs>
+                     <rs type="species">oleracea</rs>
+                     <rs type="family">rubra</rs>
+                  </name>
                   <note resp="#lmw">Garden plant, related to the green cabbage and also called purple cabbage. The red cabbage (Brassica oleracea var. capitata f. rubra) is a kind of cabbage whose leaves are coloured dark red/purple. Mitford humorously compares herself to one in her letter to Elford of 14 May 1819 (because she is round and red).</note>
                </item>
                <item xml:id="China_Aster">
@@ -13068,30 +13104,64 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </item>
                <item xml:id="cowslip">
                   <name>cowslip</name>
-                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers, blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mitford likely refers to Primula veris (also called cowslip, common cowslip, cowslip primrose), a flowering plant in the genus Primula of the family Primulaceae. The species is native throughout most of temperate Europe and Asia, although absent from more northerly areas. May hybridize with English/common primroses.
+                  <name>common cowslip</name>
+                  <name>cowslip primrose</name>
+                  <name>
+                     <rs type="genus">Primula</rs>
+                     <rs type="species">veris</rs>
+                     <rs type="family">Primulaceae</rs>
+                  </name>
+                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers, blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mitford likely refers to Primula veris (also called cowslip, common cowslip, cowslip primrose), a flowering plant in the genus Primula of the family Primulaceae. The species is native throughout most of temperate <placeName>Europe</placeName> and <placeName>Asia</placeName>, although absent from more northerly areas. May hybridize with <rs type="plant" ref="#primrose">English/common primroses</rs>.
                </note>
                </item>
                <item xml:id="fir">
                   <name>fir</name>
-                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite trees. Firs (Abies) are a genus of approximately fifty species of evergreen coniferous trees in the family Pinaceae. They are found through much of North and Central America, Europe, Asia, and North Africa. Unlike other conifers, firs bear erect cones that are raised above the branches like candles; at maturity, the cones disintegrate to release winged seeds.</note>
+                  <name>
+                     <rs type="genus">Abies</rs>
+                     <rs type="family">Pinaceae</rs>
+                  </name>
+                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite trees. Firs (Abies) are a genus of approximately fifty species of evergreen coniferous trees in the family Pinaceae. They are found through much of <placeName>North and Central America</placeName>, <placeName>Europe</placeName>, <placeName>Asia</placeName>, and <placeName>North Africa</placeName>. Unlike other conifers, firs bear erect cones that are raised above the branches like candles; at maturity, the cones disintegrate to release winged seeds.</note>
                </item>
                <item xml:id="lily_valley">
                   <name>lily of the valley</name>
-                  <note resp="#lmw">Lily of the valley (sometimes written lily-of-the-valley), a scented woodland flowering plant native to the cool temperate Northern Hemisphere in Asia, and Europe. Its scientific name is Convallaria majalis. It was previously classified as in its own family (Convallariaceae), and before that was believed to be part of the Lily family (Liliaceae).</note>
+                  <name>lily-of-the-valley</name>
+                  <name>
+                     <rs type="genus">Convallaria</rs>
+                     <rs type="species">majalis</rs>
+                  </name>
+                  <note resp="#lmw">Lily of the valley (sometimes written lily-of-the-valley), a scented woodland flowering plant native to the cool temperate <placeName>Northern Hemisphere</placeName> in <placeName>Asia</placeName> and <placeName>Europe</placeName>. Its scientific name is Convallaria majalis. It was previously classified as in its own family (Convallariaceae), and before that was believed to be part of the Lily family (Liliaceae).</note>
                </item>
                <item xml:id="primrose">
                   <name>primrose</name>
-                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers, blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mitford likely refers to Primula vulgaris, a species of flowering plant in the family Primulaceae, native to western and southern Europe, commonly called the English primrose or common primrose. It is not to be confused with evening primrose or Oenothera, a genus of 100+ species of herbaceous flowering plants native to the Americas, which are not closely related to the true primroses (genus Primula). Mitford also mentions the evening primrose in her writing. Evening primroses have been cultivated in Europe since the early seventeenth century and are now naturalized in some parts of Europe and Asia.
+                  <name>English primrose</name>
+                  <name>common primrose</name>
+                  <name>true primrose</name>
+                  <name>
+                     <rs type="genus">Primula</rs>
+                     <rs type="species">vulgaris</rs>
+                     <rs type="family">Primulaceae</rs>
+                  </name>
+                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers, blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mitford likely refers to Primula vulgaris, a species of flowering plant in the family Primulaceae, native to <placeName>western and southern Europe</placeName>, commonly called the English primrose or common primrose. It is not to be confused with evening primrose or Oenothera, a genus of 100+ species of herbaceous flowering plants native to the Americas, which are not closely related to the true primroses (genus Primula). Mitford also mentions the evening primrose in her writing. Evening primroses have been cultivated in Europe since the early seventeenth century and are now naturalized in some parts of Europe and Asia.
                   </note>
                </item>
                <item xml:id="violet">
                   <name>violet</name>
-                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers (as it was of many of her contemporaries), blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mentioned in the <title ref="#Poems_2nd_ed_MRM">1811 Poems</title> as well as in <title ref="#Our_Village1st_ed">Our Village</title>  Mitford likely refers to wild forms of the Viola, a genus of flowering plants in the violet family Violaceae. It is the largest genus in the family, containing more than 500 species. Most species are found in the temperate Northern Hemisphere. The term "pansy" is normally used for those multi-coloured, large-flowered cultivars which are used as bedding plants. The terms "viola" and "violet" are used for small-flowered annuals or perennials, including the species.
+                  <name>
+                     <rs type="genus">Viola</rs>
+                     <rs type="family">Violaceae</rs>
+                  </name>
+                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers (as it was of many of her contemporaries), blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mentioned in the <title ref="#Poems_2nd_ed_MRM">1811 Poems</title> as well as in <title ref="#Our_Village1st_ed">Our Village</title>  Mitford likely refers to wild forms of the Viola, a genus of flowering plants in the violet family Violaceae. It is the largest genus in the family, containing more than 500 species. Most species are found in the temperate <placeName>Northern Hemisphere</placeName>. The term "pansy" is normally used for those multi-coloured, large-flowered cultivars which are used as bedding plants. The terms "viola" and "violet" are used for small-flowered annuals or perennials, including the species.
                   </note>
                </item>
                <item xml:id="woodsorrel">
                   <name>wood sorrel</name>
-                  <note resp="#lmw">Mitford likely refers to common wood sorrel (Oxalis acetosella), a member of the oxalis family sometimes also spelled "woodsorrel" or "wood-sorrel." It grows in mixed woodlands and bears a white flower. It is not related to sorrel proper (Rumex acetosa), although the two plants share an acidic taste that may have led to the name.</note>
+                  <name>woodsorrel</name>
+                  <name>wood-sorrel</name>
+                  <name>
+                     <rs type="genus">Oxalis</rs>
+                     <rs type="species">acetosella</rs>
+                  </name>
+                  <note resp="#lmw">Mitford likely refers to common wood sorrel (Oxalis acetosella), a member of the oxalis family sometimes also spelled "woodsorrel" or "wood-sorrel." It grows in mixed woodlands and bears a white flower. It is not related to <rs type="plant">sorrel proper (Rumex acetosa)</rs>, although the two plants share an acidic taste that may have led to the name.</note>
                </item>
             </list>
          </div>
