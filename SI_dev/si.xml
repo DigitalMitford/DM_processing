@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2016-09-11T17:02:15.453-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1498. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2016-09-11T18:05:35.41-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1499. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -278,7 +278,7 @@
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
-                     <affiliation>UCLA</affiliation>
+                     <affiliation>University of Oregon</affiliation>
                   </occupation>
                   <note type="bio">
                      <note type="bio">
@@ -424,7 +424,7 @@
                      <surname>Hughes</surname>
                      <forename>Megan</forename>
                      <forename>Abigail</forename>
-                     <roleName>Editor</roleName>
+                     <roleName>Consultant</roleName>
                   </persName>
                   <occupation>Green Scholar, B.A. in English Literature and English Writing, Minor: Visual and Performing Arts
                      <affiliation>University of Pittsburgh at Greensburg</affiliation>
@@ -432,7 +432,7 @@
                   <occupation>M.F.A. in progress
                      <affiliation>Loyola Marymount University</affiliation>
                   </occupation>
-                  <note type="bio"/>
+                  <note type="bio">Megan Hughes was Elisa Beshero-Bondar's Green Scholar (or research assistant) before she graduated from Pitt-Greensburg in 2014. She is studying and pursuing a career in screen writing for television at Loyola Marymount University.</note>
                </person>
                <person xml:id="mc">
                   <persName>
@@ -1176,11 +1176,15 @@
                      for the Mitford collection at <orgName ref="#ReadingCL">Reading Central Library</orgName>
                   </note>
                </person>
+               <person xml:id="penAnnot_RCL">
+                  <persName>unknown</persName>
+                  <note resp="#ebb #ghb">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, who occasionally left notes in a spidery thin hand to explain or document details in Mitford's letters in the margins of her pages, noted in the manuscripts held at <orgName ref="#ReadingCL">Reading Central Library</orgName>. This may be <persName ref="#Harness_Wm">William Harness</persName> or <persName ref="#Lestrange">A. G. L'Estrange</persName>.</note>
+               </person>
                <person xml:id="pencil">
                   <persName>unknown</persName>
-                  <note resp="#ebb">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who
-                     left grey pencil marks on her letters now in the Reading Central Library's
-                     collection. </note>
+                  <note resp="#ebb">Someone, apparently other than <persName ref="#MRM">Mitford</persName> who
+                     left grey pencil marks on her letters now in the <orgName ref="#ReadingCL">Reading Central Library</orgName>'s
+                     collection, apparently to catalog the letters.</note>
                </person>
                <person xml:id="pencilRy">
                   <persName>unknown</persName>
@@ -12257,7 +12261,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         money at those prices. The second theater was destroyed by fire on 5 March
                         1856. The third theater, designed by Edward Middleton Barry, opened in 1858
                         and remains the nucleus of today's theater. The theater became the Royal
-                        Opera House in 1892 and the building was renovated and expaneded in the
+                        Opera House in 1892 and the building was renovated and expanded in the
                         1980s and 1990s.</p>
                   </note>
                </place>

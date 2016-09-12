@@ -91,7 +91,7 @@
                             
                             <h4>Past helpers with the project</h4>
                             <xsl:variable name="assistantsPast" select="//listPerson[@sortKey='Past_Assistants']/person[.//roleName[matches(., 'Assistant')]]"/>
-                             <xsl:text>Thanks to the following students who have helped us with this project in the past: </xsl:text> <!--<xsl:value-of select="concat($assistantsPast//forename, ' ', $assistantsPast//surname)"/>-->
+                             <xsl:text>Thanks to the following students from SUNY Potsdam and UCLA who helped us with this project in the past: </xsl:text> <!--<xsl:value-of select="concat($assistantsPast//forename, ' ', $assistantsPast//surname)"/>-->
                          <xsl:for-each select="$assistantsPast">
                              <xsl:sort select=".//surname[1]"/>
                             <xsl:choose><xsl:when test="not(position() = last())"><xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
