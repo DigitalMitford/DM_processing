@@ -24,7 +24,7 @@ TH6.text = "1828 to 1854"
 TH7 = ET.SubElement(THRow, "th")
 TH7.text = "1837 to 1854"
 
-f = open('Rienzi_appText.txt')
+f = open('Rienzi_appTextAll.txt')
 f.readline() # read and ignore the first line
 for line in f: # iterate over the remaining lines
 	v = line.split('\t')
@@ -34,7 +34,7 @@ for line in f: # iterate over the remaining lines
 	dist2_3 = distance(v[2], v[3])
 	dist2_4 = distance(v[2], v[4])
 	dist3_4 = distance(v[3], v[4])	
-	TR = ET.SubElement(Table, "tr")
+	TR = ET.SubElement(Table, "tr", title="vars")
 	TD1 = ET.SubElement(TR, "td")
 	TD1.text = v[0]
 	TD2 = ET.SubElement(TR, "td")
@@ -49,12 +49,23 @@ for line in f: # iterate over the remaining lines
 	TD6.text = str(dist2_4)
 	TD7 = ET.SubElement(TR, "td")
 	TD7.text = str(dist3_4)
+	TRt = ET.SubElement(Table, "tr", title="texts")
+	TDt0 = ET.SubElement(TRt, "td")
+	TDt0.text = v[0]
+	TDt1 = ET.SubElement(TRt, "td")
+	TDt1.text = v[1]
+	TDt2 = ET.SubElement(TRt, "td")
+	TDt2.text = v[2]
+	TDt3 = ET.SubElement(TRt, "td")
+	TDt3.text = v[3]
+	TDt4 = ET.SubElement(TRt, "td")
+	TDt4.text = v[4]
 	
 #with open('LevDistsRienzi.xml','wb') as g:
 #	g.write(lxml.etree.tostring(the_doc, pretty_print=True))
 #print lxml.etree.tostring(the_doc, pretty_print=True)
 tree = ET.ElementTree(Root)
-tree.write('LevDistsRienzi.xml')
+tree.write('LevDistsRienziAll.xml')
 f.close()
 
 	#TRl = E.tr

@@ -14,13 +14,37 @@
             
         </xsl:for-each>
         <xsl:text>&#10;</xsl:text> 
-        <xsl:apply-templates select="//div[@type='preface']"/>
-        <xsl:apply-templates select=""
+        <xsl:apply-templates select="//text//div//p | //text//div//l | //text//div//stage"/>
     </xsl:template>
-    <xsl:template match="text">
-        <xsl:apply-templates se
+   <xsl:template match="p | l | stage">
+       <xsl:choose>
+           <xsl:when test="not(.//app)">
+               <xsl:value-of
+                   select="concat(ancestor::div[2][@type]/@type, ' ', ancestor::div[2][@n]/@n, ' ')"/>
+               <xsl:value-of
+                   select="concat(ancestor::div[1]/@type, ' ', ancestor::div[1]/@n, ': ')"/>
+               <xsl:value-of select="parent::*/parent::*/name()"/>
+               <xsl:text>: </xsl:text>
+               <xsl:value-of select="parent::*/name()"/>
+               <xsl:if test="parent::l">
+                   <xsl:text> </xsl:text>
+                   <xsl:value-of select="tokenize(parent::l/@xml:id, '_')[last()]"/>
+               </xsl:if>
+               <xsl:text>&#x9;</xsl:text> 
+       <xsl:for-each select="$witId">
+                      <xsl:text>natch&#x9;</xsl:text>
+                  </xsl:for-each>
+                  <xsl:text>&#10;</xsl:text> 
+                 </xsl:when>
+           <xsl:otherwise>
+               <xsl:apply-templates select="//app"/>
+           </xsl:otherwise>
+       </xsl:choose>
+       
+   </xsl:template>
+    <xsl:template match="*[.//app]">
+        <xsl:apply-templates select=".//app"/>
     </xsl:template>
-    
     <xsl:template match="app">
         <xsl:variable select="rdg" name="rdg"/>
                 <xsl:value-of
