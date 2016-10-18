@@ -17,7 +17,7 @@
         </head>
         <body>
             <h1>Mitford’s <i>Rienzi</i>: A Genetic Survey</h1>
-            <p>A visual survey and interface for examining alterations to Mary Russell Mitford’s historical tragedy of <i>Rienzi</i>. This illustration and interface serves to highlight the passages in the play that transformed, and offers a genetic survey of how the text transformed by considering four separate editions of the text in comparison with each of the others. The visualization and interface here are drawn from Eric Hood’s TEI edition of <i>Rienzi</i>, working with the TEI apparatus markup of all variant passages in the four editions.</p>
+            <p>This page presents an interface for surveying alterations to Mary Russell Mitford’s historical tragedy of <i>Rienzi</i>. The interface surveys how the text transformed over time by displaying how the four separate editions of the text compare with each of the others. The visualization and interface here are drawn from Eric Hood’s TEI edition of <i>Rienzi</i>, working with the TEI apparatus markup of all variant passages in the four editions.</p>
             <p>The four editions represented here are:</p>
             <ul>
                <xsl:for-each select="$witInfo">
@@ -27,27 +27,34 @@
             <p>We calculated Levenshtein edit distances for each locus in the play that featured variance, whether a paragraph in the preface, the stage directions, or  within lines of speeches. Levenshtein edit distance is a measure of how different two strings of text are from one another, counting any alteration as 1. (Thus, the difference between <q>newt,</q> and <q>next!</q> equals 2.) We then plotted a visual summary of each unit paragraph, line, and stage direction as a row in the table below. When a unit did not feature any variance, we plotted a uniform black row, but when variance appeared, we present a visual plot to summarize how much varied between each of the six possible combinations: 1) ms to 1828, 2) ms to 1837, 3) ms to 1854, 4) 1828 to 1837, 5) 1828 to 1854, and 6) 1837 to 1854. We divided values by ranges, based on the average and maximum values of all Levenshtein measures. These varied from 1 to 2654 characters, and their average was 9. We applied the following color values based on ranges and quantities of variants to show minor to major variation based on the following scale:</p>
             <ol>
                 <li>black: No difference (plotted to show relative distance of variant loci in the text)</li>
-                <li>pale blue: 4,020 variants that differ between 1 and 2 characters difference</li>
-<li>pale green: 574 variants differing between 2 and 5 characters</li>  
+                <li>blue: 4,020 variants that differ between 1 and 2 characters difference</li>
+<li>green: 574 variants differing between 2 and 5 characters</li>  
                 <li>yellow: 158 variants differing between 5 and 10 characters</li>
                 <li>orange: 315 variants differing between 10 and 20 characters</li>
                 <li>red: 536 variants of more than 20 characters of difference.</li>
             </ol>
-   <p>On mouseover of a given row featuring variants, a previously-concealed table row drops down beneath it revealing variant texts at that location.</p>
+   <p>On mouseover of a given row featuring variants, a previously-concealed table row drops down beneath it revealing variant texts at that location. A number of loci appear only in one or two editions, and these appear as rows with cut-out notches in the table.</p>
             <table>
-                <tr><xsl:for-each select="//tr[@id='head']/th">
+                <thead><tr><xsl:for-each select="//tr[@id='head']/th">
                     <th><xsl:value-of select="."/></th>   
                 </xsl:for-each>
-                </tr>  
-              <xsl:apply-templates select="//tr[not(@id='head')]"/>
+                </tr>  </thead>
+             <tbody><xsl:apply-templates select="//tr[not(@id='head')]"/></tbody>
               
              </table>
+            <p class="boilerplate"><span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar (ebb8 at
+                pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></span><span><strong>Last modified:
+                </strong><xsl:value-of select="current-date()"/></span></p>
         </body>      
         </html>
     </xsl:template>
     <xsl:template match="tr">
         <xsl:if test="td[2] != 'natch'"><tr class="{@title}"><xsl:apply-templates select="td"/></tr></xsl:if>
-        
+        <xsl:if test="td[2]/number() = 0 and td[3]/number() = 0 and td[4]/number() = 0 and td[5]/number() = 0 and td[6]/number() = 0">
+            <tr class="{@title}" title="foldUp">
+                <xsl:apply-templates select="td"/>
+            </tr>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="td">
         <xsl:choose>
