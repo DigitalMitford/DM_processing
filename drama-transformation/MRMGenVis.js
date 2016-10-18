@@ -2,6 +2,10 @@
 
 function init() {showNums();showTexts();
 }
+/* For sorting, try working with this example: http://jsfiddle.net/g9eL6768/2/
+ * 
+ */
+
 /* from Obdurodon: http://www.obdurodon.org/js/show-hide.js and not working here:
 function next(elem) {
     do {
