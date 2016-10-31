@@ -1,28 +1,28 @@
 html{
     background-color: /*#FFFAE6*/ /*#FFF8DC*/ #F8F8FF; 
-;
+; min-height:100%;
    
     color: /*#580000*/ #362819;
     font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
 }
 
 body{
- 
+ min-height:100%;
     text-align:left;
-    width:100%;
-   
+    width:100%; 
 /*padding: 10px 10px 40px 10px;*/
-border-radius: 10px;
 }
 div#images img{
 
 width:352px;
 display:inline-block
 }
-div#menu {background-image: url("mrmBlur.jpg");padding-top:10px;}
+div#menu {background-image: url("mrmBlur.jpg");
+   
+padding-top:15px; width:100%; padding-right:15px;}
 
 menu#nav_wide{float:left; width:100%;
-margin:auto;
+margin:auto; 
 
 /*display: flex;
     justify-content: space-between;*/
