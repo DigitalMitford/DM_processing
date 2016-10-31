@@ -1,4 +1,6 @@
-
+function init() {
+    rotate(); 
+}
 
        var thisImage = 0;
    /*ebb: This javascript rotates images on reload from server*/         
