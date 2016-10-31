@@ -1,14 +1,13 @@
 html{
-    background-color: #FFFAE6; 
+    background-color: /*#FFFAE6*/ /*#FFF8DC*/ #F8F8FF; 
 ;
    
-    color: #580000;
+    color: /*#580000*/ #362819;
     font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
 }
 
 body{
-   /*background-color: #BBD6F1;*/ 
-   
+ 
     text-align:left;
     width:100%;
    
@@ -20,20 +19,61 @@ div#images img{
 width:352px;
 display:inline-block
 }
-div#menubar{
-   
-   background-color: #FFEBC2;
-    text-align:left;
-    width:100%;
-    margin-left: auto;
+div#menu {background-image: url("mrmBlur.jpg");padding-top:10px;}
+
+menu#nav_wide{float:left; width:100%;
+margin:auto;
+
+/*display: flex;
+    justify-content: space-between;*/
+
+   background-color:#FFDB90 /*#FFDB90*/ /*#FFDF80*/ /*#FFE9A6*/ ;
+
+   margin-left: auto;
 margin-right:auto;
-padding: 5px 5px 5px 5px;
-border-radius: 5px;
-border-radius: 5px;
-   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
-h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
+padding: 7px;
+border-radius: 10px;
+border-radius: 10px;
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   }
+/*h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
 h2 {color:#330000; display:block; font-size: 1.5em; text-align:center
 
+}*/
+span.mainTitle {font-size:2em; font-weight:bold; letter-spacing:2px; color:#B16800; }
+span.subTitle{font-size: 1.2em; letter-spacing:1px;font-style:italic;}
+ul#siteMenu {list-style-type:none; margin:0; text-align:center; top:100%;}
+ul#siteMenu li.title {padding-right:100px;}
+ul#siteMenu li {padding:8px;  display:inline-block; position:relative; float:none; font-size: 1.1em; font-weight: bold; text-align:center;}
+ul#siteMenu li.mainMenu:hover {position:relative; background-color:/*#FFCE67*/#FFED90;}
+ul.dropdown {background-color: /*#ABC2C3*/ /*#FFD174*/ /*#E8E5E1*/ #FFED90; list-style-type:none; display:none; position:absolute; text-align:left; top:80%; }
+li.subMenu {text-align:left; padding-bottom:2px; margin-left: 0; padding:4px; width:100%;}
+li.dropped ul {display:block;
+position:absolute; font-size: .75em; padding:2px;
+font-weight: 300; text-align:left; margin-left: 0; left:0;
+border-radius: 4px;
+border-radius: 3px;}
+
+div#contact {width:100%;}
+div#mail {width:70%; float:left; }
+div#twitter{float:left;
+width: 30%;
+}
+span.iframe {margin:5%; }
+p.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;
+   }
+
+@media screen and (max-width:600px) {
+
+ ul#siteMenu  li {display:block; position:relative; margin-left: 0; padding-bottom:5px; text-align:left;}
+ li.drops ul{display:none; font-size: .75em; position:relative; background-color:inherit; padding:2px}
+    li.dropped ul {display:block; position:relative; background-color:inherit; padding:2px}
+    div#mail{display:block; float:none; width:100%;}
+    div#twitter{display:block; float:none; width:100%;}
 }
 
 div#content{
@@ -63,59 +103,20 @@ padding: 10px 5px 50px 20px;
     
 }
 
-p.boilerplate span {text-indent:-1em;
-    margin-left:1em;
-    display:block;
-    font-size:smaller;
-    line-height:1.4em;}
     
-    p {padding:0px 20px 0px 20px;}
-    
-    span.iframe {margin-left: 30%; margin-right: 30%}
-
-div#twitter{
-margin-left: 75px;
-margin-right:auto;
-padding: 10px 5px 5px 500px;    
-    
-}
-/*div#welcome.hidden {display: none;}
-div#welcome.unhidden {display: block;}
-
-div#about.hidden {display: none;}
-div#about.unhidden {display: block;}
-
-div#search.hidden {display: none;}
-div#search.unhidden {display: block;}
-
-div#literature.hidden {display: none;}
-div#literature.unhidden {display: block;}
-
-div#letters.hidden {display: none;}
-div#letters.unhidden {display: block;}
-
-
-div#visual.hidden {display: none;}
-div#visual.unhidden {display: block;}
-
-div#maps.hidden {display: none;}
-div#maps.unhidden {display: block;}
-
-
-div#contact.hidden {display: none;}
-div#contact.unhidden {display: block;}
-*/
+p {padding:0px 20px 0px 20px;}
 
 h1 {
-color:#A04747;
+color:/*#A04747*/ #1C373A;
 letter-spacing:3px;
 display:block;
 text-align:center;
-font-size:38px}
-h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
+font-size:1.3em;}
+div#title h1 {background-color:#FFED90;}
+h2 {color:#00005C; font-size:2em; padding:0; display:block; text-align:center; 
 }
 
-h3 {color:#00005C; display:block; text-indent:3em; text-align:left; font-size:16px;
+h3 {color:#00005C; display:block; text-indent:1.5em; text-align:left; font-size:2em;
 }
 
 /*img{

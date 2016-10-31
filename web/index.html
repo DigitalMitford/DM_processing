@@ -1,26 +1,64 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="Description" content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
         <meta name="keywords" content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
         <link rel="stylesheet" type="text/css" href="mitfordindex.css"/>
         <script type="text/javascript" src="imagerotat.js">/**/</script>
-    
-       
+        <script type="text/javascript" src="menuDrop.js">/**/</script>      
     </head>
     <body>  
         
-        <div id="title"><h1>Digital Mitford: The Mary Russell Mitford Archive</h1>
-            <hr/></div> 
-        <div id="menubar">
+       
+     
+        <div id="menu">    <!--<h1>Digital Mitford:
+            The Mary Russell Mitford Archive</h1>-->
+               <menu id="nav_wide">
             
-                <h2><a href="index.html">Welcome</a> | <a href="about.html">About</a> | <a href="bibliogType.html">Published Works</a> | <a href="lettersData.html">Manuscript Locations</a> | <a href="letters.html">Letters</a> | <a href="visual.html">People, Places, and Networks</a> | <a href="staff.html">Staff</a> | <a href="workshop.html">Workshop Materials</a></h2>
+               <!-- <h2><a href="index.html">Welcome</a> | <a href="about.html">About</a> | <a href="bibliogType.html">Published Works</a> | <a href="lettersData.html">Manuscript Locations</a> | <a href="letters.html">Letters</a> | <a href="visual.html">People, Places, and Networks</a> | <a href="staff.html">Staff</a> | <a href="workshop.html">Workshop Materials</a></h2>-->
+        <ul id="siteMenu">
+            <li class="title"><span class="mainTitle">Digital Mitford:</span><br/> <span class="subTitle">The Mary Russell Mitford Archive</span></li>
+            <li class="mainMenu"><a href="index.html">Home</a></li>
+            <li class="drops">Project &#9660;
+            <ul class="dropdown">
+                <li class="mainMenu"><a href="about.html">Methods &amp; Background</a></li>
+                <li class="mainMenu"><a href="staff.html">Staff</a></li>
+                <li class="mainMenu">Research &amp; Publications</li>
+            </ul>
+            </li>
+            <li class="drops">Bibliography &amp; Archives &#9660;
+                <ul class="dropdown">
+                    <li class="subMenu"><a href="bibliogType.html">Mitford’s Published Works</a></li>
+                    <li class="subMenu"><a href="lettersData.html">Manuscript Locations</a></li>
+
+                </ul>
+            </li>
+            <li class="drops">Editions &#9660;
+            <ul class="dropdown">
+                <li class="subMenu"><a href="letters.html">Letters</a></li>
+                <li class="subMenu"><a href="plays.html">Plays</a></li>
+                <li class="subMenu">Poems</li>
+                <li class="subMenu">Prose Fiction</li>
+            </ul>
+            </li>
+
+            <li class="mainMenu"><a href="visual.html">Mitford’s Worlds</a>  <!--&#9660;--></li>
+            <li class="drops">Workshops &amp; Outreach &#9660;
+                <ul class="dropdown">
+                    <li class="subMenu"><a href="workshop.html">Coding School Materials</a></li>
+                    <li class="subMenu"><a href="https://digitalmitford.wordpress.com/">Digital Mitford Blog</a></li>
+                </ul>
             
-        
+            </li>
+        </ul>
+                   
+        </menu>
+
         </div>
-        <hr/>
+    
         <div id="container">
          <div id="images">
              <!--<img src="Images/maryrmitfordwarm.jpg" id="rotator" alt="Mary Russell Mitford"/>-->
@@ -30,7 +68,7 @@
         <div id="floatright">
             <div id="welcome">
              <p>
-                 Welcome to the Digital Mitford, an active digital humanities project begun in April 2013, with the formation of the Mary Russell Mitford Society at the 18th- and 19th-century British Women Writers&#8217; Conference in Albuquerque. We organized the society and the project for these purposes:</p>
+                 Welcome to the Digital Mitford, an active digital humanities project begun in April 2013 with the formation of the Mary Russell Mitford Society at the 18th- and 19th-century British Women Writers&#8217; Conference in Albuquerque. We organized the society and the project for these purposes:</p>
                  <ol>
                      <li>to produce the first comprehensive scholarly edition of the works and letters of Mary Russell Mitford, and</li>
                       <li>to share knowledge of TEI XML and other related humanities computing practices with all serious scholars interested in contributing to the project.</li>   
@@ -42,17 +80,21 @@
              </p>
            
                     
-                    <p>If you would like to get involved with the Digital Mitford project, whether you wish to help with the coding or to send us transcriptions and research leads, please send e-mail to <a href="mailto:ebb8@pitt.edu">Elisa Beshero-Bondar</a> or post to: </p>
+                    <p>If you would like to get involved with the Digital Mitford project, whether you wish to help with the coding or to send us transcriptions and research leads, please send e-mail to <a href="mailto:ebb8@pitt.edu">Elisa Beshero-Bondar</a>, tweet to @DigitalMitford, or post to: </p>
                     
-                    <p>The Mary Russell Mitford Society<br/>
+                  <div id="contact">  <div id="mail"><p>The Mary Russell Mitford Society<br/>
                         c/o Elisa Beshero-Bondar<br/>
                         U. of Pittsburgh at Greensburg<br/>
                         150 Finoli Drive<br/>
-                        Greensburg, PA 15601</p>
+                        Greensburg, PA 15601</p></div>
                     
                     
-           
-                
+                <div id="twitter">    
+                    <a data-width="180" data-height="200" class="twitter-timeline" href="https://twitter.com/DigitalMitford" data-widget-id="430153102423908352">Tweets by @DigitalMitford</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>       </div>
+            </div>
+       
                 
                 <p class="boilerplate"><span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar
                     (ebb8 at pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></span><span>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</span><span>We work with <a href="http://www.oxygenxml.com" title="Oxygen XML Editor">the &lt;oXygen/&gt; XML Editor</a> for our coding in TEI and related languages.</span><span><strong>Last modified:
@@ -62,21 +104,12 @@ document.write(document.lastModified);
                 
                 
                 
-                <div id="twitter">    
-                <a width="180" height="200" class="twitter-timeline" href="https://twitter.com/DigitalMitford" data-widget-id="430153102423908352">Tweets by @DigitalMitford</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-                
-                
-                
-  
-         </div>
            
-        
- 
-           
-        
-        </div></div>
+                
+                     
+        </div>
+         
+      </div>
         
 
         
