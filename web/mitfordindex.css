@@ -17,9 +17,12 @@ div#images img{
 width:352px;
 display:inline-block
 }
-div#menu {background-image: url("mrmBlur.jpg");
-   
+div#colorBar {background-image: url("mrmBlur.jpg");  
 padding-top:15px; width:100%; padding-right:15px;}
+
+div#title{/*sits in the color bar alongside other divs holding sections of the navigation menu  */}
+span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; }
+span.subTitle{display:block; font-size: 1.2em; letter-spacing:1px;font-style:italic;}
 
 menu#nav_wide{float:left; width:100%;
 margin:auto; 
@@ -40,8 +43,7 @@ border-radius: 10px;*/
 h2 {color:#330000; display:block; font-size: 1.5em; text-align:center
 
 }*/
-span.mainTitle {font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; }
-span.subTitle{font-size: 1.2em; letter-spacing:1px;font-style:italic;}
+
 ul#siteMenu {list-style-type:none; margin:0; text-align:center; top:100%;}
 ul#siteMenu li.title {padding-right:50px;}
 ul#siteMenu li {padding:8px;  display:inline-block; position:relative; float:none; font-size:1em; font-weight: bold; text-align:center;}
