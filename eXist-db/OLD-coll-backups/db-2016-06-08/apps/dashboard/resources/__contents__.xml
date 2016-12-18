@@ -1,0 +1,6 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/resources" version="1" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:42.947-04:00">
+    <acl entries="0" version="1"/>
+    <subcollection name="scripts" filename="scripts"/>
+    <subcollection name="images" filename="images"/>
+    <subcollection name="css" filename="css"/>
+</collection>

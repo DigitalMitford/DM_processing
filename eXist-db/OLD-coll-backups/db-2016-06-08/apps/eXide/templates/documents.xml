@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates><template name="collection-config" mode="xml"><description>eXist-db Collection Configuration</description><code>&lt;collection xmlns="http://exist-db.org/collection-config/1.0"&gt;
+    &lt;index xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;fulltext default="none" attributes="false"/&gt;
+    &lt;/index&gt;
+&lt;/collection&gt;</code></template><template name="html5-div" mode="html"><description>HTML5 Div Using Templating</description><code>&lt;div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" 
+    data-template-with="templates/page.html" data-template-at="content"&gt;
+&lt;/div&gt;</code></template><template name="xhtml5" mode="html"><description>HTML5 Document in XHTML Namespace</description><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></template><template name="ant" mode="xml"><description>Ant Script</description><code>&lt;project basedir="." default="dist" name="myproject"&gt;
+ &lt;target name="dist"&gt;
+  
+ &lt;/target&gt; 
+&lt;/project&gt;</code></template><template name="xquery-module" mode="xquery"><description>XQuery Library Module</description><code>xquery version "3.0";
+
+module namespace mymodule="http://exist-db.org/apps/myapp/mymodule";
+
+</code></template><template name="controller" mode="xquery"><description>XQuery URL Rewriting Controller</description><code>xquery version "3.0";
+            
+declare variable $exist:path external;
+declare variable $exist:resource external;
+declare variable $exist:controller external;
+declare variable $exist:prefix external;
+declare variable $exist:root external;
+
+(: everything is passed through :)
+&lt;dispatch xmlns="http://exist.sourceforge.net/NS/exist"&gt;
+    &lt;cache-control cache="yes"/&gt;
+&lt;/dispatch&gt;</code></template></templates>

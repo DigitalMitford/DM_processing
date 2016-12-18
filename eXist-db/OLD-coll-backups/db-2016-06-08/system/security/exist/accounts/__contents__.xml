@@ -1,0 +1,25 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/security/exist/accounts" version="1" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:29:57.702-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="eXide.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:31:03.674-04:00" modified="2015-03-27T19:31:03.741-04:00" filename="eXide.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="admin.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:29:57.736-04:00" modified="2016-05-08T10:13:30.465-04:00" filename="admin.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="demo.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:30:43.574-04:00" modified="2015-03-27T19:30:43.614-04:00" filename="demo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="monex.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:31:04.907-04:00" modified="2015-03-27T19:31:04.94-04:00" filename="monex.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="kdc.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2016-04-23T10:12:48.537-04:00" modified="2016-04-23T10:12:48.634-04:00" filename="kdc.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="djb.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2016-05-08T10:13:30.613-04:00" modified="2016-05-08T10:13:30.666-04:00" filename="djb.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="guest.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2015-03-27T19:29:57.856-04:00" modified="2015-03-27T19:29:57.915-04:00" filename="guest.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="removed" filename="removed"/>
+</collection>

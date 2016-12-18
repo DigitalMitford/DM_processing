@@ -1,0 +1,29 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/betterform/demo" version="1" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.593-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="contacts.xhtml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.594-04:00" modified="2015-03-27T19:30:41.594-04:00" filename="contacts.xhtml" mimetype="application/xhtml+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="registration.xhtml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.61-04:00" modified="2015-03-27T19:30:41.61-04:00" filename="registration.xhtml" mimetype="application/xhtml+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="contacts_subform_2.xml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.622-04:00" modified="2015-03-27T19:30:41.622-04:00" filename="contacts_subform_2.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="orderlist.xml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.644-04:00" modified="2015-03-27T19:30:41.644-04:00" filename="orderlist.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="contacts.xml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.65-04:00" modified="2015-03-27T19:30:41.65-04:00" filename="contacts.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="registration.xml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.657-04:00" modified="2015-03-27T19:30:41.657-04:00" filename="registration.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="orderlist.xhtml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.658-04:00" modified="2015-03-27T19:30:41.658-04:00" filename="orderlist.xhtml" mimetype="application/xhtml+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="contacts_subform_1.xml" skip="no" owner="admin" group="dba" mode="775" created="2015-03-27T19:30:41.693-04:00" modified="2015-03-27T19:30:41.693-04:00" filename="contacts_subform_1.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="styles" filename="styles"/>
+    <subcollection name="images" filename="images"/>
+</collection>

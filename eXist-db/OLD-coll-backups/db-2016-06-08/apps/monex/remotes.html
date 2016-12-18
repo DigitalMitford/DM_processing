@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <!-- Content Header (Page header) --><section class="content-header"><h1>
+            Remote Monitoring
+            <small>Remote Server Monitoring</small></h1><ol class="breadcrumb"><li><a href="#"><i class="fa fa-dashboard"/> Home</a></li><li class="active"><i class="fa fa-terminal"/> Remote Monitoring</li></ol></section>
+    
+    <!-- Main content --><section id="remotes" class="content"><div class="btn-group"><button type="button" class="btn btn-app" data-bind="click: schedule, enable: instances().length &gt; 0"><i class="fa" data-bind="css: { 'fa-stop': $data.status() == 'Checking', 'fa-play': $data.status() == 'Stopped'}"/><span data-bind="text: $data.status() == 'Checking' ? 'Stop All' : 'Run'">Stop all</span></button></div><table class="table table-striped"><thead><th>Status</th><th>Server</th><th>Ping Time</th><th>Response Time</th><th>Message</th></thead><tbody data-bind="if: instances().length == 0"><tr><td colspan="5">No monitoring jobs configured.</td></tr></tbody><tbody data-bind="foreach: instances"><tr><td><span data-bind="text: status, css: {'label-success': $data.status() == 'PING_OK', 'label-danger': $data.status() == 'PING_ERROR', 'label-primary': $data.status() == 'Checking' || $data.status() == 'Stopped'}" class="label">Waiting</span></td><td data-bind="text: name"/><td data-bind="text: time"/><td data-bind="text: elapsed"/><td data-bind="text: message"/></tr></tbody></table><div class="alert alert-danger" data-template="app:scheduler-enabled"><i class="fa fa-ban"/><b>Alert! </b><span class="message">Remote monitoring <strong>requires</strong> eXist's scheduler module to be enabled.
+            See <code>extensions/build.properties</code> and <code>conf.xml</code>.</span></div><div class="box box-info note"><div class="box-header"><h3 class="box-title">Note</h3></div><!-- /.box-header --><div class="box-body"><p>To monitor remote eXist-db instances, edit the XML file 
+                    <a href="instances.xml" class="templates:load-source">instances.xml</a> in the root
+                    collection of the monex application. Monex pings each server at configurable times or
+                    intervals. You can also set up email alerts in 
+                    <a href="notifications.xml" class="templates:load-source">notifications.xml</a>.</p><p><code>Ping Time</code> is the actual time (in milliseconds) spent on the server for processing a very small query.
+                    It is thus a good indicator for the responsiveness of the system.
+                    <code>Response Time</code> is the elapsed time until the client received the response.
+                </p></div></div></section><script type="text/javascript" src="resources/scripts/modernizr.custom.js"/><script type="text/javascript" src="resources/scripts/knockout-3.1.0.js"/><script type="text/javascript" src="resources/scripts/knockout.mapping-2.4.1.js"/><script type="text/javascript" src="resources/scripts/exadmin.js"/></div>
