@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM2018">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, March 2, 2016</title><author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor>
+               <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+               <persName ref="#rnes">Rebecca Nesvet</persName>
+               <persName ref="#mc">Melinda Creech</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2016-10-10">2016-10-10</date>
+                  Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName><!--LMW 2016-10-10:  adding header, proofing body against ms. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2015-09-22"/></edition>
+               <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+               <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF8919.jpg, DSCF8920.jpg, DSCF8920.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Horizon No. 1361552</idno></msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1819-03-02">1819 March 8</date>.
+                  <note resp="#lmw">Date checked against contents of Mitford's journal. Letter headed "Tuesday," and journal indicates she wrote to Mary Webb on Tuesday, March 2, 1819.</note>
+               </head> 
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><p>One sheet of <material>paper</material>, two surfaces photographed. Folded in half vertically then in thirds horizontally.</p> 
+                           <p>No postmarks.</p></support>
+                        <condition>
+                           <p>Top edge of sheet burned or torn around center fold.</p>
+                        </condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <sealDesc>
+                     <p>No seal.</p></sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <handNotes>
+            <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is dated "[before 23 Aug. 1819]" in the top left of the first leaf.
+            </handNote>
+         </handNotes>
+      </profileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">[before 23 Aug. 1819]</add> 
+               <dateline>
+                  <date when="1819-03-02">Tuesday</date> 
+               </dateline>
+            </opener>
+         <p>You will not expect us of course in such weather my dearest friend, but cannot suffer the servant to go into <placeName ref="#Reading_city">Reading</placeName> without assuring you of our regret at being disappointed of our visit. <persName ref="#Mitford_Geo">Papa</persName> particularly laments not being able to meet <persName>William Hayward</persName>, but the roads are in such plight &amp; our cavalry so exceedingly inefficient that to drag the Gig &amp; great coats, through the mire would be impossible to say nothing of the live (or dead) weight which the aforesaid great coats would enclose. You must write to me Saturday my own dear <persName ref="#Webb_Mary_younger">Mary</persName>, &amp; give me good news of the dear <persName ref="#Webb_James">Papa</persName>. I hope <persName>William</persName> will take great care of him at <placeName ref="#Winchester_city">Winchester</placeName>. I wish he was not going. You must likewise give me good tidings of poor <persName>Wilson</persName>-how sorry we all were for his accident-but dogs will fight-even my exemplary dog <persName ref="#Mossy_pet">Mossy</persName> pretty nearly killed one of <persName>Mrs. Pile</persName>'s at <placeName>Overton</placeName>. When such a <persName ref="#Chas_Grandison_fict">Sir Charles Grandison</persName>--sort of dog as <persName ref="#Mossy_pet">Mossy</persName> does such things what can be expected of the less educated race! Bye the bye its great good luck that <persName ref="#Mitford_Geo">Papa</persName> did not hang him.--</p>
+            <p>I have just heard from <persName ref="#James_Miss">Miss James</persName> who desires her most particular love to you all, <persName ref="#Webb_James">Papa</persName> &amp; <persName ref="#Webb_Mary_elder">Aunt Mary</persName> included. Some of this letter would make you laugh. Do come &amp; see it, &amp; see me, &amp; the primroses. Do.--Poor <persName ref="#Valpy_Richard">Dr. Valpy</persName>is very ill we are sending to enquire after him. Good bye, my dear loves--</p>
+            <closer>Ever <choice><sic>your's</sic><reg>yours</reg></choice>
+               <lb/><persName ref="#MRM">M.R.M.</persName>
+            </closer>
+            
+            <closer>
+               <address>
+                  <addrLine><lb/>To
+                     <lb/><persName ref="#Webb_Mary_younger"><emph rend="underline">Miss Webb</emph></persName></addrLine>
+               </address>
+            </closer>
+         </div>
+      </body>
+      
+      <back>
+         <!--William Hayward, Mrs. Pile; possibly a dogbreeder? Needham speculates that GM goes to Overton to breed his greyhounds, OVerton, WIlson, William-->
+      </back>
+      
+  </text>
+</TEI>

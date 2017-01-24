@@ -1,0 +1,253 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml” schematypens=”http://relaxng.org/ns/structure/1.0”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml”
+	schematypens=”http://purl.oclc.org/dsdl/schematron”?>
+<TEI xmlns=”http://www.tei-c.org/ns/1.0”>
+   <teiHeader>
+      <fileDesc>
+         <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+
+
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type=”sketch”>
+            <pb n=”241”/>
+            <head>WALKS IN THE COUNTRY.<lb/>NUTTING.
+               <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>September 26th.—One of those delicious autumnal days, when the air, the sky, and the
+               earth, seem lulled into an universal calm, softer and milder even than May. We
+               sallied forth for a walk, in a mood con- genial to the weather and the season,
+               avoiding, by mutual consent, the bright and sunny common, and the gay high road, and
+               stealing through shady unfre- quented lanes, where we were not likely to meet any
+               one,—not even the pretty family procession which in other years we used to
+               contemplate with so much in- terest—the father, mother, and children, returning from
+               the wheat-field, the little ones laden with brist- ling close-tied bunches of
+               wheat-ears, their own glean- ings, or a bottle and a basket which had contained their
+               frugal dinner, whilst the mother would carry her babe hushing and lulling it, and the
+               father and an elder child trudged after with the cradle, all seeming<pb n=”242”/>
+               weary, and all happy. We shall not see such a pro- cession as this to-day; for the
+               harvest is nearly over, the fields are deserted, the silence may almost be felt.
+               Except the wintry notes of the red-breast, nature her- self is mute. But how
+               beautiful, how gentle, how har- monious, how rich! The rain has preserved to the
+               herbage all the freshness and verdure of spring, and the world of leaves has lost
+               nothing of its midsummer brightness, and the hare-bell is on the banks and the
+               woodbine in the hedges, and the low furze, which the lambs cropped in the spring, has
+               burst again into its golden blossoms.</p>
+            <p>All is beautiful that the eye can see; perhaps the more beautiful for being shut in
+               with a forest-like closeness. We have no prospect in this labyrinth of lanes,
+               cross-roads, mere cart-ways, leading to the innu- merable little farms into which
+               this part of the parish is divided. Uphill or down, these quiet woody lanes scarcely
+               give us a peep at the world, except when, leaning over a gate, we look into one of
+               the small enclosures, hemmed in with hedgerows, so closely set with growing timber,
+               that the meady opening looks almost like a glade in a wood, or when some cottage,
+               planted at a corner of one of the little greens formed by the meeting of these
+               cross-ways, almost startles us by the unexpected sight of the dwellings of men in
+               such a solitude. But that we have more of hill and<pb n=”243”/> dale, and that our
+               cross-roads are excellent in their kind, this side of our parish would resemble the
+               de- scription given of La Vendee, in Madame Laroche- jacquelin’s most interesting
+               book *. I am sure if wood can entitle a country to be called Le Bocage, none can have
+               a better right to the name. Even this pretty snug farm-house on the hill side, with
+               its front covered with the rich vine, which goes wreathing up to the very top of the
+               clustered chimney, and its sloping orchard full of fruit—even this pretty quiet nest
+               can hardly peep out of its leaves. Ah! they are gathering in the orchard harvest.
+               Look at that young rogue in the old mossy apple-tree—that great tree, bending with
+               the weight of its golden-rennets—see how he pelts his little sister beneath with
+               apples as red and as round as her own cheeks, while she, with her outstretched frock,
+               is trying to catch them, and laugh- ing and offering to pelt again as often as one
+               bobs against her; and look at that still younger imp, who, as grave as a judge, is
+               creeping on hands and knees under the tree, picking up the apples as they fall so
+                  <note place=”bottom”>* An almost equally interesting account of that very peculiar
+                  and interesting scenery, may be found in “ The Maid of La Vendue,” an English
+                  novel, remarkable for its simplicity and truth of paint- ing, written by Mrs. Le
+                  Noir, tbe daughter of Christopher Smart, and inheritrix of much of his talent. Her
+                  works deserve to be better known.</note><pb n=”244”/> deedily *, and depositing
+               them so honestly in the great basket on the grass, already fixed so firmly and opened
+               so widely, and filled almost to overflowing by the brown rough fruitage of the
+               golden-rennet’s next neighbour the russeting; and see that smallest urchin of all
+               seated apart in infantine state on the turfy bank, with that toothsome piece of
+               deformity a crumpling in each hand, now biting from one sweet hard juicy mor- sel,
+               and now from another.—Is not that a pretty English picture? And then, farther up the
+               orchard, that bold hardy lad, the eldest-born, who has scaled (Heaven knows how!) the
+               tall straight upper branch of that great pear-tree, and is sitting there as securely
+               and as fearlessly, in as much real safety and apparent danger, as a sailor on the
+               top-mast. Now he shakes the tree with a mighty swing that brings down a pelting
+               shower of stony bergamots, which the father gathers rapidly up, whilst the mother can
+               hardly assist for her motherly fear,—a fear which only spurs the spirited boy to
+               bolder ventures. Is not that a pretty picture? And they are such a handsome family,
+               too, <note place=”bottom”>*” Deedily,”—I am not quite sore that this word is good
+                  English; but it is genuine Hampshire, and is used by the most correct of female
+                  writers, Miss Austen. It means (and it is no small merit that it has no exact
+                  synonyme) any thing done with a profound and plodding attention, an action which
+                  engrosses all the powers of mind and body.</note><pb n=”245”/> the Brookers. I do
+               not know that there is any gipsey blood, but there is the true gipsey complexion,
+               richly brown, with cheeks and lips so deeply red, black hair curling close to their
+               heads in short crisp rings, white shining teeth—and such eyes !—That sort of beauty
+               entirely eclipses your mere roses and lilies. Even Lizzy, the prettiest of fair
+               children, would look poor and watery by the side of Willy Brooker, the sober little
+               personage who is picking up the apples with his small chubby hands, and filling the
+               basket so orderly, next to his father the most useful man in the field. “Willy!” He
+               hears without seeing; for we are quite hidden by the high bank, and a spreading
+               hawthorn- bush that overtops it, though between the lower branches and the grass we
+               have found a convenient peep-hole. “Willy!” The voice sounds to him like some fairy
+               dream, and the black eyes are raised from the ground with sudden wonder, the long
+               silky eye-lashes thrown back till they rest on the delicate brow, and a deeper blush
+               is burning in those dark cheeks, and a smile is dimpling about those scarlet lips.
+               But the voice is silent now, and the little quiet boy, after a moment’s pause, is
+               gone coolly to work again. He is indeed a most lovely child. I think some day or
+               other he must marry Lizzy; I shall pro- pose the match to their respective mammas. At
+               present the parties are rather too young for a weddingi-the<pb n=”246”/> intended
+               bridegroom being, as I should judge, six, or thereabout, and the fair bride barely
+               five,—but at least we might have a betrothment after the royal fashion,—there could
+               be no harm in that. Miss Lizzy, I have no doubt, would be as demure and coquettish as
+               if ten winters more had gone over her head, and poor Willy would open his innocent
+               black eyes, and wonder what was going forward. They would be the very Oberon and
+               Titania of the village, the fairy king and queen.</p>
+            <p>Ah! here is the hedge along which the periwinkle wreathes and twines so profusely,
+               with its ever-green leaves shining like the myrtle, and its starry blue flowers. It
+               is seldom found wild in this part of En- gland; but, when we do meet with it, it is
+               so abundant and so welcome,—the very robin-redbreast of flowers, a winter friend.
+               Unless in those unfrequent frosts which destroy all vegetation, it blossoms from
+               Septem- ber to June, surviving the last lingering crane’s-bill, forerunning the
+               earliest primrose, hardier even than the mountain daisy,—peeping out from beneath the
+               snow, looking at itself in the ice, smiling through the tem- pests of life,and yet
+               welcoming and enjoying the sun- beams. Oh, to be like that flower!</p>
+            <p>The little spring that has been bubbling under the hedge all along the hill-side,
+               begins, now that we have mounted the eminence and are imperceptibly descend- ing, to
+               deviate into a capricious variety of clear deep<pb n=”247”/> pools and channels, so
+               narrow and so choked with weeds, that a child might overstep them. The hedge has also
+               changed its character. It is no longer the close compact vegetable wall of hawthorn,
+               and maple, and briar roses, intertwined with bramble and woodbine, and crowned with
+               large elms or thickly set saplings. No! the pretty meadow which rises high above us,
+               backed and almost surrounded by a tall coppice, needs no defence on our side but its
+               own steep bank, gar- nished with tufts of broom, with pollard oaks wreathed with ivy,
+               and here and there with long patches of hazel overhanging the water. “Ah there are
+               still nuts on that bough!” and in an instant my dear companion, ac- tive and eager
+               and delighted as a boy, has hooked down with his walking-stick one of the lissome
+               hazel stalks, and cleared it of its tawny clusters, and in another mo- ment he has
+               mounted the bank, and is in the midst of the nuttery, now transferring the spoil from
+               the lower branches into that vast variety of pockets which gentle- men carry about
+               them, now bending the tall tops into the lane, holding them down by main force, so
+               that I might reach them and enjoy the pleasure of collecting some of the plunder
+               myself. A very great pleasure he knew it would be. I doffed my shawl, tucked up my
+               flounces, turned my straw bonnet into a basket, and began gathering and
+               scrambling—for, manage it how you may, nutting is scrambling work,—those boughs,<pb
+                  n=”248”/> however tightly you may grasp them by the young fragrant twigs and the
+               bright green leaves, will recoil and burst away; but there is a pleasure even in
+               that: so on we go, scrambling and gathering with all our might and all our glee. Oh
+               what an enjoyment! All my life long I have had a passion for that sort of seek- ing
+               which implies finding, (the secret, I believe, of the love of field-sports, which is
+               in man’s mind a natural impulse,)—therefore I love violeting,—therefore, when we had
+               a fine garden I used to love to gather strawberries, and cut asparagus, and, above
+               all, to collect the filberts from the shrubberies: but this hedge-row nutting beats
+               that sport all to nothing. That was a make-believe thing, compared with this; there
+               was no surprise, no suspense, no unexpectedness—it was as inferior to this wild
+               nutting, as the turning out of a bag- fox is to unearthing the fellow in the eyes of
+               a stanch fox-hunter.</p>
+            <p>Oh what an enjoyment this nut-gathering is! They are in such abundance, that it seems
+               as if there were not a boy in the parish, nor a young man, nor a young woman,—for a
+               basket of nuts is the universal tribute of country gallantry; our pretty damsel
+               Harriet has had at least half a dozen this season; but no one has found out these.
+               And they are so full too, we lose half of them from over-ripeness; they drop from the
+               socket at the slightest motion. If we lose, there is one who<pb n=”248”/> finds. May
+               is as fond of nuts as a squirrel, and cracks the shell and extracts the kernel with
+               equal dexterity. Her white glossy head is upturned now to watch them as they fall.
+               See how her neck is thrown back like that of a swan, and how beautifully her folded
+               ears quiver with expectation, and how her quick eye follows the rustling noise, and
+               her light feet dance and pat the ground, and leap up with eagerness, seeming almost
+               sustained in the air, just as I have seen her when Brush is beating a hedgerow, and
+               she knows from his questing that there is a hare afoot. See, she has caught that nut
+               just before it touched the water; but the water would have been no defence,—she
+               fishes them from the bottom, she delves after them amongst the matted grass—even my
+               bonnet—how beggingly she looks at that!” Oh what a pleasure nutting is!—Is it not,
+               May? But the pockets are almost full, and so is the basket-bonnet, and that bright
+               watch the sun says it is late; and after all it is wrong to rob the poor boys—is it
+               not, May 1”—May shakes her graceful head denyingly, as if she understood the
+               question—” And we must go home now—must we not? But we will come nutting again some
+               time or other—shall we not, my May?”</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt><title xml:id="MRM1785">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, August 28, 1821</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal><respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+               </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2016-09-23">2016-09-23</date>
+               Proofing and corrections by</resp>
+               <persName></persName><!-- List all proofreaders here, <persName> by <persName>.--> 
+               <!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2016-09-23">September 23, 2016</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>30August1821SirWilliamElford1a.jpg, 30August1821SirWilliamElford1b.jpg, 30August1821SirWilliamElford2a.jpg, 30August1821SirWilliamElford2b.jpg, 30August1821SirWilliamElford3a.jpg, 30August1821SirWilliamElford3b.jpg, 30August1821SirWilliamElford4a.jpg, 30August1821SirWilliamElford4b.jpg, 30August1821SirWilliamElford5a.jpg, 30August1821SirWilliamElford5b.jpg, 30August1821SirWilliamElford6a.jpg, 30August1821SirWilliamElford6b.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+              <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> 
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 439</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1821-08-28">1819 August 28</date>.
+               </head> 
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One and one half sheets of <material>paper</material>, six surfaces photographed. </p> 
+                        <p>Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/><unclear/><lb/>18<unclear/><lb/>42</stamp>.
+                        </p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages five and six) torn on right edge where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to page six; paper remaining under the seal.--></p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first five leaves. On leaf six, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#pencil" medium="pencil">This letter is numbered "34" in the top left of the first leaf.</handNote>
+           <handNote xml:id="penAnnot_RCL">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, who occasionally left notes in a spidery thin hand to explain or document details in Mitford's letters in the margins of her pages, noted in the manuscripts held at <orgName ref="#ReadingCL">Reading Central Library</orgName>. This may be <persName ref="#Harness_Wm">William Harness</persName> or <persName ref="#Lestrange">A. G. L'Estrange</persName>. This annotator left a note at the top of page 1 that reads: To <persName ref="#Elford_SirWm">Sir W Elford</persName>.</handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><div type="letter">
+            <opener> 
+               <add hand="#penAnnot_RCL">To <persName ref="#Elford_SirWm">Sir W Elford</persName>.</add> 
+               <dateline>
+                  <name type="place" ref="#ThreeMileCross">Three Mile Cross</name> 
+                  <date when="1821-08-28">August 28 <hi rend="superscript">th</hi>1821.</date>
+               </dateline>
+            </opener>
+         <p>Turn you off! My dear friend! Why how did I know but you were tourifying &amp; honey-mooning--Then you off! I that always begin a letter by return of post (that's an excellent new ball) &amp; generally send it off within three days--Turn you off! Pray were you ever turned off in your life? And do you think me the person to begin? Eh? I have a good mind to play the affronted. But I can't write two letters for one--No--those good days of idleness &amp; doing nothing the history of which used to amuse you so much are past &amp; gone--I am a busy woman; I write Tragedies &amp; essays &amp; work my brains out--&amp; if you have a mind to take a perfect hatred to the sight of pen &amp; ink you have nothing to do but to write a Tragedy as I have done, three times over in <del rend="squiggles" quantity="1" unit="word">three</del> two months. It is finished now thank God! All but another copying--&amp; my oracle <persName ref="#Talfourd_Thos">Mr. Talfourd</persName> thinks it will do. Seriously, my always dear &amp; kind friend, you must not expect me to write twice before you answer me--at least you must not wait for my writing--&amp; pray if you should be such a flatterer as to miss my letters &amp; should pay me the compliment of being a little angry don't say <quote>"She's idle, naughty one!"</quote> but <quote>"Poor thing she's busy!"</quote> I assure you I should like nothing so well as to be able to fling my tragedies &amp; my acticles into the fire &amp; new novels for your sake &amp; <del rend="squiggles" unit="word" n="1"><unclear/></del> write long long letters about them all the day long.--Well now let me 'thank' you most heartily &amp; sincerely for your most kind &amp; charming letter. It is the best of your best--<persName ref="#Walpole_Hor">Horace Walpole</persName> never wrote one half so charming--because he was a dismal old bachelor &amp; had never the happiness to have such materials--The Turkey is charming--Ah I wish we<pb n="2"/> lived 200 miles nearer that I might have the happiness of being introduced to <persName ref="#Elford_MrsE">Lady Elford</persName>--I am the least in the world afraid of a live turkey-cock--they have an aversion to me all the race--but he is a magnificent find notwithstanding, &amp; the rearing them must be delightful because it is an uncertain crop &amp; requires great care &amp; skill in the culture. The finest I ever saw were a regiment of white turkeys belonging to <persName ref="#Roddam_Mrs">Mrs. Roddam</persName> <!--wife of Captain, later Admiral RObert Roddam of cheviot, died 1808, much older than wife; MRM visited in 1806, see l'estrange. -->in the middle of the <placeName>Cheviot hills</placeName>--Pray make my very best respects to <persName ref="#Elford_MrsE">Lady Elford</persName>--I do not despair of seeing her some day or other--Does she never come to <placeName ref="#London_city">London</placeName>? And would she not condescend to visit <placeName>our Cottage</placeName>? <persName ref="#Mitford_Geo">Papa</persName> will remember the <placeName ref="#Manadon">Manadon</placeName> <choice><sic>commision</sic><reg>commission</reg></choice>, &amp; he sees so many people that there is a change I think of his hearing of a tenant of course if he does I shall let you know immediately.--Oh how much I was struck &amp; charmed with the inseparable lives of those two Sisters--Oh I hope they will never be condemned to letter-writing distance! <persName>General Adams</persName> will live in your neighborhood--will he not? They should never be driven to any intercourse farther off than notes. </p><metamark rend="jerks"/><p>Yes I have got my packet quite safe--&amp; I have looked over some part of it--&amp; I really think one might with a great deal of leaving out &amp; a little putting in make a salable Volume--I shall try the experiment by sending one or two letters as specimens (Copies--made letters--of course I mean not the originals)--as specimens to my <persName ref="#Maecenas">Maecenas</persName> <persName ref="#Colburn">Mr. Colburn</persName>, &amp; if he will give me <del rend="squiggles" unit="word" n="2"><supplied resp="#lmw">a little</supplied></del><add place="above">some</add> money for said Volume--So! if not <del rend="squiggles" unit="chars" n="1"/> we must wait a little longer for our immortality. I shall take great pains to alter &amp; erase names &amp; facts &amp; places not to be found out--for I am convinced that the success of these things depends mainly upon their mystery--therefore I hope, my dear Friend that you will not speak of the plan to any one but the discreetest of the discreet--(I am afraid that it will fail altogether through <persName ref="#Colburn">Colburn</persName>'s not <del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">giving</supplied></del> offering me any thing--I think I shall ask 50--Is that too much?)--at all events you shall have your M.S.S. back in the spring--You must come &amp; fetch them.--Oh how good you are to me--how inexpressibly good &amp; kind you have always been! I was quite astonished in looking over the packet of the <choice><sic>fist</sic><reg>first</reg></choice> three years at your tolerating such a <!-- ?? --> --I suppose you expected a <del rend="squiggles" unit="chars" n="1"/> a butterfly--but alas! alas! after remaining a long time in her chrysalis state she was but a poor shabby little moth at last--a poor silly fluttering thing not worth looking at!----<!-- long dash, para. break? --></p><p>Good night my dear Friend--we shall have a longer chat tomorrow--Good night!  God bless you!<!-- long dash --></p><p><del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">late</supplied></del>Friday night--Regularly as you write to me before breakfast I write to you at 20-to-bedtime--Yes I have a book to recommend to you, my dear <persName ref="#Elford_SirWm">Sir William</persName>--a book that you will like I am sure <title ref="#Valerius_novel">Valerius a Roman Story."</title> Have you heard of it? It is a novel in 3 Vols written by I know not who, but certainly well worth reading, Do get it &amp; tell me all you think of it--I shall not say a word more about it myself because you like unexpectedness in a novel &amp; would have half your pleasure destroyed by a previous criticism. You must tell me all your own opinion--And, I must just ask you one question--How do you like the <persName ref="#Sabinus">Roman Centurion Sabinus</persName>?</p><!-- long dash --><p>I have been reading <persName ref="#deStael">Madame de Staël</persName>'s prose works--I was anxious to see what she did in the Drama way--not much to the purpose I think--though there is some merit in <persName ref="#Sappho">Sa<emph rend="underline">p</emph>ho</persName>--as that French learned lady, is pleased to spell the Lesbian Muse--It is astonishing how those French people turn every <del rend="squiggles" unit="word" n="2"><supplied resp="#lmw">thing over</supplied></del> name according to the fashion of their own barbarous tongue--there is her <title>Dix Anneés d' Exil</title> too--which I detest for its abuse of <persName ref="#Napoleon">Napoleon</persName>--tell you a secret I had some sympathy with the dear <rs type="person" ref="#Napoleon">Emperor</rs> in his dislike of that <rs type="person" ref="#deStael">Germanized Frenchwoman</rs>--whose example as to conduct has done great harm, &amp; her exam<pb n="3"/>ple <supplied resp="#lmw">example</supplied> in literature has done no good--I hate that sentimentality--However I have done with <persName ref="#deStael">Madame de Staël</persName> &amp; I am now stuck fast in the mire of <title ref="#Heracline_novel">Heracline</title>--a novel in four mortal Volumes by your friend of the long nose <persName ref="#Hawkins_LM">Miss Hawkins</persName>. I never mean to finish it--&amp; now that I read so little I really cannot imagine what could induce me to begin it. Of course I do not recommend that "Done good" piece of vulgarity to you.--No--my dear Friend I cannot tell you any thing about <persName ref="#Waithman_R">Mr. Waithman</persName>--for I was so sick of that unfortunate woman the <!--Queen? Ineen?--> dead &amp; alive &amp; the inquest looked so tremendously long when I first saw it half covering five newspapers (we don't take a paper now but get them three or four in a bunch from a neighbour by way of loan) that I fairly gave up the job &amp; have not read a word of the matter--Lord! its as long as <title ref="#Heracline_novel">Heracline</title>--&amp; though it cannot possibly be quite so stupid yet I dare say its very nearly so--Pray are you <metamark rend="caret" place="below"/><add place="above">all</add> in black in your parts? Every body is to my sorrow, for I hate mourning at all times--dirty dusty dingy black!--&amp; the ladies of <placeName ref="#Reading_city">Reading</placeName> were so much of my opinion that till the order came out, not one would put on mourning<!-- check spelling morning? --> though their husbands were as black as crows. There was a sort of Loyal Rebellion against their <orgName>Jacobin</orgName> <del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">Husbands</supplied></del><add place="above">Houses</add>--a <orgName>Neri</orgName> &amp; <orgName>Bianche</orgName> <!-- Bianchi? --> faction that was quite entertaining--I never heard of more conjugal quarrels upon a subject in my life.--But I have entirely lost my interest in politics, which you will think a great reformation--Don't you?--You must compliment me very much--&amp; compliment your own discernment on seeing how well I should turn out--What mainly contributed to my care was the unfortunate affair last year of the <persName ref="#Queen_Caroline">Queen</persName>--I have never recovered the horror I experienced at seeing the use made of that unhappy woman, by the <orgName ref="#Whigs">Whigs</orgName> &amp; <orgName ref="#Reformers">Reformers</orgName>--I am at last settled in the opinion that one party<pb n="4"/> is as bad as the other. What <persName ref="#Palmer_Mad">Lady Madelina Palmer</persName> will make of this "ratting"? I don't know--I dare say she'll be horror struck but that is a distant consideration--She has never been at <placeName ref="#Reading_city">Reading</placeName> since the two days she passed there <date when="1820-09">last September</date> &amp; I don't know when she will--<persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> who is a most thorough-going person in politics &amp; in every thing is prodigiously scandalized at my defection--I have not see her this long while--she has a large family staying in her house &amp; does not bring them here I suppose from a well founded apprehension that our parlour would not hold them. I shall not fail to give her your obliging message. Only think of her having <supplied resp="#lmw">been</supplied> in <placeName ref="#London_city">London</placeName> at <rs type="event">the Coronation</rs> &amp; so stupid as not to go to see it--She said she had the <choice><sic>headach</sic><reg>headache</reg></choice>--but I do really believe it was politics because she is very subject to the <choice><sic>headach</sic><reg>headache</reg></choice> &amp; I never knew it prevent her from doing any thing she liked in my life. He<del rend="torn"><supplied resp="#lmw">r</supplied></del> <rs type="person" ref="#Dickinson_Charles">husband</rs> is better &amp; <rs type="person" ref="#Dickinson_Daughter">the little girl</rs> charming. </p><metamark rend="jerks"/><p>How are <del rend="torn"><supplied resp="#lmw">you</supplied></del>off for partridges? There are fewer round here than were left last year.--And how do your <name ref="#dahlia">Dahlia</name>s &amp; <name ref="#hollyhock">Hollyhock</name>s &amp; <name ref="#tiger_lily">Tyger lilies</name> go on? I have had some of all which I wish were immortal--the <name ref="#hollyhock">hollyhock</name>s especially were the most perfect beauties I ever saw or ever imagined--garlands of rozy blossoms a thousand times more lovely than any that ever blew.--Good bye my dear Friend--My <persName ref="#Mitford_Geo">Father</persName> &amp; <persName ref="#Russell_M">>Mother</persName> beg their kindest remembrances--write to me very soon--you will if you wish to hear--if all that you so kindly say on that subject be not make-believe--write to me with "with speed-speed-speed"--&amp; believe me ever</p>
+         <closer><lb/>Most sincerely &amp; affectionately <choice><sic>your's</sic><reg>yours</reg></choice>
+               <lb/><persName ref="#MRM">M. R. Mitford</persName>.
+            </closer>
+            
+         <postscript><p>Pray forgive the blotted paper.--No I did not write <title ref="#Geraldine_novel">Geraldine</title><!--Geraldine; or, modes of faith and practice, a tale ... By a Lady [i.e. Mary Jane Mackenzie].-->--nor have I read it--but <persName ref="#Russell_M">Mama</persName> has &amp; she says your critique is excellent &amp;<pb n="5"/> that the fault of that novel like many other nowadays is this necessity that lady novel-writers think themselves under to make their books a chapel of ease to the Church--they mix up sermons with their fictions &amp; so spoil both--Now in my mind it would be much wiser to part the two things &amp; publish fairly &amp; honestly the sermons in one <del rend="squiggles" unit="chars" n="2"><unclear/></del> Volume &amp; the novel in another. Which do you think would tell best? Eh? <persName ref="#Russell_M">Mama</persName> says there is another both "The Favorite of Nature" <!--The favourite of nature : a tale.
+by Mary Ann Kelty 1821-->just in the same predicament with <title ref="#Geraldine_novel">Geraldine</title>. The first Volume very good--the rest preachy &amp; prosy &amp; miserable</p><metamark rend="jerk"/><p>your abbreviation of the <del rend="squiggles" unit="chars" n="2"/> <placeName ref="#ThreeMileCross">Three Mile Cross</placeName> put me in mind of <persName ref="#James_Miss">Miss James</persName> who from pure laziness always directs her letters to <placeName ref="#ThreeMileCross">3 Mile X</placeName>--You can't think how bad it looks--I scold her for it--but she is the dearest idlest best love in all the world.--Once more goodBye.</p></postscript>
+            
+             <closer>
+               <address>
+                  <addrLine><lb/><placeName ref="#Reading_city">Reading</placeName> <date when="1821-09-01">September first 1821</date></addrLine>
+                  <addrLine><lb/><persName ref="#Elford_SirWm">S-- W<hi rend="superscript">m</hi> Elford Bart</persName></addrLine>
+                  <addrLine><lb/><placeName ref="#Bickham_village">Bickham</placeName></addrLine>
+                  <addrLine><lb/><placeName ref="#Plymouth_city">Plymouth</placeName></addrLine>
+                  <addrLine><persName ref="#Monck_JB">J.B. Monck</persName></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div>
+           <div type="places">
+              <listPlace sortKey="histPlaces">
+                 <place xml:id="Manadon">
+                    <placeName>Manadon, Devonshire, England</placeName>
+                    <placeName>
+                       <settlement>Manadon</settlement>
+                       <region>Plymouth</region>
+                       <region>Devonshire</region>
+                       <country>England</country>
+                    </placeName>
+                    <location><geo>50.41389 -4.136667</geo></location>
+                 </place>
+              </listPlace>
+           </div>
+           
+           <div type="historical_people">
+              <listPerson sortKey="histPersons">
+                 <person xml:id="Maecenas" sex="1">
+                    <persName>Gaius Cilnius Maecenas</persName>
+                 </person>
+              
+              <person xml:id="Sappho" sex="2">
+                 <persName>Sappho</persName>
+              </person>
+                 
+                 <person xml:id="Kelty_MA" sex="2">
+                    <persName>Mary Ann Kelty</persName>
+                 </person>
+                 
+                 <person xml:id="Mackenzie_MJ" sex="2">
+                    <persName>Mary Jane Mackenzie</persName>
+                 </person>
+                 
+                 <person xml:id="Hawkins_LM" sex="2">
+                    <persName>Laetitia Matilda Hawkins</persName>
+                 </person>
+                 
+                 <person xml:id="Waithman_R" sex="1">
+                    <persName>Robert Waithman</persName>
+                 </person>
+                 
+                 <person xml:id="Roddam_Mrs" sex="2">
+                    <persName>Mrs. Roddam</persName>
+                 </person>
+                 
+                 <person xml:id="Sabinus" sex="1">
+                    <persName>Sabinus</persName>
+                 </person>
+                 
+                 <!-- Charles Simeon: reference in other letter, evangelical -->
+                 
+              </listPerson>
+              
+              <listOrg>
+                 <org xml:id="Reformers">
+                    <orgName>Reformers</orgName>
+                 </org>
+              </listOrg>
+           </div>
+           
+           <div type="publications">
+              <listBibl sortKey="literary">
+                 <bibl xml:id="Geraldine_novel">
+                    <title>Geraldine</title>
+                 </bibl>
+                 
+                 <bibl xml:id="Favourite_of_Nature">
+                    <title>The Favourite of Nature</title>
+                 </bibl>
+                 
+                 <bibl xml:id="Heracline_novel">
+                    <title>Heracline</title>
+                 </bibl>
+              </listBibl>
+           </div>
+           
+           <div type="nature">
+           <list sortKey="plants">
+              <item xml:id="hollyhock">
+                 <name>hollyhock</name>
+              </item>
+              
+              <item xml:id="dahlia">
+                 <name>dahlia</name>
+              </item>
+              
+              <item xml:id="tiger_lily">
+                 <name>tiger lily</name>
+              </item>
+           </list>
+           </div>
+           
+           
+        
+        </div>
+     </back>
+  </text>
+</TEI>

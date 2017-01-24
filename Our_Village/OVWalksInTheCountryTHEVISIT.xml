@@ -1,0 +1,393 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml” schematypens=”http://relaxng.org/ns/structure/1.0”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml”
+	schematypens=”http://purl.oclc.org/dsdl/schematron”?>
+<TEI xmlns=”http://www.tei-c.org/ns/1.0”>
+   <teiHeader>
+      <fileDesc>
+         <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+
+
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type=”sketch”>
+            <pb n=”255”/>
+            <head>WALKS IN THE COUNTRY.<lb/>THE VISIT.
+               <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>October 27th.—A lovely autumnal day; the air soft, balmy, genial; the sky of that
+               softened and delicate blue upon which the eye loves to rest,—the blue which gives
+               such relief to the rich beauty of the earth, all around glowing in the ripe and
+               mellow tints of the most gorgeous of the seasons. Really such an autumn may well
+               compensate our English climate for the fine spring of the south, that spring of which
+               the poets talk, but which we so seldom enjoy. Such an autumn glows upon us like a
+               splendid evening; it is the very sunset of the year; and I have been tempted forth
+               into a wider range of enjoyment than usual. This walk (if I may use the Irish figure
+               of speech called a bull) will be a ride. A very dear friend has beguiled me into ac-
+               companying her in her pretty equipage to her beautiful home, four miles off; and
+               having sent forward in the<pb n=”256”/> style of a running footman the servant who
+               had driven her, she assumes the reins, and off we set.</p>
+            <p>My fair companion is a person whom nature and for- tune would have spoiled if they
+               could. She is one of those striking women whom a stranger cannot pass without turning
+               to look again; tall and finely propor- tioned, with a bold Roman contour of figure
+               and fea- ture, a delicate English complexion, and an air of dis- tinction altogether
+               her own. Her beauty is duchess- like. She seems born to wear feathers and diamonds,
+               and to form the grace and ornament of a court; and the noble frankness and simplicity
+               of her countenance and manner confirm the impression. Destiny has, however, dealt
+               more kindly by her. She is the wife of a rich country gentleman of high descent and
+               higher attain- ments, to whom she is most devotedly attached,—the mother of a little
+               girl as lovely as herself, and the de- light of all who have the happiness of her
+               acquaintance, to whom she is endeared not merely by her remarkable sweetness of
+               temper and kindness of heart, but by the singular ingenuousness and openness of
+               character which communicate an indescribable charm to her conversa- tion. She is as
+               transparent as water. You may see every colour, every shade of a mind as lofty and
+               beau- tiful as her person. Talking with her is like being in the Palace of Truth
+               described by Madame de Genlis;<pb n=”257”/> and yet 80 kindly are her feelings, so
+               great her in- dulgence to the little failings and foibles of our com- mon nature, so
+               intense her sympathy with the wants, the wishes, the sorrows, and the happiness of
+               her fel- low-creatures, that, with all her frank-speaking, I never knew her make an
+               enemy or lose a friend.</p>
+            <p>But we must get on. What would she say if she knew I was putting her into print? We
+               must get on up the hill. Ah! that is precisely what we are not likely to do! This
+               horse, this beautiful and high-bred horse, well fed, and fat and glossy, who stood
+               prancing at our gate like an Arabian, has suddenly turned sulky. He does not indeed
+               stand quite still, but his way of moving is little better—the slowest and most sullen
+               of all walks. Even they who ply the hearse at funerals, sad-looking beasts who totter
+               under black feathers, go faster. It is of no use to admonish him by whip or rein, or
+               word. The rogue has found out, that it is a weak and tender hand that guides him now.
+               Oh for one pull, one stroke of his old driver the groom! How he would fly! But there
+               is the groom half-a-mile be- fore us, out of ear-shot, clearing the ground at a
+               capital rate, beating us hollow. He has just turned the top of the hill;—and in a
+               moment—aye, now he is out of sight, and will undoubtedly so continue till he meets us
+               at the lawn gate. Well! there is no great harm. It is only prolonging the pleasure of
+               enjoying together this<pb n=”258”/> charming scenery in this fine weather. If once we
+               make up our minds not to care how slowly our steed goes, not to fret ourselves by
+               vain exertions, it is no matter what his pace may be. There is little doubt of his
+               getting home by sunset, and that will content us. He is, after all, a fine noble
+               animal; and perhaps when he finds that we are determined to give him his way, he may
+               re- lent, and give us ours. All his sex are sticklers for dominion, though, when it
+               is undisputed, some of them are generous enough to abandon it. Two or three of the
+               most discreet wives of my acquaintance contrive to manage their husbands sufficiently
+               with no better secret than this seeming submission; and in our case the ex- ample has
+               the more weight since we have no possible way of helping ourselves.</p>
+            <p>Thus philosophising, we reached the top of the hill, and viewed with “reverted eyes”
+               the beautiful prospect that lay bathed in golden sunshine behind us. Cowper says,
+               with that boldness of expressing in poetry the commonest and simplest feelings, which
+               is perhaps one great secret of his originality,<note place=”inline”>“Scenes must be
+                  beautiful, which, daily seen, Please daily, and whose novelty survives Long
+                  knowledge and the scrutiny of years.”</note> Every day I walk up this hill—every
+               day I pause at the top to admire the broad winding road with the green<pb n=”259”/>
+               waste on each side, uniting it with the thickly timbered hedgerows; the two pretty
+               cottages at unequal dis- tances, placed so as to mark the bends; the village beyond,
+               with its mass of roofs and clustered chimneys peeping through the trees; and the rich
+               distance, where cottages, mansions, churches, towns, seem embowered in some wide
+               forest, and shut in by blue shadowy hills. Every day I admire this most beautiful
+               landscape; yet never did it seem to me so fine or so glowing as now. All the tints of
+               the glorious autumn, orange, tawny, yellow, red, are poured in profusion amongst the
+               bright greens of the meadows and turnip fields, till the eyes is satiated with
+               colour; and then before us we have the common with its picturesque roughness of
+               surface, tufted with cottages, dappled with water, edging off on one side into fields
+               and farms and orchards, and termi- nated on the other by the princely oak avenue.
+               What a richness and variety the wild broken ground gives to the luxuriant cultivation
+               of the rest of the landscape! Cowper has described it for me. How perpetually, as we
+               walk in the country, his vivid pictures recur to the memory! Here is his common, and
+               mine!</p>
+            <note place=”bottom”>“The common overgrown with fern, and rough With prickly gorse,
+               that, shapeless and deform’d And dangerous to the touch, has yet its bloom, And decks
+               itself with ornaments of gold;</note>
+            <pb n=”260”/>
+            <note place=”top”>there the turf Smells fresh, and, rich in odoriferous herbs And
+               fungous fruits nf earth, regales the sense With luxury of unexpected sweets.”</note>
+            <p>The description is exact There, too, to the left is my cricket-ground; (Cowper’s
+               common wanted that finish- ing grace;) and there stands one solitary urchin, as if in
+               contemplation of its past and future glories; for, alas! cricket is over for the
+               season. Ah! it is Ben Kirby, next brother to Joe, king of the youngsters, and
+               probably his successor—for this Michaelmas has cost us Joe! He is promoted from the
+               farm to the mansion-house, two miles off; there he cleans shoes, rubs knives, and
+               runs upon errands, and is, as his mo- ther expresses it, “a sort of ‘prentice to the
+               footman.” I should not wonder if Joe, some day or other, should overtop the footman,
+               and rise to be butler; and his splendid prospects must be our consolation for the
+               loss of this great favourite. In the mean time we have Ben.</p>
+            <p>Ben Kirby is a year younger than Joe, and the schoolfellow and rival of Jem Eusden.
+               To be sure his abilities lie in rather a different line: Jem is a scholar, Ben is a
+               wag: Jem is great in figures and writing, Ben in faces and mischief. His master says
+               of him, that, if there were two such in the school, he must resign his<pb n=”261”/>
+               office; and, as far as my observation goes, the worthy pedagogue is right. Ben is, it
+               must be confessed, a great corrupter of gravity. He hath an exceeding aver- sion to
+               authority and decorum, and a wonderful bold- ness and dexterity in overthrowing the
+               one and puzzling the other. His contortions of visage are astounding. His “power over
+               his own muscles and those of other people” is almost equal to that of Liston; and
+               indeed the original face, flat and square and Chinese in its shape, of a fine tan
+               complexion, with a snub nose, and a slit for a mouth, is nearly as comical as that
+               matchless performer’s. When aided by Ben’s singular mobility of feature, his knowing
+               winks and grins and shrugs and nods, together with a certain dry shrewdness, a habit
+               of saying sharp things, and a marvellous gift of impu- dence, it forms as fine a
+               specimen as possible of a hu- morous country boy, an oddity in embryo. Every body
+               likes Ben, except his butts; (which may perhaps comprise half his acquaintance;) and
+               of them no one so thoroughly hates and dreads him as our parish school- master, a
+               most worthy King Log, whom Ben dumb- founds twenty times a day. He is a great
+               ornament of the cricket-ground, has a real genius for the game, and displaystit after
+               a very original manner, under the dis- guise of awkwardness—as the clown shows off
+               his agility in a pantomime. Nothing comes amiss to him. By the bye, he would have
+               been the very lad for us in<pb n=”262”/> our present dilemma; not a horse in England
+               could master Ben Kirby. But we are too far from him now—and perhaps it is as well
+               that we are so. I believe the rogue has a kindness for me, in remembrance of certain
+               apples and nuts, which my usual companion, who delights in his wit, is accustomed to
+               dole out to him. But it is a Robin Goodfellow nevertheless, a perfect Puck, that
+               loves nothing on earth so well as mischief. Perhaps the horse may be the safer con-
+               ductor of the two.</p>
+            <p>The avenue is quite alive to-day. Old women are picking up twigs and acorns, and pigs
+               of all sizes doing their utmost to spare them the latter part of the trou- ble; boys
+               and girls groping for beech-nuts under yonder clump; and a group of younger elves
+               collect- ing as many dead leaves as they can find to feed the bonfire which is
+               smoking away so briskly amongst the trees,—a sort of rehearsal of the grand bonfire
+               nine days hence; of the loyal conflagration of the arch traitor Guy Vaux, which is
+               annually solemnized in the avenue, accompanied with as much of squibbery and crackery
+               as our boys can beg or borrow—not to say steal. Ben Kirby is a great man on the 5th
+               of Novem- ber. All the savings of a month, the hoarded half- pence, the new
+               farthings, the very luck-penny, go off infumo on that night. For my part, I like this
+               day- light mockery better. There is no gunpowder—odious<pb n=”263”/> gunpowder! no
+               noise but the merry shouts of the small fry, so shrill and happy, and the cawing of
+               the rooks, who are wheeling in large circles overhead, and wondering what is going
+               forward in their territory— seeming in their loud clamour to ask what that light
+               smoke may mean that curls so prettily amongst their old oaks, towering as if to meet
+               the clouds. There is something very intelligent in the ways of that black people the
+               rooks, particularly in their wonder. I sup- pose it results from their numbers and
+               their unity of purpose, a sort of collective and corporate wisdom. Yet geese
+               congregate also; and geese never by any chance look wise. But then geese are a
+               domestic fowl; we have spoiled them; and rooks are free com- moners of nature, who
+               use the habitations we provide for them, tenant our groves and our avenues, and never
+               dream of becoming our subjects.</p>
+            <p>What a labyrinth of a road this is! I do think there are four turnings in the short
+               half-mile between the avenue and the mill. And what a pity, as my companion
+               observes—not that our good and jolly mil- ler, the very representative of the old
+               English yeo- manry, should be so rich, but that one consequence of his riches should
+               be the pulling-down of the prettiest old mill that ever looked at itself in the
+               Loddon, with the picturesque low-browed irregular cottage, which stood with its
+               light-pointed roof, its clustered chim-<pb n=”264”/> neys, and its ever-open door,
+               looking like the real abode of comfort and hospitality, to build this huge, staring,
+               frightful, red-brick mill, as ugly as a manu- factory, and this great square house,
+               ugly and red to match, just behind. The old buildings always used to remind me of
+               Wollett’s beautiful engraving of a scene in the Maid of the Mill. It will be long
+               before any artist will make a drawing of this. Only think of this redness in a
+               picture! this boiled lobster of a house! Falstaff’s description of Bardolph’s nose
+               would look pale in the comparison.</p>
+            <p>Here is that monstrous machine of a tilted waggon, with its load of flour, and its
+               four fat horses. I won- der whether our horse will have the decency to get out of the
+               way. If he does not, I am sure we cannot make him; and that enormous ship upon
+               wheels, that ark on dry land, would roll over us like the car of Jaggernaut.
+               Really—Oh no! there is no danger now. I should have remembered that it is my friend
+               Samuel Long who drives the mill-team. He will take care of us. “Thank you, Samuel!”
+               And Samuel has put us on our way, steered us safely past his waggon, escorted us over
+               the bridge; and now, having seen us through our immediate difficulties, has parted
+               from us with a very civil bow and good-humoured smile, as one who is always civil and
+               good-humoured, but with a certain triumphant masterful look in his eyes, which I
+                  have<pb n=”265”/> noted in men, even the best of them, when a woman gets into
+               straits by attempting manly employments. He has done us great good though, and may be
+               al- lowed his little feeling of superiority. The parting salute he bestowed on our
+               steed, in the shape of an astounding crack of his huge whip, has put that re-
+               fractory animal on his mettle. On we go fast! past the glazier’s pretty house, with
+               its porch and its filberd walk; along the narrow lane bordered with elms, whose
+               fallen leaves have made the road one yellow; past that little farm-house with the
+               horse-chesnut trees before, glowing like oranges; past the whitewashed school on the
+               other side, gay with October roses; past the park, and the lodge, and the mansion,
+               where once dwelt the great earl of Clarendon;—and now the rascal has begun to
+               discover that Samuel Long and his whip are a mile off, and that his mistress is
+               driving him, and he slackens his pace accordingly. Perhaps he feels the beauty of the
+               road just here, and goes slowly to enjoy it. Very beautiful it certainly is. The park
+               paling forms the boundary on one side, with fine clumps of oak, and deer in all
+               attitudes3 the water, tufted with alders, flowing along on the other. Another turn,
+               and the water winds away, succeeded by a low hedge, and a sweep of green meadows;
+               whilst the park and its paling are replaced by a steep bank, on which stands a small,
+               quiet, village ale-house; and<pb n=”266”/> higher up, embosomed in wood, is the
+               little country church, with its sloping church-yard and its low white steeple,
+               peeping out from amongst magnificent yew- trees:</p>
+            <note place=”inline”>“Huge trunks! and each particular trunk a growth Of intertwisted
+               fibres serpentine Up-coiling, and jnvet’rately convolved.” Wordsworth.</note>
+            <p>No village-church was ever more happily placed. It is the very image of the peace and
+               humbleness incul- cated within its walls.</p>
+            <p>Ah! here is a higher hill rising before us, almost like a mountain. How grandly the
+               view opens as we ascend over that wild bank, overgrown with fern, and heath, and
+               gorse, and between those tall hollies, glow- ing with their coral berries! What an
+               expanse! But we have little time to gaze at present; for that piece of perversity,
+               our horse, who has walked over so much level ground, has now, inspired, I presume, by
+               a desire to revisit his stable, taken it into that unaccountable noddle of his to
+               trot up this, the very steepest hill in the county. Here we are on the top; and in
+               five minutes we have reached the lawn gate, and are in the very midst of that
+               beautiful piece of art or nature (I do not know to which class it belongs), the
+               pleasure- ground of F. Hill. Never was the”prophetic eye of<pb n=”267”/> taste”
+               exerted with more magical skill than in these plantations. Thirty years ago this
+               place had no exist- ence; it was a mere undistinguished tract of field and meadow and
+               common land; now it is a mimic forest, delighting the eye with the finest
+               combinations of trees and shrubs, the rarest effects of form and foliage, and
+               bewildering the mind with its green glades, and impervious recesses, and apparently
+               interminable ex- tent. It is the triumph of landscape gardening, and never more
+               beautiful than in this autumn sunset, light- ing up the ruddy beech and the spotted
+               sycamore, and gilding the shining fir-cones that hang so thickly amongst the dark
+               pines. The robins are singing around us, as if they too felt the magic of the hour.
+               How gracefully the road winds through the leafy labyrinth, leading imperceptibly to
+               the more orna- mented sweep. Here we are at the door amidst gera- niums, and
+               carnations, and jasmines, still in flower. Ah! here is a flower sweeter than all, a
+               bird gayer than the robin, the little bird that chirps to the tune of “mamma! mamma!”
+               the bright-faced fairy, whose tiny feet come pattering along, making a merry music,
+               mamma’s own Frances! And following her guidance, here we are in the dear round room
+               time enough to catch the last rays of the sun, as they light the noble landscape
+               which lies like a panorama around us, lin-<pb n=”268”/> gering longest on that long
+               island of old thorns and stunted oaks, the oasis of B. Heath, and then vanish- ing in
+               a succession of gorgeous clouds.</p>
+            <p>October 28.—Another soft and brilliant morning. But the pleasures of to-day must be
+               written in short- hand. I have left myself no room for notes of admi- ration.</p>
+            <p>First we drove about the coppice; an extensive wood of oak, and elm, and beech,
+               chiefly the former, which adjoins the park paling of F. Hill, of which de- mesne,
+               indeed, it forms one of the most delightful parts. The roads through the coppice are
+               studiously wild, so that they have the appearance of mere cart- tracts: and the
+               manner in which the ground is tum- bled about, the steep declivities, the sunny
+               slopes, the sudden swells and falls, now a close narrow valley, then a sharp ascent
+               to an eminence, commanding an immense extent of prospect, have a striking air of
+               natural beauty, developed and heightened by the perfection of art. All this, indeed,
+               was familiar to me; the colour- ing only was new. I had been there in early spring,
+               when the fragrant palms were on the willow, and the yellow tassels on the hazel, and
+               every twig was swell- ing with renewed life; and I had been there again and again in
+               the green leanness of midsummer; but never as now, when the dark verdure of the
+                  fir-plantations,<pb n=”269”/> hanging over the picturesque and unequal paling,
+               partly covered with moss and ivy, contrasts so remark- ably with the shining
+               orange-leaves of the beech, already half fallen, the pale yellow of the scattering
+               elm, the deeper and richer tints of the oak, and the glossy stems of the “lady of the
+               woods,” the delicate weeping birch. The underwood is no less picturesque. The
+               red-spotted leaves, and redder berries of the old thorns, the scarlet festoons of the
+               bramble, the tall fern of every hue, seem to vie with the brilliant mo- saic of the
+               ground, now covered with dead leaves, and strewn with fircones, now, where a little
+               glade inter- venes, gay with various mosses and splendid fungi. How beautiful is this
+               coppice to-day! especially where the little spring, as clear as crystal, comes
+               bubbling out from the “old fantastic” beech root, and trickles over the grass, bright
+               and silent as the dew in a May morning. The wood pigeons (who are just returned from
+               their summer migration, and are cropping the ivy berries) add their low cooings, the
+               very note of love, to the slight fluttering of the fallen leaves in the quiet air,
+               giving a voice to the sunshine and the beauty. This coppice is a place to live and
+               die in. But we must go. And how fine is the ascent which leads us again into the
+               world, past those cottages hidden as in a pit, and by that hanging orchard and that
+                  rough<pb n=”270”/> heathy bank! The scenery in this one spot has a wild- ness, an
+               abruptness of rise and fall, rare in any part of England, rare above all in this rich
+               and lovely but monotonous county. It is Switzerland in minia- ture.</p>
+            <p>And now we cross the hill to pay a morning visit to the family at the great
+               house,—another fine place, commanding another fine sweep of country. The park,
+               studded with old trees, and sinking gently into a valley, rich in wood and water, is
+               in the best style of ornamental landscape, though more according to the common
+               routine of gentlemen’s seats than the singularly original place which we have just
+               left. There is, how- ever, one distinctive beauty in the grounds of the great
+               house;—the magnificent firs which shade the terraces and surround the sweep, giving
+               out in summer odours really Sabaean, and now in this low autumn sun pro- ducing an
+               effect almost magical, as the huge red trunks, garlanded with ivy, stand out from the
+               deep shadows like an army of giants. In-doors—Oh I must not take my readers in-doors,
+               or we shall never getaway! —In-doors the sunshine is brighter still; for there, in a
+               lofty lightsome room, sits a damsel fair and arch and piquante, one whom Titian or
+               Velasquez should be born again to paint, leaning over an instrument * as<note
+                  place=”bottom”>* The dital harp.</note><pb n=”271”/> sparkling and fanciful as
+               herself, singing pretty French romances, and Scottish Jacobite songs, and all sorts
+               of graceful and airy drolleries picked up I know not where—an English
+               improvvisatrice! a gayer Annot Lyle! whilst her sister, of a higher order of beauty,
+               and with an earnest kindness in her smile that deepens its power, lends to the piano,
+               as her father to the violin, an expression, a sensibility, a spirit, an elo- quence,
+               almost super-human—almost divine! Oh to hear these two instruments accompanying my
+               dear com- panion (I forgot to say that she is a singer worthy to be so accompanied)
+               in Haydn’s exquisite canzonet, “She never told her love,”—to hear her voice, with all
+               its power, its sweetness, its gush of sound, so sus- tained and assisted by
+               modulations that rivalled its in- tensity of expression; to hear at once such poetry,
+               such music, such execution, is a pleasure never to be forgotten, or mixed with meaner
+               things. I seem to hear it still.</p>
+            <note place=”bottom”>As in the bursting spring time o’er the eye Of one who haunts the
+               fields fair visions creep Beneath the closed lids (afore dull sleep Dims the quick
+               fancy) of sweet flowers that lie On grassy banks, oxlip of orient dye, And palest
+               primrose and blue violet, All in their fresh and dewy beauty set, Pictur’d within the
+               sense, and will not fly:</note>
+            <pb n=”272”/>
+            <note place=”top”>So in mine ear resounds and lives again One mingled melody,—a voice, a
+               pair Of instruments most voice-like! Of the air Rather than of the earth seems that
+               high strain, A spirit’s song, and worthy of the train That sooth’d old Prospero with
+               music rare.</note>
+         </div>
+      </body>
+   </text>
+</TEI>

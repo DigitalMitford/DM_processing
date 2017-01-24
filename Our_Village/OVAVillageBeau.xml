@@ -1,0 +1,281 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml” schematypens=”http://relaxng.org/ns/structure/1.0”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml”
+	schematypens=”http://purl.oclc.org/dsdl/schematron”?>
+<TEI xmlns=”http://www.tei-c.org/ns/1.0”>
+   <teiHeader>
+      <fileDesc>
+         <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+
+
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type=”sketch”>
+            <pb n=”188”/>
+            <head>A VILLAGE BEAU.
+               <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>The finest young man in our village is undoubtedly Joel Brent, half-brother to my
+               Lizzy. They are alike too; as much alike as a grown-up person and a little child of
+               different sexes well can be; alike in a vigorous uprightness of form, light, firm,
+               and compact as possible; alike in the bright, sparkling, triumphant blue eye, the
+               short-curled upper lip, the brown wavy hair, the white forehead and sunburnt cheeks,
+               and, above all, in the singular spirit and gaiety of their countenance and demeanour,
+               the constant ex- pression of life and glee, to which they owe the best and rarest
+               part of their attractiveness. They seem, and they are two of the happiest and
+               merriest creatures that ever trod on the greensward. Really to see Joel walking by
+               the side of his team, (for this enviable mortal, the pride of our village, is by
+               calling a carter), to see him walking, on a fine sunny morning, by the side of his
+               bell-team, the fore-horse decked with rib- bons and flowers like a countess on the
+               birth-day, as<pb n=”189”/> consciously handsome as his driver, the long whip poised
+               gracefully on his shoulder, his little sister in his hand, and his dog Ranger (a
+               beautiful red and white spaniel—every thing that belongs to Joel is beautiful)
+               frisking about them:—to see this group, and to hear the merry clatter formed by
+               Lizzy’s tongue, Joel’s whistling, and Ranger’s delighted bark, is enough to put an
+               amateur of pleasant sounds and happy faces in good humour for the day.</p>
+            <p>It is a grateful sight in other respects, for Joel is a very picturesque person, just
+               such an one as a painter would select for the fore-ground of some English landscape,
+               where nature is shewn in all her loveliness. His costume is the very perfection of
+               rustic coquetry, of that grace, which all admire and few practise, the grace of
+               adaptation, the beauty of fitness. No one ever saw Joel in that wretched piece of
+               deformity a coat, or that still wretcheder apology for a coat a dock- tailed jacket.
+               Broad-cloth, the “common stale” of peer and peasant, approaches him not; neither does
+               “the poor creature,” fustian. His upper garment con- sists of that prettier jacket
+               without skirts, call it for the more grace a doublet, of dark velveteen, hanging open
+               over his waistcoat, giving a Spanish or an Italian air to his whole appearance, and
+               setting off to great advantage his trim yet manly shape. To this he adds a silk
+               handkerchief, tied very loosely round his neck,<pb n=”190”/> a shirt collar open so
+               as to shew his throat, as you commonly see in the portraits of artists, very loose
+               trowsers, and a straw hat. Sometimes in cold wea- ther he throws over all a
+               smock-frock, and last winter brought up a fashion amongst our lads, by assuming one
+               of that blue bight Waterloo, such as butchers wear. As soon as all his comrades had
+               provided themselves with a similar piece of rustic finery, he abandoned his, and
+               indeed generally sticks to his vel- veteen jacket, which, by some magical influence
+               of cleanliness and neatness, always looks new. I cannot imagine how he contrives it,
+               but dirt never hangs upon Joel; even a fall at cricket in the summer, or a tumble on
+               the ice in the winter, fails to soil him; and he is so ardent in his diversions, and
+               so little disposed to let his coxcombry interfere with his sports, that both have
+               been pretty often tried; the former especially.</p>
+            <p>Ever since William Grey’s secession, which took place shortly after our great match,
+               for no cause as- signed, Joel has been the leader and chief of our cricketers.
+               Perhaps, indeed, Joel’s rapid improve- ment might be one cause of William’s
+               withdrawal, for, without attributing any thing like envy or jealousy to these fine
+               young men, we all know that “two stars keep not their motion in one sphere,” and so
+               forth, and if it were absolutely necessary that either our “Harry Hotspur, or the
+               Prince of Wales,” should abdi-<pb n=”191”/> cate that fair kingdom the
+               cricket-ground, I must say that I am content to retain our present champion. Joel is
+               in my mind the better player, joining to Wil- liam’s agility, and certainty of hand
+               and eye, all the ardour, force, and gaiety of his own quick and lively spirit. The
+               whole man is in the game, mind and body; and his success is such as dexterity and
+               enthu- siasm united must always command. To be sure he is a leetle over eager, that I
+               must confess, and does occasionally run out a slow mate; but he is sure to make up
+               for it by his own exertions, and after all what a delightful fault zeal is! Now that
+               we are on the subject of faults, it must be said, not that Joel has his share, which
+               is of course, but that they are exceed- ingly venial, little shades that become him,
+               and arise out of his brighter qualities as smoke from the flame. Thus, if he
+               sometimes steals one of his active holidays for a revel or a cricket-match, he is
+               sure to make up the loss to his master by a double portion of labour the next day;
+               and if now and then at tide-times, he loiters in the chimney-corner of the Rose,
+               rather longer than strict prudence might warrant, no one can hear his laugh and his
+               song pouring through the open door, like the very voice of “jest and youthful jol-
+               lity,” without feeling certain that it is good fellowship, and not good liquor, that
+               detains him. Indeed so much is he the delight of the country lads, who fre-<pb
+                  n=”192”/> quent that well-accustomed inn, so much is his company sought after in
+               all rustic junketings, that I am only astonished at the strength of resolution, and
+               power of resisting temptation, which he displays in going thither so seldom.</p>
+            <p>If our village lads be so fond of him, it is not to be doubted that our village
+               maidens like him too. The pretty brunette, Sally Wheeler, who left a good ser- vice
+               at B., to take in needle-work, and come home to her grandmother, she being, to use
+               Sally’s phrase, “unkedfor want of company,” (N. B. Dame Wheeler is as deaf as a post,
+               a cannon would not rouse her), is thought, in our little world, to have had an eye to
+               Joel in this excess of dutifulness. Miss Phoebe, the lass of the Rose, she also,
+               before her late splendid marriage to the patten-maker, is said to have becurled and
+               beflounced herself at least two tiers higher on club-nights, and Sundays, and
+               holidays, and whenever there was a probable chance of meeting him. The gay recruiting
+               serjeant, and all other beaux were abandoned the instant he appeared; nay, it is even
+               hinted, that the patten-maker owes his fair bride partly to pique at Joel’s
+               indifference. Then Miss Sophia Matthews, the schoolmistress on the lea, to whom in
+               point of dignity Miss Phoebe was nothing, who wears a muff and a veil, walks
+               mincingly, and tosses her head in the air, keeps a maid,—a poor little drab<pb
+                  n=”193”/> of ten years old; follows, as she says, a genteel pro- fession,—I think
+               she may have twenty scholars at eight-pence a week; and when she goes to dine with
+               her brother, the collar-maker, hires a boy for a penny to carry her clogs;—Miss
+               Sophia, it is well known, hath pretermitted her dignity in the matter of Joel; hath
+               invited the whole family to tea (only think of Joel at a tea-party ?) hath spoken of
+               him as “a person above the common: a respectable young man; one, who with a discreet
+               and accomplished wife, a woman of reading and education,” (Miss Sophia, in the days
+               of her father, the late collar-maker of happy memory, before she “taught the young
+               idea how to shoot,” had herself drunk deeply at that well of knowledge, the
+               circulating library of B.) “not too young,” (Miss Sophia calls herself twenty-eight—I
+               wonder what the register says!) “no brazen-faced gipsy, like Sally Wheeler,” (Miss
+               Sophia’s cast of countenance is altogether different from Sally’s dark and sparkling
+               beauty, she being pink-eyed, red-haired, lean, pale, and freckled) “or the jill-flirt
+               Phoebe” but to cut short an oration which in spite of the lady’s gentility, began to
+               grow rather scurrilous, one fact was certain, .—that Joel might, had he so chosen,
+               have worn the crown matrimonial in Miss Sophia’s territories, con- sisting of a
+               freehold-cottage, a little the worse for wear, a good garden, a capital orchard, and
+               an exten-<pb n=”194”/> sive right of common; to say nothing of the fair dam- sel and
+               her school, or, as she is accustomed to call it, her seminary.</p>
+            <p>Joel’s proud bright eye glanced, however, carelessly over all. There was little
+               perceptible difference of feeling in the gay distant smile, with which he re- garded
+               the coquettish advances of the pretty brunette, Sally Wheeler, or the respectful bow
+               with which he retreated from the dignified condescension of Miss Sophia. He fluttered
+               about our village belles like a butterfly over a bed of tulips; sometimes approaching
+               them for a moment, and seeing them ready to fix, but oftener above and out of reach,
+               a creature of a spright- lier element, too buoyant and volatile to light on an
+               earthly flower. At last, however, the rover was caught; and our damsel, Harriet, had
+               the glory of win- ning that indomitable heart.</p>
+            <p>Now Harriet is in all things Lucy’s successor; in post, and favour, and beauty, and
+               lovers. In my eye she is still prettier than Lucy; there is something so feminine and
+               so attractive in her loveliness. She is a tall young woman, finely, though, for
+               eighteen, rather fully formed; with a sweet child-like face, a fair blooming
+               complexion, a soft innocent smile, and the eye of a dove. Add to this a gentle voice,
+               a quiet modest manner, and a natural gentility of appearance, and no wonder that
+               Harriet might vie with her pre-<pb n=”195”/> decessor in the number of her admirers.
+               She in- herited also a spice of her coquetry, although it was shewn in so different a
+               way that we did not imme- diately find it out. Lucy was a flirt active; Harriet was a
+               flirt passive: Lucy talked to her beaux; Harriet only listened to her’s; Lucy, when
+               challenged on the number of her conquests, denied the thing, and blushed, and
+               laughed, and liked to be laughed at; Harriet, on a similar charge, gave no token of
+               liking or denial, but said quietly that she could not help it, and went on winning
+               hearts by dozens, prodigal of smiles but chary of love, till Joel came, “pleased her
+               by manners most unlike her own,” and gave to her de- licate womanly beauty the only
+               charms it wanted—sen- sibility and consciousness.</p>
+            <p>The manner in which we discovered this new flirta- tion, which, unlike her others,
+               was concealed with the pretty reserve and mystery that wait on true love, was
+               sufficiently curious. We had noted Joel more frequently than common about the house:
+               sometimes he came for Lizzy; sometimes to bring news of a cricket-match; sometimes to
+               ask questions about bats and balls; sometimes to see if his dog Ranger had followed
+               my May; sometimes to bring me a nosegay. All this occasioned no suspicion; we were
+               too glad to see Joel to think of enquiring why he came. But when the days shortened,
+               and evening closed in dark<pb n=”196”/> and cold before his work was done, and
+               cricket and flowers were over, and May and Lizzy safe in their own warm beds, and
+               poor Joel’s excuses fairly at an end; then it was, that in the after-dinner pause
+               about seven, when the clatter of plates and dishes was over, that the ornithological
+               ear of the master of the house, a dabbler in natural history, was struck by a regular
+               and melodious call, the note, as he averred, of a sky-lark. That a sky-lark should
+               sing in front of our house, at seven o’clock, in a December evening, seemed, to say
+               the least, rather startling. But our ornithologist happening to agree with Mr. White,
+               of Selborne, in the opinion, that many more birds sing by night than is commonly
+               supposed, and becoming more and more confident of the identity of the note, thought
+               the thing possible; and not being able to dis- cover any previous notice of the fact,
+               had nearly in- serted it, as an original observation, in the Naturalist’s Calendar,
+               when running out suddenly one moonlight night, to try for a peep at the nocturnal
+               songster, he caught our friend Joel, whose accomplishments in this line we had never
+               dreamt of, in the act of whistling a summons to his lady love.</p>
+            <p>For some weeks our demure coquette listened to none but this bird-like wooing; partly
+               from pride in the conquest; partly from real preference; and partly, I believe, from
+               a lurking consciousness that Joel was<pb n=”197”/> by no means a lover to be trifled
+               with. Indeed he used to threaten, between jest and earnest, a ducking in the
+               goose-pond opposite, to whoever should presume to approach his fair intended; and the
+               waters being high and muddy, and he at all points a formidable rival, most of her
+               former admirers were content to stay away. At last, however, she relapsed into her
+               old sin of listening. A neighbouring farmer gave a ball in his barn, to which both
+               our lovers were invited and went. Now Harriet loves dancing, and Joel,though arrayed
+               in a new jacket, and thin cricketing-pumps, would not dance; he said he could not,
+               but that, as Harriet observes, is incredible. I agree with her that the gentleman was
+               too fine. He chose to stand and look on, and laugh, and make laugh, the whole even-
+               ing. In the meantime his fair betrothed picked up a new partner, and a new beau, in
+               the shape of a freshly- arrived carpenter, a grand martial-looking figure, as tall as
+               a grenadier, who was recently engaged as foreman to our civil wheeler, and who, even
+               if he had heard of the denunciation, was of a size and spirit to set Joel and the
+               goose-pond at defiance,—David might as well have attempted to goose-pond Goliath! He
+               danced the whole evening with his pretty partner, and after- wards saw her home; all
+               of which Joel bore with great philosophy. But the next night he came again; and Joel
+               approaching to give his own sky-lark signal,<pb n=”198”/> was startled at seeing
+               another lover leaning over the wicket, and his faithless mistress standing at the
+               half-open door, listening to the tall carpenter, just as complacently as she was wont
+               to do to himself. He passed on without speaking, turned down the little lane that
+               leads to Dame Wheeler’s cottage, and in less than two minutes Harriet heard the
+               love-call sounded at Sally’s gate. The effect was instantaneous; she discarded the
+               tall carpenter at once and for ever, locked and bolted the door, and sat down to work
+               or to cry in the kitchen. She did not cry long. The next night we again heard the
+               note of the sky-lark louder and more brilliant than ever, echoing across our court,
+               and the lovers, the better friends for their little quarrel, have been as constant as
+               turtle-doves ever since</p>
+         </div>
+      </body>
+   </text>
+</TEI>

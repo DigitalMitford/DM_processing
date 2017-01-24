@@ -1,0 +1,334 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml” schematypens=”http://relaxng.org/ns/structure/1.0”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml”
+	schematypens=”http://purl.oclc.org/dsdl/schematron”?>
+<TEI xmlns=”http://www.tei-c.org/ns/1.0”>
+   <teiHeader>
+      <fileDesc>
+         <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+
+
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type=”sketch”>
+            <pb n=”199”/>
+            <head>WALKS IN THE COUNTRY.<lb/>THE HARD SUMMER.
+               <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>August 15th.—Cold, cloudy, windy, wet. Here we are, in the midst of the dog-days,
+               clustering mer- rily round the warm hearth, like so many crickets, in- stead of
+               chirruping in the green fields like that other merry insect the grasshopper;
+               shivering under the in- fluence of the Jupiter Pluvius of England, the watery St.
+               Swithin; peering at that scarce personage the sun, when he happens to make his
+               appearance, as in- tently as astronomers look after a comet, or the com- mon people
+               stare at a balloon; exclaiming against the cold weather, just as we used to exclaim
+               against the warm. “What a change from last year!” is the first sentence you hear, go
+               where you may. Every body remarks it, and every body complains of it; and yet in my
+               mind it has its advantages, or at least its com- pensations, as every thing in nature
+               has, if we would only take the trouble to seek for them.</p>
+            <pb n=”200”/>
+            <p>Last year, in spite of the love which we are now pleased to profess towards that
+               ardent luminary, not one of the sun’s numerous admirers had courage to look him in
+               the face: there was no bearing the world till he had said “Good-night” to it. Then we
+               might stir; then we began to wake and to live. All day long we languished under his
+               influence in a strange dreaminess, too hot to work, too hot to read, too hot to
+               write, too hot even to talk; sitting hour after hour in a green arbour, embowered in
+               leafiness, letting thought and fancy float as they would. Those day- dreams were
+               pretty things in their way; there is no denying that. But then, if one half of the
+               world were to dream through a whole summer, like the Sleeping Beauty in the Wood,
+               what would become of the other?</p>
+            <p>The only office requiring the slightest exertion, which I performed in that warm
+               weather, was water- ing my flowers. Common sympathy called for that labour. The poor
+               things withered, and faded, and pined away; they almost, so to say, panted for
+               drought. Moreover, if I had not watered them my- self, I suspect that no one else
+               would; for water last year was nearly as precious hereabout as wine. Our land-springs
+               were dried up; our wells were exhausted; our deep ponds were dwindling into mud; and
+               geese, and ducks, and pigs, and laundresses, used to look with a jealous and
+               suspicious eye on the few and<pb n=”201”/> scanty half-buckets of that impure
+               element, which my trusty lacquey was fain to filch for my poor geraniums and
+               campanulas and tuberoses. We were forced to smuggle them in through my faithful
+               adherent’s terri- tories, the stable, to avoid lectures within doors; and at last
+               even that resource failed; my garden, my blooming garden, the joy of my eyes, was
+               forced to go waterless like its neighbours, and became shrivelled, scorched, and
+               sunburnt, like them. It really went to my heart to look at it.</p>
+            <p>On the other side of the house matters were still worse. What a dusty world it was
+               when about sunset we became cool enough to creep into it! Flowers in the court
+               looking fit for a hortus siccus; mummies of plants, dried as in an oven; hollyhocks,
+               once pink, turned into Quakers; cloves smelling of dust. Oh dusty world! May herself
+               looked of that complexion; so did Lizzy; so did all the houses, windows, chickens,
+               children, trees, and pigs in the village; so above all did the shoes. No foot could
+               make three plunges into that abyss of pulverised gravel, which had the impudence to
+               call itself a hard road, without being clothed with a coat a quarter of an inch
+               thick. Woe to white gowns! woe to black! Drab was your only wear.</p>
+            <p>Then, when we were out of the street, what a toil it was to mount the hill, climbing
+               with weary steps and<pb n=”202”/> slow upon the brown turf by the way-side, slippery,
+               hot, and hard as a rock! And then if we happened to meet a carriage coming along the
+               middle of the road,—the bottomless middle,—what a sandy whirl- wind it was! What
+               choking! what suffocation! No state could be more pitiable, except indeed that of the
+               travellers who carried this misery about with them. I shall never forget the plight
+               in which we met the coach one evening in last August, full an hour after its time,
+               steeds and driver, carriage and passengers, all one dust. The outsides and the horses
+               and the coachman, seemed reduced to a torpid quietness, the resignation of despair.
+               They had left off trying to better their condition, and taken refuge in a wise and
+               patient hopelessness, bent to endure in silence the extremity of ill. The six
+               insides, on the contrary, were still fighting against their fate, vainly struggling
+               to ame- liorate their hapless destiny. They were visibly grum- bling at the weather,
+               scolding the dust, and heating themselves like a furnace, by striving against the
+               heat. How well I remember the fat gentleman without his coat, who was wiping his
+               forehead, heaving up his wig, and certainly uttering that English ejaculation, which,
+               to our national reproach, is the phrase of our language best known on the continent.
+               And that poor boy, red-hot, all in a flame, whose mamma, having divested her own
+               person of all superfluous apparel, was trying<pb n=”203”/> to relieve his sufferings
+               by the removal of his neck- kerchief—an operation which he resisted with all his
+               might. How perfectly I remember him, as well as the pale girl who sate opposite,
+               fanning herself with her bonnet into an absolute fever! They vanished after a while
+               in their own dust; but I have them all before my eyes at this moment, a
+               companion-picture to Hogarth’s Afternoon, a standing lesson to the grum- blers at
+               cold summers.</p>
+            <p>For my part, I really like this wet season. It keeps us within, to be sure, rather
+               more than is quite agreeable; but then we are at least awake and alive there, and the
+               world out of doors is so much the pleasanter when we can get abroad. Every thing does
+               well, except those fastidious bipeds, men and women; corn ripens, grass grows, fruit
+               is plentiful; there is no lack of birds to eat it, and there has not been such a
+               wasp-season these dozen years. My gar- den wants no watering, and is more beautiful
+               than ever, beating my old rival in that primitive art, the pretty wife of the little
+               mason, out and out. Mea- sured with mine, her flowers are nought. Look at those
+               hollyhocks, like pyramids of roses; those gar- lands of the convolvulus major of all
+               colours, hanging around that tall pole, like the wreathy hop-bine; those magnificent
+               dusky cloves, breathing of the Spice Islands; those flaunting double dahlias; those
+                  splen-<pb n=”204”/> did scarlet geraniums, and those fierce and warlike flowers
+               the tiger-lilies. Oh how beautiful they are! Besides, the weather clears sometimes—it
+               has cleared this evening; and here are we, after a merry walk up the hill, almost as
+               quick as in the winter, bounding lightly along the bright green turf of the pleasant
+               common, enticed by the gay shouts of a dozen clear young voices, to linger awhile,
+               and see the boys play at cricket.</p>
+            <p>I plead guilty to a strong partiality towards that unpopular class of beings,
+               country-boys: I have a large acquaintance amongst them, and I can almost say, that I
+               know good of many and harm of none. In general they are an open, spirited,
+               good-humoured race, with a proneness to embrace the pleasures and eschew the evils of
+               their condition, a capacity for hap- piness, quite unmatched in man, or woman, or
+               girl. They are patient, too, and bear their fate as scape- goats (for all sins
+               whatsoever are laid as matters of course to their door, whether at home or abroad,)
+               with amazing resignation; and, considering the many lies of which they are the
+               objects, they tell wonderfully few in return. The worst that can be said of them is,
+               that they seldom, when grown to man’s estate, keep the promise of their boyhood; but
+               that is a fault to come—a fault that may not come, and ought not to be anticipated.
+               It is astonishing how sensible they are to<pb n=”205”/> notice from their betters, or
+               those whom they think such. I do not speak of money, or gifts, or praise, or the more
+               coarse and common briberies—they are more delicate courtiers; a word, a nod, a smile,
+               or the mere calling of them by their names, is enough to in- sure their hearts and
+               their services. Half-a-dozen of them, poor urchins, have run away now to bring us
+               chairs from their several homes. “Thank you, Joe Kirby!—you are always first—yes,
+               that is just the place.—I shall see every thing there. Have you been in yet,
+               Joe?”—”No, ma’am! I go in next.”—” Ah, I am glad of that—and now’s the time. Really
+               that was a pretty ball of Jem Eusden’s!—I was sure it would go to the wicket. Run,
+               Joe! They are wait- ing for you.” There was small need to bid Joe Kirby make haste; I
+               think he is, next to a race-horse, or a greyhound, or a deer, the fastest creature
+               that runs—the most completely alert and active. Joe is mine especial friend, and
+               leader of the “tender juveniles,” as Joel Brent is of the adults. In both instances
+               this post of honour was gained by merit, even more remarkably so in Joe’s case than
+               in Joel’s; for Joe is a less boy than many of his companions, (some of whom are
+               fifteeners and sixteeners, quite as tall and nearly as old as Tom Coper) and a poorer
+               than all, as may be conjectured from the lamentable state of that patched round
+               frock, and the ragged condition of<pb n=”206”/> those unpatched shoes, which would
+               encumber, if any thing could, the light feet that wear them. But why should I lament
+               the poverty that never troubles him? Joe is the merriest and happiest creature that
+               ever lived twelve years in this wicked world. Care cannot come near him. He hath a
+               perpetual smile on his round ruddy face, and a laugh in his hazel-eye, that drives
+               the witch away. He works at yonder farm on the top of the hill, where he is in such
+               repute for in- telligence and good-humour, that he has the honour of performing all
+               the errands of the house, of helping the maid, and the mistress, and the master, in
+               addition to his own stated office of carter’s boy. There he works hard from five till
+               seven, and then he comes here to work still harder under the name of play— batting,
+               bowling, and fielding, as if for life, filling the place of four boys; being, at a
+               pinch, a whole eleven. The late Mr. Knyvett, the king’s organist, who used in his own
+               person to sing twenty parts at once of the hallelujah chorus, so that you would have
+               thought he had a nest of nightingales in his throat, was but a type of Joe Kirby.
+               There is a sort of ubiquity about him; he thinks nothing of being in two places at
+               once, and for pitching a ball William Grey himself is nothing to him. It goes
+               straight to the mark like a bullet. He is king of the cricketers from eight to
+               sixteen, both inclusive, and an excellent ruler he makes. Never-<pb n=”207”/>
+               theless, in the best-ordered states there will be grum- blers, and we have an
+               opposition here in the shape of Jem Eusden.</p>
+            <p>Jem Eusden is a stunted lad of thirteen, or there- about, lean, small, and short, yet
+               strong and active. His face is of an extraordinary ugliness, colourless, withered,
+               haggard, with a look of extreme age, much increased by hair so light that it might
+               rather pass for white than flaxen. He is constantly arrayed in the blue cap and
+               old-fashioned coat, the costume of an endowed school to which he belongs; where he
+               sits still all day, and rushes into the field at night, fresh, untired, and ripe for
+               action, to scold, and brawl, and storm, and bluster. He hates Joe Kirby, whose im-
+               moveable good-humour, broad smiles, and knowing nods, must certainly be very
+               provoking to so fierce and turbulent a spirit; and he has himself (being, except by
+               rare accident, no great player) the prepos- terous ambition of wishing to be manager
+               of the sports. In short, he is a demagogue in embryo, with every quality necessary to
+               a splendid success in that vocation,—a strong voice, a fluent utterance, an inces-
+               sant iteration, and a frontless impudence. He is a great “scholar,” too, to use the
+               country phrase; his “piece,” as our village-schoolmaster terms a fine sheet of
+               flourishing writing, something between a valentine and a sampler, enclosed within a
+               border of little<pb n=”208”/> coloured prints—his last, I remember, was encircled by
+               an engraved history of Moses, beginning at the finding in the bulrushes, with
+               Pharaoh’s daughter, dressed in a rose-coloured gown and blue feathers—his piece is
+               not only the admiration of the school but of the parish, and is sent triumphantly
+               around from house to house at Christmas, to extort halfpence and sixpences from all
+               encouragers of learning—Montem in miniature. The Mosaic history was so successful,
+               that the produce enabled Jem to purchase a bat and ball, which, besides adding to his
+               natural arrogance (for the little pedant actually began to mutter against being
+               eclipsed by a dunce, and went so far as to challenge Joe Kirby to a trial in
+               Practice, or the Rule of Three), gave him, when compared with the general poverty, a
+               most unnatural preponderance in the cricket state. He had the ways and means in his
+               hands—(for alas! the hard winter had made sad havoc among the bats, and the best ball
+               was a bad one)—he had the ways and means, could withhold the supplies, and his party
+               was beginning to wax strong, when Joe received a present of two bats and a ball for
+               the youngsters in general, and himself in particular—and Jem’s ad- herents left him
+               on the spot—they ratted, to a man, that very evening. Notwithstanding this desertion,
+               their forsaken leader has in nothing relaxed from his pretensions, or his ill-humour.
+               He still quarrels and<pb n=”209”/> brawls as if he had a faction to back him, and
+               thinks no- thing of contending with both sides, the ins and the outs, secure of
+               out-talking the whole field. He has been squabbling these ten minutes, and is just
+               marching off now with his own bat (he has never deigned to use one of Joe’s) in his
+               hand. What an ill-conditioned hob- goblin it is! And yet there is something bold and
+               sturdy about him too. I should miss Jem Eusden.</p>
+            <p>Ah, there is another deserter from the party! my friend the little hussar—I do not
+               know his name, and call him after his cap and jacket. He is a very remark- able
+               person, about the age of eight years, the youngest piece of gravity and dignity I
+               ever encountered; short, and square, and upright, and slow, with a fine bronzed flat
+               visage, resembling those convertible signs the Broad-Face and the Saracen’s Head,
+               which, happening to be next-door neighbours in the town of B., I never know apart,
+               resembling, indeed, any face that is open- eyed and immoveable, the very sign of a
+               boy! He stalks about with his hands in his breeches pocket, like a piece of
+               machinery; sits leisurely down when he ought to field, and never gets farther in
+               batting than to stop the ball. His is the only voice never heard in the me- lee; I
+               doubt, indeed, if he have one, which may be partly the reason of a circumstance that
+               I record to his honour, his fidelity to Jem Eusden, to whom he has adhered through
+               every change of fortune with a tena-<pb n=”210”/> city proceeding perhaps from an
+               instinctive conscious- ness that that loquacious leader talks enough for two. He is
+               the only thing resembling a follower that our de- magogue possesses, and is cherished
+               by him accord- ingly. Jem quarrels for him, scolds for him, pushes for him; and but
+               for Joe Kirby’s invincible good hu- mour, and a just discrimination of the innocent
+               from the guilty, the activity of Jem’s friendship would get the poor hussar ten
+               drubbings a day.</p>
+            <p>But it is growing late. The sun has set a long time. Only see what a gorgeous
+               colouring has spread itself over those parting masses of clouds in the west,—what a
+               train of rosy light! We shall have a fine sunshiny day to-morrow,—a blessing not to
+               be undervalued, in spite of my late vituperation of heat. Shall we go home now 1 And
+               shall we take the longest but prettiest road, that by the green lanes? This way, to
+               the left, round the corner of the common, past Mrs. Welles’s cottage, and our path
+               lies straight before us. How snug and comfortable that cottage looks! Its little yard
+               all alive with the cow, and the mare, and the colt almost as large as the mare, and
+               the young foal, and the great yard-dog, all so fat! Fenced in with hay-rick, and
+               wheat-rick, and bean-stack, and backed by the long garden, the spacious
+               drying-ground, the fine orchard, and that large field quartered into four different
+               crops. How comfortable this cottage looks, and how well the<pb n=”211”/> owners earn
+               their comforts! They are the most pros- perous pair in the parish—she a laundress
+               with twenty times more work than she can do, unrivalled in flounces and shirt-frills,
+               and such delicacies of the craft; he, partly a farmer, partly a farmer’s man, tilling
+               his own ground, and then tilling other people’s;—affording a proof, even in this
+               declining age, when the circum- stances of so many worthy members of the community
+               seem to have “an alacrity in sinking,” that it is possi- ble to amend them by sheer
+               industry. He, who was born in the workhouse, and bred up as a parish boy, has now, by
+               mere manual labour, risen to the rank of a land-owner, pays rates and taxes, grumbles
+               at the times, and is called Master Welles,—the title next to Mister—that by which
+               Shakspeare was called;—what would man have more? His wife, besides being the best
+               laundress in the county, is a comely woman still. There she stands at the spring,
+               dipping up water for to- morrow,—the clear, deep, silent spring, which sleeps so
+               peacefully under its high flowery bank, red with the tall spiral stalks of the
+               foxglove and their rich pendent bells, blue with the beautiful forget-me-not, that
+               gem- like blossom, which looks like a living jewel of tur- quoise and topaz. It is
+               almost too late to see its beauty; and here is the pleasant shady lane, where the
+               high elms will shut out the little twilight that re- mains. Ah, but we shall have the
+               fairies’ lamps to<pb n=”212”/> guide us, the stars of the earth, the glow-worms f Here
+               they are, thrqcjalmost together. Do you not see them? One seems tremulous, vibrating,
+               as if on the extremity of a leaf of grass ;..the others are deeper in the hedge, in
+               some green cell on which their light falls with an emerald lustre. I hope my friends
+               the cricketers will not come this way home. I would not have the pretty creatures
+               removed for more than I care to say, and in this matter I would hardly trust Joe
+               Kirby—boys so love to stick them in their hats. But this lane is quite deserted. It
+               is only a road from field to field. No one comes here at this hour. They are quite
+               safe; and I shall walk here to-morrow and visit them again. And now, good night!
+               beautiful insects, lamps of the fairies, good-night!</p>
+         </div>
+      </body>
+   </text>
+</TEI>

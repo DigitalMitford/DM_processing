@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt> 
+            <title xml:id="MRM2026">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, December 9, 1819</title> 
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName> <!--LMW:  coded; needs header and backlist dev 2016-09-19 -->
+               <persName ref="#oa">Olivia Allard</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2016-09-19">2016-09-19</date>
+                  Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2016-01-09">9 January 2016</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF8989.jpg, DSCF8990.jpg, DSCF8991.jpg, DSCF8992.jpg, DSCF8993.jpg
+            </idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. -->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361552</idno><!--LMW: no ff. # given. -->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1819-12-09">1819 December 9</date>.
+               <note resp="#lmw">We arrived at this date by checking Mitford's journal against Needham's note.</note>-->
+               </head> 
+              <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><p>One sheet of <material>paper</material>, two surfaces photographed. Folded in half vertically to make four leaves. Four leaves written on, no address block.</p>
+                        </support>
+                        <condition>
+                           <p>Outside edges browned, two pale brown blotches on paper that bleed through to the reverse.</p> <!-- change. -->
+                        </condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <sealDesc>
+                     <p>No seal.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <handNotes><handNote corresp="#pencil" medium="pencil">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is not numbered but has a check mark in the top left of the first leaf. The annotator also added: [9 Dec. 1819].
+            </handNote>
+         </handNotes>
+      </profileDesc>
+      <encodingDesc>
+         <editorialDecl><p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <opener>
+            <lb/><add hand="#pencil">[9 Dec. 1819]</add>
+            <lb/><date when="1819-12-09">Thursday Morning</date></opener>
+         
+         <p><persName ref="#Mitford_Geo">Papa</persName> says my dear <rs type="person" ref="#Webb_Mary_younger">Friend</rs> that he half promised if the weather was open to drive over today to course--as the weather is you could not expect him, &amp; I write chiefly to congratulate you all on the consoling opinion of <persName ref="#Lawrence_Mr">Mr. Lawrence</persName>, &amp; to enquire after my dear <persName ref="#Webb_Eliza">Eliza</persName> whose cough quite frightened <rs type="person" ref="#Mitford_Geo">Papa</rs> &amp; whose threat of going out yesterday fairly put him <pb n="2"/>(I think my blotting paper is frozen) fairly put him in a passion. Write on <date when="1819-12-11">Saturday</date> &amp; tell me how she is.--Will you tell your <persName ref="#Webb_James">dear Father</persName> with my love that we have determined to send my little Stratford Bitch to <persName ref="#Haydon">Mr. Haydon</persName> &amp; I shall not therefore trouble him for a greyhound--His seem all so good that it would be a pity to send them to a painter's room &amp; mine being untried &amp; very pretty will suit our Artist <pb n="3"/> without exciting so much regret in parting with her.</p>
+         <p><persName ref="#Russell_M">Mama</persName> will not I am afraid come <del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">up</supplied></del> home till <date when="1819-12-15">Wednesday</date> or <date when="1819-12-16">Thursday</date>--she is quite well but very homesick.--</p>
+            <p>Did <persName ref="#Mitford_Geo">Papa</persName> tell you &amp; <persName ref="#Jeremy_Miss">Miss Jeremy</persName> how pretty <persName ref="#Molly_pet">Molly</persName> looks now she is washed--as white as swansdown &amp; as glossy as floss silk--I wish you would come &amp; see her.--Is <persName ref="#Bailey_Mr">Mr. Bailey</persName> with <persName ref="#Dobbs_Mr">Mr. Dobbs</persName>? Don't forget to tell me.--Love to the dear <persName ref="#Webb_James">Papa</persName>--the dear <persName ref="#Webb_Eliza">Eliza-</persName>-the dear<pb n="4"/> <persName ref="#Webb_Mary_elder">Aunt Mary</persName>--the dear <persName>Miss Jeremy</persName>.--the dear <persName ref="#Wheeler_Kate">Kate Wheeler</persName>--&amp; last not least the dear <persName ref="#Webb_Mary_younger">Mary Webb</persName>.--</p>
+         <closer>
+            <lb/>Ever <choice><sic>your's</sic><reg>yours</reg></choice>
+            <lb/><persName ref="#MRM">M.R.M.</persName>
+         </closer>
+         <postscript>
+         <p>I had a letter yesterday from <persName ref="#James_Miss">Miss James</persName> full of kind messages to you all. Poor <persName ref="#Ramsay_Miss">Miss Ramsay</persName> (with whom <persName ref="#James_Emily">Miss Emily</persName> went to <placeName ref="#Lisbon_city">Lisbon</placeName>) is dead--the third sister who has gone off just as they were opening into Womanhood.--Sister <persName ref="#James_Susan">Susan</persName> quite Well &amp; comfortable &amp; talking of coming to <placeName ref="#London_city">Town</placeName> in the Spring.</p>
+         </postscript>
+      </body>
+     <back>
+        <!--LMW: new ids: Mr. Lawrence (presumably a medical practitioner); Mr. Dobbs (husband of Mrs. Dobbs, mentioned elsewhere?); Mr. Bailey; Miss Jeremy; Molly, a pet dog; Miss Ramsay, the person Emily James went to Lisbon with.-->
+     </back>
+  </text>
+</TEI>

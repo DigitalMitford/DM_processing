@@ -1,0 +1,457 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml” schematypens=”http://relaxng.org/ns/structure/1.0”?>
+<?xml-model href=”http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng” type=”application/xml”
+	schematypens=”http://purl.oclc.org/dsdl/schematron”?>
+<TEI xmlns=”http://www.tei-c.org/ns/1.0”>
+   <teiHeader>
+      <fileDesc>
+         <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+
+
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type=”sketch”>
+            <pb n=”220”/>
+            <head>MRS. MOSSE. <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>I do not know whether I ever hinted to the courteous reader that I had been in my
+               younger days, without prejudice to my present condition, somewhat of a spoiled child.
+               The person who, next after my father and mother, contributed most materially to this
+               melan- choly catastrophe, was an old female domestic, Mrs. Elizabeth Mosse, who, at
+               the time of her death, had lived nearly sixty years in our house and that of my
+               maternal grandfather. Of course, during the latter part of this long period, the
+               common forms and feel- ings of servant and master were entirely swept away. She was a
+               member of the family, an humble friend—happy are they who have such a friend!—living
+               as she liked up-stairs or down, in the kitchen or the nursery, considered, consulted,
+               and beloved by the whole house- hold.</p>
+            <p>Mossy (for by that fondling nursery name she best liked to be called) had never been
+               married, so that the<pb n=”221”/> family of her master and mistress had no rival in
+               her heart, and on me, their only child, was concentrated that intensity of affection
+               which distinguishes the at- tachments of age. I loved her dearly too, as dearly as a
+               spoiled child can love its prime spoiler,—but, oh! how selfish was my love, compared
+               to the depth, the purity, the indulgence, the self-denial of hers! Dear Mossy! I
+               shall never do her justice; and yet I must try.</p>
+            <p>Mrs. Mosse, in her appearance, was in the highest degree what is called respectable.
+               She must have been tall when young; for even when bent with age, she was above the
+               middle height, a large-made though meagre woman. She walked with feebleness and
+               difficulty, from the attacks of hereditary gout, which not even her temperance and
+               activity could ward off. There was something very interesting in this tottering help-
+               lessness, clinging to the balusters, or holding by doors and chairs like a child. It
+               had nothing of vulgar lameness; it told of age, venerable age. Out of doors she
+               seldom ventured, unless on some sunny after- noon I could entice her into the air,
+               and then once round the garden, or to the lawn gate and back again, was the extent of
+               her walk, propped by a very aristo- cratic walking-stick (once the property of a
+               duchess) as tall as herself, with a hooked ivory handle, joined to the cane by a rim
+               of gold. Her face was as venerable<pb n=”222”/> as her person. She must have been
+               very handsome; indeed she was so still,as far as regular and delicate features, a
+               pale brown complexion, dark eyes still re- taining the intelligence and animation of
+               youth, and an expression perfectly gentle and feminine, could make her so. It is one
+               of the worst penalties that woman pays to age, that often, when advanced in life, the
+               face loses its characteristic softness; in short, but for the difference in dress,
+               many an old woman’s head might pass for that of an old man. This misfortune could ne-
+               ver have happened to Mossy. No one could mistake the sex of that sweet
+               countenance.</p>
+            <p>Her dress manifested a good deal of laudable co- quetry, a nice and minute attention
+               to the becoming. I do not know at what precise date her costume was fixed: but, as
+               long as I remember her, fixed it was, and stood as invariably at one point of
+               fashion, as the hand of an unwound clock stands at one hour of the day. It consisted
+               (to begin from the feet and describe upwards) of black shoes of shining stuff, with
+               very pointed toes, high heels, and a peak up the instep, showing to advantage her
+               delicately white cotton stock- ings, and peeping beneath petticoats so numerous and
+               substantial, as to give a rotundity and projection almost equal to a hoop. Her
+               exterior garment was always quilted, varying according to the season or the occasion
+               from simple stuff, or fine white dimity, or an obsolete<pb n=”223”/> manufacture
+               called Marseilles, up to silk and satin- for, as the wardrobes of my three
+               grandmothers (pshaw! I mean my grandfather’s three wives!) had fallen to her lot, few
+               gentlewomen of the last century could boast a greater variety of silks that stood on
+               end. Over the quilted petticoat came an open gown, whose long waist reached to the
+               bottom of her stiff stays, and whose very full tail, about six inches longer than the
+               petti- coat, would have formed a very inconvenient little train, if it had been
+               permitted to hang down; but that inconvenience never happened, and could scarcely
+               have been contemplated by the designer. The tail was con- stantly looped up, so as to
+               hang behind in a sort of bunchy festoon, exhibiting on each side the aforesaid
+               petticoat. In material the gown also varied with the occasion, although it was always
+               either composed of dark cotton or of the rich silks and satins of my grand- mamma’s
+               wardrobe. The sleeves came down just below the elbow, and were finished by a narrow
+               white ruffle meeting her neat mittens. On her neck she wore a snow-white double
+               muslin kerchief, pinned over the gown in front, and confined by an apron also of mus-
+               lin; and, over all, a handsome silk shawl, so pinned back as to show a part of the
+               snowy neck-kerchief. Her head-dress was equally becoming, and more parti- cularly
+               precise; for, if ever she betrayed an atom of old-maidishness, it was on the score of
+               her caps. From<pb n=”224”/> a touch of the gout in her hands, which had enlarged and
+               stiffened the joints, she could do no work which re- quired nicety, and the
+               successive lady’s maids, on whom the operation devolved, used to say that they would
+               ra- ther make up ten caps for their mistress than one for Mrs. Mosse; and yet the
+               construction seemed simple enough. A fine plain clear-starched caul, sticking up
+               rather high and peaked in front, was plaited on a Scotch gauze headpiece; (I remember
+               there used to be exactly six plaits on each side—woe to the damsel who should put
+               more or less!) and, on the other side, a border, consisting of a strip of fine
+               muslin, edged with narrow lace, clear-starched and crimped, was plaited on with equal
+               precision. In one part of this millinery I used to assist. I dearly loved to crimp
+               Mossy’s frills, and she with her usual indulgence used fre- quently to let me,
+               keeping however a pretty close eye on her laces and muslins, whilst I was passing
+               them with triumphant rapidity between the small wooden machine notched
+               longitudinally, and the corresponding roller. Perhaps a greater proof of indulgence
+               could hardly have been shewn, since she must, during this operation, have been in
+               double fear for her own cap strips, which did occasionally get a rent, and for my
+               fingers, which were sometimes well pinched—then she would threaten that I should
+               never crimp her muslin again—a never which seldom lasted beyond the next<pb n=”225”/>
+               cap-making. The head-piece was then concealed by a satin riband fastened in a
+               peculiar bow, something be- tween a bow and a puffing behind, whilst the front was
+               adorned with an equally peculiar small knot, of which the two bows were pinned down
+               flat and the two ends left sticking up, cut into scallops of a prodigious regu-
+               larity. The purchase of the ribands formed another branch of the cap-making
+               department to which I laid claim. From the earliest period at which I could dis-
+               tinguish one colour from another, I had been purveyor of ribands to Mossy, and indeed
+               at all fairs, or when- ever I received a present or entered a shop, (and I was so
+               liberally supplied that there was nothing like gene- rosity in the case,) it was the
+               first and pleasantest des- tination of money that occurred to me:—so that the dear
+               woman used to complain, that Miss bought her so many ribands, that they spoiled in
+               keeping. We did not quite agree either in our taste. White, as both ac- knowledged,
+               was the only wear for Sundays and holi- days; but then she loved plain white, and I
+               could not always control a certain wandering inclination for figured patterns and
+               pearl edges. If Mossy had an aversion to any thing, it was to a pearl edge. I never
+               could persuade her to wear that simple piece of finery but once; and then she made as
+               many wry faces as a child eating olives, and stood before a glass eyeing the
+               obnoxious riband with so much discomposure, that I<pb n=”226”/> was fain to take it
+               out myself, and promise to buy no more pearl edges. The every-day ribands were co-
+               loured; and there, too, we had our little differences of taste and opinion. Both
+               agreed in the propriety of grave colours; but then my reading of a grave colour was
+               not always the same as hers. My eyes were not old enough. She used to accuse my
+               French greys of blueness, and my crimsons of redness, and my greens of their
+               greenness. She had a penchant for brown, and to brown I had a repugnance only to be
+               equalled by that which she professed towards a pearl edge;—indeed I retain my dislike
+               to this hour;—it is such an exceed- ingly cross and frumpish-looking colour—and then
+               its ugliness! Show me a brown flower! No! I could not bring myself to buy brown;—so
+               after fighting many battles about grey and green, we at last settled on purple as a
+               sort of neutral tint, a hue which pleased both parties. To return to the cap which we
+               have been so long making—the finish both to that and to my de- scription was a strip
+               of crimped muslin, with edging on both sides to match the border, quilled on a piece
+               of tape, and fastened on a cap at each ear. This she called the chinnum. A straight
+               short row of hair rather grey, but still very dark for her age, just appeared un- der
+               the plaited lace; and a pair of silver-mounted spectacles completed her equipment. If
+               I live to the age of seventy, I will dress so too, with an exception<pb n=”227”/> of
+               the stiff stays. Only a waist native to the fashion could endure that whalebone
+               armour.</p>
+            <p>Her employments were many and various. No work was required of her from her mistress;
+               but idleness was misery to her habits of active usefulness, and it was astonishing
+               how much those crippled fin- gers could do. She preferred coarse needle-work, as it
+               was least difficult to her eyes and hands; and she attended also to those numerous
+               and undefined avoca- tions of a gentleman’s family which come under the denomination
+               of odd jobs—shelling peas, paring ap- ples, splitting French beans, washing china,
+               darning stockings, hemming and mending dusters and house- cloths, making
+               cabbage-nets, and knitting garters. These were her daily avocations, the amusements
+               which she loved. The only more delicate operation of needle-work that she ever
+               undertook was the mak- ing of pincushions, a manufacture in which she de- lighted—not
+               the quips and quiddities of these degenerate days, little bits of riband, and
+               pasteboard, and gilt paper, in the shape of books or butterflies, by which, at
+               charitable repositaries, half-a-dozen pins are smuggled into a lady’s pocket, and
+               shillings and half- crowns are smuggled out;—no! Mossy’s were real solid
+               old-fashioned silken pincushions, such as Auto- lycus might have carried about
+               amongst his pedlery-ware, square and roomy, and capable, at a moderate<pb n=”228”/>
+               computation, of containing a whole paper of short- whites, and another of middlings.
+               It was delightful to observe her enjoyment of this play-work; the con- scious
+               importance with which she produced her satins and brocades, and her cards of sewing
+               silks (she gene- rally made a whole batch at once)—the deliberation with which she
+               assorted the colours;—the care with which she tacked and fitted side to side, and
+               corner to corner;—the earnestness with which, when all was sewed up except one small
+               aperture for the insertion of the stuffing, she would pour in the bran, or stow in
+               the wool:—then the care with which she poked the stuffing into every separate corner,
+               ramming it down with all her strength, and making the little bag (so to say) hold
+               more than it would hold, until it became almost as hard as a cricket-ball;—then how
+               she drew the aperture together by main force, putting so many last stitches,
+               fastening off with such care;—and then distributing them to all around her (for her
+               ladylike spirit would have scorned the idea of selling them), and always reserving
+               the gayest and the prettiest for me. Dear old soul! I have several of them still.</p>
+            <p>But, if I should begin to enumerate all the instances of kindness which I experienced
+               at her hands, through the changes and varieties of troublesome childhood and
+               fantastic youth; from the time when I was a puling baby, to the still more exacting
+               state of a young<pb n=”229”/> girl at home in the holidays, I should never know when
+               to end. Her sweet and loving temper was self- rewarded. She enjoyed the happiness she
+               gave. Those were pleasant evenings when my father and mother were engaged in the
+               Christmas-dinner visits of a gay and extensive neighbourhood, and Mrs. Mosse used to
+               put on her handsomest shawl and her kindest smile, and totter up stairs to drink tea
+               with me, and keep me company. From those evenings I imbibed, in the first place, a
+               love of strong green tea, for which gentle- womanly excitation Mossy had a remarkable
+               predi- lection; secondly, a very discreditable and unlady- like partiality, of which
+               I am quite ashamed, which I keep a secret from my most intimate friends, and would
+               not mention for the world—a sort of sneaking kindness for her favourite game of
+               cribbage; an old- fashioned vulgarity, which, in my mind, beats the genteeler
+               pastimes of whist and picquet, and every game, except quadrille, out and out. I make
+               no ex- ception in favour of chess, because, thanks to my stupidity, I never could
+               learn that recondite diver- sion; moreover, judging from the grave faces and
+               fatiguing silence of the initiated, I cannot help sus- pecting that, board for board,
+               we cribbage-players are as well amused as they. Dear Mossy could neither feel to deal
+               and shuffle, nor see to peg; so that the greater part of the business fell to my
+               share. The<pb n=”230”/> success was pretty equally divided- Three rubbers were our
+               stint; and we were often game and game in the last before victory declared itself.
+               She was very anxious to beat, certainly—(N.B. we never played for any thing)—she
+               liked to win; and yet she did not quite like that I should lose. If we could both
+               have won—if it had been four-handed cribbage, and she my partner—still there would
+               have been somebody to be beaten and pitied, but then that somebody would not have
+               been “ Miss.”</p>
+            <p>The cribbage hour was pleasant; but I think the hours of chat which preceded and
+               followed it were pleasanter still. Mossy was a most agreeable com- panion, sensible,
+               modest, simple, shrewd, with an ex- actness of recollection, an honesty of memory,
+               that gave exceeding interest to her stories. You were sure that you heard the truth.
+               There was one striking peculiarity in her manner of talking, or rather one striking
+               contrast. The voice and accent were quite those of a gentlewoman, as sweet-toned and
+               correct as could be; the words and their arrangement were alto- gether those of a
+               common person, provincial and un- grammatical in every phrase and combination. I be-
+               lieve it is an effect of association, from the little slips in her grammar, that I
+               have contracted a most un- scholar-like prejudice in favour of false syntax, which is
+               so connected in my mind with right notions, that I<pb n=”231”/> no sooner catch the
+               sound of bad English than I begin to listen for good sense; and really they often go
+               to- gether (always supposing that the bad English be not of the order called slang),
+               they meet much more fre- quently than those exclusive people, ladies and gentle- men,
+               are willing to allow. In her they were always united. But the charm of her
+               conversation was in the old family stories, and the unconscious peeps at old manners
+               which they afforded.</p>
+            <p>My grandfather, with whom she had lived in his first wife’s time, full twenty years
+               before my mother’s birth, was a most respectable clergyman, who, after passing a few
+               years in London amongst the wits and poets of the day, seeing the star of Pope in its
+               decline, and that of Johnson in its rise, had retired into the country, where he held
+               two adjoining livings of con- siderable value, both of which he served for above
+               forty years, until the duty becoming too severe, he resigned one of them under an
+               old-fashioned notion, that he who did the duty ought to receive the remu- neration. I
+               am very proud of my venerable ancestor. We have a portrait of him taken shortly after
+               he was ordained, in his gown and band, with a curious flowing wig, something like
+               that of a judge, fashionable doubt- less, at the time, but which at present rather
+               discom- poses one’s notions of clerical costume. He seems to have been a dark little
+               man, with a sensible counte-<pb n=”232”/> nance, and a pair of black eyes, that even
+               in the picture look you through. He was a votary of the Muses, too; a contributor to
+               Lewis’s Miscellany; (did my readers ever hear of that collection ?) translated Ho-
+               race, as all gentlemen do; and wrote love-verses, which had the unusual good fortune
+               of obtaining their object, being, as Mrs. Mosse was wont to affirm, the chief engine
+               and implement by which at fifty he gained the heart of his third wife, my real
+               grandmamma, the beautiful daughter of a neighbouring ‘squire. Of Dr. R., his wives,
+               and his sermons, the bishops who visited, and the poets who wrote to him, Mossy’s
+               talk was mainly composed; chiefly of the wives.</p>
+            <p>Mrs. R., the first, was a fine London lady, a widow, and considerably older than her
+               spouse, inasmuch as my grand-papa’s passion for her commenced when he and her son, by
+               a former husband, were school-fellows at Westminster. Mrs. Mosse never talked much of
+               her, and, I suspect,-did not much like her, though, when closely questioned, she
+               would say that madam was a fine, portly lady, stately and personable, but rather too
+               high. Her son made a sad mesalliance. He ran away with the sexton’s daughter, an
+               adventure which cost the sexton his post, and his mother her pride: she never looked
+               up after it. That disgrace, and a cold caught by bumping on a pillion six miles
+               through the rain, sent her to her grave.</p>
+            <pb n=”233”/>
+            <p>Of the second Mrs. R. little remains on record, except a gown and petticoat of
+               primrose silk, curiously embossed and embroidered with gold and silver thread and
+               silks of all colours, in an enormous running pat- tern of staring flowers,
+               wonderfully unlike nature; also various recipes in the family receipt-book, which
+               show a delicate Italian hand, and a bold originality of orthography. The chief event
+               of her married life appears to have been the small-pox. She and two of her sisters,
+               and Mrs. Mosse, were all inoculated to- gether. The other servants, who had not gone
+               through the disorder, were sent out of the house: Dr. R. himself took refuge with a
+               neighbouring friend, and the patients were consigned to the care of two or three
+               nurses, gossips by profession, hired from the next town. The best parlour, (in those
+               days drawing-rooms were not,) was turned into a hospital; a quarantine, almost as
+               strict as would be required in the plague, was kept up, and the preparation, the
+               disease, and the recovery, consumed nearly two months. Mrs. Mosse always spoke of it
+               as one of the pleasantest passages of her life. None of them suffered much; there was
+               nothing to do, plenty of gossiping; a sense of self- importance, such as all
+               prisoners must feel more or less; and for amusement they had Pamela, the Spec- tator,
+               and Sir Charles Grandison. My grandfather had a very fine library; but Sir Charles
+               was a female<pb n=”234”/> book, having been purchased by the joint contributions of
+               six young ladies, and circulated amongst them once a year, sojourning two months with
+               each fair partner, till death or marriage broke up the coterie. Is not that fame? —
+               Well the second Mrs. R. died in the course of time, though not of the small-pox; and
+               my grandfather, faithful to his wives, but not to their memories, married again as
+               usual.</p>
+            <p>His third adventure in that line was particularly happy; for my grandmother, beside
+               being a cele- brated beauty, appears to have been one of the best and kindest women
+               that ever gladdened a country- home. She had a large household; for the tithes of one
+               rich rectory were taken in kind, and the glebe cultivated; so that the cares of a
+               farm-house were added to the hospitality of a man of good fortune, and to the sort of
+               stateliness which in those primitive days appertained to a doctor of divinity. The
+               super- intendance of that large household seems to have been at once her duty and her
+               delight. It was a plenty and festivity almost resembling that of Camacho’s wed- ding,
+               guided by a wise and liberal ceconomy, and a spirit of indefatigable industry. Oh the
+               saltings, the picklings, the preservings, the cake-makings, the un- named and
+               unnameable confectionary doings over which she presided! The very titles of her
+               terri- tories denoted the extent of her stores. The<pb n=”235”/> apple-room, the
+               pear-bin, the cheese-loft, the minced- meat closet, were household words as familiar
+               in Mossy’s mouth as the dairy or the poultry-yard. And my grandmamma was no hoarder
+               for hoarding’s sake, no maker of good things which were not to be eaten—as I have
+               sometimes noted amongst your managing ladies; the object of her cares and stores was
+               to con- tribute to the comfort of all who came within her in- fluence. The large
+               parsonage-house was generally overflowing with guests; and from the Oxford pro-
+               fessor, who, with his wife, children, servants, and horses, passed his vacations
+               there, to the poor pew- opener, who came with her little ones at tide-times, all felt
+               the charm of her smiling graciousness, her sweet and cheerful spirit, her open hand
+               and open heart. It is difficult to imagine a happier couple than my venerable
+               grandfather and his charming wife. He retained to the last his studious habits, his
+               love of literature, and his strong and warm family affections; while she cast the
+               sunshine of her innocent gaiety over his respectable age, proud of his scholarship,
+               and prouder still of his virtues. Both died long ago. But Mossy was an “honest
+               chronicler,” and never weary of her theme. Even the daily airings of the good doctor
+               (who, in spite of his three wives, had a little of the peculiar preciseness in his
+               studies and his exercise, which one is apt to attribute exclusively to<pb n=”236”/>
+               that dreary person, an old bachelor) even those air- ings from twelve to two, four
+               miles on the turnpike- road and four miles back, with the fat horses and the
+               grey-haired coachman, became vivid and characteristic in her description. The very
+               carriage-dog, Sancho, was individualized; we felt that he belonged to the people and
+               the time.</p>
+            <p>Of these things we talked, mingled with many mis- cellaneous anecdotes of the same
+               date ;—how an elec- tioneering duke saluted madam, and lost master’s in- terest by
+               the freedom; how Sir Thomas S., the Love- lace of his day, came in his chariot and
+               six, full twenty miles out of his way, to show himself to Miss Fanny in a Spanish
+               masquerade-dress, white satin slashed with blue, a blue cloak embroidered with
+               silver, and point- lace that might have won any woman’s heart, except that of his
+               fair but obdurate mistress; and lastly, how Henry Fielding, when on a visit in the
+               neighbourhood, had been accustomed to come and swing the children in the great barn;
+               he had even swung Mossy herself, to her no small edification and delight—only think
+               of being chucked backwards and forwards by the man who wrote about Parson Adams and
+               ‘Squire All- worthy! I used to envy her that felicity. Then from authors we got to
+               books. She could not see in my time to read any thing but the folio Bible, and Com-
+               mon Prayer-Book, with which my dear mother had<pb n=”237”/> furnished her; but in her
+               younger days she had seen or heard parts at least of a variety of books, and en-
+               tered into them with a very keen though uncritical relish. Her chief favourites were,
+               the Pilgrim’s Pro- gress, Don Quixote, Gulliver’s Travels, Robinson Crusoe, and the
+               equally apocryphal but still truer- seeming History of the Plague in London, by the
+               same author, all of which she believed with the most earnest simplicity. I used
+               frequently to read to her the passages she liked best; and she in her turn would
+               repeat to me songs and ballads, good, bad, and indifferent — a strange medley, and
+               strangely con- founded in her memory; and so the time passed till ten o’clock. Those
+               were pleasant evenings for her and for me.</p>
+            <p>I have sometimes, on recollection, feared that her down-stair life was less happy.
+               All that the orders of a mistress could effect for her comfort was done. But we were
+               rich then unluckily; and there were skip- jacks of footmen, and surly coachmen, and
+               affected waiting-maids, and vixenish cooks, with tempers red- hot like their coals,
+               to vex and tease our dear old woman. She must have suffered greatly between her
+               ardent zeal for her master’s interest, and that strange principle of concealing evil
+               doings which servants call honour, and of which she was perpetually the slave and the
+               victim. She had another infirmity, too, an<pb n=”238”/> impossibility of saying no,
+               which, added to an un- bounded generosity of temper, rendered her the easy dupe of
+               the artful and designing. She would give any thing to the appearance of want, or the
+               pretence of affection; in short, to importunity, however clothed. It was the only
+               point of weakness in her character; and to watch that she did not throw away her own
+               little comforts, to protect her from the effects of her over-liberality, was the
+               chief care of her mistress. Three inferior servants were successively turned away for
+               trespassing on Mossy’s goodness, drinking her green tea, eating her diet-bread,
+               begging her gowns. But the evil was incurable; she could dispense with any pleasure,
+               except that of giving. So she lived on, beloved as the kind, the gentle, and the
+               generous must be, till I left school, an event that gave her great satisfaction.</p>
+            <p>We passed the succeeding spring in London; and she took the opportunity to pay a
+               long-promised visit to a half-nephew and niece, or rather a half-niece and her
+               husband, who lived in Prince’s-street, Barbican. Mrs. Beck (one naturally mentions
+               her first as the person of most consequence) was the only real woman who ever came up
+               to the magnificent abstract idea of the “fat woman of Brentford,” the only being for
+               whom Sir John Falstaff might have passed undetected. She was indeed a mountain of
+               flesh, exuberant, rubi-<pb n=”239”/> cund, and bearded like a man; and she spoke, in
+               a loud deep mannish voice, a broad Wiltshire dialect; but she was hearty and jovial
+               withal, a thorough good- fellow in petticoats. Mr. Beck, on the other hand, was a
+               little, insignificant, perking, sharp featured man, with a Jerry-Sneak expression in
+               his pale whey-face, a thin squeaking voice, and a Cockney accent. He had been lucky
+               enough to keep a little shop in an in- dependent borough, at the time of a violently
+               contested election; and having adroitly kept back his vote till votes rose to their
+               full value (I hope this is no breach of privilege,) and then voted on the stronger
+               side, he was at the time of which I speak comfortably settled in the excise as a
+               tide-waiter, had a pretty neat house, brought up his family in good repute, wore a
+               flaming red waistcoat, attended a dissenting meeting, and owed no man a shilling.</p>
+            <p>These good people were very fond of their aunt, who had indeed, before they were so
+               well off, shown them innumerable kindnesses. Perhaps there might be in the case a
+               little gratitude for favours to come; for she had three or four hundred pounds to
+               bequeath, partly her own savings, and partly a legacy from a distant relative; and
+               they were her natural heirs. However that might be, they paid her all possible
+               attention, and when we were about to return into the country, petitioned so
+               vehemently for a few weeks<pb n=”240”/> more, that, yielding to the above-mentioned
+               infirmity, she consented to stay. I had myself been the ambas- sadress to Barbican to
+               fetch our dear old friend; and I remember, as if it were yesterday, how earnestly I
+               en- treated her to come with me, and how seriously I lec- tured Mrs. Beck for her
+               selfishness, in wishing to keep her aunt in London during the heat of June. I even,
+               after taking leave, sprang out of the carriage, and ran again up stairs to persuade
+               her to come with me. Mossy’s wishes were evidently on my side; but she had promised,
+               and the performance of her promise was peremptorily claimed: so with a heavy heart I
+               left her. I never saw her again. There is surely such a thing as presentiment. A
+               violent attack of gout in the stomach carried her off in a few hours. Hail to thy
+               memory! for thou wast of the antique world, when “service sweat for duty, not for
+               meed!”</p>
+         </div>
+      </body>
+   </text>
+</TEI>
