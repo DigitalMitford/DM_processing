@@ -1,0 +1,1880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><persName ref="#lmw">Lisa M. Wilson</persName>
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName> <!--LMW: beginning to work on corrections, 2016-08-18 -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <!--LMW use: <district>for subdivisions of towns and villages. NOT DO USE FOR COUNTIES! Mostly only used in our SI for neighborhoods within London. ie, Soho, Holborn, etc.)
+            <settlement>for village/town/city (and large country estates, unless you are referring only to the house), regardless of size: Kew, Reading, Swallowfield, etc.
+            <region>for anything in size between a village and a country. Mostly used in our SI for counties (Berkshire, Yorkshire) or states (Kentucky) or French "departments")
+            <country> England, France, the Papal States
+            
+            Westminster might be a <settlement> but mostly, in Mitford's time, it is a <district> ie, a region within Greater London.
+            When denominating smaller units within greater London, use London as the <region>.  ie <district>Temple</district><region>London</region>
+            
+            Streets and individual houses don't have a specific tag.--> 
+            
+
+         <div type="places">
+            <listPlace sortKey="histPlaces">
+               
+               <place xml:id="Abingdon">
+                  <placeName>Abingdon, Berkshire, England</placeName>
+                  <placeName><addName>Abingdon on Thames</addName></placeName>
+                  <placeName><addName>Abingdon-on-Thames</addName></placeName>
+                  <settlement>Abingdon</settlement>
+                  <region>Berkshire</region>
+                  <region>Oxfordshire</region>
+                  <country>England</country>
+                  <location><geo>51.667 -1.283</geo></location>
+                  <note resp="#lmw">Abingdon (now called "Abingdon on Thames" or "Abingdon-on-Thames,") is a market town in England. In <persName ref="#MRM">Mitford</persName>'s time, it was the county town of the county of <placeName ref="#Berkshire">Berkshire</placeName>. It was reassigned to Oxfordshire in 1974. In the nineteenth century, the Assize Courts alternated between <placeName ref="#Reading_city">Reading</placeName> and <placeName ref="#Abingdon">Abingdon</placeName>, according to <persName ref="#coles">Coles</persName>.</note>
+               </place>
+               
+               <place xml:id="Agincourt">
+                  <placeName>Agincourt, Meurthe-et-Moselle, France</placeName>
+                  <settlement>Agincourt</settlement>
+                  <region>Meurthe-et-Moselle</region>
+                  <country>France</country>
+                  <location>
+                     <geo>48.7336 6.2381</geo>
+                  </location>
+                  <note resp="#rnes #lmw">Agincourt is a commune in the Meurthe-et-Moselle department in northeastern <placeName ref="#France">France</placeName>. In English history, best-known as the location of the Battle of Agincourt in 1415, where Henry V consolidated his conquest of <placeName ref="#France">France</placeName>. This event is memorialized in <bibl><author ref="#Shakespeare">Shakespeare</author>'s play <title ref="#HenryV_play">Henry V</title></bibl>.</note>
+               </place>
+               
+               <place xml:id="Alresford_Hamps">
+                  <placeName>New Alresford, Hampshire, England
+                  </placeName>
+                  <settlement>New Alresford</settlement>
+                  <region>Hampshire</region>
+                  <country>England</country>
+                  <location><geo>51.088839 -1.166105</geo></location> 
+                  <note resp="#ebb">Birthplace of <persName ref="#MRM">Mary Russell Mitford</persName>, who lived at 27 Broad Street until about the age of four; the family moved to <placeName ref="#Reading_city">Reading</placeName> in <date when="1791">1791</date>. During <persName ref="#MRM">Mitford</persName>'s time and earlier, inhabitants made a distinction between "Old Alresford" and "New Alresford." In the parish records for their marriage, <persName ref="#Mitford_Geo">George Mitford</persName> and <persName ref="#Russell_M">Mary Russell</persName> indicated their current place of residence as Old Alresford and their future residence as New Alresford.</note>
+               </place>
+               
+               <place xml:id="Audley_End">
+                  <placeName>Audley End, Essex, England</placeName>
+                  <settlement>Audley End</settlement>
+                  <region>Essex</region>
+                  <country>England</country>
+                  <location>
+                     <geo>52.02039 0.21961</geo>
+                  </location>
+                  <note resp="#lmw">During <persName ref="#MRM">Mitford</persName>'s life, the <placeName ref="#Essex_county">Essex</placeName>family seat of <persName ref="#Griffin_Rich">Richard Griffin, second Baron Braybrooke</persName>.</note>
+                  <note>
+                     <ref target="http://www.english-heritage.org.uk/visit/places/audley-end-house-and-gardens/"/>
+                  </note>
+               </place>
+                
+               <place xml:id="America">
+                  <placeName>the Americas</placeName>
+                  <note resp="#ebb">For generalized references to the Americas.<!--LMW: NOTE: Use U.S.A. for the United States.--></note>
+               </place>
+               
+               <place xml:id="USA">
+                  <placeName>United States of America</placeName>
+                  <country>United States of America</country>
+                  <location><geo>40 -100</geo></location>
+               </place>
+               
+               <place xml:id="Banqueting_House">
+                  <placeName>The Banqueting House, Whitehall, London, England</placeName>
+                  <district>Whitehall</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5044 -0.1256</geo></location>
+                  <note resp="#rnes">Designed by <persName>Inigo Jones</persName>, the Banqueting
+                     House in <placeName ref="#London_city">London</placeName> is the only surviving remnant of <placeName ref="#Whitehall_Palace">Whitehall Palace</placeName>, as it was in <persName ref="#MRM">Mitford</persName>'s lifetime. It was also the scene of <rs type="event" ref="#regicide">the Regicide</rs> in <date>1649</date>.</note>
+                  <note><ref target="http://www.hrp.org.uk/banqueting-house/"/></note>
+               </place>
+               
+               <place xml:id="Barton_street">
+                  <placeName>Barton Street, Westminster, London, England</placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.4974 -0.1280</geo></location>
+                  <note resp="#lmw"><persName ref="#Monck_JB">J. B. Monck</persName> lived at 10 <placeName ref="#Barton_street">Barton Street</placeName> in the 1820s. <persName ref="#MRM">Mitford</persName> mentions this as his London address in an <date when="1821">1821</date> letter to <persName ref="#Elford_SirWm">Elford</persName>. Barton Street intersects Great College Street, near Westminster School and the College Garden.</note>
+               </place>
+               
+               <place xml:id="Basingstoke">
+                  <placeName>Basingstoke, Hampshire, England</placeName>
+                  <placeName>
+                     <settlement>Basingstoke</settlement>
+                     <region>Hampshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.2667 -1.0876</geo>
+                  </location>
+                  <note resp="#lmw">Town in <placeName ref="#Hampshire_county">Hampshire</placeName>, in south central England, near the source of the River Loddon.</note>
+               </place>
+               
+               <place xml:id="Bath_city">
+                  <placeName>Bath, Somerset, England</placeName>
+                  <placeName>
+                     <settlement>Bath</settlement>
+                     <region>Somerset</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.38 -2.36</geo>
+                  </location>
+                  <note resp="#lmw">A city in the county of Somerset in south west England, located in the valley of the River Avon, near Bristol. A resort and spa town since Roman times, known for its mineral springs. Now a UNESCO world heritage site.</note>
+                  <note><ref target="http://whc.unesco.org/en/list/428"/></note> 
+               </place>
+               
+               <place xml:id="Bear_Inn">
+                  <placeName>The Bear Inn, Reading, Berkshire, England</placeName>
+                  <settlement>Reading</settlement>
+                     <region>Berkshire</region>
+                     <country>England</country>
+                  <location><geo>51.453169 -0.973011</geo></location>
+                  <note resp="#lmw">Located at 22 Bridge Street in <placeName ref="#Reading_city">Reading</placeName>. Building no longer standing.</note>
+                  <note>
+                     <ref target="http://pubshistory.com/Berkshire/Reading/index.shtml"/>
+                  </note>
+               </place>
+               
+               <place xml:id="Bedford">
+                  <placeName>Bedford, Bedfordshire, England</placeName>
+                 <settlement>Bedford</settlement>
+                     <region>Bedfordshire</region>
+                     <country>England</country>
+                  <location>
+                     <geo>52.1337 -0.4577</geo>
+                  </location>
+                  <note resp="#lmw">The county town of Bedfordshire, in the east of England. It was founded at a ford on the River Great Ouse.</note>
+               </place>
+               
+               <place xml:id="Berkshire">
+                  <placeName>Berkshire, England</placeName>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.416667 -1</geo></location>
+                  <note>The county of Berkshire, abbreviated "Berks."</note>
+               </place>
+                  
+               <place xml:id="BernersSt">
+                  <placeName>Berners Street, London, England</placeName>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.516994 -0.136538</geo></location>
+                  <note resp="#lmw">In <placeName ref="#London_city">London</placeName>, location of
+                     nearest postal receiving office to <persName ref="#Hofland_B">Barbara Hofland</persName>'s
+                     address on Newman Street, two blocks away.</note>
+               </place>
+               
+               <place xml:id="Bertram_house">
+                  <placeName>Bertram House, Berkshire, England</placeName>
+                  <settlement>Grazeley</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <note resp="#ebb #lmw">Mansion built by <persName ref="#Mitford_Geo">George Mitford</persName> for his family residence, begun in <date when="1802-04">April 1802</date> and completed in <date when="1804-06">June 1804</date>, after tearing down the previous house on the property, Grazeley Court Farm, a farmhouse about three miles outside of <placeName ref="#Reading_city">Reading</placeName>, in the hamlet of Grazeley. <persName ref="#Mitford_Geo">George Mitford</persName> named his new house after a knight from the reign of William the Conqueror, Sir Robert de Bertram, who had married Sibella Mitford, daughter of Sir John de Mitford (source: Vera Watson). This estate signified <persName ref="#Mitford_Geo">George Mitford</persName>'s status as a land-owning country gentleman. Prior to this time, <orgName ref="#Mitfords">the Mitford family</orgName> lived in <placeName ref="#Alresford_Hamps">Alresford</placeName> and then in <placeName ref="#Reading_city">Reading</placeName>. The family removed from Bertram House in <date when="1820-04">April 1820</date>, after financial reverses forced the family to sell the property.</note>
+               </place>
+              
+              <place xml:id="Bickham_village">
+                  <placeName>Bickham, Somerset, England</placeName>
+                  <settlement>Bickham</settlement>
+                  <region>Somerset</region>
+                  <country>England</country>
+                  <location><geo>51.163534 -3.506622</geo></location>
+                  <note resp="#ebb #lmw">Hamlet near <placeName ref="#Plymouth_city">Plymouth</placeName>, and residence of <persName ref="#Elford_SirWm">Sir William Elford</persName>, who lived there until the failure of his finances in <date when="1825">1825</date> forced him eventually to sell his family's estate. <rs type="event">He sold his property in Bickham in <date when="1831">1831</date>
+                     </rs> and moved to <placeName>The Priory</placeName>, in <placeName>Totnes, Devon</placeName> the house of his daughter (<persName ref="#Elford_Elizabeth">Elizabeth</persName>) and son-in-law.</note>
+               </place>
+               
+             
+               <place xml:id="BillingbearPk">
+                  <placeName>Billingbear Park, Berkshire, England</placeName>
+                  <placeName>
+                     <settlement>Billingbear Park</settlement>
+                     <region>Berkshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.445 -0.807</geo>
+                  </location>
+                  <note resp="#lmw">During Mitford's life, the <placeName ref="#Berkshire">Berkshire</placeName> estate of <persName ref="#Griffin_Rich">Richard Griffin, second Baron Braybrooke</persName>. Billingbear House was destroyed by fire in <date when="1924">1924</date> and no longer stands.</note>
+               </place>
+               
+               <place xml:id="Birmingham_city">
+                  <placeName>Birmingham, West Midlands, England</placeName>
+                  <placeName>
+                     <settlement>Birmingham</settlement>
+                     <region>West Midlands</region>
+                     <region>Warwickshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>52.483056 -1.893611</geo>
+                  </location>
+                  <note resp="#lmw">A city in the West Midlands, formerly part of the historic county of Warwickshire. In <persName ref="#MRM">Mitford</persName>'s time, the city was at the center of the Industrial Revolution, with developments in the skilled trades, steam power, railways and canals, and banking beginning in the eighteenth century. During the nineteenth century, the city became the second-largest popular center, after London, and became a center for political radicalism and reform.</note>
+               </place>
+               
+               <place xml:id="Bisham_Abbey">
+                  <placeName>Bisham Abbey, Bisham, Berkshire, England</placeName>
+                  <placeName>
+                     <settlement>Bisham</settlement>
+                     <region>Berkshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.556635 -0.779657</geo>
+                  </location>
+                  <note resp="#lmw">A manor house in <placeName ref="#Berkshire">Berkshire</placeName>, named for the priory that once stood on the site. It is now a grade I listed manor house.</note>
+                   <note><ref target="http://www.bishamabbeynsc.co.uk/"/></note>
+               </place>
+               
+               <place xml:id="Boston">
+                  <placeName>Boston, Massachusetts, USA</placeName>
+                  <settlement>Boston</settlement>
+                  <region>Massachusetts</region>
+                  <country>USA</country>
+                  <location><geo>42.358056 -71.063611</geo></location>
+                  <note resp="#lmw">One of the oldest cities in <placeName ref="#USA">America</placeName>; an important New England seaport, trading center, and center of the publishing trade in the eighteenth and nineteenth centuries. A key site of events of the War of American Independence.</note>
+               </place>
+               
+               <place xml:id="Brighton">
+                  <placeName>Brighton, East Sussex, England</placeName>
+                  <settlement>Brighton</settlement>
+                  <region>East Sussex</region>
+                  <country>England</country>
+                  <location>
+                     <geo>50.842941 -0.131312</geo></location>
+                  <note resp="#ajc #lmw">A resort town on the south coast of Great Britain, popularized by <persName ref="#GeoIV">George IV</persName> while Prince Regent. Until <date when="1810">1810</date>, the town's official name was Brighthelmstone.</note>
+               </place>
+               
+               <place xml:id="Bramshill_city">
+                  <placeName>Bramshill, Hampshire, England</placeName>
+                  <placeName>
+                     <settlement>Bramshill</settlement>
+                     <region>Hampshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location><geo>51.34528 -0.923435</geo></location>
+                  <note resp="#rct">A parish in the county of <placeName ref="#Hampshire_county">Hampshire</placeName>, near <placeName ref="#Farley_Hill">Farley Hill</placeName> and <placeName ref="#Swallowfield_village">Swallowfield</placeName>.</note>
+               </place>
+               
+               <place xml:id="Brazil">
+                  <placeName>Brazil</placeName>
+                  <placeName><addName>Republic of Brazil</addName></placeName>
+                  <placeName><addName>República Federativa do Brasil</addName></placeName>
+                     <location>
+                        <geo>-10, -52</geo>
+                     </location>
+               </place>
+               
+               <place xml:id="Brentford">
+                  <placeName>Brentford, Middlesex, England</placeName>
+                  <placeName>
+                     <settlement>Brentford</settlement>
+                     <region>Middlesex</region>
+                     <region>London</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.48 -0.31</geo>
+                  </location>
+                  <note resp="#lmw">In the nineteenth century, a village near Hownslow, west of London at the confluence of the Thames and the River Brent. It was the historic county town of Middlesex. Now part of Greater London.</note>
+               </place>
+
+               <place xml:id="Bristol">
+                  <placeName>Bristol, Bristol, England</placeName>
+                  <placeName>
+                     <settlement>Bristol</settlement>
+                     <region>Bristol</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.45 -2.583333</geo>
+                  </location>
+                  <note resp="#lmw">City in county of the same name in south west England. Historically, an important seaport from which ships left on voyages of discovery and trade to the New World, and a center of fishing and shipbuilding. Bristol and Liverpool ports formed part of the Atlantic trade in West Africans taken for slavery to the Americas. Also a center of abolitionism, nonconformist religious activity, and political reform. Northern terminus of the Great Western Railway that linked southwest England to London-Paddington.</note>
+               </place>
+               
+               <place xml:id="Buckinghamshire">
+                  <placeName>Buckinghamshire, England</placeName>
+                  <placeName>
+                     <region>Buckinghamshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.833333 -0.833333</geo>
+                  </location>
+                  <note resp="#lmw">County in southeast England; one of the "home counties" near London. County town is Aylesbury. Abbreviated "Bucks."</note>
+               </place>
+               
+               <place xml:id="Cambridge_city">
+                  <placeName>Cambridge, Cambridgeshire, England</placeName>
+                  <placeName>
+                     <settlement>Cambridge</settlement>
+                     <region>Cambridgeshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>52.205 0.119</geo>
+                  </location>
+                  <note resp="#lmw">City on the river Cam, north of London, in Cambridgeshire. Location of Cambridge University.</note>
+               </place>
+               
+               <place xml:id="Carisbrooke">
+                  <placeName>Carisbrooke, Isle of Wight, England</placeName>
+                  <settlement>Carisbrooke</settlement>
+                  <region>Isle of Wight</region>
+                  <country ref="#England">England</country>
+                  <location><geo>50.691472 -1.311746</geo></location>
+                  <note resp="#lmw">Village near Newport on the Isle of Wight. <persName ref="#ChasI">Charles I</persName> was imprisoned at <placeName>Carisbrooke Castle</placeName> in this village before his trial.</note>
+               </place>
+               
+               <place xml:id="ChalkFarm">
+                  <placeName>Chalk Farm, London, England</placeName>
+                  <district>Chalk Farm</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.544 -0.152</geo></location>
+                  <note resp="#ebb #lmw">District on the outskirts of London, between Camden Town and <placeName ref="#Hampstead">Hampstead</placeName>: the site of <rs type="event" ref="#ScottChristie_Duel">the duel between <persName ref="#Scott_John">John Scott</persName> and <persName ref="#Christie_JH">Jonathan Christie</persName> on <date when="1821-02-16">16 February 1821</date>, which resulted in Scott's death</rs>. In the eighteenth- and early nineteenth-century, a frequent location for duels, as it was near London and yet thinly populated and secluded.</note>
+               </place>
+               
+               <place xml:id="Charing_Cross">
+                  <placeName>Charing Cross, London, England</placeName>
+                  <district>Charing Cross</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5073 -0.12755</geo></location>
+                  <note resp="#lmw">Before the early 20th century, Charing Cross referred to a district (and postal address) in the Whitehall region of central London between Great Scotland Yard and Trafalgar Square in the former hamlet of Charing. Charing Cross also refers to the name of the junction of Strand, Whitehall, and Cockspur streets. The district is named for the Eleanor cross that once stood at the junction, which was erected in the 1290s in honor of Eleanor of Castile and was removed by the Parliamentarians during the English Civil War; a statue of <persName ref="#ChasI">Charles I</persName> has stood in its place since 1675.</note>
+               </place>
+               
+               <place xml:id="Cheshire_county">
+                  <placeName>Cheshire, England</placeName>
+                  <placeName>
+                     <region>Cheshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>53.166667 -2.583333</geo>
+                  </location>
+                  <note resp="#lmw">County in the north west of England. Its county town is Chester.</note>
+               </place>
+               
+               <place xml:id="Chippenham">
+                  <placeName>Chippenham, Wiltshire, England</placeName>
+                  <settlement>Chippenham</settlement>
+                  <region>Wiltshire</region>
+                  <country>England</country>
+                  <location><geo>51.4585 -2.1158</geo></location>
+                  <note resp="#lmw">Market town in Wiltshire, east of Bath. Founded on the River Avon and served by the Great Western Railway after <date when="1841">1841</date>.</note>
+               </place>
+               
+               <place xml:id="Cincinnati">
+                  <placeName>Cincinnati, Ohio, USA</placeName>
+                  <settlement>Cincinnati</settlement>
+                  <region>Ohio</region>
+                  <country>USA</country>
+                  <location><geo>39.1 -84.516667</geo></location>
+                  <note resp="#lmw">City in south west Ohio, settled in <date when="1788">1788</date>at the confluence of the Licking and Ohio Rivers.</note>
+               </place>
+               
+               <place xml:id="Coley_Berks">
+                  <placeName>Coley Park, Berkshire, England</placeName>
+                  <placeName><addName>Coley</addName></placeName>
+                  <district>Coley Park</district>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.449423 -0.978607</geo></location>
+                  <note resp="#lmw">An estate just south west of <placeName ref="#Reading_city">Reading</placeName>. <orgName ref="#Monck_family">The Moncks</orgName> owned Coley Park <date notBefore="1810">from 1810</date> and <persName ref="#MRM">Mitford</persName> occasionally posted franked letters from there when <persName ref="#Monck_JB">J. B Monck</persName> was a Member of Parliament. Also referred to as "Coley," although this name also refers to a nearby district of <placeName ref="#Reading_city">Reading</placeName> proper.</note>
+                  <note><ref target="http://www.coleypark.com/"/></note>
+               </place>
+               
+               <place xml:id="Court_of_Kings_Bench"><!-- lmw: I think this needs to be reassigned to an orgName. It's not a singular location. -->
+                  <placeName>Court of King's Bench</placeName>
+                  <note resp="#err">One of the high courts of <placeName ref="#England">England</placeName> that heard both criminal and civil cases.</note>
+               </place>
+               
+               <place xml:id="Covent_Garden_Theatre">
+                  <placeName>Theatre Royal, Covent Garden, London, England</placeName>
+                  <placeName><addName>Covent Garden Theatre</addName></placeName>
+                  <district>Covent Garden</district>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.512892 -0.122767</geo></location>
+                  <note resp="#lmw">A West End theater located in Covent Garden in the London borough of Westminster. One of the royal "patent theaters." The first theater on this site was opened in 1732 by John Rich, renovated by architect Henry Holland in 1792, and destroyed by fire on 20 Sept. 1808. The second theater, designed by Robert Smirke, opened on 18 Sept. 1809 and was managed by <persName ref="#Kemble_JP">John Phillip Kemble</persName>. Because of rent increases by the Duke of Bedford, the landowner, J.P. Kemble increased ticket prices. This led to the "old price (or O.P.) riots" and the eventual lowering of ticket prices, although the proprietors proved they would lose money at those prices. The second theater was destroyed by fire on 5 March 1856. The third theater, designed by Edward Middleton Barry, opened in 1858 and remains at the center of today's theater complex. The theater became the Royal Opera House in 1892 and the building was renovated and expanded in the 1980s and 1990s.
+                  </note>
+               </place>
+               
+               <place xml:id="Crecy">
+                  <placeName>Crécy, Picardy, France</placeName>
+                  <settlement>Crécy</settlement>
+                  <district>Picardy</district>
+                  <country ref="#France">France</country>
+                  <location><geo>50.257 1.904</geo></location>
+                  <note resp="#rnes #lmw">Village in northern France. Location of the Battle of Crécy in <date when="1436">1436</date>, during which <persName>Edward III</persName> of <placeName ref="#England">England</placeName> and his allied troops achieved a significant victory over <country ref="#France">France</country> in the Hundred Years' War.</note>
+               </place>
+               
+               <place xml:id="Devonshire"> <!-- duplicate xml:ids in SI. Pick one. -->
+                  <place xml:id="Devonshire_county">
+                  <placeName>Devonshire, England</placeName>
+                  <placeName><addName>Devon</addName></placeName>
+                     <location><geo>50.7, -3.8</geo></location>
+                     <note resp="#ebb #lmw">County in the south west of <placeName ref="#England">England</placeName> bordering <placeName>the English Channel</placeName> and the <placeName> Bristol Channel</placeName>. Now called Devon.</note>
+               </place>
+               
+               <place xml:id="Drury_Lane_Theatre">
+                  <placeName>Theatre Royal, Drury Lane, London, England</placeName>
+                  <placeName><addName>Drury Lane Theatre</addName></placeName>
+                  <district>Covent Garden</district>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.512778 -0.120556</geo></location>
+                  <note resp="#lmw">A West End theater located in Covent Garden in the London borough of Westminster. One of the royal "patent theatres." <date from="1674" to="1791">Between 1674 and 1791</date>, a building designed by Christopher Wren and commissioned by manager Thomas Killgrew. The Wren building was torn down by <persName ref="#Sheridan_RichardB">R. B. Sheridan</persName> and rebuilt. It reopened in <date when="1791">1791</date> and was destroyed by fire in <date when="1809">1809</date>. The theater reopened in <date when="1812">1812</date> and still stands today.
+                  </note>
+               </place>
+               
+               <place xml:id="Dublin">
+                  <placeName>Dublin, Leinster, Ireland</placeName>
+                  <placeName>
+                     <settlement>Dublin</settlement>
+                     <region>Leinster</region>
+                     <country>Ireland</country>
+                  </placeName>
+                  <location>
+                     <geo>53.347778 -6.259722</geo>
+                  </location>
+                  <note resp="#lmw">The capital and largest city of Ireland, located in the province of Leinster at the mouth of the River Liffey.</note>
+               </place>
+               
+               <place xml:id="Edinburgh">
+                  <placeName>Edinburgh, Lothian, Scotland</placeName>
+                  <settlement>Edinburgh</settlement>
+                  <region>Lothian</region>
+                  <country>Scotland</country>
+                  <location><geo>55.953056 -3.188889</geo></location>
+                  <note resp="#lmw">The capital and second-largest city in Scotland, located on the Firth of Forth. Site of the University of Edinburgh, Edinburgh Castle, and Holyrood Palace.</note>
+               </place>
+               
+               <place xml:id="EgyptianHall">
+                  <placeName>Egyptian Hall, Piccadilly, London, England</placeName>
+                  <district>Piccadilly</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.508056 -0.139167</geo></location>
+                  <note resp="#ebb">A London building in Piccadilly, designed in the Egyptian style, Egyptian Hall was built
+                     in <date when="1812">1812</date> to house <persName ref="#Bullock_Wm">William Bullock's</persName> collection of artifacts from <persName ref="#Cook_CaptJ">Captain Cook's</persName> Pacific voyages. After Bullock auctioned off his South Seas collection, the building was frequently used after <date when="1819">1819</date> to exhibit panoramas and enormous paintings, such as <persName ref="#Haydon">Benjamin Robert Haydon's</persName> <title ref="#ChrstEJrslm_Haydon">Christ's Entry into Jerusalem</title>, and <title ref="#Lazarus_Haydon">The Raising of Lazarus</title>.</note>
+               </place>
+               
+               <place xml:id="Elm_Court">
+                  <placeName>Elm Court, Temple, London, England</placeName>
+                  <district>Temple</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.512708 -0.110709</geo></location>
+                  <note resp="#lmw">Street in the <placeName ref="#Temple">Temple</placeName> area of 
+                     <placeName ref="#London_city">London</placeName>. <persName ref="#MRM">Mitford</persName> addressed letters to <persName ref="#Talfourd_Thos">Talfourd</persName> at  2 <placeName ref="#Elm_Court">Elm Court</placeName>, <placeName ref="#Temple">Temple</placeName> in the 1820s. Elm Court is located off Middle Temple Lane, just north of Inner Temple, the traditional location of barristers' chambers in London.
+                  </note>
+               </place>
+               
+               <place xml:id="Eng_Channel">
+                  <placeName>The English Channel</placeName>
+                  <placeName><addName>the Channel</addName></placeName>
+                  <location><geo>50, -2</geo></location>
+                  <note resp="#lmw">Part of the Atlantic Ocean, it is a body of water that joins the North Sea to the Atlantic and separates southern England from northern France.</note>
+               </place>
+               
+               <place xml:id="England"/>
+               
+               <place xml:id="Essex_county">
+                  <placeName>Essex, England</placeName>
+                  <placeName>
+                     <region>Essex</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.75 0.583333</geo>
+                  </location>
+                  <note resp="#lmw">County in England, north east of London. County town is Chelmsford.</note>
+               </place>
+               
+               <place xml:id="Europe"/>
+                 
+                  <place xml:id="Farley_Hill">
+                     <placeName>Farley Hill, Berkshire, England</placeName>
+                     <settlement>Farley Hill</settlement>
+                     <region>Berkshire</region>
+                     <country>England</country>
+                     <location>
+                        <geo>51.37459 -0.92099</geo>
+                     </location>
+                     <note resp="#lmw">Village in Berkshire, in the parish of Swallowfield. The <rs type="person" ana="#Dickinson_Charles #Dickinson_Mrs">Dickinsons</rs> lived there.</note>
+                  </place>
+               
+               <place xml:id="Forest_of_Ardennes">
+                  <placeName>Forest of Ardennes</placeName>
+                  <placeName><addName>Ardennes Forest</addName></placeName>
+                  <placeName><addName>The Ardennes</addName></placeName>
+                  <location><geo>50.25 5.666667</geo></location>
+                  <country>Belgium</country>
+                  <country>Luxembourg</country>
+                  <country>France</country>
+                  <note resp="#lmw">Forested, hilly region in Europe covering parts of the Ardennes mountain range and the Moselle and Meuse River basins. Primarily in Wallonia, Belgium and Oesling, Luxembourg; also encompassing the Ardennes department and Alsace-Champagne-Ardenne-Lorraine region of France.</note>
+               </place>
+               
+               <place xml:id="Fotheringay">
+                  <placeName>Fotheringhay Castle, Fotheringhay, Northamptonshire, England</placeName>
+                  <placeName><addName>Fotheringay Castle</addName></placeName>
+                  <settlement>Fotheringhay</settlement>
+                  <region>Northamptonshire</region>
+                  <country>England</country>
+                  <location><geo>52.52455 -0.43757</geo></location>
+                  <note resp="#rnes #lmw">Castle in the village of Fotheringhay where <persName ref="#MaryQoS">Mary, Queen of Scots</persName> was imprisoned, tried,
+                     and executed in <date when="1587">1587</date>. Also the birthplace of <persName ref="#RichardIII">King Richard III</persName>. Alternate spelling "Fotheringay."</note>
+               </place>
+               
+               <place xml:id="France"/>
+               
+               <place xml:id="Germany"/>
+               
+               <place xml:id="Glasgow">
+                  <placeName>Glasgow, Lanarkshire, Scotland</placeName>
+                  <settlement>Glasgow</settlement>
+                  <region>Lanarkshire</region>
+                  <country>Scotland</country>
+                  <location><geo>55.858 -4.259</geo></location>
+                  <note resp="#lmw">Largest city in Scotland, on the River Clyde. Historically part of the county of Lanarkshire. Since the eighteenth century, an important center of trade and emigration with the Americas. Also a key center of the Industrial Revolution, particularly in shipbuilding and related industries.</note>
+               </place>
+                  
+                  <place xml:id="Grazeley_village"><!-- new entry -->
+                     <placeName>Grazeley, Berkshire, England</placeName>
+                     <settlement>Grazeley</settlement>
+                     <region>Berkshire</region>
+                     <country>England</country>
+                     <location><geo>51.3958 -0.9958</geo></location>
+                     <note resp="#lmw">Village in Shinfield parish in Berkshire, the site of the <orgName ref="#Mitfords">the Mitford's</orgName> residence <date from="1802" to="1820">from 1802 to 1820</date>, <placeName ref="#Bertram_house">Bertram House</placeName>.</note>
+                  </place>
+               
+               <place xml:id="Guildhall_London">
+                  <placeName>Guildhall, City of London, London, England</placeName>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5159 -0.092</geo></location>
+                  <note resp="#ebb">A building (and its main room, a medieval-era great hall) used as a town hall and administrative center for the Corporation of the City of London.It is situated off Gresham and Basinghall streets, in the wards of Bassishaw and Cheap. Site of the Sheriff's Court in <placeName ref="#London_city">London</placeName> over which <persName ref="#Bradshaw_hist">John Bradshaw</persName> presided as judge <date from="1640" to="1649">from 1640 to 1659</date>. Guildhall is now a Grade I listed building.</note>
+                  <note><ref target="http://www.cityoflondon.gov.uk/things-to-do/visit-the-city/attractions/guildhall-galleries/Pages/default.aspx"/></note>
+               </place>
+               
+               <place xml:id="Hampshire_county">
+                  <placeName>Hampshire, England</placeName>
+                  <placeName>
+                     <region>Hampshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.083333 -1.25</geo>
+                  </location>
+                  <note resp="#lmw">County on the southern coast of England, known historically as the County of Southampton. The county town is Winchester. Abbreviated "Hants." </note>
+               </place>
+               
+               <place xml:id="Hampstead">
+                  <placeName>Hampstead, Camden, London, England</placeName>
+                  <placeName><addName>Hampstead village</addName></placeName>
+                  <settlement>Hampstead</settlement>
+                  <district>Camden</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5541 -0.1744</geo></location>
+                  <note resp="#lmw #ebb">Village near<placeName ref="#London_city">London</placeName>, north west of Charing Cross, now enclosed by it. Its population was rapidly growing through the nineteenth century, and <placeName>Hampstead Heath</placeName> is now a public park.</note>
+               </place>
+               
+               <place xml:id="HampstTh">
+                  <placeName>Hampstead Theatre, Swiss Cottage, Camden, London, England</placeName>
+                  <district>Swiss Cottage</district>
+                  <district>Camden</district>
+                  <region>London</region>
+                  <country ref="#England">England</country>
+                  <location><geo>51.543333 -0.174167</geo></location>
+                  <note resp="#lmw">Theater in the Swiss Cottage area near Hampstead, in the London Borough of Camden; commissions and produces new theater writing and supports the work of new playwrights. The original theater production company, The Hampstead Theatre Club, was founded in 1959. In 2003 the theater company moved to a new purpose-built location in Swiss Cottage.</note>
+                  <note><ref target="https://www.hampsteadtheatre.com"/></note>
+               </place>
+               
+               <place xml:id="Hardwick_Hall">
+                  <placeName>Hardwick Hall, Derbyshire, England</placeName>
+                  <location><geo>53.1688 -1.3088</geo></location>
+                  <note resp="#ebb">Palatial Elizabethan country house in <placeName>Derbyshire</placeName> in the north Midlands of England, built <date from="1590" to="1597">between 1590 and 1597</date> by the wealthy <persName ref="#Bess_of_Hardwick">Bess of Hardwick</persName>. Mentioned in the play, <title ref="#CharlesI_MRMplay">Charles the First</title>. Now owned by the National Trust.</note>
+                  <note><ref target="http://www.english-heritage.org.uk/visit/places/hardwick-old-hall/"/></note>
+               <note><ref target="https://www.nationaltrust.org.uk/hardwick-hall"/></note>
+               </place>
+               
+               <place xml:id="Hatton_Garden">
+                  <placeName>Hatton Garden, Holborn, London, England</placeName>
+                  <placeName>
+                     <settlement>Hatton Garden</settlement>
+                     <district>Holborn</district>
+                     <region>London</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.520117 -0.108408</geo>
+                  </location>
+                  <note resp="#alg">Hatton Garden is in the <placeName ref="#Holborn">Holborn</placeName> district of <placeName ref="#London_city">London</placeName>. Center of the London jewelry trade since the medieval period.</note>
+               </place>
+               
+               <place xml:id="Haymarket_Theatre">
+                  <placeName>Theatre Royal Haymarket, Westminster, London, England</placeName>
+                  <placeName><addName>Haymarket Theatre</addName></placeName>
+                  <placeName><addName>the Little Theatre</addName></placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.508611 -0.131667</geo></location>
+                  <note resp="#ebb">Theatre in <placeName ref="#Westmnstr">Westminster, London</placeName>, on Suffolk Street in the West End. London's third "patent theater," after <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName> and <placeName ref="#Drury_Lane_Theatre">Drury Lane</placeName>. Originally built in <date when="1720">1720</date>, farther north on the same street, it was relocated in <date when="1821">1821</date> to a building redesigned by <persName>John Nash</persName> as part of his renovations to the entire neighborhood.</note>
+                  <note><ref target="http://www.trh.co.uk/"/></note>
+               </place>
+               
+               <place xml:id="Hertfordshire_county">
+                  <placeName>Hertfordshire, England</placeName>
+                  <placeName>
+                     <region>Hertfordshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location><geo>51.9 -0.2</geo></location>
+                  <note resp="#rct">A county in south east <placeName ref="#England">England</placeName>. The county town is Hertford.</note>
+               </place>
+               
+               <place xml:id="Hinchinbrooke">
+                  <placeName>Hinchinbrooke House, Huntingdon, Cambridgeshire, England</placeName>
+                  <placeName><addName>Hinchingbrooke House</addName></placeName>
+                  <settlement>Huntingdon</settlement>
+                  <region>Cambridgeshire</region>
+                  <country>England</country>
+                  <location><geo>52.3286 -0.2014</geo></location>
+                  <note resp="#rnes #lmw">Country house estate built around a thirteenth-century nunnery. During the dissolution of the monasteries, it was given to the Cromwell family and later became the estate of the Earls of Sandwich. From 1627, it was the estate of the Parliamentary army leader Sir <persName ref="#Montagu">Edward Montagu</persName>. Also spelled "Hinchingbrooke." Now a Grade I listed buillding.</note>
+                  <note><ref target="http://www.hhpac.co.uk/default.htm"/></note>
+               </place>
+               
+               <place xml:id="Holborn">
+                  <placeName>Holborn, London, England</placeName>
+                  <placeName>
+                     <district>Holborn</district>
+                     <region>London</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.5172 -0.1182</geo>
+                  </location>
+                  <note resp="#lmw">A district in central London between the West End and the City of London; now in the London borough of Camden.</note>
+               </place>
+               
+               <place xml:id="HollandHouse">
+                  <placeName>Holland House, Kensington, London, England</placeName>
+                  <placeName>
+                     <district>Kensington</district>
+                     <region>London</region>
+                     <country>England</country>
+                  </placeName>
+                  <location>
+                     <geo>51.5025 -0.2025</geo>
+                  </location>
+                  <note resp="#lmw">Built in Kensington in 1605 for Sir Walter Cope; later owned by the Rich and the Fox families. In <persName ref="#MRM">Mitford</persName>'s time, it was a noted gathering place of the <orgName ref="#Holland_House_set">Holland House set of Whig notables</orgName>. Now a Grade I listed building in London, it was firebombed during the Blitz in 1940, and only the east wing and part of the ground floor remain.</note>
+               </place>
+                
+               <place xml:id="Holmby_House">
+                  <placeName>Holmby House, Althorp, Northamptonshire, England</placeName>
+                  <placeName><addName>Holdenby House</addName></placeName>
+                  <settlement>Holdenby</settlement>
+                  <region>Northamptonshire</region>
+                  <country>England</country>
+                  <location><geo>52.3039 -0.985</geo></location>
+                  <note resp="#ebb #lmw">Country house estate in Holdenby, near <placeName>Althorp, Northamptonshire</placeName> where <persName ref="#ChasI">King Charles I</persName> was held captive in <date when="1647">1647</date> before being turned over to the Long Parliament. The original mansion, built in 1583, was almost entirely demolished in the seventeenth century; subsequent renovations have left little remaining of the original.</note>
+               </place>
+               
+               <place xml:id="Holyhead">
+                  <placeName>Holyhead, Isle of Anglesey, Wales</placeName>
+                  <placeName>
+                     <settlement>Holyhead</settlement>
+                     <region>Isle of Anglesey</region>
+                     <country>Wales</country>
+                  </placeName>
+                  <location>
+                     <geo>53.309 -4.633</geo>
+                  </location>
+                  <note resp="#lmw">City in Wales; a major Irish Sea port.</note>
+               </place>
+               
+               <place xml:id="HounslowHeath">
+                  <placeName>Hounslow Heath</placeName>
+                 <settlement>Hounslow</settlement>
+                  <region>London</region>
+                     <country>England</country>
+                  <location><geo>51.454722 -0.385</geo></location>
+                  <note>Historically, a four thousand acre tract of heathland outside London near Hounslow in the county of Middlesex, crossed by major routes between London and the west and southwest of England. In <persName ref="#MRM">Mitford</persName>'s time, the heath was crossed by the Great West Road and the Bath Road and, as it had been in the seventeenth and eighteenth centuries, was still known as a dangerous spot for unwary travellers who might find themselves robbed by highwaymen or footpads. From at least the English Civil Wars until World War II, the heath has been used as a military staging area and training ground. Today, all that remains of the heath is two hundred acres preserved as parkland.</note>
+               </place>
+               
+               <place xml:id="India">
+                  <placeName>India</placeName>
+                  <placeName>Indian subcontinent</placeName>
+                  <country>India</country>
+                  <location><geo>21, 78</geo></location>
+                  <note resp="#ebb">In <persName ref="#MRM">Mitford</persName>'s time, the <orgName>East India Company</orgName> and its private armies controlled India and its economy, effectively <date from="1757" to="1858">from 1757 to 1858</date>, after which <persName ref="#Victoria_Queen">Queen Victoria</persName> and her government directly governed India as the <placeName>Raj</placeName>. Became the Republic of India, a federal parliamentary republic, in 1950.</note>
+               </place>
+               
+               <place xml:id="Ireland"/>
+               
+               <place xml:id="Isle_of_Wight">
+                  <placeName>Isle of Wight, England</placeName>
+                  <region>Isle of Wight</region>
+                  <country>England</country>
+                  <location><geo>50.666667 -1.266667</geo></location>
+                  <note resp="#lmw">An island in the English Channel off the coast of Hampshire. Was earlier owned by a Norman family and a kingdom in its own right until 1293. Until 1890, it was part of the county of <placeName ref="#Hampshire_county">Hampshire</placeName>, and it shared a Lord Lieutenant with that county until 1974. Until 1995, the island, like Jersey and Guernsey, also had a governor. The Island is now considered its own administrative county.</note>
+               </place>
+               
+               <place xml:id="Israel">
+                  <placeName>Israel</placeName>
+                  <placeName><addName>land of Israel</addName></placeName>
+                  <location><geo>31, 35</geo></location>
+                  <note resp="#ebb">In <persName ref="#MRM">Mitford</persName>'s time, the ancient lost kingdom of the Hebrews, known as the "land of Israel." Now the State of Israel, a unitary parliamentary republic.</note>
+               </place>
+               
+               <place xml:id="Italy"/>
+               
+               <place xml:id="Jerusalem">
+                  <placeName>Jerusalem</placeName>
+                  <location><geo>31.783333 35.216667</geo></location>
+                  <note resp="#ebb #lmw">Ancient city sacred to Jews, Muslims, and Christians, and one of the oldest cities in the world. It is located in the Judaean Mountains, between the Dead Sea and the Mediterranean. Today, both the State of Israel and the State of Palestine claim the city as their capital.</note>
+               </place>
+               
+               <place xml:id="Kensington">
+                  <placeName>Kensington, London, England</placeName>
+                  <district>Kensington
+                  </district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5 -0.19</geo></location>
+                  <note resp="#lmw">A district of west <placeName ref="#London_city">London</placeName>, now part of the Royal Boroughs of Chelsea and Kensington in inner London. Site of Kensington Palace, Kensington Gardens, and Holland Park.<location>
+                     <geo/>
+                  </location>
+                  </note> 
+               </place>
+                  
+               <place xml:id="Kentucky">
+                  <placeName>Kentucky, USA</placeName>
+                  <placeName><addName>Commonwealth of Kentucky</addName></placeName>
+                  <region>Kentucky</region>
+                  <country>USA</country>
+                  <location><geo></geo></location>
+                  <note resp="#lmw">State in the southeastern <placeName ref="#USA">United States</placeName>, originally part of Virginia.</note>
+               </place>
+               
+               <place xml:id="Kew_village">
+                  <placeName>Kew, Richmond upon Thames, England</placeName>
+                  <placeName><addName>Kew village</addName></placeName>
+                  <settlement>Kew</settlement>
+                  <region>Richmond upon Thames</region>
+                     <country>England</country>
+                  <location><geo>51.4837 -0.278</geo></location>
+                  <note resp="#lmw">Once a village northeast of Richmond, now a suburban district part of the London Borough of Richmond upon Thames. Site of what is now the Royal Botanic Gardens, a World Heritage Site, which includes Kew Palace, a royal residence favored by <persName ref="#GeoIII">George III</persName>, and Kew Gardens.</note>
+               </place>
+               
+               <place xml:id="Kings_Bench_Prison">
+                  <placeName>Kings Bench Prison, Southwark, London, England</placeName>
+                  <district>Southwark</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.4998 -0.0979</geo>
+                  </location>
+                  <note resp="#lmw">A prison in Southwark, south London, that took its name from the King's Bench court of law, which heard cases of bankruptcy and other misdemeanors. In use from medieval times, during <persName ref="#MRM">Mitford</persName>'s time it was often used as a debtor's prison.</note>
+               </place>
+               
+               <place xml:id="LakeDistrict">
+                  <placeName>The Lake District, England</placeName>
+                  <placeName><addName>The Lakes</addName></placeName>
+                  <placeName><addName>Lakeland</addName></placeName>
+                  <district>Lake District</district>
+                  <region>Cumberland</region>
+                  <region>Westmorland</region>
+                  <region>Lancashire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>54.5 -3.166667</geo>
+                  </location>
+                  <note resp="#lmw">Region in northwest England famous for its lakes, forests, and mountains (or fells) and its associations with the early 19th century writings of William Wordsworth and the other "Lake" Poets or "Lakers," as they were sometimes called. In <persName ref="#MRM">Mitford</persName>'s time, the Lake District was spread across Cumberland, Westmorland, and Lancashire; the present-day Lake District is now entirely in Cumbria. The highest mountain in England, Scafell Pike, lies within this region, as do the deepest and longest lakes in England, Wastwater and Windermere.</note>
+               </place>
+               
+               <place xml:id="Lancaster">
+                  <placeName>Lancaster, Lancashire, England</placeName>
+                  <settlement>Lancaster</settlement>
+                  <region>Lancashire</region>
+                  <country ref="#England">England</country>
+                  <location><geo>54.047 -2.801</geo></location>
+                  <note resp="#lmw">County town of Lancashire, on the river Lune.</note>
+               </place>
+               
+               <place xml:id="LaTrappe">
+                  <placeName>Soligny-la-Trappe, Orne, France</placeName>
+                  <placeName><addName>La Trappe</addName></placeName>
+                  <settlement>Soligny-la-Trappe</settlement>
+                  <region>Orne</region>
+                  <country>France</country>
+                  <location>
+                     <geo>48.6156 0.5364</geo>
+                  </location>
+                  <note resp="#lmw">Site of La Trappe Abbey, the house of origin of the Order of Cistercians of the Strict Observance (O.C.S.O.: Ordo Cisterciensis Strictioris Observantiae), Reformed Cistercians or Trappists, to whom it gave its name.</note>
+               </place>
+               
+               <place xml:id="Leicester">
+                  <placeName>Leicester, Leicestershire, England</placeName>
+                  <settlement>Leicester</settlement>
+                  <region>Leicestershire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>52.633333 -1.133333</geo>
+                  </location>
+                  <note resp="#lmw">City in the East Midlands of England, and the county town of Leicestershire. The city lies on the River Soar.</note>
+               </place>
+               
+               <place xml:id="Lincolnshire">
+                  <placeName>Lincolnshire, England</placeName>
+                  <region>Lincolnshire</region>
+                  <country>England</country>
+                  <location><geo>53.066667 -0.183333</geo></location>
+                  <note resp="#ebb">County in the north east of <placeName ref="#England">England</placeName>. Its county town is Lincoln.</note>
+               </place>
+               
+               <place xml:id="Lisbon_city">
+                  <placeName>Lisbon, Portugal</placeName>
+                  <settlement>Lisbon</settlement>
+                  <country>Portugal</country>
+                  <location><geo>38.713889 -9.139444</geo></location>
+                  <note resp="#err #lmw">The capital city of <placeName>Portugal</placeName>, located on the western Iberian peninsula; one of the oldest cities in the world.</note>
+               </place>
+               
+               <place xml:id="Lisson_Grove">
+                  <placeName>Lisson Grove, Westminster, London, England</placeName>
+                  <district>Lisson Grove</district>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.52539 -0.16969</geo></location>
+                  <note resp="#lmw">District in the City of Westminster, London, west of Regent's Park. Student artists and painters from the <orgName ref="#Royal_Academy">Royal Academy</orgName> lived in this district in the early nineteenth century, including <persName ref="#Blake_Wm">William Blake</persName>, <persName ref="#Cosway_Rich">Richard Cosway</persName>, and <persName ref="#Haydon">Benjamin Robert Haydon</persName>. Also the name of a road in the district.</note>
+               </place>
+               
+               <place xml:id="London_city">
+                  <placeName>London, England</placeName>
+                  <settlement>London</settlement>
+                  <country>England</country>
+                  <location><geo>51.507222 -0.1275</geo></location>
+                  <note resp="#lmw">Capital city of England and the United Kingdom; one the oldest cities in Western Europe. Major seaport and global trading center at the mouth of the Thames. <date from="1831" to="1925">From 1831 to 1925</date>, the largest city in the world.</note>
+               </place>
+               
+               <place xml:id="Ludgate_Hill">
+                  <placeName>Ludgate Hill, London, England</placeName>
+                  <district>Ludgate Hill</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.5137 -0.101</geo>
+                  </location>
+                  <note resp="#lmw">A hill in the City of London and the site of St. Paul's Cathedral. It is one of the three ancient hills of London. The old city gate and attached gaol were removed in <date when="1780">1780</date>. During <persName ref="#MRM">Mitford</persName>'s lifetime, the street of the same name had not yet been built; a narrower roadway called Ludgate Street stood in its place. </note>
+               </place>
+                  
+                  <place xml:id="Lyme_Regis"> <!--LMW: new entry -->
+                     <placeName>Lyme Regis, Dorset, England</placeName>
+                     <settlement>Lyme Regis</settlement>
+                     <region>Dorset</region>
+                     <country>England</country>
+                     <location><geo>50.725 -2.94</geo></location>
+                     <note resp="#lmw">Resort town on the coast in west Dorset. <orgName ref="#Mitfords">The Mitfords</orgName>lived here for about a year <date from="1795" to="1797">from 1795 to 1797</date>. One of the settings in <persName ref="#Austen_Jane">Jane Austen</persName>'s <title ref="#Persuasion">Persuasion</title>.</note>
+                  </place>
+               
+               <place xml:id="Madrid">
+                  <placeName>Madrid, Spain</placeName>
+                  <settlement>Madrid</settlement>
+                  <country>Spain</country>
+                  <location><geo>40.383333 -3.716667</geo></location>
+                  <note resp="#lmw">Capital of Spain.</note>
+               </place>
+               
+               <place xml:id="Magdalen_Coll">
+                  <placeName>Magdalen College, Oxford University, Oxford, Oxfordshire, England</placeName>
+                  <settlement>Oxford</settlement>
+                  <region>Oxfordshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.752374 -1.247077</geo>
+                  </location>
+                  <note resp="#lmw">One of the constituent colleges of <placeName ref="#Oxford_Univ">Oxford University</placeName>.
+                  </note>
+                  <note>
+                     <ref target="http://www.magd.ox.ac.uk/"/>
+                  </note>
+               </place>
+               
+               <place xml:id="Marlow">
+                  <placeName>Marlow, Buckinghamshire, England</placeName>
+                  <settlement>Marlow</settlement>
+                  <region>Buckinghamshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.566667 -0.766667</geo>
+                  </location>
+                  <note resp="#lmw">Town in Buckinghamshire on the Thames. <persName ref="#MRM">Mitford</persName>'s friends <persName ref="#Johnson_Mr">Mr. Johnson</persName> and <persName ref="#Johnson_Miss">Miss Johnson</persName> resided near here.</note>
+               </place>
+               
+               <place xml:id="Meillerie">
+                  <placeName>Meillerie, France</placeName>
+                  <settlement>Meillerie</settlement>
+                  <region>Haute-Savoie</region>
+                  <country>France</country>
+                  <location>
+                     <geo>46.4068 6.7182</geo>
+                  </location>
+                  <note resp="#lmw">Meillerie is a village on the shores of Lake Geneva, in southeastern France.</note>
+               </place>
+               
+               <place xml:id="Mint_new">
+                  <placeName>New Mint, Little Tower Hill, London, England</placeName>
+                  <district>Tower Hill</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5085 -0.0782</geo></location>
+                  <note resp="#lmw">A new Royal Mint was built on Little Tower Hill beginning in <date when="1805">1805</date>, once space had run out at the previous Mint location at the Tower of London, which also served as an armoury during this period. The new site provided a dedicated location for coining British currency and made use of the latest steam-powered minting machinery. The buildings were completed by <date when="1809">1809</date>, the machinery tested by <date when="1811">1811</date> and the new Mint opened officially in <date when="1812">1812</date>. Several prints of the new Mint appear between 1811 and 1813.</note>
+                  <note><ref target="http://www.royalmintmuseum.org.uk/history/the-royal-mint-story/tower-hill/index.html"/></note>
+               </place>
+               
+               <place xml:id="Mexico"/>
+               
+               <place xml:id="Mortimer_Comm">
+                  <placeName>Mortimer Common, Berkshire, England</placeName>
+                  <settlement>Mortimer Common</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.377 -1.063</geo></location>
+                  <note resp="#lmw">Village east of <placeName ref="#Swallowfield_village">Swallowfield</placeName> in Berkshire.</note>
+               </place>
+               
+               <place xml:id="Mt_Ida"><!--LMW: did we move this to mythical places? -->
+                  <placeName>Mount Ida</placeName>
+                  <note resp="#lmw">Sacred mountain of classical Greek antiquity.</note>
+               </place>
+               
+               <place xml:id="Muscovy">
+                  <placeName>Muscovy</placeName>
+                  <placeName><addName>Grand Duchy of Moscow</addName></placeName>
+                  <placeName><addName>Grand Principality of Moscow</addName></placeName>
+                  <country>Muscovy</country>
+                 <location><geo>55.75 37.616667</geo></location>
+                  <note resp="#lmw">Grand Duchy of Moscow, known in English as Muscovy. A medieval Rus' principality centered on Moscow, the forerunner of the state of Russia under the Tsars, sometimes called the Tsardom of Muscovy.</note>
+               </place>
+               
+               <place xml:id="Naples">
+                  <placeName>Naples, Italy</placeName>
+                  <settlement>Naples</settlement>
+                  <region>Campania</region>
+                     <country>Italy</country>
+                  <location><geo>40.845 14.258333</geo></location>
+                  <note resp="#lmw">Capital city of the Kingdom of Naples <date from="1282" to="1816">from 1282 to 1816</date>. Then the capital of the Two Sicilies <date from="1816" to="1861">from 1816 to 1861</date> until the unification of Italy. Now capital city of the Campania region of Italy. One of the oldest cities in the world.</note>
+               </place>
+               
+               <place xml:id="Naseby">
+                  <placeName>Naseby, Northamptonshire, England</placeName>
+                  <settlement>Naseby</settlement>
+                  <region>Northamptonshire</region>
+                  <country ref="#England">England</country>
+                  <location><geo>52.39692 -0.98847</geo></location>
+                  <note resp="#rnes #lmw">Village in Northamptonshire, the site of the Battle of Naseby on <date when="1645-06-14">14 June 1645</date>, the decisive Parliamentary victory in the English Civil War.</note>
+               </place>
+               
+               <place xml:id="New_York_city">
+                  <placeName>New York City, New York, USA</placeName>
+                  <settlement>New York City</settlement>
+                  <region>New York</region>
+                  <country>USA</country>
+                  <location><geo>40.7127 -74.0059</geo></location>
+                  <note resp="#lmw">Most populous city in the <placeName ref="#USA">United States</placeName>, founded as a trading post by the Dutch Republic in the seventeenth century. An important trading port and center of slavery in the eighteenth century. A key site in the War of American Independence and the first capital of the new Republic. During <persName ref="#MRM">Mitford</persName>'s lifetime, the city developed into an important literary and publishing center; during the 1830s and 1840s <persName ref="#Irving_Wash">Washington Irving</persName>, <persName ref="#Melville">Herman Melville</persName>, and <persName ref="#Willis_NP">Nathaniel Parker Willis</persName> all lived in New York.</note>
+               </place>
+               
+               <place xml:id="Newbury">
+                  <placeName>Newbury, Berkshire, England</placeName>
+                  <settlement>Newbury</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo></geo></location>
+                  <note resp="#ebb #lmw">Market town on the <placeName>River Kennet</placeName> in <placeName ref="#Berkshire">Berkshire</placeName>. Horseracing took place <date from="1805" to="1811">between 1805 and 1811</date> at the Newbury Races, although the current racecourse did not come into existence until <date when="1905">1905</date>.</note>
+               </place>
+               
+               <place xml:id="NewmanSt">
+                  <placeName>Newman Street, London, England</placeName>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5177222 -0.1356944</geo></location>
+                  <note resp="#lmw">Newman Street in <placeName ref="#London_city">London</placeName>. <persName ref="#Hofland_B">Barbara Hofland</persName>'s address in the 1820s was 23 Newman Street. It is located between Oxford Street and Mortimer Street, east of Bedford Square in North London.</note>
+               </place>
+               
+               <place xml:id="Northumberland">
+                  <placeName>Northumberland, England</placeName>
+                  <region>Northumberland</region>
+                  <country>England</country>
+                  <location>
+                     <geo>55.166667 -2</geo>
+                  </location>
+                  <note resp="#lmw">County in north east England. County town is Alnwick. <persName ref="#Mitford_Geo">George Mitford</persName> was a descendant of an aristocratic family from Northumberland. <persName ref="#Mitford_Geo">George Mitford</persName> took <persName ref="#MRM">Mary</persName> to visit relations in Northumberland in <date when="1806">1806</date>.</note>
+               </place>
+               
+               <place xml:id="Oakhampton_House">
+                  <placeName>Oakhampton House, Dunley, Worcestershire, England</placeName>
+                  <settlement>Dunley</settlement>
+                  <region>Worcestershire</region>
+                  <country>England</country>
+                  <location><geo>52.32018 -2.310412</geo></location>
+                  <note resp="#lmw">Oakhampton House is a country estate in Dunley, owned by the descendants of Royalist Sir Richard Crane during <persName ref="#MRM">Mitford</persName>'s time. <persName ref="#Elford_SirWm">Sir William Elford</persName> was staying at this address in <date when="1821-04">April 1821</date>. More research needed.</note>
+               </place>
+               
+               <place xml:id="Oxford_Circuit">
+                  <placeName>Oxford Circuit</placeName>
+                  <country>England</country>
+                  <note resp="#kdc">Oxford Circuit was one of six assize circuits in <placeName ref="#England">England</placeName> and <placeName ref="#Wales">Wales</placeName>. Before <date when="1830">1830</date>, the Oxford Circuit consisted of the counties of Oxford, Worcester, Stafford, Salop, Hereford, Monmouth, Gloucester, and Berkshire. Judges were appointed by the monarch and traveled the Circuit twice per year to hear trials of serious crimes. <persName ref="#Talfourd_Thos">Talfourd</persName> was appointed to the Oxford Circuit in <date when="1821">1821</date>.
+                  </note>
+               </place>
+               
+               <place xml:id="Oxford_city">
+                  <placeName>Oxford, Oxfordshire, England</placeName>
+                  <settlement>Oxford</settlement>
+                  <region>Oxfordshire</region>
+                  <country>England</country>
+                  <location><geo>51.751944 -1.257778</geo></location>
+                  <note resp="#lmw">County town of Oxfordshire, in the south east of England about twenty-five miles from <placeName ref="#Reading_city">Reading</placeName>. Site of <placeName ref="#Oxford_Univ">Oxford University</placeName>.</note>
+               </place>
+               
+               <place xml:id="Oxford_Univ">
+                  <placeName>University of Oxford, Oxford, Oxfordshire, England</placeName>
+                  <placeName><addName>Oxford University</addName></placeName>
+                  <settlement>Oxford</settlement>
+                  <region>Oxfordshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.7611 -1.2534</geo>
+                  </location>
+                  <note resp="#lmw">Research university made up of constituent colleges; the oldest university in the English-speaking world.</note>
+               </place>
+               
+               <place xml:id="Oxfordshire">
+                  <placeName>Oxfordshire, England</placeName>
+                  <region>Oxfordshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.75 -1.28</geo>
+                  </location>
+                  <note resp="#lmw">A county in south east England. Location of Oxford University and Blenheim Palace.</note>
+               </place>
+               
+               <place xml:id="Painted_Chmbr">
+                  <placeName>Painted Chamber, Westminster Palace, Westminster, London, England</placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.499167 -0.124722</geo></location>
+                  <note resp="#lmw"></note>
+                  <note resp="#rnes">A room in <placeName ref="#Westmnst_Palace">Westminster Palace</placeName> destroyed during the accidental burning of <placeName>the Houses of <orgName ref="#Parliament_UK">Parliament</orgName></placeName> in <date when="1834">1834</date>.</note>
+               </place>
+               
+               <place xml:id="Paris">
+                  <placeName>Paris, France</placeName>
+                  <settlement>Paris</settlement>
+                  <region>Paris</region>
+                  <country>France</country>
+                  <location>
+                     <geo>48.8567 2.3508</geo>
+                  </location>
+                  <note resp="#lmw">Capital of France and important center of trade, banking, publishing, fashion, and artistic and scientific activity. Center of Enlightenment activity in the eighteenth century. A key site in the French Revolution and Napoleonic Wars; travel between London and Paris was much restricted during this period.</note>
+               </place>
+               
+               <place xml:id="Penge_Wood">
+                  <placeName>Penge Wood</placeName>
+                  <district>Penge Wood</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.414167 -0.064167</geo></location>
+                  <note resp="#lmw">In <persName ref="#MRM">Mitford</persName>'s time, a wooded area near London adjacent to Penge Common, much used for leisure activities such as walks, sketching, amateur botanizing, and picnicking. Penge Common at one time abutted the Great North Wood and some eighteenth and nineteenth century maps of Greater London include the Common as part of the Wood. As early as <date when="1834">1834</date>, <persName ref="#Hunt">Leigh Hunt</persName> laments the area's loss to enclosure and development as it was one of the "two finest pieces of natural scenery within twelve miles of the capital" ("Notes on the Newspapers," Monthly Repository 8 (1834): 524). Enclosure acts beginning with the Croydon Enclosure Act of 1797 and the Penge Enclosure Acts of 1805, 1806, and 1827 affected the area, which was heavily developed after 1855 following the relocation of the Crystal Palace and the accompanying development of Crystal Palace Park.</note>
+               </place>
+               
+               <place xml:id="Philadelphia">
+                  <placeName>Philadelphia, Pennsylvania, USA</placeName>
+                  <settlement>Philadelphia</settlement>
+                  <region>Pennsylvania</region>
+                  <country>USA</country>
+                  <location><geo>39.95 -75.166667</geo></location>
+                  <note resp="#lmw">Founded in the seventeenth century as the capital of the Pennsylvania colony and later the capital of the state. It played a key role in the American Revolution and served as one-time capital of the Republic before the capital moved to Washington, D.C. In the eighteenth- and nineteenth-centuries, an important center of publishing, and of artistic, literary, and scientific thought. During the nineteenth century, an important destination for immigrants from Europe as well as for African-American migrants.</note>
+               </place>
+               
+               <place xml:id="Piccadilly">
+                  <placeName>Piccadilly, Westminster, London, England</placeName>
+                  <district>Piccadilly</district>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.50698 -0.14235</geo></location>
+                  <note resp="#lmw #ebb">A wide road in <placeName ref="#London_city">London</placeName>'s West End that lends its name to the surrounding district. Since medieval times, Piccadilly had been known as the "road to Reading." In <persName ref="#MRM">Mitford</persName>'s time, it was the site of many inns and public houses, including the White Horse coaching inn, which was the starting terminus for western-bound mailcoaches bound for Bath and Bristol. It was also the location of Devonshire House, 18th-century headquarters for the Whig party, and Burlington House, later home to the Royal Academy of Arts, the Geological Society of London, and the Royal Astronomical Society. It was also the headquarters for booksellers such as Stockdale and Hatchards in this period.</note>
+               </place>
+               
+               <place xml:id="Plymouth_city">
+                  <placeName>Plymouth, Devonshire, England</placeName>
+                  <settlement>Plymouth</settlement>
+                  <region>Devonshire</region>
+                  <country>England</country>
+                  <location><geo>50.371389 -4.142222</geo></location>
+                  <note resp="#ebb #lmw">City on the coast of Devonshire. After declines in the seventeenth century, increasingly important from the late eighteenth century into the nineteenth as a seaport, site of trade and emigration to and from the Americas, and a center of shipbuilding. Birthplace of <persName ref="#Haydon">Benjamin Robert Haydon</persName>. <persName ref="#Elford_SirWm">Sir William Elford</persName> was also born nearby at <placeName ref="#Bickham_village">Bickham</placeName>. <persName ref="#Elford_SirWm">Elford</persName> worked as a banker at Plymouth Bank (Elford, Tingcombe and Purchase) in <placeName ref="#Plymouth_city">Plymouth</placeName>, from its founding in <date when="1782">1782</date>, and he was elected a member of <orgName ref="#Parliament_UK">Parliament</orgName> for Plymouth and served from 1796 to 1806.</note>
+               </place>
+               
+               <place xml:id="Portsmouth_Blockhouses">
+                  <placeName>Portsmouth Blockhouses</placeName>
+                  <location>
+                     <geo>50.8035 -1.1093</geo>
+                  </location>
+                  <note resp="#lmw">Also known as the Portsmouth Block Mills, established in <date when="1802">1802</date> by Marc Isambard Brunel. Factories in the Portsmouth dockyard that produced pulley blocks for Royal Navy ships' rigging. The Mills were the site of the world's first mass production line and used all-metal machine tools.</note>
+               </place>
+               
+               <place xml:id="Pump_Court">
+                  <placeName>Pump Court, Temple, London, England</placeName>
+                  <district>Temple</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5127897-0.1132331</geo></location>
+                  <note resp="#ebb #err #lmw"><persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>'s address in <placeName ref="#London_city">London</placeName>, in the <placeName ref="#Temple">Temple</placeName> district; <persName ref="#MRM">Mitford</persName> addressed letters to him at 1 Pump Court. Pump Court is west off Middle Temple Lane, north of the Inner Temple.</note>
+               </place>
+               
+               <place xml:id="Ravenna">
+                  <placeName>Ravenna, Emilia-Romagna, Italy</placeName>
+                  <settlement>Ravenna</settlement>
+                  <region>Emilia-Romagna</region>
+                  <country>Italy</country>
+                  <location><geo>44.416667 12.2</geo></location>
+                  <note resp="#ebb">City in the province of Ravenna, Emilia-Romagna region on the north east coast of Italy on the Adriatic Sea. <persName ref="#Byron">Lord
+ Byron</persName> lived in Ravenna from <date from="1819" to="1821">1819-1821</date>, which was the site of his love affair with <persName ref="#Guiccioli_T">Teresa Guiccioli</persName>, and where he composed <title ref="#The_Two_Foscari">The Two Foscari</title> in the summer of 1821.</note>
+               </place>
+               
+               <place xml:id="Reading_city">
+                  <placeName>Reading, Berkshire, England</placeName>
+                  <settlement>Reading</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.454167 -0.973056</geo></location>
+                  <note resp="#lmw">County town in Berkshire, in the Thames valley at the confluence of the Thames and the River Kennet. The town developed as a river port and in <persName ref="#MRM">Mitford</persName>'s time served as a staging point on the Bath Road and was developing into a center of manufacturing. <persName ref="#MRM">Mitford</persName> lived here with her parents <date from="1791" to="1795">from 1791 to 1795</date>, on Coley Avenue in the parish of St. Mary's and attended the Abbey School. The family returned to Reading <date from="1797" to="1804">from 1797 to about 1804</date>, after which they relocated to <placeName ref="#Bertram_house">Bertram House</placeName>. They frequently visited Reading thereafter from their homes at nearby <placeName ref="#Bertram_house">Bertram House</placeName>, <placeName ref="#ThreeMileCross">Three Mile Cross</placeName> and <placeName ref="#Swallowfield_village">Swallowfield</placeName>. <persName ref="#MRM">Mitford</persName> later used scenes from <placeName ref="#Reading_city">Reading</placeName> as the basis for <title ref="#Belford_Regis">Belford Regis; or Sketches of a Country Town</title>.</note>
+               </place>
+               
+               <place xml:id="Reading_School">
+                  <placeName>Reading School, Reading, Berkshire, England</placeName>
+                  <settlement>Reading</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.448333 -0.955</geo></location>
+                  <note resp="#lmw">Public grammar school originally founded as a Reading Abbey school, which dates to 1125, located in <placeName ref="#Reading_city">Reading</placeName>. <persName ref="#Valpy_Richard">Dr. Richard Valpy</persName> was headmaster <date from="1754" to="1836">from 1754 to 1836</date> and was then succeeded by his son. <persName ref="#Talfourd_Thos">Talfourd</persName>was a pupil there. <persName ref="#MRM">Mitford</persName> wrote reviews for the <title ref="#ReadingMer_per">Reading Mercury</title> of the plays performed there by the pupils as part of the triennial Oxford School Visitations.</note>
+               </place>
+               
+               <place xml:id="Reading_Theatre">
+                  <placeName>Reading Theatre, Reading, Berkshire, England</placeName>
+                  <settlement>Reading</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <note resp="#lmw">Theater in <placeName ref="#Reading_city">Reading</placeName>. Exact location unknown. More research needed.
+                  </note>
+               </place>
+               
+               <place xml:id="Red_Cow_Inn">
+                  <placeName>The Red Cow Inn, Reading, Berkshire, England</placeName>
+                  <placeName>
+                     <settlement>Reading</settlement>
+                     <region>Berkshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location><geo>51.450110,-0.9719293</geo></location>
+                  <note resp="#lmw">Located in <placeName ref="#Reading_city">Reading</placeName>. Likely the location listed in Horniman's Directory (1827) at 50 Crown Street run by John Easby or Easebey. The Red Cow is still in operation at the corner of Southampton and Crown Streets.</note>
+                  <note>
+                     <ref target="http://pubshistory.com/Berkshire/Reading/RedCow.shtml"/>
+                  </note>
+               </place>
+               
+               <place xml:id="Regents_Park">
+                  <placeName>Regent's Park, London, England</placeName>
+                  <district>Regent's Park</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.532222 -0.156667</geo></location>
+                  <note resp="#ghb #lmw">Now an upscale neighborhood in north <placeName ref="#London_city">London</placeName>, Regent's Park is named for the Royal Park it encompasses. The district was developed <date notBefore="1811">after 1811</date> when the <persName ref="#GeoIV">Prince Regent</persName> commissioned <persName>John Nash</persName> to create a plan for the area. The Park was made part of Nash's larger plans for nearby Regent Street and Carlton House Terrace. The Park's residential terraces and Inner Circle villas were built during the early nineteenth century, and the Park was opened to the public in <date when="1835">1835</date>. Also the site of the London Zoo (or Regent's Zoo), created in <date when="1828">1828</date> for scientific study and opened to the public in <date when="1847">1847</date>.</note>
+               </place>
+
+               <place xml:id="Rhine">
+                  <placeName>Rhine River</placeName>
+                  <location>
+                     <geo>51.981667 4.080556</geo>
+                  </location>
+                  <note resp="#lmw">Second largest river in central and western Europe; begins in the southeastern Swiss Alps and eventually empties into the North Sea in the Netherlands.</note>
+               </place>
+               
+               <place xml:id="Rialto">
+                  <placeName>the Rialto, Venice, Italy</placeName>
+                  <district>The Rialto</district>
+                  <settlement>Venice</settlement>
+                  <country>Italy</country>
+                  <location><geo>45.438037 12.335895</geo></location>
+                  <note resp="#lmw">Oldest of four bridges spanning the Grand Canal in Venice.</note>
+               </place>
+               
+               <place xml:id="Richmond">
+                  <placeName>Richmond, London, England</placeName>
+                  <placeName><addName>Richmond upon Thames</addName></placeName>
+                  <district>Richmond</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.456 -0.301</geo></location>
+                  <note resp="#lmw">Richmond upon Thames, now a borough of <placeName ref="#London_city">London</placeName>, formerly part of Surrey. The <rs type="person" ana="#Hofland_TC #Hofland_B">Hoflands</rs> lived there and <persName ref="#Hofland_TC">Thomas Hofland</persName> painted views of the area.</note>
+               </place>
+               
+               <place xml:id="Rome">
+                  <placeName>Rome, Italy</placeName>
+                  <settlement>Rome</settlement>
+                  <country>Papal States</country>
+                  <country>Italy</country>
+                  <location><geo>41.9 12.5</geo></location>
+                  <note resp="#lmw">City on the central Italian Peninsula on the River Tiber. One of the oldest cities in the world, and once capital of the ancient Roman Empire. Throughout much of <persName ref="#MRM">Mitford</persName>'s lifetime, Rome was governed by the Vatican as part of the Papal States, although it was part of the short-lived Roman Republic between 1798 and 1800, annexed to the French Empire under Napoleon between 1808 and 1814, and experienced another short-lived attempt at Italian unification in 1849. Center of art and culture since ancient times, Rome was a frequent stop for young men from Western Europe on the Grand Tour. Now the capital of Italy and of the Lazio region.</note>
+               </place>
+              
+               <place xml:id="Savona">
+                  <placeName>Savona, Italy</placeName>
+                  <settlement>Savona</settlement>
+                  <region>Liguria</region>
+                  <country>Papal States</country>
+                  <country>Italy</country>
+                  <location><geo>44.3 8.483333</geo></location>
+                  <note resp="#ebb #lmw">Seaport in northern Italy. <orgName ref="#Pius7_Court"><persName ref="#Pius7_Pope">Pope Pius VII</persName> and his Cardinals</orgName> were driven to exile here by <persName ref="#Napoleon">Napoleon</persName>, between <date from="1809" to="1813">1809 and 1813</date>.</note>
+               </place>
+               
+               <place xml:id="Scotland"/>
+               
+               <place xml:id="SeymourCt">
+                  <placeName>Seymour Court, Buckinghamshire, England</placeName>
+                  <settlement>Marlow</settlement>
+                  <region>Buckinghamshire</region>
+                  <country>England</country>
+                  <location><geo>51.5854217 -0.7882458</geo></location>
+                  <note resp="#lmw #jjr">Home of <persName ref="#Johnson_Mr">Mr. Johnson</persName>and <persName ref="#Johnson_Miss">Miss Johnson</persName>, until <persName ref="#Johnson_Mr">Mr. Johnson</persName>'s death in <date when="1821">1821</date>. Near <placeName ref="#Marlow">Great Marlow</placeName> in Buckinghamshire.</note>
+               </place>
+               
+               <place xml:id="Sheffield_Castle">
+                  <placeName>Sheffield Castle and Manor Lodge</placeName>
+                  <placeName>
+                     <settlement>Sheffield</settlement>
+                     <region>Yorkshire</region>
+                     <country>England</country>
+                  </placeName>
+                  <location><geo>53.384722 -1.463333</geo></location>
+                  <note resp="#ebb">Location where <persName ref="#MaryQoS">Mary Queen of Scots</persName> was held captive in <date when="1568">1568</date> by order of <persName ref="#ElizI">Queen Elizabeth I</persName>. Here, Mary was guarded by <persName ref="#Talbot_Geo">George Talbot, the Sixth Earl of Shrewsbury</persName>, and his wife, <persName ref="#Bess_of_Hardwick">Elizabeth Talbot or "Bess of Hardwick"</persName> befriended the royal captive.</note>
+               </place>
+               
+               <place xml:id="Shinfield">
+                  <placeName>Shinfield, Berkshire, England</placeName>
+                  <settlement>Shinfield</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>0.947 51.408</geo>
+                  </location>
+                  <note resp="#lmw">Village and parish south of <placeName ref="#Reading_city">Reading</placeName> in <placeName ref="#Berkshire">Berkshire</placeName>. Shinfield parish encompasses <persName ref="#MRM">Mitford</persName>'s homes at <placeName ref="#Bertram_house">Bertram House</placeName> and at her cottage in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>.</note>
+              </place>
+               
+               <place xml:id="Silchester">
+                  <placeName>Silchester, Hampshire, England</placeName>
+                  <settlement>Silchester</settlement>
+                  <region>Hampshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.353 -1.101</geo>
+                  </location>
+                  <note resp="#lmw">Village in Hampshire, approximately nine miles from Reading, on the Berkshire county border.</note>
+               </place>
+               
+               <place xml:id="Sloane_St">
+                  <placeName>Sloane Street, Kensington, London, England</placeName>
+                  <district>Kensington</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.49667 -0.15844</geo>
+                  </location>
+                  <note resp="#lmw">Major <placeName ref="#London_city">London</placeName> thoroughfare now in the Royal Borough of Kensington and Chelsea. Runs between Knightsbridge and Sloane Square. Sloane Street takes its name from Sir Hans Sloane, who purchased the surrounding area in 1712.</note>
+               </place>
+               
+               <place xml:id="Soho_Sq">
+                  <placeName>Soho Square, Soho, London, England</placeName>
+                  <district>Soho</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.515278 -0.132222</geo>
+                  </location>
+                  <note resp="#lmw">A square in the Soho district of London. It was originally called King Square after Charles II, whose statue still stood in the square's garden in <persName ref="#MRM">Mitford</persName>'s time. According to <persName ref="#MRM">Mitford</persName>, <persName ref="#Kemble_C">Charles Kemble</persName> and his wife lived in Soho Square in the 1820s.</note>
+               </place>
+               
+               <place xml:id="Somerset_House">
+                  <placeName>Somerset House, Strand, London, England</placeName>
+                  <district>Strand</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.511028 -0.117194</geo></location>
+                  <note resp="#lmw">Large neoclassical public building in central London on the Strand, overlooking the River Thames. In <persName ref="#MRM">Mitford</persName>'s time, the site of Royal Academy exhibitions and other cultural events. A building designed and built by Sir William Chambers beginning in 1776 in order to house public offices which had previously been scattered around London in older buildings. Likely not completed until after 1819. This building's North Wing faced the Strand and also included East and West Wings of the present-day quadrangle. Housed the Royal Academy of Arts, the Royal Society of London for Improving Natural Knowledge, and the Society of Antiquaries until the 1870s. Sometimes a metonym for <orgName ref="#Royal_Academy">the Royal Academy</orgName>; <persName ref="#MRM">Mitford</persName> mentions in letter of <date when="1821-11-23">23 November 1821</date> to <persName ref="#Elford_SirWm">Elford</persName> that she hopes he will send his picture to Somerset House.</note>
+               </place>
+               
+               <place xml:id="Somersetshire">
+                  <placeName>Somersetshire, England</placeName>
+                  <placeName><addName>Somerset</addName></placeName>
+                  <region>Somersetshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.18 -3</geo>
+                  </location>
+                  <note resp="#lmw">County in southwest England. County town is Taunton. Now known as Somerset.</note>
+               </place>
+               
+               <place xml:id="Southhampton_city">
+                  <placeName>Southhampton, Hampshire, England</placeName>
+                  <settlement>Southampton</settlement>
+                  <region>Hampshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>50.9 -1.4</geo>
+                  </location>
+                  <note resp="#lmw">Southampton is a major port city in the county of Hampshire on the south coast of England, near the New Forest.</note>
+               </place>
+               
+               <place xml:id="St_Cyr">
+                  <placeName>St. Cyr, France</placeName>
+                  <settlement>St. Cyr</settlement>
+                  <region>Yvelines</region>
+                  <country>France</country>
+                  <location><geo>48.8008 2.0633</geo></location>
+                  <note resp="#lmw">Village five km west of Versailles in France, where <persName ref="#d_Aubigné_Françoise">Françoise d' Aubigné</persName> died; she founded Maison royle de Saint-Louis there, a school for poor girls of the artistocracy. Now the Saint-Cyr-l'École, Yvelines, in the western suburbs of Paris.
+                  </note>
+               </place>
+               
+               <place xml:id="St_Lawrence_Church">
+                  <placeName>St. Lawrence Church, Reading, Berkshire, England</placeName>
+                  <settlement>Reading</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.4563889 -0.971552</geo></location>
+                  <note resp="#scw #lmw">Ancient church on Friar Street in <placeName ref="#Reading_city">Reading</placeName>. During <persName ref="#MRM">Mitford</persName>'s time, it was the parish church. The spelled variously Lawrence or Laurence. <orgName ref="#Valpys">The Valpy family</orgName>'s parish church; <persName ref="#Valpy_Richard">Dr. Richard Valpy</persName>'s students placed a marble bust of him in the church after his death, although he is buried elsewhere. <persName ref="#MRM">Mitford</persName> refers to this church as <placeName ref="#St_Johns_Church">St. John's Church</placeName> in <title ref="#OV">Our Village</title>.
+                  </note>
+                  <note><ref target="http://www.stlreading.org/"/></note>
+               </place>
+               
+               <place xml:id="St_Michaels_Church_St_Albans">
+                  <placeName>St. Michael's Church, St. Albans, Hertfordshire, England</placeName>
+                  <settlement>St. Albans</settlement>
+                  <country>Hertfordshire</country>
+                  <country>England</country>
+                  <location><geo>51.7529492-0.3582574</geo></location>
+                  <note resp="#rct">A parish church in St. Albans.</note>
+               </place>
+               
+               <place xml:id="StJamesSt">
+                  <placeName>St. James's Street, Westminster, London, England</placeName>
+                  <district>St. James</district>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.506944 -0.139722</geo>
+                  </location>
+                  <note resp="#lmw">The main thoroughfare in the district of St James's in central London which runs from Piccadilly downhill to St James's Palace at its southern end. The area was named after a hospital dedicated to St. James the Less. In <persName ref="#MRM">Mitford</persName>'s time, St. James Street was the home of many of the best-known clubs, such as Brooke's and White's.</note>
+               </place>
+               
+               <place xml:id="StJohns_Place">
+                  <placeName>St. John's Place, Lisson Grove, Regent's Park, London, England</placeName>
+                  <district>Lisson Grove</district>
+                  <district>Regent's Park</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5361 -0.1751</geo></location>
+                  <placeName><addName>St. John's Wood</addName></placeName>
+                  <note resp="#ghb #ebb">Occasional residence from <date when="1817">1817</date>
+                     onward of <persName ref="#Haydon">Benjamin Robert Haydon</persName> in
+                        <placeName ref="#Lisson_Grove">Lisson Grove</placeName>, <placeName ref="#Regents_Park">Regent's Park</placeName>, <placeName ref="#London_city">London</placeName>. Site of Haydon's famous dinner gathering with guests
+                        <persName ref="#Wordsworth_Wm">William Wordsworth</persName>, <persName ref="#Keats">John Keats</persName>, <persName ref="#Lamb_Chas">Charles
+                        Lamb</persName>, Thomas Monkhouse, and Joseph Ritchie on <date when="1817-12-28">28 December 1817</date>. Haydon's enormous painting,
+                        <title ref="#ChrstEJrslm_Haydon">Christ's Entry into Jerusalem</title> hung
+                     in Haydon's painting room as background.</note>
+               </place>
+               
+               <place xml:id="StPauls">
+                  <placeName>St. Paul's Cathedral, London, England</placeName>
+                  <placeName><addName>Cathedral Church of St. Paul the Apostle</addName></placeName>
+                  <location>
+                     <geo>51.513611 -0.098056</geo>
+                  </location>
+                  <note resp="#lmw">St Paul's Cathedral, London, is a Church of England (Anglican) cathedral, the seat of the Bishop of London and the mother church of the Diocese of London. It sits on Ludgate Hill at the highest point of the City of London. The present church, by Sir Christopher Wren, was built after the Great Fire of London in the late seventeenth century. The building would have dominated the London skyline in <persName ref="#MRM">Mitford</persName>'s time. The state funerals of <persName ref="#Nelson">Lord Nelson</persName> and the <persName ref="#Wellington_Duke">Duke of Wellington</persName> were held at St. Paul's.</note>
+                  <note>
+                     <ref target="http://www.stpauls.co.uk"/>
+                  </note>
+               </place>
+               
+               <place xml:id="StQuintin_School">
+                  <placeName>St. Quintin School, 22 Hans Place, Chelsea, London, England</placeName>
+                  <district>Hans Place</district>
+                  <district>Chelsea</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.497778 -0.161389</geo></location>
+                  <note resp="#lmw">Public school for girls founded by French emigre M. St. Quintin (or Quentin), a friend of <persName ref="#Mitford_Geo">George Mitford</persName> and of <persName ref="#Valpy_Richard">Dr. Richard Valpy</persName>. It was originally located in <placeName ref="#Reading_city">Reading</placeName>, moved to London (at 22 Hans Place, in Chelsea), and later relocated to <placeName ref="#Paris">Paris</placeName>. <persName ref="#Rowden_Fr">Frances Rowden</persName> was schoolmistress there, and <persName ref="#MRM">Mitford</persName> was a pupil at the London location, as were <persName ref="#Landon_LE">Landon</persName> and <persName ref="#Lamb_Caro">Caroline Ponsonby Lamb</persName>. The majority of the houses in Hans Place were substantially rebuilt in the late nineteenth century; the building that housed the school no longer stands.</note>
+               </place>
+               
+               <place xml:id="Stratfield_Saye">
+                  <placeName>Stratfield Saye, Hampshire, England</placeName>
+                  <settlement>Stratfield Saye</settlement>
+                  <region>Hampshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.35 -1</geo>
+                  </location>
+                  <note resp="#lmw">Village in Hampshire, England. Alternative spellings are: Strathfieldsaye, Stratford Saye, and Stratford Sea. In <persName ref="#MRM">Mitford</persName>'s time, the <persName ref="#Wellington_Duke">Duke of Wellington</persName> moved there.</note>
+               </place>
+               
+               <place xml:id="Stratford_upon_Avon_city">
+                  <placeName>Stratford-upon-Avon, Warwickshire, England</placeName>
+                  <settlement>Stratford-upon-Avon</settlement>
+                  <region>Warwickshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>52.19 -1.71</geo>
+                  </location>
+                  <note resp="#lmw">A market town in Warwickshire, England, on the River Avon, best known as the birthplace of <persName ref="#Shakespeare">Shakespeare</persName>.</note>
+               </place>
+               
+               <place xml:id="Strawberry_Hill">
+                  <placeName>Strawberry Hill House, Twickenham, England</placeName>
+                  <settlement>Twickenham</settlement>
+                  <country>England</country>
+                  <location>
+                     <geo>51.4382 -0.3348</geo>
+                  </location>
+                  <note resp="#lmw">
+                     <persName ref="#Walpole_Hor">Horace Walpole</persName>'s house at Strawberry Hill, near <placeName ref="#Twickenham">Twickenham</placeName>.</note>
+                  <note>
+                     <ref target="http://www.strawberryhillhouse.org.uk/history.php"/>
+                  </note>
+               </place>
+               
+               <place xml:id="Swallowfield_village">
+                  <placeName>Swallowfield, Berkshire, England</placeName>
+                  <settlement>Swallowfield</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.378 -0.959</geo></location>
+                  <note resp="#lmw #ebb">Village in <placeName ref="#Berkshire">Berkshire</placeName>, where <persName ref="#MRM">Mary
+                        Russell Mitford</persName> moved to a cottage in <date when="1851">1851</date>, three miles south of her long-time home at <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>.</note>
+               </place>
+               
+               <place xml:id="Switzerland"/>
+
+               <place xml:id="Temple">
+                  <placeName>Temple, London, England</placeName>
+<district>Temple</district>                  
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.512 -0.111</geo></location>
+                  <note resp="#ebb #err">District in central <placeName ref="#London_city">London</placeName>, traditional location for barristers' chambers and other offices for legal practice, with its four Inns of Court. The Inner Temple, one of the four Inns of Court, was responsible for training and licensing barristers. <persName ref="#Talfourd_Thos">Talfourd</persName> had chambers in this neighborhood, although not in the Inner Temple, and <persName ref="#MRM">Mitford</persName> addressed letters to him there.</note>
+               </place>
+               
+               <place xml:id="Thames">
+                  <placeName>River Thames, England</placeName>
+                  <region>Thames</region>
+                  <country>England</country>
+                  <location><geo>51.4989 0.6087</geo></location>
+                  <note resp="#ebb">The longest river in <placeName ref="#England">England</placeName>, the Thames has its source in <placeName>Gloucestershire</placeName> and flows through <placeName ref="#Reading_city">Reading</placeName>, <placeName ref="#Oxford_city">Oxford</placeName>, <placeName ref="#Windsor_city">Windsor</placeName>, and <placeName ref="#London_city">London</placeName> into the <placeName>Thames Estuary</placeName> to the <placeName>North Sea</placeName>.</note>
+               </place>
+               
+               <place xml:id="ThreeMileCross">
+                  <placeName>Three Mile Cross, Berkshire, England</placeName>
+                  <settlement>Three Mile Cross</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location><geo>51.4074 -0.9738</geo></location>
+                  <note resp="#ebb">Village in the parish of Shinfield in <placeName ref="#Berkshire">Berkshire</placeName>, where <persName ref="#MRM">Mary Russell Mitford</persName> moved with her parents in <date when="1820">1820</date>. They lived in a cottage there until <date when="1851">1851</date>.
+                  </note>
+               </place>
+                  
+                  <place xml:id="Totnes_village"> <!-- new entry -->
+                     <placeName>Totnes, Devonshire, England</placeName>
+                     <settlement>Totnes</settlement>
+                     <region>Devonshire</region>
+                     <country>England</country>
+                     <location><geo>50.432 -3.684</geo></location>
+                     <note resp="#lmw">Market town near the River Dart in Devonshire, and residence of <persName ref="#Elford_SirWm">Sir William Elford</persName>, who lived there after <date when="1831">1831</date> at <placeName>The Priory</placeName>, the house of his daughter (<persName ref="#Elford_Elizabeth">Elizabeth</persName>) and son-in-law.</note>
+                  </place>
+               
+               <place xml:id="Tours_France">
+                  <placeName type="city">Tours, Indre-et-Loire, France</placeName>
+                  <settlement>Tours</settlement>
+                  <region>Indre-et-Loire</region>
+                  <country>France</country>
+                  <location><geo>47.3936 0.6892	
+                  </geo></location>
+                  <note resp="#ebb">City in <placeName ref="#France">France on the lower part of the River Loire.</placeName>
+                  </note>
+               </place>
+               
+               <place xml:id="Tower_of_London">
+                  <placeName>Tower of London, London, England</placeName>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.508056 -0.076111</geo>
+                  </location>
+                  <note resp="#ebb #lmw">Dating from the Norman Conquest of England, this famous complex of fortified towers was begun by William the Conqueror in <date when="1066">1066</date> and used variously as a royal residence, an armory, a treasury, a menagerie, and a prison. In <persName ref="#MRM">Mitford</persName>'s time, a tourist attraction admired for its Gothic architecture and that included the Royal Menagerie, displays of armour, and the Crown Jewels; it was also an active armoury and the home of the Royal Mint until the early nineteenth-century.</note>
+               </place>
+               
+               <place xml:id="Tripoli">
+                  <placeName>Tripoli</placeName>
+                  <placeName><addName>Tripoly</addName></placeName>
+                  <settlement>Tripoli</settlement>
+                  <country>Ottoman Empire</country>
+                  <country>Libya</country>
+                  <location><geo>32.902222 13.185833</geo></location>
+                  <note resp="#lmw">Ancient seaport in North Africa, now the capital and largest city in Libya. In the eighteenth and early nineteenth century, the city was nominally under control of the Ottoman Empire but was de facto ruled by Turkish Janissary officers <date from="1714" to="1835">between 1714 and 1835</date>, after which the Ottoman Empire reasserted control. During the period of Janissary rule, Tripoli was a base of operations for piracy ("Barbary pirates"), blackmail schemes, and demands for tribute as protection against piracy, which led to the first and second Barbary Wars with the <placeName ref="#USA">United States</placeName> in the early nineteenth century.</note>
+               </place>
+               
+               <place xml:id="Twickenham">
+                  <placeName>Twickenham, Richmond upon Thames, London, England</placeName>
+                  <settlement>Twickenham</settlement>
+                  <district>Richmond upon Thames</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.449 -0.337</geo></location>
+                  <note resp="#lmw">Twickenham, a town on the Thames, now part of Greater London. In the eighteenth century, the home of <persName ref="#Pope_Alex">Alexander Pope</persName> and <persName ref="#Walpole_Hor">Horace Walpole</persName>, who built a neo-Gothic mansion at <placeName>Strawberry Hill</placeName>.
+                  </note>
+               </place>
+               
+               <place xml:id="Vaucluse">
+                  <placeName>Vaucluse, France</placeName>
+                  <region>Vaucluse</region>
+                  <country>France</country>
+                  <location>
+                     <geo>44 5.166667</geo>
+                  </location>
+                  <note resp="#lmw">A department in southeast France, named after the Fontaine-de-Vaucluse, a famous spring.</note>
+               </place>
+               
+            <place xml:id="Vict_Theatre">
+                  <placeName>Royal Victoria Theatre, London, England</placeName>
+                  <placeName>Royal Coburg Theatre</placeName>
+                  <placeName><addName>old Vic</addName></placeName>
+                  <location><geo>51.5020628-0.1115065</geo></location>
+                  <note resp="#lmw">This minor theatre opened in <date when="1818">1818</date> on the south side of Waterloo bridge, in order to capitalize on the increase of traffic expected from the new bridge. It was purchased in <date when="1833">1833</date> by <!--<persName ref="#Egerton_Dan">Daniel Egerton</persName> and <persName ref="#Abbott_Wm">William Abbott</persName>,--> who renamed it the Royal Victoria Theatre. It was not named after the young <persName ref="#Victoria_Queen">Princess Victoria</persName>, then fourteen, but after her mother, Victoria, Duchess of Kent. <persName ref="#MRM">Mitford</persName>'s play <title ref="#CharlesI_MRMplay">Charles I</title> was performed here. Still an active producing theater, called the old Vic.</note>
+               </place> <!--LMW: egerton and abbott already id'd in drama file.-->
+               
+               <place xml:id="Vienna">
+                  <placeName>Vienna, Austria</placeName>
+                  <settlement>Vienna</settlement>
+                  <country>Austria</country>
+                  <location><geo>48.2 16.366667</geo></location>
+                  <note resp="#lmw">Capital and the largest city in Austria. Historically, a center for music in Europe. During <persName ref="#MRM">Mitford</persName>'s time, Vienna became the capital of the Austrian Empire (in 1804, during the Napoleonic Wars) and hosted the Congress of Vienna in 1814-1815.</note>
+               </place>
+               
+               <place xml:id="Wales"/>
+               
+               <place xml:id="Waterloo_Belgium">
+                  <placeName>Waterloo, Walloon Brabant, Belgium</placeName>
+                  <placeName>
+                     <settlement>Waterloo</settlement>
+                     <district>Walloon Brabant</district>
+                     <country>Belgium</country>
+                  </placeName>
+                  <location>
+                     <geo>50.717469 4.397911</geo>
+                  </location>
+                  <note resp="#ebb #lmw">Municipality in Belgium, south of Brussels. The battle of Waterloo, at which Napoleon was defeated in 1815, was fought south of the municipality, at Braine-l'Alleud.</note>
+               </place>
+               
+               <place xml:id="Westminster_Abbey">
+                  <placeName>Westminster Abbey, Westminster, London, England</placeName>
+                  <placeName><addName>Collegiate Church of St. Peter at Westminster</addName></placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.499444 -0.1275</geo>
+                  </location>
+                  <note resp="#ebb #lmw">Gothic style church in Westminster, London, where English monarchs have traditionally been crowned and buried since 1066. Many important literary and historical figures are recognized with memorials throughout this famous abbey. The present structure began construction in <date when="1245">1245</date> by <persName>King Henry III</persName> and the two western towers were added in the early eighteenth century.
+                  </note>
+               </place>
+               
+               <place xml:id="Westmnst_Palace">
+                  <placeName>Palace of Westminster, Westminster, London, England</placeName>
+                  <placeName><addName>Westminster Hall</addName></placeName>
+                  <placeName><addName>Houses of Parliament</addName></placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.499167 -0.124722</geo></location>
+                  <note resp="#ebb">Located in <placeName ref="#Westmnstr">Westminster, London</placeName> along the <placeName ref="#Thames">Thames River</placeName>, this is the meeting place of England's two Houses of <orgName ref="#Parliament_UK">Parliament</orgName>.</note>
+               </place>
+               
+               <place xml:id="Westmnstr">
+                  <placeName>City of Westminster, London, England</placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.5 -0.133333</geo></location>
+                  <note resp="#lmw">Now an inner London borough centrally located in Greater London; historically a separate entity west of the City of London and the site of Westminster Abbey and the Palace of Westminster. In <persName ref="#MRM">Mitford</persName>'s time, a district of Greater London and the location of St. James's Palace, Buckingham Palace, and the Houses of Parliament; shopping districts around Bond Street, Regent Street, and Oxford Street; and the fashionable residential and theater districts of the West End.</note>
+               </place> 
+               
+               <place xml:id="Whiteknights">
+                  <placeName>Whiteknights, Berkshire, England</placeName>
+                  <settlement>Whiteknights</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.440686 -0.944806</geo>
+                  </location>
+                  <note resp="#lmw">
+                     <placeName ref="#Berkshire">Berkshire</placeName> estate of <persName ref="#Geo_SpencerChurchill">George Spencer-Churchill, the sixth Duke of Marlborough</persName>. Purchased by him in <date when="1798">1798</date> and extensively renovated at great expense until the Duke's bankruptcy in <date when="1819">1819</date>, when the estate and contents were sold at auction. Subject of an 1818 <title ref="#Whiteknights_Desc_TCH">publication</title> by the <rs type="person" ana="#Hofland_TC #Hofland_B">Hoflands</rs>. Formerly the manor of Earley Whiteknights; now Whiteknights Park, part of the campus of the University of Reading.</note>
+               </place>
+               
+               <place xml:id="Whitehall">
+                  <placeName>Whitehall, Westminster, London, England</placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.504167 -0.126389</geo></location>
+                  <note resp="#ebb">The word "Whitehall," used without specific reference to the palace, refers metonymically to the centers of power of the English government, including the monarchy and parliament. Literally, Whitehall is a road in <placeName ref="#Westmnstr">Westminster</placeName>, running from <placeName>Trafalgar Square</placeName> to <placeName>Parliament Square</placeName>, which takes its name from <placeName ref="#Whitehall_Palace">Whitehall Palace</placeName> on its route.</note>
+               </place>
+               
+               <place xml:id="Whitehall_Palace">
+                  <placeName>Whitehall Palace, Westminster, London, England</placeName>
+                  <district>Whitehall</district>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location><geo>51.504444 -0.125556</geo></location>
+                  <note resp="#ebb">Main London residence of English monarchs from 1530 until 1698, when a major part of the palace was destroyed by fire. During the seventeenth century, renovations made it the largest palace in Europe. Site of the execution of <persName ref="#ChasI">King Charles
+                        I</persName>.</note>
+               </place>
+               
+               <place xml:id="Winchester_city">
+                  <placeName>Winchester, Hampshire, England</placeName>
+                  <settlement>Winchester</settlement>
+                  <region>Hampshire</region>
+                  <country>England</country>
+                  <location><geo>51.0632 -1.308</geo></location>
+                  <note resp="#lmw">City and county town of Hampshire. Site of Winchester Cathedral and Winchester College, one of the oldest public grammar schools. <persName ref="#Austen_Jane">Jane Austen</persName>died here and is buried in the Cathedral. <persName ref="#Keats">John Keats</persName> wrote several of his best-known poems while on a visit to the city.</note>
+               </place>
+               
+               <place xml:id="Windsor_city">
+                  <placeName>Windsor, Berkshire, England</placeName>
+                  <settlement>Windsor</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.4791 -0.6095</geo>
+                  </location>
+                  <note resp="#lmw">Market town in Berkshire, about twenty miles from <placeName ref="#Reading_city">Reading</placeName> and twenty miles from <placeName ref="#Charing_Cross">Charing Cross</placeName>. Location of royal residence Windsor Castle. British royals resumed an active presence in Windsor after <date notBefore="1778">1778</date>, when <persName ref="#GeoIII">George III</persName> began use of Queen's Lodge, and continued with use of the Castle after <date notBefore="1804">1804</date>. Two new army barracks were built in the town in the early nineteenth century.</note>
+               </place>
+               
+               <place xml:id="Wokingham_city">
+                  <placeName>Wokingham, Berkshire, England</placeName>
+                  <settlement>Wokingham</settlement>
+                  <region>Berkshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.41 -0.84</geo>
+                  </location>
+                  <note resp="#lmw #err">A market town in south east England in Berkshire, near Reading. The <orgName ref="#Mitfords">Mitfords</orgName> sometimes travelled to Wokingham on their way to <placeName ref="#London_city">London</placeName>, or to visit the home of their friends the <orgName ref="#Webbs">Webbs</orgName>.</note>
+               </place>
+               
+               <place xml:id="Yorkshire_county">
+                  <placeName>Yorkshire, England</placeName>
+                  <region>Yorkshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>54 -2</geo>
+                  </location>
+                  <note resp="#lmw">County in northern England. Abbreviated Yorks.</note>
+               </place>
+               </place>
+            </listPlace>
+            
+            <!-- new, from notes above: -->
+               <listPerson sortKey="histPersons">
+                  <person xml:id="Cosway_Rich">
+                     <persName>Richard Cosway</persName>
+                     <persName>
+                     <surname>Cosway</surname>
+                     <forename>Richard</forename>
+                        <roleName>member of the Royal Academy</roleName>
+                     </persName>
+                     <birth when="1742-11-05">
+                        <placeName>Tiverton, Devon, England</placeName>
+                     </birth>
+                     <death when="1821-07-04">
+                        <placeName>London, England</placeName>
+                     </death>
+                     <occupation>artist</occupation>
+                     <occupation>painter</occupation>
+                     <occupation>miniaturist</occupation>
+                     <note resp="#lmw">Portrait painter and miniaturist; the husband of painter Maria Cosway. Member of the Royal Academy.</note>
+                  </person>
+                  
+                  <person xml:id="Melville">
+                     <persName>Herman Melville</persName>
+                     <persName>
+                     <surname>Melville</surname>
+                     <forename>Herman</forename>
+                     </persName>
+                     <birth when="1819-08-01">
+                        <placeName>New York City, New York, USA</placeName>
+                     </birth>
+                     <death when="1891-09-28">
+                        <placeName>New York City, New York, USA</placeName>
+                     </death>
+                     <occupation>literary</occupation>
+                     <occupation>novelist</occupation>
+                     <occupation>poet</occupation>
+                     <occupation>educator</occupation>
+                     <occupation>sailor</occupation>
+                     <occupation>administrator</occupation>
+                     <note resp="#lmw">American novelist and poet. After his father's death, he worked as a schoolteacher and as a sailor before achieving a degree of success as a novelist and short story writer. Later in his career, he worked as a Customs inspector in New York City while turning largely from prose to poetry writing.</note>
+                  </person>
+                  
+                  <person xml:id="Willis_NP">
+                     <persName>Nathaniel Parker Willis</persName>
+                     <persName>
+                        <surname>Willis</surname>
+                        <forename>Nathaniel</forename>
+                        <forename>Parker</forename>
+                     </persName>
+                     <birth when="1806-01-20">
+                        <placeName>Portland, Maine, USA</placeName>
+                     </birth>
+                     <death when="1867-01-20">
+                        <placeName>Boston, Massachusetts, USA</placeName>
+                     </death>
+                     <occupation>literary</occupation>
+                     <occupation>journalist</occupation>
+                     <occupation>editor</occupation>
+                     <occupation>poet</occupation>
+                     <occupation>publisher</occupation>
+                     <occupation>lecturer</occupation>
+                     <note resp="#lmw">American poet, journalist, periodical editor, and lecturer, the brother of Sara Willis, "Fanny Fern." Literary celebrity and considered something of a gossip and a dandy. Corresponded with <persName ref="#MRM">Mary Russell Mitford</persName>.</note>
+                     <note><ref target="http://viaf.org/viaf/189826"/></note>
+                  </person>
+                  
+                  <person xml:id="Guiccioli_T">
+                     <persName>Teresa Guiccioli</persName>
+                     <persName>
+                        <surname>Guiccioli</surname>
+                        <forename>Teresa</forename>
+                        <roleName>Contessa</roleName>
+                     </persName>
+                     <birth when="1800">
+                        <placeName>Ravenna, Italy</placeName>
+                     </birth>
+                     <death notBefore="1873"/>
+                     <occupation>literary</occupation>
+                     <occupation>biographer</occupation>
+                     <note resp="#lmw">Wife of Count Guiccioli and arried lover of <persName ref="#Byron">Byron</persName> while he stayed in Ravenna. Author of <title>Lord Byron's Life in Italy</title>.</note>
+                     <note><ref target="http://viaf.org/viaf/44293835"/></note>
+                  </person>
+                  
+                  <person xml:id="Nelson">
+                     <persName>Horatio Nelson</persName>
+                     <persName>
+                        <surname>Nelson</surname>
+                        <forename>Horatio</forename>
+                        <roleName>Admiral</roleName>
+                        <roleName>1st Viscount Nelson</roleName>
+                        <roleName>1st Duke of Bronté</roleName>
+                        <roleName>Royal Navy</roleName>
+                     </persName>
+                     <birth when="1758-09-29">
+                        <placeName>Burnham Thorpe, Norfolk, England</placeName>
+                     </birth>
+                     <death when="1805-10-21">
+                        <placeName>Battle of Trafalgar, Cape Trafalgar, Spain</placeName>
+                     </death>
+                     <note resp="#lmw">British flag officer and Vice Admiral during the Napoleonic Wars. His death at the Battle of Trafalgar in 1805 ensured his lasting fame as a heroic naval officer.</note>
+                  </person>
+               </listPerson>
+            
+            <listBibl sortKey="literary">
+            <bibl xml:id="Persuasion">
+               <title>Persuasion</title>
+               <author ref="#Austen_Jane"/>
+               <pubPlace ref="#London_city">London</pubPlace>
+               <publisher>John Murray</publisher>
+               <date when="1817">1817</date>
+               <note resp="#lmw">First issued together with <title>Northanger Abbey</title> in <date when="1817">1817</date> as Northanger Abbey; and Persuasion.</note>
+            </bibl>
+               
+               <bibl xml:id="Northanger_Abbey">
+                  <title>Northanger Abbey</title>
+                  <author ref="#Austen_Jane"/>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <publisher>John Murray</publisher>
+                  <date when="1817">1817</date>
+                  <note resp="#lmw">First issued together with <title>Persuasion</title> in <date when="1817">1817</date> as Northanger Abbey; and Persuasion.</note>
+               </bibl>
+               
+               
+            </listBibl>
+         </div>
+
+      </body>
+   </text>
+</TEI>
