@@ -1333,7 +1333,7 @@
                   </listBibl>
             
             <listBibl sortKey="per_19thc">
-          <!--2016-12-12 ebb: ADDED all the Lady's Mag entries, but we should double-check the info here. -->     
+               
                <bibl xml:id="Ladys_Mag">
                   <title level="j" ref="#Ladys_Mag">The Lady's Magazine</title>
                   <date from="1770" to="1847">1770-1847</date>
@@ -1341,7 +1341,7 @@
                   <bibl corresp="#Ladys_Mag_Ser1"/>
                   <bibl corresp="#Ladys_Mag_Ser2_v1-3"/>
                   <bibl corresp="#Ladys_Mag_Ser2_v4-10"/>
-                  <note resp="#lmw #scw"><p>A popular and influential monthly magazine for women that ran <date from="1756" to="1847">from 1756 until 1847</date> under various editorships, publishers, and subtitles. It offered fiction, poetry, as well as educational pieces, and spawned a series of immitators, including <title level="j">Blackwood's Lady's Magazine</title>. The first series was published as volumes 1 through 49 <date from="1770-08" to="1818-12">from August 1770 to December 1818</date>. Ownership and series numbering are unclear for 1819. It was thereafter continued as "new series" (series two), volumes 1 through 10, <date from="1820" to="1829">from 1820 to 1829</date>, under two different subtitles. <date from="1830" to="1832">Between 1830 and 1832</date>, the magazine advertised volumes one to five as an "improved series." In <date when="1832">1832</date>, it merged with <title level="j">The Lady's Museum</title> and continued until <date when="1847">1837</date>as the <title level="j">Lady's Magazine and Museum of Belle Lettres &amp;c. </title>, improved series, and enlarged, volumes 1 through 11. The magazine underwent a further merger in <date when="1837">1837</date>, when it was continued as the <bibl><title level="j">Court Magazine and Monthly Critic and Lady's Magazine and Museum of Belles Lettres</title>, <biblScope unit="volume" from="12" to="31">volumes 12 through 31</biblScope>, improved series and enlarged</bibl>. It ceased publication in <date when="1837">1837</date> with volume 31. In the 1820s, <persName ref="#MRM">Mitford</persName> was a frequent contributor, contributing the stories and sketches that would later be collected as <title ref="#OV">Our Village</title>. </p>
+                  <note resp="#lmw #scw"><p>A popular and influential monthly magazine for women that ran <date from="1756" to="1847">from 1756 until 1847</date> under various editorships, publishers, and subtitles. It offered fiction, poetry, as well as educational pieces, and spawned a series of immitators, including <title level="j">Blackwood's Lady's Magazine</title>. The first series was published as volumes 1 through 49 <date from="1770-08" to="1818-12">from August 1770 to December 1818</date>. Ownership and series numbering are unclear for 1819. It was thereafter continued as "new series" (series two), volumes 1 through 10, <date from="1820" to="1829">from 1820 to 1829</date>, under two different subtitles. <date from="1830" to="1832">Between 1830 and 1832</date>, the magazine advertised volumes one to five as an "improved series." In <date when="1832">1832</date>, it merged with The Lady's Museum and continued until <date when="1847">1837</date>as the <title level="j">Lady's Magazine and Museum of Belle Lettres &amp;c. </title>, improved series, and enlarged, volumes 1 through 11. The magazine underwent a further merger in <date when="1837">1837</date>, when it was continued as the <title>Court Magazine and Monthly Critic and Lady's Magazine and Museum of Belles Lettres</title>, volumes 12 through 31, improved series and enlarged. It ceased publication in <date when="1837">1837</date> with volume 31. In the 1820s, <persName ref="#MRM">Mitford</persName> was a frequent contributor, contributing the stories and sketches that would later be collected as <title ref="#OV">Our Village</title>. </p>
                      <p>
                         Sources: English Press, Then and Now. <ref target="http://www.aboutenglish.it/englishpress/Ladys_Maga.htm"/>; 
                         WorldCat <ref target="http://www.worldcat.org/title/ladys-magazine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/48090188"/>;
@@ -1381,7 +1381,7 @@
                   <note resp="#scw #lmw">Many of <persName ref="#MRM">Mitford</persName>'s contributions to the magazine were to this series, a continuation of the "new series" (second series) begun in 1820 by publisher <orgName>S. Robinson</orgName>. For volumes four through ten of the "new series," published <date from="1823" to="1829">between 1823 and 1829</date>, the magazine was subtitled "Mirror of the Belle-Lettres, Fine Arts, Fashions, Music, Drama, &amp;c." Notable contributions included the <title ref="#Walks_Country_LM">Walks in the Country</title>, as well as the <title ref="#Boarding_School_Rec_LM">Boarding School Recollections</title> subseries, which became <title ref="#Early_Rec_OV">Early Recollections</title> in <title ref="#OV"></title>.</note>
                   <ref target="http://www.worldcat.org/title/ladys-magazine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/48090188"/>
                </bibl>
-           
+               <bibl/>
          
                <bibl xml:id="Findens_Tableaux_annual">
                   <title>Finden's Tableaux</title>
@@ -2360,7 +2360,7 @@
                <date when="1832">1832</date>
                   <pubPlace ref="#London_city">London</pubPlace>
                   <publisher><orgName ref="#Whittaker_Treacher_pub">Whittaker, Treacher &amp; Co.</orgName></publisher>
-                  <note resp="#scw">This sketch appeared in <title ref="#OurVillage_5th">volume five of <title ref="#OV">Our Village</title></title>in <date when="1832">1832</date>.</note>
+                  <note resp="#scw">This sketch appeared in <title ref="#OurVillage_5th">volume five of <title ref="#OV">Our Village</title></title>in <date when="1832">1832</date>. It also appeared in <title ref="#Royal_LadysMag">The Royal Lady's Magazine, and Archives of the Court of St. James</title> in <date when="1832-05">May 1832</date>.</note>
                </bibl>
                
                <bibl xml:id="GhostStories_OV">
@@ -2930,7 +2930,7 @@
                   <author ref="#MRM">Mary Russell Mitford</author>
                   <date when="1828">1828</date>
                   <publisher><orgName ref="#Whittakers_pub">G. &amp; W. B. Whittaker</orgName></publisher>
-                  <note resp="#scw">This sketch appeared in <title ref="#OurVillage_3rd">volume three of <title ref="#OV">Our Village</title></title>in <date when="1828">1828</date>. It was also published in the <title ref="#Lit_Souvenir">Literary Souvenir</title> for <date when="1827">1827</date>.</note>
+                  <note resp="#scw">This sketch appeared in <title ref="#OurVillage_3rd">volume three of <title ref="#OV">Our Village</title></title>in <date when="1828">1828</date>. It was also published in the <title ref="#Lit_Souvenir">Literary Souvenir</title> for <date when="1827">1827</date>, as well as in</note>
                </bibl>
                
                <bibl xml:id="Quiet_Gentlewoman_OV">
@@ -2949,7 +2949,7 @@
                <date when="1832">1832</date>
                   <pubPlace ref="#London_city">London</pubPlace>
                   <publisher><orgName ref="#Whittaker_Treacher_pub">Whittaker, Treacher &amp; Co.</orgName></publisher>
-                  <note resp="#scw">This sketch appeared in <title ref="#OurVillage_5th">volume five of <title ref="#OV">Our Village</title></title>in <date when="1832">1832</date>. It was previously published in the <title ref="#Gem_annual">Gem</title> for <date when="1831">1831</date>.</note>
+                  <note resp="#scw">This sketch appeared in <title ref="#OurVillage_5th">volume five of <title ref="#OV">Our Village</title></title>in <date when="1832">1832</date>. It was previously published in the <title ref="#Gem_annual">Gem</title> for<date when="1831">1831</date>.</note>
                </bibl>
                
                <bibl xml:id="Remarkable_Character_of_Old_School_LM">
@@ -4767,6 +4767,7 @@
                      <title level="m" ref="#Country_Stories">Country Stories</title>
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
+                     <note resp="#scw">This story was also published in <title>The Library of Fiction; or Family Story Teller</title> in <date when="1836">1836</date>.</note>
                   </bibl>
                   
                   <bibl xml:id="Miss_Philly_Filkin_CS">
@@ -4856,9 +4857,11 @@
                   
                   <bibl xml:id="Curate_St_Nicholas_BR">
                      <title level="a" ref="#Curate_St_Nicholas_BR">The Curate of St. Nicholas</title>
+                     <title level="a" type="alt">Our Rector</title>
                      <title level="m" ref="#Belford_Regis">Belford Regis</title>
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date><!--scw: note to self: check this one against Needham's notes on that curate-->
+                     <note resp="#scw">A version of this story was published as <title type="alt">Our Rector</title> in the <title ref="#English_Annual">English Annual</title> for <date when="1838">1838</date>.</note>
                   </bibl>
                   
                   <bibl xml:id="King_Harwood_BR">
@@ -4915,9 +4918,11 @@
                   <bibl xml:id="Belles_Ballroom1_Will_BR">
                      <title level="a" ref="#Belles_Ballroom1_Will_BR">Belles of the Ballroom, No. I - The Will</title>
                      <title level="s" ref="#Belles_Ballroom_BR">Belles of the Ballroom</title>
+                     <title level="a" type="alt">The Will</title>
                      <title level="m" ref="#Belford_Regis">Belford Regis</title>
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
+                     <note resp="#scw">This story was orginally published in the <title ref="#ForgetMeNot">Forget Me Not</title> for <date when="1834">1834</date> with the title <title type="alt">The Will</title>.</note>
                   </bibl>
                   
                   <bibl xml:id="Greek_Plays_BR">
@@ -4939,6 +4944,7 @@
                      <title level="m" ref="#Belford_Regis">Belford Regis</title>
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
+                     <note resp="#scw">This story was also published in <title ref="#English_Annual">English Annual</title> for <date when="1835">1835</date>.</note>
                   </bibl>
                   
                   <bibl xml:id="Country_Excursions_BR">
@@ -4974,9 +4980,11 @@
                   
                   <bibl xml:id="Young_Market_Woman_BR">
                      <title level="a" ref="#Young_Market_Woman_BR">The Young Market Woman</title>
+                     <title type="alt">Old Matthew, the Matseller</title>
                      <title level="m" ref="#Belford_Regis">Belford Regis</title>
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
+                     <note resp="#scw">This story is a revised version of what was originally published in <title ref="#ForgetMeNot">The Forget Me Not</title> for <date when="1833">1833</date>, and also in <title ref="#Royal_LadysMag">The Royal Lady's Magazine, and Archives of the Court of St. James</title> for <date when="1832">1832</date>, with the title <title type="alt">Old Matthew, the Matseller</title>.</note>
                   </bibl>
                   
                   <bibl xml:id="Hester_BR">
@@ -4988,16 +4996,20 @@
                   
                   <bibl xml:id="Flirtation_Extraordinary_BR">
                      <title level="a" ref="#Flirtation_Extraordinary_BR">Flirtation Extraordinary</title>
+                     <title level="a" type="alt">A Sentimental Adventure</title>
                      <title level="m" ref="#Belford_Regis">Belford Regis</title>
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
+                     <note resp="#scw">This story was also published in the <title ref="#English_Annual">English Annual</title> for <date when="1837">1837</date> with the title <title type="alt">A Sentimental Adventure</title>.</note>
                   </bibl>
                   
                   <bibl xml:id="Belles_Ballroom3_SilverArrow_BR">
                      <title level="a" ref="#Belles_Ballroom3_SilverArrow_BR">Belles of the Ballroom, No. III - The Silver Arrow</title>
+                     <title level="a" type="alt">The Silver Arrow</title>
                      <title level="m" ref="#Belford_Regis">Belford Regis</title>
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
+                     <note resp="#scw">This story also appeared as <title type="alt">The Silver Arrow</title> in the <title ref="#English_Annual">English Annual</title> for <date when="1836">1836</date>.</note>
                   </bibl>
                   
                   <bibl xml:id="Young_Painter_BR">
@@ -5010,8 +5022,9 @@
                   <bibl xml:id="Surgeons_Courtship_BR">
                      <title level="a" ref="#Surgeons_Courtship_BR">The Surgeon's Courtship</title>
                      <title level="m" ref="#Belford_Regis">Belford Regis</title>
-                     <author ref="#MRM">Mary Russell Mitford</author>
+                     <title type="alt">A Farm-house Adventure</title>             <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
+                     <note resp="#scw">This story was previously published in <title ref="#Royal_LadysMag">The Royal Lady's Magazine, and Archives of the Court of St. James</title> in <date when="1832-09">September 1832</date> with the title <title>A Farm-house Adventure</title>.</note>
                   </bibl>
                   
                   <bibl xml:id="Irish_Haymaker_BR">
@@ -5062,6 +5075,7 @@
                      <author ref="#MRM">Mary Russell Mitford</author>
                      <date when="1835">1835</date>
                      <note resp="#scw">This story was also published in the <title ref="#Amulet">Amulet</title> for <date when="1835">1835</date>.</note>
+                     <note resp="#scw">This story was also published in <title ref="#Amulet">Amulet</title> for <date when="1835">1835</date>.</note>
                   </bibl>
                   
             </bibl>

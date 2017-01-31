@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2016-12-12T15:25:37.309-05:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1506. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2017-01-31T18:20:32.434-05:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1507. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -340,16 +340,17 @@
                      applications since 2013, he has spent many years marking up ethnographic data
                      in the mid-1990s. </note>
                </person>
-               <person xml:id="hl">
+               <person xml:id="jgf">
                   <persName>
-                     <surname>Long</surname>
-                     <forename>Heather</forename>
+                     <surname>Julie</surname>
+                     <forename>Fish</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
                   <occupation>
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
-                  <note type="bio"/>
+                  <note type="bio">Julie Fish plans to graduate in 2017 with a B.A. in English: Literature from the State University of New York at Potsdam. She is working as a Digital Mitford Research Assistant in Spring and Summer 2017.
+                  </note>
                </person>
                <person xml:id="jjr">
                   <persName>
@@ -372,6 +373,21 @@
                      Anxiety</title> is available in both hardcover and paperback from Bloomsbury/Continuum</bibl>.
                      He currently lives in the greater Columbus area with his wife Sheridan and his
                      children Penn, Grace, and Zoe.</note>
+               </person>
+               <person xml:id="jmh">
+                  <persName>
+                     <surname>Jonathan</surname>
+                     <forename>Horanic</forename>
+                     <forename>Michael</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>Green Scholar, B.A. in English Literature, in progress (expected 2018)</occupation>
+                  <affiliation>University of Pittsburgh at Greensburg</affiliation>
+                  <note type="bio">Jonathan M. Horanic is pursuing a bachelor's degree in English Literature, Secondary Education and History minors, and a <ref target="http://www.greensburg.pitt.edu/academics/info/digital-studies">Digital Studies Certificate</ref> at Pitt-Greensburg. Jonathan is currently working on another on-going digital archive that focuses on the curation and visulization of graveyard records at Brush Creek Cemetery in Irwin, PA. His project, <ref target="http://graveyard.newtfire.org/">
+                        <title level="m">theGraveyard</title>
+                     </ref>, involves the collection and study of data collected from on-site gravestone inscriptions, burial records, and gravesite maps. Jonathan is a member of Sigma Tau Delta, and is currently working on the Digital Mitford Project as Dr. Beshero-Bondar's second Green Scholar.
+                     
+                  </note>
                </person>
                <person xml:id="kab">
                   <persName>
@@ -498,17 +514,6 @@
                      <affiliation>University of Maryland</affiliation>
                   </occupation>
                   <note type="bio">The founding Director of <ref target="http://www.mith.umd.edu">the Maryland Institute for Technology in the Humanities, or MITH</ref>, Martha Nell Smith is Professor of English and a Distinguished Scholar-Teacher at the University of Maryland. She has published and contributed extensively to print and digital textual scholarship of Emily Dickinson and her circle, especially Susan Huntington Gilbert Dickinson. She launched the <ref target="http://www.emilydickinson.org/">Dickinson Electronic Archives</ref> in 1997 and with Lara Vetter she is developing <ref target="http://rotunda.upress.virginia.edu/edc/">Emily Dickinson's Correspondences: A Born-Digital Textual Inquiry</ref>.</note>
-               </person>
-               <person xml:id="mp">
-                  <persName>
-                     <surname>Paine</surname>
-                     <forename>Margo</forename>
-                     <roleName>Research Assistant</roleName>
-                  </persName>
-                  <occupation>B. A. in Literature/Writing and Secondary English Education, completed 2015.
-                     <affiliation>State University of New York, Potsdam</affiliation>
-                  </occupation>
-                  <note type="bio"/>
                </person>
                <person xml:id="msm">
                   <persName>
@@ -643,20 +648,6 @@
                      <affiliation>Washington and Jefferson College</affiliation>
                   </occupation>
                   <note type="bio"/>
-               </person>
-               <person xml:id="tlh">
-                  <persName>
-                     <surname>Harnish</surname>
-                     <forename>Tracy</forename>
-                     <forename>Lynn</forename>
-                     <roleName>Research Assistant</roleName>
-                  </persName>
-                  <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and Communication, in progress 2015.
-               <affiliation>State University of New York, Potsdam</affiliation>
-                  </occupation>
-                  <note type="bio"/>
-                  <note type="bio">Tracy Harnish is a native of northern New York. She received her B.F.A. in Creative Writing from the State University of New York at Potsdam in May 2014. She specializes in the writing of creative non-fiction and of historical screenplays. She is at work on an M.A. in English and Communication and an M.S.T. in Secondary English Education from SUNY Potsdam; her M.A. thesis focuses on the changing reception of the story of Olive Oatman, a woman held captive and tattooed by Native American tribes in the American West in the 1850s. Oatman later became a celebrated author and speaker on the subject of her experiences and her story has received fictionalized treatments in print and on television. Tracy has worked on the Digital Mitford project since Fall 2013. She presented with Dr. Wilson on Digital Mitford at the 2015 EC/ASECS meeting in West Chester, PA. She is particularly interested in Mitford's self-representation as a woman writer of varied talents and interests.
-            </note>
                </person>
             </listPerson>
             <listOrg sortKey="archives">
@@ -936,6 +927,17 @@
                   <note type="bio">In 2014, Hailey Lown was a third year transfer student at UCLA. She is originally from the state of Maryland. Hailey is an English major, concentrating on British literature and the classics. She worked on Digital Mitford in 2014.<p/>
                   </note>
                </person>
+               <person xml:id="hl">
+                  <persName>
+                     <surname>Long</surname>
+                     <forename>Heather</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
                <person xml:id="hsar">
                   <persName>
                      <surname>Sarsfield</surname>
@@ -998,8 +1000,7 @@
                   <occupation>B.A., Literature/Writing &amp; Secondary English Education, completed 2015. 
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
-                  <note type="bio">Margo Paine graduated in May 2015 from the State University of New York at Potsdam with her B.A. in Literature/Writing and Secondary English Education. She worked with the Digital Mitford Project during Fall 2014. Margo began the M.A. in Literacy at SUNY Potsdam in Fall 2015; she works as a Graduate Assistant in the campus Literacy Center.
-                     <p/>
+                  <note type="bio">Margo Paine graduated in May 2015 from the State University of New York at Potsdam with her B.A. in Literature/Writing and Secondary English Education. She worked with the Digital Mitford Project during Fall 2014.<p/>
                   </note>
                </person>
                <person xml:id="ncl">
@@ -1049,12 +1050,25 @@
                   <persName>
                      <surname>Tang</surname>
                      <forename>Rebecca</forename>
-                     <roleName>Reseach Assistant</roleName>
+                     <roleName>Research Assistant</roleName>
                   </persName>
                   <occupation>
                      <affiliation>UCLA</affiliation>
                   </occupation>
                   <note type="bio">In 2014, Rebecca Tang was a fourth-year student at UCLA, majoring in English with a particular interest in 19th-century Romantic poetry. Interested in archival work, she was drawn to the Digital Mitford project in order to learn more about the editing and coding process. After graduation, Rebecca hopes to go into the editing and publishing business for book and magazine companies. She worked on Digital Mitford in 2014.<p/>
+                  </note>
+               </person>
+               <person xml:id="tlh">
+                  <persName>
+                     <surname>Harnish</surname>
+                     <forename>Tracy</forename>
+                     <forename>Lynn</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and Communication, in progress 2016.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Tracy Harnish is a native of northern New York. She received her B.F.A. in Creative Writing from the State University of New York at Potsdam in May 2014. She specializes in the writing of creative non-fiction and of historical screenplays. She is at work on an M.A. in English and Communication from SUNY Potsdam; her M.A. thesis focuses on the changing reception of the story of Olive Oatman, a woman held captive and tattooed by Native American tribes in the American West in the 1850s. Tracy has worked on the Digital Mitford project from Fall 2013 to Fall 2015. She presented with Dr. Wilson on Digital Mitford at the 2015 EC/ASECS meeting in West Chester, PA.
                   </note>
                </person>
                <person xml:id="tnh">
@@ -1088,10 +1102,10 @@
                      <forename>Wilmina</forename>
                      <roleName>Research Assistant</roleName>
                   </persName>
-                  <occupation>B. A. in Literature/Writing, in progress (expected 2015)
+                  <occupation>B. A. in Literature/Writing, completed 2016
                      <affiliation>State University of New York at Potsdam</affiliation>
                   </occupation>
-                  <note type="bio">Wilmina Sainbert expects to graduate in 2015 with a B.A. in Literature/Writing from the State University of New York at Potsdam. She is from Valley Stream, New York, and plans to begin graduate study in the teaching of English as a second language at Hofstra in 2016. She worked as a Digital Mitford Research Assistant in Spring and Summer 2015.
+                  <note type="bio">Wilmina Sainbert graduated in 2016 with a B.A. in Literature/Writing from the State University of New York at Potsdam. She is from Valley Stream, New York, and plans to begin graduate study in the teaching of English as a second language. She worked as a Digital Mitford Research Assistant in Spring and Summer 2015.
                      <p/>
                   </note>
                </person>
@@ -5721,7 +5735,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <death when="1848-11-18">
                      <placeName>24 Seymour Place North, Euston, London</placeName>
                   </death>
-                  <note resp="#bas">Son of engraver <persName ref="#Heath_J">James Heath</persName>. He studied under his father and became an accomplished engraver in his own right. He is also connected with <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title> and resolved the debt owed to Mitford by the magazine by agreeing to give her the copyrights for her published sketches, as described in a <rs type="letter" ref="#MRM0274">letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1823-05-16">May 16, 1823</date>
+                  <note resp="#bas">Son of engraver <persName ref="#Heath_J">James Heath</persName>. He studied under his father and became an accomplished engraver in his own right. He is also connected with <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title> and resolved the debt owed to Mitford by the magazine by agreeing to give her the copyrights for her published sketches, as described in a <rs type="letter"><!--2017-01-31 ebb: Add ref="#MRM0274" when the xml:ids for letters go in-->letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1823-05-16">May 16, 1823</date>
                      </rs>.</note>
                </person>
                <person xml:id="Heath_J">
@@ -5735,7 +5749,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <death when="1834-11-15">
                      <placeName>Great Coram Street, London</placeName>
                   </death>
-                  <note resp="#bas">An accomplished engraver, he produced many prints over his lifetime, and worked under the Robinson family, booksellers and publishers of <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title>. In a <rs type="letter" ref="#MRM0274">letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1823-05-16">May 16, 1823</date>
+                  <note resp="#bas">An accomplished engraver, he produced many prints over his lifetime, and worked under the Robinson family, booksellers and publishers of <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title>. In a <rs type="letter"><!--2017-01-31 ebb Add ref="#MRM0274" when xml:ids for letters go in.-->letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1823-05-16">May 16, 1823</date>
                      </rs>, Mitford believes that he is the true proprietor of <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title>. He was also the father-in-law of <persName ref="#Hamilton_S">Samuel Hamilton</persName>.</note>
                </person>
                <person xml:id="Heber_Rich" sex="1">
@@ -13743,7 +13757,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <publisher>
                      <orgName>S. Robinson</orgName>
                   </publisher>
-                  <note resp="#scw #lmw">Many of <persName ref="#MRM">Mitford</persName>'s contributions to the magazine were to this series, a continuation of the "new series" (second series) begun in 1820 by publisher <orgName>S. Robinson</orgName>. For volumes four through ten of the "new series," published <date from="1823" to="1829">between 1823 and 1829</date>, the magazine was subtitled "Mirror of the Belle-Lettres, Fine Arts, Fashions, Music, Drama, &amp;c." Notable contributions included the <title ref="#Walks_Country_LM">Walks in the Country</title>, as well as the <title ref="#Boarding_School_Rec_LM">Boarding School Recollections</title> subseries, which became <title ref="#Early_Rec_OV">Early Recollections</title> in <title ref="#OV"/>.</note>
+                  <note resp="#scw #lmw">Many of <persName ref="#MRM">Mitford</persName>'s contributions to the magazine were to this series, a continuation of the "new series" (second series) begun in 1820 by publisher <orgName>S. Robinson</orgName>. For volumes four through ten of the "new series," published <date from="1823" to="1829">between 1823 and 1829</date>, the magazine was subtitled "Mirror of the Belle-Lettres, Fine Arts, Fashions, Music, Drama, &amp;c." Notable contributions included the <title><!--2017-01-31 ebb: WAIT and activate this when the OV sketch info goes in from si-Add-GIANT-MRM_BIBLIO ref="#Walks_Country_LM"-->Walks in the Country</title>, as well as the <title><!--ref="#Boarding_School_Rec_LM"-->Boarding School Recollections</title> subseries, which became <title><!--ref="#Early_Rec_OV"-->Early Recollections</title> in <title ref="#OV"/>.</note>
                   <ref target="http://www.worldcat.org/title/ladys-magazine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/48090188"/>
                </bibl>
                <bibl xml:id="Ladys_Monthly_Museum">

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><persName ref="#lmw">Lisa M. Wilson</persName>
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="Mitford_Team">
+            <listPerson sortKey="Mitford_Team">
+               <!--new intern-->
+               <person xml:id="jgf">
+                  <persName>
+                     <surname>Julie</surname>
+                     <forename>Fish</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Julie Fish plans to graduate in 2017 with a B.A. in English: Literature from the State University of New York at Potsdam. She is working as a Digital Mitford Research Assistant in Spring and Summer 2017.
+                  </note>
+               </person>
+               
+             <!-- LMW: move to past editors -->  
+                <person xml:id="hl">
+                  <persName>
+                     <surname>Long</surname>
+                     <forename>Heather</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
+               
+               <!-- LMW: delete this one?; it's a double (other entry in past editors. we used the #msp id.-->  
+               <person xml:id="mp">
+                  <persName>
+                     <surname>Paine</surname>
+                     <forename>Margo</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing and Secondary English Education, completed 2015.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio"/>
+               </person>
+               
+               <!-- LMW: move to past editors -->  
+               <person xml:id="ps">
+                  <persName>
+                     <surname>Sasu</surname>
+                     <forename>Perdita</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Communication, in progress (expected 2016)
+                     <affiliation>State University of New York at Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Perdita Sasu graduated in 2016 with a B.A. in Communication from the State University of New York at Potsdam. She worked as a Digital Mitford Research Assistant in Fall 2015 and Spring 2016, tasked with documenting the physical copies of Mitford's works in Dr. Wilson's collection.
+                     <p/>
+                  </note>
+               </person>
+               
+               <!-- LMW: move to past editors --> 
+               <person xml:id="tlh">
+                  <persName>
+                     <surname>Harnish</surname>
+                     <forename>Tracy</forename>
+                     <forename>Lynn</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and Communication, in progress 2016.
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                 <note type="bio">Tracy Harnish is a native of northern New York. She received her B.F.A. in Creative Writing from the State University of New York at Potsdam in May 2014. She specializes in the writing of creative non-fiction and of historical screenplays. She is at work on an M.A. in English and Communication from SUNY Potsdam; her M.A. thesis focuses on the changing reception of the story of Olive Oatman, a woman held captive and tattooed by Native American tribes in the American West in the 1850s. Tracy has worked on the Digital Mitford project from Fall 2013 to Fall 2015. She presented with Dr. Wilson on Digital Mitford at the 2015 EC/ASECS meeting in West Chester, PA.
+                  </note>
+               </person>
+               
+               <person xml:id="ws"> <!--LMW: update and move to past editors -->
+                  <persName>
+                     <surname>Sainbert</surname>
+                     <forename>Wilmina</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B. A. in Literature/Writing, completed 2016
+                     <affiliation>State University of New York at Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Wilmina Sainbert graduated in 2016 with a B.A. in Literature/Writing from the State University of New York at Potsdam. She is from Valley Stream, New York, and plans to begin graduate study in the teaching of English as a second language. She worked as a Digital Mitford Research Assistant in Spring and Summer 2015.
+                     <p/>
+                  </note>
+               </person>
+               
+             
+            </listPerson>
+         </div>
+         
+         <div type="Past_Editors">
+            <listPerson sortKey="Past_Editors">
+            
+            <person xml:id="rct"><!-- LMW: Correct this one to fix typos. -->
+               <persName>
+                  <surname>Tang</surname>
+                  <forename>Rebecca</forename>
+                  <roleName>Research Assistant</roleName>
+               </persName>
+               <occupation>
+                  <affiliation>UCLA</affiliation>
+               </occupation>
+               <note type="bio">In 2014, Rebecca Tang was a fourth-year student at UCLA, majoring in English with a particular interest in 19th-century Romantic poetry. Interested in archival work, she was drawn to the Digital Mitford project in order to learn more about the editing and coding process. After graduation, Rebecca hopes to go into the editing and publishing business for book and magazine companies. She worked on Digital Mitford in 2014.<p/>
+               </note>
+            </person>
+               
+               <person xml:id="msp"><!--LMW: update this one. -->
+                  <persName>
+                     <surname>Paine</surname>
+                     <forename>Margo</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>B.A., Literature/Writing &amp; Secondary English Education, completed 2015. 
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note type="bio">Margo Paine graduated in May 2015 from the State University of New York at Potsdam with her B.A. in Literature/Writing and Secondary English Education. She worked with the Digital Mitford Project during Fall 2014.
+                     <p/>
+                  </note>
+               </person>
+            </listPerson>
+         </div>
+         
+         
+               
+
+
+      </body>
+  </text>
+</TEI>
