@@ -24,7 +24,7 @@
             </respStmt>
             <respStmt>
                <resp>Proofing and corrections by</resp>
-               <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+               <persName ref="#bas">Brooke A. Stewart</persName>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -78,7 +78,7 @@
                   </persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1837" to="1854">between 1837 and 1854</date>. Spouse of the Rev. William Edwards Partridge (1837-51); daughter of Oliver and Maria Anderdon.</note>
                </person>
-               
+               <!-- 2017-02-04 bas: I cannot find this person referenced anywhere. -->
                <person xml:id="Annie" sex="2">
                   <persName>Annie</persName>
                   <persName>
@@ -99,8 +99,11 @@
                   <persName>Mrs. Margaret Bennoch</persName>
                   <persName>
                      <surname type="married">Bennoch</surname>
+                     <surname type="paternal">Raine</surname>
                      <forename>Margaret</forename>
                  </persName>
+                  <birth period="1816"/> <!-- 2017-02-04 bas: The birth date I found says circa 1816. Not sure how to tag this. https://www.geni.com/people/Margaret-Bennoch/6000000018171564723-->
+                  <death when="1893-10-07"/>
                   <note resp="#lmw">Spouse of <persName ref="#Bennoch_Fr">Francis Bennoch</persName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1855">1855</date>. More research needed.
                   </note>
                </person>
@@ -121,7 +124,7 @@
                   <occupation>legal</occupation>
                   <occupation>philanthropist</occupation>
                   <occupation>politician</occupation>
-                  <note resp="#lmw">One of the wealthiest commoners in <placeName ref="#Berkshire">Berkshire</placeName> and a major landowner and philanthropist. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>; <persName ref="#MRM">Mitford</persName> wrote a sonnet, "Englefield House: The Seat of R. Benyon De Beauvoir, Esq., Near Reading," printed in her 1827 poems. He served as a Justice of the Peace, Deputy Lieutenant for Berkshire, and as High Sheriff of Berkshire.
+                  <note resp="#lmw">One of the wealthiest commoners in <placeName ref="#Berkshire">Berkshire</placeName> and a major landowner and philanthropist. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>; <persName ref="#MRM">Mitford</persName> wrote a sonnet, <title level="a">Englefield House: The Seat of R. Benyon De Beauvoir, Esq., Near Reading</title>, printed in her 1827 <title level="m">Poems</title>. He served as a Justice of the Peace, Deputy Lieutenant for Berkshire, and as High Sheriff of Berkshire.
                   </note>
                   <note><ref target="http://viaf.org/viaf/292786855"/></note>
                   <note><ref target="http://www.historyofparliamentonline.org/volume/1790-1820/member/benyon-richard-ii-1770-1854"/></note>
@@ -163,8 +166,8 @@
                      <forename>David</forename>
                   </persName>
                   <persName type="pseudo">Don Boyne</persName>
-                  <birth notAfter="1808"/>
-                  <death when="1856"/>
+                  <birth notAfter="1808"/><!-- 2017-02-05 bas: Birth date listed 1807/08 http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/47444?docPos=2 -->
+                  <death when="1856-11-19"/>
                   <occupation>literary</occupation>
                   <occupation>publisher</occupation>
                   <occupation>bookseller</occupation>
@@ -190,7 +193,7 @@
                   <birth when="1810-10-03">
                      <placeName>Bishopsgate, London, England</placeName>
                   </birth>
-                  <death when="1884-11">
+                  <death when="1884-11-04">
                      <placeName>London, England</placeName>
                   </death>
                   <occupation>literary</occupation>
@@ -198,7 +201,7 @@
                   <occupation>travel writer</occupation>
                   <occupation>essayist</occupation>
                   <occupation>medical</occupation>
-                  <note resp="#lmw">Longtime secretary of the Royal Literary Fund. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1843">1843</date>.</note>
+                  <note resp="#lmw">Longtime secretary of the <orgName>Royal Literary Fund</orgName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1843">1843</date>.</note>
                   <note><ref target="http://viaf.org/viaf/60024708"/></note>
                </person>
                
@@ -220,7 +223,7 @@
                   <occupation>lithographer</occupation>
                   <occupation>literary</occupation>
                   <occupation>biographer</occupation>
-                  <note resp="#lmw">Sketcher and lithographer, as well as author of <title>Memorials of the Life of Amelia Opie</title>, as well as of many didactive biographies for children. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1854">1854</date>.</note>
+                  <note resp="#lmw">Sketcher and lithographer, as well as author of <title level="m">Memorials of the Life of Amelia Opie</title>, as well as of many didactive biographies for children. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1854">1854</date>.</note>
                   <note><ref target="http://viaf.org/viaf/61909307"/></note>
                </person>
                
@@ -239,9 +242,9 @@
                      <forename>S.</forename>
                      <surname type="paternal">Browne</surname>
                   </persName>
-                  <note resp="#lmw">Sister of poet Mary Ann Browne (1812-1844). <persName ref="#MRM">Mary Russell Mitford</persName> wrote in an album belonging to her in <date when="1829">1829</date>. More research needed.</note>
+                  <note resp="#lmw">Sister of poet <persName>Mary Ann Browne</persName> (1812-1844). <persName ref="#MRM">Mary Russell Mitford</persName> wrote in an album belonging to her in <date when="1829">1829</date>. More research needed.</note>
                </person>
-               
+               <!-- 2017-02-05 bas: Cannot find this person. -->
                <person xml:id="Kirkland_C" sex="2">
                   <persName>Caroline Mathilda Stansbury Kirkland</persName>
                   <persName>
@@ -262,9 +265,9 @@
                   <occupation>fiction writer</occupation>
                   <occupation>essayist</occupation>
                   <occupation>editor</occupation>
-                  <note resp="#lmw">Author of three books on American frontier life, including <title>New Home; Who'll Follow?</title>. Particularly after her husband's death in <date when="1846">1846</date>, her home became an important literary salon in New York City.</note>
+                  <note resp="#lmw">Author of three books on American frontier life, including <title level="m">New Home; Who'll Follow?</title>. Particularly after her husband's death in <date when="1846">1846</date>, her home became an important literary salon in New York City.</note>
                </person>
-               
+               <!--2017-02-05 bas: Stopped here. -->
                <person xml:id="Cooper_John" sex="1">
                   <persName>John Cooper</persName>
                   <persName>
