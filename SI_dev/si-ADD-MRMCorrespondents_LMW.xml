@@ -267,7 +267,7 @@
                   <occupation>editor</occupation>
                   <note resp="#lmw">Author of three books on American frontier life, including <title level="m">New Home; Who'll Follow?</title>. Particularly after her husband's death in <date when="1846">1846</date>, her home became an important literary salon in New York City.</note>
                </person>
-               <!--2017-02-05 bas: Stopped here. -->
+               
                <person xml:id="Cooper_John" sex="1">
                   <persName>John Cooper</persName>
                   <persName>
@@ -282,7 +282,7 @@
                      </death>
                   <occupation>actor</occupation>
                   <occupation>theatre manager</occupation>
-                  <note resp="#lmw">Actor active <date from="1811" to="1859">between 1811 and 1859</date>; played at Drury Lane and other London theatres, as well as on circuits in York and Lincoln. Also served as stage manager at Drury Lane. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1828">1828</date>.</note>
+                  <note resp="#lmw">Actor active <date from="1811" to="1859">between 1811 and 1859</date>; played at <placeName ref="#Drury_Lane_Theatre">Drury Lane</placeName> and other London theatres, as well as on circuits in York and Lincoln. Also served as stage manager at <placeName ref="#Drury_Lane_Theatre">Drury Lane</placeName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1828">1828</date>.</note>
                   <note><ref target="http://viaf.org/viaf/21971441"/></note>
                </person>
                
@@ -304,7 +304,7 @@
                   <occupation>politician</occupation>
                   <occupation>literary</occupation>
                   <occupation>editor</occupation>
-                  <note resp="#lmw">Began his career as a stockbroker and became wealthy through investments in railroads, mining, and British colonial land. Liberal Member of Parliament and owner of the Morning Chronicle newspaper <date from="1834" to="1847">between 1834 and 1847</date>.</note>
+                  <note resp="#lmw">Began his career as a stockbroker and became wealthy through investments in railroads, mining, and British colonial land. Liberal Member of Parliament and owner of the <title level="j">Morning Chronicle</title> newspaper <date from="1834" to="1847">between 1834 and 1847</date>.</note>
                </person>
                
                <person xml:id="Benyon_RF" sex="1">
@@ -345,7 +345,7 @@
                   </death>
                   <occupation>literary</occupation>
                   <occupation>fiction writer</occupation>
-                  <note resp="#lmw">Story story writer for Household Words and other periodicals. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1852" to="1853">between 1852 and 1853</date>.</note>
+                  <note resp="#lmw">Story writer for <title level="j">Household Words</title> and other periodicals. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1852" to="1853">between 1852 and 1853</date>.</note>
                   <note><ref target="http://viaf.org/viaf/315994811"/></note>
                </person>
                
@@ -364,7 +364,7 @@
                   <occupation>translator</occupation>
                   <occupation>essayist</occupation>
                   <occupation>philanthropist</occupation>
-                  <note resp="#lmw">Expert linguist and translator in Italian, French, German, and Hebrew. Founded the Jews' Infant School, London, authored numerous educational pamohlets, and supported other charitable institutions. With her father, Isaac Lyon Goldsmid, helped to found and support University College, London and the West London Synagogue of British Jews. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1852">1852</date>. </note>
+                  <note resp="#lmw">Expert linguist and translator in Italian, French, German, and Hebrew. Founded the Jews' Infant School, London, authored numerous educational pamplets, and supported other charitable institutions. With her father, Isaac Lyon Goldsmid, helped to found and support University College, London and the West London Synagogue of British Jews. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1852">1852</date>. </note>
                   <note><ref target="http://viaf.org/viaf/14668078"/></note>
                </person>
                
@@ -385,7 +385,7 @@
                   <occupation>literary</occupation>
                   <occupation>novelist</occupation>
                   <occupation>philanthropist</occupation>
-                  <note resp="#lmw">Novelist and short story writer; her stories and sketches set in Ireland were compared to those of <persName ref="#MRM">Mary Russell Mitford</persName>. Spouse of Samuel Carter Hall, she published under the name Mrs. S. C. [Samuel Carter] Hall. A correspondent of <persName ref="#MRM"> Mitford</persName> <date from="1829" to="1830">between 1829 and 1830</date>.</note>
+                  <note resp="#lmw">Novelist and short story writer; her stories and sketches set in Ireland were compared to those of <persName ref="#MRM">Mary Russell Mitford</persName>. Spouse of <persName>Samuel Carter Hall</persName>, she published under the name <rs type="pseudonym">Mrs. S. C. [Samuel Carter] Hall</rs>. A correspondent of <persName ref="#MRM"> Mitford</persName> <date from="1829" to="1830">between 1829 and 1830</date>.</note>
                   <note><ref target="http://viaf.org/viaf/59344020"/></note>
                </person>
                
@@ -408,10 +408,10 @@
                   <occupation>translator</occupation>
                   <occupation>editor</occupation>
                   <occupation>memoirist</occupation>
-                  <note resp="#lmw">Prolific poet, short story writer, translator, editor, and memoirist; her spouse William Howitt was occasionally her co-author. A correspondent of <persName ref="#MRM"> Mitford</persName> <date from="1834" to="1846">between 1834 and 1846</date>.</note>
+                  <note resp="#lmw">Prolific poet, short story writer, translator, editor, and memoirist; her spouse <persName>William Howitt</persName> was occasionally her co-author. A correspondent of <persName ref="#MRM"> Mitford</persName> <date from="1834" to="1846">between 1834 and 1846</date>.</note>
                   <note><ref target="http://viaf.org/viaf/59344020"/></note>
                </person>
-               
+               <!-- 2017-02-08 bas: stopped here. -->
                <person xml:id="Dacre_Lady" sex="2">
                   <persName>Barbarina Brand, Lady Dacre</persName>
                   <persName>
