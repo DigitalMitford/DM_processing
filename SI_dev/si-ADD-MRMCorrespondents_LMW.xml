@@ -385,7 +385,7 @@
                   <occupation>literary</occupation>
                   <occupation>novelist</occupation>
                   <occupation>philanthropist</occupation>
-                  <note resp="#lmw">Novelist and short story writer; her stories and sketches set in Ireland were compared to those of <persName ref="#MRM">Mary Russell Mitford</persName>. Spouse of <persName>Samuel Carter Hall</persName>, she published under the name <rs type="pseudonym">Mrs. S. C. [Samuel Carter] Hall</rs>. A correspondent of <persName ref="#MRM"> Mitford</persName> <date from="1829" to="1830">between 1829 and 1830</date>.</note>
+                  <note resp="#lmw">Novelist and short story writer; her stories and sketches set in Ireland were compared to those of <persName ref="#MRM">Mary Russell Mitford</persName>. Spouse of <persName>Samuel Carter Hall</persName>, she published under the name <rs type="pseudo">Mrs. S. C. [Samuel Carter] Hall</rs>. A correspondent of <persName ref="#MRM"> Mitford</persName> <date from="1829" to="1830">between 1829 and 1830</date>.</note>
                   <note><ref target="http://viaf.org/viaf/59344020"/></note>
                </person>
                
@@ -606,7 +606,7 @@
                   <occupation>illustrator</occupation>
                   <occupation>politician</occupation>
                   <note resp="#lmw">Clergyman who was also a poet, translator, naturalist, and botanical illustrator. Member of Parliament for Hampshire and for Cricklade. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1810">1810</date>. Her <title ref="#Poems_1st_ed_MRM">1810 Poems</title> contain a dedicatory <title ref="#WmHerbert_1810">poem</title>to him.</note></person>
-               <!-- 2017-02-11 bas: stopped here. -->
+               
                
               <!--
             Croft, Dowager Lady [mother of sir thomas croft, , son of sir richard croft, nephew of Sophia Baillie/related to Joanna] [Margaret Denman? widow of sir richard]
@@ -668,8 +668,8 @@
                   <occupation>memoirist</occupation>
                   <occupation>editor</occupation>
                   <occupation>translator</occupation>
-                  <note resp="#lmw">Travel writer, translator, and editor. Editor of The Juvenile Keepsake. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1829">1829</date>.</note>
-                  <note><ref target=" http://viaf.org/viaf/2649935"/></note>
+                  <note resp="#lmw">Travel writer, translator, and editor. Editor of <title level="m">The Juvenile Keepsake</title>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1829">1829</date>.</note>
+                  <note><ref target="http://viaf.org/viaf/2649935"/></note>
                </person>
                
                <person xml:id="Tuckerman_H" sex="1">
@@ -702,7 +702,7 @@
                      <forename>Julia</forename>
                      <surname>Pardoe</surname>
                   </persName>
-                  <birth when="1806-12-03">
+                  <birth when="1806-12-04">
                      <placeName>Norwich, Yorkshire, England</placeName>
                   </birth>
                   <death when="1862-11-26">
@@ -721,19 +721,21 @@
                   <persName>Frederic Shoberl</persName>
                   <persName>
                      <forename>Frederic</forename>
+                     <forename type="alt">Frederick</forename>
                      <surname>Shoberl</surname>
+                     <surname type="alt">Schoberl</surname>
                   </persName>
-                  <birth when="1775">
+                  <birth when="1775-04-10">
                      <placeName>London, England</placeName>
                   </birth>
-                  <death when="1852-03-22">
+                  <death when="1853-03-05">
                      <placeName>Brompton, London, England</placeName>
                   </death>
                   <occupation>literary</occupation>
                   <occupation>editor</occupation>
                   <occupation>essayist</occupation>
                   <occupation>journalist</occupation>
-                  <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1830" to="1835">between 1830 and 1835</date>. Founder, with Henry Colburn, of the New Monthly Magazine. Editor for Rudolph Ackermann of Repository of the Arts, the Forget-Me-Not, and the Juvenile Forget-Me-Not.</note>
+                  <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1830" to="1835">between 1830 and 1835</date>. Founder, with <persName>Henry Colburn</persName>, of the <title level="j">New Monthly Magazine</title>. Editor for <persName>Rudolph Ackermann</persName> of <title level="j">Repository of the Arts</title>, the <title level="j">Forget-Me-Not</title>, and the <title level="j">Juvenile Forget-Me-Not</title>.</note>
                   <note><ref target='http://viaf.org/viaf/22919698'/></note>
                    </person>
                
@@ -741,7 +743,9 @@
                   <persName>Theodosia Shoberl</persName>
                   <persName>
                      <forename>Theodosia</forename>
+                     <forname type="alt">Seedo</forname> <!-- 2017-02-01 bas: format? http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/25450 -->
                      <surname type="married">Shoberl</surname>
+                     <surname type="paternal">Vaughan</surname>
                   </persName>
                  <death when="1838-12-18"/>
                  <note resp="#lmw">Spouse of <persName ref="#Shoberl_F">Frederic Shoberl</persName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1849">1849</date>.</note>
@@ -789,7 +793,7 @@
                      <surname type="paternal">Moulton-Barrett</surname>
                      <surname type="married">Cook</surname>
                   </persName>
-                  <birth when="1809-07-04">4 March 1809
+                  <birth when="1809-03-04">4 March 1809
                      <placeName>Upper Berkeley Street, London, England</placeName>
                   </birth>
                   <death when="1860-11-23">
@@ -831,6 +835,7 @@
   <person xml:id="Stovin_Mrs" sex="2">
                   <persName>Mrs. M. Stovin</persName>
      <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1824">1824</date>. Letter addressed to Newbold, Chesterfield, Derbyshire. Forename unknown. More research needed</note></person>
+               <!-- 2017-02-13 bas: possibly the mother of Col. Frederick Stovin? http://cdm16313.contentdm.oclc.org/cdm/ref/collection/AAW/id/1113 -->
                
                <person xml:id="Wheeler_Mrs" sex="2">
                   <persName>Mrs. John Wheeler</persName>
@@ -856,7 +861,7 @@
                   </death>
                   <occupation>politician</occupation>
                   <occupation>military</occupation>
-                  <note resp="#lmw">Radical politician and Member of Parliament for Okehampton <date from="1807" to="1812">from 1807 to 1812</date>. With <persName ref="#Burdett_F">Francis Burdett</persName>, Wardle was instrumental in prosecuting the Duke of York-Mary Ann Clarke controversy. <persName ref="#MRM">Mitford</persName> addressed a poem to him, <title ref="#Wardle_Death_1810">"To G. L. Wardle, Esq., on the Death of His Child"</title>.</note>
+                  <note resp="#lmw">Radical politician and Member of Parliament for Okehampton <date from="1807" to="1812">from 1807 to 1812</date>. With <persName ref="#Burdett_F">Francis Burdett</persName>, Wardle was instrumental in prosecuting the Duke of York-Mary Ann Clarke controversy. <persName ref="#MRM">Mitford</persName> addressed a poem to him, <title ref="#Wardle_Death_1810" level="a">"To G. L. Wardle, Esq., on the Death of His Child"</title>.</note>
                   <note><ref target="http://viaf.org/viaf/72789554"/></note>
                   <note><ref target="http://www.historyofparliamentonline.org/volume/1790-1820/member/wardle-gwyllym-lloyd-1761-1833"/></note>
                </person>
@@ -872,13 +877,13 @@
                      <placeName>Hingham, Massachusetts, USA</placeName>
                   </birth>
                   <death when="1903-05-12">
-                     <placeName>Florence, Italy</placeName>
+                     <placeName>New York City, New York, USA</placeName>
                   </death>
                   <occupation>literary</occupation>
                   <occupation>essayist</occupation>
                   <occupation>editor</occupation>
                   <occupation>poet</occupation>
-                  <note resp="#lmw">Influential American reviewer and critic; also editor of compilations of English and American poetry, and a collection of the works of Edgar Allan Poe. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1853">1853</date> and also a friend of <persName ref="#Hawthorne_N">Nathaniel Hawthorne</persName>.</note>
+                  <note resp="#lmw">Influential American reviewer and critic; also editor of compilations of English and American poetry, and a collection of the works of <persName>Edgar Allan Poe</persName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1853">1853</date> and also a friend of <persName ref="#Hawthorne_N">Nathaniel Hawthorne</persName>.</note>
                   <note><ref target="http://viaf.org/viaf/11128792"/></note>
                </person>
                
@@ -890,7 +895,7 @@
                      <surname>Starkey</surname>
                  </persName>
                   <birth when="1806"/>
-                 <death when="1876"/>
+                 <death when="1876-10"/>
                   <occupation>literary</occupation>
                   <occupation>novelist</occupation>
                   <occupation>playwright</occupation>
@@ -961,7 +966,7 @@
                   <occupation>literary</occupation>
                   <occupation>essayist</occupation>
                   <occupation>novelist</occupation>
-                  <note resp="#lmw">Prolific and celebrated social protest novelist and travel writer. Author of <title>The Domestic Manners of the Americans</title>, as well as anti-slavery and industrial novels. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1826" to="1852">between 1826 and 1852</date> and also a friend of <persName ref="#Barrett_E">Elizabeth Barrett Browning</persName>.</note>
+                  <note resp="#lmw">Prolific and celebrated social protest novelist and travel writer. Author of <title level="m">The Domestic Manners of the Americans</title>, as well as anti-slavery and industrial novels. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1826" to="1852">between 1826 and 1852</date> and also a friend of <persName ref="#Barrett_E">Elizabeth Barrett Browning</persName>.</note>
                   <note><ref target="http://viaf.org/viaf/34551336"/></note>
                </person>
 
