@@ -79,6 +79,7 @@
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1837" to="1854">between 1837 and 1854</date>. Spouse of the Rev. William Edwards Partridge (1837-51); daughter of Oliver and Maria Anderdon.</note>
                </person>
                <!-- 2017-02-04 bas: I cannot find this person referenced anywhere. -->
+               <!--2017-02-16 ebb: Do a Google Search on "Lucy Olivia Hobart Anderdon" and look at the EBB (Elizabeth Barrett Browning letters) site, as well as the Benjamin Disraeli letters site. Work with the identifications there, and MAKE SURE you cite with links out to each one. -->
                <person xml:id="Annie" sex="2">
                   <persName>Annie</persName>
                   <persName>
@@ -102,7 +103,7 @@
                      <surname type="paternal">Raine</surname>
                      <forename>Margaret</forename>
                  </persName>
-                  <birth period="1816"/> <!-- 2017-02-04 bas: The birth date I found says circa 1816. Not sure how to tag this. https://www.geni.com/people/Margaret-Bennoch/6000000018171564723-->
+                  <birth notAfter="1816"/> <!-- 2017-02-04 bas: The birth date I found says circa 1816. Not sure how to tag this. https://www.geni.com/people/Margaret-Bennoch/6000000018171564723-->
                   <death when="1893-10-07"/>
                   <note resp="#lmw">Spouse of <persName ref="#Bennoch_Fr">Francis Bennoch</persName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1855">1855</date>. More research needed.
                   </note>
@@ -166,7 +167,7 @@
                      <forename>David</forename>
                   </persName>
                   <persName type="pseudo">Don Boyne</persName>
-                  <birth notAfter="1808"/><!-- 2017-02-05 bas: Birth date listed 1807/08 http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/47444?docPos=2 -->
+                  <birth notBefore="1807" notAfter="1808"/><!-- 2017-02-05 bas: Birth date listed 1807/08 http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/47444?docPos=2 -->
                   <death when="1856-11-19"/>
                   <occupation>literary</occupation>
                   <occupation>publisher</occupation>
@@ -232,7 +233,9 @@
                   <persName>
                      <surname>Brooks</surname>
                   </persName>
-                  <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. Forename unknown. More research needed. <!--LMW: Same as Miss Brooke? --></note>
+                  <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. Forename unknown. More research needed. <!--LMW: Same as Miss Brooke? --><!--2017-02-16 ebb: Note that Mitford signed an autograph poem to a Miss Brooks, as recorded in the Yale University Library Mary Russell Mitford Collection Series II. Table of Contents here: http://drs.library.yale.edu/HLTransformer/HLTransServlet?stylename=yul.ead2002.xhtml.xsl&pid=beinecke:mitford&query=&clear-stylesheet-cache=yes&hlon=yes&big=&adv=&filter=&hitPageStart=&sortFields=&view=c01_2#SII -->
+                  </note>
+                  
                </person>
                
                <person xml:id="Browne_Martha" sex="2">
@@ -243,8 +246,9 @@
                      <surname type="paternal">Browne</surname>
                   </persName>
                   <note resp="#lmw">Sister of poet <persName>Mary Ann Browne</persName> (1812-1844). <persName ref="#MRM">Mary Russell Mitford</persName> wrote in an album belonging to her in <date when="1829">1829</date>. More research needed.</note>
+                  <!-- 2017-02-05 bas: Cannot find this person. -->
                </person>
-               <!-- 2017-02-05 bas: Cannot find this person. -->
+               
                <person xml:id="Kirkland_C" sex="2">
                   <persName>Caroline Mathilda Stansbury Kirkland</persName>
                   <persName>
@@ -743,7 +747,7 @@
                   <persName>Theodosia Shoberl</persName>
                   <persName>
                      <forename>Theodosia</forename>
-                     <forname type="alt">Seedo</forname> <!-- 2017-02-01 bas: format? http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/25450 -->
+                     <forename type="alt">Seedo</forename> <!-- 2017-02-01 bas: format? http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/25450 -->
                      <surname type="married">Shoberl</surname>
                      <surname type="paternal">Vaughan</surname>
                   </persName>
@@ -834,8 +838,11 @@
                
   <person xml:id="Stovin_Mrs" sex="2">
                   <persName>Mrs. M. Stovin</persName>
-     <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1824">1824</date>. Letter addressed to Newbold, Chesterfield, Derbyshire. Forename unknown. More research needed</note></person>
-               <!-- 2017-02-13 bas: possibly the mother of Col. Frederick Stovin? http://cdm16313.contentdm.oclc.org/cdm/ref/collection/AAW/id/1113 -->
+     <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1824">1824</date>. Letter addressed to Newbold, Chesterfield, Derbyshire. Forename unknown. More research needed</note>
+     <!-- 2017-02-13 bas: possibly the mother of Col. Frederick Stovin? http://cdm16313.contentdm.oclc.org/cdm/ref/collection/AAW/id/1113 -->
+     <!--2017-02-16 ebb bas jmh: We discover she is a mutual friend of Miss James via this letter of 2 November 1824 from MRM to Mrs. Stovin. NOTE the address of Mr. Stovin on this letter matches that of Frederick Stovin's letter to his mother above, so THAT's a match! Well done, Brooke! Huzzah!!   http://pds.lib.harvard.edu/pds/view/18031325?n=99&imagesize=1200&jp2Res=.25&printThumbnails=no -->
+  </person>
+               
                
                <person xml:id="Wheeler_Mrs" sex="2">
                   <persName>Mrs. John Wheeler</persName>
