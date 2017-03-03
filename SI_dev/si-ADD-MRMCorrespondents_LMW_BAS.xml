@@ -386,6 +386,7 @@
                      <surname type="paternal">Fielding</surname>
                      <surname type="married">Hall</surname>
                   </persName>
+                  <persName>Mrs. S. C. Hall</persName>
                   <birth when="1800-01-06">
                      <placeName>Dublin, Leinster, Ireland</placeName>
                   </birth>
@@ -396,7 +397,7 @@
                   <occupation>novelist</occupation>
                   <occupation>philanthropist</occupation>
                   <occupation>editor</occupation>
-                  <note resp="#lmw #bas">Novelist and short story writer; her stories and sketches set in Ireland were compared to those of <persName ref="#MRM">Mary Russell Mitford</persName>. Her first book, <title level="m">Sketches of Irish Character</title>, is a collection that reflects on her Irish childhood. Editor of the <title level="j">Juvenile Forget-me-Not</title> <title level="j">Sharpe's London Magazine</title> between <date from="1852" to="1853">1852 and 1853</date>, and the <title level="j">St Jame's Magazine</title> between <date from="1861" to="1868">1861 and 1868</date>, where she also published serial fiction.  Spouse of <persName>Samuel Carter Hall</persName>, she published under the name <rs type="pseudo">Mrs. S. C. [Samuel Carter] Hall</rs>. A correspondent of <persName ref="#MRM"> Mitford</persName> <date from="1829" to="1830">between 1829 and 1830</date>.</note>
+                  <note resp="#lmw #bas">Novelist and short story writer; her stories and sketches set in Ireland were compared to those of <persName ref="#MRM">Mary Russell Mitford</persName>. Her first book, <title level="m">Sketches of Irish Character</title>, is a collection that reflects on her Irish childhood. Editor of the <bibl><title level="j">Juvenile Forget-me-Not</title> from <date notBefore="1829">1829</date></bibl>, as well as <bibl><title level="j">Sharpe's London Magazine</title> between <date from="1852" to="1853">1852 and 1853</date></bibl>, and the <bibl><title level="j">St James's Magazine</title> between <date from="1861" to="1868">1861 and 1868</date></bibl>, where she also published serial fiction. Spouse of <persName>Samuel Carter Hall</persName>, she published under the name <persName>Mrs. S. C. [Samuel Carter] Hall</persName>. A correspondent of <persName ref="#MRM">Mitford</persName> <date from="1829" to="1830">between 1829 and 1830</date>.</note>
                   <note><ref target="http://viaf.org/viaf/59344020"/></note>
                </person>
                
@@ -944,6 +945,7 @@
                      <forename>Francis</forename>
                      <surname>Wrangham</surname>
                   </persName>
+                  <persName type="pseudo">S. Foot</persName>
                   <birth when="1769-06-11">
                      <placeName>Raysthorpe, Yorkshire, England</placeName>
                   </birth>
@@ -955,9 +957,12 @@
                   <occupation>translator</occupation>
                   <occupation>essayist</occupation>
                   <occupation>clergy</occupation>
-                  <note resp="#lmw #bas">Church of England clergyman and writer. Noted for his translations of Greek and Latin poems. Wrote the radical farce <title level="m">Reform: a Farce, Modernised from Aristophanes</title> under the name '<rs type="psuedo">S. Foot Jr.</rs>', which was published in <date when="1792">1792</date>. A friend of <persName ref="#Wordsworth_Wm">Wordsworth</persName>, the two had planned to collaborate on a book of satirical poems, but it never materialized. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1825" to="1830">between 1825 and 1830</date>.</note>
+                  <note resp="#lmw #bas">Church of England clergyman and writer. Noted for his translations of Greek and Latin poems. Wrote the radical farce <bibl><title level="m">Reform: a Farce, Modernised from Aristophanes</title> under the name '<author role="pseudo">S. Foot Jr.</author>'</bibl>, which was published in <date when="1792">1792</date>. A friend of <persName ref="#Wordsworth_Wm">Wordsworth</persName>, the two had planned to collaborate on a book of satirical poems, but it never materialized. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1825" to="1830">between 1825 and 1830</date>.</note>
                   <note><ref target="http://viaf.org/viaf/15552089"/></note>
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/30009"/></note>
+               </person>
+               <person xml:id="Morris_DrP" sex="1"> <!--2017-03-02 ebb: Update to existing SI entry: ADD information in note element -->
+                  <note resp="#ncl #bas">Protagonist and pseudonymous author of <bibl><author ref="#Lockhart_JG">John Gibson Lockhart</author>'s 1819 novel, <title ref="#Peters_Letters_novel">Peter's Letters to his Kinfolk</title></bibl>.</note>
                </person>
                
                <person xml:id="Jameson_Anna" sex="2">
