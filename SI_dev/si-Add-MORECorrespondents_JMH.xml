@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+               <editor ref="#lmw">Lisa Wilson</editor>
+                <editor ref="#jmh">Jon Horanic <!--2017-03-16: Add some comments here about what you did and when --></editor>
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+         
+   <div type="Mitford_Team"><!--contains Mitford editors as well as archives identifiers. We may want to add a list of all our files from manuscript, with an xml:id for each. More on this as we figure out how!-->
+      <listPerson sortKey="Mitford_Team">
+         <person/>
+      </listPerson>
+      <listOrg sortKey="archives">
+         <org/>
+      </listOrg>
+   </div>    
+       <div type="Past_Editors">
+          <listPerson sortKey="Past_Assistants">
+             <person xml:id="whatever"></person>
+          </listPerson>
+          
+          <listPerson sortKey="Past_Editors">
+             <person xml:id="whatever"></person>
+          </listPerson>
+       </div>
+         
+       <div type="historical_people">
+          <listOrg sortKey="histOrgs">
+             <org xml:id="whatever1"></org>
+          </listOrg>
+          
+          <listPerson sortKey="histPersons">
+             <!--ebb: What we need to do with the following section:
+ 1) Check if these people are in the existing si at http://digitalmitford.org/si.xml and if so, what kinds of updates are represented here. Distinguish new entries from updates
+ 2) Tag these entries in XML consistent with the si! 
+ -->              
+             <!--
+            Croft, Dowager Lady [mother of sir thomas croft, , son of sir richard croft, nephew of Sophia Baillie/related to Joanna] [Margaret Denman? widow of sir richard]
+            Dakinfield, Henry v. likely henry dukinfield, vicar of st. giles, reading; Rev. Sir Henry Dukinfield, 3rd son of Nathaniel. wife's maiden name Chowne. Existing id.
+            Dawson, Mr. [George P. Dawson?]
+         Horne, Richard Henry [Richard Hengist Horne (born Richard Henry Horne) (31 December 1802 – 13 March 1884)[1] 
+            Hughes Senior, Jane Elizabeth [Jane Nassau Senior (1828–1877) was Britain's first female civil servant, and a philanthropist. Senior was born Jane Elizabeth Hughes at Uffington on 10 December 1828, daughter of John Hughes and the only sister of the author Thomas Hughes and five other brothers.
+            Hughes, John
+            Hughes, Mrs. [wife of John or Thomas or another Hughes brother?]
+            Jennings, Agnes	Mrs. Jennings
+            Jephson, Emily E. [her close friend; a grand-niece of the Irish dramatist Robert Jephson
+            Kenyon, John	(1784–1856), philanthopist, poet and EBB’s cousin. 
+            Kingsley, Fanny Grenfell [In 1839, Frances Eliza (Fanny) Grenfell (1814–91), later a biographer, was living at Braziers Park with her sisters, and was visited by novelist Charles Kingsley (1819–75), then a Cambridge undergraduate. Kingsley later fictionalized this meeting as that of Argemone with Lancelot Smith in his first novel <bibl><title level="m">Yeast</title> <date when="1848">1848</date></bibl>. Despite Fanny having taken a vow of chastity with her sisters at Braziers Park, she and Kingsley married in Bath in 1844.] 
+            Kingsley, Charles [Charles Kingsley (12 June 1819 – 23 January 1875) was a broad church priest of the Church of England, a university professor, social reformer, historian and novelist.] From 1844, he was rector of Eversley in Hampshire. Married Fanny Grenfell.
+            Kinsey, William Morgan [6 April 1851, in Wales— William Morgan Kinsey, travel writer, 62?]
+            Kirkby, James
+            Lockhart, Miss [JGL's daughter Charlotte? later Mrs. James Robert Hope-Scott. JRHS: (15 July 1812 – 29 April 1873) was a British barrister and Tractarian.]
+            Lucas, John [John Lucas (1807–1874) was an English portrait painter.]
+            Langley, Eliza	Assistant to George Lovejoy, who took over bookshop upon his death in 1882. She died in 1897.
+            Lefevre, C. Shaw	M.P.
+            Lovejoy, George	Bookseller on London Street in Reading, born 1808-died 1882; established the general subscription circulating library at Reading in 1832, purchased by Miss Langley, in 1884. and since thenmuch enlarged and greatly extended.
+            Lovejoy, Martha Jane "Patty"	Daughter of George Lovejoy also under Lovejoy, Miss M.
+            Martin, Albinus	Esq.; position in theatre business (Chorley 1872(2):181 &amp; 197)
+            Merry, Mrs [likely the wife of William Merry 1792-1873, lived at The Highlands, Shinfield, near Reading. author. also associated with EBB through MRM.]
+            Monteagle, Thomas Spring-Rice	Baron of Brandon 1790-1866
+            Mitford, Dr. George	Called "Drum" by the Miford women; also "Tod", "Dodo"
+            Mitford, Capt. Robert Osbaldeston	Captain, perhaps associated with the recently deceased Wrangham or the Mitford estate in Yorkshire
+            Norton, Andrews	[Professor  [Andrews Norton (December 31, 1786 – September 18, 1853) was an American preacher and theologian. Along with William Ellery Channing, he was the leader of mainstream Unitarianism of the early and middle 19th century. She writes to him at Cambridge University, USA (harvard?)]
+            Ouvry, Mrs. Jane	[Of Leighton Buzzard, corresponded: 1847-55 [Jane Nicholls, da. of George Nicholls//poor laws..banker// (who married Rev. P. T. Ouvry)]
+            Parry, Mrs	the mother of poet Mary Anne Parry
+            Parsons, Thomas William [ (August 18, 1819, Boston – September 3, 1892, Scituate, Massachusetts[1]) was an American dentist and poet.]
+            Partridge, Mrs. Lucy Olivia Hobart	née Anderdon, 1837-51, wife of the Rev. William Edwards Partridge; Father; Oliver Anderdon’s Esqre; Mother: Mrs. Maria Anderdon
+            Pearson, Hugh [Hugh Pearson (1817–1882) was vicar of Sonning and a Canon at Windsor, both in Berkshire, England]
+            Pratt, Samuel Jackson [Samuel Jackson Pratt (25 December 1749 – 4 October 1814) was a prolific English poet, dramatist and novelist,]
+            Pringle, Thomas [Thomas Pringle (5 January 1789 – 5 December 1834) was a Scottish writer, poet and abolitionist.]
+            Redding, Cyrus [Cyrus Redding (1785, Cornwall - 1870) was a British journalist and wine writer. edited New Monthly Mag. between 1821 and 30. for colburn]
+            Reeve, Henry [Henry Reeve (9 September 1813 – 21 October 1895) was an English journalist.]
+            Richards, J.   
+            Russell, David [not a relation to MRM Russells, that I can tell.]
+            Sedgwick, Theodore [likely Theodore Sedgwick Junior (December 9, 1780 – 1839), he married children's book author Susan Anne Livingston. Their son Theodore Sedgwick III was a lawyer and author. Brother of Catherine M. THe letters continue until 1840 even though he dies in 1839. Some letters addressed in care of Robert Sedgwick. Addressed to New York, USA/ One addressed to 20 Wall Street/NY/USA]
+            Sidmouth, Lady [2nd wife of Henry Addington, Lord Sidmouth Mary Anne Scott, da. of Lord Stowell, first husband T. Townshend. died April 26, 1842. See histofpar for Addington.]
+            Taylor, Kerenhappuck	Miss Mitford's maid called "my K": replacing Martha; named Kerenhappuch, after the third of Job’s daughters (Job, 42:14). In 1844, she had an illegitimate child, and was dismissed, but Miss Mitford took her back the following year, and she stayed in service until Miss Mitford’s death in 1855. Existing id. Add to.
+-->
+             <person xml:id="whatever3"><!--This is about as elaborate as we need to be for person entries in our project. Historical people will probably have the most extensive entries. Note: We've decided that named animals count as historical people, so Mitford's pets go into this list.-->
+                <persName>
+                   <surname type="married"></surname><!--takes @type attributes: @type="married" @type="maiden"-->
+                   <forename></forename>
+                   <forename></forename><!--middle names are "forenames" too. Put them in order. First name, then middle name(s)-->
+                   <roleName><!--if any. 6th Earl of Northumberland--></roleName>
+                </persName>
+                <persName/><!--multiple names? collect them, as many persNames, nicknames, etc as we know.-->
+                <birth when="1800-01-16"><placeName><!--where born?--></placeName></birth>
+                <death when="1870-01-16"><placeName><!--where died?--></placeName></death>
+                <occupation><!--one-word or short here, try to use a value in play in the index already: literary, playwright, actor, politician, etc.--></occupation>
+                <occupation><!--Of course there may be multiple occupations.--></occupation>
+                <note resp="MitfordEditor"><!--Your brief, pithy note here, commenting on the significance of this person to Mitford, her world, her people.--></note>
+                <note><ref target="VIAF_LINK_HERE"/></note>
+             </person>
+          </listPerson>
+       </div>
+       <div type="fictional_and_archetypal">
+          <listPerson sortKey="archPersons">
+             <person/><!--This list is for mythical, legendary entities, 
+                not precisely rooted in a place or time, or in a particular text either. -->
+          </listPerson>
+          <listPerson sortKey="fictPersons">
+             <person/><!--Use this list for fictional characters from particular texts.-->
+          </listPerson>
+          <listOrg sortKey="fictOrgs">
+             <org/>
+          </listOrg>
+          <listOrg sortKey="archOrgs">
+             <org/>
+          </listOrg>
+       </div>
+         <div type="places">
+            <listPlace sortKey="histPlaces">
+               <place/>
+            </listPlace>
+            <listPlace sortKey="fictPlaces">
+               <place/><!--for any fictional/imaginary/mythical places-->
+            </listPlace>
+         </div>
+         <div type="nature">
+            <list sortKey="plants">
+               <item xml:id="cowslip">
+                  <name>cowslip</name>
+                  <name>common cowslip</name>
+                  <name>cowslip primrose</name>
+                  <name><rs type="genus">Primula</rs><rs type="species">veris</rs><rs type="family">Primulaceae</rs></name>
+                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers, blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mitford likely refers to Primula veris (also called cowslip, common cowslip, cowslip primrose), a flowering plant in the genus Primula of the family Primulaceae. The species is native throughout most of temperate <placeName>Europe</placeName> and <placeName>Asia</placeName>, although absent from more northerly areas. May hybridize with <rs type="plant" ref="#primrose">English/common primroses</rs>.
+                  </note>
+               </item>
+            </list>
+            <list sortKey="animals">
+               <item xml:id="Long_tailed_wren">
+                  <name>long-tailed wren</name>
+                  <name>Naga wren-babbler</name>
+                  <name><rs type="genus">Spelaeornis</rs><rs type="species">chocolatinus</rs><rs type="family">Timaliidae</rs></name>
+                  <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species in the family Timaliidae.</note>
+               </item>
+            </list>
+         </div>
+         <div type="events">
+            <listEvent sortKey="histEvents">
+               <event>
+                  <label></label>
+                  <note></note>
+               </event>
+            </listEvent>
+         </div>
+         <div type="art"><!--for graphical works of art, or works that aren't published in print form. Differentiate lists as needed.-->
+            <list sortKey="art">
+               <item/><!--leave this stump in place. Needed for this list to be valid.-->
+              <figure xml:id="whatevs9">
+               <bibl></bibl>
+               <graphic url="whatever.html"/><!--If we find a good, stable URL representing this artwork on the web, point to it here.-->
+               <note></note>
+            </figure>
+            </list>
+         </div>
+         <div type="publications">
+            <listBibl sortKey="ref_19thc"><!--For encyclopedic or reference works from Mitford's time.-->
+               <bibl xml:id="whatevs21">
+               </bibl>        
+            </listBibl>
+            
+            <listBibl sortKey="per_19thc"><!--For 19th-c. periodicals, as well as nonliterary stuff published in periodicals, like reviews, critiques, newspaper articles, etc.-->
+               <bibl/>
+            </listBibl>
+            
+            <listBibl sortKey="literary"><!--Anything literary, not restricted to Mitford's time.-->
+               <bibl/>
+            </listBibl>
+            
+            <listBibl sortKey="MRM_Schol"><!--Scholarship about Mitford.-->
+               <bibl/>
+            </listBibl>
+            <listBibl sortKey="other_current_Schol"><!--Scholarship from our time, not directly related to Mitford but relevant to the project.-->
+               <bibl/>
+            </listBibl>
+            
+         </div>
+         
+      </body>
+  </text>
+</TEI>
