@@ -6847,11 +6847,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <death notBefore="1873"/>
                   <occupation>literary</occupation>
                   <occupation>biographer</occupation>
-                  <note resp="#lmw">Lord Byron was her cavaliere serviente, just after she had married Count Alessandro Guiccioli, during the politically active period while he was staying at Ravenna in northern Italy and involved with the Carbonari from <date from="1819-01" to="1823-07">January 1819 to July 1823</date>. During 
+                  <note resp="#lmw"><persName ref="#Byron">Lord Byron</persName> was her cavaliere serviente, just after she had married <persName>Count Alessandro Guiccioli</persName>, during the politically active period while he was staying at Ravenna in northern Italy and involved with the Carbonari from <date from="1819-01" to="1823-07">January 1819 to July 1823</date>. During 
                      
                      Wife of Count Guiccioli and married lover of <persName
                      ref="#Byron">Byron</persName> while he stayed in Ravenna. Author of
-                     <title>Lord Byron's Life in Italy</title>.</note>
+                     <title>Lord Byron's Life in Italy</title>. See <title><ref target="https://www.rc.umd.edu/reference/chronologies/byronchronology/">Romantic Circles Byron Chronology</ref></title></note>
                   <note><ref target="http://viaf.org/viaf/44293835"/></note>
                </person>
                <person xml:id="Gutch_John" sex="1">
@@ -15432,7 +15432,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.0856236 -1.1655574999999772</geo>
                   </location>
-                  <note resp="#ebb">Birthplace of <persName ref="#MRM">Mary Russell
+                  <note resp="#ebb #lmw">Birthplace of <persName ref="#MRM">Mary Russell
                         Mitford</persName>, who lived at 27 Broad Street until about the age of
                      four; the family moved to <placeName ref="#Reading_city">Reading</placeName> in
                         <date when="1791">1791</date>. During <persName ref="#MRM"
@@ -15460,8 +15460,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         ref="#Griffin_Rich">Richard Griffin, second Baron
                      Braybrooke</persName>.</note>
                   <note>
-                     <ref
-                        target="http://www.english-heritage.org.uk/visit/places/audley-end-house-and-gardens/"
+                     <ref target="http://www.english-heritage.org.uk/visit/places/audley-end-house-and-gardens/"
                      />
                   </note>
                </place>
@@ -15490,7 +15489,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <geo>51.4976695 -0.12778800000000956</geo>
                   </location>
                   <note resp="#lmw"><persName ref="#Monck_JB">J. B. Monck</persName> lived at 10
-                        <placeName ref="#Barton_street">Barton Street</placeName> in the 1820s.
+                        <placeName ref="#Barton_street">Barton Street</placeName> in the <date notBefore="1820" notAfter="1830">1820s</date>.
                         <persName ref="#MRM">Mitford</persName> mentions this as his London address
                      in an <date when="1821">1821</date> letter to <persName ref="#Elford_SirWm"
                         >Elford</persName>. Barton Street intersects Great College Street, near
@@ -15506,9 +15505,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.2667 -1.0876</geo>
                   </location>
-                  <note resp="#lmw">Town in <placeName ref="#Hampshire_county"
-                     >Hampshire</placeName>, in south central England, near the source of the River
-                     Loddon.</note>
+                  <note resp="#lmw">Town in <placeName ref="#Hampshire_county">Hampshire</placeName>, in south central England, near the source of the River Loddon.</note>
                </place>
                <place xml:id="Bath_city">
                   <placeName>Bath, Somerset, England</placeName>
@@ -15520,10 +15517,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.375801 -2.359903900000063</geo>
                   </location>
-                  <note resp="#lmw">A city in the county of Somerset in south west England, located
-                     in the valley of the River Avon, near Bristol. A resort and spa town since
-                     Roman times, known for its mineral springs. Now a UNESCO world heritage
-                     site.</note>
+                  <note resp="#lmw">A city in the county of Somerset in south west England, located in the valley of the River Avon, near Bristol. A resort and spa town since Roman times, known for its mineral hot springs. Now a UNESCO world heritage site.</note>
                   <note><ref target="http://whc.unesco.org/en/list/428"/></note>
                </place>
                <place xml:id="Bear_Inn">
