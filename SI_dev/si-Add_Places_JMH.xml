@@ -17552,8 +17552,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>47.394144 0.6848400000000083</geo>
                   </location>
-                  <note resp="#ebb">City in <placeName ref="#France">France on the lower part of
-                     the River Loire.</placeName>
+                  <note resp="#ebb">City in <placeName ref="#France">France</placeName> on the lower part of
+                     the River Loire.
                   </note>
                </place>
                <place xml:id="Tower_of_London">
@@ -17568,7 +17568,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         when="1066">1066</date> and used variously as a royal residence, an
                      armory, a treasury, a menagerie, and a prison. In <persName ref="#MRM"
                         >Mitford</persName>'s time, a tourist attraction admired for its Gothic
-                     architecture and that included the Royal Menagerie, displays of armour, and
+                     architecture, which included the Royal Menagerie, displays of armour, and
                      the Crown Jewels; it was also an active armoury and the home of the Royal
                      Mint until the early nineteenth-century.</note>
                </place>
@@ -17630,7 +17630,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <placeName>Royal Coburg Theatre</placeName>
                   <placeName><addName>old Vic</addName></placeName>
                   <location>
-                     <geo>51.5020628-0.1115065</geo>
+                     <geo>51.5022 -0.1096</geo>
                   </location>
                   <note resp="#lmw">This minor theatre opened in <date when="1818">1818</date> on
                      the south side of Waterloo bridge, in order to capitalize on the increase of
@@ -17642,7 +17642,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      fourteen, but after her mother, Victoria, Duchess of Kent. <persName
                         ref="#MRM">Mitford</persName>'s play <title ref="#CharlesI_MRMplay"
                            >Charles I</title> was performed here. Still an active producing theater,
-                     called the old Vic.</note>
+                     called The Old Vic.</note>
                   <!--LMW: egerton and abbott already id'd in drama file.-->
                </place>
                <place xml:id="Vienna">
@@ -17654,12 +17654,15 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </location>
                   <note resp="#lmw">Capital and the largest city in Austria. Historically, a
                      center for music in Europe. During <persName ref="#MRM">Mitford</persName>'s
-                     time, Vienna became the capital of the Austrian Empire (in 1804, during the
-                     Napoleonic Wars) and hosted the Congress of Vienna in 1814-1815.</note>
+                     time, Vienna became the capital of the Austrian Empire (in <date when="1804">1804</date>, during the
+                     Napoleonic Wars) and hosted the Congress of Vienna in <date from="1814" to="1815">1814-1815</date>.</note>
                </place>
                <place xml:id="Wales">
                   <placeName>Wales</placeName>
-                  <!-- the country -->
+                  <location>
+                     <geo>51.483333 -3.183333</geo>
+                  </location>
+                  <note resp="#bas">Located in the United Kingdom; a country in southwest Great Britain.</note>
                </place>
                <place xml:id="Waterloo_Belgium">
                   <placeName>Waterloo, Walloon Brabant, Belgium</placeName>
@@ -17672,7 +17675,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <geo>50.71469 4.399099999999976</geo>
                   </location>
                   <note resp="#ebb #lmw">Municipality in Belgium, south of Brussels. The battle
-                     of Waterloo, at which Napoleon was defeated in 1815, was fought south of the
+                     of Waterloo, at which Napoleon was defeated in <date when="1815">1815</date>, was fought south of the
                      municipality, at Braine-l'Alleud.</note>
                </place>
                <place xml:id="Westminster_Abbey">
@@ -17686,7 +17689,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <geo>51.4992921 -0.12730970000006891</geo>
                   </location>
                   <note resp="#ebb #lmw">Gothic style church in Westminster, London, where
-                     English monarchs have traditionally been crowned and buried since 1066. Many
+                     English monarchs have traditionally been crowned and buried <date notBefore="1066">since 1066</date>. Many
                      important literary and historical figures are recognized with memorials
                      throughout this famous abbey. The present structure began construction in
                      <date when="1245">1245</date> by <persName>King Henry III</persName> and
@@ -17703,8 +17706,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <geo>51.4994794 -0.12480919999995876</geo>
                   </location>
                   <note resp="#ebb">Located in <placeName ref="#Westmnstr">Westminster,
-                     London</placeName> along the <placeName ref="#Thames">Thames
-                        River</placeName>, this is the meeting place of England's two Houses of
+                     London</placeName>, along the <placeName ref="#Thames">Thames
+                        River</placeName>. This is the meeting place of England's two Houses of
                      <orgName ref="#Parliament_UK">Parliament</orgName>.</note>
                </place>
                <place xml:id="Westmnstr">
@@ -17717,7 +17720,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </location>
                   <note resp="#lmw">Now an inner London borough centrally located in Greater
                      London; historically a separate entity west of the City of London and the
-                     site of Westminster Abbey and the Palace of Westminster. In <persName
+                     site of <placeName ref="Westminster_Abbey">Westminster Abbey</placeName> and the <placeName ref="Westmnst_Palace">Palace of Westminster</placeName>. In <persName
                         ref="#MRM">Mitford</persName>'s time, a district of Greater London and
                      the location of St. James's Palace, Buckingham Palace, and the Houses of
                      Parliament; shopping districts around Bond Street, Regent Street, and Oxford
@@ -17730,7 +17733,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <region>London</region>
                   <country>England</country>
                   <location>
-                     <geo>51.5047082 -0.12628369999993083</geo>
+                     <geo>51.504444, -0.125556</geo>
                   </location>
                   <note resp="#ebb">The word "Whitehall," used without specific reference to the
                      palace, refers metonymically to the centers of power of the English
@@ -17749,8 +17752,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.5045858 -0.12600050000003193</geo>
                   </location>
-                  <note resp="#ebb">Main London residence of English monarchs from 1530 until
-                     1698, when a major part of the palace was destroyed by fire. During the
+                  <note resp="#ebb">Main London residence of English monarchs from <date from="1530" to="1698">1530 until
+                     1698</date>, when a major part of the palace was destroyed by fire. During the
                      seventeenth century, renovations made it the largest palace in Europe. Site
                      of the execution of <persName ref="#ChasI">King Charles I</persName>.</note>
                </place>
@@ -17768,10 +17771,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         Marlborough</persName>. Purchased by him in <date when="1798">1798</date>
                      and extensively renovated at great expense until the Duke's bankruptcy in
                      <date when="1819">1819</date>, when the estate and contents were sold at
-                     auction. Subject of an 1818 <title ref="#Whiteknights_Desc_TCH"
+                     auction. Subject of an <date when="1818">1818</date> <title ref="#Whiteknights_Desc_TCH"
                         >publication</title> by the <rs type="person"
-                           ana="#Hofland_TC #Hofland_B">Hoflands</rs>. Formerly the manor of Earley
-                     Whiteknights; now Whiteknights Park, part of the campus of the University of
+                           ana="#Hofland_TC #Hofland_B">Hoflands</rs>. Formerly the manor of Earley Whiteknights; now Whiteknights Park, part of the campus of the University of
                      Reading.</note>
                </place>
                <place xml:id="Winchester_city">
@@ -17784,7 +17786,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </location>
                   <note resp="#lmw">City and county town of Hampshire. Site of Winchester
                      Cathedral and Winchester College, one of the oldest public grammar schools.
-                     <persName ref="#Austen_Jane">Jane Austen</persName>died here and is
+                     <persName ref="#Austen_Jane">Jane Austen</persName> died here and is
                      buried in the Cathedral. <persName ref="#Keats">John Keats</persName> wrote
                      several of his best-known poems while on a visit to the city.</note>
                </place>
@@ -17817,7 +17819,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw #err">A market town in south east England in Berkshire, near
                      Reading. The <orgName ref="#Mitfords">Mitfords</orgName> sometimes travelled
                      to Wokingham on their way to <placeName ref="#London_city"
-                        >London</placeName>, or to visit the home of their friends the <orgName
+                        >London</placeName>, or to visit the home of their friends, the <orgName
                            ref="#Webbs">Webbs</orgName>.</note>
                </place>
                <place xml:id="Yorkshire_county">
@@ -17827,7 +17829,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>53.95996510000001 -1.0872979000000669</geo>
                   </location>
-                  <note resp="#lmw">County in northern England. Abbreviated Yorks.</note>
+                  <note resp="#lmw">Historic county in northern England and the largest county in the United Kingdom. Abbreviated Yorks.</note>
                </place>
             </listPlace>
             <listPlace sortKey="fictPlaces">
