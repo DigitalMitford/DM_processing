@@ -16805,7 +16805,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <country>England</country>
                   <note resp="#kdc">Oxford Circuit was one of six assize circuits in <placeName
                         ref="#England">England</placeName> and <placeName ref="#Wales"
-                        >Wales</placeName>. Before <date when="1830">1830</date>, the Oxford Circuit
+                        >Wales</placeName>. Before <date notAfter="1830">1830</date>, the Oxford Circuit
                      consisted of the counties of Oxford, Worcester, Stafford, Salop, Hereford,
                      Monmouth, Gloucester, and Berkshire. Judges were appointed by the monarch and
                      traveled the Circuit twice per year to hear trials of serious crimes. <persName
@@ -16885,15 +16885,15 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </location>
                   <note resp="#lmw">In <persName ref="#MRM">Mitford</persName>'s time, a wooded area
                      near London adjacent to Penge Common, much used for leisure activities such as
-                     walks, sketching, amateur botanizing, and picnicking. Penge Common at one time
+                     walking, sketching, amateur botanizing, and picnicking. Penge Common at one time
                      abutted the Great North Wood and some eighteenth and nineteenth century maps of
                      Greater London include the Common as part of the Wood. As early as <date
                         when="1834">1834</date>, <persName ref="#Hunt">Leigh Hunt</persName> laments
                      the area's loss to enclosure and development as it was one of the "two finest
                      pieces of natural scenery within twelve miles of the capital" ("Notes on the
                      Newspapers," Monthly Repository 8 (1834): 524). Enclosure acts beginning with
-                     the Croydon Enclosure Act of 1797 and the Penge Enclosure Acts of 1805, 1806,
-                     and 1827 affected the area, which was heavily developed after 1855 following
+                     the Croydon Enclosure Act of <date when="1797">1797</date> and the Penge Enclosure Acts of <date when="1805">1805</date>, <date when="1806">1806</date>,
+                     and <date when="1827">1827</date> affected the area, which was heavily developed after <date notBefore="1855">1855</date> following
                      the relocation of the Crystal Palace and the accompanying development of
                      Crystal Palace Park.</note>
                </place>
@@ -16908,8 +16908,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">Founded in the seventeenth century as the capital of the
                      Pennsylvania colony and later the capital of the state. It played a key role in
                      the American Revolution and served as one-time capital of the Republic before
-                     the capital moved to Washington, D.C. In the eighteenth- and
-                     nineteenth-centuries, an important center of publishing, and of artistic,
+                     the capital moved to Washington, D.C. In the eighteenth and
+                     nineteenth centuries, an important center of publishing, and of artistic,
                      literary, and scientific thought. During the nineteenth century, an important
                      destination for immigrants from Europe as well as for African-American
                      migrants.</note>
@@ -16954,7 +16954,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      and Purchase) in <placeName ref="#Plymouth_city">Plymouth</placeName>, from its
                      founding in <date when="1782">1782</date>, and he was elected a member of
                         <orgName ref="#Parliament_UK">Parliament</orgName> for Plymouth and served
-                     from 1796 to 1806.</note>
+                     from <date from="1796" to="1806">1796 to 1806</date>.</note>
                </place>
                <place xml:id="Portsmouth_Blockhouses">
                   <placeName>Portsmouth Blockhouses</placeName>
@@ -16962,7 +16962,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <geo>50.800531 -1.109465900000032</geo>
                   </location>
                   <note resp="#lmw">Also known as the Portsmouth Block Mills, established in <date
-                        when="1802">1802</date> by Marc Isambard Brunel. Factories in the Portsmouth
+                        when="1802">1802</date> by <persName>Marc Isambard Brunel</persName>. Factories in the Portsmouth
                      dockyard that produced pulley blocks for Royal Navy ships' rigging. The Mills
                      were the site of the world's first mass production line and used all-metal
                      machine tools.</note>
@@ -16995,7 +16995,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         Byron</persName> lived in Ravenna from <date from="1819" to="1821"
                         >1819-1821</date>, which was the site of his love affair with <persName
                         ref="#Guiccioli_T">Teresa Guiccioli</persName>, and where he composed <title
-                        ref="#The_Two_Foscari">The Two Foscari</title> in the summer of 1821.</note>
+                        ref="#The_Two_Foscari">The Two Foscari</title> in the summer of <date when="1821">1821</date>.</note>
                </place>
                <place xml:id="Reading_city">
                   <placeName>Reading, Berkshire, England</placeName>
@@ -17005,14 +17005,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.4542645 -0.9781302999999753</geo>
                   </location>
-                  <note resp="#lmw">County town in Berkshire, in the Thames valley at the confluence
+                  <note resp="#lmw">County town in <placeName ref="#Berkshire">Berkshire</placeName>, in the Thames valley at the confluence
                      of the Thames and the River Kennet. The town developed as a river port and in
                         <persName ref="#MRM">Mitford</persName>'s time served as a staging point on
                      the Bath Road and was developing into a center of manufacturing. <persName
-                        ref="#MRM">Mitford</persName> lived here with her parents <date from="1791"
-                        to="1795">from 1791 to 1795</date>, on Coley Avenue in the parish of St.
-                     Mary's and attended the Abbey School. The family returned to Reading <date
-                        from="1797" to="1804">from 1797 to about 1804</date>, after which they
+                        ref="#MRM">Mitford</persName> lived here with her parents from <date from="1791"
+                        to="1795">1791 to 1795</date>, on Coley Avenue in the parish of St.
+                     Mary's and attended the Abbey School. The family returned to Reading from <date
+                        from="1797" to="1804">1797 to about 1804</date>, after which they
                      relocated to <placeName ref="#Bertram_house">Bertram House</placeName>. They
                      frequently visited Reading thereafter from their homes at nearby <placeName
                         ref="#Bertram_house">Bertram House</placeName>, <placeName
@@ -17030,8 +17030,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.4486089 -0.9542480999999725</geo>
                   </location>
-                  <note resp="#lmw">Public grammar school originally founded as a Reading Abbey
-                     school, which dates to 1125, located in <placeName ref="#Reading_city"
+                  <note resp="#lmw">Public grammar school originally founded as a Reading Abbey school, which dates to <date when="1125">1125</date>, located in <placeName ref="#Reading_city"
                         >Reading</placeName>. <persName ref="#Valpy_Richard">Dr. Richard
                         Valpy</persName> was headmaster <date from="1754" to="1836">from 1754 to
                         1836</date> and was then succeeded by his son. <persName
@@ -17047,7 +17046,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <country>England</country>
                   <note resp="#lmw">Theater in <placeName ref="#Reading_city">Reading</placeName>.
                      Exact location unknown. More research
-                     needed.<!--JMH: There is a possiblity that this may be the Hexagon Theatre? Research contines.--></note>
+                     needed.<!--JMH: There is a possiblity that this may be the Hexagon Theatre? Research continues.--></note>
                </place>
                <place xml:id="Red_Cow_Inn">
                   <placeName>The Red Cow Inn, Reading, Berkshire, England</placeName>
@@ -17134,9 +17133,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      the oldest cities in the world, and once capital of the ancient Roman Empire.
                      Throughout much of <persName ref="#MRM">Mitford</persName>'s lifetime, Rome was
                      governed by the Vatican as part of the Papal States, although it was part of
-                     the short-lived Roman Republic between 1798 and 1800, annexed to the French
-                     Empire under Napoleon between 1808 and 1814, and experienced another
-                     short-lived attempt at Italian unification in 1849. Center of art and culture
+                     the short-lived Roman Republic between <date from="1798" to="1800">1798 and 1800</date>, annexed to the French
+                     Empire under Napoleon between <date from="1808" to="1814">1808 and 1814</date>, and experienced another
+                     short-lived attempt at Italian unification in <date when="1849">1849</date>. Center of art and culture
                      since ancient times, Rome was a frequent stop for young men from Western Europe
                      on the Grand Tour. Now the capital of Italy and of the Lazio region.</note>
                </place>
@@ -17157,7 +17156,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </place>
                <place xml:id="Scotland">
                   <placeName>Scotland</placeName>
-                  <!--the country-->
+                  <location>
+                     <geo>55.85, -4.266667</geo>
+                  </location>
+                  <note resp="#bas">Country that occupies the northern third of the island of Great Britain. Part of the United Kingdom.</note>
                </place>
                <place xml:id="SeymourCt">
                   <placeName>Seymour Court, Buckinghamshire, England</placeName>
@@ -17216,8 +17218,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.3538459 -1.1005384999999706</geo>
                   </location>
-                  <note resp="#lmw">Village in Hampshire, approximately nine miles from Reading,
-                     on the Berkshire county border.</note>
+                  <note resp="#lmw">Village in <placeName ref="#Hampshire_county">Hampshire</placeName>, approximately nine miles from <placeName ref="#Reading_city">Reading</placeName>,
+                     on the <placeName ref="#Berkshire">Berkshire</placeName> county border.</note>
                </place>
                <place xml:id="Sloane_St">
                   <placeName>Sloane Street, Kensington, London, England</placeName>
@@ -17230,7 +17232,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">Major <placeName ref="#London_city">London</placeName>
                      thoroughfare now in the Royal Borough of Kensington and Chelsea. Runs
                      between Knightsbridge and Sloane Square. Sloane Street takes its name from
-                     Sir Hans Sloane, who purchased the surrounding area in 1712.</note>
+                     Sir Hans Sloane, who purchased the surrounding area in <date when="1712">1712</date>.</note>
                </place>
                <place xml:id="Soho_Sq">
                   <placeName>Soho Square, Soho, London, England</placeName>
@@ -17259,9 +17261,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      Strand, overlooking the River Thames. In <persName ref="#MRM"
                         >Mitford</persName>'s time, the site of Royal Academy exhibitions and
                      other cultural events. A building designed and built by Sir William Chambers
-                     beginning in 1776 in order to house public offices which had previously been
-                     scattered around London in older buildings. Likely not completed until after
-                     1819. This building's North Wing faced the Strand and also included East and
+                     beginning in <date when="1776">1776</date> in order to house public offices which had previously been
+                     scattered around London in older buildings. Likely not completed until <date notBefore="1819">after
+                     1819</date>. This building's North Wing faced the Strand and also included East and
                      West Wings of the present-day quadrangle. Housed the Royal Academy of Arts,
                      the Royal Society of London for Improving Natural Knowledge, and the Society
                      of Antiquaries until the 1870s. Sometimes a metonym for <orgName
@@ -17278,8 +17280,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.105097 -2.926230700000019</geo>
                   </location>
-                  <note resp="#lmw">County in southwest England. County town is Taunton. Now
-                     known as Somerset.</note>
+                  <note resp="#lmw">County in southwest England, now known as Somerset. County town is Taunton.</note>
                </place>
                <place xml:id="Southhampton_city">
                   <placeName>Southhampton, Hampshire, England</placeName>
@@ -17323,7 +17324,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </location>
                   <note resp="#scw #lmw">Ancient church on Friar Street in <placeName
                      ref="#Reading_city">Reading</placeName>. During <persName ref="#MRM"
-                        >Mitford</persName>'s time, it was the parish church. The spelled
+                        >Mitford</persName>'s time, it was the parish church. Spelled
                      variously Lawrence or Laurence. <orgName ref="#Valpys">The Valpy
                         family</orgName>'s parish church; <persName ref="#Valpy_Richard">Dr.
                            Richard Valpy</persName>'s students placed a marble bust of him in the
@@ -17341,7 +17342,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <location>
                      <geo>51.75295699999999 -0.3559866000000511</geo>
                   </location>
-                  <note resp="#rct">A parish church in St. Albans.</note>
+                  <note resp="#rct">A parish church in St. Albans, a city in <placeName ref="#Hertfordshire_county">Hertfordshire</placeName>, <placeName ref="#England">England</placeName>.</note>
                </place>
                <place xml:id="StJamesSt">
                   <placeName>St. James's Street, Westminster, London, England</placeName>
@@ -17367,7 +17368,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <region>London</region>
                   <country>England</country>
                   <location>
-                     <geo>51.531786 -0.17700439999998707</geo>
+                     <geo>51.5361, -0.1751</geo>
                   </location>
                   <placeName><addName>St. John's Wood</addName></placeName>
                   <note resp="#ghb #ebb">Occasional residence from <date when="1817">1817</date>
@@ -17390,7 +17391,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <geo>51.5138453 -0.0983506000000034</geo>
                   </location>
                   <note resp="#lmw">St Paul's Cathedral, London, is a Church of England
-                     (Anglican) cathedral, the seat of the Bishop of London and the mother church
+                     (Anglican) cathedral, the seat of the Bishop of London, and the mother church
                      of the Diocese of London. It sits on Ludgate Hill at the highest point of
                      the City of London. The present church, by Sir Christopher Wren, was built
                      after the Great Fire of London in the late seventeenth century. The building
@@ -17481,7 +17482,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </place>
                <place xml:id="Switzerland">
                   <placeName>Switzerland</placeName>
-                  <!-- the country LMW -->
+                  <location>
+                     <geo>46.95, 7.45</geo>
+                  </location>
+                  <note resp="#bas">A country located in western-Central Europe.</note>
                </place>
                <place xml:id="Temple">
                   <placeName>Temple, London, England</placeName>
@@ -17720,7 +17724,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </location>
                   <note resp="#lmw">Now an inner London borough centrally located in Greater
                      London; historically a separate entity west of the City of London and the
-                     site of <placeName ref="Westminster_Abbey">Westminster Abbey</placeName> and the <placeName ref="Westmnst_Palace">Palace of Westminster</placeName>. In <persName
+                     site of <placeName ref="#Westminster_Abbey">Westminster Abbey</placeName> and the <placeName ref="#Westmnst_Palace">Palace of Westminster</placeName>. In <persName
                         ref="#MRM">Mitford</persName>'s time, a district of Greater London and
                      the location of St. James's Palace, Buckingham Palace, and the Houses of
                      Parliament; shopping districts around Bond Street, Regent Street, and Oxford
