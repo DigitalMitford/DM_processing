@@ -1571,6 +1571,12 @@
          </div>
          <div type="historical_people">
             <listOrg sortKey="histOrgs">
+               <org xml:id="Court_of_Kings_Bench">
+                  <!-- lmw: I think this needs to be reassigned to an orgName. It's not a singular location. -->
+                  <orgName>Court of King's Bench</orgName>
+                  <note resp="#err">One of the high courts of <placeName ref="#England"
+                     >England</placeName> that heard both criminal and civil cases. Located in Westminster Hall since 1318. For detailed historical information, see <ref target="https://en.wikipedia.org/wiki/Court_of_King's_Bench_(England)">Wikipedia entry</ref>.</note>
+               </org>
                <org xml:id="Americans">
                   <orgName>Americans</orgName>
                   <note>people of the former British colonies recently become the United States in
@@ -15871,12 +15877,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      proper.</note>
                   <note><ref target="http://www.coleypark.com/"/></note>
                </place>
-               <place xml:id="Court_of_Kings_Bench">
-                  <!-- lmw: I think this needs to be reassigned to an orgName. It's not a singular location. -->
-                  <placeName>Court of King's Bench</placeName>
-                  <note resp="#err">One of the high courts of <placeName ref="#England"
-                        >England</placeName> that heard both criminal and civil cases.</note>
-               </place>
+            
                <place xml:id="Covent_Garden_Theatre">
                   <placeName>Theatre Royal, Covent Garden, London, England</placeName>
                   <placeName><addName>Covent Garden Theatre</addName></placeName>
@@ -16032,7 +16033,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">County in England, north east of London. County town is
                      Chelmsford.</note>
                </place>
-               <place xml:id="Europe"/>
+               <place xml:id="Europe">
+                  <placeName><bloc>Europe</bloc></placeName>
+                  <location><geo>54.883056 15.430833</geo></location>
+               </place>
                <place xml:id="Exeter">
                   <placeName>Exeter</placeName>
                   <note resp="#ebb">Exeter is a cathedral city in the southwest of England, in the
@@ -16682,8 +16686,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">Village east of <placeName ref="#Swallowfield_village"
                         >Swallowfield</placeName> in Berkshire.</note>
                </place>
-               <place xml:id="Mt_Ida">
-                  <!--LMW: did we move this to mythical places? -->
+           <place xml:id="Mt_Ida">
+                  <!--LMW: did we move this to mythical places? 2017-03-28 ebb: No. it's in historical places.-->
                   <placeName>Mount Ida</placeName>
                   <note resp="#lmw">Sacred mountain of classical Greek antiquity.</note>
                </place>
@@ -16691,7 +16695,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <placeName>Muscovy</placeName>
                   <placeName><addName>Grand Duchy of Moscow</addName></placeName>
                   <placeName><addName>Grand Principality of Moscow</addName></placeName>
-                  <country>Muscovy<!--JMH: Should this be changed to Russia?--></country>
+                  <country>Russia</country>
                   <location>
                      <geo>55.755826 37.6173</geo>
                   </location>
@@ -17638,8 +17642,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">This minor theatre opened in <date when="1818">1818</date> on
                      the south side of Waterloo bridge, in order to capitalize on the increase of
                      traffic expected from the new bridge. It was purchased in <date when="1833"
-                        >1833</date> by
-                     <!--<persName ref="#Egerton_Dan">Daniel Egerton</persName> and <persName ref="#Abbott_Wm">William Abbott</persName>,-->
+                        >1833</date> by Daniel Egerton and William Abbott
+                     <!--ebb 2017-03-28 TO BE ADDED: <persName ref="#Egerton_Dan">Daniel Egerton</persName> and <persName ref="#Abbott_Wm">William Abbott</persName>,-->
                      who renamed it the Royal Victoria Theatre. It was not named after the young
                      <persName ref="#Victoria_Queen">Princess Victoria</persName>, then
                      fourteen, but after her mother, Victoria, Duchess of Kent. <persName
