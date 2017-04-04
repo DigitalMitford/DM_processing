@@ -107,6 +107,7 @@
                   <death when="1893-10-07"/>
                   <note resp="#lmw">Spouse of <persName ref="#Bennoch_Fr">Francis Bennoch</persName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1855">1855</date>. More research needed.
                   </note>
+                  <note><ref target="http://viaf.org/viaf/72955809"/></note>
                   <note><ref target="https://www.geni.com/people/Margaret-Bennoch/6000000018171564723"/></note>
                </person>
                
@@ -176,7 +177,8 @@
                   <occupation>publisher</occupation>
                   <occupation>bookseller</occupation>
                    <note resp="#lmw #bas">Publisher, bookseller, and anonymous author of children's fiction. Partner of <persName>Charles Tilt</persName> <date from="1840" to="1843">from 1840 to 1843</date> before buying the firm for himself. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1837">1837</date>. Source: WorldCat.</note>
-                  <note><ref target="http://viaf.org/viaf/22011623"/></note><note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/47444?docPos=2"/></note>
+                  <note><ref target="http://viaf.org/viaf/22011623"/></note>
+                  <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/47444?docPos=2"/></note>
                </person>
                
                <person xml:id="Burke_J" sex="1"><!-- new -->
@@ -334,6 +336,7 @@
                   <occupation>legal</occupation>
                   <occupation>philanthropist</occupation>
                   <note resp="#lmw">Conservative Member of Parliament, High Sheriff of Berkshire, and Chairman of the Berkshire Quarter Sessions. He changed his name to Richard Fellowes Benyon after inheriting his uncle <persName ref="#Benyon_R">Richard Benyon De Beauvoir</persName>'s estate, including <placeName>Englefield House</placeName> in <date when="1854">1854</date>.</note>
+                  <note><ref target="http://viaf.org/viaf/295534599"/></note>
                </person>
                
                <person xml:id="Hoare_MA" sex="2"><!-- new -->
@@ -627,15 +630,39 @@
                   <occupation>artist</occupation>
                   <occupation>illustrator</occupation>
                   <occupation>politician</occupation>
-                  <note resp="#lmw">Clergyman who was also a poet, translator, naturalist, and botanical illustrator. Member of Parliament for <placeName>Hampshire</placeName> and for <placeName>Cricklade</placeName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1810">1810</date>. Her <title ref="#Poems_1st_ed_MRM">1810 Poems</title> contain a dedicatory <title ref="#WmHerbert_1810">poem</title>to him.</note></person>
+                  <note resp="#lmw">Clergyman who was also a poet, translator, naturalist, and botanical illustrator. Member of Parliament for <placeName>Hampshire</placeName> and for <placeName>Cricklade</placeName>. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1810">1810</date>. Her <title ref="#Poems_1st_ed_MRM">1810 Poems</title> contain a dedicatory <title ref="#WmHerbert_1810">poem</title>to him.</note>
+                  <note><ref target="http://viaf.org/viaf/56760080"/></note></person>
                
  <!--ebb: What we need to do with the following section:
  1) Check if these people are in the existing si at http://digitalmitford.org/si.xml and if so, what kinds of updates are represented here. Distinguish new entries from updates
  2) Tag these entries in XML consistent with the si! 
  -->              
-              <!--
-            Croft, Dowager Lady [mother of sir thomas croft, , son of sir richard croft, nephew of Sophia Baillie/related to Joanna] [Margaret Denman? widow of sir richard]
-            Dakinfield, Henry v. likely henry dukinfield, vicar of st. giles, reading; Rev. Sir Henry Dukinfield, 3rd son of Nathaniel. wife's maiden name Chowne. Existing id.
+               <person xml:id="Croft_DL"><!-- new -->
+                  <persName>
+                     <surname>Croft</surname>
+                     <forename><!-- Currently unkown --></forename>
+                     <roleName>Dowager Lady </roleName>
+                  </persName>
+                  <persName/>
+                  <note resp="#jmh">[mother of sir thomas croft, , son of sir richard croft, nephew of Sophia Baillie/related to Joanna] [Margaret Denman? widow of sir richard]</note>
+               </person>
+               
+               <person xml:id="Dukinfield_Mr" sex="1"><!-- update to xml:id="Dukinfield_Mr"-->
+                  <persName>
+                     <surname>Dukinfield</surname>
+                     <forename>Henry</forename>
+                     <forename>V.</forename>
+                     <roleName>Rev.</roleName>
+                  </persName>
+                  <persName>Henry Duckinfield</persName>
+                  <persName type="alt">Henry V. Dakinfield</persName>
+                  
+                  <note type="bio" resp="#scw">A patient of <persName ref="#Sherwood_Mr">Mr. Sherwood</persName>. May be Henry Duckinfield (note alternate spelling), vicar of <placeName>St. Giles</placeName> from <date from="1814" to="1834">1814-1834</date>, according to a handwritten note at the bottom of the same page on which <persName ref="#Needham_Francis">Needham</persName> has typed <persName ref="#Dukinfield_Mr">Dukinfield</persName>'s name.<!--scw: No other info from Needham.--></note>
+                  <!-- JMH: This update is a work in progress:
+                   Dakinfield, Henry v. likely henry dukinfield, vicar of st. giles, reading; Rev. Sir Henry Dukinfield, 3rd son of Nathaniel. wife's maiden name Chowne. Existing id.-->
+               </person>
+           
+            <!--
             Dawson, Mr. [George P. Dawson?]
          Horne, Richard Henry [Richard Hengist Horne (born Richard Henry Horne) (31 December 1802 – 13 March 1884)[1] 
             Hughes Senior, Jane Elizabeth [Jane Nassau Senior (1828–1877) was Britain's first female civil servant, and a philanthropist. Senior was born Jane Elizabeth Hughes at Uffington on 10 December 1828, daughter of John Hughes and the only sister of the author Thomas Hughes and five other brothers.
@@ -713,7 +740,7 @@
                   <persName type="alt">Kerenhappuck</persName>
                <!-- JMH: Who is this Martha? From what I have seen in the site index the other maids were both named Mary. -->
                   <!-- replacing Martha -->
-                  <note resp="#scw">Known as <rs type="person" ref="#Taylor_K">K.</rs> or "<rs type="person" ref="#Taylor_K">my K.</rs>", she was named Kerenhappuch after the third of Job’s daughters (Job, 42:14). Hired as a servant maid for the Mitford household in <date when="1840">1840</date> until she became embroiled in a scandal with the birth of her illegitimate son, <persName>James Henry Taylor</persName>, in 1844 and was promptly dismissed. Part of the controversy involved rumors that the child was the son of <persName ref="#Mitford_Geo">George Mitford</persName>. Scholars have disagreed about whether this was the case, although <persName ref="#Roberts_Wm">William Roberts</persName> claimed to have heard it from <persName>J.H. Taylor</persName> himself. Regardless, <persName ref="#MRM">Miss Mitford</persName> would take <rs type="person" ref="#Taylor_K">K.</rs> back the following year, and she stayed in service until Miss Mitford’s death in 1855. Sources: <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>. Alexandra Drayton, <title>Unearthing Our Village.</title>
+                  <note resp="#scw #jmh">Known as <rs type="person" ref="#Taylor_K">K.</rs> or "<rs type="person" ref="#Taylor_K">my K.</rs>", she was named Kerenhappuch after the third of Job’s daughters (Job, 42:14). Hired as a servant maid for the Mitford household in <date when="1840">1840</date> until she became embroiled in a scandal with the birth of her illegitimate son, <persName>James Henry Taylor</persName>, in 1844 and was promptly dismissed. Part of the controversy involved rumors that the child was the son of <persName ref="#Mitford_Geo">George Mitford</persName>. Scholars have disagreed about whether this was the case, although <persName ref="#Roberts_Wm">William Roberts</persName> claimed to have heard it from <persName>J.H. Taylor</persName> himself. Regardless, <persName ref="#MRM">Miss Mitford</persName> would take <rs type="person" ref="#Taylor_K">K.</rs> back the following year, and she stayed in service until Miss Mitford’s death in 1855. Sources: <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>. Alexandra Drayton, <title>Unearthing Our Village.</title>
                      <title>
                         <quote>"Capers With K"</quote>
                      </title>. <date when="2013-03-13">13 March 2013</date>. See <ref target="https://unearthingourvillage.wordpress.com/page/4/"/>.</note>
@@ -1053,10 +1080,8 @@
                   <note resp="#lmw">Prolific and celebrated social protest novelist and travel writer. Author of <title level="m">The Domestic Manners of the Americans</title>, as well as anti-slavery and industrial novels. A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1826" to="1852">between 1826 and 1852</date> and also a friend of <persName ref="#Barrett_E">Elizabeth Barrett Browning</persName>.</note>
                   <note><ref target="http://viaf.org/viaf/34551336"/></note>
                </person>
-
-<!-- JMH: This looks like a big problem, why is there a extremely noticable duplicate in this file? -->
                
-               <!-- <person xml:id="Yates_Miss" sex="2">
+               <person xml:id="Yates_Miss" sex="2">
                   <persName>Miss Yates</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1840">1840</date>. Forename unknown. Likely the daughter of <persName ref="#Yates_Mrs">Mrs. Yates</persName>. More research needed.</note></person>
                
@@ -1064,7 +1089,6 @@
                   <persName>Mrs. Yates</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1835">1835</date>. Forename unknown. Likely the mother of <persName ref="#Yates_Miss">Miss Yates</persName>. More research needed.</note>
                </person>
-               -->
                
                <person xml:id="Williams_Miss" sex="2"><!-- new -->
                   <persName>Miss Williams</persName>
