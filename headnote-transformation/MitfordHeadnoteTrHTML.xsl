@@ -18,15 +18,13 @@
   making the lines of text wiggle.)
   
      The attribute  html-version="5.0" seems not to be necessary!
-       
-       
-   
   -->  
     
-    <xsl:strip-space elements="*"/>
+   <!-- <xsl:strip-space elements="*"/>-->
     
    
-    <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
+    <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()"/>
+    <xsl:key name="namedEntityById" match="person | org | bibl | place" use="@xml:id"/>
     <xsl:template match="/">
         <html>
             <head>

@@ -2,9 +2,11 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.w3.org/1999/xhtml"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-    <!--<xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>-->
-    <xsl:output method="xml" encoding="UTF-8" indent="no" doctype-system="about:legacy-compat"/>
+    <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
+   <!--2017-06-26 ebb: Note: this seems to work, too, but indent="no" is maybe not all that pretty to look at in the output. <xsl:output method="xml" encoding="UTF-8" indent="no" doctype-system="about:legacy-compat"/>-->
     <!--<xsl:strip-space elements="*"/>-->
+      
+      
       
     <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
