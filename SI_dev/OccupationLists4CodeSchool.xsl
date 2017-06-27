@@ -31,9 +31,9 @@
                 </xsl:for-each>
                 </ol>
                 <hr/>
-                <!--RJP:2017-06-27: Uncomment this line of code and adjust accordingly to search back up the tree for xml:ids of certain occupations of interest. Currently this is matching on people with more than one whitespace --><!--<xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation[matches(.,'\s{2,}')])">-->
+                <!--RJP:2017-06-27: Uncomment this line of code and adjust accordingly to search back up the tree for xml:ids of certain occupations of interest. Currently this is matching on people with more than one whitespace --><!--<xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation[matches(.,'\s{2,}')])">
                     <p><xsl:value-of select="$values[.=current()]/parent::*/@xml:id"/></p>
-                <!--</xsl:for-each>-->
+                </xsl:for-each>-->
                 <hr/>
                 <h1>SECTION TWO - MISSING/NO OCCUPATION ELEMENT</h1>
                 <h2>(Taken from div type="historical_people" ONLY)</h2>
