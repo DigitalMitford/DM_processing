@@ -14,27 +14,27 @@
                 <h2>Distinct Occupations: Historical People/Organizations ONLY</h2>
                 <h3>Number of hits: <xsl:value-of select="count(distinct-values(//div[@type='historical_people']//occupation))"></xsl:value-of></h3>
                 <h2>Alphabetically Sorted</h2>
-                <xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation)">
+                <ul><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation)">
                     <xsl:sort order="ascending"/>
-                    <li><xsl:value-of select="current()"/></li>     
-                </xsl:for-each>
+                    <li><xsl:value-of select="normalize-space(current())"/></li>     
+                </xsl:for-each></ul>
                 <hr/>
                 <h2>Totals per Value</h2>
-                <xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation)">
-                    <xsl:sort data-type="number"/>
-                    <li><xsl:value-of select="current()"/></li>     
-                </xsl:for-each>
+                <ul><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation)">
+                    <xsl:sort select="count(current())" order="descending"/>
+                    <li><xsl:value-of select="normalize-space(current())"/></li>     
+                </xsl:for-each></ul>
                 <hr/>
                 <hr/>
-                <h1>SECTION TWO - MIISING/NO OCCUPATION ELEMENT</h1>
+                <h1>SECTION TWO - MISSING/NO OCCUPATION ELEMENT</h1>
                 <h2>(Taken from div type="historical_people" ONLY)</h2>
                 <h2>The org elements DO NOT CONTAIN an occupation element.</h2>
                 <hr/>
                 <h2>Person Elements With No Occupation Element<br/>(Listed by xml:id)</h2>
                 <h3>Number of hits: <xsl:value-of select="count(//listPerson[@sortKey='histPersons']//person[not(occupation)])"></xsl:value-of></h3>
-                <xsl:for-each select="//listPerson[@sortKey='histPersons']//person[not(occupation)]">
+                <ul><xsl:for-each select="//listPerson[@sortKey='histPersons']//person[not(occupation)]">
                     <li><xsl:value-of select="current()/@xml:id"/></li>
-                </xsl:for-each>
+                </xsl:for-each></ul>
             </body>
         </html>
     </xsl:template>
