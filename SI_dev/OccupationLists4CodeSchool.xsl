@@ -14,15 +14,16 @@
                 <h2>Distinct Occupations: Historical People/Organizations ONLY</h2>
                 <h3>Number of hits: <xsl:value-of select="count(distinct-values(//div[@type='historical_people']//occupation))"></xsl:value-of></h3>
                 <h2>Alphabetically Sorted</h2>
-                <ul><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation)">
-                    <xsl:sort order="ascending"/>
-                    <li><xsl:value-of select="normalize-space(current())"/></li>     
+                <ul><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation[normalize-space()])">
+                    <xsl:sort order="ascending" case-order="lower-first"/>
+                    <li><xsl:value-of select="current()"/></li>     
                 </xsl:for-each></ul>
                 <hr/>
                 <h2>Totals per Value</h2>
-                <ul><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation)">
-                    <xsl:sort select="count(current())" order="descending"/>
-                    <li><xsl:value-of select="normalize-space(current())"/></li>     
+                <ul><xsl:for-each select="//div[@type='historical_people']//occupation">
+                    <xsl:sort order="ascending"/>
+                    <xsl:variable name="values" select="distinct-values(current())"/>
+                    <li><xsl:value-of select="$values"/></li>
                 </xsl:for-each></ul>
                 <hr/>
                 <hr/>
