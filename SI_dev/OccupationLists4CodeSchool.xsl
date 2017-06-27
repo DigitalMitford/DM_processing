@@ -14,10 +14,10 @@
                 <h2>Distinct Occupations: Historical People/Organizations ONLY</h2>
                 <h3>Number of hits: <xsl:value-of select="count(distinct-values(//div[@type='historical_people']//occupation))"></xsl:value-of></h3>
                 <h2>Alphabetically Sorted</h2>
-                <ul><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation[normalize-space()])">
+                <ol><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation[normalize-space()])">
                     <xsl:sort order="ascending" case-order="lower-first"/>
-                    <li><xsl:value-of select="current()"/></li>     
-                </xsl:for-each></ul>
+                    <li><xsl:value-of select="normalize-space(current())"/></li>     
+                </xsl:for-each></ol>
                 <hr/>
                 <h2>Totals per Value</h2>
                 <xsl:variable name="values" select="//div[@type='historical_people']//occupation"/>
@@ -39,9 +39,9 @@
                 <hr/>
                 <h2>Person Elements With No Occupation Element<br/>(Listed by xml:id)</h2>
                 <h3>Number of hits: <xsl:value-of select="count(//listPerson[@sortKey='histPersons']//person[not(occupation)])"></xsl:value-of></h3>
-                <ul><xsl:for-each select="//listPerson[@sortKey='histPersons']//person[not(occupation)]">
+                <ol><xsl:for-each select="//listPerson[@sortKey='histPersons']//person[not(occupation)]">
                     <li><xsl:value-of select="current()/@xml:id"/></li>
-                </xsl:for-each></ul>
+                </xsl:for-each></ol>
             </body>
         </html>
     </xsl:template>
