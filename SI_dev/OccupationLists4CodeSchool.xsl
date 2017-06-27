@@ -20,11 +20,17 @@
                 </xsl:for-each></ul>
                 <hr/>
                 <h2>Totals per Value</h2>
-                <ul><xsl:for-each select="//div[@type='historical_people']//occupation">
-                    <xsl:sort order="ascending"/>
-                    <xsl:variable name="values" select="distinct-values(current())"/>
-                    <li><xsl:value-of select="$values"/></li>
-                </xsl:for-each></ul>
+                <xsl:variable name="values" select="//div[@type='historical_people']//occupation"/>
+                <ol><xsl:for-each select="distinct-values(//div[@type='historical_people']//occupation)">
+                    <xsl:sort select="count($values[. = current()])" order="descending"/>
+                    <li><xsl:value-of select="normalize-space(current())">                        
+                    </xsl:value-of>                        
+                        <xsl:text>: </xsl:text>
+                        <xsl:value-of select="count($values[. = current()])"/>
+                        
+                    </li>
+                </xsl:for-each>
+                </ol>
                 <hr/>
                 <hr/>
                 <h1>SECTION TWO - MISSING/NO OCCUPATION ELEMENT</h1>
