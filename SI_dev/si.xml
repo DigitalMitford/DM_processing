@@ -84,7 +84,7 @@
                   <persName>
                      <surname>Drayton</surname>
                      <forename>Alexandra</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Consultant</roleName>
                   </persName>
                   <occupation>
@@ -126,7 +126,7 @@
                      <surname>Gates</surname>
                      <forename>Amy</forename>
                      <forename>L.</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Editor</roleName>
                   </persName>
                   <occupation>Assistant Professor of English <affiliation>Missouri Southern State
@@ -159,7 +159,7 @@
                      Delta, and she is an active participant in Habitat for Humanity on her campus. She is currently working as a research assistant on the
                      Digital Mitford Project. </note>
                </person>
-               <person xml:id="cfh">
+               <!-- ebb: 2017-07-06 removing because this person hasn't really done anything on the project. <person xml:id="cfh">
                   <persName>
                      <surname>Hunsinger</surname>
                      <forename>Courtney</forename>
@@ -169,7 +169,7 @@
                   <occupation>
                      <affiliation>University of Pittsburgh at Johnstown</affiliation>
                   </occupation>
-               </person>
+               </person>-->
                <person xml:id="cjb"><!--ebb: note: This is just a placeholder entry until Carol sends hers in with preferred xml:id.-->
                   <persName>
                      <surname>Bolton</surname>
@@ -293,7 +293,7 @@
                   <occupation>Director, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref> and Associate Professor of English, <affiliation>University of Pittsburgh
                         at Greensburg</affiliation>
                   </occupation>
-                  <note type="bio">Elisa Beshero-Bondar organized the Digital Mitford project in the spring of 2013. She has written and maintains the project's adapation of the TEI, and she manages the coding and programming involved in storing, publishing, and sharing the project's editions and prosopography data. With Gregory Bondar, she has worked on photographing Mitford's manuscripts at the Reading Central Library and the John Rylands Library, and she is involved in editing letters and plays, and in training editors and assistants in TEI XML and related coding and programming for the project. She directs the Digital Mitford Coding School.  Dr. Beshero-Bondar researches British Romanticism in poetry and drama from the 1790s - 1830s. Her book about women Romantic poets, <title level="m">Women, Epic, and Transition in British Romanticism</title>, was published by the University of Delaware Press in 2011. Her published articles in <title level="j">ELH</title>, <title level="j">Genre</title>, <title level="j">Philological Quarterly</title>, and <title level="j">The Wordsworth Circle</title> investigate the poetry of Robert Southey, Mary Russell Mitford, and Lord Byron in context with 18th- and 19th-century views of revolution, world empires, natural sciences, and theater productions. An active member of the Text Encoding Initiative (TEI), she was elected to serve on from 2016 to 2017 on the <ref target="http://www.tei-c.org/Activities/Council/">TEI Technical Council</ref>, an eleven-member international committee that supervises amendments to the TEI Guidelines.</note>
+                  <note type="bio">Elisa Beshero-Bondar organized the Digital Mitford project in the spring of 2013. She has written and maintains the project's adapation of the TEI, and she manages the coding and programming involved in storing, publishing, and sharing the project's editions and prosopography data. With Gregory Bondar, she has worked on photographing Mitford's manuscripts at the Reading Central Library and the John Rylands Library, and she is involved in editing letters and plays, and in training editors and assistants in TEI XML and related coding and programming for the project at the Digital Mitford Coding School. Dr. Beshero-Bondar researches British Romanticism in poetry and drama from the 1790s - 1830s. Her book about women Romantic poets, <title level="m">Women, Epic, and Transition in British Romanticism</title>, was published by the University of Delaware Press in 2011. Her published articles in <title level="j">ELH</title>, <title level="j">Genre</title>, <title level="j">Philological Quarterly</title>, and <title level="j">The Wordsworth Circle</title> investigate the poetry of Robert Southey, Mary Russell Mitford, and Lord Byron in context with 18th- and 19th-century views of revolution, world empires, natural sciences, and theater productions. An active member of the Text Encoding Initiative (TEI), she was elected to serve on from 2016 to 2017 on the <ref target="http://www.tei-c.org/Activities/Council/">TEI Technical Council</ref>, an eleven-member international committee that supervises amendments to the TEI Guidelines. Dr. Beshero-Bondar is Associate Professor of English and Director of the <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref> at Pitt-Greensburg, where she helps coordinate a <ref target="http://greensburg.pitt.edu/academics/info/digital-studies">Digital Studies certificate program</ref> for undergraduates. </note>
                </person>
                <person xml:id="efp">
                   <persName>
@@ -311,8 +311,8 @@
                   <persName>
                      <surname>Raisanen</surname>
                      <forename>Elizabeth</forename>
-                     <roleName>Ph.D.</roleName>
-                     <roleName type="sectionEditor">Drama and Poetry</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
+                     <roleName type="sectionEditor">Drama</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
@@ -342,7 +342,7 @@
                   <persName>
                      <surname>Hood</surname>
                      <forename>Eric</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
@@ -407,7 +407,7 @@
                   <persName>
                      <surname>Rovira</surname>
                      <forename>James</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Editor</roleName>
                      <ptr target="http://www.jamesrovira.com"/>
                   </persName>
@@ -464,7 +464,8 @@
                   <persName>
                      <surname>Donovan-Condron</surname>
                      <forename>Kellie</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
+                     <roleName type="sectionEditor">Poetry</roleName>
                      <roleName>Founding Editor</roleName>
                      <ptr target="http://www.babson.edu/academics/faculty/profiles/pages/donovan-kellie.aspx"/>
                   </persName>
@@ -744,7 +745,7 @@
                   <persName>
                      <surname>Triplette</surname>
                      <forename>Stacey</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Consultant</roleName>
                   </persName>
                   <occupation>Assistant Professor of Spanish and French <affiliation>University of

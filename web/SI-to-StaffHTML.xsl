@@ -55,17 +55,18 @@
                             </xsl:for-each>
                             <h3>Section Editors</h3>
                             <xsl:for-each select="//listPerson[@sortKey='Mitford_Team']/person/descendant::roleName[@type='sectionEditor']">
+                                <xsl:sort select="current()"/>
                                 <h4><xsl:value-of select="current()"/></h4>
                                 <xsl:apply-templates select="current()/ancestor::person"/>
                             </xsl:for-each>
                             
                         <h3>Editors:</h3>
-                            <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[descendant::roleName[1][not(@type='lead') and not(@type='sectionEditor')]][descendant::roleName[position() lt 3][not(@type='sectionEditor')]][descendant::roleName[matches(., 'Editor') and not(matches(., 'Consult'))]]">
-                                <xsl:sort select=".//surname"/>
+                            <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[(descendant::roleName[not(@type='grad')])[1][not(@type='lead') and not(@type='sectionEditor')]][descendant::roleName[position() lt 3][not(@type='sectionEditor')]][descendant::roleName[matches(., 'Editor') and not(matches(., 'Consult'))]]">
+                                <xsl:sort select="descendant::surname"/>
                             </xsl:apply-templates>   
 
                             <h3>Consulting Editors: Data Visualization Group</h3>
-                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[matches(., 'Data')]]">
+                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[descendant::roleName[matches(., 'Data')]]">
                                     <xsl:sort select=".//surname"/>
                                 </xsl:apply-templates>  
                                 
@@ -75,8 +76,8 @@
                             <h3>Student Assistants</h3>
                            
                                 
-                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[matches(., 'Assistant')]]">
-                                    <xsl:sort select=".//surname"/>
+                                <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[descendant::roleName[matches(., 'Assistant')]]">
+                                    <xsl:sort select="descendant::surname"/>
                                 </xsl:apply-templates>  
                                 
                                 
@@ -89,18 +90,19 @@
                                 
                             
                         <h3>Consultants</h3>
+                            <xsl:text>Thanks to the following scholars who have each played some small but significant part in the project: </xsl:text>
                             
                                 <xsl:variable name="consultants" select="//listPerson[@sortKey='Mitford_Team']/person[.//roleName[not(matches(., 'Data'))][matches(., 'Consult')]]"/>
                                     <xsl:for-each select="$consultants">
                                         <xsl:sort select="descendant::surname[1]"/>
-                                        <xsl:choose><xsl:when test="not(position() = last())"><xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
+                                        <xsl:choose><xsl:when test="not(position() = last())"><xsl:value-of select="concat(string-join(descendant::forename, ' '), ' ', descendant::surname[1])"/>
                                             <xsl:text>, </xsl:text></xsl:when>
                                             <xsl:otherwise><xsl:text>and </xsl:text>
                                                 <xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
                                             </xsl:otherwise>
                                         </xsl:choose>                                
                                     </xsl:for-each>
- 
+                            <xsl:text>. </xsl:text>
                             
                             <h3>Past student assistants</h3>
                             <xsl:variable name="assistantsPast" select="//listPerson[@sortKey='Past_Assistants']/person[.//roleName[matches(., 'Assistant')]]"/>
@@ -110,7 +112,7 @@
                             <xsl:choose><xsl:when test="not(position() = last())"><xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
                             <xsl:text>, </xsl:text></xsl:when>
                             <xsl:otherwise><xsl:text>and </xsl:text>
-                                <xsl:value-of select="concat(.//forename[1], ' ', .//surname[1])"/>
+                                <xsl:value-of select="concat(string-join(descendant::forename), ' ', .//surname[1])"/>
                             </xsl:otherwise>
                             </xsl:choose>
                             
@@ -140,7 +142,7 @@
             </xsl:otherwise>
         </xsl:choose>
             <xsl:text>, </xsl:text>
-            <xsl:apply-templates select="string-join(.//affiliation, ', ')"/>
+            <xsl:apply-templates select="string-join(descendant::affiliation, ', ')"/>
                 <xsl:text>, </xsl:text>
                 <xsl:value-of select="persName/roleName[matches(., 'Found')]"/>
 
@@ -169,7 +171,7 @@
          </xsl:otherwise>
          </xsl:choose>
              <xsl:text>, </xsl:text>
-           <xsl:apply-templates select="string-join(.//affiliation, ', ')"/>
+           <xsl:apply-templates select="string-join(descendant::affiliation, ', ')"/>
      
      <xsl:if test="persName/roleName[matches(., 'Found')] | persName/roleName[@type]">
          <xsl:text>, </xsl:text>
