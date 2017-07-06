@@ -35,12 +35,12 @@ border-radius: 5px;
    right:1%
   }
    
- h1 {
+/* h1 {
 color:#A04747;
 letter-spacing:3px;
 display:block;
 text-align:center;
-font-size:38px}
+font-size:38px}*/
 /*h2 {color:#00005C; font-size:2em; padding:0; display:block; text-align:center; 
 }*/
 /*h2 {color:#330000; display:block; font-size: 1.5em; text-align:left}
@@ -50,9 +50,9 @@ h3 {color:#A04747; display:block; text-align:left; font-size:1.1em; margin-right
 
    
 h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
-
-h3 {color:#330000; display:block; font-size: 1.1em; text-align:left}
-
+h2 {color:#330000; display:block; font-size: 1.3em; text-align:left}
+h3 {color:#A04747; display:block; font-size: 1.2em; text-align:left}
+h4 {color:#330000; display:inline; font-size: 1em; text-align:left; line-height:1.5em}
 div.graph {width: 100%}
 
 div.graph img {width:100%}
@@ -95,8 +95,7 @@ font-size: 1.02em;
 }
 span.arrow {display:inline; color: #2929A3; font-size:1.2em;}
 
-span.entry span.more{font-size:.8em;
-
+span.more{font-size:.8em;
 margin-left: 30px;
 display:block;
 display:none;

@@ -102,7 +102,7 @@
                   <persName>
                      <surname>Algee-Hewitt</surname>
                      <forename>Mark</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                      <roleName>Advisory Board</roleName>
                      <ptr target="https://english.stanford.edu/people/mark-algee-hewitt"/>
                   </persName>
@@ -186,7 +186,7 @@
                      <surname>Parisian</surname>
                      <forename>Catherine</forename>
                      <forename>M.</forename>
-                     <roleName>Editor</roleName>
+                     <roleName>Consultant</roleName>
                   </persName>
                   <occupation>
                      <affiliation>University of North Carolina Pembroke</affiliation>
@@ -220,7 +220,7 @@
                   <persName>
                      <surname>Robinson</surname>
                      <forename>David</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant</roleName>
                   </persName>
                   <occupation>
                      <affiliation>Grinnell College: Information Technology</affiliation>
@@ -231,7 +231,7 @@
                      <surname>Birnbaum</surname>
                      <forename>David</forename>
                      <forename>J.</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                      <roleName>Advisory Board</roleName>
                      <ptr target="http://obdurodon.org"/>
                   </persName>
@@ -286,14 +286,14 @@
                   <persName>
                      <surname>Beshero-Bondar</surname>
                      <forename>Elisa</forename>
-                     <roleName>Principal Editor</roleName>
+                     <roleName type="lead">Principal Investigator and Technical Coordinator</roleName>
                      <roleName>Founding Editor</roleName>
-                     <ptr target="http://www.pitt.edu/~ebb8/"/>
+                     <!--<ptr target="http://www.pitt.edu/~ebb8/"/>-->
                   </persName>
-                  <occupation>Associate Professor of English <affiliation>University of Pittsburgh
+                  <occupation>Director, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref> and Associate Professor of English, <affiliation>University of Pittsburgh
                         at Greensburg</affiliation>
                   </occupation>
-                  <note type="bio"/>
+                  <note type="bio">Elisa Beshero-Bondar organized the Digital Mitford project in the spring of 2013. She has written and maintains the project's adapation of the TEI, and she manages the coding and programming involved in storing, publishing, and sharing the project's editions and prosopography data. With Gregory Bondar, she has worked on photographing Mitford's manuscripts at the Reading Central Library and the John Rylands Library, and she is involved in editing letters and plays, and in training editors and assistants in TEI XML and related coding and programming for the project. She directs the Digital Mitford Coding School.  Dr. Beshero-Bondar researches British Romanticism in poetry and drama from the 1790s - 1830s. Her book about women Romantic poets, <title level="m">Women, Epic, and Transition in British Romanticism</title>, was published by the University of Delaware Press in 2011. Her published articles in <title level="j">ELH</title>, <title level="j">Genre</title>, <title level="j">Philological Quarterly</title>, and <title level="j">The Wordsworth Circle</title> investigate the poetry of Robert Southey, Mary Russell Mitford, and Lord Byron in context with 18th- and 19th-century views of revolution, world empires, natural sciences, and theater productions. An active member of the Text Encoding Initiative (TEI), she was elected to serve on from 2016 to 2017 on the <ref target="http://www.tei-c.org/Activities/Council/">TEI Technical Council</ref>, an eleven-member international committee that supervises amendments to the TEI Guidelines.</note>
                </person>
                <person xml:id="efp">
                   <persName>
@@ -312,12 +312,12 @@
                      <surname>Raisanen</surname>
                      <forename>Elizabeth</forename>
                      <roleName>Ph.D.</roleName>
+                     <roleName type="sectionEditor">Drama and Poetry</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
                      <affiliation>University of Oregon</affiliation>
                   </occupation>
-                  <note type="bio">
                      <note type="bio">
                         <persName ref="#err">Elizabeth Raisanen</persName> is the Director of
                         Undergraduate Advising and an Instructor of Literature in the Robert D.
@@ -334,9 +334,9 @@
                            <title>Women's Studies</title>
                         </bibl> and <bibl>an edited collection on Mary Wollstonecraft</bibl>.
                         Elizabeth has also taught undergraduate students how to transcribe, code,
-                        and conduct research on a collection of Mitford's letters stored at <orgName ref="#ReadingCL">Reading Central Library</orgName>.<p/>
+                        and conduct research on a collection of Mitford's letters stored at <orgName ref="#ReadingCL">Reading Central Library</orgName>.
                      </note>
-                  </note>
+                  
                </person>
                <person xml:id="esh">
                   <persName>
@@ -370,6 +370,7 @@
                   <persName>
                      <surname>Bondar</surname>
                      <forename>Gregory</forename>
+                     <roleName type="sectionEditor">Manuscript Archaeology</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
@@ -378,7 +379,7 @@
                   </occupation>
                   <note type="bio">Greg Bondar has photographed over 300 of Mitford's letters in the
                      Reading Central Library, and another 150 letters in the John Rylands Library in
-                     Manchester. He maintains the Digital Mitford project's Excel database
+                     Manchester. He maintains the Digital Mitford project's database
                      documenting over 1000 individual letters and manuscripts. He teaches courses in
                      Anthropology and Archaeology for Penn State Greater Allegheny and the
                      University of Pittsburgh at Greensburg campuses, and he co-teaches
@@ -481,8 +482,9 @@
                      <surname>Wilson</surname>
                      <forename>Lisa</forename>
                      <forename>M.</forename>
+                     <roleName type="lead">Managing Editor</roleName>
+                     <roleName type="sectionEditor">Bibliography and Correspondence</roleName>
                      <roleName>Founding Editor</roleName>
-                     <roleName>Bibliographer</roleName>
                   </persName>
                   <occupation>
                      <affiliation>State University of New York at Potsdam</affiliation>
@@ -506,7 +508,7 @@
                      reappearances in collections and periodicals. A Founding Editor of Digital
                      Mitford, she and her team of student research assistants have been at work
                      since 2013 on transcribing, coding, and researching Mitford’s letters from 1819
-                     to the early 1820s. <p/>
+                     to the early 1820s. 
                   </note>
                </person>
                <person xml:id="mah">
@@ -561,8 +563,7 @@
                      <surname>Zimmer</surname>
                      <forename>Mary</forename>
                      <forename>Erica</forename>
-                     <roleName>Editor</roleName>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                   </persName>
                   <occupation>
                      <affiliation>Editorial Institute, Boston University</affiliation>
@@ -586,7 +587,7 @@
                   <note type="bio">Melissa Klamer is a Ph.D. student in English at Michigan State
                      University, and is currently a Research Assistant working with <ref target="http://www2.matrix.msu.edu/">MATRIX: Center for the Digital
                         Humanities and Social Sciences</ref>. Her research focuses on Victorian
-                     women's life writing, particularly letters and diaries. <p/>
+                     women's life writing, particularly letters and diaries. 
                   </note>
                </person>
                <person xml:id="mns">
@@ -644,7 +645,7 @@
                      completing a minor in Women's and Gender Studies. She has worked as a Digital
                      Mitford Research Assistant since Spring 2015. In fall 2015, she wrote a book
                      history of Mitford's 1824 Our Village as a final project for Dr. Wilson's
-                     undergraduate course in Victorian literature. <p/>
+                     undergraduate course in Victorian literature. 
                   </note>
                </person>
                <person xml:id="pmd">
@@ -663,13 +664,14 @@
                      <surname>Parker</surname>
                      <forename>Rebecca</forename>
                      <forename>Jeanne</forename>
-                     <roleName>Research Assistant</roleName>
+                     <roleName>Editor</roleName>
                   </persName>
-                  <occupation>staff assistant, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref>
+                  <occupation><affiliation>Loyola University Chicago</affiliation></occupation>
+                  <!--<occupation>staff assistant, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref>
                      <affiliation>University of Pittsburgh at Greensburg</affiliation>
-                  </occupation>
-                  <note type="bio">Rebecca Parker graduated with a B.A. in English Literature and
-                     Social Sciences from the <ref target="http://www.greensburg.pitt.edu/">University of Pittsburgh at Greensburg</ref>, where she works as an
+                  </occupation>-->
+                  <note type="bio">Rebecca Parker is pursuing an M.A. in Digital Humanities at Loyola University in Chicago. She graduated with a B.A. in English Literature and
+                     Social Sciences from the <ref target="http://www.greensburg.pitt.edu/">University of Pittsburgh at Greensburg</ref>, where she has worked as an
                      assistant for the <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref>. She is currently working on a digital
                      archive of her own. Her project, <ref target="http://nelson.newtfire.org/">The
                         Restoration of Nell Nelson</ref>, started in spring 2014 as research for her
@@ -678,8 +680,8 @@
                      of industrialization in Chicago at the turn of the twentieth century. Parker's
                      interest in Digital Humanities stemmed from her involvement on the Digital
                      Mitford Project working as <ref target="http://www.pitt.edu/~ebb8/">Dr.
-                        Beshero-Bondar</ref>'s Green Scholar. Rebecca is an active member of <ref target="http://www.english.org/sigmatd/">Sigma Tau Delta</ref> and <ref target="http://www.phikappaphi.org/">Phi Kappa Phi</ref> on her
-                     campus.</note>
+                        Beshero-Bondar</ref>'s Green Scholar. She is helping to prepare a digital edition of Mary Russell Mitford's journal of 1819-1823.<!--Rebecca is an active member of <ref target="http://www.english.org/sigmatd/">Sigma Tau Delta</ref> and <ref target="http://www.phikappaphi.org/">Phi Kappa Phi</ref> on her
+                     campus.--></note>
                </person>
                <person xml:id="rnes">
                   <persName>
@@ -709,6 +711,7 @@
                   <persName>
                      <surname>Webb</surname>
                      <forename>Samantha</forename>
+                     <roleName type="sectionEditor">Prose Fiction</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
@@ -765,7 +768,7 @@
                   <persName>
                      <surname>Lombardi</surname>
                      <forename>Thomas</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                      <ptr target="http://csis.pace.edu/~lombardi/"/>
                   </persName>
                   <occupation>
@@ -959,7 +962,7 @@
                   <note type="bio">Ashante Parker graduated in December 2015 with a B.A., majoring
                      in both in Literature/Writing and in Communication from the State University of
                      New York at Potsdam. She began work as a Digital Mitford Research Assistant in
-                     Fall 2015, tasked with researching and developing Site Index entries. <p/>
+                     Fall 2015, tasked with researching and developing Site Index entries. 
                   </note>
                </person>
                <person xml:id="apc">
@@ -1022,7 +1025,7 @@
                      <affiliation>UCLA</affiliation>
                   </occupation>
                   <note type="bio">In 2014, Chi-Ya Huang was studying psychology in UCLA. She also
-                     worked on Digital Mitford in 2014.<p/>
+                     worked on Digital Mitford in 2014.
                   </note>
                </person>
                <person xml:id="ejb">
@@ -1054,7 +1057,7 @@
                      She has been a poetry editor for Westwind, UCLA's journal of the literary arts,
                      and currently publishes a zine with LA-based artists' collective which she
                      co-founded, Nothing New Publications. She worked on Digital Mitford in
-                     2014.<p/>
+                     2014.
                   </note>
                </person>
                <person xml:id="hbl">
@@ -1069,7 +1072,7 @@
                   <note type="bio">In 2014, Hailey Lown was a third year transfer student at UCLA.
                      She is originally from the state of Maryland. Hailey is an English major,
                      concentrating on British literature and the classics. She worked on Digital
-                     Mitford in 2014.<p/>
+                     Mitford in 2014.
                   </note>
                </person>
                <person xml:id="hl">
@@ -1153,7 +1156,7 @@
                      Development Studies major at UCLA. She is originally from New Delhi, India,
                      where she was born and completed her high school education. After graduation
                      she hopes to work with the UN and start her own nonprofit in India someday. She
-                     worked on Digital Mitford in 2014.<p/>
+                     worked on Digital Mitford in 2014.
                   </note>
                </person>
                <person xml:id="msp">
@@ -1167,7 +1170,7 @@
                   </occupation>
                   <note type="bio">Margo Paine graduated in May 2015 from the State University of
                      New York at Potsdam with her B.A. in Literature/Writing and Secondary English
-                     Education. She worked with the Digital Mitford Project during Fall 2014.<p/>
+                     Education. She worked with the Digital Mitford Project during Fall 2014.
                   </note>
                </person>
                <person xml:id="ncl">
@@ -1189,7 +1192,7 @@
                      honors thesis in English analyzed gendered cultural responses to professional
                      women's visible body tattoos. She worked on Digital Mitford from Spring 2014 to
                      Spring 2015. She is from Syracuse, New York, and began graduate study in
-                     library and information science at Syracuse University in Fall 2015. <p/>
+                     library and information science at Syracuse University in Fall 2015. 
                   </note>
                </person>
                <person xml:id="nlh">
@@ -1204,7 +1207,7 @@
                   <note type="bio">Nathan Hebert graduated in December 2015 with a B.A., majoring in
                      both in Literature/Writing and in Communication from the State University of
                      New York at Potsdam. He worked as a Digital Mitford Research Assistant in Fall
-                     2015, tasked with researching and developing Site Index entries. <p/>
+                     2015, tasked with researching and developing Site Index entries. 
                   </note>
                </person>
                <person xml:id="ps">
@@ -1219,7 +1222,7 @@
                   <note type="bio">Perdita Sasu graduated in 2016 with a B.A. in Communication from
                      the State University of New York at Potsdam. She began work as a Digital
                      Mitford Research Assistant in Fall 2015, tasked with documenting the physical
-                     copies of Mitford's works in Dr. Wilson's collection. <p/>
+                     copies of Mitford's works in Dr. Wilson's collection. 
                   </note>
                </person>
                <person xml:id="rct">
@@ -1236,7 +1239,7 @@
                      Interested in archival work, she was drawn to the Digital Mitford project in
                      order to learn more about the editing and coding process. After graduation,
                      Rebecca hopes to go into the editing and publishing business for book and
-                     magazine companies. She worked on Digital Mitford in 2014.<p/>
+                     magazine companies. She worked on Digital Mitford in 2014.
                   </note>
                </person>
                <person xml:id="tlh">
@@ -1275,7 +1278,7 @@
                      late Victorian and Modernist periods. She believes in a holistic approach to
                      literature where one combines an understanding of context and content to inform
                      critical analysis. She is also commited to the provision and accessiblity of
-                     scholarly research. She worked on Digital Mitford in 2014. <p/>
+                     scholarly research. She worked on Digital Mitford in 2014. 
                   </note>
                </person>
                <person xml:id="wnb">
@@ -1291,7 +1294,7 @@
                   <note type="bio">William Barr is a transfer student who expects to graduate in
                      2016 with a B.A. in English Literature, History, and Sociology from the State
                      University of New York at Potsdam. He worked on Digital Mitford in Fall 2014.
-                     <p/>
+                     
                   </note>
                </person>
                <person xml:id="ws">
@@ -1307,7 +1310,7 @@
                      Literature/Writing from the State University of New York at Potsdam. She is
                      from Valley Stream, New York, and plans to begin graduate study in the teaching
                      of English as a second language. She worked as a Digital Mitford Research
-                     Assistant in Spring and Summer 2015. <p/>
+                     Assistant in Spring and Summer 2015. 
                   </note>
                </person>
                <person xml:id="xjw">
@@ -1321,7 +1324,7 @@
                   </occupation>
                   <note type="bio">Robin Xiong is Xiong Junwen from China. In 2014, she was an
                      undergraduate student in UCLA majoring in Pre-Asian Studies. Robin loves movies
-                     and photography. She worked on Digital Mitford in 2014.<p/>
+                     and photography. She worked on Digital Mitford in 2014.
                   </note>
                </person>
             </listPerson>
