@@ -1,0 +1,24 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/demo/examples/web" version="1" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.974-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="index.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:54.788-04:00" modified="2015-03-27T19:30:54.788-04:00" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="shakespeare-ajax.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:54.79-04:00" modified="2015-03-27T19:30:54.79-04:00" filename="shakespeare-ajax.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="shakespeare.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:54.794-04:00" modified="2015-03-27T19:30:54.794-04:00" filename="shakespeare.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="guess.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:54.795-04:00" modified="2015-03-27T19:30:54.795-04:00" filename="guess.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="guess.html" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.974-04:00" modified="2015-03-27T19:30:52.974-04:00" filename="guess.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="guess-templates.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.979-04:00" modified="2015-03-27T19:30:52.979-04:00" filename="guess-templates.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="shakespeare.xql" skip="no" owner="demo" group="demo" mode="775" created="2015-03-27T19:30:52.991-04:00" modified="2015-03-27T19:30:52.991-04:00" filename="shakespeare.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

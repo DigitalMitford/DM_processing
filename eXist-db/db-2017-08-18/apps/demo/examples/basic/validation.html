@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content"><h1>Validation</h1><section><h3>Programmatically validate an XML document</h3><pre class="demo:display-source">xquery version "3.0" encoding "UTF-8";
+
+let $schema := doc('@@path/examples/basic/DemoValidation.xsd')
+let $xml-valid := doc('@@path/examples/basic/DemoValidation-Valid.xml')
+let $xml-invalid := doc('@@path/examples/basic/DemoValidation-Invalid.xml')
+return
+    &lt;DemoValidation timestamp="{current-dateTime()}" schema="{document-uri($schema)}"&gt;
+        &lt;Validate uri="{document-uri($xml-valid)}"&gt;
+        {
+            validation:validate-report($xml-valid, $schema)
+        }
+        &lt;/Validate&gt;
+        &lt;Validate uri="{document-uri($xml-invalid)}"&gt;
+        {
+            validation:validate-report($xml-invalid, $schema)
+        }
+        &lt;/Validate&gt;
+    &lt;/DemoValidation&gt;</pre></section></div>

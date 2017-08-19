@@ -1,0 +1,175 @@
+@import url('$shared/resources/css/exist-2.2.css');
+
+#fun-query-form {
+    font-size: 14px;
+    margin: 10px 15px 30px 15px;
+}
+
+#f-load-indicator {
+    margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+    #main>h1, #main>p, #main>form {
+        padding: 0 8px;
+    }
+    
+    #f-load-indicator {
+        display: block;
+        margin: 8px 0;
+    }
+    
+    #modules table td:nth-child(2), #modules table th:nth-child(2) {
+        display: none;
+    }
+}
+
+#fun-query-form input, #fun-query-form select, #fun-query-form button, #fun-query-form a.btn {
+    font-size: 14px;
+}
+
+select[name='module'] {
+    width:50em;
+}
+
+.messages {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.module {
+    margin-bottom: 2em;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.module .module-head {
+    padding: 4px 0;
+    background-color: #E0E0E0;
+}
+
+.module .module-head-inner {
+    color: #707070;
+    min-height: 48px;
+}
+
+.module-info-icon {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.module-head .glyphicon-info-sign {
+    font-size: 2em;
+}
+
+.module-head p {
+    font-size: 1.33em;
+    line-height: 1.5em;
+}
+
+.module-head table {
+}
+
+.module-head td {
+	padding-right: 2em;
+}
+
+.module-head td:first-child {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.module-head h3 {
+    border: 0;
+    margin: 1em 0 4px 0;
+    padding: 0;
+}
+
+.module-head h4 {
+    margin: 4px 0 4px 0;
+    word-wrap: break-word;
+}
+
+.function-head h4 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.module .extended {
+    margin: 2em 0;
+}
+
+.extended .signature {
+    margin: 1em 0;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+@media (max-width: 767px) {
+    .function-head h4 {
+        margin-left: 16px;
+    }
+}
+
+.function .signature {
+    font-family: "Ubuntu Mono", "Menlo", "Consolas", monospace;
+    font-size: 1.125em;
+    margin: 8px 16px;
+    padding: 8px 8px;
+    background-color: #ffffff;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+.function .function-detail {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.function .description {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.function .parameters table {
+    width: 100%;
+}
+
+.function .parameters td {
+    padding: 0 0 .85em 0;
+}
+
+.function .parameter-name {
+    width: 150px;
+    padding-right: 1em;
+    vertical-align: top;
+    font-family: "Ubuntu Mono", "Menlo", "Consolas", monospace;
+}
+
+form { margin: 20px 0; }
+form td {
+    padding-right: 8px;
+}
+
+code {
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+.item { 
+    background: #FFFFFF;
+    margin: 8px 0;
+    padding: 8px 8px; 
+    border: 2px solid #FFAD00;
+    border-radius: 15px;
+    moz-border-radius: 15px;
+}
+.itemhead { background: #E0E0E0; padding-left: 8px; }
+.hi { background: #FFED3D; }
+
+.extended-docs {
+    margin: 0 0 16px 0;
+}
