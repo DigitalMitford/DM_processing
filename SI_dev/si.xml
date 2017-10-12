@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2017-03-28T18:37:50.982-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1516. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2017-10-12T17:11:57.406-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1515. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -159,17 +159,6 @@
                      Delta, and she is an active participant in Habitat for Humanity on her campus. She is currently working as a research assistant on the
                      Digital Mitford Project. </note>
                </person>
-               <!-- ebb: 2017-07-06 removing because this person hasn't really done anything on the project. <person xml:id="cfh">
-                  <persName>
-                     <surname>Hunsinger</surname>
-                     <forename>Courtney</forename>
-                     <forename>F.</forename>
-                     <roleName>Consultant</roleName>
-                  </persName>
-                  <occupation>
-                     <affiliation>University of Pittsburgh at Johnstown</affiliation>
-                  </occupation>
-               </person>-->
                <person xml:id="cjb"><!--ebb: note: This is just a placeholder entry until Carol sends hers in with preferred xml:id.-->
                   <persName>
                      <surname>Bolton</surname>
@@ -318,8 +307,8 @@
                   <occupation>
                      <affiliation>University of Oregon</affiliation>
                   </occupation>
-                     <note type="bio">
-                        <persName ref="#err">Elizabeth Raisanen</persName> is the Director of
+                  <note type="bio">
+                     <persName ref="#err">Elizabeth Raisanen</persName> is the Director of
                         Undergraduate Advising and an Instructor of Literature in the Robert D.
                         Clark Honors College at the University of Oregon. A specialist in the women
                         writers of the British Romantic era, Elizabeth's research interests also
@@ -329,14 +318,13 @@
                         Wordsworth Summer Conference, and the British Women Writer's Conference, and
                            <bibl>her article on Mitford's play <title ref="#Rienzi">Rienzi</title>
                            appeared in <title>European Romantic Review</title>in <date when="2011">2011</date>
-                        </bibl>. Other essays on Romantic women writers have appeared (or are
+                     </bibl>. Other essays on Romantic women writers have appeared (or are
                         forthcoming) in <bibl>
-                           <title>Women's Studies</title>
-                        </bibl> and <bibl>an edited collection on Mary Wollstonecraft</bibl>.
+                        <title>Women's Studies</title>
+                     </bibl> and <bibl>an edited collection on Mary Wollstonecraft</bibl>.
                         Elizabeth has also taught undergraduate students how to transcribe, code,
                         and conduct research on a collection of Mitford's letters stored at <orgName ref="#ReadingCL">Reading Central Library</orgName>.
                      </note>
-                  
                </person>
                <person xml:id="esh">
                   <persName>
@@ -656,7 +644,9 @@
                      <forename>Jeanne</forename>
                      <roleName>Editor</roleName>
                   </persName>
-                  <occupation><affiliation>Loyola University Chicago</affiliation></occupation>
+                  <occupation>
+                     <affiliation>Loyola University Chicago</affiliation>
+                  </occupation>
                   <!--<occupation>staff assistant, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref>
                      <affiliation>University of Pittsburgh at Greensburg</affiliation>
                   </occupation>-->
