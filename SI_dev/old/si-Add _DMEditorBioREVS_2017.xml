@@ -58,11 +58,13 @@
    <div type="Mitford_Team"><!--contains Mitford editors as well as archives identifiers. We may want to add a list of all our files from manuscript, with an xml:id for each. More on this as we figure out how!-->
       
       <listPerson sortKey="Mitford_Team">
-         <person xml:id="slc">  <!-- LMW:  Elisa, revised entry. Is this okay, based on what we talked about doing with my returning former students?-->
+         <person xml:id="slc">  <!--- LMW:  Elisa, revised entry. Is this okay, based on what we talked about doing with my returning former students?-->
+            <!--2017-10-15 ebb: ADDED, and discussed process for vetting new Editors: have our previous students come in as "guinea pig" applicants for the Editing Team to review. -->
             <persName>
                <surname>Cantwell</surname>
                <forename>Sara</forename>
-               <roleName>Editor</roleName>
+               <!--INVITE TO BE VETTED <roleName>Editor</roleName>-->
+               <rolename>Consultant</rolename>
             </persName>
             <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and
                Communication, completed 2017. <affiliation>State University of New York,
@@ -73,13 +75,16 @@
                writing of poetry and creative non-fiction. In fall 2015, she began work on an
                M.A. in English and Communication from SUNY Potsdam and joined the Digital
                Mitford project as a Research Assistant. She completed her M.A. thesis in 2017, which included a book history and analysis of the later poetry of Jorie Graham. In Fall 2017, she joins the  Department of English and Communication at SUNY Potsdam as an Adjunct Instructor and continues on Digital Mitford as an Editor. She continues to work on Mitford's 1827 sonnets, her self-representation as a creative writer, and her representation and appropriation in contemporary culture.</note>
-         </person>
+         </person>-->
          
+        
          <person xml:id="hsar"><!--LMW: revised; move from old RA to active-->
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Sarsfield</surname>
                <forename>Heather</forename>
-               <roleName>Editor</roleName>
+              <!--INVITE TO BE VETTED <roleName>Editor</roleName>-->
+               <rolename>Consultant</rolename>
             </persName>
             <occupation> B.A., English Literature, completed 2014<affiliation>State
                University of New York at Potsdam</affiliation></occupation>
@@ -93,11 +98,13 @@
          </person>
          
          <person xml:id="ncl"><!--LMW: revised; move from old RA to active-->
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>LoRusso</surname>
                <forename>Natalie </forename>
                <forename>Claire</forename>
-               <roleName>Editor</roleName>
+               <!--INVITE TO BE VETTED <roleName>Editor</roleName>-->
+               <roleName>Consultant</roleName>
             </persName>
             <occupation>B.A., English: Literature, 2015 <affiliation>State
                University of New York at Potsdam</affiliation>
@@ -113,7 +120,8 @@
             </note>
          </person>
          
-         <person xml:id="jgf"> <!--LMW: NEW-->
+         <person xml:id="jgf">
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Fish</surname>
                <forename>Julie</forename>
@@ -128,6 +136,7 @@
          </person>
          
          <person xml:id="ssc"> <!--LMW: NEW-->
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Courtney</surname>
                <forename>Shawntel</forename>
@@ -142,6 +151,7 @@
          </person>
          
          <person xml:id="cay"> <!--LMW: NEW-->
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Collins</surname>
                <surname>Younes</surname>
@@ -157,6 +167,7 @@
          </person>
          
          <person xml:id="kdc"> <!--LMW:  Revised entry-->
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Donovan-Condron</surname>
                <forename>Kellie</forename>
@@ -172,11 +183,12 @@
          </person>
          
          <person xml:id="rnes"> <!--LMW:  E, revised entry. -->
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Nesvet</surname>
                <forename>Rebecca</forename>
                <roleName>Ph.D.</roleName>
-               <rolename>Assistant Professor of English</rolename>
+               <roleName>Assistant Professor of English</roleName>
                <roleName>Founding Editor</roleName>
             </persName>
             <occupation>
@@ -193,6 +205,7 @@
          </person>
          
          <person xml:id="scw"><!--scw: this is a revised entry for yours truly.-->
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Webb</surname>
                <forename>Samantha</forename>
@@ -208,10 +221,11 @@
          </person>
          
          <person xml:id="tfb">
+            <!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Beck</surname>
                <forename>Temani</forename>
-               <rolename>Research Assistant</rolename>
+               <roleName>Research Assistant</roleName>
             </persName>
             <occupation>
                <affiliation>University of Montevallo</affiliation>
@@ -220,11 +234,12 @@
          </person>
          
          <person xml:id="alw">
+            <!--2017-10-15 ebb: ADDED -->
             <persName>Aymee Lynn Woody
                <surname>Woody</surname>
                <forename>Aymee</forename>
                <forename>Lynn</forename>
-               <rolename>Research Assistant</rolename>
+               <roleName>Research Assistant</roleName>
             </persName>
             <occupation>
                <affiliation>University of Montevallo</affiliation>
@@ -233,6 +248,7 @@
          </person>
          
          <person xml:id="SMP">
+            <!--2017-10-15 ebb: ADDED -->
             <persName>Sara Perry
                <surname>Perry</surname>
                <forename>Sara</forename>
@@ -245,6 +261,7 @@
          </person>
          
          <person xml:id="avg">
+            <!--2017-10-15 ebb: ADDED -->
             <persName>Annie Gill
                <surname>Gill</surname>
                <forename>Annie</forename>
@@ -256,7 +273,7 @@
             <note type="bio">Annie Gill is a Theatre major and English minor at the University of Montevallo. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
          </person>
          
-         <person xml:id="SCR">
+         <person xml:id="SCR"><!--2017-10-15 ebb: ADDED -->
             <persName>Susannah Ritchey
                <surname>Ritchey</surname>
                <forename>Susannah</forename>
@@ -268,7 +285,7 @@
             <note type="bio">Originally from Maylene, Alabama, Susannah Ritchey earned her Bachelor’s degree at the University of Montevallo in May 2017, with a major in English and a minor in History. She plans to attend graduate school to specialize in Restoration literature. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
          </person>
          
-         <person xml:id="sbb">
+         <person xml:id="sbb"><!--2017-10-15 ebb: ADDED -->
             <persName>Sylvan Baker
                <surname>Baker</surname>
                <forename>Sylvan</forename>
@@ -280,7 +297,7 @@
          <note type="bio">Sylvan Baker graduated with a B.A. in English from the University of Montevallo in May 2017, and will be attending the University of Nevada-Reno for graduate school in the fall. Before attending Montevallo, Sylvan spent a year and a half in Ireland with her mom (who thankfully is living back here in the US now), and she gained a lot of cultural knowledge and a love for the Irish countryside.  At UM, she found a love for studying nature and the environment in texts, especially in Romantic texts.  She has thoroughly enjoyed the Lake Poets and Mitford's connections to the natural landscape in "Our Village.” She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
          </person>
          
-         <person xml:id="jap">
+         <person xml:id="jap"><!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Price</surname>
                <forename>Jordan</forename>
@@ -292,7 +309,7 @@
             <note type="bio">Jordan Price earned his Bachelor’s in English at the University of Montevallo in May 2017. He is from Huntsville, Alabama. He worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
          </person>
          
-         <person xml:id="qar">
+         <person xml:id="qar"><!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Reed</surname>
                <forename>Quinton</forename>
@@ -306,7 +323,7 @@
             <note type="bio">Quinton Reed is an alumnus of the University of Montevallo, where he attended from 2013 to 2017. He currently serves as the editor for Gold Orchid Publishing in Ceredigion, Wales, and is a freelance editor and copywriter in Portland, Oregon. His areas of interest include psychoanalytical and disability studies, particularly in postmodern literature, as well as Gothic and dystopian literature. He is also interested in the life sciences, particularly zoology and anatomy, and the significance of animals and illness in literature. He worked on the Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017, and continues to assist the project in a consulting role.</note>
          </person>
          
-         <person xml:id="SMG">
+         <person xml:id="SMG"><!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Garrett</surname>
                <forename>Shekneko</forename>
@@ -318,7 +335,7 @@
             <note type="bio">Shekneko Garrett is pursuing a Master’s degree in Secondary Education in English at the University of Montevallo, after earning her undergraduate degree in English from Talladega College in May 2013. She aspires to become a teacher, and to coach basketball, softball, volleyball, or cheerleading. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
          </person>
          
-         <person xml:id="jb">
+         <person xml:id="jb"><!--2017-10-15 ebb: ADDED -->
             <persName>
                <surname>Bawden</surname>
                <forename>John</forename>

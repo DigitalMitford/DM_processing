@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2017-03-28T18:37:50.982-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1516. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2017-10-15T11:00:33.309-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1527. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -84,7 +84,7 @@
                   <persName>
                      <surname>Drayton</surname>
                      <forename>Alexandra</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Consultant</roleName>
                   </persName>
                   <occupation>
@@ -102,7 +102,7 @@
                   <persName>
                      <surname>Algee-Hewitt</surname>
                      <forename>Mark</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                      <roleName>Advisory Board</roleName>
                      <ptr target="https://english.stanford.edu/people/mark-algee-hewitt"/>
                   </persName>
@@ -126,7 +126,7 @@
                      <surname>Gates</surname>
                      <forename>Amy</forename>
                      <forename>L.</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Editor</roleName>
                   </persName>
                   <occupation>Assistant Professor of English <affiliation>Missouri Southern State
@@ -137,6 +137,29 @@
                      research are centered around eighteenth- and nineteenth-century British
                      literature, with a focus on British Romanticism. For the Digital Mitford
                      project, she works on letters and is the editor of Mitford's play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title>. </note>
+               </person>
+               <person xml:id="alw"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>Aymee Lynn Woody
+                     <surname>Woody</surname>
+                     <forename>Aymee</forename>
+                     <forename>Lynn</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Aymee Lynn Woody received her Bachelor’s in English from the University of Montevallo in 2016. She is currently working towards her Master's degree in Education at Montevallo and is slated to graduate in May of 2018. In her spare time, Aymee enjoys reading, writing, quilting, sewing, and embroidery. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
+               </person>
+               <person xml:id="avg"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>Annie Gill
+                     <surname>Gill</surname>
+                     <forename>Annie</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Annie Gill is a Theatre major and English minor at the University of Montevallo. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
                </person>
                <person xml:id="bas">
                   <persName>
@@ -159,16 +182,19 @@
                      Delta, and she is an active participant in Habitat for Humanity on her campus. She is currently working as a research assistant on the
                      Digital Mitford Project. </note>
                </person>
-               <person xml:id="cfh">
+               <person xml:id="cay">
                   <persName>
-                     <surname>Hunsinger</surname>
+                     <surname>Collins</surname>
+                     <surname>Younes</surname>
                      <forename>Courtney</forename>
-                     <forename>F.</forename>
-                     <roleName>Consultant</roleName>
+                     <roleName>Research Assistant</roleName>
                   </persName>
                   <occupation>
-                     <affiliation>University of Pittsburgh at Johnstown</affiliation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
+                  <note resp="#lmw">Courtney Younes Collins plans to graduate in 2017 with a B.A. in English:
+                     Literature from the State University of New York at Potsdam. She is working as
+                     a Digital Mitford Research Assistant in Fall 2017. She plans to go on to graduate work and teaching in Elementary Education.</note>
                </person>
                <person xml:id="cjb"><!--ebb: note: This is just a placeholder entry until Carol sends hers in with preferred xml:id.-->
                   <persName>
@@ -186,7 +212,7 @@
                      <surname>Parisian</surname>
                      <forename>Catherine</forename>
                      <forename>M.</forename>
-                     <roleName>Editor</roleName>
+                     <roleName>Consultant</roleName>
                   </persName>
                   <occupation>
                      <affiliation>University of North Carolina Pembroke</affiliation>
@@ -220,7 +246,7 @@
                   <persName>
                      <surname>Robinson</surname>
                      <forename>David</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant</roleName>
                   </persName>
                   <occupation>
                      <affiliation>Grinnell College: Information Technology</affiliation>
@@ -231,7 +257,7 @@
                      <surname>Birnbaum</surname>
                      <forename>David</forename>
                      <forename>J.</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                      <roleName>Advisory Board</roleName>
                      <ptr target="http://obdurodon.org"/>
                   </persName>
@@ -286,14 +312,14 @@
                   <persName>
                      <surname>Beshero-Bondar</surname>
                      <forename>Elisa</forename>
-                     <roleName>Principal Editor</roleName>
+                     <roleName type="lead">Principal Investigator and Technical Coordinator</roleName>
                      <roleName>Founding Editor</roleName>
-                     <ptr target="http://www.pitt.edu/~ebb8/"/>
+                     <!--<ptr target="http://www.pitt.edu/~ebb8/"/>-->
                   </persName>
-                  <occupation>Associate Professor of English <affiliation>University of Pittsburgh
+                  <occupation>Director, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref> and Associate Professor of English, <affiliation>University of Pittsburgh
                         at Greensburg</affiliation>
                   </occupation>
-                  <note type="bio"/>
+                  <note type="bio">Elisa Beshero-Bondar organized the Digital Mitford project in the spring of 2013. She has written and maintains the project's adapation of the TEI, and she manages the coding and programming involved in storing, publishing, and sharing the project's editions and prosopography data. With Gregory Bondar, she has worked on photographing Mitford's manuscripts at the Reading Central Library and the John Rylands Library, and she is involved in editing letters and plays, and in training editors and assistants in TEI XML and related coding and programming for the project at the Digital Mitford Coding School. Dr. Beshero-Bondar researches British Romanticism in poetry and drama from the 1790s - 1830s. Her book about women Romantic poets, <title level="m">Women, Epic, and Transition in British Romanticism</title>, was published by the University of Delaware Press in 2011. Her published articles in <title level="j">ELH</title>, <title level="j">Genre</title>, <title level="j">Philological Quarterly</title>, and <title level="j">The Wordsworth Circle</title> investigate the poetry of Robert Southey, Mary Russell Mitford, and Lord Byron in context with 18th- and 19th-century views of revolution, world empires, natural sciences, and theater productions. An active member of the Text Encoding Initiative (TEI), she was elected to serve on from 2016 to 2017 on the <ref target="http://www.tei-c.org/Activities/Council/">TEI Technical Council</ref>, an eleven-member international committee that supervises amendments to the TEI Guidelines. Dr. Beshero-Bondar is Associate Professor of English and Director of the <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref> at Pitt-Greensburg, where she helps coordinate a <ref target="http://greensburg.pitt.edu/academics/info/digital-studies">Digital Studies certificate program</ref> for undergraduates. </note>
                </person>
                <person xml:id="efp">
                   <persName>
@@ -311,15 +337,15 @@
                   <persName>
                      <surname>Raisanen</surname>
                      <forename>Elizabeth</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
+                     <roleName type="sectionEditor">Drama</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
                      <affiliation>University of Oregon</affiliation>
                   </occupation>
                   <note type="bio">
-                     <note type="bio">
-                        <persName ref="#err">Elizabeth Raisanen</persName> is the Director of
+                     <persName ref="#err">Elizabeth Raisanen</persName> is the Director of
                         Undergraduate Advising and an Instructor of Literature in the Robert D.
                         Clark Honors College at the University of Oregon. A specialist in the women
                         writers of the British Romantic era, Elizabeth's research interests also
@@ -329,20 +355,19 @@
                         Wordsworth Summer Conference, and the British Women Writer's Conference, and
                            <bibl>her article on Mitford's play <title ref="#Rienzi">Rienzi</title>
                            appeared in <title>European Romantic Review</title>in <date when="2011">2011</date>
-                        </bibl>. Other essays on Romantic women writers have appeared (or are
+                     </bibl>. Other essays on Romantic women writers have appeared (or are
                         forthcoming) in <bibl>
-                           <title>Women's Studies</title>
-                        </bibl> and <bibl>an edited collection on Mary Wollstonecraft</bibl>.
+                        <title>Women's Studies</title>
+                     </bibl> and <bibl>an edited collection on Mary Wollstonecraft</bibl>.
                         Elizabeth has also taught undergraduate students how to transcribe, code,
-                        and conduct research on a collection of Mitford's letters stored at <orgName ref="#ReadingCL">Reading Central Library</orgName>.<p/>
+                        and conduct research on a collection of Mitford's letters stored at <orgName ref="#ReadingCL">Reading Central Library</orgName>.
                      </note>
-                  </note>
                </person>
                <person xml:id="esh">
                   <persName>
                      <surname>Hood</surname>
                      <forename>Eric</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
@@ -370,24 +395,38 @@
                   <persName>
                      <surname>Bondar</surname>
                      <forename>Gregory</forename>
+                     <roleName type="sectionEditor">Manuscript Archaeology</roleName>
                      <roleName>Founding Editor</roleName>
                   </persName>
                   <occupation>
                      <affiliation>Penn State University</affiliation>
                      <affiliation>University of Pittsburgh at Greensburg</affiliation>
                   </occupation>
-                  <note type="bio">Greg Bondar has photographed over 300 of Mitford's letters in the
-                     Reading Central Library, and another 150 letters in the John Rylands Library in
-                     Manchester. He maintains the Digital Mitford project's Excel database
-                     documenting over 1000 individual letters and manuscripts. He teaches courses in
-                     Anthropology and Archaeology for Penn State Greater Allegheny and the
-                     University of Pittsburgh at Greensburg campuses, and he co-teaches
-                     Pitt-Greensburg's Digital Humanities course with Elisa Beshero-Bondar. His
-                     research involves studying ancient stone tools with nuclear reactor technology,
-                     and combines his undergraduate degrees in Mechanical Engineering and
-                     Anthropology. While he has only been involved with Digital Humanities
-                     applications since 2013, he has spent many years marking up ethnographic data
-                     in the mid-1990s. </note>
+                  <note type="bio">Greg Bondar has photographed over 800 of Mitford's letters in the Reading Central Library, the John Rylands Library in Manchester, and elsewhere. He maintains the Digital Mitford project's database documenting over 2700 individual letters and manuscripts. He teaches courses in Anthropology and Archaeology for Penn State Greater Allegheny and the University of Pittsburgh at Greensburg campuses, and occasionally teaches Digital Humanities for Pitt. His research involves archaeological excavations at Tell Timai in Egypt, San Jose de Moro in Peru, and analyzing stone tools with Penn State's nuclear reactor. While he has only been involved with Digital Humanities applications since 2013, he spent many years marking up ethnographic data in the mid-1990s.</note>
+               </person>
+               <person xml:id="jap"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>
+                     <surname>Price</surname>
+                     <forename>Jordan</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Jordan Price earned his Bachelor’s in English at the University of Montevallo in May 2017. He is from Huntsville, Alabama. He worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
+               </person>
+               <person xml:id="jb">
+                  <persName>
+                     <surname>Bawden</surname>
+                     <forename>John</forename>
+                     <roleName>Ph.D</roleName>
+                     <roleName>Associate Professor of History</roleName>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">John Bawden is Associate Professor of History at the University of Montevallo. He teaches courses in various areas of Latin American History, as well as courses in Digital History. His publications have appeared in <title level="j">The Latinamericanist</title> and <title level="j">The Journal of Latin American Studies</title>. His book, <title level="m">The Pinochet Generation: The Chilean Military in the Twentieth Century</title>, was published by the University of Alabama Press in 2016.</note>
                </person>
                <person xml:id="jgf">
                   <persName>
@@ -398,15 +437,15 @@
                   <occupation>
                      <affiliation>State University of New York, Potsdam</affiliation>
                   </occupation>
-                  <note type="bio">Julie Fish plans to graduate in 2017 with a B.A. in English:
+                  <note resp="#lmw">Julie Fish plans to graduate in 2017 with a B.A. in English:
                      Literature from the State University of New York at Potsdam. She is working as
-                     a Digital Mitford Research Assistant in Spring and Summer 2017. </note>
+                     a Digital Mitford Research Assistant in Spring and Fall 2017. Her interests include bibliographical studies and book history, and she plans to pursue graduate studies in Library and Information Science.</note>
                </person>
                <person xml:id="jjr">
                   <persName>
                      <surname>Rovira</surname>
                      <forename>James</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Editor</roleName>
                      <ptr target="http://www.jamesrovira.com"/>
                   </persName>
@@ -465,24 +504,22 @@
                      <forename>Kellie</forename>
                      <roleName>Ph.D.</roleName>
                      <roleName>Founding Editor</roleName>
-                     <ptr target="http://www.babson.edu/academics/faculty/profiles/pages/donovan-kellie.aspx"/>
+                     <roleName>Poetry Section Editor</roleName>
+                     <ptr target="http://www.babson.edu/Academics/faculty/profiles/Pages/Donovan-Condron-Kellie.aspx"/>
                   </persName>
-                  <occupation>Adjunct Lecturer in English <affiliation>Babson College</affiliation>
+                  <occupation>Adjunct Lecturer in Arts &amp; Humanities
+                     <affiliation>Babson College</affiliation>
                   </occupation>
-                  <note type="bio"> Kellie Donovan-Condron writes about the intersection of urban
-                     and Gothic in the Romantic era. She is also interested in questions of genre
-                     and social networking. She has written about Mitford's epic poem <title ref="#Blanch">Blanch</title> and Mitford's network of women writers.
-                     Previously, she worked on a project to digitize a collection of 17th- and
-                     18th-century maps and ephemeral materials through the Tufts University Perseus
-                     Project. </note>
+                  <note type="bio">Kellie Donovan-Condron is a Founding Editor and Poetry Section Editor for Digital Mitford. She writes primarily about the intersection of urban literature and the Gothic in the Romantic era. Her research interests are an interdisciplinary mix of literature, history, and material culture. Additional areas of particular interest include women's writing, consumerism and consumption in literature, Southern Gothic, and questions about genre and social networking. In the summer of 2013, she was selected to be a summer scholar in the National Endowment for the Humanities seminar "Reassessing Romanticism." She is coding <persName ref="#MRM">Mitford</persName>'s epic poem <title ref="#Blanch">Blanch</title> for the Digital Mitford Archive, and has co-authored with <persName ref="#ebb">Elisa Beshero-Bondar</persName> an article analyzing <persName ref="#MRM">Mitford</persName>'s correspondence network across her lifetime. Previously, she worked on a grant to digitize a collection of 17th- and 18th-century maps and ephemeral materials through the Tufts University Perseus Project.</note>
                </person>
                <person xml:id="lmw">
                   <persName>
                      <surname>Wilson</surname>
                      <forename>Lisa</forename>
                      <forename>M.</forename>
+                     <roleName type="lead">Managing Editor</roleName>
+                     <roleName type="sectionEditor">Bibliography and Correspondence</roleName>
                      <roleName>Founding Editor</roleName>
-                     <roleName>Bibliographer</roleName>
                   </persName>
                   <occupation>
                      <affiliation>State University of New York at Potsdam</affiliation>
@@ -506,7 +543,7 @@
                      reappearances in collections and periodicals. A Founding Editor of Digital
                      Mitford, she and her team of student research assistants have been at work
                      since 2013 on transcribing, coding, and researching Mitford’s letters from 1819
-                     to the early 1820s. <p/>
+                     to the early 1820s. 
                   </note>
                </person>
                <person xml:id="mah">
@@ -561,8 +598,7 @@
                      <surname>Zimmer</surname>
                      <forename>Mary</forename>
                      <forename>Erica</forename>
-                     <roleName>Editor</roleName>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                   </persName>
                   <occupation>
                      <affiliation>Editorial Institute, Boston University</affiliation>
@@ -586,7 +622,7 @@
                   <note type="bio">Melissa Klamer is a Ph.D. student in English at Michigan State
                      University, and is currently a Research Assistant working with <ref target="http://www2.matrix.msu.edu/">MATRIX: Center for the Digital
                         Humanities and Social Sciences</ref>. Her research focuses on Victorian
-                     women's life writing, particularly letters and diaries. <p/>
+                     women's life writing, particularly letters and diaries. 
                   </note>
                </person>
                <person xml:id="mns">
@@ -644,7 +680,7 @@
                      completing a minor in Women's and Gender Studies. She has worked as a Digital
                      Mitford Research Assistant since Spring 2015. In fall 2015, she wrote a book
                      history of Mitford's 1824 Our Village as a final project for Dr. Wilson's
-                     undergraduate course in Victorian literature. <p/>
+                     undergraduate course in Victorian literature. 
                   </note>
                </person>
                <person xml:id="pmd">
@@ -658,18 +694,34 @@
                      <affiliation>University of Pittsburgh</affiliation>
                   </occupation>
                </person>
+               <person xml:id="qar"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants, BUT KEEP IN CONSULTANTS -->
+                  <persName>
+                     <surname>Reed</surname>
+                     <forename>Quinton</forename>
+                     <forename>A.</forename>
+                     <roleName>Research Assistant</roleName>
+                     <roleName>Consultant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Quinton Reed is an alumnus of the University of Montevallo, where he attended from 2013 to 2017. He currently serves as the editor for Gold Orchid Publishing in Ceredigion, Wales, and is a freelance editor and copywriter in Portland, Oregon. His areas of interest include psychoanalytical and disability studies, particularly in postmodern literature, as well as Gothic and dystopian literature. He is also interested in the life sciences, particularly zoology and anatomy, and the significance of animals and illness in literature. He worked on the Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017, and continues to assist the project in a consulting role.</note>
+               </person>
                <person xml:id="rjp">
                   <persName>
                      <surname>Parker</surname>
                      <forename>Rebecca</forename>
                      <forename>Jeanne</forename>
-                     <roleName>Research Assistant</roleName>
+                     <roleName>Editor</roleName>
                   </persName>
-                  <occupation>staff assistant, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref>
-                     <affiliation>University of Pittsburgh at Greensburg</affiliation>
+                  <occupation>
+                     <affiliation>Loyola University Chicago</affiliation>
                   </occupation>
-                  <note type="bio">Rebecca Parker graduated with a B.A. in English Literature and
-                     Social Sciences from the <ref target="http://www.greensburg.pitt.edu/">University of Pittsburgh at Greensburg</ref>, where she works as an
+                  <!--<occupation>staff assistant, <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref>
+                     <affiliation>University of Pittsburgh at Greensburg</affiliation>
+                  </occupation>-->
+                  <note type="bio">Rebecca Parker is pursuing an M.A. in Digital Humanities at Loyola University in Chicago. She graduated with a B.A. in English Literature and
+                     Social Sciences from the <ref target="http://www.greensburg.pitt.edu/">University of Pittsburgh at Greensburg</ref>, where she has worked as an
                      assistant for the <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">Center for the Digital Text</ref>. She is currently working on a digital
                      archive of her own. Her project, <ref target="http://nelson.newtfire.org/">The
                         Restoration of Nell Nelson</ref>, started in spring 2014 as research for her
@@ -678,70 +730,129 @@
                      of industrialization in Chicago at the turn of the twentieth century. Parker's
                      interest in Digital Humanities stemmed from her involvement on the Digital
                      Mitford Project working as <ref target="http://www.pitt.edu/~ebb8/">Dr.
-                        Beshero-Bondar</ref>'s Green Scholar. Rebecca is an active member of <ref target="http://www.english.org/sigmatd/">Sigma Tau Delta</ref> and <ref target="http://www.phikappaphi.org/">Phi Kappa Phi</ref> on her
-                     campus.</note>
+                        Beshero-Bondar</ref>'s Green Scholar. She is helping to prepare a digital edition of Mary Russell Mitford's journal of 1819-1823.<!--Rebecca is an active member of <ref target="http://www.english.org/sigmatd/">Sigma Tau Delta</ref> and <ref target="http://www.phikappaphi.org/">Phi Kappa Phi</ref> on her
+                     campus.--></note>
                </person>
                <person xml:id="rnes">
                   <persName>
                      <surname>Nesvet</surname>
                      <forename>Rebecca</forename>
+                     <roleName>Ph.D.</roleName>
+                     <roleName>Assistant Professor of English</roleName>
                      <roleName>Founding Editor</roleName>
-                     <placeName>University of North Carolina, Chapel Hill</placeName>
-                     <ptr target="http://uwgb.academia.edu/RebeccaNesvet"/>
                   </persName>
                   <occupation>
                      <affiliation>University of Wisconsin, Green Bay</affiliation>
                   </occupation>
-                  <note type="bio"> Rebecca Nesvet's research on Romanticism, travel literature, and
-                     drama appears in the <title>Keats-Shelley Journal</title>, <title>Prism(s):
-                        Essays in Romanticism</title>, <title>Women's Writing</title>, <title>The
-                        Review of English Studies</title>, <title>Literature Compass</title>,
-                        <title>Shakespearean International Yearbook</title>, and, in
-                        <placeName>Romania</placeName>, <title>American, British, and Canadian
-                        Studies</title>. She won the <orgName>International Conference on
-                        Romanticism</orgName>'s 2012 Lore Metzger Award for the best graduate paper.
-                     Her dissertation <title>The Vanishing Voyager and the Emerging Outsider,
-                        1818-1930</title>, was directed by Prof. <persName>Jeanne Moskal</persName>
-                     and won UNC-Chapel Hill's Thomson award for the best nineteenth-century
-                     literature dissertation. </note>
+                  <note type="bio">
+                     <p>Rebecca Nesvet's other digital humanities projects include 
+                     the general editorship of a student-produced edition of James Malcolm Rymer's <ref target="www.salisburysquare.com/TSOP">
+                           <title>
+                              <hi rend="italic">The String of Pearls, or the Barber of Fleet-street</hi>
+                           </title>
+                        </ref> (1850), the first complete documentary edition of this source of the legend of <persName>Sweeney Todd</persName>; and  <title>
+                           <hi rend="italic">Science and Art, a Farce</hi>
+                        </title>, by Malcolm Rymer (1820), edited by James Malcolm Rymer (1842), in <ref target="http://www.scholarlyediting.org">
+                           <hi rend="italic">
+                              <title level="j">Scholarly Editing: The Journal of the Association for Documentary Editing</title>
+                           </hi>
+                        </ref> 38 (2017). Nesvet's research on James Malcolm Rymer, Romanticism, travel literature, and drama appears in the <title level="j">Keats-Shelley Journal</title>, <title level="j">Prism(s): Essays in Romanticism</title>, <title level="j">Notes and Queries</title>, <title level="j">Studies in Travel Writing</title>, <title level="j">Women's Writing</title>, <title level="j">The Review of English Studies</title>, <title level="j">Literature Compass</title>, <title level="j">Shakespearean International Yearbook</title>, and, in <placeName>Romania</placeName>, <title level="j">American, British, and Canadian Studies</title>.</p>
+                     <p>She won the <orgName>International Conference on Romanticism</orgName>'s 2012 Lore Metzger Award for the best graduate paper. She is a Founding Editor for Digital Mitford.</p>
+                  </note>
+               </person>
+               <person xml:id="sbb"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>Sylvan Baker
+                     <surname>Baker</surname>
+                     <forename>Sylvan</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Sylvan Baker graduated with a B.A. in English from the University of Montevallo in May 2017, and will be attending the University of Nevada-Reno for graduate school in the fall. Before attending Montevallo, Sylvan spent a year and a half in Ireland with her mom (who thankfully is living back here in the US now), and she gained a lot of cultural knowledge and a love for the Irish countryside.  At UM, she found a love for studying nature and the environment in texts, especially in Romantic texts.  She has thoroughly enjoyed the Lake Poets and Mitford's connections to the natural landscape in "Our Village.” She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
+               </person>
+               <person xml:id="SCR"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>Susannah Ritchey
+                     <surname>Ritchey</surname>
+                     <forename>Susannah</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Originally from Maylene, Alabama, Susannah Ritchey earned her Bachelor’s degree at the University of Montevallo in May 2017, with a major in English and a minor in History. She plans to attend graduate school to specialize in Restoration literature. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
                </person>
                <person xml:id="scw">
                   <persName>
                      <surname>Webb</surname>
                      <forename>Samantha</forename>
+                     <roleName>Ph.D</roleName>
+                     <roleName>Professor of English</roleName>
                      <roleName>Founding Editor</roleName>
+                     <roleName>Fiction Section Editor</roleName>
                   </persName>
                   <occupation>
                      <affiliation>University of Montevallo</affiliation>
                   </occupation>
-                  <note type="bio"> Samantha Webb teaches classes in British Romantic literature,
-                     children's literature, and global literature. She specializes in British
-                     Romanticism, with an interest in food and agricultural politics, ecology, and
-                     women's writing. </note>
+                  <note type="bio">Samantha Webb is Professor of English, specializing in British Romantic literature, with a particular focus on the intersection of food, agricultural politics, and ecology. She has published in <title level="j">The European Romantic Review</title>, <title level="j">Romanticism</title>, <title level="j">Essays in Romanticism</title>, and elsewhere. At the University of Montevallo, she teaches courses in British Romantic literature, children's literature, folk and fairy tales, and global literature. She is a Founding Editor and Fiction Section Editor for Digital Mitford.</note>
                </person>
                <person xml:id="slc">
                   <persName>
                      <surname>Cantwell</surname>
                      <forename>Sara</forename>
-                     <roleName>Research Assistant</roleName>
+                     <!--INVITE TO BE VETTED <roleName>Editor</roleName>-->
+                     <roleName>Consultant</roleName>
                   </persName>
                   <occupation>B.F.A. in Creative Writing, completed 2014. M. A. in English and
-                     Communication, in progress 2015. <affiliation>State University of New York,
+                     Communication, completed 2017. <affiliation>State University of New York,
                         Potsdam</affiliation>
                   </occupation>
-                  <note type="bio"/>
-                  <note type="bio">Sara Cantwell received her B.F.A. in Creative Writing from the
+                  <note resp="#lmw">Sara Cantwell received her B.F.A. in Creative Writing from the
                      State University of New York at Potsdam in May 2014. She specializes in the
                      writing of poetry and creative non-fiction. In fall 2015, she began work on an
                      M.A. in English and Communication from SUNY Potsdam and joined the Digital
-                     Mitford project. She is particularly interested in Mitford's poetry and
-                     letters. </note>
+                     Mitford project as a Research Assistant. She completed her M.A. thesis in 2017, which included a book history and analysis of the later poetry of Jorie Graham. In Fall 2017, she joins the  Department of English and Communication at SUNY Potsdam as an Adjunct Instructor and continues on Digital Mitford as an Editor. She continues to work on Mitford's 1827 sonnets, her self-representation as a creative writer, and her representation and appropriation in contemporary culture.</note>
+               </person>
+               <person xml:id="SMG"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>
+                     <surname>Garrett</surname>
+                     <forename>Shekneko</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Shekneko Garrett is pursuing a Master’s degree in Secondary Education in English at the University of Montevallo, after earning her undergraduate degree in English from Talladega College in May 2013. She aspires to become a teacher, and to coach basketball, softball, volleyball, or cheerleading. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
+               </person>
+               <person xml:id="SMP"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>Sara Perry
+                     <surname>Perry</surname>
+                     <forename>Sara</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Sara Perry is an English major and Game Studies and Design minor at the University of Montevallo, hailing from the tiny town of Deatsville, Alabama. She has a passion for reading, crafts, and games, and plans on pursuing a career in game design after graduation. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
+               </person>
+               <person xml:id="ssc">
+                  <persName>
+                     <surname>Courtney</surname>
+                     <forename>Shawntel</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>State University of New York, Potsdam</affiliation>
+                  </occupation>
+                  <note resp="#lmw">Shawntel Courtney plans to graduate in 2018 with a B.A. in English:
+                     Writing and a minor in Literature from the State University of New York at Potsdam. She is working as
+                     a Digital Mitford Research Assistant in Fall 2017 and Spring 2018. Her interests include scholarly editing and British and American fiction of the Romantic period.</note>
                </person>
                <person xml:id="st">
                   <persName>
                      <surname>Triplette</surname>
                      <forename>Stacey</forename>
-                     <roleName>Ph.D.</roleName>
+                     <roleName type="grad">Ph.D.</roleName>
                      <roleName>Consultant</roleName>
                   </persName>
                   <occupation>Assistant Professor of Spanish and French <affiliation>University of
@@ -765,13 +876,24 @@
                   <persName>
                      <surname>Lombardi</surname>
                      <forename>Thomas</forename>
-                     <roleName>Consulting Editor: Data Visualization Group</roleName>
+                     <roleName>Consultant: Data Visualization Group</roleName>
                      <ptr target="http://csis.pace.edu/~lombardi/"/>
                   </persName>
                   <occupation>
                      <affiliation>Washington and Jefferson College</affiliation>
                   </occupation>
                   <note type="bio"/>
+               </person>
+               <person xml:id="tfb"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
+                  <persName>
+                     <surname>Beck</surname>
+                     <forename>Temani</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>University of Montevallo</affiliation>
+                  </occupation>
+                  <note type="bio">Temani Beck is completing her Master’s degree in Education at the University of Montevallo. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
                </person>
             </listPerson>
             <listOrg sortKey="archives">
@@ -959,7 +1081,7 @@
                   <note type="bio">Ashante Parker graduated in December 2015 with a B.A., majoring
                      in both in Literature/Writing and in Communication from the State University of
                      New York at Potsdam. She began work as a Digital Mitford Research Assistant in
-                     Fall 2015, tasked with researching and developing Site Index entries. <p/>
+                     Fall 2015, tasked with researching and developing Site Index entries. 
                   </note>
                </person>
                <person xml:id="apc">
@@ -1022,7 +1144,7 @@
                      <affiliation>UCLA</affiliation>
                   </occupation>
                   <note type="bio">In 2014, Chi-Ya Huang was studying psychology in UCLA. She also
-                     worked on Digital Mitford in 2014.<p/>
+                     worked on Digital Mitford in 2014.
                   </note>
                </person>
                <person xml:id="ejb">
@@ -1054,7 +1176,7 @@
                      She has been a poetry editor for Westwind, UCLA's journal of the literary arts,
                      and currently publishes a zine with LA-based artists' collective which she
                      co-founded, Nothing New Publications. She worked on Digital Mitford in
-                     2014.<p/>
+                     2014.
                   </note>
                </person>
                <person xml:id="hbl">
@@ -1069,7 +1191,7 @@
                   <note type="bio">In 2014, Hailey Lown was a third year transfer student at UCLA.
                      She is originally from the state of Maryland. Hailey is an English major,
                      concentrating on British literature and the classics. She worked on Digital
-                     Mitford in 2014.<p/>
+                     Mitford in 2014.
                   </note>
                </person>
                <person xml:id="hl">
@@ -1083,22 +1205,22 @@
                   </occupation>
                   <note type="bio"/>
                </person>
-               <person xml:id="hsar">
+               <person xml:id="hsar"><!--LMW: revised; move from old RA to active-->
                   <persName>
                      <surname>Sarsfield</surname>
                      <forename>Heather</forename>
-                     <roleName>Research Assistant</roleName>
+                     <!--INVITE TO BE VETTED <roleName>Editor</roleName>-->
+                     <roleName>Consultant</roleName>
                   </persName>
-                  <occupation> B.A., English Literature, completed in 2014 <affiliation>State
-                        University of New York at Potsdam </affiliation>
+                  <occupation> B.A., English Literature, completed 2014<affiliation>State
+                     University of New York at Potsdam</affiliation>
                   </occupation>
-                  <note type="bio">Heather Sarsfield is a native of northern New York. A
-                     nontraditional age student, she received her BA in English Literature from the
-                     State University of New York at Potsdam in December 2014. Her undergraduate
-                     honors thesis in English focused on Sydney Owenson, Lady Morgan, a contemporary
-                     of Mary Russell Mitford. She hopes eventually to go on to graduate work in
-                     Irish Literature and History, which is her primary area of scholarly interest.
-                     She has worked on the Digital Mitford project from Fall 2013 to Fall 2014.
+                  <occupation> M.A., Gaelic Studies, started Fall 2017<affiliation>University of Cork</affiliation>
+                  </occupation>
+                  <note resp="#lmw">Heather Sarsfield received her BA in English Literature from the
+                     State University of New York at Potsdam in December 2014; she worked on the Digital Mitford project as a Research Assistant from Fall 2013 to Fall 2014. 
+                     Her undergraduate honors thesis in English focused on Sydney Owenson, Lady Morgan, a contemporary
+                     of Mary Russell Mitford. In fall 2017, she begins a M.A. in Gaelic Studies at the University of Cork, and returns to Digital Mitford as an Editor.
                   </note>
                </person>
                <person xml:id="jbb">
@@ -1153,7 +1275,7 @@
                      Development Studies major at UCLA. She is originally from New Delhi, India,
                      where she was born and completed her high school education. After graduation
                      she hopes to work with the UN and start her own nonprofit in India someday. She
-                     worked on Digital Mitford in 2014.<p/>
+                     worked on Digital Mitford in 2014.
                   </note>
                </person>
                <person xml:id="msp">
@@ -1167,7 +1289,7 @@
                   </occupation>
                   <note type="bio">Margo Paine graduated in May 2015 from the State University of
                      New York at Potsdam with her B.A. in Literature/Writing and Secondary English
-                     Education. She worked with the Digital Mitford Project during Fall 2014.<p/>
+                     Education. She worked with the Digital Mitford Project during Fall 2014.
                   </note>
                </person>
                <person xml:id="ncl">
@@ -1175,21 +1297,20 @@
                      <surname>LoRusso</surname>
                      <forename>Natalie </forename>
                      <forename>Claire</forename>
-                     <roleName>Research Assistant</roleName>
+                     <!--INVITE TO BE VETTED <roleName>Editor</roleName>-->
+                     <roleName>Consultant</roleName>
                   </persName>
-                  <occupation>B.A., English Literature, completed in 2015 <affiliation>State
-                        University of New York at Potsdam</affiliation>
+                  <occupation>B.A., English: Literature, 2015 <affiliation>State
+                     University of New York at Potsdam</affiliation>
                   </occupation>
-                  <occupation>M.L.I.S, in progress 2015 <affiliation>Syracuse
-                        University</affiliation>
+                  <occupation>M.L.I.S, 2017 <affiliation>Syracuse
+                     University</affiliation>
                   </occupation>
-                  <note type="bio">Natalie LoRusso graduated in May 2015 with a B.A. in English
+                  <note resp="#lmw">Natalie LoRusso graduated in May 2015 with a B.A. in English
                      Literature from the State University of New York at Potsdam; she also completed
-                     minors in Classical Studies and Women's and Gender Studies. Her undergraduate
-                     honors thesis in English analyzed gendered cultural responses to professional
-                     women's visible body tattoos. She worked on Digital Mitford from Spring 2014 to
-                     Spring 2015. She is from Syracuse, New York, and began graduate study in
-                     library and information science at Syracuse University in Fall 2015. <p/>
+                     minors in Classical Studies and Women's and Gender Studies. She worked as a Research Assistant on Digital Mitford from Spring 2014 to
+                     Spring 2015. She completed a Master's in
+                     library and information science at Syracuse University in 2017 and returns to Digital Mitford as an Editor. <p/>
                   </note>
                </person>
                <person xml:id="nlh">
@@ -1204,7 +1325,7 @@
                   <note type="bio">Nathan Hebert graduated in December 2015 with a B.A., majoring in
                      both in Literature/Writing and in Communication from the State University of
                      New York at Potsdam. He worked as a Digital Mitford Research Assistant in Fall
-                     2015, tasked with researching and developing Site Index entries. <p/>
+                     2015, tasked with researching and developing Site Index entries. 
                   </note>
                </person>
                <person xml:id="ps">
@@ -1219,7 +1340,7 @@
                   <note type="bio">Perdita Sasu graduated in 2016 with a B.A. in Communication from
                      the State University of New York at Potsdam. She began work as a Digital
                      Mitford Research Assistant in Fall 2015, tasked with documenting the physical
-                     copies of Mitford's works in Dr. Wilson's collection. <p/>
+                     copies of Mitford's works in Dr. Wilson's collection. 
                   </note>
                </person>
                <person xml:id="rct">
@@ -1236,7 +1357,7 @@
                      Interested in archival work, she was drawn to the Digital Mitford project in
                      order to learn more about the editing and coding process. After graduation,
                      Rebecca hopes to go into the editing and publishing business for book and
-                     magazine companies. She worked on Digital Mitford in 2014.<p/>
+                     magazine companies. She worked on Digital Mitford in 2014.
                   </note>
                </person>
                <person xml:id="tlh">
@@ -1275,7 +1396,7 @@
                      late Victorian and Modernist periods. She believes in a holistic approach to
                      literature where one combines an understanding of context and content to inform
                      critical analysis. She is also commited to the provision and accessiblity of
-                     scholarly research. She worked on Digital Mitford in 2014. <p/>
+                     scholarly research. She worked on Digital Mitford in 2014. 
                   </note>
                </person>
                <person xml:id="wnb">
@@ -1291,7 +1412,7 @@
                   <note type="bio">William Barr is a transfer student who expects to graduate in
                      2016 with a B.A. in English Literature, History, and Sociology from the State
                      University of New York at Potsdam. He worked on Digital Mitford in Fall 2014.
-                     <p/>
+                     
                   </note>
                </person>
                <person xml:id="ws">
@@ -1307,7 +1428,7 @@
                      Literature/Writing from the State University of New York at Potsdam. She is
                      from Valley Stream, New York, and plans to begin graduate study in the teaching
                      of English as a second language. She worked as a Digital Mitford Research
-                     Assistant in Spring and Summer 2015. <p/>
+                     Assistant in Spring and Summer 2015. 
                   </note>
                </person>
                <person xml:id="xjw">
@@ -1321,7 +1442,7 @@
                   </occupation>
                   <note type="bio">Robin Xiong is Xiong Junwen from China. In 2014, she was an
                      undergraduate student in UCLA majoring in Pre-Asian Studies. Robin loves movies
-                     and photography. She worked on Digital Mitford in 2014.<p/>
+                     and photography. She worked on Digital Mitford in 2014.
                   </note>
                </person>
             </listPerson>
@@ -5217,7 +5338,8 @@
                <person xml:id="Elford_Elizabeth" sex="2">
                   <persName>
                      <surname/>
-                     <surname>Elford</surname>
+                     <surname type="paternal">Elford</surname>
+                     <surname type="married">Adams</surname>
                      <forename>Elizabeth</forename>
                   </persName>
                   <birth when="1782-03-11">
