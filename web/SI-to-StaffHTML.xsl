@@ -167,7 +167,7 @@
              </a></xsl:when>
          <xsl:otherwise>
              <xsl:value-of select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
-             <xsl:apply-templates select="persName/surname"/>
+             <xsl:apply-templates select="string-join(persName/surname, ' ')"/>
          </xsl:otherwise>
          </xsl:choose>
              <xsl:text>, </xsl:text>
