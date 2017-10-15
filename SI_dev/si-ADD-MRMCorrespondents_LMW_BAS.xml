@@ -2,7 +2,6 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
 <?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -59,7 +58,7 @@
 <!--LMW: started 2016-09-24 -->
          <div type="historical_people">
             <listPerson sortKey="histPersons">
-               <person xml:id="Allen_Mrs" sex="2">
+               <person xml:id="Allen_Mrs" sex="f">
                   <persName>Mrs. Allen</persName>
                   <persName>
                      <surname>Allen</surname>
@@ -67,7 +66,7 @@
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. Date unknown. More research needed.</note>
                </person>
                
-               <person xml:id="Anderdon_LOH" sex="2">
+               <person xml:id="Anderdon_LOH" sex="f">
                   <persName>Lucy Olivia Hobart Anderdon</persName>
                   <persName>
                      <forename>Lucy</forename>
@@ -79,7 +78,7 @@
                   <note resp="#lmw #bas">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1837" to="1854">between 1837 and 1854</date>. Poet and authoress. Supposedly wrote her work <title level="m">Costanza</title> between the ages of 15 and 17. This may be the anonymously published <title level="m">Costanza of Mistra: a tale of Modern Greece: in five cantos</title> in <date when="1839">1839</date>. Spouse of the <persName>Rev. William Edwards Partridge</persName> (1837-51); daughter of <persName>Thomas Oliver</persName> and <persName>Maria Anderdon</persName>.</note>
                   <note><ref target="http://www.browningscorrespondence.com/correspondence/763/"/></note><note><ref target="https://books.google.com/books?isbn=0802029272"/></note></person>
               
-               <person xml:id="Annie" sex="2">
+               <person xml:id="Annie" sex="f">
                   <persName>Annie</persName>
                   <persName>
                      <forename>Annie</forename>
@@ -87,7 +86,7 @@
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. Date unknown. Surname unknown. More research needed.<!--LMW: Possibly Annie Fields, wife of J. T.?--></note>
                </person>
                
-               <person xml:id="Bassett_Mr" sex="1">
+               <person xml:id="Bassett_Mr" sex="m">
                   <persName>Mr. Bassett</persName>
                   <persName>
                      <surname>Bassett</surname>
@@ -95,7 +94,7 @@
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> around the <date notBefore="1830">1830</date>'s. Forename unknown. More research needed.</note>
                </person>
                
-               <person xml:id="Bennoch_M" sex="2">
+               <person xml:id="Bennoch_M" sex="f">
                   <persName>Mrs. Margaret Bennoch</persName>
                   <persName>
                      <surname type="married">Bennoch</surname>
@@ -109,7 +108,7 @@
                   <note><ref target="https://www.geni.com/people/Margaret-Bennoch/6000000018171564723"/></note>
                </person>
                
-               <person xml:id="Benyon_R" sex="1">
+               <person xml:id="Benyon_R" sex="m">
                   <persName>Richard Benyon</persName>
                   <persName>
                      <surname>Benyon</surname>
@@ -131,7 +130,7 @@
                   <note><ref target="http://www.historyofparliamentonline.org/volume/1790-1820/member/benyon-richard-ii-1770-1854"/></note>
                </person>
                
-               <person xml:id="Blandy_Mrs" sex="2">
+               <person xml:id="Blandy_Mrs" sex="f">
                   <persName>Mrs. Blandy</persName>
                   <persName>
                      <surname>Blandy</surname>
@@ -140,7 +139,7 @@
                   <note><ref target="http://bit.ly/YaleMitford_GenMSS32_CorrGuide"/></note>
                </person>
                
-               <person xml:id="Boner_Chas" sex="1">
+               <person xml:id="Boner_Chas" sex="m">
                   <persName>Charles Boner</persName>
                   <persName>
                      <surname>Boner</surname>
@@ -162,7 +161,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/2839"/></note>
                </person>
                
-               <person xml:id="Bogue_David" sex="1">
+               <person xml:id="Bogue_David" sex="m">
                   <persName>David Bogue</persName>
                   <persName>
                      <surname>Bogue</surname>
@@ -178,7 +177,7 @@
                   <note><ref target="http://viaf.org/viaf/22011623"/></note><note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/47444?docPos=2"/></note>
                </person>
                
-               <person xml:id="Burke_J" sex="1">
+               <person xml:id="Burke_J" sex="m">
                   <persName>J. Burke</persName>
                   <persName>
                      <surname>Burke</surname>
@@ -187,7 +186,7 @@
                   </note>
                </person>
                
-               <person xml:id="Blewitt_O" sex="1">
+               <person xml:id="Blewitt_O" sex="m">
                   <persName>Octavian Blewitt</persName>
                   <persName>
                      <surname>Blewitt</surname>
@@ -209,7 +208,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/2645"/></note>
                </person>
                
-               <person xml:id="Brightwell_CL" sex="2">
+               <person xml:id="Brightwell_CL" sex="f">
                   <persName>Cecilia Lucy Brightwell</persName>
                   <persName>
                      <forename>Cecilia</forename>
@@ -232,7 +231,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/3426"/></note>
                </person>
                
-               <person xml:id="Brooks_Miss" sex="2">
+               <person xml:id="Brooks_Miss" sex="f">
                   <persName>Miss Brooks</persName>
                   <persName>
                      <surname>Brooks</surname>
@@ -242,7 +241,7 @@
                   <note><ref target="http://bit.ly/YaleMitford_GenMSS32_Guide"/></note>
                </person>
                
-               <person xml:id="Browne_Martha" sex="2">
+               <person xml:id="Browne_Martha" sex="f">
                   <persName>Martha Browne</persName>
                   <persName>
                      <forename>Martha</forename>
@@ -252,7 +251,7 @@
                   <note resp="#lmw">Sister of poet <persName>Mary Ann Browne</persName> (1812-1844). <persName ref="#MRM">Mary Russell Mitford</persName> wrote in an album belonging to her in <date when="1829">1829</date>. More research needed.</note>
                </person>
                
-               <person xml:id="Kirkland_C" sex="2">
+               <person xml:id="Kirkland_C" sex="f">
                   <persName>Caroline Mathilda Stansbury Kirkland</persName>
                   <persName>
                      <forename>Caroline</forename>
@@ -275,7 +274,7 @@
                   <note resp="#lmw #bas">Author of three books on American frontier life: <title level="m">New Home; Who'll Follow?</title>, <title level="m">Forest Life</title>, and <title level="m">Western Clearings</title>. Served as editor of the <title level="j">Union Magazine</title> from <date from="1847" to="1849">1847 to 1849</date>. Particularly after her husband's death in <date when="1846">1846</date>, her home became an important literary salon in New York City.</note>
                </person>
                
-               <person xml:id="Cooper_John" sex="1">
+               <person xml:id="Cooper_John" sex="m">
                   <persName>John Cooper</persName>
                   <persName>
                      <forename>John</forename>
@@ -293,7 +292,7 @@
                   <note><ref target="http://viaf.org/viaf/21971441"/></note>
                </person>
                
-               <person xml:id="Easthope_John" sex="1">
+               <person xml:id="Easthope_John" sex="m">
                   <persName>John Easthope</persName>
                   <persName>
                      <forename>John</forename>
@@ -315,7 +314,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/8413"/></note>
                </person>
                
-               <person xml:id="Benyon_RF" sex="1">
+               <person xml:id="Benyon_RF" sex="m">
                   <persName>Richard Fellowes Benyon</persName>
                   <persName>
                      <forename>Richard</forename>
@@ -335,7 +334,7 @@
                   <note resp="#lmw">Conservative Member of Parliament, High Sheriff of Berkshire, and Chairman of the Berkshire Quarter Sessions. He changed his name to Richard Fellowes Benyon after inheriting his uncle <persName ref="#Benyon_R">Richard Benyon De Beauvoir</persName>'s estate, including <placeName>Englefield House</placeName> in <date when="1854">1854</date>.</note>
                </person>
                
-               <person xml:id="Hoare_MA" sex="2">
+               <person xml:id="Hoare_MA" sex="f">
                   <persName>Mary Anne Pratt Hoare</persName>
                   <persName>
                      <forename>Mary</forename>
@@ -358,7 +357,7 @@
                   <note><ref target="http://www.djo.org.uk/indexes/authors/mrs-hoare.html?tmpl=component"/></note>
                </person>
                
-               <person xml:id="Goldsmid_AM" sex="2">
+               <person xml:id="Goldsmid_AM" sex="f">
                   <persName>Anna Maria Goldsmid</persName>
                   <persName>
                      <forename>Anna</forename>
@@ -378,7 +377,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/10916"/></note>
                </person>
                
-               <person xml:id="Hall_AM" sex="2">
+               <person xml:id="Hall_AM" sex="f">
                   <persName>Anna Maria Fielding Hall</persName>
                   <persName>
                      <forename>Anna</forename>
@@ -401,7 +400,7 @@
                   <note><ref target="http://viaf.org/viaf/59344020"/></note>
                </person>
                
-               <person xml:id="Howitt_Mary" sex="2">
+               <person xml:id="Howitt_Mary" sex="f">
                   <persName>Mary Howitt</persName>
                   <persName>
                      <forename>Mary</forename>
@@ -425,7 +424,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/13995?docPos=2"/></note>
                </person>
                
-               <person xml:id="Dacre_Lady" sex="2">
+               <person xml:id="Dacre_Lady" sex="f">
                   <persName>Barbarina Brand, Lady Dacre</persName>
                   <persName>
                      <forename>Barbarina</forename>
@@ -444,7 +443,7 @@
                   <note><ref target="http://bit.ly/BrowningCorr_BrandBarbarina"/></note>
                </person>
                
-               <person xml:id="Davenport_RA" sex="1">
+               <person xml:id="Davenport_RA" sex="m">
                   <persName>Richard Alfred Davenport</persName>
                   <persName>
                      <forename>Richard</forename>
@@ -465,32 +464,32 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/7203"/></note>
                </person>
                
-               <person xml:id="Cockburn_Mrs" sex="2">
+               <person xml:id="Cockburn_Mrs" sex="f">
                   <persName>Mrs. Cockburn</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> <date from="1840" to="1847">between 1840 and 1847</date>. Forename unknown. More research needed.</note><!-- 2017-02-20 bas: Same as Mrs. Cockburne? --></person>
                
-               <person xml:id="Dapuy_Mrs" sex="2">
+               <person xml:id="Dapuy_Mrs" sex="f">
                   <persName>Mrs. Dapuy</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Crowther_Mrs" sex="2">
+               <person xml:id="Crowther_Mrs" sex="f">
                   <persName>Mrs. Crowther</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1855">1855</date>. Forename unknown. More research needed.<!--LMW: Possibly the wife or mother of Phillip Crowther, the dandy?--></note></person>
               
-               <person xml:id="deGoodrich_Miss" sex="2">
+               <person xml:id="deGoodrich_Miss" sex="f">
                   <persName>Miss de Goodrich</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1852">1852</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Gulson_Mrs" sex="2">
+               <person xml:id="Gulson_Mrs" sex="f">
                   <persName>Mrs. Gulson</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1837">1837</date>. Forename unknown. More research needed.</note></person>
                
                
-               <person xml:id="Hanmer_Mrs" sex="2">
+               <person xml:id="Hanmer_Mrs" sex="f">
                   <persName>Mrs. Hanmer</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1835">1835</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Dyce_Alex" sex="1">
+               <person xml:id="Dyce_Alex" sex="m">
                   <persName>Alexander Dyce</persName>
                   <persName>
                      <forename>Alexander</forename>
@@ -512,7 +511,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/8342/"></ref></note>
                </person>  
                 
-               <person xml:id="Hayward_Abraham" sex="1">
+               <person xml:id="Hayward_Abraham" sex="m">
                   <persName>Abraham Hayward</persName>
                   <persName>
                      <forename>Abraham</forename>
@@ -535,15 +534,15 @@
                   <note><ref target="#Allen_Mrshttp://www.oxforddnb.com.pitt.idm.oclc.org/view/article/12793"/></note>
                </person> 
                
-               <person xml:id="Cary_Mrs" sex="2">
+               <person xml:id="Cary_Mrs" sex="f">
                   <persName>Mrs. Cary</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1844">1844</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Clark_Rupert" sex="1">
+               <person xml:id="Clark_Rupert" sex="m">
                   <persName>Rupert Clark</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. More research needed.</note></person>
                
-               <person xml:id="Gandy_Ed" sex="1">
+               <person xml:id="Gandy_Ed" sex="m">
                   <persName>Edward Gandy</persName>
                   <birth when="1792"/>
                   <death when="1859"/>
@@ -553,7 +552,7 @@
                   <note><ref target="http://viaf.org/viaf/4434505"/></note>
                </person>
                
-               <person xml:id="Glenny_Geo" sex="1">
+               <person xml:id="Glenny_Geo" sex="m">
                   <persName>George Glenny</persName>
                   <birth when="1793-11-01"/>
                   <death when="1874-05-17">
@@ -569,12 +568,12 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/10818"/></note>
                </person>
                
-               <person xml:id="Glennig_Mr" sex="1">
+               <person xml:id="Glennig_Mr" sex="m">
                   <persName>Mr. Glennig</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. Forename unknown. <persName ref="#MRM">Mitford</persName> wrote an undated letter to him in the third person. More research needed.</note>
                   <note><ref target="http://bit.ly/YaleMitford_GenMSS32_CorrGuide"/></note></person>
                
-               <person xml:id="Greene_JH" sex="1">
+               <person xml:id="Greene_JH" sex="m">
                   <persName>John Hooke Greene</persName>
                   <persName>
                      <forename>John</forename>
@@ -584,28 +583,28 @@
                   <note resp="#lmw #bas">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1831">1831</date>. More research needed.</note>
                   </person>
                
-               <person xml:id="Holland_Mrs" sex="2">
+               <person xml:id="Holland_Mrs" sex="f">
                   <persName>Mrs. Holland</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1838">1838</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Joy_Miss" sex="2">
+               <person xml:id="Joy_Miss" sex="f">
                   <persName>Miss Joy</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1836">1836</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Langton_Miss" sex="2">
+               <person xml:id="Langton_Miss" sex="f">
                   <persName>Miss Langton</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. Forename unknown. More research needed.</note>
                   </person>
                
-               <person xml:id="Marshall_Miss" sex="2">
+               <person xml:id="Marshall_Miss" sex="f">
                   <persName>Miss Marshall</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1837">1837</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Hodgkinson_Mrs" sex="2">
+               <person xml:id="Hodgkinson_Mrs" sex="f">
                   <persName>Mrs. Hodgkinson</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1829">1829</date>; letter addressed to her at <orgName>Arbor Rectory</orgName> in <placeName ref="#Reading_city">Reading</placeName>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Herbert_Wm" sex="1">
+               <person xml:id="Herbert_Wm" sex="m">
                   <persName>William Herbert</persName>
                   <persName>
                      <forename>William</forename>
@@ -674,7 +673,7 @@
             Sidmouth, Lady [2nd wife of Henry Addington, Lord Sidmouth Mary Anne Scott, da. of Lord Stowell, first husband T. Townshend. died April 26, 1842. See histofpar for Addington.]
             Taylor, Kerenhappuck	Miss Mitford's maid called "my K": replacing Martha; named Kerenhappuch, after the third of Job’s daughters (Job, 42:14). In 1844, she had an illegitimate child, and was dismissed, but Miss Mitford took her back the following year, and she stayed in service until Miss Mitford’s death in 1855. Existing id. Add to.
 -->
-               <person xml:id="Roscoe_T" sex="1">
+               <person xml:id="Roscoe_T" sex="m">
                   <persName>Thomas Roscoe</persName>
                   <persName>
                      <forename>Thomas</forename>
@@ -697,7 +696,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/24083"/></note>
                </person>
                
-               <person xml:id="Tuckerman_H" sex="1">
+               <person xml:id="Tuckerman_H" sex="m">
                   <persName>Henry Theodore Tuckerman</persName>
                   <persName>
                      <forename>Henry</forename>
@@ -721,7 +720,7 @@
                   <note><ref target="http://viaf.org/viaf/42895727"/></note>
                </person>
                
-               <person xml:id="Pardoe_J" sex="2">
+               <person xml:id="Pardoe_J" sex="f">
                   <persName>Julia Pardoe</persName>
                   <persName>
                      <forename>Julia</forename>
@@ -744,7 +743,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/21259"/></note>
                </person>
                
-               <person xml:id="Shoberl_F" sex="1">
+               <person xml:id="Shoberl_F" sex="m">
                   <persName>Frederic Shoberl</persName>
                   <persName>
                      <forename>Frederic</forename>
@@ -767,7 +766,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/25450"/></note>
                    </person>
                
-               <person xml:id="Shoberl_T" sex="2">
+               <person xml:id="Shoberl_T" sex="f">
                   <persName>Theodosia Shoberl</persName>
                   <persName>
                      <forename>Theodosia</forename>
@@ -780,7 +779,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/25450"/></note>
                 </person>
            
-               <person xml:id="Moulton_B_Ed" sex="1">
+               <person xml:id="Moulton_B_Ed" sex="m">
                   <persName>Edward Barrett Moulton-Barrett</persName>
                   <persName>
                      <forename>Edward</forename>
@@ -798,7 +797,7 @@
                   <note><ref target="http://www.browningscorrespondence.com/biographical-sketches/?id=970"/></note>
                </person>
                
-               <person xml:id="Moulton_B_Ara" sex="2">
+               <person xml:id="Moulton_B_Ara" sex="f">
                   <persName>Arabella Moulton-Barrett</persName>
                   <persName>
                      <forename>Arabella</forename>
@@ -815,7 +814,7 @@
                   <note><ref target="http://www.browningscorrespondence.com/biographical-sketches/?id=973"/></note>
                </person>
                
-               <person xml:id="Moulton_B_Hen" sex="2">
+               <person xml:id="Moulton_B_Hen" sex="f">
                   <persName>Henrietta Moulton-Barrett Cook</persName>
                   <persName>
                      <forename>Henrietta</forename>
@@ -833,22 +832,22 @@
                   <note><ref target="http://www.browningscorrespondence.com/biographical-sketches/?id=977"/></note>
                </person>
                
-               <person xml:id="Ricketts_Miss" sex="2">
+               <person xml:id="Ricketts_Miss" sex="f">
                   <persName>Miss Ricketts</persName>
                   <note resp="#lmw #bas">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in the <date notBefore="1830" notAfter="1840">1830s</date>. Forename unknown. A letter to her from MRM is addressed to <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>, of estimated date recorded in the 1830s, now held at Boston Public Library British Civilization Collection, 1573-1970, Folder Ms.Eng.170: Letters of Mary Russell Mitford, 182?-184?, Item 6.</note>
                   <note><ref target="http://bit.ly/BostonPL_MRM_MSS"/></note></person>
                
-               <person xml:id="Powell_Mrs" sex="2">
+               <person xml:id="Powell_Mrs" sex="f">
                   <persName>Mrs. Powell</persName>
                   <note resp="#lmw #bas">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. Forename unknown. Two letters to her in our database from MRM are addressed to <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>, of estimated date recorded in the 1820s, now held at Boston Public Library British Civilization Collection, 1573-1970, Folder Ms.Eng.170: Letters of Mary Russell Mitford, 182?-184?, Items 4 and 5. More research needed.</note>
                   <note><ref target="http://bit.ly/BostonPL_MRM_MSS"/></note></person>
                
-               <person xml:id="Rigsby_R" sex="0">
+               <person xml:id="Rigsby_R" sex="u">
                   <persName>R. Rigsby</persName>
                   <note resp="#lmw #bas">Forename unknown. A letter from MRM is addressed to <persName>R. Rigsby</persName> at <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>, of <date when="1847-08-01">1 August 1847</date>, now held at Boston Public Library British Civilization Collection, 1573-1970, Folder Ms.Eng.170: Letters of Mary Russell Mitford, 182?-184?, Item 8. More research needed</note>
                   <note><ref target="http://bit.ly/BostonPL_MRM_MSS"/></note></person>
                
-               <person xml:id="Smith_Dora" sex="2">
+               <person xml:id="Smith_Dora" sex="f">
                   <persName>Dora Smith</persName>
                   <persName>
                      <forename>Dora</forename>
@@ -856,7 +855,7 @@
                   </persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1847">1847</date>. Letter addressed to Bear Wood, Wokingham. More research needed</note></person>
                
-               <person xml:id="Wattington_J" sex="2">
+               <person xml:id="Wattington_J" sex="f">
                   <persName>Julia Rattray Wattington</persName>
                   <persName>
                      <forename>Julia</forename>
@@ -864,23 +863,23 @@
                   </persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. More research needed.</note></person>
                
-  <person xml:id="Stovin_Mrs" sex="2">
+  <person xml:id="Stovin_Mrs" sex="f">
                   <persName>Mrs. M. Stovin</persName>
      <note resp="#lmw #bas #ebb">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1824">1824</date>. Letter addressed to Newbold, Chesterfield, Derbyshire. Forename unknown. Possibly the mother of <persName>Col. Frederick Stovin</persName>, as the address and name match on a letter written to his mother on <date when="1814-12-05">5 December 1814</date>. A letter from <persName ref="#MRM">Mary Russell Mitford</persName> of <date when="1824-11-02">2 November 1824</date> to Mrs. Stovin reveals that she is a mutual friend of <persName ref="#James_Miss">Miss James.</persName></note><note><ref target="http://bit.ly/HarvardLib_Stovin"/></note>
   </person>
                
                
-               <person xml:id="Wheeler_Mrs" sex="2">
+               <person xml:id="Wheeler_Mrs" sex="f">
                   <persName>Mrs. John Wheeler</persName>
                   <note resp="#lmw #bas">Forename unknown. A letter to her from MRM is addressed to <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>, of estimated date recorded in the 1840s, now held at Boston Public Library British Civilization Collection, 1573-1970, Folder Ms.Eng.170: Letters of Mary Russell Mitford, 182?-184?, Item 12. More research needed. <!--LMW: Any relation to Kate Wheeler? --></note>
                   <note><ref target="http://bit.ly/BostonPL_MRM_MSS"/></note></person>
                
-               <person xml:id="White_WF" sex="1">
+               <person xml:id="White_WF" sex="m">
                   <persName>W. F. White</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. Letter addressed to W. F. White, Esq. Forename unknown. More research needed.</note></person>
                
                
-               <person xml:id="Wardle_GL" sex="1">
+               <person xml:id="Wardle_GL" sex="m">
                   <persName>Gwyllym Lloyd Wardle</persName>
                   <persName>
                      <forename>Gwyllym</forename>
@@ -901,7 +900,7 @@
                   <note><ref target="http://www.historyofparliamentonline.org/volume/1790-1820/member/wardle-gwyllym-lloyd-1761-1833"/></note>
                </person>
                
-               <person xml:id="Stoddard_RH" sex="1">
+               <person xml:id="Stoddard_RH" sex="m">
                   <persName>Richard Henry Stoddard</persName>
                   <persName>
                      <forename>Richard</forename>
@@ -922,7 +921,7 @@
                   <note><ref target="http://viaf.org/viaf/11128792"/></note>
                </person>
                
-               <person xml:id="Starkey_DP" sex="1">
+               <person xml:id="Starkey_DP" sex="m">
                   <persName>Digby Pilot Starkey</persName>
                   <persName>
                      <forename>Digby</forename>
@@ -939,7 +938,7 @@
                   <note><ref target="http://viaf.org/viaf/1376869"/></note>
                </person>
                
-               <person xml:id="Wrangham_Fr" sex="1">
+               <person xml:id="Wrangham_Fr" sex="m">
                   <persName>Francis Wrangham</persName>
                   <persName>
                      <forename>Francis</forename>
@@ -961,11 +960,11 @@
                   <note><ref target="http://viaf.org/viaf/15552089"/></note>
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/30009"/></note>
                </person>
-               <person xml:id="Morris_DrP" sex="1"> <!--2017-03-02 ebb: Update to existing SI entry: ADD information in note element -->
+               <person xml:id="Morris_DrP" sex="m"> <!--2017-03-02 ebb: Update to existing SI entry: ADD information in note element -->
                   <note resp="#ncl #bas">Protagonist and pseudonymous author of <bibl><author ref="#Lockhart_JG">John Gibson Lockhart</author>'s 1819 novel, <title ref="#Peters_Letters_novel">Peter's Letters to his Kinfolk</title></bibl>.</note>
                </person>
                
-               <person xml:id="Jameson_Anna" sex="2">
+               <person xml:id="Jameson_Anna" sex="f">
                   <persName>Anna Brownell Jameson</persName>
                   <persName>
                      <forename>Anna</forename>
@@ -990,7 +989,7 @@
                   <note><ref target="http://www.oxforddnb.com.pitt.idm.oclc.org/view/article/14631"/></note>
                </person>
                
-               <person xml:id="Trollope_Fr" sex="2"><!-- update existing -->
+               <person xml:id="Trollope_Fr" sex="f"><!-- update existing -->
                   <persName>Frances Milton Trollope</persName>
                   <persName>
                      <forename>Frances</forename>
@@ -1011,32 +1010,32 @@
                   <note><ref target="http://viaf.org/viaf/34551336"/></note>
                </person>
 
-               <person xml:id="Yates_Miss" sex="2">
+               <person xml:id="Yates_Miss" sex="f">
                   <persName>Miss Yates</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1840">1840</date>. Forename unknown. Likely the daughter of <persName ref="#Yates_Mrs">Mrs. Yates</persName>. More research needed.</note></person>
                
-               <person xml:id="Yates_Mrs" sex="2">
+               <person xml:id="Yates_Mrs" sex="f">
                   <persName>Mrs. Yates</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1835">1835</date>. Forename unknown. Likely the mother of <persName ref="#Yates_Miss">Miss Yates</persName>. More research needed.</note>
                </person>
                
-               <person xml:id="Williams_Miss" sex="2">
+               <person xml:id="Williams_Miss" sex="f">
                   <persName>Miss Williams</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1837">1837</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Wienholt_Miss" sex="2">
+               <person xml:id="Wienholt_Miss" sex="f">
                   <persName>Miss Wienholt</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>, date unknown. Forename unknown. More research needed.</note></person>
              
-               <person xml:id="Weirdon_Miss" sex="2">
+               <person xml:id="Weirdon_Miss" sex="f">
                   <persName>Miss Weirdon</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1831">1831</date>. Forename unknown. More research needed.</note></person>
               
-               <person xml:id="Walker_Mrs" sex="2">
+               <person xml:id="Walker_Mrs" sex="f">
                   <persName>Mrs. Walker</persName>
                   <note resp="#lmw">A correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> in <date when="1842">1842</date>. Forename unknown. More research needed.</note></person>
                
-               <person xml:id="Wordsworth_Dor" sex="2"><!--ebb: updates existing entry -->
+               <person xml:id="Wordsworth_Dor" sex="f"><!--ebb: updates existing entry -->
                   <persName>Dorothy "Dora" Wordsworth</persName>
                   <persName>
                      <forename>Dorothy</forename>
