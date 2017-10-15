@@ -6,7 +6,7 @@
     <pattern>
         <let name="si" value="doc('http://digitalmitford.org/si.xml')//@xml:id"/> 
        
-            <rule context="//@ref | //@corresp | //@resp">
+            <rule context="@ref | @corresp | @resp">
                 
                 <let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
                 <assert test="every $token in $tokens satisfies $token = //tei:text//@xml:id | $si">
