@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!--<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index: Additions Template, for Adding and Updating Named Entities in the
+               Digital Mitford Archive</title>
+            <author>Digital Mitford Editors</author>
+            <editor><persName ref="#lmw">Lisa M. Wilson</persName>
+            </editor>
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Data extraction and compiling by</resp>
+               <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition> </edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Information on named entities in this file has been extracted from files in the
+               Digital Mitford Archive.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>  
+              <!-- LMW:  These entries reference new SI entries in the Si-add-Mitfordpublishers file, including ids for Whittaker and for some giftbook/annuals. -->
+                 
+         <div type="publications">
+            <listBibl sortKey="literary">
+               
+               <bibl xml:id="Poems_1st_ed_MRM">
+                  <title>Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <bibl corresp="#BelovedMotherBirthday_1810"/>
+                  <bibl corresp="#BustFox_1810"/>
+                  <bibl corresp="#Cheerfulness_1810"/>
+                  <bibl corresp="#Epistle_Friend_1810"/>
+                  <bibl corresp="#EveningPrimrose_1810"/>
+                  <bibl corresp="#Father_Bocking_1810"/>
+                  <bibl corresp="#FavoriteBower_1810"/>
+                  <bibl corresp="#GlowWorm_1810"/>
+                  <bibl corresp="#Imitated_Italian_1810"/>
+                  <bibl corresp="#Impromptu_Whitbread_1810"/>
+                  <bibl corresp="#JoannasProphecy_1810"/>
+                  <bibl corresp="#MariaWinningCup_1810"/>
+                  <bibl corresp="#Memory_John_Moore_1810"/>
+                  <bibl corresp="#MissMurray_1810"/>
+                  <bibl corresp="#MungoPark_1810"/>
+                  <bibl corresp="#NightMay_1810"/>
+                  <bibl corresp="#Pen_Sword_1810"/>
+                  <bibl corresp="#Pratt_1810"/>
+                  <bibl corresp="#Prologue_ReadingSchool_1810"/>
+                  <bibl corresp="#RevisitingSchool_1810"/>
+                  <bibl corresp="#Scenery_1810"/>
+                  <bibl corresp="#Sybille_1810"/>
+                  <bibl corresp="#ToMay_1810"/>
+                  <bibl corresp="#Verses_with_Primroses_1810"/>
+                  <bibl corresp="#Wardle_Death_1810"/>
+                  <bibl corresp="#Willow_1810"/>
+                  <bibl corresp="#WinterScenery_1810"/>
+                  <bibl corresp="#WmHerbert_1810"/>
+                  <bibl corresp="#Wreaths_1810"/>
+                  <bibl corresp="#YellowButterfly_1810"/>
+                  <note resp="#lmw">1 volume.</note>
+               </bibl>
+               
+               <bibl xml:id="Poems_2nd_ed_MRM">
+                  <title>Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <bibl corresp="#BelovedMotherBirthday_1810"/>
+                  <bibl corresp="#BustFox_1810"/>
+                  <bibl corresp="#Cheerfulness_1810"/>
+                  <bibl corresp="#Epistle_Friend_1810"/>
+                  <bibl corresp="#EveningPrimrose_1810"/>
+                  <bibl corresp="#Father_Bocking_1810"/>
+                  <bibl corresp="#FavoriteBower_1810"/>
+                  <bibl corresp="#GlowWorm_1810"/>
+                  <bibl corresp="#Imitated_Italian_1810"/>
+                  <bibl corresp="#JoannasProphecy_1810"/>
+                  <bibl corresp="#Memory_John_Moore_1810"/>
+                  <bibl corresp="#MissMurray_1810"/>
+                  <bibl corresp="#MungoPark_1810"/>
+                  <bibl corresp="#NightMay_1810"/>
+                  <bibl corresp="#Pen_Sword_1810"/>
+                  <bibl corresp="#Prologue_ReadingSchool_1810"/>
+                  <bibl corresp="#RevisitingSchool_1810"/>
+                  <bibl corresp="#Scenery_1810"/>
+                  <bibl corresp="#Sybille_1810"/>
+                  <bibl corresp="#ToMay_1810"/>
+                  <bibl corresp="#Verses_with_Primroses_1810"/>
+                  <bibl corresp="#Willow_1810"/>
+                  <bibl corresp="#WinterScenery_1810"/>
+                  <bibl corresp="#WmHerbert_1810"/>
+                  <bibl corresp="#Wreaths_1810"/>
+                  <bibl corresp="#YellowButterfly_1810"/>
+                  <bibl corresp="#Bertha_1811"/>
+                  <bibl corresp="#Beauty_MRM"/>
+                  <bibl corresp="#BessyBell_1811"/>
+                  <bibl corresp="#BlindMansStory_1811"/>
+                  <bibl corresp="#Consumption_1811"/>
+                  <bibl corresp="#EpitaphOnMary_1811"/>
+                  <bibl corresp="#FairEleanor_1811"/>
+                  <bibl corresp="#InfantileLove_1811"/>
+                  <bibl corresp="#LoveSickMaid_1811"/>
+                  <bibl corresp="#MarinersTale_1811"/>
+                  <bibl corresp="#MaternalAffection_1811"/>
+                  <bibl corresp="#NearRuinedFarm_1811"/>
+                  <bibl corresp="#Portrait_Blanch_1811"/>
+                  <bibl corresp="#Portugal_1811"/>
+                  <bibl corresp="#SecretCell_1811"/>
+                  <bibl corresp="#Silchester_1811"/>
+                  <bibl corresp="#Song_FairestThings_1811"/>
+                  <bibl corresp="#Sun_Set_MRM"/>
+                  <bibl corresp="#VictoryOfBarrosa_1811"/>
+                  <bibl corresp="#VoiceofPraise_MRM"/>
+                  <bibl corresp="#Watch_1811"/>
+                  <bibl corresp="#WestminsterAbbey_1811"/>
+                  <note resp="#lmw">2 volumes.</note>
+               </bibl>
+               
+               <bibl xml:id="WmHerbert_1810">
+                  <title level="a">To the Hon. William Herbert</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem; serves as dedication to the volume and appears before the Table of Contents (iii-iv). Signed Mary Russell Mitford. Bertram House, Feb. 20, 1810. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Sybille_1810">
+                  <title level="a">Sybille. A Northumbrian Tale.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 narrative poem. <persName ref="#MRM">Mitford</persName>'s introductory argument indicates that she wrote this poem <quote>at the request of a near relation who wished me to compose a Tale adapted to the picturesque and enchanting scenery of the ancient domains of our family, now in the possession of Bertram Mitford, Esq. The Lord de Bertram, (one of the followers of William the Conqueror) married Sybille, the heiress of Sir Johannes de Mitford, and died, I believe, in the Holy Land.</quote> This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="RevisitingSchool_1810">
+                  <title level="a">On Revisiting the School Where I was Educated. Addressed to Mrs. Rowden, of Hans Place.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem addressed to <persName ref="#MRM">Mitford</persName>'s friend and former teacher <persName ref="#Rowden_Fr">Frances Rowden</persName>, referring to the <placeName ref="#StQuintin_School">St. Quintin School</placeName> where she was educated. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="EveningPrimrose_1810">
+                  <title level="a">To the Evening Primrose.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="FavoriteBower_1810">
+                  <title level="a">Written in a Favorite Bower, Previous to Leaving Home, May 14, 1809.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date> 
+                  <note resp="lmw">1810 poem refers to <persName ref="#MRM">Mitford</persName>'s home <placeName ref="#Bertram_house">Bertram House</placeName> and is dated <date when="1809-05-14">May 14, 1809</date>. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="GlowWorm_1810">
+                  <title level="a">To the Glow-Worm.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw"> 1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="MungoPark_1810">
+                  <title level="a">Lines, Suggested by the Uncertain Fate of Mungo Park, the Celebrated African Traveller.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Verses_with_Primroses_1810">
+                  <title level="a">Verses, Sent with Some Primroses to a Young Lady, who had Promised us a Visit Early in the Spring. Feb. 7, 1808.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="MissMurray_1810">
+                  <title level="a">To the Hon. Miss Murray, with Miss Rowden's "Poetical Introduction to Botany."</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.<!--LMW: Charlotte Murray --></note>
+               </bibl>
+               
+               <bibl xml:id="NightMay_1810">
+                  <title level="a">The Night of May. To Miss W--</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.<!--LMW Mary Webb? --></note>
+               </bibl>
+               
+               <bibl xml:id="Father_Bocking_1810">
+                  <title level="a">To my Father, on his Return from Bocking. May 29, 1808.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Scenery_1810">
+                  <title level="a">Sonnet, On Being Requested to Write on Scottish Scenery.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw"> 1810 sonnet. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="BelovedMotherBirthday_1810">
+                  <title level="a">To my Beloved Mother, On Her Birth-Day, June 15, 1808.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.
+                  </note>
+               </bibl>
+               
+               <bibl xml:id="MariaWinningCup_1810">
+                  <title level="a">On Maria's Winning the Cup, At the Ilsley Coursing Meeting. November 9, 1808. Inscribed to W. Cobbett, Esq.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title not republished in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Wardle_Death_1810">
+                  <title level="a">To G. L. Wardle, Esq., on the Death of His Child.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title not republished in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Pratt_1810">
+                  <title level="a">To Mr. Pratt.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title not republished in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Impromptu_Whitbread_1810">
+                  <title level="a">Impromptu, On Hearing Mr. Whitbread Declare, On Lord Melville's Trial, That <q>He Fondly Trusted his Name Would Descend with Honor to Posterity.</q></title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title not republished in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Prologue_ReadingSchool_1810">
+                  <title level="a">Prologue, Intended to Have Been Spoken Before the First Part of Henry the Fourth, Acted by the Gentlemen of the Reading School Meeting, October 23, 1809. Inscribed to the Rev. Dr. Valpy.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="YellowButterfly_1810">
+                  <title level="a">To a Yellow Butterfly. April 8, 1808.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>. It first appeared in La Belle Assemblée  Vol. 3 (1807): 49.</note>
+               </bibl>
+               
+               <bibl xml:id="WinterScenery_1810">
+                  <title level="a">Winter Scenery. January, 1809.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>. This poem reprinted in <title>British Women Poets of the Romantic Era</title>, ed. Paula Feldman (455).</note>
+               </bibl>
+               
+               <bibl xml:id="Cheerfulness_1810">
+                  <title level="a">To Cheerfulness.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Memory_John_Moore_1810">
+                  <title level="a">To The Memory of Sir John Moore.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>. Barbara Hofland employs the first four lines of this poem as a chapter epigraph in volume 3 of her Tales of the Priory (33).</note>
+               </bibl>
+               
+               <bibl xml:id="Epistle_Friend_1810">
+                  <title level="a">Epistle to a Friend.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl><!-- a cousin mary from Northumberland -->
+               
+               <bibl xml:id="Imitated_Italian_1810">
+                  <title level="a">Imitated from the Italian.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="BustFox_1810">
+                  <title level="a">On a Bust of Fox.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Willow_1810">
+                  <title level="a">The Willow. Translated from the French of J. J. Rousseau.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="ToMay_1810">
+                  <title level="a">To May. 1808.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Wreaths_1810">
+                  <title level="a">The Wreaths. A Tale. Taken from the "Curiosities of Literature." Addressed to a Young Lady.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="JoannasProphecy_1810">
+                  <title level="a">Joanna's Prophecy.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Pen_Sword_1810">
+                  <title level="a">The Pen and the Sword. Inscribed to the Rt. Hon. R. B. Sheridan.</title>
+                  <title level="m">Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1810">1810</date>
+                  <note resp="lmw">1810 poem. This title also published in <title ref="#Poems_2nd_ed_MRM">Poems: Second Edition with Considerable Additions</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Portrait_Blanch_1811">
+                  <title level="a">A Portrait. [from Blanch, an Unfinished Poem.]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="VoiceofPraise_MRM"><!--LMW Revised entry for Existing id -->
+                  <title level="a">The Voice of Praise</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem. This poem appears in The Life of George Brummell, Esq., Volume 2, where its authorship is misattributed to Lady Granville, the daughter of Georgiana, the Duchess of Devonshire.</note>
+               </bibl>
+               
+               <bibl xml:id="Song_FairestThings_1811">
+                  <title level="a">Song. ["The fairest things are those which live"]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="Beauty_MRM"><!--LMW: REVISED ENTRY: existing id -->
+                  <title level="a">Beauty: An Ode.</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="FairEleanor_1811">
+                  <title level="a">Fair Eleanor: A Tale.</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="LoveSickMaid_1811">
+                  <title level="a">The Love-Sick Maid; An Imitation of the Writers of the Seventeenth Century. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="MarinersTale_1811">
+                  <title level="a">The Mariner's Tale.</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="EpitaphOnMary_1811">
+                  <title level="a">Epitaph on Mary, the Wife of George Mitford, Esq.</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="NearRuinedFarm_1811">
+                  <title level="a">Stanzas Written Near a Ruined Farm.</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="SecretCell_1811">
+                  <title level="a">The Secret Cell.</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="InfantileLove_1811">
+                  <title level="a">Infantile Love.</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem. A portion of this poem appears as an epigraph in Poems by Eliza Gabriella Lewis (1850).</note>
+               </bibl>
+               
+               <bibl xml:id="Watch_1811">
+                  <title level="a">The Watch. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem. This poem is reprinted in Romanticism: An Anthology, ed. Duncan Wu.</note>
+               </bibl>
+               
+               <bibl xml:id="Consumption_1811">
+                  <title level="a">Ode to Consumption. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem. This poem is reprinted as a selection inin Benjamin Suggitt Nayler's A Rhetorical Grammar (1822).</note>
+               </bibl>
+               
+               <bibl xml:id="Bertha_1811">
+                  <title level="a">Bertha. A Ballad. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem. </note>
+               </bibl>
+               
+               <bibl xml:id="Portugal_1811">
+                  <title level="a">Portugal. An Ode. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="BlindMansStory_1811">
+                  <title level="a">The Blind Man's Story. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="Sun_Set_MRM"> <!--REVISED ENTRY: existing id -->
+                  <title level="a">Sun-Set. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem. </note>
+               </bibl>
+               
+               <bibl xml:id="WestminsterAbbey_1811">
+                  <title level="a">Westminster Abbey. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="MaternalAffection_1811">
+                  <title level="a">Maternal Affection. An Ode. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="BessyBell_1811">
+                  <title level="a">Bessy Bell and Mary Gray. A Ballad. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="Silchester_1811">
+                  <title level="a">Bessy Bell and Mary Gray. A Ballad. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="VictoryOfBarrosa_1811">
+                  <title level="a">On the Victory of Barrosa. To Mrs. Taylor, of Hartley Court, Near Reading, Mother of Colonel Norcott. [1811 version]</title>
+                  <title level="m">Poems: Second Edition with Considerable Additions</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+                  <date when="1811">1811</date>
+                  <note resp="#lmw">1811 poem.</note>
+               </bibl>
+               
+               <bibl xml:id="WatlingtonH_1827">
+                  <title level="a">Watlington Hill: A Descriptive Poem [1827 version]</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Long narrative poem, originally published separately in one volume in <date when="1812">1812</date></note>
+               </bibl>
+               
+           <!--LMW: Here is updated version of existing Wat. Hill entry for the first edition:
+              <bibl xml:id="WatlingtonH">
+                  <title>Watlington Hill; A Poem</title>
+                  <date>1812</date>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#AJValpy_pub">A. J. Valpy</orgName></publisher>
+               </bibl> -->
+               
+               <bibl xml:id="Independence_1827">
+                  <title level="a">Independence</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 narrative poem.</note>
+               </bibl>
+               
+               <bibl xml:id="WestonGrove_1827">
+                  <title level="a">Weston Grove: A Descriptive Poem</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 narrative poem.</note>
+               </bibl>
+               
+               <bibl xml:id="Antigone_MRM_1827">
+                  <title level="a">Antigone: A Portrait in Verse</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 verse portrait.</note>
+               </bibl>
+               
+               <bibl xml:id="HoundandHorn_1827">
+                  <title level="a">With hound and horn and huntsman's call</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 untitled song. Title taken from first line.</note>
+               </bibl>
+               
+               <bibl xml:id="LilyBells_1827">
+                  <title level="a">The lily bells are wet with dew</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 untitled song. Title taken from first line.</note>
+               </bibl>
+               
+               <bibl xml:id="GaySummerMorn_1827">
+                  <title level="a">'Tis a gay summer morn, and the sunbeams dance</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 untitled song. Title taken from first line.</note>
+               </bibl>
+               
+               <bibl xml:id="EveningHour_1827">
+                  <title level="a">Sweet is the balmy evening hour</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 untitled song. Title taken from first line. Also appeared in the <bibl><date when="1827">1827</date> <title ref="#Pledge_Friendship">Pledge of Friendship</title> <biblScope unit="pp">(p. 35)</biblScope>, similarly untitled.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="EveningsRichest_1827">
+                  <title level="a">Evening's richest colours glowing</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">1827 untitled song. Title taken from first line.</note>
+               </bibl>
+               
+               <bibl xml:id="WrittenOct1825_1827">
+                  <title level="a">Written October, 1825</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">316</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 22 in the 1827 collection <biblScope unit="pp">(page 316)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="FriendToLisbon_1827">
+                  <title level="a">On the Departure of a Friend to Lisbon for the Recovery of Her Health</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">315</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 21 in the 1827 collection <biblScope unit="pp">(page 315)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="IntendedRemoval_1827">
+                  <title level="a">On an Intended Removal From a Favourite Residence. November, 1820</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">314</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 20 in the 1827 collection <biblScope unit="pp">(page 314)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="WrittenAfterVisit_1827">
+                  <title level="a">Written After a Visit From Some Friends</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">313</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 19 in the 1827 collection <biblScope unit="pp">(page 313)</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="DonningtonCastle_1827">
+                  <title level="a">On Visiting Donnington Castle</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">311-12</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 18 in the 1827 collection <biblScope unit="pp">(pages 311-12)</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="FriendsAlbum_1827">
+                  <title level="a">Written in a Friend's Album</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">310</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 17 in the 1827 collection <biblScope unit="pp">(page 310)</biblScope></bibl>. Also appeared in <bibl><title ref="#Marshalls_Christmas">Marshall's Christmas Box</title> in <date when="1831">1831</date></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="LeavingPicture_1827">
+                  <title level="a">On Leaving a Favourite Picture</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">309
+                </biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 16 in the 1827 collection <biblScope unit="pp">(page 309</biblScope></bibl>. Also appeared in the <bibl><date when="1827">1827</date> <title ref="#Lit_Souvenir">Literary Souvenir</title> <biblScope unit="pp">(page 233)</biblScope>.</bibl></note></bibl>
+               
+               <bibl xml:id="FriendBirthday_1827">
+                  <title level="a">To a Friend on Her Birthday</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">308</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 15 in the 1827 collection <biblScope unit="pp">(page 308)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="FishingSeat_1827">
+                  <title level="a">The Fishing-Seat, Whiteknights</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">307</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 14 in the 1827 collection <biblScope unit="pp">(page 307)</biblScope></bibl>. Also appeared in the <bibl><date when="1827">1827</date> <title ref="#Lit_Souvenir">Literary Souvenir</title> <biblScope unit="pp">(page 287)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="HearingTalfourd_1827">
+                  <title level="a">On Hearing Mr. Talfourd Plead in the Assize-Hall at Reading, On His First Circuit, March 1821</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">306</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 13 in the 1827 collection <biblScope unit="pp">(page 306)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="TwoHoflandLandscapes_1827">
+                  <title level="a">On Two of Mr. Hofland's Landscapes</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">305</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 12 in the 1827 collection <biblScope unit="pp">(page 305)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="NewYearsDay_1827">
+                  <title level="a">New Year's Day. 1819</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">304</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 11 in the 1827 collection <biblScope unit="pp">(page 304)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="EnglefieldHouse_1827">
+                  <title level="a">Englefield House</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">303</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 10 in the 1827 collection <biblScope unit="pp">(page 303)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="ToMrHaydon_Nature_1827">
+                  <title level="a">To Mr. Haydon, On a Study From Nature</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">302</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 9 in the 1827 collection <biblScope unit="pp">(page 302)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="ToMissPorden_1827">
+                  <title level="a">To Miss Porden</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">301</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 8 in the 1827 collection <biblScope unit="pp">(page 301)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="BeautifulWoman_1827">
+                  <title level="a">On a Beautiful Woman</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">300</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 7 in the 1827 collection <biblScope unit="pp">(page 300)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="MotherSleeping_1827">
+                  <title level="a">To My Mother Sleeping</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">299</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 6 in the 1827 collection <biblScope unit="pp">(page 299)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="WrittenJuly1824_1827">
+                  <title level="a">Written July, 1824</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">298</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 5 in the 1827 collection <biblScope unit="pp">(page 298)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="ToHenryRichardson_1827">
+                  <title level="a">To Mr. Henry Richardson. On His Performance of Admetus in the Alcestis of Euripides as Represented in the Original Greek at Reading School </title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">296-97</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 4 in the 1827 collection <biblScope unit="pp">(pages 296-97)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="ForgetMeNot_1827">
+                  <title level="a">The Forget-Me-Not</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">295</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 3 in the 1827 collection <biblScope unit="pp">(page 295)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="HoflandsJerusalem_1827">
+                  <title level="a">On Mr. Hofland's Picture of Jerusalem at the Time of the Crucifixion</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">294</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 2 in the 1827 collection <biblScope unit="pp">(page 294)</biblScope></bibl>.  Also appeared in the <bibl><date when="1826">1826</date> <title ref="#Amulet">Amulet</title> as Sonnet: Jerusalem <biblScope unit="pp">(page 329)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="BlankPaperBook_1827">
+                  <title level="a">Written in a Blank-Paper Book Given to the Author by a Friend</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp">293</biblScope>
+                  <note resp="#slc #lmw"><bibl>Sonnet 1 in the 1827 collection <biblScope unit="pp">(page 293)</biblScope></bibl>.</note>
+               </bibl>
+               
+               <bibl xml:id="Masque_Seasons_DS_1827">
+                  <title level="a">Masque of the Seasons: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Captive_DS_1827">
+                  <title level="a">The Captive: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Bridal_Eve_DS_1827">
+                  <title level="a">Bridal Eve: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Appeared in <bibl><title ref="#ForgetMeNot">Forget Me Not, a Christmas and New Year's present for <date when="1827">1827</date></title> <biblScope unit="pp">(pp. 363+, 12 pages)</biblScope></bibl>. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).
+                  </note>
+               </bibl>
+               
+               <bibl xml:id="Henry_Talbot_DS_1827">
+                  <title level="a">Henry Talbot: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Alice_DS_1827">
+                  <title level="a">Alice: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Appeared in <bibl><title ref="#ForgetMeNot">Forget Me Not, a Christmas and New Year's present for <date when="1826">1826</date></title> <biblScope unit="pp">(pp. 5+, 12 pages)</biblScope></bibl> as Alice: A Dramatic Scene. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Fair_Rosamund_DS_1827">
+                  <title level="a">Fair Rosamund: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="PaintersDa_DS_1827">
+                  <title level="a">The Painter's Daughter: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Wedding_Ring_DS_1827">
+                  <title level="a">The Wedding Ring: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Appeared in <bibl><title ref="#ForgetMeNot">Forget Me Not, a Christmas and New Year's present for <date when="1828">1828</date></title> <biblScope unit="pp">(p. 79)</biblScope></bibl>. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).
+                  </note>
+               </bibl>
+               
+               <bibl xml:id="Fawn_DS_1827">
+                  <title level="a">The Fawn: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Cunigonda_DS_1827">
+                  <title level="a">Cunigonda's Vow: A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <note resp="#slc #lmw">Dramatic sketch. Reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Emily_DS_1827">
+                  <title level="a">Emily, A Dramatic Sketch</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827"/>
+                  <biblScope unit="pp" from="83" to="105">83-105</biblScope>
+                  <note resp="#rnes #lmw">Dramatic sketch. Appeared in the <bibl><title ref="#LondonMag">London Magazine</title> 3.17 <date when="1821-05">(May 1821)</date>: <biblScope unit="pp" from="499" to="505">499-505</biblScope></bibl>. Later reprinted in <title ref="#DramaticScenes">Dramatic Scenes, Sonnets, and Other Poems</title> (83-105). Also reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).</note>
+               </bibl>
+               
+               <bibl xml:id="Siege_DS_1827">
+                  <title level="a">The Siege</title>
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827">1827</date>
+                  <biblScope unit="pp" from="462" to="466">462-66</biblScope>
+                  <note resp="#lmw">Dramatic sketch which appeared in <bibl><title level="j">Lady's Magazine</title> of <date when="1822-03-30">September 30, 1822</date>:<biblScope unit="pp" from="462" to="466">462-66</biblScope></bibl> as <title ref="#Claudias_Dr">Claudia's Dream</title>. Retitled as The Siege in <title ref="#DramaticScenes">Dramatic Scenes, Sonnets, and Other Poems</title>. Appeared in the <bibl><date when="1827">1827</date> <title ref="#Friendships_Off">Friendship's Offering</title> <biblScope unit="pp">(pp. 290+, 10 pages)</biblScope></bibl> as The Siege: A Dramatic Scene. Also reprinted in volume two of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> (1854).
+                  </note>
+               </bibl>
+               
+               <bibl xml:id="DramaticScenes">
+                  <title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+                  <author ref="#MRM"/>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher><orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName></publisher>
+                  <date when="1827">1827</date>
+                  <bibl corresp="#Alice_DS_1827"/>
+                  <bibl corresp="#Antigone_MRM_1827"/>
+                  <bibl corresp="#BeautifulWoman_1827"/>
+                  <bibl corresp="#BlankPaperBook_1827"/>
+                  <bibl corresp="#Bridal_Eve_DS_1827"/>
+                  <bibl corresp="#Captive_DS_1827"/>
+                  <bibl corresp="#Cunigonda_DS_1827"/>
+                  <bibl corresp="#DonningtonCastle_1827"/>
+                  <bibl corresp="#Emily_DS_1827"/>
+                  <bibl corresp="#EnglefieldHouse_1827"/>
+                  <bibl corresp="#EveningHour_1827"/>
+                  <bibl corresp="#EveningsRichest_1827"/>
+                  <bibl corresp="#Fair_Rosamund_DS_1827"/>
+                  <bibl corresp="#Fawn_DS_1827"/>
+                  <bibl corresp="#FishingSeat_1827"/>
+                  <bibl corresp="#ForgetMeNot_1827"/>
+                  <bibl corresp="#FriendBirthday_1827"/>
+                  <bibl corresp="#FriendToLisbon_1827"/>
+                  <bibl corresp="#FriendsAlbum_1827"/>
+                  <bibl corresp="#GaySummerMorn_1827"/>
+                  <bibl corresp="#HearingTalfourd_1827"/>
+                  <bibl corresp="#Henry_Talbot_DS_1827"/>
+                  <bibl corresp="#HoflandsJerusalem_1827"/>
+                  <bibl corresp="#HoundandHorn_1827"/>
+                  <bibl corresp="#Independence_1827"/>
+                  <bibl corresp="#IntendedRemoval_1827"/>
+                  <bibl corresp="#LeavingPicture_1827"/>
+                  <bibl corresp="#LilyBells_1827"/>
+                  <bibl corresp="#Masque_Seasons_DS_1827"/>
+                  <bibl corresp="#MotherSleeping_1827"/>
+                  <bibl corresp="#NewYearsDay_1827"/>
+                  <bibl corresp="#PaintersDa_DS_1827"/>
+                  <bibl corresp="#Siege_DS_1827"/>
+                  <bibl corresp="#ToHenryRichardson_1827"/>
+                  <bibl corresp="#ToMissPorden_1827"/>
+                  <bibl corresp="#ToMrHaydon_Nature_1827"/>
+                  <bibl corresp="#TwoHoflandLandscapes_1827"/>
+                  <bibl corresp="#WatlingtonH_1827"/>
+                  <bibl corresp="#Wedding_Ring_DS_1827"/>
+                  <bibl corresp="#WestonGrove_1827"/>
+                  <bibl corresp="#WrittenAfterVisit_1827"/>
+                  <bibl corresp="#WrittenJuly1824_1827"/>
+                  <bibl corresp="#WrittenOct1825_1827"/>
+               </bibl>
+               
+            </listBibl>
+         </div>
+               
+               <div type="historical_people">
+                   <listOrg sortKey="histOrgs">
+               <org xml:id="Whittaker_GB_pub">
+                  <orgName>G. B. Whittaker</orgName>
+                  <note resp="#lmw">G. B. Whittaker was a publishing firm located in London, founded and run by George Byrom Whittaker, who was also a bookseller. George published under this firm name as well as under G. &amp; W. B. Whittaker, the firm founded and run by George and his brother William Budd Whittaker.<!-- LMW: no corporate VIAF #. --> Source: WorldCat.</note>
+               </org>
+            </listOrg>
+         </div>
+      </body>
+   </text>
+</TEI>

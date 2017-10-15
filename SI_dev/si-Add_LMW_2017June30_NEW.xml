@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+                <editor><!--Add your name here! And add an @ref attribute to <editor>, pointing to your xml:id in the si.xml--> </editor>
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName><!--LMW: additional NEW site index entries, mostly from letters. 2017-06-30-->
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+          
+       <div type="historical_people">
+         <listPerson sortKey="histPersons">
+            <person xml:id="Forsyth_Jos" sex="1">
+               <persName>Joseph Forsyth</persName>
+               <persName>
+                  <forename>Joseph</forename>
+                  <surname>Forsyth</surname>
+               </persName>
+               <birth when="1763-02-18">
+                  <placeName>Elgin, Moray, Scotland</placeName>
+               </birth>
+               <death when="1815-09-20">
+                  <placeName>Elgin, Moray, Scotland</placeName>
+               </death>
+               <occupation>educator</occupation>
+               <occupation>literary</occupation>
+               <occupation>essayist</occupation>
+               <note resp="#lmw">Schoolmaster and author of <title ref="#Remarks_Italy">Remarks on Antiquities, Arts, and Letters, during an Excursion in Italy in the years 1802 and 1803</title> He travelled to Italy during the Peace of Amiens and was on his way back to England when war broke out and he was captured. He was a French prisoner between 1803 and 1814, and authored his works in hope of influencing Napoleon, a patron of Italian literature and art, to release him.</note>
+               <note>
+                  <ref target="http://viaf.org/viaf/15551790"/>
+               </note>
+            </person>
+            
+             <person xml:id="Reynolds_Josh" sex="2">
+                <persName>Sir Joshua Reynolds</persName>
+                <persName>
+                   <surname>Reynolds</surname>
+                   <forename>Joshua</forename>
+                   <roleName>Sir</roleName>
+                </persName>
+                <birth when="1723-07-16">
+                   <placeName>Plympton, Devon, England</placeName>
+                </birth>
+                <death when="1792-02-23">
+                   <placeName>Leicester Fields, London, England</placeName>
+                </death>
+                <occupation>artist</occupation>
+                <occupation>painter</occupation>
+                <occupation>literary</occupation>
+                <occupation>lecturer</occupation>
+                <note resp="#lmw">The most celebrated and sought-after English portrait painter of the second half of the eighteenth century; he was the first President of the <orgName ref="#Royal_Academy">Royal Academy of Arts</orgName>. His <title>Discourses</title>, lectures given on art and later printed, were highly influential on the art and aesthetics of his time.</note>
+                
+             </person>
+             <person xml:id="Vandyke" sex="1">
+                <persName>Sir Anthony van Dyck</persName>
+                <persName>
+                   <forename>Anthony</forename>
+                   <surname><addLink>van </addLink> Dyck</surname>
+                   <roleName>Sir</roleName>
+                </persName>
+                <persName><addName>Antoon van Dyck</addName></persName>
+                <persName><addName>Anthony van Dyke</addName></persName>
+                   <birth when="1599-03-22">
+                      <placeName>Antwerp, Spanish Netherlands</placeName>
+                   </birth>
+                   <death wen="1641-12-09">
+                      <placeName>London, England</placeName>
+                   </death>
+                <occupation>artist</occupation>
+                <occupation>painter</occupation>
+                <note resp="#lmw">Flemish portrait painter who became celebrated in England for his portraits of <persName ref="#ChasI">Charles I</persName> and his court. His style greatly influenced English portrait painting until well into the eighteenth century. In one of her letters, <persName ref="#MRM">Mitford</persName> compares him analagously to <persName ref="#Shakespeare">Shakespeare</persName>.</note>
+             </person>
+            
+            <person xml:id="Anstruther_Miss" sex="2">
+               <persName>Miss Anstruther</persName>
+               <persName>
+                  <surname>Anstruther</surname>
+                  <roleName>Miss</roleName>
+               </persName>
+               <note resp="#lmw">An associate of <rs type="person" ref="#Palmer_Mad #Palmer_CF">the Palmers</rs> in <date when="1819">1819</date>; mentioned as taking part in a <placeName ref="#Reading_city">Reading</placeName> election procession. More research needed.</note>
+            </person>
+            
+            <person xml:id="Clarke_Mrs" sex="2">
+               <persName>Mrs. Clarke</persName>
+               <persName>
+                  <surname>Clarke</surname>
+                  <roleName>Mrs.</roleName>
+               </persName>
+               <note resp="#lmw">The daughter of Colonel Anstruther who lived in <placeName ref="#Reading_city">Reading</placeName>. An associate of <rs type="person" ref="#Palmer_Mad #Palmer_CF">the Palmers</rs> in <date when="1819">1819</date>; mentioned as taking part in a <placeName ref="#Reading_city">Reading</placeName> election procession. More research needed.<!--lmw: Some possibilities: Mrs. Cowden Clarke (Mary Victoria): she and her husband Charles were friends with Lamb and Hunt. Authors of Recollections of Writers. Or, Angelica Rush (1788-1868), wife of Edward Daniel Clarke. --></note>
+            </person>
+          </listPerson>
+       </div>
+         
+       <div type="fictional_and_archetypal">
+          <listPerson sortKey="archPersons">
+                <person xml:id="Venus" sex="2">
+                   <persName>Venus</persName>
+             <note resp="#lmw">Roman goddess of love and beauty; her counterpart in Greek mythology is Aphrodite.</note>
+                </person>
+             </listPerson>
+         
+          
+          <listPerson sortKey="fictPersons">
+             <person xml:id="Glenalvon" sex="1">
+                <persName>Glenalvon</persName>
+                <note resp="#lmw">Secondary character in <title ref="#Douglas_play">Douglas</title>.
+                </note>
+             </person>
+             
+             <person xml:id="Iago_O" sex="1">
+                <persName>Iago</persName>
+                   <note resp="#lmw">Character in <title ref="#Othello_play">Othello.</title>
+                   </note>
+             </person>
+             
+             <person xml:id="Master_Peter_DQ" sex="1">
+                <persName>Master Peter</persName>
+                <persName>
+                   <forename>Peter</forename>
+                </persName>
+                <note resp="#lmw">Master Peter is the puppetmaster in <title ref="#Don_Quixote_novel">Don Quixote</title>; his puppets are destroyed in the course of the novel.</note>
+             </person>
+             
+             <person xml:id="OLeary_FM" sex="1">
+                <persName>Terence Oge O'Leary</persName>
+                <note resp="#lmw">Character of an Irish "hedge schoolmaster" in <persName ref="#Owenson_S">Lady Morgan</persName>'s novel <title ref="#Florence_Macarthy_SO">Florence Macarthy</title> (I.284).</note>
+             </person>
+          </listPerson>
+       </div>
+         
+         <div type="publications">
+            <listBibl sortKey="literary">
+               <bibl xml:id="Remarks_Italy">
+                  <title>Remarks on Antiquities, Arts, and Letters, During an Excursion in Italy, in the Years 1802 and 1803.</title>
+                  <author ref="#Forsyth_Jos">Joseph Forsyth</author>
+                  <date when="1816">1816</date>
+                  <pubPlace>London</pubPlace>
+                  <publisher>J. Murray</publisher>
+               </bibl>
+            </listBibl>
+         
+            <listBibl sortKey="per_19thc">
+               <bibl xml:id="La_Belle_Assemblee">
+                  <title>La Belle Assemblée, Or Bell's Court and Fashionable Magazine, Addressed Particularly to the Ladies</title>
+                  <publisher>John Bell</publisher>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <date from="1806" to="1832"/>
+                  <note resp="#lmw">A general-interest miscellaneous periodical aimed at a female readership. Original 1806 sections included "Biographical Sketches" (usually illustrated), "Original Communications," "Original Correspondence," "State of Society and Manners," "Fine Arts," "Familiar Lectures on Useful Sciences," "Retrospect of Politics" (essays on topics including moral conduct, travel, fashion, politics, fine arts, music, and science); "Beauties of Modern Literature" and "Poetry and Music" (brief reviews of new works as well as original poetry, fiction, and songs); and fashion plates and reports on London and Paris fashions. Published in this form until May 1832; continued under different management from 1832 to 1837 as The Court Magazine and Belle Assemblée. From 1806 to 1821, published by John Bell. Between 1821 and 1823, published as "for the proprietors." Between 1823 and 1829, published as "for the proprietors" by G. &amp; W. B. Whittaker &amp; Co. In the 1820s the magazine increasingly focused on fashion and domestic concerns and included less material on politics and travel.</note>
+                  <note><ref target="http://www.british-fiction.cf.ac.uk/guide/reviews/lba.html"/></note>
+               </bibl>
+            </listBibl>
+         </div>
+         
+      </body>
+  </text>
+</TEI>
