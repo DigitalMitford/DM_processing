@@ -12,9 +12,7 @@
                 <assert test="every $token in $tokens satisfies $token = //tei:text//@xml:id | $si">
                     The attribute of @ref or @corresp (after the hasthtag, #) must match a defined @xml:id in this file. 
                     And did you remember to start with a hashtag when pointing to an xml:id? 
-                </assert>
-                
-                
+                </assert>                
             </rule>
             
             
@@ -26,9 +24,16 @@
             <assert test="starts-with(., '#')">
                 The attribute values of @ref, @resp, and @corresp must start with a hashtag.
             </assert>
-            -->
+            -->  
+    </pattern>
+    <pattern>
+        <rule context="@sex">
+            <report test="matches(., '\d') or matches(., ',')">
+                We are no longer using the ISO numerical codes for sex, and this attribute may not contain commas. Change this code to a letter, one (or more) of the following approved values: m, f, m f, and u. If indicating multiple values, separate each with just a white space.
+            </report>
+            
+        </rule>
         
-       
     </pattern>
     
     <pattern>
