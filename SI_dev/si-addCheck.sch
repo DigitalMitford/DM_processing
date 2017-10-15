@@ -28,7 +28,7 @@
     </pattern>
     <pattern>
         <rule context="@sex">
-            <report test="matches(., '\d') or matches(., ',')">
+            <report test="matches(., '[0-9,]')">
                 We are no longer using the ISO numerical codes for sex, and this attribute may not contain commas. Change this code to a letter, one (or more) of the following approved values: m, f, m f, and u. If indicating multiple values, separate each with just a white space.
             </report>
             
