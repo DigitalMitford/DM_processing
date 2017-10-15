@@ -22,10 +22,10 @@
                <resp>Data extraction and compiling by</resp>
                <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
             </respStmt>
-            <respStmt>
+           <!--2017-10-15 ebb: SEE REVISIONDESC BELOW and add to SI template files <respStmt>
                <resp>Proofing and corrections by</resp>
-               <persName><!--Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.--></persName>
-            </respStmt>
+               <persName><!-\-Add your name here and place an @ref attribute, if you're proofing and correcting existing entries.-\-></persName>
+            </respStmt>-->
          </titleStmt>
          <editionStmt>
             <edition> </edition>
@@ -52,6 +52,14 @@
             <p>Describes our editorial practice.</p>
          </editorialDecl>
       </encodingDesc>
+      <revisionDesc>
+         <list>
+            <item><date when="2016-09-24"/><persName ref="#lmw">Lisa M. Wilson</persName> began this file.</item>
+            <item><date when="2017-06-30"/><persName ref="#lmw">Lisa M. Wilson</persName> completed for proofing.</item>
+            <item><date when="2017-06-30"/><persName ref="#rnes">Rebecca Nesvet</persName> proof corrected</item>
+            <item><date when="2017-07-23"/><persName ref="#lmw">Lisa M. Wilson</persName> updated notes cross references.</item>
+         </list>
+      </revisionDesc>
    </teiHeader>
 
    <text>
