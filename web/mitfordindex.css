@@ -39,7 +39,7 @@ ul#siteMenu li.mainMenu {flex:2.5; background-color:/*#FFDB90*/#F8F8FF;}
 
 ul.mainMenu {list-style-type:none; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:row; background-color: Grey; padding:0}
 
-ul.mainMenu li.section {/*font-weight:bold; font-size:1em;*/ display:flex; justify-content:space-around; align-items:center; flex-direction:column; padding-left:20px; padding-right:10px; height:150px;}
+ul.mainMenu li.section {/*font-weight:bold; font-size:1em;*/ display:flex; justify-content:space-around; align-items:center; flex-direction:column; padding-left:20px; padding-right:10px; height:150px; flex:1}
 
 li#Overview {background-color:Grey; color:#FFDB90;}
 li#Overview a{color:gold; text-decoration:none;}
