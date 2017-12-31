@@ -1,5 +1,5 @@
 html{
-    background-color: #FFFAE6; 
+    background-color: #F8F8FF; 
 ;
    
     color: #580000;
@@ -20,20 +20,49 @@ div#images img{
 width:352px;
 display:inline-block
 }
-div#menubar{
-   
-   background-color: #FFEBC2;
-    text-align:left;
-    width:15%;
-   float:right;
-padding: 10px;
-border-radius: 5px;
-border-radius: 5px;
-   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-   
-   position:fixed; 
-   right:1%
-  }
+div#menu {/*background-image: url("mrmBlur.jpg");*/ padding:0; width:100%; position:relative; top:-20px; }
+
+
+
+menu#nav_wide{width:100%; height:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:row;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
+background-image: url("mrmBlur.jpg"); position:relative; top:-20px;
+ }
+ 
+span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }
+span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900;}
+
+ul#siteMenu {list-style-type:none; width:100%; display:flex; justify-content:space-around; align-items:flex-start; flex-direction:row; height:100%;  background-color:/*#F8F8FF;*/#FFDB90;
+position:relative; bottom:-20px;
+;
+}
+ul#siteMenu li.title {flex:1; display:flex; justify-content:space-around; align-items:center; flex-direction:column; background-color:#FFDB90;   }
+/*ul#siteMenu li {/\*padding:8px;*\/ font-weight: bold;}*/
+
+ul#siteMenu li.mainMenu {flex:2.5; background-color:/*#FFDB90*/#F8F8FF;}
+
+ul.mainMenu {list-style-type:none; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:row; background-color: Grey; padding:0}
+
+ul.mainMenu li.section {/*font-weight:bold; font-size:1em;*/ display:flex; justify-content:space-around; align-items:center; flex-direction:column; padding-left:20px; padding-right:10px; height:150px; flex:1}
+
+li#Overview {background-color:Grey; color:#FFDB90;}
+li#Overview a{color:gold; text-decoration:none;}
+li#Overview a:hover{color:yellow; text-decoration:underline;}
+li#Editions{background-color:FireBrick; color:Lavender;}
+li#Editions a {color:Lavender; text-decoration:none;}
+li#Editions a:hover {color:white; text-decoration:underline;}
+li#Bib{background-color:DarkSeaGreen; color:maroon}
+li#Bib a {color:maroon; text-decoration:none;}
+li#Bib a:hover {color:white; text-decoration:underline;}
+
+li#Project{background-color:Lavender; }
+li#Outreach{background-color:RosyBrown; color:PapayaWhip;}
+li#Outreach a {color:PapayaWhip; text-decoration:none;}
+li#Outreach a:hover {color:gold; text-decoration:underline}
+
+ul.subSec {list-style-type:none; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:column; margin-left:-40px; padding-top:5px; margin-right:25px; /*background-color:LemonChiffon;*/
+}
+ul.subSec li {text-align:left; font-size:1em; font-weight:700; padding-top:2px; padding-bottom:3px }
    
    
 

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+
+
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type="sketch">
+            <pb n="273"/>
+            <head>A PARTING GLANCE AT OUR
+               VILLAGE.<!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>It is now eighteen months since our village first sat for its picture, and I cannot
+               say farewell to my courteous readers, without giving them some little intelligence of
+               our goings on, a sort of parting glance at us and our condition. In outward
+               appearance it hath, I suppose, undergone less alteration than any place of its inches
+               in the kingdom. There it stands, the same long straggling street of pretty cottages,
+               divided by pretty gardens, wholly unchanged in size or appearance, unincreased and
+               undiminished by a single brick. To be sure, yesterday evening a slight misfortune
+               happened to our goodly tenement, occasioned by the unlucky diligence mentioned in my
+               first notice, which, under the conduct of a sleepy coachman, and a restive horse,
+               contrived to knock down and demolish the wall of our court, and fairly to drive
+               through the front garden, thereby destroying sundry curious stocks, carnations, and
+               geraniums. It is a mercy that the unruly steed<pb n="274"/> was content with
+               battering the wall; for the messuage itself would come about our ears at the touch of
+               a finger, and really there is one little end-parlour, an after-thought of the
+               original builder, which stands so temptingly in the way, that I wonder the sagacious
+               quadruped missed it. There was quite din enough without that addition. The three
+               insides (ladies) squalling from the interior of that commodious vehicle; the outsides
+               (gentlemen) swearing on the roof; the coachman, still half asleep, but unconsciously
+               blowing his horn; we in the house screaming and scolding; the passers-by shouting and
+               hallooing; and May, who little brooked such an invasion of her territories, barking
+               in her tremendous lion-note, and putting down the other noises like a clap of
+               thunder. But passengers, coachman, horses, and spectators, all righted at last; and
+               there is no harm done but to my flowers and to the wall. May, however, stands
+               bewailing the ruins, for that low wall was her favourite haunt; she used to parade
+               backwards and forwards on the top of it, as if to show herself, just after the manner
+               of a peacock on the top of a house; and would sit or lie for hours on the corner next
+               the gate, basking in the sunshine like a marble statue. Really she has quite the air
+               of one who laments the destruction of personal property; but the wall is to be
+               rebuilt to-morrow, with old weather-stained bricks—no patch-work! and<pb n="275"/>
+               exactly in the same form; May herself will not find the difference; so that in the
+               way of alteration this little misfortune will pass for nothing. Neither have we any
+               improvements worth calling such. Except that the wheeler’s green door hath been
+               retouched, out of the same pot (as I judge from the tint) with which he furbished up
+               our new-old pony-chaise; that the shop-window of our neighbour, the universal dealer,
+               hath been beautified, and his name and calling splendidly set forth in yellow letters
+               on a black ground; and that our landlord of the Rose hath hoisted a new sign of
+               unparalleled splendour; one side consisting of a full-faced damask rose, of the size
+               and hue of a piony, the other of a maiden blush in profile, which looks exactly like
+               a carnation, so that both flowers are considerably indebted to the modesty of the
+               “out-of-door artist,” who has warily written The Rose under each;—except these
+               trifling ornaments, which nothing but the jealous eye of a lover could detect, the
+               dear place is altogether unchanged.</p>
+            <p>The only real improvement with which we have been visited for our sins—(I hate all
+               innovation, whether for better or worse, as if I was a furious Tory, or a woman of
+               three-score and ten)—the only misfortune of that sort which has befallen us, is under
+               foot. The road has been adjusted on the plan of Mr. Mac-Adam; and a tremendous
+               operation it is. I do<pb n="276"/> not know what good may ensue; but for the last six
+               months, some part or other of the highway has been impassable for any feet, except
+               such as are shod by the blacksmith; and even the four-footed people who wear iron
+               shoes, make wry faces, poor things! at those stones, enemies to man and beast.
+               However, the business is nearly done now; we are covered with sharp flints every inch
+               of us, except a “bad step” up the hill, which, indeed, looks like a bit cut out of
+               the deserts of Arabia, fitter for camels and caravans than for Christian horses and
+               coaches; a point which in spite of my dislike of alteration I was forced to
+               acknowledge to our surveyor, a portly gentleman, who, in a smart gig drawn by a
+               prancing steed, was kicking up a prodigious dust at that very moment. He and I ought
+               to be great enemies; for, besides the Mac-Adamite enormity of the stony road, he hath
+               actually been guilty of tree-murder, having been an accessory before the fact in the
+               death of three limes along the rope-walk—dear sweet innocent limes, that did no harm
+               on earth except shading the path! I never should have for- given that offence, had
+               not their removal, by opening a beautiful view from the village up the hill,
+               reconciled even my tree-loving eye to their abstraction. And, to say the truth,
+               though we have had twenty little squabbles there is no bearing malice with our
+               surveyor; he is so civil and good-humoured, has such a bustling and happy
+               self-importance, such<pb n="277"/> an honest earnestness in his vocation (which is
+               gratuitous by the bye), and such an intense conviction that the state of the
+               turnpike-road between B. and K., is the principal affair of this life, that I would
+               not undeceive him for more worlds than one ever has to give. How often have I seen
+               him on a cold winter morning, with a face all frost and business, great-coated up to
+               the eyes, driving from post to post, from one gang of labourers to another, praising,
+               scolding, ordering, cheated, laughed at, and liked by them all! Well, when once the
+               hill is finished, we shall have done with him for ever, as he used to tell me by way
+               of consolation, when I shook my head at him, as he went jolting along over his dear
+               new roads, at the imminent risk of his springs and his bones; we shall see no more of
+               him; for the Mac-Adam ways are warranted not to wear out. So be it; I never wish to
+               see a roadmender again.</p>
+            <p>But if the form of outward things be all unchanged around us, if the dwellings of man
+               remain the same to the sight and the touch, the little world within hath undergone
+               its usual mutations;—the hive is the same, but of the bees some are dead and some are
+               flown away, and some that we left babes and sucklings, insects in the shell, are
+               already putting forth their young wings. Children in our village really sprout up
+               like mushrooms; the air is so promotive of growth, that<pb n="278"/> the rogues
+               spring into men and women, as if touched by Harlequin’s wand, and are quite offended
+               if one happens to say or do any thing which has a reference to their previous
+               condition. My father grievously affronted Sally L., only yesterday, by bestowing upon
+               her a great lump of gingerbread, with which he had stuffed his pockets at a fair. She
+               immediately, as she said, gave it to “the children.” Now Sally cannot be above twelve
+               to my certain knowledge, though taller than I am. Lizzy herself is growing womanly. I
+               actually caught that little lady stuck on a chest of drawers, contemplating herself
+               in the glass, and striving with all her might to gather the rich curls that hang
+               about her neck, and turn them under a comb. Well! If Sally and Lizzy live to be old
+               maids, they may probably make the amende honorable to time, and wish to be thought
+               young again. In the meanwhile, shall we walk up the street?</p>
+            <p>The first cottage is that of Mr. H. the patriot, the illuminator, the independent and
+               sturdy yet friendly member of our little state, who, stout and comely, with a
+               handsome chaise-cart, a strong mare, and a neat garden, might have passed for a
+               portrait of that enviable class of Englishmen, who, after a youth of frugal industry,
+               sit down in some retired place to “live upon their means.” He and his wife seemed the
+               happiest couple on earth; except a little too mnch<pb n="279"/> leisure, I never
+               suspected that they had one trouble or one care. But Care, the witch, will come
+               everywhere, even to that happiest station, and this prettiest place. She came in one
+               of her most terrific forms—blindness—or (which is perhaps still more tremendous) the
+               faint glimmering light and gradual darkness which precede the total eclipse. For a
+               long time we had missed the pleasant bustling officiousness, the little services, the
+               voluntary tasks, which our good neighbour loved so well. Fruit trees were blighted,
+               and escaped his grand specific, fumigation; wasps multiplied, and their nests
+               remained untraced; theicheerful modest knock with which, just at the very hour when
+               he knew it could be spared, he presented himself to ask for the newspaper, was heard
+               no more; he no longer hung over his gate to way-lay passengers, and entice them into
+               chat; at last he even left off driving his little chaise, and was only seen moping up
+               and down the garden-walk, or stealing gropingly from the wood-pile to the house. He
+               evidently shunned conversation or questions, forbade his wife to tell what ailed him,
+               and even when he put a green shade over his darkened eyes, fled from human sympathy
+               with a stern pride that seemed almost ashamed of the humbling infirmity. That strange
+               (but to a vigorous and healthy man perhaps natural) feeling soon softened. The
+               disease increased hourly, and he became depen<pb n="280"/>dent on his excellent wife
+               for every comfort and relief. She had many willing assistants in her labour of love;
+               all his neighbours strove to return, according to their several means, the kindness
+               which all had received from him in some shape or other. The country boys, to whose
+               service he had devoted so much time, in shaping bats, constructing bows and arrows,
+               and other quips and trickeries of the same nature, vied with each other in performing
+               little offices about the yard and stable; and John Evans, the half-witted gardener,
+               to whom he had been a constant friend, repaid his goodness by the most unwearied
+               attention. Gratitude even seemed to sharpen poor John’s perception and faculties.
+               There is an old man in our parish work-house, who occasionally walks through the
+               street, led by a little boy holding the end of a long stick. The idea of this man,
+               who had lived in utter blindness for thirty years, was always singularly distressing
+               to Mr. H. I shall never forget the address with which our simple gardener usedto try
+               to divert his attention from this miserable fellow-sufferer. He would get between
+               them to prevent the possibility of recognition by the dim and uncertain vision; would
+               talk loudly to drown the peculiar noise, the sort of duet of feet, caused by the
+               quick short steps of the child, and the slow irregular tread of the old man; and, if
+               any one ventured to allude to<pb n="281"/> blind Robert, he would turn the
+               conversation with an adroitness and acuteness which might put to shame the proudest
+               intellect. So passed many months. At last Mr. H. was persuaded to consult a
+               celebrated oculist, and the result was most comforting. The disease was ascertained
+               to be a cataract; and now with the increase of darkness came an increase of hope. The
+               film spread, thickened, ripened, speedily and healthily; and to-day the requisite
+               operation has been performed with equal skill and success. You may still see some of
+               the country boys lingering round the gate with looks of strong and wondering
+               interest; poor John is going to and fro, he knows not for what, unable to rest a
+               moment; Mrs. H., too, is walking in the garden, shedding tears of thankfulness; and
+               he who came to support their spirit, the stout strong-hearted farmer A., seems
+               trembling and overcome. The most tranquil person in the house is probably the
+               patient: he bore the operation with resolute firmness, and he has seen again. Think
+               of the bliss bound up in those four words! He is in darkness now, and must remain so
+               for some weeks; but he has seen, and he will see; and that humble cottage is again a
+               happy dwelling.</p>
+            <p>Next we come to the shoemaker’s abode. All is unchanged there, except that its master
+               becomes more industrious and more pale-faced, and that his fair<pb n="282"/> daughter
+               is a notable exemplification of the developement which I have already noticed amongst
+               our young things. But she is in the real transition state, just emerging from the
+               chrysalis, and the eighteen months, between fourteen and a half and sixteen, would
+               meta- morphose a child into a woman all the world over. She is still pretty, but not
+               so elegant as when she wore frocks and pinafores, and, unconsciously classical,
+               parted her long brown locks in the middle of her forehead, and twisted them up in a
+               knot behind, giving to her finely-shaped head and throat the air of a Grecian statue.
+               Then she was stirring all day in her small housewifery, or her busy idleness, delving
+               and digging in her flower-border, tossing and dandling every infant that came within
+               her reach, feeding pigs and poultry, playing with May, and prattling with an
+               open-hearted frankness to the country lads, who assemble at evening in the shop to
+               enjoy a little gentle gossiping; for be it known to my London readers, that the
+               shoemaker’s in a country village is now what (according to tradition, and the old
+               novels) the barber’s used to be, the resort of all the male newsmongers, especially
+               the young. Then she talked to these visitors gaily and openly, sang and laughed and
+               ran in and out, and took no more thought of a young man than of a gosling. Then she
+               was only fourteen. Now she wears gowns and aprons,—puts her hair in paper,<pb n="283"
+               />—has left off singing, talks,—has left off running, walks,—nurses the infants with
+               a grave solemn grace,—has entirely cut her former playmate Mayflower, who tosses her
+               pretty head as much as to say—who cares?—and has nearly renounced all acquaintance
+               with the visitors of the shop, who are by no means disposed to take matters so
+               quietly. There she stands on the threshold, shy and demure, just vouchsafing a formal
+               nod or a faint smile as they pass, and, if she in her turn be compelled to pass the
+               open door of their news-room (for the working apartment is separate from the house),
+               edging along as slyly and mincingly as if there were no such beings as young men in
+               the world. Exquisite coquette! I think (she is my opposite neighbour, and I have a
+               right to watch her doings,—the right of retaliation), there is one youth particularly
+               distinguished by her non-notice, one whom she never will see or speak to, who stands
+               a very fair chance to carry her off. He is called Jem Tanner, and is a fine lad, with
+               an open ruddy countenance, a clear blue eye, and curling hair of that tint which the
+               poets are pleased to denominate golden. Though not one of our eleven, he was a
+               promising cricketer. We have missed him lately on the green at the Sunday-evening
+               game, and I find on enquiry that he now frequents a chapel about a mile off, where he
+               is the best male singer, as our nymph of the shoe-shop is incom<pb n="284"/>parably
+               the first female. I am not fond of betting; but I would venture the lowest stake of
+               gentility, a silver three-pence, that, before the winter ends, a wedding will be the
+               result of these weekly meetings at the chapel. In the long dark evenings, when the
+               father has enough to do in piloting the mother with conjugal gallantry through the
+               dirty lanes, think of the opportunity that Jem will have to escort the daughter. A
+               little difficulty he may have to encounter: the lass will be coy for a while; the
+               mother will talk of their youth, the father of their finances; but the marriage, I
+               doubt not, will ensue.</p>
+            <p>Next in order, on the other side of the street, is the blacksmith’s house. Change has
+               been busy here in a different and more awful form. Our sometime constable, the
+               tipsiest of parish officers, of blacksmiths and of men, is dead. Returning from a
+               revel with a companion as full of beer as himself, one or the other, or both,
+               contrived to overset the cart in a ditch; (the living scapegrace is pleased to lay
+               the blame of the mishap on the horse, but that is contrary to all probability, this
+               respectable quadruped being a water-drinker ;) and inward bruises, acting on inflamed
+               blood and an impaired constitution, carried him off in a very short time, leaving an
+               ailing wife and eight children, the eldest of whom is only fourteen years of age.
+               This sounds like a very tragical story: yet, perhaps, be<pb n="285"/>cause the loss
+               of a drunken husband is not quite so great a calamity as the loss of a sober one, the
+               effect of this event is not altogether so melancholy as might be expected. The widow,
+               when she was a wife, had a complaining broken-spirited air, a peevish manner, a
+               whining voice, a dismal countenance, and a person so neglected and slovenly, that it
+               was difficult to believe that she had once been remarkably handsome. She is now quite
+               another woman. The very first Sunday she put on her weeds, we all observed how tidy
+               and comfortable she looked, how much her countenance, in spite of a decent show of
+               tears, was improved, and how completely through all her sighings her tone had lost
+               its peevishness. I have never seen her out of spirits or out of humour since. She
+               talks and laughs and bustles about, managing her journeymen and scolding her children
+               as notably as any dame in the parish. The very house looks more cheerful; she has cut
+               down the old willow-trees that stood in the court, and let in the light; and now the
+               sun glances brightly from the casement windows, and plays amidst the vine-leaves and
+               the clusters of grapes which cover the walls; the door is newly painted, and shines
+               like the face of its mistress; even the forge has lost half its dinginess. Every
+               thing smiles. She indeed talks by fits of “poor George,” especially when any allusion
+               to her old enemy mine host of the Rose brings the deceased to her me<pb n="286"
+               />mory; then she bewails (as is proper) her dear husband and her desolate condition;
+               calls herself a lone widow; sighs over her eight children; complains of the troubles
+               of business, and tries to persuade herself and others that she is as wretched as a
+               good wife ought to be. But this will not do. She is a happier woman than she has been
+               any time these fifteen years, and she knows it. My dear village-husbands, if you have
+               a mind that your wives should be really sorry when you die, whether by a fall from a
+               cart or otherwise, keep from the alehouse!</p>
+            <p>Next comes the tall thin red house, that ought to boast genteeler inmates than its
+               short fat mistress, its children, its pigs, and its quantity of noise, happiness, and
+               vulgarity. The din is greater than ever. The husband, a merry jolly tar, with a voice
+               that sounds as if issuing from a speaking trumpet, is returned from a voyage to
+               India; and another little one, a chubby roaring boy, has added his lusty cries to the
+               family concert.</p>
+            <p>This door, blockaded by huge bales of goods, and half darkened by that moving
+               mountain, the tilted waggon of the S. mill which stands before it, belongs to the
+               village shop. Increase has been here too in every shape. Within fourteen months two
+               little pretty quiet girls have come into the world. Before Fanny could well manage to
+               totter across the road to her good<pb n="287"/> friend the nymph of the shoe-shop,
+               Margaret made her appearance; and poor Fanny, discarded at once from the maid’s arms
+               and her mother’s knee, degraded from the rank and privileges of “the baby,” (for at
+               that age precedence is strangely reversed,) would have had a premature foretaste of
+               the instability of human felicity, had she not taken refuge with that best of nurses,
+               a fond father. Every thing thrives about the shop, from the rosy children to the neat
+               maid and the smart apprentice. No room now for lodgers, and no need! The young
+               mantua-making schoolmistresses, the old inmates, are gone; one of them not very far.
+               She grew tired of scolding little boys and girls about their A, B, C, and of being
+               scolded in her turn by their sisters and mothers about pelisses and gowns; so she
+               gave up both trades almost a year ago, and has been ever since our pretty Harriet. I
+               do not think she has ever repented of the exchange, though it might not perhaps have
+               been made so soon, had not her elder sister, who had been long engaged to an
+               attendant at one of the colleges of Oxford, thought herself on the point of marriage
+               just as our housemaid left us. Poor Betsy! She had shared the fate of many a prouder
+               maiden, wearing out her youth in expectation of the promotion that was to authorise
+               her union with the man of her heart. Many a year had she waited in smiling constancy,
+               fond of William in no common measure, and proud of him, as<pb n="288"/> well she
+               might be; for, when the vacation so far lessened his duties as to render a short
+               absence practicable, and he stole up here for a few days to enjoy her company, it was
+               difficult to distinguish him in air and manner, as he sauntered about in elegant
+               indolence with his fishing-rod and his flute, from the young Oxonians his masters. At
+               last promotion came; and Betsy, apprised of it by an affectionate and congratulatory
+               letter from his sister, prepared her wedding-clothes, and looked hourly for the
+               bridegroom. No bridegroom came. A second letter announced, with regret and
+               indignation, that William had made another choice, and was to be married early in the
+               ensuing month. Poor Betsy! We were alarmed for her health, almost for her life. She
+               wept incessantly, took no food, wandered recklessly about from morning till night,
+               lost her natural rest, her flesh, her colour; and in less than a week she was so
+               altered, that no one would have known her. Consolation and remonstrance were alike
+               rejected, till at last Harriet happened to strike the right chord by telling her that
+               “she wondered at her want of spirit.” This was touching her on the point of honour;
+               she had always been remarkably high-spirited, and could as little brook the
+               imputation as a soldier or a gentleman. This lucky suggestion gave an immediate turn
+               to her feelings; anger and scorn succeeded to grief; she wiped her eyes, “hemmed away
+               a sigh,”<pb n="289"/> and began to scold most manfully. She did still better. She
+               recalled an old admirer, who in spite of repeated rejections had remained constant in
+               his attachment, and made such good speed, that she was actually married the day
+               before her faithless lover, and is now the happy wife of a very respectable
+               tradesman.</p>
+            <p>Ah! the in-and-out cottage! the dear, dear home! No weddings there! No changes!
+               except that the white kitten, who sits purring at the window under the great myrtle,
+               has succeeded to his lamented grandfather, our beautiful Persian cat, I cannot find
+               one alteration to talk about. The wall of the court indeed—but that will be mended
+               to-morrow.</p>
+            <p>Here is the new sign, the well-frequented Rose inn! Plenty of changes there! Our
+               landlord is always improving, if it be only a pig-sty or a watering-trough—plenty of
+               changes and one splendid wedding. Miss Phoebe is married, not to her old lover the
+               recruiting sergeant (for he had one wife already, probably more,) but to a
+               patten-maker, as errant a dandy as ever wore mustachios. How Phoebe could “abase her
+               eyes” from the stately sergeant to this youth, half a foot shorter than herself,
+               whose “waist would go into any alder-man’s thumb-ring,” might, if the final choice of
+               a coquette had ever been matter of wonder, have occasioned some speculation. But our
+               patten-maker is a man of spirit; and the wedding was of extraordinary splen<pb
+                  n="290"/>dour. Three gigs, each containing four persons, graced the procession,
+               beside numerous carts and innumerable pedestrians. The bride was equipped in muslin
+               and satin, and really looked very pretty with her black sparkling eyes, her clear
+               brown complexion, her blushes and her smiles; the bride-maidens were only less smart
+               than the bride; and the bridegroom was “point device in his accoutrements,” and as
+               munificent as a nabob. Cake flew about the village; plum-puddings were abundant; and
+               strong beer, aye, even mine host’s best double X, was profusely distributed. There
+               was all manner of eating and drinking, with singing, fiddling, and dancing between;
+               and in the evening, to crown all, there was Mr. Moon the conjuror. Think of that
+               stroke of good fortune !—Mr. Moon, the very pearl of all conjurors, who had the
+               honour of puzzling and delighting their late Majesties with his “wonderful and
+               pleasing exhibition of Thaumaturgics, Tachygraphy, mathematical operations, and
+               magical deceptions,” happened to arrive about an hour before dinner, and commenced
+               his ingenious deceptions very unintentionally at our house. Calling to apply for
+               permission to perform in the village, being equipped in a gay scarlet coat, and
+               having something smart and sportsman-like in his appearance, he was announced by
+               Harriet as one of the gentlemen of the C. Hunt, and taken (mistaken I should have
+               said) by the whole family for a certain captain<pb n="291"/> newly arrived in the
+               neighbourhood. That misunderstanding, which must, I think, have retaliated on Mr.
+               Moon a little of the puzzlement that he inflicts on others, vanished of course at the
+               production of his bill of fare; and the requested permission was instantly given.
+               Never could he have arrived in a happier hour! Never were spectators more gratified
+               or more scared. All the tricks prospered. The cock crew after his head was cut off;
+               and half-crowns and sovereigns flew about as if winged; the very wedding-ring could
+               not escape Mr. Moon’s incantations. We heard of nothing else for a week. From the
+               bridegroom, un esprit fort, who defied all manner of conjuration and diablerie, down
+               to my Lizzy, whose boundless faith swallows the Arabian Tales, all believed and
+               trembled. So thoroughly were men, women, and children, impressed with the idea of the
+               worthy conjuror’s dealings with the devil, that when he had occasion to go to B., not
+               a soul would give him a cast, from pure awe; and if it had not been for our
+               pony-chaise, poor Mr. Moon must have walked. I hope he is really a prophet; for he
+               foretold all happiness to the new-married pair.</p>
+            <p>So this pretty white house with the lime-trees before it, which has been under repair
+               for these three years, is on the point of being finished. The vicar has taken it, as
+               the vicarage-house is not yet fit for his reception. He has sent before him a neat
+               modest maid-servant,<pb n="292"/> whose respectable appearance gives a character to
+               her master and mistress,—a hamper full of flower-roots, sundry boxes of books, a
+               piano-forte, and some simple and useful furniture. Well, we shall certainly have
+               neighbours, and I have a presentiment that we shall find friends.</p>
+            <p>Lizzy, you may now come along with me round the corner and up the lane, just to the
+               end of the wheeler’s shop, and then we shall go home; it is high time. What is this
+               affiche in the parlour window ? “Apartments to let—inquire within.” These are
+               certainly the curate’s lodgings—is he going away? Oh I suppose the new vicar will do
+               his own duty—yet, however well he may do it, rich and poor will regret the departure
+               of Mr. B. Well, I hope that he may soon get a good living. “Lodgings to let”—who ever
+               thought of seeing such a placard hereabout? The lodgings, indeed, are very convenient
+               for a single gentleman, “a man and his wife, or two sisters,” as the newspapers
+               say—comfortable apartments, neat and tasty withal, with the addition of very civil
+               treatment from the host and hostess. Lodgings to let in our village!</p>
+            <p>THE END.<lb/>LONDON:<lb/>PRINTED BY R. GILBERT, ST. JOHN’S SQUARE.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!--ebb: This template file was first made in 2013 and revised extensively to incorporate information on citations on 2017-07-07.-->
+            <title>Publication History for <title ref="#ChasI_MRM">Charles the First, An Historical Tragedy</title></title>
+            <author ref="#lmw">Lisa M. Wilson</author>
+           
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor> 
+            <principal>Elisa Beshero-Bondar</principal>
+           
+            <respStmt>
+               <resp>Corrections and proofing by</resp>
+               <persName ref="#editoridref">[Name of Editor working on this]</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt><edition>First digital edition in TEI, date: [what date was this prepared?]. P5.</edition><respStmt><resp>We can include a respStmt here.</resp><persName>Who?</persName></respStmt>
+            
+         </editionStmt>   
+         
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2017</date>
+            <availability>
+               <licence>Distributed under a <orgName>Creative Commons</orgName> Attribution-ShareAlike 3.0
+                  Unported License</licence>
+            </availability>
+            
+         </publicationStmt>
+         
+         
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+        <!--ebb: Uncomment if applicable: <notesStmt>
+            <note>[Anything we need to say about the preparation of this headnote beyond what we're covering in the rest of this header?]</note>
+            
+         </notesStmt>-->
+         
+         <sourceDesc>
+          <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc> 
+      
+   </teiHeader>
+  <text>
+      <body>
+         <p><persName ref="#MRM">Mary Russell Mitford</persName> submitted <title ref="#CharlesI_MRMplay">Charles the First, An Historial Tragedy, in Five Acts</title> to the Examiner of Plays for review in <date when="1825">1825</date>. The play was refused a license at that time, and so did not reach the stage until its production at the <placeName ref="#Vict_Theatre">Victoria Theatre</placeName> in <date when="1834">1834</date>. <placeName ref="#London_city">London</placeName> publisher <orgName ref="#JDuncombe_pub">John Duncombe and Co.</orgName> produced the first printed edition in <date when="1834">1834</date>. <placeName ref="#Philadelphia">Philadelphia</placeName> publishers <orgName ref="#Carey_Hart_pub">Carey &amp; Hart</orgName>, Hogan &amp; Thompson, and W. Marshall and Co., published an American edition the following year, in <date when="1835">1835</date>, as part of the series Alexander's Modern Acting Drama: Consisting of the Most Popular Plays Produced at the Philadelphia Theatres and Elsewhere. The play was also published <date from="1880" to="1889">in the 1880s</date> by <orgName ref="JDicks_pub">J. Dicks</orgName> in the cheap reprint series <title level="s">Dicks' Standard Plays</title>. The play was collected in 1841 by <placeName ref="#Philadelphia">Philadelphia</placeName> publisher <orgName ref="#Crissy_pub">James Crissy</orgName> in <title ref="#Works_of_MRM">The Works of Mary Russell Mitford: Prose and Verse</title>. The play was also included an authorized collection, <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title> in 1854 by <placeName ref="#London">London</placeName> publisher <orgName ref="#Hurst_Blackett_pub">Hurst and Blackett</orgName>.</p>
+         <p>In the <date from="1830" to="1839">1830s</date>, before publishing the full-length play, <persName ref="#MRM">Mitford</persName>published several selections from her tragedy in literary annuals, including the <title ref="#ForgetMeNot">Forget Me Not</title>, the <title ref="#Royal_LadysMag">Royal Lady's Magazine</title> and the <title>Metropolitan Magazine</title>. An excerpt from the play was also included in the 1889 McGuffey's High School and Literary Reader as "The Trial of Charles the First" <bibl><biblScope unit="page" from="230" to="237"/>230-237</bibl>.
+           
+         
+   
+         <p>Write your headnote! Code with reference to our site index, indicating <persName ref="#Doge_F">Doge Foscari</persName> just as you would in other files mentioning him, for example. You probably won't need to add annotations to your own introductory headnote, which is, after all, a big introductory annotation to a Mitford text.</p>
+         <p>Here is how to handle references to outside resources in your headnote: This involves making <soCalled>short-form citations</soCalled> in the body of the text, and we can handle that in the output something like MLA formatted citations, but you don't need to worry about punctuating them. Instead, use the TEI element bibl in your headnote for this purpose like this <bibl corresp="#yourBookinSI"><biblScope unit="page" from="1" to="5"/></bibl>. Notice that my corresp attribute is causing oXygen to fire an error because that id isn't in our Site Index! You will need to prepare a listBibl in the back element (following body) in the headnote in order to make this work. (See examples below in the back element of this template file.)</p>
+         <p>When we have added your new SI entries for the headnote to the Site Index, we will be able to output a sorted alphabetized bibliography for the file. Also, parenthetical citations in the text will, on mouseover, bring up the usual blue popup notes that reference the Site Index. You may also tag within the flow of your sentences titles like <title ref="#Hamlet_play">Hamlet</title> with the title element and the usual @ref attribute any other books you just want to mention inline, and these will output on the web with mouseover popups that pull info from the site index.</p>
+         <p>When to include editorial notes in your headnote. Use the note element sparingly in your headnote, and only when you wish to make an extended commentary on something that doesn't quite fit in the substance of the paragraph you are writing, like perhaps so.<note resp="#ebb">The Digital Mitford team has tried to limit the usage of the note element as a matter of editorial policy, since we have a standardized and centralized referencing system with the site index. For that reason there are likely to be fewer things called "notes" (or coded with the element note) in our project files.</note></p>
+         <p>To add a link to a pertinent and authoritative web resource, there's a special TEI tag set: A link to <ref target="http://www.rc.umd.edu/editions/southey_letters/people.html">the biographies page in the Southey letters archive</ref> would look like this.</p>
+      </body>
+     <back><!--ebb: Here include any new book, article, and other sources you wish to add to our Site Index, if they are not already present. There are separate lists in the SI of contemporary research on Mitford, and contemporary scholarship not about Mitford but relevant to your headnote.-->
+        <listBibl>
+           <!--ebb: Here's a format for an article. Notice that you don't need to worry about punctuation marks. The TEI elements and attributes signal what we need for outputting the punctuation we want. We're running with first name followed by last name because a) that is how they appear elsewere in the SI, and b) because we can easily reverse these in the output of a bibliography. -->
+           <bibl><author>Firstname Lastname</author><title level="a">Article title</title><title level="j">Journal Title</title><biblScope unit="volume" n="1"/><biblScope unit="issue" n="1"/><date when="2017"/><biblScope unit="page" from="1" to="2"/></bibl>
+           
+           <!--ebb: Here's a format for a whole book: -->
+           <bibl><author>Firstname Lastname</author><title level="m">Book title</title><pubPlace>Where published?</pubPlace><publisher>Who published?</publisher><date when="yyyy"/></bibl>
+           <!--ebb: Here's a format for a chapter in a book. Notice that the @level attribute on title indicates whether it's a piece of a larger work or not.-->
+           <bibl><author><!--name of chapter writer--></author><title level="a">Chapter title</title><title level="m">Book title</title><editor><!--name of editor --></editor><pubPlace>Where published?</pubPlace><publisher>Who published?</publisher><date when="yyyy"/><biblScope unit="page" from="1" to="2"/></bibl>
+        </listBibl>
+     </back>
+  </text>
+</TEI>

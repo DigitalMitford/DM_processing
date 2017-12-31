@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+
+            <titleStmt>
+                <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+                <author>Mary Russell Mitford</author>
+
+                <editor>Alexandra Drayton</editor>
+                <editor>Samantha Webb</editor>
+
+
+                <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+                    Project</orgName></sponsor>
+                <sponsor>University of Pittsburgh at Greensburg</sponsor>
+                <principal>Elisa Beshero-Bondar</principal>
+
+                <respStmt>
+                    <resp>Transcription and coding by</resp>
+                    <persName>Alexandra Drayton</persName>
+                    <persName>Samantha Webb</persName>
+                    <persName>Jordan Price</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Proofing and corrections by</resp>
+                    <persName>Elisa Beshero-Bondar</persName>
+                    <persName ref="#bas">Brooke A. Stewart</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>This is optional, used to describe this edition, and “should contain
+                    phrases describing the edition or version”: First digital edition in TEI, date:
+                    2 June 2013. P5.</edition>
+                <respStmt>
+                    <resp>We can include a respStmt here.</resp>
+                    <persName>Who?</persName>
+                </respStmt>
+
+            </editionStmt>
+
+
+
+            <publicationStmt>
+                <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+                <pubPlace>Greensburg, PA, USA</pubPlace>
+                <date>2013</date>
+                <availability>
+                    <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0
+                        Unported License</licence>
+                </availability>
+
+            </publicationStmt>
+            <seriesStmt>
+                <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+            </seriesStmt>
+
+            <notesStmt>
+                <note>Any special notes on this text? (optional)</note>
+                <note>You can have multiple notes here.</note>
+            </notesStmt>
+
+            <sourceDesc>
+                <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+                <p>Our text is based on public domain, Google-digitized text<bibl>
+                        <title>Our Village: Sketches of Rural Character and
+                            Scenery</title><edition>Third Edition</edition> by <author>Mary Russell
+                            Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                            Whittaker</publisher><placeName>Ave Maria
+                            Lane</placeName><date>1825</date>. </bibl> This text appears to be
+                    identical in pagination and content to the first edition published in 1824. </p>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>Describes our editorial practice.</p>
+            </editorialDecl>
+        </encodingDesc>
+
+    </teiHeader>
+    <text>
+
+        <front>
+            <titlePage>
+                <pb n="ii"/>
+                <docTitle>
+                    <titlePart type="main">Our Village:</titlePart>
+                    <titlePart type="subtitle">Sketches of Rural Character and Scenery.</titlePart>
+                </docTitle>
+                <byline>by <docAuthor>Mary Russell Mitford</docAuthor>, Author of <title>Julian, A
+                        Tragedy</title><lb/></byline>
+                <docEdition>Third Edition.</docEdition>
+                <docImprint><pubPlace>London</pubPlace><lb/><publisher>Geo. B.
+                        Whittaker</publisher>,<lb/><placeName>Ave-Maria-Lane</placeName>.
+                        <docDate>1825</docDate>.</docImprint>
+            </titlePage>
+            <pb n="iii"/>
+        </front>
+        <body>
+            <div type="sketch">
+                <head><title ref="#Country_Cricket_Match_OV"></title>A COUNTRY CRICKET-MATCH.</head>
+                <p> <persName ref="#OVNarrator">I</persName> doubt if there be any scene in the world more animating or delightful than a cricket-match :—I do not mean a set match at <placeName ref="#Lords_Cricket_Ground">Lord's Ground</placeName> for money, hard money, between a certain number of gentleman and players<orgName ref="#Cricketers_OV">gentleman and players</orgName><!--SCW 4/30/17 to self: check tag, likely lower case c-->, as they are called—people who make a trade of that noble sport, and degrade it into an affair of bettings, and hedgings, and cheatings, it may be, like boxing or horse-racing: nor do I mean a pretty fête in a gentleman’s park<!--SCW: "pretty fete in a gentleman's park" sounds like an idiomatic expression. I suggest checking, and perhaps providing an editor's note-->, where one club
+                    of cricketing dandies encounters another such club, and where they show off in
+                    graceful costume to a gay marquee of admiring belles, who condescend so to
+                    purchase admiration, and while away a long summer morning in partaking cold
+                    collations, conversing occasionally, and seeming to understand the game;—the
+                    whole being conducted according to ball-room etiquette, so as to be exceedingly
+                    elegant and exceedingly dull. No! the cricket that I mean is a real solid
+                    old-fashioned match between neighbouring parishes, where each attacks the other
+                    for ho-<pb n="147"/>nour and a supper, glory, and half a crown a man. If there be
+                    any gentlemen amongst them, it is well—if not, it is so much the better. Your
+                    <orgName ref="#Cricketers_OV">gentleman</orgName> is in general rather an anomalous character. Elderly
+                    gentlemen are obviously good for nothing; and young beaux are, for the most
+                    part, hampered and trammelled by dress and habit; the stiff cravat, the
+                    pinched-in waist, the dandy walk—oh they will never do for cricket! Now, our
+                    country lads, accustomed to the flail or the hammer (your blacksmiths are
+                    capital hitters,) have the free use of their arms; they know how to move their
+                    shoulders; and they can move their feet too—they can run; then they are so much
+                    better made, so much more athletic, and yet so much lissomer—to use a Hampshire
+                    phrase, which deserves at least to be good English. Here and there, indeed, one
+                    meets with an old Etonian, who retains his boyish love for that game which
+                    formed so considerable a branch of his education; some even preserve their
+                    boyish proficiency, but in general it wears away like the Greek, quite as
+                    certainly, and almost as fast; a few years of <placeName ref="#Oxford_Univ">Oxford</placeName>, or <orgName ref="#Cambridge_Univ"></orgName>, or the
+                    continent, are sufficient to annihilate both the power and the inclination. No!
+                    a village match is the thing,—where our highest officer—our conductor (to borrow
+                    a musical term) is but a little farmer’s second son; where a day-labourer is our
+                    bowler, and a blacksmith our long-stop; where the<pb n="148"/> spectators
+                    consist of the retired <orgName ref="#Cricketers_OV">cricketers</orgName>, the veterans of the green, the careful
+                    mothers, the girls, and all the boys of two parishes, together with a few
+                    amateurs little above them in rank, and not at all in pretension; where laughing
+                    and shouting, and the very ecstasy of merriment and good humour, prevail: such a
+                    match, in short, as I attended yesterday, at the expense of getting twice wet
+                    through, and as I would attend tomorrow, at the certainty of having that ducking
+                    doubled.</p>
+                <p>For the last three weeks our village has been in a state of great excitement,
+                    occasioned by a challenge from our north-western neighbours, the men of <placeName ref="#B_town_OV">B</placeName>, to
+                    contend with us at cricket. Now we have not been much in the habit of playing
+                    matches. Three or four years ago, indeed, we encountered the men of <placeName>S</placeName>., our
+                    neighbours south-by-east, with a sort of doubtful success, beating them on our
+                    own ground, whilst they in the second match returned the compliment on theirs.
+                    This discouraged us. Then an unnatural coalition between a high-church curate
+                    and an evangelical gentleman-farmer drove our lads from the Sunday evening
+                    practice, which, as it did not begin before both services were concluded, and as
+                    it tended to keep the young men from the ale-house, our magistrates had winked
+                    at, if not encouraged. The sport therefore had languished until the present
+                    season, when under another change of circumstances the spirit began to
+                        revive.<pb n="149"/> Half a dozen fine active lads, of influence amongst
+                    their comrades, grew into men and yearned for cricket: an enterprising publican
+                    gave a set of ribands; his rival, mine host of the <placeName ref="#RoseInnLandlord_OV">Rose</placeName>, an out-doer by
+                    profession, gave two; and the clergyman and his lay ally, both well-disposed and
+                    good-natured men, gratified by the submission to their authority, and finding,
+                    perhaps, that no great good resulted from the substitution of public houses
+                    for-out-of door diversions, relaxed. In short the practice recommenced, and the
+                    hill was again alive with men and boys, and innocent merriment; but farther than
+                    the riband matches amongst ourselves nobody dreamed of going, till this
+                    challenge—we were modest, and doubted our own strength. The <placeName ref="#B_town_OV">B</placeName>. people, on the
+                    other hand, must have been braggers born a whole parish of gasconaders. Never
+                    was such boasting! such crowing! such ostentatious display of practice! such
+                    mutual compliments from man to man—bowler to batter, batter to bowler! It was a
+                    wonder they did not challenge all <placeName ref="#England">England</placeName>. It must be confessed that we were a
+                    little astounded; yet we firmly resolved not to decline the combat; and one of
+                    the most spirited of the new growth, <persName ref="#Grey_William_OV">William Grey</persName> by name, took up the glove in
+                    a style of manly courtesy, that would have done honour to a knight in the days
+                    of chivalry.—<said who="#Grey_William_OV">“We were not professed players,”</said><persName ref="#Grey_William_OV">he</persName> said; <said who="#Grey_William_OV">“being little better than
+                    school-boys, and scarcely<pb n="150"/> older: but, since they had done us the
+                    honour to challenge us, we would try our strength. It would be no discredit to
+                    be beaten by such a field.”</said></p>
+                <p>Having accepted the wager of battle, our champion began forthwith to collect his
+                    forces. <persName ref="#Grey_William_OV">William Grey</persName> is himself one of the finest youths that one shall
+                    see,—tall, active, slender and yet strong, with a piercing eye full of sagacity,
+                    and a smile full of good humour,—a farmer’s son by station, and used to hard
+                    work as farmers’ sons are now, liked by every body, and admitted to be an
+                    excellent cricketer. He immediately set forth to muster his men, remembering
+                    with great complacency that <persName ref="#Long_Samuel_OV">Samuel Long</persName>, a bowler <emph>comme il y en a
+                        peu</emph>, the very man who had knocked down nine wickets, had beaten us,
+                    bowled us out at the fatal return match some years ago at <placeName>S</placeName>., had luckily, in a
+                    remove of a quarter of a mile last Lady-day, crossed the boundaries of his old
+                    parish, and actually belonged to us. Here was a stroke of good fortune! Our
+                    captain applied to him instantly; and he agreed at a word. Indeed <persName ref="#Long_Samuel_OV">Samuel Long</persName> is
+                    a very civilised person. He is a middle-aged man who looks rather old amongst
+                    our young lads, and whose thickness and breadth give no token of remarkable
+                    activity; but he is very active, and so steady a player! so safe! We had half
+                    gained the match when we had secured him. He is a man of substance, too, in
+                    every way; owns one cow, two don-<pb n="151"/>keys, six pigs, and geese and ducks
+                    beyond count; dresses like a farmer, and owes no man a shilling;— and all this
+                    from pure industry, sheer day-labour. Note, that your good cricketer is commonly
+                    the most industrious man in the parish; the habits that make him such are
+                    precisely those which make a good workman—steadiness, sobriety, and
+                    activity—<persName ref="#Long_Samuel_OV">Samuel Long</persName> might pass for the beau ideal of the two characters. Happy
+                    were we to possess him! Then we had another piece of good luck. <persName ref="#Brown_James_OV">James Brown</persName>, a
+                    journeyman blacksmith and a native, who, being of a rambling disposition, had
+                    roamed from place to place for half a dozen years, had just returned to settle
+                    with his brother at another corner of our village, bringing with him a
+                    prodigious reputation in cricket and in gallantry—the gay Lothario of the
+                    neighborhood. He is said to have made more conquests in love and in cricket than
+                    any blacksmith in the county. To him also went the indefatigable <persName ref="#Grey_William_OV">William Grey</persName>,
+                    and he also consented to play. No end to our good fortune! Another celebrated
+                    batter, called <persName ref="#Hearne_Joeseph_OV">Joseph Hearne</persName>, had likewise recently married into the parish. He
+                    worked, it is true, at the A. mills, but slept at the house of his wife’s father
+                    in our territories. He also was sought and found by our leader. But he was grand
+                    and shy; made an immense favour of the thing; courted courting and then hung
+                    back;—“Did not know that he could be spared; had partly resolved<pb n="152"/>
+                    not to play again—at least not this season; thought it rash to accept the
+                    challenge; thought they might do without him—”—“Truly I think so too,” said our
+                    spirited champion; <said who="#Hearne_Joeseph_OV">“we will not trouble you, <persName ref="#Hearne_Joeseph_OV">Mr. Hearne</persName>.”</said></p>
+                <p> Having thus secured two powerful auxiliaries, and rejected a third, we began to
+                    reckon and select the regular native forces. Thus ran our list:—William Grey,
+                    1.—<persName ref="#Long_Samuel_OV">Samuel Long</persName>, 2.—<persName ref="#Brown_James_OV">James Brown</persName>, 3.—<persName ref="#Simmons_George_OV">George</persName> and <persName ref="#Simmons_John_OV">John Simmons</persName>, one capital, the
+                    other so, so,—an uncertain hitter, but a good fieldsman, 5.—<persName ref="#Brent_Joel">Joel Brent</persName>
+                    excellent, 6.—<persName ref="#Appleton_Ben_OV">Ben Appleton</persName>—Here was a little pause—<persName ref="#Appleton_Ben_OV">Ben</persName>’s abilities at cricket
+                    were not completely ascertained; but then he was so good a fellow, so full of
+                    fun and waggery! no doing without <persName ref="#Appleton_Ben_OV">Ben</persName>. So he figured in the list, 7.—<persName ref="#Harris_George_OV">George Harris</persName>—a short halt there too! Slowish—slow but sure. I think the proverb
+                    brought him in, 8.—<persName ref="#Coper_Tom_OV">Tom Coper</persName>—oh, beyond the world, Tom Coper! the red-headed
+                    gardening lad, whose left-handed strokes send <emph>her</emph> (a cricket-ball,
+                    like that other moving thing a ship, is always of the feminine gender,) send her
+                    spinning a mile, 9.—<persName ref="#Willis_Robert_OV">Robert Willis</persName>, another blacksmith, 10.</p>
+                <p>We had now ten of our eleven, but the choice of the last occasioned some demur.
+                    Three young <orgName>Martins</orgName> , rich farmers of the neighbourhood, successively presented
+                    themselves, and were all rejected by our inde-<pb n="153"/>pendent and impartial
+                    general for want of merit—<emph>cricketal</emph> merit. “Not good enough,” was
+                    his pithy answer. Then our worthy neighbour, the half-pay <persName ref="#Lieutenant_OV">lieutenant</persName>, offered
+                    his services—he, too, though with some hesitation and modesty, was refused—”Not
+                    quite young enough” was his sentence. <persName ref="#Strong_John_OV">John Strong</persName>, the exceedingly long son of
+                    our dwarfish <persName ref="#mason_OV">mason</persName>, was the next candidate,—a nice youth—every body likes <persName ref="#Strong_John_OV">John Strong</persName>,—and a willing, but so tall and so limp, bent in the middle—a
+                    thread-paper, six feet high! We were all afraid that, in spite of his name, his
+                    strength would never hold out. <said who="#Grey_William_OV">"“Wait till next year, <persName ref="#Strong_John_OV">John</persName>,”</said> quoth <persName ref="#Grey_William_OV">William Grey</persName>,
+                    with all the dignified seniority of twenty speaking to eighteen. <said who="#Strong_John_OV">“<persName ref="#Coper_Tom_OV">Coper</persName> a year
+                        younger,”</said> said <persName ref="#Strong_John_OV">John</persName>. <said who="#Grey_William_OV">“<persName ref="#Coper_Tom_OV">Coper</persName>’s a foot shorter,”</said> replied William: so <persName ref="#Strong_John_OV">John</persName> retired;
+                    and the eleventh man remained unchosen, almost till the eleventh hour. The eve
+                    of the match arrived, and the post was still vacant, when a little boy of
+                    fifteen, <persName ref="#Willis_David_OV">David Willis</persName>, brother to <persName ref="#Willis_Robert_OV">Robert</persName>, admitted by accident to the last
+                    practice, saw eight of them out, and was voted in by acclamation.</p>
+                <p>That Sunday evening’s practice (for Monday was the important day) was a period of
+                    great anxiety, and, to say the truth, of great pleasure. There is something
+                    strangely delightful in the innocent spirit of party. To be one of a numerous
+                    body, to be authorised to say <emph>we</emph>, to have a rightful interest in
+                    triumph or defeat, is gra-<pb n="154"/>tifying at once to social feeling and to
+                    personal pride. There was not a ten-year old urchin, or a septuagenary woman in
+                    the parish, who did not feel an additional importance, a reflected consequence,
+                    in speaking of <quote>“our side.”</quote> An election interests in the same way; but that
+                    feeling is less pure. Money is there, and hatred, and politics, and lies. Oh, to
+                    be a voter, or a voter’s wife, comes nothing near the genuine and hearty
+                    sympathy of belonging to a parish, breathing the same air, looking oTomn the same
+                    trees, listening to the same nightingales! Talk of a patriotic elector!— Give me
+                    a parochial patriot, a man who loves his parish! Even we, the female partisans,
+                    may partake the common ardour. I am sure I did. I never, though tolerably eager
+                    and enthusiastic at all times, remember being in a more delicious state of
+                    excitation than on the eve of that battle. Our hopes waxed stronger and
+                    stronger. Those of our players, who were present, were excellent. <persName ref="#Grey_William_OV">William Grey</persName>
+                    got forty notches off his own bat; and that brilliant hitter <persName ref="#Coper_Tom_OV">Tom Coper</persName> gained
+                    eight from two successive balls. As the evening advanced, too, we had
+                    encouragement of another sort. A spy, who had been despatched to reconnoitre the
+                    enemy’s quarters, returned from their practising ground, with a most consolatory
+                    report. <said who="#Grover_Charles_OV">“Really,”</said> said <persName ref="#Grover_Charles_OV">Charles Grover</persName>, our intelligencer—a fine old steady
+                    judge, one who had played well in his day—<said who="#Grover_Charles_OV">“they are no better<pb n="155"/> than
+                    so many old women. Any five of ours would beat their eleven.”</said> This sent us to
+                    bed in high spirits.</p>
+                <p>Morning dawned less favourably. The sky promised a series of deluging showers,
+                    and kept its word, as English skies are wont to do on such occasions; and a
+                    lamentable message arrived at the head-quarters from our trusty comrade <persName ref="#Brent_Joel">Joel Brent</persName>. His master, a great farmer, had begun the hay-harvest that very morning,
+                    and <persName ref="#Brent_Joel">Joel Brent</persName>, being as eminent in one field as in another, could not be spared.
+                    Imagine <persName ref="#Brent_Joel">Joel Brent</persName>’s plight! the most ardent of all our eleven! a knight held back
+                    from the tourney! a soldier from the battle! The poor swain was inconsolable. At
+                    last, one who is always ready to do a good-natured action, great or little, set
+                    forth to back his petition; and, by dint of appealing to the public spirit of
+                    our worthy neighbour, and the state of the barometer, talking alternately of the
+                    parish honour and thunder showers, of lost matches and sopped hay, he carried
+                    his point, and returned triumphantly with the delighted <persName ref="#Brent_Joel">Joel Brent</persName>.</p>
+                <p>In the meantime we became sensible of another defalcation. On calling over our
+                    roll, <persName ref="#Brown_James_OV">Brown</persName> was missing; and the spy of the preceding night, <persName ref="#Grover_Charles_OV">Charles Grover</persName>,—the
+                    universal scout and messenger of the village, a man who will run half-a-dozen
+                    miles for a pint of beer, who does errands for the very love of the<pb n="156"/>
+                    trade, who, if he had been a lord, would have been an ambassador—was instantly
+                    despatched to summon the truant. His report spread general consternation. <persName ref="#Brown_James_OV">Brown</persName>
+                    had set off at four o’clock in the morning to play in a cricket-match at M., a
+                    little town twelve miles off, which had been his last residence. Here was
+                    desertion! Here was treachery! Here was treason against that goodly state, our
+                    parish! To send <persName ref="#Brown_James_OV">James Brown</persName> to <placeName ref="#Coventry_City">Coventry</placeName><!--SCW: "sent to Coventry" is an idiomatic expression meaning, roughly, to be sent to the doghouse. I'm going to check whether there's a way of indicating idiomatic expressions in the TEI--> was the immediate resolution; but even
+                    that seemed too light a punishment for such delinquency. Then how we cried him
+                    down! At ten, on Sunday-night, (for the rascal had actually practised with us,
+                    and never said a word of his intended disloyalty,) he was our faithful mate, and
+                    the best player (take him for all in all) of the eleven. At ten in the morning
+                    he had run away, and we were well rid of him; he was no batter compared with
+                    <persName ref="#Grey_William_OV">William Grey</persName> or <persName ref="#Coper_Tom_OV">Tom Coper</persName>; not fit to wipe the shoes of <persName ref="#Long_Samuel_OV">Samuel Long</persName>, as a
+                    bowler; nothing of a scout to <persName ref="#Simmons_John_OV">John Simmons</persName>; the boy <persName ref="#Willis_David_OV">David Willis</persName> was worth fifty
+                    of him— <quote>“<lg>
+                            <l>I trust we have within our realm </l>
+                            <l>Five hundred good as he.</l>
+                    </lg>”</quote> was the universal sentiment. So we took tall <persName ref="#Strong_John_OV">John Strong</persName>,
+                    who, with an incurable hankering after the honour of being admitted, had kept
+                    constantly with<pb n="157"/> the players, to take the chance of some such
+                    accident—we took <persName ref="#Strong_John_OV">John</persName> for our <emph>pis-aller</emph>. I never saw any one
+                    prouder than the good-humoured lad was of this not very flattering piece of
+                    preferment.</p>
+                <p><persName ref="#Strong_John_OV">John Strong</persName> was elected, and <persName ref="#Brown_James_OV">Brown</persName> sent to <placeName ref="#Coventry_City">Coventry</placeName>; and, when I first heard of
+                    his delinquency, I thought the punishment only too mild for the crime. But I
+                    have since learned the secret history of the offence; (if we could know the
+                    secret histories of all offences, how much better the world would seem than it
+                    does now!) and really my wrath is much abated. It was a piece of gallantry, of
+                    devotion to the sex, or rather a chivalrous obedience to one chosen fair. I must
+                    tell my readers the story. <persName ref="#Allen_Mary_OV">Mary Allen</persName>, the prettiest girl of M., had it seems
+                    revenged upon our blacksmith the numberless inconsistancies of which he stood
+                    accused. He was in love over head and ears, but the nymph was cruel. She said
+                    no, and no, and no, and poor <persName ref="#Brown_James_OV">Brown</persName>, three times rejected, at last resolved to
+                    leave the place, partly in despair, and partly in that hope which often mingles
+                    strangely with a lover’s despair, the hope that when he was gone he should be
+                    missed. He came home to his brother’s accordingly; but for five weeks he heard
+                    nothing from or of the inexorable Mary, and was glad to beguile his own “vexing
+                    thoughts,” by endeavouring to create in his mind an artificial and factitious
+                    interest in our<pb n="158"/> cricket-match—all unimportant as such a trifle must
+                    have seemed to a man in love. Poor <persName ref="#Brown_James_OV">James</persName>, however, is a social and warm-hearted
+                    person, not likely to resist a contagious sympathy. As the time for the play
+                    advanced, the interest which he had at first affected became genuine and
+                    sincere: and he was really, when he left the ground on Sunday-night, almost as
+                    enthusiastically absorbed in the event of the next day as <persName ref="#Brent_Joel">Joel Brent</persName> himself. He
+                    little foresaw the new and delightful interest which awaited him at home, where,
+                    on the moment of his arrival, his sister-in-law and confidante, presented him
+                    with a billet from the lady of his heart. It had, with the usual delay of
+                    letters sent by private hands, in that rank of life, loitered on the road in a
+                    degree inconceivable to those who are accustomed to the punctual speed of the
+                    post, and had taken ten days for its twelve-miles’ journey. Have my readers any
+                    wish to see this <emph>billet-doux</emph>? I can show them (but in strict
+                    confidence) a literal copy. It was addressed,</p><!--2017-01-31 ebb: To get floatingText to work, we needed to artifically close the paragraph element here. Ideally we'll close this paragraph after the floatingText element, but for now this will hold us. Check for an oXygen update to the TEI: I think this was something we patched after the latest release of the TEI-All schema. (Same with the second floatingText element below.--><!--2017-02-06: Filed ticket at TEI Council Meeting about floatingText nesting problem. This is a known issue. --><floatingText><body><opener><address><addrLine>“For mistur jem browne</addrLine> <addrLine>“blaxmith by</addrLine> <addrLine>“S.”</addrLine></address></opener></body></floatingText> 
+                <p>The inside ran thus:—</p><floatingText><body><p>“Mistur browne this is to Inform yew that oure parish playes
+                    bramley men next monday is a week, i think we shall lose without yew. from your
+                    humbell servant to command</p> <closer><signed>“<persName ref="#Allen_Mary_OV">Mary Allen</persName>.”</signed></closer></body></floatingText><pb n="159"/>
+                <p>Was there ever a prettier relenting? a summons more flattering, more delicate,
+                    more irresistible? The precious epistle was undated; but, having ascertained who
+                    brought it, and found, by cross-examining the messenger, that the Monday in
+                    question was the very next day, we were not surprised to find that <emph>Mistur
+                        browne</emph> forgot his engagement to us, forgot all but Mary and Mary’s
+                    letter, and set off at four o’clock the next morning to walk twelve miles, and
+                    play for her parish and in her sight. Really we must not send James Browne to
+                    <placeName ref="#Coventry_City">Coventry</placeName>—must we? Though if, as his sister-in-law tells our damsel Harriet he
+                    hopes to do, he should bring the fair Mary home as his bride, he will not
+                    greatly care how little we say to him. But he must not be sent to
+                    <placeName ref="#Coventry_City">Coventry</placeName>—True-love forbid!</p>
+                <p> At last we were all assembled, and marched down to H. common, the appointed
+                    ground, which, though in our dominions according to the map, was the constant
+                    practising place of our opponents, and <emph>terra incognita</emph> to us. We
+                    found our adversaries on the ground as we expected, for our various delays had
+                    hindered us from taking the field so early as we wished; and, as soon as we had
+                    settled all preliminaries, the match began.</p>
+                <p>But, alas! I have been so long settling my preliminaries that I have left myself
+                    no room for the detail<pb n="160"/> of our victory, and must squeeze the account
+                    of our grand achievements into as little compass as Cowley, when he crammed the
+                    names of eleven of his mistresses into the narrow space of four eight-syllable
+                    lines. <emph>They</emph> began the warfare—these boastful men of <placeName ref="#B_town_OV">B.</placeName> And what
+                    think you, gentle reader, was the amount of their innings? These challengers—the
+                    famous eleven—how many did they get? Think! imagine! guess!—You
+                    cannot?—Well!—they got twenty-two, or rather they got twenty; for two of theirs
+                    were short notches, and would never have been allowed, only that, seeing what
+                    they were made of, we and our umpire were not particular.—They should have had
+                    twenty more, if they had chosen to claim them. Oh, how well we fielded! and how
+                    well we bowled! our good play had quite as much to do with their miserable
+                    failure as their bad. <persName ref="#Long_Samuel_OV">Samuel Long</persName> is a slow bowler, <persName ref="#Simmons_George_OV">George Simmons</persName> a fast one,
+                    and the change from <persName ref="#Long_Samuel_OV">Long</persName>’s lobbing to Simmons’s fast balls posed them
+                    completely. Poor simpletons! they were always wrong, expecting the slow for the
+                    quick, and the quick for the slow. Well, we went in. And what were our innings?
+                    Guess again!—guess! A hundred and sixty-nine! in spite of soaking showers, and
+                    wretched ground, where the ball would not run a yard, we headed them by a
+                    hundred and forty-seven; and then they gave in, as well they might. William<pb
+                        n="161"/> <persName ref="#Grey_William_OV">Grey</persName> pressed them much to try another innings. <said who="#Grey_William_OV">“There was so much
+                    chance,”</said> as he courteously observed, <said who="#Grey_William_OV">“in cricket, that advantageous as our
+                    position seemed, we might, very possibly, be overtaken. The B. men had better
+                    try.”</said> But they were beaten sulky, and would not move—to my great disappointment;
+                    I wanted to prolong the pleasure of success. What a glorious sensation it is to
+                    be for five hours together winning—winning—winning! always feeling what a
+                    whist-player feels when he takes up four honours, seven trumps! Who would think
+                    that a little bit of leather, and two pieces of wood, had such a delightful and
+                    delighting power? </p>
+                <p>The only drawback on my enjoyment, was the failure of the pretty boy, <persName ref="#Willis_David_OV">David Willis</persName>, who injudiciously put in first, and playing for the first time in a
+                    match amongst men and strangers, who talked to him, and stared at him, was
+                    seized with such a fit of shamefaced shyness, that he could scarcely hold his
+                    bat, and was bowled out, without a stroke, from actual nervousness. <said who="#Coper_Tom_OV">“He will
+                    come of that,”</said> <persName ref="#Coper_Tom_OV">Tom Coper</persName> says.—I am afraid he will. I wonder whether <persName ref="#Coper_Tom_OV">Tom</persName> had
+                    ever any modesty to lose. Our other modest lad, <persName ref="#Strong_John_OV">John Strong</persName>, did very well; his
+                    length told in fielding, and he got good fame. <persName ref="#Brent_Joel">Joel Brent</persName>, the rescued mower,
+                    got into a scrape, and out of it again; his fortune for the day. He ran out his
+                    mate, <persName ref="#Long_Samuel_OV">Samuel Long</persName>; who, I <pb n="162"/>do believe, but for the excess of <persName ref="#Brent_Joel">Joel Brent</persName>’s
+                    eagerness, would have staid in till this time, by which exploit he got into sad
+                    disgrace; and then he himself got thirty-seven runs, which redeemed his
+                    reputation. <persName ref="#Grey_William_OV">William Grey</persName> made a hit which actually lost the cricket-ball. We
+                    think she lodged in a hedge, a quarter of a mile off, but nobody could find her.
+                    And <persName ref="#Simmons_George_OV">George Simmons</persName> had nearly lost his shoe, which he tossed away in a passion,
+                    for having been caught out, owing to the ball glancing against it. These,
+                    together with a very complete somerset of <persName ref="#Appleton_Ben_OV">Ben Appleton</persName>, our long-stop, who
+                    floundered about in the mud, making faces and attitudes as laughable as
+                    Grimaldi, none could tell whether by accident or design, were the chief
+                    incidents of the scene of action. Amongst the spectators nothing remarkable
+                    occurred, beyond the general calamity of two or three drenchings, except that a
+                    form, placed by the side of a hedge, under a very insufficient shelter, was
+                    knocked into the ditch, in a sudden rush of the cricketers to escape a pelting
+                    shower, by which means all parties shared the fate of <persName ref="#Appleton_Ben_OV">Ben Appleton</persName>, some on land
+                    and some by water; and that, amidst the scramble, a saucy gipsy of a girl
+                    contrived to steal, from the knee of the demure and well-apparelled Samuel Long,
+                    a smart handkerchief, which his careful dame had tied around it, to preserve his
+                    new (what is the mincing feminine word?) his new—inexpressibles;<pb n="163"/>
+                    thus reversing the story of Desdemona, and causing the new Othello to call aloud
+                    for his handkerchief, to the great diversion of the company. And so we parted;
+                    the players retired to their supper, and we to our homes; all wet through, all
+                    good-humoured, and all happy—except the losers.</p>
+                <p>To-day we are happy too. Hats, with ribands in them, go glancing up and down; and
+                    <persName ref="#Grey_William_OV">William Grey</persName> says, with a proud humility, <said who="#Grey_William_OV">“We do not challenge any parish; but,
+                    if we be challenged, we are ready.”</said> <pb n="164"/></p>
+            </div>
+
+
+
+        </body>
+        <back>
+  
+        <div> <!-- In this section, place any NEW xml:id's generated by this sketch (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+            <listPerson>
+                <person xml:id="proposed_new_ID">
+                    <persName>
+                        <surname><!--last name--></surname>
+                        <forename><!--first name --></forename>
+                        <forename><!--middle name --></forename>
+                        <forename><!--if necessary, more middle names--></forename>
+                    </persName>
+                    <persName><!--alternate persName, such as a nickname?--></persName>
+                    <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+                    <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+                    <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+                    <!--Other tags can go here: See Codebook for more details.-->
+                    <note resp="#Your_Editor_ID"><!--Biographical notes of interest for real people. For fictional people who appear in your sketch, just a basic, "a character who appears in <title ref="#yourSketchTitle"> in <title ref="#Our_Village1st_ed">," unless the character is also referred to in other stories, in which case you can mention those as well. For a reference to a fictional character from another work, do something similar.--></note>
+                </person>
+                <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+                    <persName>...</persName>
+                    <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+                </person>
+                <person xml:id="Grey_William_OV" sex="1">
+                    <note resp="#jap">No info found.</note>
+                </person>
+                <person xml:id="Long_Samuel_OV" sex="1">
+                    <note>No information found on this man. The only information found is related to this sketch. He was a cricekter that was a good bowler.</note>
+                </person>
+                <person xml:id="Brown_James_OV" sex="1">
+                    <note resp="#jap">No notes on this man either. The information found is related to this sketch. He was a blacksmtih.</note>
+                </person>
+                <person xml:id="Hearne_Joseph_OV" sex="1">
+                    <note resp="#jap">Possibly a man born in Australia. Died in Windsor and married a woman named Mary Anne Stewart. This info needs verification.</note><!--Unless we can verify for certain that MRM is referring to a historical person, keep the note to the story. Mention the title of the sketch and volume of OV in which he appears, a brief account of what he does in it, as you do for other characters below-->
+                </person>
+                <person xml:id="Simmons_George_OV" sex="1">
+                    <note resp="#jap">The brother of John Simmons. No other info found</note>
+                </person>
+                <person xml:id="Simmons_John_OV" sex="1">
+                    <note resp="#jap">The brother of George Simmons. No other info found.</note>
+                </person>
+                <person xml:id="Appleton_Ben_OV" sex="1">
+                    <note resp="#jap">Again, no information found. The only references to these men seem to be from this sketch itself.</note>
+                </person>
+                <person xml:id="Harris_George_OV" sex="1">
+                    <note resp="#jap">All other information found is about a different George Harris, also a cricket player. No information found about this man.</note>
+                </person>
+                <person xml:id="Coper_Tom_OV" sex="1">
+                    <note resp="#jap">Another cricket player with no information.</note>
+                </person>
+                <person xml:id="Willis_Robert_OV" sex="1">
+                    <note resp="#jap">Another cricketer and blacksmith.</note>
+                </person>
+                <person xml:id="Strong_John_OV" sex="1">
+                    <note resp="#jap">A friend of William Grey's.</note>
+                </person>
+                <person xml:id="Willis_David_OV" sex="1">
+                    <note resp="#jap">Robert Willis' brother.</note>
+                </person>
+                <person xml:id="Grover_Charles_OV" sex="1">
+                    <note resp="#jap">Charles Grover was a man of good judgment in Mitford's town.</note>
+                </person>
+                <person xml:id="Allen_Mary_OV" sex="2">
+                    <note resp="#jap">A woman of M. Followed by James Brown but his advances were repeatedly turned down.</note>
+                </person>
+            </listPerson>
+            
+            <listPlace>
+                <place xml:id="proposed_new_ID3">
+                    <placeName><!--best-known name of the place--></placeName>
+                    <placeName><!--alternate place name--></placeName>
+                    <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+                </place>
+                <place xml:id="Lords_Cricket_Ground">
+                    <placeName>Lord's Cricket Ground</placeName>
+                    <location><geo>51.5298 0.1722 </geo></location>
+                    <note>A Cricket venue in St. John's Wood. Founded by Thomas Lord.</note>
+                </place>
+                <place>
+                    <place xml:id="Cambridge_Univ">
+                        <placeName>Cambridge University</placeName>
+                        <note>The University in Cambridge, England. The school was established in 1209.</note>
+                    </place>
+                </place>
+                <place xml:id="Coventry_City">
+                    <placeName>Coventry</placeName>
+                    <location><geo>52°24'29.0"N 1°30'38.0"W</geo></location>
+                    <note>The city in the West Midlands in England.</note>
+                </place>
+            </listPlace>
+            <listBibl>
+                <bibl xml:id="proposed_new_ID4">
+                    <title><!--Title--></title>
+                    <author><!--Author--></author>
+                    <editor><!--if indicated--></editor>
+                    <pubPlace><!--where published--></pubPlace>
+                    <publisher><!--publisher--></publisher>
+                    <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+                </bibl>
+            </listBibl>
+            <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+        </div>
+        </back>
+    </text>
+</TEI>

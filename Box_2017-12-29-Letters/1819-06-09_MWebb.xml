@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM2022">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, June 9, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#cay">Courtney Younes</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-10-19">2017-10-19</date>
+                  Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-09-10">September 10, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: DSCF8945.jpg, DSCF8946.jpg, DSCF8947.jpg, DSCF8948.jpg, DSCF8950.jpg, DSCF8952.jpg, DSCF8953.jpg, DSCF8954.jpg, DSCF8955.jpg, DSCF8956.jpg, DSCF8957.jpg, DSCF8958.jpg, DSCF8959.jpg, DSCF8960.jpg, DSCF8961.jpg, DSCF8962.jpg<idno>
+               
+            </idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361552</idno> <!--LMW: No ff. number listed in spreadsheet.-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1819-06-09">1819 June 9</date>. 
+               <note resp="#lmw">Letter dated Wednesday evening and June 9, 1819 was a Wednesday. Mitford's Journal indicates she wrote to Mary Webb on June 9.</note>-->
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One and a half sheets of <material>paper</material>, six surfaces photographed. Sheet measures 16.5 x 23 cm. Folded in half, then in thirds</p> 
+                        <p>No postmarks</p>
+                     </support>
+                     <condition>
+                        <p>Half sheet (pages five and six) torn on right edge where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to page six.</p>
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><!--This section documents and identifies whenever we see additional hands, other than Mitford's, at work in the document. Those hands could be a contemporary (such as her mother), but they're more frequently marks made by later editors such as William Harness or Francis Needham. Use the <handNote> elements to describe the role of each hand in this manuscript. If the hand is, say, Mitford's mother's and is writing a page of the letter, you indicate when that happens in the body of the letter using the <handShift> element. The @corresp attributes on <handNote> point to xml:ids stored (or to be stored) in our Site Index.-->
+           <handNote corresp="#Id_who"><!--Description of role in this mansuscript.--></handNote>
+           <!--Below are some SAMPLE HANDNOTES that appear commonly on MANY letters. Please be sure to CHANGE these if your letter differs.-->
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. <!-- Don't change the preceding two sentences if this letter has red crayon. In the *following* sentence, describe red crayoning on this letter. -->A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. <!-- Don't change the preceding sentence if this letter has grey pencil. In the following sentence, describe penciled numbers or change/add whatever text you see written in pencil. -->This letter is numbered "11" in the top left of the first leaf.
+              
+              <!--LMW: no red crayon, Needham? date [del rend="crossout">about</handNote> <add place="below">9th</add> June, 1819]-->
+              
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><!--Within the <body> element the text of our elements records our transcription of Mitford's text, and any editorial notes we need to add. -->
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">[about June 9th 1819]</add> 
+               <dateline>
+                  <date when="1819-06-09">Wednesday Evening</date>. 
+               </dateline>
+               </opener><!--LMW to CAY: oxygen fires an error whenever I have created a new xml:id that is not already in our site index. We need to do that for new entries, so just ignore those type of errors-->
+            <p>Your kind &amp; charming letter, my own kind &amp; charming friend, gave me two pleasures<add place='above'><metamark rend="caret" place="below">today</metamark></add> that of hearing from you &amp; that of not hearing from <persName ref="#Nooth_C">Miss Nooth</persName>). <q>"Humph"</q> quoth I when <persName ref="#Hill_Lucy">Lucy</persName> gave it me <q>"Here had I just got quit of my blue-stocking, just sent her a huge packet to <placeName ref="#Paris">Paris</placeName>--all the wit &amp; learning I have to spare; &amp; now have another letter to answer! I wish her pen &amp; ink were Corked up.</q> And down I <emph rend="underline">plumped</emph> the letter. Meanwhile I read one from somebody else (you always contrive to come in a good company <persName ref="#Webb_Mary_younger">Mary</persName>) &amp; then condescended to take it up again. Imagine my surprise &amp; my pleasure to find dear <persName ref="#Webb_Mary_younger">Mary Webb</persName>) in the place of <persName ref="#Nooth_C">Charlotte Nooth</persName> to you see you were right as to the similarity of the handwriting for I had quite forgotten what you said on the subject &amp; <persName ref="#Nooth_C">Miss N.</persName> was not at all in my head--You write like her in every way--only that you have a much greater knack of making people believe you love them--I suppose my dear because it happens to be true--&amp; that it is which gives your letters that preference over hers which one gives to a living flower over a dead one--the principle of life.--You must not say that I <emph rend="underline">would</emph> not come to <pb n="2"/><placeName ref="#Watlington">Watlington</placeName>--I was quite ready--packed--dressed--nothing wanting but the promised horse--ours never could have dragged me--<persName ref="#Mitford_Geo">Papa</persName>says he walked half the way--&amp; think of my weight. I was very much disappointed--for I wanted to see you all--particularly you &amp; dear <persName ref="#Webb_Eliza">Eliza</persName>--no you must not say--you must not think I would not come--for really &amp; truly I meant it (this it is to have a bad reputation--if I had not broken some 22 engagements this Spring to <placeName ref="#Twickenham">Twickenham</placeName> <placeName ref="#Richmond">Richmond</placeName>, <placeName ref="#London_city">London</placeName> &amp; <placeName ref="#Paris">Paris</placeName> I need not take so much pains to be <emph rend="underline">dis</emph>-believed--take warning by my fate &amp; keep all promises <persName ref="#Webb_Mary_younger">Mary</persName> mine--but breaking engagements is a family fault--<persName ref="#Russell_M">Mama</persName> never makes one without meaning to break it--&amp; my honoured <persName ref="#Mitford_Geo">Father</persName> has within one week promised to spend <date when="1819-08">August</date> at <placeName ref="#Paris">Paris</placeName> &amp; <date when="1819-08">August</date> at <placeName ref="#Bickham_village">Bickham</placeName>--How he'll settle it I don't know. Perhaps he may quiet his conscience by breaking both promises &amp; and bringing all his friends alike to come back to <placeName ref="#Watlington">Watlington</placeName>--I desire you will give my kindest love to the lovely <persName ref="#Webb_Mary_elder">Aunt Mary</persName> &amp; condole with her from the on the bed-breaking calamity--Pray did you fair ladies <quote>"sleep in strata"</quote><!--LMW: try to id. this quotation.-->--this mis-fortune looks rather suspicious--she will understand this question--&amp; so will you if you have read <title ref="#TomCrib">Tom Crib</title> <!--cay unclear, author? LMW: Tom Crib is a pseudonym for Thomas Moore, author of Tom Crib's Memorial to Congress. I think the quote is from there, probably references the book, not the character.-->--I am very glad you have read <title ref="#Mems_de_Grammont">Les Memoires de <pb n="3"/>Grammont</title><!--LMW: Mémoires de Grammont by Anthony Hamilton (1825?)-->--It's a book one should not quite to like to recommend to a jeune &amp; gentille demoiselle--but being read there is no harm in saying how very much one admires it. Live for ever <persName ref="#Blague_HM">la blonde Blague</persName><!--LMW: 'Blage the Blonde," Henrietta Maria Blague/Blagge? she was maid of honor to the Duchess of York in 1662, probably that's the Princess referred to.--> &amp; the <persName>Princess</persName> of Babylon<!--LMW: who? "Miss Stewart?"-->--&amp; above all live <persName ref="#Hamilton_An">Count Anthony Hamilton</persName> their immortal Historian the unrivalled painter of manners &amp; of men. <persName ref="#Dryden">Dryden</persName>'s character of <persName ref="#Villiers_Geo">Buckingham</persName> is perhaps the finest<!--unclear one word--> passage in his works &amp; <persName ref="#Pope_Alex">Pope</persName>'s rival lives though not quite equal are the best of his good--but do either of them give you half so vivid an idea of the <q>"blest madman"</q><!--LMW: reference to Villiers in line from Dryden's poem Zimri (Duke of Buckingham).--> as <persName ref="#Hamilton_An">Count Hamilton</persName>'s description of him dandling <persName ref="#Muskerry_Lady">Lady Muskerry</persName>'s dropped cushions &amp; going to look for a wet nurse among the maids of Honour? <!--lmw:  SEE https://books.google.com/books?id=JT0JAAAAIAAJ&lpg=PA291&ots=XDQTlvxArI&dq=Duchess%20of%20York%20%22Princess%20of%20Babylon%22&pg=PA291#v=onepage&q=Duchess%20of%20York%20%22Princess%20of%20Babylon%22&f=false-->I hope you read this delightful book in French--it is so untranslateable--the class of Memoires is the only one in which the French literature is richer than ours--there are perhaps a hundred publications of that sort (Most of them less witty &amp; less licentious than the <title ref="#Mems_de_Grammont">Memoires de Grammont</title>) in the language. The very best are the <title ref="#Mems_de_Sully">Memoires de Sully</title>--the pleasantest perhaps those of<persName ref="#deRouvroy">M. Le Duke de St. Simon</persName>--a wit who hated every body. These <title ref="#Mems_de_StSimon">Memoires</title>--<title ref="#Fables_Fontaine">Fontaine's Fables</title>--<persName ref="#Sevigne_Mad">Madame de Sevigné</persName>'s <title ref="#Sevigne_letters">letters</title>--All <persName ref="#Moliere">Molière</persName> &amp; all <persName ref="#Regnard">Regnard</persName> are the only things which console one for the <pb n="4"/> trouble of learning French. (What a nice pen I have made!!) No! I never saw <placeName ref="#Strawberry_Hill">Strawberry Hill</placeName> though I have seen the famous <placeName ref="#Strawberry_Hill">Strawberry Hill</placeName> books--all I believe--especially the edition of <title ref="#Mems_de_Grammont">Les Memoires de Grammont</title> for which the pictures were collected. I never saw <placeName ref="#Strawberry_Hill">Strawberry Hill</placeName>--but I know exactly what it is--a gingerbread castle--Modern Gothic--all gilding &amp; painted glass--smelling of courts all over--a very abomination of trumpery--I know all this--&amp; yet I had rather see <placeName ref="#Strawberry_Hill">Strawberry Hill</placeName> than any place I know of. I should like to see <persName ref="#Hamilton_An">Count Anthony</persName>'s heroes &amp; heroines--I should like to see the Kings &amp; beauties of the white rose--my dear <persName ref="#EdwardIV">Edward the Fourth</persName> &amp; <persName ref="#RichardIII">Richard the Third</persName>--I should like to see <persName ref="#Sevigne_Mad">Madame de Sevigné</persName> &amp; <persName>Madame de Guignon</persName> I should like even to see the old China--but chiefly I should like to see the abode of <persName ref="#Walpole_Hor">Horace Walpole</persName><!--cay unclear one word-->--the man of the last Century who pleases the best. Did you never read any of his letters? His unrivalled letters? I shall always consider it as one of the misfortunes of my life to have been born too late to be his Correspondent--Unless you have seen some of his letters there is no giving you any idea of them, the perfection of lightness, elegance, sarcasm &amp; humour as picturesque as old Tapestry--as vivid as <pb n="5"/>stained glass--as graceful as a Grecian<!--cay unclear two words LMW: sundile/sundial? no idea-->. There is no giving you any notion of <persName ref="#Walpole_Hor">Horace Walpole</persName>--except perhaps by negatives. He is never wise--never good--very seldom right--&amp; never dull. He is just become the fashion--to my great annoyance--I have loved him--all my days &amp; am quite provoked that <title ref="#EdinburghRev_per">Edinburgh</title> &amp; <title ref="#QuarterlyRev_per">Quarterly</title> Reviews should step in &amp; make him common.--The only consolation that I have in being born some fifty or sixty years too late to rival his old blind Correspondent <persName>Madame du Deffand</persName>--is that I have much such another myself--not quite so good--but almost--incredibly good for a living man--very like him at all points--pleasant, humourous, graceful &amp; as courtly as <persName ref="#Walpole_Hor">Horace</persName> himself--only rather to apt to be right. This Correspondent you know is <persName ref="#Elford_SirWm">Sir William Elford</persName>--He has been here while you were away &amp; gave me a long account of <rs type="event">the Exhibition</rs>--the picture of the year Madam, is he says <figure>the Post Office,</figure><!--LMW: by Edward Villiers Rippingille (c. 1790–1859) --> the judges prefer it to <persName ref="#Wilkie_D">Wilkie</persName>'s--&amp; being by a new man, the wonder &amp; pleasure go hand in hand.--Then I have a long account of pictures from <persName ref="#Hofland_B">Mrs. Hofland</persName> who says the hanging Committee ought to be hanged--a short one from <persName ref="#Haydon">Haydon</persName>. (today) who except this <figure xml:id="Post_Office">Post Office,</figure> <figure>Wilkie's Picture</figure>--&amp; <figure>Cooper's Battle of Marston</figure><!--LMW: Abraham Cooper, Marston Moor painting--> &amp; <figure>Alstons' Jacob<!--LMW: torn. 's -->Ladder</figure> <!--LMW: Jacob's Dream by Washington Allston, friend of COleridge, American-->--says of all the <!--cay unclear one word, go back scribbled out. LMW: Exhibitors scribbled out?--><orgName ref="#Royal_Academy">Academy</orgName> <q>"Heaven help them!</q> Instead of having over their door in Greek <q>Let no one unskilled in Art enter here</q>, They should put <!-- cay greek not sure how to spell it. LMW: Latin: Inferno, Canto 3--><q>lasciete ogni Speranza voi ch' entrate"</q>--which lonely line you must know <persName ref="#Haydon">Mr. Haydon</persName> has taken from from the Inscription<!--unclear one word--> over the Gate of Hell in <title ref="#Inferno_Dante">Dante's Inferno</title>, &amp; means literally all ye who enter leave all hope behind. So you find he is growing saucy again--&amp; well enough to paint thank Heaven.--When you come &amp; see me I write tell you all the little things which prevented my sending you to see his picture--the greatest was my intention to come to <placeName ref="#London_city">Town</placeName> &amp; take you myself--I do hope however before the summer is over to show you to him here which will be better every way.--I want most dismally to see you my own dear <persName ref="#Webb_Mary_younger">Mary</persName>--when can you come? <persName ref="#Mitford_Geo">Papa</persName> &amp; <persName ref="#Russell_M">Mama</persName> are going into <placeName ref="#Hampshire_county">Hampshire</placeName> on <date when="1819-06-13">Sunday</date> or <date when="1819-06-14">Monday</date> for the week--Now the now in your unbounded hospitality. <pb n="6"/> that full or empty you will will be asking me to come to you. But I can't our people are all crazed with love--<persName ref="#Russell_M">Mama</persName> would not go till I had promised <!--cay unclear one word--> her not to leave the house--so you must come &amp; see me that is certain. Cannot you come on <date when="1819-06-15">Tuesday</date> you &amp; our dear <persName ref="#Webb_Eliza">Eliza</persName>--or dear <persName ref="#Webb_Mary_elder">Aunt Mary</persName> or dear <persName ref="#Wheeler_Kate">Kate Wheeler</persName>--or even you alone? Pray do if possible &amp; let me know--or any other day that will suit you better--only let me know for fear of my prime minister <persName ref="#Hill_Lucy">Lucy</persName> hopping out. Do come &amp; spend a long day with me &amp; tell me all about <orgName ref="#James_family">the James's</orgName> &amp; a thousand things that I wish to hear. I will be very charming &amp; amusing in my turn I promise you.--You shall then <choice><sic>chuse</sic><reg>choose</reg></choice> some books. <persName ref="#Burns_Rob">Burns</persName> though you may have seen it here was not mine--I have only a trumpery small edition--<title ref="#Burns_Wks_Currie">Dr. Currie's Life</title> I had from <placeName ref="#Coley_Berks">Coley</placeName>--If <persName ref="#Valpy_Richard">Dr. Valpy</persName> has it I will borrow it for you--No book can be more charming.--I am delighted to hear so favorable an account of your dear <persName ref="#Webb_James">Father</persName>--I hope he has been very prudent this week &amp; not suffered from his hospitality--The puppies arrived very late &amp; are the greatest beauties ever seen--I have scarcely room for my kindest love to All &amp; God bless you.</p>
+               <closer>Ever yours <persName ref="#MRM">M.R.M</persName>.</closer>
+            <postscript>
+            <p>To prove that my Correspondent is at least as courtly as <persName ref="#Walpole_Hor">Horace</persName> the well-beloved, his very fine <figure>landscape</figure> <!--cay unclear one word--> in the <rs type="event">Exhibition</rs> this year is intended for <placeName ref="#Carlton_House">Carlton House</placeName>--The <persName ref="#GeoIV">Regent</persName> asked for it--imagine the lecture I read the luckless painter--<persName ref="#Elford_SirWm">Sir William</persName> put me in mind of <persName ref="#Webb_James">Mr. Webb</persName>--he said I should certainly come to be <!--cay unclear one word LMW: hanged?--> Are you forgiven do you think my own love? <pb n="7"/> Let me have just one line on <date when="1819-06-12">Saturday</date> to say you will come.</p>      
+            </postscript>
+          
+            <closer>
+               <address>
+                  <addrLine><lb/>To <persName ref="#Webb_Mary_younger">Mary Webb</persName></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <listPerson sortKey="histPersons">
+          <person xml:id="Hamilton_An" sex="m"> <!--LMW: I tidied up some of these entries, to give you better examples. Can you fix yours to be like these? See my notes.-->
+             <persName>Count Anthony Hamilton</persName><!--put the person's full name here-->
+             <persName>
+                <roleName>Count</roleName> <!-- person's title, if any -->
+                <surname>Hamilton</surname>
+                     <forename>Anthony</forename>
+             </persName>
+             <persName>Antoine Hamilton</persName><!-- alternate versions of the name, if any (whole thing) -->
+                <birth when="1646">
+                   <placeName>Ireland</placeName></birth><!-- Wikipedia usually lists these, with references. For this person, it's unclear which town in Ireland he was born in, but it is clear it's SOMEWHERE in Ireland, so I just put the country. YOu can just use whatever we are sure of. Use city and country, or city plus county/state/dept. plus country if you know them.-->
+             <death when="1720-04-21"><!--For dates, be sure to put in month month and day day So Feb. third is 02-03. Always two digits-->
+                <placeName>St. Germain-en-Laye, Yvelines, Île-de-France, France</placeName>
+             </death>
+                     <occupation>literary</occupation><!--put each occupation in it's own separate tag. For some occupations, there are two tags (as in literary and memoirist or theater and actor.-->
+                <occupation>memoirist</occupation>
+             <occupation>theater</occupation>
+             <occupation>actor</occupation>
+             <occupation>government</occupation>
+             <occupation>military</occupation>
+                      <note resp="#cay #lmw">Anthony or Antoine Hamilton, actor and author born in Ireland  who grew up in France. He performed in Philippe Quinault's ballet, the Triomphe de l'Amou. He became governer of Limerick and would contiuned to be inside of the goverment for the rest of his life. Mémoires du comte de Gramont is his most famous piece of writing. He also created tales that  circulated privately during Hamilton's lifetime. The first three appeared in Paris in 1730 which was ten years after he died. He mostly wrote all of these tales for his sister, for her to enjoy (wikipedia).</note> <!--put your written note in this kind of tag.-->
+             <note><ref target="https://viaf.org/viaf/281518656/"/></note><!--at the very bottom of the wikipedia page, there will be a listing for a worldcat identity and a VIAF identity for each person, usually.  You can click on that VIAF # and it takes you to that person's page. Then just copy what's in the search bar in the format as indicated. (Here https://viaf.org/viaf/281518656/, VIAF # is 281518656.-->
+          </person>
+             
+           <person xml:id="Max_de_Bethune" sex="m">
+              <persName>Maximilien de Béthune, Duc de Sully</persName>
+              <persName>
+             <surname>de Bethune</surname>
+                     <forename>Maximilien</forename>
+                 <roleName>1st Duke of Sully</roleName>
+                 <roleName>Marquis of Rosny and Nogent</roleName>
+                 <roleName>Count of Muret and Villebon</roleName>
+                 <roleName>Viscount of Meaux </roleName>
+              </persName>
+              <occupation>courtier</occupation>
+               <occupation>military</occupation>
+                     <occupation>soldier</occupation>
+              <occupation>politician</occupation>
+             <birth when="1560-12-13">
+                <placeName>Rosny-sur-Seine, France</placeName>
+             </birth>
+             <death when="1641-12-22">
+                <placeName>Villebon, France</placeName>
+             </death>
+              <note resp="#cay #lmw">nobleman, soldier, statesman, and right-hand man who assisted king Henry IV of France. He had a major role in building a strong administrative system in France new techniques. He had a lot of power over the French's ecomony system. He authorized the free exportation of grain and wine, reduced legal interest, established a special court to try cases of peculation, would forbid governors to raise money on their own, and otherwise hoped to be able to removed any abuses of tax-collecting. He also encourage articultral and farming and expressed the importances of both to the people of France. Although, he was very unpopular because he was a favorite and was seen as selfish, obstinate, and rude. He was hated by most Catholics because he was a Protestant, and also by most Protestants because he was faithful to the king. Though, he was an excellent man of business. It is said that he would be able to talk you into anything he could as well as he really knew what he was talking about (wikipedia).</note>
+              <note><ref target="https://viaf.org/viaf/95208305/"/></note>
+           </person>
+        
+           <person xml:id="EdwardIV" sex="m">
+           <persName>Edward IV of England</persName>
+           <persName>
+               <surname>York</surname>
+               <forename>Edward</forename>
+           </persName>
+           <birth when="1442-04-28">
+              <placeName><!--place of birth--></placeName></birth>
+               <death when="1483-04-09">
+                  <placeName><!--place of death--></placeName></death>
+              <occupation> nobleman, soldier </occupation>
+              <occupation></occupation>
+              <note resp="#cay #lmw">Edward IV a king of England occupation: royalty
+              He served as the King of England from 4 March 1461 to 3 October 1470 and then again from 11 April 1471 until his death in 1483. He was the first Yorkist King of England. The first half of his rule was marred by the violence associated with the Wars of the Roses and he wanted to reign in peace until his sudden death. Before becoming king, he was 4th Duke of York, 7th Earl of March, 5th Earl of Cambridge and 9th Earl of Ulster. He was also the 65th Knight of the Order of the Golden Fleece. (Wikipedia). </note>
+              <note><ref target="https://viaf.org/viaf/xxxxxxxxxxxx/"/></note>
+</person>
+              
+              
+              
+           <person xml:id="Blague_HM" sex="f">
+              <persName>Henrietta Maria Blague</persName>
+              <persName>
+                 <surname>Blague</surname>
+                 <surname>
+                    <addName>Blagge</addName>
+                 </surname>
+                 <forename>Henrietta</forename>
+                 <forename>Maria</forename>
+              </persName>
+              <birth when="yyyy-mm-dd">
+                 <placeName><!--place of birth--></placeName></birth>
+              <death when="yyyy-mm-dd">
+                 <placeName><!--place of death--></placeName></death>
+              <occupation>courtier</occupation>
+              <note resp="#cay #lmw">'Blage the Blonde," Henrietta Maria Blague/Blagge? she was maid of honor to the Duchess of York (Anne Hyde/m. to James II) in 1662
+                 She was the daughter of Colonel Blagg.</note>
+                 <note><ref target="https://viaf.org/viaf/xxxxxxxxxxxx/"/></note>
+           </person>
+                  
+  
+  <!--NEEDS RESEARCH: Princess (daughter of Charles?) occupation: courtier--> <!--cay which King Charles?--> <!--LMW probably Charles II of England-->
+   
+   
+           <person xml:id="deRouvroy" sex="m">
+              <persName>Louis de Rouvroy</persName>
+              <persName>
+                 <surname>de Rouvroy</surname>
+                 <forename>Louis</forename>
+              </persName>
+              <persName>
+                 <roleName>2nd Duke de St. Simon</roleName>
+              </persName>
+              <birth when="1675-01-16">
+                 <placeName>Paris, France</placeName></birth>
+              <death when="1755-03-02">
+                 <placeName>Paris, France</placeName></death>
+              <occupation> courtier; literary, memoirist</occupation>
+              <occupation></occupation>
+              <note resp="#cay #lmw">Louis was the second duke of Saint Simon. King Louis had appointed his father as Master of Wolfhounds although he was not like his father. Louis perferred to be indoors writing. He got a lot of fame from his writings and he mostly wrote about gossip and drama that he collected over the years. Saint-Simon's Mémoires strike a most realistic note which is why he became so famous. He shows a great skill for narrative and for character-drawing; he has been compared to Tacitus, and to historians such as Livy.  He uses vocabulary that was extreme and inventive; he is deemed to have first used the word "intellectual" as a noun, and as well as "patriot" and "publicity" (Wikipedia).  </note>
+              <note><ref target="https://viaf.org/viaf/95157936/"/></note>
+           </person>
+             
+             
+            
+           xml:id="Fontaine"  Jean de la Fontaine 
+                  <surname> Jean </surname>
+                  <forename> de la Fontaine </forename>
+                  <occupation> literary </occupation>
+                  <birth when="1621-07-08><placeName><!-- France--></placeName></birth>
+                  <death when="1695-04-13">
+                     Jean was educated at the grammar school of Château-Thierry, and he then entered the Oratory in May 1641, and the seminary of Saint-Magloire in October of the same year. He then apparently studied law, and is said to have been admitted as lawyer. He started to writing poetry to make more money as he had to sell everything he owned because wife's property had to be separately secured to her.  Jean has been gulfed in legends which were literary tradition. His later contemporaries helped to swell the tales, and the 18th century finally accepted it. He left an everlasting effect on legends in the 18th century (Wikipedia).  
+             
+             xml:id="Regnard" LMW Jean-François Regnard 
+             <surname> Jean-Francois </surname>
+             <forename> Regnard </forename>
+             <occupation> poet and dramatist </occupation>
+             <birth when="1655-02-7><placeName><!-- Paris--></placeName></birth>
+             <death when="1709-09-4"><placeName><!--château of Grillon--></placeName></death>
+           
+           Know as "the most distinguished, after Molière, of the comic poets of the seventeenth century",Jean-Francois was a dramatist who was born in Paris, who is now equally famous now for the travel diary he kept of a voyage in 1681. He inherited a fortune from his father who was a successful merchant who had given him an excellent education, Jean-Francois then increased that by gambling. He then took to traveling, and on a return voyage from Italy in 1678, at the age of twenty-two, was captured by an Algerian pirate. He was then sold as a slave in Algiers and taken to Constantinople, where the French paid ransom for his release. He went on traveling, even after this. His Voyage de Flandre et de Hollande where he ended up reporting his trip through the Low Countries, Denmark and Sweden (Wikipedia). 
+             
+             xml:id="#Wilkie_D">David Wilkie
+             <surname> David </surname>
+             <forename> Wilkie </forename>
+             <occupation> artist, painter </occupation>
+             <birth when="1785-11-18></birth>
+             <death when="1841-06-1"><placeName><!--dying at sea off Gibraltar--></placeName></death>
+                     
+                     David started off with genre-painting but ended up turning to historical art, and painted his Alfred in the Neatherd's Cottage, for the gallery illustrative of English history which was formed by Alexander Davison. After its completion he returned to genre-painting, and he painted his Card-Players and the Rent Day which was composed during recovery from a fever contracted in 1807. In 1825 he sought relief in foreign travel: after visiting Paris, he went to Italy, then in Rome, he received the news of fresh disasters. He then left to travel and resided at Toplitz. David returned to Italy, to Venice and Florence. The summer of 1827 was spent in Geneva, where he had recovered to paint his Princess Doria Washing the Pilgrims' Feet a work which was strongly influenced by the Italian art. In October he passed into Spain and he then made his returned to England in June 1828. In the beginning of 1830 David was appointed to succeed Sir Thomas Lawrence as painter in ordinary to the king, and in 1836 he received the honour of knighthood. In the fall of 1840 David went on another voyage to the East. He passed through Holland and Germany, he reached Constantinople, where, while detained by the war in Syria, he painted a portrait of the young sultan. He ended up dying on this voyage at sea (Wikipedia). 
+             
+      xml:id="Rippingille" Edward Villiers Rippingille (c. 1790–1859) painter Occupation: artist, painter
+                <surname> Edward </surname>
+                <forename> Villiers Rippingille </forename>
+                <occupation> artist, painter </occupation>
+                <birth when="1790".><placename><!--Norfolk--></placename></birth>
+                <death when="1859"><placeName><!--Swan Village railway station--></placeName></death>
+                From where he was born in Norfolk, he ended up moving to Bristol where he participated in the sketching activities of the Bristol School. (Rippingille's Sketching Party in Leigh Woods (c. 1828)). In 1830, Edward left Bristol to travel to France and Germany. He returned to London and he got married in 1832. He then started travelling to France again with  James Baker Pyne. In 1835 he ended up returning to London and he held his own exhibition at Regent Street. In 1837 he took trips to Italy and concentrated on Italian subjects. (Wikipedia).
+              
+              xml:id="Cooper_Ab" Abraham Cooper, painter Occupation: artist, painter
+                <surname> Abraham </surname>
+                <forename> Cooper </forename>
+                <occupation> artist, painter </occupation>
+                <birth when="1787".><placename><!--Greenwich, London--></placename></birth>
+                <death when="1868"></death>
+                 He started off working a pointless job but then when he was twenty-two, wishing to possess a portrait of a favorite horse under his care, he bought a manual of painting, learned something of the use of oil-colours, and painted the picture on a canvas hung against the stable wall. He began to fall in love with painting. He started to began to copy prints of horses, and was introduced to Benjamin Marshall, the animal painter, who ended up taking him to his studio to teach him even more. In 1814 he exhibited his Tam O'Shanter, and in 1816 he won a prize for his Battle of Ligny. In 1817 he exhibited his Battle of Marston Moor and was made associate of the Royal Academy, and in 1820 he was elected Academician (Wikipedia). 
+              
+              xml:id="Allston_W" Washington Allston
+                     <surname> Washington </surname>
+                     <forename> Allston </forename>
+                     <occupation> artist, painter </occupation>
+                     <birth when="1779-11-5".><placename><!--Waccamaw Parish, South Carolina--></placename></birth>
+                     <death when="1843-07-9"></death>
+                     Washington was sometimes called the "American Titian" because his style resembled the great Venetian Renaissance artists since they all used simliar dramatic color contrasts. As well as His work greatly influenced the development of U.S. landscape painting. The themes of many of his paintings were drawn from literature, especially Biblical stories. Washington Allston graduated from Harvard College in 1800 and moved to Charleston, South Carolina for a short time before sailing to England in May 1801. After this he went on to visit the famous museums in the US. 
+              
+                                                                                                                                                                                         xml:id="Currie_J" James Currie (31 May 1756 in Dumfriesshire, Scotland – 31 August 1805 in Sidmouth) was a Scottish physician 
+                     <surname> James </surname>
+                     <forename> Currie </forename>
+                     <occupation> literary, biographer; medical, physician </occupation>
+                     <birth when="1756-05-31".><placename><!--Dumfriesshire, Scotland--></placename></birth>
+                     <death when="1805-08-31"><placeName><!--Sidmouth--></placeName></death>
+                    James tried an early attempt to set up a business in Virginia but it was a failure and after that he ended up just returning to Scotland. After qualifying as a medical doctor, he ended up establishing a successful practice in Liverpool, England. After a few years he was able to purchase a small estate in Dumfriesshire. He became a Fellow of the London Medical Society and was a founder member of the Liverpool Literary Society. He was an early advocate of the abolition of slavery and wrote several political letters and pamphlets, including one to William Pitt, although this ended up making him a number of enemies (Wikipedia).                                                                                                                                      
+              -->
+          <person xml:id="proposed_new_ID">
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death><note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+             <note>
+                <ref target="http://viaf.org/viaf/74124605"/><!--VIAF(virtual International Authority File) id #, usually found in wikipedia link at bottom of page. otherwise, you can also search directly at www.viaf.org.-->
+             </note>
+          </person>
+          
+          <person xml:id="Beechey_W" sex="1"><!--LMW: here is a sample entry for a painter.-->
+             <persName>
+                <forename>William</forename> 
+                <surname>Beechey</surname>
+             </persName>
+             <persName>Sir William Beechey</persName>
+             <birth when="1753-12-12">
+                <placeName>Burford, Oxfordshire, England</placeName>
+             </birth>
+             <death when="1839-01-28">
+                <placeName>London, England</placeName>
+             </death>
+             <occupation>artist</occupation>
+             <occupation>painter</occupation>
+             <note resp="#lmw">Official portrait painter to Queen Charlotte; he painted many
+                members of the royal family as well as celebrated figures such as Sarah Siddons
+                and Lord Nelson. He specialized in smaller scale full-length portraits.</note>
+             <note>
+                <ref target="http://viaf.org/viaf/74124605"/>
+             </note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <!--LMW NEW ENTRIES NEEDED-->
+              <place xml:id="Watlington">
+              </placeName>Watlington
+              <region>Oxfordshire</region>
+              <country>England</country>
+              </place>
+           <location><geo>51.645 -1.008</geo></location><!--if you click on the link for "coordinates" at the top of the wikipedia page, it takes you to geohack site, which gives different formats for the geo tag. Copy the one under "decimal" (like this: 51.645, -1.008) and then take out the comma!-->
+           <note resp="#cay">Watlington is a small market town in Oxfordshire England.  It was recorded in 2011 the population to be 2,727. It is the location of Mitford's long poem, Watlington Hill.</note>
+</place>
+              
+            
+          <placeName ref="#Carlton_House">Carlton House, St. James, London, England</placeName>
+           
+          </placeName><!--Carlton House--></placeName>
+           <location><geo><!--51°30'13.71" N   0°07'32.78" E-></geo></location>
+             
+             Carlton House was a mansion in London, best known as the town residence of the Prince Regent for several decades from 1783. It faced the south side of Pall Mall, and its gardens abutted St. James's Park[1] in the St James's district of London. It was built for Henry Boyle. 
+             
+             
+             
+             -->
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this: 53.226658 -0.541254--></geo></location>
+           </place>
+           
+           <place xml:id="Abingdon"> <!--LMW: here is a sample entry for a town/village, use similar format for Watlington. YOu should be able to find the link for the lat./long. in wikipedia.-->
+              <placeName>Abingdon, Berkshire, England</placeName>
+              <placeName>
+                 <addName>Abingdon on Thames</addName>
+              </placeName>
+              <placeName>
+                 <addName>Abingdon-on-Thames</addName>
+              </placeName>
+              <settlement>Abingdon</settlement>
+              <region>Berkshire</region>
+              <region>Oxfordshire</region>
+              <country>England</country>
+              <location>
+                 <geo>51.67078 -1.2879528999999366</geo>
+              </location>
+              <note resp="#lmw">Abingdon (now called "Abingdon on Thames" or
+                 "Abingdon-on-Thames,") is a market town in England. In <persName ref="#MRM">Mitford</persName>'s time, it was the county town of the county of
+                 <placeName ref="#Berkshire">Berkshire</placeName>. It was reassigned to
+                 Oxfordshire in 1974. In the nineteenth century, the Assize Courts alternated
+                 between <placeName ref="#Reading_city">Reading</placeName> and <placeName ref="#Abingdon">Abingdon</placeName>, according to <persName ref="#coles">Coles</persName>.</note>
+           </place>
+           
+           <place xml:id="Somerset_House"><!--LMW: Here is a sample entry for a building, similar to Carlton House, although you don't need a "note" this long.-->
+              <placeName>Somerset House, Strand, London, England</placeName>
+              <district>Strand</district>
+              <region>London</region>
+              <country>England</country>
+              <location>
+                 <geo>51.511059 -0.11714800000004288</geo>
+              </location>
+              <note resp="#lmw">Large neoclassical public building in central London on the
+                 Strand, overlooking the River Thames. In <persName ref="#MRM">Mitford</persName>'s time, the site of Royal Academy exhibitions and
+                 other cultural events. A building designed and built by Sir William Chambers
+                 beginning in <date when="1776">1776</date> in order to house public offices which had previously been
+                 scattered around London in older buildings. Likely not completed until <date notBefore="1819">after
+                    1819</date>. This building's North Wing faced the Strand and also included East and
+                 West Wings of the present-day quadrangle. Housed the Royal Academy of Arts,
+                 the Royal Society of London for Improving Natural Knowledge, and the Society
+                 of Antiquaries until the 1870s. Sometimes a metonym for <orgName ref="#Royal_Academy">the Royal Academy</orgName>; <persName ref="#MRM">Mitford</persName> mentions in letter of <date when="1821-11-23">23
+                    November 1821</date> to <persName ref="#Elford_SirWm">Elford</persName>
+                 that she hopes he will send his picture to Somerset House.</note>
+           </place>
+        </listPlace>
+          <listBibl>
+             <!--LMW: NEW ENTRIES NEEDED-->
+                <bibl xml:id="#Mems_de_Grammont"> 
+                   <title>Les Mémoires de Grammont</title>
+                <author>Anthony Hamilton</author>
+                <pubPlace><!--Netherlands--></pubPlace>
+                <publisher><!--rubric of Cologne--></publisher>
+                <date when="1713"><!--1713--></date>
+             This piece made Hamilton one of the classical writers of France. It highlights the brilliance of the London Restoration court. The work was said to have been written at Grammont's dictation, but Hamilton's share is obvious. Written between 1704 and 1710, the work was first published anonymously in 1713 (apparently without Hamilton's knowledge) under the rubric of Cologne, but it was really printed in the Netherlands. An English translation by Abel Boyer appeared in 1714 and then over 30 further editions then appeared (Wikipedia). 
+                
+            xml:id="Mems_de_Sully" Mémoires de Maximilien de Béthune, duc de Sully: principal ministre de Henri le Grand (by Duke of Sully)
+             <title><!--Mémoires de Maximilien de Béthune, duc de Sully: principal ministre de Henri le Grand--></title>
+             <!--cay having a really hard time finding info on this one--!> 
+                <!--LMW try checking under just the name Maximilien de Béthune in wikipedia and also try www.worldcat.org for a list of editions.  It *does* have a complicated publication history, so just do your best!--></bibl>
+             
+             
+         xml:id="Mems_de_StSimon: mémoires de le duke de saint simon (by Louis de Rouvry, second Duc de St. Simon)
+              <title><!--mémoires de le duke de saint simon--></title>
+             <author><!--Louis de Rouvry--></author>
+              <date when="yyyy"><!--1691--></date>
+             Saint-Simon's Mémoires strike a most realistic note. On the one hand, he is petty, unjust to private enemies and is known as a gossip. Yet he shows a great skill for narrative and for character-drawing; he has been compared to Tacitus, and to historians such as Livy. He is at the same time not a writer who can be "sampled" easily,[1] inasmuch as his most characteristic passages sometimes occur in the midst of long stretches of quite uninteresting diatribe. His vocabulary was extreme and inventive; he is deemed to have first used the word "intellectual" as a noun, and "patriot" and "publicity" are also accredited as being introduced by him in their current usage.
+         
+         xml:id="Fables_Fontaine" Fontaine's fables
+             <title><!--Fontaine's fables--></title>
+             <author><!-- Jean de La Fontaine--></author>
+             <pubPlace><!--France--></pubPlace
+             <date when="yyyy"><!--1668 to 1694--></date>
+             The first six books, collected in 1668, were in the main adapted from the classical fabulists Aesop, Babrius and Phaedrus. In these, La Fontaine adhered to the path of his predecessors with some closeness; but in the later collections he allowed himself far more liberty and in the later books there is a wider range of sources (Wikipedia). 
+         
+        xml:id="Sevigne_letters" Letters of Madame de Sevigne by Sevigne (<persName ref="#Sevigne_Mad">Madame de Sevigné</persName>)
+             <title><!--Letters of Madame de Sevigne--></title>
+             <author><!--Sevigne--></author>
+             <pubPlace><!--London--></pubPlace
+             <date when="yyyy"><!--1725--></date>
+        These are letters from writing with her daughter for nearly thirty years. The first edition, containing twenty-eight letters or portions of letters, was published in 1725, followed by two others the next year. Pauline de Simiane, Mme de Sévigné's granddaughter, decided to officially publish her grandmother's correspondence. Working with the editor Denis-Marius Perrin of Aix-en-Provence, she published 614 letters in 1734-1737, then 772 letters in 1754. The letters were selected according to Mme de Simiane's instructions: she rejected those that dealt too closely with family matters, or those that seemed poorly written. The remaining letters were often rewritten in accordance with the style of the day. This raises a question of the letters' authenticity.
+             
+   xml:id="#Burns_Wks_Currie" The Complete Poetical Works of Robert Burns: With Explanatory and Glossarial Notes; And a Life of the Author was published in four volumes in 1800. edited by James Currie 
+             <title><!--The Complete Poetical Works of Robert Burns: With Explanatory and Glossarial Notes--></title>
+             <author><!--Robert Burns--></author>
+             <editor><!--James Currie--></editor>
+             <pubPlace><!--University of Michigan/New York, Appleton & co--></pubPlace
+             <date when="yyyy"><!--1859--></date>
+    <!--cay could not find anything about what these works were about--!><!--LMW: the title kind of tells you:  It's a biography of Burns together with a collection of the works of the poet. Try the wikipedia page for James Currie (physician).-->
+   
+    xml:id="Zimri" Dryden's poem Zimri, to Duke of Buckingham
+-->              <title><!--Zimri--></title>
+                <author><!--John Dyrden--></author>
+                <pubPlace><!--United Kingdom--></pubPlace>
+                <publisher><!--The World’s Wit and Humor: An Encyclopedia in 15 Volumes.  1906. Vols. VI–IX:n British--></publisher>
+                <date when="yyyy"><!--1906--></date>
+            The name Zimri became a byword for a traitor who murdered his master. When Jehu led a bloody military revolt to seize the throne of Israel, killed both Jehoram king of Israel and Ahaziah king of Judah, and entered the citadel of Jezreel to execute Queen Jezebel, she greeted him with the words: "Is it peace, Zimri, you murderer of your master?" (2 Kings 9:31). In John Dryden's, the character of Zimri stands for the Duke of Buckingham (Wikipedia). 
+             
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           
+           <!--LMW WORKS OF ART: NEW ENTRIES:
+              <!--LMW: For the art works, if you find a good link to the museum that owns the work, copy that in the entry. If all you can find is a site that copies/sells reproductions, that's okay, put that in, too. Then we can go back and check them. We will include the best link in a note.-->
+             
+              The Post Office by Edward Villiers Rippingille  
+              <figure xml:id="PostOffice_EVR">
+                 <title>The Post Office</title>
+                 <author><persName ref="#Rippingille">Edward Villiers Rippingille</persName></author><!--Use the xml:id from the person's entry, above (with # in front of it)-->
+                 <date>circa 1837</date>
+                 <note resp="#lmw #cay"></note>
+                 This painting shows a crowd of people outside of a post office. These people are dressed from the 1837s and it is very obvious to see that from the photo. 
+              </figure><!--find out, if you can, whether it's an oil painting or watercolor.  Most will be oil.-->
+                 
+              The Battle of Marston Moor painting by Abraham Cooper 
+              </bibl>
+                 <title>The Battle of Marston Moor</title>
+        <author><persName ref="#Cooper_Ab"">Abraham Cooper</persName></author>
+                 <date>circa 1819</date>
+                 <note resp="#lmw #ebb"></note>
+              </bibl>
+              This painting is a very gorey scene of bodies laying around on a battle field. You can see the different colored flags along with the battle horses in the painting. 
+              
+              
+              Jacob's Dream by Washington Allston
+              </bibl>
+                 <title>Jacob's Dream</title>
+                 <author><persName ref="#Allston #Wash">Washington Allston</persName></author>
+                 <date>circa 1817-1819</date>
+                 <note resp="#lmw #ebb"></note>
+                 This painting is a scene, from the biblical book of Genesis, 28:12-15, depicting Jacob asleep in the centre with three angels standing at left, one at right, two beyond him and one flying in the centre; the horizon is lined with angels. The greatest commentator on the picture was William Wordsworth, some of whose lines in his poem 'Composed upon an Evening of Extraordinary Splendour and Beauty' of 1817 were inspired by Allston’s picture (1).             </bibl>
+              
+              
+              Painting David Wilkie exhibited at Royal Academy in 1819 (LIkely "The Penny Wedding" also called "The Scotch Wedding")
+             /bibl>
+                 <title>The Penny Wedding</title>
+                 <author><persName ref="#Wilkie #David">David Wilkie</persName></author>
+                 <date>circa 1818</date>
+                 <note resp="#lmw #ebb"></note>
+           'The Penny Wedding' is by Wilkie, a Fife-born painter. A penny wedding was one where the guests were expected to bring their own food and drinks to the church or hall to celebrate after the ceremony. It is a custom that survived in the West Highlands until recently.
+             
+             Painting WIlliam Elford exhibitied at R.A. in 1819 that went to the Prince Regent (listed as landscape, #176 in catalog): 
+              https://www.royalcollection.org.uk/collection/404523/landscape-with-a-distant-country-house
+              -->/bibl>
+                 <title>Landscape</title>
+                 <author><persName ref="#Wilkie #David">William Elford</persName></author>
+                 <date>1819</date>
+                 <note resp="#lmw #ebb"></note>
+           "There is an inscription of this back of this canvas reports that it was presented to George IV in August 1819. This kind of background information would usually introduce a work of far less quality that this landscape, with its fresh and subtle observation of the effect of a rainy Devon day. The light and effect of moist air is rendered with a precise and professional-looking technique. The motif cannot be confidently identified but may be near Sheepstor" (1). 
+           
+           <!-- SAMPLE ENTRY FOR A WORK OF ART:
+              <figure xml:id="BrokenFiddle_WA" type="painting" rend="oil">
+              <bibl>
+                 <title>The Broken Fiddle</title>
+                 <author>
+                    <persName ref="#Allan_SrWm">William Allan</persName>
+                 </author>
+                 <date>circa 1837</date>
+                 <note resp="#lmw #ebb"></note>
+              </bibl>
+           </figure>-->
+             
+             <!--LMW EVENTS:NEW ENTRY
+                Royal Academy Exhibition of 1819
+                
+                These can be fairly simple too:
+                <listEvent sortKey="histEvents">
+               <event xml:id="Act_of_Union" when="1801">
+                  <label>The Act of Union</label>
+                  <note resp="#ebb">The unification of Ireland with Great Britain (England and
+                     Scotland, to form the United Kingdom, during the reign of <persName ref="#GeoIII">King George III</persName>.</note>
+               </event>
+               
+               <event type="wedding" xml:id="HaydonHymanWed" when="1821-10-10">
+                  <label>wedding of <persName ref="#Haydon_Mrs">Mary Cawse Hyman</persName> and
+                        <persName ref="#Haydon">Benjamin Robert Haydon</persName>
+                  </label>
+               </event>
+                -->
+           
+           <!--LMW EVENTS: Organizations
+                xml:id="James_family" The James family
+                
+                Like this, does not have to be complicated:
+                <org xml:id="Monck_family">
+                  <orgName>the Moncks, family of <persName ref="#Monck_JB">John Berkeley
+                        Monck</persName>
+                  </orgName>
+               </org>
+                -->
+           <!--cay:how would I reference the above?--> 
+     </div>
+     </back>
+  </text>
+</TEI>

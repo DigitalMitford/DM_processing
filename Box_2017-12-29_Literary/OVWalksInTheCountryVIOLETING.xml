@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+         -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            
+            <titleStmt>
+                <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+                <author>Mary Russell Mitford</author>
+                
+                <editor>Quinton Reed</editor>
+                <editor>Samantha Webb</editor>
+                
+                
+                <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+                    Project</orgName></sponsor>
+                <sponsor>University of Pittsburgh at Greensburg</sponsor>
+                <principal>Elisa Beshero-Bondar</principal>
+                
+                <respStmt>
+                    <resp>Transcription and coding by</resp>
+                    <persName ref="#qar">Quinton Reed</persName>
+                    <persName>Samantha Webb</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Proofing and corrections by</resp>
+                    <persName>Elisa Beshero-Bondar</persName>
+                    <persName ref="#bas">Brooke A. Stewart</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>This is optional, used to describe this edition, and "should contain phrases
+                    describing the edition or version": First digital edition in TEI, date: 2 June 2013.
+                    P5.</edition>
+                <respStmt>
+                    <resp>We can include a respStmt here.</resp>
+                    <persName>Who?</persName>
+                </respStmt>
+                
+            </editionStmt>
+            
+            <publicationStmt>
+                <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+                <pubPlace>Greensburg, PA, USA</pubPlace>
+                <date>2013</date>
+                <availability>
+                    <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                        License</licence>
+                </availability>
+                
+            </publicationStmt>
+            <seriesStmt>
+                <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+            </seriesStmt>
+            
+            <notesStmt>
+                <note>Any special notes on this text? (optional)</note>
+                <note>You can have multiple notes here.</note>
+            </notesStmt>
+            
+            <sourceDesc>
+                <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+                <p>Our text is based on  public domain, Google-digitized text<bibl>
+                    <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third Edition</edition> by <author>Mary Russell Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B. Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+                </bibl> This text appears to be identical in pagination and content to the first edition published in 1824.  
+                </p>
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <editorialDecl>
+                <p>Describes our editorial practice.</p>
+            </editorialDecl>
+        </encodingDesc>
+        
+    </teiHeader>
+    <text>
+        
+        <front>
+            <titlePage>
+                <pb n="ii"/>
+                <docTitle>
+                    <titlePart type="main">Our Village:</titlePart><titlePart type="subtitle">Sketches of Rural Character and Scenery.</titlePart>
+                </docTitle>
+                <byline>by <docAuthor>Mary Russell Mitford</docAuthor>, Author of <title>Julian, A Tragedy</title><lb/></byline>
+                <docEdition>Third Edition.</docEdition>
+                <docImprint><pubPlace>London</pubPlace><lb/><publisher>Geo. B. Whittaker</publisher>,<lb/><placeName>Ave-Maria-Lane</placeName>.
+                    <docDate>1825</docDate>.</docImprint>
+            </titlePage>
+            <pb n="iii"/>
+        </front><body>
+            <div type="sketch">
+                <head><title level="a" ref="#Walks_Violeting_OV"> Walks in the Country. Violeting</title></head>
+                <p><date when="--03-27">March 27<hi rend= "superscript">th</hi></date>—It is a dull grey morning, with a dewy feeling in the air; fresh, but not windy; cool, but not cold;—the very day for a person newly arrived from the heat, the glare, the noise, and the fever of <placeName ref="#London_city">London</placeName>, to plunge into the remotest labyrinths of the country, and regain the repose of mind, the calmness of heart, which has been lost in that great <placeName>Babel</placeName>. <persName ref="#OVNarrator">I</persName> must go violeting—it is a necessity—and I must go alone: the sound of a voice, even my <persName ref="Lizzy_OV">Lizzy</persName>'s, the touch of <persName ref="#May-flower">May-flower's</persName> head, even the bounding of her elastic foot, would disturb the serenity of feeling which I am trying to recover. I shall go quite alone, with my little basket, twisted like a bee-hive, which I love so well, because <emph>she</emph> gave it to me, and kept sacred to <name type="plant" ref="#violet" >violets</name>  and to those whom I love; and I shall get out of the high road the moment I can. I would not meet any one just now, even of those whom I best like to meet. <pb n="101"/></p>
+                <p>Ha!—Is not that group—a gentleman on a blood <name type="animal" ref="#horse">horse</name>, a lady keeping pace with him so gracefully and easily—see how prettily her veil waves in the wind created by her own rapid motion!—and that gay, gallant boy, on the gallant white Arabian <!--Horses are such a big part of English culture, I would think that having notes on the specific breed could prove interesting. !--><!--SCW: Noted! I think you may be right about this, especially since we're coding for animals generally. Let's keep this comment here for the future.-->, curveting at their side, but ready to spring before them every instant—is not that chivalrous-looking party, <persName>Mr. and Mrs. M. and dear B.?</persName><!--SCW: Here, I'm going to give you a note relating to Needham's files that can be inserted as an editor's note as to who he speculates these names refer to.--> No! the servant is in a different livery. It is some of the <orgName>ducal family</orgName><!--SCW: I suspect, but will have to verify, that this refers to the Duke of Wellington's family. The element <orgName> is accurate, though-->, and one of their young <persName ref="#Wellesley_Art_jr #Wellesley_Chas">Etonians</persName> I may go on. I shall meet no one now; for I have fairly left the road, and am crossing the lea by one of those wandering paths, amidst the <name type="plant" ref="#gorse">gorse</name> and the <name type="plant" ref="#heath">heath</name> and the <name type="plant" ref="#broom">low broom</name>, which the <name type="animal" ref="#sheep">sheep and lambs</name> have made—a path turfy, elastic, thymy, and sweet even at this season.</p>
+                <p>We have the good fortune to live in an unenclosed parish, and may thank the wise obstinacy of two or three sturdy <orgName>farmers</orgName>, and the lucky unpopularity of a <rs type="person">ranting madcap lord of the manor</rs>, for preserving the delicious green patches, the islets of wilderness amidst cultivation, which form perhaps the peculiar beauty of English scenery.<!--SCW: The foregoing passage is one she is rendering from a letter to Elford that was published in L'Estrange.--> <!--QAR: I have the tag, but I'm not sure exactly where the tags should begin and end.--><!--SCW 4/30/17: That's perfect.--> The common that I am passing now—<placeName>the lea</placeName>, as it is called—is one of the loveliest of these favoured spots. It is a little sheltered scene, retiring, as it were, from the village; sunk amidst higher lands, hills would be almost too grand a word; edged on one side by one gay high road, and intersected by <pb n="102"/>another; and surrounded by a most picturesque confusion of meadows, cottages, farms, and orchards; with a great pond in one corner, unusually bright and clear, giving a delightful cheerfulness and daylight to the picture. The swallows haunt that pond; so do <orgName>the children</orgName>. There is a merry group round it now; I have seldom seen it without one. <orgName>Children</orgName> love water, clear, bright, sparkling water; it excites and feeds their curiosity; it is motion and life.</p>
+                <p>The path that I am treading leads to a less lively spot, to that <rs type="place" ref="#workhouse">large heavy building on one side of the common, whose solid wings, jutting out far beyond the main body, occupy three sides of a square, and give a cold shadowy look to the court </rs>. On one side is a <rs type="place" ref="#workhouse">gloomy garden</rs>, with an <persName>old man</persName> digging in it, laid out in straight dark beds of <!--Here are some things that would be interesting for those food tags you suggested!--><!--SCW: Yes, and in any case, they certainly fall into the category of plants in this particular context. Let's discuss.--> vegetables, <name type="plant" ref="#potato">potatoes</name>,<name type="plant" ref="#cabbage">cabbages</name>, <name type="plant" ref="#onions">onions</name>, <name type="plant" ref="#beans">beans</name>; all earthy and mouldy as a newly dug grave. Not a flower or a flowering shrub! Not a <name type="plant" ref="#rose_trees">rose-tree</name> or a <name type="plant" ref="#currant_bush">currant-bush</name>! Nothing but for sober melancholy use. Oh how different from the long irregular slips of the cottage-gardens, with their gay bunches of <name type="plant" ref="#polyanthus">polyanthuses</name> and <name type="plant" ref="#crocus">crocuses</name>, their wallflowers, sending sweet odours through the narrow casement, and their <name type="plant" ref="#gooseberry_tree">gooseberry-trees</name>, bursting into a brilliancy of leaf, whose vivid greenness has the effect of a blossom on the eye! Oh how different! On the other side of this gloomy abode is a meadow of<pb n="103"/> that deep intense emerald hue, which denotes the presence of stagnant water, surrounded by <name type="plant" ref="#willow">willows</name> at regular distances, and, like the garden, separated from the common by a wide, moat-like ditch. That is the <placeName>parish workhouse</placeName>. All about it is solid, substantial, useful;—but so dreary! so cold! so dark! There are <orgName ref="workhouse_children_OV">children in the court</orgName> and yet all is silent. I always hurry past that place, as if it were a prison. Restraint, sickness, age, extreme poverty, misery, which I have no power to remove or alleviate,—these are the ideas, the feelings, which the sight of those walls excites; yet, perhaps, if not certainly, they contain less of that extreme desolation than the morbid fancy is apt to paint. There will be found order, cleanliness, food, clothing, warmth, refuge for the homeless, medicine and attendance for the <orgName>sick</orgName>, rest and sufficiency for old age, and sympathy, the true and active sympathy which the <orgName>poor</orgName> show to the poor, for the unhappy. There may be worse places than a parish workhouse—and yet I hurry past it. The feeling, the prejudice will not be controlled.</p>
+                <p>The end of the dreary garden edges off into a close-sheltered lane, wandering and winding, like a rivulet, in gentle "sinuosities," (to use a word once applied by <persName>Mr. Wilberforce</persName> <!--I believe this is William Wilberforce. !--><!--SCW: It is. Try to locate the text where this would have been said; MRM supplies a bit of it, so a google search of these terms might give it to you, and you can insert an in-text note at this point. The "Common XML Elements" sheet has instructions for doing in-text editor's notes.--> to the <placeName ref="#Henley">Thames at Henley</placeName>, amidst green meadows, all alive with <name type="animal" ref="#cattle">cattle</name>, <name type="animal" ref="sheep">sheep, and beautiful lambs, </name> in the very spring and pride of their tot<pb n="104"/>tering prettiness: or fields of arable land, more lively still with troops of stooping <orgName ref="#beansetters_OV">bean-setters, women and children,</orgName> in all varieties of costume and colour; and ploughs and harrows, with their whistling boys and steady carters, going through, with a slow and plodding industry, the main business of this busy season. What work bean-setting is! What a reverse of the position assigned to man to distinguish him from the beasts of the field! Only think of stooping for six, eight, ten hours a day, drilling holes in the earth with a little stick, and then dropping in the beans one by one. They are paid according to the quantity they plant; and some of the poor <orgName ref="#beansetters_women_OV">women</orgName> used to be accused of clumping them—that is to say, dropping more than one bean into a hole. It seems to me, considering the temptation, that not to clump is to be at the very pinnacle of human virtue.</p>
+                <p>Another turn in the lane, and we come to the <placeName>old house</placeName> standing amongst the high <name type="plant" ref="#elm">elms</name>—the old farmhouse, which always, I don't know why, carries back my imagination to <persName><sic>Shakspeare's</sic></persName> days. It is a long, low, irregular building, with one room, at an angle from the house, covered with <name type="plant" ref="#ivy">ivy</name>, fine white-veined ivy; the first floor of the main building projecting and supported by oaken beams, and one of the windows below, with its old casement and long narrow panes, forming the half of a shallow hexagon. A porch,<pb n="105"/> with seats in it, surmounted by a pinnacle, pointed roofs, and clustered chimneys, complete the picture. Alas! it is little else but a picture! The very walls are crumbling to decay under a <persName>careless landlord</persName> and a <persName>ruined tenant</persName>.</p>
+                <p>Now a few yards farther, and I reach the bank. Ah! I smell them already—their exquisite perfume steams and lingers in this moist heavy air. Through this little gate, and along the green south bank of this green wheat-field, and they burst upon me, the lovely <name type="plant" ref="#violet">violets</name>, in tenfold loveliness! The ground is covered with them, white and purple, enamelling the short dewy grass, looking but the more vividly coloured under the dull, leaden sky. There they lie by hundreds, by thousands. In former years I have been used to watch them from the tiny green bud, till one or two stole into bloom. They never came on me before in such a sudden and luxuriant glory of simple beauty,—and I do really owe one pure and genuine pleasure to feverish <placeName ref="#London_city">London</placeName>! How beautifully they are placed too, on this sloping bank, with the palm branches waving over them, full of early <name type="animals" ref="#bee">bees</name>, and mixing their honeyed scent with the more delicate violet odour! How transparent and smooth and lusty are the branches, full of sap and life! And there, just by the old mossy root, is a superb tuft of <name type="plant" ref="#primrose">primroses</name>, with a <name type="animal" ref="#butterfly">yellow butterfly</name> floating over them,<pb n="106"/> and looking like a flower lifted up by the air. What happiness to sit on this turfy knoll, and fill my basket with the blossoms! What a renewal of heart and mind! To sit in such a scene of peace and sweetness is again to be fearless and gay and gentle as a <orgName>child</orgName>. Then it is that thought becomes poetry, and feeling religion. Then it is that we are happy and good. Oh that my whole life could pass so, floating on blissful and innocent sensation, enjoying in peace and gratitude the common blessings of nature, thankful above all for the simple habits, the healthful temperament, which render them so dear! Alas! who may dare expect a life of such happiness? But I can at least snatch and prolong the fleeting pleasure, can fill my basket with pure flowers, and my heart with pure thoughts; can gladden my little home with their sweetness; can divide my treasures with one, a <persName>dear one</persName>!<!--SCW: This "dear one" is the same "she" whom the narrator mentions at the beginning, the one who can't come with her. I've a suspicion (from reading, I think?) that it's her mother, but since it's screened in the text, it may be an editorial intrusion to identify her.-->, who cannot seek them; can see them when I shut my eyes; and dream of them when I fall asleep.<pb n="107"/>
+            </p></div>      
+        </body> 
+        <back>
+            <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+                <listPerson>
+                    <person xml:id="Wlm_Wilberforce">
+                        <persName>
+                            <surname>Wilberforce</surname>
+                            <forename>William</forename>
+                        </persName>
+                        <birth when="1759-08-24"><placeName>Kingston upon Hull</placeName></birth>
+                        <death when="1833-07-29"><placeName>London</placeName></death>
+                        <!--Other tags can go here: See Codebook for more details.-->
+                        <note resp="#qar">William Wilberforce was an English politician and a leader of the movement to stop the slave trade. He was born in Kingston upon Hull, Yorkshire, and began his political career in 1780. He became an independent Member of Parliament for Yorkshire and became an Evangelical Christian in 1785, resulting in major lifestyle changes and a lifelong concern for reform. 
+                            
+                            In 1787 he contacted anti-slave-trade activists such as Thomas Clarkson, Granville Sharp, Hannah More, and Charles Middleton, who persuased him to become an abolitionist. </note>
+                    </person>
+                    <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+                        <persName>...</persName>
+                        <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+                    </person>
+                </listPerson>
+                
+                <listPlace>
+                    <place xml:id="Henley">
+                        <placeName>Henley-on-Thames</placeName>
+                        <placeName><!--alternate place name--></placeName>
+                        <location><geo>51.536 0.898 
+              </geo></location>
+                    </place>
+                </listPlace>
+              
+                
+                <list type="plants">
+                    <item xml:id="potato">
+                        <name ref="#potato">potato</name>
+                        <rs type="genus">Solanum</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                        <rs type="species">S. tuberosum</rs>
+                        <rs type="family">Solanaceae</rs>
+                        <note resp="#qar">Potatoes are relatively new to Europe at this time. They are native to the Andes and were introduced only in the second half of the 16th century by the Spanish..</note>
+                    </item>
+                    <item xml:id="cabbage">
+                        <name ref="#cabbage">cabbage</name>
+                        <rs type="genus">Brassica</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                        <rs type="species">brassica oleracea</rs>
+                        <rs type="family">Brassicaceae</rs>
+                        <note resp="#qar"> </note> </item>
+                    
+                    <item xml:id="onion">
+                        <name ref="#onion">onion</name>
+                        <rs type="genus">Allium</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                        <rs type="species">A. cepa</rs>
+                        <rs type="family">Amaryllidaceae</rs>
+                        <note resp="#qar"></note> </item>
+                    
+                    <item xml:id="bean">
+                        <name ref="#bean">bean</name>
+                        <rs type="genus">Vicia</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                        <rs type="species">V. fabia</rs>
+                        <rs type="family">Fabaceae</rs>
+                        <note resp="#qar">Although there various families of beans, the broad bean is the one on file because it was the most common in England at the time. It's also known as the Windsor bean or English bean. That said, it was cultivated in the Middle East long before it reached Europe, and there's even a Greek demigod of fava beans, called Kyamites. </note> </item>
+                    
+                    <item xml:id="rose-tree">
+                        <name ref="#rose-tree">rose-tree</name>
+                        <rs type="genus">rosa</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                        <rs type="species"></rs>
+                        <rs type="family">rosaceae</rs>
+                        <note resp="#qar">There are over a hundred species of roses, but not all of them are suitable to be made into what is known as a rose-tree.</note> </item>
+                
+                <item xml:id="currant-bush">
+                    <name ref="#currant-bush">currants</name>
+                    <rs type="genus">ribes</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species"></rs>
+                    <rs type="family">Grossulariaceae, or a separate genus of Grossularia</rs>
+                    <note resp="#qar">Mitford calls this plant a currant-bush, which is actually another name for the conkerberry or bush plum, but these grow best in tropical regions and are likely not what she means. </note> </item>
+                <item xml:id="polyanthus">
+                        <name ref="#polyanthus">polyanthus</name>
+                        <rs type="genus">Primula</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                        <rs type="species">polyanthus, or P. polyantha</rs>
+                        <rs type="family">Primulaceae</rs>
+                        <note resp="#qar"></note> </item>
+                     
+                <item xml:id="crocus">
+                            <name ref="#crocus">crocus</name>
+                            <rs type="genus">crocus</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                            <rs type="species"></rs>
+                            <rs type="family">iridaceae</rs>
+                            <note resp="#qar"></note> In Victorian floriography, the crocus represents youthful gladness and cheerfulness. </item>
+               
+                <item xml:id="gooseberry-tree">
+                    <name ref="#gooseberry-tree">Gooseberry</name>
+                    <rs type="genus">Ribes</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species">R. uva-cripsa</rs>
+                    <rs type="family">Grossulariaceae</rs>
+                    <note resp="#qar">In floriography, signifies anticipation.</note> </item>
+                <item xml:id="gorse">
+                    <name ref="#gorse">gorse</name>
+                    <rs type="genus">Ulex</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species">Ulex europaeus</rs>
+                    <rs type="family">Fabaceae</rs>
+                    <note resp="#qar">In floriography, symbolizes endearing affection.</note> </item>
+                <item xml:id="heath">
+                    <name ref="#heath">heath, or heather</name>
+                    <rs type="genus">Erica</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species"></rs>
+                    <rs type="family">Ericaceae</rs>
+                    <note resp="#qar">There are many varieties of heath, but this one is synonymous with the English common names "heath" and "heather". Heather, in floriography, can mean three different things. In general, it means good luck. White heather is  protection, and that wishes will come true, while lavender heather represents admiration and solitude. The latter meaning fits.</note> </item>
+                <item xml:id="broom">
+                    <name ref="#broom">broom</name>
+                    <rs type="genus">Cytisus</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species">C. scoparius</rs>
+                    <rs type="family">Fabaceae</rs>
+                    <note resp="#qar">Also known as Scotch broom. Represents humility and neatness in floriography. Inthe Fourth Branch of the Mabinogi, the tale of Math son of Mathonwy, Blodeuwedd is the name of a woman made from the flowers of broom, meadowsweet and the oak by Math fab Mathonwy and Gwydion to be the wife of Lleu Llaw Gyffes. This is a part of Welsh mythology.
+
+"Sweep the house with blossed broom in May/sweep the head of the household away" is a traditional rhyme from Sussex. It was common to include a decorated bundle of broom at weddings. Ashes of broom were used to treat dropsy, and said to tame wild dogs and horses with its smell. </note> </item>
+                <item xml:id="willow">
+                    <name ref="#willow">willow</name>
+                    <rs type="genus">Salix</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species">Salix alba</rs>
+                    <rs type="family">Salicaceae</rs>
+                    <note resp="#qar">The leaves and bark of the willow tree has been mentioned as a remedy for aches and fever in ancient texts from Assyria, Sumer and Egypt. Hippocrates mentioned this  plant for its medicinial properties, and the Native Americans also used willow for a staple in medical treatments. In 1763, Reverend Edward Stone in England notified the Royal Society of his findings that the willow had medicinal properties. In 1828, Henri Leroux, a French pharmacist, and Raffaele Piria, an Italiam chemist, isolated the bark extract, called salicin, into a crystalline form and separated into a pure state.</note> </item>
+                <item xml:id="elm">
+                    <name ref="#elm">elm</name>
+                    <rs type="genus">Ulmus</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species"></rs>
+                    <rs type="family">Ulmaceae</rs>
+                    <note resp="#qar">The elm is high prominent in literature, with its first presence in the Iliad. It is also in the Aeneid, as the Stygian Elm. Virgil refers to a Roman superstition that elms were trees of ill-omen because their fruit seemed to have no value. Two elm-motifs have risen from classical literature: the 'Paradisal elm' motif, representing pastoral idylls, and the 'Elm and Death' motif. Many references to elm from the Renaissance onwards fit one of these two categories.
+                    
+The elm also holds political significance. The cutting of the elm was a diplomatic altercation between the Kings of France and England in 1188. In England, after the Glorious Revolution of 1688, the 'Dutch Elm' hybrid was planted and become popular with enthusiasts o the new political order. Furthermore, the 'Liberty Tree' was an American white elm in Boston. In 1775, the British felled it, and the Americans planted 'Liberty Elms' and sewed elm symbols on to their reolutionary flags.</note></item>
+                <item xml:id="ivy">
+                    <name ref="#ivy">ivy</name>
+                    <rs type="genus">Hedera</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species"></rs>
+                    <rs type="family">Araliaceae</rs>
+                    <note resp="#qar">In floriography, ivy represents wedded love, fidelity, affection, and friendship. </note> </item>
+                <item xml:id="primrose">
+                    <name ref="#primrose">primrose</name>
+                    <rs type="genus">Primula</rs><!--SCW to EBB: This is firing an error due to the @type that does not fire in the SI. Some sort of list issue?-->
+                    <rs type="species">P. vulgaris</rs>
+                    <rs type="family">Primulaceae</rs>
+                    <note resp="#qar">The Earl of Rosebury has primroses in his coat of arms. It also projects the meaning "I can't live without you" in floriography</note> </item> 
+                    </list>
+                
+                <list type="animals">
+                    <item xml:id="horse"><!--SCW: If the reference seems  specific to Our Village, put the _OV extension at the end of the ID-->
+                       <name ref="#horse">horse</name>
+                       <note resp="#yourID">Any information you deem pertinent about this animal. If the animal mentioned is pertinent and specific to your sketch (as in a named animal), mention the context briefly.</note>
+                        </item>
+                    <item xml:id="sheep"><!--SCW: If the reference seems  specific to Our Village, put the _OV extension at the end of the ID-->
+                        <name ref="#sheep">sheep</name> </item>
+                    <item xml:id="cattle"><!--SCW: If the reference seems  specific to Our Village, put the _OV extension at the end of the ID-->
+                        <name ref="#cattle">cattle</name></item>
+                    <item xml:id="butterfly"><!--SCW: If the reference seems  specific to Our Village, put the _OV extension at the end of the ID-->
+                        <name ref="#butterfly">butterfly</name></item>
+                        <item xml:id="bee"><!--SCW: If the reference seems  specific to Our Village, put the _OV extension at the end of the ID-->
+                            <name ref="#bee">bee</name></item>
+                </list>
+                    <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->    
+                        
+                      
+            </div>
+        </back>
+    </text>
+</TEI>

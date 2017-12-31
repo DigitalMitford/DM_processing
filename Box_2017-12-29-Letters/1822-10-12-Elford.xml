@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- <?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Above are the lines that define this document as XML, and that establish the schema rules that define it as TEI and part of the Digital Mitford project. The last is the TEI "root" element which must wrap the entire document. All TEI documents must contain two parts:
+      1) a <teiHeader> that contains a required sequence of elements that describe the origin, content, and editorial work on a document, and
+      2) a <text> element that holds the body of the document itself. 
+   -->  
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> 
+            <title xml:id="MRM1822">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, October 12, 1822</title> 
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#err">Elizabeth Raisanen</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#sg">Sophia Gemelas</persName> 
+               <persName ref="#sg">Sophia Gemelas</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-08-16">yyyy-mm-dd</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#Id_who">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-08-08"><!--enter the date on which you first created and saved this XML file in Box, and it can take any form; May 26, 2015 is fine, so long as you've used yyyy-mm-dd in the @when attribute--></date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno> 12October1822Sir William Elford4#.JPG, 12October1822Sir William Elford3#.JPG, 12October1822Sir William Elford2a#.JPG, 12October1822Sir William Elford1b#.JPG</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> 
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 373</idno> <!--Consult Mitford letters spreadsheet (MitfordMS.xslx). Change to reflect the xml:id and shelfmark information for this ms. collection and letter. For RCL, ff. numbers differ for each letter.-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1822-10-12">1822 October 12</date>
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> <!-- Physical description of the letter goes here: paper size and condition, seal, postmarks, etc. See some posted examples in this Box folder but write yours to describe YOUR letter.-->
+                     <support> <p> One quarto sheet of <material>paper</material> folded in half to form two octavo pages, which comprise pages 1-4 of the letter. The fourth page exposes the address with the end of the letter written along the side immediately next to the red seal. has been folded in sixths. The third page has a semi circle removed at the middle of the right edge where the wax seal was attached. </p> 
+                        
+                        <p><!--Here, describe the address leaf and any postmarks and postal fees recorded on the paper. 
+                           Refer to our slides on identifying and reading postmarks, here:  
+                           1) whether it is missing
+                           2) if present, does it have a postmark? Describe it, as in this example: Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>.-->
+                           <!--FOR REFERENCE on HOW TO IDENTIFY AND READ POSTMARKS ON A MITFORD LETTER see our slides posted on our Wordpress blog: https://digitalmitford.wordpress.com/2014/05/27/the-digital-mitfords-guide-to-19th-century-british-postmarks-and-how-to-code-them-in-tei/ -->
+                        </p> 
+                        <!-- Continue to describe new postmarks here. Use a separate <p> for each, as below-->
+                        <p><!--Here's a sample second <p> indicating another postmark: A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.--></p>
+                        
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on right edge of page three where wax seal was removed.</p> <!-- change. -->
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to page four.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn across the top, perpendicular to the top column of text on the first leaf. On leaf three, a red line is drawn from top left to bottom right across each of the two text blocks and also in the same orientation across the block of text located directly under the red seal. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#penAnnot_RCL" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "48" in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#penAnnot_RCL">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "48" in the top left of the first leaf.</add> 
+               <dateline><!--The dateline of a letter, if present, goes here. The date line typically includes (in any order) a date and a location, as Mitford records where she is when she begins a letter. When Mitford's dateline is complete and we have no reason to doubt her record, we use that as our default for the date. If there's no date line, omit this element. Always record this in the order in which Mitford presented it. If she puts the date first, you do the same. If she puts the place first, you do the same.-->
+                  <name type="place" ref="#ThreeMileCross"></name> 
+                  <date when="1812-10-12">October 12<hi rend="superscript">th</hi></date>. 
+               </dateline>
+               <salute>My dear friend</salute>
+            </opener>
+            <p> I wrote the moment I recieved your letter to <persName ref="#Elford_John">Mr. Elford</persName> <!--not entirely sure but I believe she is speaking about a letter sent from William to his brother John which M.R.M. intercepted at some point?--> -- informing him that the only <persName ref="#Ford_Thomas">Thomas Ford</persName> in any medical department in <placeName ref="#Reading_city">Reading</placeName> was in a respectable druggist's house there &amp;then thought as <unclear><supplied resp="#sg">forever</supplied></unclear>, that he was noted for his cures in different disorders amongst the lower classes of customers &amp; even resorted to <del rend="squiggles"><gap quantity="1" unit="word"/></del> occasionally by patients of a higher description -- More than this I cannot then say, as my <rs type="person" ref="#Mitford_Geo">father</rs> was in <placeName ref="#Oxfordshire">Oxfordshire</placeName> for some days --<rs type="person" ref="#Mitford_Geo">He</rs> returned last night and I have to correct my report in one particular as I beg you to inform your <rs type="person" ref="#Elford_John">brother</rs> -- <persName ref="Ford_Thomas">Mr. Ford</persName> though originally only <persName ref="#French_Peter">Mr. French's</persName> assistant is now <del rend="strikethrough">his</del> in consequence of his talents &amp; good conduct his partner, &amp; may undoubtedly be considered as an apothecary -- My <rs type="person" ref="#Mitford_Geo">father</rs> who has known him for twenty years speaks very highly of his intelligence his medical knowledge &amp; his moral &amp; religious character -- he is too (a very great point in such cases) an exceedingly cautious practitioner -- the Mr. Bickman of whom you speak is also a most respectable &amp; trustworthy man -- &amp; altogether it is decidedly my <rs type="person" ref="#Mitford_Geo">father's</rs> advice that the prescription unless obviously dangerous be tried. Will you have the goodness to communicate this to your <rs type="person" ref="#Elford_John">brother</rs> with my <rs type="person" ref="#Mitford_Geo">father's</rs> kindest regards &amp; sincerest good wishes.
+               <pb n="2"/>&amp; my most ardent ones -- you will imagine how much I was shocked when I heard for the first time from your letter the death of <persName ref="#Elford_MrsM">Mrs. Elford</persName> -- whom I had learnt to consider as a friend -- almost as a correspondent. It must have been a great shock to you &amp; has probably encreased <choice><sic>encreased</sic><reg resp="#bas">increased</reg></choice> the violence of your <rs type="person" ref="#Elford_John">brother's</rs> disorder. God grant that <persName ref="#Ford_Thomas">Mr. Ford's</persName> remedy may be successful -- I shall like <placeName ref="#Reading_city">Reading</placeName> the better if it be - Every body says that <persName ref="#Elford_John">Johnathan Elford</persName> is the best man in the world-- besides he is your (underlined) <rs type="person" ref="#Elford_John">brother</rs>. <add><metamark rend="jerk"/></add> With regard of the <del rend="squiggles"><gap quantity="1" unit="word"/></del> affair of <persName ref="#Palmer_CF">Mr. Palmer</persName>, my dear friend there is no secret at all -- <rs type="person" ref="#Palmer_CF">He</rs> never made the speech either to Papa or any one else, as my <rs type="person" ref="#Mitford_Geo">father</rs> told the <orgName ref="#John_Bull">John Bull people</orgName> -- It was we believe an invention of a <persName ref="#Bull_N">Mr. Nicholas Bull </persName><!-- Not entirely sure this is truly their last name -->who is making love to the daughter of an Anti <orgName ref="#Palmerite">Palmerite</orgName> in <placeName ref="#Reading_city">Reading</placeName>, &amp; some way connected with that veracious newspaper--But I do not wonder at all that the story has gained credit, because the intolerable want of common sense <choice><sic>shewn</sic><reg resp="#bas">shown</reg></choice> by <persName ref="#Palmer_CF">Mr. Palmer</persName> in not <del rend="strikethrough"></del><add>denying</add> it himself &amp;the still more egregious Jolly of the Gents of the <orgName ref="#Billiard_Club">the Billiard</orgName> room in coming forward like so many <persName ref="#Don_Quixote_char">Don Quixotes</persName> where they had no business whatsoever is enough to make any one believe the aspersion -- I have told them all round to a hundred times over, I am quite delighted to find that you are of the same opinion -- By the bye there is a later set of <orgName ref="#Billiard_Club">the Billiard</orgName> room Resolutions fifty times more absurd than the first directed against Nicholas Bull -- I read them three times over to try to comprehend them --but quite in vain -- the meaning they come nearest to is the one they do not mean --They <del rend="squiggles"><gap quantity="1" unit="word"/></del> beat the new 
+               <pb n="3"/>marriage act all to nothing. Pray, my dear Sir William how many couples have you married? My <rs type="person" ref="#Mitford_Geo">Father</rs> has married -- Really it is rather hard on you magistrates to have the trouble of the pairs who do come together legitimately as well as those who do not. -- <persName ref="#Palmer_Mad">Lady Madelina Palmer</persName>is in this neighborhood at present I had the pleasure of a long visit from her a few days ago, &amp; shall meet her at dinner next Tuesday <rs type="person" ref="#Palmer_Mad">She</rs> is a most delightful person to be <!-- not sure -->-- <rs type="person" ref="#Palmer_Mad">she</rs> asked a thousand questions about you &amp; desired all manner of kind messages.--Since I wrote to you I have been once or twice to <placeName ref="#London_city">London</placeName>London on the business of my play which <persName ref="#Kemble_C">Mr. Charles Kemble</persName>(there is another delightful person--I am the least in the world in love with him--(Don't tell <persName ref="#Kemble_MrsC">Mrs. C. K.</persName>) --he is the <!-- not sure  --> to napoleon in my imagination) -- which <persName ref="#Kemble_C">Mr. C. Kemble</persName> (you will begin to think my passion not quite disinterested) promises to bring out the first of the season. Of course nothing can <note resp="#sg">cut off by tear from wax seal</note> be fired <!-- not sure what the next word is...something similar to lest? --> <persName ref="#Macready_Wm">Mr. Macready</persName> returns from his Italian Fortification which will be I supposed surely in next month -- you shall hear in time to heat up for recruits amongst any of your play-poing London friends (if a man of your fashion have met a thing as a play-goer amongst his acquaintance) -- Nothing I believe is certain in a theatre till the curtain is fairly drawn up &amp; let down again, but as far as I can see I have from the warm zeal &amp; admirable character of the hew manager &amp; his very clever &amp; kind hearted Lady every reason to expect a successful debut. -- During my last day in Town I had the very great pleasure of seeing <persName ref="#Haydon">Mr. Haydon's</persName> <rs type="person" ref="#Haydon_Mrs">lovely wife</rs>-- <rs type="person" ref="#Haydon_Mrs">lShe</rs> is really a charming woman friendly beautiful, I never saw so fine a piece of 
+               <pb n="4"/>natural colouring as is formed by her dark eyes &amp; hair &amp; her brilliant complexion &amp; with exceedingly sweet &amp; captivating manners -- I admired her so much that I could hardly take my eyes from her to look at his picture but that is very grand indeed -- the effect of the <!-- not sure -->eye in the <!-- looks like corse -->-like face is miraculous. I hope &amp; trust it will produce an immense effect. Forgive this stupid letter -- I would not delay even one post I have no Mr. P <!-- could this be Palmer? --> under hand -- Wish for me &amp; <!-- couldn't make out the name rolling off the page --> tonight to have no doubt -- but I have a  supersticious fear of making too <!-- not sure --> &amp; it is of much unspeakable importance to those whom I love best --. Wish that nothing may happen to prevent its coming out &amp; that it may succeed -- <persName ref="#Kemble_C">Charles Kemble</persName> means &amp; I have new <!-- Not sure what this top line says as it is partially cut off by the side of the paper. --> -- a thing unheard of in a new tragedy -- Pray wish for me! <emph rend="underline">You</emph> have all thy kindest &amp; gratefullest thoughts. Though a tremendous <!-- unsure what this word is...Preface?  --> of occupation will not allow me to express than so often as I <!-- unsure what this is.  --> to do. -- Godbless you my dear friend - Ever your's M.R.M.
+               </p>     
+            <p> 
+              <!--More body paragraphs as needed. Include context encoding and indications of gaps, deletions, insertions, etc., following guidelines in our Codebook. Mitford's ampersands must be rendered with a special unicode character thus: --> &amp; is an ampersand </p>
+            <p>  
+              <!--More body paragraphs as needed.-->
+            <!--Where there's a page break record it inside the relevant body paragraph like this, with the self-closing page-break element. n="2" indicates the START of the second page. (So we will NEVER have a <pb n="1"/>).-->
+               
+               <!--yyyy-mm-dd editorID: INDICATE IN BLOCK CAPS WHEN YOU STOP WORK AND THE TRANSCRIPTION IS INCOMPLETE, like this:
+               2015-10-04 ebb: I STOPPED HERE! TRANSCRIPTION INCOMPLETE!-->
+            </p>
+            <p><!--More body paragraphs as needed.--></p>
+            <closer>
+               <!--The first <closer> includes Mitford's signature, but does NOT include the postscript. (Later, we'll use <closer> again to hold Mitford's address on her address leaf if it's present.) As Mitford writes a complimentary close broken out into lines, indicate it with line breaks using the self-closing <lb/> element.  Here's an example:
+            <closer>
+            Yours<lb/>
+            Very sincerely<lb/>
+            <persName ref="#MRM>M. R. Mitford</persName>.
+            </closer>
+            --><lb/>
+               <!--Another line in the closer, if present--><lb/>
+               <persName ref="#MRM"><!--How Mitford signs her name. --></persName>. 
+            </closer> 
+            
+            <postscript><p>I wish you joy very heartily of your new <!-- brands?? --> Papa -- ship -- I hope it is the very <!-- ?? ?? --> that ever was seen  -- a match to <persName ref="#Dickinson_Mrs">Miss Dickinson</persName> &amp; that you will all spoil in gloriously. A spoilt child is <!-- ?? --> very <!-- ?? --> thing when it has once outgrown its spoiling -- Once more Godbless you -- write soon &amp; do not fail to give good news of your <rs type="person" ref="#Elford_John">brother</rs>.<!--A postscript goes here, outside the <closer>. --></p></postscript><!--You can include a <pb/> here, or inside the postScript.--><!-- Format for postscripts.  Postscripts do NOT go insider closer tags. Adjust to take into account the order in your letter. Sometimes the signature is on page three, the address on page four, then the postscript follows back on the top of page one, for example.-->
+            
+             <closer><!--Use the <closer> element again to hold Address Leaf information, indicating where Mitford directed her letter.-->
+               <address> <!--Include any text written on the address leaf; use a separate "addrLine" for each line and indicate line breaks. Closer tags must also enclose the address section. NOTE AGAIN: If Mitford has a postscript, that postcript must *not* be enclosed in the closer tags, even when they are written after the signature and before the address. It's a TEI rule (sigh). -->
+            <addrLine><lb/>To<!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine>Sir William Elford Bar<lb/></addrLine>
+                  <addrLine><lb/>Bickham<!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine>Plymouth<lb/><add hand="#penAnnot_RCL"><emph rend="underline">To Sir William Elford</emph></add> </addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+       <listPerson>
+          <person xml:id="Ford_Thomas">
+             <persName>
+                <surname>Ford</surname>
+                <forename>Thomas</forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="2017-08-08"><placeName><!--place of birth--></placeName></birth>
+             <death when="2017-08-08"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#sg"><!--Druggist in Reading recommended by George Mitford to Sir William Elford's brother Jonathan Elford for medical remedy. Originally an assistant, but eventually a partner of Peter French. --></note>
+          </person>
+          <person xml:id="French_Peter">
+             <persName>
+                <surname>French</surname>
+                <forename>Peter</forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName></persName>
+             <birth when="2017-08-08"><placeName><!--place of birth--></placeName></birth>
+             <death when="2017-08-08"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#sg"><!--Druggist in Reading. Supervisor and later partner of Thomas Ford. --></note>
+          </person>
+             <person xml:id="Elford_John">
+                <persName>
+                   <surname>Elford</surname>
+                   <forename>Jonathan</forename>
+                   <forename><!--middle name --></forename>
+                   <forename><!--if necessary, more middle names--></forename>
+                </persName>
+                <persName><!--alternate persName, such as a nickname?--></persName>
+                <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+                <birth when="2017-08-08"><placeName><!--place of birth--></placeName></birth>
+                <death when="2017-08-08"><placeName><!--place of death--></placeName></death>
+                <!--Other tags can go here: See Codebook for more details.-->
+                <note resp="#sg"><!--Brother to Sir William Elford. Has a "disorder" and requires medical attention.--></note>
+          </person>
+          <person xml:id="Bull_N">
+             <persName>
+                <surname>Bull</surname>
+                <forename>Nicholas</forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="2017-08-08"><placeName><!--place of birth--></placeName></birth>
+             <death when="2017-08-08"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#sg"><!--Described by M.R.M. as having an affair with an "Anti Palmerite" woman connected with the John Bull newspaper. --></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+          
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="2017"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

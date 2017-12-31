@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+
+
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type="sketch">
+            <pb n="213"/>
+            <head>THE TALKING GENTLEMAN.
+               <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>The lords of the creation, who are generally (to do them justice) tenacious enough of
+               their distinctive and peculiar faculties and powers, have yet by common consent made
+               over to the females the single gift of loquacity. Every man thinks and says that
+               every woman talks more than he: it is the creed of the whole sex,—the debates and law
+               reports notwithstanding. And every masculine eye that has scanned my title has
+               already, I doubt not, looked to the errata, suspecting a mistake in the gender; but
+               it is their misconception, not my mistake. I do not (Heaven forbid!) intend to impugn
+               or abrogate our female privilege; I do not dispute that we do excel, generally
+               speaking, in the use of the tongue; I only mean to assert that one gentleman does
+               exist, (whom I have the pleasure of knowing intimately,) who stands pre-eminent and
+               unrivalled in the art of talking,—unmatched and unapproached by man, woman, or child.
+               Since the decease of my poor friend “the Talking Lady,” who dropped down speech<pb
+                  n="214"/>less in the midst of a long story about nine weeks ago, and was
+               immediately known to be dead by her silence, I should be at a loss where to seek a
+               competitor to contend with him in a race of words, and I should be still more puzzled
+               to find one that can match him in wit, pleasantry, or good-humour.</p>
+            <p>My friend is usually called Harry L., for, though a man of substance, a lord of land,
+               a magistrate, a field officer of militia, nobody ever dreamed of calling him Mister
+               or major, or by any such derogatory title—he is and will be all his life plain Harry,
+               the name of universal good-will. He is indeed the pleasantest fellow that lives. His
+               talk (one can hardly call it conversation, as that would seem to imply another
+               interlocutor, something like reciprocity) is an incessant flow of good things, like
+               Congreve’s comedies without a replying speaker, or Joe Miller laid into one; and its
+               perpetual stream is not lost and dispersed by diffusion, but runs in one constant
+               channel, playing and sparkling like a fountain, the delight and ornament of our good
+               town of B.</p>
+            <p>Harry L. is a perfect example of provincial reputation, of local fame. There is not
+               an urchin in the town that has not heard of him, nor an old woman that does not
+               chuckle by anticipation at his approach. The citizens of B. are as proud of him as
+               the citizens of Antwerp were of the Chapeau de Paille, and they have<pb n="215"/> the
+               advantage of the luckless Flemings in the certainty that their boast is not to be
+               purchased. Harry, like the Flemish Beauty, is native to the spot; for he was born at
+               B., educated at B., married at B.—though, as his beautiful wife brought him a good
+               estate in a distant part of the country, there seemed at that epoch of his history
+               some danger of his being lost to our ancient borough; but he is a social and
+               gregarious animal; so he leaves his pretty place in Devonshire to take care of
+               itself, and lives here in the midst of a hive. His tastes are not at all rural. He is
+               no sportsman, no farmer, no lover of strong exercise. When at B., his walks are quite
+               regular; from his own house, on one side of the town, to a gossip-shop called
+               “literary” on the other, where he talks and reads newspapers, and others read
+               newspapers and listen: thence he proceeds to another house of news, similar in kind,
+               though differing in name, in an opposite quarter, where he and his hearers undergo
+               the same process, and then he returns home, forming a pretty exact triangle of about
+               half a mile. This is his daily exercise, or rather his daily walk; of exercise he
+               takes abundance, not only in talking, (though that is nearly as good to open the
+               chest as the dumb-bells,) but in a general restlessness and fidgetiness of person,
+               the result of his ardent and nervous temperament, which can hardly endure repose of
+               mind or body. He neither gives rest nor takes it. His<pb n="216"/> company is,
+               indeed, in one sense (only one) fatiguing. Listening to him tires you like a journey.
+               You laugh till you are forced to lie down. The medical gentlemen of the place are
+               aware of this, and are accustomed to exhort delicate patients to abstain from Harry’s
+               society, just as they caution them against temptations in point of amusement or of
+               diet—pleasant but dangerous. Choleric gentlemen should also avoid him, and such as
+               love to have the last word; for, though never provoked himself, I cannot deny that he
+               is occasionally tolerably provoking,—in politics especially—(and he is an
+               ultra-liberal, quotes Cobbett, and goes rather too far)—in politics he loves to put
+               his antagonist in a fume, and generally succeeds, though it is nearly the only
+               subject on which he ever listens to an answer—chiefly I believe for the sake of a
+               reply, which is commonly some trenchant repartee, that cuts off the poor answer’s
+               head like a razor. Very determined speakers would also do well to eschew his
+               company—though in general I never met with any talker to whom other talkers were so
+               ready to give way; perhaps because he keeps them in such incessant laughter, that
+               they are not conscious of their silence. To himself the number of his listeners is
+               altogether unimportant. His speech flows not from vanity or lust of praise, but from
+               sheer necessity ;—the reservoir is full, and runs over. When he has no one else to
+               talk to, he can be content with his own company,<pb n="217"/> and talks to himself,
+               being beyond a doubt greater in a soliloquy than any man off the stage. Where he is
+               not known, this habit sometimes occasions considerable consternation, and very
+               ridiculous mistakes. He has been taken alternately for an actor, a poet, a man in
+               love, and a man beside himself. Once in particular, at Windsor, he greatly alarmed a
+               philanthropic sentinel, by holding forth at his usual rate whilst pacing the terrace
+               alone; and but for the opportune arrival of his party, and their assurances that it
+               was only “the gentleman’s way,” there was some danger that the benevolent soldier
+               might have been tempted to desert his post to take care of him. Even after this
+               explanation, he looked with a doubtful eye at our friend, who was haranguing himself
+               in great style, sighed and shook his head, and finally implored us to look well after
+               him till he should be safe off the terrace.—“You see, Ma’am,” observed the
+               philanthropist in scarlet, “it is an awkward place for any body troubled with
+               vagaries. Suppose the poor soul should take a fancy to jump over the wall!”</p>
+            <p>In his externals he is a well-looking gentleman of forty, or thereabout; rather thin
+               and rather pale, but with no appearance of ill health, nor any other peculiarity,
+               except the remarkable circumstance of the lashes of one eye being white, which gives
+               a singular non-resemblance to his organs of vision. Every one perceives<pb n="218"/>
+               the want of uniformity, and few detect the cause. Some suspect him of what farriers
+               call a wall-eye; some think he squints. He himself talks familiarly of his two eyes,
+               the black and the white, and used to liken them to those of our fine Persian cat,
+               (now, alas! no more,) who had, in common with his feline countrymen, one eye blue as
+               a sapphire, the other yellow as a topaz. The dissimilarity certainly rather spoils
+               his beauty, but greatly improves his wit,—I mean the sense of his wit in others. It
+               arrests attention, and predisposes to laughter; is an outward and visible sign of the
+               comical. No common man has two such eyes. They are made for fun.</p>
+            <p>In his occupations and pleasures Harry is pretty much like other provincial
+               gentlemen: loves a rubber, and jests all through at aces, kings, queens, and knaves,
+               bad cards and good, at winning and losing, scolding and praise;—loves a play, at
+               which he out-talks the actors whilst on the stage,—to say nothing of the advantage he
+               has over them in the intervals between the acts;—loves music, as a good accompaniment
+               to his grand solo;—loves a contested election above all. That is his real
+               element,—that din and uproar and riot and confusion! To ride that whirlwind and
+               direct that storm is his triumph of triumphs! He would make a great sensation in
+               parliament himself, and a pleasant one. (By the way, he was once in danger of
+                  being<pb n="219"/> turned out of the gallery for setting all around him in a
+               roar.) Think what a fine thing it would be for the members to have mirth introduced
+               into the body of the house! to be sure of an honest, hearty, good-humoured laugh
+               every night during the session! Besides, Harry is an admirable speaker, in every
+               sense of the word. Jesting is indeed his forte, because he wills it so to be; and
+               therefore, because he chooses to play jigs and country dances on a noble organ, even
+               some of his stanchest admirers think he can play nothing else. There is no quality of
+               which men so much grudge the reputation as versatility of talent. Because he is so
+               humourous, they will hardly allow him to be eloquent; and, because he is so very
+               witty, find it difficult to account him wise. But let him go where he has not that
+               mischievous fame, or let him bridle his jests and rein in his humour only for one
+               short hour, and he will pass for a most reverend orator,—logical, pathetic, and
+               vigorous above all.—But how can I wish him to cease jesting even for an hour? Who
+               would exchange the genial fame of good-humoured wit for the stern reputation of
+               wisdom? Who would choose to be Socrates, if with a wish he could be Harry L.?</p>
+         </div>
+      </body>
+   </text>
+</TEI>

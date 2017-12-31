@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Above are the lines that define this document as XML, and that establish the schema rules that define it as TEI and part of the Digital Mitford project. The last is the TEI "root" element which must wrap the entire document. All TEI documents must contain two parts:
+      1) a <teiHeader> that contains a required sequence of elements that describe the origin, content, and editorial work on a document, and
+      2) a <text> element that holds the body of the document itself. 
+   -->  
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM1757">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1820-02-16">February 16, 1820</date></title> <!--Look up the xml:id in the MitfordMS Excel spreadsheet, and look for other identifying info on the repository, etc, there. Insert full name of letter addressee. 
+               For the persName, use the assigned xml:id from the Site Index at http://digitalmitford.org/si.xml 
+               List the date the way we'd like it to appear in a web rendering of the document: as in March 26, 1820. The date should be our best sense of the date on which Mitford began this letter, and is usually listed at the top of the letter. We'll tag the date formally in <msDesc> below, since often dates are tricky or only partially written out by Mitford. The date in the titleStmt is the date *we've* determined, for listing and posting when we publish this file. --><!--SCW: I checked the spreadsheet, 3/19/18. This letter is dated 1820-02-18, but 8 and 6 seem similar. Leaving file date as is for now.-->
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#scw">Samantha Webb<!--Editor on the Mitford project, referenced by id from Site Index. Editors, change to your name and id; students, leave as name of your instructor. --> </editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor><!--We've added this in 2015, as they are now hosting our web server. As other sponsors who help us come on board, for example if we receive grant funding, we'll add sponsor lines here.-->
+            <principal>Elisa Beshero-Bondar</principal> <!-- the lines above are standard. don't change -->
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#qar"> Quinton A. Reed </persName> <!-- List all transcribers or coders here, editors and students alike, <persName> by <persName>.--><!--SCW: Reed, did you give me an xml:id tag for yourself (2 or 3 letters for your hashtag), as well as bio for the site index, in which you will be immortalized?--> <!--I did not, but here's my proposed xml:id-->
+               <persName></persName><!-- If you're the last person interacting with the file, enter your name last on the list and use assigned xml:id for ref="#" -->
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-04-30">April 30, 2017</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#scw">Samantha Webb</persName><!--SCW: proofed relevant header info and letter against ms--><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-02-08">Fenruary 8, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>16Feb1820SirWilliamElford1a.jpg, 16Feb1820SirWilliamElford2a.jpg, 16Feb1820SirWilliamElford2b.jpg, 16Feb1820SirWilliamElford3a.jpg, 16Feb1820SirWilliamElford4a.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <!--Uncomment the appropriate line, based on the archive that holds the physical copy of this letter, and delete the other comment line(s).-->
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+            
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. -->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> <!-- Change to reflect correct ms. collection. -->
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 373</idno> <!--Consult Mitford letters spreadsheet (MitfordMS.xslx). Change to reflect the xml:id and shelfmark information for this ms. collection and letter. For RCL, ff. numbers differ for each letter.--><!--SCW: I checked against spreadsheet-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1820-02-16">1820 February 16</date>.
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> <!-- Physical description of the letter goes here: paper size and condition, seal, postmarks, etc. See some posted examples in this Box folder but write yours to describe YOUR letter.-->
+                     <support> <p> One folio page of <material>paper</material> folded in thirds lengthwise, and half width-wise, four page surfaces photographed. <!--Text describing the document. Include information on the material, usually thus: <material>paper</material> and the number of page surfaces photographed. So when Mitford writes over two sheets of paper on the front and back of each, we've photographed four surfaces. When she writes on one sheet front and back, we've photographed two surfaces. Work closely with the photos of your letter to determine the number of sheets and separate surfaces, and describe how they are folded: in thirds? There is likely to be more than one photo of the same surface.--> </p> 
+                        <p><!--Here, describe the address leaf and any postmarks and postal fees recorded on the paper. 
+                           Refer to our slides on identifying and reading postmarks, here:  
+                           1) whether it is missing
+                           2) if present, does it have a postmark? Describe it, as in this example: Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>.-->
+                           <!--FOR REFERENCE on HOW TO IDENTIFY AND READ POSTMARKS ON A MITFORD LETTER see our slides posted on our Wordpress blog: https://digitalmitford.wordpress.com/2014/05/27/the-digital-mitfords-guide-to-19th-century-british-postmarks-and-how-to-code-them-in-tei/ -->
+                        </p> 
+                        <!-- Continue to describe new postmarks here. Use a separate <p> for each, as below-->
+                        <p><!--Here's a sample second <p> indicating another postmark: A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.--></p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on right edge of page three where wax seal was removed.</p> <!-- change. -->
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p> Black wax seal, complete, adhered to right hand side of page four. </p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><!--This section documents and identifies whenever we see additional hands, other than Mitford's, at work in the document. Those hands could be a contemporary (such as her mother), but they're more frequently marks made by later editors such as William Harness or Francis Needham. Use the <handNote> elements to describe the role of each hand in this manuscript. If the hand is, say, Mitford's mother's and is writing a page of the letter, you indicate when that happens in the body of the letter using the <handShift> element. The @corresp attributes on <handNote> point to xml:ids stored (or to be stored) in our Site Index.-->
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. <!-- Don't change the preceding two sentences if this letter has red crayon. In the *following* sentence, describe red crayoning on this letter. -->A red line is drawn from top left to bottom right on pages two and three. Page four has a red line from top left to bottom right on the left and right fold.</handNote>
+           <handNote corresp="#pencil" medium="pencil">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. <!-- Don't change the preceding sentence if this letter has grey pencil. In the following sentence, describe penciled numbers or change/add whatever text you see written in pencil. -->This letter is numbered "3" in the top left of the first leaf.</handNote>
+              <handNote corresp="#pencil" medium="pen"> It appears as though the same person who made the note in grey pencil has put a "3" on the last page, on the bottom left of the middle fold.
+</handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><!--Within the <body> element the text of our elements records our transcription of Mitford's text, and any editorial notes we need to add. -->
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil"> The number "3" appears on the top left of the first leaf</add> 
+               <dateline><!--The dateline of a letter, if present, goes here. The date line typically includes (in any order) a date and a location, as Mitford records where she is when she begins a letter. When Mitford's dateline is complete and we have no reason to doubt her record, we use that as our default for the date. If there's no date line, omit this element. Always record this in the order in which Mitford presented it. If she puts the date first, you do the same. If she puts the place first, you do the same.-->
+                  <placeName ref="#Bertram_house">Bertram House</placeName>
+                  
+                  <date when="1820-02-16">Feb<hi rend="superscript">r </hi> 16<hi rend="superscript">th</hi> 1820</date>.<!--SCW: I noticed on the Box folder a note from EBB that we're uncertain on the date of this, and our spreadsheet dates it to the 18th. We may, at some point, need to add an annotation here suggesting that the date is surmised to be either the 16th or the 18th.--><!--SCW: Let's keep as is for now-->
+               </dateline>
+               <salute> <persName ref="#Elford_SirWm">Sir W. Elford</persName></salute>
+            </opener>
+            <p>If you got a tremendous packet in which I let fly at random the other day after our excellent but uncomeatable member you will wonder a little to hear again from me.  But I have a frank in view, or rather an opportunity of sending to <placeName ref="#London_city">London</placeName> that Land of Franks, &amp; for fear you should not have received the treble letter in question I can think of no better device to hear soon than to send you another. So, my dear friend, having finished this long introduction I begin -- &amp; as usual I begin with a question. Did you ever happen to read Mr <persName ref="#Hope_Thomas">Thomas Hope</persName>'s book about furniture? Or do you happen to recollect (which will do just as well) the famous quizzing the said book met with in the <title ref="#EdinburghRev_per">Edinburgh Review</title>? The book itself seemed to me when I saw it in a fine presentation copy all scarlet and gold to be a grand piece of furniture itself &amp; one as little made <del rend="strikethrough"><gap quantity="1" unit="word"/><supplied>ready</supplied></del> to be read as a chair or a table--Well this Mr <persName ref="#Hope_Thomas">Thomas Hope</persName><!--SCW: Don't forget his tag--> has they say written <title>Anastasius</title>--The <title ref="#New_Monthly_Mag">New Monthly Magazine</title><!--SCW: Tag NMMag, in SI--> says so (but that's rather an argument against the fact inasmuch as the <title>New Monthly Magazine</title> does certainly <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear><!--SCW: "objection"? It looks like she's repeating the same word twice, but it doesn't entirely make sense to me to say "objection to objection." Leave this as is until we get more eyes on this passage.--> for objection tell more lies than truths -- so that's nothing) but <persName ref="#Palmer_Mad">Lady Madelina Palmer</persName> says so on good authority so that this incredible fact must be believed. Perhaps I am talking Greek to you all this time &amp; you have not read <title ref="#Anastasius">Anastasius</title>. Well then it's a book which but for this testimony I should from internal evidence have attributed at once to that <rs type="person" ref="#Byron">Prince of Wickedness</rs> &amp; Poetry <persName ref="#Byron">Lord Byron</persName> -- its altogether Grecian--is not that like <persName ref="#Byron">Lord Byron</persName>? It's exceedingly sceptical--is not that like <persName ref="#Byron">Lord Byron?</persName>--It complains of a jealous<pb n="2"/> wife--is not that like <persName ref="#Byron">Lord Byron</persName>?--It is full of fine and gloomy poetry (in prose) which is of the very same style with <persName ref="#Byron">Lord Byron</persName>'s. It is still fuller of the light derisive mockery--the <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear><!--SCW: I think I've figured out a possible word to add as a <supplied> guess: "tossing". We may become more certain about it, so may be able to delete this tag altogether. I usually keep <unclear> tags until I am completely certain--> about of all good feeling is so gibing so Voltairish which no one could do or would do but <persName ref="#Byron">Lord Byron</persName>. It is a most uncomfortable book--Is not that like <persName ref="#Byron">Lord Byron</persName>? And lastly it is all full of the <del rend="strikethrough"><gap quantity="1" unit="word"/>gibing</del> <add place="above"> <metamark place="below" function="insertion" rend="caret"/><supplied>sneering</supplied></add> misanthropic wretched author. Is not that Lord Byron? If not written by him it is certainly in his character--and a very powerful work it is for good and for evil--a sort of Eastern <title ref="#Gil_Blas">Gil Blas</title>, only bloodier, longer and less attractive--<del rend="squiggles"><gap quantity="1" unit="word"/></del> <add place="above"> <metamark place="below" function="insertion"/><supplied>I</supplied></add>I shall <unclear>sooner bet</unclear> it <supplied>all</supplied> all my days--but <del rend="squiggles"><gap quantity="1" unit="word"/></del> <add place="above"> <metamark place="below" function="insertion"/><supplied>I</supplied></add> shall never think of reading it again.
+               </p>     
+            
+            <p> I am now reading <persName>Mr Windham's</persName> speeches with singular pleasure--what acuteness! What imagination! What delightful wit! What amusing wrongheadedness! I say this, my dear <persName ref="#Elford_SirWm">Sir William</persName>, without the least fear of contradiction from you--for <persName> Mr Windham's</persName> opinions were so different from the settled system of any party. He was so little shackled by political ties--that there is no doubt but in the immense variety of his likings and dislikings--there are almost as many points in which you differ from him, as there are in which <supplied resp="#qar">I dissent</supplied> from his authority. He certainly had an aversion to popular prejudices and took a certain chivalrous pleasure in  <del rend="strikethrough"><gap quantity="1" unit="word"/><supplied resp="#scw">pelting</supplied></del> running a tilt against cant of all kinds right or wrong.--He was a great man nevertheless--and I should think a very good one. I wish we had a few more such orators. What will the new Parliament produce I wonder! Are you to have any changes in <placeName ref="#Plymouth_city">Plymouth</placeName> &amp; <placeName ref="#Devonshire">Devonshire</placeName>, my dear friend? Does <persName>Mr Northmore</persName> stand again for <placeName ref="#Exeter">Exeter</placeName>--There is a great <add place="above"> <metamark place="below" function="insertion" rend="caret"/> deal </add> of election bustle in this quarter--that terrible <placeName ref="#Wiltshire_county">Wiltshire</placeName> contest where another victory will ruin <persName>Mr. Bennett</persName>--<persName>Mr. Hallett</persName> for this County <pb n="3"/>where he spends no money will not be ruined by another defeat,--and in <placeName ref="#Reading_city">Reading</placeName> all the ministerial people are canvassing for a landslide--which commodity they are not and all likely to procure it is not every man who has a taste for spending ten or twelve thousand pounds with a comfortable assurance of being beaten--to <supplied><persName ref="#SirShawLefevre">Mr Lefevre </persName></supplied> &amp; <persName ref="#Palmer_CF"> Mr Palmer </persName> are likely to retain <quote><soCalled>this independent Borough</soCalled></quote>--their joint &amp; strong &amp; troublesome wife who wants a fresh courting every seven years &amp; sometimes oftener. Well if I were a Parliament man commend me to a rotten borough! (Pray don't tell--or I shall never dare pronounce the word Reform again as long as I live.) </p>
+            
+            <p> Have you in your neighborhood any Infant Prodigies? I have had the honour to be introduced to one lately--a little miss of seven years &amp; who is in training for a <orgName ref="#Bluestockings">blue stocking</orgName> -- &amp; is indeed as far as pendantry &amp; conceit &amp; ignorance go quite worthy of the title already. I have heard of this poor little girl <del rend="squiggle"><gap quantity="1" unit="word"/></del> off &amp; on any time these two years--they told me she knew <hi rend="superscript">by heart</hi><!--SCW: There's a caret in this mix--> all <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear> all <title>Macbeth</title> all <title>Twelfth Nights</title> all Virgil's <del rend="squiggle"><gap quantity="1" unit="word"/></del> <title>Aneid</title> and <unclear><supplied>Grecian</supplied></unclear> Mythology--a pretty selection for a child is it not? examination the perilous part of the knowledge flew off--she had by rote about 8 lines of the witches 6 of Richard's(?) first <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear>--none at all of <title> Twelfth Night</title> -- had never heard of <title>Dido</title> and called Juno a man--but then the poor little thing was as unnatural and artificial as if she were really a second edition of the <unclear><gap quantity="2" unit="word" reason="illegible"/></unclear><!--SCW: These words are not legible to me either-->--played at no sport but the intellectual games of <supplied>chess</supplied> and dumb <supplied>crambo</supplied>--was pert &amp; pale &amp; peaked &amp; priggish--a perfect <quote>old</quote> cut shorter--&amp; the very reverse of the romping <unclear><supplied>roly poly</supplied></unclear> thing, and <del rend="squiggle"><gap quantity="1" unit="word"/></del> sound &amp; blooming as a rose &amp; almost as silly which is my beau ideal of a child of that age. How much abhor anything out of season! And how much I pitied this poor little girl. She is the only child of a very <pb n="4"/> clever and ambitious Mother delighting in distinction of all <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear> <gap><unclear><supplied resp="#qar">sorts</supplied></unclear></gap>--and there have been <del rend="squiggle"><gap quantity="1" unit="word"/></del> <hi rend="superscript">the child's</hi> misfortune--sending <del rend="squiggle"><gap quantity="1" unit="word"/></del> to school &amp; getting well laughed at and with, is the poor brat's only chance. How do you like this fine sermon after Education? I intend it for the benefit of <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear> <persName ref="#Dickinson_Mrs">Dickinson's</persName> little girl--for a little girl I am determined it shall be (by the by she's not confined  yet) whom I hope to see a perfect pattern of childish beauty simplicity silliness mischief idleness > &amp; importance these being in my opinion the very best foundation for a clever woman.
+               
+            </p>
+            
+            <closer>
+               Write soon, my dear friend, &amp; give me a good account of your <unclear><supplied resp="#qar"><title ref="#Ivanhoe">Ivanhoe</title></supplied></unclear> &amp; yourself--Kind regards from <rs type="preson" ref="#Mitford_Geo">Papa</rs> &amp; <rs type="person" ref="#Russell_M">Mama</rs>most affectionately yours <lb/><!--SCW: Check the proofing sheet for how to code the closer and postscript information, including line breaks.-->
+               
+               <lb><persName ref="#MRM">M.R.Mitford</persName></lb> 
+           
+            <lb/>
+               
+                           
+               <postscript><p><unclear><gap quantity="1" unit="word" reason="illegible"/></unclear> forgive my  <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear> and  <unclear><gap quantity="2" unit="word" reason="illegible"/></unclear>-- I get more careful than <unclear><gap quantity="1" unit="word" reason="illegible"/></unclear> <pb/> 
+            </p></postscript><!--You can include a <pb/> here, or inside the postScript.--><!-- Format for postscripts.  Postscripts do NOT go insider closer tags. Adjust to take into account the order in your letter. Sometimes the signature is on page three, the address on page four, then the postscript follows back on the top of page one, for example.-->
+            
+             <closer><!--Use the <closer> element again to hold Address Leaf information, indicating where Mitford directed her letter.-->
+               <address> <!--Include any text written on the address leaf; use a separate "addrLine" for each line and indicate line breaks. Closer tags must also enclose the address section. NOTE AGAIN: If Mitford has a postscript, that postcript must *not* be enclosed in the closer tags, even when they are written after the signature and before the address. It's a TEI rule (sigh). -->
+            <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+           <listPerson>
+              <person xml:id="Hope_Thomas">
+                 <persName>
+                    <surname>Hope</surname>
+                    <forename>Thomas</forename>
+                 </persName>
+                 
+                 <birth when="1769-08-30"><placeName>Amsterdam, Netherlands</placeName></birth>
+                 <death when="1831-02-03"><placeName>London, England</placeName></death>
+                 <note resp="#qar">Thomas Hope was a descendant from Scottish merchant bankers who ran Hope &amp; Co. He was a Dutch and British merchant banker, author, philosopher, and art collector. He wrote <title>Anastasius</title>, which experts (and Mitford) said rivaled the writings of Lord Byron. He came to London during the French occupation of the Netherlands and never returned to Amsterdam. In 1807 Hope published a folio of sketches of his furniture titled <title>Household Furniture and Interior Decoration</title> which had great influence on the style of upholstery and interior decoration. He also published <title>Costumes of the Ancients</title> in 1809 and <title>Designs of Modern Costumes</title> which included antiquarian research.<title>A Historical Essay on Architecture</title> was posted posthumously by the Hope family in 1835 which was based on early hope drawings. He was both ridiculed and lauded for his reputation among London aristocracy as the "costume and furniture man". </note> </person>
+       <listPerson>
+          <person xml:id="#SirShawLefevre">
+             <persName>
+                <surname>Shaw-Lefevre</surname>
+                <forename>Sir John</forename>
+                <forename>George</forename>
+             </persName>
+             <persName>Knight Commander of the Bath</persName>
+             <birth when="1797-01-24"><placeName><!--place of birth--></placeName></birth>
+             <death when="1879-08-20"><placeName><!--place of death--></placeName></death>
+             <note resp="#qar">Sir John George Shaw-Lefevre Knight Commander of the Bath (what a name) was a British barrister, Whig, and civil servant. His brother, Charles Shaw-Lefevre, was 1st Viscount Eversely. He attented Trinity College in Cambridge where he was a Senior Wrangler in 1818. He was a Fellow of the Royal Society, an Under-Secretary of State for War and the Colonies under Lord Grey, a Poor Law Commissioner, and a Clerk of Parliaments. He helped found the University of London and was Vice-Chancellor for many years. He was made a Knight  Commander of the Bath in 1857. He married Rachel Emily and had one son, George, who was ennobled Baron Eversley. One of his five daughters, Madeleine Shaw-Lefevre, was the first Principal of Somerville Hall. Another, Rachel, married Arthur Hamilton-Gordon, son of the Prime Minister the 4th Earl of Aberdeen. </note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="#Wiltshire_county">
+              <placeName>Wiltshire County</placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+              <note resp="#qar">Wiltshire County is a county in South West England. It borders counties Dorset, Somerset, Hampshire, Gloucestershire, Oxfordshire and Berkshire. Salisbury Plain, the sight of stonehenge, is in Wiltshire. </note></place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="#Anastasius">
+                <title>Anastasius</title>
+                <author>Thomas Hope</author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher>John Murray</publisher>
+                <date when="1819"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+              <listBibl>
+                 <bibl xml:id="#Gil_Blas">
+                    <title>Gil Blas</title>
+                    <author>Alain-René Lesage</author>
+                    <publisher>Pierre Ribou</publisher>
+                 </bibl>
+              </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+           </listPerson></div>
+     </back>
+  </text>
+</TEI>

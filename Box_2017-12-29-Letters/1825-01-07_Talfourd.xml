@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM0545">Letter to <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, January 7, 1825</title> 
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#kdc"></editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#kdc">Kellie Donovan-Condron</persName> 
+               
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-08-09">2017-06-29</date>
+               Proofing and corrections by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- Just fixing basic header info. Needs updated header, proofing against ms. 2015 10 08 --><!--LMW: proofing and check si/notes/format 2017-08-09-->
+               <persName ref="#kdc">Kellie Donovan-Condron</persName><!-- Updated <titleStmt> and <head> inside <msDec> 2015-10-16. -->
+               <!-- kdc 2017-06-29 updated header and tagging; new si entries needs cross-check against ms. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2015-03-21">March 21, 2015</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF6143.jpg, DSCF6144.jpg, DSCF6145.jpg, DSCF6146.jpg, DSCF6147.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Courtesy of <orgName ref="#Rylands">The University of Manchester</orgName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> 
+               <msIdentifier> 
+                  <repository ref="#Rylands">The John Rylands University Library</repository>
+                  <collection>Mitford-Talfourd Correspondence: Letters from Mary Russell
+                     Mitford to Thomas Noon Talfourd: vol. 665</collection>
+                  <idno>JRL English MS 665 no. 17 Coles no. 85</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Thomas Noon Talfourd, <date when="1825-01-07">1825 January 7</date>.
+               <note resp="#kdc">We arrived at this date by checking a perpetual calendar. Mitford wrote "Friday evening" in the upper right corner of the first page, and the Evening Duty stamp on the address leaf is dated January 8, 1825.</note>--> 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>Folio sheet of <material>paper</material> folded in half to form four quarto pages, with correspondence on four pages, then folded in nines to form the address leaf.</p> 
+                        <p>Letter folded by nines to form address leaf, addressed to Thomas Noon Talfourd at 2 Elm Court, Temple, London. <!-- kdc: Does this placeName get a tag? LMW: not here. -->Double ring Evening Duty stamp, dated <stamp>January 8, 1925</stamp>.</p>
+                        <p>A large 2 denoting the posting fee has been written in black ink by the postal service across the address leaf.</p>   
+                     </support>
+                     <condition>
+                        <p>Sheet (pages one and two) slightly torn and paper folded back on right edge; upper right corner of page three is missing where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, approximately one-quarter missing, adhered to page four. Seal impression is unclear.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencilRy" medium="pencil">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who left grey pencil marks on her letters now in the <placeName>The John Rylands Library</placeName> collection. This letter is numbered "17" in the top right corner of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#pencilRy">This letter is numbered "17" in the top right corner of the first leaf.</add> 
+               <dateline>
+                  <date when="1825-01-07">Friday evening</date>. 
+               </dateline>
+               <salute>My dear <rs type="person" ref="#Talfourd_Thos">Sir</rs></salute>
+            </opener>
+            <p>I have waited till the last post day in hopes of seeing <persName ref="#Walter_Mary">Mrs. Walter</persName> &amp; finding from her if you were
+               expected at <placeName ref="#Bear_Wood">Bear Wood</placeName> on Sunday, but she has not called here nor have
+               I been able to get to her, as my <rs type="person" ref="#Mitford_Geo"
+                  >father</rs> although very much recovered has not been well enough to take
+               so long a ride. We have not heard anything of your being expected there, &amp; I
+               in hoping to meet you on Monday spoke rather from my wishes than from rational
+               expectation, therefore I should not imagine they would be offended if you did
+               not go--but I am quite sure that to see you whether they have written or not
+               would be the greatest possible pleasure both to <rs type="person"
+                  ana="#Walter_John #Walter_Mary">Mr. and Mrs. Walter</rs>--I never heard any
+               thing more enthusiastic<pb n="2"/> than the way in which she spoke of you--if I
+               may venture to advise you--Go! &amp; I say this quite disinterestedly since I am
+               afraid you would think it necessary to run away before the dinner party next
+               day.--</p>
+            <p>I have heard very fully and kindly from <persName ref="#Harness_Wm">Mr.
+               Harness</persName>--He had not seen <persName ref="#Kemble_C">Charles
+                  Kemble</persName> but seemed quite sure that the <rs type="title"
+                     ref="#CharlesI_MRMplay">
+                     Play</rs> could not have been performed properly at
+               <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName>, &amp;
+               that the consciousness of that, (although no <rs type="person" ref="#Kemble_C"
+                  >Manager</rs>
+               <note resp="#kdc">Charles Kemble was manager of Covent Garden Theater from 1822
+                  to 1831, and again for the 1842-43 season.</note> could make such an avowal)
+               was the real cause of <persName ref="#Kemble_C">Mr. Kemble</persName>'s advice.
+               He says that <persName ref="#Kemble_C">Charles Kemble</persName> has not
+               popularity, nor <persName ref="#Young_CM">Young</persName> power to undertake
+               such a part. He--<persName ref="#Harness_Wm">William Harness</persName>--urges
+               me to finish <title ref="#CharlesI_MRMplay">Charles &amp; Cromwell</title> even if I never try a play
+               again--<unclear reason="illegible" unit="word" quantity="1"><supplied
+                  resp="#kdc">but</supplied>
+               </unclear> I am doubtful--it is so cold &amp; dead &amp; motionless compared to
+               the<pb n="3"/> unlucky <title ref="#Rienzi">Rienzi</title>--&amp; I don't kn<unclear reason="torn" unit="chars" quantity="2"><supplied resp="#kdc"
+                  >ow</supplied></unclear><unclear reason="torn" unit="word" quantity="1"><supplied resp="#kdc"
+                  >how</supplied></unclear> to manage the alteration--where <unclear
+                     reason="torn" unit="word" quantity="1"><supplied resp="#kdc"
+                        >to</supplied></unclear> begin the story--Perhaps you may remember what
+               <persName ref="#Macready_Wm">Mr. Macready</persName> said on the
+               subject--&amp; if I should have the pleasure of seeing you in <placeName
+                  ref="#Reading_city">Reading</placeName> could tell
+               me<!--resp="#kdc" Coles has a note on p 494, note 2 of the PDF, that this refers to letter 64, 9 Nov 1823. In short, Macready wants MRM to start Charles earlier in the historical record. Cross-reference when that letter is coded?-->--That is a very foolish If of mine, for I must have that pleasure even if it be only
+               for a few minutes--&amp; then you can advise me if it would be worth while to
+               send through <persName ref="#Skerrett_Marianne">Miss Skerrett</persName> to
+               <persName ref="#Macready_Wm">Mr. Macready</persName>--<emph rend="underline"
+                  >He</emph>, I assure you, did not seem to think <persName
+                     ref="#Elliston_Robt">Mr. Elliston</persName>'s rejection of the
+               play<note resp="#kdc"><persName ref="#Macready_Wm">Macready</persName> had suggested numerous significant structural changes to <title ref="#Rienzi">Rienzi</title> in November 1824, and <persName ref="#Elliston_Robt">Elliston</persName> rejected the play by the end of 1824.</note><!--kdc: Can we find more specifics about when Macready advised this? --> of any
+               consequence if it should suit him to resume it--&amp; I shall always feel
+               persuaded that the rejection was contrived by him in order to remove the part
+               out<del rend="squiggles" unit="word" quantity="1"/> of the way of <persName
+                  ref="#Kean_Edmund">Mr. Kean</persName>. The danger is that he may have made
+               some promise to <persName ref="#Smith_Captain">Captain Smith</persName> about
+               his play <note resp="#kdc">In <title ref="#Autograph_Collector"><hi rend="italics">Meditations of an Autograph Collector</hi></title>, <persName ref="#Joline_Adrian">Adrian Hoffman Joline</persName> quotes an 1820 letter from <persName ref="#MRM">Mitford</persName> to <persName ref="#Haydon">Benjamin Robert Haydon</persName>, in which she says in a postscript, "The papers say that <persName ref="#Macready_Wm">Mr. Macready</persName> is bringing out a play of <persName ref="#Knowles_Sheridan">Mr. Knowles</persName>. If so he has served a certain <persName ref="#Smith_Horace">Captain Smith</persName> as ill as he has me!" (Joline 199). <persName ref="#Macready_Wm">Macready</persName> played the title role in <persName ref="#Knowles_Sheridan">Sheridan Knowles</persName>'s play <title ref="#Virginius_play">Virginius</title> in May 1820.</note>--for
+               I suppose the great<pb n="4"/> success of <title ref="#Fatal_Dowry">The Fatal
+                  Dowry</title>
+               <note resp="#kdc">Macready appeared as Remont in a bowdlerized version of
+                  Massinger and Field's The Fatal Dowry on 5 January
+                  1825.</note> would render a re-engagement no longer difficult to him.--I rejoice to hear that
+               <persName ref="#Talfourd_Mrs">Mrs. Talfourd</persName> continues well--&amp;
+               I beg you to make my very kindest regards to her &amp; to accept my <rs
+                  type="person" ref="#Mitford_Geo">Father</rs> &amp; <rs type="person"
+                     ref="#Russell_M">Mother</rs>s best remembrances--</p> 
+                          
+            <closer>
+            Ever most gratefully yours <persName ref="#MRM">M. R. M.</persName><lb/>
+            </closer>
+
+             <closer>
+               <address>
+            <addrLine><lb/>To</addrLine>
+                  <addrLine><lb/><persName ref="#Talfourd_Thos">T. N. Talfourd</persName> Esq<hi rend="superscript">re</hi></addrLine>
+                  <addrLine><lb/>2 <placeName ref="#Elm_Court">Elm Court</placeName></addrLine>
+                  <addrLine><lb/><placeName ref="#Temple">Temple</placeName></addrLine>
+                  <addrLine><lb/><placeName ref="#London_city">London</placeName></addrLine>
+               </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+         <div type="historical_people">
+              <listPerson sortKey="histPersons">
+                 <person xml:id="Field_N" sex="1">
+                    <persName>Nathan Field</persName>
+                    <persName>
+                       <surname>Field</surname>
+                       <forename>Nathan</forename>
+                    </persName>
+                    <birth notAfter="1587-10-17">
+                       <placeName>Cripplegate, London, England</placeName></birth>
+                    <death notAfter="1620-08-02"><placeName>Middlesex, England</placeName></death>
+                    <occupation>theater</occupation>
+                    <occupation>actor</occupation>
+                    <occupation>playwright</occupation>
+                    <note resp="#kdc">Co-author of <title ref="#Fatal_Dowry">The Fatal Dowry</title> with
+                       <persName ref="#Massinger_Phil">Philip Massinger</persName>.</note>
+                 </person>
+                 
+                 <person xml:id="Smith_Captain" sex="1">
+                    <persName>Captain Smith</persName>
+                    <persName>
+                       <surname>Smith</surname>
+                       <roleName>Captain</roleName>
+                    </persName>
+                    <!--LMW: actor, playwright? SMITH, RICHARD JOHN (1786–1855), actor? was a sailor but usually referred to as Mr. Smith. See DNB-->
+                 </person>
+                 
+                 <person xml:id="Walter_John" sex="1">
+                    <persName>John Walter</persName>
+                    <persName>
+                       <surname>Walter</surname>
+                       <forename>John</forename>
+                    </persName>
+                    <birth when="1776-02-23"><placeName>Battersea, England</placeName></birth>
+                    <death when="1847-07-28">
+                       <placeName>London, England</placeName>
+                    </death>
+                    <occupation>literary</occupation>
+                    <occupation>editor</occupation>
+                    <occupation>journalist</occupation>
+                    <note resp="#kdc #lmw">Second of that name; proprietor of the <title ref="#Times_news">Times</title> newspaper and the <title>Evening Mail</title>, son of the <title ref="#Times_news">Times</title>'s founder, the first John Walter. Elected as a Member of Parliament for Berkshire in 1832. A neighbor of Mitford's in Wokingham.</note>
+                 </person>
+
+          
+          <person xml:id="Walter_Mary">
+             <persName>
+                <surname>Walter</surname>
+                <forename>Mary</forename>
+                <surname type="maiden">Smithe</surname>
+             </persName>
+             <note resp="#kdc #lmw">Second wife of <persName ref="#Walter_John">John Walter</persName>, proprietor of the <title ref="#Times_news">Times</title> newspaper; they were married in <date when="1818">1818</date>. Source: DNB.</note>
+          </person>          
+          
+          <person xml:id="Joline_Adrian">
+             <persName>
+                <surname>Joline</surname>
+                <forename>Adrian</forename>
+                <forename>Hoffman</forename>
+             </persName>
+             <note resp="#kdc">Author of <hi rend="italics">Meditations of an Autograph Collector</hi>, which quotes a letter from Mitford to Benjamin Robert Haydon, in which Mitford comments about Macready.</note>
+          </person>
+              </listPerson>
+           </div>
+       
+        
+                 <div type="places">
+                    <listPlace sortKey="histPlaces">
+                       <place xml:id="Bear_Wood">
+                          <placeName>Bear Wood, Berkshire, England</placeName>
+                          <placeName><addName>Bearwood</addName></placeName>
+                          <location>
+                             <geo>51.4154 -0.8837</geo>
+                          </location>
+                          <note resp="#kdc #lmw">Bear Wood or Bearwood, near Wokingham. In Mitford's time, the estate of <persName ref="#Walter_John">John Walter</persName>. The property became Bearwood College, and is now Reddam House Berkshire.</note>
+                          <note><ptr target="http://www.visionofbritain.org.uk/place/23580"/></note>
+                       </place>
+                    </listPlace>
+                 </div>
+                 
+                 <div type="publications">
+                    <listBibl sortKey="literary">
+                       
+                       <bibl xml:id="Fatal_Dowry">
+                          <title>The Fatal Dowry</title>
+                          <author ref="#Massinger_Phil"/>
+                          <author ref="#Field_Nathan"/>
+                          <note resp="#lmw"></note>
+                       </bibl>
+                  
+             <bibl xml:id="Autograph_Collector">
+                <title>Meditations of an Autograph Collector</title>
+                <author>Adrian Hoffman Joline</author>
+                <pubPlace>New York</pubPlace>
+                <pubPlace>London</pubPlace>
+                <publisher>Harper &amp; Brothers</publisher>
+                <date when="1902">1902</date>
+             </bibl>
+             
+                    </listBibl>
+                 </div>
+     </back>
+  </text>
+</TEI>

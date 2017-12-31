@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+  <!--2017-01-10 ebb: Here is the source of our base text in Hathi Trust:
+https://babel.hathitrust.org/cgi/ssd?id=mdp.39015008020441;seq=189;num=177
+The nine missing sketches are Sections 16 to 23, the last nine sketches in OV.
+
+Make a new file for each sketch. 
+Follow the filenameing conventions that you see in Box. Each OV sketch begins with the letters OV, then the main title, and if a subtitle it goes in block caps at the end of the filename.xml
+Please use the 1824 NCCO PDF (saved in OV folder in Box) to check and correct the text.
+
+  -->       
+         
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author>Mary Russell Mitford</author>
+            
+            
+            <editor>Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+            
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName>Jonathan M. Horanic</persName>
+               <persName>Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName>Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and "should contain
+               phrases describing the edition or version": First digital edition in TEI, date:
+               2 June 2013. P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+            
+         </editionStmt>
+         
+         
+         
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0
+                  Unported License</licence>
+            </availability>
+            
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+         
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we're checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+               <title>Our Village: Sketches of Rural Character and
+                  Scenery</title><edition>Third Edition</edition> by <author>Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                        Whittaker</publisher><placeName>Ave Maria
+                           Lane</placeName><date>1825</date>. </bibl> This text appears to be
+               identical in pagination and content to the first edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+      
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+      
+   </teiHeader>
+  <text>
+      <body>
+         <div type="sketch">
+            <pb n="177"/>
+            <head>WALKS IN THE COUNTRY.<lb/>THE VISIT. <!--ebb: If there's a subtitle use an <lb/> element to separate --> 
+            </head>
+            <p> There is no effect of the subtle operation of the asso- ciation of ideas more universal and more curious than the manner in which the most trivial circumstances re- call particular persons to our memory. Sometimes these glances of recollection are purely pleasurable. Thus I have a double liking for May-day, as being the birth-day of a dear friend whose fair ideabursts upon me with the first sunbeam of that glad morning; and I can never hear certain airs of Mozart and Handel without seeming to catch an echo of that sweetest voice in which I first learnt to love them. Pretty often, however, the point of association is less elegant, and occasionally it is tolerably ludicrous. We happened to-day to have for dinner a couple of wild ducks, the first of the season; and as the master of the house, who is so little of an epi- cure that I am sure he would never while he lived, out of its feathers, know a wild-duck from a tame,—whilst he, with a little affectation of science, was squeezing the lemon and mixing Cayenne pepper with the gravy, two M
+               
+               178 AN OLD BACHELOR. of us exclaimed in a breath, "Poor Mr. Sidney!"— "Aye," rejoined the squeezer of lemons, "poor Sid- ney! I think he would have allowed that these ducks were done even to half a turn." And then he told the story more elaborately to a young visitor, to whom Mr. Sidney was unknown;—how, after eating the best parts of a couple of wild-ducks, which all the company pronounced to be the finest and the best dressed wild- ducks ever brought to table, that judicious critic in the gastronomic art limited the too sweeping praise by gravely asserting, that the birds were certainly excel- lent, and that the cookery would have been excellent also, had they not been roasted half a turn too much. Mr. Sidney has been dead these fifteen years; but no wild ducks have ever appeared on our homely board without recalling that observation. It is his memorable saying; his one good thing. Mr. Sidney was, as might be conjectured, an epi- cure; he was also an old bachelor, a clergyman, and senior fellow of * * College, a post which he had long filled, being, although only a second son, so well provided for that he could afford to reject living after living in expectation of one favourite rectory, to which he had taken an early fancy from the pleasantness of the situation and the imputed salubrity of the air. Of the latter quality, indeed, he used to give an instance, which, however satisfactory as confirming his pre-
+               
+               
+            
+            </p>
+         </div>
+      </body>
+  </text>
+</TEI>

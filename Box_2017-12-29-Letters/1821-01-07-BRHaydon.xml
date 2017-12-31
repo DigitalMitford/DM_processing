@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Above are the lines that define this document as XML, and that establish the schema rules that define it as TEI and part of the Digital Mitford project. The last is the TEI "root" element which must wrap the entire document. All TEI documents must contain two parts:
+      1) a <teiHeader> that contains a required sequence of elements that describe the origin, content, and editorial work on a document, and
+      2) a <text> element that holds the body of the document itself. 
+   -->  
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM1775">Letter to <persName ref="#Haydon">Benjamin Robert Haydon</persName>, <date when
+            ="1821-01-07">January 07, 1821</date></title> <!--Look up the xml:id in the MitfordMS Excel spreadsheet, and look for other identifying info on the repository, etc, there. Insert full name of letter addressee. 
+               For the persName, use the assigned xml:id from the Site Index at http://digitalmitford.org/si.xml 
+               List the date the way we'd like it to appear in a web rendering of the document: as in March 26, 1820. The date should be our best sense of the date on which Mitford began this letter, and is usually listed at the top of the letter. We'll tag the date formally in <msDesc> below, since often dates are tricky or only partially written out by Mitford. The date in the titleStmt is the date *we've* determined, for listing and posting when we publish this file. -->
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#scw">Samantha Webb<!--Editor on the Mitford project, referenced by id from Site Index. Editors, change to your name and id; students, leave as name of your instructor. --> </editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor><!--We've added this in 2015, as they are now hosting our web server. As other sponsors who help us come on board, for example if we receive grant funding, we'll add sponsor lines here.-->
+            <principal>Elisa Beshero-Bondar</principal> <!-- the lines above are standard. don't change -->
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#SCR">Susannah Claire Ritchey </persName> <!-- List all transcribers or coders here, editors and students alike, <persName> by <persName>.-->
+               <persName ref="#ID_who"><!--name here--></persName><!-- If you're the last person interacting with the file, enter your name last on the list and use assigned xml:id for ref="#" -->
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-03-20">April 24, 2017</date><!--Fill out and update the date here as different proofreaders work with this file. Dates inside the attribute @when take the form of a hyphen-separated four-digit year followed by two-digit month and two digit day, so May 2, 2015 comes out as 2015-05-02. -->
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#scw">Samantha Webb</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-02-08">February 08, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF8092.jpg, DSCF8091.jpg, DSCF8090.jpg, DSCF8089</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <!--Uncomment the appropriate line, based on the archive that holds the physical copy of this letter, and delete the other comment line(s).-->
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+                  
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. -->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> <!-- Change to reflect correct ms. collection. -->
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 373</idno> <!--Consult Mitford letters spreadsheet (MitfordMS.xslx). Change to reflect the xml:id and shelfmark information for this ms. collection and letter. For RCL, ff. numbers differ for each letter.-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Benjamin Robert Haydon, <date when="1821-01-07">1821 January, 7</date>.
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> <!-- Physical description of the letter goes here: paper size and condition, seal, postmarks, etc. See some posted examples in this Box folder but write yours to describe YOUR letter.-->
+                     <support> <p>One page, four surfaces photographed 12 centimeters by 18 centimeters. Folded width wise at 11 and a half centimeters length.<!--Text describing the document. Include information on the material, usually thus: <material>paper</material> and the number of page surfaces photographed. So when Mitford writes over two sheets of paper on the front and back of each, we've photographed four surfaces. When she writes on one sheet front and back, we've photographed two surfaces. Work closely with the photos of your letter to determine the number of sheets and separate surfaces, and describe how they are folded: in thirds? There is likely to be more than one photo of the same surface.--> </p> 
+                        <p><!--Here, describe the address leaf and any postmarks and postal fees recorded on the paper. 
+                           Refer to our slides on identifying and reading postmarks, here:  
+                           1) whether it is missing
+                           2) if present, does it have a postmark? Describe it, as in this example: Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>.-->
+                           <!--FOR REFERENCE on HOW TO IDENTIFY AND READ POSTMARKS ON A MITFORD LETTER see our slides posted on our Wordpress blog: https://digitalmitford.wordpress.com/2014/05/27/the-digital-mitfords-guide-to-19th-century-british-postmarks-and-how-to-code-them-in-tei/ -->
+                        </p> 
+                        <!-- Continue to describe new postmarks here. Use a separate <p> for each, as below-->
+                        <p><!--Here's a sample second <p> indicating another postmark: A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.--></p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on right edge of page three where wax seal was removed.</p> <!-- change. --><!--SCW, 4/24/17: Needs to be verified-->
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p><!--Describe the seal Mitford is using here, if it's present. Otherwise, indicate that No seal is present. Here's an example description of a seal: Red wax seal, complete, adhered to page four.--></p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><!--This section documents and identifies whenever we see additional hands, other than Mitford's, at work in the document. Those hands could be a contemporary (such as her mother), but they're more frequently marks made by later editors such as William Harness or Francis Needham. Use the <handNote> elements to describe the role of each hand in this manuscript. If the hand is, say, Mitford's mother's and is writing a page of the letter, you indicate when that happens in the body of the letter using the <handShift> element. The @corresp attributes on <handNote> point to xml:ids stored (or to be stored) in our Site Index.-->
+           <handNote corresp="#Id_who"><!--Description of role in this mansuscript.--></handNote>
+           <!--Below are some SAMPLE HANDNOTES that appear commonly on MANY letters. Please be sure to CHANGE these if your letter differs.-->
+           <handNote corresp="#rc" medium="red_crayon">Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is another red line going from the top left down to the bottom, middle right of the post script.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "24" in the top left of the first leaf.
+           </handNote>
+           
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><!--Within the <body> element the text of our elements records our transcription of Mitford's text, and any editorial notes we need to add. -->
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Cnetral Library's collection. This letter is numbered "24" in the top left hand corner.<!--Did someone other than Mitford record a number or some notes at the top of this letter? This is where we'd indicate what was written and who wrote it. Omit if absent.--><!--SCW: Sent a message to LMW 2/22/17 re the "BR Haydon, Esq" hand. I suspect a different hand. If so, you would note that here.--><!--SCW, 4/24/17: need to recall how we decided on this--></add> 
+               <dateline><!--The dateline of a letter, if present, goes here. The date line typically includes (in any order) a date and a location, as Mitford records where she is when she begins a letter. When Mitford's dateline is complete and we have no reason to doubt her record, we use that as our default for the date. If there's no date line, omit this element. Always record this in the order in which Mitford presented it. If she puts the date first, you do the same. If she puts the place first, you do the same.-->
+                  <name type="place" ref="#Three_Mile_Cross"><!--Mitford's record of the place. The @ref attribute records the id on the Site Index entry for this place.--></name> 
+                  <date when="1821-01-07">Jan<hi rend="superscript">r</hi> 7<hi rend="superscript">th</hi>1821</date>. 
+               </dateline>
+               <salute>My Dear Sir</salute>
+            </opener>
+            <p>I take the advantage of a County meeting which will make franks as plenty as <rs type="blackberry">blackberries</rs> to thank you for the <placeName ref="#London_city">London</placeName> letter which was so delightful a companion to the <placeName ref="#Edinburgh">Edinburgh</placeName> one--I agree with you very thoroughly in your love for the endless city--I am something of a <orgName ref="#CockneyS">Cockney</orgName> in my tastes in spite of my rustic habits--I like no other great town--but I like <placeName ref="#London_city">London</placeName> &amp; all that comes from it-- <unclear>?</unclear> friends <unclear><supplied resp="#SCR">betters</supplied></unclear><!--SCW: A general reminder not to forget your hashtags--> gowns are all the more <unclear><supplied resp="#SCR">welcome</supplied></unclear> for bearing the <placeName ref="#London_city">London</placeName> mark--The <title ref="#LondonMag">London magazine</title> itself is the better for its title--&amp; I do not think <persName ref="#Lamb_Chas">Mr. Charles Lamb</persName> would write so delightfully any where else.--I say who is <persName ref="#Scott_John">Mr. Edgeworth Benson</persName>--
+               </p>     
+            
+            <p>How have you borne this cold weather <supplied>?</supplied> Every body abuses it.--even I myself<pb n="2"/> from sympathy or complaisance of the contagious habit of grumbling I have sometimes caught myself complaining of cold notwithstanding a strong internal feeling that a trot something between a run &amp; a walk of three or four miles through the frost is one of the highest of physical pleasures. We have all stood the winter remarkably well--nobody has caught cold in the house except my plants which being crammed into a sad little windy hole, very different from their former spacious &amp; comfortable habitation have been silly enough to die in their very prime of life &amp; beauty--Ah my pretty plants that I had reared &amp; watered &amp; nursed so tenderly they are all dead- <unclear>?</unclear> <rs type="nature" ref="geranium">Geraniums</rs> <rs type="nature" ref="#Macartney_rose">Macartney roses</rs>--<rs type="geranium">geranium</rs><!--SCW: I located LMW's version of the file with her edits, and the suggestion is that "geranium" reads instead "cape Japonica", possibly a camelia from Cape Town, South Africa--> all dead. I have not a pot left alive except an old tough <rs type="camellia"><sic>Cammellia</sic></rs> Japonica--&amp; he is turning yellow &amp; curls his leaves--I am afraid he will follow poor fellow--Thank God <rs type="nature" ref="#violet">violets</rs> &amp; <rs type="nature" ref="#primrose">primroses</rs> are not so killable--I shall stick to them for the<pb n="3"/> future--this snow which keeps me indoors against my will, is good for them--it will keep them warm &amp; cherish &amp; comfort their young leaves.--Poor dear <persName ref="#Daphne_pet">Daphne</persName> disliked the frost almost as much as my <rs type="nature" ref="geranium">Geraniums</rs>--I was obliged to give up taking her to walk with me--but she is pretty well, only too delicate and shrinking to brave the East wind--We have had a sad fright about your <persName ref="#Whim_pet">Puppy</persName>. The woman to whose care we trusted him, the widow of a butcher who fancied herself &amp; I believe was under obligations to <persName ref="#Mitford_Geo">Papa</persName> suddenly failed &amp; had left <placeName ref="#Reading_city">Reading</placeName> before we <del rend="squiggles"><gap quantity="1" unit="word"/>had</del> heard a word of the matter--when we sent to enquire after the <persName ref="#Whim_pet">Puppy</persName> we found that he was gone &amp; could hear no tidings of him till yesterday, when my <persName ref="#Mitford_Geo">Father</persName> found that the poor grateful woman had taken him with her. He is very safe--&amp; we have a place for him as soon as he can be <del rend="squiggles"><gap quantity="1" unit="word"/><unclear>?</unclear></del> returned to us--for at present we only know that he is with her. <persName ref="#Mitford_Geo">Papa</persName> had very little coursing in <placeName ref="#Hampshire_county">Hampshire</placeName> <gap reason="torn" quantity="2" unit="chars"/><supplied resp="#SCR">si</supplied>nce his return the frost has of course prevented his taking out the dogs. Nothing has<pb n="4"/> tended so much to console him for his disapointment in not seeing you as the bad sport he has had this season. He talks of going into <unclear><supplied resp="#lmw"></supplied>Ilfordshire</unclear> for now--> next week if the weather breaks &amp; will try <persName ref="#Daphne_pet">Daphne</persName> on the hills, the very place for her to show off.</p>
+            <p> Adieu my dear Sir--My Father &amp; <persName ref="#Russell_M">Mother</persName> join in kindest rememberances &amp; in every good wish. Many happy &amp; glorious years to you My dear <persName ref="#Haydon">Mr. Haydon</persName>.
+            </p>
+            <p></p>
+            <closer>Ever very sincerely your's,
+               <lb/>
+               <lb/>
+               <persName ref="#MRM">Mary Russell Mitford</persName>. 
+            </closer> 
+            
+            <postscript><p>How do you go on with the little picture. Will it be profitable even for you to paint up to that <note resp="#SCR">Mitford is referring to Haydon's painting <title>Christ's Agony in the Gardon</title></note> Head of Christ? I think not.</p></postscript>
+            
+             <closer><!--Use the <closer> element again to hold Address Leaf information, indicating where Mitford directed her letter.-->
+               <address> <!--Include any text written on the address leaf; use a separate "addrLine" for each line and indicate line breaks. Closer tags must also enclose the address section. NOTE AGAIN: If Mitford has a postscript, that postcript must *not* be enclosed in the closer tags, even when they are written after the signature and before the address. It's a TEI rule (sigh). -->
+            <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+       <listPerson>
+          <person xml:id="Scott_John"><!-- SCR This is a revision to the John Scott entry in the Si, and Edgeworth Benson is a pseudonym for John Scott. -->
+             <persName>
+                <surname>Scott</surname>
+                <forename>John</forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName>Edgeworth Benson</persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="1784-10-24"><placeName>Broadgate, Aberdeen</placeName></birth>
+             <death when="1821-02-27"><placeName><!--place of death-->St Martin-in-the-fields</placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#SCR">Scott was a journalist who owned the Champion. He was close friends with B R Haydon, and publishes art critique by Charles Lamb. He died from wounds inflicted in a duel. The name Edgeworth Benson was a psuedonym for John Scott.</note><!--SCW: Need more on the title he wrote under this name-->
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+           
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+             
+             <bibl xml:id="Christs_Agony_Haydon" type="painting" rend="oil">
+                <title>CHrist Agony in the Garden</title>
+                <author>Benjamin Robert Haydon</author>
+                <date>1821</date>
+                <note>Christ is depicted kneeling in prayer as a nude male mounting steps, and a man riding a horse int he background.</note>
+                
+             </bibl>
+                
+          </listBibl>
+           
+           
+           <list type="plants">
+              <item xml:id="Macartney_rose">
+                 <name ref="#Macartney_rose">Macartney rose</name>
+                 <rs type="genus">rosa</rs>
+                 <rs type="species">bracteata</rs>
+                 <rs type="family">rosaceae</rs>
+                 <note resp="#SCR">This plant is commonly found in North America.</note>
+              </item>
+              
+              <item xml:id="geranium">
+                 <name>geranium</name>
+                 <rs type="genus">geranium</rs>
+                 <rs type="species">perennial herb</rs>
+                 <rs type="family">geraniaceae</rs>
+                 <note resp="#SCR"> This flower is from the geranium genus and the perrenial herb species. Also called cranesbill because the genus word is greek for crane. Native mostly to subtropical Africa. Grows in temperate regions of the world such as the mountain tropics, but most commonly in the Mediterranean.</note>
+              </item>
+              
+              <item xml:id="camellia">
+                 <name>camellia</name>
+                 <rs type="genus">camellia</rs>
+                 <rs type="species">sinensis</rs>
+                 <rs type="family">tea</rs>
+                 <note resp="#SCR">The cammelia is part of the cammelia genus, and the sinensis species.This plant is now extinct in the wild. The cammelia finds its origins in Eastern and Southern Asia. There are more than 3,000 named cammelias. Hybrid species tend to be more hardy in warmer climes, although regions of warm, moist weather is where these flowers flourish.</note>
+              </item>
+              
+              <item xml:id="blackberry">
+                 <name>blackberry</name>
+                 <rs type="genus">rubus</rs>
+                 <rs type="species">armeniacus</rs>
+                 <rs type="family">rosacaeae</rs>
+                 <note resp="#SCR">This is a fruit born on certain roses.</note>
+              </item>
+              <item xml:id="japonica">
+                 <name>japonica</name>
+                 <rs type="genus">camellia</rs>
+                 <rs type="species">japonica</rs>
+                 <rs type="family">theaceae</rs>
+                 <note resp="#SCR"> This is the most common cammelia species, otherwise known as the Japanese camellia or the Rose of Winter. It belings to the camelia genus and the japonica species. It is found in the wild in mainland China, Taiwan, southern Korea, and southern Japan. Grows in forests.</note>
+              </item>
+              
+           </list>
+           
+           <list type="animals">
+              <item xml:id="Whim_pet">
+                 <name ref="#Whim_pet">Whim</name>
+                    <note resp="#SCR #scw"><persName ref="#Haydon">B.R. Haydon</persName>'s puppy who was lost for a few days. She mentions the dog because the lady charged with the dog's care had disappeared before the bad weather hit. Mitford mentions the loss and finding of Whim in the <title ref="#MRMJournal">Journal</title> on <date when="1821-01-04">January 4</date> and <date when="1821-01-07">January 7, 1821</date>.</note>
+              </item>
+           </list>
+           
+           
+         
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+       
+     </back>
+  </text>
+</TEI>

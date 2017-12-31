@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM0537">Letter to <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, November 30, 1821</title> 
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson </persName>
+               <persName ref="#jgf">Julie G. Fish</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-08-06">2017-09-06</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-01-24"></date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: DSCF6126.jpg, DSCF6127.jpg, DSCF6128.jpg<idno></idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Courtesy of <orgName ref="#Rylands">The University of Manchester</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#Rylands">John Rylands Library</repository>
+                  <collection>Mitford-Talfourd Correspondence: Letters from Mary Russell Mitford to Thomas Noon Talfourd: vol. 665</collection>
+                  <idno>JRL English MS 665 (R69047) no. 10; Coles no. 25</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Thomas Noon Talfourd, <date when="1821-11-30">1821 November 30</date>. 
+               <note resp="#lmw">Postmarked December 1, 1821 and letter headed "Friday night." November 30, 1821 was a Friday.</note>
+               </head> 
+              <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p><material>Paper</material>, four surfaces photographed. Folded in half, then in thirds.</p> 
+                        <p>Address leaf bearing black circular mileage postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>. Second postmark is red double circle Duty stamp reading <date when="1821-12-03"> <stamp>B<lb/> 1 DE 1<lb/> 1821</stamp></date>. A large 2 denoting the posting fee has been written in black ink by the postal service across the address leaf.</p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on top right edge; more than half of the top edge missing, measuring 8 cm long and 1.5 to 2 cm deep.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, partial, adhered to page four.--></p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencilRy">Someone, apparently other than <persName ref="#MRM">Mitford</persName>, perhaps cataloging letters and describing them, who left grey pencil marks on her letters now in the <placeName>The John Rylands Library</placeName> collection. This letter is numbered "10" in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><div type="letter">
+            <opener> 
+               <add hand="#pencilRy">10</add> 
+               <dateline><name type="place" ref="#ThreeMileCross">Three Mile Cross</name> 
+                  <date when="1821-11-30">Friday Night</date>.<!--lmw: Checked perpetual calendar; Novemeber 30 fell on a Friday.--> 
+               </dateline>
+               </opener>
+         <p>Thank you very much very much, <rs type="person" ref="#Talfourd_Thos">my dear Sir</rs>, for your kind letter of preparation. Ah you need not fear that I should be too sanguine--Those happy days are passed with me long long ago. I am now perfectly resigned to either of the two other Catastrophes that await me &amp; <title ref="#Foscari_MRMplay">Foscari</title>, the being rejected on the one hand or wretchedly acted on the other. Neither calamity can alter the sincere &amp; ardent gratitude that I shall always feel to you, my Kindest friend--though I am heartily sorry to have engaged so much of your valuable time on so worthless a subject.--No, we shall not I think gain any thing by speaking to <persName ref="#Milman_HH">Mr. Milman</persName>--It was not to me but to <rs type="person" ref="#Mitford_Geo">my father</rs> that he made the speech which I reported to you verbatim--on returning the Play, he again said that he was sorry his hands were tied--he seemed rather luke warm then <rs type="person" ref="#Mitford_Geo">my Father</rs> says--which I have no doubt resulted from his not greatly liking the Piece, indeed the little merit that it has is of quite an opposite nature to that which he admires--I cannot think that the Tragedy now in the Theater<!--LMW: try to identify play?--> is his--He could not have said &amp; repeated that he was sorry he had not known of mine before recommending another if it were. No gentleman could do such a thing. But we had better say nothing to him. It might do harm.--<persName ref="#Robins_Geo">Mr. Robins</persName> is, <rs type="person" ref="#Mitford_Geo">my father</rs> thinks, worth trying. We are sure of his kindness, &amp; some time ago he had a coniderable sum of money in the concern--whether that continues or not we do not exactly know--if it does he must<pb n="2"/> have influence, if not he probably has no other interest than that of mere personal intimacy with <persName ref="#Harris_Henry">Mr. Harris</persName>--which I agree with you in rating very low--he is also intimate with <persName ref="#Fawcett_John">Mr. Fawcett</persName> &amp; <persName ref="#Young_CM">Mr. Young</persName>--Would that do any good? At all events my father thinks <persName ref="#Robins_Geo">Mr. Robins</persName>'s interest so well worth trying that he proposes to go to <placeName ref="#London_city">Town</placeName> on <date when="1821-12-02">Sunday</date> to see him. He will take care to steer clear of Mr. Taylor<!-- LMW: check id. -->--&amp; will of course report to you his success with <persName ref="#Robins_Geo">Mr. Robins</persName>. <persName ref="#Quayle_Mr">Mr. Quayl</persName>e seems so completely have vanished from the scene that there is no use in running after him.</p>
+         <p>Do you think it would do any good to get <persName ref="#James_Miss">Miss James</persName> to call on <persName ref="#Young_CM">Mr. Young</persName> or write to him? I don't know that she would--for ever since the unlucky affair of the rejected alterations she has maintained a dignified silence--that is to say that she is in a thorough fit of the sullens. Nevertheless I know so well the <del rend="squiggles" unit="chars" quantity="1"><supplied resp="#lmw">E</supplied></del> excellence &amp; kindness of her heart, that I am quite sure she would be most ready &amp; willing to do any good office to even <del rend="squiggles" unit="word" quantity="1"><supplied resp="#lmw">to</supplied></del> to a friend in disgrace--&amp; you know the opportunity of <del rend="squiggles" unit="chars" quantity="1"><supplied resp="#lmw">a</supplied></del> conferring a favor is a glorious come off for an angry lady, who happens to be rather romantic. I am quite sure of her dear soul--but I would not engage her in a troublesome solicitation unless it were likely to avail--&amp; I am very much afraid that with the present Catastrophe it is quite in vain to expect <persName ref="#Young_CM">>Mr. Young</persName> to play the <persName ref="#Doge_F">Doge</persName>--though she (<persName ref="#James_Miss">Miss James</persName>) had the strange notion that his was the first character. Shall I write to her? You must tell by <rs type="person" ref="#Mitford_Geo">my father</rs> if I should.</p>
+            <p>We are delighted to hear that you require no advice--Take care of yourself nevertheless--Kindest regards from all--</p>
+            <closer>
+               Ever most gratefully &amp; affectionately <choice><sic>your's</sic><reg>yours</reg></choice><lb/>
+               <persName ref="#MRM">M. R. Mitford</persName>.<lb/>
+            </closer>
+            
+            <postscript><p>I hope you have made my most grateful thanks to <persName ref="#Macready_Wm">Mr. Macready</persName>. I wish <title ref="#Foscari_MRMplay">Foscari</title> were more worthy of him!</p></postscript>
+            <closer>
+                <address>
+                   <addrLine>To<lb/></addrLine>
+                   <addrLine>T. N. Talfourd Esq<hi rend="superscript">re</hi><lb/></addrLine>
+                   <addrLine>No. 1 Pump Court<lb/></addrLine>
+                      <addrLine>Temple<lb/></addrLine>
+                   <addrLine>London<lb/></addrLine>
+                </address>
+             </closer>
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+       <listPerson>
+          <person xml:id="proposed_new_ID"> <!--LMW new id: Mr. Taylor?  check existing. Taylor the oculist?-->
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

@@ -1,0 +1,188 @@
+@media screen {
+html{
+    background-color: #FFFAE6; 
+;
+   
+    color: #580000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif; font-size:.9em;
+}
+
+body{
+   /*background-color: #BBD6F1;*/ 
+   
+    text-align:left;
+    width:100%;
+   
+/*padding: 10px 10px 40px 10px;*/
+border-radius: 10px;
+}
+div#images img{
+
+width:352px;
+display:inline-block
+}
+div#menubar{
+   
+   background-color: #FFEBC2;
+    text-align:left;
+    width:100%;
+    margin-left: auto;
+margin-right:auto;
+padding: 5px 5px 5px 5px;
+border-radius: 5px;
+border-radius: 5px;
+   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
+h2 {color:#330000; display:block; font-size: 1.5em; text-align:center}
+h3 {color:#A04747; display:block; text-align:left; font-size:1.1em;}
+h4 {color:#330000; display:block; font-size: 1em; font-weight:bold; text-align:left;}
+
+ul li, ol li {line-height:1.12em; margin-left:3em;}
+
+/*h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+
+h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
+}
+*/
+
+p.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+    
+    p.boilerplate img {position: relative; top:3px; right: -2px }
+
+div#container{
+width: 95%; 
+display:inline-block
+}
+
+p {margin-left: 2em; line-height:1.12em; margin-right: 2em;}
+
+div#menubar{
+   
+   background-color: #FFEBC2;
+    text-align:left;
+    width:15%;
+   float:left;
+padding: 10px;
+border-radius: 5px;
+border-radius: 5px;
+   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   
+   /*position:fixed; */
+   right:10%;
+   top:1%;
+  }
+  
+/*div#playMeta{
+display:block;
+overflow-y:auto;
+width: 30%;
+height:70%;
+position:fixed;
+font-size: .75em;   
+
+}
+*/
+
+a{
+color: #2929A3;
+text-decoration:none;}
+a:hover{
+text-decoration:underline;}
+
+em{
+text-decoration:underline    
+    
+}
+table{
+width: 60%;
+border-collapse:collapse;
+padding: 10px 5px 50px 20px;
+font-size:smaller;
+margin-left:15px;
+}
+
+th, td{
+border-color:#663300;
+border-style:solid;
+border-width:1px;
+}
+
+th:nth-child(1), tr.vars td:nth-child(1) {text-align:left; margin-left:2px; width:25%}
+th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7), tr.vars td:nth-child(2), tr.vars td:nth-child(3), tr.vars td:nth-child(4), tr.vars td:nth-child(5), tr.vars td:nth-child(6), tr.vars td:nth-child(7) {text-align:left; margin-left:2px; width:12.5%;}
+
+th:nth-child(4), tr.vars td:nth-child(4) {border-right-width: 15px;
+border-right: thick double #d1e0e0;   
+}
+
+tr[title="foldUp"] {display:none;}
+tr.texts td {text-align:center; width:20%; padding:2px; border-color:#336600;
+border-style:solid;
+border-width:1px; display:none;}
+td.black{background-color:#b3b3cc;}
+td.blue{background-color:#9999e6; color: #fff0b3;}
+td.green{background-color:#339966; color: #fff0b3;}
+td.yellow{background-color:#ffcc00;}
+td.orange{background-color:#ff9933;}
+td.red{background-color:#ff3300;}
+
+
+span.hidNo {display:none;}
+
+
+    }
+ 
+ @media print {
+ div#menubar {display:none}
+  div#fieldset{display:none}
+  
+  p.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+    
+    p.boilerplate img {position: relative; top:3px; right: -2px }
+
+ 
+ span.hidNo{display:inline;}
+ 
+ a{
+color: #2929A3;
+text-decoration:none;}
+a:hover{
+text-decoration:underline;}
+
+em{
+text-decoration:underline    
+    
+}
+table{
+width: 90%;
+border-collapse:collapse;
+padding: 10px 5px 50px 20px;    
+}
+
+table, th, td {
+    border-style:solid;
+    border-width:1px;
+
+}
+
+tr.vars td {text-align:center; width:16.6%; padding:2px}
+
+
+tr.texts td {text-align:center; width:25%; padding:2px; display:inline;}
+
+span.hidNo {display:inline;}
+
+}
+        

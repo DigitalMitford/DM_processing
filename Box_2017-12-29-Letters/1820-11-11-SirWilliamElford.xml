@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Above are the lines that define this document as XML, and that establish the schema rules that define it as TEI and part of the Digital Mitford project. The last is the TEI "root" element which must wrap the entire document. All TEI documents must contain two parts:
+      1) a <teiHeader> that contains a required sequence of elements that describe the origin, content, and editorial work on a document, and
+      2) a <text> element that holds the body of the document itself. 
+   -->  
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM1771">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1820-11-11">November 11, 1820</date></title> <!--Look up the xml:id in the MitfordMS Excel spreadsheet, and look for other identifying info on the repository, etc, there. Insert full name of letter addressee.
+               For the persName, use the assigned xml:id from the Site Index at http://digitalmitford.org/si.xml 
+               List the date the way we'd like it to appear in a web rendering of the document: as in March 26, 1820. The date should be our best sense of the date on which Mitford began this letter, and is usually listed at the top of the letter. We'll tag the date formally in <msDesc> below, since often dates are tricky or only partially written out by Mitford. The date in the titleStmt is the date *we've* determined, for listing and posting when we publish this file. -->
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#scw">Samantha Webb<!--Editor on the Mitford project, referenced by id from Site Index. Editors, change to your name and id; students, leave as name of your instructor. --> </editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor><!--We've added this in 2015, as they are now hosting our web server. As other sponsors who help us come on board, for example if we receive grant funding, we'll add sponsor lines here.-->
+            <principal>Elisa Beshero-Bondar</principal> <!-- the lines above are standard. don't change -->
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#Id_who">John Bawden</persName> <!-- List all transcribers or coders here, editors and students alike, <persName> by <persName>.--><!--SCW: I see oxygen is firing an error here, which you can tell by the red underlining. It looks like you've got your own name surrounded by angle brackets. To correct, just remove the angle brackets, all this text should un-underline.--><!--SCW: John, send me a 3-letter xml:id for yourself, and a short bio to be included in the site index so that you can be immortalized on the site.-->
+               <persName ref="#Id_who"><!--name here--></persName><!-- If you're the last person interacting with the file, enter your name last on the list and use assigned xml:id for ref="#" -->
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-04-06">April 6, 2017</date><!--Fill out and update the date here as different proofreaders work with this file. Dates inside the attribute @when take the form of a hyphen-separated four-digit year followed by two-digit month and two digit day, so May 2, 2015 comes out as 2015-05-02. -->
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#scw">Samantha Webb</persName><!-- SCW: First proof pass, February 20, 2017. In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-02-01">February 8, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno><!-- For the text inside this element, idno, make a comma-separated list of each .jpg photo file name in your Box folder associated with your letter. It might look like this:
+               DSCF9476.jpg, DSCF9477.jpg, DSCF9478.jpg, DSCF9479.jpg, DSCF9480.jpg, DSCF9481.jpg, DSCF9482.jpg, DSCF9483.jpg, DSCF9484.jpg, DSCF9485.jpg
+Change to reflect photo file names for your letter (as you see here, including .jpg extension).--></idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <!--Uncomment the appropriate line, based on the archive that holds the physical copy of this letter, and delete the other comment line(s).-->
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+                  
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. -->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> <!-- Change to reflect correct ms. collection. -->
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 422</idno> <!--Consult Mitford letters spreadsheet (MitfordMS.xslx). Change to reflect the xml:id and shelfmark information for this ms. collection and letter. For RCL, ff. numbers differ for each letter.--><!--SCW: I checked the spreadsheet 4/6/17-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1820-11-11">1820 November 11</date>.
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> <!-- Physical description of the letter goes here: paper size and condition, seal, postmarks, etc. See some posted examples in this Box folder but write yours to describe YOUR letter.-->
+                     <support> <p> Four pages of <material>paper</material>, eight page surfaces photographed. 7 inches wide, and 9 inches length height. The pages are folded in half lengthwise and again in thirds for posting. <!--Text describing the document. Include information on the material, usually thus: <material>paper</material> and the number of page surfaces photographed. So when Mitford writes over two sheets of paper on the front and back of each, we've photographed four surfaces. When she writes on one sheet front and back, we've photographed two surfaces. Work closely with the photos of your letter to determine the number of sheets and separate surfaces, and describe how they are folded: in thirds? There is likely to be more than one photo of the same surface.--> </p> 
+                        <p><!--Here, describe the address leaf and any postmarks and postal fees recorded on the paper. 
+                           Refer to our slides on identifying and reading postmarks, here:  
+                           1) whether it is missing
+                           2) if present, does it have a postmark? Describe it, as in this example: Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>.-->
+                           <!--FOR REFERENCE on HOW TO IDENTIFY AND READ POSTMARKS ON A MITFORD LETTER see our slides posted on our Wordpress blog: https://digitalmitford.wordpress.com/2014/05/27/the-digital-mitfords-guide-to-19th-century-british-postmarks-and-how-to-code-them-in-tei/ -->
+                        </p> 
+                        <!-- Continue to describe new postmarks here. Use a separate <p> for each, as below-->
+                        <p><!--Here's a sample second <p> indicating another postmark: A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.--></p>
+                     </support>
+                     <condition>
+                        <p></p> 
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal is present</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><!--This section documents and identifies whenever we see additional hands, other than Mitford's, at work in the document. Those hands could be a contemporary (such as her mother), but they're more frequently marks made by later editors such as William Harness or Francis Needham. Use the <handNote> elements to describe the role of each hand in this manuscript. If the hand is, say, Mitford's mother's and is writing a page of the letter, you indicate when that happens in the body of the letter using the <handShift> element. The @corresp attributes on <handNote> point to xml:ids stored (or to be stored) in our Site Index.-->
+           <handNote corresp="#Id_who"><!--Description of role in this mansuscript.--></handNote>
+           <!--Below are some SAMPLE HANDNOTES that appear commonly on MANY letters. Please be sure to CHANGE these if your letter differs.-->
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. <!-- Don't change the preceding two sentences if this letter has red crayon. In the *following* sentence, describe red crayoning on this letter. -->A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. <!-- Don't change the preceding sentence if this letter has grey pencil. In the following sentence, describe penciled numbers or change/add whatever text you see written in pencil. -->This letter is numbered "11" in the top left of the first leaf.<!--SCW: I'm not sure if that's an "11" or a "21"-->
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><!--Within the <body> element the text of our elements records our transcription of Mitford's text, and any editorial notes we need to add. -->
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">This letter is numbered "21" in diagonal at the top right corner.<!--Did someone other than Mitford record a number or some notes at the top of this letter? This is where we'd indicate what was written and who wrote it. Omit if absent.--></add> 
+               <dateline><!--The dateline of a letter, if present, goes here. The date line typically includes (in any order) a date and a location, as Mitford records where she is when she begins a letter. When Mitford's dateline is complete and we have no reason to doubt her record, we use that as our default for the date. If there's no date line, omit this element. Always record this in the order in which Mitford presented it. If she puts the date first, you do the same. If she puts the place first, you do the same.-->
+                  <name type="place" ref="#ThreeMileCross"><!--Mitford's record of the place. The @ref attribute records the id on the Site Index entry for this place.--></name> 
+                  <date when="1820-11-11">Nov<hi rend="superscript">r</hi>11<hi rend="superscript">th</hi> 1820<!--Mitford's date as she wrote it. Use our code for superscripts where necessary. For example: June 8<hi rend="superscript">th</hi> 1819--></date>. 
+               </dateline>
+               <salute>To <persName ref="#Elford_SirWm">Sir W. Elford</persName><!-- Use if letter has a saluation ("Dear Sir," for example). If not, delete this line. For example: To <persName ref="#Elford_SirWm">Sir William Elford</persName>--></salute>
+            </opener>
+            <p>Your kind &amp; charming letter, my dear <persName ref="#Elford_SirWm">Sir William Elford</persName> was exceedingly welcome to me. I shall obey <del rend="squiggles"><gap quantity="1" unit="word"/>of</del><add place="above">you</add> in all my best--but you &amp; <persName>Mrs Elford</persName><!--SCW: I don't know which Mrs Elford this is, so we can leave as is at this point--> will spoil not only me but my letters by your exquisite kindness--If once you make me think for a moment of what I am going to say--I am undone &amp;--you will get a <unclear>satisfaction</unclear><!--SCW: "satisfaction" is "petrifaction"-->--a fine specimen of the Lithographic art instead of the nonsense you are so good as to like.--We agree completely respecting <persName ref="#Queen_Caroline">the Queen</persName>--her defence seems to me to strengthen the evidence--&amp; I am convinced that 10 years hence every body will be of our opinion. It will never be a disputed point in history like the guilt of <persName ref="#MaryQoS">Queen Mary of Scotland</persName><!--SCW: I located her in the site index-->--Indeed I rather think that except <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> &amp; that part of the <quote>"reading public"</quote> called the mob every body is of the same opinion now. I have not the least notion that the <orgName>Whigs</orgName> think her innocent or the reformers either--they treat it as a mere party question--an engine for dislodging &amp; leaving out the ministry--&amp; they ought to be ashamed of themselves for confounding the great moral distinctions of right &amp; wrong to attain their own ambitious ends. I have done with them. And I beg you of all love, my dear <persName ref="#Elford_SirWm">Sir William</persName>, never to call me <quote><soCalled>"Miss Whig"</soCalled></quote> again. In the mean time I am heartily glad that the cause is over. It is no great triumph God knows to the Guilty -- &amp; the cessation &amp; laying to rest of the subject will be the greatest possible comfort &amp; relief to all sane persons. Of late one really could not stir without being <unclear>haunted</unclear><!--SCW: haunted seems like a good guess, so add a <supplied> tag, and then add your hashtag once you decide on one, which will show your editorial supplying of that word--> with it--people breathed an atmosphere of<pb n="2"/>
+               impurity, &amp; some persons <del rend="strikethrough"><gap quantity="1" unit="word"/>really<add place="above">the</add><!--SCW: I managed to discover the error that error that was firing here. Apparently, when using the <add> element, you don't need the closing </del> element before it. I don't know why. The error corrected itself when I accidentally deleted the closing </del> element. This runs counter to what's on the guidelines sheet, which you were following.--> became so hardened to the improprieties of the topic as to say with perfect unconsciousness things exceedingly distressing to hear. Our dear friend <persName ref="#Valpy_Richard">Dr. Valpy</persName> for instance got so used to talk in the style of the Queen's Trial, that his daughters have been several times obliged to leave the breakfast table &amp; <del rend="squiggles"><gap quantity="1" unit="word"/>really</del> regarded the unfolding of a newspaper as a signal for quitting the room. To be sure the dear &amp; excellent Doctor is not very particular. He brought a fair neighbour of your's into a curious <unclear>"scrape"</unclear><!--SCW: Yes, "scrape". You can delete the <unclear> element --> the other day--If you will promise to be very discreet &amp; not repeat it to any one who will tell the B<del rend="strikethrough"><gap quantity="4" unit="chars"/>owes</del> I will tell is you. You promise? Will Miss B<gap reason="smudged" quantity="3" unit="chars"/><supplied resp="#scw">owe</supplied></del>--Hannah--<persName>Glumdalclitch</persName> as <persName ref="#James_Miss">Miss James</persName> used to call her, is staying in the <placeName><unclear><supplied resp="#scw">Forbury</supplied></unclear></placeName><!--SCW: I think the <placeName> is "Forbury". I did a quick check and found an extant Forbury Hotel in Reading, built in the old County Council Chambers. Though it claims to have been established in 1913, it's a fair guess that it's named after another earlier Forbury. Until research can go deeper, I tagged it with the foregoing string (I wanted to make sure it worked) and we'll work to verify the name later.--> &amp; they have had in <placeName ref="#Reading_city">Reading</placeName> an Itinerant Lecturer--a showman of the sciences whose lectures were attended by all the house of <persName>Valpy</persName> &amp; half of the school. Well the last lecture was on Electricity–-one of the boys was electrified–-&amp; the good Doctor<!--SCW: "the good Doctor" is "Richard Valpy"--> before a hundred people very gravely led poor <rs type="person" ref="#Rowe_Hannah"><persName ref="#Glumdalclitch">Glumdalclitch</persName></rs><!--SCW: This reference to Glumdalclitch creates an odd string: MRM means to designate this Hannah Rowe woman, whom she is derogatorily referring to as Glumdalclitch, who is a character from Gulliver's Travels. So, to verify whether the code would work as <rs> wrapped within a <persName>, I tried the foregoing string, which seems to have been acceptable in XML code. The errors are firing because the names aren't in the site index.--> up to the youth, &amp; desired him to kiss her by way of communicating the shock &amp; completing the experiment. Luckily the boy was a lad of grace &amp; had too much modesty to comply–-&amp; as to poor Hannah she was quite enough electrified by the proposal. They say it was a curious scene. I did not see it myself–-for I have a horror of those sort of things &amp; hate an electrical apparatus as bad as a gun–-I don’t know why I hate either for I have never been <del rend="squiggle"><gap quantity="1" unit="word"/></del> shot or electrified–-but I have run away pretty often from both machines–-I remember when we had <persName>Mr. Walker</persName> to give us a course of Lectures at school I absconded from the Electricity-–I scudded away like a hare and I skulked under the bed till the Lecturer &amp; his apparatus were safe out of the house-–&amp; I verily believe I should do the same
+               <pb n="3"/>
+               tomorrow rather than stay–-only that I have now sufficient moral courage to own my fear.-–To return to our friend <persName>the Queen</persName>. I heard the other day a curious story of the way in which the <quote>“ladies address processions”</quote> are got up. <persName>Mrs. Bartley</persName> the actress was at her Mantua Makers giving some orders &amp; observed an unusual hurry scurry about the house–-at last a coach &amp; four stopped at the door &amp; four gaily dressed women got into it-–one of whom was very handsome. <del rend="squiggles"><gap quantity="1" unit="word"/></del><add place="above">When</add> the Mantua Maker came to her she apologised for detaining her &amp; explained the bustle by saying, that some customers of hers had requested she would lend some finery to the persons whom they should lend &amp; who were to fill a carriage in one of the Brandenburgh House processions that accordingly she had decked out these females <del rend="strikethrough"><gap quantity="3" unit="words"/><add place="above"></add></del><!--SCW: this string renders the above-the-line strikethrough, which I can't read, so left blank--> <del rend="strikethrough"><gap quantity="8" unit="words"/>who were to be returned safely to her</del><add place="below">who on their return were</add><!--SCW: I wanted to see if the foregoing string was acceptable to XML, so I did it here--> to be stripped of their borrowed plumage &amp; that the woman whom Mrs Bartley admired so much was a person, &amp; to whom she had trusted the most valuable of the dresses, (a French silk richly flowered with lace) knowing her to be exceedingly honest &amp; careful-–she (the Mantua Maker) had known her for many years-–she kept an apple [uncertain]<!--SCW: "uncertain" is "stall at"--> the corner of the street! <!--SCW: UNDERSCORE. I'm not sure how to code this, so leave this comment here, and I'll look up later--> pretty [uncertain?]<!--SCW: "uncertain" is not clear to me either. Code as <unclear> for now--> are they not? ___ <!--SCW: UNDERSCORE. I'm not sure how to code, so leave as is and I'll look up later--> When I said that Mrs Dickinson was the only living woman who believed the Queen innocent I did not mean to accuse Lady [scribble] Madelina Palmer of saying the thing that is not<!--SCW: "the thing that is not" is an allusion to Gulliver's Travels--> [?<!--SCW: "?" is "But"--> her Ladyship is I doubt not a little led away by party spirit and by the Lord of indulgence which women of fashion extend to those cases-–&amp; when she says she thinks the Queen innocent she means a very different sort of innocence from Mrs Dickinson, who really believes her to be as pure as the [uncertain]<!--SCW: I'm not certain either. Code as <unclear> for now.--> snow. <abbr><persName ref="#Palmer_Mad">Lady M. P</persName></abbr>’s<!--SCW: Just checking to see if the <abbr> string would work with the <persName>--> notion of an innocent Queen is probably, not very guilty-–how Mrs Dickinson would
+               <pb n="3"/>
+               I am convinced shake her own existence or her baby’s whom the perfect purity of the Queen’s very thought &amp; word &amp; action. I [shant?]<!--SCW: "should"--> think this a false perception &amp; be afraid that my dear Friend was upon this subject a little deceived<!--SCW: I think "deceived" is "diseased"-->, if I did not know that she has an instinct of credulity a power of believing such as no mortal ever possessed. She does not know what doubt means. Every word that is said she believes <emph><foreign>au pied de la lettre</foreign></emph>. The common forms of politeness, the dearest madam-–&amp; your faithful humble servant find in her the most absolute faith-–This is a very amiable mistake-–resulting from her own singular truth &amp; frankness-–but it’s a very troublesome one to some of her stiff proud neighbors, whose drawing talk, &amp; civil subterfuges she [oversets?]<!--SCW: Yes, "oversets"--> at a blow by not understanding them-–[??]<!--SCW: "hugs" or "lugs"? "gouty". I suggest coding it as <unclear><supplied>hugs. I'm sure about "gouty"--> people out of their carriage who only meant to leave a card &amp; “were sorry they had no time to [alight?]”<!--SCW: yes, "alight"-->-–&amp; [?]<!--SCW: ? is "promises"--> with regrets to fix his own day, an excuse-making grandee who had called to express his regret that he could not attend her dinner party--“[Whether?]<!--SCW: "Well then"--> why won’t you stay to day"--was her last answer to his last apology--&amp; the luckless {uncertain]<!--SCW: "uncertain" is "illustrissimo". It would be a foreign word--> ran away-–as I did from the electrification. “How sorry he was not to be able to stay-–how extremely unlucky that he is so engaged-–he’s a very polite man, and would be very glad to be a good neighbor.” Was all her remark. Her faith in human truth is incorrigible, and as she reads an opposition paper, no wonder she believes in the Queen-–the only chance was that the Attorney General might have gained her by having the first word-–[but Alderman?]<!--SCW: Yes, "but Alderman"--> Wood had [scribbles] [served?]<!--SCW: I'm not convinced it's "served". Suggest coding as <unclear>--> her before.-–By the way have you read a clever little joke upon the aforesaid Alderman called [?]<!--SCW: Can't tell this name. Tanhauser? Someone who served on the trial of Queen Caroline, I would think-->? Very
+               <pb n="4"/>
+               well done indeed! The story of Whittington and his cat--applied--as you may guess-–a very clever little book! (By the bye they are illuminating tonight in <placeName>Reading</placeName>-–making a terrible <emph><foreign>tintamarre</foreign></emph>-–bells ringing-–and a prodigious quantity of popping noises, produced as the conjecture by some little [pross things?]<!--SCW: "brass things"--> kept by a war-fancying Gentleman who calls them cannon-–and pistols and blunder busses and what not-–Thank Heaven I am not in that region of squibs and crackers. We don’t illuminate in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>-–that enlightened village is wiser.-–Besides Tentamen I have been reading a clever little Poem called Advice to Julia, which was in the abominable bad taste of addressing very graceful pleasant and Horatian verses to a lady of no equivocal character would be a most recommendable book-–and a cleverish work called Essays by a Gentleman who has left his lodgings; [scribbles] (skipping the Political Economy which I can’t understand and the English Constitution two words I am tired of )-–and Mrs. [ ???]<!--SCW: "Opie's last tales"-->-–of which the most certain thing that can be said is that they are exceedingly like her others--just the same things. She has no [real?]<!--SCW: "real" is "nice"--> discrimination of character like our two favorites-–and incidents cannot be varied ad infinitum-–so that I should really think she must begin to find herself [?]<!--SCW: ? is "at a loss"--> how to shew off her good heroines in small acts of generosity, and her war heroes in killing their fathers and mothers. __ Oh how different from [???]<!--SCW: ??? is "Miss Austen & Miss Edgeworth"-->-–Have you read the Critique on Mr. Edgeworth’s life in the last Quarterly? There is some truth in what they say of him-–but surely this Edgeworth deserved more respect.-–I don’t think my dear Friend that I quite agree
+               <pb n="5"/>
+               
+               with you as to the facility of imitating Scott’s novels--We have had nothing like them yet--&amp; I do not think we soon shall. Consider, with all [scribble] his faults the great &amp; rare qualities that must be united in such a novelist &amp;-–the [uncertain]<!--SCW: "uncertain" is "minute"--> and union<!--SCW: "unions" is "curious" I'm pretty sure--> learning which [uncertain]<!--SCW: "uncertain" is "seizes"--> with the [scribbles] certainty [uncertain]<!--SCW: "uncertain" is "& ease"--> of accurate knowledge on all the antiquarian detail that [uncertain]<!--SCW: "uncertain" is "suits"--> his purpose. The almost magical power of placing scenes and forms before you as in a picture--&amp; leading you through a changing country which you trace as in a map. (This power of external representation is only equaled by Chaucer, <sic>Bocacio</sic> &amp; as far as scenery goes by Spenser)--&amp; lastly his various &amp; extraordinary delineations of character. It is quite nonsense to compare him as the Edinburgh Reviewers do to Shakespeare in this respect and gives one the tendency to underrate him that such extravagant praises by a natural re-action always do-–his Characters have not the exquisite freedom of Shakespeare’s-–there is too much identity. He is afraid to [uncertain]<!--SCW: "uncertain" is "trust"--> them out of their prescribed bounds. Afraid to let them make any speech which cannot instantly be assigned to the right person. The keeping is too exact to be true to our [uncertain]<!--SCW: "uncertain" is "mixed"--> &amp; varying nature-–[uncertain] still the characters are finely [scribbles] conceived &amp; finely drawn, &amp; there is a noble spirit of humanity an indulgence to human frailty which sets a grand lesson to the world. He makes good Shakespeare’s most beautiful saying “There is some soul of goodness in things evil.” &amp; is as far as I know the only writer who has ever had candour &amp; fairness enough to tolerate opposite bigotries. No, my dear Friend--it is not the mere [uncertain]<!--SCW: I want to supply "uncertain" as <unclear><supplied>prosing</supplied></unclear>--> on some peculiar piece of history to illustrate that will [uncertain]<!--SCW: "uncertain" is "produce"--> even in powerful hands
+               <pb n="6"/> 
+               such novels as Walter Scott’s. As to Miss Hollow<!--SCW: "Hollow" is "Holford". Margaret Holford was the author of Warbeck of Wolfstein--> I don’t think she has the slightest intention to imitate him-–Warbeck of Wolfstein seems to me an attempt to portray in very black &amp; exaggerated colours the character of Lord Bryon-–does it not strike you so? Some of the anecdotes-–that of the role with the <add place="above"><metamark place="below" function="insertion" rend="caret">orange</metamark></add> flowers for instance-–are stories which have been currently told of his Lordship, &amp; altogether I am afraid there can be no doubt but it was intended as a portrait. I say afraid-–because Mrs. Joanna Baillie the friend <del rend="strikethrough"><gap quantity="3" unit="words"/>&amp;</del><!--SCW: In this deletion, "&" is the first deleted word of 3, the only one legible. I entered it between <del> elements. I'm not sure if there is a way of indicating its position within the deleted string, so I leave it here as is for later editors to verify--> of Lady Byron ought not to have given the sanction of her name to such a libel-–He is quite bad enough, Heaven knows, without being loaded with crimes that do not belong to him. I wonder I did not mention the work to you, which I thought as you do very powerful-–you will have found out by this time that the [uncertain]<!--SCW: I had to search for this one. The word is "Zingari"--> was not an [uncertain]<!--SCW: "uncertain" is "old"--> woman, &amp; that the conclusion though rather too combustible to [suit?]<!--SCW: Yep, "suit"--> my fancy can hardly be called unhappy. (I really think they must be [uncertain]<!--SCW: "uncertain" is "springing"--> a mine in Reading-–there is such a grand crash every now &amp; then rising out of the hubbub-–“God help them silly one’s”-–as Mr. Canning says in his clever parody of Mr. [uncertain]<!--SCW: "uncertain" is "Southey's"--> ode. Don’t you delight in the “Poetry of the Antijacobin?)-–Miss Holford wrote you know a very fine &amp; powerful Poem Wallace or the [Light?]<!--SCW: "light" is "Fight"--> of Falkirk which came out the same year with my Christina &amp; was worth a thousand of it. (Don’t contradict this-–if you do I shall think that you think I am begging for a compliment instead of telling a truth) &amp; rather think that Miss Holford’s present work is more like Miss Porter than Walter Scott. Did you ever read Thaddeus of Warsaw? Or the Pastor’s [uncertain]<!--SCW: "uncertain" is "Fireside"-->? They are much in the lame style only less powerful-–less manly. <pb n="7"/>
+               I am very glad to hear that Lady Madelina does not write to you-–it is exceedingly kind &amp; civil in her indeed. If she did woe be to me! My [uncertain]<!--SCW: "uncertain" is "nose"--> would certainly be out of joint. I dare say her silence is purely in condescension of my feelings for I [uncertain]<!--SCW: "uncertain" is "told"--> her she had superseded me &amp; that I took it very hard. She is amazingly kind not to write-–And yet she ought to write too, that I might enjoy my right of reprisal by reading her letter. Would you show them to me? You are not the only traitor among my correspondents-–if that be any consolation-–I happened to say to a friend in Town that Mr. [Harbitt?]<!--SCW: "Hazlitt"--> was “the most delightful &amp; most impudent of writers” or words to that effect &amp; what did my correspondent do but read him this curious [uncertain]<!--SCW: "uncertain" is "panegyric"--> the first time they met. Luckily Mr. Hazlitt is good humoured and too in it without being astounded at my impudence.-–Mrs. Jonathan Elford is only too kind in condescending to be [uncertain]<!--SCW: "uncertain" is "amused"--> with such chit chat-–flattery of that sort is very dangerous to me-–one’s heart warms to as kindness-–does it not? I will certainly write again as you did me-–but what shall I do for a subject? How is Lady Madelina altered? Was not she a Queen’s woman at [Birkham?]<!--SCW: "Bickham". Its tag would be <placeName ref="#Bickham_village">--> She was a very determined one at Reading I know-–Yes-–she is a most delightful woman though she is my rival-–I wish she and her excellent and most gentlemanly [scribbles] husband would come to live at Luckley-–It is quite tantalizing to know a little of her and wish to know a great deal.</p>
+                  
+                  
+                  
+                 
+               
+            <!--Where there's a page break record it inside the relevant body paragraph like this, with the self-closing page-break element. n="2" indicates the START of the second page. (So we will NEVER have a <pb n="1"/>).-->
+               
+               <!--yyyy-mm-dd editorID: INDICATE IN BLOCK CAPS WHEN YOU STOP WORK AND THE TRANSCRIPTION IS INCOMPLETE, like this:
+               2015-10-04 ebb: I STOPPED HERE! TRANSCRIPTION INCOMPLETE!-->
+            
+            <!--More body paragraphs as needed.-->
+            
+            <closer> 
+               Adieu, my dear Friend--Forgive this long stupid letter, and believe me ever &amp; most affectionately yours<lb/>
+               <!--The first <closer> includes Mitford's signature, but does NOT include the postscript. (Later, we'll use <closer> again to hold Mitford's address on her address leaf if it's present.) As Mitford writes a complimentary close broken out into lines, indicate it with line breaks using the self-closing <lb/> element.  Here's an example:
+            <closer>
+            Yours<lb/>
+            Very sincerely<lb/>
+            <persName ref="#MRM>M. R. Mitford</persName>.
+            </closer>-->
+            <persName ref="#MRM">M. R. Mitford</persName><lb/>
+              
+            </closer> 
+            
+            <postscript><p>Kindest thoughts from Papa and Mama. Pray don’t mention the story of Hannah Rowe and the doctor.</p>
+               
+               <pb n="8"/>
+            </postscript>
+            
+              
+            <!--You can include a <pb/> here, or inside the postScript.--><!-- Format for postscripts.  Postscripts do NOT go insider closer tags. Adjust to take into account the order in your letter. Sometimes the signature is on page three, the address on page four, then the postscript follows back on the top of page one, for example.-->
+            
+             <closer><!--Use the <closer> element again to hold Address Leaf information, indicating where Mitford directed her letter.-->
+               <address> <!--Include any text written on the address leaf; use a separate "addrLine" for each line and indicate line breaks. Closer tags must also enclose the address section. NOTE AGAIN: If Mitford has a postscript, that postcript must *not* be enclosed in the closer tags, even when they are written after the signature and before the address. It's a TEI rule (sigh). -->
+            <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+            </address>
+            </closer> 
+            
+           
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+       <listPerson>
+          <person xml:id="proposed_new_ID">
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

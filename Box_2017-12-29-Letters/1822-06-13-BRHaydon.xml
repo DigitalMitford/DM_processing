@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- <?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> -->
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM1794">Letter to <persName ref="#Haydon">Benjamin Robert Haydon</persName>, <date when="1822-06-13">June 13, 1822</date>date</title> 
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#err"><!--2017-08-12 ms: student editor xml:id="#ms"--></editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#ms">Madelyn N. Scott</persName>
+               <persName ref="#err">Elizabeth Raisanen</persName>              
+               
+               <persName ref="#Id_who"><!--name here--></persName><!-- If you're the last person interacting with the file, enter your name last on the list and use assigned xml:id for ref="#" -->               
+               
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-08-16">2017-08-16</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#Id_who">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         
+         
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-08-08">8 August 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>13June1822BRHaydon1a#.JPG, 13June1822BRHaydon1b#.JPG, 13June1822BRHaydon2a#.JPG, 13June1822BRHaydon2b#.JPG, 13June1822BRHaydon3a#.JPG, 13June1822BRHaydon3b#.JPG, 13June1822BRHaydon4a#.JPG, 13June1822BRHaydon4b#.JPG</idno></resp></respStmt>
+         </editionStmt>
+         
+         
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         
+         
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 453</idno>
+               </msIdentifier>
+               <head>Letter from <persName ref="#MRM">Mary Russell Mitford</persName> to <persName ref="#Haydon">Benjamin Robert Haydon</persName>, <date when="1819-06-08">1819 June 8</date>. </head> 
+              
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> 
+                     <support> 
+                        <p>One sheet of folio <material>paper</material> folded into four writing surfaces (each surface photographed separately). The letter begins on the top of the first page, and continues from top to bottom of pages two through four. The text of the letter on the fourth page is split after the fifth line, allowing space for the address leaf. The address leaf is centered on the page, and oriented perpendicularly to the text. The paper is folded into thirds two additional times (forming nine rectangular regions distinguished by creases in the paper) for sealing and posting.</p>
+                        
+                        <p>The letter bears three distinct postmarks:</p> 
+                           <p>1) one circluar, black mileage stamp (left of the address leaf)
+                           <!--Applied upon deposit at local post office-->
+                           reading
+                           <stamp>
+                              READING <lb/>
+                              <unclear><supplied resp="#ms">JU 13</supplied></unclear><lb/>
+                              <unclear><supplied resp="#ms">1822</supplied></unclear><lb/>
+                              <unclear><supplied resp="#ms">42</supplied></unclear>
+                              <note resp="#ms">This stamp signifies that the letter was deposited at the local post office on <date when="1822-06-13">June 13, 1822</date>, and that the distance between <placeName ref="#Reading_city">Reading</placeName> and <placeName ref="#London_city">London</placeName> is 42 miles.</note>
+                           </stamp></p>
+                           <p>2) one elliptical, red delivery stamp (left of the address leaf)
+                           <!--Applied upon transfer from Inland Mail to London's local "Twopenny Post" for delivery-->
+                           reading 
+                           <stamp>
+                              <time>10 o'Clock</time><lb/>
+                              <date>* JU * 18 *</date><lb/>
+                              <date>1822</date> F.N.<hi rend="superscript">n</hi><note resp="#ms">The abbreviation, "F.N.<hi rend="superscript">n</hi>," stands for "Forenoon." The order of the date (Month, Day) and the single rim surrounding the text on the stamp indicate that the letter was delivered to the Chief Postal Office.</note>  
+                           </stamp></p>
+                           <p>3) one circular, black franking stamp (partially covering the address line)
+                           <!--Indicates the necessary payment to read the letter-->
+                           reading
+                           <stamp>
+                              FREE <lb/>
+                              <date><unclear><supplied resp="#ms">18 JUNE</supplied></unclear></date><lb/>
+                              <date>1822</date>
+                           </stamp></p>
+                     </support>
+                     <condition>
+                        <p>Pages three and four of the letter exhibit a small hole in the paper from removal of the wax seal. Small, circular regions of sepia staining are present throughout the document (but not inhibitive of text legibility). <note resp="#ms">The size and scattered placement of these stains could indicate randomized water damage from rainfall.</note></p> 
+                     </condition>      
+               </supportDesc>
+               </objectDesc>
+                  
+                  
+                  <sealDesc>
+                     <p>Red wax seal, with partial adherence to the third and fourth page surfaces. There is not enough of the wax remaining on the letter to distinguish what seal <persName ref="#MRM">Mitford</persName> used.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     
+     
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "43" in the top left of the first leaf.</handNote>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#black_ink" medium="black_ink">Someone, apparently other than Mitford, perhaps cataloging letters and describing them. Two illegibile lines of text are present in between the mileage stamp and delivery stamp to the left of the address leaf on the fourth page of the letter.</handNote>
+           
+           <!--2017-08-15 ms: I included a hand note tag for J.B. Monck's franking signature below-->
+           <handNote corresp="#Monck_JB" medium="black_ink"><persName ref="#Monck_JB">J.B. Monck</persName> provided a franking signature on the fourth page of the letter, in line with the address leaf.</handNote>
+        </handNotes>
+     </profileDesc>
+     
+     
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>  
+  </teiHeader>
+   
+   
+  <text>
+      <body>
+         <div type="letter">
+            
+            <opener> 
+               <dateline>
+                  <name type="place" ref="#ThreeMileCross">Three Mile Cross</name> 
+                  <date when="1822-06-13">June 13<hi rend="superscript">th</hi> 1822.</date> 
+               </dateline>
+            </opener> 
+            
+            <!--2017-08-15 ms: June 13th, 1822 was a Thursday-->
+
+            <p>A thousand thanks, my dear Sir, for your kind &amp; delightful letter. I felt that I had not deserved it--for I must have appeared sadly inattentive &amp; undeserving by being three days in town without waiting on <persName ref="#Haydon_Mrs">Mrs. Haydon</persName>--But you know how it happened--On the <date>Friday</date> I was not <unclear><supplied resp="#ms">sure</supplied></unclear> that you had not moved in the first place when <persName ref="Pope_Alex">Pope</persName> set out in quest of you, &amp; in the second it was necessary that I should keep myself perfectly quiet to attend an appointment with <persName ref="#Kemble_C">Mr. C Kemble</persName> at two <choice><sic>oclock</sic><reg resp="#ms">o'clock</reg></choice>--<date>Saturday</date> you were as I knew <unclear><supplied resp="#ms">out</supplied></unclear>--<date>Sunday</date> as I knew coming--besides which I was actually confined to the <rs type="place" ref="#ThreeMileCross">house</rs> on both of those days from the necessity of not missing a friend whom I was obliged to see after my interview with <rs type="person" ref="#Macready_Wm">the Manager</rs> to make sure that I might not by altering to please him displease <persName ref="#Macready_Wm">Mr. Macready</persName>--&amp; on <date>Sunday</date> Evening I was so unwell as to be obliged to make <unclear><supplied resp="#ms">up</supplied></unclear> my friend to disappoint myself by breaking my appointment for <date>Monday</date> morning--&amp; it was very well I did so--for <del rend="squiggles"><gap quantity="1" unit="word"/></del> when the morning came I was fit for nothing but to be <unclear><supplied resp="#ms">backed</supplied></unclear> off home. In fact a country lady who lives almost literally in the open air, in green fields or flowery gardens, is terribly out of her element in <placeName ref="#London_city">London</placeName> in hot weather--All the time that I was in <unclear><supplied resp="#ms">Norton</supplied></unclear> Street I felt just as I suppose that Patriarchal Larch <!--2017-08-15 ms: proposed xml:id is "#larch_eu"-->--<unclear><supplied resp="#ms">tell</supplied></unclear> of hotland must have done, when crammed into a garden hot &amp; coddled amongst the myrtles <!--2017-08-15 ms: proposed xml:id is "#myrtle_common"--> &amp; orange trees of the 
+               <pb n="2"/>
+
+
+
+Duke of <unclear><supplied resp="#ms"><choice><sic>Athole</sic><reg resp="#ms">Atholl</reg></choice></supplied></unclear>'s <!--2017-08-15 ms: proposed xml:id is "#Duke_Atholl_MurrayJ"--> <note resp="#ms">Mitford does not make a direct indication as to which Duke of Atholl she is referencing; it is assumed that she is speaking of the Duke living at the time of writing.</note> greenhouse <note resp="#ms"><persName ref="#MRM">Mitford</persName> is likely comparing the European larch to smaller trees to emphasize feeling out of place in the hot cityscape of <placeName ref="#London_city">London</placeName>.</note>. But I am so sorry not to have seen the two <unclear><supplied resp="#ms">charms</supplied></unclear> of <placeName ref="#Lisson_Grove">Lisson Grove</placeName>--The furniture--&amp; its fair <unclear><supplied resp="#ms">Inspirer</supplied></unclear><!--2017-08-12 ms: is there a specific 'Inspirer' MRM references here?-->. Well I will hope that the day may come when I shall be so fortunate as to make acquaintance with both--especially the latter. I cannot tell you, my dear <persName ref="Haydon">Mr. Haydon</persName>, with what pleasure &amp; interest I read your fresh &amp; glowing account of your mutual happiness--No wonder that you fear society--or rather that you fear that fine company which does not deserve the name of society, &amp; which seems to me good for nothing but to spoil the mind, the manners, the very beauty of women, &amp; to turn them into the sort of fine <note resp="#ms">There is a small tear in the paper here that could be mistaken for a comma.</note> ladies which you have described so well in your portrait of the wife of the Portrait Painter <!--2017-08-18 ms: I searched the National Portrait Gallery website, and could not locate a specific portrait that would fit the description of this piece; who is MRM referring to as the "Portrait Painter" (could the couple potentially be Richard and Maria Cosway)?-->--poor man. How you must have pitied him! For my <unclear><supplied resp="#ms">part</supplied></unclear> I think that except here &amp; there some "creature of poetry" <note resp="#ms">It is unclear if <persName ref="#MRM">Mitford</persName> is making a specific reference here. However, because she was well aquainted with the writings of <persName ref="#Keats">John Keats'</persName>, <persName ref="#MRM">Mitford</persName> could be referencing the phrase, "fair creature of an hour," from line nine of his poem, "When I Have Fears That I May Cease to Be."</note> just as you have been happy enough to meet with &amp; to deserve, Ladies are nowadays all alike--all accomplished--all literary--all artificial--with heads divided between Quadrilles <note resp="#ms">Resembling American square dancing, the quadrille was a popularized dance in Europe during the 18<hi rend="superscript">th</hi> and 19<hi rend="superscript">th</hi> centuries in which four couples assembled in a square formation and took turns dancing.</note> &amp; criticism--If <unclear><supplied resp="#ms">routs</supplied></unclear><!--2017-08-18 ms: Also could be 'routes'--> <unclear><supplied resp="#ms">&amp;</supplied></unclear> reviews had been extant in <persName ref="#Shakespeare">Shakespeare's</persName> time we should not have had the <persName ref="#Viola_TN">Violas</persName> &amp; the <persName ref="#Desdemona_O">Desdemonas</persName>.--You see I cannot help coming back to the Drama. If <persName ref="#James_Miss">Miss James</persName> had the pleasure of seeing you she probably told you that <title ref="#Foscari_MRMplay">"Foscari"</title> was accepted--&amp; that <persName ref="#Kemble_C">Mr. Charles Kemble</persName>, whose conduct has really been very kind, promises certainly to bring it out next season--but there must be another alteration in the catastrophe--which as well as the delay exceedingly
+               <pb n="3"/>               
+               
+               
+               
+               provokes my still kinder, though unknown, friend <persName ref="#Macready_Wm">Mr. Macready</persName>. I must alter it however as well as I can--A manager has certainly a right to require that--&amp; I am sure from the extreme frankness &amp; friendliness of <persName ref="#Kemble_C">Mr. C. Kemble's</persName> manner that he is really afraid of the present catastrophe--But you may imagine what a job it will be when <unclear><supplied resp="#ms">I tell</supplied></unclear> you, that this fifth Act has already been remodelled 6 times! <persName ref="#Doge_F">The Doge</persName> has died of joy--&amp; his <persName ref="#Foscari_Fr">son</persName> has died of joy--there have been two poisonings (the one by the bye worse than the other--I am a sad hand at a fatal <choice><sic>draught</sic><reg resp="#ms">draft</reg></choice>)--<!--2017-08-18 ms: This em dash is faint in comparison to other characters in the document; could it due to the digital rendering? Or did MRM begin the dash, but not finish it?-->two assissinations--&amp; how I am going to kill <rs type="person" ref="#Foscari_Fr">my hero</rs> <!--2017-08-18 ms: Is this the character MRM is referring to here?--> by fair fighting. This, to compare a very small thing with a very great one, is almost like the alterations in the Head of Christ in your great <rs type="title" ref="#ChrstEJRslm_Haydon">Picture</rs>--at <damage agent="tear" unit="char" quantity="1"><unclear><supplied resp="#ms">l</supplied></unclear></damage>east it had the same uncomfortable &amp; <note resp="#ms">This ampersand is partially covered by red wax from the letter's seal.</note> unsettling effect on my mind, that the <del rend="squiggles"><gap quantity="1" unit="word"/><unclear><supplied resp="#ms">altering</supplied></unclear></del><add place="above">
+                  
+                  <!--2017-08-12 ms: I cannot tell what this word is.-->
+               
+               </add> your sublime conception must have had on <choice><sic>your<unclear><supplied resp="#ms">'</supplied></unclear>s</sic><reg>yours</reg></choice><note resp="#ms">Ink from the delivery stamp has bled through the page at this location in the letter, but does not affect the legibility of either the stamp text or letter content.</note>. I have too a lurking fear that, not from any fault of <rs type="person" ref="#Macready_Wm">the Manager</rs>, but from an unlucky confluence of better Plays <!--2017-08-18 ms: Is MRM referring to specific plays here?-->, my poor <title ref="#Foscari_MRMplay">Foscari</title> may never be acted at all. <persName ref="#Scott_Wal">Sir Walter Scott</persName> is going to take the field--&amp; worse still--no not worse--better for literature &amp; the Drama &amp; the <rs type="place" ref="#England">Country</rs> (God defend me from Envy!)--better still <persName ref="#Knowles_Sheridan">Mr. Knowles</persName> has another Play <note resp="#ms">If she is speaking about a specific play, <persName ref="MRM">Mitford</persName> could be referencing <persName ref="#Knowles_Sheridan">Sheridan's</persName> <emph rend="underline">William Tell</emph>, completed in 1825.</note> if not two to send in--&amp; what could stand against another <title ref="#Virginius_play">Virginius</title>? <persName ref="#Kemble_C">Mr. Kemble</persName> promises through all--&amp; I should believe--only that it is so difficult to replant Hope when it has once been <unclear><supplied resp="#ms">booted</supplied></unclear> out--Nevertheless I shall write on, &amp; attempt higher things than this pretty but too womanish Tragedy.
+               <pb n="4"/>              
+              
+               Pray forgive me for writing so much on so unworthy a subject--but I am so interested in all that concerns you that I cannot help flattering myself that you in some small degree return the compliment--&amp; this is not an affair of vanity--but of comfort--almost of <note resp="#ms">The content of the letter is written around the Address Leaf information, broken at this point in <persName ref="#MRM">Mitford's</persName> message.</note> subsistence. Oh what a terrible thing it is to have only the powerless will to be offense to those who are so very very dear!--God bless you my <persName ref="#Haydon">dear friend</persName>!--My <unclear><supplied resp="#ms"><persName ref="Mitford_Geo">father</persName> &amp; <persName ref="#Russel_M">mother</persName></supplied></unclear> join in all that is kindest to you &amp; to <persName ref="#Haydon_Mrs">Mrs. Haydon</persName>--whom I cannot think of as a stranger--</p>           
+            
+            <closer>  
+            <lb/>Ever most sincerely yours <signed><persName ref="#MRM">MR Mitford</persName></signed>  
+            </closer>             
+            
+             <closer>
+               <address>
+                  <addrLine><placeName ref="#Reading">Reading</placeName><date when="1822-06-13">June <del rend="strikethrough" unit="chars" quantity="4"><unclear><supplied resp="#ms">sixt</supplied></unclear></del>seventeen 1822</date></addrLine>
+                  <addrLine><persName ref="#Haydon">B.R. Haydon <unclear><supplied resp="#ms">Esq<hi rend="superscript">re</hi></supplied></unclear></persName> <note resp="#ms">The word following <persName ref="#Haydon">Haydon's</persName>name is obscured by the postmark stamp</note></addrLine> 
+                  <addrLine><placeName ref="#StJohns_Place">S<emph rend="underline">t</emph> Johns Place</placeName></addrLine>
+                  <addrLine><placeName ref="#Lisson_Grove">Lisson Grove</placeName></addrLine>
+                  <addrLine><placeName ref="#Regents_Park"><choice><sic>Regents</sic><reg>Regent's</reg></choice> <unclear><supplied resp="#ms">Park</supplied></unclear></placeName></addrLine>
+                  <addrLine><placeName ref="#London_city">London</placeName></addrLine>
+               </address>
+                <persName ref="#Monck_JB">J.B. Monck</persName><note resp="#ms">The name of <persName ref="#Monck_JB">John Berkeley Monck</persName>, who franked some of <persName ref="#MRM">Mitford's</persName> letters, is left-justified and written adjacent to <persName ref="#Haydon">Haydon's</persName> address on the Address Leaf.</note>
+            </closer>  
+         </div>
+      </body>
+     
+     
+     
+     
+     <back>
+        <div>
+           <list sortKey="plants">
+              <item xml:id="larch_eu">
+                 <name>European larch</name>
+                 <name>
+                    <rs type="genus">Larix</rs>
+                    <rs type="family">decidua</rs>
+                 </name>
+                 <note resp="#ms"> Mitford may refer to the European larch, a deciduous conifer that can grow up to 100 feet in height and 50 feet in circumference (due to its sprawling, drooping lower branches). For additional information, refer to <ptr target="https://www.gardeningknowhow.com/ornamental/trees/larch/growing-a-larch-tree.htm"/></note>
+              </item>
+           </list>
+           
+           <list sortKey="plants">
+              <item xml:id="myrtle_common">
+                 <name>common myrtle</name>
+                 <name>
+                    <rs type="genus">Myrtus</rs>
+                    <rs type="family">communis</rs>
+                 </name>
+                 <note resp="#ms"> Mitford may be refering to the common myrtle, a small (16 ft) flowering tree with white or pink petals. The common myrtle is a native plant of the European region. For additional information, refer to <ptr target="https://en.wikipedia.org/wiki/Myrtus_communis"/></note>
+              </item>
+           </list>
+              
+              
+       <listPerson>
+          <person xml:id="Duke_Atholl_MurrayJ">
+             <persName>
+                <surname>Murray</surname>
+                <forename>John</forename>
+                <roleName type="nobility">4<hi rend="superscript">th</hi> Duke of Atholl</roleName>
+             </persName>
+             <persName></persName>
+             <persName type="alternate">4<hi rend="superscript">th</hi> Duke of Athole</persName>
+             <persName>Marquess of Tullibardine</persName>
+             <persName>Lord Lieutenant of Perthshire</persName>
+             <birth when="1755-06-30"></birth>
+             <death when="1830-09-29"></death>
+             <note resp="#ms">
+                
+                <!--2017-08-16 ms: Mitford does not make a direct indication as to which Duke of Atholl she is referencing; it is assumed that she is speaking of the Duke living at the time of writing-->
+                
+                <p><persName ref="#MRM">Mitford</persName> makes a general reference to the "Duke of Atholl" in her 13 June 1822 letter to B.R. Haydon. The Duke of Atholl lived in Blair Castle, located in Perthshire, Scotland. In 1822, John Murray, the fourth Duke of Atholl, would have been in office. Murray (as the eldest son) succeeded his father in dukedom, served from 1774 until his death in 1830, and was succeeded by his firstborn son John Murray, the fifth Duke of Atholl. Murray maintained a position in the House of Lords (of the Peerage of Great Britain) after becoming Earl Strange. He is credited with cultivating the Dunkeld Larch by cross-breeding the Japanese Larch with the European Larch. For additional information, refer to the following: <ptr target="https://en.wikipedia.org/wiki/John_Murray,_4th_Duke_of_Atholl"/> and <ptr target="https://en.wikipedia.org/wiki/Blair_Castle"/></p>
+             </note>
+          </person>
+          
+          
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="2017"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Above are the lines that define this document as XML, and that establish the schema rules that define it as TEI and part of the Digital Mitford project. The last is the TEI "root" element which must wrap the entire document. All TEI documents must contain two parts:
+      1) a <teiHeader> that contains a required sequence of elements that describe the origin, content, and editorial work on a document, and
+      2) a <text> element that holds the body of the document itself. 
+   -->  
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="Id_what">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, <date when="1820-12-19">December 19, 1820</date> date</title> <!--Look up the xml:id in the MitfordMS Excel spreadsheet, and look for other identifying info on the repository, etc, there. Insert full name of letter addressee. 
+               For the persName, use the assigned xml:id from the Site Index at http://digitalmitford.org/si.xml 
+               List the date the way we'd like it to appear in a web rendering of the document: as in March 26, 1820. The date should be our best sense of the date on which Mitford began this letter, and is usually listed at the top of the letter. We'll tag the date formally in <msDesc> below, since often dates are tricky or only partially written out by Mitford. The date in the titleStmt is the date *we've* determined, for listing and posting when we publish this file. -->
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#Id_who"><!--Editor on the Mitford project, referenced by id from Site Index. Editors, change to your name and id; students, leave as name of your instructor. --> </editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor><!--We've added this in 2015, as they are now hosting our web server. As other sponsors who help us come on board, for example if we receive grant funding, we'll add sponsor lines here.-->
+            <principal>Elisa Beshero-Bondar</principal> <!-- the lines above are standard. don't change -->
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#alw">Aymee Lynn Woody </persName> <!-- List all transcribers or coders here, editors and students alike, <persName> by <persName>.-->
+               <persName ref="#Id_who"><!--name here--></persName><!-- If you're the last person interacting with the file, enter your name last on the list and use assigned xml:id for ref="#" -->
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-02-15">February 15, 2017</date><!--Fill out and update the date here as different proofreaders work with this file. Dates inside the attribute @when take the form of a hyphen-separated four-digit year followed by two-digit month and two digit day, so May 2, 2015 comes out as 2015-05-02. -->
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#scw">Samantha Webb</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-02-01">February 01, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno><!-- For the text inside this element, idno, make a comma-separated list of each .jpg photo file name in your Box folder associated with your letter. It might look like this:
+               DSCF9476.jpg, DSCF9477.jpg, DSCF9478.jpg, DSCF9479.jpg, DSCF9480.jpg, DSCF9481.jpg, DSCF9482.jpg, DSCF9483.jpg, DSCF9484.jpg, DSCF9485.jpg
+Change to reflect photo file names for your letter (as you see here, including .jpg extension).--></idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <!--Uncomment the appropriate line, based on the archive that holds the physical copy of this letter, and delete the other comment line(s).-->
+               <p><!--Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.-->
+                </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. -->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> <!-- Change to reflect correct ms. collection. -->
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 373</idno> <!--Consult Mitford letters spreadsheet (MitfordMS.xslx). Change to reflect the xml:id and shelfmark information for this ms. collection and letter. For RCL, ff. numbers differ for each letter.-->
+               </msIdentifier>
+               <head>Letter from Mary Russel Mitford to Mary Webb, <date when="1820-12-19">1820 December 19</date>.
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> <!-- Physical description of the letter goes here: paper size and condition, seal, postmarks, etc. See some posted examples in this Box folder but write yours to describe YOUR letter.-->
+                     <support> <p> One sheet of <material>paper</material>, folded in half vertically and in thirds horizontally. All four surfaces contain text. The paper is 18.34cm in length and 11.34cm in height. The name, Mrs. Webb and her location,[?], appears on the first page, which is the left side of the paper; the correspondence begins on the right side and continues to cover the backside of the paper entirely.<!--Text describing the document. Include information on the material, usually thus: <material>paper</material> and the number of page surfaces photographed. So when Mitford writes over two sheets of paper on the front and back of each, we've photographed four surfaces. When she writes on one sheet front and back, we've photographed two surfaces. Work closely with the photos of your letter to determine the number of sheets and separate surfaces, and describe how they are folded: in thirds? There is likely to be more than one photo of the same surface.--> </p> 
+                        <p><!--Here, describe the address leaf and any postmarks and postal fees recorded on the paper. 
+                           Refer to our slides on identifying and reading postmarks, here:  
+                           1) whether it is missing
+                           2) if present, does it have a postmark? Describe it, as in this example: Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>.-->
+                           <!--FOR REFERENCE on HOW TO IDENTIFY AND READ POSTMARKS ON A MITFORD LETTER see our slides posted on our Wordpress blog: https://digitalmitford.wordpress.com/2014/05/27/the-digital-mitfords-guide-to-19th-century-british-postmarks-and-how-to-code-them-in-tei/ -->
+                        </p> 
+                        <!-- Continue to describe new postmarks here. Use a separate <p> for each, as below-->
+                        <p><!--Here's a sample second <p> indicating another postmark: A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.--></p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on right edge of page three where wax seal was removed.</p> <!-- change. -->
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal<!--Describe the seal Mitford is using here, if it's present. Otherwise, indicate that No seal is present. Here's an example description of a seal: Red wax seal, complete, adhered to page four.--></p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><!--This section documents and identifies whenever we see additional hands, other than Mitford's, at work in the document. Those hands could be a contemporary (such as her mother), but they're more frequently marks made by later editors such as William Harness or Francis Needham. Use the <handNote> elements to describe the role of each hand in this manuscript. If the hand is, say, Mitford's mother's and is writing a page of the letter, you indicate when that happens in the body of the letter using the <handShift> element. The @corresp attributes on <handNote> point to xml:ids stored (or to be stored) in our Site Index.-->
+           <handNote corresp="#Id_who"><!--Description of role in this mansuscript.--></handNote>
+           <!--Below are some SAMPLE HANDNOTES that appear commonly on MANY letters. Please be sure to CHANGE these if your letter differs.-->
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. <!-- Don't change the preceding two sentences if this letter has red crayon. In the *following* sentence, describe red crayoning on this letter. -->A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. <!-- Don't change the preceding sentence if this letter has grey pencil. In the following sentence, describe penciled numbers or change/add whatever text you see written in pencil. -->This letter is numbered "11" in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><!--Within the <body> element the text of our elements records our transcription of Mitford's text, and any editorial notes we need to add. -->
+         <div type="letter">
+            <opener> 
+               <add hand="#Id_who"><!--Did someone other than Mitford record a number or some notes at the top of this letter? This is where we'd indicate what was written and who wrote it. Omit if absent.--></add> 
+               <dateline><!--The dateline of a letter, if present, goes here. The date line typically includes (in any order) a date and a location, as Mitford records where she is when she begins a letter. When Mitford's dateline is complete and we have no reason to doubt her record, we use that as our default for the date. If there's no date line, omit this element. Always record this in the order in which Mitford presented it. If she puts the date first, you do the same. If she puts the place first, you do the same.-->
+                  <name type="place" ref="#Id_where"><!--Mitford's record of the place. The @ref attribute records the id on the Site Index entry for this place.--></name> 
+                  <date when="1820-12-19">Tuesday Morning.</date>
+               </dateline>
+               <salute>My dear friend</salute>
+            </opener>
+            <p>Our delightful day on Sunday was concluded by a ride home quite as delightful -- warm &amp; mild like June -- I should be <del rend="squiggles"><gap quantity="1" unit="word"/><supplied resp="#scw">delight</supplied></del> but too happy to repeat it on Thursday but <persName ref="#Mitford_Geo">papa</persName>  goes early tomorrow morning into <placeName ref="#Hampshire_county">Hampshire</placeName> &amp; does not return till Sunday. -- Tell dear <persName ref="#Webb_Mary_elder">Aunt Mary</persName> that I thank her a hundred times for her cloak which I return with this. I will not trouble you for <title xml:id="CharlesV">Charles the Fifth</title> as I can get him from the Institution I find. I have set papa today to hunt in the index for <title ref="#Fiesco_play">Fiesco</title> -- I wonder what hand he'll <pb n="2"/> make of it? -- I wonder what hand I shall make of it!!! Tom Thumb? Eh, <persName resp="#scw #lmw">Miss Eliza</persName>? -- Don't forget to wish to come to the county meeting -- there's a dear -- &amp; then you will come. Wishing and willing are everything in this world. <persName ref="#Napoleon">Napoleon</persName> carries all before him only by the intense power of his will, so why not <persName ref="#Webb_Mary_younger">Mary Webb</persName>? -- Tell your dear father <rs type="person" ref="Webb_James"> that I am convinced <persName ref="#Mitford_Geo">Papa</persName> was mistaken in attributing the abuse of <persName>Henry Marsh</persName><note resp="alw">The rift between Henry Marsh and HH Milman is chronicled in the History of Parliment Online.  http://www.historyofparliamentonline.org/volume/1820-1832/constituencies/reading</note> in the last <placeName ref="#Reading_city">Reading</placeName> paper to <persName ref="#Milman_HH">Mr. Milman</persName>. The Greek &amp; the ill nature looked like him -- but the writing is too <pb n="3"/> bad to be by possibility the production of an Editor Elect of the <title ref="#QuarterlyRev_per">Quarterly</title>. <note resp="alw">This is referencing an article written in the Windsor and Reading Eton Express Journal</note> I had not read it on Sunday or I should have Said So then -- I had not even read your draft which is very well done indeed -- I wish to come &amp; hear you one of these days -- for really you and your master must both be extraordinary to have made such a progress in so short a time -- The learning those verses from the <title>Phedre</title> is quite miraculous in such young beginners. It is almost - quite - the most celebrated <emph>tirade</emph> in French Tragedy. I don't mean to have such a long speech in  <title ref="#Fiesco_play">Fiesco</title> to puzzle any future French learner of English -- I am considerate to posterity. -- Goodbye my dear and my love -- Ever your's -- M.R.M.</rs>p>
+            </p>     
+            
+           <p> <!--More body paragraphs as needed. Include context encoding and indications of gaps, deletions, insertions, etc., following guidelines in our Codebook. Mitford's ampersands must be rendered with a special unicode character thus: --> &amp; is an ampersand </p>
+            <p> <!--More body paragraphs as needed.-->
+            <!--Where there's a page break record it inside the relevant body paragraph like this, with the self-closing page-break element. n="2" indicates the START of the second page. (So we will NEVER have a <pb n="1"/>).-->
+               <pb n="2"/>
+               <!--yyyy-mm-dd editorID: INDICATE IN BLOCK CAPS WHEN YOU STOP WORK AND THE TRANSCRIPTION IS INCOMPLETE, like this:
+               2015-10-04 ebb: I STOPPED HERE! TRANSCRIPTION INCOMPLETE!-->
+            </p>
+            <p><!--More body paragraphs as needed.--></p>
+            <closer>Ever your's
+               <!--The first <closer> includes Mitford's signature, but does NOT include the postscript. (Later, we'll use <closer> again to hold Mitford's address on her address leaf if it's present.) As Mitford writes a complimentary close broken out into lines, indicate it with line breaks using the self-closing <lb/> element.  Here's an example:
+            <closer>
+            Yours<lb/>
+            Very sincerely<lb/>
+            <persName ref="#MRM>M. R. Mitford</persName>.
+            </closer>
+            --><lb/>
+               <!--Another line in the closer, if present--><lb/>
+               <persName ref="#MRM">M.R.M.</persName>. 
+            </closer> 
+            
+            <postscript><p><!--A postscript goes here, outside the <closer>. --></p></postscript><!--You can include a <pb/> here, or inside the postScript.--><!-- Format for postscripts.  Postscripts do NOT go insider closer tags. Adjust to take into account the order in your letter. Sometimes the signature is on page three, the address on page four, then the postscript follows back on the top of page one, for example.-->
+            
+             <closer><!--Use the <closer> element again to hold Address Leaf information, indicating where Mitford directed her letter.-->
+               <address> <!--Include any text written on the address leaf; use a separate "addrLine" for each line and indicate line breaks. Closer tags must also enclose the address section. NOTE AGAIN: If Mitford has a postscript, that postcript must *not* be enclosed in the closer tags, even when they are written after the signature and before the address. It's a TEI rule (sigh). -->
+            <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+                  <addrLine><lb/><!--Text of a line on the address leaf, with context coding and superscripts indicated.--></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+       <listPerson>
+          <person xml:id="Henry_Marsh">
+             <persName>
+                <surname>Marsh</surname>
+                <forename>Henry</forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#alw">The rift between Henry Marsh and HH Milman is well documented in The History of Parliament online. http://www.historyofparliamentonline.org/volume/1820-1832/constituencies/reading</note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="Quarterly_Review_Archive">
+                <title>Quarterly Review Archive</title>                                       <author><!--Author--></author>
+                <editor>Jonathan Cutmore</editor>
+                <pubPlace></pubPlace>
+                <publisher>Romantic Circles</publisher>
+                <date when="2005-02">February 2005</date>
+                <ref target="https://www.rc.umd.edu/reference/qr/"></ref>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>
