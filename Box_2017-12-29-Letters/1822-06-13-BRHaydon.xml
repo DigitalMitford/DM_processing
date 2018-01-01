@@ -25,10 +25,11 @@
                
             </respStmt>
             <respStmt>
-               <resp>Date last checked: <date when="2017-08-16">2017-08-16</date>
+               <resp>Date last checked: <date when="2017-12-31">2017-12-31</date>
                Proofing and corrections by</resp>
                <!-- List all proofreaders here, <persName> by <persName>.--> 
-               <persName ref="#Id_who">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName><!--2017-12-31 ebb: repaired munged date listing -->
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
             </respStmt>
          </titleStmt>
          
@@ -64,7 +65,7 @@
                   <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
                   <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 453</idno>
                </msIdentifier>
-               <head>Letter from <persName ref="#MRM">Mary Russell Mitford</persName> to <persName ref="#Haydon">Benjamin Robert Haydon</persName>, <date when="1819-06-08">1819 June 8</date>. </head> 
+               <head>Letter from <persName ref="#MRM">Mary Russell Mitford</persName> to <persName ref="#Haydon">Benjamin Robert Haydon</persName>, <date when="1822-06-13">1822 June 13</date>. </head> 
               
               
                <physDesc>

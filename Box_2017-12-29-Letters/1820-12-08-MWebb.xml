@@ -35,7 +35,7 @@
                <resp>Transcription and coding by</resp>
                <persName ref="#jap">Jordan Price</persName>
                <!-- List all transcribers or coders here, editors and students alike, <persName> by <persName>.-->
-               <persName ref="#Id_who"><!--name here--></persName>
+             <!--  <persName ref="#Id_who"><!-\-name here-\-></persName>-->
                <!-- If you're the last person interacting with the file, enter your name last on the list and use assigned xml:id for ref="#" -->
             </respStmt>
             <respStmt>
@@ -94,8 +94,8 @@ Change to reflect photo file names for your letter (as you see her
                <!-- This section of the header identifies the original manuscript source. -->
                <msIdentifier>
                   <repository ref="#ReadingCL">Reading Central Library</repository>
-                  <collection><!--2017-05-19 ebb: LOOK UP ON SPREADSHEET!!--></collection>
-                  <idno><!--2017-05-19 ebb: LOOK UP ON SPREADSHEET!!--></idno>
+                  <collection>not part of the bound collection; letters collected and annotated in loose-leaf paper by Francis Needham.</collection>
+                  <idno>qB/TU/MIT</idno> 
                </msIdentifier>
                <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1820-12-08">1820
                      December 08</date>.<!--Letter from Mary Russell Mitford to Sir William Elford, <date when="1819-06-08">1819 June 8</date>. Change to reflect your letter addressee and date. Use this format and punctuation.-->
@@ -243,10 +243,10 @@ Change to reflect photo file names for your letter (as you see her
                good as <persName ref="#Kean_Edmund">Kean</persName>--which is not saying much for
                him. The farce was the spoilt child--in which that disagreeable person Madame
                   <persName ref="#Vestris_L">Vestris</persName> acted very ill &amp; that pleasant
-               person <persName ref="#Elliston_RW">Elliston</persName> very well--I am going <choice>
+               person <persName ref="#Elliston_Robt">Elliston</persName> very well--I am going <choice>
                   <sic>to night</sic>
                   <reg resp="jmh">tonight</reg>
-               </choice> to see him in <persName ref="#Jack_R">Rover</persName> in <title
+               </choice> to see him in <persName ref="#Jack_Rover">Rover</persName> in <title
                   ref="#Wild_Oats">Wild Oats</title> which is his best character &amp; a capital
                play. I hope the audience will be a little less raggamuffin for really the dress
                circle last night looked as if tilled from the stalls--I hear that they don't take to
