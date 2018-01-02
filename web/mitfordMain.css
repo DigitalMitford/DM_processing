@@ -15,13 +15,10 @@ body{
 /*padding: 10px 10px 40px 10px;*/
 border-radius: 10px;
 }
-div#menu {/*background-image: url("mrmBlur.jpg");*/ padding:0; width:100%; position:relative; top:-20px; }
+div#nav_wide {background-image: url("mrmBlur.jpg"); padding:0; width:100%; position:relative; top:-35px; }
 
-
-
-menu#nav_wide{width:100%; height:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:row;
+div#menu {width:100%; height:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:row;
 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
-background-image: url("mrmBlur.jpg"); position:relative; top:-20px;
  }
  
 span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }

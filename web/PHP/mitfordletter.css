@@ -1,9 +1,7 @@
 @media screen {
 html{
-    background-color: #FFFAE6; 
-;
-   
-    color: #580000;
+    background-color: #F8F8FF; 
+   color: #580000;
     font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
 }
 
@@ -21,21 +19,41 @@ div#images img{
 width:352px;
 display:inline-block
 }
-div#menubar{
-   
-   background-color: #FFEBC2;
-    text-align:left;
-    width:100%;
-    margin-left: auto;
-margin-right:auto;
-padding: 5px 5px 5px 5px;
-border-radius: 5px;
-border-radius: 5px;
-   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
-h1 {font-weight:bold; color:#330000; letter-spacing:3px; display:block; font-size: 2.5em; text-align:center}
-h2 {color:#330000; display:block; font-size: 1.5em; text-align:center}
-h3 {color:#A04747; display:block; text-align:left; font-size:1.1em;
+
+div#nav_wide {background-image: url("mrmBlur.jpg"); padding:0; width:100%; position:relative; top:-35px; }
+
+div#menu {width:100%; height:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:row;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
+ }
+
+span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }
+span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900;}
+
+ul#siteMenu {list-style-type:none; width:100%; display:flex; justify-content:space-around; align-items:flex-start; flex-direction:row; height:100%;  background-color:/*#F8F8FF;*/#FFDB90;
+position:relative; bottom:-20px;
+;
 }
+
+ul#siteMenu li.title {flex:1; display:flex; justify-content:space-around; align-items:center; flex-direction:column; background-color:#FFDB90;   }
+
+ul#siteMenu li.mainMenu {flex:2.5; background-color:/*#FFDB90*/#F8F8FF;}
+
+ul.mainMenu {list-style-type:none; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:row; background-color: Grey; padding:0}
+
+ul.mainMenu li.section {/*font-weight:bold; font-size:1em;*/ display:flex; justify-content:space-around; align-items:center; flex-direction:column; padding-left:20px; padding-right:10px; height:150px; flex:1}
+
+li#home {background-color:Grey; color:#FFDB90;}
+li#home a{color:gold; text-decoration:none;}
+li#home a:hover{color:yellow; text-decoration:underline;}
+
+li#letters{background-color:FireBrick; color:Lavender;}
+li#letters a {color:Lavender; text-decoration:none;}
+li#letters a:hover {color:white; text-decoration:underline;}
+li#Bib{background-color:DarkSeaGreen; color:maroon}
+li#Bib a {color:maroon; text-decoration:none;}
+li#Bib a:hover {color:white; text-decoration:underline;}
+
+
 p.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
@@ -45,37 +63,25 @@ p.boilerplate span {text-indent:-1em;
     p.boilerplate img {position: relative; top:3px; right: -2px }
 
 div#container{
-width: 90%; 
-display:inline-block
+width: 95%; 
+display:flex; justify-content:space-between; align-items:flex-start; flex-direction:row;
 }
-div#menubar{
-   
-   background-color: #FFEBC2;
-    text-align:left;
-    width:15%;
-   float:right;
-padding: 10px;
-border-radius: 5px;
-border-radius: 5px;
-   color:#660033; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-   
-   position:fixed; 
-   right:1%
-  }
+
 
 div#letterHead{
-display:block;
-overflow-y:auto;
-width: 30%;
-height:70%;
-position:fixed;
 font-size: .75em;   
+flex:1;
+padding-left:20px;
+padding-right:20px;
+}
 
+div#floatright{flex:1.5;
+  
 }
 
  div#fieldset
    {
- background-color: #FFEBC2;
+ background-color: #FFDB90;
   text-align:left; 
     white-space: normal;
     
@@ -86,15 +92,6 @@ span.dipNorm {display:block;
 }
 span.dipNormSmall {display:block;
 white-space:normal; font-size:.9em}
-
-div#floatright{
-float:right;
-width: 45%;
-margin-left: 75px;
-margin-right:20%;
-padding: 10px 5px 50px 20px;    
-display: inline-block    
-}
 
 
 div#letter{
@@ -210,6 +207,7 @@ span.si{
 position: absolute;
 right:15%;
 color: #000041;
+line-height:normal;
 text-decoration:none;
 font-size: .75em;
 text-align:left;

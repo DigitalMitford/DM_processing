@@ -23,18 +23,10 @@
             </head>
             <body>  
                 
-                <div id="title"><h1>Digital Mitford Staff</h1>
-                    <hr/></div> 
-                <div id="menubar">
-                    <h3>Digital Mitford: The Mary Russell Mitford Archive</h3>
-                    <ul> <li><a href="index.html">Welcome</a></li> 
-                        <li><a href="about.html">About</a></li> 
-                        <li><a href="bibliogType.html">Published Works</a></li>  <li><a href="lettersData.html">Manuscript Locations</a></li> 
-                        <li> <a href="letters.html">Letters</a></li> 
-                        <li><a href="visual.html">People, Places, and Networks</a></li> 
-                        <li><a href="staff.html">Staff</a></li>  
-                        <li><a href="workshop.html">Workshop Materials</a></li></ul>
-                </div>
+                
+                <xsl:comment>#include virtual="mitfordMainMenu.html" </xsl:comment>
+               <h1>Digital Mitford Staff</h1>
+                    
                 
                 <div id="container">
                     <div id="images">
@@ -120,9 +112,8 @@
                        <xsl:text>. </xsl:text>
                             
                         </div>
-                        <p class="boilerplate"><span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar (ebb8 at
-                            pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></span><span><strong>Last modified:
-                            </strong><xsl:value-of select="current-date()"/></span></p>
+                        <xsl:comment>#include virtual="licenseSoftware.html" </xsl:comment>
+                       
                     </div>
                     
                 </div>
