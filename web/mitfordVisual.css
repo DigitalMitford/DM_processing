@@ -10,10 +10,10 @@ body{
    /*background-color: #BBD6F1;*/ 
    
     text-align:left;
-    width:100%;
+    width:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:column;
    
 /*padding: 10px 10px 40px 10px;*/
-border-radius: 10px;
+/*border-radius: 10px;*/
 }
 div#images img{
 
@@ -71,9 +71,10 @@ display:inline-block
 
 
 div#content{
-width: 85%;
+width: 90%;
 display:inline-block;
 padding:15px;
+margin:auto;
 }
 div#content img {width:100%}
 

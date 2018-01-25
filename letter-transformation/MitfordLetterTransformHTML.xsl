@@ -6,9 +6,13 @@
    <!--2017-06-26 ebb: Note: this seems to work, too, but indent="no" is maybe not all that pretty to look at in the output. <xsl:output method="xml" encoding="UTF-8" indent="no" doctype-system="about:legacy-compat"/>-->
     <!--<xsl:strip-space elements="*"/>-->
       
+   <!--2018-01-24 ebb: NOTES on updating this:
+   TRANSFORM double-hyphens into proper em dashes, 
+   KEEP CHECKING the output of add elements, and generate new span elements to style with CSS for handwritten notes by pen annotator and others.
+   -->
       
-      
-    <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
+ <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/> 
+    
     <xsl:template match="/">
         <html>
             <head>
@@ -156,8 +160,8 @@
     
     <xsl:template match="opener"> 
         <div id="opener">    
-            <xsl:apply-templates select=".//date"/><br/>
-            <xsl:apply-templates select=".//date/following-sibling::*"/><br/>
+            <xsl:apply-templates select="descendant::date"/><br/>
+            <xsl:apply-templates select="descendant::date/following-sibling::*"/><br/>
         </div>
     </xsl:template>
   
@@ -459,8 +463,14 @@
         -->
     </xsl:template>
     
-    <xsl:template match="add">
-        <span class="add"><xsl:apply-templates/></span>
+    <xsl:template match="add[@place='above']">
+       <xsl:choose> <xsl:when test="metamark"><xsl:apply-templates select="metamark"/><span class="add"><xsl:apply-templates select="metamark/following-sibling::*|text()"/></span></xsl:when>
+       <xsl:otherwise>
+           <xsl:apply-templates/>
+       </xsl:otherwise>
+       
+       </xsl:choose>
+        
     </xsl:template>
     
     <xsl:template match="hi[@rend='superscript']">
@@ -473,7 +483,6 @@
     
     <xsl:template match="metamark[@rend='waves'] | metamark[@rend='jerk'] | metamark[@rend='wave']">
         <span class="jerk"><xsl:text>&#x3030;</xsl:text></span>
-        
     </xsl:template>
     
     <xsl:template match="choice">
