@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
     xmlns="http://www.w3.org/1999/xhtml"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
+    
     <!--<xsl:strip-space elements="*"/>-->
     
    
@@ -11,7 +12,7 @@
         <html>
             <head>
                 <title>Digital Mitford Dramas: Rienzi</title>
-                <meta charset="UTF-8"/>
+                <!--<meta charset="UTF-8"/>-->
                 <meta name="Description"
                     content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
                 <meta name="keywords"

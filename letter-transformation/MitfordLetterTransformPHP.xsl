@@ -479,9 +479,13 @@
         -->
     </xsl:template>
     <xsl:template match="add">
-        <span class="add">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:choose> <xsl:when test="metamark"><xsl:apply-templates select="metamark"/><span class="add"><xsl:apply-templates select="metamark/following-sibling::*|text()"/></span></xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/>
+            </xsl:otherwise>
+            
+        </xsl:choose>
+        
     </xsl:template>
     <xsl:template match="hi[@rend = 'superscript']">
         <span class="above-line">
