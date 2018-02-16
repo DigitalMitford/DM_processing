@@ -178,6 +178,20 @@ span.anchor span.note {
    display:none;
    text-align:left;
     }
+q {quotes:'“' '”' '‘' '’'; 
+}
+
+cite.sub {font-style:normal;}
+cite.sub::before {content:'“'; 
+}
+cite.sub::after {content:'”';
+}
+
+q cite.sub::before {content: '‘'}
+q cite.sub::after {content: '’'}
+cite.sub cite.sub::before {content: '‘'}
+cite.sub cite.sub::after {content: '’'}
+
  
 ul.letterList {display:none; padding:5px;
 }

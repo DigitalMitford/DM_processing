@@ -168,7 +168,20 @@ span.anchor span.note {
     width:350px;
    display:none;
     }
- 
+q {quotes:'“' '”' '‘' '’'; 
+}
+
+cite.sub {font-style:normal;}
+cite.sub::before {content:'“'; 
+}
+cite.sub::after {content:'”';
+}
+
+q cite.sub::before {content: '‘'}
+q cite.sub::after {content: '’'}
+cite.sub cite.sub::before {content: '‘'}
+cite.sub cite.sub::after {content: '’'}
+
         
 /*span.anchor span.note:hover span, span.anchor span.note:active span {
     display:inline;

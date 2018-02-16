@@ -1,10 +1,8 @@
 @media screen {
 html{
     background-color: #F8F8FF; 
-;
-   
-    color: #580000;
-    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif; line-height:1.12em;
+   color: #580000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
 }
 
 body{
@@ -21,12 +19,13 @@ div#images img{
 width:352px;
 display:inline-block
 }
+
 div#nav_wide {background-image: url("mrmBlur.jpg"); padding:0; width:100%; position:relative; top:-35px; }
 
 div#menu {width:100%; height:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:row;
 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
  }
-  
+
 span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }
 span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900;}
 
@@ -34,8 +33,8 @@ ul#siteMenu {list-style-type:none; width:100%; display:flex; justify-content:spa
 position:relative; bottom:-20px;
 ;
 }
+
 ul#siteMenu li.title {flex:1; display:flex; justify-content:space-around; align-items:center; flex-direction:column; background-color:#FFDB90;   }
-/*ul#siteMenu li {/\*padding:8px;*\/ font-weight: bold;}*/
 
 ul#siteMenu li.mainMenu {flex:2.5; background-color:/*#FFDB90*/#F8F8FF;}
 
@@ -43,37 +42,17 @@ ul.mainMenu {list-style-type:none; display:flex; justify-content:space-between; 
 
 ul.mainMenu li.section {/*font-weight:bold; font-size:1em;*/ display:flex; justify-content:space-around; align-items:center; flex-direction:column; padding-left:20px; padding-right:10px; height:150px; flex:1}
 
-li#Overview {background-color:Grey; color:#FFDB90;}
-li#Overview a{color:gold; text-decoration:none;}
-li#Overview a:hover{color:yellow; text-decoration:underline;}
-li#Editions{background-color:FireBrick; color:Lavender;}
-li#Editions a {color:Lavender; text-decoration:none;}
-li#Editions a:hover {color:white; text-decoration:underline;}
+li#home {background-color:Grey; color:#FFDB90;}
+li#home a{color:gold; text-decoration:none;}
+li#home a:hover{color:yellow; text-decoration:underline;}
+
+li#letters{background-color:FireBrick; color:Lavender;}
+li#letters a {color:Lavender; text-decoration:none;}
+li#letters a:hover {color:white; text-decoration:underline;}
 li#Bib{background-color:DarkSeaGreen; color:maroon}
 li#Bib a {color:maroon; text-decoration:none;}
 li#Bib a:hover {color:white; text-decoration:underline;}
 
-li#Project{background-color:Lavender; }
-li#Outreach{background-color:RosyBrown; color:PapayaWhip;}
-li#Outreach a {color:PapayaWhip; text-decoration:none;}
-li#Outreach a:hover {color:gold; text-decoration:underline}
-
-ul.subSec {list-style-type:none; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:column; margin-left:-40px; padding-top:5px; margin-right:25px; /*background-color:LemonChiffon;*/
-}
-ul.subSec li {text-align:left; font-size:1em; font-weight:700; padding-top:2px; padding-bottom:3px }
-   
-   
-
-/*h1 {
-color:#A04747;
-letter-spacing:3px;
-display:block;
-text-align:center;
-font-size:38px}
-
-h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
-}
-*/
 
 p.boilerplate span {text-indent:-1em;
     margin-left:1em;
@@ -85,29 +64,28 @@ p.boilerplate span {text-indent:-1em;
 
 div#container{
 width: 95%; 
-display:inline-block
+display:flex; justify-content:space-between; align-items:flex-start; flex-direction:row;
 }
-  
-/*div#playMeta{
-display:block;
-overflow-y:auto;
-width: 30%;
-height:70%;
-position:fixed;
-font-size: .75em;   
 
+
+div#letterHead{
+font-size: .75em;   
+flex:1;
+padding-left:20px;
+padding-right:20px;
 }
-*/
+
+div#floatright{flex:1.5;
+  
+}
 
  div#fieldset
    {
- background-color: #FFEBC2;
+ background-color: #FFDB90;
   text-align:left; 
     white-space: normal;
     
    }
-   
-   div#play {width:85%; float:left}
    
 span.dipNorm {display:block;
  white-space: normal;
@@ -115,22 +93,34 @@ span.dipNorm {display:block;
 span.dipNormSmall {display:block;
 white-space:normal; font-size:.9em}
 
-div#floatright{
-float:right;
-width: 45%;
-margin-left: 75px;
-margin-right:20%;
-padding: 10px 5px 50px 20px;    
-display: inline-block    
-}
 
-
-div#play{
+div#letter{
 
     margin: auto;
     display:inline-block;
     vertical-align:top;
   
+}
+
+/*ebb: Note: two forms: old form from Mitford Letter Transform before 2014-12-4 was 
+<div id="closer">, but we sometimes have multiple TEI closer elements separated by a postscript element that's not allowed inside closer, so we really need <div class="closer">. I'm keeping both rules until we batch transform. */
+div#closer{text-align:right;}
+h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+
+div.closer{text-align:right;}
+h1 {
+color:#A04747;
+letter-spacing:3px;
+display:block;
+text-align:center;
+font-size:38px}
+
+h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
 }
 
 
@@ -150,57 +140,10 @@ em{
 text-decoration:underline    
     
 }
-q {quotes:'“' '”' '‘' '’'; 
-}
 
-cite.sub {font-style:normal;}
-cite.sub::before {content:'“'; 
-}
-cite.sub::after {content:'”';
-}
-
-q cite.sub::before {content: '‘'}
-q cite.sub::after {content: '’'}
-cite.sub cite.sub::before {content: '‘'}
-cite.sub cite.sub::after {content: '’'}
-
-
-table{
-    border-collapse:collapse;
-}
-table, th, td {
-     border-color:#336600;
-    border-style:solid;
-    border-width:1px;
-
-}
-
-td {text-align:center; padding:2px}
-
-span.role{
-color: #990000; font-size: 1.1em; font-weight:700   
-}
-
-span.speaker {color: #990000; font-size: 1.1em; font-weight:700; display:block; padding:1.2em;   
-    
-}
-span.lg {display:block; padding:2em;}
-span.line {display:block;}
-span.lineNum{display:inline; font-size:smaller; color: #990000; padding-left:15px;}
-
-span.stage{color: #990000; font-style: italic;
-}
-
-span.act{color:#330000; display:block; font-size: 1.5em; text-align:center
-    
-}
-
-span.scene{color:#A04747; display:block; text-align:left; font-size:1.2em;
-    
-}
 span.context[title=person]  {
 color:  #990099;
-border-bottom:1px dotted
+border-bottom:1px dotted;
 }
 
 
@@ -219,27 +162,6 @@ span.context[title=title] {
 color:#CC0000;
 border-bottom:1px dotted 
 }
-span.app{border-style:groove; border-color:red;}
-span.var{
-position: absolute;
-right:15%;
-color: #560013;
-text-decoration:none;
-font-size: .75em;
-text-align:left;
-font-weight: normal;
-background: #ebd6cc;
-border:solid #440029 2px;
-width:300px;
-height:auto;
-padding:5px;
-overflow-y:scroll;
-z-index: 3;
-display:none;
-}
-
-span.wit{display:block}
-span.witLabel{font-style:italic; font-weight:bold;}
 
 span.prose {line-height:25px}
 span.prose.on{line-height:normal}
@@ -285,6 +207,7 @@ span.si{
 position: absolute;
 right:15%;
 color: #000041;
+line-height:normal;
 text-decoration:none;
 font-size: .75em;
 text-align:left;
@@ -419,5 +342,18 @@ span.damage.on{display:none;}
 span.supplied{background-color:#CCCCFF}
 span.supplied.on{background-color:#FFFAE6}    
 }
+q {quotes:'“' '”' '‘' '’'; 
+}
+
+cite.sub {font-style:normal;}
+cite.sub::before {content:'“'; 
+}
+cite.sub::after {content:'”';
+}
+
+q cite.sub::before {content: '‘'}
+q cite.sub::after {content: '’'}
+cite.sub cite.sub::before {content: '‘'}
+cite.sub cite.sub::after {content: '’'}
 
         

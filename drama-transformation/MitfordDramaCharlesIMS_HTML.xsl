@@ -5,24 +5,23 @@
     <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
     
     <!--<xsl:strip-space elements="*"/>-->
-    
+ <xsl:variable name="currWit">     <xsl:text>#msC1</xsl:text>
+ </xsl:variable>   
    
     <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
             <head>
-                <title>Digital Mitford Dramas: <xsl:apply-templates select="tokenize(//titleStmt/title, '\W')"/></title>
+                <title>Digital Mitford Dramas: <xsl:apply-templates select="tokenize(//titleStmt/title, '\W')[1]"/></title>
                 <!--<meta charset="UTF-8"/>-->
                 <meta name="Description"
                     content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
                 <meta name="keywords"
                     content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, TEI, Text Encoding Initiative, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
                 <link rel="stylesheet" type="text/css" href="mitfordDrama.css"/>
-                <!--<script type="text/javascript" src="MRMLetters.js" xml:space="preserve">...</script>-->
-                <script type="text/javascript" src="MRMLetters.js">/**/</script>
+               
+                <script type="text/javascript" src="MRMPlays.js">/**/</script>
                 
-
-
             </head>
             <body>
                 <!--#include virtual="mitfordMainMenu.html" -->
@@ -32,16 +31,27 @@
                 
                 <div id="container">
             
-<xsl:apply-templates select="//titleStmt"/>
-                        <div id="play">
-
+<xsl:apply-templates select="//titleStmt//title"/>
+                       
+<section id="front">
+    <xsl:apply-templates select="//editor"/>
+                            <xsl:apply-templates select="//notesStmt"/>
                             <xsl:apply-templates select="//listWit" mode="listWit"/>
-                            <xsl:apply-templates select="//text"/>
-
-
-                        </div>
-
-
+  
+<!--2018-02-16 ebb: The next two apply-templates statements are distinct to the ms version of Chas I -->                           <xsl:apply-templates select="//div[@type='msLCplaysentrypage']"/>
+                            <xsl:apply-templates select="//div[@type='msLClettertransmittal']"/>
+                            
+ <xsl:apply-templates select="//div[@type='dedication']"/>
+                            <xsl:apply-templates select="//div[@type='preface']"/>
+                            
+<xsl:apply-templates select="//div[@type='prologue']"/>
+         <xsl:apply-templates select="div[@type='cast']"/>  
+    <xsl:apply-templates select="//div[@type='set']"/>
+</section>
+        <section id="play">
+            <xsl:apply-templates select="//body"/>
+        </section>                    
+                            
                         <hr/>
                 </div>
                 <div id="menubar">
@@ -60,7 +70,7 @@
                             </fieldset>
                         </div>
                         
-                        <xsl:apply-templates select="//teiHeader"/>
+                        <!--<xsl:apply-templates select="//teiHeader"/>-->
                         
                         
                         <p class="boilerplate">
@@ -114,12 +124,12 @@
     
     <xsl:template match="titleStmt">
         <h3><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></h3>
-        <xsl:text>Sponsored by: </xsl:text>
+       <!--2018-02-16 ebb: Editing this out as irrelevant for individual documents. <xsl:text>Sponsored by: </xsl:text>
         <ul>
         <xsl:for-each select="sponsor">
         <li><xsl:value-of select=".//text()"/></li>
         </xsl:for-each>
-        </ul>
+        </ul>-->
     </xsl:template>
     
     <xsl:template match="principal"/>
@@ -173,13 +183,13 @@
     <xsl:template match="msDesc">
         <p><xsl:text>Repository: </xsl:text><xsl:apply-templates select=".//repository"/><xsl:text>. </xsl:text>
             <xsl:text>Shelf mark: </xsl:text> 
-        <xsl:apply-templates select=".//idno"/></p>
+        <xsl:apply-templates select="descendant::idno"/></p>
         
-      <p><xsl:apply-templates select=".//support"/></p>
+      <p><xsl:apply-templates select="descendant::support"/></p>
         
-        <p><xsl:apply-templates select=".//condition"/></p>
+        <p><xsl:apply-templates select="descendant::condition"/></p>
         
-       <p><xsl:apply-templates select=".//sealDesc"/></p>
+       <p><xsl:apply-templates select="descendant::sealDesc"/></p>
         
         
     </xsl:template>
@@ -205,15 +215,19 @@
            </xsl:for-each>    
        </ul>   
    </xsl:template>
-    
+    <xsl:template match="head">
+        <h2><xsl:apply-templates/></h2>
+    </xsl:template> 
+  
     
     <xsl:template match="div[@type='preface']"> 
          <h2>Preface</h2><xsl:text> </xsl:text><xsl:value-of select="@n"/>
            <xsl:apply-templates/> 
     </xsl:template>
+ 
     
     <xsl:template match="div[@type='cast']">
-        <h2><xsl:apply-templates select="head"/></h2>
+        <xsl:apply-templates select="head"/>
         <table>
             <tr>
                 <th>Role</th><th>Actor</th>
@@ -240,29 +254,33 @@
     </xsl:template>
     
     <xsl:template match="div[@type='act']">
-       <span class="act"><xsl:apply-templates select="head"/></span>
+       <div class="act"><xsl:apply-templates select="head"/>
     <xsl:apply-templates/>
+       </div>
     </xsl:template>
     
     <xsl:template match="div[@type='scene']">
-        <span class="scene"><xsl:apply-templates select="head"/></span>
+        <div class="scene"><xsl:apply-templates select="head"/>
     <xsl:apply-templates/>
+        </div>
     </xsl:template>
     
     <xsl:template match="sp">
         <span class="speaker"><xsl:apply-templates select="speaker"/></span>
     <xsl:apply-templates select="l"/>
     </xsl:template>
+    <xsl:template match="lg">
+        <span class="lg"><xsl:apply-templates/></span>
+    </xsl:template>
     
     <xsl:template match="l">
         <span class="line" id="L{count(preceding::l) + 1}">
-            <xsl:value-of select="count(preceding::l) + 1"/>
-            <xsl:text> </xsl:text>
-            
             <xsl:apply-templates/>
-            <br/>
+            <xsl:text> </xsl:text>
+            <span class="lineNum"><xsl:value-of select="count(preceding::l) + 1"/></span>  
         </span>
     </xsl:template>
+    
 
     <xsl:template match="text//p">
         <p><span class="prose">
@@ -270,29 +288,15 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="rdg">
-        <span class="{@wit}"><xsl:apply-templates/></span>
-    </xsl:template>
-
-   
-    
     <xsl:template match="lb">
         <br/>
     </xsl:template>
-
-    
-
- 
 
     <xsl:template match="hi[@rend='smallcaps']">
         <span class="smallcaps">
             <xsl:apply-templates/>
         </span>
-
     </xsl:template>
-
-
-   
 
     <xsl:template match="placeName | name[@type='place']">
         <span class="context" title="place">
@@ -572,9 +576,44 @@
     <xsl:template match="choice">
         <span class="sic"><xsl:apply-templates select="sic"/></span>
         <span class="reg"><xsl:apply-templates select="reg"/></span>
-       
+ 
+    </xsl:template>
+    <xsl:template match="salute">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
+    <xsl:template match="closer">
+        <div class="closer">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="signed">
+        <xsl:apply-templates/>
+        <br/>
+    </xsl:template>
+    <xsl:template match="addrLine">
+        <xsl:apply-templates/>
+        <br/>
+    </xsl:template>
+    <xsl:template match="lb">
+        <br/>
+    </xsl:template>
+    <xsl:template match="q">
+        <span class="q"><xsl:apply-templates/></span>
+    </xsl:template>
+    <xsl:template match="app">
+        <span class="app"><xsl:apply-templates select="rdg[@wit=$currWit]"/>
+       <xsl:if test="rdg[@wit!=$currWit]"> <span class="var"><xsl:for-each select="rdg[@wit!=$currWit]">
+        <xsl:apply-templates select="."/>
+        </xsl:for-each>
+        </span></xsl:if>
+        </span>
+        </xsl:template>
+    <xsl:template match="rdg[@wit!=$currWit]">
+        <span class="wit"><span class="witLabel"><xsl:value-of select="@wit"/><xsl:text>: </xsl:text></span><xsl:apply-templates/></span>
+    </xsl:template>
+    <xsl:template match="rdg[@wit=$currWit]">
+       <xsl:apply-templates/>
     </xsl:template>
     
-   
 </xsl:stylesheet>
 

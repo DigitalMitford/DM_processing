@@ -152,4 +152,17 @@ section.pastEditors.on {display:inline}
 section.Mitford_Team {display:none}
 section.Mitford_Team.on {display:inline}
 
+q {quotes:'“' '”' '‘' '’'; 
+}
+
+cite.sub {font-style:normal;}
+cite.sub::before {content:'“'; 
+}
+cite.sub::after {content:'”';
+}
+
+q cite.sub::before {content: '‘'}
+q cite.sub::after {content: '’'}
+cite.sub cite.sub::before {content: '‘'}
+cite.sub cite.sub::after {content: '’'}
 

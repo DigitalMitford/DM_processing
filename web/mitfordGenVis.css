@@ -102,6 +102,20 @@ em{
 text-decoration:underline    
     
 }
+q {quotes:'“' '”' '‘' '’'; 
+}
+
+cite.sub {font-style:normal;}
+cite.sub::before {content:'“'; 
+}
+cite.sub::after {content:'”';
+}
+
+q cite.sub::before {content: '‘'}
+q cite.sub::after {content: '’'}
+cite.sub cite.sub::before {content: '‘'}
+cite.sub cite.sub::after {content: '’'}
+
 table{
 width: 60%;
 border-collapse:collapse;
@@ -152,7 +166,20 @@ span.hidNo {display:none;}
     
     p.boilerplate img {position: relative; top:3px; right: -2px }
 
- 
+q {quotes:'“' '”' '‘' '’'; 
+}
+
+cite.sub {font-style:normal;}
+cite.sub::before {content:'“'; 
+}
+cite.sub::after {content:'”';
+}
+
+q cite.sub::before {content: '‘'}
+q cite.sub::after {content: '’'}
+cite.sub cite.sub::before {content: '‘'}
+cite.sub cite.sub::after {content: '’'}
+
  span.hidNo{display:inline;}
  
  a{
