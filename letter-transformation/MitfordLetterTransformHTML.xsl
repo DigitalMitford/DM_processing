@@ -463,7 +463,7 @@
         -->
     </xsl:template>
     
-    <xsl:template match="add[@place='above']">
+    <xsl:template match="add">
        <xsl:choose> <xsl:when test="metamark"><xsl:apply-templates select="metamark"/><span class="add"><xsl:apply-templates select="metamark/following-sibling::*|text()"/></span></xsl:when>
        <xsl:otherwise>
            <xsl:apply-templates/>
