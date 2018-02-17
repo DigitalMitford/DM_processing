@@ -4,7 +4,7 @@ html{
 ;
    
     color: #580000;
-    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif; line-height:1.12em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif; line-height:1.5em;
 }
 
 body{
@@ -14,7 +14,7 @@ body{
     width:100%;
    
 /*padding: 10px 10px 40px 10px;*/
-border-radius: 10px;
+border-radius: 10px; margin-left:3em; margin-right:3em;
 }
 div#images img{
 
@@ -64,16 +64,16 @@ ul.subSec li {text-align:left; font-size:1em; font-weight:700; padding-top:2px; 
    
    
 
-/*h1 {
+h1 {
 color:#A04747;
 letter-spacing:3px;
 display:block;
 text-align:center;
 font-size:38px}
 
-h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
+h2 {color:#00005C; font-size:20px; ; display:inline; text-align:center; line-height:1.5em;
 }
-*/
+
 
 p.boilerplate span {text-indent:-1em;
     margin-left:1em;
@@ -222,7 +222,7 @@ border-bottom:1px dotted
 span.app{border-style:groove; border-color:red;}
 span.var{
 position: absolute;
-right:15%;
+left:30%;
 color: #560013;
 text-decoration:none;
 font-size: .75em;
@@ -235,6 +235,7 @@ height:auto;
 padding:5px;
 overflow-y:scroll;
 z-index: 3;
+line-height:normal;
 display:none;
 }
 
@@ -283,7 +284,7 @@ color:blue;
 
 span.si{
 position: absolute;
-right:15%;
+right:50%;
 color: #000041;
 text-decoration:none;
 font-size: .75em;
@@ -296,12 +297,13 @@ height:auto;
 padding:5px;
 overflow-y:scroll;
 z-index: 3;
+line-height:normal;
 display:none;
 }
 
 span.anchor span.note {
  position:absolute;
-right:12%;
+right:50%;
     color:black;
     line-height:normal;
     text-decoration:none;
@@ -419,5 +421,5 @@ span.damage.on{display:none;}
 span.supplied{background-color:#CCCCFF}
 span.supplied.on{background-color:#FFFAE6}    
 }
-
+br {display:block;}
         

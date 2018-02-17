@@ -1,13 +1,13 @@
 function init() {
     var apps = document.getElementsByClassName("app");
     for (var a = 0; a < apps.length; a++) {
-apps[a].addEventListener('mouseover', show_footnote, false);
-        apps[a].addEventListener('click', show_footnote, false);
-        apps[a].addEventListener('mouseout', hide_footnote, false);
-        apps[a].addEventListener('dblclick', hide_footnote, false);
+apps[a].addEventListener('mouseover', show_var, false);
+        apps[a].addEventListener('click', show_var, false);
+        apps[a].addEventListener('mouseout', hide_var, false);
+        apps[a].addEventListener('dblclick', hide_var, false);
 
-apps[a].addEventListener('touchenter', show_footnote, false);
-        apps[a].addEventListener('touchleave', hide_footnote, false);
+apps[a].addEventListener('touchenter', show_var, false);
+        apps[a].addEventListener('touchleave', hide_var, false);
         
     }
     var anchors = document.getElementsByClassName("anchor");
@@ -42,6 +42,15 @@ apps[a].addEventListener('touchenter', show_footnote, false);
     /*THOUGHTS for retooling color-clicks: set a new var for tagname input (for the checkboxes).
     var checkbox = document.getElementsByTagName("input:)
     checkbox.onclick = */
+}
+function show_var() {
+    var footnote = this.getElementsByClassName('var')[0];
+    console.log('var = ' + footnote);
+    footnote.style.display = "inline";
+}
+function hide_var() {
+    var footnote = this.getElementsByClassName('var')[0];
+    footnote.style.display = "none";
 }
 
 function show_footnote() {

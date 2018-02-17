@@ -25,24 +25,26 @@
             </head>
             <body>
                 <!--#include virtual="mitfordMainMenu.html" -->
-                
-     
-
-                
+            
                 <div id="container">
             
-<xsl:apply-templates select="//titleStmt//title"/>
+<h1><xsl:apply-templates select="//titleStmt//title"/></h1>
                        
 <section id="front">
-    <xsl:apply-templates select="//editor"/>
+    <h2><xsl:text>Edited by </xsl:text><xsl:apply-templates select="//editor"/></h2>
                             <xsl:apply-templates select="//notesStmt"/>
-                            <xsl:apply-templates select="//listWit" mode="listWit"/>
+ 
+    <p>This critical edition compares the following versions of the play:</p>
+    <xsl:apply-templates select="//listWit" mode="listWit"/>
+    <p>You are viewing a representation of the <xsl:apply-templates select="//listWit/witness[@xml:id = substring-after($currWit, '#')]"/>
+    </p>
   
 <!--2018-02-16 ebb: The next two apply-templates statements are distinct to the ms version of Chas I -->                           <xsl:apply-templates select="//div[@type='msLCplaysentrypage']"/>
                             <xsl:apply-templates select="//div[@type='msLClettertransmittal']"/>
                             
  <xsl:apply-templates select="//div[@type='dedication']"/>
-                            <xsl:apply-templates select="//div[@type='preface']"/>
+      <!--OMIT in MS version: <xsl:apply-templates select="//div[@type='preface']"/>
+      -->
                             
 <xsl:apply-templates select="//div[@type='prologue']"/>
          <xsl:apply-templates select="div[@type='cast']"/>  
@@ -177,9 +179,7 @@
     <xsl:template match="seriesStmt">
         <p><xsl:apply-templates/></p>
     </xsl:template>
-    <xsl:template match="notesStmt">
-        <p><xsl:apply-templates/></p>
-    </xsl:template>
+    
     <xsl:template match="msDesc">
         <p><xsl:text>Repository: </xsl:text><xsl:apply-templates select=".//repository"/><xsl:text>. </xsl:text>
             <xsl:text>Shelf mark: </xsl:text> 
@@ -254,13 +254,13 @@
     </xsl:template>
     
     <xsl:template match="div[@type='act']">
-       <div class="act"><xsl:apply-templates select="head"/>
+       <div class="act">
     <xsl:apply-templates/>
        </div>
     </xsl:template>
     
     <xsl:template match="div[@type='scene']">
-        <div class="scene"><xsl:apply-templates select="head"/>
+        <div class="scene">
     <xsl:apply-templates/>
         </div>
     </xsl:template>
@@ -269,11 +269,13 @@
         <span class="speaker"><xsl:apply-templates select="speaker"/></span>
     <xsl:apply-templates select="l"/>
     </xsl:template>
+   <!--2018-02-17 ebb: template rule draft to try to suppress lg, l, and head elements from being processed when they are ONLY present in the NOT current witness:-->
+    <xsl:template match="head[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] | lg[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])]  | l[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] "/>
     <xsl:template match="lg">
         <span class="lg"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="l">
+    <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit])]">
         <span class="line" id="L{count(preceding::l) + 1}">
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
@@ -299,22 +301,27 @@
     </xsl:template>
 
     <xsl:template match="placeName | name[@type='place']">
-        <span class="context" title="place">
+        <xsl:choose><xsl:when test="not(ancestor::app)"> <span class="context" title="place">
             <xsl:apply-templates/>
-        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')]"><span class="si">
             <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
+  
+            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::app)"><span class="si">           
         <xsl:value-of select="string-join($siPlace/*, ' | ')"/>
-            <xsl:text>--</xsl:text>
+            <xsl:text>—</xsl:text>
             <xsl:value-of select="$siPlace/note/@resp"/>
             <xsl:if test="$siPlace//geo">
                 <xsl:value-of select="$siPlace//geo"/>
-            </xsl:if>
-         
-                  
-              
+            </xsl:if>           
         </span></xsl:if>
-        </span>
+           <!--2016-02-16 ebb: Think about how to process this: We want to set an asterisk or signal after the surrounding app is processed, and probably want to handle this (and other such cases) in the template rule on app. <xsl:when test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and ancestor::app">-->
+                               
+            <!--</xsl:when>-->
+        
+        </span></xsl:when>
+        <xsl:otherwise>
+            <xsl:apply-templates/>
+        </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
 
@@ -323,8 +330,12 @@
    <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> 
     
 </xsl:template>-->
+    
+    <xsl:template match="notesStmt//note">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
 
-    <xsl:template match="note">
+    <xsl:template match="note[not(ancestor::notesStmt)]">
         <span id="Note{count (preceding::note) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note)+ 1"/>] <span class="note"
                 id="n{count (preceding::note) + 1}">
@@ -600,14 +611,26 @@
     <xsl:template match="q">
         <span class="q"><xsl:apply-templates/></span>
     </xsl:template>
-    <xsl:template match="app">
-        <span class="app"><xsl:apply-templates select="rdg[@wit=$currWit]"/>
+    
+   
+
+   <xsl:template match="app[rdg[@wit=$currWit]]">
+        <xsl:choose>
+            <xsl:when test="count(rdg) gt 1"><span class="app"><xsl:apply-templates select="rdg[@wit=$currWit]"/>
        <xsl:if test="rdg[@wit!=$currWit]"> <span class="var"><xsl:for-each select="rdg[@wit!=$currWit]">
         <xsl:apply-templates select="."/>
         </xsl:for-each>
         </span></xsl:if>
-        </span>
+        </span></xsl:when>
+        <xsl:otherwise>
+            <xsl:apply-templates/>
+        </xsl:otherwise>
+        </xsl:choose>
         </xsl:template>
+    <!--2018-02-16 ebb: NOTE: The next template rule says, if the current witness is ENTIRELY MISSING, don't output anything.-->
+    <xsl:template match="app[not(rdg[@wit=$currWit])]">
+      <!--  <xsl:text>Placeholder text: This is not represented in the witness you are viewing.</xsl:text>-->
+    </xsl:template>
     <xsl:template match="rdg[@wit!=$currWit]">
         <span class="wit"><span class="witLabel"><xsl:value-of select="@wit"/><xsl:text>: </xsl:text></span><xsl:apply-templates/></span>
     </xsl:template>
