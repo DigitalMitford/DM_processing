@@ -3,13 +3,13 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--This file is Eric Hood's work in progress file for the coding of Rienzi, the 1828 publcation.  Text is modified using the LION base text of the play-->
+<!--This file is Eric Hood's work in progress file for the coding of Rienzi, the 1828 publication.  Text is modified using the LION base text of the play-->
 <!--pagination is from the 1828 text -->
 <TEI xmlns:xi="http://www.w3.org/2001/XInclude"
      xmlns:svg="http://www.w3.org/2000/svg"
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0">
-	  <teiHeader type="text">
+	  <teiHeader>
 		    <fileDesc>
 			      <titleStmt>
 				        <title type="main">Rienzi: A Tragedy, In Five Acts</title>
@@ -157,13 +157,13 @@ the medium of introducing to the acted drama, a young lady so fitted to adorn it
             </p>
          </div>
 	        <div type="preface" n="2">
-            <head><!-- start Preface to the second edtion 1828 in the 4th Edition.  As HEAD tag is not allowed, how do we indicate? 
+            <head><!-- start Preface to the second edition 1828 in the 4th Edition.  As HEAD tag is not allowed, how do we indicate? 
 ebb: Answer: I have added div elements to separate the different prefaces by number. Div elements take <head> children. You can now fill in the head elements with the appropriate heading.--></head>
 	
 	
 	           <p>
                <app>
-                  <rdg wit="#R1828">In offering to the world a second edtion of her Tragedy (the first impression of which was sold in three days), the Authoress has only to repeat her thanks to the excellent performers to who she was orignially indebted for success; and to acknowledge, with sincere gratitude, the almost unanimous kindness with which Rienzi, whether as an acted drama, or a published poem, has been received by the press.</rdg>
+                  <rdg wit="#R1828">In offering to the world a second edition of her Tragedy (the first impression of which was sold in three days), the Authoress has only to repeat her thanks to the excellent performers to who she was orignially indebted for success; and to acknowledge, with sincere gratitude, the almost unanimous kindness with which Rienzi, whether as an acted drama, or a published poem, has been received by the press.</rdg>
                </app>
             </p>
             <!-- end preface to the second edition -->	
@@ -227,7 +227,7 @@ ebb: Answer: I have added div elements to separate the different prefaces by num
             </p>
 	           <p>
                <app>
-                  <rdg wit="#R1837">The senitments are just and noble; the language is vigorous, picturesque, and poetical.</rdg>
+                  <rdg wit="#R1837">The sentiments are just and noble; the language is vigorous, picturesque, and poetical.</rdg>
                </app>
             </p>
 	           <p>
@@ -242,7 +242,7 @@ ebb: Answer: I have added div elements to separate the different prefaces by num
             </l>
 	           <p>
                <app>
-                  <rdg wit="#R1837">is in her happiest style; just and beautiful Rienzi’s injuction to his daughter; her images perfectly noble and almost sublime—and the whole equal to any thing in modern poetry.</rdg>
+                  <rdg wit="#R1837">is in her happiest style; just and beautiful Rienzi’s injunction to his daughter; her images perfectly noble and almost sublime—and the whole equal to any thing in modern poetry.</rdg>
                </app>
             </p>
 	           <p>

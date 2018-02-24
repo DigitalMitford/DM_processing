@@ -5,10 +5,11 @@
     <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
     
     <!--<xsl:strip-space elements="*"/>-->
- <xsl:variable name="currWit">     <xsl:text>#msC1</xsl:text>
+ <xsl:variable name="currWit">     <xsl:text>#msR</xsl:text>
  </xsl:variable>   
    
-    <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
+   <!--2018-02-21 ebb: Commented out when no internet connection: <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>-->
+    <xsl:variable name="si" select="document('../SI_dev/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -38,17 +39,13 @@
     <xsl:apply-templates select="//listWit" mode="listWit"/>
     <p>You are viewing a representation of the <xsl:apply-templates select="//listWit/witness[@xml:id = substring-after($currWit, '#')]"/> <a href="{tokenize(base-uri(), '/')[last()]}">View the encoding of this edition in TEI P5.</a>
     </p>
-  
-<!--2018-02-16 ebb: The next two apply-templates statements are distinct to the ms version of Chas I -->                           <xsl:apply-templates select="//div[@type='msLCplaysentrypage']"/>
-                            <xsl:apply-templates select="//div[@type='msLClettertransmittal']"/>
-                            
- <xsl:apply-templates select="//div[@type='dedication']"/>
-      <!--OMIT in MS version: <xsl:apply-templates select="//div[@type='preface']"/>
-      -->
+ 
+<!--2018-02-21 ebb: The Prefaces are only present in the published editions, probably comment this next apply-templates out for processing the ms. --> 
+<xsl:apply-templates select="//div[@type='preface']"/>
                             
 <xsl:apply-templates select="//div[@type='prologue']"/>
          <xsl:apply-templates select="div[@type='cast']"/>  
-    <xsl:apply-templates select="//div[@type='set']"/>
+    
 </section>
         <section id="play">
             <xsl:apply-templates select="//body"/>
@@ -270,14 +267,22 @@
     <xsl:apply-templates select="l"/>
     </xsl:template>
    <!--2018-02-17 ebb: template rule draft to try to suppress lg, l, and head elements from being processed when they are ONLY present in the NOT current witness:-->
-    <xsl:template match="head[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] | lg[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])]  | l[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] "/>
+    <xsl:template match="head[ancestor::rdg[tokenize(@wit, ' ')!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] | lg[ancestor::rdg[tokenize(@wit, ' ')!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])]  | l[ancestor::rdg[tokenize(@wit, ' ')!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] "/>
     <xsl:template match="lg">
         <span class="lg"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit])]">
+    <xsl:template match="l[not(ancestor::rdg[tokenize(@wit, ' ')!=$currWit])]">
         <span class="line" id="L{count(preceding::l) + 1}">
-            <xsl:apply-templates/>
+            <xsl:choose>
+                <xsl:when test="app[rdg[tokenize(@wit, ' ')!=$currWit] and not(rdg[tokenize(@wit, ' ')=$currWit])]">
+                    <span class="app"><xsl:apply-templates select="app[rdg[tokenize(@wit, ' ')!=$currWit] and not(rdg[tokenize(@wit, ' ')=$currWit])]/preceding-sibling::*|text()[1]"/> 
+   <!--2018-02-21 ebb: I'm having trouble with the above apply-templates. See line 1088 in the HTML output for an example. The part that is variant is coming out multiple times. -->                    <xsl:apply-templates select="app"/>        
+                    </span>                <xsl:apply-templates select="app[rdg[tokenize(@wit, ' ')!=$currWit]and not(rdg[tokenize(@wit, ' ')=$currWit])]/following-sibling::*|text()"/>
+            </xsl:when>
+                <xsl:otherwise>             <xsl:apply-templates/>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:text> </xsl:text>
             <span class="lineNum"><xsl:value-of select="count(preceding::l) + 1"/></span>  
         </span>
@@ -323,13 +328,6 @@
         </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
-
-<!--2016-06-20: only use this for page breaks in the 1828 Rienzi
-        <xsl:template match="pb">
-   <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> 
-    
-</xsl:template>-->
     
     <xsl:template match="notesStmt//note">
         <p><xsl:apply-templates/></p>
@@ -614,29 +612,45 @@
     
    
 
-   <xsl:template match="app[rdg[@wit=$currWit]]">
-        <xsl:choose>
-            <xsl:when test="count(rdg) gt 1"><span class="app"><xsl:apply-templates select="rdg[@wit=$currWit]"/>
-       <xsl:if test="rdg[@wit!=$currWit]"> <span class="var"><xsl:for-each select="rdg[@wit!=$currWit]">
+   <xsl:template match="app[rdg[tokenize(@wit, ' ')=$currWit]]">
+        <span class="app"><xsl:apply-templates select="rdg[tokenize(@wit, ' ')=$currWit]"/>
+       <xsl:if test="rdg[tokenize(@wit, ' ')!=$currWit]"> <span class="var"><xsl:for-each select="rdg[tokenize(@wit, ' ')!=$currWit]">
         <xsl:apply-templates select="."/>
         </xsl:for-each>
         </span></xsl:if>
-        </span></xsl:when>
-        <xsl:otherwise>
-            <xsl:apply-templates/>
-        </xsl:otherwise>
-        </xsl:choose>
+        </span>
         </xsl:template>
     <!--2018-02-16 ebb: NOTE: The next template rule says, if the current witness is ENTIRELY MISSING, don't output anything.-->
-    <xsl:template match="app[not(rdg[@wit=$currWit])]">
-      <!--  <xsl:text>Placeholder text: This is not represented in the witness you are viewing.</xsl:text>-->
+    <xsl:template match="front//app[not(rdg[tokenize(@wit, ' ')=$currWit])]">
+      <xsl:text>Placeholder text: This is not represented in the witness you are viewing.</xsl:text>
     </xsl:template>
-    <xsl:template match="rdg[@wit!=$currWit]">
-        <span class="wit"><span class="witLabel"><xsl:value-of select="@wit"/><xsl:text>: </xsl:text></span><xsl:apply-templates/></span>
+ 
+    <xsl:template match="body//app[not(rdg[tokenize(@wit, ' ')=$currWit])]">
+       <span class="var">
+           <xsl:for-each select="rdg">             <xsl:apply-templates select="."/>
+           </xsl:for-each>
+       </span> 
     </xsl:template>
-    <xsl:template match="rdg[@wit=$currWit]">
+    
+    <xsl:template match="rdg[tokenize(@wit, ' ')!=$currWit]">
+        <span class="wit"><span class="witLabel"><xsl:value-of select="string-join(@wit, ', ')"/><xsl:text>: </xsl:text></span>
+            <!--2018-02-21 ebb: The following condition applies to the body apps in Rienzi, where all witnesses agree on a word or phrase, but there is added punctuation or other text following that word or phrase in the other witnesses but not in the MS. -->  
+            <xsl:if test="parent::app[not(rdg[tokenize(@wit, ' ')=$currWit])]">
+   <xsl:apply-templates select="parent::app/preceding-sibling::*/string()"/></xsl:if>       <xsl:apply-templates/></span>
+    </xsl:template>
+    <xsl:template match="rdg[tokenize(@wit, ' ')=$currWit]">
        <xsl:apply-templates/>
     </xsl:template>
+    <!--2018-02-21 ebb: The next template rule is for Rienzi's encoding of pb in the 1828 edition.  -->
+    <xsl:template match="pb[@edRef = $currWit]">
+        <span class="pageNum"><xsl:value-of select="@edRef"/></span>
+    </xsl:template>
+    
+    <!--2016-06-20: only use this for page breaks in the 1828 Rienzi
+        <xsl:template match="pb">
+   <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> 
+    
+</xsl:template>-->
     
 </xsl:stylesheet>
 

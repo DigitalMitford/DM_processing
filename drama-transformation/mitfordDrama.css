@@ -14,7 +14,7 @@ body{
     width:100%;
    
 /*padding: 10px 10px 40px 10px;*/
-border-radius: 10px; margin-left:3em; margin-right:3em;
+border-radius: 10px; 
 }
 div#images img{
 
@@ -85,7 +85,8 @@ p.boilerplate span {text-indent:-1em;
 
 div#container{
 width: 95%; 
-display:inline-block
+display:inline-block;
+margin-left:3em; margin-right:3em;
 }
   
 /*div#playMeta{

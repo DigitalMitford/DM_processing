@@ -5,7 +5,7 @@
     <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
     
     <!--<xsl:strip-space elements="*"/>-->
- <xsl:variable name="currWit">     <xsl:text>#msC1</xsl:text>
+ <xsl:variable name="currWit">     <xsl:text>#pubC1</xsl:text>
  </xsl:variable>   
    
     <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
@@ -39,12 +39,12 @@
     <p>You are viewing a representation of the <xsl:apply-templates select="//listWit/witness[@xml:id = substring-after($currWit, '#')]"/> <a href="{tokenize(base-uri(), '/')[last()]}">View the encoding of this edition in TEI P5.</a>
     </p>
   
-<!--2018-02-16 ebb: The next two apply-templates statements are distinct to the ms version of Chas I -->                           <xsl:apply-templates select="//div[@type='msLCplaysentrypage']"/>
-                            <xsl:apply-templates select="//div[@type='msLClettertransmittal']"/>
+<!--2018-02-16 ebb: The next two apply-templates statements are distinct to the ms version of Chas I -->                          <!-- <xsl:apply-templates select="//div[@type='msLCplaysentrypage']"/>
+                            <xsl:apply-templates select="//div[@type='msLClettertransmittal']"/>-->
                             
  <xsl:apply-templates select="//div[@type='dedication']"/>
-      <!--OMIT in MS version: <xsl:apply-templates select="//div[@type='preface']"/>
-      -->
+    <!--OMIT in MS version:--> <xsl:apply-templates select="//div[@type='preface']"/>
+      
                             
 <xsl:apply-templates select="//div[@type='prologue']"/>
          <xsl:apply-templates select="div[@type='cast']"/>  
