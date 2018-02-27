@@ -39,8 +39,7 @@ IN THIS CASE, remove the following-sibling element from outside the <app> and ad
              <xsl:when test="matches(preceding-sibling::text()[1], '^\s*$') and not(preceding-sibling::*) and not(following-sibling::*) and matches(following-sibling::text()[1], '^\s*$')">
        <xsl:copy-of select="."/>             
              </xsl:when>
-             <xsl:when test="not(matches(preceding-sibling::text()[1], '^\s*$')) and string-length($tVar) gt 0">
-                 <!--REMOVING condition: and not(preceding-sibling::*[1]) -->                
+             <xsl:when test="not(matches(preceding-sibling::text()[1], '^\s*$')) and string-length($tVar) gt 0">              
                 <app>
                
                    <rdg wit="#msR"><xsl:value-of select="$tVar"/></rdg>
@@ -55,6 +54,23 @@ IN THIS CASE, remove the following-sibling element from outside the <app> and ad
                      
                 </app>
             </xsl:when>
+      <!-- <xsl:when test="matches(preceding-sibling::text()[1], '^\s*$') and preceding-sibling::*[1][name()='note' and not(matches(current()/preceding-sibling::text()[1], '^\s*$'))] and string-length($tVar) gt 0">  
+                 <!-\-If there's a <note> just in front of the app -\->
+                 
+                 <app>
+                     
+                     <rdg wit="#msR"><xsl:value-of select="$tVar"/></rdg>
+                     <xsl:for-each select="rdg">
+                         <xsl:variable name="currWit">
+                             <xsl:value-of select="$tVar"/><xsl:value-of select="current()"/>
+                         </xsl:variable>
+                         <xsl:comment>I AM $currWit: <xsl:value-of select="$currWit"/></xsl:comment>
+                         <rdg wit="{current()/@wit}">
+                             <xsl:value-of select="$currWit"/></rdg>
+                     </xsl:for-each>
+                     
+                 </app>
+             </xsl:when>-->
              <xsl:when test="matches(preceding-sibling::text()[1], '^\s*$') and preceding-sibling::*[1][not(name()='note')]">
                  
              <app>
@@ -94,6 +110,23 @@ IN THIS CASE, remove the following-sibling element from outside the <app> and ad
                      </xsl:for-each>
                  </app>
              </xsl:when>
+         <!-- <xsl:when test="matches(following-sibling::text()[1], '^\s*$') and following-sibling::*[1][name()='note' and not(matches(following-sibling::text()[1], '^\s*$'))] and string-length($AfterVar) gt 0">  
+              <!-\-If there's a <note> just after the app -\-> 
+                 
+                 <app>
+                     
+                     <rdg wit="#msR"><xsl:value-of select="$AfterVar"/></rdg>
+                     <xsl:for-each select="rdg">
+                         <xsl:variable name="currWit">
+                             <xsl:value-of select="current()"/><xsl:value-of select="$AfterVar"/>
+                         </xsl:variable>
+                         <xsl:comment>I AM $currWit: <xsl:value-of select="$currWit"/></xsl:comment>
+                         <rdg wit="{current()/@wit}">
+                             <xsl:value-of select="$currWit"/></rdg>
+                     </xsl:for-each>
+                     
+                 </app>
+             </xsl:when>-->
              
          <!--<xsl:otherwise>
                 
@@ -113,6 +146,22 @@ IN THIS CASE, remove the following-sibling element from outside the <app> and ad
                 tunnel="yes"/>
         </xsl:apply-templates>
     </xsl:template>
+    <!--processing around notes: -->
+   <!-- <xsl:template match="body//text()[not(matches(., '^\s*$')) and following-sibling::*[1][name() = 'note' and following-sibling::text()[1][matches(., '^\s*$') and following-sibling::*[1][name()='app' and not(rdg[tokenize(@wit, ' ') = '#msR'])]]] and not(preceding-sibling::*[1][name()='app'][not(rdg[tokenize(@wit, ' ') = '#msR'])])]">
+        <xsl:variable name="tokenVar" select="tokenize(., '\s+')[last()]"/>
+        <xsl:variable name="smallerString" select="substring-before(., $tokenVar)"/>
+        
+        <xsl:value-of select="$smallerString"/><xsl:apply-templates select="following-sibling::app[1]">
+            
+            <xsl:with-param name="tVar" select="$tokenVar"
+                tunnel="yes"/>
+            <xsl:with-param name="smString" select="$smallerString"
+                tunnel="yes"/>
+        </xsl:apply-templates>
+    </xsl:template>-->
+    
+    
+    
     <xsl:template match="body//text()[not(matches(., '^\s*$')) and preceding-sibling::*[1][name() = 'app' and not(rdg[tokenize(@wit, ' ') = '#msR'])] and not(following-sibling::*[1][name()='app'][not(rdg[tokenize(@wit, ' ') = '#msR'])])]">
         <xsl:variable name="tokenAftVar" select="tokenize(., '\s+')[1]"/>
         <xsl:variable name="smallerAftString" select="substring-after(., $tokenAftVar)"/>
@@ -129,6 +178,17 @@ IN THIS CASE, remove the following-sibling element from outside the <app> and ad
           -->
         
     </xsl:template>
+    <!--processing around notes: -->
+   <!-- <xsl:template match="body//text()[not(matches(., '^\s*$')) and preceding-sibling::*[1][name() = 'note' and preceding-sibling::text()[1][matches(., '^\s*$') and preceding-sibling::*[1][name()='app' and not(rdg[tokenize(@wit, ' ') = '#msR'])]]] and not(following-sibling::*[1][name()='app'][not(rdg[tokenize(@wit, ' ') = '#msR'])])]">        
+        <xsl:variable name="tokenAftVar" select="tokenize(., '\s+')[1]"/>
+        <xsl:variable name="smallerAftString" select="substring-after(., $tokenAftVar)"/>
+        
+        <xsl:apply-templates select="preceding-sibling::app[1]">
+            <xsl:with-param name="AfterVar" select="$tokenAftVar"
+                tunnel="yes"/>
+        </xsl:apply-templates>
+        <xsl:value-of select="$smallerAftString"/>
+    </xsl:template>-->
     
     
     

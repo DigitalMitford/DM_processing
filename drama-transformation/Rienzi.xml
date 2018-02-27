@@ -862,9 +862,10 @@ ebb: Answer: I have added div elements to separate the different prefaces by num
                   <l xml:id="Rienzi_l_103">Black <persName>John</persName>
                      <app>
                         <rdg wit="#R1828 #R1837 #R1854">,</rdg>
-                     </app> of <orgName>Ursini</orgName>
+                     </app> of
                      <app>
-                        <rdg wit="#R1828 #R1837 #R1854">,</rdg>
+                        <rdg wit="#msR"><orgName>Ursini</orgName></rdg>
+                        <rdg wit="#R1828 #R1837 #R1854"><orgName>Ursini</orgName>,</rdg>
                      </app> spurred his hot courser<note resp="#esh">courser: a racing horse</note> 
                   </l>
                   <l xml:id="Rienzi_l_104">Right through a band of pious pilgrims<app>
@@ -1006,8 +1007,9 @@ ebb: Answer: I have added div elements to separate the different prefaces by num
                         <rdg wit="#msR">Here comes</rdg>
                      </app>
                   </l>
-                  <l xml:id="Rienzi_l_126">The tyrant of to-day. Go<app>
-                        <rdg wit="#R1828 #R1837 #R1854">,</rdg>
+                  <l xml:id="Rienzi_l_126">The tyrant of to-day. <app>
+                     <rdg wit="#msR">Go</rdg>
+                     <rdg wit="#R1828 #R1837 #R1854">Go,</rdg>
                      </app> swell his train<note resp="#esh">swell his train: join the crowd</note>. </l>
                   <l xml:id="Rienzi_l_127">I’ll to my porch again, and feed my spirit </l>
                   <l xml:id="Rienzi_l_128">On these mute marbles.</l>
@@ -1171,10 +1173,11 @@ ebb: Answer: I have added div elements to separate the different prefaces by num
                      </app> what a sort of sullen citizens </l>
                   <l xml:id="Rienzi_l_142">Be here<app>
                         <rdg wit="#R1828 #R1837 #R1854">,</rdg>
-                     </app> that shout not! Doff thy bonnet<note resp="#esh">doff thy bonnett: take off your hat</note>
+                     </app> that shout not! Doff thy
                      <app>
-                        <rdg wit="#R1828 #R1837 #R1854">,</rdg>
-                     </app> man! </l>
+                        <rdg wit="#msR">bonnet</rdg>
+                        <rdg wit="#R1828 #R1837 #R1854">bonnet,</rdg>
+                     </app> man!<note resp="#esh">doff thy bonnett: take off your hat</note></l>
                   <l xml:id="Rienzi_l_143">Look at thy fellows! doff thy cap<app>
                         <rdg wit="#msR">!</rdg>
                         <rdg wit="#R1828 #R1837 #R1854">.</rdg>
@@ -1855,10 +1858,11 @@ ebb: Answer: I have added div elements to separate the different prefaces by num
                         <rdg wit="#R1828 #R1837">—</rdg>
                      </app>
                   </l>
-                  <l xml:id="Rienzi_l_259">Would bring my little handmaid<note resp="#esh">handmaid: servant</note>
+                  <l xml:id="Rienzi_l_259">Would bring my little 
                      <app>
-                        <rdg wit="#R1828 #R1837 #R1854">,</rdg>
-                     </app> springing forth </l>
+                        <rdg wit="#msR">handmaid</rdg>
+                        <rdg wit="#R1828 #R1837 #R1854">handmaid,</rdg>
+                     </app> springing forth<note resp="#esh">handmaid: servant</note></l>
                   <l xml:id="Rienzi_l_260">With eager service<app>
                         <rdg wit="#R1828 #R1837 #R1854">,</rdg>
                      </app> to fling wide the door, </l>
