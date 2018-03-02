@@ -333,7 +333,7 @@
                   <castItem>
                      <role xml:id="Salisbury">
                         <app><rdg wit="#msC1"><persName ref="#Salisbury">Lord Salisbury</persName>
-                              <metamark function="connect" rend="curly_bracket" target="#CIg1"/>
+                              <!--2018-03-02 ebb: commenting this out because not worth processing: <metamark function="connect" rend="curly_bracket" target="#CIg1"/>-->
                            </rdg></app>
                      </role>
                   </castItem>
@@ -407,7 +407,7 @@
                   
                   <castItem>
                      <role xml:id="Bradshaw">
-                        <app><rdg wit="#msC1"><persName ref="#Bradshaw">Lord President Bradshaw</persName>,<metamark function="connect" rend="curly_bracket" target="#CIg2"/>
+                        <app><rdg wit="#msC1"><persName ref="#Bradshaw">Lord President Bradshaw</persName>,<!--<metamark function="connect" rend="curly_bracket" target="#CIg2"/>-->
                            </rdg></app>
                      </role>
                   </castItem>
@@ -697,7 +697,7 @@
                <head>
                   <app><rdg wit="#pubC1">SCENE I.</rdg></app>
                </head>
-               <stage type="setting">An Apartment in <placeName ref="#Whitehall_Palace">Whitehall</placeName>.</stage>
+               <stage type="setting">Scene—An Apartment in <placeName ref="#Whitehall_Palace">Whitehall</placeName>.</stage>
                <stage type="business">
                   <app><rdg wit="#pubC1">Enter <persName ref="#Ireton">Ireton</persName>, <persName ref="#Harrison">Harrison</persName>, and <persName ref="#Pride_Ch1">Pride</persName>, to <persName ref="#Downes">Downes</persName> and
                            <persName ref="#Marten">Marten</persName>.
@@ -1018,9 +1018,7 @@
                   <l xml:id="Chas_l_144">Had been a treason. But the words fell straight</l>
                   <l xml:id="Chas_l_145">Midst our unconscious hearts, <app><rdg wit="#pubC1">unprompted, quick,</rdg><rdg wit="#msC1">unprompted quick</rdg></app></l>
                   <l xml:id="Chas_l_146">Startling even him who spake them<app>
-                     <rdg wit="#pubC1">&#8212;-</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> ,</rdg>
+                     <rdg wit="#pubC1">&#8212;-</rdg><rdg wit="#msC1"> ,</rdg>
                      </app>like the fire</l>
                   <l xml:id="Chas_l_147">That it<!--LMW ck.: lit? mark as typo?--> the Burning Bush<app><rdg wit="#pubC1">. A sign from Heaven!</rdg><rdg wit="#msC1">, a sign from Heaven</rdg></app></l>
                   <l xml:id="Chas_l_148">Direct from Heaven! A comfortable light</l>
@@ -1511,9 +1509,7 @@
                      </app> sooth</l>
                   <l xml:id="Chas_l_318">Thou mean'st me kindly<app>
                         <rdg wit="#pubC1">, <persName ref="#Herbert_Ch1">Herbert.</persName> Ha<app>
-                              <rdg wit="#pubC1">,</rdg>
-                           </app><app>
-                              <rdg wit="#msC1">!</rdg>
+                              <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                            </app> the Sea,</rdg>
                         <rdg wit="#msC1">
                            <persName ref="#Herbert_Ch1">Herbert.</persName>&#8212;Ha. the Sea</rdg>
@@ -1756,9 +1752,7 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_379">No more! No more!</l>
                   <l xml:id="Chas_l_380">Thou hast my answer.<app>
-                     <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> </rdg>
+                     <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1"> </rdg>
                      </app>By the iron tread</l>
                   <l xml:id="Chas_l_381">A soldier.</l>
                </sp>
@@ -2080,7 +2074,7 @@
                   <app><rdg wit="#pubC1">SCENE I.</rdg></app>
                </head>
                <stage type="setting">
-                  <app><rdg wit="#pubC1">The <placeName ref="#Painted_Chmbr">Painted Chamber</placeName>. A table at which
+                  <app><rdg wit="#pubC1">Scene—The <placeName ref="#Painted_Chmbr">Painted Chamber</placeName>. A table at which
                      are seated <orgName ref="#High_Court_of_Justice">Commissioners</orgName>, Lawyers, &amp;c.; </rdg><rdg wit="#msC1">The <placeName ref="#Painted_Chmbr">Painted Chamber</placeName>. A table with the
                         <orgName ref="#High_Court_of_Justice">Commissioners</orgName> lawyers &amp; c seated.</rdg></app> A gothic window behind the table<app><rdg wit="#pubC1">,</rdg></app> through which objects that pass may be seen.</stage>
                <stage type="business">
@@ -2391,7 +2385,7 @@
                   <l xml:id="Chas_l_594">This is the crowning work.</l>
                </sp>
                <stage type="business">
-                  <app><rdg wit="#pubC1">(The Scene closes.)</rdg><rdg wit="#msC1">The scene closes.</rdg></app>
+                  <app><rdg wit="#pubC1">(The Scene closes.)</rdg><rdg wit="#msC1">Scene closes.</rdg></app>
                </stage>
 
             </div>
@@ -2718,9 +2712,7 @@
                            <rdg wit="#pubC1">Lady</rdg>
                            <rdg wit="#msC1">lady</rdg>
                         </app> Fairfax</persName><app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">,</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">,</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_661">Right well beseemeth christian charity</l>
@@ -2940,9 +2932,7 @@
                         </app></l>
                      <l xml:id="Chas_l_717">To plunge at once into this stormy sea</l>
                      <l xml:id="Chas_l_718">Of griefs<app>
-                           <rdg wit="#pubC1">,</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">;</rdg>
+                           <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">;</rdg>
                         </app> to summon my great foe<app>
                            <rdg wit="#pubC1">,</rdg>
                            <rdg wit="#msC1">;</rdg>
@@ -3083,9 +3073,7 @@
                         </app> all</l>
                      <l xml:id="Chas_l_756">This rebel <placeName ref="#England">England</placeName>
                         is thine own; <app>
-                           <rdg wit="#pubC1">and</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">&amp;</rdg>
+                           <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                         </app> e'en</l>
                      <l xml:id="Chas_l_757">Amid the <orgName ref="#New_Model_Army">Army</orgName>
                         some the greatest, some </l>
@@ -3172,9 +3160,7 @@
                            <rdg wit="#msC1">,</rdg>
                         </app> he was most like the delving worm</l>
                      <l xml:id="Chas_l_777">Hypocrisy; that slough is cast, <app>
-                           <rdg wit="#pubC1">and</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">&amp;</rdg>
+                           <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                         </app> now</l>
                      <l xml:id="Chas_l_778">His strong <app>
                            <rdg wit="#pubC1">and</rdg>
@@ -3198,9 +3184,7 @@
                   <sp who="#Chas1_MRM">
                      <speaker>King.</speaker>
                      <l xml:id="Chas_l_784">Ha<app>
-                           <rdg wit="#pubC1">, w</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">! W</rdg>
+                           <rdg wit="#pubC1">, w</rdg><rdg wit="#msC1">! W</rdg>
                         </app>herefore<app>
                            <rdg wit="#pubC1">! But I've learned</rdg>
                            <rdg wit="#msC1">? But I've learnt</rdg>
@@ -3428,9 +3412,7 @@
                      <speaker>Queen.</speaker>
                      <l xml:id="Chas_l_846">Chuse thine office. Keep the name</l>
                      <l xml:id="Chas_l_847">Thy sword hath rendered famous. Be <app>
-                           <rdg wit="#pubC1">L</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">l</rdg>
+                           <rdg wit="#pubC1">L</rdg><rdg wit="#msC1">l</rdg>
                         </app>ord Vicar<app>
                            <rdg wit="#pubC1">;</rdg>
                            <rdg wit="#msC1">,</rdg>
@@ -3569,9 +3551,7 @@
                            <rdg wit="#msC1">&amp;</rdg>
                         </app>
                         <app>
-                           <rdg wit="#pubC1">endiademed</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">endiademmed</rdg>
+                           <rdg wit="#pubC1">endiademed</rdg><rdg wit="#msC1">endiademmed</rdg>
                         </app>, a dim</l>
                      <l xml:id="Chas_l_884">Mysterious glory. Who may dare to call</l>
                      <l xml:id="Chas_l_885">For justice on a King? Who dare to touch</l>
@@ -3678,9 +3658,7 @@
                            <rdg wit="#msC1">&amp;</rdg>
                         </app> darker; there be men whose craft </l>
                      <l xml:id="Chas_l_911">Can doom with other tongues<app>
-                           <rdg wit="#pubC1">,</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">;</rdg>
+                           <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">;</rdg>
                         </app> with other hands</l>
                      <l xml:id="Chas_l_912">Can slay.<app>
                            <rdg wit="#pubC1"> I know thee,</rdg>
@@ -5192,14 +5170,10 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1327">For ye </l>
                   <l xml:id="Chas_l_1328">My subject-judges I <app>
-                        <rdg wit="#pubC1">could</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">might</rdg>
+                        <rdg wit="#pubC1">could</rdg><rdg wit="#msC1">might</rdg>
                      </app>weep; for thee </l>
                   <l xml:id="Chas_l_1329">Beloved and lovely country<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Thou wilt groan </l>
                   <l xml:id="Chas_l_1330">Under the tyrant Many till some bold</l>
                   <l xml:id="Chas_l_1331">And crafty soldier, one who in the field</l>
@@ -5214,13 +5188,9 @@
                      </app>To win each several soul, his several sin,</l>
                   <l xml:id="Chas_l_1337">A stern fanatic, a smooth hypocrite,</l>
                   <l xml:id="Chas_l_1338">A fierce <app>
-                        <rdg wit="#pubC1">r</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">R</rdg>
+                        <rdg wit="#pubC1">r</rdg><rdg wit="#msC1">R</rdg>
                      </app>e<app>
-                        <rdg wit="#msC1">p</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">b</rdg>
+                        <rdg wit="#msC1">p</rdg><rdg wit="#pubC1">b</rdg>
                      </app>ublican, a coarse buffoon,</l>
                   <l xml:id="Chas_l_1339">Always a great bad
                         man; till he shall come,</l>
@@ -5247,9 +5217,7 @@
                   <l xml:id="Chas_l_1352">Beneath the palace roof, beneath that roof</l>
                   <l xml:id="Chas_l_1353">More fair, the summer sky, fear shall appal</l>
                   <l xml:id="Chas_l_1354">And <app>
-                        <rdg wit="#msC1">D</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">d</rdg>
+                        <rdg wit="#msC1">D</rdg><rdg wit="#pubC1">d</rdg>
                      </app>anger threaten, and all natural loves</l>
                   <l xml:id="Chas_l_1355">Wither and die; till on <app>
                         <rdg wit="#pubC1">his</rdg>
@@ -5270,7 +5238,7 @@
                   <l xml:id="Chas_l_1363">A kingdom but not me. <app>
                         <rdg wit="#msC1"><metamark place="above" function="insertion"
                               >x</metamark><metamark place="inline" function="insertion"
-                              >[</metamark>Ye are warned! now</rdg>
+                              >[</metamark>Ye are warned! now Sirs</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1364"><app>
                         <rdg wit="#msC1">On to my prison.</rdg>
@@ -5401,7 +5369,7 @@
                         </app></l>
                      <l xml:id="Chas_l_1388"><app>
                            <rdg wit="#msC1">On to my prison!</rdg>
-                        </app>/</l>
+                        </app></l>
                   </sp>
                   <sp who="#New_Model_Army">
                      <speaker>Soldiers.</speaker>
@@ -5416,13 +5384,13 @@
                      <speaker>Cromwell.</speaker>
                      <l xml:id="Chas_l_1391"><app>
                            <rdg wit="#msC1">Nay my comrades</rdg>
-                        </app>/</l>
+                        </app></l>
                      <l xml:id="Chas_l_1392"><app>
                         <rdg wit="#msC1">Vex not a sinner's parting hour!&#8212;The Wrath</rdg>
-                        </app>/</l>
+                        </app></l>
                      <l xml:id="Chas_l_1393"><app>
                            <rdg wit="#msC1">Is on him <persName ref="#Harrison">Harrison</persName></rdg>
-                        </app>/</l>
+                        </app></l>
                   </sp>
                   <sp who="#New_Model_Army">
                      <speaker>Soldiers.</speaker>
@@ -5431,7 +5399,7 @@
                         </app></l>
                      <l xml:id="Chas_l_1395"><app>
                            <rdg wit="#msC1">To Execution.</rdg>
-                        </app>/</l>
+                        </app></l>
                   </sp>
                   <stage type="business"><app>
                         <rdg wit="#msC1">End of the Third Act.</rdg>
@@ -5455,9 +5423,7 @@
                      <rdg wit="#msC1">Scene&#8212; an apartment</rdg>
                      <rdg wit="#pubC1">An Apartment</rdg>
                   </app> in <persName ref="#Cromwell_MRM">Cromwell</persName>'s<app>
-                     <rdg wit="#pubC1"> H</rdg>
-                  </app><app>
-                     <rdg wit="#msC1"> h</rdg>
+                     <rdg wit="#pubC1"> H</rdg><rdg wit="#msC1"> h</rdg>
                   </app>ouse.</stage>
                <stage type="business">
                   <persName ref="#Cromwell_MRM">Cromwell</persName> alone.</stage>
@@ -5479,9 +5445,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1400">Fair <app>
-                        <rdg wit="#pubC1">s</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">S</rdg>
+                        <rdg wit="#pubC1">s</rdg><rdg wit="#msC1">S</rdg>
                      </app>on?</l>
                </sp>
                <sp who="#Ireton">
@@ -5490,9 +5454,7 @@
                         <rdg wit="#pubC1">Sir,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1402">The <app>
-                        <rdg wit="#pubC1">L</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">l</rdg>
+                        <rdg wit="#pubC1">L</rdg><rdg wit="#msC1">l</rdg>
                      </app>ords <orgName ref="#High_Court_of_Justice">Commissioners</orgName> refuse </l>
                   <l xml:id="Chas_l_1403">To sign the warrant. He'll escape us yet.</l>
                </sp>
@@ -5503,9 +5465,7 @@
                <sp who="#Ireton">
                   <speaker>Ire.</speaker>
                   <l xml:id="Chas_l_1405">No; <persName ref="#Harrison">Harrison</persName><app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app><persName ref="#Bradshaw">Bradshaw</persName> still hold firm.</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -5540,14 +5500,10 @@
                   <speaker>Ire.</speaker>
                   <l xml:id="Chas_l_1415">At <placeName ref="#Westmnstr">Westminster</placeName>.</l>
                   <l xml:id="Chas_l_1416">One <app>
-                        <rdg wit="#pubC1">glance</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">gleam</rdg>
+                        <rdg wit="#pubC1">glance</rdg><rdg wit="#msC1">gleam</rdg>
                      </app> of their bright swords, one stirring note</l>
                   <l xml:id="Chas_l_1417">Of their war-trumpet, <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> these dastard Judges&#8212;</l>
                   <l xml:id="Chas_l_1418">I'll seek them instantly.</l>
                </sp>
@@ -5559,9 +5515,7 @@
                   <l xml:id="Chas_l_1420">Foul shame it were<app>
                         <rdg wit="#msC1">,</rdg>
                      </app> here in <app>
-                        <rdg wit="#pubC1">a</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">this</rdg>
+                        <rdg wit="#pubC1">a</rdg><rdg wit="#msC1">this</rdg>
                      </app> Christian land </l>
                   <l xml:id="Chas_l_1421">To govern by brute force<app>
                         <rdg wit="#msC1">,</rdg>
@@ -5575,9 +5529,7 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1423">Or turn their very guards</l>
                   <l xml:id="Chas_l_1424">Against the <app>
-                     <rdg wit="#pubC1">Judges&#8212;Be they trusty?</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">judges&#8212;We must keep unstained</rdg>
+                     <rdg wit="#pubC1">Judges&#8212;Be they trusty?</rdg><rdg wit="#msC1">judges&#8212;We must keep unstained</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1425"><app>
                      <rdg wit="#msC1">The course of justice&#8212;Be they trusty?</rdg>
@@ -5595,17 +5547,13 @@
                   <l xml:id="Chas_l_1428">Nay<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> go not<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1429">No force<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> good <app>
-                        <rdg wit="#pubC1">S</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">s</rdg>
+                        <rdg wit="#pubC1">S</rdg><rdg wit="#msC1">s</rdg>
                      </app>on! No force! </l>
                   <stage type="business">Enter a Servant<app>
                         <rdg wit="#pubC1">.</rdg>
@@ -5617,17 +5565,13 @@
                   <l xml:id="Chas_l_1431">The Colonel <persName ref="#Harrison">Harrison</persName>
                      sends me to crave </l>
                   <l xml:id="Chas_l_1432">Your <app>
-                        <rdg wit="#pubC1">E</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">e</rdg>
+                        <rdg wit="#pubC1">E</rdg><rdg wit="#msC1">e</rdg>
                      </app>xcellency's presence.</l>
                </sp>
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1433">Aye<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">?</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">?</rdg>
                      </app> I come. </l>
                   <l xml:id="Chas_l_1434">Didst meet thy fellow Robert, <app><!--LMW id? who is this?-->
                         <rdg wit="#pubC1">and</rdg>
@@ -5650,15 +5594,11 @@
                   <l xml:id="Chas_l_1438">I come. No force<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> good son<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Remember </l>
                   <l xml:id="Chas_l_1439">This is a Christian land. We must keep pure</l>
                   <l xml:id="Chas_l_1440">The <app>
-                        <rdg wit="#pubC1">J</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">j</rdg>
+                        <rdg wit="#pubC1">J</rdg><rdg wit="#msC1">j</rdg>
                      </app>udgment seat. No force.</l>
                   <stage type="business"><app>
                         <rdg wit="#pubC1">(</rdg>
@@ -5674,9 +5614,7 @@
                   <speaker>Serv.</speaker>
                   <l xml:id="Chas_l_1444">Prayed</l>
                   <l xml:id="Chas_l_1445">Your instant presence, <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> betwixt his teeth</l>
                   <l xml:id="Chas_l_1446">Muttered <app>
                         <rdg wit="#pubC1">"</rdg>
@@ -5687,23 +5625,13 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1447">Fie! <app>
-                        <rdg wit="#pubC1">F</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">f</rdg>
+                        <rdg wit="#pubC1">F</rdg><rdg wit="#msC1">f</rdg>
                      </app>ie! to speak </l>
                   <l xml:id="Chas_l_1448">Irreverently of such great-ones. Faint </l>
                   <l xml:id="Chas_l_1449">And craven souls<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app> Follow my son<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">.</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#pubC1">t</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">.</rdg><rdg wit="#pubC1">t</rdg>
                      </app>
                      <app>
                         <rdg wit="#msC1">T</rdg>
@@ -5711,14 +5639,10 @@
                         <rdg wit="#msC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1450">Heading his valiant <app>
-                        <rdg wit="#pubC1">h</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">H</rdg>
+                        <rdg wit="#pubC1">h</rdg><rdg wit="#msC1">H</rdg>
                      </app>orse. Bid him be still</l>
                   <l xml:id="Chas_l_1451">Till I send to him<app>
-                     <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                     <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1">,</rdg>
                      </app>still as night. And now</l>
                   <l xml:id="Chas_l_1452">For ye wise Judges!</l>
                </sp>
@@ -5727,17 +5651,13 @@
                      <rdg wit="#msC1">&#8212;</rdg>
                   </app>
                   <stage type="business"><app>
-                        <rdg wit="#pubC1">(Exeunt.)</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Exeunt.</rdg>
+                        <rdg wit="#pubC1">(Exeunt.)</rdg><rdg wit="#msC1">Exeunt.</rdg>
                      </app></stage>
                </stage>
                <stage type="business">
                   <app>
                      <rdg wit="#msC1">The scene draws &amp;<lb/><app>
-                           <rdg wit="#pubC1">D</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">d</rdg>
+                           <rdg wit="#pubC1">D</rdg><rdg wit="#msC1">d</rdg>
                         </app>iscloses the <placeName ref="#Painted_Chmbr">Painted
                            Chamber</placeName></rdg>
                   </app>
@@ -5795,9 +5715,7 @@
                   <l xml:id="Chas_l_1470">Captivity</l>
                   <l xml:id="Chas_l_1471">And bondage will o'ertake them<app><rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg></app> They fall off</l>
                   <l xml:id="Chas_l_1472">Like the revolted Tribes<app>
-                        <rdg wit="#pubC1">. </rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">. </rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app>Ægyptian bondage!</l>
                </sp>
 
@@ -5821,13 +5739,9 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1480">What unsigned?<app>
-                     <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> </rdg>
+                     <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1"> </rdg>
                      </app><persName ref="#Harrison">Harrison</persName>!<app>
-                        <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> </rdg>
+                        <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1"> </rdg>
                      </app>He came hither </l>
                   <l xml:id="Chas_l_1481">To crave your signatures.</l>
                </sp>
@@ -5938,9 +5852,7 @@
                   <l xml:id="Chas_l_1517">Master <persName ref="#Cook_Ch1">Cook</persName></l>
                   <l xml:id="Chas_l_1518">No wonder that a lawyer pleads to<app><rdg wit="#pubC1">-</rdg><rdg wit="#msC1"> </rdg></app>day</l>
                   <l xml:id="Chas_l_1519">Against his cause of yesterday<app>
-                     <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                     <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1">,</rdg>
                      </app>if fee<app>
                         <rdg wit="#pubC1">'</rdg>
                      </app>d </l>
@@ -5951,9 +5863,7 @@
                <sp who="#Marten">
                   <speaker>Mar.</speaker>
                   <l xml:id="Chas_l_1522">He will give large securities<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1523">For what?</l>
                </sp>
@@ -6045,13 +5955,9 @@
                   <l xml:id="Chas_l_1565">My course right on <app><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">, and</rdg></app> gained the spoil. Sirs, we</l>
                   <l xml:id="Chas_l_1566">Have plunged knee<app><rdg wit="#pubC1"> </rdg><rdg wit="#msC1">-</rdg></app>deep in the waters<app><rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg></app> are mid<app><rdg wit="#pubC1"> </rdg><rdg wit="#msC1">-</rdg></app>way</l>
                   <l xml:id="Chas_l_1567">The stream<app>
-                        <rdg wit="#pubC1">: W</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,&#8212;w</rdg>
+                        <rdg wit="#pubC1">: W</rdg><rdg wit="#msC1">,&#8212;w</rdg>
                      </app>ill ye turn now <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> leave the fruit</l>
                   <l xml:id="Chas_l_1568">Ungathered<app><rdg wit="#pubC1">,</rdg></app> recreants<app><rdg wit="#pubC1">?</rdg><rdg wit="#msC1">,</rdg></app> or hold boldly on</l>
                   <l xml:id="Chas_l_1569">And win the holy prize of freedom? Give me</l>
@@ -6085,9 +5991,7 @@
                   <l xml:id="Chas_l_1586">Stand still<app>
                         <rdg wit="#pubC1">!</rdg>
                   </app>&#8212;See! See! how fair <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> clerkly! Yet </l>
                   <l xml:id="Chas_l_1587">This parchment is the smoother.</l>
                </sp>
@@ -6211,9 +6115,7 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1624">Sir<app><rdg wit="#pubC1">,</rdg></app></l>
                   <l xml:id="Chas_l_1625">I have a slow-hound's scent to track a traitor<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1626">He's found<app><rdg wit="#pubC1"> and</rdg><rdg wit="#msC1">, &amp;</rdg></app> he's despatched.</l>
@@ -6258,9 +6160,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1644">A Judge too<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app><persName ref="#Downes">Downes</persName><app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> hast thou signed yonder Warrant?</l>
@@ -6274,9 +6174,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1646">Go sign I say.&#8212;The plan<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">?</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">?</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1647">A sudden rescue, to o'erpower the guard.&#8212;</l>
@@ -6288,42 +6186,30 @@
                   <l xml:id="Chas_l_1649">Nay, man, if thou be questioned<app><rdg wit="#pubC1">,</rdg><rdg wit="#msC1"/></app></l>
                   <l xml:id="Chas_l_1650">Some dozen years hence, say that I forced thee, swear</l>
                   <l xml:id="Chas_l_1651">Thy wicked <app>
-                        <rdg wit="#pubC1">k</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">K</rdg>
+                        <rdg wit="#pubC1">k</rdg><rdg wit="#msC1">K</rdg>
                      </app>insman held thy hand.<app>
-                        <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> </rdg>
+                        <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1"> </rdg>
                      </app>Aye<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app>
                      <app>
-                        <rdg wit="#pubC1">n</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">N</rdg>
+                        <rdg wit="#pubC1">n</rdg><rdg wit="#msC1">N</rdg>
                      </app>ow</l>
                   <l xml:id="Chas_l_1652">The blank is nobly filled, <app><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg></app> bravely! now</l>
                   <l xml:id="Chas_l_1653">I know ye once again, the pious Judges</l>
                   <l xml:id="Chas_l_1654">The <app>
-                        <rdg wit="#pubC1">e</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">E</rdg>
+                        <rdg wit="#pubC1">e</rdg><rdg wit="#msC1">E</rdg>
                      </app>lect <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> godly of the land<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.&#8212;</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.&#8212;</rdg>
                      </app>
                      <app>
                         <rdg wit="#msC1">Good <persName ref="#Marten">Marten</persName></rdg>
                      </app></l>
                </sp>
 
-               <stage type="business"><app><rdg wit="#pubC1">(A trumpet heard without)</rdg><rdg wit="#msC1">A trumpet heard without</rdg></app></stage>
+               <stage type="business"><app><rdg wit="#pubC1">(A trumpet heard without)</rdg></app></stage>
 
                <sp who="#Cromwell_MRM">
                   <l xml:id="Chas_l_1655"><app>
@@ -6388,14 +6274,10 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1675">Why so we must be. There be plots astir,</l>
                   <l xml:id="Chas_l_1676">And speed is our best safety.&#8212;Thou hast signed<app>
-                        <rdg wit="#pubC1">?</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">?</rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1677"><app>
-                        <rdg wit="#pubC1">Thy name is here amongst us?</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Is not thy name among us?</rdg>
+                        <rdg wit="#pubC1">Thy name is here amongst us?</rdg><rdg wit="#msC1">Is not thy name among us?</rdg>
                      </app>&#8212;I must haste</l>
                   <l xml:id="Chas_l_1678">To overtake the hour. 'Tis still unsealed<app><rdg wit="#pubC1">.</rdg><rdg wit="#msC1">;</rdg></app></l>
                   <l xml:id="Chas_l_1679">Add thou my signet<app><rdg wit="#pubC1">,</rdg></app><persName ref="#Bradshaw">Bradshaw</persName>.</l>
@@ -6432,9 +6314,7 @@
                      <rdg wit="#msC1">,</rdg>
                   </app> leading in the <persName ref="#PrincessE_Ch1">Princess Elizabeth</persName>
                   <app>
-                     <rdg wit="#msC1">&amp;</rdg>
-                  </app><app>
-                     <rdg wit="#pubC1">and</rdg>
+                     <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                   </app> the <persName ref="#Gloucester">Duke of Gloucester</persName>.</stage>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
@@ -6444,15 +6324,11 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1686">I thought I had done with anger, but the <app>
-                        <rdg wit="#pubC1">soldier</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">ruffian</rdg>
+                        <rdg wit="#pubC1">soldier</rdg><rdg wit="#msC1">ruffian</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1687">Who gazed on thee awhile, with looks that seemed</l>
                   <l xml:id="Chas_l_1688">To wither thy young beauty, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> with words&#8212;</l>
                   <l xml:id="Chas_l_1689">My child! my child! And I had not the power</l>
                   <l xml:id="Chas_l_1690">To shield mine own sweet child!</l>
@@ -6461,23 +6337,17 @@
                   <speaker>Eliz.</speaker>
                   <l xml:id="Chas_l_1691">I saw him not;</l>
                   <l xml:id="Chas_l_1692">I heard him not<app>
-                        <rdg wit="#pubC1">:</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">:</rdg><rdg wit="#msC1">;</rdg>
                      </app> I could see none but thee;</l>
                   <l xml:id="Chas_l_1693">Could hear no voice <app>
-                        <rdg wit="#msC1">save</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">but</rdg>
+                        <rdg wit="#msC1">save</rdg><rdg wit="#pubC1">but</rdg>
                      </app> thine.</l>
                </sp>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1694">When I am gone</l>
                   <l xml:id="Chas_l_1695">Who shall protect thee<app>
-                        <rdg wit="#pubC1">?</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">?</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <sp who="#Gloucester">
@@ -6491,20 +6361,14 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> be thou </l>
                   <l xml:id="Chas_l_1699">A mother to him<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Rear him up in peace</l>
                   <l xml:id="Chas_l_1700">And humbleness. Show him how sweet Content</l>
                   <l xml:id="Chas_l_1701">Can smile on dungeon floors; how the mewed lark</l>
                   <l xml:id="Chas_l_1702">Sings in his narrow cage. Plant <app>
-                        <rdg wit="#pubC1">p</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">P</rdg>
+                        <rdg wit="#pubC1">p</rdg><rdg wit="#msC1">P</rdg>
                      </app>atience, dear<app>
-                        <rdg wit="#pubC1"> </rdg>
-                     </app><app>
-                        <rdg wit="#msC1">-</rdg>
+                        <rdg wit="#pubC1"> </rdg><rdg wit="#msC1">-</rdg>
                      </app>ones,</l>
                   <l xml:id="Chas_l_1703">Deep in your hearts.</l>
                   <stage type="business">Enter <persName ref="#Herbert_Ch1"
@@ -6514,9 +6378,7 @@
                      </app> where stays the <persName ref="#Queen_Ch1">Queen</persName>?</l>
                   <l xml:id="Chas_l_1705">Still on that hopeless quest of hope, though friends</l>
                   <l xml:id="Chas_l_1706">Drop from her fast as leaves in Autumn<app>
-                        <rdg wit="#pubC1">?</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">?</rdg><rdg wit="#msC1">.</rdg>
                      </app></l>
                </sp>
                <sp who="#Herbert_Ch1">
@@ -6525,9 +6387,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1708">Her Grace is absent still<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">;</rdg>
                      </app> But General <persName ref="#Cromwell_MRM">Cromwell</persName></l>
                   <l xml:id="Chas_l_1709">Craves audience of your Majesty.</l>
                </sp>
@@ -6550,9 +6410,7 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1716">No. I sent them to thee</l>
                   <l xml:id="Chas_l_1717">In <app>
-                        <rdg wit="#pubC1">C</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">c</rdg>
+                        <rdg wit="#pubC1">C</rdg><rdg wit="#msC1">c</rdg>
                      </app>hristian charity. Thou hast not fallen</l>
                   <l xml:id="Chas_l_1718">Amongst the Heathen.</l>
                </sp>
@@ -6565,9 +6423,7 @@
                   <l xml:id="Chas_l_1721">With the vain agony of longing love</l>
                   <l xml:id="Chas_l_1722">To look upon those blooming cheeks, to kiss</l>
                   <l xml:id="Chas_l_1723">Those red <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> innocent lips, to hear the sound</l>
                   <l xml:id="Chas_l_1724">Of those dear voices.</l>
                </sp>
@@ -6581,21 +6437,15 @@
                            they came,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1726">That thou <app>
-                        <rdg wit="#pubC1">might'st</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">might</rdg>
+                        <rdg wit="#pubC1">might'st</rdg><rdg wit="#msC1">might</rdg>
                      </app> see them once again, <app>
-                        <rdg wit="#pubC1">might'st</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">might</rdg>
+                        <rdg wit="#pubC1">might'st</rdg><rdg wit="#msC1">might</rdg>
                      </app> say&#8212;</l>
                </sp>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1727">Farewell!<app>
-                     <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> </rdg>
+                     <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1"> </rdg>
                      </app>I can endure the word&#8212;a last</l>
                   <l xml:id="Chas_l_1728">Farewell! I have dwelt so long upon the thought<app>
                         <rdg wit="#pubC1">,</rdg>
@@ -6635,9 +6485,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1737">Nay<app>
-                        <rdg wit="#pubC1">, the c</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> the C</rdg>
+                        <rdg wit="#pubC1">, the c</rdg><rdg wit="#msC1"> the C</rdg>
                      </app>hildren</l>
                   <l xml:id="Chas_l_1738">May bide with thee till nightfall.</l>
                </sp>
@@ -6647,33 +6495,25 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app><persName ref="#Herbert_Ch1">Herbert!</persName></l>
                   <l xml:id="Chas_l_1740">Take them<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <sp who="#Gloucester #PrincessE_Ch1">
                   <speaker>Children.</speaker>
                   <l xml:id="Chas_l_1741"><app>
-                        <rdg wit="#pubC1">Oh! no, no, no!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Oh! No! No! No!</rdg>
+                        <rdg wit="#pubC1">Oh! no, no, no!</rdg><rdg wit="#msC1">Oh! No! No! No!</rdg>
                      </app></l>
                </sp>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1742">Dear<app>
-                        <rdg wit="#pubC1">-</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> </rdg>
+                        <rdg wit="#pubC1">-</rdg><rdg wit="#msC1"> </rdg>
                      </app>ones<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> I go </l>
                   <l xml:id="Chas_l_1743">On a great journey. Bless ye once again,</l>
                   <l xml:id="Chas_l_1744">My children! We must part. Farewell<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <sp who="#PrincessE_Ch1">
@@ -6704,14 +6544,10 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1753">Now bless ye! This is death<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1754">This is the bitterness of love<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                </sp>
@@ -6734,9 +6570,7 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1760">Thou hast daughters<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">.</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1761">Be kind to her.</l>
@@ -6748,9 +6582,7 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1763">And the poor boy<app>
-                     <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                     <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1">,</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1764">He comes not near the throne. Make not of him </l>
@@ -6778,9 +6610,7 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1771">Now <app>
-                        <rdg wit="#pubC1">f</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">F</rdg>
+                        <rdg wit="#pubC1">f</rdg><rdg wit="#msC1">F</rdg>
                      </app>are ye well!&#8212;</l>
                   <l xml:id="Chas_l_1772"><persName ref="#Cromwell_MRM">Cromwell</persName> come back<app>
                         <rdg wit="#pubC1">!</rdg>
@@ -6790,42 +6620,31 @@
                         <rdg wit="#msC1">,</rdg>
                      </app>&#8212;</l>
                   <l xml:id="Chas_l_1773">No more of parting<app>
-                     <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                     <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1">!</rdg><rdg wit="#pubC1">b</rdg>
                      </app><app>
                         <rdg wit="#pubC1">b</rdg>
-                     </app><app>
                         <rdg wit="#msC1">B</rdg>
                      </app>less them! <app>
-                        <rdg wit="#pubC1">b</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">B</rdg>
+                        <rdg wit="#pubC1">b</rdg><rdg wit="#msC1">B</rdg>
                      </app>less them! See </l>
                   <l xml:id="Chas_l_1774">The girl, the poor poor girl<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> hath wept away </l>
                   <l xml:id="Chas_l_1775">Her tears<app>
-                        <rdg wit="#pubC1">, and pants and shivers</rdg>
-                     </app><app>
-                        <rdg wit="#msC1"> &amp; pants &amp; shivers</rdg>
+                        <rdg wit="#pubC1">, and pants and shivers</rdg><rdg wit="#msC1"> &amp; pants &amp; shivers</rdg>
                      </app> like a fawn</l>
                   <l xml:id="Chas_l_1776">Dying. Oh<app>
                         <rdg wit="#pubC1">!</rdg>
                      </app> for some gentle face to look on</l>
                   <l xml:id="Chas_l_1777">When she <app>
-                        <rdg wit="#pubC1">revives,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">awakes</rdg>
+                        <rdg wit="#pubC1">revives,</rdg><rdg wit="#msC1">awakes</rdg>
                      </app> or she will surely die<app>
                         <rdg wit="#pubC1">.</rdg>
                      </app></l>
                </sp>
                <stage type="business">Exeunt <persName ref="#Herbert_Ch1">Herbert</persName>
                   <app>
-                     <rdg wit="#pubC1">and</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">&amp;</rdg>
+                     <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                   </app> the Children.</stage>
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
@@ -6840,9 +6659,7 @@
                      </app><app>
                         <rdg wit="#msC1"/>
                      </app>&#8212;No<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app> 'tis best.</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -6853,24 +6670,18 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1784">Be kind to them<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1785">Be very kind to them<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app></l>
                </sp>
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1786">Have I not promised?</l>
                   <l xml:id="Chas_l_1787">Was <app>
-                        <rdg wit="#pubC1">that</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">this</rdg>
+                        <rdg wit="#pubC1">that</rdg><rdg wit="#msC1">this</rdg>
                      </app> what thou would<app>
                         <rdg wit="#pubC1">'</rdg>
                      </app>st say?</l>
@@ -6884,9 +6695,7 @@
                         <rdg wit="#pubC1">.</rdg>
                      </app> Cromwell,</l>
                   <l xml:id="Chas_l_1790">Thou <app>
-                        <rdg wit="#msC1"><emph rend="underline">wilt</emph></rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">wilt</rdg>
+                        <rdg wit="#msC1"><emph rend="underline">wilt</emph></rdg><rdg wit="#pubC1">wilt</rdg>
                      </app> be kind to them?</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -6898,19 +6707,13 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1792"><app>
-                        <rdg wit="#pubC1">Nay, swear not, lest</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Nay swear not lest</rdg>
+                        <rdg wit="#pubC1">Nay, swear not, lest</rdg><rdg wit="#msC1">Nay swear not lest</rdg>
                      </app> I doubt. I <app>
-                        <rdg wit="#msC1"><emph rend="underline">will</emph></rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">will</rdg>
+                        <rdg wit="#msC1"><emph rend="underline">will</emph></rdg><rdg wit="#pubC1">will</rdg>
                      </app> believe thee.</l>
                   <l xml:id="Chas_l_1793">And for the human pity thou hast shown,</l>
                   <l xml:id="Chas_l_1794">The touch of natural ruth, I <app>
-                        <rdg wit="#pubC1">pray thee</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">prithee</rdg>
+                        <rdg wit="#pubC1">pray thee</rdg><rdg wit="#msC1">prithee</rdg>
                      </app> take </l>
                   <l xml:id="Chas_l_1795">My thanks.</l>
                </sp>
@@ -6926,66 +6729,46 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1799">There is One</l>
                   <l xml:id="Chas_l_1800">Who reads all hearts<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">;</rdg>
                      </app> one who pursues all crimes,</l>
                   <l xml:id="Chas_l_1801">From silver-tongued <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> bland <app>
-                        <rdg wit="#pubC1">h</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">H</rdg>
+                        <rdg wit="#pubC1">h</rdg><rdg wit="#msC1">H</rdg>
                      </app>ypocrisy </l>
                   <l xml:id="Chas_l_1802">To treasonous murder. The unspoken thought<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1803">And the loud lie, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> the accursed act<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1804">Mount to His throne together. Tempt Him not<app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">.</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">.</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1805">I know thee for the worker of this deed,</l>
                   <l xml:id="Chas_l_1806">And knowing pardon thee<app>
-                        <rdg wit="#pubC1">:</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">:</rdg><rdg wit="#msC1">,</rdg>
                      </app>&#8212;but tempt not Him!</l>
                </sp>
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1807">Thy blood be on thy head! I would have saved thee<app>
-                        <rdg wit="#msC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">&#8212;</rdg>
+                        <rdg wit="#msC1">;</rdg><rdg wit="#pubC1">&#8212;</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1808">Even now the thought stirred in me. Pardon, Lord,</l>
                   <l xml:id="Chas_l_1809">That gazing on the father's agonies<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1810">My heart of flesh waxed faint, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> I forgot</l>
                   <l xml:id="Chas_l_1811">Thy glory <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app>
                      <app>
-                        <rdg wit="#pubC1">T</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">t</rdg>
+                        <rdg wit="#pubC1">T</rdg><rdg wit="#msC1">t</rdg>
                      </app>hy cause, the suffering saints<app>
                         <rdg wit="#pubC1">.</rdg>
                      </app></l>
@@ -7018,24 +6801,18 @@
                         </rdg>
                      </app></l>
                   <l xml:id="Chas_l_1816">The tyrant's tyranny<app>
-                        <rdg wit="#msC1">&amp; t</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">, and</rdg>
+                        <rdg wit="#msC1">&amp; t</rdg><rdg wit="#pubC1">, and</rdg>
                      </app> Thy great word<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1817">Freedom! Thy blood be on thy head<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1818">So be it<app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">.</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">.</rdg>
                      </app></l>
                </sp>
                <stage type="business">End of the Fourth Act.</stage>
@@ -7053,9 +6830,7 @@
                <stage type="setting"><app>
                   <rdg wit="#msC1">Scene&#8212;</rdg>
                </app> The <persName ref="#Chas1_MRM">King</persName>'s <app>
-                     <rdg wit="#pubC1">B</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">b</rdg>
+                     <rdg wit="#pubC1">B</rdg><rdg wit="#msC1">b</rdg>
                   </app>edchamber.</stage>
                <stage type="business">
                   <app>
@@ -7065,9 +6840,7 @@
                </stage>
                <!--EBB: Is this note in fact "business?" RN: No. But what is it, please?--><!--LMW: Make it a <note>?-->
                <stage type="business">The <persName ref="#Chas1_MRM">King</persName>, starting from his couch<app>
-                     <rdg wit="#pubC1">;</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">,</rdg>
+                     <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg>
                   </app> <persName ref="#Herbert_Ch1">Herbert</persName> asleep.</stage>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
@@ -7089,9 +6862,7 @@
                         ref="#Herbert_Ch1">Herbert!</persName></l>
                   <l xml:id="Chas_l_1831">'Twere best to wake him. <persName ref="#Herbert_Ch1"
                         >Herbert</persName>! <app>
-                        <rdg wit="#pubC1">rouse thee,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Rouse thee</rdg>
+                        <rdg wit="#pubC1">rouse thee,</rdg><rdg wit="#msC1">Rouse thee</rdg>
                      </app> man!</l>
                </sp>
                <sp who="#Herbert_Ch1">
@@ -7102,19 +6873,13 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1833">Aye; we should be today</l>
                   <l xml:id="Chas_l_1834">Early astir. I've a great business toward<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">;</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1835">To exchange the <app>
-                        <rdg wit="#pubC1">k</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">K</rdg>
+                        <rdg wit="#pubC1">k</rdg><rdg wit="#msC1">K</rdg>
                      </app>ingly wreath, my crown of thorns,</l>
                   <l xml:id="Chas_l_1836">For an eternal diadem<app>
-                     <rdg wit="#msC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">;</rdg>
+                     <rdg wit="#msC1">&#8212;</rdg><rdg wit="#pubC1">;</rdg>
                      </app> to die&#8212; </l>
                   <l xml:id="Chas_l_1837">And I would go trim as a bridegroom. Give me</l>
                   <l xml:id="Chas_l_1838">Yon ermined cloak. If the crisp nipping frost</l>
@@ -7124,9 +6889,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> my sleep</l>
                   <l xml:id="Chas_l_1841">Hath been as soft <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> balmy<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> as young babes</l>
@@ -7140,9 +6903,7 @@
                <sp who="#Herbert_Ch1">
                   <speaker>Herb.</speaker>
                   <l xml:id="Chas_l_1846"><app>
-                        <rdg wit="#pubC1">Vexed, my liege, with dreams.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Vexed my liege with dreams.</rdg>
+                        <rdg wit="#pubC1">Vexed, my liege, with dreams.</rdg><rdg wit="#msC1">Vexed my liege with dreams.</rdg>
                      </app></l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -7157,64 +6918,44 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1849">Dost thou think</l>
                   <l xml:id="Chas_l_1850">A dream can <app>
-                        <rdg wit="#pubC1">vex</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">grieve</rdg>
+                        <rdg wit="#pubC1">vex</rdg><rdg wit="#msC1">grieve</rdg>
                      </app> me now? Speak.</l>
                </sp>
                <sp who="#Herbert_Ch1">
                   <speaker>Herb.</speaker>
                   <l xml:id="Chas_l_1851">Thrice I slept,</l>
                   <l xml:id="Chas_l_1852">And thrice I woke,<app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> thrice the self-same vision</l>
                   <l xml:id="Chas_l_1853">Haunted my fancy. Seemed this very room,</l>
                   <l xml:id="Chas_l_1854">This dim and waning taper, this dark couch,</l>
                   <l xml:id="Chas_l_1855">Beneath whose crimson canopy reclined</l>
                   <l xml:id="Chas_l_1856">A form august <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> stately. The pale ray</l>
                   <l xml:id="Chas_l_1857">Of the watch<app>
                         <rdg wit="#pubC1">-</rdg>
                      </app>light dwelt upon his face, and <app>
-                        <rdg wit="#pubC1">showed</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">shewed</rdg>
+                        <rdg wit="#pubC1">showed</rdg><rdg wit="#msC1">shewed</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1858">His paler lineaments, where <app>
-                        <rdg wit="#pubC1">m</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">M</rdg>
+                        <rdg wit="#pubC1">m</rdg><rdg wit="#msC1">M</rdg>
                      </app>ajesty </l>
                   <l xml:id="Chas_l_1859">And manly <app>
-                        <rdg wit="#pubC1">beauty,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Beauty</rdg>
+                        <rdg wit="#pubC1">beauty,</rdg><rdg wit="#msC1">Beauty</rdg>
                      </app>
                      <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> deep trenching <app>
-                        <rdg wit="#pubC1">t</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">T</rdg>
+                        <rdg wit="#pubC1">t</rdg><rdg wit="#msC1">T</rdg>
                      </app>hought,</l>
                   <l xml:id="Chas_l_1860">And Care<app>
                         <rdg wit="#msC1">,</rdg>
                      </app> the <app>
-                        <rdg wit="#pubC1">w</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">W</rdg>
+                        <rdg wit="#pubC1">w</rdg><rdg wit="#msC1">W</rdg>
                      </app>rinkler, all were blended now</l>
                   <l xml:id="Chas_l_1861">Into one calm <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> holy pensiveness<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app>
@@ -7222,28 +6963,18 @@
                   <l xml:id="Chas_l_1862">Softened by slumber. I stood gazing on him</l>
                   <l xml:id="Chas_l_1863">With weeping love, as one awake; when sudden</l>
                   <l xml:id="Chas_l_1864">A thick <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> palpable darkness fell around,</l>
                   <l xml:id="Chas_l_1865">A blindness, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> dull groans <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> piercing shrieks</l>
                   <l xml:id="Chas_l_1866">A moment echoed; then they ceased, <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> light </l>
                   <l xml:id="Chas_l_1867">Burst forth <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> musick<app>
                         <rdg wit="#msC1">,</rdg>
                      </app>&#8212;light such as the flood</l>
@@ -7251,20 +6982,14 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> sparkling,</l>
                   <l xml:id="Chas_l_1869">An insupportable brightness<app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">&#8212;</rdg>
                      </app><app>
-                        <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">a</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">A</rdg>
+                        <rdg wit="#pubC1">a</rdg><rdg wit="#msC1">A</rdg>
                      </app>nd i'th' midst,</l>
                   <l xml:id="Chas_l_1870">Over the couch<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> a <app>
-                        <rdg wit="#pubC1">milk-white</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">milk white</rdg>
+                        <rdg wit="#pubC1">milk-white</rdg><rdg wit="#msC1">milk white</rdg>
                      </app> dove, which soared </l>
                   <l xml:id="Chas_l_1871">Right upward, cleaving<app>
                         <rdg wit="#msC1">,</rdg>
@@ -7287,9 +7012,7 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1878">A <app>
-                        <rdg wit="#pubC1">thrice-blessed</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">thrice blessed</rdg>
+                        <rdg wit="#pubC1">thrice-blessed</rdg><rdg wit="#msC1">thrice blessed</rdg>
                      </app> omen! </l>
                   <!--omission ends with censor's "better omit to here" (pencil again)--><!--LMW should this be a <note>? Or addHand?-->
                   <l xml:id="Chas_l_1879"><persName ref="#Herbert_Ch1">Herbert</persName><app>
@@ -7298,9 +7021,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1880">Content <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> peaceful as the Autumn sun<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app>
@@ -7308,32 +7029,22 @@
                   <l xml:id="Chas_l_1881">When, smiling for awhile on the ripe sheaves</l>
                   <l xml:id="Chas_l_1882">And kissing the brown woods, he bids the world</l>
                   <l xml:id="Chas_l_1883">A calm <app>
-                        <rdg wit="#pubC1">g</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">G</rdg>
+                        <rdg wit="#pubC1">g</rdg><rdg wit="#msC1">G</rdg>
                      </app>oodnight. Bear witness that I die</l>
                   <l xml:id="Chas_l_1884">In charity with all men<app>
-                        <rdg wit="#pubC1">; a</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">. A</rdg>
+                        <rdg wit="#pubC1">; a</rdg><rdg wit="#msC1">. A</rdg>
                      </app>nd take thou, </l>
                   <l xml:id="Chas_l_1885">My kind <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> faithful servant, follower</l>
                   <l xml:id="Chas_l_1886">Of my evil fortunes<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> true <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> tender, take </l>
                   <l xml:id="Chas_l_1887">All that thy master hath to give&#8212;his thanks,</l>
                   <l xml:id="Chas_l_1888">His poor but honest thanks<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Another King</l>
                   <l xml:id="Chas_l_1889">Shall better pay thee. Weep not. Seek the
                         Bishop;</l>
@@ -7353,9 +7064,7 @@
                      </app> lest she come to plunge my thoughts</l>
                   <l xml:id="Chas_l_1894">In the deep fountain of her sad fond tears,</l>
                   <l xml:id="Chas_l_1895">To win me&#8212;Ha! <app>
-                        <rdg wit="#pubC1">c</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">C</rdg>
+                        <rdg wit="#pubC1">c</rdg><rdg wit="#msC1">C</rdg>
                      </app>an that impatient foot,</l>
                   <l xml:id="Chas_l_1896">That hurrying hand<app>
                         <rdg wit="#pubC1">,</rdg>
@@ -7369,9 +7078,7 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1898">Haste to the Bishop<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <stage type="business">Exit <persName ref="#Herbert_Ch1">Herbert</persName>.</stage>
@@ -7388,13 +7095,9 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> last night,</l>
                   <l xml:id="Chas_l_1902">Dizzy <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> faint <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> spent, as the tired martlet,</l>
                   <l xml:id="Chas_l_1903">Midway her voyage<app>
                         <rdg wit="#pubC1">,</rdg>
@@ -7404,15 +7107,11 @@
                   </l>
                   <l xml:id="Chas_l_1904">And slumbers through the tempest. I kissed off</l>
                   <l xml:id="Chas_l_1905">The tears that hung on <app>
-                        <rdg wit="#pubC1">those</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">thy</rdg>
+                        <rdg wit="#pubC1">those</rdg><rdg wit="#msC1">thy</rdg>
                      </app> fair eyelids, blessing</l>
                   <l xml:id="Chas_l_1906">Thy speechless weariness, thy weeping love</l>
                   <l xml:id="Chas_l_1907">That sobbed itself to rest. Never did <app>
-                        <rdg wit="#pubC1">m</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">M</rdg>
+                        <rdg wit="#pubC1">m</rdg><rdg wit="#msC1">M</rdg>
                      </app>other<app>
                         <rdg wit="#msC1">,</rdg>
                      </app>
@@ -7429,26 +7128,18 @@
                         <rdg wit="#msC1">,</rdg>
                      </app> when half unconscious, yet</l>
                   <l xml:id="Chas_l_1911">Moaning <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> plaining like a dove, they bore thee</l>
                   <l xml:id="Chas_l_1912">With gentle force away. And thou art here</l>
                   <l xml:id="Chas_l_1913">Already! <app>
-                        <rdg wit="#pubC1">w</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">W</rdg>
+                        <rdg wit="#pubC1">w</rdg><rdg wit="#msC1">W</rdg>
                      </app>akened into sense <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> life </l>
                   <l xml:id="Chas_l_1914">And the day<app>
                         <rdg wit="#pubC1">'</rdg>
                      </app>s agony<app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">.</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">.</rdg>
                      </app></l>
                </sp>
                <sp who="#Queen_Ch1">
@@ -7459,49 +7150,35 @@
                         Fairfax</persName>, </l>
                   <l xml:id="Chas_l_1917">To <persName ref="#Downes">Downes</persName>, to <persName
                         ref="#Ireton">Ireton</persName><app>
-                           <rdg wit="#pubC1">,&#8212; e</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">. E</rdg>
+                           <rdg wit="#pubC1">,&#8212; e</rdg><rdg wit="#msC1">. E</rdg>
                      </app>ven at <persName ref="#Bradshaw">Bradshaw</persName>'s feet</l>
                   <l xml:id="Chas_l_1918">I've knelt to day. Sleep <app>
-                        <rdg wit="#pubC1">now? s</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">! S</rdg>
+                        <rdg wit="#pubC1">now? s</rdg><rdg wit="#msC1">! S</rdg>
                      </app>hall I e<app>
-                        <rdg wit="#pubC1">'</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">v</rdg>
+                        <rdg wit="#pubC1">'</rdg><rdg wit="#msC1">v</rdg>
                      </app>er sleep </l>
                   <l xml:id="Chas_l_1919">Again!</l>
                </sp>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1920">At <persName ref="#Bradshaw">Bradshaw</persName>'s feet<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">?</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">?</rdg>
                      </app> Oh perfect love</l>
                   <l xml:id="Chas_l_1921">How can I chide thee? Yet I would thou had<app>
                         <rdg wit="#pubC1">'</rdg>
                      </app>st spared</l>
                   <l xml:id="Chas_l_1922">Thyself <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> me that scorn.</l>
                </sp>
                <sp who="#Queen_Ch1">
                   <speaker>Queen.</speaker>
                   <l xml:id="Chas_l_1923">Do <app>
-                        <rdg wit="#pubC1">H</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">h</rdg>
+                        <rdg wit="#pubC1">H</rdg><rdg wit="#msC1">h</rdg>
                      </app>unters scorn</l>
                   <l xml:id="Chas_l_1924">The shrill cries of the lioness, whose cubs</l>
                   <l xml:id="Chas_l_1925">They've snared, although the <app>
-                        <rdg wit="#pubC1">F</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">f</rdg>
+                        <rdg wit="#pubC1">F</rdg><rdg wit="#msC1">f</rdg>
                      </app>orest-<persName ref="#Queen_Ch1">Queen</persName> approach</l>
                   <l xml:id="Chas_l_1926">Crouching? Do seamen scorn the forked lightning</l>
                   <l xml:id="Chas_l_1927">Albeit the storm-cloud weep<app>
@@ -7513,61 +7190,39 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1929">Alas!</l>
                   <l xml:id="Chas_l_1930">All thy life long the torturer <app>
-                        <rdg wit="#pubC1">h</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">H</rdg>
+                        <rdg wit="#pubC1">h</rdg><rdg wit="#msC1">H</rdg>
                      </app>ope hath been</l>
                   <l xml:id="Chas_l_1931">Thy <app>
-                        <rdg wit="#pubC1">m</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">M</rdg>
+                        <rdg wit="#pubC1">m</rdg><rdg wit="#msC1">M</rdg>
                      </app>aster!&#8212;Yet if she can steal an hour</l>
                   <l xml:id="Chas_l_1932">From grief&#8212;<app>
-                        <rdg wit="#pubC1">w</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">W</rdg>
+                        <rdg wit="#pubC1">w</rdg><rdg wit="#msC1">W</rdg>
                      </app>hom dost thou trust?</l>
                </sp>
                <sp who="#Queen_Ch1">
                   <speaker>Queen.</speaker>
                   <l xml:id="Chas_l_1933">Thyself <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> Heaven </l>
                   <l xml:id="Chas_l_1934">And a relenting woman. Wrap thyself</l>
                   <l xml:id="Chas_l_1935">Close in my cloak&#8212;Here! <app>
-                        <rdg wit="#pubC1">h</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">H</rdg>
+                        <rdg wit="#pubC1">h</rdg><rdg wit="#msC1">H</rdg>
                      </app>ere!&#8212;<app>
-                        <rdg wit="#pubC1">t</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">T</rdg>
+                        <rdg wit="#pubC1">t</rdg><rdg wit="#msC1">T</rdg>
                      </app>o <persName ref="#LadyFairfax">Lady Fairfax</persName>!</l>
                   <l xml:id="Chas_l_1936">She's faithful<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg>
                      </app> she'll conceal thee<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Take the cloak<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1937">Waste not a point of time, not <app>
-                        <rdg wit="#pubC1">whilst the</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">while one</rdg>
+                        <rdg wit="#pubC1">whilst the</rdg><rdg wit="#msC1">while one</rdg>
                      </app> grain of sand </l>
                   <l xml:id="Chas_l_1938">Runs in the glass<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Dost fear its shortness? See</l>
                   <l xml:id="Chas_l_1939">How long it is! <app>
                         <rdg wit="#msC1">And I am tall. How oft</rdg>
@@ -7605,15 +7260,11 @@
                <sp who="#Queen_Ch1">
                   <speaker>Queen.</speaker>
                   <l xml:id="Chas_l_1947">No<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">;</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1948">To live to a blest old age with thee in freedom<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_1949">Away my <persName ref="#Chas1_MRM">Charles</persName>, my
@@ -7625,27 +7276,19 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> thou wilt madden me. 'Tis the first boon</l>
                   <l xml:id="Chas_l_1952">I ever craved<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg>
                      </app>
                      <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> now<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> by our young loves,</l>
                   <l xml:id="Chas_l_1953">By our commingled griefs, a mighty spell,</l>
                   <l xml:id="Chas_l_1954">Our smiling children<app>
-                        <rdg wit="#msC1">, &amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1"> and</rdg>
+                        <rdg wit="#msC1">, &amp;</rdg><rdg wit="#pubC1"> and</rdg>
                      </app> this bleeding land,</l>
                   <l xml:id="Chas_l_1955">Go<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">,</rdg>
                      </app> I conjure thee, go!</l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -7656,22 +7299,16 @@
                   <speaker>Queen.</speaker>
                   <l xml:id="Chas_l_1957"><persName ref="#Chas1_MRM">King</persName></l>
                   <l xml:id="Chas_l_1958">Begone! or I will speak such truth&#8212;<app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> truth </l>
                   <l xml:id="Chas_l_1959">Is a foul treason in this land&#8212;will rain</l>
                   <l xml:id="Chas_l_1960">Such curses on them<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> as shall force them to <app>
-                        <rdg wit="#pubC1">send me</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">lay</rdg>
+                        <rdg wit="#pubC1">send me</rdg><rdg wit="#msC1">lay</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1961"><app>
-                        <rdg wit="#pubC1">To the scaffold at thy side. Fly!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">My head upon the block. Fly! Fly!</rdg>
+                        <rdg wit="#pubC1">To the scaffold at thy side. Fly!</rdg><rdg wit="#msC1">My head upon the block. Fly! Fly!</rdg>
                      </app></l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -7684,9 +7321,7 @@
                      </app> as if to watch </l>
                   <l xml:id="Chas_l_1964">A garrisoned fort, rather than one unarmed</l>
                   <l xml:id="Chas_l_1965">Defenceless man, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> think<app>
                         <rdg wit="#pubC1">'</rdg>
                      </app>st thou I could win </l>
@@ -7697,25 +7332,16 @@
                   <l xml:id="Chas_l_1968">Smitten with sudden blindness, the unnumbered</l>
                   <l xml:id="Chas_l_1969">And stirring swarms of this vast city locked</l>
                   <l xml:id="Chas_l_1970">In charmed sleep, <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> darkness over all</l>
                   <l xml:id="Chas_l_1971">Blacker than starless night, spectral <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> dim</l>
                   <l xml:id="Chas_l_1972">As an eclipse at noon<app>
                         <rdg wit="#msC1">-</rdg>
                      </app>tide, though the gates</l>
                   <l xml:id="Chas_l_1973">Opened before me<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> my feet were swift</l>
                   <l xml:id="Chas_l_1974">As the Antelope's, not then<app>
                         <rdg wit="#msC1">,</rdg>
@@ -7726,9 +7352,7 @@
                   <l xml:id="Chas_l_1976">Pass o'er the threshold. In my cause too much</l>
                   <l xml:id="Chas_l_1977">Of blood hath fallen. Let mine seal all. I go</l>
                   <l xml:id="Chas_l_1978">To <app>
-                        <rdg wit="#msC1">D</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">d</rdg>
+                        <rdg wit="#msC1">D</rdg><rdg wit="#pubC1">d</rdg>
                      </app>eath as to a bridal; thou thyself</l>
                   <l xml:id="Chas_l_1979">In thy young beauty was not welcomer</l>
                   <l xml:id="Chas_l_1980">Than he. Farewell<app>
@@ -7749,23 +7373,14 @@
                      </app></l>
                   <l xml:id="Chas_l_1984"><app>
                         <rdg wit="#pubC1">Been fond <app>
-                              <rdg wit="#pubC1">and</rdg>
-                           </app><app>
-                              <rdg wit="#msC1">&amp;</rdg>
+                              <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                            </app> true as they</rdg>
                      </app>Now fare thee well!</l>
                   <l xml:id="Chas_l_1985">I thank thee<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> I bless thee. Pray for me,</l>
                   <l xml:id="Chas_l_1986">My <persName ref="#Queen_Ch1">Henrietta</persName><app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">.</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">.</rdg>
                      </app></l>
                </sp>
                <sp who="#Queen_Ch1">
@@ -7775,16 +7390,10 @@
                      </app> thou shalt be saved. </l>
                   <l xml:id="Chas_l_1988">Talk not of parting. I'll to <persName ref="#Fairfax"
                         >Fairfax</persName><app>
-                        <rdg wit="#pubC1">; h</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">. H</rdg>
+                        <rdg wit="#pubC1">; h</rdg><rdg wit="#msC1">. H</rdg>
                      </app>e </l>
                   <l xml:id="Chas_l_1989">Gave hope<app>
-                        <rdg wit="#pubC1">, and</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">, and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> hope is life.</l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -7798,30 +7407,18 @@
                         <rdg wit="#msC1">!</rdg>
                   </app>&#8212;withers me, lives </l>
                   <l xml:id="Chas_l_1993">Like a serpent's hiss within mine ear, sho<app>
-                        <rdg wit="#pubC1">u</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">o</rdg>
+                        <rdg wit="#pubC1">u</rdg><rdg wit="#msC1">o</rdg>
                      </app>ts through</l>
                   <l xml:id="Chas_l_1994">My veins like poison, twines <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> coils about me</l>
                   <l xml:id="Chas_l_1995">Clinging <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> killing. 'Tis a sound accurst,</l>
                   <l xml:id="Chas_l_1996">A word of death <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> doom<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Why shouldst thou speak it?</l>
                   <l xml:id="Chas_l_1997"><app>
                         <rdg wit="#pubC1">Thou shalt be saved; <persName ref="#Fairfax"
@@ -7834,17 +7431,12 @@
                               >Charles</persName>&#8212;-</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1998">Give me a ringlet of thy hair&#8212;<app>
-                     <rdg wit="#pubC1">No, no&#8212;</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">No! No!</rdg>
+                     <rdg wit="#pubC1">No, no&#8212;</rdg><rdg wit="#msC1">No! No!</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1999">Not now! <app>
                         <rdg wit="#pubC1">N</rdg>
                      </app>ot now!<app>
-                        <rdg wit="#pubC1"> </rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1"> </rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app>Thou shalt not die.</l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -7862,10 +7454,7 @@
                         <rdg wit="#msC1">!</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2004">Promise thou wilt await me here<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app> Let none&#8212; </l>
                   <l xml:id="Chas_l_2005">They will not dare, they shall not. I but waste</l>
                   <l xml:id="Chas_l_2006">The hour. To <persName ref="#Fairfax">Fairfax</persName>,
@@ -7877,25 +7466,17 @@
                   </l>
                </sp>
                <stage type="business"><app>
-                     <rdg wit="#pubC1">(Exit Queen.)</rdg>
-                  </app>
-                  <app>
-                     <rdg wit="#msC1">Exit Queen.</rdg>
+                     <rdg wit="#pubC1">(Exit Queen.)</rdg><rdg wit="#msC1">Exit Queen.</rdg>
                   </app></stage>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_2008">Oh <app>
-                        <rdg wit="#msC1">fondest truest</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">truest fondest</rdg>
+                        <rdg wit="#msC1">fondest truest</rdg><rdg wit="#pubC1">truest fondest</rdg>
                      </app> woman! </l>
                   <l xml:id="Chas_l_2009">My matchless wife!<app>
                      <rdg wit="#msC1">&#8212;</rdg>
                      </app> The pang is mastered now<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2010">I am Death's conqueror.<app>
@@ -7906,35 +7487,21 @@
                               <rdg wit="#pubC1"> </rdg>
                            </app>-</rdg>
                      </app>dear! I <app>
-                        <rdg wit="#pubC1">ne'er shall</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">shall ne'er</rdg>
+                        <rdg wit="#pubC1">ne'er shall</rdg><rdg wit="#msC1">shall ne'er</rdg>
                      </app> see </l>
                   <l xml:id="Chas_l_2012">Those radiant looks again, or hear the sound</l>
                   <l xml:id="Chas_l_2013">Of thy <app>
-                        <rdg wit="#msC1">blythe</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">b</rdg>
+                        <rdg wit="#msC1">blythe</rdg><rdg wit="#pubC1">b</rdg>
                      </app> voice, which was a hope, or feel</l>
                   <l xml:id="Chas_l_2014">The thrilling pressure of thy hand, almost</l>
                   <l xml:id="Chas_l_2015">A language, so the ardent spirit burned</l>
                   <l xml:id="Chas_l_2016">And vibrated within thee<app>
-                        <rdg wit="#pubC1">! </rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">.&#8212;</rdg>
+                        <rdg wit="#pubC1">! </rdg><rdg wit="#msC1">.&#8212;</rdg>
                      </app>I'll to prayer,</l>
                   <l xml:id="Chas_l_2017">And chase away that image<app>
-                        <rdg wit="#pubC1">! </rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">.&#8212;</rdg>
+                        <rdg wit="#pubC1">! </rdg><rdg wit="#msC1">.&#8212;</rdg>
                      </app>I'll to prayer<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2018">And pray for thee<app>
@@ -7950,22 +7517,15 @@
                   </app></head>
                <stage type="setting">
                   <app>
-                     <rdg wit="#msC1">“Scene&#8212;-The <placeName ref="#Banqueting_House">Banqueting-house</placeName> at <placeName ref="#Whitehall_Palace">Whitehall</placeName>; glass folding doors opening on the scaffold, which is covered with black; the block axe &amp; visible. Officers &amp; other persons are busy in the back-ground. <persName ref="#Cromwell_MRM">Cromwell</persName> giving directions. <persName ref="#Ireton">Ireton</persName>, <persName ref="#Hacker_Ch1">Hacker</persName>, &amp; <persName ref="#Harrison">Harrison</persName> meeting. <persName ref="#Cromwell_MRM">Cromwell!</persName> behind. </rdg>
-                  </app>
-                  <app>
-                     <rdg wit="#pubC1">&#8212;<emph rend="italic">The <placeName ref="#Banqueting_House">Banquetting-House</placeName> at <placeName ref="#Whitehall_Palace">Whitehall</placeName>, glass folding-doors opening to the Scaffold, which is covered with black. The block, axe, &amp;c. visible ; Officers and other persons are busy inthe background, and <persName ref="#Cromwell_MRM">Cromwell</persName> is also there giving directions.</emph></rdg>
+                     <rdg wit="#msC1">“Scene&#8212;-The <placeName ref="#Banqueting_House">Banqueting-house</placeName> at <placeName ref="#Whitehall_Palace">Whitehall</placeName>; glass folding doors opening on the scaffold, which is covered with black; the block axe &amp; visible. Officers &amp; other persons are busy in the back-ground. <persName ref="#Cromwell_MRM">Cromwell</persName> giving directions. <persName ref="#Ireton">Ireton</persName>, <persName ref="#Hacker_Ch1">Hacker</persName>, &amp; <persName ref="#Harrison">Harrison</persName> meeting. <persName ref="#Cromwell_MRM">Cromwell!</persName> behind. </rdg><rdg wit="#pubC1">&#8212;<emph rend="italic">The <placeName ref="#Banqueting_House">Banquetting-House</placeName> at <placeName ref="#Whitehall_Palace">Whitehall</placeName>, glass folding-doors opening to the Scaffold, which is covered with black. The block, axe, &amp;c. visible ; Officers and other persons are busy inthe background, and <persName ref="#Cromwell_MRM">Cromwell</persName> is also there giving directions.</emph></rdg>
                   </app>
                   </stage>
                <sp who="#Harrison">
                   <speaker>Har.</speaker>
                   <l xml:id="Chas_l_2019"><persName ref="#Cromwell_MRM">Cromwell!</persName>&#8212;Good<app>
-                        <rdg wit="#msC1"> </rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">-</rdg>
+                        <rdg wit="#msC1"> </rdg><rdg wit="#pubC1">-</rdg>
                      </app>morrow <persName ref="#Ireton">Ireton<app>
-                           <rdg wit="#pubC1">!</rdg>
-                        </app><app>
-                           <rdg wit="#msC1">.</rdg>
+                           <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                         </app></persName>Whither goes</l>
                   <l xml:id="Chas_l_2020">The General?</l>
                </sp>
@@ -7992,10 +7552,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <stage type="business">(at the back of the <app>
-                        <rdg wit="#pubC1">S</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">s</rdg>
+                        <rdg wit="#pubC1">S</rdg><rdg wit="#msC1">s</rdg>
                      </app>tage)</stage>
                   <l xml:id="Chas_l_2030">Hast thou ta'en order</l>
                   <l xml:id="Chas_l_2031">That soon as the head's off <placeName ref="#Westminster_Abbey">the 
@@ -8013,24 +7570,17 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app>
                      <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> the hand steady. Let us have</l>
                   <l xml:id="Chas_l_2036">No butchery.</l>
                   <stage type="business">(advancing to the front of the <app>
-                        <rdg wit="#msC1">s</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">S</rdg>
+                        <rdg wit="#msC1">s</rdg><rdg wit="#pubC1">S</rdg>
                      </app>tage.<app>
                         <rdg wit="#pubC1">)</rdg>
                      </app></stage>
                   <l xml:id="Chas_l_2037">If he die not, we must perish&#8212;</l>
                   <l xml:id="Chas_l_2038">That were as nothing<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">;</rdg>
                      </app> but with us will die</l>
                   <l xml:id="Chas_l_2039">The liberty for which the blood of saints</l>
                   <l xml:id="Chas_l_2040">And martyrs hath been spilt, freedom of act<app>
@@ -8040,10 +7590,7 @@
                   <l xml:id="Chas_l_2041">Of speech, of will<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> of faith! Better one gr<app>
-                        <rdg wit="#pubC1">e</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">a</rdg>
+                        <rdg wit="#pubC1">e</rdg><rdg wit="#msC1">a</rdg>
                      </app>y </l>
                   <l xml:id="Chas_l_2042">Discrowned head should fall, albeit a thought</l>
                   <l xml:id="Chas_l_2043">Before the time, than God's own people groan</l>
@@ -8067,10 +7614,7 @@
                   <l xml:id="Chas_l_2049"><persName ref="#Fairfax">Fairfax</persName>&#8212;But I believe
                      it not. Hast thou</l>
                   <l xml:id="Chas_l_2050">The <app>
-                        <rdg wit="#pubC1">W</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">w</rdg>
+                        <rdg wit="#pubC1">W</rdg><rdg wit="#msC1">w</rdg>
                      </app>arrant <persName ref="#Hacker_Ch1">Hacker?</persName></l>
                </sp>
                <sp who="#Hacker_Ch1">
@@ -8085,9 +7629,7 @@
                   <l xml:id="Chas_l_2054">And public<app>
                         <rdg wit="#pubC1">k</rdg>
                      </app> court, of <placeName ref="#England">England</placeName><app>
-                        <rdg wit="#pubC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">, of the Great</rdg>
+                        <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1">, of the Great</rdg>
                      </app></l>
                </sp>
                <sp who="#Harrison">
@@ -8105,48 +7647,30 @@
                   <speaker><app><rdg wit="#msC1">Ire.</rdg><rdg wit="#pubC1"></rdg></app></speaker>
                   <l xml:id="Chas_l_2058">Will he dare oppose </l>
                   <l xml:id="Chas_l_2059"><orgName ref="#New_Model_Army">Army</orgName> <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> people? <app>
-                        <rdg wit="#pubC1">H</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">h</rdg>
+                        <rdg wit="#pubC1">H</rdg><rdg wit="#msC1">h</rdg>
                      </app>e alone<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">?</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">?</rdg>
                      </app></l>
                </sp>
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2060">Be sure</l>
                   <l xml:id="Chas_l_2061">The good Lord<app>
-                        <rdg wit="#msC1"> </rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">-</rdg>
+                        <rdg wit="#msC1"> </rdg><rdg wit="#pubC1">-</rdg>
                      </app>General, howsoe'er some scruple</l>
                   <l xml:id="Chas_l_2062">May trouble him, will play a godly part</l>
                   <l xml:id="Chas_l_2063">In this sad drama.&#8212;Aye<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> I have the <app>
-                        <rdg wit="#pubC1">W</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">w</rdg>
+                        <rdg wit="#pubC1">W</rdg><rdg wit="#msC1">w</rdg>
                      </app>arrant<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2064">It is addressed to thee. Thou must receive</l>
                   <l xml:id="Chas_l_2065">The prisoner<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> conduct him hither.</l>
                </sp>
                <sp who="#Hacker_Ch1">
@@ -8161,15 +7685,11 @@
                   <l xml:id="Chas_l_2069">Ha<app>
                         <rdg wit="#pubC1">!</rdg>
                      </app> our great General! Well met my <app>
-                        <rdg wit="#pubC1">L</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">l</rdg>
+                        <rdg wit="#pubC1">L</rdg><rdg wit="#msC1">l</rdg>
                      </app>ord!</l>
                   <l xml:id="Chas_l_2070">We that are laden with this heavy burthen</l>
                   <l xml:id="Chas_l_2071">Lacked your sustaining aid<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app></l>
                </sp>
                <sp who="#Fairfax">
@@ -8178,9 +7698,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> I too</l>
                   <l xml:id="Chas_l_2073">Am heavy<app>
-                        <rdg wit="#msC1"> </rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">-</rdg>
+                        <rdg wit="#msC1"> </rdg><rdg wit="#pubC1">-</rdg>
                      </app>laden.</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -8193,32 +7711,22 @@
                <sp who="#Fairfax">
                   <speaker>Fair.</speaker>
                   <l xml:id="Chas_l_2078">No<app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">,</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">,</rdg>
                      </app> the grief is here. Regret,</l>
                   <l xml:id="Chas_l_2079">Almost remorse, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> doubt <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> fear of wrong</l>
                   <l xml:id="Chas_l_2080">Press <app>
-                        <rdg wit="#pubC1">heav</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">wear</rdg>
+                        <rdg wit="#pubC1">heav</rdg><rdg wit="#msC1">wear</rdg>
                      </app>ily upon me. Is this death</l>
                   <l xml:id="Chas_l_2081">Lawful?</l>
                </sp>
                <sp who="#Ireton">
                   <speaker>Ire.</speaker>
                   <l xml:id="Chas_l_2082">His country's sentence, good my <app>
-                        <rdg wit="#pubC1">L</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">l</rdg>
+                        <rdg wit="#pubC1">L</rdg><rdg wit="#msC1">l</rdg>
                      </app>ord, </l>
                   <l xml:id="Chas_l_2083">May be thy warrant.</l>
                </sp>
@@ -8236,31 +7744,21 @@
                   <l xml:id="Chas_l_2087">Lies on our conscience. <app>
                         <rdg wit="#msC1">
                            <stage type="business">(<app>
-                                 <rdg wit="#pubC1">T</rdg>
-                              </app><app>
-                                 <rdg wit="#msC1">t</rdg>
+                                 <rdg wit="#pubC1">T</rdg><rdg wit="#msC1">t</rdg>
                               </app>o <persName ref="#Cromwell_MRM">Cromwell) </persName>
                            </stage>
                         </rdg>
                   </app>We might save the <persName ref="#Chas1_MRM">King</persName></l>
                   <l xml:id="Chas_l_2088">Even now at the eleventh hour<app>
-                        <rdg wit="#pubC1">; w</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">. W</rdg>
+                        <rdg wit="#pubC1">; w</rdg><rdg wit="#msC1">. W</rdg>
                      </app>e two </l>
                   <l xml:id="Chas_l_2089">Hold the nice scales of life <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> death, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> shall not</l>
                   <l xml:id="Chas_l_2090">Fair <app>
-                        <rdg wit="#pubC1">m</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">M</rdg>
+                        <rdg wit="#pubC1">m</rdg><rdg wit="#msC1">M</rdg>
                      </app>ercy sway the balance? Dost thou hear me?</l>
                   <l xml:id="Chas_l_2091">Wilt thou not answer? Canst thou doubt our power?</l>
                </sp>
@@ -8269,9 +7767,7 @@
                   <l xml:id="Chas_l_2092">No. Man hath always power for ill. I know</l>
                   <l xml:id="Chas_l_2093">We might desert our friends, betray our country,</l>
                   <l xml:id="Chas_l_2094">Abandon our great cause, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> sell our souls</l>
                   <l xml:id="Chas_l_2095">To Hell<app>
                      <rdg wit="#msC1">&#8212;</rdg>
@@ -8279,27 +7775,16 @@
                         <rdg wit="#msC1"><del rend="squiggles"><supplied resp="#rnes">do</supplied></del>
                         </rdg>
                      </app>this<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> more; might shroud</l>
                   <l xml:id="Chas_l_2096">These devilish sins in holy names, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> call them</l>
                   <l xml:id="Chas_l_2097">Loyalty, Honour, Faith, Repentance<app>
-                     <rdg wit="#pubC1">&#8212;c</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">. C</rdg>
+                     <rdg wit="#pubC1">&#8212;c</rdg><rdg wit="#msC1">. C</rdg>
                      </app>heats</l>
                   <l xml:id="Chas_l_2098">Which <rs type="person" ref="#Satan">the great Tempter</rs> loves<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app></l>
                </sp>
                <sp who="#Fairfax">
@@ -8319,44 +7804,32 @@
                   <l xml:id="Chas_l_2101">Talk'st thou of fame</l>
                   <l xml:id="Chas_l_2102">To me? I am too mean a man, too lowly,</l>
                   <l xml:id="Chas_l_2103">Too poor in state <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> name to need abjure</l>
                   <l xml:id="Chas_l_2104">That princely sin, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> for my humbleness</l>
                   <l xml:id="Chas_l_2105">I duly render thanks. Were I as thou&#8212;</l>
                   <l xml:id="Chas_l_2106">Beware the lust of fame, <persName ref="#Fairfax">Lord
                         General</persName><app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2107">Of perishable fame, vain breath of man<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2108">Slight bubble, frailer than the ocean foam</l>
                   <l xml:id="Chas_l_2109">Which from her prow the good ship in her course</l>
                   <l xml:id="Chas_l_2110">Scattereth <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> passeth on regardlessly.</l>
                   <l xml:id="Chas_l_2111">Lord General beware!</l>
                </sp>
                <sp who="#Fairfax">
                   <speaker>Fair.</speaker>
                   <l xml:id="Chas_l_2112">I am Lord General<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2113">And I alone by mine own voice have power</l>
@@ -8374,19 +7847,13 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2118">Ha! <app>
-                        <rdg wit="#pubC1">a</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">A</rdg>
+                        <rdg wit="#pubC1">a</rdg><rdg wit="#msC1">A</rdg>
                      </app>lone!<app>
                         <rdg wit="#pubC1">&#8212;</rdg>
                      </app><app>
-                        <rdg wit="#pubC1">c</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">C</rdg>
+                        <rdg wit="#pubC1">c</rdg><rdg wit="#msC1">C</rdg>
                      </app>ome nearer<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <stage><app>
@@ -8398,31 +7865,23 @@
                   <l xml:id="Chas_l_2119">What would<app>
                         <rdg wit="#pubC1">'</rdg>
                      </app>st thou <app>
-                        <rdg wit="#pubC1">of</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">with</rdg>
+                        <rdg wit="#pubC1">of</rdg><rdg wit="#msC1">with</rdg>
                      </app> me?</l>
                </sp>
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2120">Yonder men are firm</l>
                   <l xml:id="Chas_l_2121">And honest in the cause, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> brave as steel;<app>
                         <rdg wit="#msC1">&#8212;</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2122">Yet are they zealots, blind <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> furious zealots! </l>
                   <l xml:id="Chas_l_2123">I would not they should hear us&#8212;<app>
-                        <rdg wit="#pubC1">b</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">B</rdg>
+                        <rdg wit="#pubC1">b</rdg><rdg wit="#msC1">B</rdg>
                      </app>loody zealots!</l>
                </sp>
                <sp who="#Fairfax">
@@ -8430,9 +7889,7 @@
                   <l xml:id="Chas_l_2124">Speak<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> Sir<app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">;</rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">;</rdg>
                      </app> we waste the hour.</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -8453,38 +7910,26 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2130">And yet of such a mild <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> gracious mood,</l>
                   <l xml:id="Chas_l_2131">That I, stern as I seem, may doff to thee</l>
                   <l xml:id="Chas_l_2132">This smooth <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> governed mask of polity, </l>
                   <l xml:id="Chas_l_2133">And shew the struggling heart perplexed <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> grieved</l>
                   <l xml:id="Chas_l_2134">In all its nakedness. Yes<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app> I have known</l>
                   <l xml:id="Chas_l_2135">The kindly natural love of man to man</l>
                   <l xml:id="Chas_l_2136">His fellow<app>
-                     <rdg wit="#pubC1">!&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                     <rdg wit="#pubC1">!&#8212;</rdg><rdg wit="#msC1">,</rdg>
                      </app>the rough soldier's shuddering hate</l>
                   <l xml:id="Chas_l_2137">Of violent death<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> save in the battle<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg>
                      </app> lastly </l>
                   <l xml:id="Chas_l_2138">A passionate yearning for that sweetest power</l>
                   <l xml:id="Chas_l_2139">Born of fair Mercy.</l>
@@ -8499,17 +7944,13 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2143">Good my <app>
-                        <rdg wit="#pubC1">l</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">L</rdg>
+                        <rdg wit="#pubC1">l</rdg><rdg wit="#msC1">L</rdg>
                      </app>ord<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> I strove </l>
                   <l xml:id="Chas_l_2144">And wrestled with each pitying thought as born</l>
                   <l xml:id="Chas_l_2145">Of earthly pride <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> mortal sin. Full oft</l>
                   <l xml:id="Chas_l_2146">We<app>
                         <rdg wit="#pubC1">,</rdg>
@@ -8521,22 +7962,16 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> trample down</l>
                   <l xml:id="Chas_l_2148">Fair shoots of charity <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> gentle love<app>
                         <rdg wit="#msC1">,</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2149">Yet still my breast was troubled<app>
-                        <rdg wit="#msC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">. </rdg>
+                        <rdg wit="#msC1">;</rdg><rdg wit="#pubC1">. </rdg>
                      </app>
                      <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> since thou</l>
                   <l xml:id="Chas_l_2150">Art moved by such relentings&#8212;</l>
                </sp>
@@ -8548,9 +7983,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2153">A wise <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> pious lady!</l>
                </sp>
                <sp who="#Fairfax">
@@ -8560,9 +7993,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2155">Sir<app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">, </rdg>
+                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">, </rdg>
                      </app> we must have </l>
                   <l xml:id="Chas_l_2156">Some higher warrantry than our wild will<app>
                         <rdg wit="#pubC1">,</rdg>
@@ -8573,15 +8004,11 @@
                      </app> afore we change</l>
                   <l xml:id="Chas_l_2158">The fiat of a nation. Thou art a man</l>
                   <l xml:id="Chas_l_2159">Elect <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> godly<app>
                         <rdg wit="#msC1">.</rdg>
                      </app>&#8212;<persName ref="#Harrison">Harrison</persName>!&#8212;<app>
-                        <rdg wit="#pubC1">g</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">G</rdg>
+                        <rdg wit="#pubC1">g</rdg><rdg wit="#msC1">G</rdg>
                      </app>o seek </l>
                   <l xml:id="Chas_l_2160">The presence of the Lord. Perhaps to thee</l>
                   <l xml:id="Chas_l_2161">A guiding answer<app>
@@ -8594,9 +8021,7 @@
                <sp who="#Fairfax">
                   <speaker>Fair.</speaker>
                   <l xml:id="Chas_l_2164">'Tis a <app>
-                        <rdg wit="#msC1">fair</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">wise</rdg>
+                        <rdg wit="#msC1">fair</rdg><rdg wit="#pubC1">wise</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2165">And pious counsel.</l>
                </sp>
@@ -8606,9 +8031,7 @@
                   <l xml:id="Chas_l_2167">We will await ye here.</l>
                   <stage type="business">Exeunt <persName ref="#Fairfax">Fairfax</persName>
                      <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app>
                      <persName ref="#Harrison">Harrison</persName>. <app>
                         <rdg wit="#msC1">(<emph rend="underline"><persName ref="#Cromwell_MRM"
@@ -8620,13 +8043,9 @@
                            the Warrant to <persName ref="#Hacker_Ch1">Hacker</persName>.)</rdg>
                      </app></stage>
                   <l xml:id="Chas_l_2168">Now! <app>
-                        <rdg wit="#pubC1">n</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">N</rdg>
+                        <rdg wit="#pubC1">n</rdg><rdg wit="#msC1">N</rdg>
                      </app>ow! <app>
-                        <rdg wit="#pubC1">b</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">B</rdg>
+                        <rdg wit="#pubC1">b</rdg><rdg wit="#msC1">B</rdg>
                      </app>e quick! </l>
                   <stage type="business"><app>
                         <rdg wit="#pubC1">(Exit <persName ref="#Hacker_Ch1"
@@ -8638,16 +8057,12 @@
                      </app></stage>
                   <l xml:id="Chas_l_2169">Is the scaffold all prepared? The headsman waiting</l>
                   <l xml:id="Chas_l_2170">With shrouded visage <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> bare arm? The axe </l>
                   <l xml:id="Chas_l_2171">Whetted? Be ready on the instant. Where</l>
                   <l xml:id="Chas_l_2172">Be guards to line the room, mute wondering faces,</l>
                   <l xml:id="Chas_l_2173">A living tapestry, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> men of place </l>
                   <l xml:id="Chas_l_2174">To witness this great deed? A King should fall</l>
                   <l xml:id="Chas_l_2175">Decked with the pageantries of Death, the clouds</l>
@@ -8678,9 +8093,7 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2185">Wherefore waste</l>
                   <l xml:id="Chas_l_2186">A word on such a waverer<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">?</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">?</rdg>
                      </app></l>
                </sp>
                <sp who="#Ireton">
@@ -8691,9 +8104,7 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2188">His wife! his wife! The <persName ref="#Queen_Ch1">Queen</persName> hath seen again</l>
                   <l xml:id="Chas_l_2189">That haughty dame, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> her fond tears&#8212;</l>
                </sp>
                <sp who="#Ireton">
@@ -8706,9 +8117,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2193">I watch her. He must die<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app> 'Tis borne</l>
                   <l xml:id="Chas_l_2194">Upon my soul as what shall be. The race,</l>
                   <l xml:id="Chas_l_2195">The name shall perish.</l>
@@ -8734,10 +8143,7 @@
                   <l xml:id="Chas_l_2201">Will <persName ref="#Bradshaw">Bradshaw</persName> never come?</l>
                   <stage type="business">
                      <app>
-                        <rdg wit="#pubC1"><persName ref="#Bradshaw">Bradshaw</persName>, <persName ref="#Cook_Ch1">Cook</persName>, <persName ref="#Marten">Marten</persName>, and others.</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">Enter <persName ref="#Bradshaw">Bradshaw</persName>, <persName ref="#Marten">Marten</persName>, <persName ref="#Cook_Ch1">Cook</persName> &amp; others.</rdg>
+                        <rdg wit="#pubC1"><persName ref="#Bradshaw">Bradshaw</persName>, <persName ref="#Cook_Ch1">Cook</persName>, <persName ref="#Marten">Marten</persName>, and others.</rdg><rdg wit="#msC1">Enter <persName ref="#Bradshaw">Bradshaw</persName>, <persName ref="#Marten">Marten</persName>, <persName ref="#Cook_Ch1">Cook</persName> &amp; others.</rdg>
                      </app></stage>
                   <l xml:id="Chas_l_2202">Ah welcome! welcome!</l>
                   <l xml:id="Chas_l_2203">Ye are late.</l>
@@ -8765,20 +8171,14 @@
                <sp who="#Bradshaw">
                   <speaker>Brad.</speaker>
                   <l xml:id="Chas_l_2210">The most are pale <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> silent, as a Fear</l>
                   <l xml:id="Chas_l_2211">Hung its dull shadow over them; whilst some</l>
                   <l xml:id="Chas_l_2212">Struck with a sudden pity weep <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> wonder </l>
                   <l xml:id="Chas_l_2213">What ails them; <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> a few bold tongues are loud</l>
                   <l xml:id="Chas_l_2214">In execration.</l>
                </sp>
@@ -8795,9 +8195,7 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2218">The righteous cause!</l>
                   <l xml:id="Chas_l_2219">My friends <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> comrades ye are come to witness</l>
                   <l xml:id="Chas_l_2220">The mighty consummation. See<app>
                         <rdg wit="#pubC1">,</rdg>
@@ -8811,9 +8209,7 @@
                </sp>
                <stage type="business">Enter the <persName ref="#Chas1_MRM">King</persName>, <persName ref="#Hacker_Ch1">Hacker</persName>,
                      <persName ref="#Herbert_Ch1">Herbert</persName>, a Bishop, <app>
-                     <rdg wit="#pubC1">G</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">g</rdg>
+                     <rdg wit="#pubC1">G</rdg><rdg wit="#msC1">g</rdg>
                   </app>uards<app>
                      <rdg wit="#pubC1">,</rdg>
                   </app> &amp;c.</stage>
@@ -8821,9 +8217,7 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_2224">Why pause ye?</l>
                   <l xml:id="Chas_l_2225">Come on<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <stage type="business"><app>
@@ -8838,41 +8232,29 @@
                      </app>Sir<app>
                         <rdg wit="#pubC1">e</rdg>
                      </app>, from thy <app>
-                        <rdg wit="#pubC1">S</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">s</rdg>
+                        <rdg wit="#pubC1">S</rdg><rdg wit="#msC1">s</rdg>
                      </app>on.</l>
                </sp>
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_2227">My boy! My boy!</l>
                   <l xml:id="Chas_l_2228"><app>
-                        <rdg wit="#pubC1">No; no;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">No, no,</rdg>
+                        <rdg wit="#pubC1">No; no;</rdg><rdg wit="#msC1">No, no,</rdg>
                      </app> this letter is of life, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> I </l>
                   <l xml:id="Chas_l_2229">And life have shaken hands. My <app>
-                        <rdg wit="#pubC1">k</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">K</rdg>
+                        <rdg wit="#pubC1">k</rdg><rdg wit="#msC1">K</rdg>
                      </app>ingly boy!</l>
                   <l xml:id="Chas_l_2230">And the fair girl! I thought to have done with this<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2231">But it so clings! Take back the letter<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app>
                      <persName ref="#Herbert_Ch1">Herbert</persName><app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2232">Take it<app>
@@ -8881,13 +8263,9 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> faithful <persName ref="#Herbert_Ch1">Herbert</persName>,</l>
                   <l xml:id="Chas_l_2233">That last impatient word<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> Forgive me<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!&#8212;</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!&#8212;</rdg>
                      </app> Now<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> Sirs<app>
@@ -8895,14 +8273,10 @@
                      </app></l>
                   <l xml:id="Chas_l_2234">What see ye on that platform? I am as one</l>
                   <l xml:id="Chas_l_2235">Bent on a far <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> perilous voyage, who seeks</l>
                   <l xml:id="Chas_l_2236">To hear what rocks beset his <app>
-                     <rdg wit="#msC1">track.&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">path. </rdg>
+                     <rdg wit="#msC1">track.&#8212;</rdg><rdg wit="#pubC1">path. </rdg>
                      </app>What see ye?</l>
                </sp>
                <sp who="#Bradshaw">
@@ -8915,13 +8289,9 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> he wears </l>
                   <l xml:id="Chas_l_2239">His mask upon his face<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">;</rdg>
                      </app> an honest mask<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2240">What see ye more?</l>
@@ -8933,29 +8303,16 @@
                      </app> save the living sea</l>
                   <l xml:id="Chas_l_2242">Of human faces, blent into one mass</l>
                   <l xml:id="Chas_l_2243">Of sentient various life<app>
-                        <rdg wit="#pubC1">:</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">;</rdg>
+                        <rdg wit="#pubC1">:</rdg><rdg wit="#msC1">;</rdg>
                      </app> woman <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> man, </l>
                   <l xml:id="Chas_l_2244">Childhood <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> infancy<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> youth <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> age<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app>
@@ -8967,9 +8324,7 @@
                         <rdg wit="#pubC1">!</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2247">Who may abide thy power<app>
-                        <rdg wit="#pubC1">?</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">?</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -8982,9 +8337,7 @@
                   <l xml:id="Chas_l_2250">Aye, <app>
                         <rdg wit="#pubC1"/>
                      </app>why<app>
-                        <rdg wit="#msC1">!!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">?</rdg>
+                        <rdg wit="#msC1">!!</rdg><rdg wit="#pubC1">?</rdg>
                      </app></l>
                </sp>
                <sp who="#Bradshaw">
@@ -9008,31 +8361,21 @@
                   </l>
                   <l xml:id="Chas_l_2258">Have yet a privilege beyond the slow</l>
                   <l xml:id="Chas_l_2259">And painful dying bed, <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> I may quaff </l>
                   <l xml:id="Chas_l_2260">In my full pride of strength a health to him,</l>
                   <l xml:id="Chas_l_2261"><app>
-                        <rdg wit="#pubC1">Whom, pass one short half-hour, the funeral knell</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Whom in one short half hour my funeral knell</rdg>
+                        <rdg wit="#pubC1">Whom, pass one short half-hour, the funeral knell</rdg><rdg wit="#msC1">Whom in one short half hour my funeral knell</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2262">Proclaims my successor<app>
-                     <rdg wit="#msC1">:&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">. </rdg>
+                     <rdg wit="#msC1">:&#8212;</rdg><rdg wit="#pubC1">. </rdg>
                      </app> Health to my <persName ref="#Gloucester">son</persName>!</l>
                   <l xml:id="Chas_l_2263">Health to the King of <placeName ref="#England">England</placeName>!<app>
                      <rdg wit="#msC1">&#8212;</rdg>
                      </app> Start ye, Sirs,</l>
                   <l xml:id="Chas_l_2264">To hear the word? Health to King <persName
                         ref="#Chas1_MRM">Charles</persName><app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg><rdg wit="#pubC1">and</rdg>
                      </app><app>
                         <rdg wit="#msC1">&amp;</rdg>
                      </app> peace<app>
@@ -9043,13 +8386,9 @@
                   <l xml:id="Chas_l_2266">Of rightful rule shall come, say that I left</l>
                   <l xml:id="Chas_l_2267">For the bold traitors that condemned, the cowards</l>
                   <l xml:id="Chas_l_2268"><app>
-                        <rdg wit="#pubC1">Who</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">That</rdg>
+                        <rdg wit="#pubC1">Who</rdg><rdg wit="#msC1">That</rdg>
                      </app>not opposing murdered me<app>
-                        <rdg wit="#pubC1"> </rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1"> </rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app>(I have won</l>
                   <l xml:id="Chas_l_2269">So near the <app><rdg wit="#pubC1">T</rdg><rdg wit="#msC1">t</rdg></app>hrone of Truth that
                      true words spring</l>
@@ -9065,9 +8404,7 @@
                      </app>
                   </l>
                   <l xml:id="Chas_l_2272">A free <app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app><del rend="squiggles"><unclear/></del> royal pardon!&#8212;Prythee speed me</l>
                   <l xml:id="Chas_l_2273">On my rough journey.</l>
                </sp>
@@ -9075,9 +8412,7 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_2274">Wherefore crowd ye there?</l>
                   <l xml:id="Chas_l_2275">Make way<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                </sp>
@@ -9109,9 +8444,7 @@
                <sp who="#Marten">
                   <speaker>Mar.</speaker>
                   <l xml:id="Chas_l_2279">Not so<app>
-                        <rdg wit="#pubC1">. H</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">, h</rdg>
+                        <rdg wit="#pubC1">. H</rdg><rdg wit="#msC1">, h</rdg>
                      </app>e kneels.</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -9121,13 +8454,9 @@
                      </app>
                   </l>
                   <l xml:id="Chas_l_2281">This wintery air <app>
-                        <rdg wit="#pubC1">is</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">comes</rdg>
+                        <rdg wit="#pubC1">is</rdg><rdg wit="#msC1">comes</rdg>
                      </app> chill, <app>
-                        <rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
+                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> the Lord President</l>
                   <l xml:id="Chas_l_2282">Is of a feeble body.</l>
                </sp>
@@ -9140,9 +8469,7 @@
                <sp who="#Bradshaw">
                   <speaker>Brad.</speaker>
                   <l xml:id="Chas_l_2283">H<app>
-                        <rdg wit="#pubC1">ush</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">ark</rdg>
+                        <rdg wit="#pubC1">ush</rdg><rdg wit="#msC1">ark</rdg>
                      </app>! </l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -9160,9 +8487,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app>
                      <persName ref="#Ireton">Ireton</persName><app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app>
                   </l>
                   <stage type="business"><app>
@@ -9173,18 +8498,12 @@
                   <l xml:id="Chas_l_2288">It were not meet that earthly loves should mingle</l>
                   <l xml:id="Chas_l_2289">With yonder dying prayer. Yes! Still he kneels.</l>
                   <l xml:id="Chas_l_2290"><persName ref="#Hacker_Ch1">Hacker</persName> come hither<app>
-                        <rdg wit="#pubC1">.</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app> If thou see a stir</l>
                   <l xml:id="Chas_l_2291">Amongst the crowd, send for my horse<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg>
                      </app> they're ready<app>
-                        <rdg wit="#pubC1">;&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">;&#8212;</rdg><rdg wit="#msC1">.</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2292">Or if<app>
                         <rdg wit="#pubC1">,</rdg>
@@ -9194,31 +8513,21 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app> some feeble heart </l>
                   <l xml:id="Chas_l_2293">Wax faint in the great cause<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&#8212;</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&#8212;</rdg>
                      </app> as such there be<app>
-                        <rdg wit="#pubC1">;</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">!</rdg>
                      </app>&#8212;</l>
                   <l xml:id="Chas_l_2294">Or on the scaffold, if he cling to life</l>
                   <l xml:id="Chas_l_2295">Too fondly<app>
                         <rdg wit="#pubC1">;</rdg>
                   </app>&#8212;I'd not send a sinful soul</l>
                   <l xml:id="Chas_l_2296">Before his time to his <app>
-                        <rdg wit="#pubC1">accompt</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">account</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1">,</rdg>
+                        <rdg wit="#pubC1">accompt</rdg><rdg wit="#msC1">account</rdg><rdg wit="#pubC1">,</rdg>
                      </app> good <persName ref="#Bradshaw">Bradshaw</persName>!<app>
                         <rdg wit="#msC1">&#8212;</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2297">But no delay!<app>
-                     <rdg wit="#msC1">&#8212;</rdg>
-                     </app><app>
-                        <rdg wit="#pubC1"> </rdg>
+                     <rdg wit="#msC1">&#8212;</rdg><rdg wit="#pubC1"> </rdg>
                      </app>Is he still kneeling?&#8212;Mark me<app>
                         <rdg wit="#msC1">,</rdg>
                      </app>
@@ -9226,37 +8535,25 @@
                   <l xml:id="Chas_l_2298">No idle dalliance <persName ref="#Hacker_Ch1"
                         >Hacker</persName>! I must hence,</l>
                   <l xml:id="Chas_l_2299">Lest <persName ref="#Fairfax">Fairfax</persName>&#8212;<app>
-                        <rdg wit="#pubC1">no</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">No</rdg>
+                        <rdg wit="#pubC1">no</rdg><rdg wit="#msC1">No</rdg>
                      </app> weak dalliance! <app>
-                        <rdg wit="#pubC1">no</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">No</rdg>
+                        <rdg wit="#pubC1">no</rdg><rdg wit="#msC1">No</rdg>
                      </app> delay!<app>
                         <rdg wit="#msC1">&#8212;</rdg>
                      </app>
                   </l>
                   <l xml:id="Chas_l_2300">The cause<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app> the cause<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">!</rdg>
+                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
                      </app> good <persName ref="#Bradshaw">Bradshaw</persName>!</l>
                </sp>
                <stage type="business"><app>
                      <rdg wit="#pubC1">(</rdg>
                   </app>Exit <app>
-                     <rdg wit="#msC1">&amp;</rdg>
-                  </app><app>
-                     <rdg wit="#pubC1">and</rdg>
+                     <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                   </app> the <app>
-                     <rdg wit="#pubC1">S</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">s</rdg>
+                     <rdg wit="#pubC1">S</rdg><rdg wit="#msC1">s</rdg>
                   </app>cene closes<app>
                      <rdg wit="#pubC1">.</rdg>
                   </app><app>
@@ -9283,9 +8580,7 @@
                <l xml:id="Chas_l_2302">To <persName ref="#Fairfax">Fairfax</persName><app>
                      <rdg wit="#pubC1">!</rdg>
                   </app>&#8212;<app>
-                     <rdg wit="#pubC1">h</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">H</rdg>
+                     <rdg wit="#pubC1">h</rdg><rdg wit="#msC1">H</rdg>
                   </app>e must die, as <persName ref="#Ahab">Ahab</persName> erst<app>
                      <rdg wit="#msC1">,</rdg>
                   </app>
@@ -9294,16 +8589,12 @@
                <l xml:id="Chas_l_2304">Whom <persName ref="#Brutus">Brutus</persName> loved <app><rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg></app> slew. None ever called</l>
                <l xml:id="Chas_l_2305"><persName ref="#Brutus">Brutus</persName> a murderer! And
                      <persName ref="#Chas1_MRM">Charles</persName> had trial<app>
-                        <rdg wit="#pubC1">&#8212;</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1">,</rdg>
                   </app>
                </l>
                <l xml:id="Chas_l_2306">'Twas more than <persName ref="#Julius_Caesar"
                      >Caesar</persName> had<app>
-                        <rdg wit="#pubC1">!&#8212;</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">,</rdg>
+                        <rdg wit="#pubC1">!&#8212;</rdg><rdg wit="#msC1">,</rdg>
                   </app>free open trial,</l>
                <l xml:id="Chas_l_2307">If he had pleaded<app><rdg wit="#pubC1">.</rdg><rdg wit="#msC1">;</rdg></app> But the Eternal Wrath</l>
                <l xml:id="Chas_l_2308">Stiffened him in his pride. It was ordained<app><rdg wit="#pubC1">,</rdg></app> </l>
@@ -9342,18 +8633,14 @@
                      <rdg wit="#msC1">;</rdg>
                </app>&#8212; </l>
                <l xml:id="Chas_l_2319">I see him not<app>
-                  <rdg wit="#pubC1">,&#8212;</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">; </rdg>
+                  <rdg wit="#pubC1">,&#8212;</rdg><rdg wit="#msC1">; </rdg>
                   </app>but I have wept me blind;<app>
                      <rdg wit="#pubC1">&#8212;</rdg>
                   </app></l>
                <l xml:id="Chas_l_2320">And then that axe, that keen<app><rdg wit="#pubC1">,</rdg></app> bright<app><rdg wit="#pubC1">,</rdg></app> edgy axe,</l>
                <l xml:id="Chas_l_2321">Which flashed across my eyeballs, blinding me</l>
                <l xml:id="Chas_l_2322">More than a sea of tears.&#8212;Here's one<app>
-                     <rdg wit="#pubC1">!</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">.</rdg>
+                     <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                   </app>: <app>
                      <rdg wit="#pubC1">&#8212;</rdg>
                   </app> Oh fly<app>
@@ -9377,9 +8664,7 @@
                <l xml:id="Chas_l_2328">Comfort! <app><rdg wit="#pubC1">a</rdg><rdg wit="#msC1">A</rdg></app>nd he dies<app><rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg></app></l>
                <l xml:id="Chas_l_2329">They murder him<app><rdg wit="#pubC1">;</rdg><rdg wit="#msC1">!</rdg></app> the axe falls on his neck<app><rdg wit="#pubC1">;</rdg><rdg wit="#msC1">!</rdg></app></l>
                <l xml:id="Chas_l_2330">The blood comes plashing<app>
-                  <rdg wit="#pubC1">;&#8212;</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">!</rdg>
+                  <rdg wit="#pubC1">;&#8212;</rdg><rdg wit="#msC1">!</rdg>
                   </app>Comfort!</l>
             </sp>
 
@@ -9392,9 +8677,7 @@
                <l xml:id="Chas_l_2331">Out alas!</l>
                <l xml:id="Chas_l_2332">I can hear nought of <persName ref="#Fairfax"
                      >Fairfax</persName>, royal Madam<app>
-                        <rdg wit="#pubC1">!&#8212;</rdg>
-                  </app><app>
-                     <rdg wit="#msC1">.</rdg>
+                        <rdg wit="#pubC1">!&#8212;</rdg><rdg wit="#msC1">.</rdg>
                   </app></l>
                <l xml:id="Chas_l_2333"><persName ref="#Cromwell_MRM">Cromwell</persName><app><rdg wit="#pubC1">,</rdg></app> the Master-murderer!</l>
             </sp>
@@ -9407,9 +8690,7 @@
                <l xml:id="Chas_l_2337">I kiss thy feet. Oh save him! Take the crown<app><rdg wit="#pubC1">;</rdg><rdg wit="#msC1">,</rdg></app></l>
                <l xml:id="Chas_l_2338">Take all but his dear life! Oh save him, save him<app><rdg wit="#pubC1">!</rdg></app></l>
                <l xml:id="Chas_l_2339">And I will be thy slave!<app>
-                  <rdg wit="#pubC1">&#8212;</rdg>
-                  </app><app>
-                     <rdg wit="#msC1"> </rdg>
+                  <rdg wit="#pubC1">&#8212;</rdg><rdg wit="#msC1"> </rdg>
                   </app>I<app>
                      <rdg wit="#pubC1">,</rdg>
                   </app> a born Princess,</l>
