@@ -8,7 +8,7 @@
  <xsl:variable name="currWit">     <xsl:text>#msC1</xsl:text>
  </xsl:variable>   
    
-    <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
+    <xsl:variable name="si" select="document('../SI_dev/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -230,7 +230,7 @@
         <xsl:apply-templates select="head"/>
         <table>
             <tr>
-                <th>Role</th><xsl:if test="descendant::actor[not(descendant::app)] or descendant::actor[descendant::app[rdg[@wit=$currWit]]]"><th>Actor</th></xsl:if>
+                <th><span class="castGroup">Role</span></th><xsl:if test="descendant::actor[not(descendant::app)] or descendant::actor[descendant::app[rdg[@wit=$currWit]]]"><th>Actor</th></xsl:if>
             </tr>
             <xsl:apply-templates select="castList"/>  
         </table>
@@ -240,29 +240,27 @@
         <xsl:apply-templates/>
     </xsl:template>
    
-   <xsl:template match="castItem | castGroup">
-       <xsl:if test="./name() = 'castGroup'">
-           <tr>
-               <td> <span class="role"><xsl:apply-templates select="roleDesc"/></span></td>
-           </tr>
-           <!--<xsl:apply-templates select="roleDesc/following-sibling::*"/>-->
-       </xsl:if>
+   <xsl:template match="castItem">
+
       
        <xsl:if test="not(descendant::role//app) or descendant::app[(rdg[@wit=$currWit])]"><tr>
-           <td><xsl:if test="role"><span class="role"><xsl:apply-templates select="role"/></span></xsl:if>
-                <xsl:text>&#x9;</xsl:text>
+           <td><xsl:if test="role"><span class="role"><xsl:apply-templates select="role"/></span><xsl:text>&#x9;</xsl:text></xsl:if>
+                
                <xsl:apply-templates select="roleDesc"/></td>
            <xsl:if test="actor[not(descendant::app)] or actor[descendant::app[rdg[@wit=$currWit]]]"> <td><xsl:apply-templates select="actor/node()"/></td></xsl:if>
        </tr></xsl:if>
    </xsl:template>
-    <!--<xsl:template match="castGroup">
-        <tr>
-           <td> <span class="role"><xsl:apply-templates select="roleDesc"/></span></td>
-        </tr>
-        <xsl:for-each select="roleDesc/following-sibling::castItem">
-            <xsl:apply-templates/>
-        </xsl:for-each>
-    </xsl:template>-->
+    <xsl:template match="castGroup">
+        <xsl:if test="not(descendant::role//app) or descendant::app[(rdg[@wit=$currWit])]"><tr>
+            <td><span class="castGroup"><xsl:apply-templates select="role"/><xsl:text>&#x9;</xsl:text>
+                                   <xsl:apply-templates select="roleDesc"/></span></td>
+        </tr>        
+       <tr>
+          <td> <table><xsl:apply-templates select="castItem"/></table></td>
+       </tr>
+       
+        </xsl:if>    
+    </xsl:template>
     
     
     <xsl:template match="stage">

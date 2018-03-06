@@ -8,7 +8,7 @@
  <xsl:variable name="currWit">     <xsl:text>#pubC1</xsl:text>
  </xsl:variable>   
    
-    <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/>
+    <xsl:variable name="si" select="document('../SI_dev/si.xml')" as="document-node()+"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -47,7 +47,7 @@
       
                             
 <xsl:apply-templates select="//div[@type='prologue']"/>
-         <xsl:apply-templates select="div[@type='cast']"/>  
+         <xsl:apply-templates select="//div[@type='cast']"/>  
     <xsl:apply-templates select="//div[@type='set']"/>
 </section>
         <section id="play">
@@ -230,24 +230,38 @@
         <xsl:apply-templates select="head"/>
         <table>
             <tr>
-                <th>Role</th><th>Actor</th>
+                <th><span class="castGroup">Role</span></th><xsl:if test="descendant::actor[not(descendant::app)] or descendant::actor[descendant::app[rdg[@wit=$currWit]]]"><th>Actor</th></xsl:if>
             </tr>
             <xsl:apply-templates select="castList"/>  
         </table>
     </xsl:template>
     
     <xsl:template match="castList">
-        <xsl:apply-templates select="castItem"/>
+        <xsl:apply-templates/>
     </xsl:template>
    
    <xsl:template match="castItem">
-       <tr>
-       <td><span class="role"><xsl:apply-templates select="role"/></span>
-           <xsl:text>, </xsl:text>
-           <xsl:apply-templates select="roleDesc"/></td>
-       <td><xsl:apply-templates select="actor/node()"/></td>
-       </tr>
+
+      
+       <xsl:if test="not(descendant::role//app) or descendant::app[(rdg[@wit=$currWit])]"><tr>
+           <td><xsl:if test="role"><span class="role"><xsl:apply-templates select="role"/></span><xsl:text>&#x9;</xsl:text></xsl:if>
+                
+               <xsl:apply-templates select="roleDesc"/></td>
+           <xsl:if test="actor[not(descendant::app)] or actor[descendant::app[rdg[@wit=$currWit]]]"> <td><xsl:apply-templates select="actor/node()"/></td></xsl:if>
+       </tr></xsl:if>
    </xsl:template>
+    <xsl:template match="castGroup">
+        <xsl:if test="not(descendant::role//app) or descendant::app[(rdg[@wit=$currWit])]"><tr>
+            <td><span class="castGroup"><xsl:apply-templates select="role"/><xsl:text>&#x9;</xsl:text>
+                                   <xsl:apply-templates select="roleDesc"/></span></td>
+        </tr>        
+       <tr>
+          <td> <table><xsl:apply-templates select="castItem"/></table></td>
+       </tr>
+       
+        </xsl:if>    
+    </xsl:template>
+    
     
     <xsl:template match="stage">
         <span class="stage"><xsl:apply-templates/></span>    
@@ -266,11 +280,15 @@
     </xsl:template>
     
     <xsl:template match="sp">
+        <!--2018-03-01: We seem to be missing the processing of stage directions within sp elements, so I'm adding a general apply-templates after the processing of speakers, and an xsl:if in front -->
+        <xsl:if test="speaker[preceding-sibling::*]">
+            <xsl:apply-templates select="speaker/preceding-sibling::*"/>
+        </xsl:if>
         <span class="speaker"><xsl:apply-templates select="speaker"/></span>
-    <xsl:apply-templates select="l"/>
+    <xsl:apply-templates select="speaker/following-sibling::*"/>
     </xsl:template>
    <!--2018-02-17 ebb: template rule draft to try to suppress lg, l, and head elements from being processed when they are ONLY present in the NOT current witness:-->
-    <xsl:template match="head[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] | lg[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])]  | l[ancestor::rdg[@wit!=$currWit] and not(ancestor::app[rdg[@wit=$currWit]])] "/>
+    <xsl:template match="head[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] | lg[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])]  | l[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] "/>
     <xsl:template match="lg">
         <span class="lg"><xsl:apply-templates/></span>
     </xsl:template>

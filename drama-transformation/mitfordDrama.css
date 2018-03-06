@@ -176,12 +176,16 @@ table, th, td {
 
 }
 
-td {text-align:center; padding:2px}
+td {text-align:left; padding:2px}
+
+td table tr td {padding-left:10em; padding-right:10em;}
 
 span.role{
 color: #990000; font-size: 1.1em; font-weight:700   
 }
-
+span.castGroup{
+font-size:1.2em; color:navy; font-weight:700    
+}
 span.speaker {color: #990000; font-size: 1.1em; font-weight:700; display:block; padding:1.2em;   
     
 }
