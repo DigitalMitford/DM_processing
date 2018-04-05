@@ -294,7 +294,14 @@
     </xsl:template>
     
     <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit])]">
+        <!--2018-04-05: I tried the code below for this template match (and have probably attempted it before) to exclude blank numbered lines from appearing in the published text when there is text in the MS play missing from the published version.
+        l[not(ancestor::rdg[@wit!=$currWit]) and not(descendant::app[rdg[@wit!=$currWit]] and not(rdg[@wit=$currWit]))]
+        
+       It does not work properly: for the passages in question, it suppresses line numbers, but delivers speakers, and elsewhere seems to remove line numbers and line breaks while outputting lines (not sure what condition causes this). I might need to define a function or modal template to properly identify the lines we need to exclude from processing. 
+        -->
         <span class="line" id="L{count(preceding::l) + 1}">
+            <!--2018-04-05 ebb: This is NOT a good way to calculate the line numbers in the output, because it's counting every <l> element in ALL editions. Instead either output the absolute xml:id or count in terms of present witness lines. -->
+            
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
             <span class="lineNum"><xsl:value-of select="count(preceding::l) + 1"/></span>  
