@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+                <editor ref="#rnes">Rebecca Nesvet</editor><!--created 2017-06-29-->
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName><!--Last checked: 2018-01-02-->
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+         
+         <!--LMW:  ALL NEW xml:ids for Site Index -->
+         <div type="historical_people">
+            <listOrg sortKey="histOrgs">
+               <org xml:id="ColonnaFamily">
+                  <orgName>Colonna family</orgName>
+                  <orgName>
+                     <surname>Colonna</surname>
+                     <surname>Sciarillo</surname>
+                     <surname>Sciarra</surname>
+                  </orgName>
+                  <placeName>Rome</placeName>
+                  <note resp="#rnes">Powerful aristocratic family in medieval and early modern Rome. Originating in the eleventh century, the Colonnas built a fortified palace (starting in the thirteenth century) at the site of the modern Piazza SS. Apostoli. Percy Shelley claimed to have visited the Colonna palace, and the family features in a minor way in Percy Bysshe Shelley's play The Cenci (1819).
+                  </note>
+               </org>
+               
+               <org xml:id="LdChamberlainsOfc">
+                  <orgName>Office of the Lord Chamberlain</orgName>
+                  <placeName>London, England</placeName>
+                  <note resp="#rnes">From 737-1968, the official theater censor's office, overseen by the Lord Chamberlain. This function was abolished in 1968, and the office continues in service of different purposes, primarily event-planning (royal appearances, events, and parties.) Mitford's plays were reviewed by this office.</note>
+               </org>
+            </listOrg>
+         </div>
+         
+         <div type="publications">
+            <listBibl sortKey="literary">
+               <bibl xml:id="Romeo_Juliet">
+                  <title>Romeo and Juliet</title>
+                  <author>William Shakespeare</author>
+                  <pubPlace>London</pubPlace>
+                  <date when="1599">1599</date>
+                  <note resp="#rnes">Shakespeare's tragedy, first published in 1597 in a quarto edition that is missing some of the play's most iconic speeches, and subsequently in the second quarto (1599).</note>
+               </bibl>
+               
+               <bibl xml:id="Cenci_play">
+                  <title type="m">The Cenci: A Tragedy, in Five Acts</title>
+                  <author ref="#Shelley_PB">Percy Bysshe Shelley</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>C. and J. Ollier</publisher>
+                  <date when="1819">1819</date>
+                  <note resp="#rnes">Percy Bysshe Shelley's only completed stage play was written in <date when="1819">1819</date>, informed by the legend of Beatrice Cenci, a historical Roman noblewoman who, in 1599, was executed along with her stepmother and brother for the murder of her reportedly abusive father, Count Francesco Cenci. Inspired by a manuscript translated from the Italian by Mary Shelley (who also claimed to have "discussed" with her husband the play's scene breakdown), The Cenci tells a powerful story of political tyranny, incestuous rape, and violent, quickly-suppressed revolt. The play's depiction of rape, incest, and parricide was the apparent cause of its rejection by the Theatre at Covent Garden. It was not produced until 1886, when it premiered in an unlicensed London performance organized by the actress Alma Murray, who played Beatrice.</note>
+               </bibl>
+               
+               <bibl xml:id="Isabella_poem">
+                  <title level="a">Isabella, or the Pot of Basil</title>
+                  <title level="m" ref="#LIEO_Poems">Lamia, Isabella, The Eve of St. Agnes, and Other Poems</title>
+                  <author ref="#Keats">John Keats</author>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <publisher>Taylor and Hessey</publisher>
+                  <date when="1820">1820</date>
+                  <note resp="#rnes">Keats's narrative poem is adapted from the tale of Isabella and Lorenzo from Giovanni Boccaccio's Decameron (IV, 5). The poem was first collected in <title ref="#LIEO_Poems">Lamia, Isabella, The Eve of St. Agnes, and Other Poems</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="FallofRobespierre">
+                  <title>The Fall of Robespierre: An Historic Drama</title>
+                  <author>Robert Southey</author>
+                  <author>Samuel Taylor Coleridge</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Benjamin Flower</publisher>
+                  <date when="1794">1794</date>
+                  <note resp="#rnes #lmw">Three-act historical drama collaboratively written by Samuel Taylor Coleridge and Robert Southey. At the time of the play's writing, it was printed by radical Benjamin Flower but never performed. The play, drafted soon after Robespierre's death, presents a complex portrait of Maximilien Robespierre, political architect (and eventual victim) of the Reign of Terror that followed the French Revolution. This play proved an embarrassment to Southey after his repudiation of his youthful radicalism.</note>
+                  <note><ref target="http://www.rc.umd.edu/editions/robespierre/play-toc.html/"/></note>
+               </bibl>
+               
+               <bibl xml:id="Prelude_WW">
+                  <title type="m">The Prelude, or, Growth of a Poet's Mind: An Autobiographical Poem</title>
+                  <author>William Wordsworth</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Edward Moxon</publisher>
+                  <date when="1850">1850</date><note resp="#lmw">Autobiographical narrative poem, originally intended to introduce a poetic work that he never completed, first drafted in 1798-1799. The first printed version was an expanded, fourteen-part text published after Wordsworth's death in 1850. A thirteen-book version of 1805 was discovered and printed in 1926.</note>
+               </bibl>
+               
+               <bibl xml:id="RevoltofIslam">
+                  <title>The Revolt of Islam: A Poem, in Twelve Cantos</title>
+                  <author ref="#Shelley_PB">Percy Bysshe Shelley</author>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <publisher>C. and J. Ollier</publisher>
+                  <date when="1816">1816</date>
+                  <note resp="#rnes">The second published version of a poem that Percy Bysshe Shelley originally titled Laon and Cythna, or, the Revolution of the Golden City. A prophetic vision of a fictional revolution postdating the French Revolution and taking place in the Ottoman Empire, The Revolt of Islam is distinguished by Shelley's self-censorship of his own most controversial material.</note>
+               </bibl>
+               
+               <bibl xml:id="Rienzi_EBL">
+                  <title>Rienzi, The Last of the Roman Tribunes</title>
+                  <author>Edward Bulwer-Lytton</author>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <publisher>Saunders and Otley</publisher>
+                  <date when="1835">1835</date>
+                  <note resp="#rnes #lmw">Edward Bulwer-Lytton's novel; a 1835 treatment of the rebellion of <persName ref="#Rienzi_Cola">Cola di Rienzi</persName>, the subject of <title ref="#Rienzi">Mitford's play Rienzi</title>. The novel incorporates some of <persName ref="#MRM">Mitford</persName>'s innovations, such as the invention of several female characters.</note>
+               </bibl>
+               
+               <bibl xml:id="Rienzi_Wagner">
+                  <title>Rienzi, der Letzte der Tribunen</title>
+                  <title>Rienzi, the Last of the Tribunes</title>
+                  <author>Richard Wagner</author>
+                  <date when="1842">1842</date>
+                  <note resp="#rnes">Richard Wagner's opera; an 1842 treatment of the rebellion of <persName ref="#Rienzi_Cola">Cola di Rienzi</persName>, the subject of <title ref="#Rienzi">Mitford's play Rienzi</title>.</note>
+               </bibl>
+            </listBibl>
+         </div>
+            
+      </body>
+  </text>
+</TEI>

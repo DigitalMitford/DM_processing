@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM1762">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, July 5, 1820</title> <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+   <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+               <persName ref="#cay">Courtney Younes</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-10-20">2017-12-29</date><!--Fill out and update the date here as different proofreaders work with this file. Dates inside the attribute @when take the form of a hyphen-separated four-digit year followed by two-digit month and two digit day, so May 2, 2015 comes out as 2015-05-02. -->
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-10-18">2017-10-18</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>P1020402.jpg, P1020403.jpg, P1020404.jpg, P1020405.jpg, P1020406.jpg, P1020407.jpg, P1020408.jpg, P1020409.jpg, P1020410.jpg, P1020411.jpg, P1020412.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+              <p>-Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+                  </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc><msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 408</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1820-07-05">1820 July 5</date>.
+               <note resp="#lmw">Mitford heads her letter July 5, 1820, which date is a Wednesday, according to the perpetual calendar. The letter is dated and postmarked July 10, 1820 (a Monday) for mailing. It was franked by J. B. Monck, which may account for the delay in mailing.</note>
+</head> 
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One and a half sheets of
+                        <material>paper</material> four surfaces photographed. Paper measure 23.2 cm high. Full sheet folded in half with half sheet inserted between, then packet folded in thirds for sealing.</p> 
+                        <p>Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/>10JY10<lb/><unclear/></stamp>.</p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages five and six) torn on right edge of page five where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to page six. Square impress visible.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+        <handNote corresp="#rc" medium="red_crayon">Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first five leaves. There is no red crayon across page six.</handNote>
+           <handNote corresp="#pencil" medium="pencil">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "12" in the top left of the first leaf.
+           </handNote>
+           <handNote corresp="#penAnnot_RCL" medium="pen">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left black pen marks in her letters now in the Reading Central Library's collection. This letter is labelled "Sir W. Elford" in the top left of the first leaf. <!--LMW: "To" is written in pencil and the rest in black pen. --></handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="penAnnot_RCL">To <persName ref="#ElfordSirWm">Sir W. Elford</persName></add> 
+               <dateline>
+                  <name type="place" ref="#ThreeMileCross">Three Mile Cross</name> 
+                  <date when="1820-07-05">July 5<hi rend="superscript">th</hi> 1820</date>. 
+                  <add hand="pencil">12</add>
+               </dateline>
+               </opener>
+            <p>Your most kind &amp; delightful letter, my dear <persName ref="#Elford_SirWm">Sir William</persName> met me on my return from an unexpeected &amp; very pleasant excursion--I <del rend="squiggles" unit="word" n="1">returned</del><add place="above">came home</add>yesterday from passing 3 days in <placeName ref="#London_city">London</placeName> &amp; four at <placeName ref="#Richmond">Richmond</placeName>--going up in the atmosphere of <placeName ref="#Calcutta">Calcutta</placeName> &amp; coming back in that of <placeName ref="#Greenland">Greenland</placeName>--but equally well &amp; enjoying myself as much in one as in the other. This is a vaunt of the very first magnitnde--but greatly am <add place="above">I</add> proud of my health--because when my size is considered I think it a curiosity.--All this time was spent in seeing sights--The <rs type="event">Exhibition</rs> where I had the honor of paying my respects to your very pretty landscape. It has a great charm to me in its originality--There was some courage in laying those enclosures before one like a map that &amp; the success has amply repaid the daring. By the bye the <rs type="event">Exhibition</rs> gets worse &amp; worse. Nothing but dull faces.--To be sure <persName ref="#Wilkie_Wil">Wilkie</persName> &amp; <persName ref="#Chantrey_F">Chantrey</persName> &amp; <persName ref="#Turner_JMW">Turner</persName> are well worth looking at--&amp; I have great delight in <add place="above">gazing</add> on the kindest the <persName ref="#Niobe">Niobe</persName> train in that room where nobody <del rend="squiggles"></del> goes but else to be a rational thing the <orgName ref="#Royal_Academy">Royal Academy</orgName> seems to want the infusion of a little fresh blood.--(Have you seen an head of <persNme ref="#Scott_WS">Scott</persNme>, which <persName ref="#Chantrey_F">Chantrey</persName> has just finished? The only successful likeness that has been taken of that most difficult &amp; uncatchable countenance! The <placeName ref="#British_Gallery">British Gallery</placeName>--Oh what a treat! I thought I should never be able to get away--I will not begin to praise those portraits of great people by great Masters for fear my letter should be liable to exclamation--all notes of admiration--a sort of <lang xml:lang="fr">Catalogue de raisonné</lang> which would be the least edifying possible. Did you see this charming Collection? The thing I cannot help saying--set me right if I am wrong--<persName ref="#Reynolds_JH">Reynolds</persName> does not seem to me to bear the <!--unclear one word-->of <persName ref="#Vandyke">Vandyke</persName><pb n="1"/>--there is a want--I don't know where--but I feel it--the curious thing in the collection is that incomparably the two ugliest portraits are those of <persName ref="#Shore_Jane">Jane Shore</persName> &amp; <persName ref="#MaryQoS">Mary Queen of Scots</persName>--The state of Art at the time accounts for the first &amp; besides no Painter on earth could ever have been able to give the style of beauty implied by <persName ref="#Shakespeare">Shakespeare</persName>'s loveliest of all lovely sketches--"A pretty foot, a cherry lip, a passing pleasing tongue"<note resp="#lmw"><persName ref="#MRM">Mitford</persName> here slightly misquotes <title ref="#RichardIII_play">Richard III</title>, act one, scene one: "We say that Shore's wife hath a pretty foot,/A cherry lip, a bonny eye, a passing pleasing tongue."</note>--but that they did not get the Bodleian Mary is quite astonishing especially as they had portraits from <placeName ref="#Oxford_city">Oxford</placeName>. To be sure there was not much to be expected from a set of Directors who affronted <persName ref="#Wynne_WW">Sir W. W. Wynne</persName> by refusing to put in <persName ref="#Ramsay_A">Ramsay</persName>'s bad but interesting picture of <persName>Prince Charles Edward</persName> under any other name than that of the Pretender--Was not this a prodigious want of commonsense in the year 1820 when there is nothing like a <orgName ref="#Stuart">Stuart</orgName> left? Princess Charlotte's Cenotaph--Did you see that? Great want of Common sense there too--Common sense a very rare gift! To think of that marble soul flying away from that marble body! Two Princess Charlotte's--one lying--the other in the air! To think of that in all the tangibility of solid marble--where nothing like illusion can be maintained really makes one stare again--It's a pity, for there is much prettiness if there were anything real or possible--What a different affair <persName ref="#Chantrey_F">Chantrey</persName> would have made of it!--4 <persName>Miss Kelly</persName>'s acting--for one say's nothing of the rest of the tribe--what a charming creature she is--so perfectly true so fancy, so <!-- unclear: flouring? --> so sulky, so jaunty--so fine a compound of all the good &amp; evil of a lady's maid--She deserved to live in <persName ref="#Cibber_Colley">Colley Cibber</persName>'s days <add>&amp; that he should have</add> written an account of her.--5 <title ref="#ChrstEJrslm_Haydon"><persName ref="#Haydon">Haydon</persName>'s Picture</title>del rend="crossout" unit="chars" n="1">s</del>--You won't say what you think on that subject--But you may very safely--I shan't tell him--I never shew your letters my dear <persName ref="#Elford_SirWm">Sir William</persName>, &amp; as to saying any thing in the way of blame to that worthy &amp; delightful personage I never do--because I know he can't bear it. Goodness me! He I knock down with a look.--Seriously, do you like the head of <persName ref="#Jesus">Christ</persName>? This <pb n="2"/> is the question every body asks--for about composition expression colouring there seems no doubt--but do you like the Head of <persName ref="#Jesus">Christ</persName>?--I did not at first--but it gained upon me though I still think it rather too large &amp; too pale--&amp; with too much glory about it--&amp; too little of mere mortal beauty. Still the conception, the abstractedness the looking forward &amp; inward, all this is very grand--very grand indeed.--He is now painting another great picture--the <title ref="#Lazarus_Haydon">resurrection of Lazarus</title> different from any of the many paintings on this subject. All the other pictures represent <persName ref="#Lazarus">Lazarus</persName> as rising from a horizontal position--<persName ref="#Haydon">Mr. Haydon</persName> following the custom of <placeName ref="#Jerusalem">Jerusalem</placeName> where the tombs were excavations from <add place="above">the</add> hollow in which he had been enclosed &amp; throwing off the grave clothes at the Command of <persName ref="#Jesus">Christ</persName> <q>"Lazarus Come forth!"</q>--Nothing can be finer than the sketch which I have seen, it contains about 20 figures &amp; will occupy I suppose nearly 2 years.--<persName ref="#Haydon">Mr. Haydon</persName> himself spent a day with the friends at whose house I was staying at <placeName ref="#Richmond">Richmond</placeName>--I never saw any one in such health &amp; spirits--enjoying most honestly his well earned success.--These with some lesser sights, shopping, calling, &amp; driving about to look at streets &amp; Parks pretty well filled up my <placeName ref="#London_city">London</placeName> days--three sights I missed--<persName ref="#Grosvenor_Rbt">Lord Grosvenor</persName>'s <title ref="#Fathers_Church">Fathers of the Church</title> by <persName ref="#Rubens">Rubens</persName><note resp="#lmw">This painting would have been exhibited at Grosvenor House in Park Lane; the large picture gallery known as Grosvenor Gallery was not added to the London townhouse until 1821.</note>--(which I lost by going to <placeName ref="#Richmond">Richmond</placeName> the day before they were shewn)--<del rend="line through">the Queen</del><add place="above"><persName ref="#QuCaroline">Queen Caroline</persName></add>--&amp; <persName ref="#Opie_A">Mrs. Opie</persName>--that <del rend="squiggles">pretty</del><add place="above">excellent</add> &amp; ridiculous personage who is now placed in <placeName ref="#BondSt">Bond Street</placeName> (where she can't even hear herself talk) with a blue hat &amp; feathers on her head--a low gown--without a tucker--&amp; ringlets hanging down on each shoulder. These sights I lost but the first &amp; the last I hope to see again--&amp; the second I don't care if I never see at all--for be it known to you my dear Friend that I am no Queen's woman--whatever my party may be--I have no toleration for an indecorous woman--&amp; I am exceedingly scandalized at the quantity of nonsense which has been talked in her defense. The less that is said on the subject the better--<del rend="squiggles"><unclear/></del> It is no small part of her guilt<pb n="3"/> or her folly that her arrival has turned conversation into a charnel of scandal &amp; detraaction on either side which if it continue threatens to infuse the taste the purity the moral character of the nation. Don't you agree with me? For my part I had <del rend="squiggles"/>rather talk about <placeName ref="#Richmond">Richmond</placeName>. Do you know much of that Fairylnd which has so little to do with the work a day work &amp; seems made for a holiday spot for ladies &amp; gentlemen--a sort of realization of <persName ref="#Watteau_Wil">Watteau</persName>'s pictures--The Hill is grown rather too leafy--too much like <persName ref="#Glover_John">Glover</persName>'s pictures--too green--it wants crags, as <persName ref="#Canova">Canova</persName> says &amp; really looked better when I saw it last in the winter--but the water &amp; the banks are beyond all praise--The <placeName>House</placeName> where I was staying had a beautiful garden down to the river &amp; there or on the water I quite lived. We went to see <placeName ref="#Popes_Grotto">Pope's grotto</placeName><!-- http://www.popesgrotto.org.uk/history.html -->--which is unchanged except in the addition of some china plates stuck about the wall--<placeName ref="#Strawberry_Hill">Strawberry Hill</placeName>--which is likewise a sad China Shop, but where I walked about amongst the finery in a very pleasant reverie thinking of Horace <del rend="strikeout">&amp; of my</del><add place="above">Walpole &amp; his </add>Correspondents--<del rend="strikethrough">Horace the Second</del>--<placeName ref="Hampton_Ct_Palace">Hampton Court</placeName><!-- https://www.hrp.org.uk/hampton-court-palace/ --> which I wonder to see so deserted. What a beautiful Palace! How can any body leave <placeName ref="Hampton_Ct_Palace">Hampton Court</placeName> &amp; live in the <placeName ref="#Royal_Pavilion">Pavilion</placeName>!<!-- http://brightonmuseums.org.uk/royalpavilion/ --> My enjoyment there was very perfect--The <title>Cartoons</title> <!-- https://www.royalcollection.org.uk/collection/922136/hampton-court-palace-the-cartoon-gallery-1818 --> which I had never see together before, though every one knows them by heart by copies &amp; drawings &amp; prints &amp; seeing them by twos at the <placeName ref="#British_Gallery">British Gallery</placeName>--the Cartoons &amp; <title><persName ref="#Titian">Titian</persName>'s Portrait of himself</title> <!-- https://www.royalcollection.org.uk/collection/402841/titian-and-his-friends --> formed by great <del rend="squiggles" unit="word" n="1"></del> delight.--<placeName ref="#Kew_Palace">Kew Palace</placeName> <!-- https://www.hrp.org.uk/kew-palace/ -->--I was much gratified there too though in a very different way--The simplicity, the homeliness, the shabbiness even of that royal dwelling where there is nothing good but books &amp; pictures formed a pleasing contrast to the common notion of courts--I am sure there is scarcely a Country gentleman of my acquaintance who would be content with such furniture--The most astonishing things in the <placeName ref="#Kew_Palace">Palace</placeName> are a bust of the present <persName ref="#Queen_Caroline">Queen</persName> which one wonders not to see removed--<del rend="crossout">&amp; a</del><add place="above">x<unclear/></add>portrait of himself<pb n="4"/><del rend="strikethrough">by Vandyke</del> which I prefer even to the Titian. What a glorious race of beings those great Painters were! What spirit! What grace! What intellectual beauty! Where shall we find three such men as <persName ref="#Titian">Titian</persName> <persName ref="#Vandyke">Vandyke</persName> &amp; <persName ref="#Raphael">Raphael</persName>?--You will think me picture mad--&amp; really I do love pictures better than any thing else in the world except flowers &amp; books &amp; greyhounds, &amp; fresh air--&amp; old friends. I will only tell you two things more of paintings &amp; have done. The one that <persName ref="#Hofland_TC">Mr. Hofland</persName> is about a <title ref="#Gala_Richmond_TCH">landscape, a gala day at Richmond</title> which promises to be his best, combining that beautiful scenery with the out of door gaiety which is so rare in our climate &amp; still rarer in our Art<del rend="crossout">s</del>--&amp; that at an old house at <placeName ref="#Richmond">Richmond</placeName> they have rummaged out three pictures which had lain unsuspected in a garret for I don't know how many years--George the Second between <del rend="strikethrough">Queen Caroline</del><add place="above">his Queen</add> &amp; Lady Suffolk--you have no idea of the interest they excited, not on their own account for they are bad or on the account royal but solely &amp; purely because they revealed the <!--ide--> of <persName ref="#Deans_Jeanie_WS">Jeanie Deans</persName>--What I admired most at <placeName ref="#Richmond">Richmond</placeName> was Lord Dysart's palace <!--TOLLEMACHE, Hon. Wilbraham (1739-1821), of Calveley Hall, Cheshire?-->--Did you see it ever? It is of the style of Charles the First or the Commonwealth--a bad style but so preserved so perfect, the keeping is so complete--there is the grand heavy stately quiet house, far from the water--screened by trees which keep off the light &amp; glare--the ha ha which parts the court from the lawn the <del rend="sqiggles">heavy</del> grated iron grate, though which one cn almost fancy Lovelace slipping a letter to Clarissa--the busts, the balconies, the terraces--the fountains the oldfashioned flower garden full of old fashioned flowers--trim pinks &amp; old Cabbage roses--no new fangled flaunting Azelias or China roses--nothing that can counteract the gloom &amp; the silence &amp; the perfect repose. I know nothing at all of Lord Dysart but I honour him &amp; his progenitors for resisting the temptation to alter &amp; preserving so fine a<pb n="5"/> specimen of the residence of our ancestors.--Well now I have done. My dear Sir William laud the Gods that there is no danger of my going to France or Italy, what would become of you if I were to take a journey of that sort when I cannot even make a trip to Richmond without inflicting on you my seeings &amp; doings.--I heard very little literary news--Every body is talking of Marcian Colonna Barry Cornwall's new Poem--Now Barry Cornwall is an Alias. The Poet's real name is Proctor a young Attorney who feared it might hurt his practice if he were known to follow this "idel trade"--It has however become very generally known, &amp; poor Mr. Proctor is terribly embarrassed with his false name--he neither knows how to keep it on or throw it off. By whattever appellation he chuses to be called he is a great Poet.--Poor John Keats is dying of the Quarterley Review--there is a sad silly thing but it is true. A young delicate imaginative boy that withering article fell upon him like an East wind--I am afraid he has no chance for recovery--Mr. Gifford's behaviour is very bad--He sent word that if he wrote again it would be properly reviewed which was admitting the falsity of the first critique &amp; yet says that he has been Keats's besst friend because somebody sent him 20 £ tp console him for the injusstice of the Quarterly. I am very sorry for John Keats--he had a thousand faults &amp; a million <metamark rend="caret" place="below"/><add place="above">of</add> beauties--&amp; he is struck to the earth by the mere effect of worldly hardness &amp; derision upon a tender heart &amp; a sensitive temper. I am very sorry for John Keats.--Miss Porter is sick too of <del rend="squiggles">the</del><add place="above">her</add> condemned Plays--I have not much pity for her--Her disease is wounded vanity--an old Stager &amp; an old dealer in magnanimity ought to know better. All my pity is for poor John Keats--Did you ever see his Endymion? It is thd easiest thing in the world to laugh at it--but there are passages which could hardly be equalled by any living Poet--And he was so young--so likely to improve--Are you not sorry for him?<pb n="6"/> I met with a great  curiosity whilst I was absent--a young lady trained up on the house &amp; ;the steps of Mrs. Elizabeth Carter by her nephew the Rev<hi rend="superscript">d</hi>. Montague Pennington the Godson of Mrs. Montagu (Does not the family of this name for a <hi rend="underline">prig</hi> match with the names &amp; dates of your American billet?) The young lady was nineteen in age--&amp; ninety in manner--I never saw so complete a specimen of what one calls in Children "an old woman cut shorter"--always talking the Carter wisdom except when tempted to deviate into the Montagu wit--a very good sort of little body--but so tiresome that one yawned instinctively when she came into a room &amp; felt as if <metamark rend="caret" place="below"/><add place="above">a sheet of</add> lead was removed from one's temples when she went out. I hope never to see another wise person as long as I live.</p><metamark rend="jerks"/><p>--Nothing rejoices me more than your account of Miss Walsford--the kind friend who tolerates my nonsense--Tell her or let her tell herself how glad I am to hear of her   recovery.--A <!--WORD MISSING--> to your treachery with Lady Madelina. I have only <!-- WORD MISSING to?--> say that I hope she is a good skipper--the most useful of all <!-- word missing? -->qualifications to a reader of my letters &amp; a good Forgetter of nonsense--or how shall I ever be able to look her in the face?--My honour, which in spite of all my consciouness I cannot help anticipating with great pleasure. How much longer does she remain in your neighborhood? Does she talk of coming this year into ours?--I shall obey your interdiction--little right as you have to impose it--Nobody shall see your letters but Mama--they shall be locked up on a casket &amp; talked of as something precious &amp; unfindable--the Prester John or the Delai Lama--Adieu by dear Friend--Write to me very soon--Do not expect another letter first--this may very well stand for two--&amp; I have emptied by reservoir--what can I have to say for a month to come!--Adieu by dear Friend--Kindest remembrances from  Papa &amp; Mama--</p>
+               <closer>
+               Ever most affectionately <choice><sic>your's</sic><reg>yours</reg></choice><lb/>
+<persName ref="#MRM">M. R. Mitford</persName>.
+            </closer>
+            <closer><address>
+               <addrLine><lb/><placeName ref="#Reading_city">Reading</placeName>, <date when="1820-07-10">July ten, 1820</date></addrLine>
+                  <addrLine><lb/><persName ref="#Elford_SirWm">S<hi rend="superscript">r</hi> W Elford</persName> Bar<hi rend="superscript">t</hi></addrLine>
+                  <addrLine><lb/><placeName ref="#Bickham_village">Bickham</placeName></addrLine>
+               <addrLine><lb/><placeName ref="#Plymouth">Plymouth</placeName></addrLine>
+               <addrLine><lb/><persName ref="#Monck_JB">J. B. Monck</persName></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+       <listPerson>
+          <!--persName ref="#Shore_Jane" -->
+          <person xml:id="proposed_new_ID">
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           
+           <!--<placeName ref="#Calcutta"> <placeName ref="#Greenland"> <placeName ref="#British_Gallery"-->
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           
+           <!--event: Royal Academy Exhibition of 1820-->
+           <!--Works of art: Elford's 1820 landscape; Princess Charlotte's cenotaph: https://commons.wikimedia.org/wiki/File%3ACenotaph_commemorating_Princess_Charlotte_Augusta_in_St._Geo_Wellcome_V0042423.jpg-->
+     </div>
+     </back>
+  </text>
+</TEI>

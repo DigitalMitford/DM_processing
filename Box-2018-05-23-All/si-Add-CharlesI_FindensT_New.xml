@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://ebeshero.github.io/si-addCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Site Index: Additions Template, for Adding and Updating Named Entities in the Digital Mitford Archive</title>
+               <author>Digital Mitford Editors</author>
+                <editor ref="#rnes">Rebecca Nesvet</editor>
+               <editor ref="#slc">Sara Cantwell</editor>
+               <editor ref="#jgf">Julie Fish</editor>
+               <!--created 2017-06-28-->
+               <sponsor>
+                  <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+               </sponsor>
+               <sponsor>University of Pittsburgh at Greensburg</sponsor>
+               <principal>Elisa Beshero-Bondar</principal>
+               <respStmt>
+                  <resp>Data extraction and compiling by</resp>
+                  <persName type="hist" ref="#ebb">Elisa Beshero-Bondar</persName>
+               </respStmt>
+               <respStmt>
+                  <resp>Proofing and corrections by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName><!--Last checked: 2018-01-02-->
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <edition> </edition>
+            </editionStmt>
+            <publicationStmt>
+               <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+               <pubPlace>Greensburg, PA, USA</pubPlace>
+               <date>2013</date>
+               <availability>
+                  <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                     License</licence>
+               </availability>
+            </publicationStmt>
+            <notesStmt>
+               <note>Any special notes on this text? (optional)</note>
+            </notesStmt>
+            <sourceDesc>
+               <p>Information on named entities in this file has been extracted from files in the
+                  Digital Mitford Archive.</p>
+            </sourceDesc>
+         </fileDesc>
+         <encodingDesc>
+            <editorialDecl>
+               <p>Describes our editorial practice.</p>
+            </editorialDecl>
+         </encodingDesc>
+      </teiHeader>
+      
+  <text>
+      <body>
+         
+         <!--LMW:  ALL NEW xml:ids for Site Index -->
+          <div type="historical_people">
+          <listOrg sortKey="histOrgs">
+             <org xml:id="UCLA">
+                <orgName>University of California, Los Angeles</orgName>
+                <orgName><addName>UCLA</addName></orgName>
+            </org>
+             
+             <org xml:id="Chartist_demonstrators">
+                <orgName>Chartists</orgName>
+                <orgName><addName>Chartist demonstrators</addName></orgName>
+                <note resp="#lmw">Members of the Chartist movement working for political reform in Great Britain <date from="1838" to="1857">between 1838 and 1857</date>. The movement and its supporters took their name from the People's Charter (1838), a statement of their political aims. The movement aimed to achieve six reforms, largely through constitutional methods, including the presentation of petitions to the House of Commons signed by millions of citizens. The reforms included: 1)universal manhood suffrage for those age 21 and above, eliminating the property ownership requirement for male voters, 2)vote by secret ballot, eliminating the publication of votes 3)elimination of the property requirement for Members of Parliament, 4)payment for service as a Member of Parliament, making office-holding financially feasible for those without independent incomes, 5)redrawing constituency boundaries to ensure that each M.P. represented the same number of voters, equalizing constituencies and eliminating so-called rotten boroughs, and 5)annual parliamentary elections, aimed at decreasing the practice of bribing or intimidating voters.</note>
+             </org>
+             
+             <org xml:id="Parliamentarians">
+                <orgName>Parlimentarians</orgName>
+                <note resp="#lmw">Supporters of <persName ref="#Cromwell">Cromwell</persName> and the parliamentary cause in the <rs type="event" ref="#EngCivilWar">English Civil War</rs>. Also called English Republicans or Roundheads.</note>
+             </org>
+             
+             <!--LMW to RN: also add entry for Royalists/Cavaliers? -->
+             
+             <org xml:id="Puritans">
+                <orgName>Puritans</orgName>
+                <note resp="#rnes #lmw">Began in the 16th century as an anti-Catholic reform movement within the Church of England, some of whose members emigrated to the Netherlands, Ireland, and Scotland, and later to America. Puritans were not a single religious sect with a unified theological or political viewpoint. In the early 17th century, they allied themselves with Scottish Presbyterians and with English parliament members who opposed the royal perogative. They came to power after the first English Civil War and the majority of Puritan clergy left the Church of England after the Restoration to practice as nonconformists/dissenters.</note>
+             </org>
+             
+             <org xml:id="Jacobites">
+                <orgName>Jacobites</orgName>
+                <note resp="#rnes">Supporters of the Stuart cause. Named after the <q>line of <persName ref="#JamesI">Jacob</persName>,</q> that is, the descendants of <persName ref="#JamesI">James I</persName>.</note>
+             </org>
+         </listOrg>
+      
+          <listPerson sortKey="histPersons">
+             <person xml:id="Becket_Thos" sex="m">
+                <persName>Thomas Becket</persName>
+                <persName>
+                   <surname>Becket</surname>
+                   <forename>Thomas</forename>
+                   <roleName>Archdeacon of Canterbury</roleName>
+                   <roleName>Lord Chancellor</roleName>
+                </persName>
+                <persName><addName>Thomas of London</addName></persName>
+                <persName><addName>Saint Thomas of Canterbury</addName></persName>
+                <persName><addName>Thomas à Becket</addName></persName>
+                <birth when="1118-12-21">
+                   <placeName>London, England</placeName></birth>
+                <death when="1170-01-29">
+                   <placeName>Canterbury, Kent, England</placeName></death>
+                <occupation>clergy</occupation>
+                <occupation>politician</occupation>
+                <occupation>priest</occupation>
+                <occupation>archdeacon</occupation>
+                <occupation>bishop</occupation>
+                <occupation>martyr</occupation>
+                <note resp="#jgf #lmw #rnes">As Archbishop of Canterbury, Becket quarreled with King Henry II over the balance of power between the church and crown. Becket was murdered by four knights while at prayer in Canterbury Cathedral. The king had reportedly been heard to ask the four knights "Will no one rid me of this meddlestome priest?," thereby calling for Becket's assassination without literally ordering it. Becket was canonized by the Roman Catholic Church as a saint in 1173.</note>
+                <note><ref target="http://viaf.org/viaf/100187947"/></note>
+             </person>
+             
+             <person xml:id="HenryII" sex="m">
+                <persName>Henry II</persName>
+                <persName>
+                   <surname>Plantagenet</surname>
+                   <forename>Henry</forename></persName>
+                <persName>Henry of Anjou</persName>
+                <persName>
+                <roleName>Duke of Normandy</roleName>
+                <roleName>Duke of Anjou</roleName>
+                <roleName>Duke of Maine</roleName>
+                <roleName>Duke of Touraine</roleName>
+                   <roleName>King of England</roleName></persName>
+                <birth when="1133"><placeName>Le Mans, France</placeName></birth>
+                <death when="1189-07-06"><placeName>Chinon Castle, near Tours, France</placeName></death>
+                <occupation>royalty</occupation>
+                <occupation>military</occupation>
+                <note resp="#jgf #slc #rnes">Henry II, the son of Geoffrey Plantagenet and the Empress Matilda, was denominated the heir of Matilda's cousin King Stephen at the conclusion of the Wars of Stephen and Matilda. Ruler of an empire that stretched from France to Scotland, Henry is known for his marriage to Eleanor of Aquitaine, his quarrel with and apparent involvement in the assassination of Thomas of Becket, Archbishop of Canterbury (later St. Thomas of Canterbury), and the wars between his sons, which contributed to his death at the age of fifty-six. Source: Britannica.</note>
+                <note><ref target="https://viaf.org/viaf/90145970073532250834"/></note>
+             </person>
+             
+             <person xml:id="Jones_Inigo" sex="m">
+                <persName>Inigo Jones</persName>
+                <persName>
+                   <surname>Jones</surname>
+                   <forename>Inigo</forename>
+                </persName>
+                <birth when="1573-07-15"><placeName>Smithfield, London, England</placeName></birth>
+                <death when="1652-06-21"><placeName>Somerset House, the Strand, London, England</placeName></death>
+                <occupation>theater</occupation>
+                <occupation>set designer</occupation>
+                <occupation>architect</occupation>
+                <occupation>artist</occupation>
+                <note resp="#rnes">Educated in Italy, Inigo Jones attracted the patronage of the English and Scandinavian courts and developed the English Neoclassical style of architecture. His buildings include James I's Banqueting Hall at Whitehall Palace, London which, within Jones's lifetime, later served as the backdrop for the execution of Charles I.</note>
+                <note><ref target="https://viaf.org/viaf/66475425"/></note>
+             </person>
+             
+             <person xml:id="Hutchinson_John" sex="m">
+                <persName>John Hutchinson
+                   <surname>Hutchinson</surname>
+                   <forename>John</forename>
+                   <roleName>Colonel</roleName>
+                   <roleName>Sir</roleName>
+                   <roleName>Governor of Nottingham Castle</roleName>
+                   <roleName>Commissioner, High Court of Justice</roleName>
+                   <roleName>Member, Council of State</roleName>
+                   <roleName>Member of Parliament for Nottingham</roleName>
+                </persName>
+                <birth from="1615-01" to="1616-12"><placeName>Nottinghamshire</placeName></birth>
+                <death when="1664-09-11"><placeName>Sandown Castle, Kent, England</placeName></death>
+                <occupation>politician</occupation>
+                <occupation>military</occupation>
+                <occupation>soldier</occupation>
+                <occupation>legal</occupation>
+                <occupation>judge</occupation>
+                <occupation>regicide</occupation>
+                <note resp="#rnes">A Cambridge-educated Parliamentarian leader of Puritan convictions during the English Civil Wars, Hutchinson subsequently participated in the trial of Charles I and signed his death warrant, thereby becoming a regicide. The husband and biographical subject of the writer Lady Lucy Hutchinson, Hutchinson escaped execution for regicide under suspicious circumstances apparently engineered by his wife. However, he was arrested in 1663 for allegedly plotting against King Charles II and died in prison. The extremely belated publication of Lucy Hutchinson's Memoirs of the Life of Colonel Hutchinson (1806) made him posthumously famous.</note>
+                <note><ref target="https://viaf.org/viaf/10793919"/></note>
+             </person>
+             
+             <person xml:id="Hutchinson_Lucy" sex="f">
+                <persName>Lucy Hutchinson</persName>
+               <persName>
+                <surname type="paternal">Apsley</surname>
+                <surname type="married">Hutchinson</surname>
+                <forename>Lucy</forename>
+                <roleName>Lady</roleName>
+               </persName>
+                  <birth when="1620">
+                     <placeName>England</placeName>
+                  </birth>
+                  <death when="1681"><placeName>Owthorpe, Nottinghamshire, England</placeName></death>
+             <occupation>literary</occupation>
+                <occupation>biographer</occupation>
+                <occupation>poet</occupation>
+                <occupation>translator</occupation>
+                <occupation>theologian</occupation>
+                <note resp="#rnes"><p>An exceptionally well-educated and self-assured early modern woman whose literary achievements are extremely significant. Her works include the first complete English translation of Lucretius's controversial Epicurean poem De Rerum Natura (in ms. only until 2012), the epic poem Order and Disorder, which has been read as a proto-feminist take on Genesis that invites comparison with her contemporary John Milton's Paradise Lost, and her Memoir of the Life of Colonel John Hutchinson, a biography of her husband that brings to life the drama of the Civil Wars and the idealism of the Puritans, particularly for religious liberty and republican government. This work, published in 1806, is the only Lucy Hutchinson composition that was known as such during <persName ref="#MRM">Mitford</persName>'s lifetime.</p>
+                   <p>Born Lucy Apsley, the daughter of Sir Allen Apsley, Lieutenant of the Tower of London. In 1638 she fell mutually in love with and married Sir John Hutchinson. While he fought on the Parliamentarian side in the English Civil Wars, she provided material assistance, at one point contriving for her brother-in-law (Hutchinson's brother) to pose as him while the real Colonel Hutchinson escaped arrest by the Royalists. At the <rs type="event" ref="#Restoration">Restoration</rs>, she may have saved his life by forging an apologetic letter that he might have been more reticent to write.</p>
+                   <p>As the critic Devoney Looser has shown, Lucy Hutchinson became an extremely well-known figure during the nineteenth century, featuring as a heroine in many works of fiction and drama.</p></note>
+                <note><ref target="http://viaf.org/viaf/88059790"/></note>
+             </person>
+             
+             <person xml:id="Macauley_C" sex="f">
+                <persName>Catharine Macauley</persName>
+                <persName>
+                <surname type="paternal">Sawbridge</surname>
+                <surname type="married">Macauley</surname>
+                <surname type="married">Graham</surname>
+                <forename>Catharine</forename>
+                </persName>
+                <birth when="1731-03-21">
+                   <placeName>Olantigh, Wye, Kent, England</placeName></birth>
+                <death when="1791-06-22">
+                   <placeName>Binfield, Berkshire, England</placeName></death>
+                <occupation>literary</occupation>
+                <occupation>essayist</occupation>
+                <occupation>historian</occupation>
+                <occupation>reformer</occupation>
+                <note resp="#jgf #lmw">Important English historian during the eighteenth century, celebrated and vilified during her lifetime as a female intellectual, "Bluestocking," and the "Republican Virago." Her politics were Whig, reformist, and anti-Catholic, and they became increasingly radical in her later years, when she attacked the writings of Edmund Burke. Whigs embraced the early volumes of her <title>History of England</title> as supporting their views of political history. Her interpretation of the English Civil War was influential; she wrote admiringly of the Parliamentarians and condemned both Oliver Cromwell and the execution of Charles I.</note>
+                <note><ref target="http://viaf.org/viaf/51936664"/></note>
+             </person>
+             
+             <person xml:id="Hutchinson_Thos" sex="m">
+                <persName>Thomas Hutchinson</persName>
+                <persName>
+                   <surname>Hutchinson</surname>
+                   <forename>Thomas</forename>
+                <roleName>Sir</roleName>
+                </persName>
+                <birth when="1704">
+                   <placeName>Owthorpe Hall, Owthorpe, Nottinghamshire, England</placeName>
+                </birth>
+                <death when="1744-05-07">
+                   <placeName>Owthorpe Hall, Owthorpe, Nottinghamshire, Englan</placeName>
+                </death>
+                <note resp="#rnes #lmw">A lateral descendant of Sir John Hutchinson through his brother Charles (1637-1695), Sir Thomas Hutchinson had posession of the manuscript of <title ref="#Memoirs_of_the_life_of_Colonel_Hutchinson">Lucy Hutchinson's Memoirs of the Life of Sir John Hutchinson</title> at Owthorpe in the eighteenth century, where historian Catherine Macaulay consulted it. During his lifetime, he refused to published the manuscript, which was later published by his newphew Julius.</note>
+                <!--lmw: NO viaf #.-->
+             </person>
+             
+             <person xml:id="Hutchinson_Julius" sex="m">
+                <persName>Julius Hutchinson</persName>
+                <persName>
+                   <surname>Hutchinson</surname>
+                   <forename>Julius</forename>
+                   <roleName>Reverend</roleName>
+                </persName>
+                <birth notAfter="1750">
+                   <placeName>England</placeName>
+                </birth>
+                <death when="1811">
+                   <placeName>Layer Breton, Essex, England</placeName>
+                </death>
+                <occupation>clergy</occupation>
+                <occupation>literary</occupation>
+                <occupation>editor</occupation>
+                <note resp="#rnes #lmw">A lateral descendant of Sir John Hutchinson through his brother Charles (1637-1695), Julius Hutchinson edited <title ref="#Memoirs_of_the_life_of_Colonel_Hutchinson">Lucy Hutchinson's Memoirs of the Life of Sir John Hutchinson</title> from the manuscript at Owthorpe (the Hutchinson estate) and allowed it to be published in 1806.</note>
+                <note><ref target="https://viaf.org/viaf/45499749"/></note>
+             </person>
+             
+             <person xml:id="Stuart_ChasEd" sex="m">
+                <persName>Charles Edward Stuart</persName>
+                <persName>
+                <surname>Stuart</surname>
+                <forename>Charles</forename>
+                <forename>Edward</forename>
+                <forename>Maria</forename>
+                <forename>Severino</forename>
+                <forename>Sylvester</forename>
+                <forename>Casimir</forename>
+                <forename>John</forename>
+                <forename>Louis</forename>  
+                </persName>
+                <persName><addName>Bonnie Prince</addName></persName>
+                <persName><addName>Bonnie Prince Charlie</addName></persName>
+                <persName><addName>The Young Pretender</addName></persName>
+                <persName><addName>The Young Chevalier</addName></persName>
+                <birth when="1720-12-31">
+                   <placeName>Palazzo Muti, Rome, States of the Church</placeName></birth>
+                <death when="1788-01-31">
+                   <placeName>Palazzo Muti, Rome, States of the Church</placeName></death>
+                <occupation>military</occupation>
+                <occupation>politician</occupation>
+                <occupation>royalty</occupation>
+                <note resp="#rnes #jgf #lmw">The famously beautiful son of the <persName ref="#James_oldPretender">"Old Pretender" (James, son of the deposed King James II)</persName>, Charles Edward Stuart (also known as "the Young Pretender" and "Bonnie Prince Charlie" staged an invasion of Scotland in 1745. The resulting Jacobite Wars resulted in Stuart's decisive defeat at the Battle of Culloden (1746) and his evacuation, in female disguise, to the Isle of Skye, and eventual Continental exile. His death ended the Jacobite attempts to recover the British crown.</note>
+                <note><ref target="https://viaf.org/viaf/45499749"/></note>
+             </person>
+             
+             <person xml:id="McCoy_Rich" sex="m">
+                <persName>Richard C. McCoy</persName>
+                <persName>
+                <surname>McCoy</surname>
+                <forename>Richard</forename>
+                   <forename>C.</forename>
+                <roleName>Professor</roleName>
+                </persName>
+                <birth when="1946-10-09"/>
+                <occupation>writer</occupation>
+                <occupation>educator</occupation>
+                <note resp="#jgf #lmw">Distinguished Professor of English at Queens College and the Graduate Center, CUNY.</note>
+                <note><ref target="http://english.qc.cuny.edu/quick-links/richard-mccoy/"/></note>
+                <note><ref target="http://viaf.org/viaf/57311"/></note>
+             </person>
+             
+             <person xml:id="McCracken_Flesher" sex="f">
+                <persName>Caroline McCracken-Flesher</persName>
+                <persName>
+                   <surname>McCracken-Flesher</surname>
+                   <forename>Caroline</forename>
+                   <roleName>Professor</roleName>
+                </persName>
+                <birth when="1958"/>
+                <occupation>writer</occupation>
+                <occupation>educator</occupation>
+                <note resp="#jgf #lmw">UW George Duke Humphrey Distinguished Professor in the Department of English at the University of Wyoming.</note>
+                <note><ref target="http://viaf.org/viaf/310589154"/></note>
+             </person>
+             
+             <person xml:id="GeoII" sex="m">
+                <persName>George II</persName>
+                <persName>
+                   <forename>George</forename>
+                   <forename>Augustus</forename>
+                   <roleName>George the Second, by the Grace of God, King of Great Britain, France and Ireland, Defender of the Faith, Duke of Brunswick-Lüneburg, Archtreasurer and Prince-Elector of the Holy Roman Empire</roleName>
+                   <roleName>King of Great Britain and Ireland</roleName>
+                   <roleName>Elector of Hanover</roleName>
+                   <roleName>Knight of the Garter</roleName>
+                  <roleName>Duke and Marquess of Cambridge</roleName>
+                   <roleName>Earl of Milford Haven</roleName>
+                      <roleName>Viscount Northallerto</roleName>
+                   <roleName>Baron Tewkesbury</roleName>
+                </persName>
+                <birth when="1683-10-30"><placeName>Hanover, Lower Saxony</placeName></birth>
+                <death when="1760-10-25"><placeName>Kensington Palace, London, England</placeName></death>
+                <occupation>royalty</occupation>
+                <note resp="#jgf #lmw">King of Great Britain and Ireland and Elector of Hanover from <date when="1727">1727</date>, the  eldest son of Hanoverian George I and second cousin once removed to Queen Anne. He was also a Knight of the Garter and was created Duke and Marquess of Cambridge, Earl of Milford Haven, Viscount Northallerton, and Baron Tewkesbury. Prior to becoming King, while Prince of Wales, he opposed his father's policies in concert with Whig politicians Robert Walpole and Charles Townshend. The War of the Austrian Succession, the Jacobite Rebellion, and the Seven Years' War took place during his reign. He is the most recent British monarch to be buried in Westminter Abbey.</note>
+                <note><ref target="http://viaf.org/viaf/46902352"/></note>
+             </person>
+             
+             <person xml:id="Marshall_Alan" sex="m">
+                <persName>Alan Marshall</persName>
+                <persName>
+                   <surname>Marshall</surname>
+                   <forename>Alan</forename>
+                   <roleName>Professor</roleName>
+                   <roleName>Fellow of the Royal Historical Society</roleName>
+                </persName>
+                <occupation>literary</occupation>
+                <occupation>historian</occupation>
+                <occupation>educator</occupation>
+                <note resp="#jgf #lmw">Fellow of the Royal Historical Society, Head of Humanities, and a faculty member in the Department of History at Bath Spa University.</note>
+                <note><ref target="http://viaf.org/viaf/14864873"/></note>
+                <note><ref target="https://www.bathspa.ac.uk/our-people/alan-marshall/"/></note>
+                <note><ref target="http://bathspa.academia.edu/AlanMarshall/"/></note>
+             </person>
+             
+             <person xml:id="Richelieu" sex="m">
+                <persName>Armand Jean du Plessis</persName>
+                <persName>
+                <surname><nameLink>du</nameLink> Plessis</surname>
+                <forename>Armand</forename>
+                <forename>Jean</forename><roleName>Cardinal</roleName>
+                <roleName>Duke of Richelieu and Fronsac</roleName>
+                <roleName>Chief Minister</roleName>
+                <roleName>First Minister</roleName>
+                </persName>
+                <birth when="1585-09-09">
+                   <placeName>Paris, Île-de-France, France</placeName></birth>
+                <death when="1642-12-04">
+                   <placeName>Paris, Île-de-France, France</placeName></death>
+                <occupation>clergy</occupation>
+                <occupation>aristocracy</occupation>
+                <occupation>politician</occupation>
+                <occupation>educator</occupation>
+                <note resp="#jgf #lmw">Became a cardinal of the Catholic Church in 1622 and served as Louis XIII's chief minister from 1624 until his death. He helped transform France into a centralized state under strong royal governance. He also guided French government during the Thirty Years' War and during the consolidation of France's role in the Americas. He has been depicted as a scheming, villainous character in popular fiction frequently, including an appearance in Alexandre Dumas's The Three Musketeers.</note>
+                <note><ref target="http://viaf.org/viaf/12314392"/></note>
+             </person>
+             
+             <person xml:id="LouisXVI" sex="m">
+                <persName>Louis XVI</persName>
+                <persName><forename>Louis</forename>
+                <forename>Auguste</forename>
+                <roleName>Duc de Berry</roleName>
+                <roleName>Dauphin of France</roleName>
+                <roleName>His Most Christian Majesty The King of France</roleName>
+                <roleName>Citizen Louis Capet</roleName>
+                </persName>
+                <birth when="1754-08-23">
+                   <placeName>Palace of Versailles, Versailles, France</placeName></birth>
+                <death when="1793-01-21"><placeName>
+                </placeName>Place de la Révolution, Paris, France</death>
+              <occupation>royalty</occupation>
+                <note resp="#jgf #lmw">Last King of France during the Ancien Régime, he ruled as absolute monarch until 1789 and after the French Revolution as a constitutional monarch until 1792. He was imprisoned, tried, and guillotined in 1792-1793.</note>
+                <note><ref target="http://viaf.org/viaf/12314392"/></note>
+             </person>
+             
+             <person xml:id="Dickens_Chas" sex="m">
+                   <persName>Charles Dickens</persName>
+                   <persName>
+                      <surname>Dickens</surname>
+                      <forename>Charles</forename>
+                      <forename>John</forename>
+                      <forename>Huffam</forename>
+                      </persName>
+                   <persName type="pseudo">Boz</persName>
+                   <birth when="1812-02-07"><placeName>Landport, Portsmouth, Hampshire, England</placeName></birth>
+                   <death when="1870-06-09"><placeName>Higham, Kent, England</placeName></death>
+                   <occupation>literary</occupation>
+                   <occupation>journalist</occupation>
+                   <occupation>novelist</occupation>
+                   <occupation>editor</occupation>
+                   <occupation>essayist</occupation>
+                   <occupation>orator</occupation>
+                   <note resp="#lmw">English journalist and editor, novelist, and lecturer. Considered one of the most important novelists of the Victorian era.</note>
+                   <note><ref target="http://viaf.org/viaf/88666393"/></note>
+                </person>
+                
+             <person xml:id="Lovett_Wm" sex="m">
+                <persName>William Lovett</persName>
+                <persName>
+                   <surname>Lovett</surname>
+                   <forename>William</forename>
+                   </persName>
+                <birth when="1800-05-08"><placeName>Newlyn, Cornwall, England</placeName></birth>
+                <death when="1877-08-08"><placeName>London, England</placeName></death>
+                <occupation>literary</occupation>
+                <occupation>politician</occupation>
+                <occupation>artisan</occupation>
+                <occupation>cabinetmaker</occupation>
+                <occupation>ropemaker</occupation>
+                <note resp="#rnes">After working as a ropemaker in Cornwall, Lovett sought better work in London. He joined various working-class political societies and became the leader of the London Working-Man's Association (LMDA), which played a major role in the Chartist movement. Lovett wrote the People's Charter, which was thrice unsuccessfully presented to Parliament, and also a memoir, The Life and Struggles of William Lovett in his Pursuit of Bread, Knowledge, and Freedom (1876).</note>
+                <note><ref target="http://viaf.org/viaf/37714479"/></note>
+             </person>
+             
+             <person xml:id="HowardBrenton" sex="m"><!--REVISED ENTRY, existing id-->
+                <persName>Howard Brenton</persName>
+                <persName>
+                   <surname>Brenton</surname>
+                   <forename>Howard</forename>
+                   <roleName>Fellow of the Royal Literary Society (FRLS)</roleName>
+                </persName>
+                <birth when="1942-12-13"><placeName>Portsmouth, Hampshire, England</placeName></birth>
+                <occupation>literary</occupation>
+                <occupation>playwright</occupation>
+                <note resp="#rnes">Contemporary British playwright, most famous for the deeply controversial drama The Romans in Britain (1980), a historical allegory that critiqued the British occupation of Northern Ireland by paralleling it with the Roman Invasion and depicted rape in the context of war. He also wrote 55 Days (2012), a dramatization of the events between the New Model Army's conquest of London and the execution of Charles I. The original production, at London's Hampstead Theatre, starred the writer Mark Gatiss as Charles and Douglas Henshall as Oliver Cromwell. Modern costumes (in the original production) and language support this play's promotion of contemporary British consideration of a republican political reformation, a possibility later explored far more directly in Mike Bartlett's play King Charles III, which premiered at the Almeida Theatre in 2017.</note>
+                <note><ref target="https://viaf.org/viaf/66476558"/></note>
+             </person>
+             
+             <person xml:id="Norbrook" sex="m">
+                <persName>David Norbrook</persName>
+                <persName>
+                   <surname>Norbrook</surname>
+                   <forename>David</forename>
+                   <roleName>Professor</roleName>
+                </persName>
+                <birth when="1950-06-01"/>
+                <note resp="#lmw">Emeritus Merton Professor of Renaissance English literature at Oxford University.</note>
+                <note><ref target="http://www.english.ox.ac.uk/people/professor-david-norbrook"/></note>
+                <note><ref target="http://viaf.org/viaf/109072501"/></note>
+             </person>
+             
+             <person xml:id="Crook_N" sex="f">
+                <persName>Nora Crook</persName>
+                <persName><surname>Crook</surname>
+                   <forename>Nora</forename>
+                   <roleName>Professor</roleName>
+                </persName>
+                <birth when="1940">
+                   <placeName>Jamaica</placeName>
+                </birth>
+                <note resp="#lmw">Emeritus Professor of English Literature at Anglia Ruskin University in Cambridge and Chelmsford, formerly CCAT.</note>
+                <note><ref target="http://www.anglia.ac.uk/arts-law-and-social-sciences/department-of-english-and-media/our-staff/nora_crook"/></note>
+                <note><ref target="http://viaf.org/viaf/41868313"/></note>
+             </person>
+             <person xml:id="Herbert_T" sex="m">
+                <persName>Sir Thomas Herbert</persName>
+                <persName>
+                   <forename>Thomas</forename>
+                   <surname>Herbert</surname>
+                   <roleName>Sir</roleName>
+                </persName>
+                <birth when="1606">
+                   <placeName>Yorkshire, England</placeName>
+                </birth>
+                <death when="1682-03-01">
+                   <placeName>Petergate House, York, Yorkshire, England</placeName>
+                </death>
+                <occupation>courtier</occupation>
+                <occupation>military</occupation>
+                <occupation>government</occupation>
+                <occupation>traveller</occupation>
+                <occupation>literary</occupation>
+                <occupation>essayist</occupation>
+                <occupation>memoirist</occupation>
+                <note resp="#lmw">Herbert was a Parliamentarian during the <rs type="event" ref="#EngCivilWar">English Civil Wars</rs>. He served as <persName ref="#ChasI">Charles I</persName>'s Gentleman of the Bedchamber from 1647 to 1649, during the King's imprisonment. In the 1650s he followed the <orgName ref="#New_Model_Army">New Model Army</orgName> to Ireland, where he served in several governmental posts. He returned to England after the <rs type="event" ref="#Restoration">Restoration</rs> and received a baronetcy from <persName ref="#ChasII">Charles II</persName>. Historical opinion was divided on his loyalty to <persName ref="#ChasI">Charles I</persName>; while the <orgName ref="#Parliamentarians">Parliamentarian</orgName>s clearly believed him to be loyal to their cause in the 1640s and 1650s, in <date when="1678">1678</date> he published a memoir covering the time of his service to <persName ref="#ChasI">Charles</persName> in which he portrays himself as extremely loyal to the monarchy.</note>
+                <note><ref target="http://viaf.org/viaf/44605253"/></note>
+             </person>
+             
+             <person xml:id="Marten_H" sex="m">
+                <persName>Henry Marten</persName>
+                <persName>
+                   <forename>Henry</forename>
+                   <surname>Marten</surname>
+                </persName>
+                <birth when="1602">
+                   <placeName>3 Merton Street, Oxford, Oxfordshire, England</placeName>
+                </birth>
+                <death when="1680-09-09">
+                   <placeName>Chepstow Castle, Chepstow, Monmouthshire, Wales</placeName>
+                </death>
+                <occupation>legal</occupation>
+                <occupation>politician</occupation>
+                <occupation>regicide</occupation>
+                <note resp="#lmw">A republican and <orgName ref="#Parliamentarians">Parliamentarian</orgName>, Marten supported the <orgName ref="#New_Model_Army">New Model Army</orgName> and the establishment of the <rs type="event" ref="#Commonwealth">Commonwealth</rs>. Member of Parliament for Berkshire during the Short Parliament and the Long Parliament. After the outbreak of the <rs type="event" ref="#EngCivilWar">English Civil War</rs>, he was appointed governor of <placeName ref="#Reading_city">Reading, Berkshire</placeName>. He was one of the signers of the death warrant of <persName ref="#ChasI">Charles I</persName> and was found guilty of regicide. Through the inaction of the House of Lords, he was not executed in <date when="1660">1660</date> but remained imprisoned until his death in <date when="1680">1680</date>.</note>
+                <note><ref target="http://viaf.org/viaf/76752548"/></note>
+             </person>
+             
+             <person xml:id="Downes_J" sex="m">
+                <persName>John Downes</persName>
+                <persName>
+                   <forename>John</forename>
+                   <surname>Downes</surname>
+                   <roleName>Colonel</roleName>
+                </persName>
+                <death when="1660">
+                   <placeName>London, England</placeName>
+                </death>
+                <occupation>legal</occupation>
+                <occupation>military</occupation>
+                <occupation>politician</occupation>
+                <occupation>government</occupation>
+                <occupation>regicide</occupation>
+                <note resp="#lmw">Trained in the law, he served as Member of Parliament for Arundel, Sussex. He was one of the signers of the death warrant of <persName ref="#ChasI">Charles I</persName> and was found guilty of regicide. His sentence was commuted to life imprisonment in <date when="1660">1660</date> and he remained in the Tower of London until his death in <date when="1666">1666</date>.</note>
+                <note><ref target="https://viaf.org/viaf/41730011"/></note>
+             </person>
+             
+             <person xml:id="Cook_J" sex="m">
+                <persName>John Cook</persName>
+                <persName>
+                   <forename>John</forename>
+                   <surname>Cook</surname>
+                </persName>
+                <birth notAfter="1608-09-18">
+                   <placeName>Husbands Bosworth, Leicestershire, England</placeName>
+                </birth>
+                <death when="1660-10-16">
+                   <placeName>Tyburn, London, England</placeName>
+                </death>
+                <occupation>legal</occupation>
+                <occupation>solicitor</occupation>
+                <occupation>regicide</occupation>
+                <note resp="#lmw">As Solicitor General for the High Court of Justice, he led the prosecution of <persName ref="#ChasI">Charles I</persName>. For his part in the trial, he was found guilty of high treason and was hanged, drawn and quartered at Tyburn on <date when="1660-10-16">October 16, 1660</date>.</note>
+                <note><ref target="http://viaf.org/viaf/45729182"/></note>
+             </person>
+             
+             <person xml:id="Pride_T" sex="m">
+                <persName>General Sir Thomas Pride</persName>
+                <persName><forename>Thomas</forename>
+                   <surname>Pride</surname>
+                   <roleName>General</roleName>
+                   <roleName>Sir</roleName>
+                </persName>
+                <birth notAfter="1608">
+                   <placeName>Somerset, England</placeName>
+                </birth>
+                <death when="1658-10-23">
+                   <placeName>Worcester House, Surrey, England</placeName>
+                </death>
+                <occupation>military</occupation>
+                <occupation>general</occupation>
+                <occupation>politician</occupation>
+                <occupation>regicide</occupation>
+                <note resp="#rnes">Pride was a Parliamentary general during the <rs type="event" ref="#EngCivilWar">Civil Wars</rs>. He was responsible for carrying out "Pride's Purge" of Parliament in 1648, which ended the Long Parliament and marked the start of the Rump Parliament who tried <persName ref="#ChasI">Charles I</persName>. He was one of the signers of the death warrant of <persName ref="#ChasI">Charles I</persName> and was posthumously found guilty of regicide.</note>
+                <note><ref target="http://viaf.org/viaf/52041108"/></note>
+             </person>
+             
+             <person xml:id="Hammond_T" sex="m">
+                <persName>Thomas Hammond</persName>
+                <persName>
+                   <forename>Thomas</forename>
+                   <surname>Hammond</surname></persName>
+                <birth when="1600">
+                   <placeName>Surrey, England</placeName></birth>
+                <death when="1660"/>
+                <occupation>military</occupation>
+                <occupation>regicide</occupation>
+                <note resp="#rnes">An officer in the <orgName ref="#New_Model_Army">New Model Army</orgName>. A Commissioner at the <orgName ref="#High_Court_of_Justice">High Court of Justice</orgName>in the trial of <persName ref="#ChasI">Charles I</persName>. He did not sign the death warrant, for reasons that remain unclear. Although he died before the <rs type="event" ref="#Restoration">Restoration</rs>, he was exempted from the Indemnity and Oblivion Act, and his family's property seized.<!--LMW: No VIAF #--></note>
+             </person>
+             
+             <person xml:id="Stuart_H" sex="m">
+                <persName>Henry Stuart, Duke of Gloucester</persName>
+                <persName>
+                   <forename>Henry</forename>
+                   <surname>Stuart</surname>
+                   <roleName>Duke of Gloucester</roleName>
+                   <roleName>Prince Henry</roleName>
+                </persName>
+                <birth when="1639-07-08">
+                   <placeName>Oatlands Palace, Surrey, England</placeName>
+                </birth>
+                <death when="1660-09-13">
+                   <placeName>Palace of Whitehall, London, England</placeName>
+                </death>
+                <note resp="#rnes">Youngest son of <persName ref="#ChasI">Charles I</persName> and <persName ref="#Qu_Henrietta">Henrietta Maria</persName>. He visited his father in prison, as depicted in <title ref="#CharlesI_MRMplay">Charles the First</title>, before leaving for exile in Continental Europe. At <rs type="event" ref="#Restoration">the Restoration</rs> in 1660, he returned to <placeName ref="#England">England</placeName> with his elder brother <persName ref="#ChasII">Charles II</persName>, only to die shortly thereafter of smallpox.</note>
+                <note><ref target="https://viaf.org/viaf/45736476"/></note>
+             </person>
+             
+             <person xml:id="PrincessE_Ch1" sex="f"><!--REV entry, existing id.-->
+                <persName>Elizabeth Stuart</persName>
+                <persName>
+                   <forename>Elizabeth</forename>
+                   <surname type="paternal">Stuart</surname>
+                   <roleName>Princess Elizabeth</roleName>
+                </persName>
+                <birth when="1635-12-28">
+                   <placeName>St. James's Palace, London, England</placeName>
+                </birth>
+                <death when="1650-09-08">
+                   <placeName>Carisbrooke Castle, Isle of Wight</placeName>
+                </death>
+                <note resp="#ebb #lmw">The second daughter of <persName ref="#ChasI">Charles I</persName> and <persName ref="#Qu_Henrietta">Queen Henrietta Maria</persName>. She was imprisoned during the <rs type="event" ref="#EngCivilWar">English Civil Wars</rs> from age six to her death from pneumonia in 1650 at age fourteen. She is portrayed as a girl aged twelve, in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles I</title>.</note>
+                <note><ref target="https://viaf.org/viaf/264121061"/></note>
+             </person>
+             
+             <person xml:id="Qu_Henrietta" sex="f">
+                <persName>Henrietta Maria of France</persName>
+                <persName>
+                   <forename>Henrietta</forename>
+                   <forename>Maria</forename>
+                   <roleName><nameLink>of</nameLink> France</roleName>
+                   <roleName>Fille de France</roleName>
+                   <roleName>Queen Consort of England, Scotland and Ireland</roleName>
+                </persName>
+                <persName>
+                   <addName>Maria</addName>
+                   <addName>Mary</addName>
+                </persName>
+                <birth when="1609-11-25">
+                   <placeName>Palais du Louvre, Paris, France</placeName>
+                </birth>
+                <death when="1669-09-10">
+                   <placeName>Château de Colombes, Colombes, France</placeName>
+                </death>
+                <note resp="#lmw">Daughter of Henry IV of France and Marie de Medici. House of Bourbon. Spouse of <persName ref="#ChasI">Charles I</persName> and mother of <persName ref="#ChasII">Charles II</persName> and <persName ref="#JamesII">, she was called Maria or Mary while in England.</persName></note>
+                <note><ref target="http://viaf.org/viaf/88851046"/></note>
+             </person>
+          </listPerson>
+       </div>
+         
+         <div type="fictional_and_archetypal">
+            <listPerson sortKey="archPersons">
+               <person xml:id="Judith_OT" sex="f">
+                  <persName>Judith        
+                  </persName>
+                  <persName>
+                     <forename>Judith</forename> <nameLink>of</nameLink> Bethulia</persName>
+                  <note resp="#rnes">Apocryphal <title ref="#OldTestament_Bible">Old Testament</title> figure from the Christian Bible. Famous for seducing then beheading the  Assyrian general Holofernes.</note>
+               </person>
+               
+               <person xml:id="Nathan_OT" sex="m">
+                  <persName>Nathan
+                  </persName>
+                  <note resp="#rnes">Apocryphal <title ref="#OldTestament_Bible">Old Testament</title> prophet from the Christian Bible; he related his visions to <persName ref="#David_OT">King David</persName>.</note>
+               </person>
+               
+               <person xml:id="David_OT" sex="m">
+                  <persName>David
+                  </persName>
+                  <persName>
+                     <roleName>King David</roleName>
+                     <roleName>King of Israel and Judah</roleName>
+                  </persName>
+                  <note resp="#rnes"><title ref="#OldTestament_Bible">Old Testament</title> figure from the Christian Bible. Apocryphal king of a united kingdom of Israel and Judah. Portrayed as a shepherd and musician, as well as the killer of Goliath and a favored courtier of King Saul.</note>   
+               </person>
+               
+               <person xml:id="Peter_NT" sex="m">
+                  <persName>Peter
+                  </persName>
+                  <persName>Simon Peter</persName>
+                  <note resp="#rnes"><title ref="#NewTestament_Bible">New Testament</title> figure from the Christian Bible. One of Jesus's twelve disciples or Apostles, According to the gospels, Peter was a fisherman, had a leadership role amongst the disciples, and denied Jesus three times and later repented. Peter later became the first Bishop of Rome, Pope of the Catholic Church, according to Catholic tradition. Patriarch of Antioch in the Eastern Christian tradition.</note>
+               </person>
+               
+               <person xml:id="Judas_NT" sex="m">
+                  <persName>Judas</persName>
+                  <persName>Judas Iscariot</persName>
+                  <note resp="#rnes"><title ref="#NewTestament_Bible">New Testament</title> figure from the Christian Bible. One of the Jesus's twelve disciples or Apostles, remembered principally as the betrayer of Jesus Christ. His name came to have the colloquially meaning of "traitor."</note>
+               </person>
+            </listPerson>
+               
+            
+           <listPerson sortKey="fictPersons">
+              <person xml:id="DukeSr_AYLI">
+                 <persName>Duke Senior</persName>
+                 <persName><addName>old Duke</addName></persName>
+                 <note resp="#lmw">In <title ref="#As_You_Like_It_play">As You Like It</title>, the character of Duke Senior, the older brother of the usurping Duke Frederick, and father to Rosalind.</note>
+              </person>
+              
+              <person xml:id="RichardIII_WS" sex="m">
+                 <persName>Richard III
+                 </persName>
+                 <note resp="#lmw">Title character from <persName ref="#Shakespeare">Shakespeare</persName>'s
+                     <title ref="#RichardIII_play">The Life and Death of Richard III</title>, loosely based on the historical <persName ref="#RichardIII">King Richard III</persName>. One of <persName ref="#Macready_Wm">William Macready</persName>'s most prominent roles.</note>
+              </person>
+              
+              <person xml:id="WmTell_SK" sex="m">
+                 <persName>William Tell</persName>
+                 <persNme>
+                    <surname>Tell</surname>
+                    <forename>William</forename>
+                 </persNme>
+             <note resp="#lmw">Title character from <persName ref="#Knowles_Sheridan">Knowles</persName>'s play
+                 <title ref="#WmTell_play">William Tell</title>, loosely based on the pseudohistorical Swiss revolutionary; role created by and for <persName ref="#Macready_Wm">William Macready</persName>.</note>
+                 </person>
+              
+              <person xml:id="Sardanapalus_By" sex="m">
+                 <persName>Sardanapalus
+                 </persName>
+                 <note resp="#lmw">Title character from <persName ref="#Byron">Byron</persName>'s tragedy
+                    <title ref="#Sardanapalus_play">Sardanapalus</title>, about a doomed Assyrian tyrant. Role <persName ref="#Macready_Wm">William Macready</persName> originated the role in <date when="1834">1834</date>, after Byron's death.</note>
+              </person>
+              
+              <person xml:id="Richelieu_EBL" sex="m">
+                 <persName>Richelieu
+                 </persName>
+                 <note resp="#lmw">Title character from <persName ref="#Bulwer_Lytton">Edward Bulwer-Lytton</persName>
+                    <title ref="#Richelieu_play">Richelieu</title>, loosely based on the historical <persName ref="#Richelieu">Cardinal Richelieu</persName>; role created by and for <persName ref="#Macready_Wm">William Macready</persName>.</note>
+              </person>
+              
+               <person xml:id="Carton_Sidney" sex="m">
+                  <persName>Sidney Carton
+                  </persName>
+                  <persName>
+                     <surname>Carton</surname>
+                     <forename>Sydney</forename>
+                  </persName>
+                  <occupation>legal</occupation>
+                  <note resp="#rnes">Protagonist in <title ref="#TaleOf2Cities">A Tale of Two Cities</title>; he is a young, alcoholic London lawyer upon whose self-reformation and self-sacrifice during the Reign of Terror forms a hinge upon which the plot turns.</note>
+               </person>
+              
+               <person xml:id="Goodwin_Mabel" sex="f">
+                  <persName>Mabel Goodwin</persName>
+                  <persName>
+                     <surname>Goodwin</surname>
+                     <forename>Mabel</forename>
+                  </persName>
+                  <note resp="#lmw">Title character in <title ref="#RoundheadsDa_FT">The Roundhead's Daughter</title>.</note>
+               </person>
+              
+               <person xml:id="Montresor_Phil" sex="m">
+                  <persName>Sir Philip Montresor</persName>
+                  <persName>
+                     <surname type="married">Montresor</surname>
+                     <forename>Philip</forename>
+                     <roleName>Sir</roleName>
+                  </persName>
+                  <note resp="#lmw">Cavalier character in <title ref="#RoundheadsDa_FT">The Roundhead's Daughter</title>.</note>
+               </person>
+              
+               <person xml:id="Goodwin_Col" sex="m">
+                  <persName>Colonel Goodwin</persName>
+                  <persName>
+                     <surname>Goodwin</surname>
+                     <roleName>Colonel</roleName>
+                  </persName>
+                  <occupation>military</occupation>
+                  <note resp="#lmw">Roundhead character in <title ref="#RoundheadsDa_FT">The Roundhead's Daughter</title>; father of the title character.</note>
+               </person>
+
+            </listPerson>
+            
+         </div>
+        <div type="places">
+            <listPlace sortKey="histPlaces">
+               <place xml:id="Warwick_Gaol">
+                  <placeName>Warwick Gaol, Warwick, Warwickshire, England</placeName>
+                  <settlement>Warwick</settlement>
+                  <region>Warwickshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>52.2829 -1.5891</geo>
+                  </location>
+                  <note resp="#slc #lmw">Warwick Gaol was a functioning county jail located next to a town building that would later grow to be Shire Hall. The jail remained open until the late eighteenth century, when it was condemned by reformer John Howard.</note> 
+                  <note><ref target="http://www.ourwarwickshire.org.uk/content/article/dungeon-county-gaol-warwick)"/></note>
+               </place>
+               
+               <place xml:id="Bull_Ring">
+                  <placeName>Bull Ring, Birmingham, Warwickshire, England</placeName>
+                  <settlement>Birmingham</settlement>
+                  <region>Warwickshire</region>
+                  <country>England</country>
+                  <location>
+                     <geo>52.4777 -1.894178</geo>
+                  </location>
+                  <note resp="#slc #lmw">Began in the twelfth century as a central market district for Birmingham. From the 1830s to the 1860s, also a popular location for public preaching and political protests. Location of the 1839 Chartist demonstration for voting reform in England, known as the Bull Ring Riots.</note>
+               </place>
+               
+               <place xml:id="Europe">
+                  <placeName>Europe</placeName>
+                  <note resp="#rnes">The European continent, extending in the thinking of <persName ref="#MRM">Mitford</persName>'s time roughly south to the Middle East and east to St. Petersburg, and bounded on the west by the Atlantic.</note>
+               </place>
+               
+               <place xml:id="Holland">
+                  <placeName>Holland</placeName>
+                  <note resp="#rnes">A region of the Kingdom of the Netherlands. Until the Napoleonic invasion of 1795, part of the United Provinces of the Netherlands. After Napoleon abolished the Netherlands' historic Republic (founded in the sixteenth century), "Holland" gradually become colloquial for "the Netherlands," and today the two geographic entities are frequently conflated. <persName ref="#ChasII">Charles II</persName> and other exiled Stuarts took refuge in Holland and France.</note>
+               </place>
+               
+               <place xml:id="Atlantic">
+                  <placeName>Atlantic Ocean</placeName>
+                  <note resp="#rnes">The ocean that extends between, on the Eastern side, Europe and Africa, and, on the West, the New World (the Americas.) Historically known as the Sea of Atlas, after the ancient Greek mythological character who holds up the world.</note>
+               </place>
+               
+               <place xml:id="Windsor_Castle">
+                  <placeName>Windsor Castle, Windsor, Berkshire, England</placeName>
+                  <region>Berkshire</region>
+                  <region>Windsor</region>
+                  <region>Windsor and Maidenhead</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.483333 -0.604167</geo>
+                  </location>
+                  <note resp="#rnes">The largest and the oldest-occupied castle in the world, Windsor Castle was built by William the Conqueror (William I) circa 1070, with the presently-existing buildings commissioned by Henry II, Henry III and Edward III. During <persName ref="#MRM">Mitford</persName>'s lifetime, Windsor Castle saw a series of renovations under <persName ref="#GeoIII">George III</persName>, <persName ref="#GeoIV">George IV</persName>, and became one of the primary residences of the British royal family. From <date when="1810">1810</date> on, <persName ref="#GeoIII">George III</persName>was confined to the State Apartments at the Castle during his illness.</note> 
+                  <note><ref target="https://www.royal.uk/royal-residences-windsor-castle"/></note>
+                  <note><ref target="https://www.royalcollection.org.uk/visit/windsorcastle"/></note>
+               </place>
+               
+               <place xml:id="Westmnstr"> <!--LMW to EBB: REV. entry, existing ID-->
+                  <placeName>City of Westminster, London, England</placeName>
+                  <district>Westminster</district>
+                  <region>London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.5001754 -0.1332326000000421</geo>
+                  </location>
+                  <note resp="#lmw #rnes">Now an inner London borough centrally located in Greater
+                     London; historically a separate entity west of the City of London and the
+                     site of <placeName ref="#Westminster_Abbey">Westminster Abbey</placeName> and the <placeName ref="#Westmnst_Palace">Palace of Westminster</placeName>. Westminster has served as the seat of English government since the eleventh-century reign of King Edward the Confessor. Until the sixteenth century, Westminster was geographically separated from London by relatively undeveloped land. After this space was built up, in 1604, the City and Liberty of Westminster was established by <persName ref="#JamesI">James I</persName>. In <persName ref="#MRM">Mitford</persName>'s time, a district of Greater London and the location of St. James's Palace, Buckingham Palace, and the Houses of Parliament; of shopping districts around Bond Street, Regent Street, and Oxford Street; and of the fashionable residential and theater districts of the West End.</note>
+               </place>
+               
+               <place xml:id="Hampton_Court">
+                  <placeName>Hampton Court Palace, Surrey, England</placeName>
+                  <settlement>East Molesey</settlement>
+                  <region>Surrey</region>
+                  <region>Greater London</region>
+                  <country>England</country>
+                  <location>
+                     <geo>51.403333 -0.3375</geo>
+                  </location>
+                  <note resp="#rnes">Built in the early sixteenth century by Cardinal Wolseley, then, after Wolseley's fall, the residence of Henry VIII, Hampton Court Palace has been the residence of royals including <persName ref="#GeoII">George II</persName>, who was the last monarch to occupy it as an official residence. <persName ref="#ChasI">Charles I</persName> spent part of his house arrest there during his imprisonment by Parliament.</note>
+                  <note><ref target="https://www.hrp.org.uk/hampton-court-palace/#gs.PBGIDr8"/></note>
+               </place>
+            </listPlace>
+           
+           <listPlace sortKey="fictPlaces">
+              <place xml:id="Arden">
+                 <placeName>Forest of Arden</placeName>
+                 <note resp="#rnes">Fictional Forest of Arden, setting for <title ref="#As_You_Like_It_play">As You Like It</title>. Variously identified with historical and fictional representations of the <placeName ref="#Forest_of_Ardennes">Forest of Ardennes</placeName> in continental Europe, and with Arden, a heavily wooded area of Warwickshire, England.</note>
+              </place>
+           </listPlace>
+         </div>
+            
+            
+         <div type="publications">
+            
+            <listBibl sortKey="literary">
+               
+               <bibl xml:id="ChasI_Warrant">
+                  <title>Death Warrant of Charles Stuart</title>
+                  <date when="1649-01-29"/>
+                  <note resp="#lmw #rnes">The warrant for the execution of <persName ref="#ChasI">Charles I</persName> for treason, signed on <date when="1649-01-29"> January 29, 1649</date> by fifty-nine Commissioners, now known as the regicides.</note>
+                  <note><ref target="http://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentaryauthority/civilwar/collections/deathwarrant/"/></note>
+               </bibl>
+               
+          <bibl xml:id="JGtoGC1825">
+                  <title>James Graham letter to George Colman</title>
+                  <author ref="#Duke_Montrose">James Graham, Duke of Montrose</author>
+                  <date when="1825-09-25"/>
+                  <note resp='#lmw'>Letter from James Graham, Duke of Montrose to George Colman, regarding the decision to refuse the license for <title ref="#CharlesI_MRMplay">Charles I</title>. Add MS 42873, Art. 12, p. 410, British Library, London.</note>
+               </bibl>
+               
+               <bibl xml:id="GCtoJG1825">
+                  <title>George Colman letter to James Graham</title>
+                  <author ref="#Colman_the_Younger">George Colman</author>
+                  <date when="1825-09-29"/>
+                  <note resp='#lmw'>Letter from George Colman to James Graham, Duke of Montrose, regarding the decision to refuse the license for <title ref="#CharlesI_MRMplay">Charles I</title>, responding to Graham's letter of <date when="1825-09-25">September 25, 1825</date>. BL Add MS 42873, folio p. 408, British Library, London.</note>
+               </bibl> 
+     
+               <bibl xml:id="GCtoMRM1825">
+                  <title>George Colman letter to Mary Russell Mitford</title>
+                  <author ref="#Colman_the_Younger">George Colman</author>
+                  <date when="1825-10-10"/>
+                  <note resp='#lmw'>Letter from George Colman to Mary Russell Mitford, notifying her of the decision to refuse the license for <title ref="#CharlesI_MRMplay">Charles I</title>. Add MS 42273, folio p. 409, British Library, London.</note>
+               </bibl>
+               
+               <bibl xml:id="MRMtoGC1825">
+                  <title>Mary Russell Mitford letter to George Colman</title>
+                  <author ref="#MRM">Mary Russell Mitford </author>
+                  <date when="1825-12-18"/>
+                  <note resp='#lmw'>Letter from George Colman to Mary Russell Mitford, regarding the decision to refuse the license for <title ref="#CharlesI_MRMplay">Charles I</title>. Add MS 42873, Art. 12, pp. 413-414, British Library, London.</note>
+               </bibl>
+        
+            <bibl xml:id="The_Two_Foscari"> <!--LMW: REVISED entry, existing id-->
+                  <title>The Two Foscari: A Tragedy</title>
+                  <author ref="#Byron">Lord Byron</author>
+                  <pubPlace ref="#London_city"></pubPlace>
+                  <publisher>J. Murray</publisher>
+                  <date when="1821"/>
+                  <note resp='#lmw'>Published together with <title ref="#Sardanapalus_play">Sardanapalus</title> and <title ref="#Cain_play">Cain</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Sardanapalus_play">
+                  <title>Sardanapalus: A Tragedy</title>
+                  <author ref="#Byron">Lord Byron</author>
+                  <pubPlace ref="#London_city"></pubPlace>
+                  <publisher>J. Murray</publisher>
+                  <date when="1821"/>
+                  <note resp='#lmw'>Published together with <title ref="#The_Two_Foscari">The Two Foscari</title> and <title ref="#Cain_play">Cain</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Cain_play">
+                  <title>Cain: A Mystery</title>
+                  <author ref="#Byron">Lord Byron</author>
+                  <pubPlace ref="#London_city">London, England</pubPlace>
+                  <publisher>J. Murray</publisher>
+                  <date when="1821"/>
+                  <note resp='#lmw'>Published together with <title ref="#The_Two_Foscari">The Two Foscari</title> and <title ref="#Sardanapalus_play">Sardanapalus</title>.</note>
+               </bibl>
+               
+               <bibl xml:id="Richelieu_play">
+                  <title>Richelieu; or, The Conspiracy. A Play in Five Acts</title>
+                  <author ref="#Bulwer_Lytton">Edward Bulwer-Lytton</author>
+                  <pubPlace ref="#London_city">London, England</pubPlace>
+                  <publisher>Saunders and Otley</publisher>
+                  <date when="1839"/>
+                  <note resp='#lmw'>Loosely based on the historical <persName ref="#Richelieu">Cardinal Richelieu</persName>; title role originated by <persName ref="#Macready_Wm">William Macready</persName>.</note>
+               </bibl>
+               
+            <bibl xml:id="TaleOf2Cities">
+                  <title>A Tale of Two Cities</title>
+                  <author>
+                     <persName ref="#Dickens_Chas">Charles Dickens</persName>
+                  </author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Chapman and Hall</publisher>
+                  <date when="1859">1859</date>
+               </bibl>
+               
+               <bibl xml:id="ThreeMusketeers">
+                  <title>The Three Musketeers</title>
+                  <title>Les Trois Mousquetaires</title>
+                  <author>Alexandre Dumas</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>G. Vickers</publisher>
+                  <publisher>Bruce and Wyld</publisher>
+                  <date when="1846">1846</date>
+                  <note resp="#lmw">First published in serial form in the French newspaper Le Siècle between March and July 1844; by 1846, it had been adapted and translated into English by more than one publisher.</note>
+               </bibl>
+               
+               <bibl xml:id="Memoirs_of_the_life_of_Colonel_Hutchinson">
+                  <title>Memoirs of the Life of Colonel Hutchinson</title>
+                  <author>
+                     <persName ref="#Hutchinson_Lucy">Lucy Hutchinson</persName>
+                  </author>
+                  <editor><persName ref="#Hutchinson_Julius">Julius Hutchinson</persName></editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Longman, Hurst, Rees, and Orme</publisher>
+                  <date when="1806">1806</date>
+                  <note resp="#rnes #lmw">Lady Lucy Hutchinson composed the Memoirs sometime between the date of her husband's death in 1664 and the year 1675, when she presented the manuscript to Arthur, Earl of Anglesey. It was published in 1806 under the direction of <persName ref="#Hutchinson_Julius">Rev. Julius Hutchinson</persName>, a Hutchinson descendant. Before then, the manuscript had been consulted at the Hutchinson family library at Owthorpe by the historian Catherine Macaulay and possibly by others.</note>
+                  <note resp="#lmw #rnes">UCLA copy contains the notes of an anonymous annotator and a digital copy may be accessed at Internet Archive: <ref target="https://archive.org/details/lifeofcolonelhut00hutc"/></note>
+                  </bibl>
+               
+               <bibl xml:id="Peoples_Charter">
+                  <title>People's Charter</title>
+                  <author>
+                     <persName ref="#Lovett_Wm">William Lovett</persName>
+                  </author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>London Working Men's Association</publisher>
+                  <date when="1838">1838</date>
+                  <note resp="#rnes">The formal declaration of the Chartist movement, which the Chartists strove to have adopted by Parliament as British law. Three successful petitions pursuing this end failed to persuade Parliament.</note>
+               </bibl>
+    
+                 <bibl xml:id="FindensT_1843">
+                  <title>Finden's Tableaux of National Character, Beauty, and Costume
+                  </title>
+                  <editor>William Finden</editor>
+                  <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+                  <publisher>William Finden</publisher>
+                  <publisher>T. G. March</publisher>
+                  <date when="1842"/>
+                  <bibl corresp="#RoundheadsDa_FT"/>
+                  <bibl corresp="#Cast_Signal_FT"/>
+                  <bibl corresp="#Eng_KingsWd_FT"/>
+                  <bibl corresp="#Buccaneer_FT"/>
+                  <bibl corresp="#LostPearl_FT"/>
+                  <bibl corresp="#Cartel_FT"/>
+                  <bibl corresp="#Sc_SirAllan_FT"/>
+                  <bibl corresp="#Wager_FT"/>
+                  <bibl corresp="#ProudL_FT"/>
+                  <bibl corresp="#Beacon_FT"/>
+                  <bibl corresp="#Bride_FT"/>
+                  <bibl corresp="#KingsPg_FT"/>
+                  <bibl corresp="#StoryWoods_FT"/>
+                  <bibl corresp="#BaronsDa_FT"/>
+                  <bibl corresp="#Woodcutter_FT"/>
+                  <bibl corresp="#ReturnFair_FT"/>
+                  <bibl corresp="#RusticT_FT"/>
+                  <bibl corresp="#VillageA_FT"/>
+                  <bibl corresp="#Gleaner_FT"/>
+                  <bibl corresp="#StolenL_FT"/>
+                  <bibl corresp="#HopG_FT"/>
+                  <note resp="#lmw">A two-volume anthology of previously-published stories and poems from Finden's Tableaux. Mitford's contributions to these volumes consist of twenty short stories and one long poem. <persName ref="#Barrett_E">Elizabeth Barrett</persName> was also one of the contributors. The issue is made up of two volumes, numbered consecutively. A plate accompanies each selection; however, plates are not numbered.</note>
+               </bibl>
+               
+               <bibl xml:id="FindensT_1838"><!--REV of existing entry-->
+                  <title>Findens' Tableaux: A Series of Picturesque Scenes of National Character, Beauty, and Costume [1838]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1837">1837</date>
+                  <bibl corresp="#Eng_KingsWd_FT"/>
+                  <bibl corresp="#Wager_FT"/>
+                  <bibl corresp="#LostPearl_FT"/>
+                  <bibl corresp="#Sc_SirAllan_FT"/>
+                  <bibl corresp="#Cast_Signal_FT"/>
+                  <note resp="#lmw">1838 annual edited by <persName ref="#MRM">Mitford</persName>, to which she contributed five selections.</note>
+               </bibl>
+               
+               <bibl xml:id="FindensT_1839"><!--REV of existing entry-->
+                  <title>Findens' Tableaux of the Affections; A series of Picturesque Illustrations of the Womanly Virtues [1839]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1838">1838</date>
+                  <bibl corresp="#Buccaneer_FT"/>
+                  <bibl corresp="#BaronsDa_FT"/>
+                  <bibl corresp="#Cartel_FT"/>
+                  <bibl corresp="#StoryWoods_FT"/>
+                  <note resp="#lmw">1839 annual edited by <persName ref="#MRM">Mitford</persName>, to which she contributed four selections.</note>
+               </bibl>
+               
+               <bibl xml:id="FindensT_1841"><!--REV of existing entry-->
+                  <title>Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXLI [1841]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Black and Armstrong</publisher>
+                  <date when="1840">1840</date>
+                  <bibl corresp="#ReturnFair_FT"/>
+                  <bibl corresp="#RusticT_FT"/>
+                  <bibl corresp="#Gleaner_FT"/>
+                  <bibl corresp="#VillageA_FT"/>
+                  <bibl corresp="#StolenL_FT"/>
+                  <bibl corresp="#HopG_FT"/>
+                  <note resp="#lmw">1841 annual edited by <persName ref="#MRM">Mitford</persName>, to which she contributed six selections.</note>
+               </bibl>
+
+               <bibl xml:id="FindensT_1840"><!--REV of existing entry-->
+                  <title>Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXL [1840]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1839">1839</date>
+                  <bibl corresp="#KingsPg_FT"/>
+                  <bibl corresp="#ProudL_FT"/>
+                  <bibl corresp="#RoundheadsDa_FT"/>
+                  <bibl corresp="#Beacon_FT"/>
+                  <bibl corresp="#Bride_FT"/>
+                  <bibl corresp="#Woodcutter_FT"/>
+                  <note resp="#lmw">1840 annual edited by <persName ref="#MRM">Mitford</persName>, to which she contributed six selections.</note>
+               </bibl>
+               
+               <bibl xml:id="ProudL_FT">
+                  <title type="a">The Proud Ladye. A Chapter from the Chronicles of Adlersberg.</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXL [1840]</title>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1839">1839</date>
+                  <biblScope unit="page" from="22" to="27">22-27</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="104" to="108">104-108</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="RoundheadsDa_FT">
+                  <title type="a">The Roundhead's Daughter</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXL [1840]</title>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1839">1839</date>
+                  <biblScope unit="page" from="32" to="39">32-39</biblScope>
+                  <note resp="#rnes">A short story by Mary Russell Mitford set during the English Republican Era and the Restoration, in which the title character, Puritan Mabel Goodwin, falls in love with the Royalist Arthur Montresor, son of Sir Philip Montresor. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="160" to="165">160-165</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="Beacon_FT">
+                  <title type="a">The Beacon</title>
+                  <title type="a">The Proud Ladye. A Chapter from the Chronicles of Adlersberg.</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXL [1840]</title>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1839">1839</date>
+                  <biblScope unit="page" from="44" to="48">44-48</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: 
+                     <biblScope unit="page" from="109" to="112">109-112</biblScope>.
+                  </bibl>
+                  </note>
+               </bibl>
+               
+               <bibl xml:id="Bride_FT">
+                  <title type="a">The Bride</title>
+                  <title type="a">The Proud Ladye. A Chapter from the Chronicles of Adlersberg.</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXL [1840]</title>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1839">1839</date>
+                  <biblScope unit="page" from="51" to="54">51-54</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="113" to="115">113-115</biblScope>.
+                  </bibl>
+                  </note>
+               </bibl>
+               
+               <bibl xml:id="KingsPg_FT">
+                  <title type="a">The King's Page</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXL [1840]</title>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1839">1839</date>
+                  <biblScope unit="page" from="9" to="14">9-14</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="123" to="126">123-126</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="Woodcutter_FT">
+                  <title type="a">The Woodcutter</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXL [1840]</title>
+                  <author ref="#MRM">Mary Russell Mitford</author>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1839">1839</date>
+                  <biblScope unit="page" from="61" to="66">61-66</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: 
+                     <biblScope unit="page" from="149" to="154">149-154</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="Buccaneer_FT">
+                  <title type="a">The Buccaneer</title>
+                  <title type="j">Findens' Tableaux of the Affections; A series of Picturesque Illustrations of the Womanly Virtues [1839]</title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1838">1838</date>
+                  <biblScope unit="page" from="6" to="10">6-10</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">1 </biblScope>: <biblScope unit="page" n="39">39</biblScope>.</bibl></note><!--LMW: ck. 1843 pagination-->
+               </bibl>
+               
+               <bibl xml:id="Cartel_FT">
+                  <title type="a">The Cartel</title>
+                  <title type="j">Findens' Tableaux of the Affections; A series of Picturesque Illustrations of the Womanly Virtues [1839]</title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1838">1838</date>
+                  <biblScope unit="page" from="39" to="42">39-42</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume" n="1">1</biblScope>: <biblScope unit="page" from="59" to="61">59-61</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="StoryWoods_FT">
+                  <title type="a">A Story of the Woods</title>
+                  <title type="j">Findens' Tableaux of the Affections; A series of Picturesque Illustrations of the Womanly Virtues [1839]</title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1838">1838</date>
+                  <biblScope unit="page" from="46" to="48">46-48</biblScope>
+                  <biblScope unit="volume">2 of 2</biblScope>
+                  <biblScope unit="page" from="139" to="140">139-140</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume" n="2">2</biblScope>: <biblScope unit="page" from="139" to="140">139-140</biblScope>.</bibl></note> 
+               </bibl>
+               
+               <bibl xml:id="BaronsDa_FT">
+                  <title type="a">The Baron's Daughter</title>
+                  <title type="j">Findens' Tableaux of the Affections; A series of Picturesque Illustrations of the Womanly Virtues [1839]</title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1838">1838</date>
+                  <biblScope unit="page" from="22" to="24">22-24</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume" n="2">2</biblScope>: <biblScope unit="page" from="146" to="148">146-148</biblScope>.</bibl></note>
+               </bibl>
+               
+               
+               <bibl xml:id="ReturnFair_FT">
+                  <title type="a">The Return from the Fair</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXLI [1841]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Black and Armstrong</publisher>
+                  <date when="1840">1840</date>
+                  <biblScope unit="page" from="14" to="21">14-21</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="174" to="1679">174-179</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="RusticT_FT">
+                  <title type="a">The Rustic Toilet</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXLI [1841]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Black and Armstrong</publisher>
+                  <date when="1840">1840</date>
+                  <biblScope unit="page" from="25" to="33">25-33</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="183" to="189">183-189</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="VillageA_FT">
+                  <title type="a">The Village Amanuensis</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXLI [1841]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Black and Armstrong</publisher>
+                  <date when="1840">1840</date>
+                  <biblScope unit="page" from="55" to="60">55-60</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in  <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="192" to="195">192-195</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="Gleaner_FT">
+                  <title type="a">The Gleaner</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXLI [1841]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Black and Armstrong</publisher>
+                  <date when="1840">1840</date>
+                  <biblScope unit="page" from="44" to="51">44-51</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="198" to="203">198-203</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="StolenL_FT">
+                  <title type="a">The Stolen Letter</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXLI [1841]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Black and Armstrong</publisher>
+                  <date when="1840">1840</date>
+                  <biblScope unit="page" from="61" to="62">61-62</biblScope>
+                  <note resp="#lmw">A poem by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" n="204">204</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="HopG_FT">
+                  <title type="a">Hop-Gathering</title>
+                  <title type="j">Findens' Tableaux: The Iris of Prose, Poetry, and Art for MDCCXLI [1841]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Black and Armstrong</publisher>
+                  <date when="1840">1840</date>
+                  <biblScope unit="page" from="63" to="68">63-68</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">2 </biblScope>: <biblScope unit="page" from="205" to="209">205-209</biblScope>.</bibl></note>
+               </bibl>
+            
+               <bibl xml:id="Cast_Signal_FT">
+                <title type="a">Castile. The Signal</title>
+                  <title type="j">Findens' Tableaux: A Series of Picturesque Scenes of National Character, Beauty, and Costume [1838]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1837">1837</date>
+                  <biblScope unit="page" from="52" to="56">52-56</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">1 </biblScope>: <biblScope unit="page" from="19" to="21">19-21</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="Eng_KingsWd_FT">
+                  <title type="a">England. The King's Ward</title>
+                  <title type="j">Findens' Tableaux: A Series of Picturesque Scenes of National Character, Beauty, and Costume [1838]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1837">1837</date>
+                  <biblScope unit="page" from="4" to="10">4-10</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">1 </biblScope>: <biblScope unit="page" from="32" to="36">32-36</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="LostPearl_FT">
+                  <title type="a">Ceylon. The Lost Pearl</title>
+                  <title type="j">Findens' Tableaux: A Series of Picturesque Scenes of National Character, Beauty, and Costume [1838]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1837">1837</date>
+                  <biblScope unit="page" from="32" to="37">32-37</biblScope>
+                <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">1 </biblScope>: <biblScope unit="page" from="52" to="55">52-55</biblScope>.</bibl></note>
+               </bibl>
+               
+              <bibl xml:id="Sc_SirAllan_FT">
+                  <title type="a">Scotland. Sir Allan and His Dog</title>
+                 <title type="j">Findens' Tableaux: A Series of Picturesque Scenes of National Character, Beauty, and Costume [1838]
+                 </title>
+                 <editor>Mary Russell Mitford</editor>
+                 <pubPlace>London</pubPlace>
+                 <publisher>Charles Tilt</publisher>
+                 <date when="1837">1837</date>
+                 <biblScope unit="page" from="44" to="48">44-48</biblScope>
+                 <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">1 </biblScope>: <biblScope unit="page" from="93" to="95">93-95</biblScope>.</bibl></note>
+               </bibl>
+               
+               <bibl xml:id="Wager_FT">
+                  <title type="a">Florence. The Wager</title>
+                  <title type="j">Findens' Tableaux: A Series of Picturesque Scenes of National Character, Beauty, and Costume [1838]
+                  </title>
+                  <editor>Mary Russell Mitford</editor>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Charles Tilt</publisher>
+                  <date when="1837">1837</date>
+                  <biblScope unit="page" from="13" to="17">13-17</biblScope>
+                  <note resp="#lmw">A short story by Mary Russell Mitford. Also collected in <bibl><biblScope corresp="#FindensT_1843">Finden's Tableaux of National Character, Beauty, and Costume</biblScope>, <biblScope unit="volume">1 </biblScope>: <biblScope unit="page" from="32" to="36">32-36</biblScope>.</bibl></note>
+               </bibl>
+            </listBibl>
+            
+            
+            <listBibl sortKey="other_current_Schol">
+                
+               <bibl xml:id="ShelleyPB_ReimanEd">
+                  <title>Shelley's Poetry and Prose</title>
+                  <edition>Second Edition</edition>
+                  <author>
+                     <persName ref="#Shelley_PB">Percy Bysshe Shelle1y</persName>
+                  </author>
+                  <editor>Donald H. Reiman</editor>
+                  <editor>Sharon B. Powers</editor>
+                  <editor>Neil Fraistat</editor>
+                  <pubPlace>New York</pubPlace>
+                  <pubPlace>London</pubPlace>
+                  <publisher>W. W. Norton</publisher>
+                  <date when="2002">2002</date>
+                  <note resp="#slc #rnes">Scholarly edition of Shelley's major works.</note>
+               </bibl>
+               
+               <bibl xml:id="Writing_Eng_Rep">
+                  <title>Writing the English Republic: Poetry, Rhetoric, and Politics, 1627-60</title>
+                  <author>
+                     <persName ref="#Norbrook">David Norbrook</persName>
+                  </author>
+                  <pubPlace>Cambridge, Cambridgeshire, England</pubPlace>
+                  <publisher>Cambridge University Press</publisher>
+                  <date when="1999">1999</date>
+               </bibl>
+               
+               <bibl xml:id="AlterationsOfState">
+                  <title>Alterations of State: Sacred Kingship in the English Reformation</title>
+                  <author>
+                     <persName ref="#McCoy_Rich">Richard McCoy</persName>
+                  </author>
+                  <pubPlace>New York, New York, USA</pubPlace>
+                  <publisher>Columbia University Press</publisher>
+                  <date when="2002">2002</date>
+               </bibl>
+               
+               <bibl xml:id="PossibleScotlands">
+                  <title>Possible Scotlands: Walter Scott and the Story of Tomorrow</title>
+                  <author>
+                     <persName ref="#McCracken_Flesher">Caroline McCracken-Flesher</persName>
+                  </author>
+                  <pubPlace>Oxford, Oxfordshire, England</pubPlace>
+                  <publisher>Oxford University Press</publisher>
+                  <date when="2005">2005</date>
+               </bibl>
+               
+               <bibl xml:id="Cromwell_Soldier">
+                  <title>Cromwell: Soldier</title>
+                  <author>
+                     <persName ref="#Marshall_Alan">Alan Marshall</persName>
+                  </author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Brassey</publisher>
+                  <date when="2004">2004</date>
+               </bibl>
+               
+               <bibl xml:id="Calumniated_Rep">
+                  <title level="a">Calumniated Republicans and the Hero of Shelley's "Charles the First"</title>
+                  <title level="j">Keats-Shelley Journal</title>
+                  <author ref="#Crook_N">Nora Crook</author>
+                  <date when="2007"/>
+                  <biblScope unit="volume">56</biblScope>
+                  <biblScope unit="page" from="155" to="172">155-172</biblScope>
+               </bibl>
+               
+               <bibl xml:id="ShelleysLate">
+                  <title level="a">Shelley's Late Fragmentary Plays: 'Charles the First' and the 'Unfinished Drama'</title>
+                  <title level="m">Unfamiliar Shelley</title>
+                  <author ref="#Crook_N">Nora Crook</author>
+                  <editor>Alan M. Weinberg</editor>
+                  <editor>Timothy Webb</editor>
+                  <date when="2009"/>
+                  <publisher>Ashgate</publisher>
+                  <pubPlace>Farnham</pubPlace>
+                  <biblScope unit="page" from="297" to="313">297-313</biblScope>
+               </bibl>
+               
+               <bibl xml:id="Talking_Demon">
+                  <title level="a">'The Talking Demon': Liberty and Liberal Ideologies in the 1820s British Stage</title>
+                  <title level="j">Nineteenth-Century Contexts</title>
+                  <author ref="#dsa">Diego Saglia</author>
+                  <date when="2006"/>
+                  <biblScope unit="volume">28.4</biblScope>
+                  <biblScope unit="page" from="347" to="377">347-377</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
+        
+        <div type="events">
+           <listEvent sortKey="histEvents">
+             
+              <event xml:id="Regency" from="1811" to="1820">
+                 <label>the Regency 
+                 </label>
+                 <note resp="#lmw">The period <date from="1811-02-05" to="1820-01-29">between 1811 and 1820</date> when <persName ref="#GeoIV">George, Prince of Wales, governed the kingdom of Great Britain and Ireland as Prince Regent</persName> during the illness and incapacity of his father, <persName ref="#GeoIII">King George III</persName>. <orgName ref="#Parliament_UK">Parliament</orgName> passed the Regency Act of 1811 on <date when="1811-02-05">February 5, 1811</date> and the Regency ended with the death of <persName ref="#GeoIII">King George III</persName> on <date when="1820-01-29">January 29, 1820</date>.</note>
+              </event>
+              
+              <event xml:id="Restoration" when="1660">
+                 <label>the Restoration
+                 </label>
+                 <note resp="#lmw">The period following the restoration of Stuart King <persName ref="#ChasII">Charles II</persName> to the English throne in <date when="1660">1660</date>. On <date when="1660-05-08">May 8, 1660</date>, the Convention Parliament decreed that <persName ref="#ChasII">King Charles II</persName> had been the lawful monarch since <date when="1649-01-30">January 30, 1649</date>, the date his father, <persName ref="#ChasI">King Charles I</persName> had been executed. In legal and political terms, the Act invalidated all previous actions of the <rs type="event" ref="#Commonwealth">Commonwealth</rs> and the <rs type="event" ref="#Protectorate">Protectorate</rs>. The term is sometimes also used to refer to the entire period between the restoration <persName ref="#ChasII">Charles II</persName> and the death of <persName ref="#Queen_Anne">Queen Anne</persName> in 1714.</note>
+              </event>
+              
+              <event xml:id="EngCivilWar" type="war" from="1642-08-22" to="1651-09-03"><!--LMW REV entry, existing id.-->
+                 <label>English Civil Wars</label>
+                 <note resp="#lmw">A series of conflicts between British <orgName ref="#Parliamentarians">Parliamentarian</orgName>, supporters of <persName ref="#Cromwell">Oliver Cromwell</persName>, and Royalists, supporters of Stuart King <persName ref="#ChasI">Charles I</persName>, fought between 1642 and 1651. Also called The Great Rebellion or The War of Three Kingdoms, as civil war broke out in all three Stuart kingdoms of England, Scotland, and Ireland. The war was fought principally over the questions of government (the relation between the monarch and Parliament, as defined through England's constitutional framework) and religion (the Church of England's monopoly on Christian worship in England). The first war ended with a Parliamentarian victory at Naseby in 1645 and resulted in the creation of the <orgName ref="#New_Model_Army">New Model Army</orgName> and an alliance between the Parliamentarians and the Scottish Covenanters. The second ended with a Parliamentary victory at Preston and culminated with the execution of <persName ref="#ChasI">Charles I</persName> in 1649. The third war was led by <persName ref="#ChasII">Charles II</persName> with Scottish and Irish allies and ended at Worcester in 1651 with <persName ref="#ChasII">Charles II</persName>'s retreat to France.</note>
+              </event>
+              
+              <event xml:id="Commonwealth" type="state"  from="1649-05-19" to="1653">
+                 <label>Commonwealth of England</label>
+                 <note resp="#lmw">The Commonwealth refers to the period of time when England was governed as a republic, between the execution of <persName ref="#ChasI">King Charles I</persName> in 1649 and the assumption by <persName ref="#Cromwell">Oliver Cromwell</persName> of the title Lord Protector, in 1653. The period that followed (1653 to 1660) is called the Protectorate. "An Act declaring England to be a Commonwealth" by the Rump Parliament called the republic into existence on May 19, 1649. Under the Commonwealth, decision-making power was held by Parliament and by a Council of State. Some refer to the entire period from 1649 to 1660 as the Commonwealth.</note>
+              </event>
+              
+              <event xml:id="Protectorate" type="state"  from="1653" to="1660">
+                 <label>Commonwealth of England</label>
+                 <note resp="#lmw">The Protectorate refers to the period of time when England and Wales, Scotland and Ireland was governed by a Lord Protector. <persName ref="#Cromwell">Oliver Cromwell</persName> assumed the title under the "Instrument of Government" in 1653. Upon <persName ref="#Cromwell">Oliver Cromwell</persName>'s death, his son Richard assumed the title. The Protectorate was dissolved by the Committee of Safety in 1659, and the Rump Parliament and Council of State together governed briefly until the restoration of the monarchy in 1660.</note>
+              </event>
+              
+              <event xml:id="halleys_comet">
+                 <label>Appearance of Halley's Comet</label>
+                 <note resp="#rnes">A short-period comet visible to the naked eye from earth, it appears every 74 to 79 years. In 1705, it was named for the English astronomer Edmond Halley, who correctly identified its periodic recurrence. Records exist dating the comet's appearance back to at least 240 B.C. The comet had been visible from England in 1066 when William the Conqueror's victory founded the modern English dynasty; it is depicted in the Bayeux Tapestry's representation of the Battle of Hastings. <persName ref="#Chas1_MRM">Mitford's character of Charles I</persName> associates the comet with cataclysmic regime change.</note>
+              </event>
+              
+              <event xml:id="Newport_Tr">
+                 <label>Treaty of Newport</label>
+                 <note resp="#lmw">Ultimately unsuccessful treaty negotiations conducted in fall 1648 between <persName ref="#ChasI">Charles I</persName> and <orgName ref="#Parliament_UK">Parliament,</orgName> intended to bring an end to the <rs type="event" ref="#EngCivilWar">English Civil War</rs>. Held at Newport on the <placeName ref="#Isle_of_Wight">Isle of Wight</placeName>. Parliament annulled the Treaty on <date when="1648-12-13">13 December 1648</date>.</note>
+              </event>
+              
+              <event xml:id="ChasI_trial">
+                 <label>Trial of Charles I</label>
+                 <note resp="#lmw"><persName ref="#ChasI">Charles I</persName> was tried before the Commissioners of the <orgName ref="#High_Court_of_Justice">High Court of Justice</orgName>, appointed by the Rump House of Commons, beginning on <date when="1648-01-20">January 20, 1648</date>. He was convicted of treason and other high crimes and was sentenced to death on <date when="1648-01-27">January 27, 1648</date>. Solicitor General <persName ref="#Cook_J">John Cook</persName> led the prosecution before the appointed Commissioners, fifty-nine of whom ultimately signed the <title ref="#ChasI_Warrant">Death warrant</title>. </note>
+              </event>
+           </listEvent>
+         
+         </div>
+            
+      </body>
+  </text>
+</TEI>
