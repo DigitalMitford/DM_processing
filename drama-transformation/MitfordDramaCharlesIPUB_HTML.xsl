@@ -280,17 +280,15 @@
     </xsl:template>
     
     <xsl:template match="sp">
-        <!--2018-03-01: We seem to be missing the processing of stage directions within sp elements, so I'm adding a general apply-templates after the processing of speakers, and an xsl:if in front -->
-        <xsl:if test="speaker[preceding-sibling::*]">
-            <xsl:apply-templates select="speaker/preceding-sibling::*"/>
-        </xsl:if>
-        <span class="speaker"><xsl:apply-templates select="speaker"/></span>
-    <xsl:apply-templates select="speaker/following-sibling::*"/>
+     <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="speaker">
+        <span class="speaker"><xsl:apply-templates/></span>
     </xsl:template>
    <!--2018-02-17 ebb: template rule draft to try to suppress lg, l, and head elements from being processed when they are ONLY present in the NOT current witness:-->
     <xsl:template match="head[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] | lg[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])]  | l[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] "/>
     <xsl:template match="lg">
-        <span class="lg"><xsl:apply-templates/></span>
+       <!-- <span class="lg"><xsl:apply-templates/></span>-->
     </xsl:template>
     
     <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit])]">
