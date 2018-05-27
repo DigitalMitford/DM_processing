@@ -2,13 +2,13 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- <?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> -->
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
          <titleStmt> 
-            <title xml:id="MRM1791">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1822-03-02">1822 March 2</date></title> 
+            <title xml:id="MRM1791">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1822-03-02">March 2, 1822</date></title> 
             <author ref="#MRM">Mary Russell Mitford</author>
             <editor ref="#err">Elizabeth Raisanen</editor> 
             <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor><!--2017-11-06 err: Do the Mary Russell Mitford Society and the Mitford Project itself have XML ids yet? -->
