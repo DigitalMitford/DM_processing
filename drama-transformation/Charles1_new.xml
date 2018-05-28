@@ -149,10 +149,9 @@
                      <lb/>
             </head>
             <p>
-               <app><rdg wit="#msC1">License for <choice><sic>it's</sic><reg>its</reg></choice> representation<lb/> refused by The Lord Chamberlain.<lb/>
+               License for <choice><sic>it's</sic><reg>its</reg></choice> representation<lb/> refused by The Lord Chamberlain.<lb/>
                      <date when="1825-10">October. 1825.</date><note resp="#rnes">Date is aligned right.</note>
                
-                  </rdg></app>
             </p>
          </div>
          
@@ -1505,12 +1504,7 @@
                      <rdg wit="#msC1"> a King's word. Fie! Fie!&#8212;Yet</rdg>
                      </app> sooth</l>
                   <l xml:id="Chas_l_318">Thou mean'st me kindly<app>
-                        <rdg wit="#pubC1">, <persName ref="#Herbert_Ch1">Herbert.</persName> Ha<app>
-                              <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg>
-                           </app> the Sea,</rdg>
-                        <rdg wit="#msC1">
-                           <persName ref="#Herbert_Ch1">Herbert.</persName>&#8212;Ha. the Sea</rdg>
-                     </app></l>
+                        <rdg wit="#pubC1">, <persName ref="#Herbert_Ch1">Herbert.</persName> Ha,</rdg><rdg wit="#msC1"><persName ref="#Herbert_Ch1">Herbert.</persName>&#8212;Ha. the Sea</rdg></app></l>
                   <l xml:id="Chas_l_319">That day <app>
                         <rdg wit="#pubC1">and night hath chased so angrily,</rdg>
                         <rdg wit="#msC1">&amp; night hath chased so angrily</rdg>
@@ -5539,12 +5533,8 @@
                   <l xml:id="Chas_l_1448">Irreverently of such great-ones. Faint </l>
                   <l xml:id="Chas_l_1449">And craven souls<app>
                         <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
-                     </app> Follow my son<app>
-                        <rdg wit="#pubC1">;</rdg><rdg wit="#msC1">.</rdg><rdg wit="#pubC1">t</rdg>
-                     </app>
-                     <app>
-                        <rdg wit="#msC1">T</rdg></app>hou'lt find him<app><rdg wit="#msC1">,</rdg>
-                     </app></l>
+                     </app> Follow my <app>
+                        <rdg wit="#pubC1">son; thoul't</rdg><rdg wit="#msC1">son. Thou'lt</rdg></app> find him</l>
                   <l xml:id="Chas_l_1450">Heading his valiant <app>
                         <rdg wit="#pubC1">h</rdg><rdg wit="#msC1">H</rdg>
                      </app>orse. Bid him be still</l>
@@ -5561,19 +5551,11 @@
                         <rdg wit="#pubC1">(Exeunt.)</rdg><rdg wit="#msC1">Exeunt.</rdg>
                      </app></stage>
                </stage>
-               <stage type="business">
-                  <app>
-                     <rdg wit="#msC1">The scene draws &amp;<lb/><app>
-                           <rdg wit="#pubC1">D</rdg><rdg wit="#msC1">d</rdg>
-                        </app>iscloses the <placeName ref="#Painted_Chmbr">Painted
-                           Chamber</placeName></rdg>
-                  </app>
-               </stage>
+               
             </div>
             <div type="scene" n="2">
                <head><app><rdg wit="#pubC1">SCENE II.</rdg></app></head>
-
-               <stage type="setting"><app><rdg wit="#pubC1">The <placeName ref="#Painted_Chmbr">Painted Chamber.</placeName></rdg></app></stage>
+               <stage type="setting"><app><rdg wit="#msC1">The scene draws &amp; discloses the </rdg><rdg wit="#pubC1">The <placeName ref="#Painted_Chmbr">Painted Chamber.</placeName></rdg></app></stage>
                <stage type="business"><persName ref="#Bradshaw">Bradshaw</persName>, <persName ref="#Harrison">Harrison</persName>, <persName ref="#Cook_Ch1">Cook</persName>, <persName ref="#Downes">Downes</persName>, <persName ref="#Tichburne">Tichburne</persName>, <persName ref="#Marten">Marten</persName> <app><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">, and</rdg></app> other Judges.</stage>
 
                <sp who="#Harrison">
@@ -6338,9 +6320,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_1725"><app>
-                        <rdg wit="#pubC1">Sir<app>
-                              <rdg wit="#pubC1">,</rdg>
-                           </app> 'twas meet they came</rdg>
+                        <rdg wit="#pubC1">Sir, 'twas meet they came</rdg>
                      <rdg wit="#msC1">Sir, 'twas meet <del rend="squiggles"><supplied resp="#rnes">to send them</supplied></del>
                            they came,</rdg>
                      </app></l>
@@ -6680,34 +6660,27 @@
                      </app>hy cause, the suffering saints<app>
                         <rdg wit="#pubC1">.</rdg>
                      </app></l>
-                  <l xml:id="Chas_l_1812"><app>
-                        <rdg wit="#msC1"><del rend="squiggles"><unclear/>
+                  <!--RN June 29, 2014: these 4 identical lines of code indicate four consecutive lines of squiggle del, followed by an entire struck page. The remainder of the page - most of it - is blank. Should I indicate that somehow? ERR says: These look to be extraneous empty lines that can be deleted. Please advise?--><!--LMW I would write a <note> describing it, I think. ie, <note resp="#rnes">A struck page follows.</note>--><!--2018-05-28 ebb: I think this is okay, but I've wrapped just one app and rdg element around the deleted lines, consistent with current TEI P5. -->
+                  <app>
+                     <rdg wit="#msC1">
+                        <l xml:id="Chas_l_1812"><del rend="squiggles"><unclear/>
                            </del>
-                        </rdg>
-                     </app></l>
-                  
-                  <!--RN June 29, 2014: these 4 identical lines of code indicate four consecutive lines of squiggle del, followed by an entire struck page. The remainder of the page - most of it - is blank. Should I indicate that somehow? ERR says: These look to be extraneous empty lines that can be deleted. Please advise?--><!--LMW I would write a <note> describing it, I think. ie, <note resp="#rnes">A struck page follows.</note>-->
-                  <l xml:id="Chas_l_1813"><app>
-                        <rdg wit="#msC1">
+                          </l>
+                        <l xml:id="Chas_l_1813">
                            <del rend="squiggles">
                               <unclear/>
                            </del>
-                        </rdg>
-                     </app></l>
-                  <l xml:id="Chas_l_1814"><app>
-                        <rdg wit="#msC1">
+                        </l>
+                  <l xml:id="Chas_l_1814">
                            <del rend="squiggles">
                               <unclear/>
                            </del>
-                        </rdg>
-                     </app></l>
-                  <l xml:id="Chas_l_1815"><app>
-                        <rdg wit="#msC1">
+                        </l>
+                  <l xml:id="Chas_l_1815">
                            <del rend="squiggles">
                               <unclear/>
                            </del>
-                        </rdg>
-                     </app></l>
+                        </l></rdg></app>
                   <l xml:id="Chas_l_1816">The tyrant's tyranny <app><rdg wit="#msC1">&amp; T</rdg><rdg wit="#pubC1">, and t</rdg></app>hy great word<app>
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
@@ -6740,8 +6713,7 @@
                   </app>edchamber.</stage>
                <stage type="business">
                   <app>
-                     <rdg wit="#pubC1">(On account of the length of the Tragedy, this scene is
-                        omitted in representation.)</rdg>
+                     <rdg wit="#pubC1">(On account of the length of the Tragedy, this scene is omitted in representation.)</rdg>
                   </app>
                </stage>
                <stage type="business">The <persName ref="#Chas1_MRM">King</persName>, starting from his couch<app>
@@ -6802,7 +6774,7 @@
                         <rdg wit="#pubC1">,</rdg>
                      </app></l>
                   <l xml:id="Chas_l_1843">Or hardy peasants win with honest toil.</l>
-                  <l xml:id="Chas_l_1844">When I awoke thy slumbers were perturbed,</l>
+                  <l xml:id="Chas_l_1844">When I awoke thy slumbers were perturbed,<note resp="#ebb">At the beginning of this line in the manuscript with a pencilled left square bracket around the “W” in “When”, Mitford marks the start of a long suggested deletion of 34 lines with the following pencilled note in the left margin: <note resp="#MRM">This perhaps better omitted.</note> The suggested deletion runs to the end of this following dialogue about Herbert’s dream, to the King’s line below in the manuscript, “A thrice blessed omen!”</note></l>
                   <l xml:id="Chas_l_1845">Unquiet.</l>
                </sp>
                <sp who="#Herbert_Ch1">
@@ -6913,8 +6885,8 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_l_1878">A <app>
                         <rdg wit="#pubC1">thrice-blessed</rdg><rdg wit="#msC1">thrice blessed</rdg>
-                     </app> omen! </l>
-                  <!--omission ends with censor's "better omit to here" (pencil again)--><!--LMW should this be a <note>? Or addHand?-->
+                  </app> omen! </l><note resp="#ebb">Here Mitford indicates the end of a long suggested deletion of 34 lines with a pencilled right square bracket after “omen!”, and the following pencilled note: <note resp="#MRM">better omit to here.</note> The suggested deletion begins above with the King’s observation of Herbert’s restless sleep and inquiry into his dream, above with “When I awoke, thy slumbers were perturbed.”</note>
+                  <!--omission ends with censor's "better omit to here" (pencil again)--><!--LMW should this be a <note>? Or addHand?--><!--2018-05-28 ebb: I've set it as a note. Comparing the lettering with the play script and letters, the hand is surely MRM's. -->
                   <l xml:id="Chas_l_1879"><persName ref="#Herbert_Ch1">Herbert</persName><app>
                         <rdg wit="#pubC1">,</rdg>
                      </app> my soul is full of serious joy<app>
@@ -7210,75 +7182,47 @@
                </sp>
                <sp who="#Chas1_MRM">
                   <speaker>Charles.</speaker>
-                  <l xml:id="Chas_l_1962">Dost <app>
-                        <rdg wit="#pubC1">thou</rdg>
-                     </app> see </l>
-                  <l xml:id="Chas_l_1963">Fierce soldiers crowded round<app>
-                        <rdg wit="#pubC1">,</rdg>
+                  <l xml:id="Chas_l_1962"> <app><rdg wit="#pubC1">Dost thou</rdg><rdg wit="#msC1">Dost</rdg></app> see</l>
+                  <l xml:id="Chas_l_1963">Fierce soldiers crowded <app>
+                     <rdg wit="#pubC1">round,</rdg><rdg wit="#msC1">round</rdg>
                      </app> as if to watch </l>
                   <l xml:id="Chas_l_1964">A garrisoned fort, rather than one unarmed</l>
-                  <l xml:id="Chas_l_1965">Defenceless man, <app>
-                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
-                     </app> think<app>
-                        <rdg wit="#pubC1">'</rdg>
-                     </app>st thou I could win </l>
-                  <l xml:id="Chas_l_1966">A step unchallenged? Nor<app>
-                        <rdg wit="#msC1">,</rdg>
-                     </app> though to escape </l>
+                  <l xml:id="Chas_l_1965">Defenceless man, <app><rdg wit="#pubC1">and think'st</rdg><rdg wit="#msC1">&amp; thinkst</rdg>
+                     </app> thou I could win </l>
+                  <l xml:id="Chas_l_1966">A step unchallenged? <app><rdg wit="#pubC1">Nor</rdg><rdg wit="#msC1">Nor,</rdg></app> though to escape</l>
                   <l xml:id="Chas_l_1967">Were easy as to breathe, the vigilant guard</l>
                   <l xml:id="Chas_l_1968">Smitten with sudden blindness, the unnumbered</l>
                   <l xml:id="Chas_l_1969">And stirring swarms of this vast city locked</l>
-                  <l xml:id="Chas_l_1970">In charmed sleep, <app>
-                        <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
+                  <l xml:id="Chas_l_1970">In charmed sleep, <app><rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> darkness over all</l>
                   <l xml:id="Chas_l_1971">Blacker than starless night, spectral <app>
-                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
-                     </app> dim</l>
-                  <l xml:id="Chas_l_1972">As an eclipse at noon<app>
-                        <rdg wit="#msC1">-</rdg>
-                     </app>tide, though the gates</l>
-                  <l xml:id="Chas_l_1973">Opened before me<app>
-                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
+                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg></app> dim</l>
+                  <l xml:id="Chas_l_1972">As an eclipse at <app><rdg wit="#pubC1">noontide</rdg><rdg wit="#msC1">noon-tide</rdg></app>, though the gates</l>
+<l xml:id="Chas_l_1973">Opened before me<app><rdg wit="#msC1"> &amp;</rdg><rdg wit="#pubC1">, and</rdg>
                      </app> my feet were swift</l>
-                  <l xml:id="Chas_l_1974">As the Antelope's, not then<app>
-                        <rdg wit="#msC1">,</rdg>
+                  <l xml:id="Chas_l_1974">As the Antelope's, not <app><rdg wit="#pubC1">then</rdg>
+                     <rdg wit="#msC1">then,</rdg>
                      </app> if it but perilled</l>
-                  <l xml:id="Chas_l_1975">A single hair of friend or foe<app>
-                        <rdg wit="#msC1">,</rdg>
+                  <l xml:id="Chas_l_1975">A single hair of friend or <app><rdg wit="#pubC1">foe</rdg><rdg wit="#msC1">foe,</rdg>
                      </app> would I</l>
                   <l xml:id="Chas_l_1976">Pass o'er the threshold. In my cause too much</l>
                   <l xml:id="Chas_l_1977">Of blood hath fallen. Let mine seal all. I go</l>
                   <l xml:id="Chas_l_1978">To <app>
-                        <rdg wit="#msC1">D</rdg><rdg wit="#pubC1">d</rdg>
-                     </app>eath as to a bridal; thou thyself</l>
-                  <l xml:id="Chas_l_1979">In thy young beauty was not welcomer</l>
-                  <l xml:id="Chas_l_1980">Than he. Farewell<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app> beloved wife! My chosen!</l>
-                  <l xml:id="Chas_l_1981">My dear<app>
-                        <rdg wit="#pubC1">-</rdg>
-                     </app> one! We have loved as peasants<app>
-                        <rdg wit="#msC1">, sweetest,</rdg>
+                        <rdg wit="#msC1">Death</rdg><rdg wit="#pubC1">death</rdg></app> as to a bridal; thou thyself</l>
+                  <l xml:id="Chas_l_1979">In thy young beauty wast not welcomer</l>
+                  <l xml:id="Chas_l_1980">Than he. <app>
+                     <rdg wit="#pubC1">Farewell,</rdg><rdg wit="#msC1">Farewell</rdg></app> beloved wife! My chosen!</l>
+                  <l xml:id="Chas_l_1981">My <app>
+                     <rdg wit="#pubC1">dear-one</rdg><rdg wit="#msC1">dear one</rdg></app>! We have loved as peasants<app><rdg wit="#pubC1"> love,</rdg><rdg wit="#msC1">, sweetest,</rdg>
                      </app></l>
-                  <l xml:id="Chas_l_1982"><app>
-                        <rdg wit="#msC1">Rather than Princes,<del rend="squiggles"><unclear/></del>
-                           <!--RN [something scribbled out. also check next lines in transformation against MS and pub]--><!--LMW: tag del --><!--not sure how-->
-                           been as fond as they,</rdg>
-                     </app></l>
+                  <l xml:id="Chas_l_1982"><app><rdg wit="#pubC1">Been fond and true as they. Now fare thee well!</rdg><rdg wit="#msC1">Rather than Princes,<del rend="squiggles"><unclear><supplied resp="#ebb"> &amp; have</supplied></unclear></del> been as fond as they,</rdg></app></l>
+ <!--RN [something scribbled out. also check next lines in transformation against MS and pub]--><!--LMW: tag del --><!--not sure how--><!--2018-05-28 ebb: I'm spot checking this speech against ms and pub right now. I think the deletion begins with an ampersand, probably "&amp; have". -->   
                   <l xml:id="Chas_l_1983"><app>
                         <rdg wit="#msC1">As happy &amp; as true. Now Fare thee well!</rdg>
                      </app></l>
-                  <l xml:id="Chas_l_1984"><app>
-                        <rdg wit="#pubC1">Been fond <app>
-                              <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
-                           </app> true as they</rdg>
-                     </app>Now fare thee well!</l>
-                  <l xml:id="Chas_l_1985">I thank thee<app>
-                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
-                     </app> I bless thee. Pray for me,</l>
-                  <l xml:id="Chas_l_1986">My <persName ref="#Queen_Ch1">Henrietta</persName><app>
-                        <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">.</rdg>
-                     </app></l>
+                  <l xml:id="Chas_l_1984">I thank thee<app><rdg wit="#msC1"> &amp;</rdg><rdg wit="#pubC1">, and</rdg></app> I bless thee. Pray for me,</l>
+                  <l xml:id="Chas_l_1985">My <persName ref="#Queen_Ch1">Henrietta</persName><app>
+                     <rdg wit="#msC1">!</rdg><rdg wit="#pubC1">.</rdg></app></l>
                </sp>
                <sp who="#Queen_Ch1">
                   <speaker>Queen.</speaker>
@@ -7558,9 +7502,8 @@
                         <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
                      </app></l>
                   <l xml:id="Chas_l_2064">It is addressed to thee. Thou must receive</l>
-                  <l xml:id="Chas_l_2065">The prisoner<app>
-                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
-                     </app> conduct him hither.</l>
+                  <l xml:id="Chas_l_2065">The <app>
+                     <rdg wit="#pubC1">prisoner, and</rdg><rdg wit="#msC1"> prisoner &amp;</rdg></app> conduct him hither.</l>
                </sp>
                <sp who="#Hacker_Ch1">
                   <speaker>Hack.</speaker>
@@ -7630,14 +7573,7 @@
                <sp who="#Fairfax">
                   <speaker>Fair.</speaker>
                   <l xml:id="Chas_l_2086">Yet a man, whose doom </l>
-                  <l xml:id="Chas_l_2087">Lies on our conscience. <app>
-                        <rdg wit="#msC1">
-                           <stage type="business">(<app>
-                                 <rdg wit="#pubC1">T</rdg><rdg wit="#msC1">t</rdg>
-                              </app>o <persName ref="#Cromwell_MRM">Cromwell) </persName>
-                           </stage>
-                        </rdg>
-                  </app>We might save the <persName ref="#Chas1_MRM">King</persName></l>
+                  <l xml:id="Chas_l_2087">Lies on our conscience. <app><rdg wit="#msC1"><stage type="business">(to <persName ref="#Cromwell_MRM">Cromwell</persName>)</stage> We might save</rdg><rdg wit="#pubC1">We might save</rdg></app> the <persName ref="#Chas1_MRM">King</persName></l>
                   <l xml:id="Chas_l_2088">Even now at the eleventh hour<app>
                         <rdg wit="#pubC1">; w</rdg><rdg wit="#msC1">. W</rdg>
                      </app>e two </l>
@@ -7658,22 +7594,18 @@
                   <l xml:id="Chas_l_2094">Abandon our great cause, <app>
                         <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> sell our souls</l>
-                  <l xml:id="Chas_l_2095">To Hell<app>
-                     <rdg wit="#msC1">&#8212;</rdg>
-                     </app>. We might do <app>
-                        <rdg wit="#msC1"><del rend="squiggles"><supplied resp="#rnes">do</supplied></del>
-                        </rdg>
-                     </app>this<app>
-                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
+                  <l xml:id="Chas_l_2095">To Hell<app><rdg wit="#pubC1">. </rdg>
+                     <rdg wit="#msC1">.&#8212;</rdg>
+                     </app> We might <app><rdg wit="#pubC1">do this, and</rdg>
+                        <rdg wit="#msC1"><del rend="squiggles"><supplied resp="#rnes">do</supplied></del> do this &amp;</rdg>
                      </app> more; might shroud</l>
-                  <l xml:id="Chas_l_2096">These devilish sins in holy names, <app>
-                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
+                  <l xml:id="Chas_l_2096">These devilish sins in holy names, <app><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> call them</l>
                   <l xml:id="Chas_l_2097">Loyalty, Honour, Faith, Repentance<app>
                      <rdg wit="#pubC1">&#8212;c</rdg><rdg wit="#msC1">. C</rdg>
                      </app>heats</l>
-                  <l xml:id="Chas_l_2098">Which <rs type="person" ref="#Satan">the great Tempter</rs> loves<app>
-                        <rdg wit="#pubC1">!</rdg><rdg wit="#msC1">.</rdg>
+                  <l xml:id="Chas_l_2098">Which <rs type="person" ref="#Satan">the great Tempter</rs> <app>
+                     <rdg wit="#pubC1">loves!</rdg><rdg wit="#msC1">loves.</rdg>
                      </app></l>
                </sp>
                <sp who="#Fairfax">
@@ -7931,13 +7863,9 @@
                         <rdg wit="#pubC1">b</rdg><rdg wit="#msC1">B</rdg>
                      </app>e quick! </l>
                   <stage type="business"><app>
-                        <rdg wit="#pubC1">(Exit <persName ref="#Hacker_Ch1"
-                           >Hacker</persName>.)</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">Exit <persName ref="#Hacker_Ch1">Hacker</persName><app>
-                              <rdg wit="#pubC1">.</rdg>
-                           </app></rdg>
-                     </app></stage>
+                        <rdg wit="#pubC1">(Exit <persName ref="#Hacker_Ch1">Hacker</persName>.)</rdg>
+                        <rdg wit="#msC1">Exit <persName ref="#Hacker_Ch1">Hacker</persName></rdg></app>
+                              </stage>
                   <l xml:id="Chas_l_2169">Is the scaffold all prepared? The headsman waiting</l>
                   <l xml:id="Chas_l_2170">With shrouded visage <app>
                         <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
@@ -8185,29 +8113,21 @@
                         <rdg wit="#msC1">,</rdg>
                      </app> save the living sea</l>
                   <l xml:id="Chas_l_2242">Of human faces, blent into one mass</l>
-                  <l xml:id="Chas_l_2243">Of sentient various life<app>
-                        <rdg wit="#pubC1">:</rdg><rdg wit="#msC1">;</rdg>
+                  <l xml:id="Chas_l_2243">Of sentient various <app>
+                     <rdg wit="#pubC1">life:</rdg><rdg wit="#msC1">life;</rdg>
                      </app> woman <app>
                         <rdg wit="#pubC1">and</rdg><rdg wit="#msC1">&amp;</rdg>
                      </app> man, </l>
                   <l xml:id="Chas_l_2244">Childhood <app>
                         <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
                      </app> infancy<app>
-                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
-                     </app> youth <app>
-                        <rdg wit="#msC1">&amp;</rdg><rdg wit="#pubC1">and</rdg>
-                     </app> age<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                  </l>
+                        <rdg wit="#pubC1">, and youth and age,</rdg><rdg wit="#msC1"> &amp; youth &amp; age</rdg></app></l>
                   <l xml:id="Chas_l_2245">Commingled<app>
                         <rdg wit="#msC1">,</rdg>
                      </app> with its multitudinous eyes</l>
-                  <l xml:id="Chas_l_2246">Upturned in expectation. Aweful gaze<app>
-                        <rdg wit="#pubC1">!</rdg>
-                     </app></l>
-                  <l xml:id="Chas_l_2247">Who may abide thy power<app>
-                        <rdg wit="#pubC1">?</rdg><rdg wit="#msC1">!</rdg>
+                  <l xml:id="Chas_l_2246">Upturned in expectation. Aweful <app><rdg wit="#pubC1">gaze!</rdg><rdg wit="#msC1">gaze</rdg></app></l>
+                  <l xml:id="Chas_l_2247">Who may abide thy <app>
+                     <rdg wit="#pubC1">power?</rdg><rdg wit="#msC1">power!</rdg>
                      </app></l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -8257,14 +8177,8 @@
                      <rdg wit="#msC1">&#8212;</rdg>
                      </app> Start ye, Sirs,</l>
                   <l xml:id="Chas_l_2264">To hear the word? Health to King <persName
-                        ref="#Chas1_MRM">Charles</persName><app>
-                        <rdg wit="#pubC1">,</rdg><rdg wit="#msC1">!</rdg><rdg wit="#pubC1">and</rdg>
-                     </app><app>
-                        <rdg wit="#msC1">&amp;</rdg>
-                     </app> peace<app>
-                        <rdg wit="#pubC1">,</rdg>
-                     </app>
-                  </l>
+                     ref="#ChasII">Charles</persName><app>
+                        <rdg wit="#pubC1">, and peace,</rdg><rdg wit="#msC1">! &amp; peace</rdg></app></l>
                   <l xml:id="Chas_l_2265">To this fair realm! And when that blessed time</l>
                   <l xml:id="Chas_l_2266">Of rightful rule shall come, say that I left</l>
                   <l xml:id="Chas_l_2267">For the bold traitors that condemned, the cowards</l>
@@ -8374,9 +8288,7 @@
                      </app>
                   </l>
                   <stage type="business"><app>
-                        <rdg wit="#pubC1">(</rdg>
-                     </app>Exit <persName ref="#Ireton">Ireton</persName>.<app>
-                        <rdg wit="#pubC1">)</rdg>
+                        <rdg wit="#pubC1">(Exit <persName ref="#Ireton">Ireton</persName>.)</rdg><rdg wit="#msC1">Exit Ireton.</rdg>
                      </app></stage>
                   <l xml:id="Chas_l_2288">It were not meet that earthly loves should mingle</l>
                   <l xml:id="Chas_l_2289">With yonder dying prayer. Yes! Still he kneels.</l>
@@ -8405,10 +8317,7 @@
                         <rdg wit="#pubC1">;</rdg>
                   </app>&#8212;I'd not send a sinful soul</l>
                   <l xml:id="Chas_l_2296">Before his time to his <app>
-                        <rdg wit="#pubC1">accompt</rdg><rdg wit="#msC1">account</rdg><rdg wit="#pubC1">,</rdg>
-                     </app> good <persName ref="#Bradshaw">Bradshaw</persName>!<app>
-                        <rdg wit="#msC1">&#8212;</rdg>
-                     </app></l>
+                     <rdg wit="#pubC1">accompt, good <persName ref="#Bradshaw">Bradshaw</persName>!</rdg><rdg wit="#msC1">account good <persName ref="#Bradshaw">Bradshaw</persName>!&#8212;</rdg></app></l>
                   <l xml:id="Chas_l_2297">But no delay!<app>
                      <rdg wit="#msC1">&#8212;</rdg><rdg wit="#pubC1"> </rdg>
                      </app>Is he still kneeling?&#8212;Mark me<app>
