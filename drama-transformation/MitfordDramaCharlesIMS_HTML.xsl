@@ -215,10 +215,13 @@
            </xsl:for-each>    
        </ul>   
    </xsl:template>
-    <xsl:template match="head">
+    <xsl:template match="head[not(parent::div[@type='ms_insertion'])]">
         <h2><xsl:apply-templates/></h2>
     </xsl:template> 
-  
+    <xsl:template match="head[parent::div[@type='ms_insertion']]">
+        <!--2018-05-27 ebb: This is for the passage marked for insertion in the Charles 1 ms. I think it should be styled like a stage direction since it sits in a similarly "meta" position in relation to the lines of the play, and I'd like to be visible in the output.  -->
+        <span class="stage"><xsl:apply-templates/></span>
+    </xsl:template> 
     
     <xsl:template match="div[@type='preface']"> 
          <h2>Preface</h2><xsl:text> </xsl:text><xsl:value-of select="@n"/>
@@ -280,26 +283,34 @@
     </xsl:template>
     
     <xsl:template match="sp">
+        <xsl:apply-templates/>
         <!--2018-03-01: We seem to be missing the processing of stage directions within sp elements, so I'm adding a general apply-templates after the processing of speakers, and an xsl:if in front -->
-        <xsl:if test="speaker[preceding-sibling::*]">
+        <!--2018-05-27 ebb: Commenting this out b/c it's not the right strategy. A general apply-templates should handle everything within <sp>: <xsl:if test="speaker[preceding-sibling::*]">
             <xsl:apply-templates select="speaker/preceding-sibling::*"/>
         </xsl:if>
         <span class="speaker"><xsl:apply-templates select="speaker"/></span>
-    <xsl:apply-templates select="speaker/following-sibling::*"/>
+    <xsl:apply-templates select="speaker/following-sibling::*"/>-->
     </xsl:template>
+    <xsl:template match="speaker">
+        <span class="speaker"><xsl:apply-templates/></span>
+    </xsl:template>
+    
    <!--2018-02-17 ebb: template rule draft to try to suppress lg, l, and head elements from being processed when they are ONLY present in the NOT current witness:-->
-    <xsl:template match="head[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] | lg[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])]  | l[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] "/>
+    <xsl:variable name="suppressFactor" select="not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit] and count(rdg) = 1])"/>
+    <!--head[$suppressFactor]  | l[$suppressFactor] | sp[$suppressFactor] | speaker[$suppressFactor] | stage[$suppressFactor] | div[$suppressFactor] -->
+    <xsl:template match="*[$suppressFactor]"/>
     <xsl:template match="lg">
         <span class="lg"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit])]">
+    <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit]) and not(descendant::app[rdg[@wit!=$currWit] and not(rdg[@wit=$currWit])])]">
         <span class="line" id="L{count(preceding::l) + 1}">
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
             <span class="lineNum"><xsl:value-of select="count(preceding::l) + 1"/></span>  
         </span>
     </xsl:template>
+  
     
 
     <xsl:template match="text//p">
@@ -623,9 +634,7 @@
         <xsl:apply-templates/>
         <br/>
     </xsl:template>
-    <xsl:template match="lb">
-        <br/>
-    </xsl:template>
+    
     <xsl:template match="q">
         <span class="q"><xsl:apply-templates/></span>
     </xsl:template>

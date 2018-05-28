@@ -282,16 +282,17 @@
     <xsl:template match="sp">
      <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="speaker">
+    
+    <xsl:template match="speaker[not(ancestor::rdg[@wit!=current()])]">
         <span class="speaker"><xsl:apply-templates/></span>
     </xsl:template>
    <!--2018-02-17 ebb: template rule draft to try to suppress lg, l, and head elements from being processed when they are ONLY present in the NOT current witness:-->
-    <xsl:template match="head[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] | lg[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])]  | l[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] "/>
+ <!--   <xsl:template match="head[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] | lg[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])]  | l[not(ancestor::rdg[@wit=$currWit]) and not(ancestor::app[rdg[@wit=$currWit]]) and not(descendant::app[rdg[@wit=$currWit]])] "/>-->
     <xsl:template match="lg">
        <!-- <span class="lg"><xsl:apply-templates/></span>-->
     </xsl:template>
     
-    <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit])]">
+    <xsl:template match="l[not(ancestor::rdg[@wit!=$currWit]) and not(descendant::app[rdg[@wit!=$currWit] and not(rdg[@wit=$currWit])])]">
         <!--2018-04-05: I tried the code below for this template match (and have probably attempted it before) to exclude blank numbered lines from appearing in the published text when there is text in the MS play missing from the published version.
         l[not(ancestor::rdg[@wit!=$currWit]) and not(descendant::app[rdg[@wit!=$currWit]] and not(rdg[@wit=$currWit]))]
         
@@ -628,9 +629,7 @@
         <xsl:apply-templates/>
         <br/>
     </xsl:template>
-    <xsl:template match="lb">
-        <br/>
-    </xsl:template>
+   
     <xsl:template match="q">
         <span class="q"><xsl:apply-templates/></span>
     </xsl:template>
