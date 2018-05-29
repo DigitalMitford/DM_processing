@@ -457,7 +457,7 @@
                   <role corresp="#Bradshaw">Lord President
                      <persName ref="#Bradshaw">Bradshaw</persName>
                   </role>
-                  <roleDesc>(Judge appointed by the
+                  <roleDesc> (Judge appointed by the
                         <orgName ref="#House_Commons">Commons</orgName> to try the King)</roleDesc>
                   <actor>
                      <app><rdg wit="#pubC1">
@@ -1303,7 +1303,7 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_l_258">Why this</l>
-                  <l xml:id="Chas_l_259">Is mercy. If thou saw'st one, match in hand<app><rdg wit="#msC1">,</rdg></app></l>
+                  <l xml:id="Chas_l_259">Is mercy. If thou saw'st one, match in hand<app><rdg wit="#msC1">,</rdg></app><note resp="#rnes">An anachronism. The chemical match in the modern sense was not invented until 1805, in France. In Cromwell's time, and, indeed, Mitford's youth, a “match” was a variety of other things, including a torch and, as here, a device used to ignite machines of war.</note></l>
                   <l xml:id="Chas_l_260">Approach a mine hollowed beneath some rich</l>
                   <l xml:id="Chas_l_261">And populous town, would'st strike him down at once<app><rdg wit="#pubC1">,</rdg></app></l>
                   <l xml:id="Chas_l_262">Or wait till he had fired the train<app><rdg wit="#pubC1">.</rdg><rdg wit="#msC1">?</rdg></app></l>
@@ -7665,6 +7665,10 @@
                </sp>
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
+                  <stage><app>
+                     <rdg wit="#msC1"><emph rend="underline">(advancing to the front of the
+                        stage)</emph></rdg>
+                  </app></stage>
                   <l xml:id="Chas_l_2118">Ha! <app>
                         <rdg wit="#pubC1">a</rdg><rdg wit="#msC1">A</rdg>
                      </app>lone!<app>
@@ -7675,10 +7679,7 @@
                         <rdg wit="#pubC1">.</rdg><rdg wit="#msC1">!</rdg>
                      </app></l>
                </sp>
-               <stage><app>
-                     <rdg wit="#msC1"><emph rend="underline">(advancing to the front of the
-                           stage)</emph></rdg>
-                  </app></stage>
+               
                <sp who="#Fairfax">
                   <speaker>Fair.</speaker>
                   <l xml:id="Chas_l_2119">What would<app>
