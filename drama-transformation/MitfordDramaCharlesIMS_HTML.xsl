@@ -247,7 +247,7 @@
 
       
        <xsl:if test="not(descendant::role//app) or descendant::app[(rdg[@wit=$currWit])]"><tr>
-           <td><xsl:if test="role"><span class="role"><xsl:apply-templates select="role"/></span><xsl:text>&#x9;</xsl:text></xsl:if>
+           <td><xsl:if test="role"><span class="role"><xsl:apply-templates select="role"/></span></xsl:if>
                 
                <xsl:apply-templates select="roleDesc"/></td>
            <xsl:if test="actor[not(descendant::app)] or actor[descendant::app[rdg[@wit=$currWit]]]"> <td><xsl:apply-templates select="actor/node()"/></td></xsl:if>
@@ -364,7 +364,7 @@
         <p><xsl:apply-templates/></p>
     </xsl:template>
 
-    <xsl:template match="note[not(ancestor::notesStmt)]">
+    <xsl:template match="note[not(ancestor::notesStmt) and not(ancestor::note)]">
         <span id="Note{count (preceding::note) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note)+ 1"/>] <span class="note"
                 id="n{count (preceding::note) + 1}">
@@ -372,6 +372,12 @@
                     <xsl:value-of select="@resp"/>
             </span>
         </span>
+    </xsl:template>
+    <xsl:template match="note[ancestor::note]">
+        <span class="embedded_note">
+                <xsl:apply-templates/><xsl:text>&#8212;</xsl:text>
+                <xsl:value-of select="@resp"/>
+            </span>
     </xsl:template>
 
    <!-- <xsl:template match="rs">

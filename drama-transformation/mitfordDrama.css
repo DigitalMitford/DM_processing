@@ -181,12 +181,12 @@ td {text-align:left; padding:2px}
 td table tr td {padding-left:10em; padding-right:10em;}
 
 span.role{
-color: #990000; font-size: 1.1em; font-weight:700   
+color: #990000; font-size: 1em; font-weight:700; display:inline; margin-right:-.2em;   
 }
 span.castGroup{
 font-size:1.2em; color:navy; font-weight:700    
 }
-span.speaker {color: #990000; font-size: 1.1em; font-weight:700; display:block; padding:1.2em;   
+span.speaker {color: #990000; font-size: 1.1em; font-weight:700; display:block; padding-top:.5em; padding-bottom:.5em;  
     
 }
 span.lg {display:block; padding:2em;}
@@ -322,6 +322,9 @@ right:50%;
     overflow-y:scroll;
    display:none;
     }
+span.embedded_note {background-color: #ffffd6; }    
+    
+    
     }
  
  @media print {
