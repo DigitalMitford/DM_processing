@@ -6,7 +6,7 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <!--2018-05-28 ebb: In the comments below, "singleton app" is what we need to deal with: an app that has only one rdg element inside. It's not highlighting variation effectively in our HTML transformation, so we need to expand its scope and give it another rdg to compare to.
     
-   Currently, I am worried about how I'm processing the tvar parameter. -->
+   Currently, I am worried about how I'm processing the tvar parameter. In the latest iteration, elements preceding apps are being trimmed out but not ported in, so something's up with some params tunneling. -->
     <!--2018-05-28 ebb: This is mostly not working. I'm duplicating a bunch of perfectly good apps with double witnesses, and in the singleton apps, I am trimming words out but not patching them in. This might be salvagable, but maybe back to drawing board. -->
     <!--2018-05-27 ebb: This is an adaptation of the Rienzi ID transformation (made 2018-02-24), designed to solve a crit apparatus interface dilemma in the markup of the plays, when the <app> element does not contain a rdg witness for the manuscript edition, or does not represent all the witnesses. In adapting this for Charles 1, I'm adapting for a play with only TWO witnesses, EITHER of which might be missing in an app.
         
