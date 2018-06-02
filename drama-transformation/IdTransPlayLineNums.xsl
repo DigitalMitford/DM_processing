@@ -9,10 +9,13 @@
         </xsl:copy>
     </xsl:template>
 
+    <xsl:template match="front//div//l">
+        <l xml:id="Chas_{substring(ancestor::div[1]/@type/string(), 1, 3)}_L{count(preceding::l[ancestor::div[1]/@type = current()/ancestor::div[1]/@type]) + 1}"><xsl:apply-templates/></l>
+    </xsl:template>
+    
     <xsl:template match="body//l">
-        <l xml:id="Rienzi_l_{count(./preceding::l)+1}">
-            <xsl:apply-templates/>
-        </l>
+        <l xml:id="Chas_{ancestor::div[parent::body]/@type}_{ancestor::div[1]/@n}_L{count(preceding::l[ancestor::body]) + 1}"><xsl:apply-templates/></l>
+        
     </xsl:template>
 
 </xsl:stylesheet>
