@@ -1,0 +1,87 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://digitalmitford.org/iiifGallery/myManifests/Manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Mitford Letter",
+  "description": "a manifest of our practice of IIIF",
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "viewingDirection": "left-to-right",
+  "sequences": [
+    { "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "http://digitalmitford.org/iiifGallery/myManifests/my-sequence",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "Whatever-1",
+          "label": "canvas number 1",
+          "description": "recto (part 1)",
+          "@type": "sc:Canvas",
+          "height": 5000,
+          "width": 3573,
+          "images": [
+            {
+              "@id": "annotation-id",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://digitalmitford.org/my-canvas/1",
+              "resource": {
+                "@id": "whatever-image-id",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 5000,
+                "width": 3573,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://digitalmitford.org:8182/iiif/2/1b.JPG",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              }
+            }
+            
+          
+          ]
+          
+        },
+
+        
+        {
+          "@id": "Whatever-2",
+           "label": "canvas number 2",
+          "description": "verso (part 2)",
+          "viewingHint": "facing pages",
+          "@type": "sc:Canvas",
+          "height": 5000,
+          "width": 3573,
+          "images": [
+            {
+              "@id": "annotation-2",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://digitalmitford.org/my-canvas/2",
+              "resource": {
+                "@id": "image-2",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 5000,
+                "width": 3573,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://digitalmitford.org:8182/iiif/2/2a.JPG",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              }
+            }
+          ]
+        }
+      ],
+       "otherContent": [
+    {
+
+      "@id": "http://digitalmitford.org/iiifGallery/myManifests/MyAnnotationList.json",
+      "@type": "sc:AnnotationList"
+    }
+  ]
+
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+"@context": "http://iiif.io/api/presentation/2/context.json",
+"@type": "sc:AnnotationList",
+"resources": [
+{
+"@id": "_:N43deaea09a5345379218db8cb72600c3",
+"@type": "oa:Annotation",
+"motivation": "sc:painting",
+"resource": {
+"@id": "7377e5fe51c46454bb01b62a817a4d42",
+"@type": "cnt:ContentAsText",
+"format": "text/plain",
+"chars": "Erant aut[em] qui manducaverant",
+"language": "lat"
+},
+"on": "https://example.com/my-canvas/2#xywh=600,450,1017,166"
+}
+]
+}

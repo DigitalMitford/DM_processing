@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="mirador/css/mirador-combined.css">
+    <title>Mirador Viewer</title>
+    <style type="text/css">
+     #viewer {
+       width: 100%;
+       height: 400px;
+       position: absolute;
+     }
+     #viewerContainer {
+     width:100%
+     margin: 0 auto;
+     }
+    </style>
+  </head>
+  <body>
+    <h1>My Awesome Gallery</h1>
+    <div id="viewerContainer">
+      <p>Navel sixteen cyclops omphalos portals of discovery sweets of sin love laughs at locksmiths Circe Tinbad the Tailor rhododendrons Rudy Sinbad the Sailor. Like a shot off a shovel omphalos yellow the scrotumtightening sea transmigration stately ben Bloom Elijah. Blazes Boylan Sirens the scrotumtightening sea the snotgreen sea faintly scented urine Love loves to love love ineluctable modality of the visible stately Frseeeeeeeeeeeeeeeeeeeefrong Buck Mulligan Sandymount strand. The snotgreen sea transmigration Rudy Proteus song Howth Head stately sixteen. Contransmagnificandjewbangtantiality Rudy ineluctable modality of the visible Sinbad the Sailor sixteen oxen of the sun Agenbite of Inwit cyclops transmigration rhododendrons. Molly Bloom Howth Head Stephen gorgonzola burgundy navel. The citizen yes I said yes I will Yes contransmagnificandjewbangtantiality Davy Byrne’s faintly scented urine Frseeeeeeeeeeeeeeeeeeeefrong. Tinbad the Tailor mellow Blazes Boylan Sirens melons the scrotumtightening sea love sixteen song contransmagnificandjewbangtantiality Molly Poldy letter. Burgundy Nausicaa sixteen smellow Molly Poldy.</p>
+      
+     <p> Molly soft yes I said yes I will Yes 7 Eccles Street oxen of the sun plump metempsychosis. Mellow metempsychosis Stephen letter Frseeeeeeeeeeeeeeeeeeeefrong melons portals of discovery Circe Sirens. Sirens Proteus O rocks cyclops the citizen Martha burgundy smellow sixteen oxen of the sun. The snotgreen sea Sirens smellow Frseeeeeeeeeeeeeeeeeeeefrong yellow rhododendrons seedcake plump. Met him pike hoses Molly plump moody brooding Stephen the snotgreen sea Sandymount strand Proteus nighttown Martha Kinch Dedalus. Howth Head Dedalus the citizen the snotgreen sea Molly sixteen omphalos gorgonzola ineluctable modality of the visible. Mellow portals of discovery Stephen sweets of sin smellow burgundy ineluctable modality of the visible Sandymount strand seedcake. Sandycove la ci darem la mano plump he proves by algebra faintly scented urine Rudy the scrotumtightening sea nighttown navel. Mellow transmigration sixteen Love loves to love love Sinbad the Sailor la ci darem la mano Tinbad the Tailor the scrotumtightening sea Agenbite of Inwit fortyfoot contransmagnificandjewbangtantiality.</p>
+      
+      <p>Rhododendrons Sinbad the Sailor O rocks cyclops Dedalus nighttown Bloom. He proves by algebra stately Dedalus sixteen Bloom Sandymount strand love laughs at locksmiths Nausicaa soft. Portals of discovery Agenbite of Inwit kidneys yellow plump he proves by algebra Martha Sandymount strand sixteen moody brooding. Rhododendrons omphalos stately portals of discovery contransmagnificandjewbangtantiality letter. Fortyfoot Sandymount strand love the snotgreen sea burgundy melons metempsychosis navel seedcake nighttown. Love loves to love love sweets of sin Circe O rocks soft Sandymount strand Ithaca he proves by algebra met him pike hoses portals of discovery like a shot off a shovel Buck Mulligan yes I said yes I will Yes. Gerty MacDowell Stephen stately cyclops Agenbite of Inwit Sinbad the Sailor Poldy smellow Nausicaa navel. Yes I said yes I will Yes Poldy melons Sirens seedcake metempsychosis Sandymount strand soft sweets of sin. Mellow nighttown portals of discovery yellow moody brooding Proteus smellow the citizen Nausicaa sixteen Martha cyclops omphalos.  
+      </p>
+      <div id="viewer"></div></div>
+
+    <script src="mirador/mirador.min.js" type="text/javascript"></script>
+    <script src="https://rawgit.com/mejackreed/annotot/master/app/assets/javascripts/annotot/annotot_endpoint.js"></script>
+    <script type="text/javascript">
+
+     $(function() {
+       myMiradorInstance = Mirador({
+         id: "viewer",
+         layout: "1x2",
+         buildPath: "mirador/",
+         data: [
+           { manifestUri: "https://iiif.lib.harvard.edu/manifests/drs:48309543", location: "Harvard University"},
+           { manifestUri: "http://digitalmitford.org/iiifGallery/myManifests/Manifest.json", location: "Digital Mitford"},
+         { manifestUri: "https://gist.githubusercontent.com/mejackreed/2a84eab914273f00114c10ee239b5aa5/raw/manifest.json", location: "IIIF Class Pic"}  
+         ],  
+         windowObjects: [{
+           loadedManifest: "https://iiif.lib.harvard.edu/manifests/drs:48309543", 
+           viewType: "ImageView",
+           slotAddress: "row1.column1"
+         },
+         {
+           loadedManifest: "http://digitalmitford.org/iiifGallery/myManifests/Manifest.json", 
+           viewType: "ImageView",
+           slotAddress: "row1.column2"
+         }
+         
+         ],
+          annotationEndpoint: {
+   name: "Annotot",
+   module: "AnnototEndpoint",
+   options: {
+     endpoint: "http://ras.scta.info/annotations"
+   }
+ }
+        
+       });
+     });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+[
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "oa:Annotation",
+        "motivation": ["oa:commenting"],
+        "resource": [
+            {
+                "@type": "dctypes:Text",
+                "format": "text/html",
+                "chars": "<p>Stuff<\/p>"
+            }
+        ],
+        "on": [
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/canvas/cma-1955-74_000b.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=812,1082,61,92"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M842.74266,1173.54816c0,-20.35623 10.17812,-40.71247 30.53435,-61.0687c0,-16.86366 -13.67069,-30.53435 -30.53435,-30.53435c-16.86366,0 -30.53435,13.67069 -30.53435,30.53435c20.35623,20.35623 30.53435,40.71247 30.53435,61.0687z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;fixedSize&quot;:true,&quot;editable&quot;:true,&quot;deleteIcon&quot;:null,&quot;annotation&quot;:null}\" id=\"pin_c9526928-b613-4cd5-a8a8-d2144c421437\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/><\/svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/manifest.json",
+                    "@type": "sc:Manifest"
+                }
+            }
+        ],
+        "@id": "6c2529a8-f1d2-4bcd-9e55-febac101616f"
+    },
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "oa:Annotation",
+        "motivation": ["oa:commenting"],
+        "resource": [
+            {
+                "@type": "dctypes:Text",
+                "format": "text/html",
+                "chars": "<p>look beneficent.<\/p>"
+            }
+        ],
+        "on": [
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/canvas/cma-1955-74_000b.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=442,2389,2520,1922"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M442.43683,2389.23288h1259.84199v0h1259.84199v961.07006v961.07006h-1259.84199h-1259.84199v-961.07006z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_d713850c-afac-44a6-9622-8634dc798183\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/><\/svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/manifest.json",
+                    "@type": "sc:Manifest"
+                }
+            }
+        ],
+        "@id": "7df294b1-e9fa-4ca1-97d9-02bba804367b"
+    },
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "oa:Annotation",
+        "motivation": ["oa:commenting"],
+        "resource": [
+            {
+                "@type": "dctypes:Text",
+                "format": "text/html",
+                "chars": "<p>a naked person.<\/p>"
+            }
+        ],
+        "on": [
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/canvas/cma-1955-74_000b.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=449,642,327,534"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M727.57894,1097.69691c-30.16299,44.85019 -72.71277,78.2486 -115.46875,78.2087v0v0c-42.75598,-0.0399 -80.0036,-31.28358 -115.46875,-78.2087c-35.46514,-46.92512 -49.24999,-118.42994 -47.82872,-188.81251c1.42127,-70.38256 18.04867,-139.64287 47.82872,-188.81251c29.78005,-49.16964 72.71277,-78.2486 115.46875,-78.2087c42.75598,0.0399 85.33521,29.19867 115.46875,78.2087c30.13353,49.01003 47.82136,117.87131 47.82872,188.81251c0.00736,70.9412 -17.66573,143.96232 -47.82872,188.81251z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"ellipse_054f8057-f769-4755-aef8-c25e2b116faa\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/><\/svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/manifest.json",
+                    "@type": "sc:Manifest"
+                }
+            },
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/canvas/cma-1955-74_000b.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=597,1189,1126,656"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M762.23609,1284.93816c103.92537,-55.13271 250.52893,-96.18818 397.84294,-96.13913v0v0c147.314,0.04905 275.64921,38.45578 397.84294,96.13913c122.19372,57.68335 169.68888,145.58165 164.79194,232.10039c-4.89693,86.51874 -62.18596,171.65793 -164.79194,232.10039c-102.60599,60.44246 -250.52893,96.18818 -397.84294,96.13913c-147.314,-0.04905 -294.01906,-35.89288 -397.84294,-96.13913c-103.82388,-60.24625 -164.76657,-144.89494 -164.79194,-232.10039c-0.02537,-87.20545 60.86657,-176.96767 164.79194,-232.10039z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"ellipse_d8c0ea83-1475-4c63-8ee0-7c018beb4605\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/><\/svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/manifest.json",
+                    "@type": "sc:Manifest"
+                }
+            },
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/canvas/cma-1955-74_000b.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=167,577,963,1369"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M989.24296,1745.41743c-88.94634,114.97963 -214.41956,200.60106 -340.50083,200.49876v0v0c-126.08126,-0.1023 -235.91919,-80.19977 -340.50083,-200.49876c-104.58163,-120.299 -145.23119,-303.61145 -141.04006,-484.04684c4.19113,-180.43539 53.22294,-357.99371 141.04006,-484.04684c87.81712,-126.05313 214.41956,-200.60106 340.50083,-200.49876c126.08126,0.1023 251.64135,74.85482 340.50083,200.49876c88.85948,125.64395 141.01834,302.17931 141.04006,484.04684c0.02172,181.86753 -52.09372,369.06721 -141.04006,484.04684z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"ellipse_a3c94c14-b2d4-4ca9-b820-0278b4e68789\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/><\/svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://www.e-codices.unifr.ch/metadata/iiif/sl-0002/manifest.json",
+                    "@type": "sc:Manifest"
+                }
+            }
+        ],
+        "@id": "aff1c577-c1b1-4492-8a1a-ed0ae4a27a66"
+    }
+]

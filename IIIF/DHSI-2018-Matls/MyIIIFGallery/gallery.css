@@ -1,0 +1,10 @@
+body {background: #f8f8ff;}
+div#navigator {margin:auto; width:100%; padding:1em; text-align:left;}
+div#navigator > ul > li {font-weight: 800 !important; font-size:1.5em !important; color:brown !important; padding:.25em !important; }
+div#navigator > ul > li > ol > li {font-weight:300; padding:.5em;}
+div#navigator > ul > li > ol > li > ul > li {font-size:smaller; padding: .25em;}
+div#myImageViewer { padding:2em; margin:auto; height:500px; width:200px; max-width:200px; max-height:500px; }
+
+
+
+

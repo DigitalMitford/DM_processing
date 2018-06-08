@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description"
+            content="IIIF Gallery of a selection of Mary Russell Mitford's letters" />
+        <meta name="author" content="Elisa Beshero-Bondar" />
+        <title>Mitford Letters Gallery</title>
+        <link rel="stylesheet" type="text/css" href="gallery.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.3.1/openseadragon.min.js">/**/</script>
+    </head>
+    <body>
+        
+        <h1>Mary Russell Mitford’s Letters</h1>
+        <div id="myImageViewer"></div>
+        <script type="text/javascript">
+        var viewer = OpenSeadragon ({
+        id:"myImageViewer",
+        tileSources: ["http://127.0.0.1:8182/iiif/2/2b.JPG/info.json"],
+        showNavigationControl:false
+        });
+        </script>
+     <div id="navigator">   <ul>
+            <li>1823-10-01 to Benjamin Robert Haydon <ol>
+                    <li>Page 1<ul>
+                            <li><a href="1A.html">image 1: <img
+                                        src="http://127.0.0.1:8182/iiif/2/1a.JPG/full/pct:4/0/bitonal.jpg"
+                                        alt="1a" /></a></li>
+                            <li><a href="1B.html">image 2: <img
+                                        src="http://127.0.0.1:8182/iiif/2/1B.JPG/full/pct:4/0/default.jpg"
+                                        alt="1b" /></a></li>
+                        </ul></li>
+
+                    <li>Page 2 with address leaf: <ul><li><a href="2A.html">image 1: <img
+                                src="http://127.0.0.1:8182/iiif/2/2a.JPG/full/pct:4/0/default.jpg"
+                                alt="2a" /></a></li>
+                    <li><a href="2B.html">image 2: <img
+                                src="http://127.0.0.1:8182/iiif/2/2b.JPG/full/pct:4/0/default.jpg"
+                                alt="2b" /></a></li>
+                    <li><a href="pmSketch.html">Postmarks and Sketch: <img
+                                src="http://127.0.0.1:8182/iiif/2/2b.JPG/167,67,901,597/pct:10/0/default.jpg"
+                                alt="2b" /></a></li></ul>
+                    </li>
+                </ol>
+            </li>
+
+        </ul></div>
+       
+    </body>
+</html>
