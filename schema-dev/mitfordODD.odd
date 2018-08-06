@@ -38,7 +38,35 @@
             <moduleRef key="figures"/><!--ebb: We may want to make a table of postmark images correlated to IDs in its own file. -->
             <moduleRef key="gaiji"/><!--ebb: included for charDecl if we want to make a list of metamarks -->
             
-                  
+            <!-- Validation for general xml:id syntax and hashtags for referencing, plus critical apparatus checking of witness values-->
+            <constraintSpec scheme="schematron" ident="xmlIDs">
+               <constraint>
+                  <sch:rule context="tei:TEI//@xml:id" role="fatal">
+                     <sch:report test="matches(., '\s+')">
+                        @xml:id values may NOT contain white spaces!
+                     </sch:report>        
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+              <constraintSpec scheme="schematron" ident="hashtaggery">
+                 <constraint>
+                    <sch:rule context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp | tei:TEI//@wit" role="fatal">
+                     <sch:assert test="starts-with(., '#')">
+                        Attributes @ref, @who, @corresp and @wit must begin with a hashtag.
+                     </sch:assert>  
+                    </sch:rule>
+                 </constraint>
+              </constraintSpec>   
+            <constraintSpec scheme="schematron" ident="listWitCheck">
+               <constraint>
+                  <sch:rule context="tei:TEI//@wit" role="fatal">
+                     <sch:let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
+                     <sch:assert test="every $token in $tokens satisfies $token = //tei:TEI//tei:listWit//@xml:id">
+                        Every reading witness (@wit) after the hashtag must match an xml:id defined in the list of witnesses in this file!
+                     </sch:assert>
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
            
          </schemaSpec>
       </body>
