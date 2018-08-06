@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+   xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   version="2.9.1"
+   xml:lang="en">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Digital Mitford Project ODD</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Prepared in TEI P5 by Elisa Beshero-Bondar in the Digital Mitford GitHub repository: <ref target="https://github.com/DigitalMitford/DM_processing"/>. Date last worked on: <date when="2018-08-06">6 August 2018</date></authority>
+            <availability><licence>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) approved for Free Cultural Works <ref target="https://creativecommons.org/licenses/by-sa/4.0/"/></licence></availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <schemaSpec ident="mitfordODD" start="TEI teiCorpus" prefix="tei">
+            <moduleRef key="tei"/>
+            <moduleRef key="core" include="distinct listBibl bibl title author editor publisher pubPlace biblScope cit quote rs desc date time choice sic reg del head lg l gap milestone pb lb note num p q ref respStmt resp textLang"/>
+            <!--The elements that start the above list, from listBibl through biblScope, are used for bibliographies and bibliographic citations. In your markup within Lovecraft's texts, you'll likely most often be using title. Use title when the title of a work is referred to, and bibl when it's a fuller reference that might contain a title and an author, *or* is a reference to a "that book by so-and-so" which isn't really its title. 
+            Use the @level attribute on title to control what kind of title it is: <title level="j"> for journal articles, and <title level="m"> for books (known as "monographs"). 
+            <cit>, <quote>, and <bibl> are used together for a quoted passage in the text with a source attribution, like this:
+            
+            <cit><quote>To be, or not to be</quote><bibl><title level="m">Hamlet</title> by <author>William Shakespeare</author></bibl></cit>
+            -->
+           
+            <!--Here's something you can do to make your text more searchable: The contents of <sic> might be worth pulling when you extract interesting words coded with <w>:
+               <choice><sic>Esquimaux</sic><reg>Eskimo</reg></choice>-->
+               
+            <moduleRef key="analysis" include="w phr cl"/>
+            <moduleRef key="header"/>         
+            <moduleRef key="namesdates" include="persName placeName orgName location geo terrain listPerson person forename surname occupation nationality listOrg org listPlace place"/>
+            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
+                  
+            <classSpec ident="att.global" type="atts" mode="change" module="tei">
+               <attList>
+                  <attDef ident="lang" mode="add">
+                     <desc>@lang is to be used to indicate a fictional or a "conlang" (constructed language), and takes a closed attribute list distinct to the project. In this project the @lang value "rly" designates the Cthulhu language, R'lyehian.</desc>
+                     <valList type="closed">
+                        <valItem ident="rly"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </classSpec>
+         
+            <elementSpec ident="w" module="analysis" mode="change">
+               <!--2017-03-11 ebb: THIS RULE IS NO LONGER NEEDED. SEE the attDef datatype/dataRef definition below on how to properly constrain an attribute value with a regular expression. Thanks to Lou Burnard for helping to debug this. :-) -->
+        <!--    <constraintSpec scheme="isoschematron" ident="synsetFormat">
+                  <constraint>
+                     <sch:rule context="tei:w/@synset">
+                        <sch:assert test="matches(., '^[a-z]+\.[a-z]\.\d{2}$')">
+                           When using the attribute @synset on a w element, it must match the wordnet format, like so: "ghost.n.03", "frighten.v.01" , "eldritch.a.01". 
+                        </sch:assert>
+                     </sch:rule>
+                  </constraint>
+               </constraintSpec>-->
+            <attList>
+               <attDef ident="synset" mode="add" usage="rec">
+                  <datatype>
+                     <!--<rng:text/>-->
+                 <dataRef name="token" restriction="[a-z]+\.[a-z]\.\d{2}"/>
+                     <!--2017-03-11 ebb: learned from Lou Burnard that what we need here is @name="token" intead of @key="teidata.pattern" because you can't use @restriction with @key (though this isn't well documented). (You can't use
+                     @key because it might point to a data spec that already includes a restriction.) NOTE: we don't need (or want) to use ^ and $ here; they appear to cause misfires in the validation. (No need to designate the start and end of the attribute value here.) -->
+                     <!--2016-12-05 ebb: attempting to fix with teidata.pattern instead of data.pattern.
+                        2016-12-02 ebb: This doesn't seem to be working on its own, so we added a Schematron constraint to control the content.-->
+                  </datatype>
+               </attDef>  
+               <attDef ident="synsetCount" mode="add" usage="rec">
+                  <datatype>
+                     <dataRef name="integer"/>
+                    <!--2017-03-11 ebb: Actually, this DOES seem to be working in the associated files.-->
+                     <!--2017-03-11: Lou Burnard, testing this in a simpler ODD, sees our dataRef name="integer" working just fine.--><!--2017-03-11: ebb: Try <rng:integer if the above doesn't work?/>-->
+                     <!--2016-12-02 ebb: This doesn't seem to be working on its own, so we added a Schematron constraint to control the content.-->
+                  </datatype>
+               </attDef>  
+            </attList>
+         </elementSpec>
+            <elementSpec module="namesdates" ident="geo" mode="change">
+               <classes mode="change">
+                  <memberOf key="att.typed" mode="add"/>  
+               </classes>
+               <constraintSpec scheme="schematron" ident="typing_geos">
+                  <constraint>
+                     <sch:rule context="tei:geo">
+                        <sch:assert test="parent::tei:location">Geo elements must be wrapped in a location element to bind pairs of geo-coordinates together.</sch:assert>
+                     </sch:rule>
+                 <sch:rule context="tei:geo[@type='lat']">
+                     <sch:assert test="matches(., '[NS]')">
+                        When a geo element is marked as @type="lat", its text must contain "N" or "S".
+                     </sch:assert>
+                  </sch:rule>
+                     <sch:rule context="tei:geo[@type='long']">
+                        <sch:assert test="matches(., '[EW]')">
+                           When a geo element marked as @type="long", its text must contain "E" or "W". 
+                        </sch:assert>
+                     </sch:rule>
+                  </constraint>
+               </constraintSpec>
+               <attList>
+                  <attDef ident="type" mode="replace" usage="rec">
+                     <datatype>
+                        <dataRef key="teidata.word"/>
+                     </datatype>
+                     <valList type="closed">
+                        <valItem ident="lat"/>
+                        <valItem ident="long"/>
+                     </valList>
+                  </attDef> 
+                  <attDef ident="subtype" mode="replace" usage="rec">
+                     <datatype>
+                        <dataRef key="teidata.word"/>
+                     </datatype>
+                     <valList type="closed">
+                        <valItem ident="fict"/>
+                        <valItem ident="real"/>
+                     </valList>
+                  </attDef> 
+               </attList>              
+            </elementSpec>
+         
+            <constraintSpec scheme="schematron" ident="pair_geos">
+             <constraint>
+                <sch:rule context="tei:location">
+                   <sch:assert test="count(tei:geo) = 2 and count(tei:geo[@type='lat']) = 1 and count(tei:geo[@type='long']) = 1">
+                      The location element must have two geo element children. 
+                      Of these, there must be one geo[@type='lat'] and one geo[@type='long'].
+                   </sch:assert>
+                </sch:rule>
+             </constraint>
+          </constraintSpec>
+ 
+         </schemaSpec>
+      </body>
+  </text>
+</TEI>
