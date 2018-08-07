@@ -10,16 +10,25 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Digital Mitford Project ODD</title>
+            <title>Digital Mitford ODD for Project Edition Files</title>
+            <author>Elisa Beshero-Bondar</author>
          </titleStmt>
          <publicationStmt>
             <authority>Prepared in TEI P5 by Elisa Beshero-Bondar in the Digital Mitford GitHub repository: <ref target="https://github.com/DigitalMitford/DM_processing"/>. Date last worked on: <date when="2018-08-06">6 August 2018</date></authority>
             <availability><licence>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) approved for Free Cultural Works <ref target="https://creativecommons.org/licenses/by-sa/4.0/"/></licence></availability>
          </publicationStmt>
+         <seriesStmt>
+            <p>This ODD customizes the TEI P5 for use in edition files, including drama, letters, poetry, plays. It indicates the modules and customizations of TEI encoding for manuscript transcription, and versioning and prosopography references for all files in the project except for the prosopography index file known as our <q>Site Index</q>, which holds a narrower range of elements. The elements of the site index are available here in the <q>back lists</q> of our files for proposing new entries to be added, but according to this ODD, only a narrow range of person, place, and document referencing are permitted in edition files in order to enforce consistent prosopography markup across all files. </p>
+         </seriesStmt>
          <sourceDesc>
-            <p>Born digital.</p>
+            <p>Born digital, based on information presented in the Digital Mitford Codebook at <ref target="http://codebook.mitford.pitt.edu"/></p>
          </sourceDesc>
       </fileDesc>
+     <revisionDesc>
+        <listChange>
+           <change when="2018-08-06" who="#ebb">Prepared this ODD file, working with the Digital Mitford Schematron files in place to this point, and the Digital Mitford codebook.</change>
+        </listChange>
+     </revisionDesc>
   </teiHeader>
   <text>
       <body>
@@ -38,11 +47,11 @@
             <moduleRef key="figures"/><!--ebb: We may want to make a table of postmark images correlated to IDs in its own file. -->
             <moduleRef key="gaiji"/><!--ebb: included for charDecl if we want to make a list of metamarks -->
             
-            <!-- Validation for general xml:id syntax and hashtags for referencing, plus critical apparatus checking of witness values-->
+            <!-- Checking general xml:id syntax and hashtags for referencing, plus checking witness attribute values where using critical apparatus (versioning) markup.-->
             <constraintSpec scheme="schematron" ident="xmlIDs">
                <constraint>
-                  <sch:rule context="tei:TEI//@xml:id" role="fatal">
-                     <sch:report test="matches(., '\s+')">
+                  <sch:rule context="tei:TEI//@xml:id">
+                     <sch:report test="matches(., '\s+')" role="fatal">
                         @xml:id values may NOT contain white spaces!
                      </sch:report>        
                   </sch:rule>
@@ -50,8 +59,8 @@
             </constraintSpec>
               <constraintSpec scheme="schematron" ident="hashtaggery">
                  <constraint>
-                    <sch:rule context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp | tei:TEI//@wit" role="fatal">
-                     <sch:assert test="starts-with(., '#')">
+                    <sch:rule context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp | tei:TEI//@wit">
+                       <sch:assert test="starts-with(., '#')" role="fatal">
                         Attributes @ref, @who, @corresp and @wit must begin with a hashtag.
                      </sch:assert>  
                     </sch:rule>
@@ -59,15 +68,45 @@
               </constraintSpec>   
             <constraintSpec scheme="schematron" ident="listWitCheck">
                <constraint>
-                  <sch:rule context="tei:TEI//@wit" role="fatal">
+                  <sch:rule context="tei:TEI//@wit">
                      <sch:let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
-                     <sch:assert test="every $token in $tokens satisfies $token = //tei:TEI//tei:listWit//@xml:id">
+                     <sch:assert test="every $token in $tokens satisfies $token = //tei:TEI//tei:listWit//@xml:id" role="fatal">
                         Every reading witness (@wit) after the hashtag must match an xml:id defined in the list of witnesses in this file!
                      </sch:assert>
                   </sch:rule>
                </constraint>
             </constraintSpec>
-           
+            <!-- Constraining what elements are permitted for prosopgraphy in the bodies of edition documents. Also, validation reporting from backlists for prosopography proposals-->
+           <constraintSpec scheme="schematron" ident="namedEntityRefencing">
+              <constraint>
+                 <sch:p>Many elements from the TEI names and places module are only permitted in back lists for proposed entries to the Digital Mitford site index.</sch:p>
+                 <sch:rule context="tei:text/tei:front//* | tei:text/tei:body//*">
+                    <sch:report test="descendant::tei:addName | descendant::tei:affiliation | descendant::tei:age | descendant::tei:birth |  descendant::tei:bloc | descendant::tei:climate | descendant::tei:country | descendant::tei:death | descendant::tei:district |  descendant::tei:education | descendant::tei:faith | descendant::tei:floruit | descendant::tei:forename | descendant::tei:genName | descendant::tei:geo | descendant::tei:geogFeat | descendant::tei:geogName | descendant::tei:langKnowledge | descendant::tei:langKnown | descendant::tei:listEvent | descendant::tei:listNym | descendant::tei:listOrg | descendant::tei:listPerson | descendant::tei:listPlace | descendant::tei:listRelation | descendant::tei:location | descendant::tei:nameLink | descendant::tei:nationality | descendant::tei:occupation | descendant::tei:offset | descendant::tei:org | descendant::tei:person | descendant::tei:personGrp | descendant::tei:persona | descendant::tei:place | descendant::tei:population | descendant::tei:region | descendant::tei:relation | descendant::tei:residence | descendant::tei:settlement | descendant::tei:sex | descendant::tei:socecStatus | descendant::tei:state | descendant::tei:surname | descendant::tei:terrain | descendant::tei:trait" role="fatal">
+                       This element, <sch:value-of select="./name()"/> is not permitted in the main text of a Digital Mitford edition. The full informational encoding on people, places, and other named entities is available only in the "backlists" or the back element containing proposed new entries for our site index, and it's permitted in the Site Index itself.
+                    </sch:report>
+                 </sch:rule>
+              </constraint>
+           </constraintSpec>
+           <constraintSpec scheme="schematron" ident="backListReferencing">
+              <constraint>
+                 <sch:pattern>
+                    <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
+                    <sch:let name="siAddColl" value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
+                    <sch:p>Points to &lt;back&gt; or to one of the temporary siAdd files.</sch:p>
+                 
+                    <sch:rule context="@ref[for $i in tokenize(., '\s+') return substring-after($i, '#') = //tei:back//@xml:id or $siAddColl//@xml:id] | @corresp[for $i in tokenize(., '\s+') return substring-after($i, '#') = //tei:back//@xml:id or $siAddColl//@xml:id]">
+                    <sch:let name="refs" value="for $i in tokenize(., '\s+') return substring-after($i,'#')"/><!-- ebb: formulated this way in case we have plural ref or corresp values,-->
+                    
+                    <sch:assert role="info" test="every $token in $tokens satisfies $token = $siFile//@xml:id">
+                       This referencing value, <sch:value-of
+                          select="."/>, points to &lt;back&gt; but not the official site index. All is well, but the Mitford prosopography team needs to review the proposed new entries.                
+                    </sch:assert>
+                    
+                 </sch:rule>
+                 
+</sch:pattern>
+              </constraint>
+           </constraintSpec>
          </schemaSpec>
       </body>
   </text>

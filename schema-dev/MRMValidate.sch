@@ -35,8 +35,8 @@
        </rule>
    </pattern>
    
-        <let name="si" value="doc('http://mitford.pitt.edu/si.xml')//@xml:id"/>
-        <let name="siFile" value="doc('http://mitford.pitt.edu/si.xml')"/>
+        <let name="si" value="doc('http://digitalmitford.org/si.xml')//@xml:id"/>
+        <let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
     
     
         <pattern>
