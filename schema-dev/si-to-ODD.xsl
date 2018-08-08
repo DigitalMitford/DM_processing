@@ -21,8 +21,7 @@
                         <title>Digital Mitford ODD: Prosopography Reference Addendum for Project Edition Files</title>
                         <author>Elisa Beshero-Bondar</author>
                     </titleStmt>
-                    <editionStmt><edition>Generated from updates to the Site index
-                        <xsl:apply-templates select="descendant::teiHeader//editionStmt/edition"/></edition>
+                    <editionStmt xml:id="edition"><edition>Generated on <xsl:value-of select="current-dateTime()"/> from updates to the <xsl:apply-templates select="descendant::teiHeader//editionStmt/edition"/></edition>
                     </editionStmt>
                     <publicationStmt>
                         <authority>Prepared in TEI P5 by Elisa Beshero-Bondar in the Digital Mitford GitHub repository: <ref target="https://github.com/DigitalMitford/DM_processing"/>. Date last worked on: <date when="2018-08-06">6 August 2018</date></authority>
@@ -45,23 +44,77 @@
                 <body>
                     <schemaSpec ident="mrmProsop" start="TEI teiCorpus" prefix="tei">
                         <specGrp xml:id="prosop">
-                            <!-- Work out elementSpecs for referencing here via XSLT.-->              <elementSpec ident="persName" module="namesdates" mode="change">
+                            <elementSpec ident="persName" module="namesdates" mode="change">
                             <attList>
                                 <attDef ident="ref" mode="replace" usage="req">
-                                    <xsl:apply-templates select="descendant::text//listPerson//@xml:id"/>
+                                 <valList type="closed">   
+                                     <xsl:apply-templates select="descendant::text//listPerson//@xml:id"/>
+                                 </valList>
                                 </attDef>
                             </attList>    
                             </elementSpec>
-                            
+                            <elementSpec ident="orgName" module="namesdates" mode="change">
+                                <attList>
+                                    <attDef ident="ref" mode="replace" usage="req">
+                                        <valList type="closed">   
+                                            <xsl:apply-templates select="descendant::text//listOrg//@xml:id"/>
+                                        </valList>
+                                    </attDef>
+                                </attList>    
+                            </elementSpec>
+                            <elementSpec ident="placeName" module="namesdates" mode="change">
+                                <attList>
+                                    <attDef ident="ref" mode="replace" usage="req">
+                                        <valList type="closed">   
+                                            <xsl:apply-templates select="descendant::text//listPlace//@xml:id"/>
+                                        </valList>
+                                    </attDef>
+                                </attList>    
+                            </elementSpec>
+                            <elementSpec ident="title" module="core" mode="change">
+                                <attList>
+                                    <attDef ident="ref" mode="replace" usage="req">
+                                        <valList type="closed">   
+                                            <xsl:apply-templates select="descendant::text//listBibl//@xml:id"/>
+                                            <xsl:apply-templates select="descendant::text//list[@sortKey='art']//@xml:id"/>
+                                        </valList>
+                                    </attDef>
+                                </attList>    
+                            </elementSpec>
+                            <elementSpec ident="bibl" module="core" mode="change">
+                                <attList>
+                                    <attDef ident="corresp" mode="replace" usage="req">
+                                        <valList type="closed">   
+                                            <xsl:apply-templates select="descendant::text//listBibl//@xml:id"/>
+                                        </valList>
+                                    </attDef>
+                                </attList>    
+                            </elementSpec>
+                            <elementSpec ident="name" module="core" mode="change">
+                                <attList>
+                                    <attDef ident="type" mode="replace" usage="req">
+                                        <valList type="closed">
+                                            <valItem ident="plant"><gloss>Use to mark names of plants by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a plant, use the rs element with type="plant".</gloss></valItem>
+                                            <valItem ident="animal"><gloss>Use to mark references to animal types by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a kind of animal, use the rs element with type="animal". </gloss></valItem>
+                                            <valItem ident="event"><gloss>Use to mark names of events, like the Battle of Hastings. If the mention is imprecise and you want to mark a short string of text as referring to a specific event, use the rs element with type="event". </gloss></valItem>
+                                        </valList>
+                                    </attDef>
+                                    <attDef ident="ref" mode="replace" usage="req">
+                                        <valList type="closed">   
+                                            <xsl:apply-templates select="descendant::text//listEvent//@xml:id"/>
+                                            <xsl:apply-templates select="descendant::text//list//@xml:id"/>
+                                        </valList>
+                                    </attDef>
+                                </attList>    
+                            </elementSpec>
                         </specGrp>
                     </schemaSpec>
                 </body>
             </text>
         </TEI>
     </xsl:template>
-    <xsl:template match="listPerson//@xml:id">
-        
-        
+    <xsl:template match="@xml:id">
+        <valItem ident="#{.}"/>
     </xsl:template>
     
     
