@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-08-08T00:11:01Z. .
+Schema generated from ODD source 2018-08-08T02:33:26Z. .
 TEI Edition: Version 3.3.0. Last updated on
 	31st January 2018, revision f4d8439
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
@@ -4337,6 +4337,8 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
                <value>plant</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>animal</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>art</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
@@ -13988,18 +13990,66 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                     </sch:report>
                  </sch:rule>
    </pattern>
+   <sch:p xmlns="http://www.tei-c.org/ns/1.0"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+          xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+          xmlns:rng="http://relaxng.org/ns/structure/1.0">Check the @ref values on rs and name that these are pointing to the appropriate lists in the Site Index.</sch:p> 
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mitfordODD-rsReferencing-constraint-rule-15">
+      <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:rs | tei:name">
+                     <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
+                     <sch:let name="siAddColl"
+                  value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
+                     <sch:let name="back" value="//tei:back"/>
+                     <sch:let name="everySiLoc" value="($siFile, $siAddColl, $back)"/>
+                     <sch:let name="refs"
+                  value="for $i in tokenize(@ref, '\s+') return substring-after($i,'#')"/>
+                     <sch:assert test="@ref">An @ref attribute is required on this element!</sch:assert>
+                     <sch:report test="@type='event' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:event/@xml:id)"
+                     role="fatal">
+                        An rs with type="event" must refer to an xml:id on an event element.
+                     </sch:report>
+                     <sch:report test="@type='title' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:bibl/@xml:id)"
+                     role="fatal">
+                        An rs with type="title" must refer to an xml:id on a bibl element.
+                     </sch:report>
+                     <sch:report test="@type='place' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:place/@xml:id)"
+                     role="fatal">
+                        An rs with type="place" must refer to an xml:id on a place element.
+                     </sch:report>
+                     <sch:report test="@type='org' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:org/@xml:id)"
+                     role="fatal">
+                        An rs with type="org" must refer to an xml:id on an org element.
+                     </sch:report>
+                     <sch:report test="@type='person' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:person/@xml:id)"
+                     role="fatal">
+                        An rs with type="person" must refer to an xml:id on a person element.
+                     </sch:report>
+                     <sch:report test="@type='plant' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:list[@sortKey='plants']/tei:item/@xml:id)"
+                     role="fatal">
+                        An rs with type="plant" must refer to an @xml:id on an item element in a list with sortKey="plants".
+                     </sch:report>
+                     <sch:report test="@type='animal' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:list[@sortKey='animals']/tei:item/@xml:id)"
+                     role="fatal">
+                        An rs with type="animal" must refer to an @xml:id on an item element in a list with sortKey="animals".
+                     </sch:report>
+                     <sch:report test="@type='art' and not(every $ref in $refs satisfies $ref = $everySiLoc//tei:text//tei:list[@sortKey='art']/tei:figure/@xml:id)"
+                     role="fatal">
+                        An rs with type="art" must refer to an @xml:id on a figure element in a list with sortKey="art".
+                     </sch:report>
+                  </sch:rule>
+   </pattern>
    <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0">
-                    
                     <sch:p>Check whether ids point to &lt;back&gt; or to one of the temporary siAdd files.</sch:p>
                  
                     <sch:rule context="@ref | @corresp">
                        <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
                        <sch:let name="siAddColl"
                   value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
-                      
                        <sch:let name="backIDs" value="//tei:back//@xml:id"/>
                        <sch:let name="siAddIDs" value="$siAddColl//@xml:id"/>
                        <sch:let name="tempIDs" value="($backIDs, $siAddIDs)"/>
