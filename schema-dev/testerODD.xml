@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Tester ODD</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <schemaSpec ident="myTEI">
+            <moduleRef key="tei"/>
+            <moduleRef key="core"/>
+            <moduleRef key="header"/>
+            <moduleRef key="msdescription"/>
+            <moduleRef key="namesdates"/>
+            <moduleRef key="analysis"/>
+            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
+            <moduleRef key="drama" except="camera"/>
+            <moduleRef key="linking"/>
+            <moduleRef key="textcrit" except="lem "/>
+            <moduleRef key="transcr" except="line zone path"/>
+            <moduleRef key="figures"/>
+            <moduleRef key="gaiji"/>
+      </schemaSpec>
+         <elementSpec ident="name" module="core" mode="change">
+            <attList>
+               <attDef ident="type" mode="replace" usage="req">
+                  <valList type="semi">
+                     <valItem ident="person"/>
+                     <valItem ident="org"/>                   
+                     <valItem ident="place"/>
+                     <valItem ident="event"/>
+                     <valItem ident="letter"/>
+                     <valItem ident="plant"/>
+                     <valItem ident="animal"/>
+                     <valItem ident="title"/>
+                     <valItem ident="art"/>
+                  </valList>
+               </attDef>
+            </attList>
+         </elementSpec>
+      </body>
+  </text>
+</TEI>
