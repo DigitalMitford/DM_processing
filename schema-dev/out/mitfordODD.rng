@@ -5,10 +5,10 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-08-07T03:25:15Z. .
-TEI Edition: Version 3.4.0. Last updated on
-	23rd July 2018, revision 1fa0b54
-TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.4.0/
+Schema generated from ODD source 2018-08-08T00:11:01Z. .
+TEI Edition: Version 3.3.0. Last updated on
+	31st January 2018, revision f4d8439
+TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
   
 --><!--Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) approved for Free Cultural Works -->
    <define name="teimacro.paraContent">
@@ -100,22 +100,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.4.0/
       <optional>
          <attribute name="who">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the person, or group of people, to whom the element content is ascribed.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <data type="anyURI"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="teiatt.ascribed.directed.attributes">
-      <ref name="teiatt.ascribed.attributes"/>
-      <ref name="teiatt.ascribed.directed.attribute.toWhom"/>
-   </define>
-   <define name="teiatt.ascribed.directed.attribute.toWhom">
-      <optional>
-         <attribute name="toWhom">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the person, or group of people, to whom a speech act or action is directed.</a:documentation>
             <list>
                <oneOrMore>
                   <data type="anyURI"/>
@@ -306,7 +290,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    <define name="teiatt.written.attribute.hand">
       <optional>
          <attribute name="hand">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a handNote element describing the hand considered responsible for the content of the element concerned.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a handNote element describing the hand considered responsible for the textual content of the element concerned.</a:documentation>
             <data type="anyURI"/>
          </attribute>
       </optional>
@@ -476,6 +460,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.datable.w3c-att-datable-w3c-when-constraint-rule-1">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@when]">
@@ -485,6 +470,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.datable.w3c-att-datable-w3c-from-constraint-rule-2">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@from]">
@@ -494,6 +480,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.datable.w3c-att-datable-w3c-to-constraint-rule-3">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@to]">
@@ -518,6 +505,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.datable-calendar-calendar-constraint-rule-4">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@calendar]">
@@ -1245,6 +1233,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.typed-subtypeTyped-constraint-rule-5">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@subtype]">
@@ -1273,6 +1262,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.pointing-targetLang-targetLang-constraint-rule-6">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
@@ -1418,6 +1408,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.spanning-spanTo-spanTo-2-constraint-rule-7">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@spanTo]">
@@ -1460,6 +1451,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="mitfordODD-att.styleDef-schemeVersion-schemeVersionRequiresScheme-constraint-rule-8">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@schemeVersion]">
@@ -1906,7 +1898,6 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="teinum"/>
          <ref name="teimeasure"/>
          <ref name="teimeasureGrp"/>
-         <ref name="teiunit"/>
          <ref name="teidim"/>
          <ref name="teiheight"/>
          <ref name="teidepth"/>
@@ -1919,7 +1910,6 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="teinum"/>
          <ref name="teimeasure"/>
          <ref name="teimeasureGrp"/>
-         <ref name="teiunit"/>
          <ref name="teidim"/>
          <ref name="teiheight"/>
          <ref name="teidepth"/>
@@ -1931,7 +1921,6 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       <ref name="teinum"/>
       <ref name="teimeasure"/>
       <ref name="teimeasureGrp"/>
-      <ref name="teiunit"/>
       <ref name="teidim"/>
       <ref name="teiheight"/>
       <ref name="teidepth"/>
@@ -1947,9 +1936,6 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       </optional>
       <optional>
          <ref name="teimeasureGrp"/>
-      </optional>
-      <optional>
-         <ref name="teiunit"/>
       </optional>
       <optional>
          <ref name="teidim"/>
@@ -1978,9 +1964,6 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="teimeasureGrp"/>
       </zeroOrMore>
       <zeroOrMore>
-         <ref name="teiunit"/>
-      </zeroOrMore>
-      <zeroOrMore>
          <ref name="teidim"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -2005,9 +1988,6 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       </oneOrMore>
       <oneOrMore>
          <ref name="teimeasureGrp"/>
-      </oneOrMore>
-      <oneOrMore>
-         <ref name="teiunit"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="teidim"/>
@@ -3902,9 +3882,10 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.5. Speech Contents]</a:documentation>
          <ref name="teimacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-p-abstractModel-structure-p-constraint-report-5">
+                  id="mitfordODD-p-abstractModel-structure-p-constraint-report-4">
             <rule context="tei:p">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum                |parent::tei:item                |parent::tei:note                |parent::tei:q                |parent::tei:quote                |parent::tei:remarks                |parent::tei:said                |parent::tei:sp                |parent::tei:stage                |parent::tei:cell                |parent::tei:figure                )">
         Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
@@ -3912,9 +3893,10 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-p-abstractModel-structure-l-constraint-report-6">
+                  id="mitfordODD-p-abstractModel-structure-l-constraint-report-5">
             <rule context="tei:p">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:l[not(.//tei:note//tei:p[. = current()])]">
         Abstract model violation: Lines may not contain higher-level structural elements such as div, p, or ab.
@@ -3992,7 +3974,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech or thought) indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters. [3.3.3. Quotation]</a:documentation>
          <ref name="teimacro.specialPara"/>
          <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.ascribed.directed.attributes"/>
+         <ref name="teiatt.ascribed.attributes"/>
          <optional>
             <attribute name="aloud">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">may be used to indicate whether the quoted matter is regarded as having been vocalized or signed.</a:documentation>
@@ -4042,7 +4024,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(quoted) contains material which is distinguished from the surrounding text using quotation marks or a similar method, for any one of a variety of reasons including, but not limited to: direct speech or thought, technical terms or jargon, authorial distance, quotations from elsewhere, and passages that are mentioned but not used. [3.3.3. Quotation]</a:documentation>
          <ref name="teimacro.specialPara"/>
          <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.ascribed.directed.attributes"/>
+         <ref name="teiatt.ascribed.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">may be used to indicate whether the offset passage is spoken or thought, or to characterize it more finely.
@@ -4336,7 +4318,28 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="teimacro.phraseSeq"/>
          <ref name="teiatt.global.attributes"/>
          <ref name="teiatt.naming.attributes"/>
-         <ref name="teiatt.typed.attributes"/>
+         <ref name="teiatt.typed.attribute.subtype"/>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>person</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>org</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>place</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>event</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>letter</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to mark references to correspondence.) </a:documentation>
+               <value>title</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use where necessary to mark unnamed references to documents, readings, works etc. in the absence of a title.) </a:documentation>
+               <value>plant</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>animal</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
          <empty/>
       </element>
    </define>
@@ -4481,17 +4484,6 @@ Measures]</a:documentation>
          <empty/>
       </element>
    </define>
-   <define name="teiunit">
-      <element name="unit">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a symbol, a word or a phrase referring to a unit of measurement in any kind of formal or informal system. [3.5.3. Numbers and
-Measures]</a:documentation>
-         <ref name="teimacro.phraseSeq"/>
-         <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.typed.attributes"/>
-         <ref name="teiatt.measurement.attributes"/>
-         <empty/>
-      </element>
-   </define>
    <define name="teidate">
       <element name="date">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a date in any format. [3.5.4. Dates and Times 2.2.4. Publication, Distribution, Licensing, etc. 2.6. The Revision Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.3.6. Dates and Times]</a:documentation>
@@ -4563,9 +4555,10 @@ Sample values include: 1] suspension; 2] contraction; 3] brevigraph; 4] superscr
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pointer) defines a pointer to another location. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-ptr-ptrAtts-constraint-report-7">
+                  id="mitfordODD-ptr-ptrAtts-constraint-report-6">
             <rule context="tei:ptr">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@target and @cRef">Only one of the
 attributes @target and @cRef may be supplied on <name/>.</report>
@@ -4585,9 +4578,10 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <ref name="teimacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-ref-refAtts-constraint-report-8">
+                  id="mitfordODD-ref-refAtts-constraint-report-7">
             <rule context="tei:ref">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@target and @cRef">Only one of the
 	attributes @target' and @cRef' may be supplied on <name/>
@@ -4675,8 +4669,9 @@ attributes @target and @cRef may be supplied on <name/>.</report>
       
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-list-gloss-list-must-have-labels-constraint-rule-10">
+                  id="mitfordODD-list-gloss-list-must-have-labels-constraint-rule-9">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       context="tei:list[@type='gloss']">
@@ -5264,7 +5259,6 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides the name of the organization responsible for the publication or distribution of a bibliographic item. [3.11.2.4. Imprint, Size of a Document, and Reprint Information 2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
          <ref name="teimacro.phraseSeq"/>
          <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.canonical.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5395,9 +5389,10 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
             </choice>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-relatedItem-targetorcontent1-constraint-report-9">
+                  id="mitfordODD-relatedItem-targetorcontent1-constraint-report-8">
             <rule context="tei:relatedItem">
                <sch:report xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="@target and count( child::* ) &gt; 0">
@@ -5409,6 +5404,7 @@ relatedItem element must be empty</sch:report>
                   id="mitfordODD-relatedItem-targetorcontent1-constraint-assert-7">
             <rule context="tei:relatedItem">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="@target or child::*">A relatedItem element should have either a 'target' attribute
@@ -5439,9 +5435,10 @@ relatedItem element must be empty</sch:report>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-l-abstractModel-structure-l-constraint-report-10">
+                  id="mitfordODD-l-abstractModel-structure-l-constraint-report-9">
             <rule context="tei:l">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:l[not(.//tei:note//tei:l[. = current()])]">
         Abstract model violation: Lines may not contain lines or lg elements.
@@ -5499,6 +5496,7 @@ relatedItem element must be empty</sch:report>
                   id="mitfordODD-lg-atleast1oflggapl-constraint-assert-8">
             <rule context="tei:lg">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An lg element
@@ -5506,9 +5504,10 @@ relatedItem element must be empty</sch:report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-lg-abstractModel-structure-l-constraint-report-11">
+                  id="mitfordODD-lg-abstractModel-structure-l-constraint-report-10">
             <rule context="tei:lg">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:l[not(.//tei:note//tei:lg[. = current()])]">
         Abstract model violation: Lines may not contain line groups.
@@ -5560,7 +5559,7 @@ relatedItem element must be empty</sch:report>
             </oneOrMore>
          </group>
          <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.ascribed.directed.attributes"/>
+         <ref name="teiatt.ascribed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5576,7 +5575,7 @@ relatedItem element must be empty</sch:report>
       <element name="stage">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.12.2. Core Tags for Drama 3.12. Passages of Verse or Drama 7.2.4. Stage Directions]</a:documentation>
          <ref name="teimacro.specialPara"/>
-         <ref name="teiatt.ascribed.directed.attributes"/>
+         <ref name="teiatt.ascribed.attributes"/>
          <ref name="teiatt.global.attributes"/>
          <ref name="teiatt.placement.attributes"/>
          <optional>
@@ -5905,7 +5904,6 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the name of a person or other agency responsible for the distribution of a text. [2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
          <ref name="teimacro.phraseSeq"/>
          <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.canonical.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5914,7 +5912,6 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
          <ref name="teimacro.phraseSeq.limited"/>
          <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.canonical.attributes"/>
          <empty/>
       </element>
    </define>
@@ -6245,7 +6242,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
             <ref name="teimodel.pLike"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-quotation-quotationContents-constraint-report-12">
+                  id="mitfordODD-quotation-quotationContents-constraint-report-11">
             <rule context="tei:quotation">
                <report xmlns:xi="http://www.w3.org/2001/XInclude"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -7146,6 +7143,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                   id="mitfordODD-catchwords-catchword_in_msDesc-constraint-assert-9">
             <rule context="tei:catchwords">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="ancestor::tei:msDesc"
@@ -7166,9 +7164,10 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-dimensions-duplicateDim-constraint-report-13">
+                  id="mitfordODD-dimensions-duplicateDim-constraint-report-12">
             <rule context="tei:dimensions">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="count(tei:width)&gt; 1">
 The element <name/> may appear once only
@@ -7176,9 +7175,10 @@ The element <name/> may appear once only
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-dimensions-duplicateDim-constraint-report-14">
+                  id="mitfordODD-dimensions-duplicateDim-constraint-report-13">
             <rule context="tei:dimensions">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="count(tei:height)&gt; 1">
 The element <name/> may appear once only
@@ -7186,9 +7186,10 @@ The element <name/> may appear once only
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-dimensions-duplicateDim-constraint-report-15">
+                  id="mitfordODD-dimensions-duplicateDim-constraint-report-14">
             <rule context="tei:dimensions">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="count(tei:depth)&gt; 1">
 The element <name/> may appear once only
@@ -7366,6 +7367,7 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
                   id="mitfordODD-secFol-secFol_in_msDesc-constraint-assert-10">
             <rule context="tei:secFol">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="ancestor::tei:msDesc"
@@ -7384,6 +7386,7 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
                   id="mitfordODD-signatures-signatures_in_msDesc-constraint-assert-11">
             <rule context="tei:signatures">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="ancestor::tei:msDesc"
@@ -7469,9 +7472,10 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
       
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-msIdentifier-msId_minimal-constraint-report-16">
+                  id="mitfordODD-msIdentifier-msId_minimal-constraint-report-15">
             <rule context="tei:msIdentifier">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(parent::tei:msPart) and       (local-name(*[1])='idno' or       local-name(*[1])='altIdentifier' or       normalize-space(.)='')">An msIdentifier must contain either a repository or location of some type, or a manuscript name</report>
             </rule>
@@ -8036,17 +8040,6 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
             </attribute>
          </optional>
          <optional>
-            <attribute name="streams">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(textual streams) indicates the number of streams per page, each of which contains an independent textual stream</a:documentation>
-               <list>
-                  <data type="nonNegativeInteger"/>
-                  <optional>
-                     <data type="nonNegativeInteger"/>
-                  </optional>
-               </list>
-            </attribute>
-         </optional>
-         <optional>
             <attribute name="ruledLines">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the number of ruled lines per column</a:documentation>
                <list>
@@ -8073,7 +8066,7 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
    </define>
    <define name="teihandDesc">
       <element name="handDesc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of hands) contains a description of all the different hands used in a manuscript. [10.7.2. Writing, Decoration, and Other Notations]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of hands) contains a description of all the different kinds of writing used in a manuscript. [10.7.2. Writing, Decoration, and Other Notations]</a:documentation>
          <choice>
       
             <oneOrMore>
@@ -8269,7 +8262,7 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
    </define>
    <define name="teisealDesc">
       <element name="sealDesc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(seal description) describes the seals or similar items related to the object described, either as a series of paragraphs or as a series of seal elements. [10.7.3.2. Seals]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(seal description) describes the seals or other external items attached to a manuscript, either as a series of paragraphs or as a series of distinct seal elements, possibly with additional decoNotes. [10.7.3.2. Seals]</a:documentation>
          <choice>
       
             <oneOrMore>
@@ -8299,7 +8292,7 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
    </define>
    <define name="teiseal">
       <element name="seal">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a description of one seal or similar applied to the object described [10.7.3.2. Seals]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a description of one seal or similar attachment applied to a manuscript. [10.7.3.2. Seals]</a:documentation>
          <oneOrMore>
             <choice>
                <ref name="teimodel.pLike"/>
@@ -9966,25 +9959,31 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="mitfordODD-relation-reforkeyorname-constraint-assert-12">
             <rule context="tei:relation">
-               <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-relation-activemutual-constraint-report-17">
+                  id="mitfordODD-relation-activemutual-constraint-report-16">
             <rule context="tei:relation">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</report>
+                       test="@active and @mutual">Only one of the attributes
+@active and @mutual may be supplied</report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-relation-activepassive-constraint-report-18">
+                  id="mitfordODD-relation-activepassive-constraint-report-17">
             <rule context="tei:relation">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
+                       test="@passive and not(@active)">the attribute 'passive'
+	may be supplied only if the attribute 'active' is
+	supplied</report>
             </rule>
          </pattern>
          <ref name="teiatt.global.attributes"/>
@@ -10407,9 +10406,10 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(s-unit) contains a sentence-like division of a text. [17.1. Linguistic Segment Categories 8.4.1. Segmentation]</a:documentation>
          <ref name="teimacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-s-noNestedS-constraint-report-19">
+                  id="mitfordODD-s-noNestedS-constraint-report-18">
             <rule context="tei:s">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="tei:s">You may not nest one s element within
       another: use seg instead</report>
@@ -10446,7 +10446,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
    </define>
    <define name="teiw">
       <element name="w">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(word) represents a grammatical (not necessarily orthographic) word. [17.1. Linguistic Segment Categories 17.4.2. Lightweight Linguistic Annotation]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(word) represents a grammatical (not necessarily orthographic) word. [17.1. Linguistic Segment Categories]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -10512,7 +10512,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
    </define>
    <define name="teipc">
       <element name="pc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [17.1.2. Below the Word Level 17.4.2. Lightweight Linguistic Annotation]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [17.1.2. Below the Word Level]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -10560,9 +10560,10 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">associates an interpretative annotation directly with a span of text. [17.3. Spans and Interpretations]</a:documentation>
          <ref name="teimacro.phraseSeq.limited"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-span-targetfrom-constraint-report-20">
+                  id="mitfordODD-span-targetfrom-constraint-report-19">
             <rule context="tei:span">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@from and @target">
 Only one of the attributes @target and @from may be supplied on <name/>
@@ -10570,9 +10571,10 @@ Only one of the attributes @target and @from may be supplied on <name/>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-span-targetto-constraint-report-21">
+                  id="mitfordODD-span-targetto-constraint-report-20">
             <rule context="tei:span">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@to and @target">
 Only one of the attributes @target and @to may be supplied on <name/>
@@ -10580,18 +10582,20 @@ Only one of the attributes @target and @to may be supplied on <name/>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-span-tonotfrom-constraint-report-22">
+                  id="mitfordODD-span-tonotfrom-constraint-report-21">
             <rule context="tei:span">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@to and not(@from)">
 If @to is supplied on <name/>, @from must be supplied as well</report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-span-tofrom-constraint-report-23">
+                  id="mitfordODD-span-tofrom-constraint-report-22">
             <rule context="tei:span">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')">
 The attributes @to and @from on <name/> may each contain only a single value</report>
@@ -11064,9 +11068,10 @@ The attributes @to and @from on <name/> may each contain only a single value</re
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-div-abstractModel-structure-l-constraint-report-24">
+                  id="mitfordODD-div-abstractModel-structure-l-constraint-report-23">
             <rule context="tei:div">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:l">
         Abstract model violation: Lines may not contain higher-level structural elements such as div.
@@ -11074,9 +11079,10 @@ The attributes @to and @from on <name/> may each contain only a single value</re
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-div-abstractModel-structure-p-constraint-report-25">
+                  id="mitfordODD-div-abstractModel-structure-p-constraint-report-24">
             <rule context="tei:div">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:p or ancestor::tei:ab and not(ancestor::tei:floatingText)">
         Abstract model violation: p and ab may not contain higher-level structural elements such as div.
@@ -11900,7 +11906,7 @@ Suggested values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4
          </group>
          <ref name="teiatt.global.attributes"/>
          <ref name="teiatt.typed.attributes"/>
-         <ref name="teiatt.ascribed.directed.attributes"/>
+         <ref name="teiatt.ascribed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -11909,7 +11915,7 @@ Suggested values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(movement) marks the actual movement of one or more characters. [7.2.4. Stage Directions]</a:documentation>
          <empty/>
          <ref name="teiatt.global.attributes"/>
-         <ref name="teiatt.ascribed.directed.attributes"/>
+         <ref name="teiatt.ascribed.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the movement, for example as an entrance or exit.
@@ -12134,6 +12140,7 @@ Suggested values include: 1] light; 2] sound; 3] prop; 4] block</a:documentation
                   id="mitfordODD-link-linkTargets3-constraint-assert-13">
             <rule context="tei:link">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <sch:name/>
@@ -12165,9 +12172,10 @@ Suggested values include: 1] light; 2] sound; 3] prop; 4] block</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anonymous block) contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of, a paragraph. [16.3. Blocks, Segments, and Anchors]</a:documentation>
          <ref name="teimacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-ab-abstractModel-structure-ab-constraint-report-26">
+                  id="mitfordODD-ab-abstractModel-structure-ab-constraint-report-25">
             <rule context="tei:ab">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum         |parent::tei:item         |parent::tei:note         |parent::tei:q         |parent::tei:quote         |parent::tei:remarks         |parent::tei:said         |parent::tei:sp         |parent::tei:stage         |parent::tei:cell         |parent::tei:figure)">
         Abstract model violation: ab may not occur inside paragraphs or other ab elements.
@@ -12175,9 +12183,10 @@ Suggested values include: 1] light; 2] sound; 3] prop; 4] block</a:documentation
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-ab-abstractModel-structure-l-constraint-report-27">
+                  id="mitfordODD-ab-abstractModel-structure-l-constraint-report-26">
             <rule context="tei:ab">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <report xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="ancestor::tei:l or ancestor::tei:lg">
         Abstract model violation: Lines may not contain higher-level divisions such as p or ab.
@@ -12344,7 +12353,8 @@ Suggested values include: 1] d (days) ; 2] h (hours) ; 3] min (minutes) ; 4] s (
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="mitfordODD-join-joinTargets3-constraint-assert-14">
             <rule context="tei:join">
-               <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="contains(@target,' ')">
 You must supply at least two values for @target on <name/>
@@ -12707,6 +12717,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                   id="mitfordODD-rdgGrp-only1lem-constraint-assert-15">
             <rule context="tei:rdgGrp">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="count(tei:lem) &lt; 2">Only one &lt;lem&gt; element may appear within a &lt;rdgGrp&gt;</sch:assert>
@@ -12856,8 +12867,9 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
             </choice>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mitfordODD-variantEncoding-location-variantEncodingLocation-constraint-rule-11">
+                  id="mitfordODD-variantEncoding-location-variantEncodingLocation-constraint-rule-10">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       context="tei:variantEncoding">
@@ -13058,7 +13070,6 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                   <choice>
             
             
-            
                      <ref name="teisurface"/>
                      <ref name="teisurfaceGrp"/>
                   </choice>
@@ -13117,6 +13128,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
                   id="mitfordODD-addSpan-spanTo-constraint-assert-17">
             <rule context="tei:addSpan">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="@spanTo">The @spanTo attribute of <sch:name/> is required.</sch:assert>
@@ -13126,6 +13138,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
                   id="mitfordODD-addSpan-spanTo_fr-constraint-assert-18">
             <rule context="tei:addSpan">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="@spanTo">L'attribut spanTo est requis.</sch:assert>
@@ -13157,7 +13170,8 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="mitfordODD-damageSpan-spanTo-constraint-assert-19">
             <rule context="tei:damageSpan">
-               <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@spanTo">
 The @spanTo attribute of <name/> is required.</assert>
@@ -13166,7 +13180,8 @@ The @spanTo attribute of <name/> is required.</assert>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="mitfordODD-damageSpan-spanTo_fr-constraint-assert-20">
             <rule context="tei:damageSpan">
-               <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@spanTo">L'attribut spanTo est requis.</assert>
             </rule>
@@ -13185,7 +13200,8 @@ The @spanTo attribute of <name/> is required.</assert>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="mitfordODD-delSpan-spanTo-constraint-assert-21">
             <rule context="tei:delSpan">
-               <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@spanTo">The @spanTo attribute of <name/> is required.</assert>
             </rule>
@@ -13193,7 +13209,8 @@ The @spanTo attribute of <name/> is required.</assert>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="mitfordODD-delSpan-spanTo_fr-constraint-assert-22">
             <rule context="tei:delSpan">
-               <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="@spanTo">L'attribut spanTo est requis.</assert>
             </rule>
@@ -13356,7 +13373,8 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="mitfordODD-subst-substContents1-constraint-assert-23">
             <rule context="tei:subst">
-               <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+               <assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="child::tei:add and child::tei:del">
                   <name/> must have at least one child add and at least one child del</assert>
@@ -13703,7 +13721,6 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
          <ref name="teiatt.global.attributes"/>
          <ref name="teiatt.placement.attributes"/>
          <ref name="teiatt.typed.attributes"/>
-         <ref name="teiatt.written.attributes"/>
          <empty/>
       </element>
    </define>
@@ -13919,8 +13936,9 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
       </choice>
    </start>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-xmlIDs-constraint-rule-12">
+            id="mitfordODD-xmlIDs-constraint-rule-11">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:TEI//@xml:id">
@@ -13930,8 +13948,9 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                   </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-hashtaggery-constraint-rule-13">
+            id="mitfordODD-hashtaggery-constraint-rule-12">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp | tei:TEI//@wit">
@@ -13941,8 +13960,9 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                     </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-listWitCheck-constraint-rule-14">
+            id="mitfordODD-listWitCheck-constraint-rule-13">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:TEI//@wit">
@@ -13955,10 +13975,11 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                   </sch:rule>
    </pattern>
    <sch:p xmlns="http://www.tei-c.org/ns/1.0"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
           xmlns:rng="http://relaxng.org/ns/structure/1.0">Many elements from the TEI names and places module are only permitted in back lists for proposed entries to the Digital Mitford site index.</sch:p> 
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-namedEntityRefencing-constraint-rule-15">
+            id="mitfordODD-namedEntityRefencing-constraint-rule-14">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 context="tei:text/tei:front//* | tei:text/tei:body//*">
                     <sch:report test="self::tei:addName | self::tei:affiliation | self::tei:age | self::tei:birth |  self::tei:bloc | self::tei:climate | self::tei:country | self::tei:death | self::tei:district |  self::tei:education | self::tei:faith | self::tei:floruit | self::tei:forename | self::tei:genName | self::tei:geo | self::tei:geogFeat | self::tei:geogName | self::tei:langKnowledge | self::tei:langKnown | self::tei:listEvent | self::tei:listNym | self::tei:listOrg | self::tei:listPerson | self::tei:listPlace | self::tei:listRelation | self::tei:location | self::tei:nameLink | self::tei:nationality | self::tei:occupation | self::tei:offset | self::tei:org | self::tei:person | self::tei:personGrp | self::tei:persona | self::tei:place | self::tei:population | self::tei:region | self::tei:relation | self::tei:residence | self::tei:settlement | self::tei:sex | self::tei:socecStatus | self::tei:state | self::tei:surname | self::tei:terrain | self::tei:trait"
@@ -13968,23 +13989,34 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                  </sch:rule>
    </pattern>
    <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0">
-                    <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
-                    <sch:let name="siAddColl"
-               value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
-                    <sch:p>Points to &lt;back&gt; or to one of the temporary siAdd files.</sch:p>
+                    
+                    <sch:p>Check whether ids point to &lt;back&gt; or to one of the temporary siAdd files.</sch:p>
                  
-                    <sch:rule context="@ref[for $i in tokenize(., '\s+') return substring-after($i, '#') = //tei:back//@xml:id or $siAddColl//@xml:id] | @corresp[for $i in tokenize(., '\s+') return substring-after($i, '#') = //tei:back//@xml:id or $siAddColl//@xml:id]">
+                    <sch:rule context="@ref | @corresp">
+                       <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
+                       <sch:let name="siAddColl"
+                  value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
+                      
+                       <sch:let name="backIDs" value="//tei:back//@xml:id"/>
+                       <sch:let name="siAddIDs" value="$siAddColl//@xml:id"/>
+                       <sch:let name="tempIDs" value="($backIDs, $siAddIDs)"/>
                     <sch:let name="refs"
                   value="for $i in tokenize(., '\s+') return substring-after($i,'#')"/>
-                    
-                    <sch:assert role="info"
-                     test="every $ref in $refs satisfies $ref = $siFile//@xml:id">
-                       This referencing value, <sch:value-of select="."/>, points to &lt;back&gt; or to one of the temporary siAdd files but not to the official site index. All is well, but the Mitford prosopography team needs to review the proposed new entries.                
-                    </sch:assert>
-                    
+                       <sch:let name="backRefs" value="for $ref in $refs return $ref = $tempIDs"/>
+                       <sch:let name="siRefs" value="for $ref in $refs return $ref = $siFile//@xml:id"/>
+                       <sch:report role="info" test="$backRefs">
+                          This referencing value, <sch:value-of select="."/>, points to &lt;back&gt; or to one of the temporary siAdd files. All is well, but the Digital Mitford prosopography team needs to review the proposed new entries.                
+                       </sch:report>
+                   <sch:report role="info" test="$backRefs and not($siRefs)">
+                       NOTE: This back or temporary siAdd reference is new and not currently listed in the official Digital Mitford Site Index.
+                    </sch:report>
+                       <sch:report role="warning" test="not($backRefs) and not($siRefs)">
+                          WARNING! This id value is not listed in the Site Index AND is not listed in the back or a temporary siAdd file. Check and see if this named entity already has an assigned id, and if not, please propose a new Site Index entry following our project rules.
+                       </sch:report>
+                       
                  </sch:rule>
-                 
-   </sch:pattern>
+                 </sch:pattern>
 </grammar>

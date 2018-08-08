@@ -17,6 +17,7 @@
             <authority>Prepared in TEI P5 by Elisa Beshero-Bondar in the Digital Mitford GitHub repository: <ref target="https://github.com/DigitalMitford/DM_processing"/>. Date last worked on: <date when="2018-08-06">6 August 2018</date></authority>
             <availability><licence>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) approved for Free Cultural Works <ref target="https://creativecommons.org/licenses/by-sa/4.0/"/></licence></availability>
          </publicationStmt>
+      <!--   <xi:include href="MRMProsopRef.odd" xpointer="edition"/>-->
          <seriesStmt>
             <p>This ODD customizes the TEI P5 for use in edition files, including drama, letters, poetry, plays. It indicates the modules and customizations of TEI encoding for manuscript transcription, and versioning and prosopography references for all files in the project except for the prosopography index file known as our <q>Site Index</q>, which holds a narrower range of elements. The elements of the site index are available here in the <q>back lists</q> of our files for proposing new entries to be added, but according to this ODD, only a narrow range of person, place, and document referencing are permitted in edition files in order to enforce consistent prosopography markup across all files. </p>
          </seriesStmt>
@@ -90,25 +91,50 @@
            <constraintSpec scheme="schematron" ident="backListReferencing">
               <constraint>
                  <sch:pattern>
-                    <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
-                    <sch:let name="siAddColl" value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
-                    <sch:p>Points to &lt;back&gt; or to one of the temporary siAdd files.</sch:p>
+                    
+                    <sch:p>Check whether ids point to &lt;back&gt; or to one of the temporary siAdd files.</sch:p>
                  
-                    <sch:rule context="@ref[for $i in tokenize(., '\s+') return substring-after($i, '#') = //tei:back//@xml:id or $siAddColl//@xml:id] | @corresp[for $i in tokenize(., '\s+') return substring-after($i, '#') = //tei:back//@xml:id or $siAddColl//@xml:id]">
+                    <sch:rule context="@ref | @corresp">
+                       <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
+                       <sch:let name="siAddColl" value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
+                       <sch:let name="backIDs" value="//tei:back//@xml:id"/>
+                       <sch:let name="siAddIDs" value="$siAddColl//@xml:id"/>
+                       <sch:let name="tempIDs" value="($backIDs, $siAddIDs)"/>
                     <sch:let name="refs" value="for $i in tokenize(., '\s+') return substring-after($i,'#')"/><!-- ebb: formulated this way in case we have plural ref or corresp values,-->
-                    
-                    <sch:assert role="info" test="every $ref in $refs satisfies $ref = $siFile//@xml:id">
-                       This referencing value, <sch:value-of
-                          select="."/>, points to &lt;back&gt; or to one of the temporary siAdd files but not to the official site index. All is well, but the Mitford prosopography team needs to review the proposed new entries.                
-                    </sch:assert>
-                    
+                       <sch:let name="backRefs" value="for $ref in $refs return $ref = $tempIDs"/>
+                       <sch:let name="siRefs" value="for $ref in $refs return $ref = $siFile//@xml:id"/>
+                       <sch:report role="info" test="$backRefs">
+                          This referencing value, <sch:value-of
+                             select="."/>, points to &lt;back&gt; or to one of the temporary siAdd files. All is well, but the Digital Mitford prosopography team needs to review the proposed new entries.                
+                       </sch:report>
+                   <sch:report role="info" test="$backRefs and not($siRefs)">
+                       NOTE: This back or temporary siAdd reference is new and not currently listed in the official Digital Mitford Site Index.
+                    </sch:report>
+                       <sch:report role="warning" test="not($backRefs) and not($siRefs)">
+                          WARNING! This id value is not listed in the Site Index AND is not listed in the back or a temporary siAdd file. Check and see if this named entity already has an assigned id, and if not, please propose a new Site Index entry following our project rules.
+                       </sch:report>
+                       
                  </sch:rule>
-                 
-</sch:pattern>
+                 </sch:pattern>
               </constraint>
            </constraintSpec>
-            <xi:include href="MRMProsopRef.odd" xpointer="prosop"/>
-            
+            <elementSpec ident="rs" module="core" mode="change">
+               <attList>
+                  <attDef ident="type" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="person"/>
+                        <valItem ident="org"/>
+                        <valItem ident="place"/>
+                        <valItem ident="event"/>
+                        <valItem ident="letter"><gloss>Use to mark references to correspondence.</gloss></valItem>
+                        <valItem ident="title"><gloss>Use where necessary to mark unnamed references to documents, readings, works etc. in the absence of a title.</gloss></valItem>
+                        <valItem ident="plant"/>
+                        <valItem ident="animal"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+<!--            <xi:include href="MRMProsopRef.odd" xpointer="prosop"/>-->
          </schemaSpec>
       </body>
   </text>

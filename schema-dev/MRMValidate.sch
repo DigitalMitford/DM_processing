@@ -59,7 +59,7 @@
         <pattern>   
             <rule context="tei:TEI//tei:persName/@ref | tei:TEI//tei:rs[@type='person']/@ref | tei:TEI//@who">
                 <let name="tokens" value="for $i in tokenize(., '\s+') return substring-after($i,'#')"/>
-                <assert test="every $token in $tokens satisfies $token = $siFile//tei:text//tei:listPerson//@xml:id | $siFile//tei:text//tei:listOrg//@xml:id">
+                <assert test="for $token in $tokens return $token = $siFile//tei:text//tei:listPerson//@xml:id | $siFile//tei:text//tei:listOrg//@xml:id">
                     <!--<assert test="substring-after(., '#') = $siFile//tei:text//tei:listPerson//@xml:id | $siFile//tei:text//tei:listOrg//@xml:id">-->
                     The @ref or @who on People / Characters must match an appropriate xml:id on our site index's lists of persons, fictional characters or mythical entities.
                 </assert>
