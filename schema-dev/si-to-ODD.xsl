@@ -32,8 +32,8 @@
                         <specGrp xml:id="prosop">
                             <elementSpec ident="persName" module="namesdates" mode="change">
                             <attList>
-                                <attDef ident="ref" mode="replace" usage="req">
-                                 <valList type="closed">   
+                                <attDef ident="ref" mode="replace" usage="rec">
+                                 <valList type="semi">   
                                      <xsl:apply-templates select="descendant::text//listPerson//@xml:id"/>
                                  </valList>
                                 </attDef>
@@ -41,8 +41,8 @@
                             </elementSpec>
                             <elementSpec ident="orgName" module="namesdates" mode="change">
                                 <attList>
-                                    <attDef ident="ref" mode="replace" usage="req">
-                                        <valList type="closed">   
+                                    <attDef ident="ref" mode="replace" usage="rec">
+                                        <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listOrg//@xml:id"/>
                                         </valList>
                                     </attDef>
@@ -50,8 +50,8 @@
                             </elementSpec>
                             <elementSpec ident="placeName" module="namesdates" mode="change">
                                 <attList>
-                                    <attDef ident="ref" mode="replace" usage="req">
-                                        <valList type="closed">   
+                                    <attDef ident="ref" mode="replace" usage="rec">
+                                        <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listPlace//@xml:id"/>
                                         </valList>
                                     </attDef>
@@ -59,8 +59,8 @@
                             </elementSpec>
                             <elementSpec ident="title" module="core" mode="change">
                                 <attList>
-                                    <attDef ident="ref" mode="replace" usage="req">
-                                        <valList type="closed">   
+                                    <attDef ident="ref" mode="replace" usage="rec">
+                                        <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listBibl//@xml:id"/>
                                             <xsl:apply-templates select="descendant::text//list[@sortKey='art']//@xml:id"/>
                                         </valList>
@@ -69,8 +69,8 @@
                             </elementSpec>
                             <elementSpec ident="bibl" module="core" mode="change">
                                 <attList>
-                                    <attDef ident="corresp" mode="replace" usage="req">
-                                        <valList type="closed">   
+                                    <attDef ident="corresp" mode="replace" usage="rec">
+                                        <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listBibl//@xml:id"/>
                                         </valList>
                                     </attDef>
@@ -85,8 +85,8 @@
                                             <valItem ident="event"><gloss>Use to mark names of events, like the Battle of Hastings. If the mention is imprecise and you want to mark a short string of text as referring to a specific event, use the rs element with type="event". </gloss></valItem>
                                         </valList>
                                     </attDef>
-                                    <attDef ident="ref" mode="replace" usage="req">
-                                        <valList type="closed">   
+                                    <attDef ident="ref" mode="replace" usage="rec">
+                                        <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listEvent//@xml:id"/>
                                             <xsl:apply-templates select="descendant::text//list//@xml:id"/>
                                         </valList>

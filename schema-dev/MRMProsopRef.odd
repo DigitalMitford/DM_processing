@@ -15,7 +15,7 @@
             <author>Elisa Beshero-Bondar</author>
          </titleStmt>
          <editionStmt xml:id="edition">
-            <edition>Generated on 2018-08-08T10:30:47.092-04:00 from updates to the Site Index for the Digital Mitford project. Date: 2017-12-31T20:39:30.156-05:00. Extracted by Elisa Beshero-Bondar.
+            <edition>Generated on 2018-08-08T11:37:35.573-04:00 from updates to the Site Index for the Digital Mitford project. Date: 2017-12-31T20:39:30.156-05:00. Extracted by Elisa Beshero-Bondar.
         Count of all @xml:ids in the current file: 1946. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
@@ -47,8 +47,8 @@
             <specGrp xml:id="prosop">
                <elementSpec ident="persName" module="namesdates" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#ab">
                               <gloss>Booth Alison Advisory Board | Professor of English, Booth directs the Collective Biographies of Women (CBW) pr</gloss>
                            </valItem>
@@ -2911,8 +2911,8 @@
                </elementSpec>
                <elementSpec ident="orgName" module="namesdates" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#Baylor">
                               <gloss>Baylor University, Armstrong Browning Library | Holds 3 letters, among correspondence written and received by the Victorian poet</gloss>
                            </valItem>
@@ -3399,8 +3399,8 @@
                </elementSpec>
                <elementSpec ident="placeName" module="namesdates" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#Abingdon">
                               <gloss>Abingdon, Berkshire, England | Abingdon (now called "Abingdon on Thames" or "Abingdon-on-Thames,") is a market </gloss>
                            </valItem>
@@ -3959,8 +3959,8 @@
                </elementSpec>
                <elementSpec ident="title" module="core" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#America_Birkbeck">
                               <gloss>Notes on a Journey in America, from the Coast of Virginia to the Territory of Illinois | 1817 | Mitford likely read the second edition, published in London in 1818 by J. Ridgwa</gloss>
                            </valItem>
@@ -5842,8 +5842,8 @@
                </elementSpec>
                <elementSpec ident="bibl" module="core" mode="change">
                   <attList>
-                     <attDef ident="corresp" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="corresp" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#America_Birkbeck">
                               <gloss>Notes on a Journey in America, from the Coast of Virginia to the Territory of Illinois | 1817 | Mitford likely read the second edition, published in London in 1818 by J. Ridgwa</gloss>
                            </valItem>
@@ -7708,8 +7708,8 @@
                            </valItem>
                         </valList>
                      </attDef>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#Act_of_Union">
                               <gloss>The Act of Union | The unification of Ireland with Great Britain (England and Scotland, to form the</gloss>
                            </valItem>
