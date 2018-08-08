@@ -169,10 +169,10 @@
                         <valItem ident="place"/>
                         <valItem ident="event"/>
                         <valItem ident="letter"><gloss>Use to mark references to correspondence.</gloss></valItem>
-                        <valItem ident="title"><gloss>Use where necessary to mark unnamed references to documents, readings, works etc. in the absence of a title.</gloss></valItem>
-                        <valItem ident="plant"/>
-                        <valItem ident="animal"/>
-                        <valItem ident="art"/>
+                        <valItem ident="plant"><gloss>Use to mark references to plants by kind, variety, genus, and/or species.</gloss></valItem>
+                        <valItem ident="animal"><gloss>Use to mark references to animals by kind, variety, genus, and/or species.</gloss></valItem>
+                        <valItem ident="title"><gloss>Use only where necessary to mark unnamed references to documents, readings, texts in the absence of a title. If this is a title, use the title element with an @ref. If there is mention of an author, date, or other bibliographic information all together, like Scott's Midlothian, use a bibl element with @corresp around the full span of referencing text, wrapping the parts as you can with author and title elements (no @ref attributes needed inside, just @corresp on the outer bibl) .</gloss></valItem>
+                        <valItem ident="art"><gloss>Use only where necessary to mark unnamed references to works of art in the absence of a title. If you have a title, use the title element with type="art".</gloss></valItem>
                      </valList>
                   </attDef>
                </attList>
