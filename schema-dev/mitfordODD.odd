@@ -26,7 +26,7 @@
             <author>Elisa Beshero-Bondar</author>
          </titleStmt>
          <editionStmt xml:id="edition">
-            <edition>Generated on 2018-08-08T10:30:47.092-04:00 from updates to the Site Index for the Digital Mitford project. Date: 2017-12-31T20:39:30.156-05:00. Extracted by Elisa Beshero-Bondar.
+            <edition>Generated on 2018-08-08T11:37:35.573-04:00 from updates to the Site Index for the Digital Mitford project. Date: 2017-12-31T20:39:30.156-05:00. Extracted by Elisa Beshero-Bondar.
         Count of all @xml:ids in the current file: 1946. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
@@ -77,11 +77,21 @@
                   </sch:rule>
                </constraint>
             </constraintSpec>
+            <constraintSpec scheme="schematron" ident="refsReq">
+               <constraint>
+                  <sch:rule context="tei:text//tei:persName[not(ancestor::tei:back)] | tei:text//tei:rs[not(ancestor::tei:back)] | tei:text//tei:placeName[not(ancestor::tei:back)] | tei:text//tei:orgName[not(ancestor::tei:back)] | tei:text//tei:name[not(ancestor::tei:back)] | tei:text//tei:title[not(ancestor::tei:back)]">
+                     <sch:assert test="@ref">
+                        If you're using these persName, placeName, orgName, title, name, or rs in the main text of a Digital MItford file, you'll need to apply an @ref attribute pointing to an xml:id of a named entity, 
+                        Named entity information and xml:ids are stored either in the main Site Index, or a proposed entry in the back of this document, or in a temporary si-Add file. 
+                     </sch:assert>  
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
             <constraintSpec scheme="schematron" ident="hashtaggery">
                  <constraint>
                     <sch:rule context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp | tei:TEI//@wit">
                        <sch:assert test="starts-with(., '#')" role="fatal">
-                        Attributes @ref, @who, @corresp and @wit must begin with a hashtag.
+                        Attributes @ref, @who, @corresp, and @wit must begin with a hashtag.
                      </sch:assert>  
                     </sch:rule>
                  </constraint>
@@ -222,11 +232,10 @@
                   </attDef>
                </attList>
             </elementSpec>
-
-               <elementSpec ident="persName" module="namesdates" mode="change">
+            <elementSpec ident="persName" module="namesdates" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#ab">
                               <gloss>Booth Alison Advisory Board | Professor of English, Booth directs the Collective Biographies of Women (CBW) pr</gloss>
                            </valItem>
@@ -3087,10 +3096,10 @@
                      </attDef>
                   </attList>
                </elementSpec>
-               <elementSpec ident="orgName" module="namesdates" mode="change">
+            <elementSpec ident="orgName" module="namesdates" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#Baylor">
                               <gloss>Baylor University, Armstrong Browning Library | Holds 3 letters, among correspondence written and received by the Victorian poet</gloss>
                            </valItem>
@@ -3575,10 +3584,10 @@
                      </attDef>
                   </attList>
                </elementSpec>
-               <elementSpec ident="placeName" module="namesdates" mode="change">
+            <elementSpec ident="placeName" module="namesdates" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#Abingdon">
                               <gloss>Abingdon, Berkshire, England | Abingdon (now called "Abingdon on Thames" or "Abingdon-on-Thames,") is a market </gloss>
                            </valItem>
@@ -4135,10 +4144,10 @@
                      </attDef>
                   </attList>
                </elementSpec>
-               <elementSpec ident="title" module="core" mode="change">
+            <elementSpec ident="title" module="core" mode="change">
                   <attList>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#America_Birkbeck">
                               <gloss>Notes on a Journey in America, from the Coast of Virginia to the Territory of Illinois | 1817 | Mitford likely read the second edition, published in London in 1818 by J. Ridgwa</gloss>
                            </valItem>
@@ -6018,10 +6027,10 @@
                      </attDef>
                   </attList>
                </elementSpec>
-               <elementSpec ident="bibl" module="core" mode="change">
+            <elementSpec ident="bibl" module="core" mode="change">
                   <attList>
-                     <attDef ident="corresp" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="corresp" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#America_Birkbeck">
                               <gloss>Notes on a Journey in America, from the Coast of Virginia to the Territory of Illinois | 1817 | Mitford likely read the second edition, published in London in 1818 by J. Ridgwa</gloss>
                            </valItem>
@@ -7871,7 +7880,7 @@
                      </attDef>
                   </attList>
                </elementSpec>
-               <elementSpec ident="name" module="core" mode="change">
+            <elementSpec ident="name" module="core" mode="change">
                   <attList>
                      <attDef ident="type" mode="replace" usage="req">
                         <valList type="closed">
@@ -7886,8 +7895,8 @@
                            </valItem>
                         </valList>
                      </attDef>
-                     <attDef ident="ref" mode="replace" usage="req">
-                        <valList type="closed">
+                     <attDef ident="ref" mode="replace" usage="rec">
+                        <valList type="semi">
                            <valItem ident="#Act_of_Union">
                               <gloss>The Act of Union | The unification of Ireland with Great Britain (England and Scotland, to form the</gloss>
                            </valItem>
@@ -7994,7 +8003,6 @@
                      </attDef>
                   </attList>
                </elementSpec>
-            
          </schemaSpec>
       </body>
   </text>

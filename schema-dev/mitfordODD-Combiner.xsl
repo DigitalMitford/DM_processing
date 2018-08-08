@@ -21,7 +21,7 @@
          <xsl:copy-of select="descendant::moduleRef"/>
         <xsl:copy-of select="descendant::constraintSpec"/>
         <xsl:copy-of select="descendant::elementSpec"/>
-        <xsl:apply-templates select="$MRMProsopRef//specGrp"/>
+        <xsl:apply-templates select="$MRMProsopRef//specGrp/*"/>
     </schemaSpec>
   </body>
 </xsl:template>
