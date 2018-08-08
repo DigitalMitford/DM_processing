@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-08-08T16:44:23Z. .
+Schema generated from ODD source 2018-08-08T20:08:41Z. .
 TEI Edition: Version 3.4.0. Last updated on
 	23rd July 2018, revision 1fa0b54
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.4.0/
@@ -4414,21 +4414,23 @@ Suggested values include: 1] #Act_of_Union(The Act of Union | The unification of
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Te Deum "Te Deum, also sometimes called the Ambrosian Hymn because if its association with St. Ambrose, is a traditional hymn of joy and thanksgiving." [Source: www.preces-latinae.org/thesaurus/Trinitas/TeDeum.html.]) </a:documentation>
                   <value>#Whereer_Handel</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">("Where’er You Walk An aria sung by Jupiter from Handel’s 1743 opera Semele (HWV58).) </a:documentation>
-                  <data type="Name"/>
+                  <data type="string"/>
                </choice>
             </attribute>
          </optional>
-         <attribute name="type">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <choice>
-               <value>plant</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to mark names of plants by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a plant, use the rs element with type="plant".) </a:documentation>
-               <value>animal</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to mark references to animal types by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a kind of animal, use the rs element with type="animal". ) </a:documentation>
-               <value>event</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to mark names of events, like the Battle of Hastings. If the mention is imprecise and you want to mark a short string of text as referring to a specific event, use the rs element with type="event". ) </a:documentation>
-            </choice>
-         </attribute>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>plant</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to mark names of plants by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a plant, use the rs element with type="plant".) </a:documentation>
+                  <value>animal</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to mark references to animal types by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a kind of animal, use the rs element with type="animal". ) </a:documentation>
+                  <value>event</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to mark names of events, like the Battle of Hastings. If the mention is imprecise and you want to mark a short string of text as referring to a specific event, use the rs element with type="event". ) </a:documentation>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -6563,7 +6565,7 @@ Suggested values include: 1] #America_Birkbeck(Notes on a Journey in America, fr
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Te Deum "Te Deum, also sometimes called the Ambrosian Hymn because if its association with St. Ambrose, is a traditional hymn of joy and thanksgiving." [Source: www.preces-latinae.org/thesaurus/Trinitas/TeDeum.html.]) </a:documentation>
                   <value>#Whereer_Handel</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">("Where’er You Walk An aria sung by Jupiter from Handel’s 1743 opera Semele (HWV58).) </a:documentation>
-                  <data type="Name"/>
+                  <data type="string"/>
                </choice>
             </attribute>
          </optional>
@@ -7959,7 +7961,7 @@ Suggested values include: 1] #America_Birkbeck(Notes on a Journey in America, fr
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Review: 55 Days | 2012-10-25) </a:documentation>
                   <value>#RomDrama_Hoagwood</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Romantic Drama and Historical Hermeneutics | 1998) </a:documentation>
-                  <data type="Name"/>
+                  <data type="string"/>
                </choice>
             </attribute>
          </optional>
@@ -11879,7 +11881,7 @@ Suggested values include: 1] #Baylor(Baylor University, Armstrong Browning Libra
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prelates | Prelates in Julian) </a:documentation>
                   <value>#Danaides</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(the Danaides | In Greek mythology, the fifty daughters of Danaus. They are to condemned to spen) </a:documentation>
-                  <data type="Name"/>
+                  <data type="string"/>
                </choice>
             </attribute>
          </optional>
@@ -13808,7 +13810,7 @@ Suggested values include: 1] #ab(Booth Alison Advisory Board | Professor of Engl
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Wolsey | character in Henry VIII) </a:documentation>
                   <value>#Zeno_F</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Count Zeno | Count Zeno in Foscari) </a:documentation>
-                  <data type="Name"/>
+                  <data type="string"/>
                </choice>
             </attribute>
          </optional>
@@ -14260,7 +14262,7 @@ Suggested values include: 1] #Abingdon(Abingdon, Berkshire, England | Abingdon (
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(St. John’s Church | Fictional name used in Our Village for St. Lawrence Church, an ancient church in) </a:documentation>
                   <value>#Styx</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(River Styx | River in Greek mythology that separates the realms of the living from the dead, ) </a:documentation>
-                  <data type="Name"/>
+                  <data type="string"/>
                </choice>
             </attribute>
          </optional>
@@ -19250,13 +19252,26 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:text//tei:persName[not(ancestor::tei:back)] | tei:text//tei:rs[not(ancestor::tei:back)] | tei:text//tei:placeName[not(ancestor::tei:back)] | tei:text//tei:orgName[not(ancestor::tei:back)] | tei:text//tei:name[not(ancestor::tei:back)] | tei:text//tei:title[not(ancestor::tei:back)]">
                      <sch:assert test="@ref">
-                        If you're using these persName, placeName, orgName, title, name, or rs in the main text of a Digital MItford file, you'll need to apply an @ref attribute pointing to an xml:id of a named entity, 
+                        If you're using these persName, placeName, orgName, title, name, or rs in the main text of a Digital Mitford file, you'll need to apply an @ref attribute pointing to an xml:id of a named entity. 
                         Named entity information and xml:ids are stored either in the main Site Index, or a proposed entry in the back of this document, or in a temporary si-Add file. 
                      </sch:assert>  
                   </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-hashtaggery-constraint-rule-14">
+            id="mitfordODD-correspReq-constraint-rule-14">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                context="tei:text//tei:bibl[not(ancestor::tei:back)]">
+                     <sch:assert test="@corresp">
+                        If you're using a bibl element in the main text of a Digital Mitford file, you'll need to apply an @corresp attribute pointing to an xml:id of a named entity for a written work. 
+                        Named entity information and xml:ids are stored either in the main Site Index, or a proposed entry in the back of this document, or in a temporary si-Add file. 
+                     </sch:assert>  
+                  </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mitfordODD-hashtaggery-constraint-rule-15">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -19268,7 +19283,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                     </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-listWitCheck-constraint-rule-15">
+            id="mitfordODD-listWitCheck-constraint-rule-16">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -19287,7 +19302,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
           xmlns:rng="http://relaxng.org/ns/structure/1.0">Many elements from the TEI names and places module are only permitted in back lists for proposed entries to the Digital Mitford site index.</sch:p> 
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-namedEntityRefencing-constraint-rule-16">
+            id="mitfordODD-namedEntityRefencing-constraint-rule-17">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 context="tei:text/tei:front//* | tei:text/tei:body//*">
                     <sch:report test="self::tei:addName | self::tei:affiliation | self::tei:age | self::tei:birth |  self::tei:bloc | self::tei:climate | self::tei:country | self::tei:death | self::tei:district |  self::tei:education | self::tei:faith | self::tei:floruit | self::tei:forename | self::tei:genName | self::tei:geo | self::tei:geogFeat | self::tei:geogName | self::tei:langKnowledge | self::tei:langKnown | self::tei:listEvent | self::tei:listNym | self::tei:listOrg | self::tei:listPerson | self::tei:listPlace | self::tei:listRelation | self::tei:location | self::tei:nameLink | self::tei:nationality | self::tei:occupation | self::tei:offset | self::tei:org | self::tei:person | self::tei:personGrp | self::tei:persona | self::tei:place | self::tei:population | self::tei:region | self::tei:relation | self::tei:residence | self::tei:settlement | self::tei:sex | self::tei:socecStatus | self::tei:state | self::tei:surname | self::tei:terrain | self::tei:trait"
@@ -19301,7 +19316,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
           xmlns:rng="http://relaxng.org/ns/structure/1.0">Check the @ref values on rs and name that these are pointing to the appropriate lists in the Site Index.</sch:p> 
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mitfordODD-rsReferencing-constraint-rule-17">
+            id="mitfordODD-rsReferencing-constraint-rule-18">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 context="tei:rs | tei:name">
                      <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>

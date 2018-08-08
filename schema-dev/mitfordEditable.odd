@@ -74,7 +74,17 @@
                <constraint>
                   <sch:rule context="tei:text//tei:persName[not(ancestor::tei:back)] | tei:text//tei:rs[not(ancestor::tei:back)] | tei:text//tei:placeName[not(ancestor::tei:back)] | tei:text//tei:orgName[not(ancestor::tei:back)] | tei:text//tei:name[not(ancestor::tei:back)] | tei:text//tei:title[not(ancestor::tei:back)]">
                      <sch:assert test="@ref">
-                        If you're using these persName, placeName, orgName, title, name, or rs in the main text of a Digital MItford file, you'll need to apply an @ref attribute pointing to an xml:id of a named entity, 
+                        If you're using these persName, placeName, orgName, title, name, or rs in the main text of a Digital Mitford file, you'll need to apply an @ref attribute pointing to an xml:id of a named entity. 
+                        Named entity information and xml:ids are stored either in the main Site Index, or a proposed entry in the back of this document, or in a temporary si-Add file. 
+                     </sch:assert>  
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+            <constraintSpec scheme="schematron" ident="correspReq">
+               <constraint>
+                  <sch:rule context="tei:text//tei:bibl[not(ancestor::tei:back)]">
+                     <sch:assert test="@corresp">
+                        If you're using a bibl element in the main text of a Digital Mitford file, you'll need to apply an @corresp attribute pointing to an xml:id of a named entity for a written work. 
                         Named entity information and xml:ids are stored either in the main Site Index, or a proposed entry in the back of this document, or in a temporary si-Add file. 
                      </sch:assert>  
                   </sch:rule>

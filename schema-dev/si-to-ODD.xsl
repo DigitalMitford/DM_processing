@@ -33,6 +33,7 @@
                             <elementSpec ident="persName" module="namesdates" mode="change">
                             <attList>
                                 <attDef ident="ref" mode="replace" usage="rec">
+                                    <datatype><dataRef name="string"/></datatype>
                                  <valList type="semi">   
                                      <xsl:apply-templates select="descendant::text//listPerson//@xml:id"/>
                                  </valList>
@@ -42,6 +43,7 @@
                             <elementSpec ident="orgName" module="namesdates" mode="change">
                                 <attList>
                                     <attDef ident="ref" mode="replace" usage="rec">
+                                        <datatype><dataRef name="string"/></datatype>
                                         <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listOrg//@xml:id"/>
                                         </valList>
@@ -51,6 +53,7 @@
                             <elementSpec ident="placeName" module="namesdates" mode="change">
                                 <attList>
                                     <attDef ident="ref" mode="replace" usage="rec">
+                                        <datatype><dataRef name="string"/></datatype>
                                         <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listPlace//@xml:id"/>
                                         </valList>
@@ -60,6 +63,7 @@
                             <elementSpec ident="title" module="core" mode="change">
                                 <attList>
                                     <attDef ident="ref" mode="replace" usage="rec">
+                                        <datatype><dataRef name="string"/></datatype>
                                         <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listBibl//@xml:id"/>
                                             <xsl:apply-templates select="descendant::text//list[@sortKey='art']//@xml:id"/>
@@ -70,6 +74,7 @@
                             <elementSpec ident="bibl" module="core" mode="change">
                                 <attList>
                                     <attDef ident="corresp" mode="replace" usage="rec">
+                                        <datatype><dataRef name="string"/></datatype>
                                         <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listBibl//@xml:id"/>
                                         </valList>
@@ -78,7 +83,7 @@
                             </elementSpec>
                             <elementSpec ident="name" module="core" mode="change">
                                 <attList>
-                                    <attDef ident="type" mode="replace" usage="req">
+                                    <attDef ident="type" mode="replace" usage="rec">
                                         <valList type="closed">
                                             <valItem ident="plant"><gloss>Use to mark names of plants by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a plant, use the rs element with type="plant".</gloss></valItem>
                                             <valItem ident="animal"><gloss>Use to mark references to animal types by kind, variety, genus, and/or species. If the mention is imprecise and you want to mark a short string of text as referring to a kind of animal, use the rs element with type="animal". </gloss></valItem>
@@ -86,6 +91,7 @@
                                         </valList>
                                     </attDef>
                                     <attDef ident="ref" mode="replace" usage="rec">
+                                        <datatype><dataRef name="string"/></datatype>
                                         <valList type="semi">   
                                             <xsl:apply-templates select="descendant::text//listEvent//@xml:id"/>
                                             <xsl:apply-templates select="descendant::text//list//@xml:id"/>
