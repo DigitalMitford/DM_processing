@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-08-08T20:08:41Z. .
+Schema generated from ODD source 2018-08-09T18:35:49Z. .
 TEI Edition: Version 3.4.0. Last updated on
 	23rd July 2018, revision 1fa0b54
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.4.0/
@@ -19252,7 +19252,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:text//tei:persName[not(ancestor::tei:back)] | tei:text//tei:rs[not(ancestor::tei:back)] | tei:text//tei:placeName[not(ancestor::tei:back)] | tei:text//tei:orgName[not(ancestor::tei:back)] | tei:text//tei:name[not(ancestor::tei:back)] | tei:text//tei:title[not(ancestor::tei:back)]">
                      <sch:assert test="@ref">
-                        If you're using these persName, placeName, orgName, title, name, or rs in the main text of a Digital Mitford file, you'll need to apply an @ref attribute pointing to an xml:id of a named entity. 
+                        If you're using this element, <sch:value-of select="name()"/>, in the main text of a Digital Mitford file, you'll need to apply an @ref attribute pointing to an xml:id of a named entity. This rule applies to persName, placeName, orgName, title, name, and rs elements.
                         Named entity information and xml:ids are stored either in the main Site Index, or a proposed entry in the back of this document, or in a temporary si-Add file. 
                      </sch:assert>  
                   </sch:rule>
