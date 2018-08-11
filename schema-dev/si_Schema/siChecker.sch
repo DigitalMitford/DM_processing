@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/> 
-
+<sch:pattern>
+    <sch:p>Identify note elements that are longer than [TOO LONG!] number of characters so exceeding the flow-length of our note box. (How long is this?) Raise a warning or an error that p breaks need to be added.
+        NOTE: WE NEED CORRESPONDING XSLT ALTERATION FOR NOTE BOXES TO READ 1st Paragraph ONLY.
+    </sch:p>
+</sch:pattern>    
+<sch:pattern>
+    <sch:p>Look for strings in note elements and label elements that might want/need to be tagged for cross-referencing. </sch:p>
+</sch:pattern>
+<sch:pattern>
+    <sch:p>Identify stub entries.</sch:p>
+    <sch:rule context="*[@xml:id]">
+        <sch:report test="count(child::* eq 1)" role="warning">Warning: stub element. We should flesh this out and add more information.</sch:report>
+    </sch:rule>
+</sch:pattern>
 <sch:pattern>
     <sch:rule context="tei:person[descendant::tei:surname = //tei:surname[not(ancestor::tei:person = self::tei:person)]]">
         <sch:let name="currentContext" value="."/>
