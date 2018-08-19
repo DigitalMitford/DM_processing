@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM2017">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, January 20, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor>
+               <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+               <persName ref="#jgf">Julie Fish</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-09-15">2017-09-15</date><!--Fill out and update the date here as different proofreaders work with this file. Dates inside the attribute @when take the form of a hyphen-separated four-digit year followed by two-digit month and two digit day, so May 2, 2015 comes out as 2015-05-02. -->
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#Id_who"/><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-09-08"/></edition>
+               <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+               <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF8901-Copy.jpg, DSCF8916.jpg, DSCF8917.jpg, DSCF8918.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550</idno><!--LMW: no shelfmark info. for this letter in spreadsheet.-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1819-01-20">1819 January 20</date>. <note resp="#lmw">We arrived at this date by checking a perpetual calendar. January 20, 1819 was a Wednesday.</note>
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One sheet of <material>paper</material>, 18.5 x 12 cm., two surfaces photographed. Folded in half, then again in thirds.</p> 
+                        <p>No postmarks.</p> 
+                     </support>
+                     <condition>
+                        <p>Sheet ragged on left and bottom edge.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><handNote corresp="#pencil" medium="pencil"> <!--LMW: add Needham handnote for date.-->
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener>
+               <dateline><!--The dateline of a letter, if present, goes here. The date line typically includes (in any order) a date and a location, as Mitford records where she is when she begins a letter. When Mitford's dateline is complete and we have no reason to doubt her record, we use that as our default for the date. If there's no date line, omit this element. Always record this in the order in which Mitford presented it. If she puts the date first, you do the same. If she puts the place first, you do the same.-->
+                  <date when="1819-01-20">Wednesday</date>. 
+                  <add hand="#Id_who">[20 Jan. 1819]</add> 
+               </dateline>
+            </opener>
+            <p>Your dear letter, my own sweet <persName ref="#Webb_Mary_younger">Mary</persName> should have been answered in person had the weather, &amp; indeed my health permitted. I went on <date when="1819-01-16">Saturday</date> into <placeName ref="#Reading_city">Reading</placeName>, &amp; whether with talking laughing or the cold was so very ill in the night that <persName ref="#Mitford_Geo">Papa</persName> was quite frightened. I am quite well now--but he is going to <rs type="place" ref="#London_city">Town</rs> on <date when="1819-01-23">Sunday</date> &amp; so engaged till then that I have no chance of the pleasure of seeing you.--Most of our books &amp; above all my favorites are packed up &amp; at <placeName ref="#Coley_Berks">Coley</placeName>--&amp; I am afraid the greater part of those here come under the interdicted quantity &amp; quality, being most of them <emph rend="underline">long</emph> histories--or longer travels. One of my favorites is unpacked (but I will not answer for your liking it) an old edition <pb n="2"/>of an old translation of <persName ref="#Mariana_J">Mariana</persName>'s old <title ref="#GenHistSpain">history of Spain</title>--It is one Volume <emph rend="underline">Folio</emph>--Did you ever read <title ref="#RichardsonLetters"><persName ref="#Richardson_Sam">Richardson</persName>'s letters</title>? I mean his private correspondence in 6 Vols. Perhaps you would be amused with them--Shall I bring them? Then we have a fine <title>edition of <persName ref="#Chatterton">Chatterton</persName> in 3 Vols</title>--Should you like that? <title ref="#Lectures_Blair"><persName ref="#Blair_H">Blair</persName>s Lectures</title>? <title><persName ref="#Coxe_Wm">Coxe</persName>s Travels</title>?--After all my dear you had better come &amp; <choice><sic>chuse</sic><reg>choose</reg></choice>. <lang xml:lang="fr">En attendant</lang> I send you <persName ref="#Shee">Shee</persName>'s <title ref="#Elements_of_Art">Elements of Art</title> which besides being very beautiful as poetry will give you some good ideas on painting &amp; sculpture &amp; a <title>book about the South Sea Islands</title> which pleases me for its simplicity.--Since so many of our books have been packed my reading has been chiefly from borrowed books--books lent me by <persName ref="#Valpy_Richard">Dr. Valpy</persName>--<persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName>--<persName ref="#Liebenrood_JE">Mr. Liebenrood</persName>--<persName ref="#Brooke_Mr">Mr. Brooke</persName>--<persName ref="#Newberry_J">Mr. Newberry</persName>--&amp; others--besides the libraries of <placeName ref="#Reading_city">Reading</placeName>--<placeName ref="#Institution_Reading">The Institution</placeName>, the <placeName ref="#BilliardRm_Reading">Billiard room</placeName> &amp;<!--LMW: unclear ??.-->I heard of your dance from <persName ref="#Bailey_Dr">Dr. Bailey</persName> who spoke of it as very pleasant he said there was a very beautiful girl--<persName ref="#Teasdale_Miss">Miss Teasdale</persName>.--<persName ref="#Mitford_Geo">Papa</persName> had a charming letter from <persName ref="#Hayward_Mrs">Mrs. Hayward</persName> yesterday about his Godfather-ship--I heard yesterday from <persName ref="#Haydon">Mr. Haydon</persName>, whom I hope we shall see soon--Only think of his having a pet greyhound.--I will read you some of his letter when I see you--&amp; today I got one from <persName ref="#Rowden_Fr">Mrs. Rowden</persName> which you shall see too. She is beginning to be pretty sick of <placeName ref="#France">France</placeName>. One of my schoolfellows is going to marry a <persName>son of the Duke de Fitz James</persName>, &amp; is turning Catholic in preparation for these august nuptuals. A year ago she was a methodist--<lang xml:lang="fr">Ainsi va le monde</lang>.--You need never fear any doublecharge about letters <emph rend="underline">put into the <placeName ref="#ReadingPO">Reading Post Office</placeName></emph>--it is only a penny if there were 10 sheets.--Adieu--my dear love--Kind regards to all from all--</p>
+            <closer>Ever yours <persName ref="#MRM">M.R.M.</persName><pb n="4"/></closer>
+            <postscript>
+               <p>You must send me an account of the ball &amp; tell me how you liked <persName ref="Joseph_Mr">Mr. Joseph</persName>--Tell my own dear <persName ref="#Webb_Eliza">Eliza</persName> I want to see <emph rend="underline">her too</emph> very much indeed. <persName ref="#Miranda_pet">Miranda</persName> is the greatest beauty under Heaven.</p>     
+            </postscript><closer>
+               <address><addrLine><lb/>To <persName ref="#Webb_Mary_younger">Mary Webb</persName></addrLine>
+                  </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already, included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+           
+           <!--LMW:
+              Famous people, should be in reference books:
+             <person xml:id="Marian_J"> Juan de Mariana, also known as Father Mariana (25 September 1536 – 17 February 1624)
+              <person xml:id="Blair_H"> Hugh Blair (1718-1800) Scottish philosopher and cleric
+              <person xml:id="Shee"> Martin Archer Shee, R.A.  (23 December 1769 – 13 August 1850) artist and writer on art
+              <person xml:id="Chatteron"> Thomas Chatterton (20 November 1752 – 24 August 1770) English poet
+              
+              Acquaintances of Mitford's, from Reading area/Berkshire:
+              <person xml:id="Brooke_Mr"> Mr. Brooke 
+              <person xml:id="Hayward_Mrs">Mrs. Hayward
+                     Mrs. Hayward Of Watlington? See https://books.google.com/books?id=H6E2AQAAMAAJ
+              <person xml:id="Bailey_Dr">Dr. Bailey
+              <person xml:id="Teasdale_Miss">Miss Teasdale (or Teesdale?)
+              <person xml:id="Joseph_Mr">  Who is this? Is Joseph his first name or last name? Real or fictional person? Reference to a book? When was "Mr Joseph Hanson, the Haberdasher" story written?
+              
+              <person xml:id="Liebenrood_JE"> John Englebert Liebenrood 
+                    Born about 1756, died 1823; high sherrif of Berkshire until 1807.  Wife Lucy, died 1829
+              
+                    from Wikipedia, under Prospect Park, Reading (no listing under his name):  "John Engelberts Liebenrood (1754-1821) was born in Germany in 1754. His birth name was John Engelberts Ziegenbein and he immigrated to England and obtained naturalisation in 1781.[5] He lived with his great uncle John George Liebenrood, a very wealthy merchant in Purley. When his uncle died in 1795 he inherited his fortune and in accordance with the will changed his name to Liebenrood.[6] In the following year he married Lucy Hancock whose brother was Rear Admiral John Hancock."
+              See  also https://books.google.com/books?isbn=0750951737
+              
+              From letter: "One of my schoolfellows is going to marry a <persName>son of the Duke de Fitz James</persName>": Can we figure out who the "schoolfellow" (female) is and whom she married?
+ 
+             [ T. Wyatt, Elegaic Sonnet volume published in Reading, useful subscriber list for names of prominent Reading-ites: https://books.google.com/books?id=U0oCAAAAQAAJ]
+              
+              BOOKS:
+<bibl xml:id="#Elements_of_Art"> by Shee.  ELements of Art: A Poem, in Six Cantos; with Notes and a Preface; including Strictures on the State of the Arts, Criticism, Patronage, and Public Taste. Miller/Bulmer, 1809.
+
+<bibl xml:id="Lectures_Blair"> Hugh Blair's Lectures on Rhetoric and Belles Lettres (1783, 3 vols.)
+ 
+              <bibl xml:id="GenHistSpain">Historiae de rebus Hispaniae (1592)
+              wikipedia: "Mariana's great work, Historiae de rebus Hispaniae, first appeared in twenty books at Toledo in 1592; ten books were subsequently added (1605), bringing the work down to the accession of Charles V in 1519, and in a still later abstract of events the author completed it to the accession of Philip IV in 1621. It was so well received that Mariana was induced to translate it into Spanish (the first part in 1601; completed, 1609; English translation by J. Stevens, 1699)." English title:  General History of Spain. (Try to find edition Mitford might have read in English.)
+              
+              <bibl xml:id="RichardsonLetters">
+              The correspondence of Samuel Richardson ... Selected from the original manuscripts ... to which are prefixed, a biographical account of that author, and observations on his writings. By Anna Lætitia Barbauld.
+by Samuel Richardson; Barbauld, Mrs.
+Language: English  
+Publisher: London: Richard Phillips, 1804.
+Database: WorldCat
+
+PLACES:
+           
+           <place xml:id="Institution_Reading"> Institution = Literary Institution and Reading Room, Reading? (also mentioned in MRM journal as "The Institution"
+           
+          See 1839 Railway Guide:  https://books.google.com/books?id=wWrXAAAAMAAJ
+          
+          <place xml:id="BilliardRm_Reading"> Billiard Rooms, Reading
+          
+          <place xml:id="#ReadingPO">Reading Post Office
+           -->
+       <listPerson>
+          <person xml:id="proposed_new_ID">
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

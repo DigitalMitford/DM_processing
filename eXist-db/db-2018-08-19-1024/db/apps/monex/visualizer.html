@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Data Visualizer <small>Display Index Map</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"/> Home</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-desktop"/> Data Visualizer</li>
+        </ol>
+    </section>
+    
+    <!-- Main content -->
+    <section id="visualizer" class="content">
+        <div class="pad margin no-print">
+            <div class="callout callout-info">
+                <p>This feature only works on eXist version 2.2RC2 or higher</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-body">
+                <form>
+                    <label for="collection">Collection</label>
+                    <select id="collection" name="collection"/>
+                </form>
+                <div id="graph" class="col-lg-12 col-xs-12"/>
+            </div>
+        </div>
+    </section>
+    <script>
+        var init = true;
+        function treemap(col){
+            var margin = {top: 40, right: 10, bottom: 10, left: 10},
+                width = 1024 - margin.left - margin.right,
+                height = 800 - margin.top - margin.bottom;
+            
+            var color = d3.scale.category20c();
+            
+            var treemap = d3.layout.treemap()
+                .size([width, height])
+                .sticky(true)
+                .value(function(d) { return d.size; });
+            
+            var div = d3.select("#graph").append("div")
+                .style("position", "relative")
+                .style("width", (width + margin.left + margin.right) + "px")
+                .style("height", (height + margin.top + margin.bottom) + "px")
+                .style("left", margin.left + "px")
+                .style("top", margin.top + "px")
+                .attr("class","treemap");
+            
+            d3.json("modules/index2json.xql?col="+col, function(error, root) {
+              var node = div.datum(root).selectAll(".node")
+                  .data(treemap.nodes)
+                .enter().append("div")
+                  .attr("class", "node")
+                  .attr("title", function(d) {return d.children ? null : ("Node: '" + d.name + "' count: '" + d.size + "'")})
+                  .call(position)
+                  .style("background", function(d) { return d.children ? color(d.size) : null; })
+                  .text(function(d) { return d.children ? null : d.name; });
+            });
+        };
+        
+        
+        function position() {
+          this.style("left", function(d) { return d.x + "px"; })
+              .style("top", function(d) { return d.y + "px"; })
+              .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+              .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+        }
+        treemap("/db/apps");
+        
+        $.ajax({
+            url: "modules/collectionsAsHtml.xql",
+            cache: false
+        })
+        .done(function( result ) {
+            console.log("result: ", result);
+            $("#collection").replaceWith($(result));
+
+            $("select").change(function() {
+                var selectedCol = $('select option:selected').attr("value");
+                console.log(selectedCol);
+                $(".treemap").remove();
+                treemap(selectedCol);
+                
+            });
+        });
+    </script>
+    <script type="text/javascript" src="resources/scripts/modernizr.custom.js"/>
+    <script type="text/javascript" src="resources/scripts/knockout-3.1.0.js"/>
+    <script type="text/javascript" src="resources/scripts/knockout.mapping-2.4.1.js"/>
+    <script type="text/javascript" src="resources/scripts/exadmin.js"/>
+</div>

@@ -1,0 +1,13 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/monex/resources/DataTables-1.10.7" version="1" owner="monex" group="monex" mode="775" created="2017-09-10T21:09:20.837-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="Contributing.md" skip="no" owner="monex" group="monex" mode="664" created="2017-09-10T21:09:20.837-04:00" modified="2017-09-10T21:09:20.837-04:00" filename="Contributing.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="Readme.md" skip="no" owner="monex" group="monex" mode="664" created="2017-09-10T21:09:20.838-04:00" modified="2017-09-10T21:09:20.838-04:00" filename="Readme.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="license.txt" skip="no" owner="monex" group="monex" mode="664" created="2017-09-10T21:09:20.838-04:00" modified="2017-09-10T21:09:20.838-04:00" filename="license.txt" mimetype="text/plain">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="media" filename="media"/>
+</collection>

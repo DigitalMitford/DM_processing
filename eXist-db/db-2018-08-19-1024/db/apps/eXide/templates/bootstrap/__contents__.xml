@@ -1,0 +1,21 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/templates/bootstrap" version="1" owner="eXide" group="eXide" mode="775" created="2017-09-10T21:09:19.568-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2017-09-10T21:09:19.568-04:00" modified="2017-09-10T21:09:19.568-04:00" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="eXide" group="eXide" mode="775" created="2017-09-10T21:09:19.569-04:00" modified="2017-09-10T21:09:19.569-04:00" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="index.html" skip="no" owner="eXide" group="eXide" mode="775" created="2017-09-10T21:09:19.57-04:00" modified="2017-09-10T21:09:19.57-04:00" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="eXide" group="eXide" mode="775" created="2017-09-10T21:09:19.571-04:00" modified="2017-09-10T21:09:19.571-04:00" filename="error-page.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2017-09-10T21:09:19.576-04:00" modified="2017-09-10T21:09:19.576-04:00" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="modules" filename="modules"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="resources" filename="resources"/>
+</collection>

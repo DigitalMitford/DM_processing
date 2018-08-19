@@ -1,0 +1,15 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/security/exist/accounts" version="1" owner="SYSTEM" group="dba" mode="770" created="2017-09-10T20:02:25.209-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="monex.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2017-09-10T21:09:20.569-04:00" modified="2017-09-10T21:09:20.588-04:00" filename="monex.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="admin.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2017-09-10T20:02:25.231-04:00" modified="2017-09-17T12:19:00.484-04:00" filename="admin.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="guest.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2017-09-10T20:02:25.45-04:00" modified="2017-09-10T20:02:25.501-04:00" filename="guest.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="eXide.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2017-09-10T21:09:19.438-04:00" modified="2017-09-10T21:09:19.463-04:00" filename="eXide.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><!-- <?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> --><TEI xmlns="http://www.tei-c.org/ns/1.0">  
+   <teiHeader>
+      <fileDesc>
+         <titleStmt> 
+            <title xml:id="MRM1793">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1822-04-28">1822 April 28</date></title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#err">Elizabeth Raisanen</editor> 
+            <sponsor>
+               <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+            </sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal> 
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lrs">Lindsey Spillar</persName> 
+               <persName ref="#lrs">Lindsey Spillar</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-08-15">2017-08-15</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#Id_who">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-08-14"/>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>28April1822SirWilliamElford1a#.JPG, 28April1822SirWilliamElford2b#.JPG, 28April1822SirWilliamElford3b#.JPG, 28April1822SirWilliamElford4a#.JPG&gt;</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName></p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>        
+         <sourceDesc>
+            <msDesc> 
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> 
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 452</idno> 
+               </msIdentifier>
+               <head>Letter from <persName ref="#MRM">Mary Russell Mitford</persName> to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1822-04-28">1822 April 28</date>.</head>
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support> <p> One quarto sheet of <material>paper</material> folded in half to form two octavo pages, which comprise pages 1-4 of the letter. The fourth page exposes the address with the end of the letter written along three sides and has been folded in sixths. The third page has a slight rip where the wax seal was attached.</p> 
+                        <p>Address leaf bearing the following postmarks: 
+                           1) Black circular mileage stamp reading <stamp>READING<lb/><unclear><gap quantity="1" unit="chars" reason="illegible"/></unclear></stamp></p>                      
+                        <p>A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.</p>
+                     </support>
+                     <condition>
+                        <p>Sheet torn on right edge of page three where wax seal was removed.</p> 
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to page four.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "42" in the top left of the first leaf.</handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <dateline>
+                  <name type="place" ref="#ThreeMileCross">Three Mile Cross</name> 
+                  <date when="1822-04-22">April 28<hi rend="superscript">th</hi>1822</date>. 
+               </dateline>
+            </opener>
+           
+               <p>Oh, my dear friend, how very very sorry we are to hear of your accident! And yet, since it is so happily past, &amp; has been some with such delightful cheerfulness and good humour, it seems almost as much a matter of congratulation as of condolence--think of what such an accident would have been to some people! But you are an extradorniary man--as I have a say now--(By the bye your prototype <persName ref="#Walpole_Hor">Hor: Wal:</persName> would have taken a broken arm so philosophically)--&amp; I never have seen such an instance of the friend? of real severity &amp; good humour over pain and weariness as the delicious letter, which in the midst of a sick room you dictated to me. Really a misfortune to some is always a happiness--it is such a great thing to think of.  And <persName ref="#Elford_MrsM">Miss Elford</persName>'s charming letter how can I thank her enough for that--I should have written to her as well as to you, only that all our Mr. P's I have sendded back to town--I even ?? whether I should not write to her instead of you--file? prevented  that such a letter &amp; met a transfer are &amp; moved be one. Thank her a thousand times for her delightful kindness--Oh she may never think of me as a stranger--I even could think of her as one--some day or other than presumptuous enough to hope that she may think of me as a friend--Every word of her letter was so gratifying--especially what the pages of <persName ref="#Elford_Eliz_da">Mrs. Adams</persName>, &amp; of your undying consi-deration. I thank her most sincerely and heartily--Infinite love 
+                  <pb n="2"/>her. May I?--I must not forget to say that <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> who is just returned from town, was here soon <del rend="squiggles"><gap quantity="2" unit="word"/></del>  after her letter arrived, &amp; from the warm interest you can so well imagine both in the glad tidings &amp; the <del rend="squiggles"><gap quantity="1" unit="word"/></del>singular playfullness of one fact of the letter, &amp; the delightful simplici-ty &amp; amiableness of the other. By the way you should have seen this <persName ref="#Dickinson_Mrs">Dickinson</persName> herself--she was just a thing for a painter to look at--dressed in a high gown of rich black satin, made close to her beautiful shape, with a superb stuff of "Flanders lace"--a magnificent plume of feathers &amp; a veil that really swam about her like a cloud. She looked just like the portrait of some Spanish or Venetian. Beauty by <persName rend="#Velazquez_Diego">Velazquez</persName> or <persName ref="Titian">Titian</persName>. <persName ref="#Dickinson_Charles">Mr. D</persName> is better. And the little girl the very moral of him. What a strange thing family likeness is. How impossible it seems that a little fair blooming laughing round-about apple blossom of a <del rend="squiggles"><gap quantity="1" unit="word"/>girl</del> child should resemble an old weather-beaten stern looking man-- as shriveled &amp; yellow as a golden pippin--And yet so it is. I am long for it. I wanted the child to be like her mother.(Jerk) You must have gotten my last worthless letter long before this--Well--I have read Madeline--&amp; I like it rather less than I did before I read it--So I advise you not to be "fashed?" with it. Really my plum pudding smile was a very good one--only a plum pudding is a better thing. This is a sort of Pamela story (not half so pretty as Pamela though) of a young Scotch girl adopted by an English Lady &amp; then at her death returned to her parents cottage &amp;c. How this <persName>Opie</persName> might have made a pretty thing of this--for the idea was <add place="above"><metamark place="below" function="insertion" rend="carret"/>a</add> good one--&amp; the manners of a Scottish farm works in proper hands ?? 
+                  <pb n="3"/>but delightful. Instead of this she hides &amp; puts behind a curtain all the real &amp; tone &amp; picturesque homeliness which would have given life &amp; nature to the scene, &amp; brings forth info full view this Madeline sighing &amp; playing &amp; painting- her pianos &amp; hopes &amp; laughter &amp; miniatures &amp; really thinks these vulgar common-places of fashionable life making of gentility. Then she makes her <orgName ref="Scots">Scotch</orgName> people from first to last-- Farmers-farmers wives-chicken &amp; ale ?? English-- think of that-- London English-- instead of their own beautiful <persName ref="#Doria_Andrea">Doria</persName>. How we really feel that as an inspiring? &amp; an a front--to be true it's just possible that <persName ref="Amelia_Opie">Mrs. Opie</persName>'s <del rend="squiggles"><gap quantity="1" unit="word"/></del> scotch might be worse than her English. It's possible--though considering what her English is--but if her scotch be worse, why she was right to <del rend="squiggles"><gap quantity="1" unit="word"/></del> eschew it then her story is abomiminable--not particularly moral I think--&amp; I made out the latter part she is forced to take up jealousy -- wifely jealousy--that passion with which no one sympathizes! Even at the fountain head--in <bibl ref="Othello_play">Othello</bibl>--in spite of the passion, the poetry--the esquisite illusion of the scene, one cannot help thinking what a booby that black man is! And for <persName ref="Amelia_Opie">Mrs. Opie</persName>to try her funny smile! Well I think I have pretty nearly saw enough of Madeline.-- I have read, too, the celebrated Adam Blair-- but I don't recommend that to you either. Some parts of the writing are exquisite-- as fine? as we all can be -- but the story is exceedingly disagreeable, &amp; which to you will be quite enough--it is melancholy. So I do not recommend <bibl ref="Some_Passages_Mr.Blair">"Some Passages of the Life of Mr. Adam Blair"</bibl>.--although the wife of <placeName ref="London_city">London</placeName> &amp; of <placeName ref="Edinburgh"/> join in its praise.--Pray, my dear <persName ref="#Elford_SirWm">Sir William</persName>, do you read 
+                  <pb n="4"/><title ref="#Blackwoods">Blackwoods magazine</title>, &amp; <title ref="#John_Bull">John Bull</title>? or do you leave to use a whig, the sole enjoyment of these sorry iniquities? To be nice? there is in these modest periodicals a fine swaggering bold-faced independence, a perfection of lying &amp; of carrying it off which is delightfully amazing. One should think that it won't be only one man's gift--but the endowment must be general. It will be a heavy day for me when John Bull goes to the thunder. I read no other newspaper. And in my secret soul (don't tell <persName ref="#Elford_SirWm">Mr. Elford</persName>) though he &amp;I both ?? in the <placeName ref="#London_city">London</placeName>, along with the fact is the ?? &amp; the <persName ref="#Lamb_Chas">Charles Lamb</persName>-- I like <title ref="#Blackwoods">Blackwood</title>'s better. By the bye do you ever see the <title ref="#LondonMag">London Magazine</title>. <persName ref="#Lamb_Chas">Charley Lamb</persName>'s articles signed Elia are irrevocably the first ?? of English horse in the ?? memoir is as delicate as Addison's &amp; far more piquant-- Oh how you won't enjoy it! Do borrow or hire all the hundreds of ?? &amp; Hessey's <title ref="#LondonMag">London Magazine</title>, &amp; read all <persName ref="Amelia_Opie">Opia</persName>'s articles as well as the Fable Letters &amp; the <title ref="#Confessions_OpiumEater_nonfict">Confessions of an English Opium-Eater</title> &amp; the Dramatic Sketches (underlined) &amp; tell me how you like <persName ref="#Lamb_Chas">Charles Lamb</persName>. I shall depend on soon hearing how you ?? not I fear from your own hand-but from that fair &amp; kind one which I should be so glad to shake. Kind-est regards &amp; good wishes to you &amp; her &amp; all from all here--?? from home more heartily than your being affectious friend. 
+            </p>
+               <closer>
+               <persName ref="#MRM">M. R. M.</persName>
+            </closer> 
+      
+             <closer>
+               <address>
+                  <addrLine><lb/>To</addrLine>
+                  <addrLine><lb/>Sir William Elford Bar<hi rend="superscript">t</hi></addrLine>
+                  <addrLine><lb/>Bickham</addrLine>
+                  <addrLine><lb/><emph rend="underline">Plymouth</emph></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> 
+       <listPerson>
+          <person xml:id="Amelia_Opie">
+             <persName>
+                <surname>Opie</surname>
+                <forename>Amelia</forename>
+             </persName>
+             <birth when="1769-11-12"><placeName>Norwich, United Kingdom</placeName></birth>
+             <death when="1853-12-02"><placeName>Norwich, United Kingdom</placeName></death>
+             <note resp="#lrs">Amelia Opie was an English author who published numerous novels in the Romantic Period of the early 19th century, through 1828</note>
+          </person>
+          <person xml:id="Velazquez_Diego">
+             <persName>
+                <surname>Velazquez</surname>
+                <forename>Diego</forename>
+                <forename>Rodríguez de Silva y</forename>
+             </persName>
+             <birth when="1599-06-06"><placeName>Seville, Spain</placeName></birth>
+             <death when="1660-08-06"><placeName>Madrid, Spain</placeName></death>
+             <note resp="#lrs">Diego Velazquez was a Spanish Painter in the 17th century.</note>
+          </person>
+          <person xml:id="Lockhart_John">
+             <persName>
+                <surname>Lockhart</surname>
+                <forename>John</forename>
+                <forename>Gibson</forename>
+             </persName>
+             <birth when="1794-06-12"><placeName> Lanarkshire</placeName></birth>
+             <death when="1854-11-25"><placeName>England</placeName></death>
+             <note resp="#lrs">John Gibson Lockhart was a Scottish writer and editor. He wrote "Some Passages in the Life of Mr. Adam Blair.</note>
+          </person>
+       </listPerson>
+          <listBibl>
+             <bibl xml:id="Madeline_poem_RW">
+                <title>Madeline</title>
+                <author>Amelia Opie</author>
+                <editor/>
+                <pubPlace>London</pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="1822"/>
+             </bibl>
+             <bibl xml:id="Pamela_Novel">
+                <title>Pamela, or Virtue Rewarded</title>
+                <author>Samuel Richardson</author>
+                <editor><!--if indicated--></editor>
+                <pubPlace>England</pubPlace>
+                <publisher> Messrs Rivington and Osborn</publisher>
+                <date when="1740"/>
+             </bibl>
+             <bibl xml:id="Some_Passages_Mr.Blair">
+                <title>Some passages in the life of Mr. Adam Blair</title>
+                <author>John Gibson Lockhart</author>
+                <editor><!--if indicated--></editor>
+                <pubPlace>England</pubPlace>
+                <publisher>Edinburgh : W. Blackwood and Sons</publisher>
+                <date when="1822"/>
+             </bibl>
+          </listBibl>
+     </div>
+     </back>
+  </text>
+</TEI>

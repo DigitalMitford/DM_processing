@@ -1,0 +1,22 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins/packageManager" version="1" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.613-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="packageManager.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.613-04:00" modified="2017-09-10T21:09:10.613-04:00" filename="packageManager.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="packageManager.less" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.615-04:00" modified="2017-09-10T21:09:10.615-04:00" filename="packageManager.less" mimetype="application/less">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="packages.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.616-04:00" modified="2017-09-10T21:09:10.616-04:00" filename="packages.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="packageManager.js" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.616-04:00" modified="2017-09-10T21:09:10.616-04:00" filename="packageManager.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.616-04:00" modified="2017-09-10T21:09:10.616-04:00" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="packageManager.css" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.617-04:00" modified="2017-09-10T21:09:10.617-04:00" filename="packageManager.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="images" filename="images"/>
+</collection>

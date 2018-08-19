@@ -1,0 +1,27 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins/userManager" version="1" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.589-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="userManager.js" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.59-04:00" modified="2017-09-10T21:09:10.59-04:00" filename="userManager.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.59-04:00" modified="2017-09-10T21:09:10.59-04:00" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="userManager.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.59-04:00" modified="2017-09-10T21:09:10.59-04:00" filename="userManager.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="userManager.css" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.605-04:00" modified="2017-09-10T21:09:10.605-04:00" filename="userManager.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jsjson.xqm" skip="no" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.605-04:00" modified="2017-09-10T21:09:10.605-04:00" filename="jsjson.xqm" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="userManager.less" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.606-04:00" modified="2017-09-10T21:09:10.606-04:00" filename="userManager.less" mimetype="application/less">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="userManager.xqm" skip="no" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.606-04:00" modified="2017-09-10T21:09:10.606-04:00" filename="userManager.xqm" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.606-04:00" modified="2017-09-10T21:09:10.606-04:00" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

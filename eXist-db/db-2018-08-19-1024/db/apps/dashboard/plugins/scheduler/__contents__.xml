@@ -1,0 +1,18 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins/scheduler" version="1" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.58-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="scheduler.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.58-04:00" modified="2017-09-10T21:09:10.58-04:00" filename="scheduler.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="scheduler.js" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.581-04:00" modified="2017-09-10T21:09:10.581-04:00" filename="scheduler.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="service.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.581-04:00" modified="2017-09-10T21:09:10.581-04:00" filename="service.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="scheduler.css" skip="no" owner="SYSTEM" group="dba" mode="644" created="2017-09-10T21:09:10.581-04:00" modified="2017-09-10T21:09:10.581-04:00" filename="scheduler.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2017-09-10T21:09:10.582-04:00" modified="2017-09-10T21:09:10.582-04:00" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

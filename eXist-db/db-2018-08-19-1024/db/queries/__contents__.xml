@@ -1,0 +1,78 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/queries" version="1" owner="admin" group="dba" mode="755" created="2017-09-17T12:18:38.862-04:00">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="AnnotationTool.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:39.399-04:00" modified="2017-09-17T12:18:39.399-04:00" filename="AnnotationTool.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="appWkshp.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:39.742-04:00" modified="2017-09-17T12:18:39.742-04:00" filename="appWkshp.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="checkBackList.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:40.012-04:00" modified="2017-09-17T12:18:40.012-04:00" filename="checkBackList.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="countCollection.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:40.308-04:00" modified="2017-09-17T12:18:40.308-04:00" filename="countCollection.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="graphStarter.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:40.577-04:00" modified="2017-09-17T12:18:40.577-04:00" filename="graphStarter.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="idRefChecker.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:40.852-04:00" modified="2017-09-17T12:18:40.852-04:00" filename="idRefChecker.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="timeline.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:46.565-04:00" modified="2017-09-17T12:18:46.565-04:00" filename="timeline.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="letterList.xql" skip="no" owner="admin" group="dba" mode="755" created="2017-09-17T12:18:41.392-04:00" modified="2017-09-17T12:18:41.392-04:00" filename="letterList.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="si.xml" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:44.797-04:00" modified="2017-09-17T12:18:44.797-04:00" filename="si.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LuceneSearchTester.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:41.948-04:00" modified="2017-09-17T12:18:41.948-04:00" filename="LuceneSearchTester.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="letterDates.xql" skip="no" owner="admin" group="dba" mode="755" created="2017-09-17T12:18:41.121-04:00" modified="2018-01-01T22:10:06.091-05:00" filename="letterDates.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="TopTenMostRefdPeople.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:46.915-04:00" modified="2018-02-11T17:26:27.896-05:00" filename="TopTenMostRefdPeople.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mitfordPeep-NAStages.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:42.815-04:00" modified="2017-09-17T12:18:42.815-04:00" filename="mitfordPeep-NAStages.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mitfordTitle-NAStages.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:43.198-04:00" modified="2017-09-17T12:18:43.198-04:00" filename="mitfordTitle-NAStages.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="postLetterDates.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:43.594-04:00" modified="2017-09-17T12:18:43.594-04:00" filename="postLetterDates.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="postLetterList.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:43.874-04:00" modified="2017-09-17T12:18:43.874-04:00" filename="postLetterList.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="rsTypesandQuants.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:44.182-04:00" modified="2017-09-17T12:18:44.182-04:00" filename="rsTypesandQuants.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mitfordPeep-NA-simple.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:42.219-04:00" modified="2017-09-17T12:18:42.219-04:00" filename="mitfordPeep-NA-simple.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="letterText.xql" skip="no" owner="admin" group="dba" mode="755" created="2017-09-17T12:18:41.677-04:00" modified="2018-01-01T16:24:54.448-05:00" filename="letterText.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mitfordPeep-NA.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:42.506-04:00" modified="2017-09-17T12:18:42.506-04:00" filename="mitfordPeep-NA.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="TesterMissJames.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:45.962-04:00" modified="2017-09-17T12:18:45.962-04:00" filename="TesterMissJames.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="TesterMJCategories.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:46.284-04:00" modified="2017-09-17T12:18:46.284-04:00" filename="TesterMJCategories.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="siAPIbuilder.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:45.408-04:00" modified="2017-09-17T12:18:45.408-04:00" filename="siAPIbuilder.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="testerforSI_NA.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:45.683-04:00" modified="2017-09-17T12:18:45.683-04:00" filename="testerforSI_NA.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="TopTenMostRefdPeople_Stringed.xql" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T12:18:47.197-04:00" modified="2017-09-17T12:18:47.197-04:00" filename="TopTenMostRefdPeople_Stringed.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/config/db/mitford" version="1" owner="admin" group="admin" mode="755" created="2016-03-14T01:25:27.313-04:00">
+    <acl entries="0" version="1"/>
+    <subcollection name="literary" filename="literary"/>
+    <subcollection name="letters" filename="letters"/>
+</collection>
