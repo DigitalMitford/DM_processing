@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/> 
+    
+   <!--2018-08-11 ebb: added these rules (including the drafts) to the si_ODD.odd file -->
 <sch:pattern>
     <sch:p>Identify note elements that are longer than [TOO LONG!] number of characters so exceeding the flow-length of our note box. (How long is this?) Raise a warning or an error that p breaks need to be added.
         NOTE: WE NEED CORRESPONDING XSLT ALTERATION FOR NOTE BOXES TO READ 1st Paragraph ONLY.
@@ -65,8 +67,8 @@
     </sch:pattern>
     <sch:pattern>
        <!-- <sch:let name="si" value="doc('http://digitalmitford.org/si.xml')//@xml:id"/> -->
-        <sch:let name="si" value="doc('../si-local.xml')//@xml:id"/>
-        <sch:let name="siAddcoll" value="collection('../../../DM_SiteIndex/si-Add-Files/catalogue.xml')//@xml:id"/>
+        <sch:let name="si" value="doc('../si_Full_Staged/si-local.xml')//@xml:id"/>
+        <sch:let name="siAddcoll" value="collection('../si_Add_Staged/catalogue.xml')//@xml:id"/>
         <sch:let name="siAll" value="($si, $siAddcoll)"/>
         <sch:rule context="@ref | @corresp | @resp">
             

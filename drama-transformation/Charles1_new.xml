@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<?xml-model href="../../DM_documentation/MitfordODD/out/mitfordODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../DM_documentation/MitfordODD/out/mitfordODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -1205,7 +1207,6 @@
                   </l>
                   <l xml:id="Chas_act_1_L80">Believe who can! yet ere ye set him free</l>
                   <l xml:id="Chas_act_1_L81">
-                     <pb edRef="#msC1" n="4 418"/>
                      <pb edRef="#msC1" n="4 418"/> to the stuffing of his saddle, search</l>
                   <l xml:id="Chas_act_1_L82">The waste leaves of his prayer<app>
                         <rdg wit="#pubC1">-</rdg>
@@ -1315,7 +1316,6 @@
                      </app> land,</l>
                   <l xml:id="Chas_act_1_L110">Creep in our councils, sweep across our camps,</l>
                   <l xml:id="Chas_act_1_L111">
-                     <pb edRef="#msC1" n="5 419"/>
                      <pb edRef="#msC1" n="5 419"/> the <persName ref="#Chas1_MRM">King</persName> harmless then? Yet thou art right;</l>
                   <l xml:id="Chas_act_1_L112">He's dangerous in <placeName ref="#Carisbrooke">Carisbrooke</placeName>.</l>
                </sp>
@@ -1330,7 +1330,6 @@
                <sp who="#Cromwell_MRM">
                   <speaker>Crom.</speaker>
                   <stage>
-                     <pb edRef="#pubC1" n="5"/>
                      <pb edRef="#pubC1" n="5"/>
                   </stage>
                   <l xml:id="Chas_act_1_L116">Ha! And they slew <app>
@@ -1443,7 +1442,6 @@
                   <speaker>Dow.</speaker>
                   <l xml:id="Chas_act_1_L140">The words</l>
                   <l xml:id="Chas_act_1_L141">
-                     <pb edRef="#msC1" n="6 420"/>
                      <pb edRef="#msC1" n="6 420"/> like treason.</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -1468,7 +1466,6 @@
                   <l xml:id="Chas_act_1_L148">Direct from Heaven! A comfortable light</l>
                   <l xml:id="Chas_act_1_L149">To our benighted spirits! As I wrestled</l>
                   <l xml:id="Chas_act_1_L150">
-                     <pb edRef="#pubC1" n="6"/>
                      <pb edRef="#pubC1" n="6"/> prayer this morning, when I would have cried</l>
                   <l xml:id="Chas_act_1_L151">For mercy on <persName ref="#Chas1_MRM">Charles Stuart</persName>, my parched
                      tongue</l>
@@ -1537,7 +1534,6 @@
                            <persName ref="#Marten">Marten</persName>, &amp;</rdg>
                      </app> return</l>
                   <l xml:id="Chas_act_1_L170">
-                     <pb edRef="#msC1" n="7 421"/>
                      <pb edRef="#msC1" n="7 421"/> 
                      <persName ref="#Bradshaw">Bradshaw</persName> hither. We shall need
                      thy counsel.</l>
@@ -1729,7 +1725,6 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_act_1_L208">
                      <pb edRef="#pubC1" n="8"/>
-                     <pb edRef="#pubC1" n="8"/>
                      <app>
                         <rdg wit="#msC1">Sir</rdg>
                         <rdg wit="#pubC1">Sir,</rdg>
@@ -1816,7 +1811,6 @@
                         Groby</persName>
                   </l>
                   <l xml:id="Chas_act_1_L229">
-                     <pb edRef="#msC1" n="9 423"/>
                      <pb edRef="#msC1" n="9 423"/> aid thee to detect the knaves. Away!</l>
                   <l xml:id="Chas_act_1_L230">
                      <app>
@@ -1936,7 +1930,6 @@
                <sp who="#Harrison">
                   <speaker>Har.</speaker>
                   <l xml:id="Chas_act_1_L257">
-                     <pb edRef="#msC1" n="10 424"/>
                      <pb edRef="#msC1" n="10 424"/> more merciful.</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -2047,7 +2040,6 @@
                      </app> to be seen</l>
                   <l xml:id="Chas_act_2_L279">
                      <pb edRef="#msC1" n="11 425"/>
-                     <pb edRef="#msC1" n="11 425"/>
                      Poring o'er <persName ref="#Shakespeare">Shakespeare</persName>'s page—Oh heinous sin!</l>
                   <l xml:id="Chas_act_2_L280">Inexpiable deadly sin!</l>
                </sp>
@@ -2107,7 +2099,6 @@
                <sp who="#Chas1_MRM">
                   <speaker>King.</speaker>
                   <l xml:id="Chas_act_2_L299">
-                     <pb edRef="#pubC1" n="11"/>
                      <pb edRef="#pubC1" n="11"/> we are near agreed. I have granted more</l>
                   <l xml:id="Chas_act_2_L300">Than they durst <app>
                         <rdg wit="#pubC1">think</rdg>
@@ -2216,7 +2207,6 @@
                   <speaker>King.</speaker>
                   <l xml:id="Chas_act_2_L330">Admit them.</l>
                   <stage>
-                     <pb edRef="#pubC1" n="12"/>
                      <pb edRef="#pubC1" n="12"/> 
                      <persName ref="#Salisbury">Lord Salisbury</persName>, <persName ref="#Say">Lord Say</persName>, <persName ref="#Vane">Sir Harry
                         Vane</persName>, <app>
@@ -2352,7 +2342,6 @@
                   </l>
                   <l xml:id="Chas_act_2_L361">That I withhold is of the conscience. Look</l>
                   <l xml:id="Chas_act_2_L362">
-                     <pb edRef="#pubC1" n="13"/>
                      <pb edRef="#pubC1" n="13"/> these white hairs, and think if one so signed</l>
                   <l xml:id="Chas_act_2_L363">Marked for the grave, may for the vain <app>
                         <rdg wit="#pubC1">respect</rdg>
@@ -2365,7 +2354,6 @@
                         <rdg wit="#pubC1">me:</rdg>
                      </app> I'll not yield</l>
                   <l xml:id="Chas_act_2_L366">
-                     <pb edRef="#msC1" n="14 428"/>
                      <pb edRef="#msC1" n="14 428"/> man of that devoted seven, nor bate</l>
                   <l xml:id="Chas_act_2_L367">A word of my accustomed prayer, to save</l>
                   <l xml:id="Chas_act_2_L368">My limbs from cankering fetters, or win back</l>
@@ -2473,7 +2461,6 @@
                   <speaker>Har.</speaker>
                   <l xml:id="Chas_act_2_L392">To demand</l>
                   <l xml:id="Chas_act_2_L393">
-                     <pb edRef="#pubC1" n="14"/>
                      <pb edRef="#pubC1" n="14"/> body of <persName ref="#Chas1_MRM">Charles Stuart</persName>,
                      sometime King</l>
                   <l xml:id="Chas_act_2_L394">Of <placeName ref="#England">England</placeName>
@@ -2495,7 +2482,6 @@
                   <speaker>Har.</speaker>
                   <l xml:id="Chas_act_2_L396">Whom I attach</l>
                   <l xml:id="Chas_act_2_L397">
-                     <pb edRef="#msC1" n="15 429"/>
                      <pb edRef="#msC1" n="15 429"/> treason.</l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -2601,7 +2587,6 @@
                   <l xml:id="Chas_act_2_L426">Treason! to arraign</l>
                   <l xml:id="Chas_act_2_L427">A crowned King of treason! I am here</l>
                   <l xml:id="Chas_act_2_L428">
-                     <pb edRef="#pubC1" n="15"/>
                      <pb edRef="#pubC1" n="15"/> with these same <orgName ref="#House_Commons">Commons</orgName> on the faith, </l>
                   <l xml:id="Chas_act_2_L429">The general faith of nations. I appeal</l>
                   <l xml:id="Chas_act_2_L430">To ye, my foes; to thee, my gaoler. What!</l>
@@ -2616,7 +2601,6 @@
                         <rdg wit="#msC1"> &amp;</rdg>
                      </app> treasonous craft,</l>
                   <l xml:id="Chas_act_2_L434">
-                     <pb edRef="#msC1" n="16 430"/>
                      <pb edRef="#msC1" n="16 430"/> cobweb sophistry. Have ye no word</l>
                   <l xml:id="Chas_act_2_L435">For faith, for honour? <app>
                         <rdg wit="#pubC1">not one word? Shame! shame!</rdg>
@@ -2840,7 +2824,6 @@
                <sp who="#Marten">
                   <speaker>Mar.</speaker>
                   <l xml:id="Chas_act_1_L481">
-                     <pb edRef="#pubC1" n="18"/>
                      <pb edRef="#pubC1" n="18"/> a nice</l>
                   <l xml:id="Chas_act_1_L482">And peevish conscience <persName ref="#Fairfax">Fairfax</persName> bears! Will
                      send</l>
@@ -3058,7 +3041,6 @@
                   <l xml:id="Chas_act_1_L539">On whom the Lord hath set his seal. Besides</l>
                   <l xml:id="Chas_act_1_L540">That will let loose thy stream of eloquence</l>
                   <l xml:id="Chas_act_1_L541">
-                     <pb edRef="#msC1" n="20 434"/>
                      <pb edRef="#msC1" n="20 434"/> by this cold freezing plea. What says</l>
                   <l xml:id="Chas_act_1_L542">
                      <persName ref="#Bradshaw">Our learned President</persName>
@@ -3185,7 +3167,6 @@
                         <rdg wit="#msC1">hark!</rdg>
                      </app> my masters!</l>
                   <l xml:id="Chas_act_1_L571">
-                     <pb edRef="#msC1" n="21 435"/>
                      <pb edRef="#msC1" n="21 435"/> is come! He is come! We are about to do</l>
                   <l xml:id="Chas_act_1_L572">A deed which shall draw on us
                         questioning eyes</l>
@@ -3200,7 +3181,6 @@
                   <l xml:id="Chas_act_1_L575">As on a <rs type="event" ref="#halleys_comet">comet</rs> in the Heavens, fatal</l>
                   <l xml:id="Chas_act_1_L576">To Kings of old. Start ye? Why at the first</l>
                   <l xml:id="Chas_act_1_L577">
-                     <pb edRef="#pubC1" n="21"/>
                      <pb edRef="#pubC1" n="21"/> started, as a man who in a dream</l>
                   <l xml:id="Chas_act_1_L578">Sees indistinct <app>
                         <rdg wit="#pubC1">and</rdg>
@@ -3316,7 +3296,6 @@
                         <rdg wit="#msC1">words,</rdg>
                      </app> that pierce</l>
                   <l xml:id="Chas_act_2_L602">
-                     <pb edRef="#pubC1" n="23"/>
                      <pb edRef="#pubC1" n="23"/>
                      <app>
                         <rdg wit="#pubC1">daggers</rdg>
@@ -3439,7 +3418,6 @@
                <sp who="#Queen_Ch1">
                   <speaker>Queen.</speaker>
                   <l xml:id="Chas_act_2_L626">
-                     <pb edRef="#msC1" n="23 437"/>
                      <pb edRef="#msC1" n="23 437"/> am a wife</l>
                   <l xml:id="Chas_act_2_L627">Seeking her husband in his prison<app>
                         <rdg wit="#pubC1">. Soldier,</rdg>
@@ -3488,7 +3466,6 @@
                      </app>
                   </l>
                   <l xml:id="Chas_act_2_L636">
-                     <pb edRef="#pubC1" n="23"/>
                      <pb edRef="#pubC1" n="23"/>
                      <app>
                         <rdg wit="#pubC1">without</rdg>
@@ -3599,7 +3576,6 @@
                   <speaker>Crom.</speaker>
                   <l xml:id="Chas_act_2_L655">
                      <pb edRef="#msC1" n="24 438"/>
-                     <pb edRef="#msC1" n="24 438"/>
                      <app>
                         <rdg wit="#pubC1">duty.</rdg>
                         <rdg wit="#msC1">duty.—</rdg>
@@ -3665,7 +3641,6 @@
                <sp who="#LadyFairfax">
                   <speaker>Lady F.</speaker>
                   <l xml:id="Chas_act_2_L667">
-                     <pb edRef="#pubC1" n="24"/>
                      <pb edRef="#pubC1" n="24"/> the <persName ref="#Queen_Ch1">Queen</persName>?</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -3966,7 +3941,6 @@
                      <speaker>King.</speaker>
                      <l xml:id="Chas_act_1_L739">
                         <pb edRef="#msC1" n="27 441"/>
-                        <pb edRef="#msC1" n="27 441"/>
                      </l>
                      <l xml:id="Chas_act_1_L740">Thou art pale, my <persName ref="#Queen_Ch1">Henrietta</persName>, very pale; </l>
                      <l xml:id="Chas_act_1_L741">And this dear hand that was so round <app>
@@ -4242,7 +4216,6 @@
                         </app> pure as the azure skies</l>
                      <l xml:id="Chas_act_1_L809">
                         <pb edRef="#pubC1" n="29"/>
-                        <pb edRef="#pubC1" n="29"/>
                         <app>
                            <rdg wit="#msC1">Now</rdg>
                            <rdg wit="#pubC1">Now—</rdg>
@@ -4319,7 +4292,6 @@
                            <rdg wit="#msC1">that hide thy thoughts, be</rdg>
                         </app> plain</l>
                      <l xml:id="Chas_act_1_L829">
-                        <pb edRef="#msC1" n="30 444"/>
                         <pb edRef="#msC1" n="30 444"/>
                         <app>
                            <rdg wit="#msC1">honest</rdg>
@@ -4569,7 +4541,6 @@
                         </app>
                      </l>
                      <l xml:id="Chas_act_1_L889">
-                        <pb edRef="#msC1" n="32 446"/>
                         <pb edRef="#msC1" n="32 446"/> the fair <persName ref="#MaryQoS">Queen of Scots</persName>, the
                         popish woman,</l>
                      <l xml:id="Chas_act_1_L890">The beautiful, his <app>
@@ -4691,7 +4662,6 @@
                      <speaker>Crom.</speaker>
                      <l xml:id="Chas_act_1_L918">
                         <pb edRef="#msC1" n="33 447"/>
-                        <pb edRef="#msC1" n="33 447"/>
                         <app>
                            <rdg wit="#msC1">Sir</rdg>
                            <rdg wit="#pubC1">Sir,</rdg>
@@ -4799,7 +4769,6 @@
                      <speaker>King.</speaker>
                      <l xml:id="Chas_act_1_L947">I have one here.</l>
                      <l xml:id="Chas_act_1_L948">
-                        <pb edRef="#msC1" n="34 448"/>
                         <pb edRef="#msC1" n="34 448"/> know'st my answer.</l>
                   </sp>
                   <sp who="#Queen_Ch1">
@@ -4961,11 +4930,9 @@
                   </l>
                   <l xml:id="Chas_act_1_L979">Men whose long doubts would hold from rosy dawn</l>
                   <l xml:id="Chas_act_1_L980">
-                     <pb edRef="#pubC1" n="35"/>
                      <pb edRef="#pubC1" n="35"/> the slow lighting of the evening star</l>
                   <l xml:id="Chas_act_1_L981">In the clear Heaven of June. Of such as they</l>
                   <l xml:id="Chas_act_1_L982">
-                     <pb edRef="#msC1" n="36 450"/>
                      <pb edRef="#msC1" n="36 450"/> were too many. How say'st thou good <persName ref="#Downes">Downes</persName>?</l>
                </sp>
                <sp who="#Downes">
@@ -5171,7 +5138,6 @@
                   <speaker>Brad.</speaker>
                   <l xml:id="Chas_act_1_L1035">Be warned;</l>
                   <l xml:id="Chas_act_1_L1036">
-                     <pb edRef="#msC1" n="38 452"/>
                      <pb edRef="#msC1" n="38 452"/> to the accusation.</l>
                </sp>
                <sp who="#Chas1_MRM">
@@ -5184,7 +5150,6 @@
                <sp who="#Bradshaw">
                   <speaker>Brad.</speaker>
                   <l xml:id="Chas_act_1_L1041">
-                     <pb edRef="#pubC1" n="37"/>
                      <pb edRef="#pubC1" n="37"/> we know </l>
                   <l xml:id="Chas_act_1_L1042">Your love of liberty <app>
                         <rdg wit="#pubC1">and</rdg>
@@ -5271,7 +5236,6 @@
                         <rdg wit="#msC1">&amp;</rdg>
                      </app> cunning goldsmith. Look</l>
                   <l xml:id="Chas_act_1_L1063">
-                     <pb edRef="#msC1" n="39 453"/>
                      <pb edRef="#msC1" n="39 453"/> what a reed he leans, who props himself</l>
                   <l xml:id="Chas_act_1_L1064">On such a bauble<app>
                         <rdg wit="#pubC1">.</rdg>
@@ -5304,7 +5268,6 @@
                <sp who="#Bradshaw">
                   <speaker>Brad.</speaker>
                   <l xml:id="Chas_act_1_L1070">
-                     <pb edRef="#pubC1" n="38"/>
                      <pb edRef="#pubC1" n="38"/> 
                      <persName ref="#Cook_Ch1">Cook</persName>
                   </l>
@@ -5391,7 +5354,6 @@
                <sp who="#Cook_Ch1">
                   <speaker>Cook.</speaker>
                   <l xml:id="Chas_act_1_L1092">
-                     <pb edRef="#msC1" n="40 454"/>
                      <pb edRef="#msC1" n="40 454"/> see</l>
                   <l xml:id="Chas_act_1_L1093">The prisoner in the battle?</l>
                </sp>
@@ -5409,7 +5371,6 @@
                   <l xml:id="Chas_act_1_L1099">Raised he</l>
                   <l xml:id="Chas_act_1_L1100">His banner 'gainst his people? Didst thou see</l>
                   <l xml:id="Chas_act_1_L1101">
-                     <pb edRef="#pubC1" n="39"/>
                      <pb edRef="#pubC1" n="39"/> royal standard in the field?</l>
                </sp>
                <sp who="#Cromwell_MRM">
@@ -5531,7 +5492,6 @@
                   <l xml:id="Chas_act_1_L1133">Oh that my voice</l>
                   <l xml:id="Chas_act_1_L1134">Could reach my loyal people! That the winds</l>
                   <l xml:id="Chas_act_1_L1135">
-                     <pb edRef="#pubC1" n="40"/>
                      <pb edRef="#pubC1" n="40"/> waft the echoes of this groined roof</l>
                   <l xml:id="Chas_act_1_L1136">So that each corner of the land might hear,</l>
                   <l xml:id="Chas_act_1_L1137">From the fair Southern vallies to
@@ -5587,7 +5547,6 @@
                   <speaker>Brad.</speaker>
                   <l xml:id="Chas_act_1_L1151">We have no power</l>
                   <l xml:id="Chas_act_1_L1152">To stay the trial.<pb edRef="#msC1" n="42 456"/>
-                     <pb edRef="#msC1" n="42 456"/>
                   </l>
                   <!--RN: June 28, 2014: does this deletion suggest that the previous page has been replaced, i.e., on the original previous page, the line did not run over to the next?-->
                </sp>
@@ -5700,7 +5659,6 @@
                   <speaker>Cook.</speaker>
                   <l xml:id="Chas_act_1_L1181">My high</l>
                   <l xml:id="Chas_act_1_L1182">
-                     <pb edRef="#msC1" n="43 457"/>
                      <pb edRef="#msC1" n="43 457"/> honouring task to plead at this great bar</l>
                   <l xml:id="Chas_act_1_L1183">For lawful <app>
                         <rdg wit="#pubC1">liberty, for suffering conscience</rdg>
@@ -5924,7 +5882,6 @@
                <sp who="#Queen_Ch1">
                   <speaker>Queen.</speaker>
                   <l xml:id="Chas_act_1_L1233">
-                     <pb edRef="#pubC1" n="43"/>
                      <pb edRef="#pubC1" n="43"/> come</l>
                   <l xml:id="Chas_act_1_L1234">To aid <app>
                         <rdg wit="#pubC1">ye</rdg>
@@ -6042,7 +5999,6 @@
                         <rdg wit="#pubC1">fire,</rdg>
                      </app> where panting murderers gasp</l>
                   <l xml:id="Chas_act_1_L1266">
-                     <pb edRef="#pubC1" n="44"/>
                      <pb edRef="#pubC1" n="44"/> cannot die, that deepest Hell which holds</l>
                   <l xml:id="Chas_act_1_L1267">The Regicide.</l>
                </sp>
@@ -6063,7 +6019,6 @@
                         <rdg wit="#msC1">surely,</rdg>
                      </app> as the cloud which the sun drains</l>
                   <l xml:id="Chas_act_1_L1273">
-                     <pb edRef="#msC1" n="46 460"/>
                      <pb edRef="#msC1" n="46 460"/> the salt sea returns into the wave</l>
                   <l xml:id="Chas_act_1_L1274">In stormy gusts or plashing showers? Remove her.</l>
                </sp>
@@ -6287,7 +6242,6 @@
                   <l xml:id="Chas_act_1_L1334">The lovely spotted pard, what time she stoops</l>
                   <l xml:id="Chas_act_1_L1335">To spring upon her prey; one who puts on,</l>
                   <l xml:id="Chas_act_1_L1336">
-                     <pb edRef="#pubC1" n="46"/>
                      <pb edRef="#pubC1" n="46"/> win each several soul, his several sin,</l>
                   <l xml:id="Chas_act_1_L1337">A stern fanatic, a smooth hypocrite,</l>
                   <l xml:id="Chas_act_1_L1338">A fierce <app>
@@ -6519,7 +6473,6 @@
                      </app>
                   </l>
                   <l xml:id="Chas_act_1_L1402">
-                     <pb edRef="#pubC1" n="49"/>
                      <pb edRef="#pubC1" n="49"/> lies thy regiment?</l>
                </sp>
                <sp who="#Ireton">
@@ -11153,7 +11106,7 @@
                   </note>
                </person>
                
-               <person xml:id="PrincessE_Ch1" sex="2"><!--REV entry, existing id.-->
+            <!--   <person xml:id="PrincessE_Ch1" sex="2"><!-\-REV entry, existing id.-\->
                   <persName>Elizabeth Stuart</persName>
                   <persName>
                      <forename>Elizabeth</forename>
@@ -11170,7 +11123,7 @@
                   <note>
                      <ref target="https://viaf.org/viaf/264121061"/>
                   </note>
-               </person>
+               </person>-->
                
                <person xml:id="Qu_Henrietta" sex="2">
                   <persName>Henrietta Maria of France</persName>
