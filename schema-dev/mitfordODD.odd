@@ -135,7 +135,7 @@
                   <sch:rule context="tei:rs | tei:name">
                      <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
                      <sch:let name="siAddColl"
-                              value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
+                        value="collection('https://digitalmitford.github.io/DM_SiteIndex/si_Add_Staged/catalogue.xml')"/>
                      <sch:let name="back" value="//tei:back"/>
                      <sch:let name="everySiLoc" value="($siFile, $siAddColl, $back)"/>
                      <sch:let name="refs"
@@ -184,7 +184,7 @@
                     <sch:rule context="@ref | @corresp">
                        <sch:let name="siFile" value="doc('http://digitalmitford.org/si.xml')"/>
                        <sch:let name="siAddColl"
-                                 value="collection('https://digitalmitford.github.io/DM_SiteIndex/si-Add-Files/catalogue.xml')"/>
+                          value="collection('https://digitalmitford.github.io/DM_SiteIndex/si_Add_Staged/catalogue.xml')"/>
                        <sch:let name="backIDs" value="//tei:back//@xml:id"/>
                        <sch:let name="siAddIDs" value="$siAddColl//@xml:id"/>
                        <sch:let name="tempIDs" value="($backIDs, $siAddIDs)"/>
