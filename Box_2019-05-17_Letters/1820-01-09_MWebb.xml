@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM2028">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, January 9, 1820</title><author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#ADP">Anaya Phoenix</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2018-01-09">July 1, 2018</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: DSCF9008.jpg, DSCF9009.jpg, DSCF9010.jpg, DSCF9011.jpg, DSCF9012.jpg, DSCF9013.jpg, DSCF9014.jpg, DSCF9016.jpg, DSCF9017.jpg, DSCF9018.jpg, DSCF9019.jpg, DSCF9020.jpg<idno>
+            </idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <!--LMW: no id. or shelfmark no. for this letter.-->
+               </msIdentifier>
+               
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1820-01-09">1820 January 9</date>. 
+               <note resp="#lmw">Dated Sunday evening. We arrived at this date by checking a perpetual calendar and Mitford's journal.</note>
+              </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p> One sheet of 18.5 mm x 11.2 mm <material>paper</material>, two surfaces photographed. Folded in half once.</p> 
+                        <p>No postmarks.</p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on right edge of page three where wax seal was removed.</p> 
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, partial, adhered to page four.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter labeled: [9 Jan. 1820] on page one.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+     <revisionDesc><!--2018-01-11 ebb: NEW: This last section of our TEI Header contains a change log, and documents each significant change to the file over time. This represents a simpler, cleaner encoding than the respStmts with comments that we started out using. We're going to (slowly) move the old respStmts from past edited letters into this format, but all new letters from this point ought to use it. -->
+        <change when="2019-07-01" who="#lmw">Filling out header information for student transcription.</change>
+        </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs=""/><!--2018-01-11 ebb: This is another NEW practice: We need to locate and post the **best** image of each surface page of a letter (including the first page). (Previously we didn't include a <pb/> for page 1, but we need to do that now and work on adding this for previously encoded letters.) In the value of the @facs attribute, very carefully paste in the file name of the best image you have for this page in the Box directory for this letter. If you like two or three images of this page, you may include all three separated by a white space. Be sure to include the file extension thus:
+            <pb n="1" facs="image1.jpg image2.jpg image3.jpg"/>
+            -->
+            <opener> 
+               <add hand="#pencil">[9 Jan. 1820]</add> 
+               <dateline>
+               <date when="1820-01-09">Sunday Even<hi rend="superscript">g</hi></date>. 
+               </dateline>
+                </opener>
+            <p>Our letters crossed, my dear <rs type="person" ref="#Webb_Mary_younger">friend</rs>, &amp; I write this tiny note to thank you for your kind and sweet one &amp; to beg you to take great care of yourself. I don't like coughs &amp; colds &amp; headaches when they assail my own <persName ref="#Webb_Mary_younger">Mary Webb</persName>.--My cold is much better, but just now I am almost ill of a fright--<persName ref="#Hill_Lucy">Lucy</persName> poor thing has had a tremendous fall tonight on the Ice and <metamark rend="caret" place="below"/><add place="above" unit="word" n="1">we</add> were afraid of her head, not the <pb n="2"/>strongest part of the poor faithful maid who is naturally very nervous &amp; hysterical--the only comfort is she was not sick--but still though she has lost much blood. she wanders at times &amp; talks incessantly.--</p>
+            <p>Poor <persName ref="#Haydon">Haydon</persName> is in great trouble--his <persName ref="#Daphne_pet">Daphne</persName> (once my <persName ref="#Miranda_pet">Miranda</persName>) is ill--She has the distemper, &amp; he writes to me for advice &amp; pity--&amp; gets advised &amp; pitied to his <choice><sic>hearts</sic><reg>heart's</reg></choice> content--He is to have a puppy in the <pb n="3"/> spring so I shall not need to <unclear reason="torn" unit="word" n="1"/><supplied resp="#lmw">trouble</supplied> you dear <persName ref="#Webb_James">Papa</persName> for any of his <unclear unit="word" n="1"/>-- for if "the agreeable friend" comes I will come &amp; see him--a compliment I would hardly pay to anyone else in the world.--Adieu my own dear love--I mean <persName ref="#Mitford_Geo">Papa</persName> to take this to Sessions &amp; I will write on the outside how Lucy is at the latest hour--I know you will be sorry for her. Adieu once more--God bless you. Love to all.</p>
+            <closer>
+            Ever yours<lb/>
+            <persName ref="#MRM">M. R. Mitford</persName>.
+            </closer>
+        
+            <closer>
+               <address>
+                  <addrLine>To</addrLine>
+            <addrLine><persName ref="#Webb_Mary_younger">Miss Webb</persName></addrLine>
+                  <addrLine><placeName ref="#Wokingham_city">Wokingham</placeName></addrLine>
+               </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+         
+     </back>
+  </text>
+</TEI>

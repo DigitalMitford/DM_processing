@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- <?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM1792">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, <date when="1822-04-12">April 12, 1822</date></title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#err">Elizabeth Raisanen</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal ref="#ebb">Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#mbn">Matthew Blake Nardoci</persName>
+                  <persName ref="#err">Elizabeth Raisanen</persName>
+            </respStmt>      
+            <respStmt>
+               <resp>Date last checked: <date when="2019-04-21">2019-04-21</date>
+               Proofing and corrections by</resp>
+               <persName ref="#err">Elizabeth Raisanen</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2019-04-21">21 April 2019</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>12April1822SirWilliamElford1a#.JPG, 12April1822SirWilliamElford1b#.JPG, 12April1822SirWilliamElford1c#.JPG, 12April1822SirWilliamElford2a#.JPG, 12April1822SirWilliamElford2b#.JPG, 12April1822SirWilliamElford3a#.JPG, 12April1822SirWilliamElford3b#.JPG, 12April1822SirWilliamElford4a#.JPG,  12April1822SirWilliamElford4b#.JPG, 12April1822SirWilliamElford5a#.JPG, 12April1822SirWilliamElford5b#.JPG, 12April1822SirWilliamElford6.JPG</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4, Horizon No.: 1361550 ff. 450</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitforf to Sir William Elford, <date when="1822-04-12">1822 April 12</date>
+               </head>
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support> <p>Two sheets of <material>paper</material>, with the first full folio sheet folded in half creating pages 1-4 and then a second half folio sheet written on the front for page five and page six used as an address leaf. Six surfaces photographed. Half sheet (pages five and six) torn on right edge where wax seal was removed. Letter was folded in thirds, twice.</p> 
+                        <p>There is a heavily faded stamp that reads 1822 in black, most likely a delivery stamp.
+                        </p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages five and six) torn on right edge of page five where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to page six (the address leaf), possibly Mitford's rectangular "Mary" seal.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each page except the address leaf.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "41" in the top left of the first leaf.</handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">In grey pencil this letter is numbered "41" in the top left of the first leaf</add> 
+               <dateline>Three Mile Cross<lb/> April 12, 1822<lb/>
+                  <name type="place" ref="#ThreeMileCross"></name> 
+                  <date when="1822-04-12">April 12<hi rend="superscript">th</hi> 1822.</date>. 
+               </dateline>
+            </opener>
+            <p>Thank you very much, my dear <persName ref="#Elford_SirWm">Sir William</persName> for your very kind &amp; entertaning letter--the story of the Housemaid &amp; the picture is delicious--&amp; I enter into it the more thoroughly from having lately rescued some blotted papers of my own from the fangs of an animal of that species--I write (like <persName ref="#Pope_Alex">Pope</persName> &amp; other great poets) on the backs of letters notes etc (not yours--they are kept untouched--I should as soon write on bank paper)--<unclear><supplied>so</supplied></unclear> that, considering the blessed &amp; blotted state of the manuscript my Dramatic Scene for <persName ref="#Valpy_John">John Valpy</persName>'s new paper --(the <title ref="#Museum_per">Museum</title>--Sir--It is not come out yet--will you take it in?--I don't persuade you, mind, for I have not the least notion whether it will be good or bad--always excepting my own articles--&amp; <persName ref="#Valpy_John">John</persName> will pay me <del rend="squiggles"><gap quantity="1" unit="word"/></del> the same whether you take it or no, which is all that concerns me)--Where were we? Well my dramatic Scene looked as she said such a <del rend="squiggles"><gap quantity="1" unit="word"/></del>"tatterdemallion piece of scribble" that she clawed it up in her paw--much as a monkey would seize on an open letter, &amp; was actually proceeding to light a fire withal when I snatched my precious manuscript from her devouring fangs--I wish you had seen the look of contempt with which this damsel of ours--a cidevant <!-- 2019-04-20 ERR: cidevant is a French word/phrase. Do we need to tag it as such? --> schoolmistress--looked at my composition--I dare say she would have <choice><sic>whipt</sic><reg resp="#mbn">whipped</reg></choice> any one of her scholars that wrote only half as ill. <add><metamark rend="jerk"/></add> And so you to not like <title ref="#Sir_Andrew_Wylie">Sir Andrew Wylie</title>!--Well neither upon recollection do I--for though I was taken very much at the time with the fine <unclear><supplied resp="#err">tonic</supplied></unclear> simplicity of the dialect &amp; the pervading influence of a diverting quiet humour--yet on reflection it is as <pb n="2"/> you say utterly impossible--&amp; the latter fact in particular falls off terribly--the hero is so unnecessarily let down--&amp; the heroine such a foolish country coquette--And yet there is one trait <del rend="squiggles"><gap quantity="1" unit="word"/></del> in that last part which is exquisite--the giving thanks in the Church for his return home--<persName ref="#Goldsmith">Goldsmith</persName> never exceeded the effect of that beautiful touch of pathos &amp; simplicity.--I am now reading a very different sort of work--<persName ref="#Walpole_Hor">Horace Walpole</persName>'s (I beg his pardon) <title ref="#Memoires_of_George_II">Lord Orford's Memoires</title>. Have you read these two delicious Quarto's of 550 pages each <del rend="squiggles"><gap quantity="1" unit="word"/></del> of History which ought to be dull inasmuch as it embraces the most uninteresting part of our annals, &amp; which is yet as short &amp; as entertaining as a fairy tale? One's first <del rend="squiggles"><gap quantity="1" unit="word"/></del><add place="above"><metamark place="below" function="insertion" rend="caret"/>feeling</add> in closing that book will be a desire to begin it again. And yet I don't suppose there is much truth in it either. The dear <persName ref="#Walpole_Hor">Horace</persName> has in the first place that keen insight into the worst part of chacracter which gives a general prejudice <del rend="squiggles"><gap quantity="1" unit="word"/></del> against human nature--&amp; in the second a particular &amp; safer added prejudice against almost every <del rend="squiggles"><gap quantity="1" unit="word"/></del> individual whom he has occassion to mention. He hates his <persName ref="#Walpole_Rob">Father</persName>'s enemies--that's of course--he hates his <persName ref="#Walpole_Rob">Father</persName>'s rivals--he hates his <persName ref="Walpole_Rob">Father</persName>'s successors--&amp; he hates those of his <persName ref="#Walpole_Rob">Father</persName>'s friends--who have deserted him--which considering the avowed principle of buying &amp; selling which his <persName ref="#Walpole_Rob">Robert</persName> followed--embraces of course pretty nearly <del rend="squiggles"><gap quantity="1" unit="word"/></del> both houses of <orgName ref="#Parliament_UK">Parliament</orgName>. Besides this sweeping filial dislike--he has a comfortable set of antipathies on his own account--&amp; really seems to <add place="above"><metamark place="below" function="insertion" rend="caret"/>have</add> hated almost every body. Tant mieux. It whets the razor, &amp; most <del rend="squiggles"><gap quantity="1" unit="word"/></del><add place="above"> <metamark place="below" function="insertion" rend="caret"/>easily &amp;</add> keenly does that bright weapon cut. The characters are exquisitely given for piquancy &amp; style--there is an unexpectedness &amp; originality in some of his expressions greater even than <pb n="3"/> in his letters--&amp; the specimens of speeches give I should imagine a very just as well as lively idea of the speakers--particularly of the great rivals <persName ref="#PittWm_younger">Pitt</persName> &amp; <persName ref="#Fox_ChasJ">Fox</persName>--(I mean of course the Father's)--one had never--at least I had never so considerable an impression of <persName ref="#Fox_ChasJ">Mr. Fox</persName> as since reading these <title ref="#Memoires_of_George_II">Memoires</title>--(Pooh--<persName ref="#Mitford_Geo">Papa</persName> &amp; <persName ref="#Russell_M">Mama</persName> are playing at that tedious noisy <unclear><supplied resp="#err">courting</supplied></unclear> game piquet--which makes me so stupid tonight) I meant to say that I never thought the first <persName ref="#Fox_ChasJ">Mr. Fox</persName> so considerable a <del rend="squiggles"><gap quantity="1" unit="word"/></del><add place="above">man</add> as since reading these <title ref="#Memoires_of_George_II">Memoires</title>.--Well he is a delightful person <persName ref="#Walpole_Hor">Horace Walpole</persName>--I hope we shall have some more of his remains--&amp; pray--may I ask--have you, his successor &amp; likeness, composed Memoires of your own time to be put into a sealed box &amp; opened when the first grandson or grand nephew comes of age?--your History will be better <choice><sic>humoured</sic><reg resp="#mbn">humored</reg></choice> than <persName ref="#Walpole_Hor">Horace Walpole</persName>'s (&amp; indeed not being the son of an ousted minister you will not have so many antipathies to disturb you)--but not a whit less amusing. Pray if you do leave a sealed box--do let it be opened before I am ninety.<add><metamark rend="jerk"/></add> Now what shall we talk about? We have got <persName ref="#Opie_Amelia">Mrs. Opie</persName>'s new novel of <title ref="#Madeline">Madeline</title> in the house--but I have not opened it yet--I have a good mind to write a critique on it without reading--for I think I can pretty well tell what stuff it is made of--one knows the usual ingredients of her tales--just as one knows the component parts of a plum pudding--so much common sense (for the flour) so much vulgarity (for the suet) so much love (for the sugar)--so many songs (for the plums)--so much wit (for the spices) so much fine binding morality (for the eggs)--&amp; so much mere mawkishness &amp; insipidity (for the milk &amp; water wherewith the said pudding is wet up)--I think she has left <pb n="4"/> off being pathetic--at least I have left out that quality in my enumeration. Yet she is a very clever woman &amp; a goodnatured woman--&amp; though my exceeding fastidiousness with respect to style &amp; elegance &amp; gracefulness in writing deprives me of any pleasure in her works, yet I know a great many very good judges who admire her writings greatly. I hope you won't tell her this by way of a compliment--though I have lately met with a misadventure which would go near to tying one's pen down to its good behavior all one's life. A discreet correspondent of mine (female of course) <choice><sic>enquired</sic><reg resp="#mbn">inquired</reg></choice> my opinion of a recent publication--I wrote her a very fair character of the work (which I did not very much admire)--a fair &amp; candid character--with just enough of sweet to <del rend="squiggles"><gap quantity="1" unit="word"/></del><add place="above"><choice><sic>flavour</sic><reg resp="#mbn">flavor</reg></choice></add> the tone (like sugar in mint sauce)--It was not a sweeping, knock me down <del rend="squiggles"><gap quantity="1" unit="word"/></del> critique--but <del rend="squiggles"><gap quantity="1" unit="word"/></del> a light airy neatly feathered shaft--whose censure looked almost like praise. So much the worse for me. My goose of a correspondent took it for complimentary--&amp; by way of recommending me to the Author of the cutup work fairly read him the passage out of my letter--&amp; then in her reply gravely told me what she had done! There's a pretty friend for you! Of course she will never get any but How d'ye do letters from me again as long as she lives.--<add><metamark rend="jerk"/></add>When do you come to Town? And have we any chance of seeing you here?--I have not the slightest idea of being in Town--<title ref="#Foscari_MRMplay">Foscari</title> would undoubtedly have been acted this season if <persName ref="#Harris_Henry">Mr. Harris</persName> had continued in the management of <placeName ref="#Covent_Garden_Theatre">Covent Garden</placeName>--but since this change of Dynasy we have all to begin again--I don't <del rend="squiggles"><gap quantity="1" unit="word"/></del> think it will at any rate be performed this season--perhaps not at all--I don't <pb n="5"/> believe it <del rend="squiggles"><gap quantity="1" unit="word"/></del><add place="above">has</add> even been presented to the new managers yet--though I don't know for it is with <persName ref="#Talfourd_Thos">Mr. Talfourd</persName> &amp; entirely in his hands. And to confess the truth, my dear friend, I am so thoroughly out of heart about it that I cannot bear even to think or speak on the subject. Nevertheless the Drama is my talent--my only talent--my only talent--&amp; I mean to go on, <del rend="squiggles"><gap quantity="1" unit="word"/></del> &amp; improve. <emph rend="underline">I will</emph> improve. That is my fixed determination. Can you recommend me a good subject for an historical Tragedy? I wish you would think of this, &amp; if you have none in your own mind ask any likely person--It should have <emph rend="underline">two</emph> prominant male parts--&amp; I should prefer an Italian story in the 14<hi rend="superscript">th</hi> 15<hi rend="superscript">th</hi> 16<hi rend="superscript">th</hi> or 17<hi rend="superscript">th</hi> Century--as affording most scope--&amp; being less liable to blame for any deviation from the truth in the plot, than any well know<gap reason="torn" unit="letter" quantity="1"/><unclear><supplied resp="#err">n</supplied></unclear><note resp="#mbn #err">Here begins a three-line-long tear that is likely from breaking the letter's seal.</note> incident in the greater states. I once thought of ou<gap reason="torn" unit="letter" quantity="1"/><unclear><supplied resp="#err">r</supplied></unclear> <persName ref="#Charles_I">Charles the First</persName>--He &amp; <persName ref="#Cromwell">Cromwell</persName> would form two very finely contrasted Characters--but the facts are too well known.--</p>
+            <closer>
+               Farewell, my dear friend. Kindest regards from my <persName ref="#Mitford_Geo">Father</persName> &amp; <persName ref="#Russell_M">Mother</persName>--Ever most sincerely &amp; affectionately yours<lb/>
+               <persName ref="#MRM">M. R. Mitford</persName>
+            </closer>
+            <lb/>  
+            <postscript><p>Pray write soon. You cannot tell how much I value your letters.</p></postscript>
+            <closer>
+               <address>
+                  <addrLine><placeName ref="#Reading_city">Reading</placeName> April fifteen 1822<lb/></addrLine>
+                  <addrLine><persName ref="#Elford_SirWm">S<hi rend="superscript">ir</hi> W<hi rend="superscript">m</hi> Elford Bar<hi rend="superscript">t</hi></persName><lb/></addrLine>
+                  <addrLine><placeName ref="#Bickham_village">Bickham</placeName><lb/></addrLine>
+                  <addrLine><persName ref="#Monck_JB">J.B. Monck</persName><placeName ref="#Plymouth_city">Plymouth</placeName></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+      
+      <div type="people">
+           
+       <listPerson type="hist">
+          
+          <person xml:id="Galt_John"><!-- 2019-04-20 ERR: Mitford doesn't mention Galt by name; she just mentions his novel Sir Andrew Wylie. Is an SI entry needed for him? We created one just in case. -->
+             <persName>
+                <surname>Galt</surname>
+                <forename>John</forename>
+             </persName>
+             <birth when="1779-05-02"><placeName>Irvine, Ayrshire, Scotland</placeName></birth>
+             <death when="1839-04-11"><placeName>Greenock, Scotland</placeName></death>
+             <note resp="#mbn #err">John Galt is the author of <title ref="#Sir_Andrew_Wylie">Sir Andrew Wylie, of that ilk</title>, a novel Mitford discussed with Sir William Elford.</note>
+          </person>
+          
+          <person xml:id="Walpole_Rob">
+             <persName>
+                <surname>Walpole</surname>
+                <forename>Robert</forename>
+             </persName>
+             <persName>First Earl of Orford</persName>
+             <birth when="1676-08-26"><placeName>Houghton, Norfolk, United Kingdom</placeName></birth>
+             <death when="1745-03-18"><placeName>St James's, United Kingdom</placeName></death>
+             <note resp="#mbn #err">Father of Horace Walpole and former British Prime Minister.</note>
+          </person>
+         
+          <person xml:id="Opie_Amelia">
+             <persName>
+                <surname>Opie</surname>
+                <forename>Amelia</forename>
+                <forename>Alderson</forename>
+             </persName>
+             <persName>Amelia Alderson</persName>
+             <birth when="1769-11-12"><placeName>Norwich, United Kingdom</placeName></birth>
+             <death when="1853-12-02"><placeName>Norwich, United Kingdom</placeName></death>
+             <note resp="#mbn #err">Amelia Opie is the wife of John Opie, who encouraged her to write. She become a poet and novelist of the late-18th and early-19th century and is best known for her novel <title>Adeline Mowbray</title>. According to Mitford's early biographer, Vera Watson, Mitford knew Opie personally, and Opie's husband John had painted Mitford's father's portrait (112). Upon the death of her father in 1842, Mitford was left with a large number of debts, which a public subscription helped to defray; Amelia Opie was one of the friends who donated to this subscription (Watson 253).</note>
+          </person>
+          
+          <person xml:id="Charles_I">
+             <persName>
+                <surname>Stuart</surname>
+                <forename>Charles</forename>
+             </persName>
+             <persName>Charles I</persName>
+             <persName>Charles the First</persName>
+             <persName>Charles, by the Grace of God, King of England, Scotland, France, and Ireland, Defender of the Faith, etc.</persName>
+             <persName>Charles Stuart, King of England</persName>
+             <birth when="1600-11-19"><placeName>Dunfermline, Scotland, United Kingdon</placeName></birth><!-- 2019-04-21 ERR: The United Kingdom did not exist during Charles I's lifetime, though I still included it in these place name tags, since I'm guess that we are including anachronistic information of this kind in tags. Let me know if I'm wrong! -->
+             <death when="1649-01-30"><placeName>Whitehall, London, United Kingdom</placeName></death>
+             <note resp="#err">Seventeenth-century English monarch who was executed by <persName ref="#Cromwell">Oliver Cromwell's</persName> <orgName ref="#New_Model_Army">New Model Army</orgName>. <persName ref="#MRM">Mitford</persName> made <persName ref="#Charles_I">Charles I</persName> and <persName ref="#Cromwell">Cromwell</persName> the subjects of a historical play.</note>
+          </person>
+          
+          
+       </listPerson>
+      </div>
+        
+       <div type="bibl">
+          
+          <listBibl type="fict">
+             
+             <bibl xml:id="Sir_Andrew_Wylie">
+                <title>Sir Andrew Wylie, of that ilk</title>
+                <author>John Galt</author>
+                <pubPlace>Edinburgh</pubPlace>
+                <publisher>William Blackwood</publisher><!-- 2019-04-20 ERR: T. Cadell in London is the second publisher listed. Should we add another set of <pubPlace> and <publisher> lines, or add them to the existing lines? -->
+                <date when="1822">1822</date>
+                <note resp="#err"><title ref="#Sir_Andrew_Wylie">Sir Andrew Wylie, of that ilk</title> is a three-volume novel by the Scottish novelist John Galt. https://catalog.hathitrust.org/Record/100299545</note>
+             </bibl>
+              
+              <bibl xml:id="Madeline">
+                <title>Madeline</title>
+                <author>Amelia Opie</author>
+                <pubPlace>London</pubPlace>
+                <publisher>Longman, Hurst, Rees, Orme, and Brown</publisher>
+                <date when="1822">1822</date>
+                <note resp="#err"><title ref="#Madeline">Madeline</title> was <persName ref="#Opie_Amelia">Amelia Opie</persName>'s last novel-length prose work.</note>
+             </bibl>
+            </listBibl>
+          
+         <listBibl type="hist">
+            <bibl xml:id="Memoires_of_George_II">
+               <title>Memoires of the last ten years of the reign of George the Second</title>
+               <author>Horace Walpole</author>
+               <pubPlace>London</pubPlace>
+               <publisher>John Murray</publisher>
+               <date when="1822">1822</date>
+               <note resp="#err">This is the first edition of <persName ref="#Walpole_Hor">Horace Walpole</persName>'s memoirs of the last ten years of George II's reign.   https://catalog.hathitrust.org/Record/000108271</note>
+            </bibl>
+            
+        </listBibl>
+       </div>
+    
+     </back>
+  </text>
+</TEI>

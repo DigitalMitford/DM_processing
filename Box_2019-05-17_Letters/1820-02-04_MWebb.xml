@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM2029">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, February 4, 1820</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson </editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#SM">Sophia Morelli</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2018-06-30">June 30, 2018</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF9021.JPG, DSCF9022.JPG, DSCF9023.JPG, DSCF9024.JPG, DSCF9025.JPG, DSCF9026.JPG, DSCF9027.JPG</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+              <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection><!--LMW: no shelfmark number listed for this letter.-->
+               </msIdentifier>
+               
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1820-02-04">February 4, 1820</date>. 
+               <note resp="#lmw">Letter dated Friday night. We arrived at this date by checking a perpetual calendar and Mitford's journal.</note>
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One 10.3 mm x 16.8 mm sheet of <material>paper</material>, two surfaces photographed. Folded in half vertically once.</p> 
+                        <p>No postmarks.</p> 
+                        </support>
+                     <condition>
+                        <p>Sheet has darkened spots and semi-circles, perhaps caused by water damage.</p> 
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter labeled [4 Feb. 1820].</handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+     <revisionDesc>
+        <change when="2018-07-01" who="#lmw">Setting up header for student to transcribe.</change>
+        </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <pb n="1"/>
+          <opener> 
+               <add hand="#pencil">[4 Feb. 1820]</add> 
+               <dateline>
+                  <date when="1820-02-04">Friday night</date>. 
+               </dateline>
+               <salute>My dear <rs type="person" ref="#Webb_Mary_younger">Friend</rs>--</salute>
+            </opener>
+            <p>We rejoiced very much to hear of dear <persName ref="#Webb_Eliza">Eliza</persName>'s amendment--she is the best good girl in all the world to do as we bid her &amp; take care of herself--she "will live to dance another day" in consequence--for I assure you <persName ref="#Mitford_Geo">Papa</persName> was frightened about her.--We have heard a good account of your dear <persName ref="#Webb_James">Father</persName> today--Poor <persName ref="#Mitford_Geo">Papa</persName> after a solitary coursing at <placeName ref="#Sonning">Sonning</placeName>--<persName ref="#Symonds_Chas">Mr. Charles Symonds</persName> &amp; had the mortification to find that a party had been out in the Neighborhood--<persName ref="#Webb_James">Mr. Webb</persName> at the head <pb n="2"/>of them--whom he would have been delighted to have joined. <persName ref="#Symonds_Chas">Mr. Symonds</persName> said that your father expected him &amp; had sent him word on <date when="1820-02-01">Tuesday</date>--but as he never heard of it til today after the coursing was over your <rs type="person" ref="#Webb_James">Father</rs> must have employed a faithless messenger--Pray how did <persName ref="#Webb_James">Mr. Webb</persName> send his information? I have never heard from you my dear love since your note on <date when="1820-01-31">Monday</date>.--You were a goose to fancy I had been to <placeName ref="#Mortimer_Comm">Mortimer Common</placeName>--the stifflegged sufferer in question was poor <persName ref="#Mitford_Geo">Papa</persName>--He &amp; <persName ref="#Wallace_dog">Wallace</persName> have been very unlucky--they went out three days &amp; killed<pb n="3"/> three rabbits--not at all <persName ref="#Wallace_dog">Wallace</persName>'s fault who is very amiable--he takes to me very much--knocking me down &amp; is a great favourite.--Deuce take these royal Dyings!<note resp="#lmw"><!--who died?--></note> We've been obliged to try a new bombazine--half ruined me! No the Mourning won't be longer than 4 months, so some of them may as well take the opportunity.--I had hoped to be able to see you this week my own dear friends &amp; catch another glimpse of dear <persName ref="#Hayward_Mrs">Mrs. Hayward</persName> &amp; her sweet little ones especially that Maiden blush rose <persName ref="#Hayward_Susan">Miss Susan</persName>--but between gown buying--&amp; rabbit killing <persName ref="#Mitford_Geo">Papa</persName> &amp; We’ve been so engaged that we’ve not even been able to get to <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> who sent me a summons last <date when="1820-01-31">Monday</date>.--We had an umbrella my own dear <persName ref="#Webb_Mary_younger">Mary</persName>--When were you ever inattentive? Never.--Kind love to all--</p>
+            <closer>
+            Ever your's<lb/>
+            
+            <persName ref="#MRM">M.R.M.</persName>.
+            </closer>
+            <closer> <address>
+               <addrLine>To</addrLine>
+               <addrLine><persName ref="#Webb_Mary_younger">Miss Webb</persName></addrLine><!--LMW: additional scribbles on address leaf: squiggles and name "Mary." Is this Mitford handwriting or ?? -->
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div>
+           <persName ref="Symonds_Chas">Mr. Charles Symonds</persName>
+           <persName ref="Hayward_Mrs"> Mrs. Hayward
+              <persName ref="Hayward_Susan"> Miss Susan Hayward [Do I have the Haywoods already defined in the file of correspondents? Ck. related to James?, associated with Webbs]
+           <persName ref="#Wallace_dog">Wallace</persName>  It sounds as if this is a dog of George Mitford's (but not named with an M? Mr. Webb dog?)
+           <placeName ref="#Sonning">Sonning</placeName>
+     </div>
+     </back>
+  </text>
+</TEI>

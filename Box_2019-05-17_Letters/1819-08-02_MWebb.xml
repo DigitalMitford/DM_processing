@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM2024">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, August 2, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#led">Lindsay Dingman</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2018-06-30">2018-06-30</date>Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#Id_who"></persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-08-02">2018 August 2</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: DSCF8969.jpg, DSCF8970.jpg<idno><!--LMW: photos ok to use.-->
+               
+            </idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc><msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection><idno>qB/TU/MIT Vol. 4 Horizon No.: No. 1361552</idno> <!--LMW: no ff. number listed in spreadsheet for this letter.-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1819-08-02">1819 August 2</date>.
+               <note resp="#lmw">Mitford dates letter "Monday" and August 2, 1819 was a Monday. Mitford's Journal indicates she wrote to Mary Webb on August 2, 1819.</note>-->
+               </head> 
+              <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One sheet <material>paper</material>, two surfaces photographed. Folded in half then in thirds. Sheet measures 11.5 x 19 cm.</p> 
+                        <p>No postmarks.</p>
+                     </support>
+                     <condition>
+                        <p>Sheet shows foxing on folds.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal present.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter labelled "[2 Aug. 1819]" in the top center of the first leaf, next to Mitford's date, given as "Monday."</handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">[2 Aug. 1819]</add> 
+               <dateline><date when="1819-09-08">Monday</date>. 
+               </dateline>
+              </opener>
+            <p>I am very sorry my own dear love to write instead of coming--but <persName ref="#Mitford_Geo">Papa</persName> won't bring me. All this hot weather I have been discomposed. Flagging, limp, out of curl, like a soused wig or a drenched gauze bonnet--&amp; having in the midst of the warmth contrived to catch cold am today so heated that <rs type="person">his Worship</rs> declares a <emph rend="underline">crowded Theatre</emph> would throw me into a fever. So I must submit &amp; rely on you for an exact account of the diversion I had anticipated with so much pleasure. Come &amp; <pb n="2"/>tell me all about it--Come very soon &amp; send me word by <persName ref="#Mitford_Geo">Papa</persName> when. I dare say this indisposition (is that not the lady-like word?) will have vanished by tomorrow or the next day--Do come <rs type="person" ref="#Webb_Eliza #Webb_Mary_younger">>my dear loves</rs> very very soon. Come both of you.</p>
+            <p> The chief purport of my writing was to say from <persName ref="#Russell_M">Mama</persName> &amp; from all that the Ducks were the finest ever eaten, &amp;, the attention prettier than anything--But you should not have done it my <pb n="3"/><rs type="person" ref="#Webb_Eliza #Webb_Mary_younger">>dear loves</rs>. Don't we in person eat twenty Ducks a year &amp; fifty Chickens at dear <placeName ref="#Wokingham_city">Wokingham</placeName>? To say nothing of bacon hams &amp; butchers meat?--If we sent you anything it should be something monstrous a <del rend="squiggles" type="word" n="1"/><add resp="#lmw">whole</add> mammoth or a whale.</p>
+            <p>I hope <persName ref="#Mitford_Geo">Papa</persName> will find the dear <persName ref="#Webb_James">Mr. Webb</persName> much better--&amp; everybody else quite well--A thousand loves to you all--</p>
+            <closer>Ever most faithfully your's<lb/>
+            <persName ref="#MRM">M R Mitford</persName>.<lb/>     
+            </closer>
+            
+             <closer>
+               <address>
+            <addrLine><lb/>To</addrLine>
+                  <addrLine><lb/><persName ref="#Webb_Mary_younger">Miss Webb</persName></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+  </text>
+</TEI>
