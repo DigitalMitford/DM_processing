@@ -55,6 +55,11 @@ li#Project{background-color:Lavender; }
 li#Outreach{background-color:RosyBrown; color:PapayaWhip;}
 li#Outreach a {color:PapayaWhip; text-decoration:none;}
 li#Outreach a:hover {color:gold; text-decoration:underline}
+li.year {
+color: /* #2929A3;*/ #B90F0F;
+text-decoration:none;}
+li.year:hover{
+text-decoration:underline;}
 
 ul.subSec {list-style-type:none; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:column; margin-left:-40px; padding-top:5px; margin-right:25px; /*background-color:LemonChiffon;*/
 }
