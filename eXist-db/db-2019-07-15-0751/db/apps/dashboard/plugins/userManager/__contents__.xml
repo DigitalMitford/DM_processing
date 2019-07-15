@@ -1,0 +1,27 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins/userManager" version="1" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.464Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.524Z" modified="2018-08-25T13:15:17.524Z" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="userManager.xqm" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.519Z" modified="2018-08-25T13:15:17.519Z" filename="userManager.xqm" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="userManager.less" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.519Z" modified="2018-08-25T13:15:17.519Z" filename="userManager.less" mimetype="application/less">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jsjson.xqm" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.518Z" modified="2018-08-25T13:15:17.518Z" filename="jsjson.xqm" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="userManager.css" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.513Z" modified="2018-08-25T13:15:17.513Z" filename="userManager.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="userManager.html" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.466Z" modified="2018-08-25T13:15:17.466Z" filename="userManager.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.465Z" modified="2018-08-25T13:15:17.465Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="userManager.js" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.464Z" modified="2018-08-25T13:15:17.464Z" filename="userManager.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

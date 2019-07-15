@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://expath.org/ns/pkg" name="http://exist-db.org/apps/usermanager" abbrev="usermanager" version="0.16.4" spec="1.0">
+    <title>Usermanager</title>
+    <!--<dependency processor="http://exist-db.org" semver-min="3.7.0-SNAPSHOT"/>-->
+    <dependency package="http://www.functx.com" semver-min="1.0"/>
+</package>

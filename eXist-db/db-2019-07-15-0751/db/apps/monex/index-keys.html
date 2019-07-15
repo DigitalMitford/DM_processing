@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Browse Indexes <small>Browse Index Definitions</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-dashboard"/> Home</a>
+            </li>
+            <li>
+                <a href="indexes.html">
+                    <i class="fa fa-sort-alpha-desc"/> Indexes</a>
+            </li>
+            <li data-template="indexes:current-collection">Collection</li>
+            <li class="active" data-template="indexes:current-index">Index</li>
+        </ol>
+    </section>
+    
+    <!-- Main content -->
+    <section class="content">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title" data-template="indexes:current-index"/>
+            </div>
+            <div class="box-body" data-template="indexes:show-index-keys"/>
+        </div>
+    </section>
+    <script type="text/javascript" src="resources/scripts/modernizr.custom.js"/>
+    <script type="text/javascript" src="resources/scripts/knockout-3.1.0.js"/>
+    <script type="text/javascript" src="resources/scripts/knockout.mapping-2.4.1.js"/>
+    <script type="text/javascript" src="resources/scripts/exadmin.js"/>
+</div>

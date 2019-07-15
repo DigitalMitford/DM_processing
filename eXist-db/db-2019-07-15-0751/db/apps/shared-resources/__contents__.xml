@@ -1,0 +1,14 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/shared-resources" version="1" owner="admin" group="dba" mode="775" created="2017-09-11T01:09:08.113Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="admin" group="dba" mode="775" created="2017-09-11T01:09:08.156Z" modified="2017-09-11T01:09:08.156Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="build.xml" skip="no" owner="admin" group="dba" mode="775" created="2017-09-11T01:09:08.176Z" modified="2017-09-11T01:09:08.176Z" filename="build.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="admin" group="dba" mode="775" created="2017-09-11T01:09:08.298Z" modified="2017-09-11T01:09:08.298Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="content" filename="content"/>
+    <subcollection name="resources" filename="resources"/>
+</collection>
