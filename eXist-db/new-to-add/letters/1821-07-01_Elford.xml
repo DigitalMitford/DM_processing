@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -48,7 +49,7 @@
                   <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
                   <idno>qB/TU/MIT Vol. 4 ff.441 Horizon No.: 1361550</idno><!--Update metadata numbers?-->
                </msIdentifier>
-               <head>Letter from Mary Russell Mitford to Sir William Elford, <date>1 July 1821</date>. </head>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1821-07-01">1 July 1821</date>. </head>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -110,7 +111,7 @@
             <opener>
                <dateline>
                   <date when="1821-07-01">July 1<hi rend="superscript">st</hi> 1821.</date>
-                  <name type="place">Three Mile Cross</name>
+                  <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>
                </dateline>
             </opener>
             <p>Yes, <persName ref="#Dickinson_Mrs">M<hi rend="superscript">rs.<!--@ebb Mitford uses two dots under rs of every Mrs. I have recorded the superscript nature of the letters but am unsure how to record the two dots and seems like every Digital Mitford editor is doing it differently--></hi> Dickinson</persName> had told the news, my dear friend--did you suppose it possible she would not? She was too much interested in it herself &amp; knew so well how I should be interested, that she did not wait till we met but wrote a note the moment she reached home to convey the information <handShift resp="#black_ink"/><add hand="#black_ink">X</add><note resp="#MRM">Sir W Elfords intended marriage with Mrs. Waldron</note><!-- LMW:  is this a handshift?  I think we decided these were probably MRM's in a different ink. How did we code? -->--&amp; I have been watching the papers ever since that I might at the very first moment send warm congratulations, the unfeigned <choice><sic>goodwishes</sic><reg>good wishes</reg></choice> <!--LMW:  Probably this is kind of thing we should be silently corrected, as we do with I am written I am?-->with which my whole heart is filled--My <persName ref="#Mitford_Geo">Father</persName> &amp; <persName ref="#Russell_M">Mother</persName> join in them most sincerely--God bless you my dear Friend--and all whom you love!--<persName ref="#Dickinson_Mrs">M<hi rend="superscript">rs.</hi> Dickinson</persName> has the pleasure of being slightly acquainted with <persName ref="#Elford_MrsE">M<hi rend="superscript">rs.</hi> <unclear>Waldron</unclear></persName>persName> &amp; speaks of her with the highest respect &amp; consideration--she was so desirous to see you that she had half a mind to give up her journey for a day to meet you at <persName ref="#Elford_MrsE">M<hi rend="superscript">rs.</hi> Wall</persName>'s at breakfast &amp; she certainly would have had a whole mind had she not left that little angel of a brat of hers in the country &amp; made her husband stay to take care of it. Once more my dear friend accept our sincerest congratulations both on this event &amp; on the intended marriage of your daughter--May they prove equally happy!</p>

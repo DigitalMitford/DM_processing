@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Letter to <persName ref="#Talfourd_Thos">T.N. Talfourd</persName>1821 November 09</title>
+            <title>Letter to <persName ref="#Talfourd_Thos">T.N. Talfourd</persName>, November 9, 1821</title>
             <author ref="#MRM">Mary Russell Mitford</author>
             <editor ref="#lmw">Lisa M. Wilson</editor>
             <sponsor>
@@ -19,10 +20,6 @@
             <respStmt>
                <resp>Transcription and coding by</resp>
                <persName ref="#lmw">Lisa M. Wilson</persName>
-            </respStmt>
-            <respStmt>
-               <resp>Proofing and corrections by</resp>
-               <persName ref="#ghb">[who?]</persName><!-- correct when proofed LMW -->
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -48,7 +45,7 @@
                   <collection>Mitford-Talfourd Correspondence: Letters from Mary Russell Mitford to Thomas Noon Talfourd: vol. 665</collection>
                   <idno>JRL English MS 665 no. 5 Coles no. 18</idno>
                </msIdentifier>
-               <head>Letter from Mary Russell Mitford to T.N. Talfourd, <date when="1821-11-09">1821 November 9</date>. <!-- MRM dates this letter "Friday night" Coles dates it Nov. 9 based on MRM's diary. (Coles #18, p.111, note 1).  Nov. 9 was a Friday. LMW --> <!--DSCF6097, DSCF6098, DSCF6099 LMW --></head>
+               <head>Letter from Mary Russell Mitford to T.N. Talfourd, <date when="1821-11-09">1821 November 9</date>. <note resp="#lmw">Mitford dates this letter "Friday night", and Coles dates it Nov. 9 based on her diary. November 9, 1821 was a Friday. (See Coles letter 18, p. 111, note 1.)</note></head>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -88,6 +85,9 @@
                ligatured forms are not encoded.</p>
          </editorialDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change when="2019-07-15" who="#ebb">Updated schema lines and added this change-log. This letter still needs to be proofed against the ms.</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -95,7 +95,7 @@
             
             <opener>
                <dateline>
-                  <name type="place" ref="#ThreeMileCross">Three Mile Cross</name> 
+                  <placeName ref="#ThreeMileCross">Three Mile Cross</placeName> 
                   <date when="1821-11-09">Friday night</date>
                </dateline>
                <salute>My dear Sir</salute>
