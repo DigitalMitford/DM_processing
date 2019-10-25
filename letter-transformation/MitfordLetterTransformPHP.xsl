@@ -541,4 +541,10 @@
        
        </xsl:choose>
     </xsl:template>
+    <xsl:template match="text()[contains(., '--')]">
+        <xsl:analyze-string select="." regex="--">
+            <xsl:matching-substring>—</xsl:matching-substring>
+            <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
 </xsl:stylesheet>
