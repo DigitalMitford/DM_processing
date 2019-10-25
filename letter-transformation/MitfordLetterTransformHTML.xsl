@@ -491,10 +491,18 @@
        
     </xsl:template>
     
-    
     <xsl:template match="q | quote">
-        <q><xsl:apply-templates/></q>
+        <xsl:variable name="quote" select="'&quot;'"/>
+        <xsl:choose>
+            <xsl:when test="matches(., $quote)">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise> <q><xsl:apply-templates/></q>
+            </xsl:otherwise>
+            
+        </xsl:choose>
     </xsl:template>
+ 
     
    
 </xsl:stylesheet>
