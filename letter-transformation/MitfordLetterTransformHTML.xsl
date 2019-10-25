@@ -491,6 +491,11 @@
        
     </xsl:template>
     
+    
+    <xsl:template match="q | quote">
+        <q><xsl:apply-templates/></q>
+    </xsl:template>
+    
    
 </xsl:stylesheet>
 

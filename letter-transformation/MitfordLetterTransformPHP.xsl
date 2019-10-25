@@ -511,4 +511,7 @@
             <xsl:apply-templates select="reg"/>
         </span>
     </xsl:template>
+    <xsl:template match="q | quote">
+        <q><xsl:apply-templates/></q>
+    </xsl:template>
 </xsl:stylesheet>
