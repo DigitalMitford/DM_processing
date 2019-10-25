@@ -435,11 +435,15 @@
       <em><xsl:apply-templates/></em> 
   </xsl:template>
     
-    <xsl:template match="gap">
-        <span class="damage"><xsl:text>[Gap: </xsl:text>
+    <xsl:template match="gap | del[not(text())]">
+        <span class="damage"><xsl:text>[</xsl:text><xsl:value-of select="name()"/><xsl:text>: </xsl:text>
             <xsl:if test="@quantity">
-        <xsl:value-of select="@quantity"/><xsl:text> </xsl:text><xsl:value-of select="@unit"/><xsl:text>, </xsl:text></xsl:if>
-            <xsl:text>reason: </xsl:text><xsl:value-of select="@reason"/><xsl:text>.]</xsl:text>
+                <xsl:value-of select="@quantity"/><xsl:text> </xsl:text><xsl:value-of select="@unit"/>
+                <xsl:if test="number(@quantity) gt 1 and not(matches(@unit, 's$'))"><xsl:text>s</xsl:text></xsl:if>
+            </xsl:if>
+            <xsl:if test="@quantity and @reason"><xsl:text>, </xsl:text></xsl:if>
+            <xsl:if test="@reason"><xsl:text>reason: </xsl:text><xsl:value-of select="@reason"/></xsl:if>
+            <xsl:text>.]</xsl:text>
         </span>
     </xsl:template>
     
