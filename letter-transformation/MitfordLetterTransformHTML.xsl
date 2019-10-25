@@ -216,7 +216,7 @@
         <span class="context" title="place">
             <xsl:apply-templates/>
         
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')]"><span class="si">
+        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"><span class="si">
             <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
         <xsl:value-of select="string-join($siPlace/*, ' | ')"/>
             <xsl:text>--</xsl:text>
@@ -255,7 +255,7 @@
         <span class="context" title="person">
             <xsl:apply-templates/>
        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"> 
+        <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note)"> 
            <span class="si">
                <xsl:variable name="siPers" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
             
@@ -317,7 +317,7 @@
         <span class="context" title="org">
             <xsl:apply-templates/>
        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')]"> <span class="si">
+        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"> <span class="si">
             <xsl:variable name="siOrg" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siOrg/orgName, ' | ')"/>
             <xsl:if test="$siOrg//note">
@@ -335,7 +335,7 @@
             <xsl:apply-templates/>
        
         
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')]"><span class="si">
+        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"><span class="si">
             <xsl:variable name="siRs" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siRs/label, ' | ')"/>
             <xsl:value-of select="string-join($siRs/@*, ' - ')"/>
@@ -351,7 +351,7 @@
     
     <xsl:template match="body//title | body//bibl">
         <span class="context" title="title"><xsl:apply-templates/>
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"> <span class="si">
+        <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note)"> <span class="si">
             <xsl:variable name="siBibl" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
             <xsl:if test="$siBibl/title"><xsl:value-of select="string-join($siBibl/title, ', ')"/>
             <xsl:text>. </xsl:text>
