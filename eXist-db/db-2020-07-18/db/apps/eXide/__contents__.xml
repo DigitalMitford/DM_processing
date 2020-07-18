@@ -1,0 +1,47 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide" version="1" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:30.902Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="help.html" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.027Z" modified="2018-08-25T13:15:31.027Z" filename="help.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.026Z" modified="2018-08-25T13:15:31.026Z" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="keybindings.js" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.026Z" modified="2018-08-25T13:15:31.026Z" filename="keybindings.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="configuration.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.024Z" modified="2018-08-25T13:15:31.024Z" filename="configuration.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:30.911Z" modified="2018-08-25T13:15:30.911Z" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.016Z" modified="2018-08-25T13:15:31.016Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LICENSE.txt" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.015Z" modified="2018-08-25T13:15:31.015Z" filename="LICENSE.txt" mimetype="text/plain">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="build.js" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.011Z" modified="2018-08-25T13:15:31.011Z" filename="build.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:31.01Z" modified="2018-08-25T13:15:31.01Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="index.html" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:30.948Z" modified="2018-08-25T13:15:30.948Z" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:30.943Z" modified="2018-08-25T13:15:30.943Z" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="build.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:30.913Z" modified="2018-08-25T13:15:30.913Z" filename="build.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="eXide" group="eXide" mode="775" created="2018-08-25T13:15:30.913Z" modified="2018-08-25T13:15:30.913Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="docs" filename="docs"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="modules" filename="modules"/>
+    <subcollection name="resources" filename="resources"/>
+    <subcollection name="src" filename="src"/>
+</collection>

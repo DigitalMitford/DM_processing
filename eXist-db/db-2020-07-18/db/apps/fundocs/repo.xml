@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Browse and search the documentation of registered XQuery function modules.</description>
+    <author>Wolfgang Meier</author>
+    <author>Dannes Wessels</author>
+    <website>http://exist-db.org</website>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>fundocs</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+<deployed>2017-09-10T21:09:20.387-04:00</deployed></meta>

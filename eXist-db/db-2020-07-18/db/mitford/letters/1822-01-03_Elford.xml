@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   
+
+<teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="Id_what">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, January 3, 1822</title> <!--Look up the xml:id in the MitfordMS Excel spreadsheet, and look for other identifying info on the repository, etc, there. Insert full name of letter addressee. -->
+               
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+               <persName ref="#MGP">Martha Peterson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2019-02-06">February 6, 2019</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno><!-- For the text inside this element, idno, make a comma-separated list of each .jpg photo file name in your Box folder associated with your letter. It might look like this:
+               DSCF9476.jpg, DSCF9477.jpg, DSCF9478.jpg, DSCF9479.jpg, DSCF9480.jpg, DSCF9481.jpg, DSCF9482.jpg, DSCF9483.jpg, DSCF9484.jpg, DSCF9485.jpg
+Change to reflect photo file names for your letter (as you see here, including .jpg extension).--></idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. CHANGE to reflect correct ms. collection (and delete the archive not needed).-->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> <!-- Change to reflect correct ms. collection. -->
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. xxx</idno> <!--Consult Mitford letters spreadsheet (MitfordMS.xslx). Change to reflect the xml:id and shelfmark information for this ms. collection and letter. For RCL, ff. numbers differ for each letter.-->
+               </msIdentifier>
+               
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1822-01-03">1822 January 3</date>. Change to reflect your letter addressee and date. Use this format and punctuation.--&gt; <!--Note: THIS IS THE MOST IMPORTANT PLACE TO RECORD THE DATE ON WHICH THE LETTER WAS BEGUN because it indicates our editorial call on what the date must be based on internal evidence. When determining the date isn't obvious from Mitford's own hand, and when you had to do some research to determine or make an educated guess about the date, you need to indicate that here in an editorial note like this:
+               <note resp="#lmw">We arrived at this date by checking a perpetual calendar. It must be this date because etc etc </note>-->
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> <!-- Physical description of the letter goes here: paper size and condition, seal, postmarks, etc. See some posted examples in this Box folder but write yours to describe YOUR letter.-->
+                     <support> <p> <!--Text describing the document. Include information on the material, for example: One sheet of 18.5 mm x 42.3 mm <material>paper</material>, two surfaces photographed. Folded in half vertically and in thirds horizontally.
+                        So when Mitford writes over two sheets of paper on the front and back of each, we've photographed four surfaces. When she writes on one sheet front and back, we've photographed two surfaces. Work closely with the photos of your letter to determine the number of sheets and separate surfaces, and describe how they are folded: in thirds? There is likely to be more than one photo of the same surface.--> </p> 
+                        <p><!--Here, describe the address leaf and any postmarks and postal fees recorded on the paper. 
+                           Refer to our slides on identifying and reading postmarks, here:  
+                           1) whether it is missing: No postmarks.
+                           2) if present, does it have a postmark? Describe it, as in this example: Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>.-->
+                           <!--FOR REFERENCE on HOW TO IDENTIFY AND READ POSTMARKS ON A MITFORD LETTER see our slides posted on our Wordpress blog: https://digitalmitford.wordpress.com/2014/05/27/the-digital-mitfords-guide-to-19th-century-british-postmarks-and-how-to-code-them-in-tei/ -->
+                        </p> 
+                        <!-- Continue to describe new postmarks here. Use a separate <p> for each, as below-->
+                        <p><!--Here's a sample second <p> indicating another postmark: A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.--></p>
+                     </support>
+                     <condition>
+                        <p><!--Describe briefly the condition of the paper. Here is a sample description: Sheet (pages three and four) torn on right edge of page three where wax seal was removed.--></p> 
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p><!--Describe the seal Mitford is using here, if it's present. Otherwise, indicate that No seal is present. Here's an example description of a seal: Red wax seal, complete, adhered to page four.--></p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><!--This section documents and identifies whenever we see additional hands, other than Mitford's, at work in the document. Those hands could be a contemporary (such as her mother), but they're more frequently marks made by later editors such as William Harness or Francis Needham. Use the <handNote> elements to describe the role of each hand in this manuscript. If the hand is, say, Mitford's mother's and is writing a page of the letter, you indicate when that happens in the body of the letter using the <handShift> element. The @corresp attributes on <handNote> point to xml:ids stored (or to be stored) in our Site Index.-->
+           
+           <!--Below are some SAMPLE HANDNOTES that appear commonly on MANY letters. Please be sure to CHANGE these if your letter differs.-->
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. <!-- Don't change the preceding two sentences if this letter has red crayon. In the *following* sentence, describe red crayoning on this letter. For example: A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.--></handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. <!-- Don't change the preceding sentence if this letter has grey pencil. Use only for RCL pencil. In the following sentence, describe penciled numbers or change/add whatever text you see written in pencil. For example: This letter is numbered "11" in the top left of the first leaf.-->
+           </handNote>
+           
+           
+           <handNote corresp="#penAnnot_RCL" medium="pen">Someone, apparently other than Mitford, who occasionally left notes in a spidery thin hand to explain or document details in Mitford's letters in the margins of her pages, noted in the manuscripts held at Reading Central Library. This may be <persName ref="#Harness_Wm">William Harness</persName> or <persName ref="#Lestrange">A. G. L'Estrange</persName>. <!-- Don't change the preceding two sentences if this letter has spidery pen. In the *following* sentence, describe the pen additions. For example: This letter has addressee identified on the top left of the first lead.  For example: This letter has an explanatory note added at the bottom of the second leaf. Annotator uses an x to mark the note's place in the body of the letter.-->
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><!-- This is our standard Editorial Declaration to appear with every file. Do not change any of this text, but DO read it and be sure you are familiar wtih it. -->
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+     <revisionDesc><!--2018-01-11 ebb: NEW: This last section of our TEI Header contains a change log, and documents each significant change to the file over time. This represents a simpler, cleaner encoding than the respStmts with comments that we started out using. We're going to (slowly) move the old respStmts from past edited letters into this format, but all new letters from this point ought to use it. -->
+        <change when="2019-04-03" who="#lmw">Setting up template.</change>
+        <!--example entries follow: 
+        <change when="2017-10-27" who="#bas">Added address information.</change>
+        <change when="2017-10-20" who="#bas">Fixed handShift; now is signalled within text.</change>
+        <change when="2016-10-04" who="#bas">Added idno and photo file idnos.</change>
+        <change when="2016-09-09" who="#bas">Updated header to include the letter xml:id.</change>
+        <change when="2016-07-04" who="#ebb">TRANSCRIPTION INCOMPLETE. I have updated the header so it doesn't erroneously point to another letter, and I documented the address leaf.</change>-->
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body><!--Within the <body> element the text of our elements records our transcription of Mitford's text, and any editorial notes we need to add. -->
+         <div type="letter">
+            <pb n="1" facs="3Jan1822 Sir WilliamElford1a#.JPG                "/><!--2018-01-11 ebb: This is another NEW practice: We need to locate and post the **best** image of each surface page of a letter (including the first page). (Previously we didn't include a <pb/> for page 1, but we need to do that now and work on adding this for previously encoded letters.) In the value of the @facs attribute, very carefully paste in the file name of the best image you have for this page in the Box directory for this letter. If you like two or three images of this page, you may include all three separated by a white space. Be sure to include the file extension thus:
+            <pb n="1" facs="image1.jpg image2.jpg image3.jpg"/>
+            -->
+            <opener> 
+               <add hand="#Id_who"><!--Did someone other than Mitford record a number or some notes at the top of this letter? This is where we'd indicate what was written and who wrote it. Omit if absent.--></add> 
+               <dateline><!--The dateline of a letter, if present, goes here. The date line typically includes (in any order) a date and a location, as Mitford records where she is when she begins a letter. When Mitford's dateline is complete and we have no reason to doubt her record, we use that as our default for the date. If there's no date line, omit this element. Always record this in the order in which Mitford presented it. If she puts the date first, you do the same. If she puts the place first, you do the same.-->
+                  <name type="place" ref="#ThreeMileCross">Three Mile Cross</name> 
+                  <date when="1822-01-03">Jan<hi rend="superscript">y</hi>. 3<hi rend="superscript">rd</hi> 1822</date>. 
+               </dateline>
+            </opener>
+            <p>
+               </p>     
+            <pb n="1" facs="3Jan1822 Sir WilliamElford1a#.JPG"/><p>This is the first real absolute letter (notes that are dated Tuesday morning &amp; Wednesday Evening &amp; and so forth don't count in this case) the first genuine letter that I have set down to write in 1822 &amp; it shall be addressed to one of the kindest &amp; best of my Correspondents. Your very long &amp; delightful letter gives the best possible proof of life &amp; spirits, &amp; I assure you, my dear <persName ref="#Elford_SirWm">Sir William</persName>, it is quite a consolation to think of a dear friend who is well &amp; happy. This singularly mild &amp; unhealthy season has been fatal to <del rend="squiggles" n="1" unit="word"><supplied resp="#lmw">several</supplied></del> <add place="above">many</add> of my oldest &amp; most valued connexions--In three weeks I have to condole with three correspondents on the death of a father or a Mother--my kindest &amp; most partial friend <persName>Mr. Perry</persName> being one of them--Well I will not sadden you by talking of sad things</p><metamark rend="jerks"/><p>so you have a real fancy to see my Puff--I have the strongest possible inclination to gratify you &amp; if I can by coaxing, scolding, stealing or otherways procure a Reading paper of that week you shall have it. My own copy I have been swindled out of in a very atrocious manner--But I certainly will get one for you if I can, because I should like you to see <persName ref="#Talfourd_Thos">Mr. Talfourd</persName>'s <title>Epilogue</title> which is capital in one way, &amp; my critique which is no less famous in another--I think you cannot fail to be amused at the very grave face &amp; begowned &amp; bewigged dignity which I <del rend="squiggles" n="1" unit="word"><unclear><supplied resp="#lmw">have</supplied></unclear></del>put on for the occasion--You have no notion what an easy thing it is to seem learned.--As to my own <title>Play</title>--what part of my Tragi-comical distresses did I tell you? Where were we in that equally doleful &amp; comical history? Had I told you that the Play was written under advice<pb n="2" facs="3Jan1822 Sir WilliamElford2d.JPG"/> which seemed excellent for three principal characters--<persName ref="#Young_Mr">Young</persName> <persName ref="#Kemble_C">Charles Kemble</persName> &amp; <persName ref="#Macready_Wm">Macready</persName>--that <persName ref="#Kemble_C">Charles Kemble</persName> from disgust at the other two had seceded, <metamark rend="caret" place="below"/><add place="above">from the Theatre</add>, &amp; that in consequence of alterations suggested by Mr. Macready Mr. Young's character had become too unimportant for a man of his dignity--in the language of a Charade my second had quarreled with my first &amp; my third <add place="above">affronted my second &amp; extinguished</add><del rend="squiggles"/><!--LMW: not sure how many words/letters deleted.-->my first. The consequence of all this was easy to foresee--the play was presented to Mr. Harris, &amp; after a great deal of hesitation rejected in terms of such praise &amp; admiration, as would have satisfied any Author who wrote from Vanity--Mr. Macready says for my consolation that no refusal was ever so much like an acceptance--that Mr. Harris actually prefers it to a Tragedy which he has taken--&amp; that, in short, it has been refused merely because the state of the performers is such that it could not be acted with a fair chance of success. This is you see very poor consolation--Indeed I am not sure whether to have come so very near the mark is not more provoking than to have utterly failed--One comfort however there is--This Play has certainly cleared the way for most respectful attention to any piece that I may send in hereafter--And I have accordingly already begun Tragedy on a story purely imaginative which I intend to write without any respect for <metamark rend="caret" place="below"/><add place="above">the</add> Mr. Young's or the Charles Kembles, with one leading character for Mr. Macready &amp; a number of inferior ones which may be filled up my any walking Gentleman--walking sticks they might call them--which the Theatre may happen to have in pay. Don't you think I am very bold &amp; persevering? Pray praise me--&amp; pity me--I am forced to pity myself sometimes or I should never get on at all--I have entirely lost the fluency which I used to possess ten years <pb n="3" facs="3Jan1822 Sir WilliamElford3b#.JPG"/> ago &amp; write with a difficulty a labour a fastidiousness that seem almost incredible--besides ? every thing ? --nothing but the certain conviction that I should fail hinders me <persName ref="#Irving_Wash">Washington Irving</persName>
+              
+               from trying a Comedy. Mr. Talfourd says I should succeed--but I
+               cannot think so--I will at all events try another Tragedy first.
+               </p><metamark rend="jerks"/><p> Have you read the Pirate? And do you like it? I think
+               you will say no to both questions--you have not probably yet
+               had time to read it--&amp; you have heard enough of the story to be
+               pretty sure that you shall not like it. I don't at all. There is
+               a great deal too much about Zetland superstitions &amp; Zetland
+               manners, &amp; Zetland revelry--&amp; there is an old witch who
+               would of herself be enough to spoil the finest thing that
+               ever was written. What a fancy the great Unknown has for a
+               witch! I verily believe this Norna is the 9th or 10th of that
+               species which he has produced--&amp; of all of them she is the
+               worst, by far the worst--he has given her a poem in prose
+               to recite after the fashion of Ossian, Chateaubriand &amp; those 
+               sort of people--&amp; there is such a quantity of her too! Altogether
+               The Pirate is perhaps nearly on a par with the later works--for there
+               has been nothing very great since Ivanhoe (notwithstanding
+               the beauty of one or two scenes in the Monastery)--nothing like
+               the Antiquary &amp; Waverley &amp; Guy Mannering &amp; Old Mortality--
+               the Antiquary being to my taste the one &amp; unrivalled of them
+               all. (By the bye in an article which ? strangely at
+               ? purposes of the scotch hovels in the last ? ?
+               Oldbuck &amp; Pleydell &amp; the high comic character called the
+               "fool" &amp; "the Rose"--What manner of taste call you this?)
+              --One of the best things in the Pirate is some excellent raillery
+               on the subject of breeding clubs &amp; ?--&amp; the best
+               one seems to be that where Mrs. ? produces her boiled goose
+               <pb n="4" facs="3Jan1822 Sir WilliamElford4c#.JPG"/> to feast ? ? but then the witch comes in--&amp; there's an
+                  end on(?)--as <persName>??</persName> would say--I thoroughly agree wtih
+               you, for your reasons &amp; others, as to the certainty of the books
+               being written by Sir W. Scott, &amp; thank you very much for your
+               transcript ??'s charming anecdote. </p><metamark rend="jerks"/><p> yes the
+               second Vol. of the sketch book is certainly a little Americanish
+              --a little heavy--a little mawkish--&amp; very ? &amp; unfaithful in
+               his English details--Mr. Washington Irving is excellent in
+               humour, &amp; in old dutch Colonists &amp; other American diversities--but
+               he must not meddle with <del rend="squiggles"><gap quantity="3" unit="chars"/></del> us proud English--I wish he would
+               give an American novel with all the peculiarities the vulgarities
+               &amp; the affectations of that ridiculous country. We have a fine
+               specimen of New York manners close by--a rich friend of ours was
+               taken in by Mr. Birkbeck's fine plausible lies (there's a glorious
+               illustration of my system for you--that book of Birkbeck's seemed as
+               true as Robinson Crusoe!) &amp; intending to embark some 20 or 40,000(?)
+               in the Illinois, sent out a son of seventeen to reconnoitre. Mr.
+               Fearon's fine antidote &amp; other accounts soon determined him to keep
+               his money in England--but the son staid on--not in the Illinois
+               that disagreed with him--but in New York--&amp; is only lately
+               returned--a very good sort of young man I believe, but the most
+               complete transatlantic coxcomb that ever eyes beheld. He is
+               somenm, smooth &amp; smirking--smiling like Malvolio though not
+               like him cross gartered--superficial as a newspaper or a review
+               talking in a strange outlandish jargon half of it too fine for common
+               wear &amp; half too <del rend="squiggles" n="1" unit="word"><unclear><supplied resp="#mgp">course</supplied></unclear></del> --a mixture of tissue &amp; ? cloth--? gallant**
+               to a distressing degree--he never sees you seated but he cants an
+               ottoman under your feet, or standing, or walking but he claps a
+               chair down behind you--so that the singer at a piano sometimes
+               finds herself blockaded by a double row of <del rend="squiggles"><gap quantity="1" unit="words"/></del> seats-- <del rend="squiggles"><gap quantity="1" unit="words"/></del> His cloakings &amp; shawlings are worse than any cold &amp; he walks in a dancing step.
+               
+                  <pb n="5" facs="3Jan1822 Sir WilliamElford5c#.JPG"/> <date when="1822-01-03">Jan<hi rend="superscript">y</hi>. 9<hi rend="superscript">th</hi> 1822</date> I have at last succeeded in borrowing a Reading 
+               paper--but as I could only get it on promising to return it I 
+               must give you the trouble to send it back to me when you ?
+               have read it. you will find mention made of a little boy of the name
+               of Richardson who performed a part in the <title>Chorus</title> , <title>??</title> , &amp; 
+               the <title>Epilogue</title>-- I never saw in my life so much promise of dramatic 
+               talent-- talk of the Young Rosuies ? ! Look at little Richardson--
+               he is the son of ? master at Reading; who on this 
+               occasion signed in the ?, &amp; really one of the most 
+               delightful facts of the evening was to watch the poor
+               dancing master's fear of joy which followed every look sword
+               &amp; movement of this lovely boy--I have just been reading
+               <persName ref="#Byron">Lord Byron</persName>'s Plays--The Two Foscari of course was the first
+               object with me--but he has taken up the business just where I 
+               left it off, so that it does not at all clash with mine. The Dog <gap reason="torn" quantity="1" unit="chars"/><unclear><supplied resp="#mgp">?</supplied></unclear>
+                  is well executed I think--but young Foscari notwithstanding <gap reason="torn" quantity="1" unit="?"/><unclear><supplied resp="#mgp">?</supplied></unclear>
+                  good speeches is utterly imbecile--an ultra sentimentalist <gap reason="torn" quantity="1" unit="?"/><unclear><supplied resp="#mgp">?</supplied></unclear>
+               clings no one knows why or ? with a love like dotage to the
+               country which has disgraced &amp; exiled &amp; tortured &amp; finishes by killing
+               him--&amp; his wife Marina is a mere scold. Both that &amp; Sardanapalus
+               are miserably wise drawn &amp; spun out--one is really quite tired
+               in reading them. Cain is of a higher strain--&amp; yet though there
+               is nothing in it bolder than <persName ref="#Milton"> Milton </persName> has put into the mouth of
+                  his Satan one is s<gap reason="torn" quantity="1" unit="chars"/><unclear><supplied resp="#mgp">om</supplied></unclear>ehow shocked at Lucifer's speeches <metamark rend="caret" place="below"/><add place="above">in Cain</add> which
+               never happens in <title ref="#ParadiseLost">Paradise Lost</title> . The impression is different--
+               I don't know why but it is so. Altogether it seems to me that
+               <persName ref="#Byron">Lord Byron</persName> must be by this time pretty well convinced that the
+               Drama is not his forte--he has no spirit of dialogue--no beauty
+               in his groupings--none of that fine mixture of the probable
+               with the unexpected which constitutes stage effect in <del rend="squiggles"><gap quantity="3" unit="chars"/></del> the
+               best sense of the word--&amp; a long series of laboured speeches &amp;
+               
+               <pb n="6" facs="3Jan1822 Sir WilliamElford6a#.JPG"/> set antitheses will very ill compensate for the want of that
+               excellence which we find in Sophocles &amp; in Shakespeare &amp; which
+               you will call nature &amp; I shall call Art--Pray do you ever
+               paint animals? We have a Greyhound called May-Flower of excellency
+               grace &amp; ? symmetry--just of the colour of the May blossom--like
+               marble with the sun upon it--&amp; she kills every hare she sees
+               
+               takes them up in the middle of the back &amp; brings them in her mouth
+               to my father &amp; lays them down at his feet--I assure you she is quite
+               a study whilst bringing the hares--the fine contrast of colour--her
+               beautiful position, head &amp; tail up &amp; her long neck arched like
+               that of a swan--with the <del rend="squiggles" n="1" unit="word"><supplied resp="#mgp">light</supplied></del> <add place="above">shade</add> shifting upon her beautiful limbs
+               &amp; her black eyes really emitting light. I wish you could see May
+               Flower. Farewell my dear friend--</p>
+                  <closer>I have only room to say how much I am always yours
+                     <lb/><signed>M. R. Mitford</signed><lb/></closer>
+             
+           <p> <!--More body paragraphs as needed. Include context encoding and indications of gaps, deletions, insertions, etc., following guidelines in our Codebook. Mitford's ampersands must be rendered with a special unicode character thus: --> &amp; is an ampersand </p>
+            <p> <!--More body paragraphs as needed.-->
+            <!--Where there's a page break record it inside the relevant body paragraph like this, with the self-closing page-break element. n="2" indicates the START of the second page.-->
+               <pb n="2" facs=""/><!--As above, include the filename of the best image you see for this page in the Box directory of this letter. -->
+               <!--yyyy-mm-dd editorID: INDICATE IN BLOCK CAPS WHEN YOU STOP WORK AND THE TRANSCRIPTION IS INCOMPLETE, like this:
+               2015-10-04 ebb: I STOPPED HERE! TRANSCRIPTION INCOMPLETE!-->
+            </p>
+            <p><!--More body paragraphs as needed.--></p>
+            <closer>
+               <!--The first <closer> includes Mitford's signature, but does NOT include the postscript. (Later, we'll use <closer> again to hold Mitford's address on her address leaf if it's present.) As Mitford writes a complimentary close broken out into lines, indicate it with line breaks using the self-closing <lb/> element.  Here's an example:
+            <closer>
+            Yours<lb/>
+            Very sincerely<lb/>
+            <persName ref="#MRM">M. R. Mitford</persName>.
+            </closer>
+            --><lb/>
+               <!--Another line in the closer, if present--><lb/>
+               <persName ref="#MRM"><!--How Mitford signs her name. For example: M. R. Mitford--></persName>. 
+            </closer> 
+            
+            <postscript><p><!--A postscript goes here, outside the <closer>. --></p></postscript><!--You can include a <pb/> here, or inside the postScript.--><!-- Format for postscripts.  Postscripts do NOT go inside closer tags. Adjust to take into account the order in your letter. Sometimes the signature is on page three, the address on page four, then the postscript follows back on the top of page one, for example.-->
+            
+             <closer><!--Use the <closer> element again to hold Address Leaf information, indicating where Mitford directed her letter.-->
+               <address> <!--Include any text written on the address leaf; use a separate "addrLine" for each line and indicate line breaks. Closer tags must also enclose the address section. NOTE AGAIN: If Mitford has a postscript, that postcript must *not* be enclosed in the closer tags, even when they are written after the signature and before the address. It's a TEI rule (sigh). -->
+            <addrLine><!--Text of a line on the address leaf, with context coding and superscripts indicated. For example: To T. N. Talfourd--></addrLine>
+                  <addrLine><!--Text of a line on the address leaf, with context coding and superscripts indicated. For example: No. 1 Pump Court--></addrLine>
+                  <addrLine><!--Text of a line on the address leaf, with context coding and superscripts indicated. For example: Temple--></addrLine>
+                  <!--Some address leaves may have a name and city in the bottom left; this indicates the person who franked the letter, usually a Member of Parliament whom Mitford knows. Tag as an additional address line. For example: <persName ref="#Monck_JB">J. B. Monck</persName> <placeName ref="#Plymouth_city">Plymouth</placeName>-->
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+           <listPerson sortKey="histPersons">
+          <person xml:id="proposed_new_ID" sex="f"><!--Project sex codes are "m", "f", "o" for other, and "u" for unknown.-->
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+           <listPlace sortKey="histPlaces">
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+           <listBibl sortKey="literary"><!--ebb: We've not listing every possible sortKey value but this is just to remind you to look up the appropriate sortKey for the list of entries you are updating. -->
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

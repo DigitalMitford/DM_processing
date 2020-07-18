@@ -1,0 +1,16 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/repo/xqjson-0.1.6" version="1" owner="admin" group="dba" mode="755" created="2017-09-17T16:18:57.672Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="cxan.xml" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T16:18:58.856Z" modified="2017-09-17T16:18:58.856Z" filename="cxan.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T16:18:59.002Z" modified="2017-09-17T16:18:59.002Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T16:18:59.28Z" modified="2017-09-17T16:18:59.28Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="admin" group="dba" mode="644" created="2017-09-17T16:18:59.41Z" modified="2017-09-17T16:18:59.41Z" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="content" filename="content"/>
+</collection>
