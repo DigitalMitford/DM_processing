@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <title data-template="config:app-title">App Title</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+        <meta data-template="config:app-meta"/>
+        <link rel="shortcut icon" href="$shared/resources/images/exist_icon_16x16.ico"/>
+        <link rel="stylesheet" type="text/css" href="$shared/resources/css/bootstrap-3.0.3.min.css"/>
+        <link href="resources/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/AdminLTE.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/skin-black.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+        <script type="text/javascript" src="$shared/resources/scripts/jquery/jquery-1.7.1.min.js"/>
+        <script type="text/javascript" src="resources/scripts/app.js"/>
+        <script type="text/javascript" src="$shared/resources/scripts/bootstrap-3.0.3.min.js"/>
+    </head>
+    <body class="login-page">
+        <div class="login-box">
+            <div class="login-logo">
+                <img src="$shared/resources/images/existdb.png" height="40"/>
+            </div>
+            <div class="login-box-body">
+                <div class="login-box-msg">Sign in as a dba user</div>
+                <form action="index.html" method="post" data-template="app:form-action-to-current-url">
+                    <div class="form-group">
+                        <input type="text" name="user" class="form-control" placeholder="User ID" autofocus="autofocus"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password"/>
+                    </div>
+                    <input type="hidden" name="duration" value="P7D"/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign me in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -216,7 +216,7 @@
         <span class="context" title="place">
             <xsl:apply-templates/>
         
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')]"><span class="si">
+        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"><span class="si">
             <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
         <xsl:value-of select="string-join($siPlace/*, ' | ')"/>
             <xsl:text>--</xsl:text>
@@ -255,7 +255,7 @@
         <span class="context" title="person">
             <xsl:apply-templates/>
        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"> 
+        <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note)"> 
            <span class="si">
                <xsl:variable name="siPers" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
             
@@ -317,7 +317,7 @@
         <span class="context" title="org">
             <xsl:apply-templates/>
        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')]"> <span class="si">
+        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"> <span class="si">
             <xsl:variable name="siOrg" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siOrg/orgName, ' | ')"/>
             <xsl:if test="$siOrg//note">
@@ -335,7 +335,7 @@
             <xsl:apply-templates/>
        
         
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')]"><span class="si">
+        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"><span class="si">
             <xsl:variable name="siRs" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siRs/label, ' | ')"/>
             <xsl:value-of select="string-join($siRs/@*, ' - ')"/>
@@ -351,7 +351,7 @@
     
     <xsl:template match="body//title | body//bibl">
         <span class="context" title="title"><xsl:apply-templates/>
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"> <span class="si">
+        <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note)"> <span class="si">
             <xsl:variable name="siBibl" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
             <xsl:if test="$siBibl/title"><xsl:value-of select="string-join($siBibl/title, ', ')"/>
             <xsl:text>. </xsl:text>
@@ -435,11 +435,15 @@
       <em><xsl:apply-templates/></em> 
   </xsl:template>
     
-    <xsl:template match="gap">
-        <span class="damage"><xsl:text>[Gap: </xsl:text>
+    <xsl:template match="gap | del[not(text())]">
+        <span class="damage"><xsl:text>[</xsl:text><xsl:value-of select="name()"/><xsl:text>: </xsl:text>
             <xsl:if test="@quantity">
-        <xsl:value-of select="@quantity"/><xsl:text> </xsl:text><xsl:value-of select="@unit"/><xsl:text>, </xsl:text></xsl:if>
-            <xsl:text>reason: </xsl:text><xsl:value-of select="@reason"/><xsl:text>.]</xsl:text>
+                <xsl:value-of select="@quantity"/><xsl:text> </xsl:text><xsl:value-of select="@unit"/>
+                <xsl:if test="number(@quantity) gt 1 and not(matches(@unit, 's$'))"><xsl:text>s</xsl:text></xsl:if>
+            </xsl:if>
+            <xsl:if test="@quantity and @reason"><xsl:text>, </xsl:text></xsl:if>
+            <xsl:if test="@reason"><xsl:text>reason: </xsl:text><xsl:value-of select="@reason"/></xsl:if>
+            <xsl:text>.]</xsl:text>
         </span>
     </xsl:template>
     
@@ -491,6 +495,23 @@
        
     </xsl:template>
     
+    <xsl:template match="q | quote">
+        <xsl:variable name="quote" select="'&quot;'"/>
+        <xsl:choose>
+            <xsl:when test="matches(., $quote)">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise> <q><xsl:apply-templates/></q>
+            </xsl:otherwise>
+            
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="text()[contains(., '--')]">
+        <xsl:analyze-string select="." regex="--">
+            <xsl:matching-substring>—</xsl:matching-substring>
+            <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
    
 </xsl:stylesheet>
 

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1> Query Profiling <small>Collect XQuery Performance Statistics</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"/> Home</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-clock-o"/> Profiling</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content profiling" data-template="app:profile">
+        <div class="pad margin no-print">
+            <div class="callout callout-info">Enable tracing to start collecting statistics. Run
+                queries as usual (through any eXist interface), then press "Refresh" to see
+                statistics. </div>
+        </div>
+        <div class="box">
+            <div class="box-body">
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group">
+                        <a href="?action=enable" class="btn btn-default" data-template="app:btn-profiling">
+                            <span class="glyphicon glyphicon-off"/> Enable Tracing</a>
+                        <a href="?action=clear" class="btn btn-default">
+                            <span class="glyphicon glyphicon-remove"/> Clear</a>
+                        <a href="?action=tare" class="btn btn-default" data-template="app:btn-tare">
+                            <span class="glyphicon glyphicon-record"/> Tare</a>
+                        <a href="?action=refresh" class="btn btn-default">
+                            <span class="glyphicon glyphicon-refresh"/> Refresh</a>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#queries" data-toggle="tab">Queries</a>
+                    </li>
+                    <li>
+                        <a href="#functions" data-toggle="tab">Functions</a>
+                    </li>
+                    <li>
+                        <a href="#indexes" data-toggle="tab">Index Usage</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="queries">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Source</th>
+                                    <th>Calls</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody data-template="app:query-stats">
+                                <tr>
+                                    <td colspan="3">No statistics available or tracing not
+                                        enabled.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="functions">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Source</th>
+                                    <th>Function</th>
+                                    <th>Calls</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody data-template="app:function-stats">
+                                <tr>
+                                    <td colspan="4">No statistics available or tracing not
+                                        enabled.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="indexes">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Source</th>
+                                    <th>Index</th>
+                                    <th>Optimization</th>
+                                    <th>Calls</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody data-template="app:index-stats">
+                                <tr>
+                                    <td colspan="5">No statistics available or tracing not
+                                        enabled.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Optimization = <span class="label label-success">Full</span> means: the
+                            query optimizer could use the index to execute the expression in the
+                            best possible way. <span class="label label-info">Basic</span>: an
+                            index was available but could only be used to speed up the lookup, no
+                            further optimization was applied. <span class="label label-danger">No
+                                index</span>: no index was found, no optimization possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="resources/scripts/modernizr.custom.js"/>
+    <script type="text/javascript" src="resources/scripts/knockout-3.1.0.js"/>
+    <script type="text/javascript" src="resources/scripts/knockout.mapping-2.4.1.js"/>
+    <script type="text/javascript" src="resources/scripts/exadmin.js"/>
+</div>

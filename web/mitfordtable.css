@@ -1,8 +1,8 @@
 html{
     background-color: #F8F8FF; 
-;
+; min-height:100%;
    
-    color: #580000;
+    color: /*#580000*/ #362819;
     font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
 }
 
@@ -17,17 +17,17 @@ border-radius: 10px;
 }
 div#images img{
 
-width:352px;
-display:inline-block
+width:/*352px*/ 300px;
+/*display:inline-block*/
 }
 div#nav_wide {background-image: url("mrmBlur.jpg"); padding:0; width:100%; position:relative; top:-35px; }
 
 div#menu {width:100%; height:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:row;
 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
  }
-  
+ 
 span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }
-span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900;}
+span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900; position:relative; top:25px;}
 
 ul#siteMenu {list-style-type:none; width:100%; display:flex; justify-content:space-around; align-items:flex-start; flex-direction:row; height:100%;  background-color:/*#F8F8FF;*/#FFDB90;
 position:relative; bottom:-20px;
@@ -64,7 +64,7 @@ ul.subSec li {text-align:left; font-size:1em; font-weight:700; padding-top:2px; 
 
 
 div#content{
-width: 90%; 
+width: 90%; padding-left:15px; padding-right:15px;
 display:inline-block;
 
 }

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schemas/out/si_ODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schemas/out/si_ODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--2019-02-17 ebb: With this release, we also share our ODD for the Digital Mitford Site Index. Currently there are known validation errors reflecting work in progress on updating occupation elements. -->
+<!--Old schema association line with TEI All and Schematron: <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="http://ebeshero.github.io/siCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/siCheck.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -10,6 +13,7 @@
             <title>Site Index of Named Entities in the Digital Mitford Archive</title>
             <author>Digital Mitford Editors</author>
             <editor>Elisa Beshero-Bondar</editor>
+            <!--2018-02-17 ebb: I'm modifying the Talfourd entry so the top material better foregrounds his career, and adding that long-missing Charles Kemble entry. -->
             <sponsor>
                <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
             </sponsor>
@@ -25,7 +29,7 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2017-12-31T20:39:30.156-05:00. Extracted by Elisa Beshero-Bondar.
+            <edition>Site Index for the Digital Mitford project. Date: 2019-02-17T14:02:43.498-05:00. Extracted by Elisa Beshero-Bondar.
         Count of all @xml:ids in the current file: 1946. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
@@ -149,6 +153,20 @@
                      <affiliation>University of Montevallo</affiliation>
                   </occupation>
                   <note type="bio">Aymee Lynn Woody received her Bachelor’s in English from the University of Montevallo in 2016. She is currently working towards her Master’s degree in Education at Montevallo and is slated to graduate in May of 2018. In her spare time, Aymee enjoys reading, writing, quilting, sewing, and embroidery. She worked on the Digital Mitford Archive while enrolled in Samantha Webb’s Digital Romanticism course in Spring 2017.</note>
+               </person>
+               <person xml:id="aol">
+                  <persName>
+                     <surname>Longmuir</surname>
+                     <forename>Anne</forename>
+                     <roleName>Editor</roleName>
+                     <ptr target="https://www.k-state.edu/english/people/longmuir.html"/>
+                  </persName>
+                  <occupation>
+                     <affiliation>Kansas State University</affiliation>
+                  </occupation>
+                  <note type="bio">
+                     Anne Longmuir is Associate Professor of English at Kansas State University. Anne specializes in Victorian literature and has published more than ten articles and book chapters on Charlotte Brontë, Elizabeth Gaskell, and Wilkie Collins, among others. She also co-edited <title level="m">Victorian Literature: Criticism and Debates</title> (Routledge 2016) with Lee Behlman (Montclair State University). Anne is currently working on a book on the gender politics of John Ruskin's economic theory, which will explore his relationship with several nineteenth-century women writers, including Mary Russell Mitford. Anne is working on Mitford's letters and <title level="m" ref="#Our_Village1st_ed">Our Village</title> for the Digital Mitford Project. 
+                  </note>
                </person>
                <person xml:id="avg"><!--2017-10-15 ebb: Eventually, move to Past Research Assistants -->
                   <persName>Annie Gill
@@ -2021,6 +2039,7 @@
                </org>
                <org xml:id="Kemble_family">
                   <orgName>the Kembles</orgName>
+                  <note resp="#ebb">This includes <persName ref="#Kemble_C">Charles Kemble</persName>, his brother <persName ref="#Kemble_JP">John Phillip Kemble</persName>, his sister <persName ref="#Siddons_Sarah">Sarah Siddons</persName>, his wife <persName ref="#Kemble_MrsC">Mrs. Charles Kemble</persName>, and his daughter <persName ref="#Kemble_Frances">Fanny Kemble</persName>.</note>
                </org>
                <org xml:id="Longman_Hurst_ROB_pub">
                   <orgName>Longman, Hurst, Rees, Orme, &amp; Brown</orgName>
@@ -8986,6 +9005,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <surname>Kemble</surname>
                      <forename>Charles</forename>
                   </persName>
+                  <birth when="1775-11-25">
+                     <placeName>Brecon, South Wales</placeName>
+                  </birth>
+                  <death when="1854-11-12">
+                     <placeName>Savile Row, London</placeName>
+                  </death>
+                  <occupation type="theater" subtype="actor"/>
+                  <occupation type="theater" subtype="manager"/>
+                  <occupation type="literary"/>
+                  <note resp="#ebb">Member of a renowned family of actors, Charles Kemble was the younger brother of <persName ref="#Kemble_JP">John Kemble</persName>, and performed with him in Shakespearian roles in the 1790s and was especially known for his role as Hamlet beginning in 1803 and frequently repeated in subsequent decades. He often adapted plays for production from other authors, and though most were not successful on the stage, <bibl>his farce on Cervantes, <title level="m">Plot and Counterplot, or, The Portrait of Michel Cervantes</title>, which he adapted from <bibl>a French play by <author>Joseph-Marie-Armand-Michel Dieulafoi</author>
+                        </bibl>, did well at Haymarket Theatre in <date when="1808">1808</date>
+                     </bibl>. His long-running theatrical career kept him acting regularly from the 1790s into the 1830s on stages on both sides of the Atlantic from <placeName ref="#London_city">London</placeName> to <placeName ref="#New_York_city">New York</placeName>.</note>
                </person>
                <person xml:id="Kemble_Frances" sex="f">
                   <persName>Frances Anne Kemble </persName>
@@ -8996,11 +9027,11 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <addName>Fanny</addName>
                   </persName>
                   <persName>Fanny Kemble</persName>
-                  <occupation>actor</occupation>
-                  <occupation>literary</occupation>
+                  <occupation type="theater" subtype="actor"/>
+                  <occupation type="literary"/>
                   <note type="bio" resp="#lmw">
-                     <p>British actor and author (1809-1893). Member of Kemble acting clan, daughter
-                        of Charles Kemble, niece of Sarah Siddons. </p>
+                     <p>British actor and author, member of Kemble acting clan, daughter
+                        of <persName ref="#Kemble_C">Charles Kemble</persName>, niece of <persName ref="#Siddons_Sarah">Sarah Siddons</persName>. </p>
                   </note>
                </person>
                <person xml:id="Kemble_JP" sex="m">
@@ -11987,7 +12018,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      the <persName ref="#Russell_Richard">Richard Russell</persName>; they married
                      on <date when="1744-05-21">May 21, 1744</date>. They had three children:
                         <persName>Charles William</persName>, <persName>Frances</persName>, and
-                        <persName>Mary</persName>. The <persName ref="#Russell_Richard">Rev. Dr.
+                        <persName ref="#Russell_M">Mary</persName>. The <persName ref="#Russell_Richard">Rev. Dr.
                         Richard Russell</persName> was the rector of <persName>Ashe</persName> and
                      the Vicar of <persName>Overton</persName> and the family lived at Ashe,
                      Hampshire. She died at <persName>Ashe, Hampshire</persName>, on <date when="1785-03-03">March 3, 1785</date>. </note>
@@ -12812,30 +12843,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>literary</occupation>
                   <occupation>journalist</occupation>
                   <occupation>playwright</occupation>
-                  <note type="bio" resp="#lmw #cmm">
-                     <p>Close friend, literary mentor, and frequent correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. Thomas Noon Talfourd was born
-                        on <date when="1795-05-26">May 26, 1795</date> at <placeName ref="#Reading_city">Reading, Berkshire</placeName> and baptised on <date when="1795-07-12">July 12, 1795</date> at the <placeName>Broad Street
-                           Chapel in Reading</placeName>, the eldest child of <persName>Rev. Edward
-                           Talfourd</persName> and <persName>Anne Isabella Noon</persName>. His
-                        father was a brewer and later established a lunatic asylum for female
-                        patients at <placeName>Normand House, Fulham</placeName>, which he ran until
-                        his death, and the supervision of which was later conducted by his wife and
-                        his daughter Anne.</p>
-                     <p>
-                        <rs type="event">Thomas Noon Talfourd married <persName ref="#Talfourd_Mrs">Rachel Rutt</persName> on <date when="1822-08-31">August 31,
-                              1822</date> at St. John, Hackney, Middlesex</rs>. Rachel was the
-                        daughter of radical politician and writer <persName ref="#Rutt_John">John
-                           Towill Rutt</persName>. Thomas and Rachel had five children: Francis,
-                        Mary, Katharine, Thomas Noon [II], and William Wordsworth. In <date when="1832">1832</date>, the family lived at <placeName>26 Henrietta
-                           Street, St Andrew, Holborn and St George the Martyr, Bloomsbury,
-                           England</placeName>. In <date when="1837">1837</date>, they lived at
-                           <placeName>56 Russell Square, St. George, Bloomsbury</placeName>.
-                        Talfourd’s chambers were at <placeName ref="#Temple">2 Elm Court, Temple,
-                           London</placeName>.</p>
-                     <p>Talfourd was educated at the newly-established Mill Hill school, a
-                        dissenting academy in Reading, from 1808 to 1810. He attended Dr. <persName ref="#Valpy_Richard">Richard Valpy</persName>’s <orgName ref="#Reading_School">Reading School</orgName> from 1810 to 1812. He
-                        completed a legal apprenticeship with Joseph Christy, special pleader, in
-                        1817, and was called to the bar in London in 1821. He ultimately earned a
+                  <note type="bio" resp="#lmw #cmm #ebb">
+                     <p>Close friend, literary mentor, and frequent correspondent of <persName ref="#MRM">Mary Russell Mitford</persName>. A native of Reading, Talfourd was educated at the Reading’s newly-established <orgName>Mill Hill school</orgName>, a
+                        dissenting academy, from 1808 to 1810. He attended Dr. <persName ref="#Valpy_Richard">Richard Valpy</persName>’s <orgName ref="#Reading_School">Reading School</orgName> from 1810 to 1812. His career in law began with a legal apprenticeship with Joseph Christy, special pleader, in
+                        1817. He was called to the bar in London in 1821 and ultimately earned a
                         D.C.L. (Doctor of Civil Laws) from Oxford on June 20, 1844. While
                         establishing his practice as a barrister and special pleader, he worked as
                         legal correspondent for <title level="s" ref="#Times_news">The
@@ -22657,7 +22668,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <orgName ref="#Whittakers_pub">G. &amp; W. B. Whittaker</orgName>
                   </publisher>
                   <date when="1824">1824</date>
-                  <note resp="#lmw">The first edition, first volume of Our Village appeared without a volume number on the title page. Only after the publication of subsequent volumes do volume numbers begin to appear on the title pages.</note>
+                  <note resp="#lmw">The first edition, first volume of <title level="m">Our Village</title> appeared without a volume number on the title page. Only after the publication of subsequent volumes do volume numbers begin to appear on the title pages.</note>
                </bibl>
                <bibl xml:id="Our_Village2nd">
                   <title>Our Village: Sketches of Rural Character and Scenery. Volume II. [volume two]</title>
@@ -23493,7 +23504,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <!--scw: As I look through the photos you've uploaded, especially of the introductory matter, I'm finding the different emphases of these editions quite interesting, and worth annotating. Though this needn't be a major focus for us.-->
                   <!--scw: I went through pics and noted any identified intro authors in the xml:id's that I could find.-->
                </bibl>
-               
                <bibl xml:id="OurVillage_story">
                   <title level="a">Our Village</title>
                   <date when="1821">composed 1821</date>

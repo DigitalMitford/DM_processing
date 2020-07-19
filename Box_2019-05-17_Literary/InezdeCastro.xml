@@ -1,0 +1,5115 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-\- <?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> -\->-->
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Inez de Castro: A Tragedy. By Mary Russell Mitford [London. Hurst and Blackett, Publishers, 1854]</title>
+				<author ref="#MRM">Mary Russell Mitford</author>
+
+				<editor ref="#alg">Amy L. Gates</editor>
+
+
+				<sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+				<sponsor>University of Pittsburgh at Greensburg</sponsor>
+				<principal ref="#ebb">Elisa Beshero-Bondar</principal>
+
+				<respStmt>
+					<resp>Transcription, recording of variants, and TEI coding by</resp>
+					<persName ref="#alg">Amy L. Gates</persName>
+
+				</respStmt>
+				<respStmt>
+					<resp>Proofing and corrections by</resp>
+					<persName><!-- 2017-06-29 ALG: Fill this in when known.--></persName>
+				</respStmt>
+			</titleStmt>
+
+			<editionStmt>
+				<edition>First digital edition in TEI, date: <date when="2017-06-29">29 June 2017</date>. P5. </edition>
+			</editionStmt>
+
+
+			<publicationStmt>
+				<authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+				<pubPlace>Greensburg, PA, USA</pubPlace>
+				<date when="2017">2017</date>
+				<availability>
+					<licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0
+						Unported License</licence>
+				</availability>
+
+			</publicationStmt>
+			<seriesStmt>
+				<title>Digital Mitford: The Mary Russell Mitford Archive</title>
+			</seriesStmt>
+
+			<notesStmt>
+				<note>This edition compares the final published text of 1854 against the manuscript version of the play held in the British Library, originally submitted in 1831 to the Examiner's office and the Dicks' Standard Plays edition published in the 1880s.</note>
+				<note>The hand-writing in the manuscript verion of the play appears to be that of a copyist rather than Mary Russell Mitford. The manuscript, which was submitted to the Lord Chamberlain's Office for review, is dated 28 February 1831 and is titled <title>Inez de Castro, a Tragedy in Five Acts</title>.</note>
+			</notesStmt>
+
+			<sourceDesc>
+				<bibl>
+					<title>The Dramatic Works of Mary Russell Mitford, Author of "Our Village," "Atherton," &amp;c. &amp;c. In Two Volumes</title><!-- 2017-06-29 ALG: Should capitalization match title page (e.g. all caps)? -->
+					<title>Inez de Castro: A Tragedy</title> by <author>Mary Russell Mitford</author>
+					<pubPlace>London</pubPlace>
+					<publisher>Hurst and Blackett, Publishers, Successors to Henry Colburn</publisher>
+					<placeName>13, Great Marlborough Street</placeName>
+					<date>1854</date>.
+				</bibl>
+				
+				<msDesc>
+					<msIdentifier>
+						<repository>British Library</repository>
+						<collection>Lord Chamberlain's Plays. Vol. XLV. Feb.-April 1831</collection>
+						<idno>Add MS 42909, folio pages 188-239</idno>
+					</msIdentifier>
+					
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<p>
+										<material>Paper</material>, quarto-sized sheets.</p><!--2017-06-29 ALG: Paper size needs to be checked.-->
+								</support>
+								<condition>Writing appears on both recto and verso sides of each sheet.</condition><!--2017-06-29 ALG: It looks like this from the photos from NCCO, but this should also be checked.-->
+							</supportDesc>
+						</objectDesc>
+						
+					</physDesc>
+				</msDesc>
+				
+				<bibl>
+					<title>Inez de Castro: A Tragedy in Five Acts</title> by <author>Mary Russell Mitford</author><!-- 2017-06-29 ALG: Should capitalization match title page (e.g. all caps)? -->
+					<pubPlace>London</pubPlace>
+					<publisher>John Dicks</publisher>
+					<placeName>313, Strand</placeName>
+					<date>1880-1889</date>.<!-- 2017-07-08 ALG: Do I need to note somewhere that this was on microform, found via WorldCat, and in _English and American Drama of the Nineteenth Century_? -->
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+
+		<profileDesc>
+			<handNotes>
+				<handNote>The manuscript of 1831 does not appear to be written in Mitford's hand, but rather in the hand of a copyist. A second hand in pencil has renumbered the pages for inclusion in this volume of Plays from the Lord Chamberlain's Office, folio pages 188-239.</handNote>
+			</handNotes>
+		</profileDesc>
+		
+		<encodingDesc>
+			<editorialDecl>
+				<p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p>
+			</editorialDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div type="witness">
+				<listWit>
+					<witness xml:id="msIC">Manuscript submitted to the Examiner's Office in a Copyist's Hand</witness>
+					<witness xml:id="IC1854">Version in the 1854 Dramatic Works</witness>
+					<witness xml:id="IC1880">Inez de Castro: A Tragedy in Five Acts, London, Dicks' Standard Plays, 1880\[?]</witness>
+				</listWit>
+			</div>
+
+			<div type="cast">
+				<head>DRAMATIS PERSONÆ.</head>
+				<castList>
+					<castItem type="role">
+						<role xml:id="Alphonso_IC"><persName ref="#Alphonso_IC">Alphonso</persName></role>, 
+						<roleDesc>King of Portugal.</roleDesc>
+						<actor><persName>Mr. Atkinson</persName>.</actor><!-- 2017-07-08 ALG: Need to add xml:ids for all actors in cast list; need to indicate the versioning for all cast list (actors come from IC1880). -->
+					</castItem>
+					
+					<castItem type="role">
+						<role xml:id="Pedro_IC"><persName ref="#Pedro_IC">Don Pedro</persName></role>, 
+						<roleDesc>his Son.</roleDesc>
+						<actor><persName>Mr. James Bennett</persName>.</actor>
+					</castItem>
+					
+					<castItem type="role">
+						<role xml:id="Manuel_IC"><persName ref="#Manuel_IC">Don Manuel</persName></role>, 
+						<roleDesc>his Minister.</roleDesc>
+						<actor><persName>Mr. Higgin</persName>.</actor><!-- 2017-07-08 ALG: See below; check/correct spelling. -->
+					</castItem>
+					
+
+					<castItem type="role">
+						<role xml:id="DAguilar_IC"><persName ref="#DAguilar_IC">Count d'Aguilar</persName></role>, 
+						<roleDesc>the Castillian Ambassador.</roleDesc>
+						<actor><persName>Mr. G. Ellis</persName>.</actor>
+					</castItem>
+					
+					<castItem type="role">
+						<role xml:id="Antonio_IC"><persName ref="#Antonio_IC">Don Antonio</persName></role>, 
+						<roleDesc>one of the Council of Portugal.</roleDesc>
+						<actor><persName>Mr. Saker</persName>.</actor>
+					</castItem>
+					
+					<castItem type="role">
+						<role xml:id="Alvarez_IC"><persName ref="#Alvarez_IC">Don Alvarez</persName></role>, 
+						<roleDesc>Captain of the Guard.</roleDesc>
+						<actor><persName>Mr. G. Almar</persName>.</actor>
+					</castItem>
+					
+					<castItem type="role">
+						<role xml:id="Garcia_IC"><persName ref="#Garcia_IC">Don Garcia</persName></role>, 
+						<roleDesc>a Young Nobleman.</roleDesc>
+						<actor><persName>Mr. Blanchard</persName>.</actor>
+					</castItem>
+
+					<castItem type="role">
+						<role xml:id="Sebastian_IC"><persName ref="#Sebastian_IC">Sebastian</persName></role>, 
+						<roleDesc>Manuel's Servant.</roleDesc>
+						<actor><persName>Mr. Ross</persName>.</actor>
+					</castItem>
+					
+					<castItem type="list">Nobles, Councillors, Officers, Clerks, Huntsmen, Soldiers, Citizens, and Attendants.
+						<role xml:id="Citizen1_IC"></role>
+						<role xml:id="Citizen2_IC"></role>
+					</castItem>
+					
+					<castItem type="role">
+						<role xml:id="Constance_IC"><persName ref="#Constance_IC"></persName></role>, 
+						<roleDesc>Princess of Castille.</roleDesc>
+						<actor><persName>Miss Crisp</persName>.</actor>
+					</castItem>
+					
+					<castItem type="role">
+						<role xml:id="Inez_IC"><persName ref="#Inez_IC">Inez de Castro</persName></role>,
+						<roleDesc>a Spanish Lady attending on Constance.</roleDesc>
+						<actor><persName>Miss E. Montegue</persName>.</actor>
+					</castItem>
+					
+					<castItem type="list">Ladies and Attendants.</castItem>
+				</castList>
+			</div>
+
+			<div type="set"><!-- 2017-06-29 ALG: Need to code further re: setting? Need to add xml:id's for dates, places? -->
+				<p>The Scene is laid at Lisbon, and the near neighbourhood of that City. Date, 1350; time of action, three days. </p>
+			</div>
+		</front>
+
+
+		<body>
+	<!-- ALG: 2017-06-30: Checked text against 1854 ed., starting here. 2017-07-08: Added speech, speaker, line, act/scene tags. To do: Remove line elements from settings, stage directions, etc. and mark them properly; begin versioning. 2019-05-15: In an effort to do something, I am beginning versioning here. Will need to go back to work with first four pages of the ms submitted to the Lord Chamberlain (msIC), the first two pages of the Dicks edition (IC1880), and pp. 49-50 of the Dramatic Works edition (IC1854).-->
+
+			<head><app><rdg wit="#IC1854 #IC1880">INEZ DE CASTRO.</rdg></app></head>
+
+			<div type="act" n="1">
+				<head><app><rdg wit="#msIC">Act 1<hi rend="superscript"><emph rend="underline">st</emph></hi></rdg><rdg wit="#IC1854 #IC1880">ACT I.</rdg></app></head>
+				<pb edRef="#IC1854" n="51"/>
+								
+					<div type="scene" n="1">
+						<head><app><rdg wit="#msIC">Scene 1<hi rend="superscript"><emph rend="underline">st</emph></hi></rdg><rdg wit="#IC1854">SCENE I.</rdg><rdg wit="#IC1880">SCENE I.--</rdg></app></head>
+
+							<stage type="setting"><emph rend="underline">A <app><rdg wit="#IC1854 #msIC">Splendid</rdg><rdg wit="#IC1880">splendid</rdg></app> Hall of <app><rdg wit="#IC1854 #IC1880">Audience</rdg><rdg wit="#msIC">Audience,</rdg></app> in the <app><rdg wit="#IC1854 #IC1880">King's</rdg><rdg wit="#msIC">Royal</rdg></app> Palace at <app><rdg wit="#IC1854"><placeName ref="#Lisbon_city">Lisbon</placeName> ;</rdg><rdg wit="#IC1880"><placeName ref="#Lisbon_city">Lisbon</placeName>.</rdg><rdg wit="#msIC"><placeName ref="#Lisbon_city">Lisbon</placeName>,--</rdg></app> <app><rdg wit="#IC1854">a</rdg><rdg wit="#IC1880 #msIC">A</rdg></app> <app><rdg wit="#IC1854">Throne</rdg><rdg wit="#msIC #IC1880">throne</rdg></app> in the <app><rdg wit="#IC1854 #msIC">Centre</rdg><rdg wit="#IC1880">centre</rdg></app> of the <app><rdg wit="#IC1854">Stage.</rdg><rdg wit="#IC1880">stage.</rdg><rdg wit="#msIC">Stage</rdg></app></emph><!-- ALG: This is underlined in the ms version; italicized in 1854 and 1880. Does this distinction need to be coded or does the fact that underlining signals italics for typesetters mean that indicating underlining is sufficient? --></stage>
+
+
+						<stage type="business"><emph rend="underline"><app><rdg wit="#IC1854 #IC1880"><persName ref="#Antonio_IC">ANTONIO</persName>,</rdg><rdg wit="#msIC"><persName ref="#Antonio_IC">Don Antonio</persName>,</rdg></app> <app><rdg wit="#IC1854 #IC1880"><persName ref="#Garcia_IC">GARCIA</persName>,</rdg><rdg wit="#msIC"><persName ref="#Garcia_IC">Garcia</persName></rdg></app> <app><rdg wit="#IC1854 #IC1880">and</rdg><rdg wit="#msIC">&amp;</rdg></app> <app><rdg wit="#IC1854 #IC1880"><persName ref="#Alvarez_IC">ALVAREZ</persName></rdg><rdg wit="#msIC"><persName ref="#Alvarez_IC">Alvarez</persName></rdg></app>, meeting in <app><rdg wit="#IC1854">Front ;</rdg><rdg wit="#IC1880">front.</rdg><rdg wit="#msIC">front</rdg></app> Courtiers and <app><rdg wit="#IC1854 #msIC">Attendants</rdg><rdg wit="#IC1880">attendants</rdg></app> entering and passing in the <app><rdg wit="#IC1854">Background.</rdg><rdg wit="#IC1880">background.</rdg><rdg wit="#msIC">background</rdg></app></emph><!-- ALG: This is underlined in the ms version; italicized in 1854 and 1880. Does this distinction need to be coded or does the fact that underlining signals italics for typesetters mean that indicating underlining is sufficient? --></stage>
+
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Good morrow, <app><rdg wit="#IC1854"><persName ref="#Antonio_IC">Don Antonio</persName>.</rdg><rdg wit="#IC1880"><persName ref="#Antonio_IC">Don Antonio</persName>;</rdg><rdg wit="#msIC"><persName ref="#Antonio_IC">Don Antonio</persName>!</rdg></app> <app><rdg wit="#IC1854">Noble</rdg><rdg wit="#IC1880 #msIC">noble</rdg></app> <app><rdg wit="#IC1854 #IC1880"><persName ref="#Garcia_IC">Garcia,</persName></rdg><rdg wit="#msIC"><persName ref="#Garcia_IC">Garcia</persName></rdg></app></l>
+							<l><app><rdg wit="#IC1854 #IC1880">A</rdg><rdg wit="#msIC">a</rdg></app> fair good <app><rdg wit="#IC1854 #IC1880">morrow.</rdg><rdg wit="#msIC">morrow!</rdg></app> <app><rdg wit="#IC1854 #IC1880">Ye</rdg><rdg wit="#msIC">ye</rdg></app> are early.</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Gar.</rdg><rdg wit="#msIC">Garcia</rdg></app></speaker>
+							<l>Sir,</l>
+							<l>We wait the King's <app><rdg wit="#IC1854 #IC1880">commands.</rdg><rdg wit="#msIC">commands</rdg></app></l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Ant.</rdg><rdg wit="#msIC">Antonio</rdg></app></speaker>
+							<l><app><rdg wit="#IC1854 #IC1880">'Tis</rdg><rdg wit="#msIC">Tis</rdg></app> like to prove</l>
+							<l>A stirring day.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>A day of stirring <app><rdg wit="#IC1854">mirth,</rdg><rdg wit="#IC1880 #msIC">mirth</rdg></app></l>
+							<l>I grant ye. First to ride with the fair <app><rdg wit="#IC1854 #msIC"><rs type="person" ref="#Constance_IC">Princess</rs></rdg><rdg wit="#IC1880"><rs type="person" ref="#Constance_IC">Princess</rs>,</rdg></app></l>
+							<l>And her fair train to Setuval's green wood,</l>
+							<l>To chase the spotted deer; then speeding back,</l>
+							<l>Haste to the royal banquet at the palace.</l>
+
+
+			<pb edRef="#IC1854" n="52"/>
+
+
+							<l>Why, good Antonio, so to spend the hours,</l>
+							<l>Seems to a soldier pleasant idleness;</l>
+							<l>However, a grave councillor may shrink</l>
+							<l>From the loud din of revelry.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Thou'lt hear</l>
+							<l>Afore the mirth begins, a louder din,</l>
+							<l>And of a ruder nature. Know'st thou not,</l>
+							<l>Alvarez, that last night Count d'Aguilar</l>
+							<l>Arrived at Lisbon with an urgent message</l>
+							<l>From Philip of Castille?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>To press the nuptials</l>
+							<l>Betwixt Don Pedro and his sister?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>That</l>
+							<l>Ye'll know anon. The King receives him here.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>The ambassador will scarce find fitting welcome</l>
+							<l>From our wild Prince. He better loves to chase</l>
+							<l>Swift stag, or white-tusked boar, or to pursue</l>
+							<l>The noble sport of war, and drive the bold</l>
+							<l>And tawny Moor before his conquering hosts,</l>
+							<l>Than to lie basking in a lady's smiles</l>
+							<l>In our soft orange-groves.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>I know not that.</l>
+							<l>Certain he loves not Constance.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Yet is she</l>
+							<l>A stately beauty.</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>Her young handmaid Inez</l>
+							<l>Is fairer.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>So Don Manuel thinks. These girls</l>
+							<l>Of Spain have made strange havoc 'midst the wits</l>
+							<l>Of our staid Court. I speak not of such gallants</l>
+							<l>As ye, whose hearts be light as shuttlecocks</l>
+							<l>From beauty tossed to beauty; but Don Manuel,</l>
+							<l>The wise and powerful minister, that he</l>
+							<l>Should sigh for a young maid, and sigh in vain,</l>
+
+
+			<pb edRef="#IC1854" n="53"/>
+
+
+							<l>May wake some triumph 'midst these Spanish dames.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Thou lov'st them not, Antonio.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>My worst wish</l>
+							<l>Is that they were safe wedded, or safe home.</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>The King!</l>
+
+
+							<stage type="entrance">Enter Alphonso, Manuel , and other Lords. The King seats himself on the Throne, Manuel standing near.</stage>
+
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (To different Attendants.) </speaker>
+							<l>Admit the Lord Ambassador.</l>
+							<l>Say to Don Pedro we require his presence.</l>
+
+							<l>(To Manuel.)</l>
+							<l>Count d'Aguilar, I think?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>The same, my liege;</l>
+							<l>A brave and noble Spaniard.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Hast thou seen him?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>But for a moment, Sire.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>These nuptials surely---</l>
+							<l>And that hot boy---He comes.</l>
+
+
+							<stage type="entrance">Enter D'Aguilar , attended.</stage>
+
+
+							<l>Now, good my lord,</l>
+							<l>How fares our loving brother in the Faith,</l>
+							<l>King Philip of Castille?</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>My royal master</l>
+							<l>Commends him to your Highness in all love</l>
+							<l>And nobleness; and prays---</l>
+
+
+							<stage type="entrance">Enter Pedro , behind.</stage>
+
+
+							<l>Sire, is the Prince</l>
+							<l>Don Pedro here? Mine errand touches him</l>
+							<l>As nearly as thyself; since on his union</l>
+							<l>With our fair Lady Constance hangs the weal</l>
+							<l>Of either kingdom. Is Don Pedro here?</l>
+
+
+			<pb edRef="#IC1854" n="54"/>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped. (Advancing.)</speaker>
+							<l>Ay, to his sorrow. Say whate'er thou wilt,</l>
+							<l>But what thou wilt, say quickly. Kingdoms, bridals,</l>
+							<l>Grave state-craft, and light love! Why, we are bound</l>
+							<l>To the forest, man! the dew lies on the grass;</l>
+							<l>The air is fresh and moist; our hounds to-day</l>
+							<l>Will track their quarry well. Come, and I'll show thee</l>
+							<l>Our woodsman's mysteries. Keep thy dull lessons</l>
+							<l>For duller seasons, sober afternoons,</l>
+							<l>Or days of State processions of Court banquets;</l>
+							<l>This is a morn made for the merry chase---</l>
+							<l>Come with me to the forest?</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Sire---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>For once</l>
+							<l>Chain thy wild humour, son. Count D'Aguilar,</l>
+							<l>Disclose thy message.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Have I not already</l>
+							<l>Disclosed its purport? Good my liege, my message</l>
+							<l>Needs no interpreter. There's not a man</l>
+							<l>In this fair presence or this populous land,</l>
+							<l>But, ere a word be spoken, reads right well</l>
+							<l>Mine errand; knows that I stand here to claim</l>
+							<l>Instant fulfilment of the solemn league</l>
+							<l>Betwixt Castille and Portugal; the treaty,</l>
+							<l>Planned by wise statists, drawn by learned lawmen,</l>
+							<l>Signed by two mighty sovereigns, hailed and blest</l>
+							<l>By the universal people, whose chief clause</l>
+							<l>Binds Don Alphonso's warlike son to wed</l>
+							<l>Don Philip's beauteous sister. The fair Princess,</l>
+							<l>Reposing on the sacred faith of nations,</l>
+							<l>And that great bond of honour, a King's word,</l>
+							<l>Came at your bidding, full of loyal trust,</l>
+							<l>To meet and to espouse her plighted lord;</l>
+							<l>But he---</l>
+
+
+			<pb edRef="#IC1854" n="55"/>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>I was in Africk, as the Moors,</l>
+							<l>The brave who fell, the base who fled, can witness.</l>
+							<l>Ask the white bones that strew the sands of Fez,</l>
+							<l>The nimble slaves that shrouded them in Oran,</l>
+							<l>And they will be my answer. I knew nothing</l>
+							<l>Of thee or of thy treaty,</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>But ye are still</l>
+							<l>Unwedded! Months have passed---I fear to count</l>
+							<l>How many, lest the simple sum should seem</l>
+							<l>Too deep reproach---since conqueror from Africk</l>
+							<l>Don Pedro came; and still they are unwed;</l>
+							<l>And therefore sends Don Philip to demand---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Demand! demand! Why, father, dost thou hear?</l>
+							<l>Count D'Aguilar, speaking in the great name</l>
+							<l>Of Philip of Castille, demands---Dost mark me?---</l>
+							<l>Demands of King Alphonso prompt obedience</l>
+							<l>To his high will! Since when is Portugal</l>
+							<l>Don Philip's tributary, or her King</l>
+							<l>His slave?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>So please your Highness, you misconstrue</l>
+							<l>The Lord Ambassador. He claims obedience</l>
+							<l>Not to his King's behest, but to the power</l>
+							<l>Of a signed treaty, to the honoured name</l>
+							<l>Of Don Alphonso, to the faith of kings,</l>
+							<l>The general weal of nations. 'Tis in friendship</l>
+							<l>To Portugal's great princes that he seeks</l>
+							<l>An instant union.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>That he comes with threats,</l>
+							<l>Reproaches, and defiance, to compel</l>
+							<l>Such union, to demand---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Sirs, ye forget</l>
+							<l>The presence where ye stand. Thou, whose wild will</l>
+							<l>And hot impatience break with hasty clamour</l>
+							<l>The message of Castille; and thou, usurping</l>
+
+
+			<pb edRef="#IC1854" n="56"/>
+
+
+							<l>Mine office of rebuke. My lord, say on.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>That which I come to sue, or to demand,</l>
+							<l>If the sound better please his Highness' ear,</l>
+							<l>Is a prompt answer. It stands in his choice</l>
+							<l>To annul or ratify this high alliance.</l>
+							<l>Don Pedro, wilt thou wed the lady?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>No!</l>
+							<l>I tell thee no, Sir Count! Didst ever hear</l>
+							<l>A brave man yield compliance to a threat?</l>
+							<l>No! 'Tis a short word and of easy speech---</l>
+							<l>However new to courtier's utterance---</l>
+							<l>A brief and homely message; 'twill not burthen</l>
+							<l>Thy memory, or perplex thee with nice terms,</l>
+							<l>Or dainty phrases. Tell King Philip, No!</l>
+							<l>A bold and manly No!</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Then must grim war---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>War! Said he war? Why, since the Moor was quell'd---</l>
+							<l>How long is that, Alvarez?---we have lain</l>
+							<l>In lazy peace. My armour 'gainst the wall</l>
+							<l>Hangs rusting; my good sword almost forgets</l>
+							<l>My unaccustomed hand. Talk'st thou of war?</l>
+							<l>Oh! for a three days' ride in fair Castille,</l>
+							<l>I and my chivalry! Our pennons waving</l>
+							<l>On your proud hills, our lances glittering bright</l>
+							<l>In your hot sun, and your rich pastures ploughed</l>
+							<l>By the quick trampling of our barbed steeds!</l>
+							<l>Oh! for a three days' ride in fair Castille,</l>
+							<l>To meet King Philip man to man, or one</l>
+							<l>To two, or with my knights alone to vanquish</l>
+							<l>His kingdom's power! Reproached and threatened, I</l>
+							<l>Pedro of Portugal! and he a King</l>
+							<l>Of flocks and herds! Thou hast my answer:---No!</l>
+							<l>A bold and honest No!---What ho! Give order</l>
+
+
+			<pb edRef="#IC1854" n="57"/>
+
+
+							<l>To lead my courser to the Alcantara,</l>
+							<l>I'll mount him there.---Say to King Philip, No!</l>
+
+
+							<stage type="exit">[Exit Pedro .</stage>
+
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>A grievous answer! Sire, with a sad heart</l>
+							<l>Yet a most constant spirit, slow to offend,</l>
+							<l>But quick to punish insult, my great master---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Hold, my good Lord Ambassador! Restrain</l>
+							<l>The rash defiance, which upon thy lips</l>
+							<l>Sits hovering. Give't no utterance. There be words</l>
+							<l>A King upon his throne may never hear</l>
+							<l>And pardon.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Yet Don Pedro, Sire---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Don Pedro!</l>
+							<l>Why 'tis a gallant of as wild a temper</l>
+							<l>As the unbroken Barbary steed, which he,</l>
+							<l>And only he can rein; chafing at spur</l>
+							<l>Or curb; hot, fiery, dangerous; but withal</l>
+							<l>The noblest offspring of a noble race,</l>
+							<l>My brave and princely son. Somewhat to-day</l>
+							<l>Hath waked his fiercer mood; but I am King,</l>
+							<l>And never subject better knew the awe</l>
+							<l>That waits that word than Pedro. Hear my answer</l>
+							<l>To thy proud message. Thy rash threat I cast</l>
+							<l>Unheeded from me. Needless 'twere to say</l>
+							<l>How little we fear war; our valiant people</l>
+							<l>And our thrice valiant son bear victory</l>
+							<l>On their spear-tops. We are in war so strong,</l>
+							<l>That we may calmly own our love of peace,</l>
+							<l>And frankly tell to Philip's messenger</l>
+							<l>How dear we hold the alliance of King Philip.</l>
+							<l>Have we not Paynim foes, that we should fight</l>
+							<l>Our Christian brethren? Be we not neighbours, Count,</l>
+							<l>And should we not be friends? A mountain path,</l>
+							<l>A wandering brook divide, and join our lands:</l>
+
+
+			<pb edRef="#IC1854" n="58"/>
+
+
+							<l>The tree that grows in our fair Portugal</l>
+							<l>Throws its broad shadow on your pleasant Spain,</l>
+							<l>And the wild goat that browses on the hill</l>
+							<l>Unconsciously bestrides the invisible line</l>
+							<l>That war would trace in bloody charactery.</l>
+							<l>Say to thy monarch that Alphonso's honour</l>
+							<l>Is pledged to their high treaty; point by point,</l>
+							<l>And clause by clause; his honour and his crown</l>
+							<l>Are pledged to their fulfilment. For these nuptials,</l>
+							<l>Rest in our Court awhile an honoured guest,</l>
+							<l>And thou thyself shalt give the queenly bride</l>
+							<l>To her bold bridegroom. Nay, this is no time</l>
+							<l>For answer. To the woods, my lords! Thou'lt ride with us,</l>
+							<l>Count D'Aguilar? The Princess and her train</l>
+							<l>Are bound to Setuval. We'll show thee sport,</l>
+							<l>My Lord Ambassador.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>I wait your Highness.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>We'll summon thee anon. Come, good Antonio!</l>
+
+
+							<stage type="exit">[Exeunt Alphonso, Antonio, Garcia, Alvarez , and other Lords.</stage>
+
+
+							<stage type="business">Manuel and D'Aguilar remain.</stage>
+
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>A moment, D'Aguilar?</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Now for a shrewd</l>
+							<l>And subtle supplement to the smooth speech</l>
+							<l>Of the smooth King! Fair-seeming praise of peace,</l>
+							<l>And soft persuasive prayers to bide awhile</l>
+							<l>Amongst ye!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>That is sure already.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Sure!</l>
+							<l>What hinders but I bear Don Pedro's insults</l>
+							<l>To Philip's Court? What hinders but I hurl</l>
+							<l>A brave defiance in his teeth?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Thy duty.</l>
+
+
+			<pb edRef="#IC1854" n="59"/>
+
+
+							<l>Thou art wise, Count D'Aguilar, too wise to break</l>
+							<l>A truce 'twixt Christian nations, when the Moor,</l>
+							<l>Thine old hereditary foe stands watching</l>
+							<l>Before thy gates; and for a word, a sound</l>
+							<l>That perished in the utterance, a breath</l>
+							<l>Instantly mingled with the common air!</l>
+							<l>Thou art too wise, my Lord Ambassador.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Yet were I hot as this mad Prince of thine---</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Why there again! a soldier held as rude</l>
+							<l>As winds in March, as boisterous as the waves</l>
+							<l>That chafe the Atlantic sea.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>'Tis pity of him;</l>
+							<l>More fortunate captain, or more valiant knight.</l>
+							<l>Ne'er rode against the Moor.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>A valiant knight;</l>
+							<l>A very fortunate captain. He would find</l>
+							<l>Scant greeting from King Philip that provoked</l>
+							<l>A strife 'twixt him and Pedro.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>And withal</l>
+							<l>A man of a rare presence. Never saw I</l>
+							<l>In court or camp a statelier gentleman</l>
+							<l>Or one of nobler bearing. A man moulded</l>
+							<l>To win a lady's eye.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>True! true!</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>And yet,</l>
+							<l>Now in his very May of life, to shun</l>
+							<l>A youthful beauty, flying to the woods</l>
+							<l>To shield him from fair woman. Strange!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Most strange,</l>
+							<l>An' the Prince shunned all women.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Ha!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>The Princess</l>
+							<l>Came not alone.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>What mean'st thou?</l>
+
+
+			<pb edRef="#IC1854" n="60"/>
+
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>D'Aguilar,</l>
+							<l>I am not of them to whom men bring loose tales</l>
+							<l>Of wanton dalliance or court scandal, light</l>
+							<l>And idle as the wind. Men dare not pour</l>
+							<l>Into my graver ear the trifling talk</l>
+							<l>That triflers love. Yet I have heard a tale</l>
+							<l>Of Pedro and a Spanish maid---</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Of whom?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Hearken! When first the Prince returned from Africk,</l>
+							<l>As duly day by day he sought the Palace,</l>
+							<l>Where, with her maiden train, fair Constance dwells,</l>
+							<l>As ever pilgrim bent at saintly shrine</l>
+							<l>In blest performance of some pious vow.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Goes he not now?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Now at untimely hours,</l>
+							<l>Deep midnight or by the pale light of dawn</l>
+							<l>He hovers round the walls.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>And ye suspect---</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Watch, mark and judge. The King, who holds suspicion</l>
+							<l>The monarch's vice, as I the statesman's virtue,</l>
+							<l>Disbelieves, or says he disbelieves, the tale;</l>
+							<l>Yet every hour with more intense desire</l>
+							<l>Urges Don Pedro's marriage with the Princess.</l>
+							<l>Press on these bridals, D'Aguilar, and serve</l>
+							<l>Two kings, two kingdoms. Press these bridals, Count.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Another! There's but one could vie with Constance.</l>
+							<l>Thou dost not deem them wedded?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>No. A law,</l>
+							<l>An old wise law, part of our very state,</l>
+							<l>Declares that whoso, being a subject born,</l>
+							<l>Native or alien, weds the kingdom's heir</l>
+
+
+			<pb edRef="#IC1854" n="61"/>
+
+
+							<l>Shall die. He would not place her in that peril.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>She hath still been held a chaste and virtuous lady.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>She wears his gifts. The jewelled attaghan</l>
+							<l>Plucked from dead Hamet on the sands of Fez,</l>
+							<l>A boy-like weapon fit for maids or boys,</l>
+							<l>Reposes in her girdle. Sportive gift,</l>
+							<l>And open; but as some blest talisman</l>
+							<l>Doth Inez wear that dagger. Mark her, Count!</l>
+							<l>She hath nor eye nor ear for any man</l>
+							<l>Save Pedro. Mark him well; he hath nor look</l>
+							<l>Nor word save for fair Inez.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Why 'twas rife</l>
+							<l>At our Castillian Court that thou thyself</l>
+							<l>Didst woo---</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Think not of me; watch him. Even now</l>
+							<l>His horses wait him at the Alcantara</l>
+							<l>That he may pass her palace gate, and catch</l>
+							<l>One glance of that rare beauty, or one sound</l>
+							<l>Of that sweet voice, or breathe but the same air</l>
+							<l>That hath fanned her fair cheek. Go! mark them well,</l>
+							<l>And press these bridals, Count; be sure thou press</l>
+							<l>These bridals.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>I'll not fail.</l>
+						</sp>
+
+							<l>[Exeunt.</l>
+
+					</div>
+
+					<div type="scene" n="2">
+							<head>SCENE II.</head>
+
+
+							<l>A Garden.</l>
+
+
+							<l>Enter Pedro and Inez.</l>
+
+
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Nay, stay thy steps, my Inez. We are here</l>
+							<l>Safe from surprisal, sweetest. Why, I found thee</l>
+							<l>Far from the house, alone. What eye should trace us</l>
+							<l>In the green labyrinth of these garden bowers?</l>
+							<l>Gaze not around so fearfully.</l>
+
+
+			<pb edRef="#IC1854" n="62"/>
+
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Art sure</l>
+							<l>None saw thee leap the wall?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Full sure.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>That none</l>
+							<l>Will miss---Where waits thy train?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>On the Alcantara,</l>
+							<l>Steed, squire, and page.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Have they no guess?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Not one;</l>
+							<l>Unless my Barbary steed, who with quick instinct,</l>
+							<l>Soon as he feels his master on his back,</l>
+							<l>Turns hitherward unguided. Thou art trembling</l>
+							<l>Like a bird newly caged.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Here in broad day!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>There is no danger, sweet. This fear of thine</l>
+							<l>Casts a dark shadow o'er our meeting joys.</l>
+							<l>Whom dost thou dread?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>All that surround me, Pedro.</l>
+							<l>Oh! there is doubt amongst them, jealous doubt;</l>
+							<l>And they regard me with stern angry eyes,</l>
+							<l>Or cold averted looks; they speak to me,</l>
+							<l>When speak they must, in brief and formal phrase,</l>
+							<l>Or with proud scornful silence pass me by.</l>
+							<l>I, that bore once the gayest, lightest heart</l>
+							<l>Of that fair maiden court; the favourite</l>
+							<l>Of Constance, yet, although the favourite, loved</l>
+							<l>Of all her train; the merriest heart alive,</l>
+							<l>Commending my quick fancies to the air</l>
+							<l>As a young tree its blossoms; I am now</l>
+							<l>A lonely, moping wretch in these gay bowers,</l>
+							<l>Of all rejected; shunned as the plague-spot</l>
+							<l>Of sin were on me, or the Church's ban.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Now foul befall their envious hearts! My Inez,</l>
+							<l>A day shall come---</l>
+
+
+			<pb edRef="#IC1854" n="63"/>
+
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>And thou! Think if they saw thee!</l>
+							<l>There's not a bird stirs on the tree, or flower</l>
+							<l>Drops from its stalk, but seems to me some espial</l>
+							<l>Of Constance. Pr'ythee hence! Why cam'st thou, Pedro?</l>
+							<l>Pr'ythee away!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>I came to warn thee, love.</l>
+							<l>I have seen Count D'Aguilar.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>When? where?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Even now,</l>
+							<l>Within my father's palace.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Well? Thou hast seen him---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>And he---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Suspects he? Knows he?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Calm thee, Inez.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>I am calm. And he?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Pressed sternly this state union.</l>
+							<l>Now, by St. Michael, had they with like chidings</l>
+							<l>Urged me to marry thee, with like contempt</l>
+							<l>I had refused</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Alas! that fiery temper!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Nay, but for once 't hath done good service, dear one:</l>
+							<l>For my rash anger hath enforced a pause</l>
+							<l>In their demand, an unsuspected pause.</l>
+							<l>There is no danger, so that thou betray not</l>
+							<l>Our secret. Therefore came I, love, to pray</l>
+							<l>That thou wouldst shield thee with fresh vows against</l>
+							<l>Such peril. Swear!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Have I not sworn?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>But vow</l>
+							<l>Once more. I doubt I know not what: the Princess;</l>
+							<l>The King; the Ambassador; and most of all,</l>
+							<l>The wily Manuel.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Would it pleasure thee,</l>
+
+
+			<pb edRef="#IC1854" n="64"/>
+
+
+							<l>That, like a warrior, I should kiss the blade</l>
+							<l>Of my small weapon, thy first gift, my bright</l>
+							<l>And precious attaghan? What need of oaths</l>
+							<l>When 'tis thy will! But I have sworn, and dearly</l>
+							<l>Will I redeem that vow. Now haste away!</l>
+							<l>Pr'ythee begone, dear Pedro! and chain thou</l>
+							<l>Thine own rash mood.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>I will be gentle, sweet,</l>
+							<l>Even as thyself; or as the fabled lion,</l>
+							<l>Tamed, reined, and guided by the young boy, Love.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Beseech thee, loiter not.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Come with me, then,</l>
+							<l>To yonder bower, where thou, unseen, may'st see</l>
+							<l>My safe escape; may watch me till I back,</l>
+							<l>My peerless steed. Mine Inez, come with me!</l>
+							<l>Forget these griefs, and think of the blest hour</l>
+							<l>When love shall know no fear. Sweet Inez, come!</l>
+						</sp>
+
+							<l>[Exeunt.</l>
+
+
+							<l>END OF ACT I.</l>
+					</div>
+			</div>
+
+			<div type="act" n="2">
+				<head>ACT II.</head>
+				<pb edRef="#IC1854" n="65"/>
+				
+					<div type="scene" n="1">
+						<head>SCENE I.</head>
+
+
+							<l>A Forest.---A Pavilion in the Background.</l>
+
+
+							<l>Alphonso, Manuel, D'Aguilar, Antonio, Garcia , Lords, Foresters, Huntsmen, &amp;c., Constance, Inez , and other Ladies. </l>
+
+
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Nay, nay, my royal huntress! rest awhile</l>
+							<l>In this fair forest bower. Thou hast done enow</l>
+							<l>For fame to-day. Art thou not weary, Constance?</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>No, not a whit. I love the pleasant toil</l>
+							<l>O'er well for weariness; and oft have tired</l>
+							<l>Knights, squires, and dames in our Castillian woods.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Ay, skill and liking are twin-born: we love</l>
+							<l>The art we have mastered; we excel in that</l>
+							<l>We love. How many deer have died to-day</l>
+							<l>By that fair, slender hand?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Three, as I think.</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>Four, surely four.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>No, three. One at the brake;</l>
+							<l>One standing by the pool; and one couched down</l>
+							<l>Beneath the chestnut shade. Three deer have fallen</l>
+
+
+			<pb edRef="#IC1854" n="66"/>
+
+
+							<l>By her unerring arrows.</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>A true eye!</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>And a sure hand!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Fair Princess, thou shalt be</l>
+							<l>The Goddess of the Woods. Hunters shall come</l>
+							<l>To yield thee worship, as in days of old</l>
+							<l>To crescented Diana; these huge trees</l>
+							<l>Thy pillared temple, yonder tent thy shrine,</l>
+							<l>And we thy priests to chant triumphal hymns,</l>
+							<l>And tend thy virgin altars. Rest thee, sweet,</l>
+							<l>The sun rides high.</l>
+
+							<l>Ant. (Apart to Manuel .)</l>
+							<l>'Tis pity that Don Pedro</l>
+							<l>Saw not the royal nymph. Her skill, her ardour,</l>
+							<l>Matching his own, had scarcely failed to rouse</l>
+							<l>The tardy wooer.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Yet Antonio---Mark me,</l>
+							<l>I speak not of this princely pair, but man,</l>
+							<l>As in the gross we view him;---man loves not</l>
+							<l>To see his cherished passions and pursuits</l>
+							<l>Lie in faint shadow on a woman's mind,</l>
+							<l>Reflected in that feebler element,</l>
+							<l>Like images in water, wavering, dim,</l>
+							<l>Distorted. Love, like music, often lurks</l>
+							<l>In seeming discords; and his subtlest springe</l>
+							<l>Veils in strong contrasts. Mark me, Sir, I speak</l>
+							<l>Of man in the abstract.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Lords! hath any seen</l>
+							<l>My truant son?</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>My liege, one of his train,</l>
+							<l>Lopez the Falconer, says he saw him plunge</l>
+							<l>Deep in the forest, as our stately show</l>
+							<l>Of hounds and horsemen, lords and ladies gay,</l>
+							<l>Approached to Setuval.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Wild, wayward boy!</l>
+
+
+			<pb edRef="#IC1854" n="67"/>
+
+
+							<l>Count D'Aguilar, thy brave Castillian hounds</l>
+							<l>Outvoice our Portugals. I deemed ye not</l>
+							<l>So peerless in the chase. Even these young maids</l>
+							<l>Be gallant huntresses.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Save one. Fair Inez,</l>
+							<l>Thou wast a laggard in our sylvan sports,</l>
+							<l>And when thou cam'st across the prey wouldst tremble,</l>
+							<l>Grow pale, and shuddering, turn thy steed away</l>
+							<l>As from a battle-field.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>It is my weakness</l>
+							<l>To quail at sight of death.</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Of death!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Ay, even</l>
+							<l>The death of these poor deer. They are so happy,</l>
+							<l>So innocent, so beautiful, so made</l>
+							<l>For life and joy. The sunbeams, as they pierce</l>
+							<l>The leafy cork-trees, fall on their fine limbs</l>
+							<l>With a gay, glittering light; the painted wood-flowers</l>
+							<l>Crowd round their delicate feet; the rivulets,</l>
+							<l>Whereat they slake their thirst, dance sparkling by</l>
+							<l>Merrily, merrily, as pleased to view</l>
+							<l>Each gentle head down-bending. Nature smiles</l>
+							<l>On the fair happy creatures. Man hath taught them</l>
+							<l>The world's worst lesson---Fear.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Oh, gentlest maid!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>In sooth a goodly sermon!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Yet I blame not</l>
+							<l>Them who in manly hardihood of soul</l>
+							<l>Find in the princely chase a princely joy;</l>
+							<l>Albeit mine own infirm and timorous spirit</l>
+							<l>Shrink shivering from the sight. We differ all</l>
+							<l>In temper as in feature. No two leaves</l>
+							<l>Be quite alike, though growing on one tree.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Oh, wise as gentle!</l>
+
+
+			<pb edRef="#IC1854" n="68"/>
+
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>A right sapient preacher!</l>
+							<l>Will no one take my veil? Where be my maidens?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Madam---</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Begone! I need thee not. Young Blanche!</l>
+							<l>Beatrice! Urraca! Be near me, damsels.</l>
+							<l>Have I not said begone?</l>
+
+
+							<l>[Then apart to one of her Ladies.</l>
+
+
+							<l>Oh, how I loathe</l>
+							<l>The cold, reluctant, formal offices,</l>
+							<l>The ceremonial homage, the lip duty</l>
+							<l>Of yon smooth hypocrite! See how she stands,</l>
+							<l>With patient downcast looks, seeming to shun</l>
+							<l>The tender flatteries her feigned tears provoke.</l>
+							<l>Oh, falsehood fair as heaven, yet black as hell!</l>
+							<l>Ingrateful traitress! Urraca, it frets</l>
+							<l>My very soul to see her with that air</l>
+							<l>Of mute and sad submission, and to know</l>
+							<l>The secret triumph of her thoughts. My liege,</l>
+							<l>The day wears on.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>We are at thy dispose,</l>
+							<l>Fair Princess!---thy vowed liegemen, to abide</l>
+							<l>Here in thy sylvan reign, or tread once more</l>
+							<l>The city no less thine.</l>
+
+
+							<l>Enter Alvarez in a hurried manner.</l>
+
+
+							<l>Whom seek'st thou, Sir?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>So please you, Sire, the Prince.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Wherefore!</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>I hoped</l>
+							<l>To find him here.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Seek him elswhere, Alvarez;</l>
+							<l>He is not amongst us.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Hath aught ill befallen?</l>
+							<l>What wilt thou of Don Pedro?</l>
+
+
+			<pb edRef="#IC1854" n="69"/>
+
+
+							<l>Man. (To Alphonso.)</l>
+							<l>Mark, my liege.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Can he not speak?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Say forth thine errand!</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Sire,</l>
+							<l>A vague and nameless fear, too undefined</l>
+							<l>For words.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>On! on!</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>A fiery steed hath passed</l>
+							<l>Without a rider, houselled royally.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Who saw him?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>A poor woodman.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Never doubt</l>
+							<l>But 'tis some courser of our train.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>'Tis Pedro.</l>
+							<l>What colour were the housings? Crimson wrought</l>
+							<l>With gold?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>I know not.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Wherefore brought ye not</l>
+							<l>The woodman hither? 'Twas a fiery steed?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Ay, one that seemed companion of the wind---</l>
+							<l>A wild steed of the desert, tossing high</l>
+							<l>His slender head and streaming mane, and spurning</l>
+							<l>The very ground with his proud tread---a steed</l>
+							<l>Untamed, untameable.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>And black?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>As jet.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>'Tis he! 'tis he!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Knows any man what horse</l>
+							<l>Don Pedro rode to-day?</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>Last night, my liege,</l>
+							<l>I heard the Prince give order that the roan---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>I saw him mount Black Saladin. 'Tis he!</l>
+							<l>And he is dead. Alvarez, out on thee,</l>
+							<l>Foul raven! Messenger of ill!</l>
+
+
+			<pb edRef="#IC1854" n="70"/>
+
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Yet grant</l>
+							<l>The steed were Pedro's, he may live.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Fly! fly!</l>
+							<l>Search all the forest! Be ye men, and fly not</l>
+							<l>To Pedro's aid? Oh! if I were as ye---</l>
+							<l>Fly! fly!</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>If such the King's good pleasure---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>If!</l>
+							<l>Why, is he not a father? Hence and speed</l>
+							<l>True tidings back---the truth, the killing truth!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Dispatch some skilful huntsmen, Don Alvarez,</l>
+							<l>To search the woods.</l>
+
+
+							<l>[Exit Alvarez.</l>
+
+
+							<l>I join not this wild fear,</l>
+							<l>Knowing my son unmatched in sylvan craft,</l>
+							<l>And skilled to rule the stubbornest steed that e'er</l>
+							<l>Spurned the hot sands of Araby.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>He'll die!</l>
+							<l>He'll die!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Dost mark her?</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>A strange passion!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Inez!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>He'll die! he'll die!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Command thyself! Arise!</l>
+							<l>Quell this strong agony, which casts reproach</l>
+							<l>Upon thy virgin fame! Arise!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>I cannot.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Lady, what means this passion? At thy side</l>
+							<l>Stands Pedro's plighted bride, with cheek unblanched</l>
+							<l>And lip unquivering, and calm, even breath;</l>
+							<l>Whilst thou---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>She loves him not. But thou, his father---</l>
+							<l>Oh! canst thou dally here whilst thy brave son</l>
+							<l>Lies perishing? Crushed underneath the hoofs</l>
+							<l>Of that fierce steed, or gored by horrid tusks</l>
+
+
+			<pb edRef="#IC1854" n="71"/>
+
+
+							<l>Of fiercer boar, bruised, mangled, bleeding, dead---</l>
+							<l>Dead, or worse, worse!---the fearful living prey</l>
+							<l>Of animals obscene, grim ravening wolves</l>
+							<l>Rending the quivering limbs, whilst he---Why waste ye</l>
+							<l>A moment in delay? Thou art a monarch;</l>
+							<l>Go pour thy people, thy whole people, King,</l>
+							<l>Into the woods of Setuval, to seek</l>
+							<l>And succour thy brave son.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Go more of ye!</l>
+
+
+							<l>[Exeunt Garcia and others.</l>
+
+
+							<l>Her fears have an infection. Yet I doubt not</l>
+							<l>Of Pedro's safety---skilled as Theseus</l>
+							<l>To slay the beast of chase, active and strong</l>
+							<l>As great Alcides. Tush! he's safe! Yet go!</l>
+							<l>Go more of ye!</l>
+
+
+							<l>[Exeunt Lords, Huntsmen, &amp;c.</l>
+
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Sweet lady, I would buy,</l>
+							<l>With limb or life, one heaving throb, like that</l>
+							<l>Which swells thy bosom now.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Hush!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>I would be</l>
+							<l>The wretch thy terror painted, mangled, bleeding,</l>
+							<l>Dying, that long and living death, to win </l>
+							<l>One tear of thine. But thou from honest love</l>
+							<l>Doth turn thee, Inez---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Hush, man! hush!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>With scorn</l>
+							<l>Bitter and hard to bear, whilst---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Hush! I say.</l>
+							<l>Do ye not hear a distant horn? Hark! hark!</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Her sense is wandering.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Hark! the joyful sound</l>
+							<l>Lives in mine ears; the glad triumphant note</l>
+							<l>His death-mot.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>All is silence.</l>
+
+
+			<pb edRef="#IC1854" n="72"/>
+
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Hark!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Ay, now.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>He lives! he comes! he's safe! Oh! thanks to Heaven!</l>
+							<l>Thanks to All-bounteous Heaven!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Support the lady.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Nay, I am well. He's safe! he's safe!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>She faints!</l>
+							<l>Bear her to the Pavilion.</l>
+
+							<l>[Exit Inez , with Ladies, &amp;c. Some go with her, others remain in attendance on Constance .</l>
+
+							<l>Howsoe'er,</l>
+							<l>She knew the sound---the mot was Pedro's.</l>
+							<l>(Apart to D'Aguilar .)</l>
+							<l>Count,</l>
+							<l>Was thy King mad when, with his haughty sister,</l>
+							<l>He sent this melting beauty? How dispose her?</l>
+							<l>Guilty or innocent---</l>
+
+
+							<l>Enter Don Pedro, Alvarez , and other Lords.</l>
+
+
+							<l>How now, fair son?</l>
+							<l>A moment since 'twas rife that thou wast dead</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>The tale was false it seems.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Wouldst have it true?</l>
+							<l>Ay, by that paleness The hot flush by times</l>
+							<l>Deceives; cold wanness never! Stand aside!</l>
+							<l>The King spake to the Prince, the father's voice</l>
+							<l>Called on his son. Off from between us.---Sire,</l>
+							<l>Mine is no glorious story; noble peril</l>
+							<l>Came not in view, a hunter's trivial tale.</l>
+							<l>Leaping afoot, to end with one sharp thrust</l>
+							<l>The agony of a poor panting stag</l>
+							<l>Pulled down by my brave hounds, my mettled steed,</l>
+							<l>Scared by their baying, burst from page and groom,</l>
+							<l>And bounded through the forest, tossing high</l>
+
+
+			<pb edRef="#IC1854" n="73"/>
+
+
+							<l>His stately head, and snorting with such joy</l>
+							<l>To feel his freedom, 'twas a joy to see</l>
+							<l>How, swift as the antelope he darted forth</l>
+							<l>Crushing each branch that crossed him with the strength</l>
+							<l>Of the roused lion. My thrice noble horse!</l>
+							<l>I would not change him for a battle won,</l>
+							<l>Or a new kingdom. Sirs, take instant order</l>
+							<l>He be pursued, and proffer a Count's ransom</l>
+							<l>To him who brings Black Saladin. Yet still</l>
+							<l>I grieve his flight should have awaked one throb</l>
+							<l>Of fear, however honouring, for his master.</l>
+							<l>A father's terrors---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Sir, I feared thee not.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>A lady's softness---Surely Don Alvarez</l>
+							<l>Spake of one trembling with affright.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Whom seek'st thou?</l>
+							<l>What quick distemperature hath seized thee?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>None;</l>
+							<l>None, father; none. Came not the Lady Inez</l>
+							<l>Amongst the royal train?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>She did.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>And wherefore</l>
+							<l>And whither is she gone? Hath Manuel dared---</l>
+							<l>Where is she gone, I say? To yonder tent?</l>
+
+
+							<l>[Going.</l>
+
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Where goes Don Pedro? Stay him, good Antonio.</l>
+
+							<l>Ant. (To Pedro .)</l>
+							<l>May it please it thee, Sir, return.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Is Inez safe?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>She is.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>And gently tended?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Yes.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>I ask thee,</l>
+							<l>By that fair idol which true men adore,</l>
+							<l>Thy bright unsullied honour, if the lady</l>
+							<l>Be reverently entreated?</l>
+
+
+			<pb edRef="#IC1854" n="74"/>
+
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>With all care</l>
+							<l>And nobleness.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>I do believe thee. (Returning.) Father,</l>
+							<l>What wilt thou of thy son?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Dost thou not see</l>
+							<l>The Lady Constance?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Madam, I implore</l>
+							<l>Your Highness' pardon that, with hasty step</l>
+							<l>And unobservant eye---</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Beseech thee spare</l>
+							<l>These slow, unwilling courtesies. Fair Sir,</l>
+							<l>The offence is none to have o'erpast me here</l>
+							<l>Unseen, unthought of; if a slight 'tis one</l>
+							<l>My soul holds gracious. The unpardoned sin,</l>
+							<l>The deadly scorn, the immedicable wound</l>
+							<l>Had been to blend with Constance of Castille</l>
+							<l>Image or thought less pure.---We wait your Highness.</l>
+
+
+							<l>[Exit, with her Ladies, into the Pavilion.</l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Pure! Why the dew-drop which the west wind fans</l>
+							<l>From the white orange-flower, the down that grows</l>
+							<l>Upon the wild swan's breast, the snows that crown</l>
+							<l>The Pyrenean steep are not so pure</l>
+							<l>As Inez! Pure! Lady, be thou as chaste</l>
+							<l>As vestal virgin or pale cloistered nun,</l>
+							<l>Thou wouldst show weak and frail and spirit-stained</l>
+							<l>Beside the clear of heart, the firm of soul,</l>
+							<l>Whom thou malign'st. And she hath born this scorn,</l>
+							<l>And I must bear! Oh, that some stalwart knight</l>
+							<l>Would doubt thy virtue, Inez!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Son---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Not thou,</l>
+							<l>Not thou, my father!</l>
+
+							<l>D'Aq.</l>
+							<l>Prince, I must not hear</l>
+
+
+			<pb edRef="#IC1854" n="75"/>
+
+
+							<l>Sharp-biting taunt and bitter insult cast</l>
+							<l>Upon a Princess of Castille. Wert thou</l>
+							<l>The bravest man of thy brave line---</l>
+
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (To D'Aguilar .) My lord,</speaker>
+							<l>Thy mission here, which is to thee a shield,</l>
+							<l>Alike debars thee from intemperate wrath.</l>
+
+							<l>(To Pedro .) He comes on a King's message.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Fear not me!</l>
+							<l>Thou art a safe man, Lord Ambassador,</l>
+							<l>A licensed railer, a permitted scold,</l>
+							<l>As chiding woman, or as tonsured monk.</l>
+							<l>I know thy privilege.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (Taking D'Aguilar apart.)</speaker>
+							<l>Count D'Aguilar!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>I know thy privilege.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Prince, these rash insults---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Have I not owned his privilege? And thou too,</l>
+							<l>The absolute courtier, minister, dictator</l>
+							<l>Of this our Portugal, who, ruling all,</l>
+							<l>Wouldst fain rule me; the quaint and clerkly scribe,</l>
+							<l>Whose delicate hand, inured to the slight pen,</l>
+							<l>As a young girl's to the needle, never knew</l>
+							<l>The manly joy to grasp a warrior's sword,---</l>
+							<l>Thou too art privileged. Rail on! rail on!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Prince, these vain taunts---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Why dost thou pause? Rail on!</l>
+							<l>Why stint thy speech? On, mighty minister!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Thou art my Prince, and I must bear; but wert thou</l>
+							<l>Mine equal---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Well?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Then---No---Thou art a Prince,</l>
+							<l>And I a subject.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Prince! Sir, I'm a knight,</l>
+
+
+			<pb edRef="#IC1854" n="76"/>
+
+
+							<l>A soldier, and a man; one trained in camps,</l>
+							<l>Who little recks of thy court niceties,</l>
+							<l>And never yet paused in the battle-field</l>
+							<l>To question a stout foeman's royalty.</l>
+							<l>Think me thine equal, Sir. Rank is a shield</l>
+							<l>O'ercumbrous for my use. Think me thine equal.</l>
+							<l>And then if thou dare fight---</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Speak lower, Prince.</l>
+							<l>These scoffs would spur a coward to the field.</l>
+							<l>Meet me where'er thou wilt, and thou shalt find</l>
+							<l>That I can grasp a sword. Meet me to-night</l>
+							<l>In single combat.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Willingly; joyfully.</l>
+							<l>But wherefore not at once?---</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Put up thy sword!</l>
+							<l>Speak lower, lest they listen. We must meet</l>
+							<l>Alone.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Why, this sounds like a gallant foe. By Heaven!</l>
+							<l>I never deemed thee worth a soldier's hate</l>
+							<l>Till now. On the Alcantara, at sunset;</l>
+							<l>Or by the Tagus, near the harbour's mouth;</l>
+							<l>That were more private. They'll not seek us there.</l>
+							<l>The sands beside the Tagus. By St. Michael!</l>
+							<l>I never thought to hold thee in such honour.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>I will not fail thee, Sir. We are observed.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>What saidst thou, Pedro?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Good my liege, Don Manuel</l>
+							<l>Hath challenged me to meet him in the forest,</l>
+							<l>And with our hounds run down a fallow deer;---</l>
+							<l>And I---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Enough! Enough! Count D'Aguilar,</l>
+							<l>We hold to-night a banquet at the Palace,</l>
+							<l>To honour Lady Constance. Nobles all,</l>
+
+
+			<pb edRef="#IC1854" n="77"/>
+
+
+							<l>I bid ye to the festival. And now</l>
+							<l>To horse, my lords, to horse! Go warn the Princess.</l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped. (To Manuel.)</speaker>
+							<l>At sunset by the Tagus' brink.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>To horse!</l>
+							<l>To horse!</l>
+						</sp>
+							<l>END OF ACT II.</l>
+					</div>
+			</div>
+
+
+			<div type="act" n="3">
+				<head>ACT III.</head>
+				<pb edRef="#IC1854" n="78"/>
+				
+					<div type="scene" n="1">
+						<head>SCENE I.</head>
+
+
+							<l>An Apartment in Don Manuel's Palace.</l>
+
+
+							<l>Manuel and Sebastian.</l>
+
+
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>The King hath sent the Captain of the Guard</l>
+							<l>To watch our Palace, say'st thou?</l>
+						</sp>	
+						
+						<sp who="#Sebastian_IC">
+							<speaker>Seb.</speaker>
+							<l>Good my lord,</l>
+							<l>The archers line the court.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Bid Juan lead</l>
+							<l>My courser to the garden gate. Bring thou</l>
+							<l>My armour. Quick!</l>
+						</sp>
+						
+						<sp who="#Sebastian_IC">
+							<speaker>Seb.</speaker>
+							<l>All egress, noble Sir,</l>
+							<l>Is barred by the stern guard, and King Alphonso</l>
+							<l>Himself approaches.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>So! the hot defiance</l>
+							<l>Found listeners; and the feigned after calmness</l>
+							<l>Won slight regard. I should have joyed to meet,</l>
+							<l>This darling of the wars, this cherished son</l>
+							<l>Of victory, in single fight; but now---</l>
+							<l>The King approaching too?</l>
+						</sp>
+
+						<sp who="#Sebastian_IC">
+							<speaker>Seb.</speaker>
+							<l>So said the archers.</l>
+						</sp>
+
+			<pb edRef="#IC1854" n="79"/>
+
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Sebastian, hasten to the tapestry chamber,</l>
+							<l>And bring me straight the vellum book that lies</l>
+							<l>Beside my couch.</l>
+
+
+							<l>[Exit Sebastian.</l>
+
+
+							<l>Certes, I would full fain</l>
+							<l>Have met thee, Pedro, in the field, and proved</l>
+							<l>The arm thou hold'st so lightly 'gainst thine own,</l>
+							<l>Proud Prince of Portugal! I feared thee not,</l>
+							<l>Champion of Christendom! I would have met thee,</l>
+							<l>Thee and thy fame in fair and equal fight.</l>
+							<l>But 'twere a sweeter vengeance, and a deeper,</l>
+							<l>Winning that lovely one to feed to the full</l>
+							<l>My hatred and my love. How beautiful</l>
+							<l>Her very scorn, that shy and timorous maid,</l>
+							<l>Starting at speech, or touch, with such a grace</l>
+							<l>As the queen-heron, ere she takes her flight,</l>
+							<l>When scared by some lone wanderer from her haunt</l>
+							<l>Beside the mountain pool; or as the doe,</l>
+							<l>When first she hears the hunter in the brake,</l>
+							<l>Stands glancing her arched neck and innocent eyes</l>
+							<l>From side to side, a moment listening stands,</l>
+							<l>Listening and trembling, ere she darts away.</l>
+							<l>Oh, to tame that rare coyness! to subdue</l>
+							<l>That maiden pride! albeit she love not me,</l>
+							<l>Albeit she love another---</l>
+
+
+							<l>Re-enter Sebastian , with the Book.</l>
+
+
+							<l>Now?</l>
+						</sp>
+						
+						<sp who="#Sebastian_IC">
+							<speaker>Seb.</speaker>
+							<l>My lord,</l>
+							<l>The King is on the stair.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Give instant entrance.</l>
+							<l>So! So!</l>
+
+
+							<l>[Manuel takes the Book, and seats himself with it at a Table, as if immersed in study.</l>
+
+
+			<pb edRef="#IC1854" n="80"/>
+
+
+							<l>Enter Alphonso.</l>
+
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>He's deep in study. Rouse him not.</l>
+							<l>He sits like one entranced, each sense absorbed</l>
+							<l>In yonder antique book, as men are wrapt</l>
+							<l>In stirring tidings of to-day, or missives</l>
+							<l>Late and long-looked-for from far distant friends.</l>
+							<l>Wait me without.</l>
+
+
+							<l>[Exit Sebastian.</l>
+
+
+							<l>From his unconscious lips</l>
+							<l>The words seem bursting.</l>
+
+							<l>Man. (Reads.) "Then Abu Zeyd, the merchant of Bagdad, finding all other means fail, and that, for love of the fair Persian, his son Noureddin still refused to return to Cairo to complete his merchandize, bestowed her in marriage on his slave Abdallah; after which union Noureddin, recovering from his unhappy passion, resumed his voyages, and became one of the wealthiest and most prosperous merchants of Bagdad." </l>
+							<l><!-- 2017-06-29 ALG: When numbering, number lines in order; number paragraphs in order (e.g. 1-5), wherever they appear in the play. Paragraphs are on a different numbering scheme than the lines. As decided at Editors' Meeting, 2017-06-29. --></l>
+
+							<l>(Speaks.) Bestowed her on his slave! Ay, wisdom lurks</l>
+							<l>Beneath the turban! Strange! how oft these rude</l>
+							<l>And uncouth legends, told in Arab tents</l>
+							<l>'Mid the Great Desert, or in populous streets</l>
+							<l>Of Moorish city, or in freshest bowers</l>
+							<l>Of Turkish harem,---strange! that tales so old</l>
+							<l>And so remote, and airy as a dream,</l>
+							<l>Should yet foreshadow and embody things</l>
+							<l>That be, passion and action, past event</l>
+							<l>And coming consequence;---strange! strange! and then</l>
+							<l>The antidote to this hot poison---Ha!</l>
+							<l>I crave your Highness' pardon.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>No excuse.</l>
+							<l>Thou art studious, Manuel. Wherefore fling aside</l>
+							<l>The book so hastily? What was the theme?</l>
+
+
+			<pb edRef="#IC1854" n="81"/>
+
+
+							<l>Man. </l>
+							<l>A trifle, good my liege.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Nay, nay, we know</l>
+							<l>Our learned minister. Some subtle treatise</l>
+							<l>Of the grave schoolmen; codes of awful law,</l>
+							<l>Or deep divinity, or statecraft shrewd.</l>
+							<l>Make me partaker of thy lore.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>My liege,</l>
+							<l>A worthless legend.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Without farther parley,</l>
+							<l>Show me this legend, Manuel. As I entered,</l>
+							<l>I saw thee hanging, like an amorous boy</l>
+							<l>O'er the first letter from his mistress, pondering</l>
+							<l>Each word, and starting, as an oracle</l>
+							<l>Were opened to thy wondering eyes. Nay, more,</l>
+							<l>I heard the words. I know too much, good Manuel,</l>
+							<l>Not to know all. The legend, Sir!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>My liege---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Straight to thy tale.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>'Tis a rude Eastern story,</l>
+							<l>One of the brief and homely tales that lie</l>
+							<l>Half-hidden among the high imaginings,</l>
+							<l>The gorgeous fancies of Arabian lore,</l>
+							<l>Like seedling pearls 'midst the commingling glare</l>
+							<l>Of rubies, emeralds, amethysts; a rude</l>
+							<l>And homely tale. A merchant of Bagdad</l>
+							<l>Had one fair son, a fair and hopeful youth,</l>
+							<l>Whom he, waxing in years, was training up</l>
+							<l>To travel to far cities, trafficking</l>
+							<l>With his rich merchandize, from realm to realm,</l>
+							<l>A profitable factor; for the youth</l>
+							<l>Was bold and capable, one whom a father</l>
+							<l>Looks on with glad, proud eyes; when suddenly</l>
+							<l>The promise ceased, the hope was turned to fear,</l>
+							<l>The joy to woe, the pride to shame. Our merchant,</l>
+
+
+			<pb edRef="#IC1854" n="82"/>
+
+
+							<l>His son being then at Cairo, chanced to purchase</l>
+							<l>A slave, they called her the Fair Persian, young,</l>
+							<l>Slender, and delicate, graceful and timorous</l>
+							<l>Even as the shy gazelle, yet gay and playful</l>
+							<l>As a wild kidling of the hills.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>The youth,</l>
+							<l>Returning, loved this Persian?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Madly loved.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>And disobeyed his father?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Good my liege,</l>
+							<l>Defied him: sate him idly down in Bagdad,</l>
+							<l>Abandoning his half-won 'vantages,</l>
+							<l>His goodly bargains and his golden hopes,</l>
+							<l>For love of this Fair Persian.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>And the merchant</l>
+							<l>Gave her, the smiling mischief, to his slave,</l>
+							<l>In marriage to his slave? Heard I not so?</l>
+							<l>Ran not the story thus?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>An' please you, Sire,</l>
+							<l>So paused the tale.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>In marriage to another;</l>
+							<l>And then the youth pursued his better fortune.</l>
+							<l>They are wise, these unbelievers.---A slight tale!</l>
+							<l>In marriage to his slave?---A homely story!</l>
+							<l>And yet in sooth---We hold to-night a banquet,</l>
+							<l>And long ere this the assembled guests await</l>
+							<l>Their too-neglectful host. Come, loiterer!</l>
+							<l>Fair Inez will be there. Is not that name</l>
+							<l>A loadstar to thee? Art thou turned inconstant?</l>
+							<l>Hast ceased to love?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Oh, never! never!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Well!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Yet, if my absence might find grace, a friend</l>
+							<l>Without the walls expects me.</l>
+
+
+			<pb edRef="#IC1854" n="83"/>
+
+
+							<l>Alph,</l>
+							<l>Say a foe,</l>
+							<l>A royal foe! Why, 'twas mine errand hither,</l>
+							<l>But that thy tale turned the full tide of thought,</l>
+							<l>To bid thee, on thy faith and thy allegiance,</l>
+							<l>Avoid this challenge. Wouldst thou do a treason,</l>
+							<l>And slay the lineal heir of mighty kings?</l>
+							<l>Wouldst slay thy Prince? And wouldst thou match thyself,</l>
+							<l>Being of the common fowl, with the strong bird</l>
+							<l>That soars nearest the sun? Dost think to 'scape</l>
+							<l>Unscathed the noblest eaglet that e'er flew</l>
+							<l>From out our eyrie, the thrice royal bird,</l>
+							<l>Unparagoned of form or spirit? Thou</l>
+							<l>Mated with Pedro! Chafe not. Thou art brave;</l>
+							<l>I know thee valiant. Thou hast oft said No</l>
+							<l>To the King's will in council, and stood firm,</l>
+							<l>Even as a rock, against the stormy rush</l>
+							<l>Of his wild anger;---ay, and he hath thanked thee</l>
+							<l>When the loud gust was past, hath thanked and loved thee</l>
+							<l>The better for thy stubbornness; howbeit</l>
+							<l>He claim to-night the mastery,---as thou</l>
+							<l>And my hot son shall prove. I go to join</l>
+							<l>The feasters. Follow straight. Hearken, Don Manuel!</l>
+							<l>Take order that the chapel be prepared</l>
+							<l>For sudden nuptials, graced with all observance</l>
+							<l>That may beseem a Prince's bridal hour.</l>
+							<l>Away, and question not, Now to these revels!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>So, so! A bridal!</l>
+						</sp>
+
+							<l>[Exeunt.</l>
+					</div>
+
+			<pb edRef="#IC1854" n="84"/>
+
+					<div type="scene" n="2">
+						<head>SCENE II.</head>
+
+							<l>A Magnificent Hall in the Royal Palace. A Splendid Banquet, round which are ranged Constance, Inez , and other Ladies; Count D'Aguilar, Don Antonio, Don Garcia, Don Alvarez , and other Nobles. A Throne vacant in the centre, which Alphonso , entering during the Song, ascends. The sides of the Stage filled with Minstrels and Attendants.</l>
+
+
+							<l>Song.</l>
+
+						<lg type="song">
+							<l>Alphonso holds a banquet proud</l>
+							<l>'Midst knight and noble, a glittering crowd;</l>
+							<l>Knight and noble and lady bright;---</l>
+							<l>Oh! dart but those eyes of sunny light</l>
+							<l>A moment's space on the blood-red wine,</l>
+							<l>And 'twill glow like the ruby of the mine.</l>
+
+							<l>Alphonso holds a banquet high</l>
+							<l>In the pomp of his gorgeous chivalry,</l>
+							<l>'Midst herald and harper and minstrel throng.</l>
+							<l>Oh, lady! list to the lowly song,</l>
+							<l>And waken its spell with thy smile of power,</l>
+							<l>As the touch of the sun wakes the cistus flower.</l>
+						</lg>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>What, not a word, fair maidens! not a smile</l>
+							<l>To pay the minstrel! Lady Constance, Inez,</l>
+							<l>Ye were rare harmonists. I've known the time</l>
+							<l>When but a wandering snatch of some old air,</l>
+							<l>Borne on the breeze from the steep mountain side,</l>
+							<l>Where the lone shepherd-boy lay with his pipe</l>
+							<l>Cheating the weary day; or tinklings faint</l>
+							<l>Of gay guitar, in vineyards heard at eve,</l>
+
+
+			<pb edRef="#IC1854" n="85"/>
+
+
+							<l>Would lure ye from your palace-home to seek</l>
+							<l>The rude musician: and now Silvio sings,</l>
+							<l>Your favoured minstrel, sings his courtliest lay</l>
+							<l>To win your smiles, and ye sit motionless</l>
+							<l>As effigies carved quaintly out of stone</l>
+							<l>To deck the rich and monumental shrine</l>
+							<l>Of saintly votaress, pale, fair, and mute</l>
+							<l>As statues. Rouse ye, damsels! See ye not</l>
+							<l>That your cold looks o'ercloud the festival,</l>
+							<l>Chilling the nimble tongues and dainty wits</l>
+							<l>Of our gay cavaliers? Rouse thee, fair Princess!</l>
+							<l>Arouse ye, gallants all! A silent feast</l>
+							<l>Is sadder than a funeral.</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>Good my liege,</l>
+							<l>We miss Don Pedro's ready mirth.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Don Manuel</l>
+							<l>Is absent too.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Ay; and if silver hairs</l>
+							<l>May give a privilege to read young hearts,</l>
+							<l>I'd say that absence is the envious cloud</l>
+							<l>That hangs o'er beauty's sunny smile. She hath heard</l>
+							<l>The morning's coil, and trembles at the fear</l>
+							<l>Of what may chance betwixt two haughty spirits</l>
+							<l>Chafed to their uttermost bearing; therefore droops</l>
+							<l>The royal lady, and with sympathy</l>
+							<l>Alert and tender, droop her maiden train.</l>
+							<l>But should the Prince appear---</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Methinks, fair Sirs,</l>
+							<l>Ye show scant courtesy to comment thus</l>
+							<l>Upon a lady's bearing.</l>						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Scantier still,</l>
+							<l>To deem a Princess of Castille so poor</l>
+							<l>Of soul, that she should cling with desperate love</l>
+							<l>To him who throws the shame of cold neglect</l>
+
+
+			<pb edRef="#IC1854" n="86"/>
+
+
+							<l>Upon her peerless charms. Ye hold a banquet</l>
+							<l>To honour Lady Constance, and Don Pedro,</l>
+							<l>Her royal wooer, her betrothed lord,</l>
+							<l>Is absent. Anger may be mute and pale</l>
+							<l>As fear or love.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>But if the Prince and Manuel---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Tush! tush! ye know not Pedro---hot and rash,</l>
+							<l>But kindly and forgiving. None hath seen him</l>
+							<l>Since he, at noontide, rushed from the Pavilion</l>
+							<l>Back to his dear-loved woods. A wandering hound,</l>
+							<l>A falcon unreclaimed, or some brave quarry,</l>
+							<l>Fleet stag, or strong-tusked boar, hath lured him on</l>
+							<l>Deep in the forest, and benighted him.</l>
+							<l>Yet shall we chide the truant. For Don Manuel,</l>
+							<l>Lo! where he comes.</l>
+
+
+							<l>Enter Manuel.</l>
+
+
+							<l>(To Manuel.) Is all prepared? The chapel</l>
+							<l>Blazing with fragrant light? The jewelled altars?</l>
+							<l>The mitred abbot?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>All.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>A health, my lords!</l>
+							<l>A health, Count D'Aguilar! With generous wine</l>
+							<l>Crown every mantling cup, till the rich juice</l>
+							<l>Mount o'er the golden rim! Fill high! Fill high!</l>
+							<l>Now health and bliss to him of Portugal</l>
+							<l>And her of Spain, the noble and the fair</l>
+							<l>Who wed to-night. Thou drink'st not, D'Aguilar.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>The pledge is bridal.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>So is the intent.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>And yet the Prince appears not?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Brave Castillian,</l>
+							<l>Thou hast made demand, perchance too preremptory,</l>
+							<l>Yet with some seeming cause, that our late treaty</l>
+
+
+			<pb edRef="#IC1854" n="87"/>
+
+
+							<l>Be instantly fulfilled. But we still lack</l>
+							<l>Meet time for preparation, time to grace</l>
+							<l>The queenly bride and the immediate heir</l>
+							<l>Of our old kingdom. Sir, we must tire down</l>
+							<l>The sun with royal pageants, and outwatch</l>
+							<l>The moon with merry masques; minstrels must frame</l>
+							<l>New lays to sing her beauty; coins be struck</l>
+							<l>With her high impress; marble palaces</l>
+							<l>Be reared, her fitting shrine; and barges decked,</l>
+							<l>Gorgeous as that, which on the Cydnus wave</l>
+							<l>Floated the Egyptian Queen to meet her love.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>I cry you mercy, Sire! But was this pledge</l>
+							<l>A dream? a mockery?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>A waking truth.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Say that the proudest noble of our Court</l>
+							<l>Wed a young Spanish maid, will not such union</l>
+							<l>Seem to our brother of Castille a pledge</l>
+							<l>Of fair intent and honest purposes?</l>
+							<l>A happy augury of those blest ties</l>
+							<l>Weaving in Time's great loom? Come forth, fair Inez!</l>
+							<l>Don Manuel, take thy bride.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Oh, lovely lady,</l>
+							<l>Turn not away with such disdain! Fair Princess,</l>
+							<l>Beseech thee, plead for me.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>I'll never wed</l>
+							<l>Whom I can never love. Sir, hour by hour,</l>
+							<l>And day by day, have I flung back, at last</l>
+							<l>With an enforced scorn, the proffered vows</l>
+							<l>Of this importunate wooer. All the Court</l>
+							<l>Hath heard the King's command---Bear witness all</l>
+							<l>To my as firm denial. King Alphonso,</l>
+							<l>I'll ne'er be Manuel's bride.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Oh, fairest! cruellest!</l>
+							<l>D'Aguilar, speak!</l>
+							<l>[Then aside to the Count.</l>
+
+
+			<pb edRef="#IC1854" n="88"/>
+
+
+							<l>It is thy cause! Bethink thee</l>
+							<l>Of all that chanced this morning. She once wed,</l>
+							<l>Thy mission---plead, man! plead!</l>
+							<l>[Then aloud. </l>
+							<l>Speak, D'Aguilar!</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>The lady jests. 'Tis but the coy device</l>
+							<l>Of conscious beauty, willing to be wooed,</l>
+							<l>Feigning reluctance, simulating scorn,</l>
+							<l>Forcing her haughty lips to utter No,</l>
+							<l>When the consenting heart would murmur Yes.</l>
+							<l>The general weal demands this union, Inez;</l>
+							<l>And, in the name of King and country, I</l>
+							<l>Command thee wed this man.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Alas! alas!</l>
+							<l>When I have said I love him not!</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>Take heed</l>
+							<l>Thy mounting love soar not so wild a flight</l>
+							<l>That it fall, spent and broken, like an arrow</l>
+							<l>Hurled by a heedless marksman.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Lady Inez,</l>
+							<l>This match must be accomplished. Send to warn</l>
+							<l>The priests that we approach.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>What now? even now?</l>
+							<l>Relent, my liege, relent! Oh, give me not</l>
+							<l>To one whom I abhor! No, nor bind him,</l>
+							<l>Howe'er in heat of passion he may woo</l>
+							<l>The baleful destiny, to one who owns</l>
+							<l>Such loathing! Oh, be merciful!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Rise! rise!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Never till thou hast heard me. I'm an orphan,</l>
+							<l>A stranger in thy land. I had a father,</l>
+							<l>A kind, brave father, such a man as thou,</l>
+							<l>A warrior in the summer of his days,</l>
+							<l>Full of stern grace, and fiery dignity.</l>
+
+
+			<pb edRef="#IC1854" n="89"/>
+
+
+							<l>Were he alive---Alphonso, thou art called</l>
+							<l>The father of thy people:---Wilt thou stoop</l>
+							<l>To oppress the orphan? Look upon me, King!</l>
+							<l>Thou hadst a daughter once, a lily flower,</l>
+							<l>Untimely gathered to her home above;</l>
+							<l>They who would flatter me have said that I</l>
+							<l>Was like thy Isabel---Look down upon me,</l>
+							<l>And for her sake, for her dear sake! He turns</l>
+							<l>Away! Oh, where to seek for pity!---Lady,</l>
+							<l>I am as one placed on the dizzy point</l>
+							<l>'Twixt two great gulphs, on either side the abyss</l>
+							<l>Of crime yawns to receive me. Listen, Lady,</l>
+							<l>For very womanhood! We are of one age,</l>
+							<l>One country, and one sex; defenceless women!</l>
+							<l>Poor helpless women! Even thou, a Princess,</l>
+							<l>Thou hast no arms, save tears and sobs and words---</l>
+							<l>Vainer than tears. Oh! shall we not be true</l>
+							<l>To one another? Save me! Save me! Once</l>
+							<l>Thou lov'dst thine own poor handmaid.</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>I did love thee,</l>
+							<l>And thou---Inez de Castro, I command</l>
+							<l>This union. I would snatch thee from the abyss,</l>
+							<l>The smiling sea of sin, the unfathomed gulph</l>
+							<l>Of shame; would prop thy woman's weakness, girl,</l>
+							<l>With a right noble husband. Good my liege,</l>
+							<l>On to the chapel!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Cruel! cruel!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Lords,</l>
+							<l>Lead to the altar. Inez, cast aside</l>
+							<l>This maiden coyness; cease thy fruitless struggles;</l>
+							<l>Subdue thy stubborn will. On to the altar,</l>
+							<l>And learn the wisdom of the weak---obedience.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Sweet Inez, come. Forgive this boisterous wooing;</l>
+							<l>The worshipped wife shall smile in after years</l>
+
+
+			<pb edRef="#IC1854" n="90"/>
+
+
+							<l>At the vain terrors of the bride, shall find</l>
+							<l>Her marriage chains light garlands.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Ay, such chains</l>
+							<l>As the poor victim in the heathen rites,</l>
+							<l>Dragged to the altar by gay flowery wreaths</l>
+							<l>To die, a crowned and gilded sacrifice,</l>
+							<l>Hallowed, and garlanded, and slain!---Avaunt!</l>
+							<l>My flesh creeps at thy touch, as loathly worms</l>
+							<l>Were twisting round my fingers. Man, avaunt!</l>
+							<l>Oh, fatal, fatal promise! Is there none</l>
+							<l>To shield a noble lady, in worse strait</l>
+							<l>Than ever Christian maiden hath endured,</l>
+							<l>When captive to the Moor? Be ye not knights</l>
+							<l>Sworn to defend the oppressed, to avenge the injured,</l>
+							<l>To guard defenceless women? Oh, for him,</l>
+							<l>That soul of chivalry!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Will she dare name him?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Lead to the altar; if need be, by force.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Now mercy on me, Heaven! Pedro! my Pedro!</l>
+
+
+							<l>Enter Don Pedro.</l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>What mean these echoing shrieks and wild appeals</l>
+							<l>To pitying Heaven? Who called on Pedro? Inez!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>I have kept my vow! I have kept my vow!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>I am here,</l>
+							<l>Here to protect thee. Which of ye dares touch</l>
+							<l>This panting trembler now?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Even from my Prince</l>
+							<l>I dare to claim the lady.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Thou! Ay, here,</l>
+							<l>Within the charmed circle of a court</l>
+							<l>In the King's presence, hemmed about by guards</l>
+							<l>And women, here thou art brave of look and word,</l>
+							<l>Bold to do evil, a right valiant courtier.</l>
+
+
+			<pb edRef="#IC1854" n="91"/>
+
+
+							<l>As ever dared a crime. Where wast thou, Sir,</l>
+							<l>At sunset, when beside the Tagus' brink</l>
+							<l>I paced impatiently, my sword unsheathed</l>
+							<l>For speedier combat, and my helmet doffed</l>
+							<l>To catch the first sound of thy horse's tread?</l>
+							<l>Now, by St. Michael! when no foe came near</l>
+							<l>When the light paled on river and on sky,</l>
+							<l>And thou not there, I deemed thee prisoned, chained,</l>
+							<l>And flew to free thee.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>The King's men-at-arms</l>
+							<l>Compassed my palace.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>And I find him here,</l>
+							<l>In fullest freedom! Slave! thy guards were fears,</l>
+							<l>Base cowardice thy fetters.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Son, my will,</l>
+							<l>His Sovereign's awful threats and stern commands,</l>
+							<l>Compelled submission, with reluctance shown</l>
+							<l>Even to his King---submission calm, and firm,</l>
+							<l>And loyal, such as true men yield. Show thou</l>
+							<l>A like obedience, Pedro, and release</l>
+							<l>The lady.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Wherefore?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Even now the priests</l>
+							<l>Await her at the altar.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>She's my wife!</l>
+							<l>Father, she is my wife!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Thy wife?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>My dear</l>
+							<l>And wedded wife.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>My husband!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh! forgive me,</l>
+							<l>That, with strong vows of secresy, I chained</l>
+							<l>Thy lips, my Inez, leaving thee a prey</l>
+							<l>To hateful suitors and sharp jealousies.</l>
+
+
+			<pb edRef="#IC1854" n="92"/>
+
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>My own dear husband!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Wedded! 'Tis a feint</l>
+							<l>To stay our nuptials. Wedded! What bold priest</l>
+							<l>Would so defy his King? What Church would hallow,</l>
+							<l>What madman witness, the unlawful rites?</l>
+							<l>A feint!---a shallow feint!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>My liege---to thee</l>
+							<l>I deign no answer---In St. Vincent's Church,</l>
+							<l>With holy book and saintly benison,</l>
+							<l>The learned priest Anselmo joined our hands,</l>
+							<l>Before an aged and most pious woman,</l>
+							<l>Good Monica Manrique.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man. (Writing in his Tablets.) Monica</speaker>
+							<l>Manrique and the priest Anselmo. Lady---</l>
+							<l>Will she avouch the tale? Inez, art thou</l>
+							<l>Don Pedro's wife?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Ay, his chaste wedded wife!</l>
+							<l>He hath avouched it. Blessings on thee, Pedro,</l>
+							<l>My husband, my deliverer, that hast wiped</l>
+							<l>Reproach away and scorn; hast set me free</l>
+							<l>From the hot chase of lust and the cold sneer</l>
+							<l>Of envy. Blessings on thy head!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Such blessings</l>
+							<l>As wait on false and perjured man, on light,</l>
+							<l>Ungrateful woman; blessings such as Heaven</l>
+							<l>Garners in thunder-clouds, or comets bring</l>
+							<l>To the astonied nations---War and death,</l>
+							<l>Famine and pestilence, hate, fiercest hate,</l>
+							<l>And bitter, bitter love. Think not I grieve</l>
+							<l>To lose thy state or thee---misdeem not, Prince,</l>
+							<l>The sister of Castille. Look on this ring,</l>
+							<l>Pledge of our destined union; see, I rend</l>
+							<l>The gold apart, a broken, worthless toy,</l>
+							<l>As brittle as thy faith.</l>
+
+
+			<pb edRef="#IC1854" n="93"/>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Madam!---Yet sooth</l>
+							<l>She hath some cause for anger---Royal lady,</l>
+							<l>Men view admiringly the stately cedar,</l>
+							<l>Yet pluck the rose beside it.</l>
+						</sp>
+
+						<sp who="#DAguilar_IC">
+							<speaker>D'Ag.</speaker>
+							<l>For yon minion---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Remove the woman, guards. Princess, thy wrongs</l>
+							<l>Shall be avenged. Must I speak twice? Remove</l>
+							<l>The woman.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Sooner---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Nay, submit, submit,</l>
+							<l>Beseech thee, love, submit. It is thy King,</l>
+							<l>Thy father.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Fear not, Inez. Ye must win her</l>
+							<l>At the sword-point. She is my wife---</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>And therefore</l>
+							<l>Arraigned of treason. Thine own act hath placed</l>
+							<l>The lady in this peril.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Fiend accurst!</l>
+							<l>But I'll defend her yet. Come on who dares!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Disarm him. Seize her.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Yet a moment pause,</l>
+							<l>Brave Sir, for charity. Dost love me, Pedro?</l>
+							<l>Dost love the poor, despised, defenceless woman,</l>
+							<l>Who hath bartered country, kindred, friends and home</l>
+							<l>For thee, only for thee? I know thou dost.</l>
+							<l>Thou wouldst not have her die of grief and fear</l>
+							<l>Here at thy feet, nor fling the stain of blood</l>
+							<l>On her white raiment, or the curse of blood</l>
+							<l>Upon her head. What should we dread, my husband?</l>
+							<l>Shall I not be a prisoner in the ward</l>
+							<l>Of a brave soldier? Trust me, love, my heart</l>
+							<l>Beats lightly, hopefully.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>They'll part us, Inez;</l>
+							<l>They'll part us. Go not, sweet.</l>
+
+
+			<pb edRef="#IC1854" n="94"/>
+
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Man cannot part</l>
+							<l>Whom Heaven hath joined together.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Go not, sweet;</l>
+							<l>I cannot trust them. Yet---Mark, Don Alvarez,</l>
+							<l>Look to thy prisoner; guard her as thy life;</l>
+							<l>If but a hair be touched of her fair head,</l>
+							<l>My fierce revenge would shame the lioness</l>
+							<l>When plundered of her young. Look to her, friend,</l>
+							<l>For love and charity.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>To prison, Sirs!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Farewell! farewell!</l>
+						</sp>
+
+							<l>END OF ACT III.</l>
+					</div>
+			</div>
+
+			<div type="act" n="4">
+				<head>ACT IV. </head>
+				<pb edRef="#IC1854" n="95"/>
+				
+					<div type="scene" n="1">
+						<head>SCENE I.</head>
+
+
+							<l>A Hall of Justice in the King's Palace.</l>
+
+
+							<l>Alphonso, Antonio and other Councillors arranged as for a Trial. Secretaries, &amp;c., in attendance. </l>
+
+
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Call forth the prisoner. Lords, for no slight purpose</l>
+							<l>Have I convened the Council of the State</l>
+							<l>In grave and full assemblage.</l>
+
+
+							<l>Enter Inez , guarded by Alvarez, &amp;c.</l>
+
+
+							<l>Brief is the tale and sad. An old wise law,</l>
+							<l>Framed by a rightful King, my ancestor,</l>
+							<l>Whose reign was vexed by fierce, conflicting jars,</l>
+							<l>Decrees that she who, being a subject born,</l>
+							<l>Dare wed a Prince of Portugal, shall die</l>
+							<l>For that bold treason. A stern, awful law!</l>
+							<l>Unbloody yet, for till this fatal hour</l>
+							<l>None hath defied the deadly penalty.</l>
+							<l>There stands the first, the last. Inez de Castro,</l>
+							<l>Come forth! Cast off that shrouding veil! Disclose</l>
+
+
+			<pb edRef="#IC1854" n="96"/>
+
+
+							<l>Thy baleful beauty! There she stands whom Pedro</l>
+							<l>Claims for his wife, and claiming dooms to die.</l>
+							<l>It lies not in my office, lords, to judge</l>
+							<l>Her crime---fair, gentle wretch! Enough for me</l>
+							<l>To ratify your sentence.</l>
+
+
+							<l>Enter Manuel.</l>
+
+
+							<l>Now, Don Manuel,</l>
+							<l>Hast thou discovered these same witnesses</l>
+							<l>That Pedro spake of?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Sire, with honest gladness,</l>
+							<l>I answer there be none.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>How say'st thou?</l>
+							<l>None?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>The story of these bridals is a feint</l>
+							<l>Even as I said, my liege---a feint of love!</l>
+							<l>St. Vincent's priests, I have seen and questioned them,</l>
+							<l>Deny the deed. Anselmo, with the Nuncio,</l>
+							<l>Came and departed, an Italian monk,</l>
+							<l>A Florentine; five weeks agone they left</l>
+							<l>Our shores, and he by this is safe at Rome,</l>
+							<l>Or home at Florence, wandering on mission,</l>
+							<l>Or pent within his cell: ye might as soon</l>
+							<l>Recall the last year's clouds as Father Anselm.</l>
+							<l>Whilst Monica Manrique, the sole witness</l>
+							<l>Of these alleged espousals, the good nurse</l>
+							<l>Of the fair Lady Inez, died last night.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Alas! alas! poor Monica!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Without</l>
+							<l>Confession?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Unconfessed, unquestioned, Sire.</l>
+							<l>Already wasted with long malady,</l>
+							<l>The venerable woman, when she heard</l>
+							<l>The tale of yesternight, sank down and died.</l>
+
+
+			<pb edRef="#IC1854" n="97"/>
+
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Oh, I am fatal still to all I love!</l>
+							<l>To all who love me! My poor good old nurse,</l>
+							<l>That never met me but with tender smiles;</l>
+							<l>That never spake to me but words of cheer,</l>
+							<l>Sweet, gentle, hopeful words! And she is dead,</l>
+							<l>My good old nurse! Dead of a broken heart!</l>
+							<l>My lords, I pray ye pardon my fond tears,---</l>
+							<l>There's none left now to weep for me. Poor Monica!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>She is at rest.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Ay, better so than live</l>
+							<l>To hear, to speak, to tell that fatal story!</l>
+							<l>Heaven in its mercy took thee, Monica,</l>
+							<l>From that strong agony! Sirs, I am ready.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>An' please you, lords, St. Vincent's priests denying</l>
+							<l>These nuptials, the monk gone, the woman dead,</l>
+							<l>What rests but ye declare the tale a frand,</l>
+							<l>A mockery, a legend, framed to serve</l>
+							<l>A lover's reckless purpose? What remains</l>
+							<l>But to the safe charge of Count D'Aguilar,</l>
+							<l>That noble Spaniard, or the holy keeping</l>
+							<l>Of the good Abbess of the Ursulines,</l>
+							<l>The lady be dismissed.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>In sooth, Don Manuel,</l>
+							<l>The charge lacks evidence. Have ye no witness?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>None.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Hold awhile. Say, were this union proved,</l>
+							<l>Stands Pedro's life in peril.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Lady, no.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>None, save mine own?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Not one.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Then hear me, lords,</l>
+							<l>Hear me, great King, whilst by all sacred things,</l>
+							<l>By all that's holiest held on earth, in heaven,</l>
+							<l>By man's true faith, by woman's chastity,</l>
+
+
+			<pb edRef="#IC1854" n="98"/>
+
+
+							<l>By virgin martyrs, and bright, spotless saints,</l>
+							<l>I swear that I'm Don Pedro's wife.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Recall</l>
+							<l>Thy desperate words. Oh, lady! wherefore fling</l>
+							<l>Thy life away?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Didst think that Inez weighed</l>
+							<l>Life against honour? or would outrage truth,</l>
+							<l>Stern, lofty, bold, uncompromising truth,</l>
+							<l>Even by silence? Go to, Sirs, your doom!</l>
+							<l>Be speedy.</l>
+
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (Aside.)</speaker>
+							<l>A brave woman!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Would ye know</l>
+							<l>If ye may believe me? Question Lady Constance,</l>
+							<l>Seek of Count d'Aguilar, and they will tell ye,</l>
+							<l>That Inez in her native Spain was known</l>
+							<l>A frank and virtuous maiden, loathing falsehood</l>
+							<l>As the brave loathe cowardice. Never, till love</l>
+							<l>And wifely duty held me in their bonds,</l>
+							<l>Bent I my nature to conceal a thought,</l>
+							<l>A feeling. I'm his wife! Mistrust me not</l>
+							<l>Albeit the state I claim be princely. Death</l>
+							<l>Walks at my side, my royal robe a shroud,</l>
+							<l>My canopy a coffin.</l>
+
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (Aside.)</speaker>
+							<l>A brave woman!</l>
+							<l>Yet are we pledged to Constance. (Aloud.) Good my lords,</l>
+							<l>She hath avowed enow. Pass to the doom.</l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped. (Without.)</speaker>
+							<l>Make instant way! Who dares oppose me?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Who,</l>
+							<l>With clamorous outcry, breaks upon our grave</l>
+							<l>And secret council?</l>
+
+
+							<l>Enter Pedro.</l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Inez!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Don Alvarez,</l>
+
+
+			<pb edRef="#IC1854" n="99"/>
+
+
+							<l>Gave we not order that thy men-at-arms</l>
+							<l>Should line the entrance?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Did ye think with word</l>
+							<l>Or weapon to stay me? Ye might as soon</l>
+							<l>Turn back the Tagus to its source, or check,</l>
+							<l>With threats and blows, the ocean's flowing tide,</l>
+							<l>As bar me from my Inez. Yon weak guard!---</l>
+							<l>Why, had ye gates of steel, garrisons, armies,</l>
+							<l>Such as defend huge cities, I had won</l>
+							<l>Through all. Who may dare stop me? Is not this</l>
+							<l>The Palace of the King, and I his son?</l>
+							<l>Is not the Council met in full assemblage,</l>
+							<l>And I chief councillor? My place hath been</l>
+							<l>On the right hand of the throne, but now 'tis here.</l>
+							<l>Inez!---Proceed, my lords, I am your prisoner,</l>
+							<l>Partaker of the crime, and fixed to share</l>
+							<l>The punishment.---Inez, thy hand is cold;</l>
+							<l>Thou tremblest.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Only now. Think not thy wife</l>
+							<l>Could tremble with base dread of man's brief power.</l>
+							<l>I had steeled my heart 'gainst harshness and reproach,</l>
+							<l>But not against thy pitying tenderness.</l>
+							<l>My Pedro, I have borne for thee all ills</l>
+							<l>That suffering woman may endure---grief, fear,</l>
+							<l>Suspicion, hatred, scorn; but thy true love</l>
+							<l>O'erpays them all. A short and troubled way</l>
+							<l>We have trod together. Here we part. Thy path</l>
+							<l>Leads, a broad sunny track, through fields of fame</l>
+							<l>To palaces and thrones, a kindling track</l>
+							<l>Of glory; mine a narrow, dark descent</l>
+							<l>To the lone house of rest, the silent grave.</l>
+							<l>Pr'ythee, begone!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>I counsel thee, retire---</l>
+							<l>Out of a fatherly love, I warn thee, Prince,</l>
+
+
+			<pb edRef="#IC1854" n="100"/>
+
+
+							<l>Retire.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Here is my place.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Arm thyself, then,</l>
+							<l>With stern endurance. Let not yon fair creature</l>
+							<l>Shame thee by her high constancy. Grave judges---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh, mockery of words!---Nay, nay, proceed!</l>
+							<l>I cry you mercy! I'll be patient!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Sir,</l>
+							<l>'Twere wiser. We sit here the instruments</l>
+							<l>And ministers of a time-hallowed law,</l>
+							<l>And heed no more a young man's furious speech,</l>
+							<l>Than doth yon citadel the angry north</l>
+							<l>That raves round its old buttresses. My lords,</l>
+							<l>Have ye prepared your sentence?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>What! already?</l>
+							<l>Without a trial? without a proof? without</l>
+							<l>A witness? Ye are murderers, Sirs, not judges.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>They had a Prince's word. Thou call'dst me wife,</l>
+							<l>My husband, my dear husband! And I---Chide not</l>
+							<l>That she whom thou hast loved, loves better pure</l>
+							<l>And spotless death than stained and sullied life,</l>
+							<l>I was the willing witness of my crime,</l>
+							<l>And willingly abide the penalty.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>If crime there be, I am the only guilty.</l>
+							<l>I saw and loved this fairest, loveliest;</l>
+							<l>I wooed---what coil of wooing ere I won</l>
+							<l>The coy, shy maid to listen to my tale!</l>
+							<l>What vows, and threats, and pleadings, and fond oaths</l>
+							<l>Ere she would own her love! Even to the altar</l>
+							<l>I bore, half-fainting, my scarce conscious bride.</l>
+							<l>She knew not your stern law. The carrier dove</l>
+							<l>That, following her nature's holy instinct,</l>
+							<l>Bears treasonous missives underneath her wing,</l>
+							<l>Is not more innocent of ill than Inez.</l>
+
+
+			<pb edRef="#IC1854" n="101"/>
+
+
+							<l>I am the only guilty, Pass your doom</l>
+							<l>On me.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Again I warn thee, son, retire.</l>
+							<l>Is't death?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Alas!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Death! I to die? The Prince?</l>
+							<l>Pedro of Portugal?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Not so.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Bethink ye</l>
+							<l>'Twere safer. Leave me living, and slay her!</l>
+							<l>Me, the avenger! Have ye children playing</l>
+							<l>Around your household hearths---fair girls, brave boys?</l>
+							<l>Have ye chaste wives? And dread ye not the vengeance</l>
+							<l>That I shall take for mine?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Alas! the law</l>
+							<l>Hath been defied, must be obeyed.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>And thou, too,</l>
+							<l>Thou that didst feign to love!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>That would have saved,</l>
+							<l>That still may rescue her; so thou---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Off with thee,</l>
+							<l>False flattering fiend! Father, thou wilt not sign</l>
+							<l>Yon bloody sentence? Stern although thou be,</l>
+							<l>Thou wilt not sign that sentence?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Listen, Pedro,</l>
+							<l>To my last parting words.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Talk not of parting---</l>
+							<l>The thought brings frenzy!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Thou wilt never hear</l>
+							<l>My voice again, dear husband. Listen now,</l>
+							<l>And grant the first boon Inez ever craved</l>
+							<l>Of Pedro, the first boon, the last. Be patient,</l>
+							<l>Be gentle in thy grief, for thou wilt grieve---</l>
+							<l>I know thou wilt---but meekly, peacefully.</l>
+
+
+			<pb edRef="#IC1854" n="102"/>
+
+
+							<l>Defile not honest love with black revenge;</l>
+							<l>Quell thy wild anger; fight against despair</l>
+							<l>As 'gainst a foe in arms; live for thy country;</l>
+							<l>So shall men say 'twas no ignoble woman</l>
+							<l>Who woke that hallowed passion. Now farewell!</l>
+							<l>I'll spare thee, Sire, the utterance of my doom:</l>
+							<l>'Tis death.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh, never! never!</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Death! and when?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh, father, hold thy hand! He hath signed.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Don Manuel,</l>
+							<l>Break up the council. Lead the prisoner forth.</l>
+							<l>At seven to-morrow.</l>
+
+
+							<l>[Exeunt Inez , guarded, Manuel, Antonio, Alvarez , &amp;c.; Alphonso is going, but is called back by Pedro , and the King and Prince only remain on the Stage.</l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Father! Go not, father!</l>
+							<l>Return! return! I'd speak with thee.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>What wouldst thou?</l>
+							<l>The council is dismissed; the sitting o'er;</l>
+							<l>The mighty business closed.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Ay, like the grave,</l>
+							<l>The dark, deep, silent grave. Sir, I would change</l>
+							<l>A few calm words with thee---Fear not my rashness---</l>
+							<l>Words that may suit the time; sad as a dirge,</l>
+							<l>Slow as a knell, brief as a tombstone; calm</l>
+							<l>And reverend words.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Well, well, I'll stay with thee.</l>
+							<l>Yet wherefore---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Wherefore! Dost thou ask? the doom</l>
+							<l>Still trembling on thy lips; the ink still wet</l>
+							<l>On that accursèd and accursing scroll,</l>
+							<l>Which sends yon martyred innocent to share</l>
+							<l>The death of traitors. But she shall not die!</l>
+
+
+			<pb edRef="#IC1854" n="103"/>
+
+
+							<l>My Inez shall not die! Dost hear me, father?</l>
+							<l>She shall not die! She shall not die!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Alas!</l>
+							<l>The doom must be fulfilled. But I will hear thee;</l>
+							<l>Will stay beside thee in thy grief; will bear</l>
+							<l>My part in this great misery. Thou wouldst speak with me---</l>
+							<l>I had rather listen to thy wildest words</l>
+							<l>Than see thee sobbing there in mute despair.</l>
+							<l>Speak, my dear son.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Inez! Release her! pardon her!</l>
+							<l>Inez!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>The fiat hath gone forth; but if in aught</l>
+							<l>Beside my power can stead thee---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>The wide world</l>
+							<l>Hath nought for me but Inez. Thou art a King,</l>
+							<l>And Kings can pardon. Thou art a man, and men</l>
+							<l>Are merciful. Save her! By thine old love,</l>
+							<l>If ever thou didst love me, father, save her!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>If I did love thee! Why, from the first hour</l>
+							<l>When thy fair mother placed thee in my arms,</l>
+							<l>With such a gush of joy, thou hast been my hope,</l>
+							<l>My pride, my idol. If I loved thee! Pedro,</l>
+							<l>How often in thy tender infancy,</l>
+							<l>Have I stolen to thy couch, sleepless myself</l>
+							<l>Till I had blest my sleeping boy! How oft</l>
+							<l>Watched thee in sickness; fondled thee in health;</l>
+							<l>Laid by my state to be thy playmate; cast</l>
+							<l>The careful thoughts of busy man aside</l>
+							<l>To share thy childish pastimes; trimmed thine arrows;</l>
+							<l>Shot at the mark with thee, rode at the ring,</l>
+							<l>Veiling my strength and skill to a slim stripling,</l>
+							<l>Triumphing in his triumphs!---If I loved thee!---</l>
+							<l>And now, at first sight of a baby face</l>
+							<l>And a trim shapely form, that careful love</l>
+
+
+			<pb edRef="#IC1854" n="104"/>
+
+
+							<l>Of twenty years is swept as lightly off</l>
+							<l>As a dead leaf in autumn.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Father!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>An' thou have heirs,</l>
+							<l>And dote as I have done, look thou to find</l>
+							<l>Like gratitude. The care of twenty years</l>
+							<l>Flung by for a slight girl! Take heed thou pray not</l>
+							<l>For sons; they'll prove avengers.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Father! father!</l>
+							<l>Hast thou ne'er loved? My mother---</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Was a Princess,</l>
+							<l>The daughter of a King. The very sound</l>
+							<l>Should thrill thee like a trumpet-blast, a call</l>
+							<l>To duty and to honour! We are Princes</l>
+							<l>Born to inherit thrones, to fill a page,</l>
+							<l>Ay, and a proud one, in that book of Fame,</l>
+							<l>History, to outlast the palaces we build,</l>
+							<l>The tongue we speak, to lend an age its name,</l>
+							<l>A realm its glory. Pedro, thou wast once</l>
+							<l>Ambitious. Is the noble fire extinct</l>
+							<l>Within thy breast? or lies it smouldering there,</l>
+							<l>Till some bold breath shall fan it into flame?</l>
+							<l>Thine was a soaring spirit. Listen, Pedro,</l>
+							<l>And thou shalt have the fame thou covetedst</l>
+							<l>With an immoderate lust, in such a heaped</l>
+							<l>And piled abundance, that great Ammon's son</l>
+							<l>Had cried "Enough!"</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Once like a trumpet call</l>
+							<l>Thy voice had stirred me. I am a woman now</l>
+							<l>With grieving. One thought burns within my breast,</l>
+							<l>One only.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Hearken! Wed Castille's fair sister;</l>
+							<l>Lead our commingled power before Granada;</l>
+							<l>Defy the Moor; conquer the unconquered seat</l>
+
+
+			<pb edRef="#IC1854" n="105"/>
+
+
+							<l>Of his proud reign, the bright Alhambra; chase</l>
+							<l>The Infidel from Christendom, and win</l>
+							<l>A name at which the glories of the Cid</l>
+							<l>Shall fade, as a star before the sun. Go to,</l>
+							<l>Art thou a soldier and a knight, and fires not</l>
+							<l>Thy blood at this brave vision?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Give me Inez,</l>
+							<l>And with our own bold Portugals I'll drive</l>
+							<l>Spaniard and Moor before me, like the deer</l>
+							<l>Before the hunter.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Sir, thy hand is pledged</l>
+							<l>To Constance.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Inez is my wife, my true</l>
+							<l>And faithful wife; betrayed by my rash love</l>
+							<l>To misery unspeakable; a prisoner</l>
+							<l>A sad, forlorn, and desolate prisoner, doomed</l>
+							<l>To swift and bloody death. Now, by St. Michael!</l>
+							<l>He were no knight that could forsake a woman</l>
+							<l>Whom he had brought into such perilous strait.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Thyself hast heard her sentence.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Thou'lt not save her?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>I cannot.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Say thou wilt not.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Calm thee, son.</l>
+							<l>I pity thee, and therefore bear with thee,</l>
+							<l>But she must bide her doom. The King's high duty</l>
+							<l>Shall be fulfilled; howbeit, the Prince---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Away</l>
+							<l>With that vain word, which bars me from the right,</l>
+							<l>The common right and heritage of nature,</l>
+							<l>From human joys and human sympathies.</l>
+							<l>Off idle trappings! Now I am a man!</l>
+							<l>I own no title now but Inez' husband,</l>
+							<l>No gaud but my good sword. Come forth, bright weapon!</l>
+
+
+			<pb edRef="#IC1854" n="106"/>
+
+
+							<l>True men have said that I could wield thee well---</l>
+							<l>But none e'er saw me fight for her. Sweet wife,</l>
+							<l>If there be hearts and arms in Portugal,</l>
+							<l>I'll save thee yet.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Be calmer.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Calmer! Preach</l>
+							<l>To the forked lightning, the fierce ocean-storm;</l>
+							<l>And when thou hast quelled them, then strive to tame</l>
+							<l>Me and my strong despair. Dost think to slay</l>
+							<l>Inez whilst Pedro lives? Seize, bind, enchain,</l>
+							<l>Imprison; lay me in deep dungeons, far</l>
+							<l>Below the lowest mark of ebbing tides,</l>
+							<l>Or cage me on the dizzy top of steep</l>
+							<l>And mountain fortresses, chain me to rocks,</l>
+							<l>Tie me upon wild horses, yet I'll burst</l>
+							<l>All bonds to rescue her! Ay, though the throne,</l>
+							<l>The palace, the thronged city, the whole nation</l>
+							<l>With its vast mass of quick and sentient life,</l>
+							<l>Friends, fellow-soldiers, kinsfolk, countrymen,</l>
+							<l>Should in the heaving throes of that wild earthquake</l>
+							<l>That great convulsion perish.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>She must die.</l>
+							<l>Thou shouldst have better known thy father, Pedro,</l>
+							<l>Than to try threats when prayers and tears had failed.</l>
+							<l>I fear thee not. For yonder prisoner, she</l>
+							<l>Must bide her doom.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Tyrant! When next I come,</l>
+							<l>Tremble!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>She must abide her doom.</l>
+						</sp>
+
+							<l>[Exeunt separately.</l>
+
+
+							<l>END OF ACT IV.</l>
+					</div>
+			</div>
+
+			<div type="act" n="5">
+				<head>ACT V.</head>
+				<pb edRef="#IC1854" n="107"/>
+				
+					<div type="scene" n="1">
+						<head>SCENE I.</head>
+
+
+							<l>A Hall of Audience. The Throne in the Middle of the Stage; Alphonso writing at a Table; Don Manuel standing near him; Lords and Attendants in the Background; Antonio, Garcia , and other Nobles in front.</l>
+
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Hear ye aught farther, Lords, of these fierce tumults</l>
+							<l>That all night long have raged throughout the city?</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>Nought, save low-whispered rumour. Since the Princess</l>
+							<l>Fled here for refuge none hath passed the barred</l>
+							<l>And guarded gates.</l>
+						</sp>
+						
+
+							<l>Enter Alvarez.</l>
+
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Here comes one full of news,</l>
+							<l>To judge by his speed.</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>Ay, and of evil matter.</l>
+							<l>What tidings, Don Alvarez? Is the Prince</l>
+							<l>Advancing on the Palace?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>With a course</l>
+
+
+			<pb edRef="#IC1854" n="108"/>
+
+
+							<l>Rapid and furious as the lava tide</l>
+							<l>Sweeping from far Vesuvius; turbulent</l>
+							<l>As our own Lisbon seas; angry and fierce</l>
+							<l>As winds in the Equinox. The King should hear---</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>He hath heard.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>And still unmoved!</l>
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar.</speaker>
+							<l>Do many follow</l>
+							<l>The fiery champion?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC"><!-- 2017-07-08 ALG: Change this if not actually Alvarez; see line below. -->
+							<speaker>Alu.</speaker><!-- 2017-07-08 ALG: This is "Alu." in the 1854 ed., but suspect it should be "Alv." Check.-->
+							<l>A fast-growing host,</l>
+							<l>Soldiers and citizens commingling, crowd</l>
+							<l>The narrow streets; even the slight beardless boys</l>
+							<l>And fearful women follow his thick ranks,</l>
+							<l>Mixing their shriller cries with the deep threats</l>
+							<l>Of armed warriors. The whole city rings</l>
+							<l>With "Inez! Lady Inez!"</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man. (Apart.)</speaker>
+							<l>A brave war-word!</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>All the night long hath he with that name stirred</l>
+							<l>The slumbering people; and as the dread hour</l>
+							<l>When she must die draws near, with wildest threats</l>
+							<l>Invests our walls.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Hold the guard firm?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>As yet.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (To an Attendant.)</speaker>
+							<l>Despatch the messenger to Rome, good Carlos,</l>
+							<l>Without delay: there be his missives.---Manuel,</l>
+							<l>Haste to the citadel. Thou know'st thine errand.</l>
+
+
+							<l>[Exit Manuel.</l>
+
+						</sp>
+
+						<sp who="#Garcia_IC">
+							<speaker>Gar. (To Antonio.)</speaker>
+							<l>Is Inez prisoner there?</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>If still she live,</l>
+							<l>She is.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (Advancing.)</speaker>
+							<l>Now, gentles, know ye if the rebels</l>
+							<l>Be near the Palace?</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Good my liege, they close</l>
+							<l>Around the walls.</l>
+
+
+			<pb edRef="#IC1854" n="109"/>
+
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Dismiss the guards. Fling wide</l>
+							<l>The iron gates. I'll front them singly here</l>
+							<l>Before the insulted throne.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Nay, nay, beseech thee</l>
+							<l>Deprive not of their proudest privilege</l>
+							<l>Your faithful soldiers, Sire.</l>
+						</sp>
+
+						<sp who="#Antonio_IC">
+							<speaker>Ant.</speaker>
+							<l>Nor trust too far</l>
+							<l>The fierce tumultuous crowd, who passion-driven</l>
+							<l>Rush maddening through the streets, like furious bulls,</l>
+							<l>Blinded and stumbling with their own brute rage.</l>
+							<l>Such herds are dangerous.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Dismiss the soldiers;</l>
+							<l>Fling wide the palace-gates. The herd ye speak of</l>
+							<l>Will own their master. Wouldst thou have a King---</l>
+							<l>I'll proudly say a just one---quail before</l>
+							<l>His subjects? Fling the barriers wide!</l>
+
+
+							<l>Enter Constance and Ladies.</l>
+
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>They come!</l>
+							<l>They crowd the courts! The vestibule, the hall,</l>
+							<l>Are filled with the fierce people.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Tremble not:</l>
+							<l>Degenerate though he be, thou art as safe</l>
+							<l>As in thine own Castillian home. Be sure</l>
+							<l>That ye are safe.</l>
+
+
+							<l>Enter Pedro, followed by Soldiers and Citizens. The King stands before the Throne; Constance and her Ladies beside and behind him, whilst the Nobles and Courtiers, close before him in front. </l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Inez! Disperse yourselves</l>
+							<l>Throughout the Palace. Line the courts. Let none</l>
+							<l>Escape unquestioned. Inez! Here we parted.</l>
+							<l>This was her prison. Waste no moment, friends!</l>
+
+
+			<pb edRef="#IC1854" n="110"/>
+
+
+							<l>The dial points the hour. The bell hath rung.</l>
+							<l>Release her, or she dies.</l>
+
+
+							<l>[Perceiving Alvarez , and seizing him. </l>
+
+
+							<l>Ha! Art thou there?</l>
+							<l>My wife! my wife! I trusted her to thee</l>
+							<l>As to a noble soldier in all honour.</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>And in all honour was she dealt withal;</l>
+							<l>But yesternight an order from the Council</l>
+							<l>Removed the lady from my ward.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>To death?</l>
+							<l>If thou be slain, streets, churches, palaces</l>
+							<l>Shall light thy funeral, Inez! Fire the city!</l>
+							<l>Make Lisbon one black ruin! Portugal</l>
+							<l>One mighty grave!</l>
+						</sp>
+
+						<sp who="#Alvarez_IC">
+							<speaker><app><rdg wit="#IC1854 #IC1880">Alv.</rdg><rdg wit="#msIC">Alvarez</rdg></app></speaker>
+							<l>Be calmer, Prince. They bore</l>
+							<l>The lady to the Citadel, a prisoner,</l>
+							<l>But not to death.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>On to the castle! on!</l>
+							<l>He who first scales the walls, with this good sword,</l>
+							<l>I'll dub him knight. On! on!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (Advancing.)</speaker>
+							<l>A brave emprise!</l>
+							<l>A tempting guerdon! Yet if still she live,</l>
+							<l>And but one man-at-arms approach the fortress,</l>
+							<l>The headsman knows his signal.</l>
+						</sp>
+
+						<sp who="#Citizen1_IC">
+							<speaker>First Cit.</speaker>
+							<l>'Tis the King.</l>
+							<l>Seize him!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph. (To the Nobles.)</speaker>
+							<l>Stir not a step; draw not a sword.</l>
+							<l>I'll waste no life in my defence, nor spill</l>
+							<l>One drop of blood, save that the rebels seek,</l>
+							<l>Save mine.</l>
+						</sp>
+
+						<sp who="#Citizen2_IC">
+							<speaker>Sec. Cit.</speaker>
+							<l>Surround him! Fell him to the earth!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped. (Striking him down.)</speaker>
+							<l>Down to the dust thyself, vile caitiff! What,</l>
+							<l>Afore my very eyes lay thy foul hands</l>
+
+
+			<pb edRef="#IC1854" n="111"/>
+
+
+							<l>On the King's sacred person! on my father!</l>
+							<l>I have but stunned the reptile! Drag him hence!</l>
+							<l>Look ye keep reverent distance, Sirs! Stand back!</l>
+							<l>By Heaven! he dies upon my sword who dares</l>
+							<l>Advance a step unordered. Back, I say!</l>
+							<l>Stand from about us!---Father!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>I abjure</l>
+							<l>For ever that fond title. Sir, my son</l>
+							<l>Was the main pillar of the throne, the stay</l>
+							<l>Of state and people, a thrice loyal knight,</l>
+							<l>Who led his country's armies, conqueror,</l>
+							<l>In twenty battles. Even Kings have vailed</l>
+							<l>Their crowns to my brave son. Thou art a rebel---</l>
+							<l>Doth the word stir thee?---chief of rebels, leader</l>
+							<l>Of the foul city's foulest crew, the spawn</l>
+							<l>Of crowded suburbs and rank lazar-houses.</l>
+							<l>Them hast thou led---chivalrous deed!---to storm</l>
+							<l>The King's defenceless palace, to make prisoner</l>
+							<l>The undefended King, that thou might'st climb</l>
+							<l>The vacant throne, and seat thee there, usurping</l>
+							<l>The crown thou shouldst inherit. Sir, my son</l>
+							<l>Was a frank, loyal knight, who would have spurned</l>
+							<l>Treason and traitor. Wherefore pause? Come on,</l>
+							<l>And drink thy monarch's blood. Dost fear to meet</l>
+							<l>My single arm? There lies my sword. My breast</l>
+							<l>Is open to thy weapon. Strike, I say!</l>
+							<l>Why dost thou falter? Strike! Strike! Strike! Thou hast given</l>
+							<l>A sharper pang already.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Take thy sword;</l>
+							<l>Take mine. Heaven shield thine honoured life! Live! Reign!</l>
+							<l>But spare my Inez!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Sir, I hold no parley</l>
+
+
+			<pb edRef="#IC1854" n="112"/>
+
+
+							<l>With rebels.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Only tell me that she lives,</l>
+							<l>That Inez lives. There is a burning fire</l>
+							<l>Here in my brain. If thou wouldst rescue me</l>
+							<l>From crime and frenzy, say she lives.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Dismiss</l>
+							<l>Thy followers! Clear the Palace! Cast thyself</l>
+							<l>On the King's mercy!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped. (To the People.)</speaker>
+							<l>Quick, disband the troops;</l>
+							<l>Disperse the citizens! Away! Away!</l>
+
+
+							<l>[Exeunt Citizens, Soldiers, &amp;c.</l>
+
+
+							<l>Now, father! Now!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Don Pedro---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Call me son!</l>
+							<l>Call me thy son!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>My son!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>And oh, forgive</l>
+							<l>My sinful rashness, father! I ne'er dreamt</l>
+							<l>Of thrones, or crowns, or sceptres, gilded toys</l>
+							<l>That mad ambition plays withal. My thought</l>
+							<l>Was but of Inez. Doth she live?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>She lives.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Joy! joy! Thou hast ta'en a weight as of the world</l>
+							<l>From off my heart. Now I can breathe. The fear</l>
+							<l>The stifling, deadening, suffocating fear</l>
+							<l>That held my sense in thrall is gone. She lives!</l>
+							<l>And thou hast given thy son a second life</l>
+							<l>And dearer. Inez lives! The hour is past,</l>
+							<l>And Inez lives! And she shall live! Say that!</l>
+							<l>Say thou hast pardoned her!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>I pardon thee.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>And her!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>I pardon thee.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh, father! father!</l>
+
+
+			<pb edRef="#IC1854" n="113"/>
+
+
+							<l>But I can die with her. Will none plead for me?</l>
+							<l>Have I no friend amidst the courtly train</l>
+							<l>To aid by one poor prayer? Rude as I seem,</l>
+							<l>Rough and unnurtured, not a man of ye</l>
+							<l>Ever craved grace or guerdon, but I straight</l>
+							<l>Became his bondsman, braving for his sake</l>
+							<l>Angry rebuke and cold rebuff, nor slackening</l>
+							<l>My honest service till his suit were won.</l>
+							<l>And now I sue for life, for more than life,</l>
+							<l>And ye stand mute!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Alphonso, pardon her!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>The Lady Constance!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Pardon her, Alphonso,</l>
+							<l>Even for my sake.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Dost thou plead for them, Princess?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Ay, blessings on her gentle heart! If Pity</l>
+							<l>Were lost on earth, she would be found enshrined</l>
+							<l>In woman's generous breast.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Thou, too, sweet lady!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>A kindly pardon glistens in thine eye</l>
+							<l>And trembles in thy voicc. Thou hast heard my prayer:</l>
+							<l>Hear now my thanks; and speed me quickly home,</l>
+							<l>That I the first may pour in Philip's ear</l>
+							<l>This story of true love. If still his Constance</l>
+							<l>Be dear to her dear brother, trust me, Princes,</l>
+							<l>Castille shall take on ye a royal vengeance</l>
+							<l>In firmer peace and closer amity.</l>
+							<l>Farewell to all!</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh, noblest maid!</l>
+						</sp>
+
+						<sp who="#Constance_IC">
+							<speaker>Con.</speaker>
+							<l>Farewell!</l>
+
+
+							<l>[Exit Constance with her Ladies.</l>
+
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh, sweet and noble maid! But Inez! Inez!</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Afore thy mad revolt, we had sent to stay</l>
+							<l>The execution, and dispatched Don Manuel</l>
+
+
+			<pb edRef="#IC1854" n="114"/>
+
+
+							<l>To proffer terms which now---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Is she not pardoned?</l>
+							<l>Manuel, I have small faith in that smooth courtier.</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Listen, Don Pedro. Yonder royal maid</l>
+							<l>Hath read us a brave lesson. We have both</l>
+							<l>Done grievous wrong to thy fair wife. Thyself</l>
+							<l>By thy rash bridals, I---But we will make</l>
+							<l>A glorious reparation. Good Antonio,</l>
+							<l>Haste to the jewel-room. The very crown</l>
+							<l>Thy mother wore shall deck her brow! Convey</l>
+							<l>The rich regalia of the Queen, Antonio,</l>
+							<l>Straight to the Citadel, with fitting pomp</l>
+							<l>Of officer and prelate. She who entered</l>
+							<l>A captive and condemned, she shall come forth</l>
+							<l>A crowned Princess.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Father! Canst thou ever</l>
+							<l>Forgive me, father?</l>
+						</sp>
+
+						<sp who="#Alphonso_IC">
+							<speaker>Alph.</speaker>
+							<l>Can I!---Meet us quickly</l>
+							<l>At the Citadel, Antonio. My dear son!</l>
+						</sp>
+
+							<l>[Exeunt.</l>
+					</div>
+
+					<div type="scene" n="=2">
+						<head>SCENE II.</head>
+
+
+							<l>A Prison.</l>
+
+
+							<l>Inez, alone.</l>
+
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Surely the hour is past! How wearily</l>
+							<l>Lags this long, lonely pause! No friend to cheer,</l>
+							<l>No priest to pray for me, and he my husband---</l>
+							<l>I have dearly purchased the blest right to call thee</l>
+							<l>By that fond name, my Pedro!---he---I dare not</l>
+							<l>Think of his fierce, unmitigated woe.</l>
+							<l>Alas! they might have granted one farewell---</l>
+							<l>The last! Well! well! once in her quiet grave,</l>
+							<l>And they'll forgive poor Inez! Now---Don Manuel!</l>
+
+
+			<pb edRef="#IC1854" n="115"/>
+
+
+							<l>Enter Manuel.</l>
+
+
+							<l>So! Art thou come to lead me to the death?</l>
+							<l>Say Yes, and for the first time win of me</l>
+							<l>A free and joyous welcome.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Lovely lady,</l>
+							<l>I come to bring thee life.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Life!---to live on</l>
+							<l>With him and for him! Life and life's best joy---</l>
+							<l>Pure wedded love! Oh, Heaven is merciful,</l>
+							<l>Refusing our fond, peevish prayers! I asked</l>
+							<l>For death---but life with him! Oh, we shall be</l>
+							<l>Too happy! Wherefore flew he not to share</l>
+							<l>Mine ecstasy? How bent he to his will,</l>
+							<l>His kingly father? What detains my Prince?</l>
+							<l>Why comes he not himself? Alas! forgive me</l>
+							<l>These my ungrateful questionings. Thanks! thanks!</l>
+							<l>Thou art a wise man, Manuel, and the wise</l>
+							<l>Are ever good. Thanks, generous friend, high thanks</l>
+							<l>For thy blest tidings! Wherefore start'st thou?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Inez,</l>
+							<l>I come to proffer life; but not---nay listen---</l>
+							<l>Hear out mine errand, lady, and then speak.</l>
+							<l>I bring thee life. Alphonso hath dispatched</l>
+							<l>A messenger to sue the Holy Pontiff</l>
+							<l>That he dissolve these rash, unlawful bridals;</l>
+							<l>And thou consenting, as thy stiffest denial</l>
+							<l>Were vain, to this divorce---I pr'ythee, hearken!---</l>
+							<l>And wedding with another---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Man, begone!</l>
+							<l>I am Don Pedro's wife. Go read my title</l>
+							<l>In the stern scroll that doomed me to the block</l>
+							<l>For that inexpiable crime, the sentence</l>
+							<l>That shall descend, enrolled amongst thy archives,</l>
+
+
+			<pb edRef="#IC1854" n="116"/>
+
+
+							<l>Imperishable record of my fame,</l>
+							<l>My honour's bloody guardian. Wherefore loiters</l>
+							<l>The headsman? Wherefore art thou here to vex</l>
+							<l>My parting spirit?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Sweet, I come to save thee.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Thou cam'st to proffer choice of life or death,</l>
+							<l>And I have chosen. Lead to the block.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>I'll shake </l>
+							<l>This stubborn calmness yet.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Thou canst not, Sir;</l>
+							<l>It is the calm of virtue.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>A fair word</l>
+							<l>That virtue! Yet in this bad world of ours,</l>
+							<l>How many passions, sins, and miseries,</l>
+							<l>Lurk underneath its honest seeming. Virtue!</l>
+							<l>Why 'tis the very cloak Ambition wears---</l>
+							<l>The mask Rebellion dons. What if more lives</l>
+							<l>Than thine hang on thy choice?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Whose life? his? his?</l>
+							<l>My Pedro's? No! no! no! Thou art a cunning</l>
+							<l>And merciless fiend, sent here afore my death</l>
+							<l>To tempt and torture my frail, sinful soul</l>
+							<l>With thoughts that burn like purgatorial fires.</l>
+							<l>Heaven pardon my impatience! There's none other</l>
+							<l>In peril, none in jeopardy of death,</l>
+							<l>Save her who prays for death to end her woes.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Didst sleep last night?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>No; for I thought of him,</l>
+							<l>And of his bitter grief. Lead to the block</l>
+							<l>For his dear sake. When Hope is dead, pale Fear</l>
+							<l>Fills the same monument.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Didst thou not hear</l>
+							<l>Noises around thy prison?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Ha!</l>
+
+
+			<pb edRef="#IC1854" n="117"/>
+
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Strange noises:</l>
+							<l>Knolling of bells, and clattering of arms,</l>
+							<l>And trampling of mailed steeds, and shouts of men?</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Say that I did, and what of that? He's safe!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>As safe as one who leads a rebel force</l>
+							<l>Against a monarch's power.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>In rebellion</l>
+							<l>For me! for me!---Oh! no, no, no! 'Tis false!</l>
+							<l>A traitor to his King!---Why rend my heart</l>
+							<l>With these wild thoughts? Confess thy falsehood, Manuel!</l>
+							<l>In arms against his father!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Ay, to arm</l>
+							<l>Father 'gainst son, son against father, subjects</l>
+							<l>'Gainst their anointed King; to raise a war---</l>
+							<l>A desperate civil war; to fire a nation,</l>
+							<l>This is rare virtue! Why that fairest piece</l>
+							<l>Of heathen wantonness, the beauteous Helen,</l>
+							<l>In that old ten years' siege, hatched not the mischief</l>
+							<l>Virtue and thou have wrought in one short hour.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Oh, woe is me that ever I was born!</l>
+							<l>He in rebellion, slain in arms, a rebel</l>
+							<l>Against his father-King, fallen, vanquished, laid</l>
+							<l>In an unhonoured grave,---or conqueror,</l>
+							<l>Murderer, parricide, cursing her name</l>
+							<l>Who plunged him in that gulph of sin! Alas,</l>
+							<l>That ever I was born!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Take comfort, sweet one;</l>
+							<l>It stands within thy power to end this strife,</l>
+							<l>And with a word.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>How? where? Show me but how,</l>
+							<l>And I will worship thee.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Be mine.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>No, no;</l>
+
+
+			<pb edRef="#IC1854" n="118"/>
+
+
+							<l>I am his wife.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Thou dost refuse?</l>
+							<l>[Going. </l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Man, man,</l>
+							<l>What ill hath the poor Inez done to thee,</l>
+							<l>That thou shouldst wring her very soul? In mercy</l>
+							<l>Say can I end these wars? Can I save him?</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Only as I have said. These fatal nuptials</l>
+							<l>Be the thrice fatal cause, and that removed---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Ay, ay, I am the cause. Remove that cause,</l>
+							<l>And then there will be peace.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>And bliss.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>Ay, bliss</l>
+							<l>In heaven.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>After long bliss on earth.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>In heaven---</l>
+							<l>That is the blessedest place. The peace-maker</l>
+							<l>Will go there. That way's sure. Remove the cause---</l>
+							<l>The fatal cause!---On, on, Don Manuel. Show me</l>
+							<l>To stay the strife.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Do but consent, sweet lady,</l>
+							<l>To this divorce; and when for ever parted---</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>For ever!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Then in a fresh bridal seek</l>
+							<l>A lowlier bliss.</l>
+						</sp>
+
+						<sp who="#Inez_IC">
+							<speaker>Inez.</speaker>
+							<l>A lowlier bridal bed!</l>
+							<l>It must be, and it shall be. Manuel, hasten</l>
+							<l>To end these woes. Pray them forgive me, Manuel,</l>
+							<l>Me, the unhappy cause of this great woe.</l>
+							<l>Pray them forgive poor Inez! Tell Don Pedro</l>
+							<l>That in my love I never was ambitious;</l>
+							<l>I thought not of the crown; 'twas he, 'twas he</l>
+							<l>That was mine idol! Bear him back his gifts;</l>
+							<l>These pearls of Ind; he tied them round my neck</l>
+
+
+			<pb edRef="#IC1854" n="119"/>
+
+
+							<l>At twilight, in the Cintra orange-grove,</l>
+							<l>Where he first spake of love. Oh, wretched love!</l>
+							<l>Oh, miserable hour! This ruby ring</l>
+							<l>At midnight, in St. Vincent's lonely church,</l>
+							<l>He on my trembling finger fondly prest,</l>
+							<l>Sole token of that fatal union! Take it,</l>
+							<l>And pray that it be buried in my grave.</l>
+							<l>And this small Moorish attaghan, his first</l>
+							<l>And dearest gift, the jewelled attaghan,</l>
+							<l>Which, half in sport, and half in manly scorn</l>
+							<l>Of the effeminate gaud, he bade me wear</l>
+							<l>A woman's fitting weapon, say I bore it</l>
+							<l>Next to my heart, so that the faithful steel</l>
+							<l>Glowed with each hope and trembled with each fear,</l>
+							<l>Like a true friend. Oh, precious gift of love!</l>
+							<l>Say it shall wed me to my second bridegroom---</l>
+							<l>Death! death!</l>
+							<l>[Stabs herself.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Hold thy rash hand! Live, Inez, live!</l>
+							<l>She's dead! And I---oh, blindest wretch, that read not</l>
+							<l>Her desperate purpose---</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped. (Behind.)</speaker>
+							<l>Inez!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>'Tis Don Pedro.</l>
+							<l>My bitter cup hath yet one sweetening drop---</l>
+							<l>Revenge.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Mine Inez! Give her to my arms!</l>
+							<l>That yearn for their sweet burthen. Touch her not,</l>
+							<l>She is my wife.</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Take her.</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>She falls! she bleeds!</l>
+							<l>Inez! She hears me not. Her pulse is still.</l>
+							<l>She's dead! She's slain! Cowardly murderer!</l>
+						</sp>
+
+						<sp who="#Manuel_IC">
+							<speaker>Man.</speaker>
+							<l>Prince! was that dagger mine?</l>
+						</sp>
+
+						<sp who="#Pedro_IC">
+							<speaker>Ped.</speaker>
+							<l>Oh, torturing fiend!</l>
+							<l>Thou shalt abide this deed.</l>
+
+
+			<pb edRef="#IC1854" n="120"/>
+
+
+							<l>[Enter Alphonso , followed by a Grand Procession of Nobles, Priests, Guards, &amp;c., bearing the Crown and Sceptre, Censers, &amp;c.</l>
+
+							<l>Father, look on her!</l>
+							<l>Look where she lies, love's martyr. She is slain,</l>
+							<l>And we are murderers, father! Mine own Inez!</l>
+							<l>My love! my wife! my Queen! The crown! the crown!</l>
+							<l>The glittering diadem! O blessed Shade,</l>
+							<l>Look down! Lo, where I crown thee, Death's pale bride</l>
+							<l>And mine. Lo, where I place the cold stiff sceptre</l>
+							<l>In thy cold stiffening hand. Lo, where I drop</l>
+							<l>The holy oil on the wan brow that bears</l>
+							<l>A majesty above this earth. My Queen!</l>
+							<l>Mine only Queen! Oh, never living love</l>
+							<l>Shall part our union, Inez! With this kiss</l>
+							<l>Do I re-wed thee! With this kiss devote</l>
+							<l>My life to thy dear memory. Do homage!</l>
+							<l>Viper, do homage! Father, bless thy daughter!</l>
+							<l>And pray for thy poor son! Pray for thy son!</l>
+						</sp>
+					</div>
+			</div>
+		</body>
+
+
+		
+		
+		<back>
+			<div type="places">
+				<listPlace>
+					<place xml:id="City_London_Theatre">
+						<placeName>City of London Theatre, London, England</placeName>
+						<placeName>
+							<addName>City of London Theatre</addName>
+						</placeName>
+						<district></district><!-- 2017-07-08 ALG: Need to find. -->
+						<district></district><!-- 2017-07-08 ALG: Need to find. -->
+						<region>London</region>
+						<country>England</country>
+						<location>
+							<geo></geo><!-- 2017-07-08 ALG: Need to find. -->
+						</location>
+						<note resp="#alg">Theatre where <bibl><author ref="#MRM">Mitford</author>'s <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>was first staged on <date when="1841-04-13">April 13, 1841</date>. <!-- 2017-07-08 ALG: This note needs more. --></note>
+					</place>
+				</listPlace>
+			</div>
+			
+			<div type="people">
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Alphonso_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="1">
+						<persName>Alphonso</persName>
+						<persName>Alphonso, King of Portugal</persName>
+						<persName>
+							<forename>Alphonso</forename>
+							<roleName>King</roleName>
+						</persName>
+						<occupation>monarch</occupation>
+						<note resp="#alg">Alphonso, the King of Portugal, is a character in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. <!-- 2017-07-08 ALG: Add historical counterpart info? Example: See also the character's historical counterpart: X. -->Played by <persName>Mr. Atkinson<!-- 2017-07-08 ALG: Need to find him and create an xml:id and entry. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+					
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Pedro_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+						<person sex="1">
+							<persName>Don Pedro</persName>
+							<persName>
+								<forename>Pedro</forename>
+								<roleName>Prince</roleName>
+							</persName>
+							<note resp="#alg">Don Pedro is the character of the King's son in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. <!-- 2017-07-08 ALG: Add historical counterpart info? Example: See also the character's historical counterpart: X. -->Played by <persName>Mr. James Bennett<!-- 2017-07-08 ALG: May be the Mr. Bennett in Lisa's Drama si-Add; need to confirm and add (or create) xml:id. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+						</person>
+					</listPerson>
+					
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Manuel_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+						<person sex="1">
+							<persName>Don Manuel</persName>
+							<persName>
+								<forename>Manuel</forename>
+								<roleName>Minister</roleName>
+							</persName>
+							<occupation>government</occupation>
+							<note resp="#alg">Don Manuel is the character of the King's Minister in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Mr. Higgin<!-- 2017-07-08 ALG: Confirm spelling (Higgis? Higgie?); then find info and create xml:id. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+						</person>
+					</listPerson>
+					
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="DAguilar_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="1">
+						<persName>Count d'Aguilar</persName>
+						<persName>
+							<surname>d'Aguilar</surname>
+							<roleName>Ambassador</roleName>
+						</persName>
+						<occupation>ambassador</occupation>
+						<note resp="#alg">Count d'Aguilar is the character of the Castillian Ambassador in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Mr. G. Ellis<!-- 2017-07-08 ALG: Need to find him and create an xml:id and entry. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+				
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Antonio_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="1">
+						<persName>Don Antonio</persName>
+						<persName>
+							<forename>Antonio</forename>
+						</persName>
+						<occupation>government</occupation>
+						<note resp="#alg">Character in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Mr. Saker<!-- 2017-07-08 ALG: Confirm spelling (Baker?); then find info and create xml:id. If "Baker," is this Baker_Mr in Lisa's Drama si-Add? --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+				
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Alvarez_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="1">
+						<persName>Don Alvarez</persName>
+						<persName>
+							<forename>Alvarez</forename>
+							<roleName>Captain</roleName>
+						</persName>
+						<occupation>military</occupation>
+						<note resp="#alg">Don Alvarez is the character of the Captain of the Guard in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Mr. G. Almar<!-- 2017-07-08 ALG: Need to find him and create an xml:id and entry. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Garcia_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="1">
+						<persName>Don Garcia</persName>
+						<persName>
+							<forename>Garcia</forename>
+						</persName>
+						<occupation>courtier</occupation>
+						<note resp="#alg">Don Garcia is the character of a young nobleman in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Mr. Blanchard<!-- 2017-07-08 ALG: Need to find him and create an xml:id and entry. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+				
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Sebastian_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="1">
+						<persName>Sebastian</persName>
+						<occupation>servant</occupation>
+						<note resp="#alg">Sebastian is the character of Manuel's servant in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Mr. Ross<!-- 2017-07-08 ALG: Need to find him and create an xml:id and entry. --></persName> as performed at the <placeName ref="City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Constance_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="2">
+						<persName>Constance</persName>
+						<persName>
+							<forename>Constance</forename>
+							<roleName>Princess</roleName>
+						</persName>
+						<note resp="#alg">Constance is the character of the Princess of Castille in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Miss Crisp<!-- 2017-07-08 ALG: Need to find her and create an xml:id and entry. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+
+				<listPerson type="fict" subtype="int"><!-- 2017-07-08 ALG: Information re: xml:id ="Inez_IC" defined above in witness list for future use in si. Commented out so as not to fire an error, since xml:id already defined above.-->
+					<person sex="2">
+						<persName>Inez <nameLink>de</nameLink> Castro</persName>
+						<persName>
+							<forename>Inez</forename>
+						</persName>
+						<note resp="#alg">Inez de Castro is the title character, a Spanish Lady attending on Constance, in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Inez_deCastro_MRMplay">Inez de Castro</title></bibl>. Played by <persName>Miss E. Montague<!-- 2017-07-08 ALG: Need to find her and create an xml:id and entry. --></persName> as performed at the <placeName ref="#City_London_Theatre">City of London Theatre</placeName>, <date when="1841-04-13">April 13, 1841</date>.</note>
+					</person>
+				</listPerson>
+			</div>
+			
+			<div type="org">
+			</div>
+			
+			<div type="bibl">
+				<bibl><!-- 2017-07-08 ALG: Information re: xml:id ="msIC" defined above in witness list for future use in si.  Commented out so as not to fire an error, since xml:id already defined above.-->
+					<title>Inez de Castro: A Tragedy in Five Acts</title>
+					<author ref="#MRM"/>
+					<date>1831</date>
+					<note resp="alg">This manuscript, in a copyist's hand, was entered at the Lord Chamberlain's office on <date when="1831-02-28">1831</date>.</note>
+				</bibl>
+				
+				<bibl><!-- 2017-07-08 ALG: Information re: xml:id ="IC1854" defined above in witness list for future use in si.  Commented out so as not to fire an error, since xml:id already defined above.-->
+					<title>Inez de Castro: A Tragedy. In Five Acts</title>
+					<author ref="#MRM"/>
+					<pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+					<publisher>Hurst &amp; Blackett</publisher>
+					<date when="1854">1854</date>
+					<bibl corresp="#Dramatic_Works_of_MRM"/>
+					<note resp="#alg">Although submitted to the Lord Chamberlain's office in <date when="1831-02">February 1831</date>, the play was not staged until <date when="1841-04-13">April 13, 1841</date>, and was not printed until its appearance in this 1854 edition of <title ref="#Dramatic_Works_of_MRM">The Dramatic Works of Mary Russell Mitford</title>.</note>
+				</bibl>
+
+				<bibl><!-- 2017-07-08 ALG: Information re: xml:id ="IC1880" defined above in witness list for future use in si.  Commented out so as not to fire an error, since xml:id already defined above.-->
+					<title>Inez de Castro: A Tragedy in Five Acts</title>
+					<author ref="#MRM"/>
+					<pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+					<publisher>John Dicks</publisher>
+					<date notBefore="1880-01-01" notAfter="1889-12-31">1880-1889</date>
+					<note resp="#alg">This edition is No. 672 of <title>Dicks' Standard Plays</title>, published by <orgName ref="#JDicks_pub">John Dicks</orgName> in the <date notBefore="1880-01-01" notAfter="1889-12-31">1880s</date>. </note>
+				</bibl>
+	</div>
+		</back>
+	</text>
+</TEI>

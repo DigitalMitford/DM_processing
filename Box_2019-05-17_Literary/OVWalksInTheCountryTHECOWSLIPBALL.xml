@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+-->
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+
+            <titleStmt>
+                <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+                <author>Mary Russell Mitford</author>
+
+                <editor>Alexandra Drayton</editor>
+                <editor ref="#scw">Samantha Webb</editor>
+
+
+                <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+                    Project</orgName></sponsor>
+                <sponsor>University of Pittsburgh at Greensburg</sponsor>
+                <principal>Elisa Beshero-Bondar</principal>
+
+                <respStmt>
+                    <resp>Transcription and coding by</resp>
+                    <persName>Alexandra Drayton</persName>
+                    <persName ref="#scw">Samantha Webb</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Proofing and corrections by</resp>
+                    <persName>Elisa Beshero-Bondar</persName>
+                    <persName ref="#bas">Brooke A. Stewart</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>This is optional, used to describe this edition, and “should contain
+                    phrases describing the edition or version”: First digital edition in TEI, date:
+                    2 June 2013. P5.</edition>
+                <respStmt>
+                    <resp>We can include a respStmt here.</resp>
+                    <persName>Who?</persName>
+                </respStmt>
+
+            </editionStmt>
+
+
+
+            <publicationStmt>
+                <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+                <pubPlace>Greensburg, PA, USA</pubPlace>
+                <date>2013</date>
+                <availability>
+                    <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0
+                        Unported License</licence>
+                </availability>
+
+            </publicationStmt>
+            <seriesStmt>
+                <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+            </seriesStmt>
+
+            <notesStmt>
+                <note>Any special notes on this text? (optional)</note>
+                <note>You can have multiple notes here.</note>
+            </notesStmt>
+
+            <sourceDesc>
+                <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+                <p>Our text is based on public domain, Google-digitized text<bibl>
+                        <title>Our Village: Sketches of Rural Character and
+                            Scenery</title><edition>Third Edition</edition> by <author>Mary Russell
+                            Mitford</author><pubPlace>London</pubPlace><publisher>Geo. B.
+                            Whittaker</publisher><placeName>Ave Maria
+                            Lane</placeName><date>1825</date>. </bibl> This text appears to be
+                    identical in pagination and content to the first edition published in 1824. </p>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>Describes our editorial practice.</p>
+            </editorialDecl>
+        </encodingDesc>
+
+    </teiHeader>
+    <text>
+
+        <front>
+            <titlePage>
+                <pb n="ii"/>
+                <docTitle>
+                    <titlePart type="main">Our Village:</titlePart>
+                    <titlePart type="subtitle">Sketches of Rural Character and Scenery.</titlePart>
+                </docTitle>
+                <byline>by <docAuthor>Mary Russell Mitford</docAuthor>, Author of <title ref="#Julian_MRMplay">Julian, A
+                        Tragedy</title><lb/></byline>
+                <docEdition>Third Edition.</docEdition>
+                <docImprint><pubPlace>London</pubPlace><lb/><publisher>Geo. B.
+                        Whittaker</publisher>,<lb/><placeName>Ave-Maria-Lane</placeName>.
+                        <docDate>1825</docDate>.</docImprint>
+            </titlePage>
+            <pb n="iii"/>
+        </front>
+        <body>
+            <div type="sketch">
+                <head><title level="s" ref="#Walks_Country_OV">WALKS IN THE COUNTRY</title>.<lb/> <title level="a" ref="#Walks_Cowslip_Ball_OV">THE COWSLIP-BALL</title>.</head>
+                <p><date when="--05-16">May 16</date>.—There are moments in life, when, without any visible or immediate cause,
+                    the spirits sink and fail, as it were, under the mere pressure of existence:
+                    moments of unaccountable depression, when one is weary of one’s very thoughts,
+                    haunted by images that will not depart—images many and various, but all painful;
+                    friends lost, or changed, or dead; hopes disappointed even in their
+                    accomplishment; fruitless regrets, powerless wishes, doubt and fear and
+                    self-distrust, and self-diapprobation. They who have known these feelings, (and
+                    who is there so happy as not to have known some of them?) will understand why
+                    <persName ref="#Alfieri_Vittorio">Alfieri</persName> became powerless, and <persName ref="#Froissart">Froissart</persName> dull; and why even needle-work, that
+                    most effectual sedative, that grand soother and composer of woman’s distress,
+                    fails to comfort me to-day. I will go out into the air this cool pleasant
+                    afternoon, and try what that will do. I<pb n="134"/> fancy that exercise, or
+                    exertion of any kind, is the true specific for nervousness. <quote>“Fling but a stone,
+                        the giant dies.”</quote><note resp="#scw">A quotation from <persName ref="#Green_Matt">Matthew Green</persName>'s The Spleen.</note> I will go to the meadows, the beautiful meadows! and I will
+                    have my materials of happiness, <persName ref="#Lizzy_OV">Lizzy</persName> and <persName ref="#May-flower_OV">May</persName>, and a basket for flowers, and we
+                    will make a <rs type="plant" ref="#clowslip">cowslip</rs>-ball. <said who="#OVNarrator" direct="true" aloud="true">“Did you ever see a cowslip-ball, my
+                        <persName ref="#Lizzy_OV">Lizzy</persName>?”</said>—<said who="#Lizzy_OV" direct="true" aloud="true">“No.”</said>—<said who="#OVNarrator" direct="true" aloud="true">“Come away, then; make haste! run, <persName ref="#Lizzy_OV">Lizzy</persName>!”</said></p>
+                <p>And on we go fast, fast! down the road, across <placeName ref="#lea_OV">the lea</placeName>, past <placeName ref="#parish_workhouse">the workhouse</placeName>, along
+                    by the great pond, till we slide into the deep narrow lane, whose hedges seem to
+                    meet over the water, and win our way to the little farm-house at the end.
+                    <said who="#OVNarrator" direct="true" aloud="true">“Through the farm-yard, <persName ref="#Lizzy_OV">Lizzy</persName>; over the gate: never mind the <rs type="animal" ref="#cow">cows</rs>; they are
+                        quiet enough.”</said>—<said who="#Lizzy_OV" direct="true" aloud="true">“I don’t mind ‘em,”</said> said <persName ref="#Lizzy_OV">Miss Lizzy</persName>, boldly and truly, and with a
+                    proud affronted air, displeased at being thought to mind any thing, and showing
+                    by her attitude and manner some design of proving her courage by an attack on
+                    the largest of the herd, in the shape of a pull by the tail. <said who="#Lizzy_OV" direct="true" aloud="true">“I don’t mind
+                        ‘em.”</said>—<said who="#OVNarrator" direct="true" aloud="true">“I know you don’t, <persName ref="#Lizzy_OV">Lizzy</persName>; but let them alone, and don’t chase the
+                            <rs type="animal" ref="#turkey_cock">turkey-cock</rs>. Come to me, my dear!”</said> and, for a wonder, <persName ref="#Lizzy_OV">Lizzy</persName> came.</p>
+                <p>In the mean time my other pet, <persName ref="#May-flower_OV">May-flower</persName>, had also gotten into a scrape. She had
+                    driven about a huge unwieldy <rs type="animal" ref="#pig">sow</rs>, till the animal’s grunting had disturbed the
+                    repose of a still more enormous <rs type="animal" ref="#Newfoundland_dog">Newfound-<pb n="135"/>land dog</rs>, the guardian of
+                    the yard. Out he sallied growling from the depth of his kennel, erecting his
+                    tail, and shaking his long chain. <persName ref="#May-flower_OV">May</persName>’s attention was instantly diverted from
+                    the <rs type="animal" ref="#pig">sow</rs> to this new playmate, friend or foe, she cared not which; and <rs type="animal" ref="#Newfoundland_dog">he of the
+                        kennel</rs>, seeing his charge unhurt and out of danger, was at leisure to observe
+                    the charms of <rs type="person" ref="#May-flower_OV">his fair enemy</rs>, as she frolicked round him, always beyond the
+                    reach of his chain, yet always with the natural instinctive coquetry of her sex,
+                    alluring him to the pursuit which she knew to be vain. I never saw a prettier
+                    flirtation. At last the <rs type="animal" ref="#Newfoundland_dog">noble animal</rs>, wearied out, retired to the inmost
+                    recesses of his habitation, and would not even approach her when she stood right
+                    before the entrance. <said who="#OVNarrator" direct="true" aloud="true">“You are properly served, <persName ref="#May-flower_OV">May</persName>. Come along, <persName ref="#Lizzy_OV">Lizzy</persName>. Across
+                        this wheat-field, and now over the gate. Stop! let me lift <rs type="person" ref="#Lizzy_OV">you</rs> down. No jumping,
+                    no breaking of necks, Lizzy! And here we are in the meadows, and out of the
+                    world. <persName ref="#Robinson Crusoe">Robinson Crusoe</persName>, in his lonely island, had scarcely a more complete, or a
+                    more beautiful solitude.”</said><!--scw: I am not sure it's accurate to say that the foregoing statement is entirely spoken directly and aloud. Is there a markup for such blending?--> </p>
+                <p>These meadows consist of a double row of small enclosures of rich grass-land, a
+                    mile or two in length, sloping down from high arable grounds on either side to
+                    a little nameless brook that winds between them, with a course which in its
+                    infinite variety, clearness, and rapidity, seems to emulate the bold rivers of
+                        the<pb n="136"/> north, of whom, far more than of our lazy southern streams,
+                    our rivulet presents a miniature likeness. Never was water more exquisitely
+                    tricksy:—now darting over the bright pebbles, sparkling and flashing in the
+                    light with a bubbling music, as sweet and wild as the song of the woodlark; now
+                    stretching quietly along, giving back the rich tufts of the golden
+                    <rs type="plant" ref="#marsh_marygold">marsh-marygolds</rs> which grow on its margin; now sweeping round a fine reach of
+                    green grass, rising steeply into a high mound, a mimic promontory, whilst the
+                    other side sinks softly away, like some tiny bay, and the water flows between,
+                    so clear, so wide, so shallow, that <persName ref="#Lizzy_OV">Lizzy</persName>, longing for adventure, is sure she
+                    could cross unwetted; now dashing through two sandbanks, a torrent deep and
+                    narrow, which <persName ref="#May-flower_OV">May</persName> clears at a bound; now sleeping half-hidden beneath the <rs type="plant" ref="#alder">alders</rs>
+                    and <rs type="plant" ref="#hawthorn">hawthorns</rs> and <rs type="plant" ref="#wild_rose">wild roses</rs>, with which the banks are so profusely and
+                    variously fringed, whilst flags<note type="author" anchored="true">Walking along
+                        these meadows one bright sunny afternoon, a year or two back, and rather
+                        later in the season, I had an opportunity of observing a curious
+                        circumstance in natural history. Standing close to the edge of the stream, I
+                        remarked a singular appearance on a large tuft of flags. It looked like
+                        bunches of flowers, the leaves of which seemed dark, yet transparent,
+                        intermingled with brilliant tubes of bright blue or shining green. On
+                        examining this phenomenon more closely, it turned out to be several clusters
+                        of <rs type="animal" ref="#dragon_fly">dragon-flies</rs>, just emerged from their deformed crysalis state, and still
+                        torpid and motionless from the wetness of their filmy wings. Half an hour
+                        later we returned to the spot, and they were gone. We had seen them at the
+                        very moment when beauty was complete, and animation dormant. I have since
+                        found a nearly similar account of this curious process in <persName ref="#Bingley_Wm">Mr. Bingley</persName>’s very
+                        entertaining work, called <quote>“<bibl corresp="#Animal_Biog">Animal Biography</bibl>.”</quote></note>, <rs type="plant" ref="#lily">lilies</rs>, and other
+                    aquatic plants, almost cover<pb n="137"/> the surface of the stream. In good
+                    truth it is a beautiful brook, and one that <persName ref="#Walton_I">Walton</persName> himself might have sitten by
+                    and loved, for <rs type="animal" ref="#trout">trout</rs> are there; we see them as they dart up the stream, and hear
+                    and start at the sudden plunge when they spring to the surface for the summer
+                    <rs type="animal" ref="#fly">flies</rs>. <persName ref="#Walton_I">Isaac Walton</persName> would have loved our brook and our quiet meadows; they
+                    breathe the very spirit of his own peacefulness, a soothing quietude that sinks
+                    into the soul. There is no path through them, not one; we might wander about a whole
+                    spring day, and not see a trace of human habitation. They belong to a number of
+                    <orgName ref="#small_proprietors_OV">small proprietors</orgName>, who allow each other access through their respective grounds,
+                    from pure kindness and neighbourly feeling, a privilege never abused; and the
+                    fields on the other side of the water are reached by a rough plank, or a tree
+                    thrown across, or some such homely bridge. We ourselves possess one of the most
+                    beautiful; so that the strange pleasure of property, that instinct which makes
+                    <persName ref="#Lizzy_OV">Lizzy</persName> delight in her broken doll, and <persName ref="#May-flower_OV">May</persName> in the bare bone which she has
+                    pilfered from the kennel of her recreant<pb n="138"/> admirer of <rs type="animal" ref="#Newfoundland_dog">Newfoundland</rs>,
+                    is added to the other charms of this enchanting scenery; a strange pleasure it
+                    is, when one so poor as I can feel it! Perhaps it is felt most by the poor, with
+                    the rich it may be less intense—too much diffused and spread out, becoming thin
+                    by expansion, like leaf-gold; the little of the poor may be not only more
+                    precious, but more pleasant to them: certainly that bit of grassy and blossomy
+                    earth, with its green knolls and tufted bushes, its old <rs type="plant" ref="#pollard">pollards</rs> wreathed with
+                    <rs type="plant" ref="#ivy">ivy</rs>, and its bright and babbling waters, is very dear to me. But I must always
+                    have loved these meadows, so fresh, and cool, and delicious to the eye and to
+                    the tread, full of <rs type="plant" ref="#cowslip">cowslips</rs>, and of all vernal flowers: <cit><bibl><sic>Shakspeare’s</sic> <title level="a">Song of
+                        Spring</title></bibl></cit> bursts irrepressibly from our lips as we step on them: <quote><said who="#OVNarrator #Lizzy_OV" direct="true" aloud="true">“<lg>
+                            <l>When daisies pied, and violets blue,</l>
+                            <l>And lady-smocks all silver white,</l>
+                            <l>And cuckoo-buds of yellow hue,</l>
+                            <l>Do paint the meadows with delight,</l>
+                            <l>The cuckoo then on every tree—</l>
+                        </lg>”</said></quote><note resp="#scw">The song is from <bibl corresp="#Loves_Labours_Lost">Love's Labour's Lost</bibl>, Act V, scene ii, 820-826.</note> <said who="#Lizzy_OV" direct="true" aloud="true">“Cuckoo! cuckoo!”</said> cried Lizzy, breaking in with her clear
+                    childish voice; and immediately, as if at her call, the real bird, from a
+                    neighbouring tree (for these meadows are dotted with timber like a park), began
+                    to echo <rs type="person" ref="#Lizzy_OV">my lovely little girl</rs>, <said who="#Lizzy_OV" direct="true" aloud="true">“cuckoo! cuckoo!”</said> I have a prejudice very
+                    unpastoral and unpoetical (but I<pb n="139"/> cannot help it, I have many such),
+                    against this <quote>“harbinger of spring.”</quote><note resp="#scw">The cuckoo was held to be the "harbinger of spring" in various folk traditions. Mitford may be quoting something specific, or she may be referencing a common expression. Her expression of distaste for the cuckoo was also a common feeling.</note> His note is so monotonous, so melancholy;
+                    and then <orgName ref="#Cowslip_mimic_boys_OV">the boys</orgName> mimic him; one hears <said who="#Cowslip_mimic_boys_OV" direct="true" aloud="true">“cuckoo! cuckoo!”</said> in dirty streets,
+                    amongst smoky houses, and <rs type="animal" ref="#cuckoo">the bird</rs> is hated for faults not his own. But
+                    prejudices of taste, likings and dislikings, are not always vanquishable by
+                    reason; so, to escape the serenade from the tree, which promised to be of
+                    considerable duration, (when once that eternal song begins, on it goes ticking
+                    like a clock)—to escape that noise I determined to excite another, and
+                    challenged <persName ref="#Lizzy_OV">Lizzy</persName> to a <rs type="plant" ref="#cowslip">cowslip</rs>-gathering; a trial of skill and speed, to see
+                    which should soonest fill her basket. My stratagem succeeded completely. What
+                    scrambling, what shouting, what glee from <persName ref="#Lizzy_OV">Lizzy</persName>! twenty <rs type="animal" ref="#cuckoo">cuckoos</rs> might have sung
+                    unheard whilst she was pulling her own flowers, and stealing mine, and laughing,
+                    screaming, and talking through all. </p>
+                <p>At last the baskets were filled, and <persName ref="#Lizzy_OV">Lizzy</persName> declared victor: and down we sate, on
+                    the brink of the stream, under a spreading <rs type="plant" ref="#hawthorn">hawthorn</rs>, just disclosing its own
+                    pearly buds, and surrounded with the rich and enamelled flowers of the wild
+                    <rs type="plant" ref="#hyancinth">hyacinth</rs>, blue and white, to make our <rs type="plant" ref="#cowslip">cowslip</rs>-ball. Every one knows the process;
+                    to nip off the tuft of flowerets just below the top of the stalk, and hang each
+                    cluster nicely balanced across a riband, till you have a long string like a
+                        gar-<pb n="140"/>land; then to press them closely together, and tie them
+                    tightly up. We went on very prosperously, <emph>considering</emph>; as people say of a young
+                    lady’s drawing, or a Frenchman’s English, or a woman’s tragedy<!--scw: Perhaps a reflection on MRM's own situation. Look up dates.-->, or of the poor
+                    little dwarf who works without fingers, or the ingenious sailor who writes with
+                    his toes, or generally of any performance which is accomplished by means
+                    seemingly inadequate to its production. To be sure we met with a few accidents.
+                    First, <persName ref="#Lizzy_OV">Lizzy</persName> spoiled nearly all her <rs type="plant" ref="#cowslip">cowslips</rs> by snapping them off too short; so
+                    there was a fresh gathering; in the next place <persName ref="#May-flower_OV">May</persName> overset my full basket, and
+                    sent the blossoms floating, like so many fairy favours, down the brook; then
+                    when we were going on pretty steadily, just as we had made a superb wreath, and
+                    were thinking of tying it together, <persName ref="#Lizzy_OV">Lizzy</persName>, who held the riband, caught a glimpse
+                    of a gorgeous <rs type="animal" ref="#butterfly">butterfly</rs>, all brown and red and purple, and skipping off to
+                    pursue the new object, let go her hold; so all our treasures were abroad again.
+                    At last, however, by dint of taking a branch of <rs type="plant" ref="#alder">alder</rs> as a substitute for <persName ref="#Lizzy_OV">Lizzy</persName>,
+                    and hanging the basket in a <rs type="plant" ref="#pollard_ash">pollard-ash</rs>, out of sight of <persName ref="#May-flower_OV">May</persName>, the <rs type="plant" ref="#cowslip">cowslip</rs>-ball
+                    was finished. What a concentration of fragrance and beauty it was! golden and
+                    sweet to satiety! rich to sight, and touch, and smell! <persName ref="#Lizzy_OV">Lizzy</persName> was enchanted, and
+                    ran off with her prize, hiding amongst the trees in the very coyness of ecstacy,
+                    as if <pb n="141"/>any human eye, even mine, would be a restraint on her
+                    innocent raptures.</p>
+                <p>In the mean while I sate listening, not to my enemy the <rs type="animal" ref="#cuckoo">cuckoo</rs>, but to a whole
+                    concert of <rs type="animal" ref="#nightingale">nightingales</rs>, scarcely interrupted by any meaner bird, answering and
+                    vying with each other in those short delicious strains which are to the ear as
+                    roses to the eye; those snatches of lovely sound which come across us as airs
+                    from heaven. Pleasant thoughts, delightful associations, awoke as I listened;
+                    and almost unconsciously I repeated to myself the beautiful story of the Lutist
+                    and the Nightingale, from <cit><bibl>Ford’s <title level="a">Lover’s Melancholy</title></bibl></cit>. Here it is. Is there in
+                    English poetry any thing finer? <said who="#OVNarrator" direct="false" aloud="false"><quote>“<lg>
+                        <l>Passing from Italy to Greece, the tales</l>
+                            <l>Which poets of an elder time have feign’d</l>
+                        <l>To glorify their Tempe, bred in me</l>
+                            <l>Desire of visiting Paradise.</l>
+                        <l>To Thessaly I came, and living private,</l>
+                            <l>Without acquaintance of more sweet companions</l>
+                            <l>Than the old inmates to my love, my thoughts,</l>
+                            <l>I day by day frequented silent groves</l>
+                            <l>And solitary walks. One morning early</l>
+                            <l>This accident encounter’d me: I heard</l>
+                            <l>The sweetest and most ravishing contention</l>
+                            <l>That art and nature ever were at strife in.</l>
+                            <l>A sound of music touch’d mine ears, or rather</l>
+                            <l>Indeed entranced my soul: as I stole nearer,</l>
+                            <l>Invited by the melody, I saw</l>
+                        <l>This youth, this fair-faced youth, upon his lute</l>
+                            <pb n="142"/>
+                            <l>With strains of strange variety and harmony</l>
+                            <l>Proclaiming, as it seem’d, so bold a challenge</l>
+                        <l>To the clear choristers of the woods, the birds,</l>
+                            <l>That as they flock’d about him, all stood silent,</l>
+                            <l>Wond'ring at what they heard. I wonder’d too,</l>
+                        <l>A nightingale,</l>
+                            <l>Nature’s best-skill’d musician, undertakes</l>
+                            <l>The challenge; and for every several strain</l>
+                        <l>The well-shaped youth could touch, she sang him down.</l>
+                            <l>He could not run divisions with more art</l>
+                            <l>Upon his quaking instrument than she,</l>
+                        <l>The nightingale, did with her various notes</l>
+                            <l>Reply to.</l>
+                        <l>Some time thus spent, the young man grew at last</l>
+                        <l>Into a pretty anger, that a bird,</l>
+                            <l>Whom art had never taught cliffs, moods, or notes,</l>
+                            <l>Should vie with him for mastery, whose study</l>
+                            <l>Had busied many hours to perfect practice.</l>
+                            <l>To end the controversy, in a rapture</l>
+                            <l>Upon his instrument he plays so swiftly,</l>
+                            <l>So many voluntaries, and so quick,</l>
+                            <l>That there was curiosity and cunning,</l>
+                            <l>Concord in discord, lines of differing method</l>
+                            <l>Meeting in one full centre of delight.</l>
+                        <l>The bird (ordain’d to be</l>
+                            <l>Music’s first martyr) strove to imitate</l>
+                            <l>These several sounds; which when her warbling throat</l>
+                            <l>Failed in, for grief down dropt she on his lute,</l>
+                            <l>And brake her heart. It was the quaintest sadness</l>
+                            <l>To see the conqueror upon her hearse</l>
+                            <l>To weep a funeral elegy of tears.</l>
+                            <l>He look’d upon the trophies of his art,</l>
+                            <l>Then sigh’d, then wip’d his eyes; then sigh’d, and cry’d,</l>
+                            <pb n="143"/>
+                            <l>‘Alas! poor creature, I will soon revenge</l>
+                            <l>This cruelty upon the author of it.</l>
+                            <l>Henceforth this lute, guilty of innocent blood,</l>
+                            <l>Shall never more betray a harmless peace</l>
+                            <l>To an untimely end:’ and in that sorrow,</l>
+                            <l>As he was pashing it against a tree,</l>
+                            <l>I suddenly stept in.</l>
+                    </lg>”</quote></said></p><note resp="#scw">A passage from Act I, scene i of <persName ref="#Ford_John">John Ford</persName>'s play. Mitford actually quotes the excerpt contained in <persName ref="#Lamb_Chas">Charles Lamb</persName>'s <bibl corresp="#Specimens_Eng_Dramatic_Poets">Specimens of English Dramatic Poets</bibl>, which omits the play dialogue that is interpersed in the play passage.</note><!--scw: I did not tag anything in Ford's quoted passage, nor in Shakespeare's above.-->
+                <p> When I had finished the recitation of this exquisite passage, the sky, which had
+                    been all the afternoon dull and heavy, began to look more and more threatening;
+                    darker clouds, like wreaths of black smoke, flew across the dead leaden tint; a
+                    cooler, damper air blew over the meadows, and a few large heavy drops plashed
+                    in the water.<note resp="#scw">The approach of a storm that ends the walk mirrors the ending of <title level="a" ref="#Walks_TheWood_OV">The Wood</title>.</note> <said who="#OVNarrator" direct="true" aloud="true">“We shall have a storm. <persName ref="#Lizzy_OV">Lizzy</persName>! <persName ref="#May-flower_OV">May</persName>! where are ye? Quick, quick, my
+                        <persName ref="#Lizzy_OV">Lizzy</persName>! run, run! faster, faster!”</said></p>
+                <p>And off we ran; <persName ref="#Lizzy_OV">Lizzy</persName> not at all displeased at the thoughts of a wetting, to
+                    which indeed she is almost as familiar as a duck; <persName ref="#May-flower_OV">May</persName>, on the other hand,
+                    peering up at the weather, and shaking her pretty ears with manifest dismay. Of
+                    all animals, next to a cat, a <rs type="animal" ref="#greyhound">greyhound</rs> dreads rain. She might have escaped it;
+                    her light feet would have borne her home long before the shower; but <persName ref="#May-flower_OV">May</persName> is too
+                    faithful for that, too true a comrade, understands too well the laws of good
+                    fellowship; so she waited for us. She did, to be sure, gallop on before, and
+                    then stop and look back, and beckon,<pb n="144"/> as it were, with some scorn in
+                    her black eyes at the slowness of our progress. We in the mean while got on as
+                    fast as we could, encouraging and reproaching each other. <said who="#OVNarrator" direct="true" aloud="true">“Faster, my <persName ref="#Lizzy_OV">Lizzy</persName>! Oh
+                    what a bad runner!”</said>—<said who="#Lizzy_OV" direct="true" aloud="true">“Faster, faster! Oh what a bad runner,”</said> echoed <rs type="person" ref="#Lizzy_OV">my saucebox</rs>.
+                    <said who="#OVNarrator" direct="true" aloud="true">“You are so fat, <persName ref="#Lizzy_OV">Lizzy</persName>, you make no way!”</said>—<said who="#Lizzy_OV" direct="true" aloud="true">“Ah! who else is fat?”</said> retorted <rs type="person" ref="#Lizzy_OV">the
+                        darling</rs>. Certainly <rs type="person" ref="#LizzysMother_OV">her mother</rs> is right; I do spoil that child. </p>
+                <p>By this time we were thoroughly soaked, <rs type="person" ref="#OVNarrator #Lizzy_OV #May-flower_OV">all three</rs>. It was a pelting shower, that
+                    drove through our thin summer clothing and poor <persName ref="#May-flower_OV">May</persName>’s short glossy coat in a
+                    moment. And then, when we were wet to the skin, the sun came out, actually the
+                    sun, as if to laugh at our plight; and then, more provoking still, when the sun
+                    was shining, and the shower over, came a maid and a boy to look after us, loaded
+                    with cloaks and umbrellas enough to fence us against a whole day’s rain. Never
+                    mind! on we go, faster and faster; <persName ref="#Lizzy_OV">Lizzy</persName> obliged to be most ignobly carried,
+                    having had the misfortune to lose a shoe in the mud, which we left the boy to
+                    look after.</p>
+                <p>Here we are at home—dripping; but glowing and laughing, and bearing our calamity
+                    most manfully. <persName ref="#May-flower_OV">May</persName>, a dog of excellent sense, went instantly to bed in the
+                    stable, and is at this moment over head and ears in straw; <persName ref="#Lizzy_OV">Lizzy</persName> is gone to bed
+                    too, coaxed into that wise measure by a promise of tea and toast, and of not<pb
+                        n="145"/> going home till to-morrow, and 
+                    the story of Little Red
+                        Riding-Hood<note resp="#scw">It is impossible to know which version of Little Red Riding Hood Mitford may be referring to here, as many English translations of <persName ref="#Perrault_Charles">Charles Perrault</persName>'s famous fairy tale were available in editions for children.</note>; and I am enjoying the luxury of dry clothing by a good fire. Really
+                    getting wet through now and then is no bad thing, finery apart; for one should
+                    not like spoiling a new pelisse or a handsome plume; but when there is nothing
+                    in question but a white gown and a straw bonnet, as was the case to-day, it is
+                    rather pleasant than not. The little chill refreshes, and our enjoyment of the
+                    subsequent warmth and dryness is positive and absolute. Besides, the stimulus and
+                    exertion do good to the mind as well as body. How melancholy I was all the
+                    morning! how cheerful I am now! Nothing like a shower-bath—a real shower-bath,
+                    such as <persName ref="#Lizzy_OV">Lizzy</persName> and <persName ref="#May-flower_OV">May</persName> and I have undergone, to cure low spirits. Try it, my dear
+                    readers, if ever ye be nervous—I will answer for its success. <pb n="146"/></p>
+            </div>
+
+
+        </body>
+        <back>
+            <listPerson type="hist"><!--scw: ALL LISTED BELOW CHECKED AGAINST SI AS OF 5/7/19, except nature xml's which should be sorted and compared separately to other files. If not listed below, they are not in SI.-->
+                
+                <person xml:id="Froissart" sex="m"><!--scw: there is a minimal entry for Froissart in the SI-->
+                    
+                </person>
+                
+                <person xml:id="Bingley_Wm" sex="m"> 
+                <persName ref="#Bingley_Wm">
+                    <surname>Bingley</surname>
+                    <forename>William</forename>
+                </persName>
+                    <birth when="1774-01">January 1774
+                    <placeName ref="#Doncaster">Doncaster</placeName></birth>
+                    <death when="1823-03-18">March 18, 1823 <placeName ref="#London_city">London</placeName></death>
+                    <occupation>literary</occupation>
+                    <occupation>naturalist</occupation>
+                    <occupation>cleric</occupation>
+                    <note resp="#scw">English cleric who wrote popular works on natural history, as well as travel and music. His natural history works went into multiple editions until long after his death, including <bibl corresp="#Animal_Biog">Animal Biography</bibl>, which was in its sixth edition in <date when="1824">1824</date>.</note>
+                </person>
+                
+                <person xml:id="Green_Matt" sex="m">
+                    <persName>
+                        <surname>Green</surname>
+                        <forename>Matthew</forename>
+                    </persName>
+                    <birth when="1696">1696
+                        <placeName ref="#London_city">London</placeName>
+                    </birth>
+                    <death when="1737">1737
+                        <placeName ref="#London_city">London</placeName>
+                    </death>
+                    <occupation>literary</occupation>
+                    <occupation>government</occupation><!--scw: Green worked at the custom house, a government post, so could be noted as a custom's clerk or a tide waiter, as per my list of occupations.-->
+                    <note resp="#scw">Matthew Green worked as a clerk in the Custom's House, and was the author several volumes of light verse, some of which was well regarded in its day. His poem <title level="a">The Spleen</title> was published in <date when="1737">1737</date>, and another poem written in honor of <persName ref="#Queen_Anne">Queen Anne</persName>'s Grotto at <placeName ref="#Richmond">Richmond</placeName>, entitled <title level="a">The Grotto</title> was published in <date when="1737">1737</date>. An edition of Green's works was reissued in <date when="1796">1796</date> with an introduction by <persName>John Aikin</persName>.</note>
+                </person>
+                
+                
+                <person xml:id="Perrault_Charles" sex="m">
+                    <persName>
+                        <surname>Perrault</surname>
+                        <forename>Charles</forename>
+                    </persName>
+                    <persName type="pseudo">Pierre Darmancourt</persName>
+                    <birth when="1628-01-12">January 12, 1628
+                    <placeName ref="#Paris">Paris</placeName></birth>
+                    <death when="1703-05-16">May 16,1703
+                    <placeName ref="#Paris">Paris</placeName></death>
+                    <occupation>literary</occupation>
+                    <occupation>government</occupation>
+                    <note resp="#scw">Charles Perrault is today best known as the inventor of the modern fairy tale. Born into a wealthy family, Perrault spent his career as a secretary in the Academy of Inscriptions and Belles-Lettres. He also worked in various capacities within the court of Louis XIV to promote the King's projects. He was a prominent advocate for the Modern side in the debate between the Ancients and the Moderns in excellence in the arts, and a distinguished art critic. In <date when="1671">1671</date>, he was elected to the <foreign>Academie francaise</foreign>. After he was forcibly retired from the court by one of his rivals, and denied his government pension, he turned to writing. He published an epic poem, then, in <date when="1697">1697</date> composed a collection of fairy tales under the name of his youngest son, Pierre Darmancourt, entitled <title level="m">Tales and Stories of the Past with Morals</title>. This collection of stories, drawn from previous literary collections and from French folk tales, featured tales that became classics, such as <title level="a">Little Red Riding Hood</title>, <title level="a">Cinderella; or the Little Glass Slipper</title>, <title level="a">Bluebeard</title>, and <title level="a">Sleeping Beauty</title>. It also introduced the character of Mother Goose. The volume went through numerous editions, translations, and adaptations. By Mitford's time, Perrault's tales were recognized and published as stories for children, despite their sometimes racy themes.</note>
+                </person>
+                
+            </listPerson>
+            
+            <listOrg>
+                <org xml:id="Cowslip_mimic_boys_OV">
+                    <orgName ref="#Cowslip_mimic_boys_OV">mimic boys</orgName>
+                    <note resp="#scw">Boys who mimic the cuckoo bird in <title level="a" ref="#Walks_Cowslip_Ball_OV">The Cowslip Ball</title>.</note>
+                </org>
+                
+                <org xml:id="Cowslip_small_proprietors_OV">
+                    <orgName ref="#Cowslip_small_proprietors_OV">small proprietors
+                </orgName>
+                    <note resp="#scw">Group of small landowners in and around <placeName ref="#ThreeMileCross">Three Mile Cross</placeName> who allow foot traffic on their lands. Mentioned in <title level="a" ref="#Walks_Cowslip_Ball_OV">The Cowslip Ball</title>.</note>
+                </org>
+            </listOrg>
+            
+            <listBibl>
+                <bibl xml:id="Song_Spring">
+                    <title ref="#Song_Spring"></title>
+                    <author ref="#Shakespeare">William Shakespeare</author>
+                    <date when="1595">1595</date>
+                    <note resp="#scw">Part of a song sequence performed as part of the play-within-the-play at the end of <title ref="#Loves_Labours_Lost">Love's Labour's Lost</title>. This section is sung by Ver, the Spring, represented by the cuckoo.</note>
+                </bibl>
+                
+                <bibl xml:id="Lovers_Melancholy">
+                    <title ref="#Lovers_Melancholy">The Lover's Melancholy</title>
+                    <author ref="#Ford_John">John Ford</author>
+                    <date when="1629">1629</date>
+                    <note resp="#scw">This play by John Ford was based on Robert Burton's <title level="m">Anatomy of Melancholy</title>. It was first performed in <date when="1628">1628</date> at the Blackfriar's and the Globe Theaters. By <persName ref="#MRM">Mitford</persName>'s time, the play had garnered the praise of <persName ref="#Lamb_Chas">Charles Lamb</persName>, who anthologized portions in his <bibl corresp="#Specimens_Eng_Dramatic_Poetry">Specimens of English Dramatic Poetry</bibl>.</note>
+                </bibl>                  
+                
+                <bibl xml:id="Loves_Labours_Lost">
+                    <title ref="#Loves_Labours_Lost"></title>
+                    <author ref="#Shakespeare">William Shakespeare</author>
+                    <date when="1595">1595</date>
+                    <note resp="#scw">Shakespeare's comedy of disguises and love tests features Ferdinand, the King of Navarre and three friends, Berowne, Longaville, and Dumaine, who renounce love in favor of study, only to be thrown into passion by an embassy visit from the Princess of France and her three friends. The men decide to give up their oath to renounce love, and to woo the women but in disguise as Russians. The women, as a jest, swap their own identities in order to hear the suits and mock the men, but in the end, the Princess must return to France when her father dies. She gives King Ferdinand and his friends a command to spend the year performing certain tasks in order to gain the consent of the women to marriage.</note>  
+                </bibl>
+                
+                <bibl xml:id="Specimens_Eng_Dramatic_Poets">
+                    <title ref="#Specimens_Eng_Dramatic_Poets">Specimens of English Dramatic Poets, who lived about the time of Shakespeare</title>
+                    <author ref="#Lamb_Chas">Charles Lamb</author>
+                    <date when="1808"></date>
+                    <publisher ref="#Longman_Hurst_ROB_pub">Longman, Hurst, Rees &amp; Orme</publisher>
+                    <placeName ref="#London_city">London</placeName>
+                    <note resp="#scw">Lamb's anthology of excerpts from Elizabethan dramatists and poets helped popularize the era's authors for the early nineteenth century. The book included works by <persName ref="#Ford_John">John Ford</persName>, Thomas Kyd, Thomas Decker, <persName ref="#Fletcher_John">John Fletcher</persName>, <persName ref="#Marlowe_Chris"></persName>Christopher Marlowe, and <persName ref="#Jonson_B">Ben Jonson</persName>, among others, with notes written by Lamb.</note>
+                </bibl>
+                
+                <bibl xml:id="Animal_Biog">
+                    <title level="m">Animal Biography, or Authentic Anecdotes of the Lives, Manners, and Economy of the Animal Creation</title>
+                    <author ref="#Bingley_Wm">William Bingley</author>
+                    <date when="1802">1802</date>
+                    <publisher>Hurst</publisher>
+                    <note resp="#scw">A popular work of natural history that eventually expanded into four volumes and went into six editions. Covering animals and insects from all over the world, the book makes use of the work of predecessors, such as Linnaeus and <persName ref="#White_Gilbert">Gilbert White</persName> to present minute descriptions of animal life.</note>
+                </bibl>
+            </listBibl>
+            
+            <list sortKey="animals"><!--scw: the following animals and plants id's have not been checked against the SI or other files. IDs may exist elsewhere.-->
+                <item xml:id="cow"></item>
+                <item xml:id="turkey_cock"></item>
+                <item xml:id="pig"></item>
+                <item xml:id="Newfoundland_dog"></item>
+                <item xml:id="dragon_fly"></item>
+                <item xml:id="trout"></item>
+                <item xml:id="fly"></item>
+                <item xml:id="cuckoo"></item>
+                <item xml:id="butterfly"></item>
+                <item xml:id="nightingale"></item>
+                <item xml:id="greyhound"></item>
+            </list>
+            
+            <list sortKey="plants">
+                <item xml:id="clowslip"></item><!--scw: already in SI-->
+                <item xml:id="alder"></item>
+                <item xml:id="hawthorn"></item>
+                <item xml:id="wild_rose"></item>
+                <item xml:id="lily"></item>
+                <item xml:id="pollard"></item>
+                <item xml:id="ivy"></item>
+                <item xml:id="daisy"></item>
+                <item xml:id="violet"></item>
+                <item xml:id="hyancinth"></item>
+                <item xml:id="pollard_ash"></item>
+                <item xml:id="march_marygold"></item>
+                
+            </list>
+            
+        </back>
+        
+    </text>
+</TEI>

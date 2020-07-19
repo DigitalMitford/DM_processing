@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt><title xml:id="MRM2019">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, March 22, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+               </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-09-03">2017-09-03</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. -->
+               <!--LMW: checked and added to backlist. 2017-09-03-->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2016-10-10"></date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF8923.jpg, DSCF8924.jpg, DSCF8925.jpg, DSCF8926.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Horizon No. 1361552</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1819-03-22">1819 March 22</date>.<note resp="#lmw">Date checked against contents of Mitford's journal. Letter headed "Monday evening," and journal indicates she wrote to Mary Webb on Tuesday, March 23, 1819. Mary Webb had visited on March 17.</note></head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc><support><p>One sheet of <material>paper</material>, two surfaces photographed. Folded in half vertically then in thirds horizontally.</p> 
+                        <p>No postmarks.</p> 
+                        </support>
+                     <condition>
+                        <p>Some browning and edge wear at folds. Some discoloration where sealed; no tears.</p></condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, broken into four pieces upon opening, adhered to pages three and four.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is dated "[22 Mar. 1819]" in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">[22 Mar. 1819]</add> 
+               <dateline>
+                  <date when="1819-03-22">Monday Evening</date> 
+               </dateline>
+            </opener>
+            <p>Many thanks my dearest <rs type="person" ref="#Webb_Mary_younger">Mary</rs> for your charming note written con spirito &amp; I hope con amore<note resp="#lmw">Italian for "with spirit," and "with love." The first phrase is often used in musical directions.</note>--Forgetting the <rs type="plant" ref="#primrose">primroses</rs> was a sad reflection on all of us--the truth is that I had distracted my memory by telling <persName ref="#Hill_Lucy"></persName>Lucy--&amp; Lucy's in love<note resp="#lmw">Refers to the courtship of <persName ref="#MRM">Mitford</persName>'s servant Lucy Sweetser, who married <persName ref="#Hill_Charles">Charles Hill</persName> on <date when="1820-08-07">August 7, 1820</date>.</note>--so that exculpates her--but a worse piece of forgetfulness in me, &amp; a very extraordinary one was omitting to take you to look for books. There is but one way to repair these various misfortunes--you must come again to fetch both books &amp; flowers--you really must--you &amp; the dear dear <persName ref="#Webb_Eliza">Eliza</persName> &amp; your <pb n="2"/> charming friend <persName ref="#Wheeler_Kate">Miss Wheeler</persName>--Cannot you manage to come in the Donkey Chaise &amp; stay all night? What renders your coming to me a matter of necessity is that I cannot tell when I shall be able to come &amp; see you. <persName ref="#Mitford_Geo">Papa</persName> is going to <placeName ref="#London_city">Town</placeName> <date when="1819-03-23">tomorrow</date> for a very uncertain time--perhaps two days--perhaps two weeks--all depends on that fine dandling thing a <orgName ref="#Chancery">Chancery</orgName> Suit. By the way he is not going actually about the suit but in hopes to get it finished <persName ref="#Elliott_Mr">Mr. Elliott</persName>'s Lawyers having made some overtures to a <choice><sic>negociation</sic><reg>negotiation</reg></choice>.<pb n="3"/> We heard with more regret th<del rend="seal" unit="chars" n="3"><supplied resp="#lmw">an I</supplied></del> can tell of your dear <persName ref="#Webb_James">Father</persName>'s threatened attack (<persName ref="#White_Mr">Mr. White</persName> told <persName ref="#Mitford_Geo">Papa</persName> of it)--but I trust it will go off. At all events his better health &amp; the season all conspire to render such a circumstance more unpleasant than alarming.--If you cannot come &amp; tell us how he is, you must write. Write as usual by the Carrier to the Town Hall &amp; order <persName ref="#Bedford">Bedford</persName> if <persName ref="#Mitford_Geo">Papa</persName> is not there to put the note into the Post Office.--I had <metamark rend="caret" place="below"/><add place="above">a</add> letter from <persName ref="#James_Miss">Miss James</persName> yesterday abounding in love for you all--Mine--&amp; all ours--to dear <persName ref="#Webb_James">Mr. Webb</persName>--dear <persName ref="#Webb_Eliza">Eliza</persName>--&amp; dear <persName ref="#Wheeler_Kate">Kate Wheeler</persName>--not forgetting our dear <persName ref="#Webb_Mary_younger">Mary</persName>.</p> <closer>Ever <choice><sic>your's</sic><reg>yours</reg></choice>
+               <lb/><persName ref="#MRM">M.R.M.</persName>
+            </closer>
+            
+            <closer>
+               <address>
+            <addrLine><lb/>To
+               <lb/><persName ref="#Webb_Mary_younger"><emph rend="underline">Miss Webb</emph></persName></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     <back>
+        <div type="historical_people">
+           <listPerson sortKey="histPersons">
+              
+              <person xml:id="White_Mr" sex="m">
+                 <persName>
+                    <surname>White</surname>
+                    <roleName>Mr.</roleName>
+                 </persName>
+                 <note resp="#lmw">Forename unknown. More research needed.</note>
+              </person>
+              
+              <person xml:id="Elliott_Mr" sex="m">
+                 <persName>
+                    <surname>White</surname>
+                    <roleName>Mr.</roleName>
+                 </persName>
+                 <note resp="#lmw">Forename unknown. More research needed.</note>
+              </person>
+           </listPerson>
+        </div>
+        
+        <div type="places">
+           <listPlace sortKey="histPlaces">
+              <place xml:id="Bedford">
+                 <placeName>Bedford, Bedfordshire, England</placeName>
+                 <settlement>Bedford</settlement>
+                 <region>Bedfordshire</region>
+                 <country>England</country>
+              <location>
+                 <geo>52.135 -0.47</geo>
+              </location>
+              <note resp="#lmw">Bedford is the county town of Bedfordshire.</note>
+              </place>
+              
+           </listPlace>
+        </div>
+     
+     </back>
+     
+  </text>
+</TEI>

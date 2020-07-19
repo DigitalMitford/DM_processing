@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>UserManager</description>
+    <author>Joern Turner</author>
+    <website>https://github.com/eXist-db/usermanager</website>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>usermanager</target>
+    <prepare/>
+    <finish/>
+    <changelog>
+        <change version="0.16.4">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>layout and responsiveness fixes</li>
+                <li>added logout option</li>
+            </ul>
+        </change>
+        <change version="0.16.3">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixed missing dependency on functx</li>
+            </ul>
+        </change>
+        <change version="0.16.2">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixed scrolling bug in detail pages</li>
+                <li>added missing license file</li>
+            </ul>
+        </change>
+        <change version="0.16.0">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixes #11 + #15 Problems with running in Safari</li>
+                <li>replaced jquery/velocity dependency with simple CSS animation</li>
+            </ul>
+        </change>
+        <change version="0.15.5">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixes #13 - dependency on console module removed.</li>
+            </ul>
+        </change>
+        <change version="0.15.4">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixes the regex for allowed group names</li>
+                <li>fixes URL path issues with reconfigured jetty e.g. using '/' instead of '/exist'</li>
+                <li>fixes a bug with editing groups without members</li>
+            </ul>
+        </change>
+        <change version="0.15.1">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>version fix</li>
+            </ul>
+        </change>
+        <change version="0.14.2">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixed login</li>
+                <li>slightly changed layout and styling</li>
+                <li>seperated app container from actual usermanager component</li>
+            </ul>
+        </change>
+    </changelog>
+
+<deployed>2018-08-29T03:55:52.374Z</deployed></meta>

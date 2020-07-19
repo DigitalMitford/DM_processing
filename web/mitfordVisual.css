@@ -1,24 +1,23 @@
 html{
-    background-color: #F8F8FF; 
-;
+    background-color: #F8F8FF; min-height:100%;
+
    
-    color: #580000;
+    color: /*#580000*/ #362819;
     font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
 }
 
 body{
-   /*background-color: #BBD6F1;*/ 
    
     text-align:left;
-    width:100%; display:flex; justify-content:space-around; align-items:center; flex-direction:column;
+    width:100%; /*display:flex; justify-content:space-around; align-items:center; flex-direction:column;*/
    
 /*padding: 10px 10px 40px 10px;*/
 /*border-radius: 10px;*/
 }
 div#images img{
 
-width:352px;
-display:inline-block
+width:/*352px*/ 300px;
+/*display:inline-block*/
 }
 div#nav_wide {background-image: url("mrmBlur.jpg"); padding:0; width:100%; position:relative; top:-35px; }
 
@@ -27,7 +26,7 @@ font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
 }
  
 span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }
-span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900;}
+span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900; position:relative; top:25px;}
 
 ul#siteMenu {list-style-type:none; width:100%; display:flex; justify-content:space-around; align-items:flex-start; flex-direction:row; height:100%;  background-color:/*#F8F8FF;*/#FFDB90;
 position:relative; bottom:-20px;
@@ -56,6 +55,11 @@ li#Project{background-color:Lavender; }
 li#Outreach{background-color:RosyBrown; color:PapayaWhip;}
 li#Outreach a {color:PapayaWhip; text-decoration:none;}
 li#Outreach a:hover {color:gold; text-decoration:underline}
+li.year {
+color: /* #2929A3;*/ #B90F0F;
+text-decoration:none;}
+li.year:hover{
+text-decoration:underline;}
 
 ul.subSec {list-style-type:none; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:column; margin-left:-40px; padding-top:5px; margin-right:25px; /*background-color:LemonChiffon;*/
 }
@@ -65,36 +69,33 @@ ul.subSec li {text-align:left; font-size:1em; font-weight:700; padding-top:2px; 
 
 
 div#container{
-width: 90%; 
-display:inline-block
+width: 100%; 
 }
 
 
 div#content{
-width: 90%;
 display:inline-block;
 padding:15px;
 margin:auto;
 }
 div#content img {width:100%}
-
+div#lettersContent {padding-left:40px; padding-right:40px;}
 div.graph {width: 100%}
 
 div.graph img {width:100%}
 
 div.feature {
    width:100%;
-   padding:25px;
     display:flex; justify-content:space-between; align-items:center; flex-direction:row;
    
 }
 
 div.feature section#guide {
-    flex:1; padding:5px; 
+    flex:1; padding:20px; 
 }
 
 div.feature section#interface {
- flex:1; padding:25px; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:column;  
+ flex:1; padding:20px; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:column;  
 }
 
 /*div#images{
@@ -117,7 +118,8 @@ p.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
     font-size:smaller;
-    line-height:1.4em;}
+    line-height:1.4em;
+}
     
     p.boilerplate img {position: relative; top:3px; right: -2px }
     
@@ -136,17 +138,18 @@ span.smaller
 
 
 h1 {
-color:#A04747;
+color:/*#A04747*/ #1C373A;
 letter-spacing:3px;
 display:block;
 text-align:center;
-font-size:38px}
+font-size:1.3em;}
+div#title h1 {background-color:#FFED90;}
 /*h2 {color:#00005C; font-size:2em; padding:0; display:block; text-align:center; 
 }*/
-h2 {color:#330000; display:block; font-size: 2em; text-align:center}
+h2 {color:/*#00005C*/ maroon; font-size:2em; padding-right:40px; padding-left:10px; display:block; text-align:center; 
+}
 
-
-h3 {color:#A04747; display:block; text-align:left; font-size:1.1em;
+h3 {color:#00005C; display:block; /*text-indent:1.5em;*/ text-align:left; font-size:1.5em;
 }
 
 /*img{
@@ -155,7 +158,7 @@ border-radius:10px;
 
 
 a{
-color: #2929A3;
+color: /* #2929A3;*/ #B90F0F;
 text-decoration:none;}
 a:hover{
 text-decoration:underline;}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+    
+    <info organisation="org.exist" module="monex"/>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.websocket/websocket-server -->
+        <dependency org="org.eclipse.jetty.websocket" name="websocket-server" rev="9.3.9.v20160517" transitive="false"/>
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.websocket/websocket-servlet -->
+        <dependency org="org.eclipse.jetty.websocket" name="websocket-servlet" rev="9.3.9.v20160517" transitive="false"/>
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.websocket/websocket-common -->
+        <dependency org="org.eclipse.jetty.websocket" name="websocket-common" rev="9.3.9.v20160517" transitive="false"/>
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.websocket/websocket-api -->
+        <dependency org="org.eclipse.jetty.websocket" name="websocket-api" rev="9.3.9.v20160517" transitive="false"/>
+        <dependency org="org.eclipse.jetty" name="jetty-util-ajax" rev="9.3.9.v20160517" transitive="false"/>
+    </dependencies>
+    
+</ivy-module>

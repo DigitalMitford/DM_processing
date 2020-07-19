@@ -22,7 +22,7 @@ font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
  }
  
 span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }
-span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900;}
+span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900; position:relative; top:25px;}
 
 ul#siteMenu {list-style-type:none; width:100%; display:flex; justify-content:space-around; align-items:flex-start; flex-direction:row; height:100%;  background-color:/*#F8F8FF;*/#FFDB90;
 position:relative; bottom:-20px;
@@ -105,7 +105,7 @@ div#title h1 {background-color:#FFED90;}
 h2 {color:/*#00005C*/ maroon; font-size:2em; padding-right:40px; padding-left:10px; display:block; text-align:center; 
 }
 
-h3 {color:#00005C; display:block; text-indent:1.5em; text-align:left; font-size:2em;
+h3 {color:#00005C; display:block; /*text-indent:1.5em;*/ text-align:left; font-size:1.5em;
 }
 
 /*img{

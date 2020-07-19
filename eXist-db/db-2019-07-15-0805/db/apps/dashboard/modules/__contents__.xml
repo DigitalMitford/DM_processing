@@ -1,0 +1,33 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/modules" version="1" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.706Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="templates.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.715Z" modified="2018-08-25T13:15:17.715Z" filename="templates.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="view.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.715Z" modified="2018-08-25T13:15:17.715Z" filename="view.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="app.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.707Z" modified="2018-08-25T13:15:17.707Z" filename="app.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="config.xqm" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.707Z" modified="2018-08-25T13:15:17.707Z" filename="config.xqm" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="get-packages.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.706Z" modified="2018-08-25T13:15:17.706Z" filename="get-packages.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="login-helper.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.717Z" modified="2018-08-25T13:15:17.717Z" filename="login-helper.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="restxq.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.717Z" modified="2018-08-25T13:15:17.717Z" filename="restxq.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="install.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.716Z" modified="2018-08-25T13:15:17.716Z" filename="install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="get-icon.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.716Z" modified="2018-08-25T13:15:17.716Z" filename="get-icon.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="dashboard.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.72Z" modified="2018-08-25T13:15:17.72Z" filename="dashboard.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

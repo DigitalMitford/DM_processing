@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:xi="http://www.w3.org/2001/XInclude"
+   xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+   xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   version="2.9.1"
+   xml:lang="en">
+   <!-- 2018-08-11 ebb: * "Run the wrench" in oXygen to generate the new Relax-NG XML-syntax project schema and HTML documentation for the project SI files.
+  -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Digital Mitford ODD for Site Index Files</title>
+            <author>Elisa Beshero-Bondar</author>
+         </titleStmt>
+         <editionStmt xml:id="edition">
+            <edition>First digital edition in TEI P5, prepared on <date when="2018-08-11">August 11, 2018</date> in Norwood, NY.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Prepared in TEI P5 by Elisa Beshero-Bondar in the Digital Mitford GitHub repository: <ref target="https://github.com/DigitalMitford/DM_SiteIndex"/>.
+            </authority>
+            <availability>
+               <licence>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) approved for Free Cultural Works <ref target="https://creativecommons.org/licenses/by-sa/4.0/"/>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <p>This ODD customizes the TEI P5 for use in the prosopography index file known as our <q>Site Index</q>, which holds a narrower range of elements than in use in the wider project. It also customizes the TEI for all <q>SI-Add</q> files prepared as draft additional entries proposed for the published Site Index.</p>
+         </seriesStmt>
+         <sourceDesc>
+            <p>Born digital, based on information presented in the Digital Mitford Codebook at <ref target="http://codebook.mitford.pitt.edu"/>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <listChange>
+            <change when="2018-08-11" who="#ebb">Prepared this ODD file while visiting Lisa Wilson in Norwood, NY.</change>
+         </listChange>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <schemaSpec ident="mitfordODD" start="TEI teiCorpus" prefix="tei">
+            <moduleRef key="tei"/>
+            <moduleRef key="core" except="add addrLine address analytic biblStruct binaryObject cb choice corr del distinct divGen gap gb hi imprint index lb measure measureGrp media monogr pb speaker stage unclear"/>
+            <moduleRef key="header"/>
+            <moduleRef key="namesdates"/>
+            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7 argument byline closer dateline docAuthor docDate docEdition docImprint docTitle epigraph floatingText group imprimatur opener postscript salute signed titlePage titlePart trailer"/>
+            <moduleRef key="linking"/>
+            <moduleRef key="figures" except="formula notatedMusic"/>         
+            <constraintSpec scheme="schematron" ident="xmlIDs">
+               <constraint>
+                  <sch:rule context="tei:TEI//@xml:id">
+                     <sch:report test="matches(., '\s+')" role="fatal">
+                        @xml:id values may NOT contain white spaces!
+                     </sch:report>        
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+            <constraintSpec scheme="schematron" ident="refsReq">
+               <constraint>
+                  <sch:rule context="tei:note//tei:persName[not(@ref)] | tei:note//tei:rs[not(@ref)] | tei:note//tei:placeName[not(@ref)] | tei:note//tei:orgName[not(@ref)] | tei:note//tei:name[not(@ref)] | tei:note//tei:title[not(@ref)]">
+                     <sch:let name="currentNode" value="."/>
+                     <sch:let name="matchingEntry" value="$currentNode[ancestor::tei:text//tei:*[@xml:id][not(self::* eq $currentNode/ancestor::*[1][@xml:id])]][*[not(self::tei:note) and not(self::tei:birth) and not (self::tei:death)][contains(string(), $currentNode)]]/@xml:id"/>
+                     <sch:report test="$matchingEntry" role="info">
+                        This element (coded in a note) is missing an @ref attribute but may have a matching entry in the Site Index: Could it be this (or one of these)? <sch:value-of select="string-join($matchingEntry, ', ')"/>.
+                     </sch:report>  
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+          <!-- 2018-08-11 ebb: NOT WORKING! DEBUG. <constraintSpec scheme="schematron" ident="correspReq">
+               <constraint>
+                  <sch:rule context="tei:note//tei:bibl[not(@corresp)]">
+                     <sch:let name="currentNode" value="."/>
+                     <sch:let name="matchingEntry" value="$currentNode[ancestor::tei:text//tei:listBibl/tei:bibl[@xml:id][not(self::* eq $currentNode/ancestor::tei:bibl[1][@xml:id])]][*[not(self::tei:note)][contains(string(), $currentNode)]]/@xml:id"/>
+                     <sch:assert test="@corresp">
+                        The current bibl element (coded in a note) lacks an @corresp attribute, but may have a matching entry in the Site Index: Could it be this (or one of these)? <sch:value-of select="string-join($matchingEntry, ', ')"/>.  
+                     </sch:assert>  
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>-->
+            <constraintSpec scheme="schematron" ident="hashtaggery">
+               <constraint>
+                  <sch:rule context="tei:TEI//@ref | tei:TEI//@who | tei:TEI//@corresp | tei:TEI//@wit">
+                     <sch:assert test="starts-with(., '#')" role="fatal">
+                        Attributes @ref, @who, @corresp, and @wit must begin with a hashtag.
+                     </sch:assert>  
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+            <!--sortKey on SI list elements -->
+<elementSpec ident="listPerson" module="namesdates" mode="change">
+   <attList>
+      <attDef ident="sortKey" mode="replace" usage="req">
+         <valList type="closed">
+            <valItem ident="Mitford_Team"/>
+            <valItem ident="Past_Assistants"/>
+            <valItem ident="Past_Editors"/>
+            <valItem ident="histPersons"/>
+            <valItem ident="archPersons"/>
+            <valItem ident="fictPersons"/>
+         </valList>
+      </attDef>
+   </attList>
+</elementSpec>
+<elementSpec ident="listPlace" module="namesdates" mode="change">
+     <attList>
+         <attDef ident="sortKey" mode="replace" usage="req">
+             <valList type="closed">
+                 <valItem ident="histPlaces"/>
+                 <valItem ident="fictPlaces"/>
+              </valList>
+           </attDef>
+       </attList>
+</elementSpec>
+            <elementSpec ident="listOrg" module="namesdates" mode="change">
+               <attList>
+                  <attDef ident="sortKey" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="histOrgs"/>
+                        <valItem ident="fictOrgs"/>
+                        <valItem ident="archOrgs"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="listEvent" module="namesdates" mode="change">
+               <attList>
+                  <attDef ident="sortKey" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="histEvents"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="listBibl" module="core" mode="change">
+               <attList>
+                  <attDef ident="sortKey" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="book_MRM"/>
+                        <valItem ident="serial_MRM"/>
+                        <valItem ident="schol"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec> 
+            <elementSpec ident="list" module="core" mode="change">
+               <attList>
+                  <attDef ident="sortKey" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="plants"/>
+                        <valItem ident="animals"/>
+                        <valItem ident="art"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec> 
+            
+            <!--sex codes on person element: m, f, m f, and u -->           
+            <elementSpec ident="person" module="namesdates" mode="change">
+               <attList>
+                  <attDef ident="sex" mode="replace" usage="rec">
+                     <valList type="closed">
+                        <valItem ident="m"><gloss>for persons identified as male.</gloss></valItem>
+                        <valItem ident="f"><gloss>for persons identified as female.</gloss></valItem>
+                        <valItem ident="m f"><gloss>for persons identified as of transitional or multiple sexual identities.</gloss></valItem>
+                        <valItem ident="u"><gloss>for persons with unidentified or unknown sexual identity.</gloss></valItem>  
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <!--Occupation coding -->
+        <!--    <elementSpec ident="person" module="namesdates" mode="change">
+               <content>
+                  <elementRef key="occupation" minOccurs="0" maxOccurs="unbounded"/>
+               </content>
+            </elementSpec>-->
+        <elementSpec ident="occupation" module="namesdates" mode="change">
+           <content>
+              <empty/>
+           </content>
+               <attList>
+                  <attDef ident="type" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="artist"/>
+                        <valItem ident="bookProducer"/>
+                        <valItem ident="religious"/>
+                        <valItem ident="educator"/>
+                        <valItem ident="scholar"/>
+                        <valItem ident="explorer"/>
+                        <valItem ident="legal"/>
+                        <valItem ident="literary"/>
+                        <valItem ident="theater"/>
+                        <valItem ident="medical"/>
+                        <valItem ident="military"/>
+                        <valItem ident="benefactor"/>
+                        <valItem ident="government"/>
+                        <valItem ident="service"/>
+                        <valItem ident="trade"/>                
+                     </valList>
+                  </attDef>
+                  <attDef ident="subtype" mode="replace" usage="opt">
+                     <datatype><dataRef name="string"/></datatype>
+            <valList type="semi">
+               <!--Subtypes related to type="artist" -->
+               <valItem ident="painter"><gloss>with type="artist": Designate type of painter as appropriate in the note element.</gloss></valItem>
+               <valItem ident="printmaker"><gloss>with type="artist": this includes printmaking for books.</gloss></valItem>
+               <valItem ident="engraver"><gloss>with type="artist": this includes engravings for books.</gloss></valItem> 
+               <valItem ident="sculptor"><gloss>with type="artist".</gloss></valItem>
+               <valItem ident="architect"><gloss>with type="artist". for designers of buildings.</gloss></valItem>
+               <valItem ident="landscape"><gloss>with type="artist". for designers and planners of gardens. The occupation of gardener, for one who helps maintain a garden, goes with @type="service" </gloss></valItem>
+               <valItem ident="illustrator"><gloss>with type="artist". This includes book illustrators.</gloss></valItem>
+               <!--Subtypes related to type="bookProducer" -->
+              <valItem ident="publisher"><gloss>with type="bookProducer".</gloss></valItem>
+               <valItem ident="printer"><gloss>with type="bookProducer". Do not use for art printing. For that, use one of the subtypes associated with type="artist".</gloss></valItem>
+               <valItem ident="binder"><gloss>with type="bookProducer".</gloss></valItem>
+               <valItem ident="bookseller"><gloss>with type="bookProducer".</gloss></valItem>
+               <!--Subtypes related to type="religious" -->
+               <valItem ident="clergy"><gloss>with type="religious".</gloss></valItem>
+               <valItem ident="prophet"><gloss>with type="religious".</gloss></valItem>
+               <valItem ident="vicar"><gloss>with type="religious".</gloss></valItem>
+               <valItem ident="curate"><gloss>with type="religious".</gloss></valItem>
+               <valItem ident="minister"><gloss>with type="religious".</gloss></valItem>
+               <valItem ident="priest"><gloss>with type="religious". Use for Catholic clergy as well as Greek/Roman clergy. Synonymous with priestess for the purposes of our encoding.</gloss></valItem>
+               <!--Subtypes related to type="educator" -->
+               <valItem ident="teacher"><gloss>with type="educator".</gloss></valItem>
+               <valItem ident="schoolHead"><gloss>with type="educator". (for headmistress, schoolmaster, etc.)</gloss></valItem>
+               <valItem ident="governess"><gloss>with type="educator".</gloss></valItem>
+               <valItem ident="tutor"><gloss>with type="educator".</gloss></valItem>
+               <!--Subtypes related to type="scholar" -->
+               <valItem ident="philosopher"><gloss>with type="scholar". Distinct from natural philosopher.</gloss></valItem> 
+               <valItem ident="naturalist"><gloss>with type="scholar". Covers the natural sciences and earth sciences, and includes biologist, botanist, ornithologist, geologist, etc.</gloss></valItem>
+               <valItem ident="astronomer"><gloss>with type="scholar".</gloss></valItem> 
+               <valItem ident="curator"><gloss>with type="scholar". for antiquarian collectors and those working in libraries and museums.</gloss></valItem>
+               <valItem ident="antiquarian"><gloss>with type="scholar". For those who research artifacts rather than collect them.</gloss></valItem>
+               <valItem ident="historian"><gloss>with type="scholar". </gloss></valItem>
+               <valItem ident="inventor"><gloss>with type="scholar". </gloss></valItem>
+               <valItem ident="economist"><gloss>with type="scholar". </gloss></valItem>
+               <valItem ident="agronomist"><gloss>with type="scholar". For those who study agriculture.</gloss></valItem>
+               <!--Subtypes related to type="explorer" --> 
+               <valItem ident="traveller"><gloss>with type="explorer".</gloss></valItem>
+               <valItem ident="navigator"><gloss>with type="explorer".</gloss></valItem>
+               <valItem ident="cartographer"><gloss>with type="explorer".</gloss></valItem>
+               <valItem ident="seaCaptain"><gloss>with type="explorer". Commands a ship, distinct from military post.</gloss></valItem>
+               <!--Subtypes related to type="legal" --> 
+               <valItem ident="barrister"><gloss>with type="legal". British lawyers who can plead in court.</gloss></valItem>
+               <valItem ident="solicitor"><gloss>with type="legal". British lawyers who do not plead in court.</gloss></valItem>
+               <valItem ident="lawyer"><gloss>with type="legal". ONLY appropriate if law practitioner from the United States.</gloss></valItem>  
+               <valItem ident="judge"><gloss>with type="legal". ex: Mr. Justice Talfourd</gloss></valItem>  
+               <valItem ident="magistrate"><gloss>with type="legal". ex: George Mitford</gloss></valItem>  
+               <valItem ident="recorder"><gloss>with type="legal". </gloss></valItem> 
+               <!--Subtypes related to type="literary" -->
+               <valItem ident="novelist"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="poet"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="playwright"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="essayist"><gloss>with type="literary". For essayists who are not primarily writing specific literary/art reviews, but more broad-ranging philosophical or aesthetic writings.</gloss></valItem> 
+               <valItem ident="critic"><gloss>with type="literary". For literary, theatre / art critics and reviewers.</gloss></valItem> 
+               <valItem ident="journalist"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="editor"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="biographer"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="autobiographer"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="lexicographer"><gloss>with type="literary". </gloss></valItem> 
+               <valItem ident="linguist"><gloss>with type="literary". For those who systemically study languages, not simply translators.</gloss></valItem> 
+               <valItem ident="translator"><gloss>with type="literary". </gloss></valItem> 
+               <!--Subtypes related to type="theater" -->  
+               <valItem ident="actor"><gloss>with type="theater". General term for all sexes; do not use "actress".</gloss></valItem> 
+               <valItem ident="singer"><gloss>with type="theater". Includes opera singers in performing roles. </gloss></valItem> 
+               <valItem ident="manager"><gloss>with type="theater". For actor-managers and theater managers like William Macready.</gloss></valItem> 
+               <valItem ident="owner"><gloss>with type="theater". </gloss></valItem> 
+               <valItem ident="designer"><gloss>with type="theater". For production designers, costume-makers, makers of stage sets and props.</gloss></valItem> 
+               <valItem ident="musician"><gloss>with type="theater". For pit players of music supporting the stage.</gloss></valItem>   
+               <valItem ident="composer"><gloss>with type="theater". For writers of instrumental and vocal music for the stage, including lyricists and librettists.</gloss></valItem>
+               <!--Subtypes related to type="medical" -->
+               <valItem ident="physician"><gloss>with type="medical".</gloss></valItem>
+               <valItem ident="surgeon"><gloss>with type="medical". Includes barbers and others who do surgery and bloodletting.</gloss></valItem>
+               <valItem ident="apothecary"><gloss>with type="medical". For pharmacy specialists.</gloss></valItem>
+               <valItem ident="midwife"><gloss>with type="medical". Includes, should we ever see one, a "man-midwife" or a male who assists with births and is not a physician or surgeon.</gloss></valItem>
+               <valItem ident="oculist"><gloss>with type="medical".</gloss></valItem>
+               <!--Subtypes related to type="military" -->
+               <valItem ident="army"><gloss>with type="military".</gloss></valItem>    
+               <valItem ident="navy"><gloss>with type="military".</gloss></valItem>
+               <!--Subtypes related to type="benefactor" -->
+               <valItem ident="philanthropist"><gloss>with type="benefactor". For doers of benevolent activities outside of the arts</gloss></valItem>
+               <valItem ident="patron"><gloss>with type="benefactor". For supporters of the arts, theatre, and writers</gloss></valItem>
+               <!--Subtypes related to type="government" -->
+               <valItem ident="monarch"><gloss>with type="government". Titles like King, Queen, Princess are coded in &lt;roleName&gt;, not &lt;occupation&gt;.</gloss></valItem> 
+               <valItem ident="politician"><gloss>with type="government". Use for elected officials and those running for election or who are in office by reason of political party or affiliation. Code their official title (such as "Member of Parliament for Westminster) with &lt;roleName&gt;.</gloss></valItem>  
+               <valItem ident="orator"><gloss>with type="government". For political or reformist orators who are not clergy, actors, or prophets.</gloss></valItem>  
+               <valItem ident="reformer"><gloss>with type="government". Any public advocate for political or social reform.</gloss></valItem>  
+               <valItem ident="courtier"><gloss>with type="government". For aristocracy and others whose job is to serve at court in some capacity.</gloss></valItem>  
+               <valItem ident="diplomat"><gloss>with type="government". Ambassadors and other diplomatists. Roles like “Ambassador to the Court of St. James” are coded in &lt;roleName&gt;.</gloss></valItem>  
+               <valItem ident="administrator"><gloss>with type="government". For management positions, high-ranking civil service positions within the British empire, etc. Lower-ranking positions should be coded as subtype="clerk".</gloss></valItem>  
+               <valItem ident="clerk"><gloss>with type="government".</gloss></valItem>  
+               <valItem ident="taxCollector"><gloss>with type="government".</gloss></valItem>  
+               <valItem ident="post"><gloss>with type="government". For postal service occupations.</gloss></valItem>
+               <!--Subtypes related to type="service" -->
+               <valItem ident="butler"><gloss>with type="service".</gloss></valItem> 
+               <valItem ident="maid"><gloss>with type="service".</gloss></valItem> 
+               <valItem ident="footman"><gloss>with type="service".</gloss></valItem> 
+               <valItem ident="cook"><gloss>with type="service".</gloss></valItem>
+               <valItem ident="housekeeper"><gloss>with type="service".</gloss></valItem>   
+               <valItem ident="gardener"><gloss>with type="service".</gloss></valItem>   
+               <!--Subtypes related to type="trade" -->
+               <valItem ident="baker"><gloss>with type="trade".</gloss></valItem>
+               <valItem ident="butcher"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="farmer"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="bricklayer"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="mason"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="chandler"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="wheelwright"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="carpenter"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="watchmaker"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="miller"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="blacksmith"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="goldsmith"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="jeweller"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="tanner"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="saddler"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="bootmaker"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="shoemaker"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="innkeeper"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="merchant"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="clerk"><gloss>with type="trade". For an employee in a shop.</gloss></valItem> 
+               <valItem ident="banker"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="stockbroker"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="auctioneer"><gloss>with type="trade".</gloss></valItem> 
+               <valItem ident="gambler"><gloss>with type="trade".</gloss></valItem> 
+                     </valList>      
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="rs" module="core" mode="change">
+               <attList>
+                  <attDef ident="type" mode="replace" usage="req">
+                     <valList type="closed">
+                        <valItem ident="person">
+                           <gloss>Use only when you need to disambiguate unnamed references to people. When there is a name, use the persName element.</gloss>
+                        </valItem>
+                        <valItem ident="org">
+                           <gloss>Use only when you need to disambiguate unnamed references to organizations, families, collectives of people. When there is a name, use the orgName element.</gloss>
+                        </valItem>
+                        <valItem ident="place">
+                           <gloss>Use only when you need to disambiguate unnamed references to places. When there is a name, use the placeName element.</gloss>
+                        </valItem>
+                        <valItem ident="event">
+                           <gloss>Use only when you need to disambiguate unnamed references to events. When there is a name, use the name element with type="event".</gloss>
+                        </valItem>
+                        <valItem ident="letter">
+                           <gloss>Use to mark references to correspondence.</gloss>
+                        </valItem>
+                        <valItem ident="plant">
+                           <gloss>Use to mark references to plants by kind, variety, genus, and/or species. If you see a kind, variety, genus, and/or species name, use the name element with type="plant".</gloss>
+                        </valItem>
+                        <valItem ident="animal">
+                           <gloss>Use to mark references to animal types when they are unnamed by kind, variety, genus, and/or species. If you see a kind, variety, genus, and/or species name, use the name element with type="animal". </gloss>
+                        </valItem>
+                        <valItem ident="title">
+                           <gloss>Use only where necessary to mark unnamed references to documents, readings, texts in the absence of a title. If this is a title, use the title element with an @ref. If there is mention of an author, date, or other bibliographic information all together, like Scott's Midlothian, use a bibl element with @corresp around the full span of referencing text, wrapping the parts as you can with author and title elements (no @ref attributes needed inside, just @corresp on the outer bibl) .</gloss>
+                        </valItem>
+                        <valItem ident="art">
+                           <gloss>Use only where necessary to mark unnamed references to works of art in the absence of a title. If you have a title, use the title element with type="art".</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+         
+         <!--Occupation coding: binding appropriate subtypes with types and permitting plural subtype values. -->
+         <constraintSpec scheme="schematron" ident="occupation">
+            <constraint>
+               <sch:pattern>
+                  <sch:let name="artistSubtypes"
+                     value="('painter', 'printmaker', 'engraver', 'sculptor', 'architect', 'landscape', 'illustrator')"/>
+                  <sch:let name="bookProducerSubtypes"
+                     value="('publisher', 'printer', 'binder', 'bookseller')"/>
+                  <sch:let name="religiousSubtypes"
+                     value="('clergy', 'prophet', 'vicar', 'curate', 'minister', 'priest')"/>
+                  <sch:let name="educatorSubtypes"
+                     value="('teacher', 'schoolHead', 'governess', 'tutor')"/>
+                  <sch:let name="scholarSubtypes"
+                     value="('philosopher', 'naturalist', 'astronomer', 'curator', 'antiquarian', 'inventor', 'historian', 'economist', 'agronomist')"/>
+                  <sch:let name="explorerSubtypes"
+                     value="('traveller', 'navigator', 'cartographer', 'seaCaptain')"/>
+                  <sch:let name="legalSubtypes"
+                     value="('barrister', 'solicitor', 'lawyer', 'recorder', 'judge')"/>
+                  <sch:let name="literarySubtypes"
+                     value="('novelist', 'poet', 'playwright', 'essayist', 'critic', 'journalist', 'editor', 'biographer', 'autobiographer', 'lexicographer', 'linguist', 'translator')"/>
+                  <sch:let name="theaterSubtypes"
+                     value="('actor', 'singer', 'manager', 'owner', 'designer', 'musician', 'composer')"/>
+                  <sch:let name="medicalSubtypes"
+                     value="('physician', 'surgeon', 'apothecary', 'midwife', 'oculist')"/>
+                  <sch:let name="militarySubtypes"
+                     value="('army', 'navy')"/>
+                  <sch:let name="benefactorSubtypes"
+                     value="('philanthropist', 'patron')"/>
+                  <sch:let name="governmentSubtypes"
+                     value="('monarch', 'politician', 'orator', 'reformer', 'courtier', 'diplomat', 'administrator', 'clerk', 'taxCollector', 'post')"/>
+                  <sch:let name="serviceSubtypes"
+                     value="('butler', 'maid', 'footman', 'cook', 'housekeeper', 'gardener')"/>
+                  <sch:let name="tradeSubtypes"
+                     value="('baker', 'butcher', 'farmer', 'bricklayer', 'mason', 'chandler', 'wheelwright', 'carpenter', 'watchmaker', 'miller', 'blacksmith', 'goldsmith', 'jeweller', 'tanner', 'saddler', 'bootmaker', 'shoemaker', 'innkeeper', 'merchant', 'clerk', 'banker', 'stockbroker', 'auctioneer', 'gambler')"/>
+                  <sch:rule context="tei:occupation[@type='artist'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $artistSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$artistSubtypes"/>.</sch:assert>
+               </sch:rule>
+                  <sch:rule context="tei:occupation[@type='bookProducer'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $bookProducerSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$bookProducerSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='religious'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $religiousSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$religiousSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='educator'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $educatorSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$educatorSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='scholar'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $scholarSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$scholarSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='explorer'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $explorerSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$explorerSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='legal'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $legalSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$legalSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='literary'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $literarySubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$literarySubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='theater'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $theaterSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$theaterSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='medical'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $medicalSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$medicalSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='military'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $militarySubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$militarySubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='benefactor'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $benefactorSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$benefactorSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='government'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $governmentSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$governmentSubtypes"/>.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='service'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $serviceSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$serviceSubtypes"/></sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:occupation[@type='trade'][@subtype]">
+                     <sch:let name="subtypes"
+                        value=" for $i in tokenize(@subtype, '\s+') return $i"/>
+                     <sch:assert
+                        test="every $subtype in $subtypes satisfies $subtype = $tradeSubtypes">Multiple subtypes are permitted, but these must be from the following list: <sch:value-of select="$tradeSubtypes"/></sch:assert>
+                  </sch:rule>  
+               </sch:pattern>
+            </constraint>
+         </constraintSpec>   
+         
+<!--Schematron Constraints for Catching Errors / Omissions in SI encoding -->
+       <constraintSpec ident="SI_Guidance" scheme="schematron"><constraint>  <sch:pattern>
+            <sch:p>Identify note elements that are longer than [TOO LONG!] number of characters so exceeding the flow-length of our note box. (How long is this?) Raise a warning or an error that p breaks need to be added.
+               NOTE: WE NEED CORRESPONDING XSLT ALTERATION FOR NOTE BOXES TO READ 1st Paragraph ONLY.
+            </sch:p>
+         </sch:pattern>    
+         <sch:pattern>
+            <sch:p>Look for strings in note elements and label elements that might want/need to be tagged for cross-referencing. </sch:p>
+         </sch:pattern>
+         <sch:pattern>
+            <sch:p>Identify stub entries.</sch:p>
+            <sch:rule context="*[@xml:id]">
+               <sch:report test="count(child::*) eq 1" role="warning">Warning: stub element. We should flesh this out and add more information.</sch:report>
+            </sch:rule>
+         </sch:pattern>
+         <sch:pattern>
+            <sch:rule context="tei:person[descendant::tei:surname = //tei:surname[not(ancestor::tei:person = self::tei:person)]]">
+               <sch:let name="currentContext" value="."/>
+               <sch:let name="sharedSurname" value="//tei:person[not(. = $currentContext)][descendant::tei:surname = $currentContext/descendant::tei:surname]"/>
+               <sch:report test="descendant::tei:forename = $sharedSurname//tei:forename" role="warning">
+                  Warning! Is this a duplicate entry? The person represented in this entry shares a surname and a forename with one or more other entries: <sch:value-of select="string-join($sharedSurname[descendant::tei:forename = $currentContext//tei:forename]/@xml:id, ', ')"/>
+               </sch:report>
+            </sch:rule>
+         </sch:pattern>
+         <sch:pattern>
+            <sch:p>This rule [TO BE DEVELOPED] will test the plausibilty of birth dates in relation to death dates.</sch:p>
+         </sch:pattern>
+         <sch:pattern>
+            <sch:rule context="@sex">
+               <sch:report test="matches(., '[0-9,]')">
+                  We are no longer using the ISO numerical codes for sex, and this attribute may not contain commas. Change this code to a letter, one (or more) of the following approved values: m, f, m f, and u. If indicating multiple values, separate each with just a white space.
+               </sch:report>
+               
+            </sch:rule>
+            
+         </sch:pattern>
+         
+         
+         <sch:pattern>
+            <sch:rule context="tei:text//@xml:id">
+               <sch:report test="matches(., '\s+')">
+                  @xml:id values must not contain white spaces.
+               </sch:report>   
+               <sch:report test="starts-with(., '#')">
+                  @xml:id values must not begin with a hashtag.
+               </sch:report>
+            </sch:rule>
+         </sch:pattern>
+         <sch:pattern>
+            <sch:rule context="tei:TEI"> 
+               <sch:assert test="count(distinct-values(//@sortKey)) eq count(//*[@sortKey])">
+                  There must not be any duplicate @sortkey values in the site index! 
+               </sch:assert>
+            </sch:rule>  
+         </sch:pattern>
+         <sch:pattern>
+            <!-- <sch:let name="si" value="doc('http://digitalmitford.org/si.xml')//@xml:id"/> -->
+            <sch:let name="si" value="doc('../../si_Full_Staged/si-local.xml')//@xml:id"/>
+            <sch:let name="siAddcoll" value="collection('../si_Add_Staged/catalogue.xml')//@xml:id"/>
+            <sch:let name="siAll" value="($si, $siAddcoll)"/>
+            <sch:rule context="@ref | @corresp | @resp">
+               
+               <sch:let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
+               <sch:assert test="every $token in $tokens satisfies $token = //tei:text//@xml:id | $si">
+                  Did you begin your @ref or @corresp value with a hashtag? If that's not the problem, check that the attribute of @ref or @corresp (after the hasthtag, #) matches a defined @xml:id in the site index or siAdd files. 
+               </sch:assert>                
+            </sch:rule>
+         </sch:pattern>      
+       </constraint>
+       </constraintSpec>
+         
+         </schemaSpec>     
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,15 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins/shutdown" version="1" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.552Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.556Z" modified="2018-08-25T13:15:17.556Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="shutdown.js" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.553Z" modified="2018-08-25T13:15:17.553Z" filename="shutdown.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="shutdown.html" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.558Z" modified="2018-08-25T13:15:17.558Z" filename="shutdown.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="shutdown.xql" skip="no" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.557Z" modified="2018-08-25T13:15:17.557Z" filename="shutdown.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

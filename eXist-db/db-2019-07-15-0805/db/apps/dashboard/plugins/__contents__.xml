@@ -1,0 +1,20 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/plugins" version="1" owner="admin" group="dba" mode="755" created="2018-08-25T13:15:17.395Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="util.js" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.4Z" modified="2018-08-25T13:15:17.4Z" filename="util.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="base.js" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.395Z" modified="2018-08-25T13:15:17.395Z" filename="base.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="uploader.js" skip="no" owner="admin" group="dba" mode="644" created="2018-08-25T13:15:17.4Z" modified="2018-08-25T13:15:17.4Z" filename="uploader.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="images" filename="images"/>
+    <subcollection name="backup" filename="backup"/>
+    <subcollection name="userManager" filename="userManager"/>
+    <subcollection name="profiling" filename="profiling"/>
+    <subcollection name="shutdown" filename="shutdown"/>
+    <subcollection name="scheduler" filename="scheduler"/>
+    <subcollection name="packageManager" filename="packageManager"/>
+    <subcollection name="browsing" filename="browsing"/>
+</collection>
