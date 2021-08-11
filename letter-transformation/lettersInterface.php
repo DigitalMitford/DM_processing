@@ -4,7 +4,7 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Digital Mitford: The Mary Russell Mitford Archive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="Description" content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
+    <meta name="Description" content="Supported by the Mary Russell Mitford Society."/>
     <meta name="keywords" content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
     <link rel="stylesheet" type="text/css" href="mitfordVisual.css"/>
     <script type="text/javascript" src="letterList.js">/**/</script>
