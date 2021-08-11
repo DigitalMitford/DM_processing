@@ -33,7 +33,7 @@
     echo $result;
 ?>
 </ul>
-        <p>Please note that the letters represented here may not be in a complete, finalized state, but we present them here as an aid to the community and to the team itself as we continue our work. Currently links to manuscript images will not yet work as we're working on a good way to select and include the photo facsimiles that we are permitted to publish here. If you discover other errors in the interface or in the encoding, please <a href="mailto:ebb8@pitt.edu">contact us</a>; we appreciate your help!</p>
+        <p>Please note that the letters represented here may not be in a complete, finalized state, but we present them here as an aid to the community and to the team itself as we continue our work. Currently links to manuscript images will not yet work as we're working on a good way to select and include the photo facsimiles that we are permitted to publish here. If you discover other errors in the interface or in the encoding, please <a href="mailto:eeb4@psu.edu">contact us</a>; we appreciate your help!</p>
 
    <!-- </div>-->
     <?php include("licenseSoftware.html"); ?>
