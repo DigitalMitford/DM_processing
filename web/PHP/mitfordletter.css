@@ -1,8 +1,13 @@
 @media screen {
+/** {
+    touch-action: manipulation;
+    /\* 2021-08-14 ebb: This might prevent double-tap zooming, which may be disruptive to dismissing notes on mobile / touchscreen devices. *\/
+}*/
 html{
-    background-color: #F8F8FF; min-height:100%;
-   color: /*#580000*/ #362819;
-    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
+    background-color: #F8F8FF; 
+   color: #580000;
+    font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palantino, serif;
+
 }
 
 body{
@@ -16,8 +21,8 @@ border-radius: 10px;
 }
 div#images img{
 
-width:/*352px*/ 300px;
-/*display:inline-block*/
+width:352px;
+display:inline-block
 }
 
 div#nav_wide {background-image: url("mrmBlur.jpg"); padding:0; width:100%; position:relative; top:-35px; }
@@ -29,6 +34,8 @@ font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; padding:0;
 span.mainTitle {display:block; font-size:1.8em; font-weight:bold; letter-spacing:2px; color:#B16800; position:relative; top:15px; }
 span.subTitle{display:block; font-size: .88em; letter-spacing:1px;font-style:italic; font-weight:900; position:relative; top:25px;}
 
+/* For prototype testing view */
+span.menuLarger {font-size:1.5em; color:orange; font-weight:bold; line-height:1.4em}
 ul#siteMenu {list-style-type:none; width:100%; display:flex; justify-content:space-around; align-items:flex-start; flex-direction:row; height:100%;  background-color:/*#F8F8FF;*/#FFDB90;
 position:relative; bottom:-20px;
 ;
@@ -57,7 +64,7 @@ li#Bib a:hover {color:white; text-decoration:underline;}
 p.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
-    font-size:smaller;
+    /*font-size:smaller;*/
     line-height:1.4em;}
     
     p.boilerplate img {position: relative; top:3px; right: -2px }
@@ -68,11 +75,11 @@ display:flex; justify-content:space-between; align-items:flex-start; flex-direct
 }
 
 
-div#letterHead{
+div#poemsHead{
 font-size: .75em;   
 flex:1;
-padding-left:20px;
-padding-right:20px;
+padding-left:3em;
+padding-right:3em;
 }
 
 div#floatright{flex:1.5;
@@ -113,6 +120,7 @@ text-align:center;
 font-size:38px}
 
 div.closer{text-align:right;}
+
 h1 {
 color:#A04747;
 letter-spacing:3px;
@@ -120,7 +128,7 @@ display:block;
 text-align:center;
 font-size:38px}
 
-h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
+h2 {color:/*#00005C*/#A04747; font-size:2em; padding:0; display:block; text-align:center; 
 }
 
 
@@ -148,7 +156,7 @@ border-bottom:1px dotted;
 
 
 span.context[title=org] {
-color: #006600;
+color: #3b0099 /* dark green: #006600*/ ;
  border-bottom:1px dotted    
     
 }
@@ -163,8 +171,16 @@ color:#CC0000;
 border-bottom:1px dotted 
 }
 
-span.prose {line-height:25px}
-span.prose.on{line-height:normal}
+span.context[title=nature] {color:/*#006600*/#004d00; border-bottom:1px dotted}
+
+section.poem {line-height:25px; width:70%}
+section.poem.on{line-height:normal; width:70%}
+span.poemHeading{display:block; text-align:center; margin-right:20em; padding-bottom:.5em; }
+/*span.title{display:block; text-align:center; margin-right:20em;}*/
+div.line {display:flex; flex-direction:row; justify-content:left; line-height:1.8em;}
+span.line {flex:3;}
+span.lineNumber{flex: 1; font-size:smaller; color:brown; padding-left: 1em; }
+hr.MRMfn {background-color:black; height:1px; border-radius:50%; margin-right: 30%}
 
 span.pagebreak {font-size: .75em; text-align:center; display:block}
 span.pagebreak.on {display:none;}
@@ -224,7 +240,7 @@ display:none;
 
 span.anchor span.note {
  position:absolute;
-right:12%;
+left:18%;
     color:black;
     line-height:normal;
     text-decoration:none;
