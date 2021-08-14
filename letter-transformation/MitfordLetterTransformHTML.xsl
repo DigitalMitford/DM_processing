@@ -22,39 +22,74 @@
                     content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
                 <meta name="keywords"
                     content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, TEI, Text Encoding Initiative, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
-                <link rel="stylesheet" type="text/css" href="mitfordletter.css"/>
+                <link rel="stylesheet" type="text/css" href="mitfordpoems.css"/>
                 <!--<script type="text/javascript" src="MRMLetters.js" xml:space="preserve">...</script>-->
                 <script type="text/javascript" src="MRMLetters.js">/**/</script>
             </head>
             <body>
 
-                <div id="title">
-                    <h1>Digital Mitford: Letters</h1>
-                    <hr/>
-                </div>
-                <div id="menubar">
-                    <h3>Digital Mitford: The Mary Russell Mitford Archive</h3>
-                    <ul> <li><a href="index.html">Welcome</a></li> 
-                        <li><a href="about.html">About</a></li> 
-                        <li><a href="bibliogType.html">Published Works</a></li>  <li><a href="lettersData.html">Manuscript Locations</a></li> 
-                        <li> <a href="letters.html">Letters</a></li> 
-                        <li><a href="visual.html">People, Places, and Networks</a></li> 
-                        <li><a href="staff.html">Staff</a></li>  
-                        <li><a href="workshop.html">Workshop Materials</a></li></ul>
-                </div>
+                <div id="nav_wide">   <!--<h1>Digital Mitford:
+            The Mary Russell Mitford Archive</h1>-->
+                    <div id="menu">       
+                        <!-- <h2><a href="index.html">Welcome</a> | <a href="about.html">About</a> | <a href="bibliogType.html">Published Works</a> | <a href="lettersData.html">Manuscript Locations</a> | <a href="letters.html">Letters</a> | <a href="visual.html">People, Places, and Networks</a> | <a href="staff.html">Staff</a> | <a href="workshop.html">Workshop Materials</a></h2>-->
+                        <ul id="siteMenu">
+                            <li class="title"><span class="mainTitle">Digital Mitford:</span><br/> <span class="subTitle">The Mary Russell Mitford Archive</span></li>
+                            <li class="mainMenu"><ul class="mainMenu"><li class="section" id="Overview"><!--Overview-->
+                                <ul class="subSec"><li class="subMenu"><a href="index.html">Home</a></li>
+                                    <li class="subMenu"><a href="visual.html">Mitford’s Worlds</a></li>
+                                </ul></li>
+                                <li class="section" id="Editions"><!--Editions-->
+                                    <ul class="subSec">
+                                        <li class="subMenu"><a href="letters.html">Letters</a></li>
+                                        <li class="subMenu">Plays</li>
+                                        <li class="subMenu">Poems</li>
+                                        <li class="subMenu">Fiction</li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="section" id="Bib"><!--Bibliography &amp; MSS-->
+                                    <ul class="subSec">
+                                        <li class="subMenu"><a href="bibliogType.html">Bibliography</a></li>
+                                        <li class="subMenu"><a href="lettersData.html">Manuscript Locations</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <li class="section" id="Project"><!--Project-->
+                                    <ul class="subSec">
+                                        <li class="subMenu"><a href="about.html">Methods &amp; Background</a></li>
+                                        <li class="subMenu"><a href="staff.html">Staff</a></li>
+                                        <li class="subMenu">Scholarship</li>
+                                    </ul>
+                                </li>
+                                <li class="section" id="Outreach"><!--Outreach-->
+                                    <ul class="subSec">
+                                        <li class="subMenu"><a href="workshop.html">Coding School</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.wordpress.com/">Blog</a></li>
+                                        <li class="subMenu"><a href="applicationProcess.html">Become a Mitford Editor</a></li>
+                                    </ul>
+                                    
+                                </li>
+                                
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                
               <div id="container">                   
-                    <div id="letterHead">
+                    <div id="poemsHead">
                         <p class="boilerplate">
                             <span>
-                                <strong>Maintained by: </strong> Elisa E. Beshero-Bondar (ebb8 at
-                                pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                                <strong>Maintained by: </strong> Elisa E. Beshero-Bondar (eeb4 at
+                                psu.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
                             </span>
                             <span>
                                 <strong>Last modified: </strong>
                                 <xsl:value-of select="current-dateTime()"/>
                             </span>  
                         </p> 
-                        <div id="fieldset">
+                       <!-- <div id="fieldset">
                             <fieldset>
                                 <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
                                 <input type="checkbox"
@@ -62,7 +97,7 @@
                                     style="cursor:pointer"/>
                                 <br/>
                             </fieldset>
-                        </div>
+                        </div>-->
                         <xsl:apply-templates select="//teiHeader"/>   
                     </div>
                     <div id="floatright">
@@ -157,47 +192,33 @@
         <xsl:apply-templates select="editorialDecl"/>
     </xsl:template>
     
-    
-    <xsl:template match="opener"> 
-        <div id="opener">    
-            <xsl:apply-templates select="descendant::date"/><br/>
-            <xsl:apply-templates select="descendant::date/following-sibling::*"/><br/>
-        </div>
-    </xsl:template>
   
-    <xsl:template match="body//p">
+    <xsl:template match="body/div">
         <p><span class="prose">
             <xsl:apply-templates/></span>
         </p>
     </xsl:template>
     
-    <xsl:template match="rdg">
-        <!--ebb: Be careful of this. I'm writing this template match to suppress rdg elements on the understanding that we are using <lem> to indicate a Mitford editor's authoritative reading of the ms, vs. a misreading or alternate reading by L'Estrange or someone else. I'm not indicating the @wit here; it may need to be adjusted depending on the letter.-->
-    </xsl:template>
+  <!--  <xsl:template match="rdg">
+        <!-\-ebb: Be careful of this. I'm writing this template match to suppress rdg elements on the understanding that we are using <lem> to indicate a Mitford editor's authoritative reading of the ms, vs. a misreading or alternate reading by L'Estrange or someone else. I'm not indicating the @wit here; it may need to be adjusted depending on the letter.-\->
+    </xsl:template>-->
 
-    <xsl:template match="closer">
-        <div class="closer">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    
-    <xsl:template match="signed">
-        <xsl:apply-templates/><br/>
-    </xsl:template>
-    
-    <xsl:template match="addrLine">
-       <xsl:apply-templates/><br/> 
-    </xsl:template>
+   
     
     <xsl:template match="lb">
         <br/>
+    </xsl:template>
+    
+    <xsl:template match="lg">
+        <div class="lg">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
 
     <xsl:template match="l">
         <span class="line" id="L{@n}">
             <xsl:value-of select="@n"/>
             <xsl:text> </xsl:text>
-
             <xsl:apply-templates/>
             <br/>
         </span>

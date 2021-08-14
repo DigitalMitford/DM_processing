@@ -3,22 +3,24 @@ function init() {
     for (var i = 0; i < anchors.length; i++) {
         anchors[i].addEventListener('mouseover', show_footnote, false);
         anchors[i].addEventListener('click', show_footnote, false);
-        anchors[i].addEventListener('mouseout', hide_footnote, false);
+       /* anchors[i].addEventListener('mouseout', hide_footnote, false);*/
         anchors[i].addEventListener('dblclick', hide_footnote, false);
 
         anchors[i].addEventListener('touchenter', show_footnote, false);
         anchors[i].addEventListener('touchleave', hide_footnote, false);
+        anchors[i].addEventListener('touchmove', hide_footnote, false);
 
     }
     var siEnts = document.getElementsByClassName("context");
     for (var s = 0; s < siEnts.length; s++) {
         siEnts[s].addEventListener('mouseover', show_SI, false);
         siEnts[s].addEventListener('click', show_SI, false);
-        siEnts[s].addEventListener('mouseout', hide_SI, false);
+       /* siEnts[s].addEventListener('mouseout', hide_SI, false);*/
         siEnts[s].addEventListener('dblclick', hide_SI, false);
 
         siEnts[s].addEventListener('touchenter', show_SI, false);
         siEnts[s].addEventListener('touchleave', hide_SI, false);
+        siEnts[s].addEventListener('touchmove', hide_SI, false);
 
     }
 
