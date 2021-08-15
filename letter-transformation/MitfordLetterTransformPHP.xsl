@@ -613,18 +613,14 @@
         -->
         <!--2021-08-14 ebb: Answering this by adding predicate to test for non-space characters in the text node of the del element. And revising the predicate on del in the gap + "empty del" template before this. -->
     </xsl:template>
-   <xsl:template match="add">
-       <xsl:choose> <xsl:when test="metamark">
-                <xsl:apply-templates select="metamark"/>
-                <span class="add">
-                    <xsl:apply-templates select="metamark/following-sibling::*|text()"/>
-                </span>
-            </xsl:when>
-       <xsl:otherwise>
-           <xsl:apply-templates/>
-       </xsl:otherwise>
-       
-       </xsl:choose>
+    <xsl:template match="add">
+        <xsl:choose> <xsl:when test="metamark"><xsl:apply-templates select="metamark"/><span class="add {@hand ! tokenize(., '#')[last()]}"><xsl:apply-templates select="metamark/following-sibling::*|text()"/></span>
+        </xsl:when>
+            <xsl:otherwise>
+                <span class="add {@hand ! tokenize(., '#')[last()]}"> <xsl:apply-templates/></span>
+            </xsl:otherwise>
+            
+        </xsl:choose>
         
     </xsl:template>
     <xsl:template match="hi[@rend = 'superscript']">

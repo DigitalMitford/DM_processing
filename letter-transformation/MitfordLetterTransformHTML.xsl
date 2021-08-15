@@ -616,7 +616,7 @@
     </xsl:template>
     
     <xsl:template match="del[matches(., '\S')]">
-      <span class="del"><xsl:text>&#xa0;</xsl:text><xsl:value-of select="."/></span>
+      <span class="del {@hand}"><xsl:text>&#xa0;</xsl:text><xsl:value-of select="."/></span>
          
         <!--OLD? ebb: Note problem here: If the del span self-closes because of a gap and we could not read the deleted words for whatever reason, the span self closes in the html, BUT the browser (Chrome at least) interprets this as crossing out to the end of the document! 
         Brittle solution is, this time, that I removed the self-closed span elements from the html output. 
@@ -626,12 +626,13 @@
     </xsl:template>
     
     <xsl:template match="add">
-       <xsl:choose> <xsl:when test="metamark"><xsl:apply-templates select="metamark"/><span class="add"><xsl:apply-templates select="metamark/following-sibling::*|text()"/></span></xsl:when>
-       <xsl:otherwise>
-           <xsl:apply-templates/>
-       </xsl:otherwise>
-       
-       </xsl:choose>
+        <xsl:choose> <xsl:when test="metamark"><xsl:apply-templates select="metamark"/><span class="add {@hand ! tokenize(., '#')[last()]}"><xsl:apply-templates select="metamark/following-sibling::*|text()"/></span>
+        </xsl:when>
+            <xsl:otherwise>
+                <span class="add {@hand ! tokenize(., '#')[last()]}"> <xsl:apply-templates/></span>
+            </xsl:otherwise>
+            
+        </xsl:choose>
         
     </xsl:template>
     
