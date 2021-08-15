@@ -341,7 +341,7 @@
             </span>
         </span>
     </xsl:template>
-    <!-- 2021-08-14 ebb: WRITE A TEMPLATE TO PROPERLY PROCESS SI NOTES NOW!!! -->
+    <!-- 2021-08-14 ebb: For processing SI notes:-->
     <xsl:template match="note[ancestor::*[@sortKey]]">
         <xsl:apply-templates/>
     </xsl:template>
