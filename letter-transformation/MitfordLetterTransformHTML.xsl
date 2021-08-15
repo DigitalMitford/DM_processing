@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:dm="http://digitalmitford.org/nss/dm"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0"
@@ -8,8 +8,7 @@
   <!--2021-08-14 updated output line for XHTML 5 with no XML declaration -->
     <xsl:output method="xhtml" omit-xml-declaration="yes" html-version="5.0"/>
       
-   <!--2018-01-24 ebb: NOTES on updating this:
-   TRANSFORM double-hyphens into proper em dashes, 
+   <!--2021-08-15 ebb: NOTES on updating this:
    KEEP CHECKING the output of add elements, and generate new span elements to style with CSS for handwritten notes by pen annotator and others.
    -->
       
@@ -134,7 +133,7 @@
        
     <xsl:template match="titleStmt">
         <h2><xsl:apply-templates select="title"/></h2>
-        <p><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></p>
+        <h3><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></h3>
         <p>Sponsored by: </p>
         <ul>
             <li>Mary Russell Mitford Society: Digital Mitford
@@ -315,19 +314,14 @@
             <br/>
         </span>
     </xsl:template>
-
- 
-
     <xsl:template match="hi[@rend='smallcaps']">
         <span class="smallcaps">
             <xsl:apply-templates/>
         </span>
 
-    </xsl:template>
-
-   
+    </xsl:template>   
 <xsl:template match="pb">
-   <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> 
+   <span class="pagebreak"><xsl:text>page </xsl:text><xsl:value-of select="@n"/><br/></span> 
     
 </xsl:template>
 
@@ -576,7 +570,16 @@
         </xsl:if>
     </span>
 </xsl:template>
+    <!-- ******************************************* -->
+    
+    <!-- END templates for processing SI context coding. -->
+    
+    <!-- ******************************************* -->
+    
 
+   <xsl:template match="dateline">
+        <xsl:apply-templates/>
+    </xsl:template>
 <xsl:template match="date">
         <span class="date" title="{string-join(@*, '-')}">
             <xsl:apply-templates/>
@@ -619,7 +622,7 @@
         Brittle solution is, this time, that I removed the self-closed span elements from the html output. 
         I need to say something, if the span is empty because of a gap, to signal that there *is* a deletion here that we could not read.
         -->
-        <!--2021-08-14 ebb: Answering this by adding preducate to test for non-space characters in the text node of the del element. And revising the predicate on del in the gap + "empty del" template before this. -->
+        <!--2021-08-14 ebb: Answering this by adding predicate to test for non-space characters in the text node of the del element. And revising the predicate on del in the gap + "empty del" template before this. -->
     </xsl:template>
     
     <xsl:template match="add">
