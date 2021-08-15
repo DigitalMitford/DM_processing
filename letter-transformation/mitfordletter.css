@@ -177,7 +177,7 @@ span.prose.on{line-height:normal}
 
 section.poem {line-height:25px; width:70%}
 section.poem.on{line-height:normal; width:70%}
-span.poemHeading{display:block; text-align:center; margin-right:20em; padding-bottom:.5em; }
+h3.poemHeading{font-size:1.1em; font-weight:100; text-align:center; margin-right:20em; padding-bottom:.5em; }
 /*span.title{display:block; text-align:center; margin-right:20em;}*/
 div.line {display:flex; flex-direction:row; justify-content:left; line-height:1.8em;}
 span.line {flex:3;}
@@ -223,7 +223,7 @@ color:blue;
 
 span.si{
 position: absolute;
-right:15%;
+left:30%;
 color: #000041;
 line-height:normal;
 text-decoration:none;
@@ -242,7 +242,7 @@ display:none;
 
 span.anchor span.note {
  position:absolute;
-left:18%;
+ left:25%;
     color:black;
     line-height:normal;
     text-decoration:none;
@@ -280,6 +280,7 @@ margin-right:50%;
 color:blue;
  text-decoration:underline;
  position:relative;
+
 }
    span.note {
  position:relative;

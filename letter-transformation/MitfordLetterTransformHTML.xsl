@@ -21,7 +21,7 @@
  </xsl:function>
     
     <xsl:template match="/">
-        <html>
+        <html lang="en">
             <head>
                 <title>Digital Mitford: The Mary Russell Mitford Archive</title>
                <!-- <meta charset="UTF-8"/>-->
@@ -86,26 +86,29 @@
                 
               <div id="container">                   
                   <div id="letterHead">
-                    	<section class="interfaceInstructions">
-                    		<h3>About this website edition interface</h3>
-                    		<p>For mouse or touchscreen interaction:</p>
-                    		<ul>
-                    			<li>Click, tap, or move your cursor over a highlighted passage or number to display an annotation.</li>
-                    			<li>Multiple annotations may appear as you touch or click on multiple highlighted passages.</li>
-                    			<li>To hide an annotation, double-click with the mouse, or drag your finger out of the annotation box.</li>
-                    			
-                    		</ul>
-                    	</section>
-                        <div id="fieldset">
-                            <fieldset>
-                                <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
-                                <input type="checkbox"
-                                    id="REGtoggle"
-                                    style="cursor:pointer"/>
-                                <br/>
-                            </fieldset>
-                        </div>
-                        <xsl:apply-templates select="//teiHeader"/> 
+                      <xsl:apply-templates select="//teiHeader"/> 
+                      <section class="interfaceInstructions">
+                          <h3>For mouse or touchscreen interaction:</h3>
+                
+                          <ul>
+                              <li>Click, tap, or move your cursor over a highlighted passage or number to display an annotation.</li>
+                              <li>Multiple annotations may appear as you touch or click on multiple highlighted passages.</li>
+                              <li>To hide an annotation, double-click with the mouse, or drag your finger out of the annotation box.</li>
+                              
+                          </ul>
+                      </section>
+                      <div id="fieldset">
+                          <fieldset>
+                              <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
+                              <input type="checkbox"
+                                  id="REGtoggle"
+                                  style="cursor:pointer"/>
+                              <br/>
+                          </fieldset>
+                      </div>
+                    	
+                      
+                      
                     
                         <p class="boilerplate">
                             <span>
@@ -154,14 +157,17 @@
        </xsl:choose>-->
     </xsl:template>
     
-    <xsl:template match="principal"/>
-    <xsl:template match="respStmt">
+      <xsl:template match="principal"/>
+ <!--   <xsl:template match="respStmt">
         <xsl:apply-templates/><xsl:text>. </xsl:text>
-    </xsl:template>
+    </xsl:template>-->
+    
+<xsl:template match="respStmt"/>
     
     <xsl:template match="editionStmt">
         <p><a href="{tokenize(base-uri(.),'/')[last()]}"><xsl:apply-templates select="edition"/></a>
-        <xsl:value-of select="respStmt[1]/resp[1][not(idno)]"/>
+            <xsl:text> </xsl:text>
+       <xsl:value-of select="respStmt[1]/resp[1][not(idno)]"/>
             <xsl:text> </xsl:text>
             <xsl:value-of select="respStmt[1]/resp[1]/following-sibling::orgName"/>
             <xsl:text>. </xsl:text>
@@ -186,14 +192,21 @@
             <xsl:text>. </xsl:text>
         </p>
     </xsl:template>
+    <xsl:template match="edition/date[matches(., '\S')]">
+       <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="edition/date[not(matches(., '\S'))]">
+        <xsl:value-of select="@when"/>
+    </xsl:template>
     
-    <xsl:template match="publicationStmt">
+<!--    <xsl:template match="publicationStmt">
         <p><xsl:text>Published by: </xsl:text>
         <xsl:apply-templates select="authority"/><xsl:text>, </xsl:text>
         <xsl:apply-templates select="pubPlace"/><xsl:text>: </xsl:text>
         <xsl:apply-templates select="date"/><xsl:text>. </xsl:text></p>
         <xsl:apply-templates select="availability/p"/><xsl:text> </xsl:text> 
-    </xsl:template>
+    </xsl:template>-->
+    <xsl:template match="publicationStmt"/>
     
     <xsl:template match="seriesStmt">
         <p><xsl:apply-templates/></p>
@@ -247,12 +260,21 @@
     </xsl:template>-->
     
   
-    <xsl:template match="body/div">
-        <p><span class="prose">
-            <xsl:apply-templates/></span>
+    <xsl:template match="opener">
+        <div id="opener">
+            <!--    <xsl:apply-templates select=".//date/preceding-sibling::*"/><br/>
+            <xsl:apply-templates select=".//date"/><br/>
+            <xsl:apply-templates select=".//date/following-sibling::*"/><br/>-->
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="body//p[not(ancestor::*[@sortKey])]">
+        <p>
+            <span class="prose">
+                <xsl:apply-templates/>
+            </span>
         </p>
     </xsl:template>
-    
     <xsl:template match="rdg">
         <!--ebb: Be careful of this. I'm writing this template match to suppress rdg elements on the understanding that we are using <lem> to indicate a Mitford editor's authoritative reading of the ms, vs. a misreading or alternate reading by L'Estrange or someone else. I'm not indicating the @wit here; it may need to be adjusted depending on the letter.-->
     </xsl:template>
@@ -309,7 +331,7 @@
     
 </xsl:template>
 
-    <xsl:template match="note[not(preceding::titleStmt/title[contains(., 'Site Index')])]">
+    <xsl:template match="note[not(ancestor::*[@sortKey])]">
         <!-- 2021-08-14 ebb: Added predicate to stop this template from outputting note numbers in SI entries -->
         <span id="Note{count (preceding::note) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note)+ 1"/>] <span class="note"
@@ -318,6 +340,14 @@
                     <xsl:sequence select="dm:respHandler(@resp)"/></xsl:if>
             </span>
         </span>
+    </xsl:template>
+    <!-- 2021-08-14 ebb: WRITE A TEMPLATE TO PROPERLY PROCESS SI NOTES NOW!!! -->
+    <xsl:template match="note[ancestor::*[@sortKey]]">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="*[@sortKey]//p">
+        <!-- 2021-08-15 ebb: For site index <p> in note elements -->
+        <xsl:apply-templates/><br/>
     </xsl:template>
  
     
