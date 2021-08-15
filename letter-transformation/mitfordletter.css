@@ -75,7 +75,7 @@ display:flex; justify-content:space-between; align-items:flex-start; flex-direct
 }
 
 
-div#poemsHead{
+div#letterHead{
 font-size: .75em;   
 flex:1;
 padding-left:3em;
@@ -172,6 +172,8 @@ border-bottom:1px dotted
 }
 
 span.context[title=nature] {color:/*#006600*/#004d00; border-bottom:1px dotted}
+span.prose {line-height:25px}
+span.prose.on{line-height:normal}
 
 section.poem {line-height:25px; width:70%}
 section.poem.on{line-height:normal; width:70%}

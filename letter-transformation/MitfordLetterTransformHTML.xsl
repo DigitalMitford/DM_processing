@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.w3.org/1999/xhtml"
-    xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-    <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
-   <!--2017-06-26 ebb: Note: this seems to work, too, but indent="no" is maybe not all that pretty to look at in the output. <xsl:output method="xml" encoding="UTF-8" indent="no" doctype-system="about:legacy-compat"/>-->
-    <!--<xsl:strip-space elements="*"/>-->
+    xmlns:dm="http://digitalmitford.org/nss/dm"
+    xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes = "dm">
+  
+  <!--2021-08-14 updated output line for XHTML 5 with no XML declaration -->
+    <xsl:output method="xhtml" omit-xml-declaration="yes" html-version="5.0"/>
       
    <!--2018-01-24 ebb: NOTES on updating this:
    TRANSFORM double-hyphens into proper em dashes, 
@@ -12,6 +14,11 @@
    -->
       
  <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/> 
+ <xsl:function name="dm:respHandler" as="item()">
+     <xsl:param name="resp" as="attribute()"/>
+     <xsl:sequence select="$resp ! tokenize(., '\s+') ! substring-after(., '#') => string-join(', ')"/>
+     
+ </xsl:function>
     
     <xsl:template match="/">
         <html>
@@ -19,10 +26,10 @@
                 <title>Digital Mitford: The Mary Russell Mitford Archive</title>
                <!-- <meta charset="UTF-8"/>-->
                 <meta name="Description"
-                    content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
+                    content="Supported by the Mary Russell Mitford Society and Penn State Erie, The Behrend College."/>
                 <meta name="keywords"
                     content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, TEI, Text Encoding Initiative, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
-                <link rel="stylesheet" type="text/css" href="mitfordpoems.css"/>
+                <link rel="stylesheet" type="text/css" href="mitfordletter.css"/>
                 <!--<script type="text/javascript" src="MRMLetters.js" xml:space="preserve">...</script>-->
                 <script type="text/javascript" src="MRMLetters.js">/**/</script>
             </head>
@@ -78,18 +85,18 @@
                 </div>  
                 
               <div id="container">                   
-                    <div id="poemsHead">
-                        <p class="boilerplate">
-                            <span>
-                                <strong>Maintained by: </strong> Elisa E. Beshero-Bondar (eeb4 at
-                                psu.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-                            </span>
-                            <span>
-                                <strong>Last modified: </strong>
-                                <xsl:value-of select="current-dateTime()"/>
-                            </span>  
-                        </p> 
-                       <!-- <div id="fieldset">
+                  <div id="letterHead">
+                    	<section class="interfaceInstructions">
+                    		<h3>About this website edition interface</h3>
+                    		<p>For mouse or touchscreen interaction:</p>
+                    		<ul>
+                    			<li>Click, tap, or move your cursor over a highlighted passage or number to display an annotation.</li>
+                    			<li>Multiple annotations may appear as you touch or click on multiple highlighted passages.</li>
+                    			<li>To hide an annotation, double-click with the mouse, or drag your finger out of the annotation box.</li>
+                    			
+                    		</ul>
+                    	</section>
+                        <div id="fieldset">
                             <fieldset>
                                 <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
                                 <input type="checkbox"
@@ -97,8 +104,19 @@
                                     style="cursor:pointer"/>
                                 <br/>
                             </fieldset>
-                        </div>-->
-                        <xsl:apply-templates select="//teiHeader"/>   
+                        </div>
+                        <xsl:apply-templates select="//teiHeader"/> 
+                    
+                        <p class="boilerplate">
+                            <span>
+                               Maintained by: Elisa E. Beshero-Bondar (eeb4 at
+                                psu.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                            </span>
+                            <span>
+                               Last modified: 
+                                <xsl:value-of select="current-dateTime()"/>
+                            </span>  
+                        </p> 
                     </div>
                     <div id="floatright">
                         <div id="letter">
@@ -112,14 +130,28 @@
     </xsl:template>
        
     <xsl:template match="titleStmt">
-        <h3><xsl:apply-templates select="title"/></h3>
+        <h2><xsl:apply-templates select="title"/></h2>
         <p><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></p>
-        <xsl:text>Sponsored by: </xsl:text>
+        <p>Sponsored by: </p>
         <ul>
+            <li>Mary Russell Mitford Society: Digital Mitford
+                Project</li>
+            <li>Penn State Erie, The Behrend College</li>
+        </ul>
+     <!-- 2021-08-14 ebb: Activate once letters files TEI headers are updated with new sponsor information
+         
+         <xsl:choose> 
+           <xsl:when test="count(descendant::sponsor) gt 1">
+            <ul>
         <xsl:for-each select="sponsor">
-        <li><xsl:value-of select=".//text()"/></li>
+            <li><xsl:apply-templates select="current()//text()"/></li>
         </xsl:for-each>
         </ul>
+           </xsl:when>
+       <xsl:otherwise>
+           <xsl:apply-templates select="sponsor//text()"/>
+       </xsl:otherwise>
+       </xsl:choose>-->
     </xsl:template>
     
     <xsl:template match="principal"/>
@@ -192,6 +224,28 @@
         <xsl:apply-templates select="editorialDecl"/>
     </xsl:template>
     
+    <xsl:template match="revisionDesc"/>
+   
+  <!-- 2021-08-14 ebb: Uncomment this (and comment out the preceding template) to output a change log on the Mitford edition file, if present
+      in a revisionDesc.
+      
+      <xsl:template match="revisionDesc">
+        <h3>Change log</h3>
+        <table>
+            <tr><th>When</th><th>Who</th><th>What</th></tr>
+            <xsl:apply-templates/>
+        </table>
+        
+    </xsl:template>
+    <xsl:template match="change">
+       <tr>
+          <td><xsl:apply-templates select="(@when, @notBefore)[1]"/></td> 
+          <td><xsl:sequence select="dm:respHandler(@who)"/>
+          </td>
+           <td><xsl:apply-templates/></td>
+       </tr>
+    </xsl:template>-->
+    
   
     <xsl:template match="body/div">
         <p><span class="prose">
@@ -199,12 +253,22 @@
         </p>
     </xsl:template>
     
-  <!--  <xsl:template match="rdg">
-        <!-\-ebb: Be careful of this. I'm writing this template match to suppress rdg elements on the understanding that we are using <lem> to indicate a Mitford editor's authoritative reading of the ms, vs. a misreading or alternate reading by L'Estrange or someone else. I'm not indicating the @wit here; it may need to be adjusted depending on the letter.-\->
-    </xsl:template>-->
-
-   
-    
+    <xsl:template match="rdg">
+        <!--ebb: Be careful of this. I'm writing this template match to suppress rdg elements on the understanding that we are using <lem> to indicate a Mitford editor's authoritative reading of the ms, vs. a misreading or alternate reading by L'Estrange or someone else. I'm not indicating the @wit here; it may need to be adjusted depending on the letter.-->
+    </xsl:template>
+    <xsl:template match="closer">
+        <div class="closer">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="signed">
+        <xsl:apply-templates/>
+        <br/>
+    </xsl:template>
+    <xsl:template match="addrLine">
+        <xsl:apply-templates/>
+        <br/>
+    </xsl:template>
     <xsl:template match="lb">
         <br/>
     </xsl:template>
@@ -215,10 +279,16 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="l">
-        <span class="line" id="L{@n}">
-            <xsl:value-of select="@n"/>
-            <xsl:text> </xsl:text>
+    <xsl:template match="l[not(ancestor::note)]">
+       <div class="line"> 
+           <span class="line" id="L{@n}">
+            <xsl:apply-templates/></span>
+           <span class="lineNumber"><xsl:value-of select="@n"/></span>
+       </div>
+    </xsl:template>
+    
+    <xsl:template match="l[ancestor::note]">
+        <span class="line">
             <xsl:apply-templates/>
             <br/>
         </span>
@@ -233,50 +303,54 @@
 
     </xsl:template>
 
-    <xsl:template match="placeName | name[@type='place']">
-        <span class="context" title="place">
-            <xsl:apply-templates/>
-        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"><span class="si">
-            <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
-        <xsl:value-of select="string-join($siPlace/*, ' | ')"/>
-            <xsl:text>--</xsl:text>
-            <xsl:value-of select="$siPlace/note/@resp"/>
-            <xsl:if test="$siPlace//geo">
-                <xsl:value-of select="$siPlace//geo"/>
-            </xsl:if>          
-        </span></xsl:if>
-        </span>
-    </xsl:template>
-
-
+   
 <xsl:template match="pb">
    <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> 
     
 </xsl:template>
 
-    <xsl:template match="note">
+    <xsl:template match="note[not(preceding::titleStmt/title[contains(., 'Site Index')])]">
+        <!-- 2021-08-14 ebb: Added predicate to stop this template from outputting note numbers in SI entries -->
         <span id="Note{count (preceding::note) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note)+ 1"/>] <span class="note"
                 id="n{count (preceding::note) + 1}">
-                <xsl:apply-templates/><xsl:text>&#8212;</xsl:text>
-                    <xsl:value-of select="@resp"/>
+               <xsl:if test="@resp"> <xsl:apply-templates/><xsl:text>—</xsl:text>
+                    <xsl:sequence select="dm:respHandler(@resp)"/></xsl:if>
             </span>
         </span>
     </xsl:template>
+ 
+    
+      <!-- ******************************************* -->
+     
+  <!-- 2021-08-14 ebb: Updated templates for SI context coding. -->
+    
+    <!-- ******************************************* -->
+    
 
-   <!-- <xsl:template match="rs">
-        <span class="{@type}">
-                    <xsl:apply-templates/>
+    <xsl:template match="placeName | name[@type='place']">
+        <span class="context" title="place">
+            <xsl:apply-templates/>
             
+            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"><span class="si">
+                <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
+                <xsl:value-of select="string-join($siPlace/*[not(self::note)], ' | ')"/>
+                <xsl:if test="$siPlace/note"> <xsl:for-each select="$siPlace/note">
+                    <xsl:apply-templates select="current()"/>
+                    <xsl:if test="@resp"><xsl:text>—</xsl:text>
+                    <xsl:sequence select="dm:respHandler(@resp)"/></xsl:if>
+                </xsl:for-each>
+                </xsl:if>
+                
+            </span></xsl:if>
         </span>
-    </xsl:template>-->
+    </xsl:template>
 
-    <xsl:template match="persName | rs[@type='person'] | sp | author">
+    <xsl:template match="editor | persName | rs[@type='person'] | sp | author">
         <span class="context" title="person">
             <xsl:apply-templates/>
        
-        <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note)"> 
+            <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note)"> 
            <span class="si">
                <xsl:variable name="siPers" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
             
@@ -323,9 +397,13 @@
      <xsl:text>. </xsl:text>
  </xsl:if>
      <xsl:if test="$siPers/note">
-         <br/><xsl:value-of select="$siPers//note"/>
-         <xsl:text>--</xsl:text>
-             <xsl:value-of select="$siPers//note/@resp"/>
+         <xsl:for-each select="$siPers/note">
+             <br/><xsl:apply-templates select="current()"/>
+        <xsl:if test="@resp"> 
+            <xsl:text>—</xsl:text>
+         <xsl:sequence select="dm:respHandler(@resp)"/>
+        </xsl:if>
+         </xsl:for-each>
          
      </xsl:if>     
     
@@ -338,37 +416,23 @@
         <span class="context" title="org">
             <xsl:apply-templates/>
        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"> <span class="si">
+            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"> <span class="si">
             <xsl:variable name="siOrg" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siOrg/orgName, ' | ')"/>
-            <xsl:if test="$siOrg//note">
-                <br/><xsl:value-of select="$siOrg//note"/>
-                    <xsl:text>--</xsl:text>
-                    <xsl:value-of select="$siOrg/note/@resp"/>
-                
+            <xsl:if test="$siOrg/note">
+              <xsl:for-each select="$siOrg/note">  
+                  <br/>
+                  <xsl:apply-templates select="current()"/>
+                    <xsl:text>—</xsl:text>
+               <xsl:if test="@resp"> <xsl:sequence select="dm:respHandler(@resp)"/>
+               </xsl:if>
+                </xsl:for-each>
             </xsl:if>
         </span></xsl:if>
         </span>
     </xsl:template>
     
-    <xsl:template match="rs[not(@type='org')] | name">
-        <span class="context" title="rs">
-            <xsl:apply-templates/>
-       
-        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note)"><span class="si">
-            <xsl:variable name="siRs" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
-            <xsl:value-of select="string-join($siRs/label, ' | ')"/>
-            <xsl:value-of select="string-join($siRs/@*, ' - ')"/>
-            <xsl:if test="$siRs/note">
-                <br/><xsl:value-of select="$siRs/note"/>
-                    <xsl:text>--</xsl:text>
-                    <xsl:value-of select="$siRs/note/@resp"/>
-                
-            </xsl:if>
-        </span></xsl:if>
-        </span>
-    </xsl:template>
+   
     
     <xsl:template match="body//title | body//bibl">
         <span class="context" title="title"><xsl:apply-templates/>
@@ -380,7 +444,6 @@
             <xsl:if test="$siBibl/bibl">
                 <xsl:value-of select="string-join($siBibl/bibl/title, ', ')"/>
                     <xsl:text>. </xsl:text>
-              
             </xsl:if>
             <xsl:choose>
                 <xsl:when test="$siBibl/author/text()">
@@ -436,15 +499,53 @@
                 
             </xsl:if>
             
-            <xsl:if test="$siBibl//note">
-                <br/><xsl:value-of select="$siBibl//note"/>
-                    <xsl:text>--</xsl:text>
-                    <xsl:value-of select="$siBibl//note/@resp"/>
-               
+            <xsl:if test="$siBibl/note">
+               <xsl:for-each select="$siBibl/note"> <br/><xsl:value-of select="current()"/>
+                <xsl:if test="@resp">
+                    <xsl:text>—</xsl:text>
+                    <xsl:sequence select="dm:respHandler(@resp)"/>
+                </xsl:if>
+               </xsl:for-each>
             </xsl:if>
         </span></xsl:if>
         </span>
     </xsl:template>
+    
+<!--2021-08-13 The next template processes markup of plants and animals from the SI -->
+<xsl:template match="name | rs[@type='animal'] | rs[@type='plant']">
+    <span class="context" title="nature">
+        <xsl:apply-templates/>
+        <xsl:if test="$si//item[@xml:id=substring-after(current()/@ref, '#')] and not(ancestor::note)">
+         <span class="si">
+             <xsl:variable name="siNature" as="element()" select="$si//item[@xml:id=substring-after(current()/@ref, '#')]"/>
+             <xsl:text>Name: </xsl:text>
+             <xsl:value-of select="$siNature/name[not(@type)] => string-join(' or ')"/>
+             <xsl:if test="$siNature/name[@type='genus']">
+                 <xsl:text> | Genus: </xsl:text>
+                 <xsl:value-of select="$siNature/name[@type='genus']"/>
+             </xsl:if>
+             <xsl:if test="$siNature/name[@type='family']">
+                 <xsl:text> | Family: </xsl:text>
+                 <xsl:value-of select="$siNature/name[@type='family']"/>
+             </xsl:if>
+             <xsl:if test="$siNature/name[@type='species']">
+                 <xsl:text> | Species: </xsl:text>
+                 <xsl:value-of select="$siNature/name[@type='species']"/>
+             </xsl:if>
+             <xsl:text>. </xsl:text>
+                 <xsl:for-each select="$siNature/note">
+                     <br/>
+                     <xsl:apply-templates select="."/>
+                       <xsl:if test="@resp">  
+                           <xsl:text>—</xsl:text>
+                     <xsl:sequence select="dm:respHandler(@resp)"/>
+                       </xsl:if>
+
+                 </xsl:for-each> 
+         </span>  
+        </xsl:if>
+    </span>
+</xsl:template>
 
 <xsl:template match="date">
         <span class="date" title="{string-join(@*, '-')}">
@@ -456,7 +557,8 @@
       <em><xsl:apply-templates/></em> 
   </xsl:template>
     
-    <xsl:template match="gap | del[not(text())]">
+    <xsl:template match="gap | del[not(matches(., '\S'))]">
+        <!--ebb: 2021-08-14: This template should match an empty del element as well as a gap element. -->
         <span class="damage"><xsl:text>[</xsl:text><xsl:value-of select="name()"/><xsl:text>: </xsl:text>
             <xsl:if test="@quantity">
                 <xsl:value-of select="@quantity"/><xsl:text> </xsl:text><xsl:value-of select="@unit"/>
@@ -480,12 +582,14 @@
         <span class="supplied"><xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text></span>
     </xsl:template>
     
-    <xsl:template match="del">
-        <span class="del"><xsl:text>&#xa0;</xsl:text><xsl:value-of select="."/></span>
-        <!--ebb: Note problem here: If the del span self-closes because of a gap and we could not read the deleted words for whatever reason, the span self closes in the html, BUT the browser (Chrome at least) interprets this as crossing out to the end of the document! 
+    <xsl:template match="del[matches(., '\S')]">
+      <span class="del"><xsl:text>&#xa0;</xsl:text><xsl:value-of select="."/></span>
+         
+        <!--OLD? ebb: Note problem here: If the del span self-closes because of a gap and we could not read the deleted words for whatever reason, the span self closes in the html, BUT the browser (Chrome at least) interprets this as crossing out to the end of the document! 
         Brittle solution is, this time, that I removed the self-closed span elements from the html output. 
         I need to say something, if the span is empty because of a gap, to signal that there *is* a deletion here that we could not read.
         -->
+        <!--2021-08-14 ebb: Answering this by adding preducate to test for non-space characters in the text node of the del element. And revising the predicate on del in the gap + "empty del" template before this. -->
     </xsl:template>
     
     <xsl:template match="add">
