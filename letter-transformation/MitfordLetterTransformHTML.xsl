@@ -86,7 +86,8 @@
               <div id="container">                   
                   <div id="letterHead">
                       <xsl:apply-templates select="//teiHeader"/> 
-                      <section class="interfaceInstructions">
+                    <!-- ebb: Maybe too much to read. Try to make a more obvious, nonverbal cue.
+                        <section class="interfaceInstructions">
                           <h3>For mouse or touchscreen interaction:</h3>
                 
                           <ul>
@@ -95,7 +96,7 @@
                               <li>To hide an annotation, double-click with the mouse, or drag your finger out of the annotation box.</li>
                               
                           </ul>
-                      </section>
+                      </section>-->
                       <div id="fieldset">
                           <fieldset>
                               <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
