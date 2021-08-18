@@ -1,0 +1,1359 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <title>Nocturne -- The Versioning Machine 5.0</title>
+      <meta charset="utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="../src/js/jquery-ui-1.11.3/jquery-ui.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine.css"></link><script type="text/javascript" src="../src/js/jquery-1.11.2.min.js"></script><script type="text/javascript" src="../src/js/jquery-ui-1.11.3/jquery-ui.min.js"></script><link rel="stylesheet" type="text/css" href="../src/panzoom/panzoom.css"></link><script type="text/javascript" src="../src/panzoom/jquery.panzoom.min.js"></script><script type="text/javascript">
+      
+      /*NOTES PANEL: To change the VM so that the notes panel page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_NOTES_PANEL = false;
+      
+      /*BIB PANEL: To change the VM so that the bibliographic information page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_BIB_PANEL = true;
+      
+      /**The number of version/witness panels to be displayed initially */
+      INITIAL_DISPLAY_NUM_VERSIONS = 2;
+      
+      /** CRIT PANEL: Critical information should be encoded as tei:notesStmt/tei:note[@type='critIntro'] in the TEI files --&gt;
+      * To change the VM so that the critical information page does not
+      * appear at the initial load, change the constant INITIAL_DISPLAY_CRIT_PANEL from "true" to "false" */
+      INITIAL_DISPLAY_CRIT_PANEL = false;
+      
+      /** To change the VM so that line numbers are hidden by default, change the constant INITIAL_DISPLAY_LINENUMBERS from
+      * "true" to "false" */
+      INITIAL_DISPLAY_LINENUMBERS = true;
+      
+   var timelinePoints = new Array();var timelineDurations = new Array();</script><script type="text/javascript" src="../src/vmachine.js"></script></head>
+   <body>
+      <div id="mainBanner">
+         <div id="brandingLogo"><a href="../samples.html"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/LogoSilver.png"></img></a></div>
+         <div id="bannerImageContainer"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/HeaderBackground.png"></img><div id="headline">
+               <h1>Nocturne</h1>
+            </div>
+            <nav id="mainControls">
+               <ul>
+                  <li><button id="selectVersion" class="topMenuButton dropdownButton">4 Total Versions<img class="noDisplay" src="../vm-images/arrowup.png" alt="arrow up"></img><img src="../vm-images/arrowdown.png" alt="arrow down"></img></button><ul id="versionList" class="dropdown notVisible">
+                        <li data-panelid="t7989-1-2">
+                           <div class="listText">
+                              <div><a href="#" title="t7989-1-2: 'Nocturne, Saint Eloi, 1918' (TCD&#xA;                        7878/1/2)">Version t7989-1-2</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="t7989-1-3">
+                           <div class="listText">
+                              <div><a href="#" title="t7989-1-3: 'Nocturne of St. Eloi, 1918' (TCD MS&#xA;                        7989/1/3)">Version t7989-1-3</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="t7989-1-1">
+                           <div class="listText">
+                              <div><a href="#" title="t7989-1-1: 'Nocturne, Saint Eloi' (TCD MS 79891/1)">Version t7989-1-1</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="nocturne_poems">
+                           <div class="listText">
+                              <div><a href="#" title="nocturne_poems: published in Poems as 'Nocturne'">Version nocturne_poems</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li id="linenumberOnOff" title="Clicking this button turns the line numbers on or off."><button class="topMenuButton">Line numbers</button></li>
+                  <li data-panelid="bibPanel" title="Clicking this button triggers the bibliographic panel to appear or disappear."><button class="topMenuButton">Bibliographic panel</button></li>
+                  <li data-panelid="notesPanel" title="Clicking this button triggers the notes panel to appear or disappear."><button class="topMenuButton listText">Notes panel</button></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div id="mssArea">
+         <div id="bibPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>Nocturne</h2>
+               <h3>
+                  by Thomas MacGreevy
+               </h3>
+               <h4>Original Source</h4>
+               
+               
+               <p>Diplomatic editions of MacGreevy's poetry were created from 
+                  <div class="title rend-italic">Collected Poems of Thomas MacGreevy: An Annotated Edition</div>, edited
+                  by Susan Schreibman (Anna Livia Press and The Catholic University of America
+                  Press, 1991). Images of MacGreevy's published poems were taken from MacGreevy's
+                  own copy of 
+                  <div class="title rend-italic">Poems</div> (Heinemann, 1934). Manuscript
+                  copies are from MacGreevy's papers at Trinity College, Dublin (individual
+                  manuscript numbers appear in the witness list below).
+               </p>
+               
+               
+               
+               <h4>Witness List</h4>
+               <ul>
+                  <li><strong>Witness t7989-1-2:</strong> 'Nocturne, Saint Eloi, 1918' (TCD
+                     7878/1/2)
+                  </li>
+                  <li><strong>Witness t7989-1-3:</strong> 'Nocturne of St. Eloi, 1918' (TCD MS
+                     7989/1/3)
+                  </li>
+                  <li><strong>Witness t7989-1-1:</strong> 'Nocturne, Saint Eloi' (TCD MS 79891/1)
+                  </li>
+                  <li><strong>Witness nocturne_poems:</strong> published in Poems as 'Nocturne'
+                  </li>
+               </ul>
+               <h4>Textual Notes</h4>
+               <div class="note"><em class="label">critical:</em> There are three TS versions of this poem
+                  entitled 'Nocturne, Saint Eloi, 1918'. It was nocturne_poemslished as 'Nocturne,
+                  Saint Eloi, 1929' in The Irish Statesman, II:4 (28 September 1929) 69, under the
+                  pseudonym L. Saint Senan (See 'Saint Senan's Well'). 'Nocturne' was written in
+                  late 1928 or early 1929. To the editor's knowledge, it has not been
+                  reprinted.
+                  <hr></hr>
+               </div>
+               <div class="note"><em class="label">biographical:</em> During World War I, MacGreevy served for
+                  twenty-two months as a second lieutenant in the Royal Field Artillery, spending
+                  most of that time in the front line of the Somme (after the war he was promoted
+                  to the rank of lieutenant). In France he was wounded twice, the second time
+                  (September 1918) more seriously at Commines, where he received a shoulder wound. 
+                  <hr></hr>
+               </div>
+               <div class="note"><em class="label">render:</em> Additions appear in a green, fixed-width
+                  font.
+               </div>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Text Encoding by  Susan Schreibman and  Jarom McDonald</li>
+                  <li>Annotations by  Susan Schreibman</li>
+               </ul>
+               <h5>Publication Details:</h5>
+               
+               <p>Published by Susan Schreibman.</p>
+               
+               
+               
+               
+               <p>Thomas MacGreevy's poetry is reprinted here with the kind permission of
+                  Margaret Farrington and the late Elizabeth Ryan.
+               </p>
+               
+               <p>This poem is being made available for demonstration purposes only. It may not
+                  be reproduced without explicit permission from the copyright holder. For
+                  copyright information, please contact Susan Schreibman at
+                  susan.schreibman[AT]gmail.com
+               </p>
+               
+               
+               
+               
+               <h4>Encoding Principles</h4>
+               
+               
+               
+               
+               <p>This is a demonstration document created for the Versioning machine using TEIP5
+                  parallel segmentation. 
+               </p>
+               
+               
+               
+               
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="t7989-1-2">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version t7989-1-2: 'Nocturne, Saint Eloi, 1918' (TCD&#xA;                        7878/1/2)">Version t7989-1-2: 'Nocturne, Saint Eloi, 1918' (TCD
+                  7878/1/2)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-2" data-version-id="t7989-1-2"></hr>
+               <div class="facs-images&#xA;                   t7989-1-2" data-version-id="t7989-1-2"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-2" data-version-id="t7989-1-2" data-img-url="images/nocturne_7989-1-2.jpg" data-img-id="i7989-1-2"></img></div>
+               
+               <hr class="pagebreak t7989-1-3" data-version-id="t7989-1-3"></hr>
+               <div class="facs-images&#xA;                   t7989-1-3" data-version-id="t7989-1-3"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-3" data-version-id="t7989-1-3" data-img-url="images/nocturne_7989-1-3.jpg" data-img-id="i7989-1-3"></img></div>
+               
+               <hr class="pagebreak t7989-1-1" data-version-id="t7989-1-1"></hr>
+               <div class="facs-images&#xA;                   t7989-1-1" data-version-id="t7989-1-1"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-1" data-version-id="t7989-1-1" data-img-url="images/nocturne_7989-1-1.jpg" data-img-id="i7989-1-1"></img></div>
+               
+               <hr class="pagebreak nocturne_poems" data-version-id="nocturne_poems"></hr>
+               <div class="facs-images&#xA;                   nocturne_poems" data-version-id="nocturne_poems"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink nocturne_poems" data-version-id="nocturne_poems" data-img-url="images/nocturne_poems.jpg" data-img-id="i-nocturne_poems"></img></div>
+               
+               <div class="div">
+                  
+                  
+                  <div class="head">
+                     
+                     <div class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">Weeds of virtue</span></del>
+                           
+                        </div>
+                        
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">The</span></del><span class="textcontent"> Widowed Virtue</span></div>
+                        
+                     </div>
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                        
+                        
+                        <div style="display:inline-block" class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Nocturne, St. Eloi, 1918.</span></div>
+                        
+                        
+                        <div class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">NOCTURNE OF ST. ELOI, 1918</span></div>
+                        
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><span class="textcontent">NOCTURNE, SAINT ELOI</span></div>
+                        
+                        
+                        <div class="reading nocturne_poems" data-reading-wits="nocturne_poems"><span class="textcontent">NOCTURNE</span></div>
+                        
+                        
+                     </div>
+                     
+                     <div class="noteicon">c
+                        <div class="note"><strong>Critical note:</strong> 
+                           
+                           <p><span class="textcontent">Saint Eloi, one of the most popular Saints of the Middle Ages, founded a
+                                 monastery near the present village of Mont St. Eloi, five miles
+                                 northwest of the city of Arras in northern France. The ruins of the
+                                 monastery remain, and in 1917-18 were close to the Western Front. There
+                                 is also a British Military Cemetery nearby.</span></p>
+                           
+                           <p><span class="textcontent">Eloi may also be a reference to the words of Christ on the cross: 'Eloi,
+                                 Eloi, lamma sabacthani? . . . My God, my God, why hast thou forsaken
+                                 me?' (Mark 15:34-5).</span></p>
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+                  
+                  
+                  <div class="div type-dedication">
+                     
+                     
+                     <div class="paragraph">
+                        
+                        <div class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           
+                           <div class="reading t7989-1-1" data-reading-wits="t7989-1-1">
+                              <span class="hi rend-underline"><span class="textcontent">To the memory of </span><del><span class="textcontent">[?]</span></del><span class="textcontent">
+                                    Geoffrey</span><div class="linebreak"></div><span class="textcontent"> England Taylor, 2nd Lieutenant, R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> died
+                                    of wounds received in action, in</span><div class="linebreak"></div><span class="textcontent"> France, September, 26,
+                                    1918.</span></span>
+                              
+                              <div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                           <div class="reading nocturne_poems" data-reading-wits="nocturne_poems">
+                              <span class="hi rend-italic"><span class="textcontent">To Geoffrey England Taylor, 2nd Lieutenant,
+                                    R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> "Died of wounds"</span></span><span class="textcontent">. </span><div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                        </div>
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+                  <div class="div">
+                     
+                     
+                     <div class="lg">
+                        
+                        
+                        <div class="lineWrapper line_1" data-line-id="line_1">
+                           <div class="line">
+                              <div class="linenumber noDisplay">1</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems" data-reading-wits="t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems"><span class="textcontent">I labour
+                                       in a barren place,</span></div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_2" data-line-id="line_2">
+                           <div class="line">
+                              <div class="linenumber noDisplay">2</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                                 
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Afraid, aware, </span><del><span class="textcontent">little</span></del></div>
+                                 
+                                 <div class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">Alone,
+                                       self-conscious, frightened,</span></div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2" data-reading-wits="t7989-1-2"><ins class="add rend-hand"><span class="textcontent">blundering,</span></ins></div>
+                                 
+                                 <div class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">blundering;</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent"> lonely thing:</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_3" data-line-id="line_3">
+                           <div class="line">
+                              <div class="linenumber noDisplay">3</div>
+                              
+                              <div class="apparatus apparatus_8" data-app-id="apparatus_8">
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                                    <del><span class="textcontent">Above me</span></del><span class="textcontent">, </span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-1 nocturne_poems"><span class="textcontent">Far</span></div>
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">Far</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                                 
+                                 <div class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">above,</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 nocturne_poems" data-reading-wits="t7989-1-2 nocturne_poems"><span class="textcontent">away,</span></div>
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">away</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">stars
+                                       wheeling</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">on through</span></div>
+                                 
+                                 <div class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">in</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">space.</span></div>
+                                 
+                                 <div class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">space,</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_4" data-line-id="line_4">
+                           <div class="line t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems">
+                              <div class="linenumber noDisplay">4</div><span class="textcontent"> About my feet, earth voices whispering. </span></div>
+                        </div>
+                        
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+               </div>
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="t7989-1-3">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version t7989-1-3: 'Nocturne of St. Eloi, 1918' (TCD MS&#xA;                        7989/1/3)">Version t7989-1-3: 'Nocturne of St. Eloi, 1918' (TCD MS
+                  7989/1/3)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-2" data-version-id="t7989-1-2"></hr>
+               <div class="facs-images&#xA;                   t7989-1-2" data-version-id="t7989-1-2"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-2" data-version-id="t7989-1-2" data-img-url="images/nocturne_7989-1-2.jpg" data-img-id="i7989-1-2"></img></div>
+               
+               <hr class="pagebreak t7989-1-3" data-version-id="t7989-1-3"></hr>
+               <div class="facs-images&#xA;                   t7989-1-3" data-version-id="t7989-1-3"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-3" data-version-id="t7989-1-3" data-img-url="images/nocturne_7989-1-3.jpg" data-img-id="i7989-1-3"></img></div>
+               
+               <hr class="pagebreak t7989-1-1" data-version-id="t7989-1-1"></hr>
+               <div class="facs-images&#xA;                   t7989-1-1" data-version-id="t7989-1-1"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-1" data-version-id="t7989-1-1" data-img-url="images/nocturne_7989-1-1.jpg" data-img-id="i7989-1-1"></img></div>
+               
+               <hr class="pagebreak nocturne_poems" data-version-id="nocturne_poems"></hr>
+               <div class="facs-images&#xA;                   nocturne_poems" data-version-id="nocturne_poems"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink nocturne_poems" data-version-id="nocturne_poems" data-img-url="images/nocturne_poems.jpg" data-img-id="i-nocturne_poems"></img></div>
+               
+               <div class="div">
+                  
+                  
+                  <div class="head">
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        
+                        <div style="display:inline-block" class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">Weeds of virtue</span></del>
+                           
+                        </div>
+                        
+                        
+                        <div style="display:inline-block" class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">The</span></del><span class="textcontent"> Widowed Virtue</span></div>
+                        
+                     </div>
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                        
+                        
+                        <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Nocturne, St. Eloi, 1918.</span></div>
+                        
+                        
+                        <div class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">NOCTURNE OF ST. ELOI, 1918</span></div>
+                        
+                        
+                        <div style="display:inline-block" class="reading t7989-1-3" data-reading-wits="t7989-1-3"><span class="textcontent">NOCTURNE, SAINT ELOI</span></div>
+                        
+                        
+                        <div class="reading nocturne_poems" data-reading-wits="nocturne_poems"><span class="textcontent">NOCTURNE</span></div>
+                        
+                        
+                     </div>
+                     
+                     <div class="noteicon">c
+                        <div class="note"><strong>Critical note:</strong> 
+                           
+                           <p><span class="textcontent">Saint Eloi, one of the most popular Saints of the Middle Ages, founded a
+                                 monastery near the present village of Mont St. Eloi, five miles
+                                 northwest of the city of Arras in northern France. The ruins of the
+                                 monastery remain, and in 1917-18 were close to the Western Front. There
+                                 is also a British Military Cemetery nearby.</span></p>
+                           
+                           <p><span class="textcontent">Eloi may also be a reference to the words of Christ on the cross: 'Eloi,
+                                 Eloi, lamma sabacthani? . . . My God, my God, why hast thou forsaken
+                                 me?' (Mark 15:34-5).</span></p>
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+                  
+                  
+                  <div class="div type-dedication">
+                     
+                     
+                     <div class="paragraph">
+                        
+                        <div class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           
+                           <div class="reading t7989-1-1" data-reading-wits="t7989-1-1">
+                              <span class="hi rend-underline"><span class="textcontent">To the memory of </span><del><span class="textcontent">[?]</span></del><span class="textcontent">
+                                    Geoffrey</span><div class="linebreak"></div><span class="textcontent"> England Taylor, 2nd Lieutenant, R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> died
+                                    of wounds received in action, in</span><div class="linebreak"></div><span class="textcontent"> France, September, 26,
+                                    1918.</span></span>
+                              
+                              <div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                           <div class="reading nocturne_poems" data-reading-wits="nocturne_poems">
+                              <span class="hi rend-italic"><span class="textcontent">To Geoffrey England Taylor, 2nd Lieutenant,
+                                    R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> "Died of wounds"</span></span><span class="textcontent">. </span><div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                        </div>
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+                  <div class="div">
+                     
+                     
+                     <div class="lg">
+                        
+                        
+                        <div class="lineWrapper line_1" data-line-id="line_1">
+                           <div class="line">
+                              <div class="linenumber noDisplay">1</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems" data-reading-wits="t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems"><span class="textcontent">I labour
+                                       in a barren place,</span></div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_2" data-line-id="line_2">
+                           <div class="line">
+                              <div class="linenumber noDisplay">2</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                                 
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Afraid, aware, </span><del><span class="textcontent">little</span></del></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">Alone,
+                                       self-conscious, frightened,</span></div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><ins class="add rend-hand"><span class="textcontent">blundering,</span></ins></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">blundering;</span></div>
+                                 
+                              </div>
+                              
+                              <div class="apparatus apparatus_7" data-app-id="apparatus_7">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent"> lonely thing:</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_3" data-line-id="line_3">
+                           <div class="line">
+                              <div class="linenumber noDisplay">3</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                                    <del><span class="textcontent">Above me</span></del><span class="textcontent">, </span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                                 
+                                 <div class="reading t7989-1-2 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-1 nocturne_poems"><span class="textcontent">Far</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">Far</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                                 
+                                 <div class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">above,</span></div>
+                                 
+                                 <div class="reading t7989-1-2 nocturne_poems" data-reading-wits="t7989-1-2 nocturne_poems"><span class="textcontent">away,</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">away</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">stars
+                                       wheeling</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">on through</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">in</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">space.</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">space,</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_4" data-line-id="line_4">
+                           <div class="line t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems">
+                              <div class="linenumber noDisplay">4</div><span class="textcontent"> About my feet, earth voices whispering. </span></div>
+                        </div>
+                        
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+               </div>
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="t7989-1-1">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version t7989-1-1: 'Nocturne, Saint Eloi' (TCD MS 79891/1)">Version t7989-1-1: 'Nocturne, Saint Eloi' (TCD MS 79891/1)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-2" data-version-id="t7989-1-2"></hr>
+               <div class="facs-images&#xA;                   t7989-1-2" data-version-id="t7989-1-2"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-2" data-version-id="t7989-1-2" data-img-url="images/nocturne_7989-1-2.jpg" data-img-id="i7989-1-2"></img></div>
+               
+               <hr class="pagebreak t7989-1-3" data-version-id="t7989-1-3"></hr>
+               <div class="facs-images&#xA;                   t7989-1-3" data-version-id="t7989-1-3"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-3" data-version-id="t7989-1-3" data-img-url="images/nocturne_7989-1-3.jpg" data-img-id="i7989-1-3"></img></div>
+               
+               <hr class="pagebreak t7989-1-1" data-version-id="t7989-1-1"></hr>
+               <div class="facs-images&#xA;                   t7989-1-1" data-version-id="t7989-1-1"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-1" data-version-id="t7989-1-1" data-img-url="images/nocturne_7989-1-1.jpg" data-img-id="i7989-1-1"></img></div>
+               
+               <hr class="pagebreak nocturne_poems" data-version-id="nocturne_poems"></hr>
+               <div class="facs-images&#xA;                   nocturne_poems" data-version-id="nocturne_poems"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink nocturne_poems" data-version-id="nocturne_poems" data-img-url="images/nocturne_poems.jpg" data-img-id="i-nocturne_poems"></img></div>
+               
+               <div class="div">
+                  
+                  
+                  <div class="head">
+                     
+                     <div class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">Weeds of virtue</span></del>
+                           
+                        </div>
+                        
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">The</span></del><span class="textcontent"> Widowed Virtue</span></div>
+                        
+                     </div>
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                        
+                        
+                        <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Nocturne, St. Eloi, 1918.</span></div>
+                        
+                        
+                        <div style="display:inline-block" class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">NOCTURNE OF ST. ELOI, 1918</span></div>
+                        
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><span class="textcontent">NOCTURNE, SAINT ELOI</span></div>
+                        
+                        
+                        <div class="reading nocturne_poems" data-reading-wits="nocturne_poems"><span class="textcontent">NOCTURNE</span></div>
+                        
+                        
+                     </div>
+                     
+                     <div class="noteicon">c
+                        <div class="note"><strong>Critical note:</strong> 
+                           
+                           <p><span class="textcontent">Saint Eloi, one of the most popular Saints of the Middle Ages, founded a
+                                 monastery near the present village of Mont St. Eloi, five miles
+                                 northwest of the city of Arras in northern France. The ruins of the
+                                 monastery remain, and in 1917-18 were close to the Western Front. There
+                                 is also a British Military Cemetery nearby.</span></p>
+                           
+                           <p><span class="textcontent">Eloi may also be a reference to the words of Christ on the cross: 'Eloi,
+                                 Eloi, lamma sabacthani? . . . My God, my God, why hast thou forsaken
+                                 me?' (Mark 15:34-5).</span></p>
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+                  
+                  
+                  <div class="div type-dedication">
+                     
+                     
+                     <div class="paragraph">
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           
+                           <div style="display:inline-block" class="reading t7989-1-1" data-reading-wits="t7989-1-1">
+                              <span class="hi rend-underline"><span class="textcontent">To the memory of </span><del><span class="textcontent">[?]</span></del><span class="textcontent">
+                                    Geoffrey</span><div class="linebreak"></div><span class="textcontent"> England Taylor, 2nd Lieutenant, R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> died
+                                    of wounds received in action, in</span><div class="linebreak"></div><span class="textcontent"> France, September, 26,
+                                    1918.</span></span>
+                              
+                              <div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                           <div class="reading nocturne_poems" data-reading-wits="nocturne_poems">
+                              <span class="hi rend-italic"><span class="textcontent">To Geoffrey England Taylor, 2nd Lieutenant,
+                                    R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> "Died of wounds"</span></span><span class="textcontent">. </span><div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                        </div>
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+                  <div class="div">
+                     
+                     
+                     <div class="lg">
+                        
+                        
+                        <div class="lineWrapper line_1" data-line-id="line_1">
+                           <div class="line">
+                              <div class="linenumber noDisplay">1</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems" data-reading-wits="t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems"><span class="textcontent">I labour
+                                       in a barren place,</span></div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_2" data-line-id="line_2">
+                           <div class="line">
+                              <div class="linenumber noDisplay">2</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                                 
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Afraid, aware, </span><del><span class="textcontent">little</span></del></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">Alone,
+                                       self-conscious, frightened,</span></div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><ins class="add rend-hand"><span class="textcontent">blundering,</span></ins></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">blundering;</span></div>
+                                 
+                              </div>
+                              
+                              <div class="apparatus apparatus_7" data-app-id="apparatus_7">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent"> lonely thing:</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_3" data-line-id="line_3">
+                           <div class="line">
+                              <div class="linenumber noDisplay">3</div>
+                              
+                              <div class="apparatus apparatus_8" data-app-id="apparatus_8">
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                                    <del><span class="textcontent">Above me</span></del><span class="textcontent">, </span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-1 nocturne_poems"><span class="textcontent">Far</span></div>
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">Far</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">above,</span></div>
+                                 
+                                 <div class="reading t7989-1-2 nocturne_poems" data-reading-wits="t7989-1-2 nocturne_poems"><span class="textcontent">away,</span></div>
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">away</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">stars
+                                       wheeling</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">on through</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">in</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">space.</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">space,</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_4" data-line-id="line_4">
+                           <div class="line t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems">
+                              <div class="linenumber noDisplay">4</div><span class="textcontent"> About my feet, earth voices whispering. </span></div>
+                        </div>
+                        
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+               </div>
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="nocturne_poems">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version nocturne_poems: published in Poems as 'Nocturne'">Version nocturne_poems: published in Poems as 'Nocturne'</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-2" data-version-id="t7989-1-2"></hr>
+               <div class="facs-images&#xA;                   t7989-1-2" data-version-id="t7989-1-2"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-2" data-version-id="t7989-1-2" data-img-url="images/nocturne_7989-1-2.jpg" data-img-id="i7989-1-2"></img></div>
+               
+               <hr class="pagebreak t7989-1-3" data-version-id="t7989-1-3"></hr>
+               <div class="facs-images&#xA;                   t7989-1-3" data-version-id="t7989-1-3"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-3" data-version-id="t7989-1-3" data-img-url="images/nocturne_7989-1-3.jpg" data-img-id="i7989-1-3"></img></div>
+               
+               <hr class="pagebreak t7989-1-1" data-version-id="t7989-1-1"></hr>
+               <div class="facs-images&#xA;                   t7989-1-1" data-version-id="t7989-1-1"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-1" data-version-id="t7989-1-1" data-img-url="images/nocturne_7989-1-1.jpg" data-img-id="i7989-1-1"></img></div>
+               
+               <hr class="pagebreak nocturne_poems" data-version-id="nocturne_poems"></hr>
+               <div class="facs-images&#xA;                   nocturne_poems" data-version-id="nocturne_poems"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink nocturne_poems" data-version-id="nocturne_poems" data-img-url="images/nocturne_poems.jpg" data-img-id="i-nocturne_poems"></img></div>
+               
+               <div class="div">
+                  
+                  
+                  <div class="head">
+                     
+                     <div class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">Weeds of virtue</span></del>
+                           
+                        </div>
+                        
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                           <del><span class="textcontent">The</span></del><span class="textcontent"> Widowed Virtue</span></div>
+                        
+                     </div>
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                        
+                        
+                        <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Nocturne, St. Eloi, 1918.</span></div>
+                        
+                        
+                        <div class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">NOCTURNE OF ST. ELOI, 1918</span></div>
+                        
+                        
+                        <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><span class="textcontent">NOCTURNE, SAINT ELOI</span></div>
+                        
+                        
+                        <div style="display:inline-block" class="reading nocturne_poems" data-reading-wits="nocturne_poems"><span class="textcontent">NOCTURNE</span></div>
+                        
+                        
+                     </div>
+                     
+                     <div class="noteicon">c
+                        <div class="note"><strong>Critical note:</strong> 
+                           
+                           <p><span class="textcontent">Saint Eloi, one of the most popular Saints of the Middle Ages, founded a
+                                 monastery near the present village of Mont St. Eloi, five miles
+                                 northwest of the city of Arras in northern France. The ruins of the
+                                 monastery remain, and in 1917-18 were close to the Western Front. There
+                                 is also a British Military Cemetery nearby.</span></p>
+                           
+                           <p><span class="textcontent">Eloi may also be a reference to the words of Christ on the cross: 'Eloi,
+                                 Eloi, lamma sabacthani? . . . My God, my God, why hast thou forsaken
+                                 me?' (Mark 15:34-5).</span></p>
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+                  
+                  
+                  <div class="div type-dedication">
+                     
+                     
+                     <div class="paragraph">
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           
+                           <div class="reading t7989-1-1" data-reading-wits="t7989-1-1">
+                              <span class="hi rend-underline"><span class="textcontent">To the memory of </span><del><span class="textcontent">[?]</span></del><span class="textcontent">
+                                    Geoffrey</span><div class="linebreak"></div><span class="textcontent"> England Taylor, 2nd Lieutenant, R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> died
+                                    of wounds received in action, in</span><div class="linebreak"></div><span class="textcontent"> France, September, 26,
+                                    1918.</span></span>
+                              
+                              <div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                           <div style="display:inline-block" class="reading nocturne_poems" data-reading-wits="nocturne_poems">
+                              <span class="hi rend-italic"><span class="textcontent">To Geoffrey England Taylor, 2nd Lieutenant,
+                                    R.F.A.,</span><div class="linebreak"></div><span class="textcontent"> "Died of wounds"</span></span><span class="textcontent">. </span><div class="noteicon">b
+                                 <div class="note"><strong>Biographical note:</strong> 
+                                    
+                                    <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                                          academy at Bloomsbury in London, was MacGreevy's closest
+                                          friend during the war. Both men were drafted to the same
+                                          division in France. MacGreevy was assigned to guns, Taylor
+                                          to trench mortars: 'the greatest misfortune that could
+                                          befall a gunner-officer. Trench mortars were regarded with
+                                          horror . . . [they were] a suicide club.' </span></p>
+                                    
+                                    <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                                          Manchester, he found Taylor's name in the Died of Wounds
+                                          section of the Casualty List. The death of Geoffrey Taylor,
+                                          'one of the most sensitively gentle' of men, represented to
+                                          MacGreevy the worst horror of war: the destruction of
+                                          'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                           
+                        </div>
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+                  <div class="div">
+                     
+                     
+                     <div class="lg">
+                        
+                        
+                        <div class="lineWrapper line_1" data-line-id="line_1">
+                           <div class="line">
+                              <div class="linenumber noDisplay">1</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems" data-reading-wits="t7989-1-1 t7989-1-2 t7989-1-3 nocturne_poems"><span class="textcontent">I labour
+                                       in a barren place,</span></div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_2" data-line-id="line_2">
+                           <div class="line">
+                              <div class="linenumber noDisplay">2</div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                                 
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">Afraid, aware, </span><del><span class="textcontent">little</span></del></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">Alone,
+                                       self-conscious, frightened,</span></div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><ins class="add rend-hand"><span class="textcontent">blundering,</span></ins></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">blundering;</span></div>
+                                 
+                              </div>
+                              
+                              <div class="apparatus apparatus_7" data-app-id="apparatus_7">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent"> lonely thing:</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_3" data-line-id="line_3">
+                           <div class="line">
+                              <div class="linenumber noDisplay">3</div>
+                              
+                              <div class="apparatus apparatus_8" data-app-id="apparatus_8">
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3">
+                                    <del><span class="textcontent">Above me</span></del><span class="textcontent">, </span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-1 nocturne_poems"><span class="textcontent">Far</span></div>
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">Far</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                                 
+                                 <div class="reading t7989-1-1" data-reading-wits="t7989-1-1"><span class="textcontent">above,</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 nocturne_poems" data-reading-wits="t7989-1-2 nocturne_poems"><span class="textcontent">away,</span></div>
+                                 
+                                 <div class="reading t7989-1-3" data-reading-wits="t7989-1-3"><ins class="add rend-hand"><span class="textcontent">away</span></ins></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">stars
+                                       wheeling</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">on through</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">in</span></div>
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                                 
+                                 <div class="reading t7989-1-2" data-reading-wits="t7989-1-2"><span class="textcontent">space.</span></div>
+                                 
+                                 <div style="display:inline-block" class="reading t7989-1-3 t7989-1-1 nocturne_poems" data-reading-wits="t7989-1-3 t7989-1-1 nocturne_poems"><span class="textcontent">space,</span></div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="lineWrapper line_4" data-line-id="line_4">
+                           <div class="line t7989-1-2 t7989-1-3 t7989-1-1 nocturne_poems">
+                              <div class="linenumber noDisplay">4</div><span class="textcontent"> About my feet, earth voices whispering. </span></div>
+                        </div>
+                        
+                        
+                     </div>
+                     
+                     
+                  </div>
+                  
+                  
+               </div>
+               
+               
+            </div>
+         </div>
+         <div id="notesPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Textual Notes
+               
+            </div>
+            <div class="noteContent"><strong>Critical note: </strong>
+               
+               <p><span class="textcontent">Saint Eloi, one of the most popular Saints of the Middle Ages, founded a
+                     monastery near the present village of Mont St. Eloi, five miles
+                     northwest of the city of Arras in northern France. The ruins of the
+                     monastery remain, and in 1917-18 were close to the Western Front. There
+                     is also a British Military Cemetery nearby.</span></p>
+               
+               <p><span class="textcontent">Eloi may also be a reference to the words of Christ on the cross: 'Eloi,
+                     Eloi, lamma sabacthani? . . . My God, my God, why hast thou forsaken
+                     me?' (Mark 15:34-5).</span></p>
+               
+            </div>
+            <div class="noteContent t7989-1-1">
+               <div class="witnesses">t7989-1-1</div>
+               <div class="position apparatus_3">
+                  Highlight prose section
+                  
+               </div><strong>Biographical note: </strong>
+               
+               <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                     academy at Bloomsbury in London, was MacGreevy's closest
+                     friend during the war. Both men were drafted to the same
+                     division in France. MacGreevy was assigned to guns, Taylor
+                     to trench mortars: 'the greatest misfortune that could
+                     befall a gunner-officer. Trench mortars were regarded with
+                     horror . . . [they were] a suicide club.' </span></p>
+               
+               <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                     Manchester, he found Taylor's name in the Died of Wounds
+                     section of the Casualty List. The death of Geoffrey Taylor,
+                     'one of the most sensitively gentle' of men, represented to
+                     MacGreevy the worst horror of war: the destruction of
+                     'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+               
+            </div>
+            <div class="noteContent nocturne_poems">
+               <div class="witnesses">nocturne_poems</div>
+               <div class="position apparatus_3">
+                  Highlight prose section
+                  
+               </div><strong>Biographical note: </strong>
+               
+               <p><span class="textcontent">Geoffrey England Taylor, a fellow cadet at the training
+                     academy at Bloomsbury in London, was MacGreevy's closest
+                     friend during the war. Both men were drafted to the same
+                     division in France. MacGreevy was assigned to guns, Taylor
+                     to trench mortars: 'the greatest misfortune that could
+                     befall a gunner-officer. Trench mortars were regarded with
+                     horror . . . [they were] a suicide club.' </span></p>
+               
+               <p><span class="textcontent">While MacGreevy was recovering from his shoulder wound in
+                     Manchester, he found Taylor's name in the Died of Wounds
+                     section of the Casualty List. The death of Geoffrey Taylor,
+                     'one of the most sensitively gentle' of men, represented to
+                     MacGreevy the worst horror of war: the destruction of
+                     'life's hopes and dreams'; 'intelligence and beauty'. </span><div class="title rend-italic"><span class="textcontent">Memoirs</span></div><span class="textcontent">, pp. 318-19. </span></p>
+               
+            </div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i7989-1-2">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/nocturne_7989-1-2.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/nocturne_7989-1-2.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i7989-1-3">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/nocturne_7989-1-3.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/nocturne_7989-1-3.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i7989-1-1">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/nocturne_7989-1-1.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/nocturne_7989-1-1.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i-nocturne_poems">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/nocturne_poems.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/nocturne_poems.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

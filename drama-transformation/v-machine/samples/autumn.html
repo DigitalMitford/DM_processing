@@ -1,0 +1,1317 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <title>Autumn, 1922 -- The Versioning Machine 5.0</title>
+      <meta charset="utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="../src/js/jquery-ui-1.11.3/jquery-ui.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine.css"></link><script type="text/javascript" src="../src/js/jquery-1.11.2.min.js"></script><script type="text/javascript" src="../src/js/jquery-ui-1.11.3/jquery-ui.min.js"></script><link rel="stylesheet" type="text/css" href="../src/panzoom/panzoom.css"></link><script type="text/javascript" src="../src/panzoom/jquery.panzoom.min.js"></script><script type="text/javascript">
+      
+      /*NOTES PANEL: To change the VM so that the notes panel page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_NOTES_PANEL = false;
+      
+      /*BIB PANEL: To change the VM so that the bibliographic information page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_BIB_PANEL = true;
+      
+      /**The number of version/witness panels to be displayed initially */
+      INITIAL_DISPLAY_NUM_VERSIONS = 2;
+      
+      /** CRIT PANEL: Critical information should be encoded as tei:notesStmt/tei:note[@type='critIntro'] in the TEI files --&gt;
+      * To change the VM so that the critical information page does not
+      * appear at the initial load, change the constant INITIAL_DISPLAY_CRIT_PANEL from "true" to "false" */
+      INITIAL_DISPLAY_CRIT_PANEL = false;
+      
+      /** To change the VM so that line numbers are hidden by default, change the constant INITIAL_DISPLAY_LINENUMBERS from
+      * "true" to "false" */
+      INITIAL_DISPLAY_LINENUMBERS = true;
+      
+   var timelinePoints = new Array();var timelineDurations = new Array();</script><script type="text/javascript" src="../src/vmachine.js"></script></head>
+   <body>
+      <div id="mainBanner">
+         <div id="brandingLogo"><a href="../samples.html"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/LogoSilver.png"></img></a></div>
+         <div id="bannerImageContainer"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/HeaderBackground.png"></img><div id="headline">
+               <h1>Autumn, 1922</h1>
+            </div>
+            <nav id="mainControls">
+               <ul>
+                  <li><button id="selectVersion" class="topMenuButton dropdownButton">5 Total Versions<img class="noDisplay" src="../vm-images/arrowup.png" alt="arrow up"></img><img src="../vm-images/arrowdown.png" alt="arrow down"></img></button><ul id="versionList" class="dropdown notVisible">
+                        <li data-panelid="t7989-1-10">
+                           <div class="listText">
+                              <div><a href="#" title="t7989-1-10: 'A Short History of Our Own Time' (TCD MS&#xA;                  7989/1/10)">Version t7989-1-10</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="t7989-1-8">
+                           <div class="listText">
+                              <div><a href="#" title="t7989-1-8: 'Civil War', which was deleted and replaced with&#xA;                  'Ireland, Autumn 1922' (TCD MS 7989/1/8)">Version t7989-1-8</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="t7989-1-7">
+                           <div class="listText">
+                              <div><a href="#" title="t7989-1-7: 'Ireland Autumn, 1922' (TCD MS 7989/1/7)">Version t7989-1-7</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="t7989-1-9">
+                           <div class="listText">
+                              <div><a href="#" title="t7989-1-9: 'Ireland, Autumn, 1922 (TCD MS 7989/1/9)">Version t7989-1-9</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="pub">
+                           <div class="listText">
+                              <div><a href="#" title="pub: published in Poems under the title&#xA;                  'Autumn, 1922'">Version pub</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li id="linenumberOnOff" title="Clicking this button turns the line numbers on or off."><button class="topMenuButton">Line numbers</button></li>
+                  <li data-panelid="bibPanel" title="Clicking this button triggers the bibliographic panel to appear or disappear."><button class="topMenuButton">Bibliographic panel</button></li>
+                  <li data-panelid="notesPanel" title="Clicking this button triggers the notes panel to appear or disappear."><button class="topMenuButton listText">Notes panel</button></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div id="mssArea">
+         <div id="bibPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>Autumn, 1922</h2>
+               <h3>
+                  by Thomas MacGreevy
+               </h3>
+               <h4>Original Source</h4>
+               
+               <p>Diplomatic editions of MacGreevy's poetry were created from 
+                  <div class="title rend-italic">Collected Poems of Thomas MacGreevy: An Annotated Edition</div>, edited by
+                  Susan Schreibman (Anna Livia Press and The Catholic University of America Press,
+                  1991). Images of MacGreevy's published poems were taken from MacGreevy's own copy
+                  of
+                  
+                  <div class="title rend-italic">Poems</div> (Heinemann, 1934). Manuscript copies are from
+                  MacGreevy's papers at Trinity College, Dublin (individual manuscript numbers appear
+                  in the witness list below).
+               </p>
+               
+               <h4>Witness List</h4>
+               <ul>
+                  <li><strong>Witness t7989-1-10:</strong> 'A Short History of Our Own Time' (TCD MS
+                     7989/1/10)
+                  </li>
+                  <li><strong>Witness t7989-1-8:</strong> 'Civil War', which was deleted and replaced with
+                     'Ireland, Autumn 1922' (TCD MS 7989/1/8)
+                  </li>
+                  <li><strong>Witness t7989-1-7:</strong> 'Ireland Autumn, 1922' (TCD MS 7989/1/7)
+                  </li>
+                  <li><strong>Witness t7989-1-9:</strong> 'Ireland, Autumn, 1922 (TCD MS 7989/1/9)
+                  </li>
+                  <li><strong>Witness pub:</strong> published in Poems under the title
+                     'Autumn, 1922'
+                  </li>
+               </ul>
+               <h4>Textual Notes</h4>
+               <div class="note">There are four TS versions of this poem entitled 'Ireland Autumn,
+                  1922', 'Civil War', and 'A Short History of Our Own Time'. The poem was most probably
+                  written between 1924 and 1926. To the editor's knowledge, it has not been reprinted
+                  
+                  <hr></hr>
+               </div>
+               <div class="note"><em class="label">render:</em> Additions appear in a green, fixed-width
+                  font.
+               </div>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Text Encoding by  Susan Schreibman and  Jarom McDonald</li>
+               </ul>
+               <h5>Publication Details:</h5>
+               
+               <p>Published by Susan Schreibman.</p>
+               
+               The Thomas MacGreevy Archive http://macgreevy.org
+               
+               
+               
+               <p>Thomas MacGreevy's poetry is reprinted here with the kind permission of Margaret
+                  Farrington and the late Elizabeth Ryan.
+               </p>
+               
+               <p>This poem is being made available for demonstration purposes only. It may not be
+                  reproduced without explicit permission from the copyright holder. For copyright
+                  information, please contact Susan Schreibman at susan.schreibman[AT]gmail.com
+               </p>
+               
+               
+               <h4>Encoding Principles</h4>
+               
+               
+               <p>This is a demonstration document for the Versioning Machine of parallel segmentation
+                  encoding utilising TEIP5. This revision incorporates location-referenced encoding
+                  to
+                  ensure that every variation can be compared across versions.
+               </p>
+               
+               
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="t7989-1-10">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version t7989-1-10: 'A Short History of Our Own Time' (TCD MS&#xA;                  7989/1/10)">Version t7989-1-10: 'A Short History of Our Own Time' (TCD MS
+                  7989/1/10)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-10" data-version-id="t7989-1-10"></hr>
+               <div class="facs-images&#xA;                   t7989-1-10" data-version-id="t7989-1-10"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-10" data-version-id="t7989-1-10" data-img-url="images/autumn_7989-1-10.jpg" data-img-id="i7989-1-10"></img></div>
+               
+               <hr class="pagebreak t7989-1-8" data-version-id="t7989-1-8"></hr>
+               <div class="facs-images&#xA;                   t7989-1-8" data-version-id="t7989-1-8"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-8" data-version-id="t7989-1-8" data-img-url="images/autumn_7989-1-8.jpg" data-img-id="i7989-1-8"></img></div>
+               
+               <hr class="pagebreak t7989-1-7" data-version-id="t7989-1-7"></hr>
+               <div class="facs-images&#xA;                   t7989-1-7" data-version-id="t7989-1-7"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-7" data-version-id="t7989-1-7" data-img-url="images/autumn_7989-1-7.jpg" data-img-id="i7989-1-7"></img></div>
+               
+               <hr class="pagebreak t7989-1-9" data-version-id="t7989-1-9"></hr>
+               <div class="facs-images&#xA;                   t7989-1-9" data-version-id="t7989-1-9"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-9" data-version-id="t7989-1-9" data-img-url="images/autumn_7989-1-9.jpg" data-img-id="i7989-1-9"></img></div>
+               
+               <hr class="pagebreak pub" data-version-id="pub"></hr>
+               <div class="facs-images&#xA;                   pub" data-version-id="pub"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink pub" data-version-id="pub" data-img-url="images/autumn_pub.jpg" data-img-id="autumn-pub"></img></div>
+               
+               <div class="head">
+                  
+                  <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                     
+                     <div style="display:inline-block" class="reading t7989-1-10" data-reading-wits="t7989-1-10"><span class="textcontent">A Short History of Our Own Times.</span></div>
+                     
+                     <div class="reading t7989-1-8" data-reading-wits="t7989-1-8">
+                        <del class="del rend-typed"><span class="textcontent">CIVIL WAR</span></del>
+                        <ins class="add rend-hand"><span class="textcontent"> Ireland, Autumn 1922</span></ins>
+                        
+                     </div>
+                     
+                     <div class="reading t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-7 t7989-1-9"><span class="textcontent">IRELAND, AUTUMN, 1922</span></div>
+                     
+                     <div class="reading pub" data-reading-wits="pub">
+                        <ins class="add rend-hand"><span class="textcontent">IRELAND</span></ins><span class="textcontent"> AUTUMN, 1922</span></div>
+                     
+                  </div>
+                  
+                  <div class="noteicon">c
+                     <div class="note"><strong>Critical note:</strong> 
+                        
+                        <p><span class="textcontent">The alternative titles MacGreevy experimented with provide the key to this very
+                              short poem. By the autumn of 1922 over six years had passed since Patrick Pearse
+                              had proclaimed the Irish Republic in Dublin's General Post Office. The country had
+                              seen the heart of its capital destroyed by the fires of Easter 1916, and this was
+                              followed after the Seinn Fein victory in the 1918 election by an extended campaign
+                              of guerilla warfare against the British with its reprisals and
+                              counter-reprisals.</span></p>
+                        
+                        <p><span class="textcontent">In the end, nationalist Ireland was divided into bitterly opposing camps, and
+                              engaged in civil war over the terms of the agreement reached in London in December
+                              1921. The new national institutions that emerged did so more through the passage
+                              of time than as the expression of any national ideal or vision. MacGreevy's poem
+                              captures the despair and weariness of a nation torn apart by war and bitter
+                              political divisions.</span></p>
+                        
+                     </div>
+                  </div>
+                  
+               </div>
+               
+               <div class="lg lg-n1">
+                  
+                  <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                     <div class="line">
+                        <div class="linenumber noDisplay">1</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">The sun burns
+                                 out,</span></div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           <div class="reading t7989-1-8 pub" data-reading-wits="t7989-1-8 pub"><span class="textcontent">The world withers</span></div>
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-9"><span class="textcontent">The world withers,</span></div>
+                           
+                        </div>
+                        
+                        <div class="apparatus apparatus_4" data-app-id="apparatus_4">
+                           
+                           <div class="reading t7989-1-8 t7989-1-7 t7989-1-9 pub" data-reading-wits="t7989-1-8 t7989-1-7 t7989-1-9 pub">
+                              
+                              <div class="stanzabreak"></div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_3" data-line-id="line_1_3">
+                     <div class="line">
+                        <div class="linenumber noDisplay">3</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10" data-reading-wits="t7989-1-10"><span class="textcontent">Poets sing no more,</span></div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">And time grows
+                                 afraid</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_triumph" data-app-id="apparatus_triumph">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-8 t7989-1-9 pub"><span class="textcontent">of the triumph of time. </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> 
+                                    
+                                    <p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                                          depicted as Father Time in his chariot surrounded by symbolic devices
+                                          such as the scythe and hourglass, were frequently represented by Baroque
+                                          and Renaissance artists.</span></p>
+                                    
+                                    <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                                          he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                                          Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                                          Elder's The Triumph of Death, which depicts a whole society visited by
+                                          death riding a pale horse (using imagery from the Apocalypse) against a
+                                          background of barren landscape and a darkened sky.</span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+               </div>
+               
+               <div class="closer">
+                  
+                  <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                     
+                     <div style="display:inline-block" class="reading t7989-1-10" data-reading-wits="t7989-1-10">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas Mc Greevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">19 Lincoln Chambers,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Lincoln Place,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">DUBLIN.</span>
+                        
+                        
+                     </div>
+                     
+                     <div class="reading t7989-1-9" data-reading-wits="t7989-1-9">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">L. St. Senan </span>
+                        
+                        <div class="noteicon">b
+                           <div class="note"><strong>Biographical note:</strong> <span class="textcontent"> MacGreevy published several poems and
+                                 reviews under the pseudonym L. St. Senan in the early-mid 1920s. Saint Senan
+                                 (d.560) founded several monasteries in MacGreevy's native Ireland. Senan's last
+                                 settlement was on Scattery Island in the estuary of the Shannon, near
+                                 MacGreevy's birthplace. </span></div>
+                        </div>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent"> (L. St. Senan)</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas McGreevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">15 Cheyne Gardens, London, S.W.3</span>
+                        
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="t7989-1-8">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version t7989-1-8: 'Civil War', which was deleted and replaced with&#xA;                  'Ireland, Autumn 1922' (TCD MS 7989/1/8)">Version t7989-1-8: 'Civil War', which was deleted and replaced with
+                  'Ireland, Autumn 1922' (TCD MS 7989/1/8)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-10" data-version-id="t7989-1-10"></hr>
+               <div class="facs-images&#xA;                   t7989-1-10" data-version-id="t7989-1-10"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-10" data-version-id="t7989-1-10" data-img-url="images/autumn_7989-1-10.jpg" data-img-id="i7989-1-10"></img></div>
+               
+               <hr class="pagebreak t7989-1-8" data-version-id="t7989-1-8"></hr>
+               <div class="facs-images&#xA;                   t7989-1-8" data-version-id="t7989-1-8"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-8" data-version-id="t7989-1-8" data-img-url="images/autumn_7989-1-8.jpg" data-img-id="i7989-1-8"></img></div>
+               
+               <hr class="pagebreak t7989-1-7" data-version-id="t7989-1-7"></hr>
+               <div class="facs-images&#xA;                   t7989-1-7" data-version-id="t7989-1-7"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-7" data-version-id="t7989-1-7" data-img-url="images/autumn_7989-1-7.jpg" data-img-id="i7989-1-7"></img></div>
+               
+               <hr class="pagebreak t7989-1-9" data-version-id="t7989-1-9"></hr>
+               <div class="facs-images&#xA;                   t7989-1-9" data-version-id="t7989-1-9"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-9" data-version-id="t7989-1-9" data-img-url="images/autumn_7989-1-9.jpg" data-img-id="i7989-1-9"></img></div>
+               
+               <hr class="pagebreak pub" data-version-id="pub"></hr>
+               <div class="facs-images&#xA;                   pub" data-version-id="pub"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink pub" data-version-id="pub" data-img-url="images/autumn_pub.jpg" data-img-id="autumn-pub"></img></div>
+               
+               <div class="head">
+                  
+                  <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10"><span class="textcontent">A Short History of Our Own Times.</span></div>
+                     
+                     <div style="display:inline-block" class="reading t7989-1-8" data-reading-wits="t7989-1-8">
+                        <del class="del rend-typed"><span class="textcontent">CIVIL WAR</span></del>
+                        <ins class="add rend-hand"><span class="textcontent"> Ireland, Autumn 1922</span></ins>
+                        
+                     </div>
+                     
+                     <div class="reading t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-7 t7989-1-9"><span class="textcontent">IRELAND, AUTUMN, 1922</span></div>
+                     
+                     <div class="reading pub" data-reading-wits="pub">
+                        <ins class="add rend-hand"><span class="textcontent">IRELAND</span></ins><span class="textcontent"> AUTUMN, 1922</span></div>
+                     
+                  </div>
+                  
+                  <div class="noteicon">c
+                     <div class="note"><strong>Critical note:</strong> 
+                        
+                        <p><span class="textcontent">The alternative titles MacGreevy experimented with provide the key to this very
+                              short poem. By the autumn of 1922 over six years had passed since Patrick Pearse
+                              had proclaimed the Irish Republic in Dublin's General Post Office. The country had
+                              seen the heart of its capital destroyed by the fires of Easter 1916, and this was
+                              followed after the Seinn Fein victory in the 1918 election by an extended campaign
+                              of guerilla warfare against the British with its reprisals and
+                              counter-reprisals.</span></p>
+                        
+                        <p><span class="textcontent">In the end, nationalist Ireland was divided into bitterly opposing camps, and
+                              engaged in civil war over the terms of the agreement reached in London in December
+                              1921. The new national institutions that emerged did so more through the passage
+                              of time than as the expression of any national ideal or vision. MacGreevy's poem
+                              captures the despair and weariness of a nation torn apart by war and bitter
+                              political divisions.</span></p>
+                        
+                     </div>
+                  </div>
+                  
+               </div>
+               
+               <div class="lg lg-n1">
+                  
+                  <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                     <div class="line">
+                        <div class="linenumber noDisplay">1</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">The sun burns
+                                 out,</span></div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-8 pub" data-reading-wits="t7989-1-8 pub"><span class="textcontent">The world withers</span></div>
+                           
+                           <div class="reading t7989-1-10 t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-9"><span class="textcontent">The world withers,</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-8 t7989-1-7 t7989-1-9 pub" data-reading-wits="t7989-1-8 t7989-1-7 t7989-1-9 pub">
+                              
+                              <div class="stanzabreak"></div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">And time grows
+                                 afraid</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_triumph" data-app-id="apparatus_triumph">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-8 t7989-1-9 pub"><span class="textcontent">of the triumph of time. </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> 
+                                    
+                                    <p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                                          depicted as Father Time in his chariot surrounded by symbolic devices
+                                          such as the scythe and hourglass, were frequently represented by Baroque
+                                          and Renaissance artists.</span></p>
+                                    
+                                    <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                                          he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                                          Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                                          Elder's The Triumph of Death, which depicts a whole society visited by
+                                          death riding a pale horse (using imagery from the Apocalypse) against a
+                                          background of barren landscape and a darkened sky.</span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+               </div>
+               
+               <div class="closer">
+                  
+                  <div class="apparatus apparatus_9" data-app-id="apparatus_9">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas Mc Greevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">19 Lincoln Chambers,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Lincoln Place,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">DUBLIN.</span>
+                        
+                        
+                     </div>
+                     
+                     <div class="reading t7989-1-9" data-reading-wits="t7989-1-9">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">L. St. Senan </span>
+                        
+                        <div class="noteicon">b
+                           <div class="note"><strong>Biographical note:</strong> <span class="textcontent"> MacGreevy published several poems and
+                                 reviews under the pseudonym L. St. Senan in the early-mid 1920s. Saint Senan
+                                 (d.560) founded several monasteries in MacGreevy's native Ireland. Senan's last
+                                 settlement was on Scattery Island in the estuary of the Shannon, near
+                                 MacGreevy's birthplace. </span></div>
+                        </div>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent"> (L. St. Senan)</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas McGreevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">15 Cheyne Gardens, London, S.W.3</span>
+                        
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="t7989-1-7">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version t7989-1-7: 'Ireland Autumn, 1922' (TCD MS 7989/1/7)">Version t7989-1-7: 'Ireland Autumn, 1922' (TCD MS 7989/1/7)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-10" data-version-id="t7989-1-10"></hr>
+               <div class="facs-images&#xA;                   t7989-1-10" data-version-id="t7989-1-10"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-10" data-version-id="t7989-1-10" data-img-url="images/autumn_7989-1-10.jpg" data-img-id="i7989-1-10"></img></div>
+               
+               <hr class="pagebreak t7989-1-8" data-version-id="t7989-1-8"></hr>
+               <div class="facs-images&#xA;                   t7989-1-8" data-version-id="t7989-1-8"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-8" data-version-id="t7989-1-8" data-img-url="images/autumn_7989-1-8.jpg" data-img-id="i7989-1-8"></img></div>
+               
+               <hr class="pagebreak t7989-1-7" data-version-id="t7989-1-7"></hr>
+               <div class="facs-images&#xA;                   t7989-1-7" data-version-id="t7989-1-7"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-7" data-version-id="t7989-1-7" data-img-url="images/autumn_7989-1-7.jpg" data-img-id="i7989-1-7"></img></div>
+               
+               <hr class="pagebreak t7989-1-9" data-version-id="t7989-1-9"></hr>
+               <div class="facs-images&#xA;                   t7989-1-9" data-version-id="t7989-1-9"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-9" data-version-id="t7989-1-9" data-img-url="images/autumn_7989-1-9.jpg" data-img-id="i7989-1-9"></img></div>
+               
+               <hr class="pagebreak pub" data-version-id="pub"></hr>
+               <div class="facs-images&#xA;                   pub" data-version-id="pub"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink pub" data-version-id="pub" data-img-url="images/autumn_pub.jpg" data-img-id="autumn-pub"></img></div>
+               
+               <div class="head">
+                  
+                  <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10"><span class="textcontent">A Short History of Our Own Times.</span></div>
+                     
+                     <div class="reading t7989-1-8" data-reading-wits="t7989-1-8">
+                        <del class="del rend-typed"><span class="textcontent">CIVIL WAR</span></del>
+                        <ins class="add rend-hand"><span class="textcontent"> Ireland, Autumn 1922</span></ins>
+                        
+                     </div>
+                     
+                     <div style="display:inline-block" class="reading t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-7 t7989-1-9"><span class="textcontent">IRELAND, AUTUMN, 1922</span></div>
+                     
+                     <div class="reading pub" data-reading-wits="pub">
+                        <ins class="add rend-hand"><span class="textcontent">IRELAND</span></ins><span class="textcontent"> AUTUMN, 1922</span></div>
+                     
+                  </div>
+                  
+                  <div class="noteicon">c
+                     <div class="note"><strong>Critical note:</strong> 
+                        
+                        <p><span class="textcontent">The alternative titles MacGreevy experimented with provide the key to this very
+                              short poem. By the autumn of 1922 over six years had passed since Patrick Pearse
+                              had proclaimed the Irish Republic in Dublin's General Post Office. The country had
+                              seen the heart of its capital destroyed by the fires of Easter 1916, and this was
+                              followed after the Seinn Fein victory in the 1918 election by an extended campaign
+                              of guerilla warfare against the British with its reprisals and
+                              counter-reprisals.</span></p>
+                        
+                        <p><span class="textcontent">In the end, nationalist Ireland was divided into bitterly opposing camps, and
+                              engaged in civil war over the terms of the agreement reached in London in December
+                              1921. The new national institutions that emerged did so more through the passage
+                              of time than as the expression of any national ideal or vision. MacGreevy's poem
+                              captures the despair and weariness of a nation torn apart by war and bitter
+                              political divisions.</span></p>
+                        
+                     </div>
+                  </div>
+                  
+               </div>
+               
+               <div class="lg lg-n1">
+                  
+                  <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                     <div class="line">
+                        <div class="linenumber noDisplay">1</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">The sun burns
+                                 out,</span></div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           <div class="reading t7989-1-8 pub" data-reading-wits="t7989-1-8 pub"><span class="textcontent">The world withers</span></div>
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-9"><span class="textcontent">The world withers,</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-8 t7989-1-7 t7989-1-9 pub" data-reading-wits="t7989-1-8 t7989-1-7 t7989-1-9 pub">
+                              
+                              <div class="stanzabreak"></div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">And time grows
+                                 afraid</span></div>
+                           
+                        </div>
+                        
+                        <div class="apparatus apparatus_triumph" data-app-id="apparatus_triumph">
+                           
+                           <div class="reading t7989-1-10 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-8 t7989-1-9 pub"><span class="textcontent">of the triumph of time. </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> 
+                                    
+                                    <p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                                          depicted as Father Time in his chariot surrounded by symbolic devices
+                                          such as the scythe and hourglass, were frequently represented by Baroque
+                                          and Renaissance artists.</span></p>
+                                    
+                                    <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                                          he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                                          Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                                          Elder's The Triumph of Death, which depicts a whole society visited by
+                                          death riding a pale horse (using imagery from the Apocalypse) against a
+                                          background of barren landscape and a darkened sky.</span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_5" data-line-id="line_1_5">
+                     <div class="line">
+                        <div class="linenumber noDisplay">5</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_triumph" data-app-id="apparatus_triumph">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-7" data-reading-wits="t7989-1-7"><span class="textcontent">Of the triumph of time. </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> 
+                                    <p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                                          depicted as Father Time in his chariot surrounded by symbolic devices
+                                          such as the scythe and hourglass, were frequently represented by Baroque
+                                          and Renaissance artists.</span></p>
+                                    
+                                    <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                                          he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                                          Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                                          Elder's The Triumph of Death, which depicts a whole society visited by
+                                          death riding a pale horse (using imagery from the Apocalypse) against a
+                                          background of barren landscape and a darkened sky.</span></p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+               </div>
+               
+               <div class="closer">
+                  
+                  <div class="apparatus apparatus_9" data-app-id="apparatus_9">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas Mc Greevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">19 Lincoln Chambers,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Lincoln Place,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">DUBLIN.</span>
+                        
+                        
+                     </div>
+                     
+                     <div class="reading t7989-1-9" data-reading-wits="t7989-1-9">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">L. St. Senan </span>
+                        
+                        <div class="noteicon">b
+                           <div class="note"><strong>Biographical note:</strong> <span class="textcontent"> MacGreevy published several poems and
+                                 reviews under the pseudonym L. St. Senan in the early-mid 1920s. Saint Senan
+                                 (d.560) founded several monasteries in MacGreevy's native Ireland. Senan's last
+                                 settlement was on Scattery Island in the estuary of the Shannon, near
+                                 MacGreevy's birthplace. </span></div>
+                        </div>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent"> (L. St. Senan)</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas McGreevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">15 Cheyne Gardens, London, S.W.3</span>
+                        
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="t7989-1-9">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version t7989-1-9: 'Ireland, Autumn, 1922 (TCD MS 7989/1/9)">Version t7989-1-9: 'Ireland, Autumn, 1922 (TCD MS 7989/1/9)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-10" data-version-id="t7989-1-10"></hr>
+               <div class="facs-images&#xA;                   t7989-1-10" data-version-id="t7989-1-10"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-10" data-version-id="t7989-1-10" data-img-url="images/autumn_7989-1-10.jpg" data-img-id="i7989-1-10"></img></div>
+               
+               <hr class="pagebreak t7989-1-8" data-version-id="t7989-1-8"></hr>
+               <div class="facs-images&#xA;                   t7989-1-8" data-version-id="t7989-1-8"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-8" data-version-id="t7989-1-8" data-img-url="images/autumn_7989-1-8.jpg" data-img-id="i7989-1-8"></img></div>
+               
+               <hr class="pagebreak t7989-1-7" data-version-id="t7989-1-7"></hr>
+               <div class="facs-images&#xA;                   t7989-1-7" data-version-id="t7989-1-7"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-7" data-version-id="t7989-1-7" data-img-url="images/autumn_7989-1-7.jpg" data-img-id="i7989-1-7"></img></div>
+               
+               <hr class="pagebreak t7989-1-9" data-version-id="t7989-1-9"></hr>
+               <div class="facs-images&#xA;                   t7989-1-9" data-version-id="t7989-1-9"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-9" data-version-id="t7989-1-9" data-img-url="images/autumn_7989-1-9.jpg" data-img-id="i7989-1-9"></img></div>
+               
+               <hr class="pagebreak pub" data-version-id="pub"></hr>
+               <div class="facs-images&#xA;                   pub" data-version-id="pub"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink pub" data-version-id="pub" data-img-url="images/autumn_pub.jpg" data-img-id="autumn-pub"></img></div>
+               
+               <div class="head">
+                  
+                  <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10"><span class="textcontent">A Short History of Our Own Times.</span></div>
+                     
+                     <div class="reading t7989-1-8" data-reading-wits="t7989-1-8">
+                        <del class="del rend-typed"><span class="textcontent">CIVIL WAR</span></del>
+                        <ins class="add rend-hand"><span class="textcontent"> Ireland, Autumn 1922</span></ins>
+                        
+                     </div>
+                     
+                     <div style="display:inline-block" class="reading t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-7 t7989-1-9"><span class="textcontent">IRELAND, AUTUMN, 1922</span></div>
+                     
+                     <div class="reading pub" data-reading-wits="pub">
+                        <ins class="add rend-hand"><span class="textcontent">IRELAND</span></ins><span class="textcontent"> AUTUMN, 1922</span></div>
+                     
+                  </div>
+                  
+                  <div class="noteicon">c
+                     <div class="note"><strong>Critical note:</strong> 
+                        
+                        <p><span class="textcontent">The alternative titles MacGreevy experimented with provide the key to this very
+                              short poem. By the autumn of 1922 over six years had passed since Patrick Pearse
+                              had proclaimed the Irish Republic in Dublin's General Post Office. The country had
+                              seen the heart of its capital destroyed by the fires of Easter 1916, and this was
+                              followed after the Seinn Fein victory in the 1918 election by an extended campaign
+                              of guerilla warfare against the British with its reprisals and
+                              counter-reprisals.</span></p>
+                        
+                        <p><span class="textcontent">In the end, nationalist Ireland was divided into bitterly opposing camps, and
+                              engaged in civil war over the terms of the agreement reached in London in December
+                              1921. The new national institutions that emerged did so more through the passage
+                              of time than as the expression of any national ideal or vision. MacGreevy's poem
+                              captures the despair and weariness of a nation torn apart by war and bitter
+                              political divisions.</span></p>
+                        
+                     </div>
+                  </div>
+                  
+               </div>
+               
+               <div class="lg lg-n1">
+                  
+                  <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                     <div class="line">
+                        <div class="linenumber noDisplay">1</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">The sun burns
+                                 out,</span></div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           <div class="reading t7989-1-8 pub" data-reading-wits="t7989-1-8 pub"><span class="textcontent">The world withers</span></div>
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-9"><span class="textcontent">The world withers,</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-8 t7989-1-7 t7989-1-9 pub" data-reading-wits="t7989-1-8 t7989-1-7 t7989-1-9 pub">
+                              
+                              <div class="stanzabreak"></div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">And time grows
+                                 afraid</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_triumph" data-app-id="apparatus_triumph">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-8 t7989-1-9 pub"><span class="textcontent">of the triumph of time. </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> 
+                                    
+                                    <p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                                          depicted as Father Time in his chariot surrounded by symbolic devices
+                                          such as the scythe and hourglass, were frequently represented by Baroque
+                                          and Renaissance artists.</span></p>
+                                    
+                                    <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                                          he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                                          Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                                          Elder's The Triumph of Death, which depicts a whole society visited by
+                                          death riding a pale horse (using imagery from the Apocalypse) against a
+                                          background of barren landscape and a darkened sky.</span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+               </div>
+               
+               <div class="closer">
+                  
+                  <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas Mc Greevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">19 Lincoln Chambers,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Lincoln Place,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">DUBLIN.</span>
+                        
+                        
+                     </div>
+                     
+                     <div style="display:inline-block" class="reading t7989-1-9" data-reading-wits="t7989-1-9">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">L. St. Senan </span>
+                        
+                        <div class="noteicon">b
+                           <div class="note"><strong>Biographical note:</strong> <span class="textcontent"> MacGreevy published several poems and
+                                 reviews under the pseudonym L. St. Senan in the early-mid 1920s. Saint Senan
+                                 (d.560) founded several monasteries in MacGreevy's native Ireland. Senan's last
+                                 settlement was on Scattery Island in the estuary of the Shannon, near
+                                 MacGreevy's birthplace. </span></div>
+                        </div>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent"> (L. St. Senan)</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas McGreevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">15 Cheyne Gardens, London, S.W.3</span>
+                        
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="pub">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version pub: published in Poems under the title&#xA;                  'Autumn, 1922'">Version pub: published in Poems under the title
+                  'Autumn, 1922'</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak t7989-1-10" data-version-id="t7989-1-10"></hr>
+               <div class="facs-images&#xA;                   t7989-1-10" data-version-id="t7989-1-10"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-10" data-version-id="t7989-1-10" data-img-url="images/autumn_7989-1-10.jpg" data-img-id="i7989-1-10"></img></div>
+               
+               <hr class="pagebreak t7989-1-8" data-version-id="t7989-1-8"></hr>
+               <div class="facs-images&#xA;                   t7989-1-8" data-version-id="t7989-1-8"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-8" data-version-id="t7989-1-8" data-img-url="images/autumn_7989-1-8.jpg" data-img-id="i7989-1-8"></img></div>
+               
+               <hr class="pagebreak t7989-1-7" data-version-id="t7989-1-7"></hr>
+               <div class="facs-images&#xA;                   t7989-1-7" data-version-id="t7989-1-7"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-7" data-version-id="t7989-1-7" data-img-url="images/autumn_7989-1-7.jpg" data-img-id="i7989-1-7"></img></div>
+               
+               <hr class="pagebreak t7989-1-9" data-version-id="t7989-1-9"></hr>
+               <div class="facs-images&#xA;                   t7989-1-9" data-version-id="t7989-1-9"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink t7989-1-9" data-version-id="t7989-1-9" data-img-url="images/autumn_7989-1-9.jpg" data-img-id="i7989-1-9"></img></div>
+               
+               <hr class="pagebreak pub" data-version-id="pub"></hr>
+               <div class="facs-images&#xA;                   pub" data-version-id="pub"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink pub" data-version-id="pub" data-img-url="images/autumn_pub.jpg" data-img-id="autumn-pub"></img></div>
+               
+               <div class="head">
+                  
+                  <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10"><span class="textcontent">A Short History of Our Own Times.</span></div>
+                     
+                     <div class="reading t7989-1-8" data-reading-wits="t7989-1-8">
+                        <del class="del rend-typed"><span class="textcontent">CIVIL WAR</span></del>
+                        <ins class="add rend-hand"><span class="textcontent"> Ireland, Autumn 1922</span></ins>
+                        
+                     </div>
+                     
+                     <div class="reading t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-7 t7989-1-9"><span class="textcontent">IRELAND, AUTUMN, 1922</span></div>
+                     
+                     <div style="display:inline-block" class="reading pub" data-reading-wits="pub">
+                        <ins class="add rend-hand"><span class="textcontent">IRELAND</span></ins><span class="textcontent"> AUTUMN, 1922</span></div>
+                     
+                  </div>
+                  
+                  <div class="noteicon">c
+                     <div class="note"><strong>Critical note:</strong> 
+                        
+                        <p><span class="textcontent">The alternative titles MacGreevy experimented with provide the key to this very
+                              short poem. By the autumn of 1922 over six years had passed since Patrick Pearse
+                              had proclaimed the Irish Republic in Dublin's General Post Office. The country had
+                              seen the heart of its capital destroyed by the fires of Easter 1916, and this was
+                              followed after the Seinn Fein victory in the 1918 election by an extended campaign
+                              of guerilla warfare against the British with its reprisals and
+                              counter-reprisals.</span></p>
+                        
+                        <p><span class="textcontent">In the end, nationalist Ireland was divided into bitterly opposing camps, and
+                              engaged in civil war over the terms of the agreement reached in London in December
+                              1921. The new national institutions that emerged did so more through the passage
+                              of time than as the expression of any national ideal or vision. MacGreevy's poem
+                              captures the despair and weariness of a nation torn apart by war and bitter
+                              political divisions.</span></p>
+                        
+                     </div>
+                  </div>
+                  
+               </div>
+               
+               <div class="lg lg-n1">
+                  
+                  <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                     <div class="line">
+                        <div class="linenumber noDisplay">1</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">The sun burns
+                                 out,</span></div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-8 pub" data-reading-wits="t7989-1-8 pub"><span class="textcontent">The world withers</span></div>
+                           
+                           <div class="reading t7989-1-10 t7989-1-7 t7989-1-9" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-9"><span class="textcontent">The world withers,</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-8 t7989-1-7 t7989-1-9 pub" data-reading-wits="t7989-1-8 t7989-1-7 t7989-1-9 pub">
+                              
+                              <div class="stanzabreak"></div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-7 t7989-1-8 t7989-1-9 pub"><span class="textcontent">And time grows
+                                 afraid</span></div>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="apparatus apparatus_triumph" data-app-id="apparatus_triumph">
+                           
+                           <div style="display:inline-block" class="reading t7989-1-10 t7989-1-8 t7989-1-9 pub" data-reading-wits="t7989-1-10 t7989-1-8 t7989-1-9 pub"><span class="textcontent">of the triumph of time. </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> 
+                                    
+                                    <p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                                          depicted as Father Time in his chariot surrounded by symbolic devices
+                                          such as the scythe and hourglass, were frequently represented by Baroque
+                                          and Renaissance artists.</span></p>
+                                    
+                                    <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                                          he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                                          Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                                          Elder's The Triumph of Death, which depicts a whole society visited by
+                                          death riding a pale horse (using imagery from the Apocalypse) against a
+                                          background of barren landscape and a darkened sky.</span></p>
+                                    
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+                  
+                  
+               </div>
+               
+               <div class="closer">
+                  
+                  <div class="apparatus apparatus_9" data-app-id="apparatus_9">
+                     
+                     <div class="reading t7989-1-10" data-reading-wits="t7989-1-10">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas Mc Greevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">19 Lincoln Chambers,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Lincoln Place,</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">DUBLIN.</span>
+                        
+                        
+                     </div>
+                     
+                     <div class="reading t7989-1-9" data-reading-wits="t7989-1-9">
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">L. St. Senan </span>
+                        
+                        <div class="noteicon">b
+                           <div class="note"><strong>Biographical note:</strong> <span class="textcontent"> MacGreevy published several poems and
+                                 reviews under the pseudonym L. St. Senan in the early-mid 1920s. Saint Senan
+                                 (d.560) founded several monasteries in MacGreevy's native Ireland. Senan's last
+                                 settlement was on Scattery Island in the estuary of the Shannon, near
+                                 MacGreevy's birthplace. </span></div>
+                        </div>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent"> (L. St. Senan)</span>
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">Thomas McGreevy,</span>
+                        
+                        
+                        <div class="linebreak"></div>
+                        <span class="textcontent">15 Cheyne Gardens, London, S.W.3</span>
+                        
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+         </div>
+         <div id="notesPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Textual Notes
+               
+            </div>
+            <div class="noteContent"><strong>Critical note: </strong>
+               
+               <p><span class="textcontent">The alternative titles MacGreevy experimented with provide the key to this very
+                     short poem. By the autumn of 1922 over six years had passed since Patrick Pearse
+                     had proclaimed the Irish Republic in Dublin's General Post Office. The country had
+                     seen the heart of its capital destroyed by the fires of Easter 1916, and this was
+                     followed after the Seinn Fein victory in the 1918 election by an extended campaign
+                     of guerilla warfare against the British with its reprisals and
+                     counter-reprisals.</span></p>
+               
+               <p><span class="textcontent">In the end, nationalist Ireland was divided into bitterly opposing camps, and
+                     engaged in civil war over the terms of the agreement reached in London in December
+                     1921. The new national institutions that emerged did so more through the passage
+                     of time than as the expression of any national ideal or vision. MacGreevy's poem
+                     captures the despair and weariness of a nation torn apart by war and bitter
+                     political divisions.</span></p>
+               
+            </div>
+            <div class="noteContent t7989-1-10 t7989-1-8 t7989-1-9 pub">
+               <div class="witnesses">t7989-1-10 t7989-1-8 t7989-1-9 pub</div>
+               <div class="position line_1_4">Line number 4</div><strong>Gloss note: </strong>
+               
+               <p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                     depicted as Father Time in his chariot surrounded by symbolic devices
+                     such as the scythe and hourglass, were frequently represented by Baroque
+                     and Renaissance artists.</span></p>
+               
+               <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                     he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                     Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                     Elder's The Triumph of Death, which depicts a whole society visited by
+                     death riding a pale horse (using imagery from the Apocalypse) against a
+                     background of barren landscape and a darkened sky.</span></p>
+               
+            </div>
+            <div class="noteContent t7989-1-7">
+               <div class="witnesses">t7989-1-7</div>
+               <div class="position line_1_5">Line number 5</div><strong>Gloss note: </strong><p><span class="textcontent">The fifth of six allegorical triumphs in Petrarch's Trionfi is </span><span class="textcontent">the Triumph of Time</span><span class="textcontent">. Petrarch's Triumphs, often
+                     depicted as Father Time in his chariot surrounded by symbolic devices
+                     such as the scythe and hourglass, were frequently represented by Baroque
+                     and Renaissance artists.</span></p>
+               
+               <p><span class="textcontent">MacGreevy, however, may be thinking of one or more of the paintings that
+                     he saw during his visit to the Prado in Madrid in 1924. One is Goya's
+                     Saturn [Time] Devouring His Son, and the other is Pieter Brueghel the
+                     Elder's The Triumph of Death, which depicts a whole society visited by
+                     death riding a pale horse (using imagery from the Apocalypse) against a
+                     background of barren landscape and a darkened sky.</span></p>
+            </div>
+            <div class="noteContent t7989-1-9">
+               <div class="witnesses">t7989-1-9</div><strong>Biographical note: </strong><span class="textcontent"> MacGreevy published several poems and
+                  reviews under the pseudonym L. St. Senan in the early-mid 1920s. Saint Senan
+                  (d.560) founded several monasteries in MacGreevy's native Ireland. Senan's last
+                  settlement was on Scattery Island in the estuary of the Shannon, near
+                  MacGreevy's birthplace. </span></div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i7989-1-10">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/autumn_7989-1-10.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/autumn_7989-1-10.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i7989-1-8">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/autumn_7989-1-8.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/autumn_7989-1-8.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i7989-1-7">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/autumn_7989-1-7.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/autumn_7989-1-7.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="i7989-1-9">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/autumn_7989-1-9.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/autumn_7989-1-9.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="autumn-pub">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/autumn_pub.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/autumn_pub.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,1049 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <title>Prophecy of Merlin -- The Versioning Machine 5.0</title>
+      <meta charset="utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="../src/js/jquery-ui-1.11.3/jquery-ui.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine.css"></link><script type="text/javascript" src="../src/js/jquery-1.11.2.min.js"></script><script type="text/javascript" src="../src/js/jquery-ui-1.11.3/jquery-ui.min.js"></script><link rel="stylesheet" type="text/css" href="../src/panzoom/panzoom.css"></link><script type="text/javascript" src="../src/panzoom/jquery.panzoom.min.js"></script><script type="text/javascript">
+      
+      /*NOTES PANEL: To change the VM so that the notes panel page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_NOTES_PANEL = false;
+      
+      /*BIB PANEL: To change the VM so that the bibliographic information page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_BIB_PANEL = true;
+      
+      /**The number of version/witness panels to be displayed initially */
+      INITIAL_DISPLAY_NUM_VERSIONS = 2;
+      
+      /** CRIT PANEL: Critical information should be encoded as tei:notesStmt/tei:note[@type='critIntro'] in the TEI files --&gt;
+      * To change the VM so that the critical information page does not
+      * appear at the initial load, change the constant INITIAL_DISPLAY_CRIT_PANEL from "true" to "false" */
+      INITIAL_DISPLAY_CRIT_PANEL = false;
+      
+      /** To change the VM so that line numbers are hidden by default, change the constant INITIAL_DISPLAY_LINENUMBERS from
+      * "true" to "false" */
+      INITIAL_DISPLAY_LINENUMBERS = true;
+      
+   var timelinePoints = new Array();var timelineDurations = new Array();</script><script type="text/javascript" src="../src/vmachine.js"></script></head>
+   <body>
+      <div id="mainBanner">
+         <div id="brandingLogo"><a href="../samples.html"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/LogoSilver.png"></img></a></div>
+         <div id="bannerImageContainer"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/HeaderBackground.png"></img><div id="headline">
+               <h1>Prophecy of Merlin</h1>
+            </div>
+            <nav id="mainControls">
+               <ul>
+                  <li><button id="selectVersion" class="topMenuButton dropdownButton">3 Total Versions<img class="noDisplay" src="../vm-images/arrowup.png" alt="arrow up"></img><img src="../vm-images/arrowdown.png" alt="arrow down"></img></button><ul id="versionList" class="dropdown notVisible">
+                        <li data-panelid="dublin">
+                           <div class="listText">
+                              <div><a href="#" title="dublin: The Prophecy of Merlin">Version dublin</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="oxford">
+                           <div class="listText">
+                              <div><a href="#" title="oxford: The Prophecy of Merlin">Version oxford</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="cambridge">
+                           <div class="listText">
+                              <div><a href="#" title="cambridge: The Prophecy of Merlin">Version cambridge</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li id="linenumberOnOff" title="Clicking this button turns the line numbers on or off."><button class="topMenuButton">Line numbers</button></li>
+                  <li data-panelid="bibPanel" title="Clicking this button triggers the bibliographic panel to appear or disappear."><button class="topMenuButton">Bibliographic panel</button></li>
+                  <li data-panelid="notesPanel" title="Clicking this button triggers the notes panel to appear or disappear."><button class="topMenuButton listText">Notes panel</button></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div id="mssArea">
+         <div id="bibPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>Prophecy of Merlin</h2>
+               <h3>
+                  by Anonymous
+               </h3>
+               <h4>Original Source</h4>
+               				
+               <p>Diplomatic editions of this text are based on transcriptions created by James M
+                  					Dean for The Camelot Project at the University of Rochester.
+                  					http://www.lib.rochester.edu/camelot/..
+               </p>
+               				
+               <p>Versions are from: Trinity College Dublin MS 516 fol. 115r; Oxford University,
+                  					Bodleian Library MS 6943 fol. 78r; Magdalene College. Cambridge MS 1236 fol.
+                  					91r.
+               </p>
+               			
+               <h4>Witness List</h4>
+               <ul>
+                  <li><strong>Witness dublin:</strong> The Prophecy of Merlin
+                  </li>
+                  <li><strong>Witness oxford:</strong> The Prophecy of Merlin
+                  </li>
+                  <li><strong>Witness cambridge:</strong> The Prophecy of Merlin
+                  </li>
+               </ul>
+               <h4>Textual Notes</h4>
+               <div class="note">There are three MS versions of this poem transcribed by James
+                  					M. Dean and made publicly available through
+                  					http://www.lib.rochester.edu/camelot/. This version is based on his
+                  					transcriptions. 
+               </div>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Text Encoding by  Susan Schreibman</li>
+                  <li>Transcription by  James M Dean</li>
+               </ul>
+               <h5>Publication Details:</h5>
+               				
+               <p>Published by Susan Schreibman.</p>
+               				
+               					
+               <p>This poem is being made available for demonstration purposes only. It may not
+                  						be reproduced without. For further information, please contact Susan
+                  						Schreibman at sschreib[at]umd.edu
+               </p>
+               				
+               			
+               <h4>Encoding Principles</h4>
+               			
+               				
+               <p>Test document for versioning machine project. Marked-up collation of The Prophecy
+                  					of Merlin.
+               </p>
+               				
+               <p>DTD constructed from TEI poetry base with tagsets for linking, figures, analysis,
+                  					transcr, textcrit.
+               </p>
+               			
+               			
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="dublin">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version dublin: The Prophecy of Merlin">Version dublin: The Prophecy of Merlin</a></div>
+            <div class="mssContent">
+               			
+               <div class="head">
+                  				
+                  <div class="title">
+                     					
+                     <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        						
+                        <div style="display:inline-block" class="reading dublin oxford cambridge" data-reading-wits="dublin oxford cambridge"><span class="textcontent">The Prophecy of Merlin</span></div>
+                        					
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               			
+               <div class="lg lg-n1">
+                  				
+                  				
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           						
+                           <div style="display:inline-block" class="reading dublin" data-reading-wits="dublin"><span class="textcontent">When lordes wille is londes law, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">the law of the land</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">Whane lordis wol leefe theire olde lawes,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">abandon</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent"> leefe. So Skeat and Gray.
+                                       								Robbins, Index and Supplement, § 3986 transcribes leefe as leese.
+                                       								The MS can sustain either reading.</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And lordys wyll be londys lawys,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">law of the land </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_3" data-line-id="line_1_3">
+                     <div class="line">
+                        <div class="linenumber noDisplay">3</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                           						
+                           <div style="display:inline-block" class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Prestes wylle trechery, and gyle hold soth saw,</span><div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Priests intend treachery, and guile
+                                       								turns into figures of speech </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And preestis beon varyinge in theire sawes, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">teachings;</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">beon. So MS; Skeat, Gray
+                                       								been.</span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                           						
+                           <div style="display:inline-block" class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Lechery callyd pryvé solace,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">is called secret pleasure </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And leccherie is holden solace, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">lechery is considered to be </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And lechery is prevy solas,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">secret comfort </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_5" data-line-id="line_1_5">
+                     <div class="line">
+                        <div class="linenumber noDisplay">5</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           						
+                           <div style="display:inline-block" class="reading dublin" data-reading-wits="dublin"><span class="textcontent">And robbery is hold no trespace - </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">held to be no crime </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And oppressyon for truwe purchace; </span></div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And robbery ys goode purchas:</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">booty </span></div>
+                              </div>
+                              							
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">purchas. Skeat glosses purchas as
+                                       								"bargain." It is that which is acquired.</span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  				
+                  				
+                  <div class="lineWrapper line_1_8" data-line-id="line_1_8">
+                     <div class="line">
+                        <div class="linenumber noDisplay">8</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                           						
+                           <div style="display:inline-block" class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Then schal the lond of Albyon torne into confusioun!
+                                 								</span><div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Albyon. The legendary, antique
+                                       								name for Britain, as in Geoffrey of Monmouth's History of the Kings
+                                       								of Britain. The fool in King Lear quotes this or a related poem when
+                                       								he says: "Then shall the realm of Albion / Come to great confusion"
+                                       								(III.ii.85-86). </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">Than is the lande of Albyoun </span><div class="linebreak"></div><span class="textcontent">Nexst to his confusyoun
+                                 								</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">Near; its</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Than is the. Skeat's correction of
+                                       								MS Þat is is.</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">Than shall the londe of Albeon </span><div class="linebreak"></div><span class="textcontent">Be turned into
+                                 							confusion. </span><div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">Britain </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  
+                  
+                  				
+                  <div class="lineWrapper line_1_9" data-line-id="line_1_9">
+                     <div class="line">
+                        <div class="linenumber noDisplay">9</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                           						
+                           <div style="display:inline-block" class="reading dublin" data-reading-wits="dublin"><span class="textcontent">A M CCCC lx and on, few lordes or ellys noone. </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">In 1461 [there are]; </span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">A M CCCC lx and on. RHR does not
+                                       								print this part of the poem, nor does he include the material I have
+                                       								here numbered 7-10 as if it were subjoined to the above six lines.
+                                       								The lyrics are separate poems, yet the thought seems to be related.
+                                       								The dating 1461 should be compared with "When Rome Is Removed" lines
+                                       								60-63. </span></div>
+                              </div>
+                              						
+                           </div>
+                           
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  			
+               </div>
+               
+               
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="oxford">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version oxford: The Prophecy of Merlin">Version oxford: The Prophecy of Merlin</a></div>
+            <div class="mssContent">
+               			
+               <div class="head">
+                  				
+                  <div class="title">
+                     					
+                     <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        						
+                        <div style="display:inline-block" class="reading dublin oxford cambridge" data-reading-wits="dublin oxford cambridge"><span class="textcontent">The Prophecy of Merlin</span></div>
+                        					
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               			
+               <div class="lg lg-n1">
+                  				
+                  				
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">When lordes wille is londes law, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">the law of the land</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading oxford" data-reading-wits="oxford"><span class="textcontent">Whane lordis wol leefe theire olde lawes,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">abandon</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent"> leefe. So Skeat and Gray.
+                                       								Robbins, Index and Supplement, § 3986 transcribes leefe as leese.
+                                       								The MS can sustain either reading.</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And lordys wyll be londys lawys,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">law of the land </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_3" data-line-id="line_1_3">
+                     <div class="line">
+                        <div class="linenumber noDisplay">3</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Prestes wylle trechery, and gyle hold soth saw,</span><div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Priests intend treachery, and guile
+                                       								turns into figures of speech </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And preestis beon varyinge in theire sawes, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">teachings;</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">beon. So MS; Skeat, Gray
+                                       								been.</span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Lechery callyd pryvé solace,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">is called secret pleasure </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And leccherie is holden solace, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">lechery is considered to be </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And lechery is prevy solas,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">secret comfort </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_5" data-line-id="line_1_5">
+                     <div class="line">
+                        <div class="linenumber noDisplay">5</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">And robbery is hold no trespace - </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">held to be no crime </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And oppressyon for truwe purchace; </span></div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And robbery ys goode purchas:</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">booty </span></div>
+                              </div>
+                              							
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">purchas. Skeat glosses purchas as
+                                       								"bargain." It is that which is acquired.</span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_6" data-line-id="line_1_6">
+                     <div class="line">
+                        <div class="linenumber noDisplay">6</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                           						
+                           <div style="display:inline-block" class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And whan the moon is on David stall, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent"> David's stable </span></div>
+                              </div>
+                              							
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">David stall. David's stable, a
+                                       								reference to Christ's birth in Bethlehem (city of David). Of the
+                                       								apocalyptic element in this poem Gray comments: "On the more
+                                       								intellectual prophetic tradition, reflected in the Joachimite dream
+                                       								of a renovatio mundi, compare M. Reeves, The Influence of Prophecy
+                                       								in the Later Middle Ages (Oxford, 1969)." </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_7" data-line-id="line_1_7">
+                     <div class="line">
+                        <div class="linenumber noDisplay">7</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                           						
+                           <div style="display:inline-block" class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And the kynge passe Arthures hall, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent"> by-passes </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_8" data-line-id="line_1_8">
+                     <div class="line">
+                        <div class="linenumber noDisplay">8</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Then schal the lond of Albyon torne into confusioun!
+                                 								</span><div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Albyon. The legendary, antique
+                                       								name for Britain, as in Geoffrey of Monmouth's History of the Kings
+                                       								of Britain. The fool in King Lear quotes this or a related poem when
+                                       								he says: "Then shall the realm of Albion / Come to great confusion"
+                                       								(III.ii.85-86). </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading oxford" data-reading-wits="oxford"><span class="textcontent">Than is the lande of Albyoun </span><div class="linebreak"></div><span class="textcontent">Nexst to his confusyoun
+                                 								</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">Near; its</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Than is the. Skeat's correction of
+                                       								MS Þat is is.</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">Than shall the londe of Albeon </span><div class="linebreak"></div><span class="textcontent">Be turned into
+                                 							confusion. </span><div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">Britain </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  
+                  
+                  				
+                  			
+               </div>
+               
+               
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="cambridge">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version cambridge: The Prophecy of Merlin">Version cambridge: The Prophecy of Merlin</a></div>
+            <div class="mssContent">
+               			
+               <div class="head">
+                  				
+                  <div class="title">
+                     					
+                     <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        						
+                        <div style="display:inline-block" class="reading dublin oxford cambridge" data-reading-wits="dublin oxford cambridge"><span class="textcontent">The Prophecy of Merlin</span></div>
+                        					
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               			
+               <div class="lg lg-n1">
+                  				
+                  <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                     <div class="line">
+                        <div class="linenumber noDisplay">1</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                           						
+                           <div style="display:inline-block" class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">When feythe fayleth in prestys sawys, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">With sharpened swords, and men ready to
+                                       								terrorize</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> 
+                                    								
+                                    <p><span class="textcontent">sayings; When feythe fayleth. Versions of this lyric - identified
+                                          									as "Chaucer's Proverbs" - were regularly printed in earlier
+                                          									editions of Chaucer. Richard Morris's edition contains the
+                                          									following lyric:</span></p>
+                                    								
+                                    <div class="lg">
+                                       									
+                                       <div class="lineWrapper line_1" data-line-id="line_1">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">Qwan prestis faylin in her sawes, </span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_2" data-line-id="line_2">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">And Lordis turnin Goddis lawes</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_3" data-line-id="line_3">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">Ageynis ryght;</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_4" data-line-id="line_4">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">And lecherie is holdin as privy solas,</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_5" data-line-id="line_5">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">And robberie as fre purchas,</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_6" data-line-id="line_6">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">Bewar than of ille!</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_7" data-line-id="line_7">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">Than schall the Lond of Albion Turnin to confusion, </span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_8" data-line-id="line_8">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent"> As sumtyme it befelle. </span></div>
+                                       </div>
+                                       								
+                                    </div>
+                                    								
+                                    <p><span class="textcontent">As printed in The Poetical Works of Geoffrey Chaucer, rev. ed.
+                                          									(London: Bell, 1875), vol. 6, p. 307. Skeat prints a similar
+                                          									version of this poem from Caxton's edition of Chaucer, as the
+                                          									first one of the "Sayings" (or proverbs) of Chaucer: </span></p>
+                                    								
+                                    <div class="lg">
+                                       									
+                                       <div class="lineWrapper line_9" data-line-id="line_9">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">Whan feyth failleth in prestes sawes,</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_10" data-line-id="line_10">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">And lordes hestes ar holden for lawes,</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_11" data-line-id="line_11">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">And robbery is holden purchas,</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_12" data-line-id="line_12">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">And lechery is holden solas,</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_13" data-line-id="line_13">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">Then shal the lond of Albyon</span></div>
+                                       </div>
+                                       									
+                                       <div class="lineWrapper line_14" data-line-id="line_14">
+                                          <div class="line dublin oxford cambridge"><span class="textcontent">Be brought to grete confusioun.</span></div>
+                                       </div>
+                                       								
+                                    </div>
+                                    								
+                                    <p><span class="textcontent">See Skeat's Complete Works of Geoffrey Chaucer, vol. 7 (Oxford:
+                                          									Clarendon, 1897), p. 450.</span></p>
+                                    							
+                                 </div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                     <div class="line">
+                        <div class="linenumber noDisplay">2</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">When lordes wille is londes law, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">the law of the land</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">Whane lordis wol leefe theire olde lawes,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">abandon</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent"> leefe. So Skeat and Gray.
+                                       								Robbins, Index and Supplement, § 3986 transcribes leefe as leese.
+                                       								The MS can sustain either reading.</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And lordys wyll be londys lawys,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">law of the land </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  				
+                  <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                     <div class="line">
+                        <div class="linenumber noDisplay">4</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Lechery callyd pryvé solace,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">is called secret pleasure </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And leccherie is holden solace, </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">lechery is considered to be </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And lechery is prevy solas,</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">secret comfort </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  <div class="lineWrapper line_1_5" data-line-id="line_1_5">
+                     <div class="line">
+                        <div class="linenumber noDisplay">5</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">And robbery is hold no trespace - </span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">held to be no crime </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">And oppressyon for truwe purchace; </span></div>
+                           						
+                           <div style="display:inline-block" class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">And robbery ys goode purchas:</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">booty </span></div>
+                              </div>
+                              							
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">purchas. Skeat glosses purchas as
+                                       								"bargain." It is that which is acquired.</span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  				
+                  				
+                  				
+                  <div class="lineWrapper line_1_8" data-line-id="line_1_8">
+                     <div class="line">
+                        <div class="linenumber noDisplay">8</div>
+                        					
+                        <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                           						
+                           <div class="reading dublin" data-reading-wits="dublin"><span class="textcontent">Then schal the lond of Albyon torne into confusioun!
+                                 								</span><div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Albyon. The legendary, antique
+                                       								name for Britain, as in Geoffrey of Monmouth's History of the Kings
+                                       								of Britain. The fool in King Lear quotes this or a related poem when
+                                       								he says: "Then shall the realm of Albion / Come to great confusion"
+                                       								(III.ii.85-86). </span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div class="reading oxford" data-reading-wits="oxford"><span class="textcontent">Than is the lande of Albyoun </span><div class="linebreak"></div><span class="textcontent">Nexst to his confusyoun
+                                 								</span><div class="noteicon">g
+                                 <div class="note"><strong>Gloss note:</strong> <span class="textcontent">Near; its</span></div>
+                              </div>
+                              							
+                              <div class="noteicon">c
+                                 <div class="note"><strong>Critical note:</strong> <span class="textcontent">Than is the. Skeat's correction of
+                                       								MS Þat is is.</span></div>
+                              </div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="reading cambridge" data-reading-wits="cambridge"><span class="textcontent">Than shall the londe of Albeon </span><div class="linebreak"></div><span class="textcontent">Be turned into
+                                 							confusion. </span><div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">Britain </span></div>
+                              </div>
+                              						
+                           </div>
+                           					
+                        </div>
+                        				
+                     </div>
+                  </div>
+                  
+                  
+                  				
+                  			
+               </div>
+               
+               
+               		
+            </div>
+         </div>
+         <div id="notesPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Textual Notes
+               
+            </div>
+            <div class="noteContent cambridge">
+               <div class="witnesses">cambridge</div>
+               <div class="position line_1_1">Line number 1</div><strong>Gloss note: </strong><span class="textcontent">With sharpened swords, and men ready to
+                  								terrorize</span></div>
+            <div class="noteContent cambridge">
+               <div class="witnesses">cambridge</div>
+               <div class="position line_1_1">Line number 1</div><strong>Critical note: </strong>
+               								
+               <p><span class="textcontent">sayings; When feythe fayleth. Versions of this lyric - identified
+                     									as "Chaucer's Proverbs" - were regularly printed in earlier
+                     									editions of Chaucer. Richard Morris's edition contains the
+                     									following lyric:</span></p>
+               								
+               <div class="lg">
+                  									
+                  <div class="lineWrapper line_1" data-line-id="line_1">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">Qwan prestis faylin in her sawes, </span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_2" data-line-id="line_2">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">And Lordis turnin Goddis lawes</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_3" data-line-id="line_3">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">Ageynis ryght;</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_4" data-line-id="line_4">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">And lecherie is holdin as privy solas,</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_5" data-line-id="line_5">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">And robberie as fre purchas,</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_6" data-line-id="line_6">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">Bewar than of ille!</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_7" data-line-id="line_7">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">Than schall the Lond of Albion Turnin to confusion, </span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_8" data-line-id="line_8">
+                     <div class="line dublin oxford cambridge"><span class="textcontent"> As sumtyme it befelle. </span></div>
+                  </div>
+                  								
+               </div>
+               								
+               <p><span class="textcontent">As printed in The Poetical Works of Geoffrey Chaucer, rev. ed.
+                     									(London: Bell, 1875), vol. 6, p. 307. Skeat prints a similar
+                     									version of this poem from Caxton's edition of Chaucer, as the
+                     									first one of the "Sayings" (or proverbs) of Chaucer: </span></p>
+               								
+               <div class="lg">
+                  									
+                  <div class="lineWrapper line_9" data-line-id="line_9">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">Whan feyth failleth in prestes sawes,</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_10" data-line-id="line_10">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">And lordes hestes ar holden for lawes,</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_11" data-line-id="line_11">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">And robbery is holden purchas,</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_12" data-line-id="line_12">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">And lechery is holden solas,</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_13" data-line-id="line_13">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">Then shal the lond of Albyon</span></div>
+                  </div>
+                  									
+                  <div class="lineWrapper line_14" data-line-id="line_14">
+                     <div class="line dublin oxford cambridge"><span class="textcontent">Be brought to grete confusioun.</span></div>
+                  </div>
+                  								
+               </div>
+               								
+               <p><span class="textcontent">See Skeat's Complete Works of Geoffrey Chaucer, vol. 7 (Oxford:
+                     									Clarendon, 1897), p. 450.</span></p>
+               							
+            </div>
+            <div class="noteContent dublin">
+               <div class="witnesses">dublin</div>
+               <div class="position line_1_2">Line number 2</div><strong>Gloss note: </strong><span class="textcontent">the law of the land</span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_2">Line number 2</div><strong>Gloss note: </strong><span class="textcontent">abandon</span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_2">Line number 2</div><strong>Critical note: </strong><span class="textcontent"> leefe. So Skeat and Gray.
+                  								Robbins, Index and Supplement, § 3986 transcribes leefe as leese.
+                  								The MS can sustain either reading.</span></div>
+            <div class="noteContent cambridge">
+               <div class="witnesses">cambridge</div>
+               <div class="position line_1_2">Line number 2</div><strong>Gloss note: </strong><span class="textcontent">law of the land </span></div>
+            <div class="noteContent dublin">
+               <div class="witnesses">dublin</div>
+               <div class="position line_1_3">Line number 3</div><strong>Critical note: </strong><span class="textcontent">Priests intend treachery, and guile
+                  								turns into figures of speech </span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_3">Line number 3</div><strong>Gloss note: </strong><span class="textcontent">teachings;</span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_3">Line number 3</div><strong>Critical note: </strong><span class="textcontent">beon. So MS; Skeat, Gray
+                  								been.</span></div>
+            <div class="noteContent dublin">
+               <div class="witnesses">dublin</div>
+               <div class="position line_1_4">Line number 4</div><strong>Gloss note: </strong><span class="textcontent">is called secret pleasure </span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_4">Line number 4</div><strong>Gloss note: </strong><span class="textcontent">lechery is considered to be </span></div>
+            <div class="noteContent cambridge">
+               <div class="witnesses">cambridge</div>
+               <div class="position line_1_4">Line number 4</div><strong>Gloss note: </strong><span class="textcontent">secret comfort </span></div>
+            <div class="noteContent dublin">
+               <div class="witnesses">dublin</div>
+               <div class="position line_1_5">Line number 5</div><strong>Gloss note: </strong><span class="textcontent">held to be no crime </span></div>
+            <div class="noteContent cambridge">
+               <div class="witnesses">cambridge</div>
+               <div class="position line_1_5">Line number 5</div><strong>Gloss note: </strong><span class="textcontent">booty </span></div>
+            <div class="noteContent cambridge">
+               <div class="witnesses">cambridge</div>
+               <div class="position line_1_5">Line number 5</div><strong>Note: </strong><span class="textcontent">purchas. Skeat glosses purchas as
+                  								"bargain." It is that which is acquired.</span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_6">Line number 6</div><strong>Gloss note: </strong><span class="textcontent"> David's stable </span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_6">Line number 6</div><strong>Note: </strong><span class="textcontent">David stall. David's stable, a
+                  								reference to Christ's birth in Bethlehem (city of David). Of the
+                  								apocalyptic element in this poem Gray comments: "On the more
+                  								intellectual prophetic tradition, reflected in the Joachimite dream
+                  								of a renovatio mundi, compare M. Reeves, The Influence of Prophecy
+                  								in the Later Middle Ages (Oxford, 1969)." </span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_7">Line number 7</div><strong>Gloss note: </strong><span class="textcontent"> by-passes </span></div>
+            <div class="noteContent dublin">
+               <div class="witnesses">dublin</div>
+               <div class="position line_1_8">Line number 8</div><strong>Critical note: </strong><span class="textcontent">Albyon. The legendary, antique
+                  								name for Britain, as in Geoffrey of Monmouth's History of the Kings
+                  								of Britain. The fool in King Lear quotes this or a related poem when
+                  								he says: "Then shall the realm of Albion / Come to great confusion"
+                  								(III.ii.85-86). </span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_8">Line number 8</div><strong>Gloss note: </strong><span class="textcontent">Near; its</span></div>
+            <div class="noteContent oxford">
+               <div class="witnesses">oxford</div>
+               <div class="position line_1_8">Line number 8</div><strong>Critical note: </strong><span class="textcontent">Than is the. Skeat's correction of
+                  								MS Þat is is.</span></div>
+            <div class="noteContent cambridge">
+               <div class="witnesses">cambridge</div>
+               <div class="position line_1_8">Line number 8</div><strong>Note: </strong><span class="textcontent">Britain </span></div>
+            <div class="noteContent dublin">
+               <div class="witnesses">dublin</div>
+               <div class="position line_1_9">Line number 9</div><strong>Gloss note: </strong><span class="textcontent">In 1461 [there are]; </span></div>
+            <div class="noteContent dublin">
+               <div class="witnesses">dublin</div>
+               <div class="position line_1_9">Line number 9</div><strong>Critical note: </strong><span class="textcontent">A M CCCC lx and on. RHR does not
+                  								print this part of the poem, nor does he include the material I have
+                  								here numbered 7-10 as if it were subjoined to the above six lines.
+                  								The lyrics are separate poems, yet the thought seems to be related.
+                  								The dating 1461 should be compared with "When Rome Is Removed" lines
+                  								60-63. </span></div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

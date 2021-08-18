@@ -1,0 +1,1045 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <title>"Faith is a fine invention" -- The Versioning Machine 5.0</title>
+      <meta charset="utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="../src/js/jquery-ui-1.11.3/jquery-ui.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine.css"></link><script type="text/javascript" src="../src/js/jquery-1.11.2.min.js"></script><script type="text/javascript" src="../src/js/jquery-ui-1.11.3/jquery-ui.min.js"></script><link rel="stylesheet" type="text/css" href="../src/panzoom/panzoom.css"></link><script type="text/javascript" src="../src/panzoom/jquery.panzoom.min.js"></script><script type="text/javascript">
+      
+      /*NOTES PANEL: To change the VM so that the notes panel page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_NOTES_PANEL = false;
+      
+      /*BIB PANEL: To change the VM so that the bibliographic information page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_BIB_PANEL = true;
+      
+      /**The number of version/witness panels to be displayed initially */
+      INITIAL_DISPLAY_NUM_VERSIONS = 2;
+      
+      /** CRIT PANEL: Critical information should be encoded as tei:notesStmt/tei:note[@type='critIntro'] in the TEI files --&gt;
+      * To change the VM so that the critical information page does not
+      * appear at the initial load, change the constant INITIAL_DISPLAY_CRIT_PANEL from "true" to "false" */
+      INITIAL_DISPLAY_CRIT_PANEL = false;
+      
+      /** To change the VM so that line numbers are hidden by default, change the constant INITIAL_DISPLAY_LINENUMBERS from
+      * "true" to "false" */
+      INITIAL_DISPLAY_LINENUMBERS = true;
+      
+   var timelinePoints = new Array();var timelineDurations = new Array();</script><script type="text/javascript" src="../src/vmachine.js"></script></head>
+   <body>
+      <div id="mainBanner">
+         <div id="brandingLogo"><a href="../samples.html"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/LogoSilver.png"></img></a></div>
+         <div id="bannerImageContainer"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/HeaderBackground.png"></img><div id="headline">
+               <h1>"Faith is a fine invention"</h1>
+            </div>
+            <nav id="mainControls">
+               <ul>
+                  <li><button id="selectVersion" class="topMenuButton dropdownButton">7 Total Versions<img class="noDisplay" src="../vm-images/arrowup.png" alt="arrow up"></img><img src="../vm-images/arrowdown.png" alt="arrow down"></img></button><ul id="versionList" class="dropdown notVisible">
+                        <li data-panelid="a660">
+                           <div class="listText">
+                              <div><a href="#" title="a660: A 660, verse embedded in letter to Samuel&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Bowles.">Version a660</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="h201">
+                           <div class="listText">
+                              <div><a href="#" title="h201: H 201, fascicle version of poem.">Version h201</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="h72">
+                           <div class="listText">
+                              <div><a href="#" title="h72: H 72, fascicle version of poem.">Version h72</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="p1891">
+                           <div class="listText">
+                              <div><a href="#" title="p1891: Published as poem XXX in the second volume of Todd and&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Higginson's Poems of Emily Dickinson.">Version p1891</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="l1894">
+                           <div class="listText">
+                              <div><a href="#" title="l1894: Letter to Samuel Bowles published in Todd's edition of&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Dickinson's letters.">Version l1894</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="cp32">
+                           <div class="listText">
+                              <div><a href="#" title="cp32: Published as poem LVI in Martha Dickinson Bianchi's&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Complete Poems of Emily&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Dickinson.">Version cp32</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="ll227">
+                           <div class="listText">
+                              <div><a href="#" title="ll227: Letter to Samuel Bowles published in Bianchi's The Life and Letters of Emily Dickinson.">Version ll227</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li id="linenumberOnOff" title="Clicking this button turns the line numbers on or off."><button class="topMenuButton">Line numbers</button></li>
+                  <li data-panelid="bibPanel" title="Clicking this button triggers the bibliographic panel to appear or disappear."><button class="topMenuButton">Bibliographic panel</button></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div id="mssArea">
+         <div id="bibPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>"Faith is a fine invention"</h2>
+               <h3>
+                  by Emily Dickinson
+               </h3>
+               <h4>Original Source</h4>
+               				
+               <p>See Witness List.</p>
+               			
+               <h4>Witness List</h4>
+               <ul>
+                  <li><strong>Witness a660:</strong> A 660, verse embedded in letter to Samuel
+                     						Bowles.
+                  </li>
+                  <li><strong>Witness h201:</strong> H 201, fascicle version of poem.
+                  </li>
+                  <li><strong>Witness h72:</strong> H 72, fascicle version of poem.
+                  </li>
+                  <li><strong>Witness p1891:</strong> Published as poem XXX in the second volume of Todd and
+                     						Higginson's Poems of Emily Dickinson.
+                  </li>
+                  <li><strong>Witness l1894:</strong> Letter to Samuel Bowles published in Todd's edition of
+                     						Dickinson's letters.
+                  </li>
+                  <li><strong>Witness cp32:</strong> Published as poem LVI in Martha Dickinson Bianchi's
+                     							Complete Poems of Emily
+                     						Dickinson.
+                  </li>
+                  <li><strong>Witness ll227:</strong> Letter to Samuel Bowles published in Bianchi's The Life and Letters of Emily Dickinson.
+                  </li>
+               </ul>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Text encoding Jarom McDonald</li>
+                  <li>Proofing Lara Vetter</li>
+               </ul>
+               <h5>Publication Details:</h5>
+               				
+               <p>Published by The Versioning Machine project.</p>
+               				
+               					
+               <p>This poem is available only for demonstration purposes. It was created as
+                  						part of a research project to experiment with ways of displaying multiple
+                  						witnesses of a TEI-encoded poem using XML, XSLT and JavaScript.
+               </p>
+               				
+               			
+               <h4>Encoding Principles</h4>
+               			
+               				
+               <p>Test document for versioning machine project. Marked-up collation of three
+                  					manuscript witnesses: A 660, H 201, and H 72, and four early print witnesses:
+                  					Poems (1891)--XXX, Letters (1894)--p. 191, Complete Poems (1924)--LVI, and Life
+                  					and Letters (1926)--p. 227. 
+               </p>
+               				
+               <p>DTD constructed from TEI prose base with tagsets for linking, figures, analysis,
+                  					transcr, textcrit.
+               </p>
+               			
+               			
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="a660">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version a660: A 660, verse embedded in letter to Samuel&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Bowles.">Version a660: A 660, verse embedded in letter to Samuel
+                  						Bowles.</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div style="display:inline-block" class="reading a660 h72" data-reading-wits="a660 h72"><span class="textcontent">"Faith"</span></div>
+                              							
+                              <div class="reading h201 l1894 ll227" data-reading-wits="h201 l1894 ll227"><span class="textcontent">Faith</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">FAITH</span></div>
+                              						
+                           </div><span class="textcontent"> is a fine invention</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div style="display:inline-block" class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">When </span></div>
+                              							
+                              <div class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">For </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Gentlemen </span></div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">gentlemen </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div style="display:inline-block" class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">can </span></div>
+                              							
+                              <div class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">who </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72">
+                                 								<span class="hi rend-underline"><span class="textcontent">see</span></span>
+                                 							
+                              </div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">see</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div class="reading h72 ll227" data-reading-wits="h72 ll227"><span class="textcontent">!</span></div>
+                              							
+                              <div style="display:inline-block" class="reading a660 h201" data-reading-wits="a660 h201"><span class="textcontent"> -</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">;</span></div>
+                              							
+                              <div class="reading l1894" data-reading-wits="l1894"><span class="textcontent">,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div><span class="textcontent"> But </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div class="reading h72" data-reading-wits="h72"><span class="textcontent">Microscopes</span></div>
+                              							
+                              <div style="display:inline-block" class="reading a660 h201" data-reading-wits="a660 h201">
+                                 								<span class="hi rend-underline"><span class="textcontent">Microscopes</span></span>
+                                 							
+                              </div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">microscopes</span></div>
+                              						
+                           </div><span class="textcontent"> are prudent</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent"> In an </span><div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Emergency</span></div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">emergency</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div style="display:inline-block" class="reading a660 l1894" data-reading-wits="a660 l1894"><span class="textcontent">. </span><hr class="pagebreak l1894" data-version-id="l1894"></hr>
+                                 <div class="facs-images&#xA;                   l1894" data-version-id="l1894"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink l1894" data-version-id="l1894" data-img-url="images/cp32.jpg" data-img-id="image1"></img></div>
+                              </div>
+                              							
+                              <div class="reading h201 h72 p1891 ll227 cp32" data-reading-wits="h201 h72 p1891 ll227 cp32"><span class="textcontent">!</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="h201">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version h201: H 201, fascicle version of poem.">Version h201: H 201, fascicle version of poem.</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div class="reading a660 h72" data-reading-wits="a660 h72"><span class="textcontent">"Faith"</span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 l1894 ll227" data-reading-wits="h201 l1894 ll227"><span class="textcontent">Faith</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">FAITH</span></div>
+                              						
+                           </div><span class="textcontent"> is a fine invention</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">When </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">For </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Gentlemen </span></div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">gentlemen </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">can </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">who </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72">
+                                 								<span class="hi rend-underline"><span class="textcontent">see</span></span>
+                                 							
+                              </div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">see</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div class="reading h72 ll227" data-reading-wits="h72 ll227"><span class="textcontent">!</span></div>
+                              							
+                              <div style="display:inline-block" class="reading a660 h201" data-reading-wits="a660 h201"><span class="textcontent"> -</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">;</span></div>
+                              							
+                              <div class="reading l1894" data-reading-wits="l1894"><span class="textcontent">,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div><span class="textcontent"> But </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div class="reading h72" data-reading-wits="h72"><span class="textcontent">Microscopes</span></div>
+                              							
+                              <div style="display:inline-block" class="reading a660 h201" data-reading-wits="a660 h201">
+                                 								<span class="hi rend-underline"><span class="textcontent">Microscopes</span></span>
+                                 							
+                              </div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">microscopes</span></div>
+                              						
+                           </div><span class="textcontent"> are prudent</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent"> In an </span><div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Emergency</span></div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">emergency</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div class="reading a660 l1894" data-reading-wits="a660 l1894"><span class="textcontent">. </span><hr class="pagebreak l1894" data-version-id="l1894"></hr>
+                                 <div class="facs-images&#xA;                   l1894" data-version-id="l1894"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink l1894" data-version-id="l1894" data-img-url="images/cp32.jpg" data-img-id="image1"></img></div>
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 ll227 cp32" data-reading-wits="h201 h72 p1891 ll227 cp32"><span class="textcontent">!</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="h72">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version h72: H 72, fascicle version of poem.">Version h72: H 72, fascicle version of poem.</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div style="display:inline-block" class="reading a660 h72" data-reading-wits="a660 h72"><span class="textcontent">"Faith"</span></div>
+                              							
+                              <div class="reading h201 l1894 ll227" data-reading-wits="h201 l1894 ll227"><span class="textcontent">Faith</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">FAITH</span></div>
+                              						
+                           </div><span class="textcontent"> is a fine invention</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">When </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">For </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Gentlemen </span></div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">gentlemen </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">can </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">who </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72">
+                                 								<span class="hi rend-underline"><span class="textcontent">see</span></span>
+                                 							
+                              </div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">see</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div style="display:inline-block" class="reading h72 ll227" data-reading-wits="h72 ll227"><span class="textcontent">!</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201"><span class="textcontent"> -</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">;</span></div>
+                              							
+                              <div class="reading l1894" data-reading-wits="l1894"><span class="textcontent">,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div><span class="textcontent"> But </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div style="display:inline-block" class="reading h72" data-reading-wits="h72"><span class="textcontent">Microscopes</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201">
+                                 								<span class="hi rend-underline"><span class="textcontent">Microscopes</span></span>
+                                 							
+                              </div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">microscopes</span></div>
+                              						
+                           </div><span class="textcontent"> are prudent</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent"> In an </span><div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div style="display:inline-block" class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Emergency</span></div>
+                              							
+                              <div class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">emergency</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div class="reading a660 l1894" data-reading-wits="a660 l1894"><span class="textcontent">. </span><hr class="pagebreak l1894" data-version-id="l1894"></hr>
+                                 <div class="facs-images&#xA;                   l1894" data-version-id="l1894"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink l1894" data-version-id="l1894" data-img-url="images/cp32.jpg" data-img-id="image1"></img></div>
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 ll227 cp32" data-reading-wits="h201 h72 p1891 ll227 cp32"><span class="textcontent">!</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="p1891">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version p1891: Published as poem XXX in the second volume of Todd and&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Higginson's Poems of Emily Dickinson.">Version p1891: Published as poem XXX in the second volume of Todd and
+                  						Higginson's Poems of Emily Dickinson.</a></div>
+            <div class="mssContent">
+               <error1></error1>
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div class="reading a660 h72" data-reading-wits="a660 h72"><span class="textcontent">"Faith"</span></div>
+                              							
+                              <div class="reading h201 l1894 ll227" data-reading-wits="h201 l1894 ll227"><span class="textcontent">Faith</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">FAITH</span></div>
+                              						
+                           </div><span class="textcontent"> is a fine invention</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">When </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">For </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Gentlemen </span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">gentlemen </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">can </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">who </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72">
+                                 								<span class="hi rend-underline"><span class="textcontent">see</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">see</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div class="reading h72 ll227" data-reading-wits="h72 ll227"><span class="textcontent">!</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201"><span class="textcontent"> -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">;</span></div>
+                              							
+                              <div class="reading l1894" data-reading-wits="l1894"><span class="textcontent">,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div><span class="textcontent"> But </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div class="reading h72" data-reading-wits="h72"><span class="textcontent">Microscopes</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201">
+                                 								<span class="hi rend-underline"><span class="textcontent">Microscopes</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">microscopes</span></div>
+                              						
+                           </div><span class="textcontent"> are prudent</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent"> In an </span><div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Emergency</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">emergency</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div class="reading a660 l1894" data-reading-wits="a660 l1894"><span class="textcontent">. </span><hr class="pagebreak l1894" data-version-id="l1894"></hr>
+                                 <div class="facs-images&#xA;                   l1894" data-version-id="l1894"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink l1894" data-version-id="l1894" data-img-url="images/cp32.jpg" data-img-id="image1"></img></div>
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 ll227 cp32" data-reading-wits="h201 h72 p1891 ll227 cp32"><span class="textcontent">!</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="l1894">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version l1894: Letter to Samuel Bowles published in Todd's edition of&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Dickinson's letters.">Version l1894: Letter to Samuel Bowles published in Todd's edition of
+                  						Dickinson's letters.</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div class="reading a660 h72" data-reading-wits="a660 h72"><span class="textcontent">"Faith"</span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 l1894 ll227" data-reading-wits="h201 l1894 ll227"><span class="textcontent">Faith</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">FAITH</span></div>
+                              						
+                           </div><span class="textcontent"> is a fine invention</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">When </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">For </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Gentlemen </span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">gentlemen </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">can </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">who </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72">
+                                 								<span class="hi rend-underline"><span class="textcontent">see</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">see</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div class="reading h72 ll227" data-reading-wits="h72 ll227"><span class="textcontent">!</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201"><span class="textcontent"> -</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">;</span></div>
+                              							
+                              <div style="display:inline-block" class="reading l1894" data-reading-wits="l1894"><span class="textcontent">,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div><span class="textcontent"> But </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div class="reading h72" data-reading-wits="h72"><span class="textcontent">Microscopes</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201">
+                                 								<span class="hi rend-underline"><span class="textcontent">Microscopes</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">microscopes</span></div>
+                              						
+                           </div><span class="textcontent"> are prudent</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent"> In an </span><div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Emergency</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">emergency</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div style="display:inline-block" class="reading a660 l1894" data-reading-wits="a660 l1894"><span class="textcontent">. </span><hr class="pagebreak l1894" data-version-id="l1894"></hr>
+                                 <div class="facs-images&#xA;                   l1894" data-version-id="l1894"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink l1894" data-version-id="l1894" data-img-url="images/cp32.jpg" data-img-id="image1"></img></div>
+                              </div>
+                              							
+                              <div class="reading h201 h72 p1891 ll227 cp32" data-reading-wits="h201 h72 p1891 ll227 cp32"><span class="textcontent">!</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="cp32">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version cp32: Published as poem LVI in Martha Dickinson Bianchi's&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Complete Poems of Emily&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Dickinson.">Version cp32: Published as poem LVI in Martha Dickinson Bianchi's
+                  							Complete Poems of Emily
+                  						Dickinson.</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div class="reading a660 h72" data-reading-wits="a660 h72"><span class="textcontent">"Faith"</span></div>
+                              							
+                              <div class="reading h201 l1894 ll227" data-reading-wits="h201 l1894 ll227"><span class="textcontent">Faith</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">FAITH</span></div>
+                              						
+                           </div><span class="textcontent"> is a fine invention</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">When </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">For </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Gentlemen </span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">gentlemen </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">can </span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">who </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72">
+                                 								<span class="hi rend-underline"><span class="textcontent">see</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">see</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div class="reading h72 ll227" data-reading-wits="h72 ll227"><span class="textcontent">!</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201"><span class="textcontent"> -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">;</span></div>
+                              							
+                              <div class="reading l1894" data-reading-wits="l1894"><span class="textcontent">,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div><span class="textcontent"> But </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div class="reading h72" data-reading-wits="h72"><span class="textcontent">Microscopes</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201">
+                                 								<span class="hi rend-underline"><span class="textcontent">Microscopes</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">microscopes</span></div>
+                              						
+                           </div><span class="textcontent"> are prudent</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent"> In an </span><div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Emergency</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">emergency</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div class="reading a660 l1894" data-reading-wits="a660 l1894"><span class="textcontent">. </span><hr class="pagebreak l1894" data-version-id="l1894"></hr>
+                                 <div class="facs-images&#xA;                   l1894" data-version-id="l1894"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink l1894" data-version-id="l1894" data-img-url="images/cp32.jpg" data-img-id="image1"></img></div>
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 ll227 cp32" data-reading-wits="h201 h72 p1891 ll227 cp32"><span class="textcontent">!</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="ll227">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version ll227: Letter to Samuel Bowles published in Bianchi's The Life and Letters of Emily Dickinson.">Version ll227: Letter to Samuel Bowles published in Bianchi's The Life and Letters
+                  of Emily Dickinson.</a></div>
+            <div class="mssContent">
+               <error1></error1>
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div class="reading a660 h72" data-reading-wits="a660 h72"><span class="textcontent">"Faith"</span></div>
+                              							
+                              <div style="display:inline-block" class="reading h201 l1894 ll227" data-reading-wits="h201 l1894 ll227"><span class="textcontent">Faith</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">FAITH</span></div>
+                              						
+                           </div><span class="textcontent"> is a fine invention</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div style="display:inline-block" class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">When </span></div>
+                              							
+                              <div class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">For </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Gentlemen </span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">gentlemen </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div style="display:inline-block" class="reading a660 ll227" data-reading-wits="a660 ll227"><span class="textcontent">can </span></div>
+                              							
+                              <div class="reading h201 h72 p1891 l1894 cp32" data-reading-wits="h201 h72 p1891 l1894 cp32"><span class="textcontent">who </span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72">
+                                 								<span class="hi rend-underline"><span class="textcontent">see</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">see</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div style="display:inline-block" class="reading h72 ll227" data-reading-wits="h72 ll227"><span class="textcontent">!</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201"><span class="textcontent"> -</span></div>
+                              							
+                              <div class="reading p1891 cp32" data-reading-wits="p1891 cp32"><span class="textcontent">;</span></div>
+                              							
+                              <div class="reading l1894" data-reading-wits="l1894"><span class="textcontent">,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div><span class="textcontent"> But </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div class="reading h72" data-reading-wits="h72"><span class="textcontent">Microscopes</span></div>
+                              							
+                              <div class="reading a660 h201" data-reading-wits="a660 h201">
+                                 								<span class="hi rend-underline"><span class="textcontent">Microscopes</span></span>
+                                 							
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">microscopes</span></div>
+                              						
+                           </div><span class="textcontent"> are prudent</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent"> In an </span><div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div class="reading a660 h201 h72" data-reading-wits="a660 h201 h72"><span class="textcontent">Emergency</span></div>
+                              							
+                              <div style="display:inline-block" class="reading p1891 l1894 cp32 ll227" data-reading-wits="p1891 l1894 cp32 ll227"><span class="textcontent">emergency</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div class="reading a660 l1894" data-reading-wits="a660 l1894"><span class="textcontent">. </span><hr class="pagebreak l1894" data-version-id="l1894"></hr>
+                                 <div class="facs-images&#xA;                   l1894" data-version-id="l1894"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink l1894" data-version-id="l1894" data-img-url="images/cp32.jpg" data-img-id="image1"></img></div>
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading h201 h72 p1891 ll227 cp32" data-reading-wits="h201 h72 p1891 ll227 cp32"><span class="textcontent">!</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div id="notesPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Textual Notes
+               
+            </div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="image1">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/cp32.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/cp32.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

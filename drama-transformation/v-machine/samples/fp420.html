@@ -1,0 +1,999 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <title>"There are two Ripenings" -- The Versioning Machine 5.0</title>
+      <meta charset="utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="../src/js/jquery-ui-1.11.3/jquery-ui.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine.css"></link><script type="text/javascript" src="../src/js/jquery-1.11.2.min.js"></script><script type="text/javascript" src="../src/js/jquery-ui-1.11.3/jquery-ui.min.js"></script><link rel="stylesheet" type="text/css" href="../src/panzoom/panzoom.css"></link><script type="text/javascript" src="../src/panzoom/jquery.panzoom.min.js"></script><script type="text/javascript">
+      
+      /*NOTES PANEL: To change the VM so that the notes panel page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_NOTES_PANEL = false;
+      
+      /*BIB PANEL: To change the VM so that the bibliographic information page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_BIB_PANEL = true;
+      
+      /**The number of version/witness panels to be displayed initially */
+      INITIAL_DISPLAY_NUM_VERSIONS = 2;
+      
+      /** CRIT PANEL: Critical information should be encoded as tei:notesStmt/tei:note[@type='critIntro'] in the TEI files --&gt;
+      * To change the VM so that the critical information page does not
+      * appear at the initial load, change the constant INITIAL_DISPLAY_CRIT_PANEL from "true" to "false" */
+      INITIAL_DISPLAY_CRIT_PANEL = false;
+      
+      /** To change the VM so that line numbers are hidden by default, change the constant INITIAL_DISPLAY_LINENUMBERS from
+      * "true" to "false" */
+      INITIAL_DISPLAY_LINENUMBERS = true;
+      
+   var timelinePoints = new Array();var timelineDurations = new Array();</script><script type="text/javascript" src="../src/vmachine.js"></script></head>
+   <body>
+      <div id="mainBanner">
+         <div id="brandingLogo"><a href="../samples.html"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/LogoSilver.png"></img></a></div>
+         <div id="bannerImageContainer"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/HeaderBackground.png"></img><div id="headline">
+               <h1>"There are two Ripenings"</h1>
+            </div>
+            <nav id="mainControls">
+               <ul>
+                  <li><button id="selectVersion" class="topMenuButton dropdownButton">3 Total Versions<img class="noDisplay" src="../vm-images/arrowup.png" alt="arrow up"></img><img src="../vm-images/arrowdown.png" alt="arrow down"></img></button><ul id="versionList" class="dropdown notVisible">
+                        <li data-panelid="A456">
+                           <div class="listText">
+                              <div><a href="#" title="A456: A 456, version sent to unknown recipient.">Version A456</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="ATr60a">
+                           <div class="listText">
+                              <div><a href="#" title="ATr60a: A Tr60a, version transcribed by Todd and sent to&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Anthon">Version ATr60a</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="H47">
+                           <div class="listText">
+                              <div><a href="#" title="H47: H 47, Fascicle 14">Version H47</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li id="linenumberOnOff" title="Clicking this button turns the line numbers on or off."><button class="topMenuButton">Line numbers</button></li>
+                  <li data-panelid="bibPanel" title="Clicking this button triggers the bibliographic panel to appear or disappear."><button class="topMenuButton">Bibliographic panel</button></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div id="mssArea">
+         <div id="bibPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>"There are two Ripenings"</h2>
+               <h3>
+                  by By Emily Dickinson.
+               </h3>
+               <h4>Original Source</h4>
+               				
+               <p>See Witness List.</p>
+               			
+               <h4>Witness List</h4>
+               <ul>
+                  <li><strong>Witness A456:</strong> A 456, version sent to unknown recipient.
+                  </li>
+                  <li><strong>Witness ATr60a:</strong> A Tr60a, version transcribed by Todd and sent to
+                     						Anthon
+                  </li>
+                  <li><strong>Witness H47:</strong> H 47, Fascicle 14
+                  </li>
+               </ul>
+               <h4>Textual Notes</h4>
+               <div class="note"><em class="label">render:</em> Additions appear in a green, fixed-width
+                  					font.
+               </div>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Edited and marked up by Lara Vetter. </li>
+               </ul>
+               <h5>Publication Details:</h5>
+               				
+               <p>Published by The Versioning Machine project.</p>
+               				
+               					
+               <p>This poem is available only for demonstration purposes. It was created as
+                  						part of a research project to experiment with ways of displaying multiple
+                  						witnesses of a TEI-encoded poem using XML, XSLT and JavaScript.
+               </p>
+               				
+               			
+               <h4>Encoding Principles</h4>
+               			
+               				
+               <p>Test document for versioning machine project. Marked-up collation of all three
+                  					versions: A 456, A Tr60a, H 47. Note that I have removed issue of transcription
+                  					by another hand in order to better demonstrate method.
+               </p>
+               				
+               <p>DTD constructed from TEI prose base with tagsets for linking, figures, analysis,
+                  					transcr, textcrit.
+               </p>
+               			
+               			
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="A456">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version A456: A 456, version sent to unknown recipient.">Version A456: A 456, version sent to unknown recipient.</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div><span class="textcontent">There are two Ripenings </span><div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent"> -</span></div>
+                              							
+                              <div class="reading ATr60a emptyReading" data-reading-wits="ATr60a"></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">one -</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">One -</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">one</span></div>
+                              						
+                           </div><span class="textcontent"> of </span><div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">sight -</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Sight - whose Forces</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">sight</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">Whose forces </span><div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                                    									
+                                    <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">Spheric</span></div>
+                                    									
+                                    <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">spheric</span></div>
+                                    								
+                                 </div>
+                              </div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">spheric + round</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">wind</span></div>
+                              							
+                              <div class="reading H47 emptyReading" data-reading-wits="H47"></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">wind,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_5" data-line-id="line_5">
+                        <div class="line">
+                           <div class="linenumber noDisplay">5</div><span class="textcontent">Until the </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">Velvet</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">velvet</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">product</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Product</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_6" data-line-id="line_6">
+                        <div class="line">
+                           <div class="linenumber noDisplay">6</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">Drops</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Drop,</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Drop</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">spicy</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">spicy,</span></div>
+                              						
+                           </div><span class="textcontent"> to the </span><div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a emptyReading" data-reading-wits="A456 ATr60a"></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Ground -</span><div class="stanzabreak"></div>
+                              </div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_7" data-line-id="line_7">
+                        <div class="line">
+                           <div class="linenumber noDisplay">7</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">ground -</span></div>
+                              							
+                              <div class="reading H47 emptyReading" data-reading-wits="H47"></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Ground -</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_8" data-line-id="line_8">
+                        <div class="line">
+                           <div class="linenumber noDisplay">8</div><span class="textcontent">A </span><div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">homelier</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Homelier -</span></div>
+                              						
+                           </div><span class="textcontent"> maturing -</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_9" data-line-id="line_9">
+                        <div class="line">
+                           <div class="linenumber noDisplay">9</div><span class="textcontent">A </span><div style="display:inline-block" class="apparatus apparatus_14" data-app-id="apparatus_14">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">process</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Process</span></div>
+                              						
+                           </div><span class="textcontent"> in </span><div style="display:inline-block" class="apparatus apparatus_15" data-app-id="apparatus_15">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">the Bur -</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Bur.</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_10" data-line-id="line_10">
+                        <div class="line">
+                           <div class="linenumber noDisplay">10</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_16" data-app-id="apparatus_16">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">That</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">+ Which</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_17" data-app-id="apparatus_17">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">teeth</span></div>
+                              							
+                              <div class="reading H47 ATr60a" data-reading-wits="H47 ATr60a"><span class="textcontent">Teeth</span></div>
+                              						
+                           </div><span class="textcontent"> of </span><div style="display:inline-block" class="apparatus apparatus_18" data-app-id="apparatus_18">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">Frosts</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">of</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Frosts,</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_11" data-line-id="line_11">
+                        <div class="line">
+                           <div class="linenumber noDisplay">11</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_19" data-app-id="apparatus_19">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">alone</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Frosts alone</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_20" data-app-id="apparatus_20">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">disclose</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">disclose -</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_12" data-line-id="line_12">
+                        <div class="line">
+                           <div class="linenumber noDisplay">12</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_21" data-app-id="apparatus_21">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">In</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">+ In</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">On</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_22" data-app-id="apparatus_22">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">far</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">+ still</span></div>
+                              						
+                           </div><span class="textcontent"> October </span><div style="display:inline-block" class="apparatus apparatus_23" data-app-id="apparatus_23">
+                              							
+                              <div style="display:inline-block" class="reading A456" data-reading-wits="A456"><span class="textcontent">Air.</span></div>
+                              							
+                              <div class="reading H47 ATr60a" data-reading-wits="H47 ATr60a"><span class="textcontent">Air -</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  				
+                  <div class="ab">
+                     					
+                     <div style="display:inline-block" class="apparatus apparatus_24" data-app-id="apparatus_24">
+                        						
+                        <div style="display:inline-block" class="reading A456 ATr60a emptyReading" data-reading-wits="A456 ATr60a"></div>
+                        						
+                        <div class="reading H47" data-reading-wits="H47">
+                           							<ins class="add"><span class="textcontent">+ far - </span></ins>
+                           							<ins class="add"><span class="textcontent">+ that Teeth</span></ins>
+                           							<ins class="add"><span class="textcontent">+ on far - </span></ins>
+                           						
+                        </div>
+                        					
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="ATr60a">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version ATr60a: A Tr60a, version transcribed by Todd and sent to&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Anthon">Version ATr60a: A Tr60a, version transcribed by Todd and sent to
+                  						Anthon</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div><span class="textcontent">There are two Ripenings </span><div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent"> -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a emptyReading" data-reading-wits="ATr60a"></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">one -</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">One -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">one</span></div>
+                              						
+                           </div><span class="textcontent"> of </span><div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">sight -</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Sight - whose Forces</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">sight</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">Whose forces </span><div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                                    									
+                                    <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Spheric</span></div>
+                                    									
+                                    <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">spheric</span></div>
+                                    								
+                                 </div>
+                              </div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">spheric + round</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">wind</span></div>
+                              							
+                              <div class="reading H47 emptyReading" data-reading-wits="H47"></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">wind,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_5" data-line-id="line_5">
+                        <div class="line">
+                           <div class="linenumber noDisplay">5</div><span class="textcontent">Until the </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">Velvet</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">velvet</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">product</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Product</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_6" data-line-id="line_6">
+                        <div class="line">
+                           <div class="linenumber noDisplay">6</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Drops</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Drop,</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Drop</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">spicy</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">spicy,</span></div>
+                              						
+                           </div><span class="textcontent"> to the </span><div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a emptyReading" data-reading-wits="A456 ATr60a"></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Ground -</span><div class="stanzabreak"></div>
+                              </div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_7" data-line-id="line_7">
+                        <div class="line">
+                           <div class="linenumber noDisplay">7</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">ground -</span></div>
+                              							
+                              <div class="reading H47 emptyReading" data-reading-wits="H47"></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Ground -</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_8" data-line-id="line_8">
+                        <div class="line">
+                           <div class="linenumber noDisplay">8</div><span class="textcontent">A </span><div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">homelier</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Homelier -</span></div>
+                              						
+                           </div><span class="textcontent"> maturing -</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_9" data-line-id="line_9">
+                        <div class="line">
+                           <div class="linenumber noDisplay">9</div><span class="textcontent">A </span><div style="display:inline-block" class="apparatus apparatus_14" data-app-id="apparatus_14">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">process</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Process</span></div>
+                              						
+                           </div><span class="textcontent"> in </span><div style="display:inline-block" class="apparatus apparatus_15" data-app-id="apparatus_15">
+                              							
+                              <div class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">the Bur -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Bur.</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_10" data-line-id="line_10">
+                        <div class="line">
+                           <div class="linenumber noDisplay">10</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_16" data-app-id="apparatus_16">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">That</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">+ Which</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_17" data-app-id="apparatus_17">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">teeth</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47 ATr60a" data-reading-wits="H47 ATr60a"><span class="textcontent">Teeth</span></div>
+                              						
+                           </div><span class="textcontent"> of </span><div style="display:inline-block" class="apparatus apparatus_18" data-app-id="apparatus_18">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Frosts</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">of</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">Frosts,</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_11" data-line-id="line_11">
+                        <div class="line">
+                           <div class="linenumber noDisplay">11</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_19" data-app-id="apparatus_19">
+                              							
+                              <div class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">alone</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Frosts alone</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_20" data-app-id="apparatus_20">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">disclose</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">disclose -</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_12" data-line-id="line_12">
+                        <div class="line">
+                           <div class="linenumber noDisplay">12</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_21" data-app-id="apparatus_21">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">In</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">+ In</span></div>
+                              							
+                              <div style="display:inline-block" class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">On</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_22" data-app-id="apparatus_22">
+                              							
+                              <div style="display:inline-block" class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">far</span></div>
+                              							
+                              <div class="reading H47" data-reading-wits="H47"><span class="textcontent">+ still</span></div>
+                              						
+                           </div><span class="textcontent"> October </span><div style="display:inline-block" class="apparatus apparatus_23" data-app-id="apparatus_23">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Air.</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47 ATr60a" data-reading-wits="H47 ATr60a"><span class="textcontent">Air -</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  				
+                  <div class="ab">
+                     					
+                     <div style="display:inline-block" class="apparatus apparatus_24" data-app-id="apparatus_24">
+                        						
+                        <div style="display:inline-block" class="reading A456 ATr60a emptyReading" data-reading-wits="A456 ATr60a"></div>
+                        						
+                        <div class="reading H47" data-reading-wits="H47">
+                           							<ins class="add"><span class="textcontent">+ far - </span></ins>
+                           							<ins class="add"><span class="textcontent">+ that Teeth</span></ins>
+                           							<ins class="add"><span class="textcontent">+ on far - </span></ins>
+                           						
+                        </div>
+                        					
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="H47">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version H47: H 47, Fascicle 14">Version H47: H 47, Fascicle 14</a></div>
+            <div class="mssContent">
+               			
+               <div class="div1">
+                  				
+                  <div class="lg">
+                     					
+                     <div class="lineWrapper line_1" data-line-id="line_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div><span class="textcontent">There are two Ripenings </span><div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent"> -</span></div>
+                              							
+                              <div class="reading ATr60a emptyReading" data-reading-wits="ATr60a"></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_2" data-line-id="line_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">one -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">One -</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">one</span></div>
+                              						
+                           </div><span class="textcontent"> of </span><div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">sight -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">Sight - whose Forces</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">sight</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_3" data-line-id="line_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">Whose forces </span><div class="apparatus apparatus_4" data-app-id="apparatus_4">
+                                    									
+                                    <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Spheric</span></div>
+                                    									
+                                    <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">spheric</span></div>
+                                    								
+                                 </div>
+                              </div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">spheric + round</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_4" data-line-id="line_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">wind</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47 emptyReading" data-reading-wits="H47"></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">wind,</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_5" data-line-id="line_5">
+                        <div class="line">
+                           <div class="linenumber noDisplay">5</div><span class="textcontent">Until the </span><div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">Velvet</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">velvet</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">product</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">Product</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_6" data-line-id="line_6">
+                        <div class="line">
+                           <div class="linenumber noDisplay">6</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Drops</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">Drop,</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Drop</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">spicy</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">spicy,</span></div>
+                              						
+                           </div><span class="textcontent"> to the </span><div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                              							
+                              <div class="reading A456 ATr60a emptyReading" data-reading-wits="A456 ATr60a"></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">Ground -</span><div class="stanzabreak"></div>
+                              </div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_7" data-line-id="line_7">
+                        <div class="line">
+                           <div class="linenumber noDisplay">7</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">ground -</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47 emptyReading" data-reading-wits="H47"></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Ground -</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_8" data-line-id="line_8">
+                        <div class="line">
+                           <div class="linenumber noDisplay">8</div><span class="textcontent">A </span><div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">homelier</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">Homelier -</span></div>
+                              						
+                           </div><span class="textcontent"> maturing -</span></div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_9" data-line-id="line_9">
+                        <div class="line">
+                           <div class="linenumber noDisplay">9</div><span class="textcontent">A </span><div style="display:inline-block" class="apparatus apparatus_14" data-app-id="apparatus_14">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">process</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">Process</span></div>
+                              						
+                           </div><span class="textcontent"> in </span><div style="display:inline-block" class="apparatus apparatus_15" data-app-id="apparatus_15">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">the Bur -</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Bur.</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_10" data-line-id="line_10">
+                        <div class="line">
+                           <div class="linenumber noDisplay">10</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_16" data-app-id="apparatus_16">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">That</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">+ Which</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_17" data-app-id="apparatus_17">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">teeth</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47 ATr60a" data-reading-wits="H47 ATr60a"><span class="textcontent">Teeth</span></div>
+                              						
+                           </div><span class="textcontent"> of </span><div style="display:inline-block" class="apparatus apparatus_18" data-app-id="apparatus_18">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Frosts</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">of</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">Frosts,</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_11" data-line-id="line_11">
+                        <div class="line">
+                           <div class="linenumber noDisplay">11</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_19" data-app-id="apparatus_19">
+                              							
+                              <div style="display:inline-block" class="reading A456 H47" data-reading-wits="A456 H47"><span class="textcontent">alone</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">Frosts alone</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_20" data-app-id="apparatus_20">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">disclose</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">disclose -</span></div>
+                              						
+                           </div>
+                           					
+                        </div>
+                     </div>
+                     					
+                     <div class="lineWrapper line_12" data-line-id="line_12">
+                        <div class="line">
+                           <div class="linenumber noDisplay">12</div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_21" data-app-id="apparatus_21">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">In</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">+ In</span></div>
+                              							
+                              <div class="reading ATr60a" data-reading-wits="ATr60a"><span class="textcontent">On</span></div>
+                              						
+                           </div>
+                           						
+                           <div style="display:inline-block" class="apparatus apparatus_22" data-app-id="apparatus_22">
+                              							
+                              <div class="reading A456 ATr60a" data-reading-wits="A456 ATr60a"><span class="textcontent">far</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47" data-reading-wits="H47"><span class="textcontent">+ still</span></div>
+                              						
+                           </div><span class="textcontent"> October </span><div style="display:inline-block" class="apparatus apparatus_23" data-app-id="apparatus_23">
+                              							
+                              <div class="reading A456" data-reading-wits="A456"><span class="textcontent">Air.</span></div>
+                              							
+                              <div style="display:inline-block" class="reading H47 ATr60a" data-reading-wits="H47 ATr60a"><span class="textcontent">Air -</span></div>
+                              						
+                           </div>
+                        </div>
+                     </div>
+                     				
+                  </div>
+                  				
+                  <div class="ab">
+                     					
+                     <div style="display:inline-block" class="apparatus apparatus_24" data-app-id="apparatus_24">
+                        						
+                        <div class="reading A456 ATr60a emptyReading" data-reading-wits="A456 ATr60a"></div>
+                        						
+                        <div style="display:inline-block" class="reading H47" data-reading-wits="H47">
+                           							<ins class="add"><span class="textcontent">+ far - </span></ins>
+                           							<ins class="add"><span class="textcontent">+ that Teeth</span></ins>
+                           							<ins class="add"><span class="textcontent">+ on far - </span></ins>
+                           						
+                        </div>
+                        					
+                     </div>
+                     				
+                  </div>
+                  			
+               </div>
+               		
+            </div>
+         </div>
+         <div id="notesPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Textual Notes
+               
+            </div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

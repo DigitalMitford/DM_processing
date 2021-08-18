@@ -1,0 +1,2501 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <title>The Altar -- The Versioning Machine 5.0</title>
+      <meta charset="utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="../src/js/jquery-ui-1.11.3/jquery-ui.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine.css"></link><script type="text/javascript" src="../src/js/jquery-1.11.2.min.js"></script><script type="text/javascript" src="../src/js/jquery-ui-1.11.3/jquery-ui.min.js"></script><link rel="stylesheet" type="text/css" href="../src/panzoom/panzoom.css"></link><script type="text/javascript" src="../src/panzoom/jquery.panzoom.min.js"></script><script type="text/javascript">
+      
+      /*NOTES PANEL: To change the VM so that the notes panel page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_NOTES_PANEL = false;
+      
+      /*BIB PANEL: To change the VM so that the bibliographic information page does not
+      appear at the initial load, change the constant INITIAL_DISPLAY_BIB_PANEL from "true" to "false" below */
+      INITIAL_DISPLAY_BIB_PANEL = true;
+      
+      /**The number of version/witness panels to be displayed initially */
+      INITIAL_DISPLAY_NUM_VERSIONS = 2;
+      
+      /** CRIT PANEL: Critical information should be encoded as tei:notesStmt/tei:note[@type='critIntro'] in the TEI files --&gt;
+      * To change the VM so that the critical information page does not
+      * appear at the initial load, change the constant INITIAL_DISPLAY_CRIT_PANEL from "true" to "false" */
+      INITIAL_DISPLAY_CRIT_PANEL = false;
+      
+      /** To change the VM so that line numbers are hidden by default, change the constant INITIAL_DISPLAY_LINENUMBERS from
+      * "true" to "false" */
+      INITIAL_DISPLAY_LINENUMBERS = true;
+      
+   var timelinePoints = new Array();var timelineDurations = new Array();</script><script type="text/javascript" src="../src/vmachine.js"></script></head>
+   <body>
+      <div id="mainBanner">
+         <div id="brandingLogo"><a href="../samples.html"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/LogoSilver.png"></img></a></div>
+         <div id="bannerImageContainer"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/HeaderBackground.png"></img><div id="headline">
+               <h1>The Altar</h1>
+            </div>
+            <nav id="mainControls">
+               <ul>
+                  <li><button id="selectVersion" class="topMenuButton dropdownButton">3 Total Versions<img class="noDisplay" src="../vm-images/arrowup.png" alt="arrow up"></img><img src="../vm-images/arrowdown.png" alt="arrow down"></img></button><ul id="versionList" class="dropdown notVisible">
+                        <li data-panelid="w">
+                           <div class="listText">
+                              <div><a href="#" title="w: Williams MS. Jones B62">Version w</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="b">
+                           <div class="listText">
+                              <div><a href="#" title="b: Bodleian MS. Tanner 307">Version b</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                        <li data-panelid="p">
+                           <div class="listText">
+                              <div><a href="#" title="p: The Temple: Sacred Poems and Private Ejaculations, first edition&#xA;                  (Cambridge, 1633)">Version p</a></div>
+                              <div><button>OFF</button></div>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li id="linenumberOnOff" title="Clicking this button turns the line numbers on or off."><button class="topMenuButton">Line numbers</button></li>
+                  <li data-panelid="bibPanel" title="Clicking this button triggers the bibliographic panel to appear or disappear."><button class="topMenuButton">Bibliographic panel</button></li>
+                  <li data-panelid="notesPanel" title="Clicking this button triggers the notes panel to appear or disappear."><button class="topMenuButton listText">Notes panel</button></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div id="mssArea">
+         <div id="bibPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>The Altar</h2>
+               <h4>Original Source</h4>
+               
+               
+               
+               See witness list.
+               
+               
+               
+               
+               <h4>Witness List</h4>
+               <ul>
+                  <li><strong>Witness w:</strong> Williams MS. Jones B62
+                  </li>
+                  <li><strong>Witness b:</strong> Bodleian MS. Tanner 307
+                  </li>
+                  <li><strong>Witness p:</strong> The Temple: Sacred Poems and Private Ejaculations, first edition
+                     (Cambridge, 1633)
+                  </li>
+               </ul>
+               <h4>Textual Notes</h4>
+               <div class="note"></div>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Transcribed, encoded, and edited by Robert Whalen</li>
+                  <li>Sponsored by Northern Michigan University and the National Endowment for the Humanities</li>
+                  <li>Funding provided by Northern Michigan University and the National Endowment for the Humanities</li>
+               </ul>
+               <h5>Publication Details:</h5>
+               
+               <p>Published by Robert Whalen for demonstration purposes only. May not be reproduced without
+                  permission..
+               </p>
+               
+               
+               
+               
+               
+               
+               <p></p>
+               
+               
+               
+               <h4>Encoding Principles</h4>
+               
+               
+               <p>"The Altar" is part of a comprehensive edition of George Herbert's English verse,
+                  <span class="hi rend-italic">The Digital Temple</span>. This larger project includes
+                  computer-readable transcriptions, in both original- and modern-spelling versions,
+                  of
+                  Williams MS. Jones B62, Bodleian MS. Tanner 307, and a copy of <span class="hi rend-italic">The
+                     Temple: Sacred Poems and Private Ejaculations</span>, first edition (Cambridge,
+                  1633); high-resolution digital images of the sources (excepting the Latin verse in
+                  Williams); an apparatus that includes critical, textual, and technical introductions
+                  and annotations; and a user interface with which to navigate these materials.
+               </p>
+               
+               
+               <p>Transcriptions are encoded in TEI(P5)-conformant XML.</p>
+               
+               
+               <p>Currently, only the Williams images and transcriptions are captured directly from
+                  the
+                  source. Images (where available) and transcriptions of the Bodleian MS. and first
+                  edition are captured from Scolar black-and-white facsimiles.
+               </p>
+               
+               
+               
+               
+               <p>Apparent errors are preserved and editorial corrections provided using SIC and
+                  CORR tags, but only where the editor conjectures that the original scribe or
+                  compositor would have recognized the instance as an error. For example, what
+                  according to modern usage is incorrect subject/verb agreement might have been
+                  deemed acceptable to a seventeenth-century scribe or compositor. All such
+                  instances are treated instead using the ORIG and REG tags. (See below.) 
+               </p>
+               
+               
+               
+               <p>Original spellings, abbreviations, and orthography are preserved and
+                  regularizations provided. Where in the manuscripts a character's status as
+                  majuscule or miniscule is ambiguous, the editor has silently chosen one or the
+                  other based on context and judgment (i.e., does not register such ambiguity in
+                  either the markup or the notes).
+               </p>
+               
+               
+               
+               <p>Original quotation marks, if any, are preserved.</p>
+               
+               
+               
+               <p>Original hyphenation is preserved.</p>
+               
+               
+               
+               
+               
+               
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="w">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version w: Williams MS. Jones B62">Version w: Williams MS. Jones B62</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak w" data-version-id="w"></hr>
+               <div class="facs-images&#xA;                   w" data-version-id="w"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink w" data-version-id="w" data-img-url="images/w15v.jpg" data-img-id="w15v"></img></div>
+               
+               
+               
+               <hr class="pagebreak b" data-version-id="b"></hr>
+               <div class="facs-images&#xA;                   b" data-version-id="b"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink b" data-version-id="b" data-img-url="images/b15v.jpg" data-img-id="b15v"></img></div>
+               
+               
+               
+               
+               <hr class="pagebreak p" data-version-id="p"></hr>
+               <div class="facs-images&#xA;                   p" data-version-id="p"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink p" data-version-id="p" data-img-url="images/p10v.jpg" data-img-id="p10"></img></div>
+               
+               
+               
+               
+               <div class="div type-poem rend-center">
+                  
+                  
+                  <div class="head rend-center">
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        
+                        <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="hi rend-underline"><span class="textcontent">The Altar</span></span><span class="textcontent">.</span></div>
+                        
+                        <div class="reading b" data-reading-wits="b">
+                           <span class="hi rend-underline"><span class="textcontent">The Altar</span></span>
+                           
+                        </div>
+                        
+                        <div class="reading p" data-reading-wits="p"><span class="textcontent">The Altar.</span></div>
+                        
+                     </div>
+                     
+                     <div class="noteicon">n
+                        <div class="note"><strong>Note:</strong> <span class="textcontent">See Wilcox (89) for the poem's debt to the pattern and </span><span class="hi rend-italic"><span class="textcontent">schola
+                                 cordis</span></span><span class="textcontent"> (School of the Heart) emblem traditions. </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">The title
+                              signifies the stone altar that in Catholic tradition was associated with Christ's
+                              sacrifice on the Cross; the speaker's heart offered as a "living sacrifice"
+                              (Romans 12:1); the poem itself and </span><span class="hi rend-italic"><span class="textcontent">The Temple</span></span><span class="textcontent"> as a whole.
+                              (The following poem in all three sources happens to be "The Sacrifice.")
+                              </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">Though metaphorically the speaker's heart, the phrase </span><span class="hi rend-italic"><span class="textcontent">broken Altar/ALTAR</span></span><span class="textcontent"> in the first line would have provocatively suggested
+                              Reformation acts of iconoclasm that included the removal and/or destruction of
+                              such remnants of the old religion. Toward the end of Herbert's life, advocates of
+                              ceremonial worship and what Archbishop William Laud was to call the Beauty of
+                              Holiness boldly restored the altars to a place of prominence in some English
+                              churches. </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">The Cambridge printers' innovation in #p—i.e., the
+                              upper-case rendering of </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent">, </span><span class="hi rend-italic"><span class="textcontent">HEART</span></span><span class="textcontent">, and </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent">—foregrounds as
+                              complementary the poem's devotional and ceremonial features, and thereby
+                              privileges a </span><span class="hi rend-italic"><span class="textcontent">via media</span></span><span class="textcontent"> reading of an otherwise
+                              ideologically conflicted poem. Indeed, the change from </span><span class="hi rend-italic"><span class="textcontent">onely</span></span><span class="textcontent"> to </span><span class="hi rend-italic"><span class="textcontent">bleſsed</span></span><span class="textcontent"> in line 15 of witness #w suggests
+                              Herbert's concern that </span><span class="hi rend-italic"><span class="textcontent">onely sacrifice</span></span><span class="textcontent"> might seem a
+                              Protestant emphasis on the uniqueness of the Atonement at the expense of more
+                              Catholic notions of Real Presence and the replication of sacrifice in the ritual
+                              of the Eucharist. (According to the 31st of the </span><span class="hi rend-italic"><span class="textcontent">Thirty-Nine
+                                 Articles</span></span><span class="textcontent">, "the Offering of Christ once made is that perfect redemption,
+                              propitiation, and satisfaction, for all the sins of the whole world, both original
+                              and actual; and there is none other satisfaction for sin, but that alone.
+                              Wherefore the sacrifices of Masses, in the which it was commonly said, that the
+                              Priest did offer Christ for the quick and the dead, to have remission of pain or
+                              guilt, were blasphemous fables, and dangerous deceits.") Such revision exemplifies
+                              what historian Anthony Milton has called "negative popery": the increasing
+                              tendency of some early Stuart divines to advance Catholic ideas minus the once </span><span class="hi rend-italic"><span class="textcontent">de rigueur</span></span><span class="textcontent"> caveats disavowing them. (</span><span class="hi rend-italic"><span class="textcontent">Catholic and Reformed</span></span><span class="textcontent">, 63-72.) Wilcox's reading—that the #w
+                              version unrevised "reveals H.'s assumption that there is now only one sacrifice"
+                              (93)—seems to suggest that the revision somehow left intact the earlier and
+                              more decidedly Protestant assertion.</span></div>
+                     </div>
+                     
+                  </div>
+                  
+                  
+                  <div class="lg lg-n1 type-stanza">
+                     
+                     <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">A broken Altar lord thy servant </span>
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">A broken Altar, Lord, thy servant </span>
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">A broken </span><span class="textcontent">A L T A R</span><span class="textcontent">, Lord, thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſervant</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">servant</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">reares</span></span><span class="textcontent">: brings into existence by constructing (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 9), a meaning at odds with </span><span class="hi rend-italic"><span class="textcontent">broken</span></span><span class="textcontent"> only if it is assumed that the speaker could have anything
+                                       more to offer than a broken heart. The word also connotes raising the dead
+                                       (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 3.a), by extension the Resurrection, itself a
+                                       triumph in which the broken body of Christ is raised to be a glorified
+                                       body.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">Made of a </span>
+                                 
+                                 <div class="choice"><span class="textcontent">Hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Heart</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> and </span>
+                                 
+                                 <div class="choice"><span class="textcontent">cimented</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cemented</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">w</span><span class="hi rend-superscript"><span class="textcontent">th</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">with</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Made of a heart, </span>
+                                 
+                                 <div class="choice"><span class="textcontent">&amp;</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">and</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">cimented</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cemented</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> with </span>
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Made of a heart, and cemented with </span>
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">:</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_3" data-line-id="line_1_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">Whose parts are as thy hand did frame</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Whose parts are, as thy hand did frame;</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Whoſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Whose</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> parts are as thy hand did frame;</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: prepare, as a carpenter, for use in
+                                       building (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 4). Jesus was a carpenter (Mark 6:3)
+                                       and is "a son over his own house; whose house are we," for "he that built
+                                       all things is God" (Hebrews 3:4-6).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent">this </span><div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workmans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">toole</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tool</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> hath </span><span class="textcontent">touch'd</span>
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">y</span><span class="hi rend-superscript"><span class="textcontent">e</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">the</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> same</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workemans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">toole</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tool</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> hath </span><span class="textcontent">touch'd</span>
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">y</span><span class="hi rend-superscript"><span class="textcontent">e</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">the</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> same.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workmans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> tool hath </span><span class="textcontent">touch'd</span><span class="textcontent"> the </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſame</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">same</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_5" data-line-id="line_1_5">
+                        <div class="line">
+                           <div class="linenumber noDisplay">5</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">A </span>
+                                 
+                                 <div class="choice"><span class="textcontent">Hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Heart</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> alone</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">A heart alone</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">A </span><span class="textcontent">H E A R T</span><span class="textcontent"> alone</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">alone</span></span><span class="textcontent">: only.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_6" data-line-id="line_1_6">
+                        <div class="line">
+                           <div class="linenumber noDisplay">6</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">Is such a stone</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Is such a stone,</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Is </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſuch</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">such</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> a </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ﬅone</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">stone</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">,</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_7" data-line-id="line_1_7">
+                        <div class="line">
+                           <div class="linenumber noDisplay">7</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">As nothing but</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">As nothing but</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">As nothing but</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_8" data-line-id="line_1_8">
+                        <div class="line">
+                           <div class="linenumber noDisplay">8</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">Thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">powre</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">power</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> doth </span>
+                                 
+                                 <div class="choice"><span class="textcontent">cutt</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cut</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Thy power doth cut.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Thy </span><span class="textcontent">pow'r</span><span class="textcontent"> doth cut.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 5-8</span></span><span class="textcontent">: "Only a heart is so hard as that God's
+                                       power alone is able to penetrate it."</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="lineWrapper line_1_9" data-line-id="line_1_9">
+                        <div class="line">
+                           <div class="linenumber noDisplay">9</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">Wherefore each part</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b">
+                                 
+                                 <div class="choice"><span class="textcontent">Wherefor</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Wherefore</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> each part</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Wherefore each part</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_10" data-line-id="line_1_10">
+                        <div class="line">
+                           <div class="linenumber noDisplay">10</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Øf</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Of</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> my hard </span>
+                                 
+                                 <div class="choice"><span class="textcontent">hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">heart</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Of my hard heart</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Of my hard heart</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_11" data-line-id="line_1_11">
+                        <div class="line">
+                           <div class="linenumber noDisplay">11</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">Meets in this frame</span></div>
+                              
+                              <div class="reading b p" data-reading-wits="b p"><span class="textcontent">Meets in this frame,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: i.e., the poem; the stone altar of
+                                       sacrifice; the speaker's body which houses his </span><span class="hi rend-italic"><span class="textcontent">hart/heart</span></span><span class="textcontent">—"My body is the frame wherein 'tis held"
+                                       (Shakespeare, Sonnet 24, line 3)— and is "the temple of God" (1
+                                       Corinthians 3:16).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_12" data-line-id="line_1_12">
+                        <div class="line">
+                           <div class="linenumber noDisplay">12</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">To </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy name</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">To praise thy Name.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">To </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy name.</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="lineWrapper line_1_13" data-line-id="line_1_13">
+                        <div class="line">
+                           <div class="linenumber noDisplay">13</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_14" data-app-id="apparatus_14">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">That If I chance to hold my peace</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">That, if I chance to hold my peace,</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">That if I chance to hold my peace,</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_14" data-line-id="line_1_14">
+                        <div class="line">
+                           <div class="linenumber noDisplay">14</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_15" data-app-id="apparatus_15">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Theſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">These</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> stones to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thee may not </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ceaſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cease</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">These stones to praise thee may not cease.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Theſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">These</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">ﬅones</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">stones</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thee may not </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ceaſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cease</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 13-14</span></span><span class="textcontent">: "And some of the Pharisees from among
+                                       the multitude said unto him, Master, rebuke thy disciples. And he answered
+                                       and said unto them, I tell you that, if these should hold their peace, the
+                                       stones would immediately cry out" (Luke 19:39-40).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_15" data-line-id="line_1_15">
+                        <div class="line">
+                           <div class="linenumber noDisplay">15</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_16" data-app-id="apparatus_16">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Ø</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">O</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">lett</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">let</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy </span>
+                                 
+                                 <div class="choice">
+                                    <del class="del rend-strike"><span class="textcontent">onely</span></del>
+                                    
+                                    <div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">only</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice">
+                                    <ins class="add rend-supralinear"><span class="textcontent">bleſsed</span></ins>
+                                    
+                                    <div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">blessed</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> sacrifice </span>
+                                 
+                                 <div class="choice"><span class="textcontent">bee</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">be</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> mine,</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">O </span>
+                                 
+                                 <div class="choice"><span class="textcontent">lett</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">let</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy blessed sacrifice be mine,</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">O let thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ble</span><span class="textcontent">ſſ</span><span class="textcontent">ed</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">blessed</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 <span class="textcontent">S A C R I F I C E</span><span class="textcontent"> be mine,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">See headnote for the significance of the #w emendation.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_16" data-line-id="line_1_16">
+                        <div class="line">
+                           <div class="linenumber noDisplay">16</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_17" data-app-id="apparatus_17">
+                              
+                              <div style="display:inline-block" class="reading w" data-reading-wits="w"><span class="textcontent">And </span>
+                                 
+                                 <div class="choice"><span class="textcontent">sanctifie</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">sanctify</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> this Altar to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">bee</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">be</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thine.</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">And sanctify this Altar to be thine.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">And </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſan</span><span class="textcontent">ct</span><span class="textcontent">iﬁe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">sanctify</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> this </span><span class="textcontent">A L T A R</span><span class="textcontent"> to be thine.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 15-16</span></span><span class="textcontent">: For the multiple significations of
+                                       </span><span class="hi rend-italic"><span class="textcontent">Altar/ALTAR</span></span><span class="textcontent">, see headnote and the note for line
+                                       11. Though the placement of </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent"> over </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent"> in #p is fortuitous and perhaps deliberate (as
+                                       is the "broken" spacing of the words in these as well as lines 1 and 5), the
+                                       layout in both manuscripts is unremarkable. But for </span><span class="hi rend-italic"><span class="textcontent">Altar</span></span><span class="textcontent"> having a majuscule initial, neither word there is
+                                       distinguished in any way. Had Herbert intended to highlight them in #w (the
+                                       only source in which he is known to have had a hand), he might have
+                                       specified an italic script, as indeed he does elsewhere in #w—for
+                                       example, in the final line of "Poetry" (entitled "The Quiddity" in
+                                       #b/#p).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="b">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version b: Bodleian MS. Tanner 307">Version b: Bodleian MS. Tanner 307</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak w" data-version-id="w"></hr>
+               <div class="facs-images&#xA;                   w" data-version-id="w"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink w" data-version-id="w" data-img-url="images/w15v.jpg" data-img-id="w15v"></img></div>
+               
+               
+               
+               <hr class="pagebreak b" data-version-id="b"></hr>
+               <div class="facs-images&#xA;                   b" data-version-id="b"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink b" data-version-id="b" data-img-url="images/b15v.jpg" data-img-id="b15v"></img></div>
+               
+               
+               
+               
+               <hr class="pagebreak p" data-version-id="p"></hr>
+               <div class="facs-images&#xA;                   p" data-version-id="p"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink p" data-version-id="p" data-img-url="images/p10v.jpg" data-img-id="p10"></img></div>
+               
+               
+               
+               
+               <div class="div type-poem rend-center">
+                  
+                  
+                  <div class="head rend-center">
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        
+                        <div class="reading w" data-reading-wits="w"><span class="hi rend-underline"><span class="textcontent">The Altar</span></span><span class="textcontent">.</span></div>
+                        
+                        <div style="display:inline-block" class="reading b" data-reading-wits="b">
+                           <span class="hi rend-underline"><span class="textcontent">The Altar</span></span>
+                           
+                        </div>
+                        
+                        <div class="reading p" data-reading-wits="p"><span class="textcontent">The Altar.</span></div>
+                        
+                     </div>
+                     
+                     <div class="noteicon">n
+                        <div class="note"><strong>Note:</strong> <span class="textcontent">See Wilcox (89) for the poem's debt to the pattern and </span><span class="hi rend-italic"><span class="textcontent">schola
+                                 cordis</span></span><span class="textcontent"> (School of the Heart) emblem traditions. </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">The title
+                              signifies the stone altar that in Catholic tradition was associated with Christ's
+                              sacrifice on the Cross; the speaker's heart offered as a "living sacrifice"
+                              (Romans 12:1); the poem itself and </span><span class="hi rend-italic"><span class="textcontent">The Temple</span></span><span class="textcontent"> as a whole.
+                              (The following poem in all three sources happens to be "The Sacrifice.")
+                              </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">Though metaphorically the speaker's heart, the phrase </span><span class="hi rend-italic"><span class="textcontent">broken Altar/ALTAR</span></span><span class="textcontent"> in the first line would have provocatively suggested
+                              Reformation acts of iconoclasm that included the removal and/or destruction of
+                              such remnants of the old religion. Toward the end of Herbert's life, advocates of
+                              ceremonial worship and what Archbishop William Laud was to call the Beauty of
+                              Holiness boldly restored the altars to a place of prominence in some English
+                              churches. </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">The Cambridge printers' innovation in #p—i.e., the
+                              upper-case rendering of </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent">, </span><span class="hi rend-italic"><span class="textcontent">HEART</span></span><span class="textcontent">, and </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent">—foregrounds as
+                              complementary the poem's devotional and ceremonial features, and thereby
+                              privileges a </span><span class="hi rend-italic"><span class="textcontent">via media</span></span><span class="textcontent"> reading of an otherwise
+                              ideologically conflicted poem. Indeed, the change from </span><span class="hi rend-italic"><span class="textcontent">onely</span></span><span class="textcontent"> to </span><span class="hi rend-italic"><span class="textcontent">bleſsed</span></span><span class="textcontent"> in line 15 of witness #w suggests
+                              Herbert's concern that </span><span class="hi rend-italic"><span class="textcontent">onely sacrifice</span></span><span class="textcontent"> might seem a
+                              Protestant emphasis on the uniqueness of the Atonement at the expense of more
+                              Catholic notions of Real Presence and the replication of sacrifice in the ritual
+                              of the Eucharist. (According to the 31st of the </span><span class="hi rend-italic"><span class="textcontent">Thirty-Nine
+                                 Articles</span></span><span class="textcontent">, "the Offering of Christ once made is that perfect redemption,
+                              propitiation, and satisfaction, for all the sins of the whole world, both original
+                              and actual; and there is none other satisfaction for sin, but that alone.
+                              Wherefore the sacrifices of Masses, in the which it was commonly said, that the
+                              Priest did offer Christ for the quick and the dead, to have remission of pain or
+                              guilt, were blasphemous fables, and dangerous deceits.") Such revision exemplifies
+                              what historian Anthony Milton has called "negative popery": the increasing
+                              tendency of some early Stuart divines to advance Catholic ideas minus the once </span><span class="hi rend-italic"><span class="textcontent">de rigueur</span></span><span class="textcontent"> caveats disavowing them. (</span><span class="hi rend-italic"><span class="textcontent">Catholic and Reformed</span></span><span class="textcontent">, 63-72.) Wilcox's reading—that the #w
+                              version unrevised "reveals H.'s assumption that there is now only one sacrifice"
+                              (93)—seems to suggest that the revision somehow left intact the earlier and
+                              more decidedly Protestant assertion.</span></div>
+                     </div>
+                     
+                  </div>
+                  
+                  
+                  <div class="lg lg-n1 type-stanza">
+                     
+                     <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">A broken Altar lord thy servant </span>
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">A broken Altar, Lord, thy servant </span>
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">A broken </span><span class="textcontent">A L T A R</span><span class="textcontent">, Lord, thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſervant</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">servant</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">reares</span></span><span class="textcontent">: brings into existence by constructing (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 9), a meaning at odds with </span><span class="hi rend-italic"><span class="textcontent">broken</span></span><span class="textcontent"> only if it is assumed that the speaker could have anything
+                                       more to offer than a broken heart. The word also connotes raising the dead
+                                       (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 3.a), by extension the Resurrection, itself a
+                                       triumph in which the broken body of Christ is raised to be a glorified
+                                       body.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Made of a </span>
+                                 
+                                 <div class="choice"><span class="textcontent">Hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Heart</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> and </span>
+                                 
+                                 <div class="choice"><span class="textcontent">cimented</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cemented</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">w</span><span class="hi rend-superscript"><span class="textcontent">th</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">with</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">Made of a heart, </span>
+                                 
+                                 <div class="choice"><span class="textcontent">&amp;</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">and</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">cimented</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cemented</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> with </span>
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Made of a heart, and cemented with </span>
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">:</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_3" data-line-id="line_1_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Whose parts are as thy hand did frame</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">Whose parts are, as thy hand did frame;</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Whoſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Whose</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> parts are as thy hand did frame;</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: prepare, as a carpenter, for use in
+                                       building (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 4). Jesus was a carpenter (Mark 6:3)
+                                       and is "a son over his own house; whose house are we," for "he that built
+                                       all things is God" (Hebrews 3:4-6).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent">this </span><div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workmans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">toole</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tool</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> hath </span><span class="textcontent">touch'd</span>
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">y</span><span class="hi rend-superscript"><span class="textcontent">e</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">the</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> same</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workemans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">toole</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tool</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> hath </span><span class="textcontent">touch'd</span>
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">y</span><span class="hi rend-superscript"><span class="textcontent">e</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">the</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> same.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workmans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> tool hath </span><span class="textcontent">touch'd</span><span class="textcontent"> the </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſame</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">same</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_5" data-line-id="line_1_5">
+                        <div class="line">
+                           <div class="linenumber noDisplay">5</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">A </span>
+                                 
+                                 <div class="choice"><span class="textcontent">Hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Heart</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> alone</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">A heart alone</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">A </span><span class="textcontent">H E A R T</span><span class="textcontent"> alone</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">alone</span></span><span class="textcontent">: only.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_6" data-line-id="line_1_6">
+                        <div class="line">
+                           <div class="linenumber noDisplay">6</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Is such a stone</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">Is such a stone,</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Is </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſuch</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">such</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> a </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ﬅone</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">stone</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">,</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_7" data-line-id="line_1_7">
+                        <div class="line">
+                           <div class="linenumber noDisplay">7</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">As nothing but</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">As nothing but</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">As nothing but</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_8" data-line-id="line_1_8">
+                        <div class="line">
+                           <div class="linenumber noDisplay">8</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">powre</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">power</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> doth </span>
+                                 
+                                 <div class="choice"><span class="textcontent">cutt</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cut</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">Thy power doth cut.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Thy </span><span class="textcontent">pow'r</span><span class="textcontent"> doth cut.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 5-8</span></span><span class="textcontent">: "Only a heart is so hard as that God's
+                                       power alone is able to penetrate it."</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="lineWrapper line_1_9" data-line-id="line_1_9">
+                        <div class="line">
+                           <div class="linenumber noDisplay">9</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Wherefore each part</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b">
+                                 
+                                 <div class="choice"><span class="textcontent">Wherefor</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Wherefore</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> each part</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Wherefore each part</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_10" data-line-id="line_1_10">
+                        <div class="line">
+                           <div class="linenumber noDisplay">10</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                              
+                              <div class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Øf</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Of</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> my hard </span>
+                                 
+                                 <div class="choice"><span class="textcontent">hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">heart</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">Of my hard heart</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">Of my hard heart</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_11" data-line-id="line_1_11">
+                        <div class="line">
+                           <div class="linenumber noDisplay">11</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Meets in this frame</span></div>
+                              
+                              <div style="display:inline-block" class="reading b p" data-reading-wits="b p"><span class="textcontent">Meets in this frame,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: i.e., the poem; the stone altar of
+                                       sacrifice; the speaker's body which houses his </span><span class="hi rend-italic"><span class="textcontent">hart/heart</span></span><span class="textcontent">—"My body is the frame wherein 'tis held"
+                                       (Shakespeare, Sonnet 24, line 3)— and is "the temple of God" (1
+                                       Corinthians 3:16).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_12" data-line-id="line_1_12">
+                        <div class="line">
+                           <div class="linenumber noDisplay">12</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">To </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy name</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">To praise thy Name.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">To </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy name.</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="lineWrapper line_1_13" data-line-id="line_1_13">
+                        <div class="line">
+                           <div class="linenumber noDisplay">13</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_14" data-app-id="apparatus_14">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">That If I chance to hold my peace</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">That, if I chance to hold my peace,</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">That if I chance to hold my peace,</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_14" data-line-id="line_1_14">
+                        <div class="line">
+                           <div class="linenumber noDisplay">14</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_15" data-app-id="apparatus_15">
+                              
+                              <div class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Theſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">These</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> stones to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thee may not </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ceaſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cease</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">These stones to praise thee may not cease.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Theſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">These</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">ﬅones</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">stones</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thee may not </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ceaſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cease</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 13-14</span></span><span class="textcontent">: "And some of the Pharisees from among
+                                       the multitude said unto him, Master, rebuke thy disciples. And he answered
+                                       and said unto them, I tell you that, if these should hold their peace, the
+                                       stones would immediately cry out" (Luke 19:39-40).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_15" data-line-id="line_1_15">
+                        <div class="line">
+                           <div class="linenumber noDisplay">15</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_16" data-app-id="apparatus_16">
+                              
+                              <div class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Ø</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">O</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">lett</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">let</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy </span>
+                                 
+                                 <div class="choice">
+                                    <del class="del rend-strike"><span class="textcontent">onely</span></del>
+                                    
+                                    <div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">only</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice">
+                                    <ins class="add rend-supralinear"><span class="textcontent">bleſsed</span></ins>
+                                    
+                                    <div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">blessed</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> sacrifice </span>
+                                 
+                                 <div class="choice"><span class="textcontent">bee</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">be</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> mine,</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">O </span>
+                                 
+                                 <div class="choice"><span class="textcontent">lett</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">let</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy blessed sacrifice be mine,</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">O let thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ble</span><span class="textcontent">ſſ</span><span class="textcontent">ed</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">blessed</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 <span class="textcontent">S A C R I F I C E</span><span class="textcontent"> be mine,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">See headnote for the significance of the #w emendation.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_16" data-line-id="line_1_16">
+                        <div class="line">
+                           <div class="linenumber noDisplay">16</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_17" data-app-id="apparatus_17">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">And </span>
+                                 
+                                 <div class="choice"><span class="textcontent">sanctifie</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">sanctify</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> this Altar to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">bee</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">be</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thine.</span></div>
+                              
+                              <div style="display:inline-block" class="reading b" data-reading-wits="b"><span class="textcontent">And sanctify this Altar to be thine.</span></div>
+                              
+                              <div class="reading p" data-reading-wits="p"><span class="textcontent">And </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſan</span><span class="textcontent">ct</span><span class="textcontent">iﬁe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">sanctify</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> this </span><span class="textcontent">A L T A R</span><span class="textcontent"> to be thine.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 15-16</span></span><span class="textcontent">: For the multiple significations of
+                                       </span><span class="hi rend-italic"><span class="textcontent">Altar/ALTAR</span></span><span class="textcontent">, see headnote and the note for line
+                                       11. Though the placement of </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent"> over </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent"> in #p is fortuitous and perhaps deliberate (as
+                                       is the "broken" spacing of the words in these as well as lines 1 and 5), the
+                                       layout in both manuscripts is unremarkable. But for </span><span class="hi rend-italic"><span class="textcontent">Altar</span></span><span class="textcontent"> having a majuscule initial, neither word there is
+                                       distinguished in any way. Had Herbert intended to highlight them in #w (the
+                                       only source in which he is known to have had a hand), he might have
+                                       specified an italic script, as indeed he does elsewhere in #w—for
+                                       example, in the final line of "Poetry" (entitled "The Quiddity" in
+                                       #b/#p).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+               
+               
+            </div>
+         </div>
+         <div class="ui-widget-content ui-resizable panel mssPanel noDisplay" id="p">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img><a title="Version p: The Temple: Sacred Poems and Private Ejaculations, first edition&#xA;                  (Cambridge, 1633)">Version p: The Temple: Sacred Poems and Private Ejaculations, first edition
+                  (Cambridge, 1633)</a></div>
+            <div class="mssContent">
+               
+               
+               <hr class="pagebreak w" data-version-id="w"></hr>
+               <div class="facs-images&#xA;                   w" data-version-id="w"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink w" data-version-id="w" data-img-url="images/w15v.jpg" data-img-id="w15v"></img></div>
+               
+               
+               
+               <hr class="pagebreak b" data-version-id="b"></hr>
+               <div class="facs-images&#xA;                   b" data-version-id="b"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink b" data-version-id="b" data-img-url="images/b15v.jpg" data-img-id="b15v"></img></div>
+               
+               
+               
+               
+               <hr class="pagebreak p" data-version-id="p"></hr>
+               <div class="facs-images&#xA;                   p" data-version-id="p"><img src="../vm-images/image.png" alt="Facsimile Image Placeholder" title="Open the image viewer" class="imgLink p" data-version-id="p" data-img-url="images/p10v.jpg" data-img-id="p10"></img></div>
+               
+               
+               
+               
+               <div class="div type-poem rend-center">
+                  
+                  
+                  <div class="head rend-center">
+                     
+                     <div style="display:inline-block" class="apparatus apparatus_1" data-app-id="apparatus_1">
+                        
+                        <div class="reading w" data-reading-wits="w"><span class="hi rend-underline"><span class="textcontent">The Altar</span></span><span class="textcontent">.</span></div>
+                        
+                        <div class="reading b" data-reading-wits="b">
+                           <span class="hi rend-underline"><span class="textcontent">The Altar</span></span>
+                           
+                        </div>
+                        
+                        <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">The Altar.</span></div>
+                        
+                     </div>
+                     
+                     <div class="noteicon">n
+                        <div class="note"><strong>Note:</strong> <span class="textcontent">See Wilcox (89) for the poem's debt to the pattern and </span><span class="hi rend-italic"><span class="textcontent">schola
+                                 cordis</span></span><span class="textcontent"> (School of the Heart) emblem traditions. </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">The title
+                              signifies the stone altar that in Catholic tradition was associated with Christ's
+                              sacrifice on the Cross; the speaker's heart offered as a "living sacrifice"
+                              (Romans 12:1); the poem itself and </span><span class="hi rend-italic"><span class="textcontent">The Temple</span></span><span class="textcontent"> as a whole.
+                              (The following poem in all three sources happens to be "The Sacrifice.")
+                              </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">Though metaphorically the speaker's heart, the phrase </span><span class="hi rend-italic"><span class="textcontent">broken Altar/ALTAR</span></span><span class="textcontent"> in the first line would have provocatively suggested
+                              Reformation acts of iconoclasm that included the removal and/or destruction of
+                              such remnants of the old religion. Toward the end of Herbert's life, advocates of
+                              ceremonial worship and what Archbishop William Laud was to call the Beauty of
+                              Holiness boldly restored the altars to a place of prominence in some English
+                              churches. </span><div class="linebreak"></div>
+                           <div class="linebreak"></div><span class="textcontent">The Cambridge printers' innovation in #p—i.e., the
+                              upper-case rendering of </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent">, </span><span class="hi rend-italic"><span class="textcontent">HEART</span></span><span class="textcontent">, and </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent">—foregrounds as
+                              complementary the poem's devotional and ceremonial features, and thereby
+                              privileges a </span><span class="hi rend-italic"><span class="textcontent">via media</span></span><span class="textcontent"> reading of an otherwise
+                              ideologically conflicted poem. Indeed, the change from </span><span class="hi rend-italic"><span class="textcontent">onely</span></span><span class="textcontent"> to </span><span class="hi rend-italic"><span class="textcontent">bleſsed</span></span><span class="textcontent"> in line 15 of witness #w suggests
+                              Herbert's concern that </span><span class="hi rend-italic"><span class="textcontent">onely sacrifice</span></span><span class="textcontent"> might seem a
+                              Protestant emphasis on the uniqueness of the Atonement at the expense of more
+                              Catholic notions of Real Presence and the replication of sacrifice in the ritual
+                              of the Eucharist. (According to the 31st of the </span><span class="hi rend-italic"><span class="textcontent">Thirty-Nine
+                                 Articles</span></span><span class="textcontent">, "the Offering of Christ once made is that perfect redemption,
+                              propitiation, and satisfaction, for all the sins of the whole world, both original
+                              and actual; and there is none other satisfaction for sin, but that alone.
+                              Wherefore the sacrifices of Masses, in the which it was commonly said, that the
+                              Priest did offer Christ for the quick and the dead, to have remission of pain or
+                              guilt, were blasphemous fables, and dangerous deceits.") Such revision exemplifies
+                              what historian Anthony Milton has called "negative popery": the increasing
+                              tendency of some early Stuart divines to advance Catholic ideas minus the once </span><span class="hi rend-italic"><span class="textcontent">de rigueur</span></span><span class="textcontent"> caveats disavowing them. (</span><span class="hi rend-italic"><span class="textcontent">Catholic and Reformed</span></span><span class="textcontent">, 63-72.) Wilcox's reading—that the #w
+                              version unrevised "reveals H.'s assumption that there is now only one sacrifice"
+                              (93)—seems to suggest that the revision somehow left intact the earlier and
+                              more decidedly Protestant assertion.</span></div>
+                     </div>
+                     
+                  </div>
+                  
+                  
+                  <div class="lg lg-n1 type-stanza">
+                     
+                     <div class="lineWrapper line_1_1" data-line-id="line_1_1">
+                        <div class="line">
+                           <div class="linenumber noDisplay">1</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_2" data-app-id="apparatus_2">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">A broken Altar lord thy servant </span>
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">A broken Altar, Lord, thy servant </span>
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">A broken </span><span class="textcontent">A L T A R</span><span class="textcontent">, Lord, thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſervant</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">servant</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">reares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">rears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">reares</span></span><span class="textcontent">: brings into existence by constructing (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 9), a meaning at odds with </span><span class="hi rend-italic"><span class="textcontent">broken</span></span><span class="textcontent"> only if it is assumed that the speaker could have anything
+                                       more to offer than a broken heart. The word also connotes raising the dead
+                                       (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 3.a), by extension the Resurrection, itself a
+                                       triumph in which the broken body of Christ is raised to be a glorified
+                                       body.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_2" data-line-id="line_1_2">
+                        <div class="line">
+                           <div class="linenumber noDisplay">2</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_3" data-app-id="apparatus_3">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Made of a </span>
+                                 
+                                 <div class="choice"><span class="textcontent">Hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Heart</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> and </span>
+                                 
+                                 <div class="choice"><span class="textcontent">cimented</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cemented</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">w</span><span class="hi rend-superscript"><span class="textcontent">th</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">with</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Made of a heart, </span>
+                                 
+                                 <div class="choice"><span class="textcontent">&amp;</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">and</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">cimented</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cemented</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> with </span>
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">Made of a heart, and cemented with </span>
+                                 
+                                 <div class="choice"><span class="textcontent">teares</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tears</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">:</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_3" data-line-id="line_1_3">
+                        <div class="line">
+                           <div class="linenumber noDisplay">3</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_4" data-app-id="apparatus_4">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Whose parts are as thy hand did frame</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Whose parts are, as thy hand did frame;</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Whoſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Whose</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> parts are as thy hand did frame;</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: prepare, as a carpenter, for use in
+                                       building (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 4). Jesus was a carpenter (Mark 6:3)
+                                       and is "a son over his own house; whose house are we," for "he that built
+                                       all things is God" (Hebrews 3:4-6).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_4" data-line-id="line_1_4">
+                        <div class="line">
+                           <div class="linenumber noDisplay">4</div><span class="textcontent">this </span><div style="display:inline-block" class="apparatus apparatus_5" data-app-id="apparatus_5">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workmans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">toole</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tool</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> hath </span><span class="textcontent">touch'd</span>
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">y</span><span class="hi rend-superscript"><span class="textcontent">e</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">the</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> same</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workemans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">toole</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">tool</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> hath </span><span class="textcontent">touch'd</span>
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">y</span><span class="hi rend-superscript"><span class="textcontent">e</span></span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">the</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> same.</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">No </span>
+                                 
+                                 <div class="choice"><span class="textcontent">workmans</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">workman's</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> tool hath </span><span class="textcontent">touch'd</span><span class="textcontent"> the </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſame</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">same</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_5" data-line-id="line_1_5">
+                        <div class="line">
+                           <div class="linenumber noDisplay">5</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_6" data-app-id="apparatus_6">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">A </span>
+                                 
+                                 <div class="choice"><span class="textcontent">Hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Heart</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> alone</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">A heart alone</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">A </span><span class="textcontent">H E A R T</span><span class="textcontent"> alone</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">alone</span></span><span class="textcontent">: only.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_6" data-line-id="line_1_6">
+                        <div class="line">
+                           <div class="linenumber noDisplay">6</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_7" data-app-id="apparatus_7">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Is such a stone</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Is such a stone,</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">Is </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſuch</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">such</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> a </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ﬅone</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">stone</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">,</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_7" data-line-id="line_1_7">
+                        <div class="line">
+                           <div class="linenumber noDisplay">7</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_8" data-app-id="apparatus_8">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">As nothing but</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">As nothing but</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">As nothing but</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_8" data-line-id="line_1_8">
+                        <div class="line">
+                           <div class="linenumber noDisplay">8</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_9" data-app-id="apparatus_9">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">powre</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">power</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> doth </span>
+                                 
+                                 <div class="choice"><span class="textcontent">cutt</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cut</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Thy power doth cut.</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">Thy </span><span class="textcontent">pow'r</span><span class="textcontent"> doth cut.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 5-8</span></span><span class="textcontent">: "Only a heart is so hard as that God's
+                                       power alone is able to penetrate it."</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="lineWrapper line_1_9" data-line-id="line_1_9">
+                        <div class="line">
+                           <div class="linenumber noDisplay">9</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_10" data-app-id="apparatus_10">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Wherefore each part</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b">
+                                 
+                                 <div class="choice"><span class="textcontent">Wherefor</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Wherefore</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> each part</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">Wherefore each part</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_10" data-line-id="line_1_10">
+                        <div class="line">
+                           <div class="linenumber noDisplay">10</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_11" data-app-id="apparatus_11">
+                              
+                              <div class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Øf</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">Of</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> my hard </span>
+                                 
+                                 <div class="choice"><span class="textcontent">hart</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">heart</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">Of my hard heart</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">Of my hard heart</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_11" data-line-id="line_1_11">
+                        <div class="line">
+                           <div class="linenumber noDisplay">11</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_12" data-app-id="apparatus_12">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">Meets in this frame</span></div>
+                              
+                              <div style="display:inline-block" class="reading b p" data-reading-wits="b p"><span class="textcontent">Meets in this frame,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: i.e., the poem; the stone altar of
+                                       sacrifice; the speaker's body which houses his </span><span class="hi rend-italic"><span class="textcontent">hart/heart</span></span><span class="textcontent">—"My body is the frame wherein 'tis held"
+                                       (Shakespeare, Sonnet 24, line 3)— and is "the temple of God" (1
+                                       Corinthians 3:16).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_12" data-line-id="line_1_12">
+                        <div class="line">
+                           <div class="linenumber noDisplay">12</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_13" data-app-id="apparatus_13">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">To </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy name</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">To praise thy Name.</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">To </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy name.</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="lineWrapper line_1_13" data-line-id="line_1_13">
+                        <div class="line">
+                           <div class="linenumber noDisplay">13</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_14" data-app-id="apparatus_14">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">That If I chance to hold my peace</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">That, if I chance to hold my peace,</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">That if I chance to hold my peace,</span></div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_14" data-line-id="line_1_14">
+                        <div class="line">
+                           <div class="linenumber noDisplay">14</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_15" data-app-id="apparatus_15">
+                              
+                              <div class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Theſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">These</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> stones to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thee may not </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ceaſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cease</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                              </div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">These stones to praise thee may not cease.</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Theſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">These</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">ﬅones</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">stones</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">praiſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">praise</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thee may not </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ceaſe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">cease</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent">.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 13-14</span></span><span class="textcontent">: "And some of the Pharisees from among
+                                       the multitude said unto him, Master, rebuke thy disciples. And he answered
+                                       and said unto them, I tell you that, if these should hold their peace, the
+                                       stones would immediately cry out" (Luke 19:39-40).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_15" data-line-id="line_1_15">
+                        <div class="line">
+                           <div class="linenumber noDisplay">15</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_16" data-app-id="apparatus_16">
+                              
+                              <div class="reading w" data-reading-wits="w">
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">Ø</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">O</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice"><span class="textcontent">lett</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">let</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy </span>
+                                 
+                                 <div class="choice">
+                                    <del class="del rend-strike"><span class="textcontent">onely</span></del>
+                                    
+                                    <div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">only</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                 
+                                 <div class="choice">
+                                    <ins class="add rend-supralinear"><span class="textcontent">bleſsed</span></ins>
+                                    
+                                    <div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">blessed</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> sacrifice </span>
+                                 
+                                 <div class="choice"><span class="textcontent">bee</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">be</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> mine,</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">O </span>
+                                 
+                                 <div class="choice"><span class="textcontent">lett</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">let</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thy blessed sacrifice be mine,</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">O let thy </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ble</span><span class="textcontent">ſſ</span><span class="textcontent">ed</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">blessed</span></div>
+                                    </div>
+                                 </div>
+                                 
+                                 <span class="textcontent">S A C R I F I C E</span><span class="textcontent"> be mine,</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="textcontent">See headnote for the significance of the #w emendation.</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="lineWrapper line_1_16" data-line-id="line_1_16">
+                        <div class="line">
+                           <div class="linenumber noDisplay">16</div>
+                           
+                           <div style="display:inline-block" class="apparatus apparatus_17" data-app-id="apparatus_17">
+                              
+                              <div class="reading w" data-reading-wits="w"><span class="textcontent">And </span>
+                                 
+                                 <div class="choice"><span class="textcontent">sanctifie</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">sanctify</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> this Altar to </span>
+                                 
+                                 <div class="choice"><span class="textcontent">bee</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">be</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> thine.</span></div>
+                              
+                              <div class="reading b" data-reading-wits="b"><span class="textcontent">And sanctify this Altar to be thine.</span></div>
+                              
+                              <div style="display:inline-block" class="reading p" data-reading-wits="p"><span class="textcontent">And </span>
+                                 
+                                 <div class="choice"><span class="textcontent">ſan</span><span class="textcontent">ct</span><span class="textcontent">iﬁe</span><div class="corr">
+                                       <div class="interior"><strong>Regularized form:</strong> <span class="textcontent">sanctify</span></div>
+                                    </div>
+                                 </div>
+                                 <span class="textcontent"> this </span><span class="textcontent">A L T A R</span><span class="textcontent"> to be thine.</span></div>
+                              
+                              <div class="noteicon">n
+                                 <div class="note"><strong>Note:</strong> <span class="hi rend-italic"><span class="textcontent">Lines 15-16</span></span><span class="textcontent">: For the multiple significations of
+                                       </span><span class="hi rend-italic"><span class="textcontent">Altar/ALTAR</span></span><span class="textcontent">, see headnote and the note for line
+                                       11. Though the placement of </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent"> over </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent"> in #p is fortuitous and perhaps deliberate (as
+                                       is the "broken" spacing of the words in these as well as lines 1 and 5), the
+                                       layout in both manuscripts is unremarkable. But for </span><span class="hi rend-italic"><span class="textcontent">Altar</span></span><span class="textcontent"> having a majuscule initial, neither word there is
+                                       distinguished in any way. Had Herbert intended to highlight them in #w (the
+                                       only source in which he is known to have had a hand), he might have
+                                       specified an italic script, as indeed he does elsewhere in #w—for
+                                       example, in the final line of "Poetry" (entitled "The Quiddity" in
+                                       #b/#p).</span></div>
+                              </div>
+                              
+                           </div>
+                           
+                        </div>
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+               
+               
+            </div>
+         </div>
+         <div id="notesPanel" class="ui-widget-content ui-resizable panel noDisplay">
+            <div class="panelBanner"><img class="closePanel" title="Close panel" src="../vm-images/closePanel.png" alt="X (Close panel)"></img>
+               Textual Notes
+               
+            </div>
+            <div class="noteContent"><strong>Note: </strong><span class="textcontent">See Wilcox (89) for the poem's debt to the pattern and </span><span class="hi rend-italic"><span class="textcontent">schola
+                     cordis</span></span><span class="textcontent"> (School of the Heart) emblem traditions. </span><div class="linebreak"></div>
+               <div class="linebreak"></div><span class="textcontent">The title
+                  signifies the stone altar that in Catholic tradition was associated with Christ's
+                  sacrifice on the Cross; the speaker's heart offered as a "living sacrifice"
+                  (Romans 12:1); the poem itself and </span><span class="hi rend-italic"><span class="textcontent">The Temple</span></span><span class="textcontent"> as a whole.
+                  (The following poem in all three sources happens to be "The Sacrifice.")
+                  </span><div class="linebreak"></div>
+               <div class="linebreak"></div><span class="textcontent">Though metaphorically the speaker's heart, the phrase </span><span class="hi rend-italic"><span class="textcontent">broken Altar/ALTAR</span></span><span class="textcontent"> in the first line would have provocatively suggested
+                  Reformation acts of iconoclasm that included the removal and/or destruction of
+                  such remnants of the old religion. Toward the end of Herbert's life, advocates of
+                  ceremonial worship and what Archbishop William Laud was to call the Beauty of
+                  Holiness boldly restored the altars to a place of prominence in some English
+                  churches. </span><div class="linebreak"></div>
+               <div class="linebreak"></div><span class="textcontent">The Cambridge printers' innovation in #p—i.e., the
+                  upper-case rendering of </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent">, </span><span class="hi rend-italic"><span class="textcontent">HEART</span></span><span class="textcontent">, and </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent">—foregrounds as
+                  complementary the poem's devotional and ceremonial features, and thereby
+                  privileges a </span><span class="hi rend-italic"><span class="textcontent">via media</span></span><span class="textcontent"> reading of an otherwise
+                  ideologically conflicted poem. Indeed, the change from </span><span class="hi rend-italic"><span class="textcontent">onely</span></span><span class="textcontent"> to </span><span class="hi rend-italic"><span class="textcontent">bleſsed</span></span><span class="textcontent"> in line 15 of witness #w suggests
+                  Herbert's concern that </span><span class="hi rend-italic"><span class="textcontent">onely sacrifice</span></span><span class="textcontent"> might seem a
+                  Protestant emphasis on the uniqueness of the Atonement at the expense of more
+                  Catholic notions of Real Presence and the replication of sacrifice in the ritual
+                  of the Eucharist. (According to the 31st of the </span><span class="hi rend-italic"><span class="textcontent">Thirty-Nine
+                     Articles</span></span><span class="textcontent">, "the Offering of Christ once made is that perfect redemption,
+                  propitiation, and satisfaction, for all the sins of the whole world, both original
+                  and actual; and there is none other satisfaction for sin, but that alone.
+                  Wherefore the sacrifices of Masses, in the which it was commonly said, that the
+                  Priest did offer Christ for the quick and the dead, to have remission of pain or
+                  guilt, were blasphemous fables, and dangerous deceits.") Such revision exemplifies
+                  what historian Anthony Milton has called "negative popery": the increasing
+                  tendency of some early Stuart divines to advance Catholic ideas minus the once </span><span class="hi rend-italic"><span class="textcontent">de rigueur</span></span><span class="textcontent"> caveats disavowing them. (</span><span class="hi rend-italic"><span class="textcontent">Catholic and Reformed</span></span><span class="textcontent">, 63-72.) Wilcox's reading—that the #w
+                  version unrevised "reveals H.'s assumption that there is now only one sacrifice"
+                  (93)—seems to suggest that the revision somehow left intact the earlier and
+                  more decidedly Protestant assertion.</span></div>
+            <div class="noteContent">
+               <div class="position line_1_1">Line number 1</div><strong>Note: </strong><span class="hi rend-italic"><span class="textcontent">reares</span></span><span class="textcontent">: brings into existence by constructing (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 9), a meaning at odds with </span><span class="hi rend-italic"><span class="textcontent">broken</span></span><span class="textcontent"> only if it is assumed that the speaker could have anything
+                  more to offer than a broken heart. The word also connotes raising the dead
+                  (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 3.a), by extension the Resurrection, itself a
+                  triumph in which the broken body of Christ is raised to be a glorified
+                  body.</span></div>
+            <div class="noteContent">
+               <div class="position line_1_3">Line number 3</div><strong>Note: </strong><span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: prepare, as a carpenter, for use in
+                  building (</span><span class="hi rend-italic"><span class="textcontent">OED</span></span><span class="textcontent"> 4). Jesus was a carpenter (Mark 6:3)
+                  and is "a son over his own house; whose house are we," for "he that built
+                  all things is God" (Hebrews 3:4-6).</span></div>
+            <div class="noteContent">
+               <div class="position line_1_5">Line number 5</div><strong>Note: </strong><span class="hi rend-italic"><span class="textcontent">alone</span></span><span class="textcontent">: only.</span></div>
+            <div class="noteContent">
+               <div class="position line_1_8">Line number 8</div><strong>Note: </strong><span class="hi rend-italic"><span class="textcontent">Lines 5-8</span></span><span class="textcontent">: "Only a heart is so hard as that God's
+                  power alone is able to penetrate it."</span></div>
+            <div class="noteContent">
+               <div class="position line_1_11">Line number 11</div><strong>Note: </strong><span class="hi rend-italic"><span class="textcontent">frame</span></span><span class="textcontent">: i.e., the poem; the stone altar of
+                  sacrifice; the speaker's body which houses his </span><span class="hi rend-italic"><span class="textcontent">hart/heart</span></span><span class="textcontent">—"My body is the frame wherein 'tis held"
+                  (Shakespeare, Sonnet 24, line 3)— and is "the temple of God" (1
+                  Corinthians 3:16).</span></div>
+            <div class="noteContent">
+               <div class="position line_1_14">Line number 14</div><strong>Note: </strong><span class="hi rend-italic"><span class="textcontent">Lines 13-14</span></span><span class="textcontent">: "And some of the Pharisees from among
+                  the multitude said unto him, Master, rebuke thy disciples. And he answered
+                  and said unto them, I tell you that, if these should hold their peace, the
+                  stones would immediately cry out" (Luke 19:39-40).</span></div>
+            <div class="noteContent">
+               <div class="position line_1_15">Line number 15</div><strong>Note: </strong><span class="textcontent">See headnote for the significance of the #w emendation.</span></div>
+            <div class="noteContent">
+               <div class="position line_1_16">Line number 16</div><strong>Note: </strong><span class="hi rend-italic"><span class="textcontent">Lines 15-16</span></span><span class="textcontent">: For the multiple significations of
+                  </span><span class="hi rend-italic"><span class="textcontent">Altar/ALTAR</span></span><span class="textcontent">, see headnote and the note for line
+                  11. Though the placement of </span><span class="hi rend-italic"><span class="textcontent">SACRIFICE</span></span><span class="textcontent"> over </span><span class="hi rend-italic"><span class="textcontent">ALTAR</span></span><span class="textcontent"> in #p is fortuitous and perhaps deliberate (as
+                  is the "broken" spacing of the words in these as well as lines 1 and 5), the
+                  layout in both manuscripts is unremarkable. But for </span><span class="hi rend-italic"><span class="textcontent">Altar</span></span><span class="textcontent"> having a majuscule initial, neither word there is
+                  distinguished in any way. Had Herbert intended to highlight them in #w (the
+                  only source in which he is known to have had a hand), he might have
+                  specified an italic script, as indeed he does elsewhere in #w—for
+                  example, in the final line of "Poetry" (entitled "The Quiddity" in
+                  #b/#p).</span></div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="w15v">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/w15v.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/w15v.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="b15v">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/b15v.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/b15v.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+         <div class="draggable resizable ui-resizable panel imgPanel noDisplay" id="p10">
+            <div title="Click to drag panel." class="viewerHandle handle_imgViewer"><span class="viewerHandleLt title_imgViewer">images/p10v.jpg</span><img class="viewerHandleRt closePanel" src="../vm-images/closePanel.png" title="Close panel" alt="X (Close panel)"></img></div>
+            <div class="viewerContent" id="content_imgViewer">
+               <div class="panzoom-parent" style="overflow:visible">
+                  <div class="panzoom"><img width="200" border="1px 2px, 2px, 1px solid #000;" alt="image" src="images/p10v.jpg"></img></div>
+               </div>
+               <div class="buttons"><button class="zoom-out">-</button><input type="range" min="0" max="100" class="zoom-range"></input><button class="zoom-in">+</button></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
