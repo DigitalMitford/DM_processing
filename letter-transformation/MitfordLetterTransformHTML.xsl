@@ -28,6 +28,7 @@
                     content="Supported by the Mary Russell Mitford Society and Penn State Erie, The Behrend College."/>
                 <meta name="keywords"
                     content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, TEI, Text Encoding Initiative, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" type="text/css" href="mitfordletter.css"/>
                 <!--<script type="text/javascript" src="MRMLetters.js" xml:space="preserve">...</script>-->
                 <script type="text/javascript" src="MRMLetters.js">/**/</script>
