@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://exist-db.org/collection-config/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:my="my-namespace">
+    <index>
+        <fulltext default="none" attributes="false"/>
+        <range>
+            <create qname="empty-namespace-element" type="xs:string"/>
+            <create qname="@empty-namespace-attribute" type="xs:string"/>
+            <create qname="my:my-namespace-element" type="xs:string"/>
+            <create qname="@my:my-namespace-attribute" type="xs:string"/>
+        </range>
+    </index>
+</collection>

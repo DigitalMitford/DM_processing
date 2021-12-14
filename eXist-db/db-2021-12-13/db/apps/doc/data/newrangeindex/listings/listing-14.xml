@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<range>
+            <create qname="tei:term">
+                <condition attribute="type" value="main"/>
+                <field name="mainTerm" type="xs:string"/>
+            </create>
+        </range>

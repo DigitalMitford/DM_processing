@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+--><TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> 
+            <title xml:id="MRM1755">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>,<date when="1820-01-24">January 24, 1820</date></title> 
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#scw">Samantha Webb </editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal> 
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#scw">Samantha Webb</persName> 
+               <persName ref="#SMP">Sara Perry</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-03-21">March 21, 2017</date>
+               Proofing and corrections by</resp>
+               <persName ref="#scw">Samantha Webb</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-02-01">February 1, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>P1020356.jpg, P1020357.jpg, P1020358.jpg, P1020359.jpg, P1020360.jpg, P1020361.jpg, P1020362.jpg, P1020363.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+            
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> 
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> 
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 373</idno> <!--SCW: I checked this against the spreadsheet, 3/21/17-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1820-01-24">1820 January 24</date>.      
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc> 
+                     <support> <p> There are two pages of <material>paper</material> that are 23 cm long, four page surfaces photographed. The pages are folded in half lengthwise and  in thirds for posting.  </p> 
+                        <p>A black circular mileage stamp reading <stamp>READING<lb/><unclear>gap quantity="1" unit="chars" reason="illegible"/&gt;</unclear></stamp> has been stamped by the postal service across the address leaf.
+                        </p> 
+                        
+                     </support>
+                     <condition>
+                        <p>Sheet pages three and four torn on right edge of page three where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to the center of page surface four</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+          
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of the first and second pages. A red line is drawn from top left to middle right and middle left to bottom right on the fourth page. There is no red line across the address text block. </handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. The letter date is written in grey pencil next to the letter seal. The letter "F" is written on the third page surface within the text.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               
+               <dateline>
+                  <name type="place" ref="#Bertram_house"/> 
+                  <date when="1820-01-24">Jan<hi rend="superscript">y</hi> 24<hi rend="superscript">th</hi>1820</date>. 
+               </dateline>
+               <salute><persName ref="#Elford_SirWm">To Sir W. Elford</persName></salute>
+            </opener>
+            <p>It hails &amp; rains &amp; blows &amp; thaws--so that I cannot walk--It's so dark that I cannot see to work--I got tipsy with green tea last night &amp; could not sleep, so that I have the <sic>headach</sic> &amp; am stupid &amp; can't understand what I read--all these are valid reasons for writing to you <rs type="person" ref="#Elford_SirWm">my dear friend</rs>--more especially when reinforced with the fear of not leaving till I have written--are they not?--So write I shall, &amp; plunge at once into my letter as one does into a <gap reason="illegible" quantity="1" unit="word"/><unclear><supplied resp="#SMP">tubbath</supplied></unclear>--Here goes. Have you read <title ref="#Ivanhoe">Ivanhoe</title>? Do you like it? What a silly question, What two silly questions! You must have read &amp; you must have liked that most gorgeous &amp; magnificent <rs type="title" ref="#Ivanhoe">Tale of Chivalry</rs>--I know nothing so rich, so splendid, so profuse--so like old painted glass or a Gothic chapel full of shrines &amp; banners &amp; knightly monuments--The soul too which is sometimes wanting is there in its full glory of passion &amp; tenderness--<persName ref="#Rebecca_Ivanhoe">Rebecca</persName> is such a woman as <persName ref="#Fletcher_John">Fletcher</persName> used to draw--an <sic><persName ref="#Aspatia">Aspasia</persName></sic>--a <persName ref="#Bellario">Bellario</persName>--There are faults to be sure in plenty if one had a mind to hunt after them--that horrible old <rs type="person" ref="#Ulrica_Ivanhoe">woman</rs>--<del rend="squiggles"><gap quantity="1" unit="word"/></del>(an old crone is a necessity to <persName ref="#Scott_Wal">W. Scott</persName>--he is literally hag ridden) that vapid <rs type="person" ref="#Rebecca_Ivanhoe">heroine</rs> (the only comfort is that <rs type="person" ref="#Scott_Wal">he</rs> leaves his readers with a consoling assurance that the <rs type="person" ref="#Wilfred_Ivanhoe">hero</rs> likes the sweet <persName ref="#Rebecca_Ivanhoe">Jewess</persName> best)--the melodramatic air--by which one feels almost as if it were written for the accomodation of the artists of the <placeName ref="#Coburg_Theatre">Coburg</placeName> &amp; the <placeName ref="#Surrey_Theatre">Surrey</placeName> <hi rend="superscript">theaters</hi> with a Tournament in <del rend="squiggles"><gap quantity="1" unit="word"/></del> Act the First--a burning castle in act the second--a trial by combat in act the third--nothing for the dramatist to do but to cut out the speeches &amp; there is a grand spectacle ready made--Then neither <persName ref="#RichardI">Richard</persName> nor <persName ref="#RobinHood_Ivanhoe">Robin</persName> <pb n="2"/> Hood scarcely comes up to one's notions of the <rs type="person" ref="#RichardI">lion hearted king</rs> whose name the Saracen women used to still their screaming children or the bold outlaw whom the fine Ballads in <title ref="#Percy_Reliques">Percy's Reliques</title> &amp; <persName ref="#Jonson_B">Ben Jonson</persName>'s still finer pastoral (Did you even read that beautiful unfinished drama--<title ref="#Sad_Shepherd_BJ">The Sad Shepherd</title>?) have made one of the chartered denizens of one's fancy--But there is no finding fault with a book which puts one so much in mind of <persName ref="#Froissart">Froissart</persName>--<title ref="#Ivanhoe">Ivanhoe</title> is more like him than any thing which has been written these three centuries.--I have just finished Mr. <persName ref="#Hallam_Henry">Hallam</persName>'s <title ref="#View_Europe">View of Europe During the Middle Ages</title>--a very masterly work in its way, which confirms exactly to <persName ref="#Scott_Wal">W. Scott</persName>'s view of manners particularly the terrible vices of the higher orders &amp; clergy--&amp; puts one in mind of <persName ref="#Froissart">Froissart</persName> in a different way from <title ref="#Ivanhoe">Ivanhoe</title> by making one long every moment for <rs type="person" ref="#Froissart">his</rs>picturesque minuteness instead of the large views &amp; sweeping generalities of the <rs type="person" ref="#Scott_Wal">author</rs>. I don't like philosophical historians who make wise remarks &amp; write fine dissertations--Do you? Live for ever the <gap reason="illegible" quantity="1" unit="word"/><unclear><supplied resp="#SMP">Barrets</supplied></unclear><!--SCW: I don't know about this, though I searched--> &amp; Clarendons<!-- SMP: There's a Clarendon Press in the site index, could that be it?-->! Delightful sellers of what they <gap reason="illegible" quantity="1" unit="word"/><unclear><supplied resp="#SMP">saw</supplied></unclear><!--SCW: "saw" looks right to me, but context of [unknown] word and "Clarendons" will dictate this. It's a book or family or family represented in a book-->! -- One page of that narrative <!-- SMP: rs to Clarendon work?--><!--SCW: Keep it tag-free for now, and leave this exchange here as a placeholder. More research is needed.--> is worth whole volumes of disquisition. -- I am now reading <emph><foreign><title ref="#Petrarque_Laure">Petrarque et Laure</title></foreign></emph> -- the last of <persName ref="#deGenlis_Mme">Madame de Genlis'</persName> last words (I believe she has already taken leave of the public &amp; times in <gap reason="illegible" quantity="1" unit="word"/><unclear><supplied resp="#SMP">town</supplied></unclear>) --I don't like <persName ref="#deGenlis_Mme">Madame de Genlis</persName>--I don't like <persName ref="#Petrarch">Petrarch</persName> whose <emph><foreign>concetti</foreign></emph> do not appear to me redeemed by any truth of feeling either in love or poetry--&gt; I don't believe in spite of all the prosers &amp; poetisers, L'Abbe de Sade<!--I can't find who this is--> &amp; Lord <persName ref="#Woodhouselee_Lord">Woodhouselee</persName> included who have <unclear/> <!--SMP: MRM skipped one word-->about <persName ref="#Laura">Laura</persName>--I don't believe in  <rs type="person" ref="#Laura">her</rs>--I have no notion that there ever was such a person--I hold her to be not a mistress but a muse--With all these mislikings to my <rs type="person" ref="#deGenlis_Mme">author</rs> &amp; her <rs type="person" ref="#Petrarch">hero</rs> &amp; <rs type="person" ref="#Laura">heroine</rs> I still read on seduced by <persName ref="#deGenlis_Mme">Madame Genlis</persName>' enchanting style -- <rs type="person" ref="#deGenlis_Mme">her</rs> <quote>"perfect mastery of her weapon which is language"</quote>.--Now that I am talking of novels--did I ever recommend to you one which is mentioned in the preface to <title ref="#Ivanhoe">Ivanhoe</title><pb n="3"/>  <title ref="#Queenhoo-Hall">Queenhoo Hall</title>by the late Mr. <persName ref="#Strutt_J">Strutt</persName>--If you could endure the old words you would like it--the comic part is excellent--it has much of the freshness &amp; jollity of <title ref="#GammerGurton">Gammer Gurton's Needle</title>--which you know or perhaps you don't know, for I believe my dear friend you are an <gap reason="illegible" quantity="1" unit="word"/><unclear/> anti-antiquarian, is one of the finest coarse comedies in the world. 
+               </p>     
+            <p>Have you tried this Lithography? My friend Mr. <persName ref="#Hofland_TC">Hofland</persName> is working away at it with great zeal &amp; has produced some very beautiful specimens--a nice invention is it not? So direct &amp; easy a medium of multipling the ideas of a great artist without their being chilled &amp; spoilt by passing through other hands--Better because less difficult than the dry needle. And yet what glorious things fine etchings are! Mr. <persName ref="#Dickinson_Charles">Dickinson</persName> has a very good collection &amp; I have been looking at them half last week for when I once had them I could hardly part with them again--Though I have not served him as his friend <del rend="squiggles"><gap quantity="1" unit="word"/></del> <persName ref="#Fisher_John">Bishop of <hi rend="superscript">F</hi><note resp="#SMP">The "F" is in grey pencil.</note>Salisbury</persName> who naturally filched half a dozen of his best Boths <note resp="#SMP">I am unsure whether this is talking about <persName ref="#Both_Andries">Andries Both</persName> or <persName ref="#Both_Jan">Jan Both.</persName></note> &amp; <persName ref="#Rosa_Salvator">Salvato<gap reason="torn" quantity="1" unit="chars"/><unclear><supplied resp="#SMP">r</supplied></unclear> Rosa</persName>s &amp; <persName ref="#Castiglione">Castiglione</persName>s! Abstracted them!--borrowed them for a d<gap reason="torn" quantity="2" unit="chars"/><unclear><supplied resp="#smp">ay</supplied></unclear> &amp; never returned one of them! Glorious things they are to be sure--it was a temptation--<persName ref="#vanDyck_Anthony">Vandyke</persName>'s  who darts the needle with much <gap reason="illegible" quantity="1" unit="word"/><unclear/> into the copper --<persName ref="#Rembrandt">Rembrandt</persName>'s so full of life &amp; meaning--Daniel <gap reason="illegible" quantity="1" unit="word"/><unclear><supplied resp="#SMP">de Monssier's</supplied></unclear><!--SCW: I did a brief check for various iterations of this name using artist/painter as a narrower, but couldn't find anything definite. You keep trying and so will I. SCW UPDATE: Let's leave this comment here as a placeholder for further research-->--that <rs type="person" ref="#Elford_J">brother</rs> amateur of your's whom few artists can match--<persName ref="#Ruysdael_Salomon">Ruysdael</persName>'s which breathe the very soul of landscape--<persName ref="#Waterloo_Antonie">Waterloo</persName>'s  whose wood scenes are such real forests--as sylvan as <quote><emph>"As you like it"</emph></quote>--&amp; my favorite of all the delicate airy tasteful <persName ref="#Weirotter_Franz">Weirotter</persName>-- If I had been inclined to thieving I certainly should have taken one of those tiny <persName ref="#Weirotter_Franz">Weirotter</persName>s--His etchings seem made in Fairyland--<persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> enquires much after you--She is not put to bed yet &amp; continues quite well.--</p>
+            <p>Pray is the <persName ref="#Duke_Edward">Duke of Kent</persName> dead yet? I suppose I shall know tomorrow--but I want to know now--it would be very good in you to send one of the <gap reason="illegible" quantity="1" unit="word"/><unclear><supplied resp="#SMP">fairies</supplied></unclear> you keep in pay to tell me--I want to know very much--Now don't fancy it's <pb n="4"/>only on account of crape &amp; bombazine &amp; broad hemmed piles though to be sure it will add very much to my grief to be obliged to buy a new gown &amp; I can't do without one--but really one has a respect for the <persName ref="#Duke_Edward">Duke of Kent</persName>--there is something of <rs type="person" ref="#Duke_Edward">his</rs> old &amp; venerable <rs type="person" ref="#GeoIII">Father</rs> about him--<rs type="person" ref="#Duke_Edward">his</rs> talents too were certainly considerable--a fine public speaker-- a <unclear><supplied>charitable</supplied></unclear> man--in short between my loyal feelings &amp; my desire not to be obliged to buy a new gown, I am very anxious for <rs type="person" ref="#Duke_Edward">his</rs> recovery. Now my dear <persName ref="#Elford_SirWm">Sir William</persName> I am afraid of not getting a frank--so you shall be let off with a single letter. A piece of good forturne which very seldom befalls you!--Adieu my dear friend--pray write soon -- 
+           </p>
+               
+            
+          
+            <closer><persName ref="#Mitford_Geo">Papa</persName> &amp; <persName ref="#Russell_M">Mama</persName> join in kindest compliments &amp; I am ever most sincerely &amp; affectionately your's
+              
+              <lb/>
+               <signed><persName ref="#MRM">M R. Mitford</persName>.</signed> 
+            </closer> 
+            
+            
+            
+             <closer>
+               <address> 
+            <addrLine><lb/></addrLine>
+                  <addrLine><lb/></addrLine>
+                  <addrLine><lb/></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> 
+          
+          <listPerson>
+             <person xml:id="Strutt_J" sex="1">
+                <persName>
+                   <surname>Strutt</surname>
+                   <forename>Joseph</forename>
+                </persName>
+                <persName>Joseph Strutt</persName>
+                <birth when="1749-10-27"><placeName>Springfield Mill</placeName></birth>
+                <death when="1802-10-16"><placeName>London</placeName></death>
+                <note resp="#SMP">An antiquary, engraver, and author of <title>Queen-Hoo Hall: a Romance of Ancient Times</title>, which was finished by <persName ref="#Scott_Wal">Walter Scott</persName></note>
+             </person>
+          </listPerson>
+          
+          <listPerson>
+             <person xml:id="Ruysdael_Salomon" sex="1"> <!--SMP: This is already in another SI in progress file-->
+                <persName>
+                <surname>Ruysdael</surname>
+                <forename>Salomon</forename>
+                </persName>
+                <persName>Salomon Ruysdael</persName>
+                <birth when="1602-03"> <!--SMP: Cannot find a complete birth date--><placeName>Naarden, Netherlands</placeName></birth>
+                <death when="1670-11-03"><placeName>Haarlem, Netherlands</placeName></death>
+                <note resp="#SMP">A Dutch Golden Age landscape painter</note>
+             </person>
+          </listPerson>
+             
+             <listPerson>
+                <person xml:id="Weirotter_Franz" sex="1">
+                   <persName>
+                      <surname>Weirotter</surname>
+                      <forename>Franz</forename>
+                      <forename>Edmund</forename>
+                   </persName>
+                   <persName>Franz Edmund Weirotter</persName>
+                   <birth when="1733-05-29"><placeName>Innsbruck, Austria</placeName></birth>
+                   <death when="1772-05-11"><placeName>Vienna, Austria</placeName></death>
+                   <note resp="#SMP">An Austrian painter, draughtsman, and etcher.</note>
+                </person>
+             </listPerson>
+             
+             <listPerson>
+                <person xml:id="Waterloo_Antonie" sex="1">
+                   <persName>
+                      <surname>Waterloo</surname>
+                      <forename>Antonie</forename>
+                   </persName>
+                   <persName>Antonie Waterloo</persName>
+                   <birth when="1609-06-05"><placeName>Lille, France</placeName></birth>
+                   <death when="1690-10-23"><placeName>Utrecht, Netherlands</placeName></death>
+                   <note resp="#SMP">A Dutch Golden Age landscape painter.</note>
+                </person>
+             </listPerson>
+           
+           <listPerson>
+              <person xml:id="Both_Jan" sex="1">
+                 <persName>
+                    <surname>Both</surname>
+                    <forename>Jan</forename>
+                    <forename>Dirksz</forename>
+                 </persName>
+                 <persName>Jan Dirksz Both</persName>
+                 <birth when="1615"><placeName>Utrecht, Netherlands</placeName></birth><!--SMP: I can only find a year for his birth date-->
+                 <death when="1652-09-09"><placeName>Utrecht, Netherlands</placeName></death>
+                 <note resp="#SMP">A Dutch painter, draughtsman, and etcher.</note>
+              </person>
+           </listPerson>
+           
+           <listPerson>
+              <person xml:id="Both_Andries" sex="1">
+                 <persName>
+                    <surname>Both</surname>
+                    <forename>Andries</forename>
+                 </persName>
+                 <persName>Andries Both</persName>
+                 <birth when="1612"><placeName>Utrecht, Netherlands</placeName></birth><!--SMP: I can only find a year for his birth date-->
+                 <death when="1642-03-23"><placeName>Venice, Italy</placeName></death>
+                 <note resp="#SMP">A Dutch Golden Age genre painter.</note>
+              </person>
+           </listPerson>
+           
+           <listPerson>
+              <person xml:id="Duke_Edward" sex="1">
+                 <persName>
+                    <surname/><!--SMP: I can't find a full name, he's only referred to as "Prince Edward"-->
+                    <forename/>
+                 </persName>
+                 <persName>Prince Edward</persName>
+                 <persName>Duke of Kent</persName>
+                 <persName>Duke of Strathearn</persName>
+                 <birth when="1767-11-02"><placeName>London</placeName></birth>
+                 <death when="1820-01-23"><placeName>Devon</placeName></death>
+                 <note resp="#SMP">The fourth son of George III and Queen Charlotte, and the father of Queen Victoria.</note>
+              </person>
+           </listPerson>
+          
+          <listPerson>
+           <person xml:id="Ulrica_Ivanhoe" sex="2">
+             <persName>Ulrica</persName>
+             <persName>Urfried</persName>
+             <note resp="#SMP">A character in <title ref="#Ivanhoe">Ivanhoe</title></note>
+          </person>
+       </listPerson>
+           
+           <listPerson>
+              <person xml:id="Laura" sex="2">
+                 <persName>Laura</persName>
+                 <note resp="SMP">A woman frequently referenced and written about in <persName ref="#Petrarch">Petrarch</persName>'s Laurels</note>
+              </person>
+           </listPerson>
+              
+           <listPerson><person xml:id="Woodhouselee_Lord" sex="1">
+              <persName>
+                 <surname>Tytler</surname>
+                 <forename>Fraser</forename>
+                 <forename>Alexander</forename>
+              </persName>
+              <persName>Lord Woodhouselee</persName>
+              <persName>Alexander Fraser Tytler</persName>
+              <birth when="1747-10-04"><placeName>Edinburgh</placeName></birth>
+              <death when="1813-01-05"><placeName>Woodhouselee</placeName></death>
+              <note resp="#SMP">An author who wrote on historical and legal matters, in addition to translating some of <persName ref="#Petrarch">Petrarch</persName>'s works</note>
+           </person></listPerson>
+           
+           <listPerson>
+           <person xml:id="Wilfred_Ivanhoe" sex="1">
+              <persName>Wilfred of Ivanhoe</persName>
+              <note resp="#SMP">A character in <title ref="#Ivanhoe">Ivanhoe</title></note>
+           </person>
+           </listPerson>
+           
+           <listPerson>
+              <person xml:id="RobinHood_Ivanhoe" sex="1">
+                 <persName>Robin Hood</persName>
+                 <persName>Robin Locksley</persName>
+                 <note resp="#SMP">A character in <title ref="#Ivanhoe">Ivanhoe, as well as various other works</title></note>
+              </person>
+           </listPerson>
+           
+           
+           <listPerson>
+              <person xml:id="Castiglione" sex="1">
+                <persName>
+                 <surname>Castiglione</surname>
+                 <forename>Giovanni</forename>
+                   <forename>Benedetto</forename>
+                </persName>
+                 <persName>Giovanni Castiglione</persName>
+                 <birth when="1609-03-23"><placeName>Genoa, Italy</placeName></birth>
+                 <death when="1664-05-05"><placeName>Mantua, Italy</placeName></death>
+                 <note resp="#SMP">An Italian Baroque artist, painter, printmaker, and draftsman</note>
+              </person>
+           </listPerson>
+           
+           <listPerson>
+              <person xml:id="Rosa_Salvator" sex="1">
+                 <persName>
+                    <surname>Rosa</surname>
+                    <forename>Salvator</forename>
+                 </persName>
+                 <persName>Salvator Rosa</persName>
+                 <birth when="1615-06-20"><placeName>Arenella, Italy</placeName></birth>
+                 <death when="1673-03-15"><placeName>Rome, Italy</placeName></death>
+                 <note resp="#SMP">An Italian Baroque painter, poet, and printmaker.</note>
+              </person>
+           </listPerson>
+           
+           <listPerson>
+              <person xml:id="vanDyck_Anthony" sex="1">
+                 <persName>
+                    <surname>van Dyck</surname>
+                    <forename>Anthony</forename>
+                 </persName>
+                 <persName> Anthony van Dyck</persName>
+                 <birth when="1599-03-22"><placeName>Antwerp, Belgium</placeName></birth>
+                 <death when="1641-12-09"><placeName>London</placeName></death>
+                 <note resp="#SMP">A Flemish Baroque artist who later became the leading court painter in England.</note>
+              </person>
+           </listPerson>
+           
+           <listPerson>
+              <person xml:id="Hallam_Henry" sex="1">
+                <persName>
+                 <surname>Hallam</surname>
+                 <forename>Henry</forename>
+                </persName>
+                 <persName>Henry Hallam</persName>
+                 <birth when="1777-07-09"><placeName>Windsor</placeName></birth>
+                 <death when="1850-10-25"><placeName>Siena, Italy</placeName></death>
+                 <note resp="#SMP">A historian and author of <title ref="#View_Europe">View of the State of Europe during the Middle Ages</title></note>
+              </person>
+           </listPerson>
+        
+        <listPlace>
+           <place xml:id="Coburg_Theatre">
+              <placeName>Royal Coburg Theatre</placeName>
+              <location><geo>51.5022 -0.1096</geo></location>
+           </place>
+        </listPlace>
+           
+        <listPlace>
+           <place xml:id="Surrey_Theatre">
+              <placeName>Surrey Theatre</placeName>
+              <location><geo>51.499 -0.105</geo></location>
+           </place>
+        </listPlace>
+           
+          
+           
+           <listBibl>
+              <bibl xml:id="Queenhoo_Hall">
+                 <title>Queenhoo-Hall: a Romance of Ancient Times</title>
+                 <author><persName ref="#Strutt_J">Joseph Strutt</persName> and <persName ref="#Scott_Wal">Walter Scott</persName></author>
+                 <pubPlace>Edinburgh</pubPlace>
+                 <publisher>James Ballantyne &amp; Co.</publisher>
+                 <date when="1808">1808</date>
+              </bibl>
+           </listBibl>
+          
+          <listBibl>
+             <bibl xml:id="Petrarque_Laure">
+                <title>Petrarque et Laure</title>
+                <author><persName ref="#deGenlis_Mme">Petrarch</persName></author>
+                <pubPlace>London</pubPlace>
+                <publisher>H. Colburn</publisher>
+                <date when="1820">1820</date>
+             </bibl>
+          </listBibl>
+           
+           <listBibl>
+              <bibl xml:id="View_Europe">
+                 <title>View of the State of Europe During the Middle Ages</title>
+                 <author><persName ref="#Hallam_Henry">Henry Hallam</persName></author>
+                 <pubPlace>London</pubPlace>
+                 <publisher>John Murray</publisher>
+                 <date when="1818">1818</date>
+              </bibl>
+           </listBibl>
+           
+           
+     </div>
+     </back>
+  </text>
+</TEI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This file lists external eXist-db servers to be monitored by the local instance.
+    
+    Each entry needs to provide three attributes:
+    
+    * name: a short name for the server used for display
+    * url: the URL leading to the root context of eXist
+    * token: the unique authentication token of the jmx servlet running on the instance.
+    Since eXist 2.2, the token can be found in a file jmxservlet.token which is automatically
+    generated in the server's data directory. Older versions of eXist do not require an
+    authentication token, so just leave the attribute empty.
+--><instances>
+    <!--instance name="my.server.com" url="http://my.server.com:8080/exist" token="" cron="0 * * * * ?">
+        <poll cron="0/30 * * * * ?">
+            <alert name="More than 30 threads waiting for locks to be released" condition="count($jmx//LockManager/WaitingThreads/row) > 30"/>
+        </poll>
+    </instance-->
+</instances>

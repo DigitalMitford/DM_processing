@@ -1,0 +1,16 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/bower_components/neon-animation" version="1" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:43:14.333Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="web-animations.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:14.334Z" modified="2020-08-07T22:43:14.334Z" filename="web-animations.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="neon-animation-runner-behavior.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:14.336Z" modified="2020-08-07T22:43:14.336Z" filename="neon-animation-runner-behavior.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="neon-animation-behavior.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:14.342Z" modified="2020-08-07T22:43:14.342Z" filename="neon-animation-behavior.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="neon-animatable-behavior.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:14.345Z" modified="2020-08-07T22:43:14.345Z" filename="neon-animatable-behavior.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="animations" filename="animations"/>
+</collection>

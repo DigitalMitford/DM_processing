@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>existdb-packageservice</description>
+    <author>Joern Turner</author>
+    <website/>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>packageservice</target>
+    <prepare/>
+    <finish/>
+    <!--todo: what does the password actually mean here? What is it used for? -->
+    <permissions user="packageservice" group="packageservice" mode="rwxrwxr-x"/>
+
+    <changelog>
+        <change version="1.3.9">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Prevent users from triggering packageservice upgrades, which could crash the database; updates to this package must be sideloaded - <a href="https://github.com/eXist-db/existdb-packageservice/pull/10">#10</a></li>
+            </ul>
+        </change>
+        <change version="1.3.8">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>Increment version for eXist 5.0.0 final</li>
+            </ul>
+        </change>
+        <change version="1.3.7">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>Updated the URL of the public repo</li>
+            </ul>
+        </change>
+        <change version="1.3.6">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>Fixed Semver comparisons</li>
+            </ul>
+        </change>
+        <change version="1.3.3">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixing falsy is-newer check again</li>
+            </ul>
+        </change>
+        <change version="1.3.2">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>removed dependency on console module</li>
+                <li>fixed is-never call to compare the names of the respective app instead of the abbrev. This
+                fails if the apps abbrev changes but the actual app is the same.</li>
+            </ul>
+        </change>
+        <change version="1.3.1">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixed a bug with icon retrieval</li>
+            </ul>
+        </change>
+        <change version="1.3.0">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>added endpoint for accessing public url</li>
+            </ul>
+        </change>
+        <change version="1.2.2">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>small fixes to make svg icons work</li>
+            </ul>
+        </change>
+        <change version="1.2.1">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>changed ordering of items inside of repo-app element</li>
+            </ul>
+        </change>
+        <change version="1.2.0">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>changed order of subitems in repo-app element (repo-icon always first now for ease of client-side processing)</li>
+                <li>removed slot attributes from repo-icon elements</li>
+            </ul>
+        </change>
+        <change version="1.1.2">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>fixed request context pathes</li>
+                <li>block packagemanager and packageservice from being removed</li>
+            </ul>
+        </change>
+        <change version="1.0.0">
+            <ul xmls="http://www.w3.org/1999/xhtml">
+                <li>support for svg icons</li>
+                <li>check for newer packages, putting updated packages on top of list</li>
+                <li>fixed html empty elements by using HTML5 serialization</li>
+                <li>showing dummy page in case service is opened directly</li>
+            </ul>
+        </change>
+    </changelog>
+<deployed>2020-08-07T22:43:11.906Z</deployed></meta>

@@ -1,0 +1,20 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/resources/css" version="1" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:16.992Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="xml2html.css" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:16.993Z" modified="2020-08-07T22:43:16.993Z" filename="xml2html.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="docs.css" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:16.996Z" modified="2020-08-07T22:43:16.996Z" filename="docs.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="eXide.css" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:16.999Z" modified="2020-08-07T22:43:16.999Z" filename="eXide.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="docs.less" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.001Z" modified="2020-08-07T22:43:17.001Z" filename="docs.less" mimetype="application/less">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="search.css" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.003Z" modified="2020-08-07T22:43:17.003Z" filename="search.css" mimetype="text/css">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="black-tie" filename="black-tie"/>
+    <subcollection name="font-awesome" filename="font-awesome"/>
+</collection>

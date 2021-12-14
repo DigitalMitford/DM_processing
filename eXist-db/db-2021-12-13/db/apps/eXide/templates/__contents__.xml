@@ -1,0 +1,29 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/templates" version="1" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.294Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="documents.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.304Z" modified="2020-08-07T22:43:17.304Z" filename="documents.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="snippets.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.307Z" modified="2020-08-07T22:43:17.307Z" filename="snippets.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="xml.snippets" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.296Z" modified="2020-08-07T22:43:17.296Z" filename="xml.snippets" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="namespaces.json" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.298Z" modified="2020-08-07T22:43:17.298Z" filename="namespaces.json" mimetype="application/json">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="css.snippets" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.301Z" modified="2020-08-07T22:43:17.301Z" filename="css.snippets" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="html.snippets" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.311Z" modified="2020-08-07T22:43:17.311Z" filename="html.snippets" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="javascript.snippets" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.315Z" modified="2020-08-07T22:43:17.315Z" filename="javascript.snippets" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="xquery.snippets" skip="no" owner="eXide" group="eXide" mode="775" created="2020-08-07T22:43:17.319Z" modified="2020-08-07T22:43:17.319Z" filename="xquery.snippets" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="existdb" filename="existdb"/>
+    <subcollection name="bootstrap" filename="bootstrap"/>
+</collection>

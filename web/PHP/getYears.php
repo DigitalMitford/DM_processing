@@ -6,16 +6,14 @@
     <link rel="stylesheet" type="text/css" href="mitfordVisual.css"/>
 </head>
 <body>
-<h1>Years</h1>
-<hr/>
-<p>Select a year to view of list of letters from that year</p>
-<ul>
+
+<!--ebb: NOTHING ELSE goes in the body content now EXCEPT our PHP call to the XQuery that populates our sub-list. -->
 <?php
     require_once("config.php");
-    $contents = REST_PATH . "/db/queries/letterDates.xql";
+    $contents = REST_PATH . "/db/2021-Dig400-Examples/autoPHPGetCars.xql";
     $result = file_get_contents($contents);
     echo $result;
 ?>
-</ul>
+
 </body>
 </html>

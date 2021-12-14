@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>eXide - a web based XQuery IDE</description>
+    <author>Wolfgang Meier</author>
+    <website>http://exist-db.org/exist/apps/eXide/docs/doc.html</website>
+    <status>stable</status>
+    <license>GNU-GPLv3</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>eXide</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <permissions xmlns:repo="http://exist-db.org/xquery/repo" user="eXide" group="eXide" mode="0775"/>
+    <changelog>
+        <change version="2.4.9">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: An issue in the xqlint library caused silent errors when using legacy map constructor syntax - <a href="https://github.com/eXist-db/eXide/issues/224">#224</a></li>
+                <li>Fixed: An bug affecting copying, cutting, and pasting of resources in the File &gt; DB Manager pane - <a href="https://github.com/eXist-db/eXide/pull/225">#225</a></li>
+                <li>Security: When logging in, credentials are now submitted via HTTP POST instead of GET  - <a href="https://github.com/eXist-db/eXide/pull/227">#227</a></li>
+            </ul>
+        </change>
+        <change version="2.4.8">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Handle difference between 4.x.x and 5.x.x versions of eXist concerning copying collections/resources</li>
+            </ul>
+        </change>
+        <change version="2.4.7">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Compatibility with Internet Explorer</li>
+                <li>Fixed: Removed use of deprecated xmldb functions for compatibility with eXist 5.0</li>
+                <li>Fixed: Mime type and template for HTML5 and XHTML5 - <a href="https://github.com/eXist-db/eXide/issues/198">#198</a></li>
+                <li>Fixed: URL used for downloading r.js - <a href="https://github.com/eXist-db/eXide/issues/200">#200</a></li>
+                <li>Fixed: Recognize .xslt files as XML documents - <a href="https://github.com/eXist-db/eXide/pull/212">#212</a></li>
+                <li>Fixed: XQuery 'output' and 'html' snippeds - <a href="https://github.com/eXist-db/eXide/pull/213">#213</a></li>
+                <li>New: Added continuous integration facility for testing builds</li>
+            </ul>
+        </change>
+        <change version="2.4.6">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Deletion of resources via DB Manager - <a href="https://github.com/eXist-db/eXide/pull/193">#193</a></li>
+            </ul>
+        </change>
+        <change version="2.4.5">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Names of files uploaded via "Upload Directory" dialog included directory name and slash - <a href="https://github.com/eXist-db/eXide/pull/186">#186</a></li>
+                <li>Fixed: Resources with certain characters could not be deleted via DB Manager - <a href="https://github.com/eXist-db/eXide/pull/187">#187</a></li>
+                <li>Fixed: The app creation wizard could change permissions on collections above it - <a href="https://github.com/eXist-db/eXide/pull/188">#188</a></li>
+                <li>Fixed: Link to emmet.js library included in the shared-resources app was incorrect - <a href="https://github.com/eXist-db/eXide/pull/189">#189</a></li>
+            </ul>
+        </change>
+        <change version="2.4.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Handling of special characters in resource names - <a href="https://github.com/eXist-db/eXide/pull/183">#183</a></li>
+            </ul>
+        </change>
+        <change version="2.4.3">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New: Support "Snapshot" as a status in the app generator - <a href="https://github.com/eXist-db/eXide/pull/178">#178</a></li>
+                <li>New: Do not suggest deprecated functions - <a href="https://github.com/eXist-db/eXide/issues/179">#179</a></li>
+            </ul>
+        </change>
+        <change version="2.4.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Updated: Links to eXide's GitHub repository - <a href="https://github.com/eXist-db/eXide/issues/144">#144</a></li>
+            </ul>
+        </change>
+        <change version="2.4.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Restored the SetGID, SetUID, and sticky bit checkboxes in File &gt; Manage permissions dialog</li>
+            </ul>
+        </change>
+        <change version="2.4.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New: Support all native serialization methods in displaying query results, including eXist 3.3.0's new adaptive serialization</li>
+                <li>New: Add a toggle for indentation of query results</li>
+            </ul>
+        </change>
+        <change version="2.3.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix download app to descend into collections</li>
+            </ul>
+        </change>
+        <change version="2.3.3">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix serialization of query results with strings containing escaped characters</li>
+                <li>Fix the column that "Navigate" &gt; "Go to line" goes to</li>
+                <li>Improve download app to prevent expansion of XIncludes</li>
+                <li>Improve error reported when trying to run tests not stored in the database</li>
+                <li>Removed package's semver-max to ensure compatibility with all eXist 3.x releases</li>
+            </ul>
+        </change>
+        <change version="2.3.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Raise eXist dependency restrictions to allow compatibility with eXist 3.1</li>
+            </ul>
+        </change>
+        <change version="2.3.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Add Adaptive Output mode handling for maps with a sequence of items as a value</li>
+            </ul>
+        </change>
+        <change version="2.3.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New adaptive and JSON output options for query results</li>
+                <li>New checkbox to toggle highlighting of index hits</li>
+                <li>Fix function doc lookup</li>
+                <li>Various bug fixes</li>
+            </ul>
+        </change>
+        <change version="2.2.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Keyboard shortcuts for copy and paste in file dialog</li>
+                <li>Type in file dialog to quickly jump to file</li>
+            </ul>
+        </change>
+        <change version="2.1.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix scrolling of editor tabs if they do not fit on screen</li>
+                <li>Various small bug fixes</li>
+            </ul>
+        </change>
+        <change version="2.1.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New collection tree view</li>
+                <li>Fix inline help for functions</li>
+                <li>When uploading many files, don't show them all to avoid browser crash</li>
+                <li>Fix display of query results: skip unnecessary namespace declarations</li>
+            </ul>
+        </change>
+        <change version="2.1.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix word-left/word-right navigation</li>
+                <li>Add menu item to reset editor window layout to defaults</li>
+                <li>Keyboard shortcuts should now work in entire window, not just editor</li>
+                <li>Add shortcuts Alt-1 to 9 (windows, linux) and Ctrl-1 to 9 (mac) to quickly switch between tabs</li>
+                <li>Tabs can now be reordered with drag and drop</li>
+                <li>Added "Close-All" menu item</li>
+            </ul>
+        </change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.9">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Remove size limits for documents which can be validated by the editor. Live error messages
+                will be shown even for large documents/XQueries.</li>
+                <li>Fixed navigation in edit history.</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.8">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Live reload: automatically reload the browser window running the app if resource is saved in editor.</li>
+                <li>Drag a file on the editor to open its contents in a new tab</li>
+                <li>Directory Uploads (Chrome only)</li>
+                <li>Fixed less support</li>
+                <li>Updated UI: now based on CSS3 flexbox</li>
+                <li>Properly restore cursor position for each editor when reloading. Switch to previously open editor tab.</li>
+                <li>"Goto definition" works on global variables as well</li>
+                <li>Added "go to last edit position" command to navigate back in history</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.7">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix copy and paste</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.6">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Lots of bug fixes</li>
+                <li>XML mode: new commands to expand selection to enclosing element; remove enclosing element</li>
+                <li>Updated templates to use bootstrap 3 (requires shared-resources-0.3.9)</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.5">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Added feature to search across all binary resources (XQueries, Javascript, CSS) in a project</li>
+                <li>Many small bug fixes. In particular, there were display issues when browsing resources</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Display of extended permissions in open/save dialogs</li>
+                <li>Editing of setuid, setgid and sticky bit permissions in Properties dialog</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.3">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Added navigation shortcuts to quickly switch to buffer; navigate available commands</li>
+                <li>Use emmet for HTML/XML/CSS</li>
+                <li>Updates and bug fixes for ace, slick grid</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Small fixes to variable completion</li>
+                <li>Experimental support for <a href="https://github.com/wolfgangmm/eXide/pull/36">git</a>.</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="2.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Context-sensitive code completion</li>
+                <li>Refactoring: extract function/variable</li>
+                <li>Refactoring: rename function/variable/XML tag</li>
+                <li>Quick fixes and code hints</li>
+                <li>Show raw result of queries in embedded browser</li>
+                <li>And more ...</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="1.0.14">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Improved outline view</li>
+                <li>Fixed quicksearch</li>
+                <li>Outline for CSS files</li>
+                <li>Set syntax to XQuery for code snippets passed in from demo app</li>
+                <li>Change indicator "*" not cleared properly after save</li>
+            </ul>
+        </repo:change>
+        <repo:change xmlns:repo="http://exist-db.org/xquery/repo" version="1.0.15">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed new app templates</li>
+                <li>Removed annoying log output</li>
+                <li>Updated code snippets</li>
+            </ul>
+        </repo:change>
+    </changelog>
+<deployed>2020-08-07T22:43:17.516Z</deployed></meta>
