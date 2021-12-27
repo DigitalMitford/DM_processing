@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analyzer id="stdstops" class="org.apache.lucene.analysis.standard.StandardAnalyzer">
+    <param name="stopwords" type="java.io.FileReader" value="/tmp/stop.txt"/>
+</analyzer>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo" xmlns:repo="http://exist-db.org/xquery/repo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <description>An application for monitoring, profiling and inspecting a running eXist-db instance.</description>
+   <author id="exist-db">eXist-db Project</author>
+   <website>https://www.github.com/eXist-db/monex</website>
+   <status>stable</status>
+   <license>GNU Lesser General Public License, version 2.1</license>
+   <copyright>true</copyright>
+   <type>application</type>
+   <target>monex</target>
+   <prepare>pre-install.xql</prepare>
+   <finish>post-install.xql</finish>
+   <permissions user="monex" group="monex" mode="rw-rw-r--"/>
+   <changelog>
+        <change xmlns="http://expath.org/ns/pkg" version="0.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Send alerts only to receivers watching the affected instance</li>
+                <li>Store last ping status in db; send alerts only if status changed</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.5">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New function console:dump prints all variables in the local variable stack, which are visible at the point the statement appears in the code.</li>
+                <li>Info popup in remote console causes browser display issues.</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix eXist dependency to work with 3.0RC2 and final</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Update console logging to match changes in internal eXist API</li>
+                <li>Add hipchat notifications</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.6">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New "Tare" button in Query Profiling pane factors out external processes from results</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.7">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Sync source with GitHub repository</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.8">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Show version of Java in the Monitoring &gt; System Information pane</li>
+                <li>Removed package's semver-max to ensure compatibility with all eXist 3.x releases</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.9">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Upgraded included jetty jars to 9.4.6</li>
+                <li>Updated eXist dependency to require v3.5.0</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.10">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Improved build process</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.11">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Updated: Links to monex's GitHub repository - <a href="https://github.com/eXist-db/monex/issues/39">#39</a>
+            </li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.12">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Move jetty jars to eXist-db to prevent version conflicts</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.13">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Improved compatibility with Tomcat 7 - <a href="https://github.com/eXist-db/monex/issues/9">#9</a>
+            </li>
+                <li>Improved resolution of dependencies during build and build documentation - <a href="https://github.com/eXist-db/monex/pull/16">#16</a>
+            </li>
+                <li>Removed old version warnings <a href="https://github.com/eXist-db/monex/issues/51">#51</a>
+            </li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.14">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Hotfix - <a href="https://github.com/eXist-db/monex/issues/57">#57</a>
+            </li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.15">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Choose shorter period for ping to keep the websocket connection open in Remote Console (was 5s, now .5s)</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.16">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix release</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="0.9.17">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Repair for eXist 5.0.0 release</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="1.0.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Version note: Due to changes in JMX output in eXist 5.x, Monex is now split into a 1.x branch for users of eXist 4.x and the develop branch will carry Monex 2.0 releases for users of eXist 5+</li>
+                <li>Improved: Monex is now built with maven</li>
+                <li>Improved: Removed dependency on Jetty. Monex now uses the standard Java WebSocket API.</li>
+                <li>Improved: Declared front end dependencies via npm.</li>
+                <li>Removed: HipChat module</li>
+                <li>Fixed: Javascript errors when loading various pages</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="1.0.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Installation of monex's test collection &amp; instances config files</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="2.0.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Version note: Due to changes in JMX output in eXist 5, Monex is now split into a 1.x branch for users of eXist 4.x and the master branch will carry Monex 2.x releases for users of eXist 5+.</li>
+                <li>Improved: Monex is now built with maven</li>
+                <li>Improved: Removed dependency on Jetty. Monex now uses the standard Java WebSocket API.</li>
+                <li>Improved: Declared front end dependencies via npm.</li>
+                <li>Removed: HipChat module</li>
+                <li>Fixed: Javascript errors when loading various pages</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="2.0.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Installation of monex's test collection &amp; instances config files</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="2.0.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix console for compatibility with eXist 5</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="2.0.3">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Removed deprecated draft map constructor for compatibility with forthcoming eXist 5.0.0-RC8</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="2.0.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Moved integration tests into the source repository - <a href="https://github.com/eXist-db/monex/pull/96">#96</a>
+            </li>
+                <li>Fixed: Read product details from JMX output - <a href="https://github.com/eXist-db/monex/pull/99">#99</a>
+            </li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="2.1.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Dependency conflicts. Now requires eXist 5.1.0.</li>
+            </ul>
+        </change>
+        <change xmlns="http://expath.org/ns/pkg" version="2.1.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Updated: Aligned Jackson dependency with eXist 5.2.0.</li>
+            </ul>
+        </change>
+    </changelog>
+<deployed>2020-08-07T22:43:23.259Z</deployed></meta>

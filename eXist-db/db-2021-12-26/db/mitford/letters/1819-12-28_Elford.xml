@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM1754">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, December 28, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#led">Lindsay Dingman</persName> 
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2018-06-30">June 30, 2018</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>P1020343.jpg, P1020344.jpg, P1020345.jpg, P1020346.jpg, P1020347.jpg, P1020348.jpg, P1020349.jpg, P1020350.jpg, P1020351.jpg, P1020352.jpg, P1020353.jpg, P1020354.jpg, P1020355.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection> <!-- Change to reflect correct ms. collection. -->
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 393</idno>
+               </msIdentifier>
+              
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1819-12-28">1819 December 28</date>. 
+               <note resp="#lmw">Dated thus by Mitford.</note></head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p><material>Paper</material>, 23.3 cm high, six surfaces photographed.</p> 
+                        <p>Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName></stamp>.</p> 
+                       </support>
+                     <condition>
+                        <p>Sheet (pages five and six) torn on right edge of page five where wax seal was removed.</p> 
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, back side up, adhered to page six.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first five leaves. On leaf six, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "23" in the top left of the first leaf.
+           </handNote>
+           
+           <handNote corresp="#penAnnot_RCL" medium="pen">Someone, apparently other than Mitford, who occasionally left notes in a spidery thin hand to explain or document details in Mitford's letters in the margins of her pages, noted in the manuscripts held at Reading Central Library. This may be <persName ref="#Harness_Wm">William Harness</persName> or <persName ref="#Lestrange">A. G. L'Estrange</persName>. This letter has addressee identified on the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+     <revisionDesc><!--2018-01-11 ebb: NEW: This last section of our TEI Header contains a change log, and documents each significant change to the file over time. This represents a simpler, cleaner encoding than the respStmts with comments that we started out using. We're going to (slowly) move the old respStmts from past edited letters into this format, but all new letters from this point ought to use it. -->
+        <change when="1819-12-28" who="#lmw">Completed header for student to work on transcription.</change>
+        </revisionDesc>
+  </teiHeader>
+  <text>
+      <body><!--Within the <body> element the text of our elements records our transcription of Mitford's text, and any editorial notes we need to add. -->
+         <div type="letter">
+            <pb n="1" facs="P1020343.JPG"/><!--2018-01-11 ebb: This is another NEW practice: We need to locate and post the **best** image of each surface page of a letter (including the first page). (Previously we didn't include a <pb/> for page 1, but we need to do that now and work on adding this for previously encoded letters.) In the value of the @facs attribute, very carefully paste in the file name of the best image you have for this page in the Box directory for this letter. If you like two or three images of this page, you may include all three separated by a white space. Be sure to include the file extension thus:
+            <pb n="1" facs="image1.jpg image2.jpg image3.jpg"/>
+            -->
+            <opener> 
+               <add hand="#penAnnot_RCL">To Sir W. Elford</add> 
+               <dateline>
+                  <name type="place" ref="#Bertram_house">Bertram House</name> 
+                  <date when="1819-12-28">Dec<hi rend="superscript">r</hi> 28<hi rend="superscript">th</hi> 1819</date>. 
+               </dateline>
+               </opener>
+            <p>
+               Your kind &amp; delightful letter my dear friend was quite a treat--In addition to all its other charms it possessed that best &amp; rarest unexpectedness--I had not even began to think it possible that I should hear yet awhile--Should not have looked out sharp for a franked letter with a great seal dated <placeName ref="#Plymouth_city">Plymouth</placeName> &amp; addressed to <persName ref="#MRM">Miss M.</persName>--for a week to come at least--So you see that being a little lazy as a correspondent sometimes (you say so yourself--So I may say so too) a lot a new zest to your alertness--Suppose I were to take this course, &amp; write only once six weeks or two months--I then surprise you with a letter at the three weeks end. Would you be as delighted to get mine as I was to get yours I wonder would you? Shall I try? Tell me.--First of all let me tell you that <persName ref="#Ashburton_Lord">Lord Ashburton</persName>'s letter is not in the slightest danger of being made known through my means--I assure you that no one has seen or heard any part of it except <persName ref="#Mitford_Geo">Papa</persName> to whom read the original &amp; <persName ref="#Russell_M">Mama</persName> for whom I made the copy--nor shall I show it to anyone else--I thought I had told you so in my last.--I admire it quite as much as ever &amp; wish as ardently to see the Journal published. In addition to the other sources of pleasure--(In addition again--deuce take it!--very odd that when I once get a beginning to a sentence I can't help beginning all other sentences the same way through a whole letter--as if I had no more words than a parrot! This is a little gentle scolding which I have been giving myself quite aside--you don't hear a word of it you know)--Besides its other excellencies <persName ref="#Ashburton_Lord">Lord Ashburton</persName>'s letter gave me the pleasure of hearing that there is in the world another person who is fat--&amp; of seeing &amp; proving <pb n="2" facs="P1020345.JPG"/> that there is another who writes long letters--aye even longer than mine--(Should you have believed that possible my dear <persName ref="#Elford_SirWm">Sir William</persName>) To me sure there is some difference--his <persName ref="#Ashburton_Lord">Lord</persName>ship writes about something--I about nothing--he writes sense--I nonsense--but both are letters &amp; both are long. There is a river [of ink] in both "-- Macedon &amp; Monmouth <note resp="#led">Quote from Shakespeare's King Henry the Fifth</note> are not more alike.--What a delightful person your <persName ref="#Cranstoun">Mr. Cranstoun</persName> must be! In <persName ref="#Morris_DrP">Peter</persName>'s written portaits--he has given two much of the peculiarity of Mind &amp; face &amp; person &amp; manner--too much for all the honey of his panegyric to sweeten--They are like reflections in a looking glass in their every day dress--not like the embellished &amp; softened &amp; finely colored portait of <persName ref="#Lawrence_T">Sir Thomas Lawrence</persName>--&amp; this which is such a charm to all the leaders, the real charm of the book in my opinion, will be no great delight to the luckless originals. The only persons whom he has shared seem to me to be <persName ref="#Scott_Wal">Mr. Scott</persName> &amp; <persName ref="#Mr_Cranstoun">Mr. Cranstoun</persName>.--the former from personal affection <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del><add place="above"> probably</add>--the latter because he appears to be caricatured in the gentle <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del><add place="above">faultless</add> elegance which can as little be caricatured as a Greek statue.--I agree with you too as to the occasional prosing of our friend <persName ref="#Morris_DrP">Dr. Morris</persName>. He does certainly prose--there's no denying it--but does not he make noble amends?--I feel prosing<del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del> much less than other people--I read with great rapidity--&amp; generally return to parts I like &amp; read them over again before I finish the book--So that in works of unequal merit I have <del rend="squiggles"><gap quantity="1" unit="word"/></del><add place="above">frequently</add> a livelier sense of the good &amp; a less vivid impression of the bad than most readers--this may explain to you why I have sometimes thought more highly of a book than you have done.--It refers of course only to unequally written X The reference is to "<title ref="#Peters_Letters_novel">Peter's letters to his Kinsfolk.</title>"<pb n="3" facs="P1020346.JPG"/> productions--of those which are quite good, or quite bad, or which travel quietly along on one dull unvaried road of respectable commonplace I think pretty much like other people--except that I have a small tendency to prefer at all times the bad to the middling.--From this prosperity it is that instead of talking to you of divers reputable books which I have been reading lately such as <title ref="#Memoir_MqMt">The Memoirs of the Marquis of Montrose</title>--(What a wonderful man that was! What a hero! What a Poet! Did you ever read the lovely verses beginning "My Dear &amp; only love"(?) <note resp="#led">Quote from Memoirs of the Marquis of Montrose</note> or the correspondence of <persName ref="#Franklin_Ben">Dr. Franklin</persName> (&amp; really those letters which are not merely political not exclusively about the <rs type="event">American War</rs> on the <placeName ref="#USA">America</placeName>n peace are admirable for the humour their wisdom--their originality &amp; those sayings which like some of <persName ref="#Bacon">Lord Bacon</persName>'s are at once so witty &amp; so wise that one scarcely knows whether to call them aphorisms or bon mots.) or <title ref="#Carib_Ch">The Carib Chief</title> (That <title ref="#Carib_Ch">Carib Chief</title> is a surprising tragedy to be written by <persName ref="#Twiss_H">Horace Twiss</persName>--the plot is absolutely good--I suppose he stole it) or <title ref="#Sac_Isabel">The Sacrifice of Isabel</title> (a very elegant pathetic little tale by the by--printed in <persName ref="#Bensley_T">Bensley</persName>'s fairy type on paper not much longer than the leaf of a water lily <del rend="squiggles"><gap quantity="2" unit="word"/>gap&gt;</del> a fit gift from <persName ref="Oberon">Oberon</persName> to <persName ref="Titania">titania</persName>--<persName ref="#Byron">Lord Byron</persName>-ish--but not to <persName ref="#Byron">Lord Byron</persName>-ish--<persName ref="#Hunt">Leigh Hunt</persName>-ish but not too <persName ref="#Hunt">Leigh Hunt</persName>-ish--bold, for he introduces <persName ref="#Napolean">Napolean</persName>--not too bold--for he so manages his as to please me &amp; not displease you--) or <persName ref="Dottington_B">Bubb Dottington</persName>'s diary (What a gem of a book that is! What a perfection of impudence!--What simplicity, what good faith, what single mindedness in corruption! Only think of my never having seen it before!) or <persName ref="#Clarkson_T">Clarkson</persName>'s <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del> <title ref="#Hist_AbSlTd">History of the Abolition of the Slave Trade</title> (That most interesting book on the most interesting subject where I met with your name mentioned in a manner ever to raise my opinion of my kind correspondent &amp; feel prouder than ever of being called <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del><add place="above">his</add><pb n="4" facs="P1020347.JPG"/>friend--I never knew before that you had taken an active part in the <rs type="event">Abolition</rs>--still less did I imagine that the admirable idea of the section of a Slave Ship <note resp="#led">Refering to an image of a cross section of a packed slave ship</note> had originated with you--You must have seen <persName ref="#Clarkson_T">Clarkson</persName>'s book--Oh that mention of you is true fame! Setting all the interest the subject aside is not the work powerfully written? There are none of the outward marks of fine writing--but there must be the spirit--It laid hold of my mind like a romance--I could not put it down--Could not get it out of my thoughts &amp; my memory.) Instead of <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del> <add place="above"> talking of</add> these books &amp; others of the same caliber I have selected for the "literary article" of this letter a new novel <title ref="#Munster_CtgBoy">The Munster Cottage Boy</title>--by a <persName ref="#Roche_MR">Maria Regina Roche</persName> (there's a name for you!) who has I understand committed other iniquities of the same nature under the title of the <title ref="#Children_Abbey">Children of the Abbey</title> &amp; many others which I have been lucky enough not to read. The story of this production as I did not according to my system find it necessary to read any part over again I cannot very clearly pretend to understand--In fact I don't suppose the author herself does--the characters are first <persName ref="#Munster_CtgBoy">Munster Cottage boy</persName>--who is a thin old rebel--father to the heroine &amp; never appears on the stage <add place="above">&amp; has the good luck not to be hanged</add> till he is fifty past--thats all I know of him--the hero--whose name is--is--I can't well tell--he goes by four--&amp; I can't well remember which is the real one--only that my impression at the time was that the one <persName ref="#Roche_MR">Mrs. Roche</persName> makes the real one is the only one that cannot belong to him--but I know that the heroine is called <persName ref="#Fidelia">Fidelia</persName>--the en second <persName ref="#Albina">Albina</persName> (<persName ref="Roche_MR">Mrs Maria Regina</persName> is as choice &amp; select in the names of her heroines as in her own)--those heroines--particularly the first lose their character fifty times &amp; get turned out of every house they enter--twenty at least--for you are jolted about in the book all over the <placeName ref="#UK">United Kingdoms</placeName> to my great disquiet who am lazy in my reading &amp; love a heroine to stay in one place <pb n="5" facs="P1020349.JPG"/> --&amp; after a variety of possible incidents, such as the hero's fighting a duel with his father &amp; other prettiness of the sort, get married &amp; so the book ends.--Only imagine that this precious production was seriously recommended to me as an excellent novel by a very clever &amp; literary person!--Before I have quite done with books I must got back for a moment to <persName ref="#Morris_DrP">Peter</persName>'s letters--They are said to <add place="above"><metamark place="below" function="insertion" rend="caret"/>be</add> a joint production <persName ref="#Lockhart_JG">Mr. Lockhart</persName> a young Advocate in <placeName ref="Edinburgh">Edinburgh</placeName> &amp; <persName ref="#Wilson_John">Mr. John Wilson the dismal Poet of the city of the Plague</persName>--this is disagreeable to my imagination--because you know <persName ref="#Wilson_John">John Wilson</persName> and <persName ref="#Hogg_J">James Hogg</persName> are the two most attractive persons in the book, &amp; though of course <persName ref="#Lockhart_JG">Mr. L.</persName> wrote the passages about <persName ref="#Wilson_John">Mr. W.</persName> yet still you know common decency should have kept the joint Author under a little. By the way these three--Messrs. <persName ref="#Wilson_John">Wilson</persName>, <persName ref="#Lockhart_JG">Lockhart</persName>, &amp; <persName ref="#Hogg_J">Hogg</persName> are the chief writers of that delightful--good-for-nothing--,<title ref="#Blackwoods">Blackwoods Magazine</title>--a work where there are more lies &amp; more wit than in any other publication in Christendom.--perhaps "wit" is not quite the word I should have said humour. Do you see <title ref="#Blackwoods">Blackwood</title>? You would like it out &amp; out--for you have not my partiality for the "<orgName ref="#CockneyS">Cockney School of Poetry &amp; Painting</orgName>". As to <persName ref="#Allan_SrWm">Mr. Allan</persName> I never heard of him in my life--&amp; I don't suppose <persName ref="#Morris_DrP">Dr. Morris</persName> does know much of painting--though he conciliated my favour on this score by his vivid &amp; eloquent admiration of a picture which I think of as often as I think of beauty--that unforgettable picture the <title ref="#Bodleian_Mary">Bodleian Mary</title>.--One thing that contributes to the heaviness of <persName ref="#Morris_DrP">Peter</persName>'s letters (the occasional heaviness I mean--I won't admit an inch more) is the unwieldy length of the sentences--&amp; as you say a disproportion of importance between the words &amp; the ideas--the sense &amp; the sound---a sort of grandiloquence the very reverse of good taste." This fault is not common nowadays--for style seems to me generally speaking very sharp &amp; pointed--angular &amp; full of <pb n="6" facs="P1020351.JPG"/>little turns like <persName ref="#Hazlitt_Wm">Mr. Hazlitt</persName>'s. By the by I never hear you talk of <persName ref="#Hazlitt_Wm">Hazlitt</persName>--Did you never read any of <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del> <add place="above"> his </add> works? Never read the <title ref="#Round_Tbl">Round Table</title>? <title ref="#Shakespeare_Play_Char">The Characters of Shakespeare's Plays</title>? <title ref="#English_Poet_Lec">The Lectures on English Poetry</title>? or the <title ref="#LecComic_WHaz">Lectures on the English Comic Writers</title>?--the <title ref="#QuarterlyRev_per">Quarterly Review</title>ers give him a bad character--but that merely regards politics--&amp; politics ought not to weigh in works of general literature--I am sure you would like them--they are so exquisitely entertaining--so original--so free from every sort of <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del> <add place="above"> critical </add> shackle--the style is so delightfully piquant--so sparkling--so glittering. so tasteful--so condensed--the images &amp; illustrations come in such rich &amp; graceful--profusion that one seems like <title ref="#Aladdin_panto">Aladdin in the Magic Garden</title> where the leaves were emeralds, the flowers sapphires, &amp; the fruit topazes &amp; rubies. Do read some of the <title ref="#Hazlitt_Lec">Lectures</title>--you will not agree with half <persName ref="#Hazlitt_Wm">Mr. Hazlitt</persName>'s opinions--neither do I--but you will be very much entertained--every now &amp; then two or three pages together are really like series of epigrams--particularly in the lecture on <title ref="#Living_Poet">The Living Poets</title> there is a character of your friend <persName ref="#Wordsworth_Wm">Mr. Wordsworth</persName> which will enchant you. Now for a jerk--Oh by the way one of your jerks was so mystical that I could not possibly make it out--it puzzled me half the morning--the jerk was not an accidental jerk either--do you remember the one I mean? If you do send me the key to the jerk. Of course I do not mean the plan of the garden which seems to me excellent.--Your jerks are growing so much into pictures that we must have them represented by woodcuts when your letters are published--the next time you are at a loss for a device send me a little jerk of the house at <placeName ref="#Bickham_village">Bickham</placeName> as well as the garden. These jerks are a very important &amp; delightful part of your letters--a grace <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del> epistolary which I leave wholly &amp; you contenting myself with a simple scroll like nothing on earth but the hieroglyphics which one sometimes sees on the<pb n="7" facs="P1020352.JPG"/> outsides of franks. Admire the address with which without any jerk at all I have steered round to <persName ref="#Palmer_CF">Mr. Palmer</persName>--Whom I mean to frank this letter if I can catch him--think I have told you that <persName ref="#Russell_M">Mama</persName> knows a little of <persName ref="#Palmer_Mad">Lady Madelina</persName>--<persName ref="#Mitford_Geo">Papa</persName> something more--&amp; I nothing at all. I have never seen her but I hear she is a very agreeable entertaining woman with more of the cleverness the impudence &amp; the good humor of her match making <persName ref="#Maxwell_Jane">Mother</persName> than any other of the family.--I don't think you will see <persName ref="#Palmer_CF">Mr. Palmer</persName> in <placeName ref="#Devonshire">Devonshire</placeName> this <date>Spring</date> because he is as constant in attending the <orgName ref="#House_Commons">House</orgName> as the Speaker himself. If you do see him you will like him--he is a perfect gentleman--plain, unaffected, &amp; well informed, though he has fits of silence, which together with his height, his elegance, his ugliness &amp; his <orgName ref="#MPs">M.P.</orgName>ship have occasioned a report that <del rend="squiggles"><gap quantity="1" unit="word"/>gap&gt;</del> He is the real living undoubted original of the <persName ref="Outang_Ourang">Ourang Outang</persName> member of Parliament in <title ref="#Melincourt">Melincourt</title> a report which I, who have once heard him speak &amp; often he<gap reason="torn" quantity="5" unit="chars"/><unclear><supplied resp="#ebb">aring</supplied></unclear> him talk &amp; very agreeable too, can testify to be false &amp; mal<gap reason="torn" quantity="6" unit="chars"/><unclear><supplied resp="#ebb">icious</supplied></unclear> <del rend="squiggles"><gap quantity="2" unit="in"/></del> <note resp="#led">Here a jerk is drawn out as an imitation</note> Is your fog cleared away yet? We have just got a fall of snow --very disagreeable--shuts me up--&amp; I had been enjoying so much this lovely clear winter weather trotting about in the plantations picking up the <item ref="#fir">fir</item> cones &amp; feeding the <item ref="#robin">robin</item>s who used to come to me &amp; take the bread almost from my hand--not quite--but as nearly as possible--I have seen one catch it between my hand &amp; the ground. All that can be enjoyed indoors of this sweet intimacy &amp; confidence with these beautiful innocent creatures I do enjoy, by having had constantly all the winter a board at the parlour window with bread crumbs on it from which not merely my <item ref="#robin">redbreasts</item> but a great many other birds are supplied--I wonder that this cheap &amp; innocent pleasure is not commoner--birds in a cage make one melancholy--but to feed them &amp; make them love <pb n="8" facs="P1020353.JPG"/> one when at liberty--to conquer their mistrust &amp; tame their shyness is delightful.--All this is "silly sooth"--I will redeem its insipidity by a most curious report by which a correspondent of mine <persName ref="#Nooth_C">Miss Nooth</persName> who is as present living in the first circles in <placeName ref="#Paris">Paris</placeName> sent me yesterday. She says that the "monsters" who have gone out there lately stabbing women with small daggers are supposed to be employed by a greater Power to inoculate for the Plague!!!--After this Wonderful Wonder of Wonders--I will add nothing but a request to you to persevere in your excellent plan of answering my letters very speedily. Write soon my dear <persName ref="#Elford_SirWm">Sir William</persName> I beseech you--&amp; tell us that <persName ref="#Elford_J">Mr. Elford</persName> is recovered you did not mention him in your last.--<persName ref="#Russell_M">Mama</persName> is come back from <placeName ref="Winchester">Winchester</placeName> &amp; joins <persName ref="#Mitford_Geo">Papa</persName> in kindest regards &amp; good wishes.--</p><p><closer>Ever my dear kind friend most sincerely &amp; affectionately your's</closer></p>     
+            
+           <p> <!--More body paragraphs as needed. Include context encoding and indications of gaps, deletions, insertions, etc., following guidelines in our Codebook. Mitford's ampersands must be rendered with a special unicode character thus: --> &amp; is an ampersand </p>
+            <p> <!--More body paragraphs as needed.-->
+            <!--Where there's a page break record it inside the relevant body paragraph like this, with the self-closing page-break element. n="2" indicates the START of the second page. (So we will NEVER have a <pb n="1"/>).-->
+               <pb n="2" facs=""/><!--As above, include the filename of the best image you see for this page in the Box directory of this letter. -->
+               <!--yyyy-mm-dd editorID: INDICATE IN BLOCK CAPS WHEN YOU STOP WORK AND THE TRANSCRIPTION IS INCOMPLETE, like this:
+               2015-10-04 ebb: I STOPPED HERE! TRANSCRIPTION INCOMPLETE!-->
+            </p>
+            <p><!--More body paragraphs as needed.--></p>
+            <closer>
+               <!--The first <closer> includes Mitford's signature, but does NOT include the postscript. (Later, we'll use <closer> again to hold Mitford's address on her address leaf if it's present.) As Mitford writes a complimentary close broken out into lines, indicate it with line breaks using the self-closing <lb/> element.  Here's an example:
+            <closer>
+            Yours<lb/>
+            Very sincerely<lb/>
+            <persName ref="#MRM">M. R. Mitford</persName>.
+            </closer>
+            --><lb/>
+               <!--Another line in the closer, if present--><lb/>
+               <persName ref="#MRM"><!--How Mitford signs her name. For example: M.R. Mitford--></persName>. 
+            </closer> 
+            
+            <postscript><p><!--A postscript goes here, outside the <closer>. --></p></postscript><!--You can include a <pb/> here, or inside the postScript.--><!-- Format for postscripts.  Postscripts do NOT go insider closer tags. Adjust to take into account the order in your letter. Sometimes the signature is on page three, the address on page four, then the postscript follows back on the top of page one, for example.-->
+            
+             <closer><!--Use the <closer> element again to hold Address Leaf information, indicating where Mitford directed her letter.-->
+               <address> <!--Include any text written on the address leaf; use a separate "addrLine" for each line and indicate line breaks. Closer tags must also enclose the address section. NOTE AGAIN: If Mitford has a postscript, that postcript must *not* be enclosed in the closer tags, even when they are written after the signature and before the address. It's a TEI rule (sigh). -->
+            <addrLine><!--Text of a line on the address leaf, with context coding and superscripts indicated. For example: To T. N. Talfourd--></addrLine>
+                  <addrLine><!--Text of a line on the address leaf, with context coding and superscripts indicated. For example: No. 1 Pump Court--></addrLine>
+                  <addrLine><!--Text of a line on the address leaf, with context coding and superscripts indicated. For example: Temple--></addrLine>
+                  <!--Some address leaves may have a name and city in the bottom left; this indicates the person who franked the letter, usually a Member of Parliament whom Mitford knows. Tag as an additional address line. For example: <persName ref="#Monck_JB">J. B. Monck</persName> <placeName ref="#Plymouth_city">Plymouth</placeName>-->
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+           <listPerson sortKey="histPersons">
+          <person xml:id="proposed_new_ID" sex="f"><!--Project sex codes are "m", "f", "o" for other, and "u" for unknown.-->
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="Roche_MR" sex="f">
+             <persName>
+                <surname>Roche</surname>
+                <forename>Maria</forename>
+                <forename>Regina</forename>
+             </persName>
+          </person>
+          <person xml:id="Twiss_H" sex="m">
+             <persName>
+                <surname>Twiss</surname>
+                <forename>Horace</forename>
+             </persName>
+          </person>
+          <person xml:id="Cranstoun">
+             <persName>...</persName>
+          </person>
+          <person xml:id="Lawrence_T">
+             <persName>
+                <surname>Lawrence</surname>
+                <forename>Thomas</forename>
+             </persName>
+          </person>
+          
+          <person xml:id="Bensley_T">
+             <persName>
+                <surname>Bensley</surname>
+                <forename>Thomas</forename>
+             </persName>
+          </person>
+          
+          <person xml:id="Dottington_B">
+             <persName>
+                <surname>Dottington</surname>
+                <forename>Bubb</forename>
+             </persName>
+          </person>
+          <person xml:id="Clarkson_T">
+             <persName>
+                <surname>Clarkson</surname>
+                <forename>Thomas</forename>
+             </persName>
+          </person>
+              
+              <!--"Of the new correspondents of the committee within this period I may first mention Henry Taylor, of North Shields; William Proud, of Hull;  the Rev. T. Gisborne, of Yoxall Lodge; and William Ellford, Esq., of Plymouth. The latter as chairman of the Plymouth committee, sent up for inspection an engraving of a plan and section of a slave-ship, in which the bodies of the slaves were seen stowed in the proportion of rather less than one to a ton. This happy invention gave all those who saw it a much better idea, than they could otherwise have had, of the horrors of their transportation, and contributed greatly, as it will appear, afterwards, to impress the public in favour of our cause."-->
+          <person xml:id="Fidelia">
+             <persName>...</persName>
+             <note resp="#led">One of two heroines in Munster Cottage Boy</note>
+          </person>
+          <person xml:id="Albina">
+             <persName>...</persName>
+             <note resp="#led">One of two heroines in Munster Cottage Boy</note>
+          </person>
+          <person xml:id="Oberon">
+             <persName>...</persName>
+             <note resp="#led">King of fairies, used here in reference to Shakespeare's A Midsummer Night's Dream</note>
+          </person>
+          <person xml:id="Titania">
+             <persName>...</persName>
+             <note resp="#led">Queen of fairies, used here in reference to Shakespeare's A Midsummer Night's Dream</note>
+          </person>
+          <person xml:id="Outang_Ourang">
+             <persName>Ourang Outang</persName>
+             <note resp="#led">A member of parliament in the book Melincourt, a politician that is an ape</note>
+          </person>
+          <person xml:id="Maxwell_Jane">
+             <persName>Jane Maxwell</persName>
+             <note resp="#led">Mother of Lady Madelina</note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+           <listPlace sortKey="histPlaces">
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+           <listBibl sortKey="literary"><!--ebb: We've not listing every possible sortKey value but this is just to remind you to look up the appropriate sortKey for the list of entries you are updating. -->
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+             <bibl xml:id="Children_Abbey">
+                <title>Children of the Abbey</title>
+                <author>Regina Maria Roche</author>
+                <publisher>Minerva Press</publisher>
+                <date when="1796"/>
+             </bibl>
+             <bibl xml:id="Memoir_MqMt">
+                <title>Memoirs of the Marquis of Montrose</title>
+                <author>Mark Napier</author>
+                <pubPlace>Edinburgh</pubPlace>
+                <publisher>T. G. Stevenson</publisher>
+                <date when="1856"/>
+             </bibl>
+             <bibl xml:id="Carib_Ch">
+                <title>The Carib Chief</title>
+                <author>Horace Twiss</author>
+                <date when="1819"/>
+             </bibl>
+             <bibl xml:id="Sac_Isabel">
+                <title>The Sacrifice of Isabel</title>
+             </bibl>
+             <bibl xml:id="Hist_AbSlTd">
+                <title>History of the Abolition of the Slave Trade</title>
+                <author>Thomas Clarkson</author>
+                <date when="1808"/>
+             </bibl>
+             <bibl xml:id="Munster_CtgBoy">
+                <title>Munster Cottage Boy</title>
+                <author>Regina Maria Roche</author>
+                <pubPlace>London</pubPlace>
+                <publisher>Minerva Press for A.K. Newman and Co.</publisher>
+                <date when="1820"/>
+             </bibl>
+             <bibl xml:id="Bodleian_Mary"><!--probably work of art.-->
+                <title>Bodleian Mary</title>
+             </bibl>
+             <bibl xml:id="Round_Tbl">
+                <title>Round Table</title>
+             </bibl>
+             <bibl xml:id="Shakespeare_Play_Char">
+                <title>The Characters of Shakespeare's Plays</title>
+                <author>William Hazlitt</author>
+                <editor>J.H. Lobban</editor>
+                <date when="1817"/>
+             </bibl>
+             <bibl xml:id="English_Poet_Lec">
+                <title>The Lectures on English Poetry</title>
+                <author>William Hazlitt</author>
+                <pubPlace>London</pubPlace>
+                <publisher>Taylor and Hessey</publisher>
+                <date when="1818"/>
+             </bibl>
+          
+             <bibl xml:id="Hazlitt_Lec">
+                <note resp="#led">Hazlitt has two sets of lectures, in the letter it is recommended they be read</note>
+             </bibl>
+             <bibl xml:id="Living_Poet">
+                <title>The Living Poets</title>
+             </bibl>
+             <bibl xml:id="Round_Table">
+                <title>The Round Table</title>
+                <author>Leigh Hunt</author>
+                <author>William Hazlitt</author>
+                <pubPlace>England</pubPlace>
+                <publisher>Archibald Constable</publisher>
+                <date when="1817"/>
+             </bibl>
+                
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

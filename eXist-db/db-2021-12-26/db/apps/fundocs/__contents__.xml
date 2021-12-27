@@ -1,0 +1,52 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/fundocs" version="1" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:43:22.653Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="index.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.671Z" modified="2020-08-07T22:43:22.671Z" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.673Z" modified="2020-08-07T22:43:22.673Z" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.674Z" modified="2020-08-07T22:43:22.674Z" filename="error-page.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.717Z" modified="2020-08-07T22:43:22.717Z" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.654Z" modified="2020-08-07T22:43:22.654Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="exist.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.655Z" modified="2020-08-07T22:43:22.655Z" filename="exist.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="ajax.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.658Z" modified="2020-08-07T22:43:22.658Z" filename="ajax.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="cxan.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.666Z" modified="2020-08-07T22:43:22.666Z" filename="cxan.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="view.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.667Z" modified="2020-08-07T22:43:22.667Z" filename="view.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="browse.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.668Z" modified="2020-08-07T22:43:22.668Z" filename="browse.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.656Z" modified="2020-08-07T22:43:22.656Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LICENSE" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.659Z" modified="2020-08-07T22:43:22.659Z" filename="LICENSE" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:22.661Z" modified="2020-08-07T22:43:22.661Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:43:22.663Z" modified="2020-08-07T22:43:22.663Z" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:43:22.669Z" modified="2020-08-07T22:43:22.669Z" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="resources" filename="resources"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="data" filename="data"/>
+    <subcollection name="modules" filename="modules"/>
+</collection>

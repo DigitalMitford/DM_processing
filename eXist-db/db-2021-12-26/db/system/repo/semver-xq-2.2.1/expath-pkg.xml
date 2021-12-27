@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://expath.org/ns/pkg" xmlns:xs="http://www.w3.org/2001/XMLSchema" name="http://exist-db.org/xquery/semver-xq" abbrev="semver-xq" version="2.2.1" spec="1.0">
+   <title>semver.xq</title>
+   <home>https://github.com/eXist-db/semver.xq</home>
+   <dependency processor="http://exist-db.org" semver-min="4.7.0"/>
+   <xquery>
+      <namespace>http://exist-db.org/xquery/semver</namespace>
+      <file>semver.xq</file>
+   </xquery>
+</package>

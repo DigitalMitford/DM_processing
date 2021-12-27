@@ -1,0 +1,1 @@
+gemini.suite("vaadin-progress-bar",function(rootSuite){rootSuite.before(function(actions){actions.wait(5e3)}).after(function(actions){return actions.executeJS(function(window){window.location.href="about:blank"})});gemini.suite("default-tests",function(suite){suite.setUrl("/default.html").setCaptureElements("#default-tests").capture("vaadin-progress-bar")})});

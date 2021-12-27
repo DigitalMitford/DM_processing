@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://expath.org/ns/pkg" name="http://exist-db.org/apps/existdb-packageservice" abbrev="packageservice" version="1.3.9" spec="1.0">
+    <title>existdb-packageservice</title>
+    <dependency processor="http://exist-db.org" semver-min="5.0.0"/>
+    <dependency package="http://www.functx.com"/>
+    <dependency package="http://exist-db.org/xquery/semver-xq"/>
+</package>

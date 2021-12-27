@@ -1,0 +1,8 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/config/db" version="1" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:32:39.458Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:32:39.475Z" modified="2020-08-08T00:23:21.531Z" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="apps" filename="apps"/>
+    <subcollection name="mitford" filename="mitford"/>
+</collection>

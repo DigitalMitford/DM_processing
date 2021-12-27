@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>--><!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>--><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml"> 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Sonnets from <title ref="#DramaticScenes">Dramatic Scenes, Sketches, and Other Poems</title>)</title>
+				<author ref="#MRM">Mary Russell Mitford</author>
+				<editor ref="#lmw">Lisa M. Wilson</editor>
+				<sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+					Project</orgName></sponsor>
+				<principal>Elisa Beshero-Bondar</principal>
+				<respStmt>
+					
+					<resp>Transcription, recording of variants, and TEI coding by </resp>
+					<persName ref="#lmw">Lisa M. Wilson</persName>
+					<persName ref="#slc">Sara Cantwell</persName>
+					<persName ref="#tlh">Tracy Harnish</persName>
+				</respStmt>
+				<respStmt>
+					<resp>Proofing and corrections by</resp>
+					<persName ref="#lmw">Lisa M. Wilson</persName>
+					<persName ref="#slc">Sara Cantwell</persName>
+					<persName ref="#ebb">Elisa Beshero-Bondar</persName>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>First digital edition in TEI, date: 14 February 2016.</edition>
+			</editionStmt>
+			<publicationStmt>
+				<authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+				<pubPlace>Greensburg, PA, USA</pubPlace>
+				<date>2015</date>
+				<availability>
+					<licence>Distributed under a Creative Commons
+						Attribution-ShareAlike 3.0 Unported License</licence>
+				</availability>
+			</publicationStmt>
+			<seriesStmt>
+				<title>Digital Mitford: The Mary Russell Mitford Archive</title>
+			</seriesStmt>
+			<sourceDesc>
+				
+				<bibl>1827 versions of sonnets.</bibl>
+				<listWit>
+				
+					<witness xml:id="Sonnets1827">Sonnets in 1827 Dramatic Scenes, Sonnets, and Other Poems </witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>TEI P5 conformant: We have prepared this encoding to compare the 1827 edition of the sonnets in <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl> to other versions, using the witness encoding apparatus provided by the TEI. Page breaks recorded here are shown in the 1827 publication of <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl>.</p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2021-08-10" who="#ebb">Revised encoding of linegroups, pagination of 1827, and footnotes. Spot corrections to some refs to the site index.</change>
+			<change when="2020-02-23" who="#lmw">backlist removed to si-add</change>
+			<!--LMW: last worked on in Sept. 2016. Need to check this version against most immediate previous version and version EBB worked on?? where?. -->
+			<!--EBB: My version is just an ms I found of the Englefield House sonnet, which I'll poke in the GitHub repo. In Sharepoint: it's in Mitford_Digital_Archives > Mitford_Letters_Collated > 1822 > Berkshire_Record_Office > Englefield_House_June1822_ms_poem.  -->
+			<change notBefore="2017-07" who="#lmw">updating tagging, adding context tags updating backlist.</change>
+			<change notBefore="2017-07" who="#lmw">adding indents, checking formatting to add italics and small caps, working on backlist</change>
+			<change when="2017-07" who="#lmw #slc #hsar #ssc">beginning work again</change>
+		</revisionDesc>
+	</teiHeader>
+<text>
+<front>
+		<titlePage>
+			<docTitle>
+				<titlePart type="main"><lb/>Dramatic Scenes,<lb/>SONNETS,<lb/>AND OTHER POEMS.</titlePart> 
+				
+			</docTitle>
+			<byline>by MARY RUSSELL MITFORD,
+				<lb/>AUTHOR OF FOSCARI, JULIAN, AND OUR VILLAGE.</byline>
+			
+			<docImprint>
+				<pubPlace>LONDON:</pubPlace>, <publisher><orgName ref="#Whittaker_GB_pub">GEO. B. WHITTAKER</orgName></publisher>,
+				<placeName ref="#AveMariaLane">AVE-MARIA LANE.</placeName>
+				<docDate>1827</docDate>
+			</docImprint>
+		</titlePage>
+	<div type="dedication">
+		<salute><app>
+			<rdg wit="#Sonnets1827">
+				<lb/>
+				<hi rend="smallcaps">TO</hi><lb/>
+				<hi rend="smallcaps">HER KIND AND EARLY FRIEND</hi><lb/>
+				<persName ref="#Chamberlayne_Wm">WILLIAM CHAMBERLAYNE</persName>, ESQ. M.P.,<lb/>
+					<hi rend="changefont">This Volume,</hi><lb/>
+			
+				<hi rend="smallcaps">IS RESPECTFULLY ENSCRIBED</hi><lb/>
+				<hi rend="smallcaps">BY</hi><lb/>
+				<hi rend="smallcaps">THE AUTHOR.</hi><lb/>	
+			</rdg>
+		</app></salute>
+	</div>
+</front>	
+		
+		<body>
+			
+				<!-- LMW: Need to research the original publication dates and locations (annuals? journals?) See my spreadsheet file for details; write headnote for each.-->
+
+				
+			<div type="section" n="1">
+								<fw type="pageNum"><app>
+									<rdg wit="#Sonnets1827">
+										<pb xml:id="p293"/></rdg>
+								</app></fw>
+								<head><lb/>I.
+									<lb/><title ref="#BlankPaperBook_1827">WRITTEN IN A BLANK-PAPER BOOK GIVEN TO THE AUTHOR BY A FRIEND.</title><note resp="#lmw">The friend and the date of this poem are as yet unidentified.</note></head> <!--Can we figure out who the friend is, based on first pub date and letters or journal?-->
+							
+							<lg><l n="1"><app><rdg wit="#Sonnets1827">My little book, as o’er thy page so white.</rdg></app></l>
+								<l n="2"><app><rdg wit="#Sonnets1827">With half-closed eyes in idlest mood I lean,</rdg></app></l> 
+								<l n="3"><app><rdg wit="#Sonnets1827">Whose is the form that rises still between</rdg></app></l>
+							<l n="4"><app><rdg wit="#Sonnets1827">Thy page and me,—a vision of delight?</rdg></app></l>
+							<l n="5"><app><rdg wit="#Sonnets1827">Look on those eyes by the bright soul made bright;</rdg></app></l> 
+								<l n="6"><app><rdg wit="#Sonnets1827">Those curls, which who <persName ref="#Antinous">Antinous</persName>’ bust hath seen</rdg></app></l>
+								<l n="7"><app><rdg wit="#Sonnets1827">Hath loved; that shape which might beseem a queen;</rdg></app></l>
+							<l n="8"><app><rdg wit="#Sonnets1827">That blush of purity; that smile of light.</rdg></app></l> 
+								<l n="9"><app><rdg wit="#Sonnets1827">’Tis she! my little book dost thou not own</rdg></app></l>
+							<l n="10"><app><rdg wit="#Sonnets1827">Thy mistress? She it is, the only she!</rdg></app></l>
+									<l n="11"><app><rdg wit="#Sonnets1827">Dost thou not listen for the one sweet tone</rdg></app></l>
+							<l n="12"><app><rdg wit="#Sonnets1827">Of her unrivalled voice? Dost thou not see</rdg></app></l> 
+										<l n="13"><app><rdg wit="#Sonnets1827"><hi rend="italics">Her</hi>look of love, for whose dear sake alone,</rdg></app></l>
+							<l n="14"><app><rdg wit="#Sonnets1827">My little book, thou art so dear to me?</rdg></app></l>
+							</lg>
+							</div>
+				
+			<div type="section" n="2">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p294"/></rdg>
+				</app></fw>
+					
+				<head><lb/>II. 
+					<lb/><title ref="#HoflandsJerusalem_1827">ON <persName ref="#Hofland_TC">MRS. HOFLAND</persName>’S<note resp="#slc">Apparently an 1827 printer’s error that should read MR., rather than MRS., Hofland. Thomas Hofland was a painter; his spouse was a writer.</note> <title ref="#Jerusalem_Crucifixion_TCH">PICTURE OF <placeName ref="#Jerusalem">JERUSALEM</placeName></title> AT THE CRUCIFIXION.</title><note resp="#lmw">This poem first appears in print in <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres, Arts, Sciences</title>, Part 1, 59 (7 March 1818): 155 in the column <q>Original Poetry</q>. There, the poem is dated <date when="1818-02-24">24 February 1818</date>. This periodical also contains, on page 105, a review of Hofland’s painting as exhibited at the British Institution. In <title ref="#La_Belle_Assemblee">La Belle Assemblee</title>’s review of the <title ref="#DramaticScenes">1827 Dramatic Scenes</title> volume, this poem was chosen to be reprinted in full in the review (See 5 (Jan. to June 1827): 246).</note>
+					<lb/>THE TIME OF THE CRUCIFIXION.</head>
+				
+			<lg>	<l n="1"><app><rdg wit="#Sonnets1827"><placeName ref="#Jerusalem">Jerusalem</placeName>! and at the fatal hour!</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">No need of dull and frivolous question here!</rdg></app></l> 
+				<l n="3"><app><rdg wit="#Sonnets1827">No need of human agents to make clear</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">The most tremendous act of human power!</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">The distant cross; the rent and falling tower;</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">The opening graves, from which the dead uprear</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">Their buried forms; the elemental fear</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Where horrid light and horrid darkness lower;</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">All tell the holy tale: the mystery</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">And solace of our souls. Awe-struck we gaze</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">On that so mute yet eloquent history!</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">Awe-struck and sad at length our eyes we raise</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">To go;—yet oft return that scene to see</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Too full of the great theme to think of praise.</rdg></app></l>
+			</lg>
+				</div>
+			
+				<div type="section" n="3">
+					<fw type="pageNum"><app>
+						<rdg wit="#Sonnets1827">
+							<pb xml:id="p295"/></rdg>
+					</app></fw>
+					<head><lb/>III.
+						<lb/><title ref="#ForgetMeNot_1827">THE <name ref="#ForgetMeNot">FORGET-ME-NOT</name>.</title></head> 
+					
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Blossom that lov’st on shadowy banks to lie,</rdg></app></l>
+					<l n="2"><app><rdg wit="#Sonnets1827">Gemming the deep rank grass with flowers so blue,</rdg></app></l>
+					<l n="3"><app><rdg wit="#Sonnets1827">That the pure turquoise matched with their rich hue</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Pales, fades, and dims; so exquisite a dye,</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">That scarce the brightness of the Autumn sky,</rdg></app></l>
+					<l n="6"><app><rdg wit="#Sonnets1827">Which sleeps upon the bosom of the stream,</rdg></app></l>
+					<l n="7"><app><rdg wit="#Sonnets1827">On whose fringed margent thy star-flowerets gleam</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">In its clear azure with thy tints may vie;</rdg></app></l>
+					<l n="9"><app><rdg wit="#Sonnets1827">Shade-loving flower, I love thee! not alone</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">That thou dost haunt the greenest coolest spot,</rdg></app></l>
+					<l n="11"><app><rdg wit="#Sonnets1827">For ever, by the tufted <name ref="#alder">alder</name> thrown,</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">Or arching <name ref="#hazel">hazel</name>, or vine mantled cot,</rdg></app></l>
+					<l n="13"><app><rdg wit="#Sonnets1827">But that thy very name hath a sweet tone</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Of parting tenderness—Forget me not!</rdg></app></l>
+				</lg>
+				</div>
+			
+			<div type="section" n="4">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p296"/></rdg>
+				</app></fw>
+				
+				<head><lb/>IV. <lb/><title ref="#ToHenryRichardson_1827">TO <persName ref="#Richardson_H">MR. HENRY RICHARDSON</persName>,
+					<lb/><hi rend="smallcaps">ON HIS PERFORMANCE OF <persName ref="#Admetus_char">ADMETUS</persName> IN THE <title ref="#Alcestis_play">ALCESTIS</title> OF <persName ref="#Euripides">EURIPIDES</persName>, 
+					<lb/>AS REPRESENTED IN THE ORIGINAL GREEK AT <placeName ref="#Reading_School">READING SCHOOL</placeName>.
+						<lb/><date when="1824-10"><hi rend="italics">October</hi>, 1824</date>.</hi></title></head>
+			
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">For us, on whose sealed ear the classic strain</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Athens">Athens</placeName>’ tenderest <rs type="person" ref="#Euripides">bard</rs>would idly fall</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">As instrumental music, or the call</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Of wordless <name ref="#nightingale">nightingale</name>s, for us again</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">I thank thee, wondrous <rs type="person" ref="#Richardson_H">boy</rs>! that not in vain</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">The scene hath overpast which held in thrall</rdg></app></l>
+					<l n="7"><app><rdg wit="#Sonnets1827"><persName ref="#Milton">Milton</persName> <metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">* </metamark>Milton’s allusion to the <title ref="#Alcestis_play">ALCESTIS</title> in the <title ref="#Methought_sonnet23">sonnet</title> on his wife is well known. <persName ref="#Wordsworth_Wm">Mr. Wordsworth</persName> in his <title ref="#Laodamia_WW">Laodamia</title> has the following exquisite lines on the same subject.
+						 <metamark function="ellipsis">——</metamark><q><lg><l>Did not <persName ref="#Hercules">Hercules</persName> by force</l>
+							<l>Wrest from the guardian monster of the tomb</l>
+							<l><persName ref="#Alcestis">Alcestis</persName> a reanimated corse,</l>
+							<l>Given back to dwell on earth in beauty’s bloom?</l></lg></q>
+					</note><note resp="#lmw">Lines 79 to 82.</note> and <persName ref="#Wordsworth_Wm">Wordsworth</persName>, mightiest names of all</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Living or dead that haunt the <orgName ref="#Muses">Muses</orgName>’ fane!</rdg></app></l></lg>
+			
+				
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p297"/></rdg>
+				</app></fw>
+				<lg><l n="9"><app><rdg wit="#Sonnets1827">Thy genius was a language; voice and look,</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Gesture and stillness the deep mystery</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">Of a strong grief unveiled. As lightnings dart</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">Their quivering brightness o’er the world, each nook</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Illumining and thrilling, so from thee</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Burst the storm-cloud of passion on the heart.</rdg></app></l>
+				</lg>
+			</div>
+				
+			
+			<div type="section" n="5">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p298"/></rdg>
+				</app></fw>
+			
+				<head><lb/>V. 
+					<lb/><title ref="#WrittenJuly1824_1827">WRITTEN <date when="1824-07">JULY, 1824</date>.</title></head>
+			
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">How oft amid the heaped and bedded hay,</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Under the <name ref="#oak">oak</name>’s broad shadow deep and strong,</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">Have we sate listening to the noonday song</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">(If song it were monotonously gay)</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">Which crept along the field, the summer lay</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Of the <name ref="#grasshopper">grasshopper</name>. Summer is come in pride</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">Of fruit and flower, garlanded as a bride,</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">And crowned with corn, and graced with length of day</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">But cold is come with her. We sit not now</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Listening that merry music of the earth</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">Like <persName ref="#Ariel">Ariel</persName> <q>beneath the blossomed bough;</q><note resp="#slc">See <title ref="#Tempest_play">The Tempest</title>: <q>Merrily, merrily shall I live now/ Under the blossom that hangs on the bough</q> (act five, scene one).</note></rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">But all for chillness round the social hearth</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">We cluster.—Hark!—a note of kindred mirth</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Echoes!—Oh, wintery <name ref="#cricket">cricket</name>, welcome thou!</rdg></app></l> 
+				</lg>
+			</div>
+			
+			<div type="section" n="6">
+				
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p299"/></rdg>
+				</app></fw>
+				
+				<head><lb/>VI.<lb/><title ref="#MotherSleeping_1827">TO MY <persName ref="#Russell_M">MOTHER</persName> SLEEPING.</title></head>
+				
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Sleep on, my <persName ref="#Russell_M">mother</persName>! sweet and innocent dreams</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Attend thee, best and dearest! Dreams that gild</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">Life’s clouds like setting suns, with pleasure filled</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">And saintly joy, such as thy mind beseems,—</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">Thy mind where never stormy passion gleams,</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Where their soft nest the <name ref="#dove">dove</name>-like virtues build</rdg></app></l> 
+				<l n="7"><app><rdg wit="#Sonnets1827">And calmest thoughts, like <name ref="#violet">violet</name>s distilled,</rdg></app></l> 
+				<l n="8"><app><rdg wit="#Sonnets1827">Their fragrance mingle with bright wisdom’s beams.</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">Sleep on, <persName ref="#Russell_M">my mother</persName>! not the <name ref="#lily">lily</name>’s bell</rdg></app></l> 
+				<l n="10"><app><rdg wit="#Sonnets1827">So sweet; not the enamoured west-wind’s sighs</rdg></app></l><!-- LMW:  Check date on P. Shelley's Ode to the WEst Wind to compare? --><!-- SLC:https://www.poets.org/poetsorg/poem/ode-west-wind_1792 - 1822--> 
+				<l n="11"><app><rdg wit="#Sonnets1827">That shake the dew-drop from her snowy cell</rdg></app></l> 
+				<l n="12"><app><rdg wit="#Sonnets1827">So gentle; not that dew-drop ere it flies</rdg></app></l> 
+				<l n="13"><app><rdg wit="#Sonnets1827">So pure. E’en slumber loves with thee to dwell</rdg></app></l> 
+				<l n="14"><app><rdg wit="#Sonnets1827">Oh model most beloved of good and wise!</rdg></app></l> </lg>
+			</div>
+			
+			<div type="section" n="7">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p300"/></rdg>
+				</app></fw>
+				<head><lb/>VII. <lb/><title ref="#BeautifulWoman_1827">ON A BEAUTIFUL WOMAN.</title></head>
+				
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Look where she sits in languid loveliness,</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Her feet upgathered, and her turban’d brow</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">Bent o’er her hand, her robe in ample flow</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Disparted! Look in attitude and dress</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">She sits and seems an Eastern Sultaness!</rdg></app></l><!--LMW Can we research further? Seems possibly nspired by an engraving of exotisized eastern women in the giftbook annual? -->
+				<l n="6"><app><rdg wit="#Sonnets1827">And music is about her, and the glow</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">Of young fair faces, and sweet voices go</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Forth at her call, and all about her press.</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">But no Sultana she! As in a book</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">In that fine form and lovely brow we trace</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">Divinest purity, and the bright look</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">Of genius. Much is she in mind and face</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Like the fair blossom of some woodland nook</rdg></app></l>
+					<l n="14"><app><rdg wit="#Sonnets1827">The <name ref="#anemone">wind-flower</name><metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">* </metamark>The <placeName ref="#Hampshire_county">Hampshire</placeName> name of the <name ref="#anemone">wood-anemone</name>.</note>,—delicate and full of grace.</rdg></app></l></lg>
+			</div>
+					
+			<div type="section" n="8">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p301"/></rdg>
+				</app></fw>
+				<head> <!-- on poem in Notes and Queries, 1880s:https://books.google.com/books?id=gEhDAQAAMAAJ&newbks=1&newbks_redir=0&dq=%22Proudly%20thy%20sex%20may%20claim%20thee%2C%20young%20and%20fair%22&pg=PA192#v=onepage&q=%22Proudly%20thy%20sex%20may%20claim%20thee,%20young%20and%20fair%22&f=false -->
+					<lb/>VIII.
+					<lb/><title ref="#ToMissPorden_1827">TO <persName ref="#Franklin_Eleanor">MISS PORDEN</persName><metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">*</metamark> My late dear and lamented friend <persName ref="#Franklin_Eleanor">Mrs. <choice><sic>Francklin</sic><reg>Franklin</reg></choice></persName>.</note>,
+						<lb/><hi rend="smallcaps">ON HER POEM OF <title ref="#Coeur_de_Lion_poem">COEUR DE LION</title>.</hi></title></head>
+					<lg><l n="1"><app><rdg wit="#Sonnets1827">Proudly thy sex may claim thee, young and fair</rdg></app></l>
+					<l n="2"><app><rdg wit="#Sonnets1827">And lofty poetess! proudly may tell</rdg></app></l>
+					<l n="3"><app><rdg wit="#Sonnets1827">How thou hast sung the arms invincible</rdg></app></l>
+					<l n="4"><app><rdg wit="#Sonnets1827">Of him <rs type="person" ref="#RichardI">the lion-hearted</rs>, in the snare</rdg></app></l>
+					<l n="5"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Austria">Austria</placeName>, as amid the sultry glare</rdg></app></l>
+					<l n="6"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Palestine">Palestine</placeName>, triumphant; or the spell</rdg></app></l>
+					<l n="7"><app><rdg wit="#Sonnets1827">Of poor <persName ref="#Maimoune">Maimoune</persName>; or the thoughts that swell</rdg></app></l>
+					<l n="8"><app><rdg wit="#Sonnets1827">When suddenly the old remembered air</rdg></app></l>
+					<l n="9"><app><rdg wit="#Sonnets1827">Rings from the harp of <persName ref="#Blondel_fict">Blondel</persName>; or the bright</rdg></app></l>
+					<l n="10"><app><rdg wit="#Sonnets1827">And gorgeous train of <placeName ref="#England">England</placeName>’s chivalry;</rdg></app></l>
+					<l n="11"><app><rdg wit="#Sonnets1827">Or, worthy of his kingly foe, the might</rdg></app></l>
+					<l n="12"><app><rdg wit="#Sonnets1827">Of paynim <persName ref="#Saladin">Saladin</persName>. Oh, proud of thee</rdg></app></l>
+					<l n="13"><app><rdg wit="#Sonnets1827">Is woman! proud of thy bold muse’s flight!</rdg></app></l>
+					<l n="14"><app><rdg wit="#Sonnets1827">Proud of thy gentle spirit’s purity.</rdg></app></l></lg>
+				</div>
+			
+			<div type="section" n="9">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p302"/></rdg>
+				</app></fw>
+				
+				<!--First published in 1817 Literary Gazette:  https://books.google.com/books?id=FO5woBpKk3MC&pg=RA1-PA41&lpg=RA1-PA41&dq=%22Tears+in+the+eyes+and+on+the+lips+a+sigh%22&source=bl&ots=udTPjB48ys&sig=ACfU3U2kSgUFp5I9XYSxO03OjizbU0C98A&hl=en&sa=X&ved=2ahUKEwibh_OSlcrnAhUEGc0KHTUqCmYQ6AEwAHoECAUQAQ#v=onepage&q=%22Tears%20in%20the%20eyes%20and%20on%20the%20lips%20a%20sigh%22&f=false-->
+
+				<head><lb/>IX. <lb/><title ref="#ToMrHaydon_Nature_1827">TO <persName ref="#Haydon">MR. HAYDON</persName>, ON A STUDY FROM NATURE.</title><note resp="#lmw #slc">Haydon study, as yet unidentified, from <date notAfter="1817-05-21">before 21 May 1817</date>, the composition date of the poem. May refer to a preliminary sketch for <name ref="#ChrstEJrslm_Haydon">Christ’s Entry into Jerusalem</name>. </note></head>
+				
+				<lg><l n="1"><app><rdg wit="#Sonnets1827"><q>Tears in the eyes and on the lips a sigh!</q><note resp="#lmw #slc">Likely an inexact quotation from <title ref="#Marmion_WS">Marmion</title>: <q>She look’d down to blush, and she look’d up to sigh,/ With a smile on her lips and a tear in her eye</q>, found in the often-quoted section on young Lochinvar.</note></rdg></app></l> 
+				<l n="2"><app><rdg wit="#Sonnets1827"><persName ref="#Haydon">Haydon</persName>! the great, the beautiful, the bold,</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">Thy wisdom’s king, thy mercy’s God unfold,</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">There art and genius blend in union high.</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">But this is of the soul. The majesty</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Of grief is here, grief cast in such a mould</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">As <persName ref="#Niobe">Niobe</persName> of yore. The tale is told</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">All at a glance—A childless mother I!</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">The tale is told:—but who can e’er forget</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">That e’er hath seen that visage of despair!</rdg></app></l> 
+				<l n="11"><app><rdg wit="#Sonnets1827">With unaccustom’d tears our cheeks are wet;</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">Heavy our hearts with unaccounted care;</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Upon our thoughts it presses like a debt;</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">We close our eyes in vain—that face is there!</rdg></app></l></lg>
+			
+		</div>
+			
+			<div type="section" n="10">
+				
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p303"/></rdg>
+				</app></fw>
+				
+				<head><lb/>X. <lb/><title ref="#EnglefieldHouse_1827"><placeName ref="#Englefield_House">ENGLEFIELD HOUSE</placeName>: <lb/><hi rend="smallcaps">THE SEAT OF <persName ref="#Benyon_R">R. BENYON DE BEAUVOIR, ESQ.</persName> NEAR <placeName ref="#Reading_city">READING</placeName>.</hi></title></head>
+			
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">There is a pride, as of an elder day</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">About thee, <placeName ref="#Englefield_House">Englefield</placeName>! Midway thy steep</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">And wood-crowned eminence, where round thee sweep</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Green flowery lawns, trees in the fresh array</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">Of summer, meadows with the close-piled hay</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Studded, blue waters that do seem to creep</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">All listlessly for heat, and cots that sleep</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">I’ the sunshine. How thou tower’st above the gay</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">And lovely landscape, in the majesty</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Of thy old beauty! Even those mansions bright,</rdg></app></l>
+					<l n="11"><app><rdg wit="#Sonnets1827">That pretty town, that gothic chapelry <metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">* </metamark>The <placeName ref="#Theale_church">new Church at Theale</placeName>, a beautiful specimen of modern Gothic.</note></rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">With front and pinnacle so rich and light,</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Seem all as toys and costly pageantry</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Made but for thy proud halls and their delight.</rdg></app></l></lg>
+				
+			</div>
+						
+			<div type="section" n="11">
+				
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p304"/></rdg>
+				</app></fw>
+						<head>
+						<lb/>XI.
+							<lb/><title ref="#NewYearsDay_1827"><date when="1819-01-01">NEW YEAR’S DAY. 1819.</date></title><!-- add note on the specific date, from the journal/letters. Is the Handel song the same as the one mentioned there? -->
+							<lb/><hi rend="smallcaps">TO <persName ref="#Dickinson_Mrs">MRS. DICKINSON</persName>.</hi></head>
+						<lg><l n="1"><app><rdg wit="#Sonnets1827">Banquet and song, and dance and revelry!—</rdg></app></l>
+						<l n="2"><app><rdg wit="#Sonnets1827">Auspicious year born in so fair a light</rdg></app></l>
+						<l n="3"><app><rdg wit="#Sonnets1827">Of gaiety and beauty! happy night</rdg></app></l>
+						<l n="4"><app><rdg wit="#Sonnets1827">Sacred to social pleasure, and to thee</rdg></app></l>
+						<l n="5"><app><rdg wit="#Sonnets1827">Its dear dispenser, of festivity</rdg></app></l>
+						<l n="6"><app><rdg wit="#Sonnets1827">The festive queen, the moving spirit bright</rdg></app></l>
+						<l n="7"><app><rdg wit="#Sonnets1827">Of music and the dance, of all delight</rdg></app></l>
+						<l n="8"><app><rdg wit="#Sonnets1827">The gentle mistress, bountiful and free.</rdg></app></l>
+						<l n="9"><app><rdg wit="#Sonnets1827">Oh happy night! and oh succeeding day</rdg></app></l>
+						<l n="10"><app><rdg wit="#Sonnets1827">Far happier! when ’mid converse and repose</rdg></app></l>
+						<l n="11"><app><rdg wit="#Sonnets1827"><persName ref="#Handel">Handel</persName>’s sweet strains came sweetened, and the lay</rdg></app></l>
+						<l n="12"><app><rdg wit="#Sonnets1827">Divine of that <rs type="person" ref="#Dante">old Florentine</rs> arose,</rdg></app></l>
+						<l n="13"><app><rdg wit="#Sonnets1827"><persName ref="#Dante">Dante</persName>, and Genius flung his torch-like ray</rdg></app></l>
+						<l n="14"><app><rdg wit="#Sonnets1827">O’er the dark tale of <persName ref="#Ugolino">Ugolino</persName>’s woes.</rdg></app></l>
+						</lg>
+					</div>
+		
+			
+			<div type="section" n="12">
+				
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p305"/></rdg>
+				</app></fw>
+				<head><lb/>XII. <lb/><title ref="#TwoHoflandLandscapes_1827">ON TWO OF <persName ref="#Hofland_TC">MR. HOFLAND</persName>’S LANDSCAPES.</title><note resp="#lmw">The specific Hofland works referred to here have not yet been identified.</note></head>
+				
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">A mighty power is in that roaring main</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Broken into huge and foamy waves, which knock</rdg></app></l> 
+				<l n="3"><app><rdg wit="#Sonnets1827">Against yon mass of battlemented rock</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Dark with storm-laden cloud, and wind-tost rain.</rdg></app></l> 
+				<l n="5"><app><rdg wit="#Sonnets1827">A lovely power is in that sunny plain</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Where in their beauty the clear waters sleep,</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">Fringed in by tender grass, or idly creep</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Where the close tufted banks their course restrain.</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">Oh Painter of the elements! to thee</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Alike the gentle or tempestuous hour:</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">The throes and heavings of the wintery sea,</rdg></app></l> 
+				<l n="12"><app><rdg wit="#Sonnets1827">Whilst earth, and sky, and storm, and darkness, lour;</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Or the sweet sunshine brooding peacefully</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">O’er wandering rivulet and summer bower.</rdg></app></l>
+				</lg>
+			</div>
+						
+			<div type="section" n="13">	
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p306"/></rdg>
+				</app></fw>
+				
+			<head>
+					<lb/>XIII.
+				<lb/><title ref="#HearingTalfourd_1827">ON HEARING <persName ref="#Talfourd_Thos">MR. TALFOURD</persName> PLEAD IN THE <placeName ref="#AssizeHall_Reading">ASSIZE-
+					<lb/>HALL</placeName> AT <placeName ref="#Reading_city">READING</placeName>, ON HIS FIRST <placeName ref="#Oxford_Circuit">CIRCUIT</placeName>,
+					<lb/><date when="1821-03"><hi rend="italics">March</hi> 1821</date>.</title></head>
+					
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Wherefore this stir? ’Tis but a common cause</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Of Cottage plunder: yet in every eye</rdg></app></l>
+					<l n="3"><app><rdg wit="#Sonnets1827">Sits expectation;—murmuring whispers fly</rdg></app></l>
+					<l n="4"><app><rdg wit="#Sonnets1827">Along the crowded court;—and then a pause;—</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">And then a clear crisp voice invokes the laws,</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">With such a full and rapid mastery</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">Of sound and sense, such nice propriety,</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Such pure and perfect taste, that scarce the applause</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">Can be to low triumphant words chained down</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Or more triumphant smiles. Yes, this is he,</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">The young and eloquent spirit whose renown</rdg></app></l>							                      	<l n="12"><app><rdg wit="#Sonnets1827">Makes proud <rs type="place" ref="#Reading_city">his birth-place</rs>! a high destiny</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Is his;  to climb to honour’s palmy crown</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">By the <choice><sic>strait</sic><reg>straight</reg></choice> path of truth and honesty.</rdg></app></l>
+			</lg>
+					</div>
+			
+			<div type="section" n="14">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+						<pb xml:id="p307"/></rdg>
+				</app></fw>
+				
+				<head><lb/>XIV. <lb/><title ref="#FishingSeat_1827">THE FISHING-SEAT, <placeName ref="#Whiteknights">WHITEKNIGHTS</placeName>.</title><note resp="#lmw">Mitford encloses a copy of this poem in her <rs type="letter" ref="#MRM1703"><date when="1817-10-11">October 11, 1817</date> letter to <persName ref="#Elford_SirWm">Sir William Elford</persName></rs>. </note></head>
+				
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">There is a sweet according harmony</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">In this fair scene: this quaintly fluted bower,</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">These sloping banks with tree and shrub and flower</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Bedecked, and these pure waters, where the sky</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">In its deep blueness shines so peacefully;</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Shines all unbroken, save with sudden light</rdg></app></l> 
+				<l n="7"><app><rdg wit="#Sonnets1827">When some proud <name ref="#swan">swan</name> majestically bright</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Flashes her snowy beauty on the eye;</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">Shines all unbroken, save with sudden shade</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">When from the delicate <name ref="#birch_weep">birch</name> a dewy tear</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">The west-wind brushes. Even the <name ref="#bee">bee</name>’s blithe trade,</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">The <name ref="#lark">lark</name>’s clear carols, sound too loudly here;</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">A spot it is for far-off music made,</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Stillness and rest—a smaller <placeName ref="#Windermere">Windermere</placeName>.</rdg></app></l>
+			</lg>
+			</div>
+					
+			<div type="section" n="15">
+				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
+					<pb xml:id="p308"/></rdg>
+					</app></fw>
+						<head>	
+						<lb/>XV.
+							<lb/><title ref="#FriendBirthday_1827">TO A <rs type="person" ref="#Webb_Jane">FRIEND</rs> ON HER BIRTH-DAY.</title></head>
+						
+						<lg><l n="1"><app><rdg wit="#Sonnets1827">This is the day sacred to love and mirth</rdg></app></l>
+						<l n="2"><app><rdg wit="#Sonnets1827">And tender wishes; this the favoured day</rdg></app></l>
+						<l n="3"><app><rdg wit="#Sonnets1827">(Sweet superstition!) when the artless lay</rdg></app></l>
+						<l n="4"><app><rdg wit="#Sonnets1827">Is welcomed, and the token little worth,</rdg></app></l>
+						<l n="5"><app><rdg wit="#Sonnets1827">And the fond vows, which live and have their birth</rdg></app></l>
+						<l n="6"><app><rdg wit="#Sonnets1827">In the affectionate heart; a holiday</rdg></app></l>
+						<l n="7"><app><rdg wit="#Sonnets1827">It is, for good and gentle, fair and gay,</rdg></app></l>
+						<l n="8"><app><rdg wit="#Sonnets1827">My lovely <persName ref="#Webb_Jane">Jane</persName>, it gave thee to the earth.</rdg></app></l>
+						<l n="9"><app><rdg wit="#Sonnets1827">And thou hast trodden life’s path with a wise glee,</rdg></app></l>
+						<l n="10"><app><rdg wit="#Sonnets1827">Maid of the laughing eye! Were I the Queen</rdg></app></l><!--LMW: could this be a Spenser Faery Queen ref, or more general one?-->
+						<l n="11"><app><rdg wit="#Sonnets1827">Of that so famous <placeName ref="#FairyLand">land of of Faëry</placeName> </rdg></app></l>
+						<l n="12"><app><rdg wit="#Sonnets1827">Where quaintest spirits weave their spells unseen,</rdg></app></l>
+						<l n="13"><app><rdg wit="#Sonnets1827">No better benison I’d pour on thee</rdg></app></l>
+						<l n="14"><app><rdg wit="#Sonnets1827">Than to be happy still as thou hast been.</rdg></app></l>	
+						</lg>
+					</div>
+			
+			<div type="section" n="16">
+				<fw type="pageNum"><app>
+					<rdg wit="#Sonnets1827">
+					<pb xml:id="p309"/></rdg>
+					</app></fw>
+				
+				<head><lb/>XVI. <lb/><title ref="#LeavingPicture_1827">ON LEAVING A FAVOURITE PICTURE.</title><!--SLC: This is an actual painting left behind at Bertram House when Mary Russell Mitford was forced to leave her childhood home after her father spent through their considerable family fortune. LMW: Do we know which picture or no? If yes, find it and cite. Or write a general note saying leaving Bertram house, picture unknown.--></head>
+				
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Young world of peace and loveliness farewell!</rdg></app></l> 
+				<l n="2"><app><rdg wit="#Sonnets1827">Farewell to the clear lake; the mountains blue;</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">The grove, whose tufted paths our eyes pursue</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Delighted; the white cottage in the dell</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">By yon old church; the smoke from that small cell</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Amid the hills slow rising; and the hue</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">Of summer air, fresh, delicate, and true,</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Breathing of light and life, the master spell!</rdg></app></l> 
+				<l n="9"><app><rdg wit="#Sonnets1827">Work of the Poet’s eye, the Painter’s hand,</rdg></app></l> 
+				<l n="10"><app><rdg wit="#Sonnets1827">How close to nature art thou, yet how free</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">From earthly stain! the beautiful, the bland,</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">The <name ref="#rose">rose</name>, the <name ref="#nightingale">nightingale</name> resemble thee;—</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Thou art most like the blissful <placeName ref="#FairyLand_Spenser">Fairy-land</placeName></rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Of <persName ref="#Spenser_Edmund">Spenser</persName>, or <persName ref="#Mozart">Mozart</persName>’s fine melody.</rdg></app></l>
+				</lg>
+		</div>
+			
+			<div type="section" n="17">
+				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
+					<pb xml:id="p310"/></rdg>
+					</app></fw>
+					<head>
+					<lb/>XVII. <lb/><title ref="#FriendsAlbum_1827">WRITTEN IN A FRIEND’S<note resp="#lmw">Friend unidentified. More research needed.</note> ALBUM</title></head>
+			
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Book of memorials fair! I cannot trace</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">On thy white page the quaintly pencilled bower;</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">I have no skill to bid the vivid flower</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">Bloom ’mid thy leaves; nor with the immortal grace</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">Of proud <persName ref="#Apollo">Apollo</persName>, or the goddess face</rdg></app></l> 
+				<l n="6"><app><rdg wit="#Sonnets1827">Of <persName ref="#Hebe">Hebe</persName> deck them. ’Las! my ruder power</rdg></app></l> 
+				<l n="7"><app><rdg wit="#Sonnets1827">Can but bear record faint of many an hour</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Passed thou mute witness in thy dwelling-place.</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">Oh happiest hours, that ever me befall,</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Rich in commingling mind, in fancy’s play!</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">Oh happiest hours, whether in music’s thrall,</rdg></app></l> 
+				<l n="12"><app><rdg wit="#Sonnets1827">Or converse sweet as music pass the day!</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Oh happiest hours! and most beloved of all</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">The cherished friend that speeds them on their way!</rdg></app></l></lg>
+					</div>
+					
+			<div type="section" n="18">
+				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
+					<pb xml:id="p311"/></rdg>
+					</app></fw>
+				
+				<head><lb/>XVIII.  <lb/><title ref="#DonningtonCastle_1827">ON VISITING <placeName ref="#Donnington_Castle">DONNINGTON CASTLE</placeName>,
+					<!-- first pub 1821: https://books.google.com/books?id=CRR3IEP9VV0C&newbks=1&newbks_redir=0&dq=Grisildi&pg=PA540#v=onepage&q=Grisildi&f=false -->
+					<lb/><hi rend="smallcaps">Said to have been the latest residence of <persName ref="#Chaucer">Chaucer</persName>, <lb/>and celebrated for its resistance to the <orgName ref="#Parliamentarians">army of <lb/>Parliament</orgName> during the <rs type="event" ref="#EngCivilWar">civil wars</rs>.</hi></title></head>				
+				<lg>					
+				<l n="1"><app><rdg wit="#Sonnets1827">Oh, for some gentle spirit to surround</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">With clinging <name ref="#ivy">ivy</name>thy high-seated towers,</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">Fair <placeName ref="#Donnington_Castle">Donnington,</placeName> and wipe from <persName ref="#Chaucer">Chaucer</persName>’s bowers</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">The last rude touch of war! All sight, all sound</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">Of the old strife boon nature from the ground</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">Hath banished. Here the trench no longer lours.</rdg></app></l> 
+				<l n="7"><app><rdg wit="#Sonnets1827">But, like a bosky dell, begirt with flowers</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">And garlanded with <name ref="#mayflower">May</name>, sinks dimpling round</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">A very spot for youthful lover’s dreams</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">In the prime hour. <persName ref="#Grisildi">Grisildi</persName>’s mournful lay,</rdg></app></l>
+					<l n="11"><app><rdg wit="#Sonnets1827">The <q>half-told tale<metamark function="fn">*</metamark><note place="bottom" resp="#MRM">
+						<quote>
+							<l>Or call up him who left half told</l>
+							<l>The story of Cambuscan bold.</l>
+						</quote>—<hi rend="italics"><bibl corresp="#Il_Pensoroso"><author ref="#Milton">Milton</author> of <persName ref="#Chaucer">Chaucer</persName>.—<title>Il Pensoroso</title></bibl>.</hi></note></q> would sound still sweeter here.</rdg></app></l> 
+				<l n="12"><app><rdg wit="#Sonnets1827">Oh for some hand to hide with <name ref="#ivy">ivy</name> spray</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">War’s ravages, and chase the jarring themes</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Of King and State, <orgName ref="#Parliamentarians">Roundhead</orgName> and <orgName ref="#Royalists">Cavalier</orgName>!</rdg></app></l></lg>
+</div>
+					
+			<div type="section" n="19">
+				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
+					<pb xml:id="p313"/></rdg>
+				</app></fw>
+				
+						<head>
+						<lb/>XIX. <lb/><title ref="#WrittenAfterVisit_1827">WRITTEN AFTER A VISIT FROM SOME FRIENDS.</title><!--LMW: Do we have a date or who are the friends?--></head>
+						
+						<lg><l n="1"><app><rdg wit="#Sonnets1827">I could have lengthened out one fleeting hour</rdg></app></l>
+						<l n="2"><app><rdg wit="#Sonnets1827">Into an age; sitting at set of sun</rdg></app></l>
+						<l n="3"><app><rdg wit="#Sonnets1827">Under the long, low, open shed where won</rdg></app></l>
+						<l n="4"><app><rdg wit="#Sonnets1827">The mellow evening light through leaf and flower;</rdg></app></l>
+						<l n="5"><app><rdg wit="#Sonnets1827">Playing the hostess in that summer bower</rdg></app></l>
+						<l n="6"><app><rdg wit="#Sonnets1827">To such dear guests, whilst rose the antique song</rdg></app></l>
+						<l n="7"><app><rdg wit="#Sonnets1827">By those young sister voices poured along</rdg></app></l>
+						<l n="8"><app><rdg wit="#Sonnets1827">So wild, so pure, so clear, full of sweet power</rdg></app></l>
+						<l n="9"><app><rdg wit="#Sonnets1827">Ringing and vibrating. It was a lay</rdg></app></l>
+						<l n="10"><app><rdg wit="#Sonnets1827">That sent a smile into the very heart;</rdg></app>That sent a smile into the very heart;</l>
+						<l n="11"><app><rdg wit="#Sonnets1827">As when the early <name ref="#lark">lark</name> shoots up in May</rdg></app></l>
+						<l n="12"><app><rdg wit="#Sonnets1827">With his blithe matins, rarer than all art</rdg></app></l>
+						<l n="13"><app><rdg wit="#Sonnets1827">Save this. Oh happiest and most fleeting day.</rdg></app></l>
+						<l n="14"><app><rdg wit="#Sonnets1827">Why art thou gone so soon! Why must we part!</rdg></app></l></lg>
+						</div>
+			
+			<div type="section" n="20">
+				
+				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
+					<pb xml:id="p314"/></rdg>
+				</app></fw>
+				<head><lb/>XX.  <lb/><title ref="#IntendedRemoval_1827">ON AN INTENDED REMOVAL FROM A <rs type="place" ref="#Bertram_house">FAVOURITE <lb/>RESIDENCE</rs>.<date when="1820-11"> <hi rend="italics">November,</hi> 1820.</date></title></head>
+			
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Adieu beloved and lovely home! Adieu,</rdg></app></l> 
+				<l n="2"><app><rdg wit="#Sonnets1827">Thou pleasant mansion, and ye waters bright,</rdg></app></l> 
+				<l n="3"><app><rdg wit="#Sonnets1827">Ye lawns, ye aged <name ref="#elm">elm</name>s, ye shrubberies light</rdg></app></l>
+				<l n="4"><app><rdg wit="#Sonnets1827">(My own cotemporary trees, that grew</rdg></app></l> 
+				<l n="5"><app><rdg wit="#Sonnets1827">Even with my growth;) ye flowers of orient hue,</rdg></app></l>
+				<l n="6"><app><rdg wit="#Sonnets1827">A long farewell to all! Ere fair to sight</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">In summer-shine ye bloom with beauty dight,</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Your halls we leave for scenes untried and new.</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">Oh shades endeared by memory’s magic power</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">With strange reluctance from your paths I roam!</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">But home lives not in lawn, or tree, or flower,</rdg></app></l> 
+				<l n="12"><app><rdg wit="#Sonnets1827">Nor dwells tenacious in one only dome.</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Where smiling friends adorn the social hour,</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Where they, the dearest are, there will be home.</rdg></app></l>
+				</lg>
+	</div>
+						
+			<div type="section" n="21">
+				
+				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
+					<pb xml:id="p315"/></rdg>
+				</app></fw>
+							<head>
+								<lb/>XXI. <lb/><title ref="#FriendToLisbon_1827">ON THE DEPARTURE OF A <persName ref="#Ramsay_Mary">FRIEND</persName> TO <placeName ref="#Lisbon_city">LISBON</placeName> FOR
+								<lb/>THE RECOVERY OF HER HEALTH. <date when="1813-11"><hi rend="italics">Nov.</hi> 1813</date>.</title></head>
+							<lg><l n="1"><app><rdg wit="#Sonnets1827">Thou freshest spirit, that on <placeName ref="#Lisbon_city">Lisbon</placeName>’s shore</rdg></app></l>
+							<l n="2"><app><rdg wit="#Sonnets1827">Didst shake health-breathing airs so cheerily</rdg></app></l> 
+							<l n="3"><app><rdg wit="#Sonnets1827">From thy soft wing, as oft the murmuring <name ref="#bee">bee</name></rdg></app></l>
+							<l n="4"><app><rdg wit="#Sonnets1827">Scatters the full-blown <name ref="#rose">rose</name>—the cannon’s roar</rdg></app></l>
+							<l n="5"><app><rdg wit="#Sonnets1827">Sacred thee, mild spirit! and the flood of gore,</rdg></app></l>
+							<l n="6"><app><rdg wit="#Sonnets1827">Tinging the bosom of thy heaving sea,</rdg></app></l>
+							<l n="7"><app><rdg wit="#Sonnets1827">Defiled thy snowy feet, and thou didst flee</rdg></app></l>
+							<l n="8">From ills thou could’st not cure and must deplore.</l>
+							<l n="9"><app><rdg wit="#Sonnets1827">War’s demons are gone by. Thy lovely strand</rdg></app></l>
+							<!--LMW: Check the date: is this dated to Napoleon's adbication or end of peninsular wars? -->
+							<l n="10"><app><rdg wit="#Sonnets1827">Is purified. Oh spirit thither bend</rdg></app></l>
+							<l n="11"><app><rdg wit="#Sonnets1827">Thine airy flight, and wave thy healing wand</rdg></app></l>
+							<l n="12"><app><rdg wit="#Sonnets1827">O’er yon fair form where grace and virtue blend!</rdg></app></l>
+							<l n="13"><app><rdg wit="#Sonnets1827">Then proudly waft her to her <rs type="place" ref="#England">native land</rs>—</rdg></app></l> 
+							<l n="14"><app><rdg wit="#Sonnets1827">Her, loved and blest, the mother, wife and friend.</rdg></app></l>
+							</lg>
+						</div>
+			
+			<div type="section" n="22">
+				
+				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
+					<pb xml:id="p316"/></rdg>
+				</app></fw>
+				
+				<head><lb/>XXII. <lb/><title ref="#WrittenOct1825_1827">WRITTEN <date when="1825-10">OCTOBER, 1825</date>.</title></head>
+			
+				<lg><l n="1"><app><rdg wit="#Sonnets1827">Within my little garden is a flower,</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">A tuft of flowers, most like a sheaf of <name ref="#corn">corn</name>,</rdg></app></l>
+				<l n="3"><app><rdg wit="#Sonnets1827">The <name ref="#Michaelmas_daisy">lilac blossomed daisy</name> that is born</rdg></app></l> 
+				<l n="4"><app><rdg wit="#Sonnets1827">At Michaelmas, wrought by the gentle power</rdg></app></l>
+				<l n="5"><app><rdg wit="#Sonnets1827">Of this sweet Autumn into one bright shower</rdg></app></l> 
+				<l n="6"><app><rdg wit="#Sonnets1827">Of bloomy beauty; Spring hath nought more fair,</rdg></app></l>
+				<l n="7"><app><rdg wit="#Sonnets1827">Four sister butterflies inhabit there,</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">Gay gentle creatures! Round that odorous bower</rdg></app></l>
+				<l n="9"><app><rdg wit="#Sonnets1827">They weave their dance of joy the livelong day,</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Seeming to bless the sunshine; and at night</rdg></app></l> 
+				<l n="11"><app><rdg wit="#Sonnets1827">Fold their enamelled wings as if to pray.</rdg></app></l> 
+				<l n="12"><app><rdg wit="#Sonnets1827">Home-loving pretty ones! would that I might</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">For richer gifts as cheerful tribute pay,</rdg></app></l> 
+				<l n="14"><app><rdg wit="#Sonnets1827">So meet the rising dawn, so hail the parting ray!</rdg></app></l></lg>
+				</div>
+		</body>
+	<back>
+		<!-- backlist removed to si-add, 2020-02-23 -->
+	</back>
+	</text>
+</TEI>

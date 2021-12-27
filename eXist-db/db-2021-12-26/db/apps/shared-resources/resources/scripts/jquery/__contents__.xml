@@ -1,0 +1,36 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/shared-resources/resources/scripts/jquery" version="1" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.251Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="jquery.dynatree-1.1.1.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.253Z" modified="2020-08-07T22:43:15.253Z" filename="jquery.dynatree-1.1.1.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery-1.7.1.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.256Z" modified="2020-08-07T22:43:15.256Z" filename="jquery-1.7.1.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery-ui-1.8.custom.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.261Z" modified="2020-08-07T22:43:15.261Z" filename="jquery-ui-1.8.custom.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery-utils.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.27Z" modified="2020-08-07T22:43:15.27Z" filename="jquery-utils.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery.cookie.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.273Z" modified="2020-08-07T22:43:15.273Z" filename="jquery.cookie.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery.scrollExtend.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.276Z" modified="2020-08-07T22:43:15.276Z" filename="jquery.scrollExtend.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery-ui.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.279Z" modified="2020-08-07T22:43:15.279Z" filename="jquery-ui.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery.dynatree-1.2.5.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.29Z" modified="2020-08-07T22:43:15.29Z" filename="jquery.dynatree-1.2.5.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery.pnotify.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.294Z" modified="2020-08-07T22:43:15.294Z" filename="jquery.pnotify.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery.dataTables-1.8.1.min.js" skip="no" owner="admin" group="dba" mode="775" created="2020-08-07T22:43:15.296Z" modified="2020-08-07T22:43:15.296Z" filename="jquery.dataTables-1.8.1.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="skin" filename="skin"/>
+    <subcollection name="flot" filename="flot"/>
+    <subcollection name="css" filename="css"/>
+</collection>

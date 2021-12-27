@@ -1,0 +1,7 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/data/tuning" version="1" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:43:19.342Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="tuning.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:19.345Z" modified="2020-08-07T22:43:19.345Z" filename="tuning.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="listings" filename="listings"/>
+</collection>

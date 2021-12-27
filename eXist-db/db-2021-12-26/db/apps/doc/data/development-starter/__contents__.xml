@@ -1,0 +1,8 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/data/development-starter" version="1" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:43:20.532Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="development-starter.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:20.532Z" modified="2020-08-07T22:43:20.532Z" filename="development-starter.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="listings" filename="listings"/>
+    <subcollection name="assets" filename="assets"/>
+</collection>

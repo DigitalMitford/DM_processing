@@ -1,0 +1,7 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/data/xqsuite" version="1" owner="SYSTEM" group="dba" mode="755" created="2020-08-07T22:43:18.535Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="xqsuite.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2020-08-07T22:43:18.536Z" modified="2020-08-07T22:43:18.536Z" filename="xqsuite.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="listings" filename="listings"/>
+</collection>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=main">
+    <h1>XQuery Function Documentation</h1>
+    <form id="fun-query-form" name="f-query" class="form-horizontal" action="" method="POST">
+        <div class="form-group">
+            <label class="control-label col-md-2 hidden-xs">Search</label>
+            <div class="col-md-4 col-xs-12">
+                <span class="input-group">
+                    <input id="query-field" name="q" type="text" class="templates:form-control form-control"/>
+                    <span class="input-group-btn">
+                        <button id="f-btn-search" type="submit" name="action" value="search" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search"/> Search
+                        </button>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2 hidden-xs">Search in</label>
+            <div class="col-md-4 col-xs-12">
+                <select name="type" class="templates:form-control form-control">
+                    <option value="name">Name</option>
+                    <option value="signature">Signature</option>
+                    <option value="desc">Description</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4 col-xs-12">
+                <div class="btn-toolbar">
+                    <a id="browse" class="btn btn-primary" href="browse.html?extensions=true">
+                        <span class="glyphicon glyphicon-globe"/> Browse</a>
+                    <button id="f-btn-reindex" class="btn btn-warning" data-template="app:check-dba-user-and-data" data-toggle="tooltip" data-placement="top" title="Regenerate XQuery Function Documentation after modification or addition of functions">
+                        <span class="glyphicon glyphicon-refresh"/> Regenerate</button>
+                    <button id="f-btn-reindex" class="btn btn-warning" data-template="app:check-not-data" data-toggle="tooltip" data-placement="top" title="Generate XQuery Function Documentation after installation">
+                        <span class="glyphicon glyphicon-import"/> Generate</button>
+                    <img id="f-load-indicator" src="resources/images/ajax-loader.gif"/>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="alert alert-warning" data-template="app:check-dba-user-and-not-data">
+        The function documentation has not been generated yet. Click on the <code>Generate</code> button
+        above to index all XQuery modules. This should take less than a minute.
+    </div>
+    <div class="alert alert-warning" data-template="app:check-not-dba-user-and-not-data">
+        The function documentation has not been generated yet. Please contact the database administrator in order to have the the function documentation generated.
+        
+    </div>
+    <div id="messages"/>
+    <div id="results">
+        <div class="app:action">
+            <div class="app:module"/>
+        </div>
+    </div>
+</div>
