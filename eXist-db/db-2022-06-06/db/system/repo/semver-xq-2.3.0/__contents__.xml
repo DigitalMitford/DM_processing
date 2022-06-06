@@ -1,0 +1,25 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/repo/semver-xq-2.3.0" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:37.528Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.535Z" modified="2021-12-31T06:13:37.534Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="exist.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.547Z" modified="2021-12-31T06:13:37.547Z" filename="exist.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="cxan.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.567Z" modified="2021-12-31T06:13:37.567Z" filename="cxan.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.586Z" modified="2021-12-31T06:13:37.585Z" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.549Z" modified="2021-12-31T06:13:37.549Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LICENSE" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.557Z" modified="2021-12-31T06:13:37.557Z" filename="LICENSE" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.56Z" modified="2021-12-31T06:13:37.56Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="content" filename="content"/>
+</collection>

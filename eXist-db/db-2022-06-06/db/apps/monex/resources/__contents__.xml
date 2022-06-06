@@ -1,0 +1,8 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/monex/resources" version="1" owner="monex" group="monex" mode="775" created="2021-12-31T06:13:51.808Z">
+    <acl entries="0" version="1"/>
+    <subcollection name="img" filename="img"/>
+    <subcollection name="css" filename="css"/>
+    <subcollection name="vendor" filename="vendor"/>
+    <subcollection name="fonts" filename="fonts"/>
+    <subcollection name="scripts" filename="scripts"/>
+</collection>

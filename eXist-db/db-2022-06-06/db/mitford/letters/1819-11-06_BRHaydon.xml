@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   
+<teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM1750">Letter to <persName ref="#Haydon">Benjamin Robert Haydon</persName>, November 6, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+               <persName ref="#cay">Courtney Younes</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-08-07">2017-09-02</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-08-07"/>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>6Nov1819BRHaydon1.jpg, 6Nov1819BRHaydon2.jpg, 6Nov1819BRHaydon3.jpg, 6Nov1819BRHaydon4.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 387</idno>
+               </msIdentifier>
+           
+               <head>Letter from Mary Russell Mitford to Benjamin Robert Haydon, <date when="1819-11-06">1819 November 6</date>.
+               <note resp="#lmw">Letter headed November 6, 1819. Postmarked November 8, 1819.</note>--&gt;
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One sheet <material>paper</material>, two surfaces photographed, folded once vertically then folded twice horizontally for posting.</p> 
+                        <p>Address leaf bearing sepia postmark, reading <stamp><lb/>7 O'CLOCK<lb/>8 * NO<lb/>1819 NT</stamp>.</p>
+                        <p>Second brown oval postmark, illegible.</p>
+                       <p>A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.</p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on where wax seal was removed.</p> 
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal present, although remnants of red wax are visible.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of the second leaf.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "19" in the top left of the first leaf.
+           </handNote>
+           <handNote corresp="#penAnnot_RCL" medium="pen">Someone, apparently other than Mitford, who occasionally left notes in a spidery thin hand to explain or document details in Mitford's letters in the margins of her pages, noted in the manuscripts held at Reading Central Library. This may be <persName ref="#Harness_Wm">William Harness</persName> or <persName ref="#Lestrange">A. G. L'Estrange</persName>. This letter has the addressee identified on the top left of the first leaf: "B.R. Haydon, Esq."
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body><div type="letter">
+            <opener> 
+               <dateline><name type="place" ref="#Bertram_house">Bertram House</name> 
+                  <date when="1819-11-06">Nov. 6<hi rend="superscript">th</hi> 1819</date>. 
+               </dateline>
+               <salute>My dear <rs type="person" ref="#Haydon">Sir</rs></salute>
+            </opener>
+         <p>I am shocked to think how ungracious &amp; ungrateful my long silence might have appeared. When your kind letter gave us the disappointment, the very great disappointment, of not seeing you we were expecting to leave this place at Michaelmas &amp; did not write hoping to be fixed in a new habitation &amp; to have the power as well as the desire of requesting the pleasure of your company as one earliest &amp; most welcome guest--but we knew very little of lawyers in spite of our long experience--very little of the strong vital principle of a <orgName ref="#Chancery">Chancery</orgName> Suit. A tortose itself does not take so much killing--I am afraid that <choice><sic>our's</sic><reg>ours</reg></choice> is not dead yet--at all events here we are and here we have been, expecting every day to go and every day delayed to some new obstacle of Titles and valuations. Even now there is much to settle, and though we talk of going in a fortnight I should not wonder to find myself here at <choice><sic>xmas</sic><reg>Christmas</reg></choice> though in this tormenting uncertainty there is no counting even on a day. Under these cirumstances you I am sure will pardon our seeming want of politeness. Most assuredly it did not proceed from any want of remembrance--we have thought of you and talked of you perpetually, and do most earnestly hope that whenever our plans shall be so fixed as to allow us to look forward to a few weeks unalloyed by the misery of packing and house moving you write be able to make it convenient to favour us with your promised Visit.--And pray forgive my seeming neglect.</p><pb n="2"/> 
+         <p>Your greyhound has not been forgotten--but there too misforture and vexation has punished us. Poor <persName ref="#Webb_James">Mr. Webb</persName> has been ill ever since I wrote and is now in a state of health which affords no prospect of recovery--A series of <unclear><supplied resp="#cay">sinister</supplied></unclear> operations the most painful and exhausting that can be imagined. We feel this very severely--he is my Fathers most intimate friend--has been always a second Father to me and his charming <rs type="person" ref="#Webb_Mary_younger #Webb_Eliza #Webb_Jane">Daughters</rs> are my most intimate friends.--The only thing which has seemed to give him pleasure was the idea of sending a greyhound to <persName ref="#Haydon">Mr. Haydon</persName>, (for amongst his other good qualities is a high degree of moral taste--he thinks a Great Artist a much greater Man than a great King) and would not relinquish the prospect of selecting the dog himself. He wavers between two very beautiful ones both blue, and of the highest blood--You shall certainly have <del rend="squiggle" unit="words" n="1"><unclear/></del><add place="above">one of them</add> in a week or two.--<q>"Shall I like a sketch of it?"</q> How could you ask such a question! Were you not sure that any thing from your pencil would be unspeakably precious! Our English <persName ref="#Raphael">Raphael</persName>--who condescends to call me his friend! I shall value it more than all my possessions put together. Do not however, <del rend="crossout" unit="words" n="1">suffer</del> <add place="above">let</add> a kind wish to oblige me interfere with your more important avocations or your more necessary rest--any time will do for me.--How are your eyes? Is your picture finished? These are two most interesting questions to us all--Apropos of that matchless picture--I took a great liberty the other day--I told a gentleman that I believed if he made use of my name you would allow him to see your great work. The gentleman in question is <persName ref="#Talfourd_Thos">Mr. Talfourd</persName>--a young man of great talents whom I have generally the pleasure of seeing a good deal of during his annual visits to <placeName ref="#Reading_city">Reading</placeName> where he <pb n="3"/>was from and educated. He is a very delightful person I think and quite worthy of seeing your Picture--Did you ever hear of him? He speaks of you with a very lively interest.</p>
+         <p>Pray forgive this very long intrusion on your valuable time--you are too very kind and good that you foster my impertinence. My <persName ref="#Mitford_Geo">Father</persName> and <persName ref="#Russell_M">Mother</persName> join in kindest regards to you--They as well as I, much as we respect your relations, could hardly help wishing your good Aunt safe beyond fear again the month before last--Another time I must &amp; will be more fortunate--</p>
+        
+            <closer>Ever my dear Sir<lb/>
+               Most sincerely <choice><sic>your's</sic><reg>yours</reg></choice><lb/>
+            <persName ref="#MRM">M. R. Mitford</persName>.
+            </closer>
+            <closer>
+               <address>
+                  <addrLine><lb/>To</addrLine>
+                  <addrLine><lb/><persName ref="#Haydon">B. R. Haydon</persName> Esq<hi rend="superscript">re</hi></addrLine>
+                  <addrLine><lb/>22 <placeName ref="#Lisson_Grove">Lisson Grove</placeName></addrLine>
+                  <addrLine><lb/><placeName ref="#Regents_Park">Regent's Park</placeName></addrLine>
+                  </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!--LMW: Courtney, I don't see anything that needs a new xml:id researched in this letter. So I will have to show you how to do that in the next one!-->
+           
+           <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+      
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

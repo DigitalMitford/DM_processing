@@ -1,0 +1,739 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/resources/scripts/ace" version="1" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.345Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="mode-hjson.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.72Z" modified="2021-12-31T06:13:45.72Z" filename="mode-hjson.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-lucene.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.723Z" modified="2021-12-31T06:13:45.723Z" filename="mode-lucene.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-gcode.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.725Z" modified="2021-12-31T06:13:45.725Z" filename="mode-gcode.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-graphqlschema.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.728Z" modified="2021-12-31T06:13:45.728Z" filename="mode-graphqlschema.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-maze.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.73Z" modified="2021-12-31T06:13:45.73Z" filename="mode-maze.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-vbscript.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.733Z" modified="2021-12-31T06:13:45.733Z" filename="mode-vbscript.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-fortran.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.736Z" modified="2021-12-31T06:13:45.736Z" filename="mode-fortran.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-abap.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.738Z" modified="2021-12-31T06:13:45.738Z" filename="mode-abap.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-options.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.74Z" modified="2021-12-31T06:13:45.74Z" filename="ext-options.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-katzenmilch.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.742Z" modified="2021-12-31T06:13:45.742Z" filename="theme-katzenmilch.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-nginx.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.744Z" modified="2021-12-31T06:13:45.744Z" filename="mode-nginx.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-css.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.746Z" modified="2021-12-31T06:13:45.746Z" filename="worker-css.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-turtle.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.752Z" modified="2021-12-31T06:13:45.752Z" filename="mode-turtle.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-toml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.754Z" modified="2021-12-31T06:13:45.754Z" filename="mode-toml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-gruvbox.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.756Z" modified="2021-12-31T06:13:45.756Z" filename="theme-gruvbox.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-diff.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.758Z" modified="2021-12-31T06:13:45.758Z" filename="mode-diff.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-lua.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.759Z" modified="2021-12-31T06:13:45.759Z" filename="mode-lua.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-xquery.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.763Z" modified="2021-12-31T06:13:45.763Z" filename="worker-xquery.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-django.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.776Z" modified="2021-12-31T06:13:45.776Z" filename="mode-django.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-scheme.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.779Z" modified="2021-12-31T06:13:45.779Z" filename="mode-scheme.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-nsis.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.781Z" modified="2021-12-31T06:13:45.781Z" filename="mode-nsis.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-gob.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.782Z" modified="2021-12-31T06:13:45.782Z" filename="theme-gob.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-merbivore_soft.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.784Z" modified="2021-12-31T06:13:45.784Z" filename="theme-merbivore_soft.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-textarea.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.788Z" modified="2021-12-31T06:13:45.788Z" filename="ext-textarea.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-ambiance.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.79Z" modified="2021-12-31T06:13:45.79Z" filename="theme-ambiance.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-html_ruby.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.792Z" modified="2021-12-31T06:13:45.792Z" filename="mode-html_ruby.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-tomorrow_night_blue.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.794Z" modified="2021-12-31T06:13:45.794Z" filename="theme-tomorrow_night_blue.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-latex.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.797Z" modified="2021-12-31T06:13:45.797Z" filename="mode-latex.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-puppet.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.798Z" modified="2021-12-31T06:13:45.798Z" filename="mode-puppet.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-haskell_cabal.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.8Z" modified="2021-12-31T06:13:45.8Z" filename="mode-haskell_cabal.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-jsoniq.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.802Z" modified="2021-12-31T06:13:45.802Z" filename="mode-jsoniq.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-textmate.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.805Z" modified="2021-12-31T06:13:45.805Z" filename="theme-textmate.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-whitespace.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.807Z" modified="2021-12-31T06:13:45.807Z" filename="ext-whitespace.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-ada.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.81Z" modified="2021-12-31T06:13:45.81Z" filename="mode-ada.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-swift.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.812Z" modified="2021-12-31T06:13:45.812Z" filename="mode-swift.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-html.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.814Z" modified="2021-12-31T06:13:45.814Z" filename="mode-html.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-autohotkey.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.816Z" modified="2021-12-31T06:13:45.816Z" filename="mode-autohotkey.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-c9search.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.819Z" modified="2021-12-31T06:13:45.819Z" filename="mode-c9search.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-scala.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.821Z" modified="2021-12-31T06:13:45.821Z" filename="mode-scala.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-twig.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.825Z" modified="2021-12-31T06:13:45.825Z" filename="mode-twig.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-rst.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.828Z" modified="2021-12-31T06:13:45.828Z" filename="mode-rst.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-fsharp.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.831Z" modified="2021-12-31T06:13:45.831Z" filename="mode-fsharp.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-rdoc.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.837Z" modified="2021-12-31T06:13:45.837Z" filename="mode-rdoc.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-mixal.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.839Z" modified="2021-12-31T06:13:45.839Z" filename="mode-mixal.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-asl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.842Z" modified="2021-12-31T06:13:45.842Z" filename="mode-asl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-perl6.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.845Z" modified="2021-12-31T06:13:45.845Z" filename="mode-perl6.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-verilog.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.849Z" modified="2021-12-31T06:13:45.849Z" filename="mode-verilog.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-erlang.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.851Z" modified="2021-12-31T06:13:45.851Z" filename="mode-erlang.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-zeek.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.857Z" modified="2021-12-31T06:13:45.857Z" filename="mode-zeek.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-cobol.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.861Z" modified="2021-12-31T06:13:45.861Z" filename="mode-cobol.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-coffee.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.863Z" modified="2021-12-31T06:13:45.863Z" filename="mode-coffee.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-redshift.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.867Z" modified="2021-12-31T06:13:45.867Z" filename="mode-redshift.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-ini.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.872Z" modified="2021-12-31T06:13:45.872Z" filename="mode-ini.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-eiffel.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.874Z" modified="2021-12-31T06:13:45.874Z" filename="mode-eiffel.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-sjs.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.877Z" modified="2021-12-31T06:13:45.877Z" filename="mode-sjs.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-chaos.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.88Z" modified="2021-12-31T06:13:45.88Z" filename="theme-chaos.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-sh.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.883Z" modified="2021-12-31T06:13:45.883Z" filename="mode-sh.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-rust.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.886Z" modified="2021-12-31T06:13:45.886Z" filename="mode-rust.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-actionscript.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.889Z" modified="2021-12-31T06:13:45.889Z" filename="mode-actionscript.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-tomorrow_night_bright.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.892Z" modified="2021-12-31T06:13:45.892Z" filename="theme-tomorrow_night_bright.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-twilight.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.895Z" modified="2021-12-31T06:13:45.895Z" filename="theme-twilight.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-css.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.9Z" modified="2021-12-31T06:13:45.9Z" filename="mode-css.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-merbivore.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.903Z" modified="2021-12-31T06:13:45.903Z" filename="theme-merbivore.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-haxe.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.906Z" modified="2021-12-31T06:13:45.906Z" filename="mode-haxe.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-clojure.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.91Z" modified="2021-12-31T06:13:45.91Z" filename="mode-clojure.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-coffee.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.913Z" modified="2021-12-31T06:13:45.913Z" filename="worker-coffee.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-xml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.917Z" modified="2021-12-31T06:13:45.917Z" filename="worker-xml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-mel.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.92Z" modified="2021-12-31T06:13:45.92Z" filename="mode-mel.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-logtalk.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.922Z" modified="2021-12-31T06:13:45.922Z" filename="mode-logtalk.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-csound_orchestra.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.924Z" modified="2021-12-31T06:13:45.924Z" filename="mode-csound_orchestra.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-space.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.926Z" modified="2021-12-31T06:13:45.926Z" filename="mode-space.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-jade.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.928Z" modified="2021-12-31T06:13:45.928Z" filename="mode-jade.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-javascript.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.93Z" modified="2021-12-31T06:13:45.93Z" filename="mode-javascript.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-split.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.933Z" modified="2021-12-31T06:13:45.933Z" filename="ext-split.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-monokai.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.938Z" modified="2021-12-31T06:13:45.938Z" filename="theme-monokai.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-beautify.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.94Z" modified="2021-12-31T06:13:45.94Z" filename="ext-beautify.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-curly.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.943Z" modified="2021-12-31T06:13:45.943Z" filename="mode-curly.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="keybinding-sublime.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.946Z" modified="2021-12-31T06:13:45.946Z" filename="keybinding-sublime.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-html_elixir.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.948Z" modified="2021-12-31T06:13:45.948Z" filename="mode-html_elixir.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-c_cpp.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.951Z" modified="2021-12-31T06:13:45.951Z" filename="mode-c_cpp.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-chrome.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.953Z" modified="2021-12-31T06:13:45.953Z" filename="theme-chrome.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-cirru.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.955Z" modified="2021-12-31T06:13:45.955Z" filename="mode-cirru.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-xcode.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.958Z" modified="2021-12-31T06:13:45.958Z" filename="theme-xcode.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-lsl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.96Z" modified="2021-12-31T06:13:45.96Z" filename="mode-lsl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-clouds_midnight.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.962Z" modified="2021-12-31T06:13:45.962Z" filename="theme-clouds_midnight.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-liquid.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.963Z" modified="2021-12-31T06:13:45.963Z" filename="mode-liquid.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-settings_menu.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.966Z" modified="2021-12-31T06:13:45.966Z" filename="ext-settings_menu.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-jack.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.968Z" modified="2021-12-31T06:13:45.968Z" filename="mode-jack.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-rhtml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.971Z" modified="2021-12-31T06:13:45.971Z" filename="mode-rhtml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-eclipse.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.975Z" modified="2021-12-31T06:13:45.975Z" filename="theme-eclipse.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-sql.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.979Z" modified="2021-12-31T06:13:45.979Z" filename="mode-sql.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-kr_theme.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.981Z" modified="2021-12-31T06:13:45.981Z" filename="theme-kr_theme.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-yaml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.985Z" modified="2021-12-31T06:13:45.985Z" filename="mode-yaml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-solarized_dark.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.987Z" modified="2021-12-31T06:13:45.987Z" filename="theme-solarized_dark.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-json.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.99Z" modified="2021-12-31T06:13:45.99Z" filename="mode-json.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-gobstones.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.992Z" modified="2021-12-31T06:13:45.992Z" filename="mode-gobstones.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-less.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.994Z" modified="2021-12-31T06:13:45.994Z" filename="mode-less.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-gherkin.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.997Z" modified="2021-12-31T06:13:45.997Z" filename="mode-gherkin.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-csp.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.999Z" modified="2021-12-31T06:13:45.999Z" filename="mode-csp.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-tomorrow.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.001Z" modified="2021-12-31T06:13:46.001Z" filename="theme-tomorrow.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-typescript.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.004Z" modified="2021-12-31T06:13:46.004Z" filename="mode-typescript.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="keybinding-vim.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.008Z" modified="2021-12-31T06:13:46.008Z" filename="keybinding-vim.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-jsx.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.014Z" modified="2021-12-31T06:13:46.014Z" filename="mode-jsx.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-haml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.017Z" modified="2021-12-31T06:13:46.017Z" filename="mode-haml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-text.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.021Z" modified="2021-12-31T06:13:46.021Z" filename="mode-text.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-apache_conf.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.024Z" modified="2021-12-31T06:13:46.024Z" filename="mode-apache_conf.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-textile.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.026Z" modified="2021-12-31T06:13:46.026Z" filename="mode-textile.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-searchbox.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.029Z" modified="2021-12-31T06:13:46.029Z" filename="ext-searchbox.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-kotlin.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.031Z" modified="2021-12-31T06:13:46.031Z" filename="mode-kotlin.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-stylus.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.033Z" modified="2021-12-31T06:13:46.033Z" filename="mode-stylus.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-apex.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.036Z" modified="2021-12-31T06:13:46.036Z" filename="mode-apex.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-d.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.037Z" modified="2021-12-31T06:13:46.037Z" filename="mode-d.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-ocaml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.04Z" modified="2021-12-31T06:13:46.04Z" filename="mode-ocaml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-modelist.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.042Z" modified="2021-12-31T06:13:46.042Z" filename="ext-modelist.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-csound_score.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.043Z" modified="2021-12-31T06:13:46.043Z" filename="mode-csound_score.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-github.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.045Z" modified="2021-12-31T06:13:46.045Z" filename="theme-github.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-keybinding_menu.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.047Z" modified="2021-12-31T06:13:46.047Z" filename="ext-keybinding_menu.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-kuroir.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.049Z" modified="2021-12-31T06:13:46.049Z" filename="theme-kuroir.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-error_marker.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.05Z" modified="2021-12-31T06:13:46.05Z" filename="ext-error_marker.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-batchfile.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.052Z" modified="2021-12-31T06:13:46.052Z" filename="mode-batchfile.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-sqlserver.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.053Z" modified="2021-12-31T06:13:46.053Z" filename="theme-sqlserver.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-mono_industrial.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.055Z" modified="2021-12-31T06:13:46.055Z" filename="theme-mono_industrial.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-powershell.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.057Z" modified="2021-12-31T06:13:46.057Z" filename="mode-powershell.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-logiql.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.06Z" modified="2021-12-31T06:13:46.06Z" filename="mode-logiql.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-aql.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.064Z" modified="2021-12-31T06:13:46.064Z" filename="mode-aql.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-scad.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.066Z" modified="2021-12-31T06:13:46.066Z" filename="mode-scad.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-livescript.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:46.068Z" modified="2021-12-31T06:13:46.068Z" filename="mode-livescript.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-html.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.346Z" modified="2021-12-31T06:13:45.346Z" filename="worker-html.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-solarized_light.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.35Z" modified="2021-12-31T06:13:45.35Z" filename="theme-solarized_light.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-rtl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.352Z" modified="2021-12-31T06:13:45.352Z" filename="ext-rtl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-makefile.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.354Z" modified="2021-12-31T06:13:45.354Z" filename="mode-makefile.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-mask.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.356Z" modified="2021-12-31T06:13:45.356Z" filename="mode-mask.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-dart.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.359Z" modified="2021-12-31T06:13:45.359Z" filename="mode-dart.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-emmet.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.361Z" modified="2021-12-31T06:13:45.361Z" filename="ext-emmet.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ace.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.363Z" modified="2021-12-31T06:13:45.363Z" filename="ace.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-base.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.37Z" modified="2021-12-31T06:13:45.37Z" filename="worker-base.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-r.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.373Z" modified="2021-12-31T06:13:45.373Z" filename="mode-r.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-matlab.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.376Z" modified="2021-12-31T06:13:45.376Z" filename="mode-matlab.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-nix.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.38Z" modified="2021-12-31T06:13:45.38Z" filename="mode-nix.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-clouds.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.383Z" modified="2021-12-31T06:13:45.383Z" filename="theme-clouds.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-vala.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.385Z" modified="2021-12-31T06:13:45.385Z" filename="mode-vala.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-protobuf.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.388Z" modified="2021-12-31T06:13:45.388Z" filename="mode-protobuf.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-linking.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.391Z" modified="2021-12-31T06:13:45.391Z" filename="ext-linking.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-dreamweaver.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.397Z" modified="2021-12-31T06:13:45.397Z" filename="theme-dreamweaver.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-forth.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.401Z" modified="2021-12-31T06:13:45.401Z" filename="mode-forth.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-iplastic.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.405Z" modified="2021-12-31T06:13:45.405Z" filename="theme-iplastic.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-luapage.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.408Z" modified="2021-12-31T06:13:45.408Z" filename="mode-luapage.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-groovy.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.411Z" modified="2021-12-31T06:13:45.411Z" filename="mode-groovy.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-scss.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.414Z" modified="2021-12-31T06:13:45.414Z" filename="mode-scss.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-ruby.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.417Z" modified="2021-12-31T06:13:45.417Z" filename="mode-ruby.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-slim.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.419Z" modified="2021-12-31T06:13:45.419Z" filename="mode-slim.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-haskell.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.423Z" modified="2021-12-31T06:13:45.423Z" filename="mode-haskell.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-vibrant_ink.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.425Z" modified="2021-12-31T06:13:45.425Z" filename="theme-vibrant_ink.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-properties.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.427Z" modified="2021-12-31T06:13:45.427Z" filename="mode-properties.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-prisma.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.43Z" modified="2021-12-31T06:13:45.43Z" filename="mode-prisma.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-csharp.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.432Z" modified="2021-12-31T06:13:45.432Z" filename="mode-csharp.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-abc.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.435Z" modified="2021-12-31T06:13:45.435Z" filename="mode-abc.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-nim.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.438Z" modified="2021-12-31T06:13:45.438Z" filename="mode-nim.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-plain_text.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.44Z" modified="2021-12-31T06:13:45.44Z" filename="mode-plain_text.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-pgsql.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.442Z" modified="2021-12-31T06:13:45.442Z" filename="mode-pgsql.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-terminal.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.444Z" modified="2021-12-31T06:13:45.444Z" filename="theme-terminal.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-assembly_x86.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.446Z" modified="2021-12-31T06:13:45.446Z" filename="mode-assembly_x86.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-wollok.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.449Z" modified="2021-12-31T06:13:45.449Z" filename="mode-wollok.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-tomorrow_night.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.451Z" modified="2021-12-31T06:13:45.451Z" filename="theme-tomorrow_night.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-pastel_on_dark.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.453Z" modified="2021-12-31T06:13:45.453Z" filename="theme-pastel_on_dark.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-javascript.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.456Z" modified="2021-12-31T06:13:45.456Z" filename="worker-javascript.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-io.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.462Z" modified="2021-12-31T06:13:45.462Z" filename="mode-io.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-nunjucks.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.464Z" modified="2021-12-31T06:13:45.464Z" filename="mode-nunjucks.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-sass.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.467Z" modified="2021-12-31T06:13:45.467Z" filename="mode-sass.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-xml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.469Z" modified="2021-12-31T06:13:45.469Z" filename="mode-xml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-asciidoc.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.471Z" modified="2021-12-31T06:13:45.471Z" filename="mode-asciidoc.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-java.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.473Z" modified="2021-12-31T06:13:45.473Z" filename="mode-java.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-language_tools.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.475Z" modified="2021-12-31T06:13:45.475Z" filename="ext-language_tools.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-julia.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.48Z" modified="2021-12-31T06:13:45.48Z" filename="mode-julia.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-jsp.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.482Z" modified="2021-12-31T06:13:45.482Z" filename="mode-jsp.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-alda.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.484Z" modified="2021-12-31T06:13:45.484Z" filename="mode-alda.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-smarty.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.487Z" modified="2021-12-31T06:13:45.487Z" filename="mode-smarty.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-red.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.489Z" modified="2021-12-31T06:13:45.489Z" filename="mode-red.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-golang.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.492Z" modified="2021-12-31T06:13:45.492Z" filename="mode-golang.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-pascal.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.494Z" modified="2021-12-31T06:13:45.494Z" filename="mode-pascal.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-tomorrow_night_eighties.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.496Z" modified="2021-12-31T06:13:45.496Z" filename="theme-tomorrow_night_eighties.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-mushcode.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.498Z" modified="2021-12-31T06:13:45.498Z" filename="mode-mushcode.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-applescript.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.5Z" modified="2021-12-31T06:13:45.5Z" filename="mode-applescript.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-spellcheck.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.502Z" modified="2021-12-31T06:13:45.502Z" filename="ext-spellcheck.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-php.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.504Z" modified="2021-12-31T06:13:45.504Z" filename="mode-php.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-mysql.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.512Z" modified="2021-12-31T06:13:45.512Z" filename="mode-mysql.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-tex.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.515Z" modified="2021-12-31T06:13:45.515Z" filename="mode-tex.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-dawn.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.518Z" modified="2021-12-31T06:13:45.518Z" filename="theme-dawn.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-code_lens.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.521Z" modified="2021-12-31T06:13:45.521Z" filename="ext-code_lens.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-mediawiki.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.524Z" modified="2021-12-31T06:13:45.524Z" filename="mode-mediawiki.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-crimson_editor.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.529Z" modified="2021-12-31T06:13:45.529Z" filename="theme-crimson_editor.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-terraform.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.532Z" modified="2021-12-31T06:13:45.532Z" filename="mode-terraform.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-prolog.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.535Z" modified="2021-12-31T06:13:45.535Z" filename="mode-prolog.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-vhdl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.537Z" modified="2021-12-31T06:13:45.537Z" filename="mode-vhdl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-qml.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.54Z" modified="2021-12-31T06:13:45.54Z" filename="mode-qml.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-lisp.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.543Z" modified="2021-12-31T06:13:45.543Z" filename="mode-lisp.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="keybinding-emacs.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.546Z" modified="2021-12-31T06:13:45.546Z" filename="keybinding-emacs.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-php_laravel_blade.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.55Z" modified="2021-12-31T06:13:45.55Z" filename="mode-php_laravel_blade.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-xquery.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.558Z" modified="2021-12-31T06:13:45.558Z" filename="mode-xquery.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-php.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.563Z" modified="2021-12-31T06:13:45.563Z" filename="worker-php.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-perl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.567Z" modified="2021-12-31T06:13:45.567Z" filename="mode-perl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-glsl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.57Z" modified="2021-12-31T06:13:45.57Z" filename="mode-glsl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-tsx.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.573Z" modified="2021-12-31T06:13:45.573Z" filename="mode-tsx.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-prompt.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.577Z" modified="2021-12-31T06:13:45.577Z" filename="ext-prompt.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-csound_document.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.58Z" modified="2021-12-31T06:13:45.58Z" filename="mode-csound_document.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-razor.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.584Z" modified="2021-12-31T06:13:45.584Z" filename="mode-razor.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-dockerfile.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.588Z" modified="2021-12-31T06:13:45.588Z" filename="mode-dockerfile.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-markdown.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.59Z" modified="2021-12-31T06:13:45.59Z" filename="mode-markdown.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-themelist.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.594Z" modified="2021-12-31T06:13:45.594Z" filename="ext-themelist.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-sparql.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.599Z" modified="2021-12-31T06:13:45.599Z" filename="mode-sparql.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-static_highlight.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.601Z" modified="2021-12-31T06:13:45.601Z" filename="ext-static_highlight.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-dot.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.604Z" modified="2021-12-31T06:13:45.604Z" filename="mode-dot.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-snippets.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.606Z" modified="2021-12-31T06:13:45.606Z" filename="mode-snippets.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-idle_fingers.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.609Z" modified="2021-12-31T06:13:45.609Z" filename="theme-idle_fingers.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-edifact.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.612Z" modified="2021-12-31T06:13:45.612Z" filename="mode-edifact.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-pig.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.614Z" modified="2021-12-31T06:13:45.614Z" filename="mode-pig.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-cobalt.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.617Z" modified="2021-12-31T06:13:45.617Z" filename="theme-cobalt.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-tcl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.622Z" modified="2021-12-31T06:13:45.622Z" filename="mode-tcl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-soy_template.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.624Z" modified="2021-12-31T06:13:45.624Z" filename="mode-soy_template.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-elixir.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.627Z" modified="2021-12-31T06:13:45.627Z" filename="mode-elixir.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-python.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.63Z" modified="2021-12-31T06:13:45.63Z" filename="mode-python.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-json.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.632Z" modified="2021-12-31T06:13:45.632Z" filename="worker-json.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-elastic_tabstops_lite.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.636Z" modified="2021-12-31T06:13:45.636Z" filename="ext-elastic_tabstops_lite.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-objectivec.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.64Z" modified="2021-12-31T06:13:45.64Z" filename="mode-objectivec.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="worker-lua.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.644Z" modified="2021-12-31T06:13:45.644Z" filename="worker-lua.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="keybinding-vscode.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.646Z" modified="2021-12-31T06:13:45.646Z" filename="keybinding-vscode.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="ext-statusbar.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.648Z" modified="2021-12-31T06:13:45.648Z" filename="ext-statusbar.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-velocity.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.65Z" modified="2021-12-31T06:13:45.65Z" filename="mode-velocity.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-praat.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.653Z" modified="2021-12-31T06:13:45.653Z" filename="mode-praat.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-ftl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.655Z" modified="2021-12-31T06:13:45.655Z" filename="mode-ftl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-svg.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.664Z" modified="2021-12-31T06:13:45.664Z" filename="mode-svg.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-crystal.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.668Z" modified="2021-12-31T06:13:45.668Z" filename="mode-crystal.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-json5.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.672Z" modified="2021-12-31T06:13:45.672Z" filename="mode-json5.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-gitignore.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.674Z" modified="2021-12-31T06:13:45.674Z" filename="mode-gitignore.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-elm.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.679Z" modified="2021-12-31T06:13:45.679Z" filename="mode-elm.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-ejs.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.682Z" modified="2021-12-31T06:13:45.682Z" filename="mode-ejs.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-fsl.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.685Z" modified="2021-12-31T06:13:45.685Z" filename="mode-fsl.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-coldfusion.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.688Z" modified="2021-12-31T06:13:45.688Z" filename="mode-coldfusion.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-drools.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.693Z" modified="2021-12-31T06:13:45.693Z" filename="mode-drools.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-visualforce.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.7Z" modified="2021-12-31T06:13:45.7Z" filename="mode-visualforce.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-dracula.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.705Z" modified="2021-12-31T06:13:45.705Z" filename="theme-dracula.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-jssm.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.707Z" modified="2021-12-31T06:13:45.707Z" filename="mode-jssm.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-handlebars.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.712Z" modified="2021-12-31T06:13:45.712Z" filename="mode-handlebars.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="mode-sqlserver.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.715Z" modified="2021-12-31T06:13:45.715Z" filename="mode-sqlserver.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="theme-nord_dark.js" skip="no" owner="eXide" group="eXide" mode="775" created="2021-12-31T06:13:45.717Z" modified="2021-12-31T06:13:45.717Z" filename="theme-nord_dark.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="snippets" filename="snippets"/>
+</collection>

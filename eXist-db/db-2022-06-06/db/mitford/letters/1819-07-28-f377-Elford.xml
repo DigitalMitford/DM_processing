@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>--><TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM1742">Letter to <persName ref="#Elford_SirWm">Sir William
+               Elford</persName>, <date when="1819-07-28">July 28, 1819</date></title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#ds">Daniel Schierenbeck</editor>
+            <editor ref="#lmw">Lisa M. Wilson</editor>
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#ds">Daniel Schierenbeck</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+               <persName>Allison McConlogue</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName><!--2017-12-31 repaired munged date listing. NOTED: This letter is NOT COMPLETE. -->
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- updates to header only. LMW 2015-10-08 -->
+               <!-- list all proofreaders here. -->
+               <!--LMW and AVM:  transcription now complete, coding IP, working on SI entries. 2018-04-30-->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2015-04-26">26 April
+                  2015</date>. P5.</edition>
+            <respStmt>
+               <resp>Edition made with help from photos taken by</resp>
+               <orgName>Digital Mitford editors</orgName>
+            </respStmt>
+            <respStmt>
+               <orgName>Digital Mitford</orgName>
+               <resp> photo files: <idno>DSCF9476.jpg, DSCF9477.jpg, DSCF9478.jpg, DSCF9479.jpg,
+                     DSCF9480.jpg, DSCF9481.jpg, DSCF9482.jpg. DSCF9483.jpg. DSCF9484.jpg.
+                     DSCF9485.jpg</idno></resp>
+            </respStmt>
+            <!-- Change to reflect photo file names for your letter (as you see here, including .jpg extension).  -->
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central
+                     Library</orgName>.</p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 377</idno>
+                  </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1819-07-28">July 28, 1819</date>.</head>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                       <support>
+                           <p>One sheet of folio <material>paper</material>, four surfaces
+                              photographed.</p>
+                          
+                           <p>Address leaf bearing black postmark, partially illegible, reading
+                                    <stamp><lb/><placeName>READING</placeName><lb/></stamp>.</p>
+                           <p>A large 3 denoting the posting fee has been written in black ink by
+                              the postal service across the address
+                           leaf.</p>&gt;
+                        </support>
+                        <condition>
+                           <p>Sheet (pages three and four) torn on right edge of page three where
+                              wax seal was removed.</p>
+                        </condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, adhered to page four.</p>
+                  </sealDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <handNotes>
+            <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a
+               different hand from Mitford's that marks many of her letters, sometimes drawing
+               diagonal lines across pages, and sometimes writing words overtop and perpendicularly
+               across Mitford's writing.
+               A
+               red line is drawn from top left to bottom right of each of the first three leaves. On
+               leaf four, a red line is drawn from top left to bottom right across each of the two
+               text blocks. There is no red crayon across the address text block.</handNote>
+            <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford,
+               perhaps cataloging letters and describing them, who left grey pencil marks and
+               numbered her letters now in the Reading Central Library's collection.
+               <!-- Don't change the preceding sentence if this letter has grey pencil. In the following sentence, describe penciled numbers or change/add whatever text you see written in pencil. -->This
+               letter is numbered "13" in the top left of the first leaf. </handNote>
+         </handNotes>
+      </profileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Mitford’s spelling and punctuation are retained, except where a word is split at the
+               end of a line and the beginning of the next in the manuscript. Where Mitford’s
+               spelling and hyphenation of words deviates from the standard, in order to facilitate
+               searching we are using the TEI elements “choice," “sic," and “reg" to encode both
+               Mitford’s spelling and the regular international standard of Oxford English spelling,
+               following the first listed spelling in the Oxford English Dictionary. The long s and
+               ligatured forms are not encoded.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="P1020242.JPG"/>
+            <opener>
+               <add hand="pencil_Rylands">To Sir W. Eld. Begin with these lines</add>
+               <add hand="#pencil">13</add>
+               <dateline>
+        
+                  <date when="1819-07-28">July 28, 1819</date>.
+               </dateline>
+            </opener>
+            <p><lb/>Why <choice><sic>Wizzard</sic><reg>Wizard</reg></choice> thus disturb my dormant life
+               <lb/>And raise me through the water's misty strife
+               <lb/>Oh cease! Your high behests with speed disclose
+               <lb/>With speed dismiss me to my dread repose</p><!--LMW: Can we identify whether Elford published these lines? AVM: So far no evidence. 2018-05-22-->
+            <p>It is not from laziness believe me, my dear Friend, that I have sent your four lines unaltered. I have been altering them all the morning--turning &amp; twisting them twenty different ways--&amp; on an impartial survey of the several readings am convinced that your version is much the best. Mine all look <emph rend="underline">patched</emph>. Indeed I write verses so seldom now that I have lost the little power I once possessed. The reason of my not sending you any of my attempts is, that I fear your modesty or your politeness might tempt you to prefer my bad lines to your good ones &amp; I would not put such a risk in your way. Surely the last line is very <del rend="squiggles" n="1" unit="word"><unclear/></del> good--the repetition strengthens it. In addition to the greater clearness of these last verses which we both prefer, they remind me much less of those in <title ref="#Manfred_play">Manfred</title> for which you know I took the first you sent me, &amp; as your Picture though strikingly coinciding in subject with this fine conception of <persName ref="#Byron">Lord Byron</persName>'s is not taken from it--has I suppose neither the cascade-rainbow nor the Alpine scenery of his Drama you would of course not wish your nymph to be confounded with the <title>"Witch of the Alps."</title></p><metamark rend="jerks"/><p>Now that our something like business is dispatched, let me thank you a thousand times for your charming letter &amp; all its kindness. You have before now received my doleful epistle, &amp; know that we cannot come to <placeName ref="#Bickham_village">Bickham</placeName>. I wish I was setting out for it this very moment. I did not want that dear letter to remind me of all that I love. And yet it has very much <choice><sic>encreased</sic><reg>increased</reg></choice> my regret. I shall do nothing for a whole week but pity myself &amp; hate <persName ref="#Elliott_Mr">Mr. Elliot</persName>. What pleasure I should have had in seeing with you such scenery as you describe--in meeting <persName ref="#Welsford_Miss">Miss Welsford</persName> who is so good to me &amp; whom I look upon as a ready made friend--in making acquaintance with your daughters who are I hope equally well disposed towards me--&amp; even in hearing <orgName ref="#Balcombe_family">the Balcombe family</orgName> talk of my <pb n="2" facs="P1020244.JPG"/>hero. (Do send me word what they say of him.)--I must not think of what I lose or I shall become quite fretful &amp; repining. I must talk of something else. You are certainly a critic of the very first water my dear <persName ref="#Elford_SirWm">Sir William</persName> deny it as you may--&amp; neither <persName ref="#Hofland_B">Mrs. Hofland</persName> nor I flatter you in the least. As to <persName ref="#Hofland_B">Mrs. Hof:</persName> I don't think she can flatter--she does not know how &amp; says things sometimes in the way of truth-telling that startle a whole company like the sudden going off of a gun--and as to me--I may sometimes in my enthusiasm <emph rend="underline">think a leetel <!--a quotation? See The Discovery by Frances Sheridan (a play))--></emph> more than exists, but I never said a word more than I believed even of you on <persName ref="#Napoleon">Buonaparte</persName>. (how do you like the conjunctions?) Now that I have cleared my ground I may be believed when I tell you how much I admire all that you have said of these <title>Tales of my Landlord</title>.<note resp="#lmw">Mitford refers to Walter Scott's <title ref="#Bride_of_Lammermoor_WS">The Bride of Lammermoor</title>.</note> The shifts &amp; contrivances of the servant<!--LMW: Caleb Balderstone--> (always excepting the admirable detail of the cooper's menage which they are the means of introducing--the only piece of real life in the story) are not only false &amp; poor &amp; worthless--a bad imitation of some farce that I have seen--abortive humour which is worse than anything--they are not only detestable in themselves, but by bringing back the imagination <metamark rend="caret" place="below"/><add place="above">with a jerk</add>to all that is low &amp; pitiful completely destroy the illusion which the Author intended to produce by the romantic &amp; supernatural tone of the story. He certainly as you so well observe does believe himself in all manner of second-sight &amp; Faëry--&amp; if he had had Fairfax's <!--Edward Fairfax, translator of Tasso, mentioned in Walter Scott's Letters on Demonology and WItchcraft--> good luck &amp; lived in days when such a belief would not have been laughed at, &amp; pilloried in reviews &amp; <del rend="squiggles" n="1" unit="word"><unclear/></del>pelted in newspapers he would have been as great or greater than Fairfax in his own way.
+               Prevailing poet whose undoubting mind<lb/>
+               Believed the magic wonder that he sung<lb/> <!--Check the quotation. William Collins, "Ode on the Popular Superstitutions of the Highlands of Scotland"-->--but being by his evil stars condemned to make his fortune in a sneering &amp; a skeptical age, he is obliged to cover his strong under current &amp; of credibility with little fluctuating waves of mock-unbelief, &amp; affected levity which entirely counteract one effect, without actually producing the other. I wonder he does not feel &amp; know how <del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">entirely</supplied></del><add place="above">completely</add> the artificial state of<pb n="3" facs="P1020245.JPG"/> of mind excited by a powerful representation of supernatural <del rend="squiggles" unit="chars" n="2"/> subjects must be destroyed by anything light or ludicrous--anything which breathes or suspends even for a moment the gloomy &amp; passionate feeling. Everything in ghost stories depends on continuity--one cannot lay down the book to snuff the candle without letting some part of the awe escape--The hair which has been standing to charmingly an end with fright fallsdown flump--&amp; won't get up again.--The nymph of the fountain is very pretty &amp; I think original. If you like such water sprite stories you should read <title ref="#Undine">Undine</title> (Do you remember how you attracted my handwriting about that word?)<!--make note to previous letter.--> There is in that the prettiest mixture of childishness &amp; witchery that can be imagined with a deep &amp; intense moral feeling--and very short--only one small volume.</p><metamark rend="jerks"/><p> I am very stupid tonight--worse than usual--&amp; I can guess why. I have been reading a fine thick metaphysical book--<persName ref="#Brown_Thos">Professor Brown</persName> on <title ref="#Inquiry_CauseEffect">Cause &amp; Effect</title>--&amp; to use the learned professor's own phraseology I suppose that the general <q>"consequent"</q> of such an <q>"antecedent"</q> as reading his book is stupidity. I must tell you how <del rend="cut"/><supplied>I</supplied><!--page torn, perhaps "I"--> was betrayed into such a headachy lecture this warm weather. <!--unclear, small writing above; can't figure it out--><!--I think it's an early editor supplying what's missing:  James lent?  Miss James was her friend.--> Miss James [page torn, perhaps "gave"]--&gt; me the book--&amp; she knows and likes the author &amp; wanted to say something nice to him about his work--but being too wise to read it herself sent it to me to read for her. Is not she a pretty fellow?</p><metamark rend="jerks"/><p>Did I tell you in my last for really I don't remember Deuce take Professor Brown's great book!) that I have got a new pet? All this warm weather I sit out of doors in the Plantations--just on one side of my seat is a filberd tree the branches of which spread quite across my feet &amp; on these branches every day comes a young red breast--first of all he appeared at a distance--then he came nearer then he fed close to me &amp; now the moment I call <q>Bobby</q><!--she probably names him Bobby as short for Robin, as in Robin Redbreast, traditional name.--> he comes. <persName ref="#Mossy_pet">Mossy</persName> himself is not more tame or more fond--he comes on my feet &amp; my gown--feeds almost on my hand (not quite) &amp; has by example tamed his Papa &amp; one or two of his brothers &amp; sisters who come like him &amp; feed from a board on the tree quite close to me but do not like my own Bobby come when they are called. Is this unusual in the summer? I know they are tame in the winter--but this is quite a young bird has never known cold or hunger, he had not a red feather in his breast a fortnight ago. He likes very much to be talked to in a soft monotonous &amp; caressing tone<pb n="4" facs="P1020246.JPG"/> Bobby! Bobby! Bobby! &amp; turns his head in the prettiest attitudes of listening that you can imagine &amp; generally finishes by taking two or three flights across me so close as almost to touch my face. I shall be so long to leave him--I think that I shall try to get it put in the deeds that <persName ref="Eliott_Mr">Mr. Elliot</persName> must feed Bobby.</p><metamark rend="jerks"/><p>. How very good you were to transcribe for me Mr. Cranstown's account of young Napoleon.--though perhaps one had rather that he were more like a boy--one does not imagine his father to have been so sedate a person at his age. But Princes poor things never can be children--their luckless station will not let them--&amp; that I suppose is one reason why so few of them turn out great men. Did you ever hear that a damsel of his own rank &amp; age--a little Princess of the Netherlands is desperately in love with their own <persName ref="#Napoleon">Buonaparte</persName>. She vows she will never marry anyone else--she will have him--she is as violently in love with him as most <del rend="squiggles" n="4" unit="word"><supplied>damsels of her age</supplied></del> heroines of her years are with a doll or a dumpling. I understand the young lady is a very promising subject--a charming haughty refractory child--full of self will &amp; attraction.--Adieu. <persName ref="#Mitford_Geo">Papa</persName> continues quite well &amp; joins with <persName ref="#Russell_M">Mama</persName> in kindest remembrances--
+                  <lb/>Ever most affectionately your's
+                  <lb/>M.R.M.</p>
+            <!--needs to be tagged as a postscript--><p>I do not wait for a frank lest I should detain the picture--Pray write soon.--I am so glad to hear <persName ref="#Welsford_Miss">Miss Welsford</persName> is better.-Does my fair Sister Poetess ever write now.--once more Adieu my dear Friend.
+           </p> 
+           <closer>
+               <address>
+                  <!-- In this section, change to include any text written on the address leaf; use a separate "addrLine" for each line. -->
+                  <addrLine>To <persName ref="#Elford_SirWm">Sir William Elford Bar<hi rend="superscript">t</hi></persName></addrLine>
+                  <addrLine><placeName ref="#Bickham_village">Bickham</placeName></addrLine>
+                  <addrLine><placeName ref="#Plymouth_city">Plymouth</placeName></addrLine>
+               </address>
+            </closer>
+         </div>
+      </body>
+
+      <back>
+         
+         <!--NEW XML:ID's to be RESEARCHED:
+            Elford poem. did he ever publish it?  Google search lines.
+            Manfred by Byron
+            Miss Welsford, "sister poetess"
+            the Balcombe family
+            "think a leetle" qu. Fr Sheridan?
+            Tales of my Landlord by W. Scott,.which series/volume ddoes she mean?
+            Edward Fairfax
+            Collins quotation
+            Professor Brown and his work, Cause and Effect
+            filbert tree
+            robin redbreast
+            Bobby ( a ka Robin)
+            Cranstoun or Cranstown on Napoleon (ck. SI)
+            little Princess from the Netherlands.-->
+            
+         <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. -->
+
+         <listPerson type="hist">
+          
+                  <listPerson>
+                     <person xml:id="proposed_new_ID" sex="f"><!--Project sex codes are "m", "f", "o" for other, and "u" for unknown.-->
+                        <persName>
+                           <surname><!--last name--></surname>
+                           <forename><!--first name --></forename>
+                           <forename><!--middle name --></forename>
+                           <forename><!--if necessary, more middle names--></forename>
+                        </persName>
+                        <persName><!--alternate persName, such as a nickname?--></persName>
+                        <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+                        <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+                        <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+                        <!--Other tags can go here: See Codebook for more details.-->
+                        <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+                     </person>
+                     <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+                        <persName>...</persName>
+                        <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+                     </person>
+                  </listPerson>
+                  
+                  <listPlace>
+                     <place xml:id="proposed_new_ID3">
+                        <placeName><!--best-known name of the place--></placeName>
+                        <placeName><!--alternate place name--></placeName>
+                        <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+                     </place>
+                  </listPlace>
+                  <listBibl>
+                     <bibl xml:id="proposed_new_ID4">
+                        <title><!--Title--></title>
+                        <author><!--Author--></author>
+                        <editor><!--if indicated--></editor>
+                        <pubPlace><!--where published--></pubPlace>
+                        <publisher><!--publisher--></publisher>
+                        <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+                     </bibl>
+                  </listBibl>
+                  <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+            <person xml:id="Nicholls_John">
+               <persName><forename>John</forename><surname>Nicholls</surname></persName>
+               <note resp="#lmw">Author</note>
+            </person>
+         </listPerson>
+
+         <listPerson type="fict">
+            <!-- Use for fictional characters. -->
+            <person xml:id="Catherine_Ab">
+               <persName><forename>Catherine</forename></persName>
+               <note resp="#lmw">Character in <persName ref="#Scott_Wal">Walter Scott</persName>'s
+                  novel <title ref="#Abbot_WS">The Abbott.</title></note>
+            </person>
+         </listPerson>
+
+         <listPlace>
+            <!-- Use for lists of new PLACES. -->
+            <place xml:id="Chippenham">
+               <placeName>Chippenham</placeName>
+            </place>
+            <place xml:id="Bickham_village">
+               <placeName>Bickham</placeName>
+            </place>
+         </listPlace>
+
+      </back>
+   </text>
+</TEI>

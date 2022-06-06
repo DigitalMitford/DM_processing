@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+  	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM0847">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, November 5, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#scw">Samantha Webb</editor>
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing</sponsor>
+               
+            <principal>Elisa Beshero-Bondar</principal>
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#SMG">Shekneko Garrett</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-12-31">December 31, 2017</date>
+               Proofing and corrections by</resp>
+               <persName ref="#scw">Samantha Webb</persName>
+               <persName ref="#lmw">Lisa M. Wilson</persName><!--Filling out header, correcting coding LMW 2017-12-31-->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-02-01">February 1, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF8984.jpg, DSCF8983.jpg, DSCF8982.jpg, DSCF8978.jpg, DSCF8977.jpg, DSCF8976.jpg, DSCF8974.jpg, DSCF8973.jpg, DSCF8972.jpg, DSCF8971.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc><msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>No volume listed</collection> <!-- SCW: checked against spreadsheet 3/9/17-->
+                  <idno>No shelfmark information</idno><!--SCW: checked against spreadsheet 3/9/17-->
+               </msIdentifier>
+               <head>Letter from <persName ref="#MRM">Mary Russell Mitford</persName> to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, <date when="1819-11-05">1819 November 5</date>. <note resp="#lmw">We arrived at this date by checking a perpetual calendar: November 5, 1819 was a Friday. Mitford's journal indicates she received a copy of Talfourd's petition on November 5 and wrote to Mary Webb on November 7 and Needham's note also gives November 5 date, referencing the journal.</note>
+                
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support> <p>
+                        <material>Paper</material>, one sheet, two surfaces photographed. and the number of page surfaces photographed. Folded in half and then again in thirds for sealing.</p>
+                        <p>No postmarks</p> 
+                        </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on right edge of page three where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, impressed with "Mary", adhered to page four. </p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is labeled "[5 Nov. 1819]" in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl><p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="DSCF8972.JPG"/>
+            <opener> 
+               <add hand="#pencil">[5 Nov. 1819]</add> 
+               <dateline> 
+                  <date when="1819-11-05">Friday Evening</date>.
+               </dateline>
+               <salute>My dearest Mary</salute>
+            </opener>
+            <p>Be so good as to give the accompanying book (God help me I was going to say the <emph rend="underline">enclosed</emph>) to <persName ref="#Wheeler_James">Mr. James Wheeler</persName> with a thousand thanks &amp; <choice><sic>Compts.</sic><reg>Complimenta</reg></choice><!--SCW: tag "compts" as an abbreviation--> from <persName ref="#Green_Mr">Mr. Green</persName> and myself. I had intended sending with it <persName ref="#Abernethy_John">Mr. Abernethys's</persName> doleful whining reply as contained in the <title ref="#Pamphleteer">Pamphleteer</title>, but find on applying to <persName ref="#Mitford_Geo">Papa</persName> (a great fool I was for so applying) that he has promised <persName ref="#Anstruther_Col">Col. Anstruther</persName> not to let it out of his hand--&amp; the good Colonel being<pb n="2" facs="DSCF8976.JPG"/> as tenacious about books as those who never read them commonly are there are no hopes from that quarter. If however you should have mentioned it to <persName ref="#Wheeler_James">Mr. James Wheeler</persName> &amp; he should like to see this  melancholy attempt I will certainly get it for him from <persName ref="#Valpy_Richard">Dr. Valpy</persName> who has the book &amp; will lend it without difficulty--Let me know when you write next--unless the Watlington Ball &amp; the claims of <persName ref="#Hayward_John">John Hayward</persName><!--LMW: lives in Watlington, brother WIlliam? ck. ancestry. relation of William Hayward who married Jane Webb? Father? John H., esq. Brewer of Watlington, died 1815.--> shall have put all other subjects out of your head. Say every thing that is most affectionate to dear <persName ref="#Webb_Jane">Jane</persName> how <pb n="3" facs="DSCF8977.JPG"/> much I should have liked to h<gap reason="torn" unit="chars" n="3"/><supplied resp="#scw">ave</supplied> gone with you! I certainly would if <persName ref="#Russell_M">Mama</persName> has been quite well. This dear <persName ref="#Russell_M">Mama</persName> is rather better today. She sends kindest love &amp; wants very much to see you &amp; <persName ref="#Jeremy_Miss">Miss Jeremy</persName> of whom we have talked a great deal. Pray come soon--I will bribe you by a promise to show you a <choice><sic>M.S.</sic><reg>manuscript</reg></choice> Petition and Address of <persName ref="#Talfourd_Thos">Mr. Talfourd</persName>'s (sent me this morning by <persName>King Joe</persName>) which is worth its weight in gold for beautiful writing and fine moral feeling--they did <gap reason="torn" unit="word" n="2"/><supplied resp="#lmw">not send</supplied> it you know--perhaps they were rig<gap reason="torn" unit="chars" n="2"/><supplied resp="#lmw">ht</supplied>not to send such a Petition to the Regen<gap reason="torn" unit="chars" n="5"/><supplied resp="#lmw">t-- It</supplied> would have been casting pearls before <pb n="4" facs="DSCF8984.JPG"/> <gap reason="torn" unit="word" n="1"/><supplied resp="#scw">swine</supplied>--a great deal too loyal to say <gap reason="torn" unit="word" n="1"/><unclear/>.--We shall hope to hear good <gap reason="torn" unit="chars" n="4"/><supplied resp="#scw">tidi</supplied>ngs of the dear <persName ref="#Webb_James">Papa</persName> tomorrow--Love <gap reason="torn" unit="word" n="1"/><supplied resp="#lmw">to</supplied>all--</p>
+            <closer>Ever my dear Friend most faithfully &amp; affectionately <choice><sic>your's</sic><reg>yours</reg></choice> <persName ref="#MRM">M.R.M.</persName></closer><pb n="4"/>
+            
+             <closer>
+               <address>
+            <addrLine><lb/>To</addrLine>
+                  <addrLine><lb/><persName ref="#Webb_Mary_younger">Miss Webb.</persName></addrLine>
+                  <addrLine><lb/><metamark rend="squiggles"/></addrLine>
+            </address>
+            </closer> 
+            
+            <pb n="5" facs="DSCF8973.JPG"/><!--LMW to EBB: What did we decide to do with pb's when the postscript goes back on to page ONE?-->
+            <postscript><p><persName ref="#Mitford_Geo">Papa</persName>  says you have a very pretty idea of whist &amp; were the next best player to himself the other night. Mercy for young modest <persName ref="#Webb_Mary_younger">Miss Mary</persName>!
+            </p></postscript>
+            
+            
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+           
+           <!-- new SI id's:
+           James Wheeler
+           Mr. Green
+           Mr. Abernethy (John?)
+           Miss Jeremy
+           John Hayward
+           Col. Anstruther
+           The Pamphleteer (AJValpy per.)
+           -->
+       <listPerson>
+          <person xml:id="proposed_new_ID">
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

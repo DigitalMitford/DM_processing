@@ -1,0 +1,34 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/bower_components/vaadin-progress-bar" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:43.846Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.847Z" modified="2021-12-31T06:13:43.847Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="screenshot.gif" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.849Z" modified="2021-12-31T06:13:43.849Z" filename="screenshot.gif" mimetype="image/gif">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LICENSE" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.853Z" modified="2021-12-31T06:13:43.853Z" filename="LICENSE" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="bower.json" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.856Z" modified="2021-12-31T06:13:43.856Z" filename="bower.json" mimetype="application/json">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="package.json" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.86Z" modified="2021-12-31T06:13:43.86Z" filename="package.json" mimetype="application/json">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="analysis.json" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.862Z" modified="2021-12-31T06:13:43.862Z" filename="analysis.json" mimetype="application/json">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="vaadin-directory-description.md" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.866Z" modified="2021-12-31T06:13:43.866Z" filename="vaadin-directory-description.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="index.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.875Z" modified="2021-12-31T06:13:43.875Z" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="vaadin-progress-bar.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:43.878Z" modified="2021-12-31T06:13:43.878Z" filename="vaadin-progress-bar.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="demo" filename="demo"/>
+    <subcollection name="src" filename="src"/>
+    <subcollection name="test" filename="test"/>
+    <subcollection name="theme" filename="theme"/>
+</collection>

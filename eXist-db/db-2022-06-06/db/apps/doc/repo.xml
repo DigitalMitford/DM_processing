@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo" xmlns:repo="http://exist-db.org/xquery/repo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <description/>
+   <author id="exist-db">eXist-db</author>
+   <website>https://www.github.com/exist-db/documentation</website>
+   <status>stable</status>
+   <license>GNU Lesser General Public License, version 2.1</license>
+   <copyright>true</copyright>
+   <type>application</type>
+   <target>doc</target>
+   <prepare>pre-install.xql</prepare>
+   <changelog>
+      <change version="5.2.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>updated validating against eXist-db XQuery engine</li>
+            <li>documentation: refer from kwic expand matches to lucene expand fields</li>
+            <li>Add documentation for --use-ssl flag (CLI backup)</li>
+            <li>Update xquery.xml</li>
+            <li>Update new range index doc to point to recent Lucene documentation</li>
+            <li>Add pointer to range:matches in documentation of new range index</li>
+            <li>fn:trace#1 is now supported</li>        
+            <li>Add offline mode for Xars, URL Rewrite should now use controller.xq and not controller.xql</li>
+            <li>Tests and integration tests should be executable from both local machines and CI using just 'mvn verify</li>
+            <li>Review documentation on HTML templating; align with new templating package and mark deprecated/removed functions</li>
+            <li>Add some information about bounding the Cache module</li>
+            <li>Some documentation for Connection Pooling in the SQL Module</li>
+            <li>listings in separate files</li>
+            <li>listings not in CDATA</li>        
+         </ul>
+      </change>
+      <change version="5.2.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>advanced-installation: minor improvements to the systemd steps</li>
+            <li>backup: address inconsistencies with configuration</li>
+            <li>docker: new article</li>
+            <li>log4j: rewritten</li>
+            <li>lucene: add diacritics analyzer, range query, distinct analyzers for indexing and querying</li>
+            <li>prod_web_prox: add warning about poor default configs</li>
+            <li>transform: improve xsl documentation</li>
+            <li>upgrading: add instructions for installations from source</li>
+            <li>url-rewrite: add errorhandler documentation</li>
+            <li>webdav: rewritten</li>
+            <li>web_proxying: add warning about body size limitations</li>
+            <li>xqsuite: add missing annotation documentation</li>
+            <li>xquery: indicate support of xml-to-json function, highlight func docs</li>
+            <li>listings are now linted when building the app</li>
+            <li>validate all articles to enforce author-ref via custom schema (experimental)</li>
+            <li>increase docbook to 5.1</li>
+         </ul>
+      </change>
+      <change version="5.1.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>lucene: add multi-value hierarchical facets</li>
+            <li>configuration: experimental document path-locks</li>
+         </ul>
+      </change>
+      <change version="5.0.3">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>remove newly implemented Xquery functions from list of unsupported functions</li>
+         </ul>
+      </change>
+      <change version="5.0.2">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>improve advanced installations and backup restore instructions</li>
+            <li>document the @min attribute for lucene queries</li>
+            <li>improve permission settings documentation</li>
+         </ul>
+      </change>
+      <change version="5.0.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>changes to backup and app restore process</li>
+            <li>add unit and integration tests</li>
+            <li>update interapp links, http links, section IDs</li>
+            <li>document new xquery functions, and adjust deprecated syntax cases</li>
+            <li>add lucene facets documentation</li>
+            <li>switched to mavenized build, and install instructions</li>
+         </ul>
+      </change>
+   </changelog>
+<deployed>2021-12-31T06:13:51.03Z</deployed></meta>
