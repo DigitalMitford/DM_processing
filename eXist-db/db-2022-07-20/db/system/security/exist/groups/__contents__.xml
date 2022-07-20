@@ -1,0 +1,13 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/security/exist/groups" version="1" owner="SYSTEM" group="dba" mode="770" created="2021-12-31T06:12:36.488Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="packageservice.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2021-12-31T06:13:37.665Z" modified="2021-12-31T06:13:37.69Z" filename="packageservice.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="eXide.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2021-12-31T06:13:44.906Z" modified="2021-12-31T06:13:44.912Z" filename="eXide.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="monex.xml" skip="no" owner="SYSTEM" group="dba" mode="770" created="2021-12-31T06:13:51.656Z" modified="2021-12-31T06:13:51.662Z" filename="monex.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="removed" filename="removed"/>
+</collection>

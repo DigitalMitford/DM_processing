@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+--><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- Above are the lines that define this document as XML, and that establish the schema rules that define it as TEI and part of the Digital Mitford project. The last is the TEI "root" element which must wrap the entire document. All TEI documents must contain two parts:
+      1) a <teiHeader> that contains a required sequence of elements that describe the origin, content, and editorial work on a document, and
+      2) a <text> element that holds the body of the document itself. 
+   -->  
+   
+  <teiHeader>
+      <fileDesc>
+         <titleStmt> <!-- The next 6 lines are the title statement.-->
+            <title xml:id="MRM2030">Letter to <persName ref="#Webb_Mary_younger">Mary Elizabeth Webb</persName>, <date when="1820-02-11">February 11, 1820</date></title> <!--Look up the xml:id in the MitfordMS Excel spreadsheet, and look for other identifying info on the repository, etc, there. Insert full name of letter addressee. 
+               For the persName, use the assigned xml:id from the Site Index at http://digitalmitford.org/si.xml 
+               List the date the way we'd like it to appear in a web rendering of the document: as in March 26, 1820. The date should be our best sense of the date on which Mitford began this letter, and is usually listed at the top of the letter. We'll tag the date formally in <msDesc> below, since often dates are tricky or only partially written out by Mitford. The date in the titleStmt is the date *we've* determined, for listing and posting when we publish this file. --><!--SCW: I checked the xml:id for this letter on the spreadsheet 3/19/17-->
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#scw">Samantha Webb</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor><!--We've added this in 2015, as they are now hosting our web server. As other sponsors who help us come on board, for example if we receive grant funding, we'll add sponsor lines here.-->
+            <principal>Elisa Beshero-Bondar</principal> <!-- the lines above are standard. don't change -->
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#avg">Annie Gill</persName> <!--AG: are we supposed to have id's?--><!--SCW: Yes, did you choose one and send me it? Usually your initials. Also, send me a short bio of yourself (your school, your major, your plans, etc. for the site index where you will be immortalized). The ID will fire an error until it is entered into the site index.-->
+               <persName ref="#Id_who"><!--name here--></persName><!-- If you're the last person interacting with the file, enter your name last on the list and use assigned xml:id for ref="#" -->
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-03-20">March 20, 2017</date><!--Fill out and update the date here as different proofreaders work with this file. Dates inside the attribute @when take the form of a hyphen-separated four-digit year followed by two-digit month and two digit day, so May 2, 2015 comes out as 2015-05-02. -->
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#scw">Samantha Webb</persName><!--SCW: Proofed header and body against ms--><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-02-08">February 8, 2017<!--enter the date on which you first created and saved this XML file in Box, and it can take any form; May 26, 2015 is fine, so long as you've used yyyy-mm-dd in the @when attribute--></date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno><!-- For the text inside this element, idno, make a comma-separated list of each .jpg photo file name in your Box folder associated with your letter. It might look like this:
+               DSCF9476.jpg, DSCF9477.jpg, DSCF9478.jpg, DSCF9479.jpg, DSCF9480.jpg, DSCF9481.jpg, DSCF9482.jpg, DSCF9483.jpg, DSCF9484.jpg, DSCF9485.jpg
+Change to reflect photo file names for your letter (as you see here, including .jpg extension).--></idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <!--Uncomment the appropriate line, based on the archive that holds the physical copy of this letter, and delete the other comment line(s).-->
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+        
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. -->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>No collection identified</collection> <!-- Change to reflect correct ms. collection. --><!--SCW: I checked against spreadsheet, 3/19/17-->
+                  <idno>No shelfmark identified</idno> <!--Consult Mitford letters spreadsheet (MitfordMS.xslx). Change to reflect the xml:id and shelfmark information for this ms. collection and letter. For RCL, ff. numbers differ for each letter.--><!--SCW: I checked against spreadsheet, 3/19/17-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1820-02-11">1820 February 11</date>.
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support> <p> [One] page of <material>paper</material>, four page surfaces photographed. Page has been folded in half width-wise and in thirds length-wise.</p>
+                     </support>
+                     <condition>
+                        <p>Sheet stained on right edge of page four.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal is present.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is dated "11 Feb. 1820" in square brackets in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#pencil">11 Feb. 1820 written in square brackets</add> 
+               <dateline>
+                  <placeName ref="#Bertram_house">Bertram House</placeName>
+                  <date when="yyyy-mm-dd">Friday</date>. <!-- AG: please check for how to tag Friday in dates--><!--SCW: I'm still searching for this in the general TEI guidelines. Leave as is for now. SCW UPDATE: Have searched the big TEI guidelines, and cannot find. So continue with it here.-->
+               </dateline>
+               <salute>My dear<persName ref="#Webb_Mary_younger">Mary</persName></salute>
+            </opener>
+            <p>Will <persName ref="#Wheeler_James">Mr. James Wheeler</persName> think me the greatest encroacher on his kindness that ever lived, if I venture to ask him to extend the <sic>gratifiation</sic> he has afforded me by the perusal of <persName ref="#Lawrence_Mr">Mr. Lawrence</persName>'s book to one much more worthy of it--to <persName ref="#Sherwood_Mr">Mr. Sherwood</persName>?--I met him yesterday at <persName ref="#Jolliffe_Mrs">Mrs. Jolliffe</persName>'s &amp; in course of talk <persName ref="#Lawrence_Mr">Mr. Lawrence</persName> came on the carpet--I found <persName ref="#Sherwood_Mr">Mr. Sherwood</persName> a great admirer of his <del rend="squiggles"><gap quantity="1" unit="chars"/></del> very indignant at his ill usage <pb n="2"/> &amp; above all <add place="above"><metamark place="below" function="insertion" rend="caret"/><unclear>Is</unclear></add><!--SCW: I read the added word "is" as "so"--> very desirous to read this uncomeatable book that I even ventured to say I thought I could procure him that pleasure. Will you tell this to <persName ref="#Wheeler_James">Mr. James Wheeler</persName> &amp; if he is so very very good as to gratify <persName ref="#Sherwood_Mr">Mr. S.</persName>'s desire tell him that it will be best I think to send it directed to <persName ref="#Sherwood_Mr">Mr. Sherwood Esq<hi rend="superscript">re</hi></persName> <placeName>Church Lane</placeName>, <placeName ref="#Reading_city">Reading</placeName>--I would not give him this additional trouble but as I don't know when I should myself be able to fetch it from <placeName ref="#Wokingham_city">Wokingham</placeName>, I think it the best way of avoiding a certain round-about &amp; a possible <unclear><supplied resp="#scw">risk</supplied></unclear>. <persName ref="#Sherwood_Mr">Mr. Sherwood</persName> promises <pb n="3"/> &amp; above all to be very expeditious &amp; careful, &amp; <unclear><supplied resp="#scw">grateful</supplied></unclear> all his life--so do I.</p>     
+            
+            <p><persName ref="#Mitford_Geo">Papa</persName> got home quite late the other night--or rather the other morning--sad man to keep you all up so! I dare say it was his fault--(I brought him in excellent time from <persName ref="#Jolliffe_Mrs">Mrs. Jolliffe</persName>'s)--he was quite full of a new lover which you or <persName ref="#Webb_Eliza">Miss Eliza</persName> (he has <add place="above"><metamark place="below" function="insertion" rend="caret"/>not</add> quite settled which) has gotten--he says he won't give his consent--&amp; boasts that <persName ref="#Wheeler_Kate">Miss Wheeler</persName> was of his opinion--for my part I scarcely know the gentleman--so I say nothing.--<persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> is not in bed yet--very tiresome--<name type="animal" ref="#Molly_pet">Molly</name>'s in <pb n="4"/> the same way--very tiresome too!--<persName ref="#Mitford_Geo">Papa</persName> &amp; <persName ref="#Tappen_Captain">Captain <unclear>[Tappen/Taffer]</unclear></persName><!--SCW: It looks like "Taffer" or "Toffer" to me, but not familiar, and your guesses are good too. We can crowd source and inquire.--> were out for 6 hours today on <placeName ref="#Mortimer_Comm">Mortimer Common</placeName> &amp; never saw hare or rabbit! Think of that!--There is no place like the dear <rs type="land">Heath</rs> after all.</p>
+            <p>We had a very agreeable day yesterday--<persName ref="#Marsh_Harry">Harry Marsh</persName> <persName ref="#Jolliffe_Mrs">Mrs. Jolliffe</persName> &amp; I made such a noise that you might have heard us at <placeName ref="#Wokingham_city">Wokingham</placeName> if you had <del rend="squiggles"><gap quantity="2" unit="words"/></del> been listening--Good bye my own dear love--say every thing affectionate to all your house &amp; to dear <persName ref="#Wheeler_Kate">Miss Wheeler</persName>--
+            </p>
+            <closer>
+            --&gt;Ever your's<lb/>
+               <persName ref="#MRM">M. R. Mitford</persName>. 
+            </closer> 
+            
+            <postscript><p>Write soon<note resp="#avg">a vertical strike mark follows the word soon</note></p></postscript>
+         </div>
+      </body>
+     
+     <back>
+        <div> 
+       <listPerson>
+          <person xml:id="Wheeler_James" sex="1">
+             <persName>
+                <surname>Wheeler</surname>
+                <forename>James</forename>
+                <forename><!--middle name --></forename>
+             </persName>
+             <note resp="#avg">Lives in Wokingham. Most likely has some connection to <persName ref="#Wheeler_Kate">Kate Wheeler</persName>. Need more information.</note>
+          </person>
+          <person xml:id="Lawrence_Mr" sex="1">
+             <persName>
+                <surname>Lawrence</surname>
+                <forename>
+                   <supplied resp="#avg">William</supplied><!--AVG: if he is the surgeon-->
+                </forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <birth when="1783-07-16"><placeName>Cirencester</placeName></birth>
+             <death when="1867-07-05"><placeName>London</placeName></death>
+             <!--AVG: again, the birth and death information is in the case of this being the surgeon-->
+             <note resp="#avg">Author, possibly Sir William Lawrence, the british surgeon who published two books in 1816 and 1819. <persName ref="#Sherwood_Mr">Mr. Sherwood</persName>, whom MRM wants to lend <persName ref="#Lawrence_Mr">Mr. Lawrence</persName>'s book to, practiced medicine, so it is not too much of a stretch to think he might be interested in reading the works of a surgeon.</note>
+          </person>
+          <person xml:id="Jolliffe_Mrs" sex="2">
+             <persName>
+                <surname>Jolliffe</surname>
+                <forename><!--first name--></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <note resp="#avg">Need more information.</note>
+          </person>
+          <person xml:id="Tappen_Captain" sex="1">
+             <persName>
+                <surname>Tappen/Taffer[???]</surname>
+                <forename><!--first name--></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <note resp="#avg">A captain. Friend of George Mitford. Need more information.</note>
+          </person>
+          <person xml:id="Marsh_Harry" sex="1"><!--SCW: Aymee has a good start on this in her letter, so let's let the info be for Henry Marsh be taken from there-->
+             <persName>
+                <surname>Marsh</surname>
+                <forename>Harry/Henry[?]</forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <note resp="#Your_Editor_ID"/>
+          </person>
+          <person xml:id="Sherwood_Mr" sex="1"><!--AVG: updated entry for the site index-->
+             <persName>
+                <surname>Sherwood</surname>
+                <forename>
+                   <supplied>Thomas</supplied>
+                </forename>
+             </persName>
+             <occupation>doctor</occupation>
+             <note type="bio" resp="#scw">Practiced medicine in <placeName ref="#Reading_city">Reading</placeName>. <!--scw: no further info from Needham.-->He was a
+                friend of <persName ref="#Monck_JB">John Berkeley Monck</persName>, and likely
+                others in the <placeName ref="#Reading_city">Reading</placeName> political
+                scene. Sources: <bibl corresp="#Needham_PapersRCL">
+                   <persName ref="#Needham_Francis">Needham</persName> Papers, <orgName ref="#ReadingCL">Reading Central Library</orgName>
+                </bibl>; <bibl>
+                   <title>History of Parliament Online</title>. <placeName ref="#Reading_city">Reading</placeName>Borough
+                   http://www.historyofparliamentonline.org/volume/1820-1832/constituencies/reading.</bibl>
+             </note>
+             <note resp="#avg">Lived on <placeName>Church Lane</placeName> in <placeName ref="#Reading_city">Reading</placeName>, Berkshire, England</note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+         
+         <list type="animal">
+            <item xml:id="Molly_pet"/><!--SCW: I need to fix the id's-->
+            <note>Pregnant pet dog</note>
+         </list>
+              
+        
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>

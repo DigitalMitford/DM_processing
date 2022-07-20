@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<range>
+  <create qname="mods:name">
+    <field name="name-type" match="@type" type="xs:string"/>
+    <field name="name-part" match="mods:namePart" type="xs:string"/>
+  </create>
+</range>

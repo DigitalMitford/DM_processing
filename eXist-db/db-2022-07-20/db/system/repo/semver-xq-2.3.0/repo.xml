@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo" xmlns:repo="http://exist-db.org/xquery/repo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <description>XQuery Library for Parsing Semantic Versions</description>
+   <author id="joewiz">Joe Wicentowski</author>
+   <website>https://github.com/eXist-db/semver.xq</website>
+   <status>stable</status>
+   <license>The 3-Clause BSD License</license>
+   <copyright>true</copyright>
+   <type>library</type>
+   <changelog>
+        <change version="2.2.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix: Fixed a bug in semver:compare - <a href="https://github.com/eXist-db/semver.xq/pull/3">#3</a>.</li>
+            </ul>
+        </change>
+        <change version="2.2.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix: Fixed an issue with coercing version strings for comparisons.</li>
+            </ul>
+        </change>
+        <change version="2.2.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>The first EXPath packaged version of semver.xq.</li>
+                <li>Feature: Adds support for coercing non-SemVer version strings into SemVer 2.0.0 compatible version strings.</li>
+            </ul>
+        </change>
+    </changelog>
+<deployed>2021-12-31T06:13:37.583Z</deployed></meta>

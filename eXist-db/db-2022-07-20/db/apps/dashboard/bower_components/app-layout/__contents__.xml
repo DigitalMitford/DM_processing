@@ -1,0 +1,11 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/bower_components/app-layout" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:42.262Z">
+    <acl entries="0" version="1"/>
+    <subcollection name="app-scroll-effects" filename="app-scroll-effects"/>
+    <subcollection name="helpers" filename="helpers"/>
+    <subcollection name="app-layout-behavior" filename="app-layout-behavior"/>
+    <subcollection name="app-header-layout" filename="app-header-layout"/>
+    <subcollection name="app-drawer" filename="app-drawer"/>
+    <subcollection name="app-header" filename="app-header"/>
+    <subcollection name="app-toolbar" filename="app-toolbar"/>
+    <subcollection name="app-drawer-layout" filename="app-drawer-layout"/>
+</collection>

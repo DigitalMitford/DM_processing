@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:my="my-namespace">
+    <empty-namespace-element>Empty namespace element</empty-namespace-element>
+    <my:my-namespace-element>My namespace element</my:my-namespace-element>
+    <foo empty-namespace-attribute="Empty namespace attribute"/>
+    <bar my:my-namespace-attribute="My namespace attribute"/>
+</root>

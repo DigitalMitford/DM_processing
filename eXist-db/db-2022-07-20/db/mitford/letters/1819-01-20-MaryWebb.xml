@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>--><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM2017">Letter to <persName ref="#Webb_Mary_younger">Mary Webb</persName>, January 20, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor>
+               <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+               <persName ref="#jgf">Julie Fish</persName>
+               <persName ref="#bal">Brytney Laird</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2019-04-25">2019-05-12</date>
+               Proofing and corrections by</resp> 
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-09-08"/>September 8, 2017</edition>
+               <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+               <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>DSCF8901-Copy.jpg, DSCF8916.jpg, DSCF8917.jpg, DSCF8918.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550</idno><!--LMW: no shelfmark info. for this letter in spreadsheet.-->
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Mary Webb, <date when="1819-01-20">January 20, 1819</date>. <note resp="#lmw">We arrived at this date by checking a perpetual calendar. January 20, 1819 was a Wednesday.</note>
+               </head> 
+              <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>One sheet of <material>paper</material>, 18.5 x 12 cm., two surfaces photographed. Folded in half, then again in thirds.</p> 
+                        <p>No postmarks.</p> 
+                     </support>
+                     <condition>
+                        <p>Sheet ragged on left and bottom edge.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>No seal.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><handNote corresp="#pencil" medium="pencil">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is marked [20 Jan. 1819] in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="DSCF8916.JPG"/>
+            <opener>
+               <dateline><add hand="#pencil">[20 Jan. 1819]</add>
+                  <date when="1819-01-20">Wednesday</date>. 
+               </dateline>
+            </opener>
+            <p>Your dear letter, my own sweet <persName ref="#Webb_Mary_younger">Mary</persName> should have been answered in person had the weather, &amp; indeed my health permitted. I went on <date when="1819-01-16">Saturday</date> into <placeName ref="#Reading_city">Reading</placeName>, &amp; whether with talking laughing or the cold was so very ill in the night that <persName ref="#Mitford_Geo">Papa</persName> was quite frightened. I am quite well now--but he is going to <rs type="place" ref="#London_city">Town</rs> on <date when="1819-01-23">Sunday</date> &amp; so engaged till then that I have no chance of the pleasure of seeing you.--Most of our books &amp; above all my favorites are packed up &amp; at <placeName ref="#Coley_Berks">Coley</placeName>--&amp; I am afraid the greater part of those here come under the interdicted quantity &amp; quality, being most of them <emph rend="underline">long</emph> histories--or longer travels. One of my favorites is unpacked (but I will not answer for your liking it) an old edition <pb n="2" facs="DSCF8918.JPG"/> of an old translation of <persName ref="#Mariana_J">Mariana</persName>'s old <title ref="#GenHistSpain">history of Spain</title>--It is one Volume <emph rend="underline">Folio</emph>--Did you ever read <title ref="#RichardsonLetters"><persName ref="#Richardson_Sam">Richardson</persName>'s letters</title>? I mean his private correspondence in 6 Vols. Perhaps you would be amused with them--Shall I bring them? Then we have a fine <title>edition of <persName ref="#Chatterton">Chatterton</persName> in 3 Vols</title>--Should you like that? <title ref="#Lectures_Blair"><persName ref="#Blair_H">Blair</persName>s Lectures</title>? <title><persName ref="#Coxe_Wm">Coxe</persName>s Travels</title>?--After all my dear you had better come &amp; <choice><sic>chuse</sic><reg>choose</reg></choice>. <!--LMW: french-->En attendant I send you <persName ref="#Shee">Shee</persName>'s <title ref="#Elements_of_Art">Elements of Art</title> which besides being very beautiful as poetry will give you some good ideas on painting &amp; sculpture &amp; a <title>book about the South Sea Islands</title><!--which book do we think this is? Cook or something else?--> which pleases me for its simplicity.--Since so many of our books have been packed my reading has been chiefly from borrowed books--books lent me by <persName ref="#Valpy_Richard">Dr. Valpy</persName>--<persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName>--<persName ref="#Liebenrood_JE">Mr. Liebenrood</persName>--<persName ref="#Brooke_Mr">Mr. Brooke</persName>--<persName ref="#Newberry_J">Mr. Newberry</persName>--&amp; others--besides the <pb n="3" facs="DSCF8918.JPG"/> libraries of <placeName ref="#Reading_city">Reading</placeName>--<placeName ref="#Institution_Reading">The Institution</placeName>, the <placeName ref="#BilliardRm_Reading">Billiard room</placeName> &amp; I heard of your dance from <persName ref="#Bailey_Dr">Dr. Bailey</persName> who spoke of it as very pleasant he said there was a very beautiful girl--<persName ref="#Teasdale_Miss">Miss Teasdale</persName>.--<persName ref="#Mitford_Geo">Papa</persName> had a charming letter from <persName ref="#Hayward_Mrs">Mrs. Hayward</persName> yesterday about his Godfather-ship--I heard yesterday from <persName ref="#Haydon">Mr. Haydon</persName>, whom I hope we shall see soon--Only think of his having a pet greyhound.--I will read you some of his letter when I see you--&amp; today I got one from <persName ref="#Rowden_Fr">Mrs. Rowden</persName> which you shall see too. She is beginning to be pretty sick of <placeName ref="#France">France</placeName>. One of my schoolfellows is going to marry a <persName>son of the Duke de Fitz James</persName>, &amp; is turning Catholic in preparation for these august nuptuals.<!--LMW: identify person--> A year ago she was a methodist--<!--LMW: french-->Ainsi va le monde.--You need never fear any doublecharge about letters <emph rend="underline">put into the <placeName ref="#ReadingPO">Reading Post Office</placeName></emph>--it is only a penny if there were 10 sheets.--Adieu--my dear love--Kind regards to all from all--</p>
+            <closer>Ever yours <persName ref="#MRM">M.R.M.</persName></closer>
+            <postscript>
+               <p><pb n="4" facs="DSCF8916.JPG"/>You must send me an account of the ball &amp; tell me how you liked <persName ref="#Joseph_Mr">Mr. Joseph</persName>--Tell my own dear <persName ref="#Webb_Eliza">Eliza</persName> I want to see <emph rend="underline">her too</emph> very much indeed. <persName ref="#Miranda_pet">Miranda</persName> is the greatest beauty under Heaven.</p>     
+            </postscript><closer>
+               <address><addrLine><lb/>To <persName ref="#Webb_Mary_younger">Mary Webb</persName></addrLine>
+                  </address>
+            </closer> 
+         </div>
+      </body>
+    
+     <back>
+
+  
+           <div type="historical_people">
+              <listPerson sortKey="histPersons">
+
+   <person xml:id="Marian_J" sex="m">
+      <persName>
+         <surname><nameLink>de</nameLink>Mariana</surname>
+         <forename>Juan</forename>
+      </persName>
+      <persName>Father Juan Mariana</persName>
+      <birth when="1536-09-25"><placeName>Talavera de la Reina, Spain</placeName></birth>
+      <death when="1624-02-17"><placeName>Madrid, Spain</placeName></death>
+      <occupation>historian</occupation>
+      <occupation>writer</occupation>
+      <note resp="#bal">Juan de Marian wrote, among other titles, the “Historia General de España." Mitford speaks of having an “old edition of an old translation” of it. It is probable that she is referring to an edition of “The general history of Spain: from the first peopling of it by Tubal, till the death of King Philip III” that was first published in London in 1699, as one of the first English translations of Marian’s work.</note>
+      <note>
+         <ref target="http://viaf.org/viaf/89794074"/>
+      </note>
+   </person>
+
+   <person xml:id="Blair_H" sex="m">
+      <persName>Hugh Blair</persName>
+      <persName>
+         <surname>Blair</surname>
+         <forename>Hugh</forename>
+      </persName>
+      <birth when="1718-04-07"><placeName>Edinburgh, Scotland</placeName></birth>
+      <death when="1800-12-27"><placeName>Edinburgh, Scotland</placeName></death>
+      <occupation>philosopher</occupation>
+      <occupation>writer</occupation>
+      <occupation>clergy</occupation>
+      <occupation>educator</occupation>
+      <note resp="#bal">Influential figure in the Scottish Enlightenment and Chair of Rhetoric and Belles Lettres at the University of Edinburgh. Mitford was familiar with his groundbreaking work on written composition, Lectures on Rhetoric and Belles Lettres.</note>
+      <note>
+         <ref target="http://viaf.org/viaf/54309971"/>
+      </note>
+   </person>
+                 
+                 <person xml:id="Barbauld_AL" sex="f">
+                    <persName>Anna Laetitia Aikin Barbauld</persName>
+                    <persName>
+                       <surname type="married">Barbauld</surname>
+                       <surname type="paternal">Aikin</surname>
+                       <forename>Anna</forename>
+                       <forename>Laetitia</forename>
+                    </persName>
+                    <birth when="1743-06-20"><placeName>Kibworth Harcourt, Leicestershire, England</placeName></birth>
+                    <death when="1835-03-09"><placeName>Stoke Newington, Middlesex, England</placeName></death>
+                    <note resp="#lmw">Poet, essayist, editor, and author of innovative works for children. Teacher, with her husband, at Palgrave Academy in Sussex. Reformist writer who supported civil rights for Dissenters, the abolition of slavery, and educational reforms.</note>
+                    <note>
+                       <ref target="http://viaf.org/viaf/9896232"/>
+                    </note>
+                 </person>
+
+   <person xml:id="Shee" sex="m">
+      <persName>Sir Martin Archer Shee</persName>
+      <persName>
+         <surname>Shee</surname>
+         <forename>Martin</forename>
+         <forename>Archer</forename>
+      </persName>
+      <birth when="1769-12-23"><placeName>Dublin, Ireland</placeName></birth>
+      <death when="1850-08-13"><placeName>Brighton, Sussex</placeName></death>
+      <occupation>artist</occupation>
+      <occupation>writer</occupation>
+     
+      <note resp="#bal">Martin Archer Shee was an artist and author of <title>Elements of Art</title> which Mitford recommends to her friend because it is “beautiful as poetry” and has “good ideas on painting and sculpture.” In 1830, he became president of the Royal Academy.</note>
+      <note>
+         <ref target="http://viaf.org/viaf/3372363"/>
+      </note>
+   </person>
+</listPerson>
+
+<listPerson>
+   <person xml:id="Chatteron" sex="m">
+      <persName>Thomas Chatterton</persName>
+      <persName>
+         <surname>Chatterton</surname>
+         <forename>Thomas</forename>
+      </persName>
+      
+      <birth when="1752-11-20"><placeName>Bristol, England</placeName></birth>
+      <death when="1770-08-24"><placeName>London, England</placeName></death>
+      <occupation>Poet</occupation>
+      <occupation>literary</occupation>
+      <note resp="#bal">Chatterton was a young, romantic, English poet who died by suicide at the age of seventeen in London. Mitford refers to having a collection of his work in three volumes.  </note>
+         <note>
+            <ref target="http://viaf.org/viaf/32071684"/>
+         </note>
+   </person>
+
+   <person xml:id="Brooke_Mr" sex="m">
+      <persName>Mr. Brooke</persName>
+      <persName>
+         <surname>Brooke</surname>
+      </persName>
+     <note resp="#bal">Forename unknown. Married to Mrs. Brooke; they may have a daughter. Mitford borrowed books from Mr. Brooke due to hers being packed away. More research needed.</note>
+   </person>
+
+   <person xml:id="Hayward_Mrs" sex="f">
+      <persName>Mrs. Hayward</persName>
+      <persName>
+         <surname>Hayward</surname>
+         <roleName>Mrs.</roleName>
+      </persName>
+     <note resp="#bal">Wife of William Hayward of Watlington. George Mitford was their daughter's godfather.<!-- bal: according to https://books.google.com/books?id=H6E2AQAAMAAJ (pg. 91) a Mrs. Hayward of Watlington had a daughter but that was in 1821 (?) --></note>
+   </person>
+
+   <person xml:id="Bailey_Dr" sex="m">
+      <persName>Dr. Bailey</persName>
+      <persName>
+         <surname>Bailey</surname>
+         <roleName>Dr.</roleName>
+      </persName>
+     <note resp="#bal">Mitford borrowed books from Dr. Bailey in 1819. More research needed.</note>
+   </person>
+
+   <person xml:id="Teasdale_Miss" sex="f">
+      <persName>Miss Teasdale</persName>
+      <persName>
+         <surname>Teasdale</surname>
+         <roleName>Miss</roleName>
+      </persName>
+     <note resp="#bal">Mitford's friend Dr. Bailey speaks of her as a beauty. More research needed.</note>
+   </person>
+
+<person xml:id="Joseph_Mr" sex="m">
+         <persName>
+            <surname>Joseph</surname>
+            <roleName>Mr.</roleName>
+         </persName>
+ <note resp="#bal">Forename unknown. More research needed.</note>
+      </person>
+
+      <person xml:id="Liebenrood_JE" sex="m">
+         <persName>
+            <surname>Liebenrood</surname>
+            <forename>John</forename>
+            <forename>Engleberts</forename>
+         </persName>
+         <persName>John Engelberts Liebenrood</persName>
+         <birth when="1754"><placeName>Germany</placeName></birth>
+         <death when="1821"><placeName>Purley, Berkshire, England</placeName></death>
+            <occupation>law enforcement</occupation>
+            <occupation>civil</occupation>
+            <note resp="#bal">Born John Engelberts Ziegenbein, he became a naturalized British citizen in 1781. He changed his name upon inheriting his uncle's fortune. Inherited and enlarged Prospect House, (later Mansion House), Prospect Park, near Reading. Served as High Sheriff of Berkshire. Husband of Lucy Hancock.</note>
+      </person>
+   </listPerson>
+           </div>
+           
+           <div type="publications">
+              <listBibl>
+ 
+              <bibl xml:id="Elements_of_Art">
+         <title level="a">Elements of Art: A Poem, in Six Cantos; with Notes and a Preface; including Strictures on the State of the Arts, Criticism, Patronage, and Public Taste</title>
+         <date when="1809"/>
+         <author>
+            <persName ref="#Shee"/>
+         </author></bibl>
+      
+      
+       <bibl xml:id="Lectures_Blair">
+            <title level="a">Lectures on Rhetoric and Belles Lettres</title>
+            <date when="1783"/>
+            <author>
+               <persName ref="#Blair_H"/>
+            </author>
+           <note resp="#bal"><!-- in Three Volumes--></note>
+         </bibl>
+         
+         
+         <bibl xml:id="GenHistSpain">
+              <title level="a">The General History of Spain: From the First Peopling of it by Tubal,Ttill the Death of King Philip III</title>
+               <date when="1699"/>
+               <author>
+                  <persName ref="#Marian_J"/>
+               </author><note resp="#bal"><title>Historia General de España</title>, published in <date when="1601">1601</date>, was translated by J. Stevens into English and published in London in 1699.</note>
+            </bibl>
+            
+                 <bibl xml:id="RichardsonLetters">
+                  <title level="a">The Correspondence of Samuel Richardson</title>
+                  <date when="1804"/>
+                  <author>
+                     <persName ref="#Richardson_Sam"/>
+                     <persName ref="#Barbauld_AL"/>
+                  </author><note resp="#bal #lmw">Letters of the author collected by Anna Lætitia Barbauld, along with observations on his life and writings.</note>
+               </bibl>
+              </listBibl>
+           </div>
+           
+           <div type="places">
+              <listPlace sortKey="histPlaces">
+<place xml:id="Institution_Reading">
+   <placeName>Literary Institution and Reading Room, Reading, Berkshire, England</placeName>
+   <district>Reading</district>
+   <region>Berkshire</region>
+   <country>England</country>
+                     </place>
+                  
+                        <place xml:id="BilliardRm_Reading">
+                           <placeName>Billiard Rooms, Reading, Berkshire, England</placeName>
+                           <district>Reading</district>
+                           <region>Berkshire</region>
+                           <country>England</country>
+                        </place>
+                     
+                           <place xml:id="ReadingPO">
+                              <placeName>Reading Post Office, Reading, Berkshire, England</placeName>
+                              <district>Reading</district>
+                              <region>Berkshire</region>
+                              <country>England</country>
+                           </place>
+                        </listPlace>
+           </div>
+        </back>
+  </text>
+</TEI>

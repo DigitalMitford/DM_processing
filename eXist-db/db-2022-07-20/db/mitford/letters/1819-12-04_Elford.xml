@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+      <fileDesc>
+         <titleStmt> 
+            <title xml:id="MRM1752t">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, December 4, 1819</title><author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+            
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+               
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2017-12-31">2017-12-31</date> Proofing and
+                  corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName><!-- In a comment tag after YOUR <persName> entry, indicate what you proofed and when. For example: LMW 2015-10-03:  Proofed body text against ms.  Needs revised header, did not proof. -->
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2016-01-15"/>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>P1020326.jpg, P1020327.jpg, P1020328.jpg, P1020329.jpg, P1020330.jpg, P1020331.jpg, P1020332.jpg, P1020333.jpg, P1020334.jpg, P1020335.jpg, P1020336.jpg, P1020337.jpg, P1020338.jpg, P1020339.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         
+         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 390</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1819-12-04">1819 December 4</date>.
+               <!--<note resp="#lmw">We arrived at this date by checking a perpetual calendar. It must be this date because etc etc </note>-->
+                  
+               </head> 
+               
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><p>One sheet of <material>paper</material>, two surfaces photographed. Each leaf 23.3 cm high. Sheet folded in half then in thirds for posting.</p> 
+                           <p>No postmarks.</p> 
+                           </support>
+                        <condition>
+                           <p>Sheet (pages three and four) torn on right and left edges of page where wafer was removed.</p>
+                        </condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <sealDesc>
+                     <p>No seal present. Mitford indicates in her postscript that she sealed the letter with a wafer.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <handNotes>
+            <handNote corresp="#rc" medium="red_crayon">Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+            <handNote corresp="#pencil" medium="pencil">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "21" in the top left of the first leaf.
+            </handNote>
+            <handNote corresp="#penAnnot_RCL" medium="black pen">Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left pen marks on her letters now in the Reading Central Library's collection. This letter contains identification of the addressee, a note on page one, and additional interlineations.</handNote>
+            <!--LMW:  add this to to template?.-->
+         </handNotes>
+      </profileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#penAnnot_RCL">To <persName ref="#Elford_SirWm">Sir W. Elford</persName></add>
+                  <dateline>
+                  <placeName ref="#Bertram_house">Bertram House</placeName> <date when="1819-12-04">Dec. 4<hi rend="superscript">th</hi> 1819.</date>. 
+               </dateline>
+                </opener>
+            <p>Your kind entertaining letter my dear <rs type="person" ref="#Elford_SirWm">Friend</rs> &amp; its very curious and amusing Enclosure (which I re-enclose) <add place="above">X <note resp="#penAnnot_RCL">8 <hi rend="underline">Note</hi><lb/>X This Enclosure was a MS. Journal cf. <persName ref="#Ashburton_Lord">Lord Ashburton</persName>.</note></add> have given me great pleasure. <persName ref="#Ashburton_Lord">Lord Ashburton</persName>'s descriptions are delightful chiefly from the extreme &amp; singular honesty with which he sacrifices all effect &amp; fine writing to the desire of placing the exact &amp; naked truth before his Correspondent--a sacrifice which like most other meritorious self denials, is repaid a thousandfold by the freshness &amp; spirit which this absence of commonplace finery throws<del rend="squiggles" unit="word" n="1">open</del> over the subject. His naïveté too is quite charming--just such as a highly gifted Author can sometimes bestow on a fictitious character but which very few Authors indeed can boast themselves. I hope the Public will see the Journal--a selection at least--not an abridgement--<foreign xml:lang="fr">En attendant</foreign> I have transcribed his letter, which made me fully conscious of its length (one does not feel that it is long in reading) &amp; of the peculiar power of compressing words &amp; letters which his Lordship possesses--a power which I believed passed away with my Maternal Grandfather <persName ref="#Russell_Rich">Dr. Russell</persName>--who at the age of Eighty eight wrote a hand quite as small as firm as ever &amp; as legible as <persName ref="#Ashburton_Lord">Lord Ashburton</persName>'s--Is <persName ref="#Ashburton_Lady">Lady A.</persName> so fat &amp; so pretty as he describes? And is he himself as agreeable as his letter would indicate? And is your friend <persName ref="#Cranstoun">Mr. Cranstoun</persName> related to the celebrated <placeName ref="#Edinburgh">Edinburgh</placeName> Advocate &amp; <orgName ref="#Whigs">Whig</orgName>? (Observe how nicely this word Whig leads me on to Politics without having recourse to any wicked hieroglyphical jerks such as a certain friend of mine is wont to use!)--You ask me two questions &amp; tell me not to answer them--but I shall answer them--one at least to your satisfaction. With all possible regard for the private character of <persName ref="#Fitzwilliam_4thEarl">Lord Fitzwilliam</persName>, I am quite of your opinion, respecting his dismissal--&amp;<pb n="2"/> have always considered it as a fine &amp; striking piece of Poetical Justice--As to the Legality of the meeting at Manchester<!--LMW: refers to Peterloo-->--hem--I really don't know what to say of the matter--our speechifying Lawyers here in the Country were very positive on the subject--but as their betters &amp; Wisers &amp; Learneders in <placeName ref="#London_city">London</placeName> seem to demur--I think it safest to demur too.--In fact I cannot help having a small private suspicion that the meeting must have been illegal or some of the many great <orgName ref="#Whigs">Whig</orgName> Lawyers in <orgName ref="#Parliament_UK">Parliament</orgName> would certainly have hazarded a contrary opinion--but granting that, I still think it illegally suppresssed. We are <hi rend="underline">one</hi> step nearer now my dear Friend but only one, so I will talk no more of the matter.</p><metamark rend="jerks"/><p>I thought you would laugh at the <persName ref="#Haydon">Haydon</persName> story--It is a real misfortune for one person with some pretensions to celebrity to have a name similar in sound to one rendered very famous by another--But he will have a good deal of fame of his own when <title>the Picture</title> is exhibited--Fame of all sorts Praise &amp; Blame--both of which he will welcome as tokens of celebrity &amp; pegs to hang Answers on! I am pretty sure in spite of the ominous <q>"almost"</q> that the <title>Painting</title> will be finished this Spring, because the great difficulty the Head of <persName ref="#Jesus">Christ</persName> is at length overcome--The present Head is the seventh he has painted! one of them was taken from himself! which seems to me quite as good a <!-- trait?? --> as the Birthday--for though his Countenance be very intellectual &amp; full of spirit &amp; ardency, it is I think one of the very last human faces that any body but the owner would think of copying for <persName ref="#Jesus">Jesus Christ</persName>. (Pray don't tell the story <add rend="carat" place="below"/><add place="above">of the Head</add>--which <persName ref="#Hofland_TC">Mr. Hofland</persName> told me--&amp; which might set our two fiery Artists in a flame.) You, whose poetical faith is I believe rather <persName ref="#Pope_Alex">Pope</persName>-<hi rend="underline">ish</hi>, would have liked to see a Portrait of <persName ref="#Pope_Alex">Pope</persName> which <persName ref="#Hofland_B">Mrs. Hofland</persName> says they have just had in the house--<q>"taken very young an undoubted original by <persName ref="#Jervas_Chas">Jarvis</persName>; a sweeter expression, a more intelligent countenance cannot be conceived; no unholy or selfish feeling has yet ruffled the soft serenity of the brow which even Dr. Morris&gt;<pb n="3"/> of <placeName><choice><sic>Aberystwith</sic><reg>Aberystwyth</reg></choice></placeName> would allow to be wide enough &amp; high enough for a Poet</q>--Should not you have discovered this not to be my writing even if I had omitted the inverted commas by the continuity of the style, the absence of that perpetual hopping motion which distinguishes mine?--Now that I am transcribing other people's letters I will copy for you a passage from one of <persName ref="#Haydon">Mr. Haydon</persName>'s (poor dear man! really it's a shame to laugh at him!) written (to thank us for a hare) from <persName>Mr. Wilkie</persName>s house at <placeName ref="#Kensington">Kensington</placeName>. <q>"<persName>Wilkie</persName> is painting a capital picture of reading the will. <!-- David Wilkie, "Reading of a Will" exhibited 1821. -->At a table is an old lawyer's clerk, a sort of mean looking narrow featured rascal who holds the will with all its awful appendages of seals &amp; reads it with that cant twang which all people have in their voice when they are doing what they have done often &amp; habit has rendered them insensible either to the importance or interest of what they do.--To the left sits the widow--a large enbonpoint lady with her arm stretched out on the favorite arm chair of her late dear Spouse holding a handkerchief &amp; by her expression of feature seeming not at all displeased at which she hears read, or at what either she hears said by a bald pated half pay Officer who leans down to her cheek &amp; in an affected air of condolence is certainly whispering something in the Widows Ear which perhaps prevents her despairing of a future conquest should so shocking an idea enter her afflicted head. To the right, or rather in the center stands a sort of middle aged Grandmother holding the infant in her arms &amp; erecting her head with an <del rend="squiggles" type="word" n="3">gleeful Turkey-cock chuckle</del>air of proud insolent ecstasy at what has been read by the Clerk which makes it freely clear that her part of the family are safe, her air, figure, look &amp; expression are quite admirable, they dilate into a kind of turkeycock chuckle &amp; capitally contrast with a furious old maid at the door who has snatched up her cane at the instant &amp; is sarcastically sneering at the whole company, as she hurries away in<pb n="4"/> indignation at being cut perhaps with ten pounds for a ring. These are the principal points in this admirable picture, which will be out in the Spring--there are other characters in it equally excellent, such as an old man with an ear trumpet, a servant boy &amp; others which keep up the chain of interest. It is for the <persName>King of Bavaria</persName> and will not be engraved here."</q> Now this is exceedingly clever &amp; pleasant, as all he writes &amp; says is when he does not put himself in a passion--By the way the room he has taken is in <placeName ref="#Piccadilly">Piccadilly</placeName> &amp; I believe all his Pictures are to be exhibited</p><metamark rend="jerks"/><p>--I quite agree with you respecting <title ref="#Discipline">Discipline</title>--there is no word but <orgName>Methodism</orgName> that can express the impression intended to be conveyed--&amp; that impression spoils it. The end too is miserably lame, the cause of which is explained by <persName ref="#Brunton_Alexander">Dr. Brunton</persName> in <persName ref="#Brunton_Mary">Mrs. B.</persName>'s life to be the appearance of <title ref="#Waverley">Waverley</title>, which took away all the originality of her highland pictures &amp; dispirited &amp; overwhelmed her by its infinite superiority--<persName ref="#Brunton_Mary">Mrs. Brunton</persName> herself was not at all like a <orgName>Methodist</orgName>--she had none of the smoothness the sadness &amp; the cant of those wretched looking people--on the contrary she was exceedingly lively bouncing &amp; abrupt--with great talents undoubtedly &amp; a power of strong eloquent writing very rare in a woman. I have just been looking over a book which puts <orgName>Methodism</orgName> in the strongest point of view of any I ever met with--unintentionally for it is an Evangelical book, of the highest class &amp; reputation--splendidly printed &amp; widely circulated--<title>The Memoirs of the Rev<hi rend="superscript">d.</hi> H. Martyn</title>. Did you ever hear of him? He was a Cornish young man, who gained the highest honours at <orgName ref="#Cambridge_Univ">Cambridge</orgName>, but falling into the clutches of <persName>Mr. C. Simeon</persName> &amp; his sect relinquished all his hopes &amp; prospects in <placeName ref="#England">England</placeName> &amp; went as a Missionary to <placeName ref="#India">India</placeName> where he died.--This book is chiefly a selection from his journals, &amp; the shocking familiarity with which he addresses the <pb n="5"/><persName>Diety</persName>--the horrible manner in which he consigns all who differ from him to eternal punishment--&amp; above all the strain of constant fear doubt &amp; agony in which he describes his own mind, are such as no Imagination could have conceived. In the whole thick &amp; closely printed Octavo Volume there is not one page uncontaminated by such expressions of personal fondness towards the <persName ref="#Jesus">Saviour</persName> as a lover would scarcely use towards his Mistress or a Mother to her babe--&amp; with such declarations of wickedness remorse &amp; misery as would seem exaggerated from a Murderer. If I had any friend likely to fall into <orgName>Methodism</orgName> (any friend of common sense I mean in such danger) I should certainly recommend these Memoirs as an Antidote--the very dose which the <orgName>Methodists</orgName> themselves would prescribe for a <gap reason="torn" unit="word" n="1"/><supplied resp="#lmw">contrary</supplied> purpose. If it were possible to laugh at <add place="above">such a history, now</add> the book would be ridiculous &amp; entertaining <add place="above" resp="#penAnnot_RCL">enough--We</add> are very sorry to hear of <persName ref="#Elford_J">Mr. Elford</persName>'s illness. He is <add place="above" resp="#penAnnot_RCL">I hear</add> now recovering--The <q>"We"</q> at present consists only of<gap reason="torn" unit="word" n="1"/><supplied resp="#lmw"><persName ref="#Mitford_Geo">Papa</persName></supplied> &amp;  myself--<persName ref="#Russell_M">Mama</persName> has been at <placeName ref="#Winchester_city">Winchester</placeName> these ten days &amp; is likely to remain these ten days longer--I remain at home as <q>"lady of the Key"</q> &amp;-- behave very well in my post--considering--that is to say I have as yet starved no one, only once forgot to write to the Butcher &amp; only twice lost the Insignia of my Office. <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> dined here on <date>Wednesday</date>--the fact in Natyral history respecting which you enquire cannot be resolved yet awhile--she does not expect to be confined till the end of next month--She begs her best regards--so does <persName ref="#Mitford_Geo">Papa</persName>--I have hardly light to say that <del rend="squiggles" unit="word" n="1"/>I am ever my dear Friend</p>
+            <closer><lb/>Most affectionately <choice><sic>your's</sic><reg>yours</reg></choice> <persName ref="#MRM">M.R. Mitford</persName>.</closer><pb n="6"/>
+            <postscript><p>I always deal in postscripts from sheer shatter-brainedness.--Only think of <persName><persName ref="#Elliott_Mr">Mr. Elliott</persName>'s Solicitor</persName> falling down in a Apoplectic fit in the Middle of <metamark rend="caret" place="below"/> <add place="above">the</add> drawing up of our conveyance &amp; our being still detained here!--I don't know where we shall go when we remove.--</p><metamark rend="jerks"/><p>Of course you will understand that though I have transcribed <persName ref="#Ashburton_Lord">Lord Ashburton</persName>'s letter it was only for my own benefit &amp; <persName ref="#Russell_M">Mama</persName>'s &amp; I do not mean to make any indiscreet use of it.--Write soon my dear Friend--never mind having nothing to say--I am sure I set you a good example of writing about nothing.--Excuse the wafer--I am afraid of over-weight--&amp; once more my dear friend Goodbye--God Bless you.</p></postscript>
+            <closer>
+               <address>
+                  <addrLine><lb/><placeName ref="#London_city">London</placeName> <date when="1819-12-07">December Seven--1819</date></addrLine>
+                  <addrLine><lb/><persName ref="#Elford_SirWm">Sir William Elford--Bart</persName></addrLine>
+                     <addrLine><lb/><placeName ref="#Bickham_village">Bickham</placeName></addrLine>
+                     <addrLine><lb/><persName ref="#Palmer_CF">CFPalmer</persName> <placeName ref="#Plymouth_city">Plymouth</placeName></addrLine>
+               </address>
+            </closer>
+         </div>
+      </body>
+  
+  </text>
+</TEI>

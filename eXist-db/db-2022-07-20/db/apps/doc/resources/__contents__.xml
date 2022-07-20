@@ -1,0 +1,19 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/resources" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:47.03Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="xhtml-lat1.ent" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.034Z" modified="2021-12-31T06:13:47.034Z" filename="xhtml-lat1.ent" mimetype="application/xml-external-parsed-entity">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="xhtml1-transitional.dtd" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.037Z" modified="2021-12-31T06:13:47.037Z" filename="xhtml1-transitional.dtd" mimetype="application/xml-dtd">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="xhtml-symbol.ent" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.039Z" modified="2021-12-31T06:13:47.039Z" filename="xhtml-symbol.ent" mimetype="application/xml-external-parsed-entity">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="xhtml-special.ent" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.041Z" modified="2021-12-31T06:13:47.041Z" filename="xhtml-special.ent" mimetype="application/xml-external-parsed-entity">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="images" filename="images"/>
+    <subcollection name="styles" filename="styles"/>
+    <subcollection name="fonts" filename="fonts"/>
+    <subcollection name="scripts" filename="scripts"/>
+</collection>
