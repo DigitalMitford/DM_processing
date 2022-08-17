@@ -68,7 +68,7 @@
                         <h3>Active Consultants and Assistants</h3>
                                 
                                 
-                            <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person/persName[descendant::roleName[matches(., 'Active')]]">
+                            <xsl:apply-templates select="//listPerson[@sortKey='Mitford_Team']/person[persName/roleName[matches(., 'Active')]]">
                                 <xsl:sort select="descendant::surname[1]"/>
                             </xsl:apply-templates>  
                             
@@ -142,7 +142,8 @@
         </html>
     </xsl:template>
     <xsl:template match="listPerson[@sortKey='Mitford_Team' or @sortKey='Past_Editors']/person[persName/roleName[matches(., 'Active') or matches(., 'Editor') or matches(., 'Advisor') or matches(., 'Data')]]">
-        <span class="entry"><span class="head"><xsl:choose><xsl:when test="persName/ptr">
+        <span class="entry"><span class="head">
+            <xsl:choose><xsl:when test="persName/ptr">
             <a href="{persName/ptr/@target}"><xsl:apply-templates select="string-join(persName/forename, ' ')"/><xsl:text> </xsl:text>
                 <xsl:apply-templates select="persName/surname"/>
                 
@@ -154,9 +155,9 @@
         </xsl:choose>
             <xsl:text>, </xsl:text>
             <xsl:apply-templates select="string-join(descendant::affiliation, ', ')"/>
-                <xsl:text>, </xsl:text>
+            <xsl:if test="persName/roleName[matches(., 'Found')]"> <xsl:text>, </xsl:text>     
                 <xsl:value-of select="persName/roleName[matches(., 'Found')]"/>
-
+</xsl:if>
            <xsl:if test="note/text()">
                <span class="arrow">&#x21b4;</span>
            </xsl:if>
