@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM1671">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, April 3, 1815</title>
+                <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor>
+                    <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+                </sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName>
+           </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-08-15">August 15, 2017</date>. P5.</edition> 
+            <respStmt>
+                    <resp>Edition made with help from photos taken by</resp>
+                    <orgName>Digital Mitford editors</orgName>
+                </respStmt>
+            <respStmt>
+                    <orgName>Digital Mitford</orgName>
+                    <resp> photo files: <idno>P1010674.jpg, P1010675.jpg, P1010676.jpg, P1010677.jpg, P1010678.jpg, P1010679.jpg, P1010680.jpg, P1010681.jpg, P1010682.jpg, P1010683.jpg, P1010684.jpg, P1010685.jpg, P1010686.jpg, P1010687.jpg, P1010688.jpg, P1010689.jpg</idno>
+                    </resp>
+                </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc> <!-- This section of the header identifies the original manuscript source. -->
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 3, 1815-1818</collection>
+                  <idno>qB/TU/MIT Vol. 3 Horizon No.: 1361547 ff. 258</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1815-04-03">1815 April 3</date>. 
+               <note resp="#lmw">We arrived at this date by checking a perpetual calendar. It must be this date because etc etc </note>--&gt;
+                  <!-- LEstrange 1870(1):304-->
+
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support>
+                                    <p> <!--Text describing the document. Include information on the material, usually thus: <material>paper</material> and the number of page surfaces photographed. So when Mitford writes over two sheets of paper on the front and back of each, we've photographed four surfaces. When she writes on one sheet front and back, we've photographed two surfaces. Work closely with the photos of your letter to determine the number of sheets and separate surfaces, and describe how they are folded: in thirds? There is likely to be more than one photo of the same surface.--> </p> 
+                        <p><!--Here, describe the address leaf and any postmarks and postal fees recorded on the paper. 
+                           Refer to our slides on identifying and reading postmarks, here:  
+                           1) whether it is missing
+                           2) if present, does it have a postmark? Describe it, as in this example: Address leaf bearing black postmark, partially illegible, reading <stamp><lb/><placeName>READING</placeName><lb/></stamp>.-->
+                           <!--FOR REFERENCE on HOW TO IDENTIFY AND READ POSTMARKS ON A MITFORD LETTER see our slides posted on our Wordpress blog: https://digitalmitford.wordpress.com/2014/05/27/the-digital-mitfords-guide-to-19th-century-british-postmarks-and-how-to-code-them-in-tei/ -->
+                        </p> 
+                        <!-- Continue to describe new postmarks here. Use a separate <p> for each, as below-->
+                        <p><!--Here's a sample second <p> indicating another postmark: A large 3 denoting the posting fee has been written in black ink by the postal service across the address leaf.--></p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages three and four) torn on right edge of page three where wax seal was removed.</p> <!-- change. -->
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p><!--Describe the seal Mitford is using here, if it's present. Otherwise, indicate that No seal is present. Here's an example description of a seal: Red wax seal, complete, adhered to page four.--></p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes><!--This section documents and identifies whenever we see additional hands, other than Mitford's, at work in the document. Those hands could be a contemporary (such as her mother), but they're more frequently marks made by later editors such as William Harness or Francis Needham. Use the <handNote> elements to describe the role of each hand in this manuscript. If the hand is, say, Mitford's mother's and is writing a page of the letter, you indicate when that happens in the body of the letter using the <handShift> element. The @corresp attributes on <handNote> point to xml:ids stored (or to be stored) in our Site Index.-->
+           <handNote corresp="#Id_who"><!--Description of role in this mansuscript.--></handNote>
+           <!--Below are some SAMPLE HANDNOTES that appear commonly on MANY letters. Please be sure to CHANGE these if your letter differs.-->
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. <!-- Don't change the preceding two sentences if this letter has red crayon. In the *following* sentence, describe red crayoning on this letter. -->A red line is drawn from top left to bottom right of each of the first three leaves. On leaf four, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. <!-- Don't change the preceding sentence if this letter has grey pencil. In the following sentence, describe penciled numbers or change/add whatever text you see written in pencil. -->This letter is numbered "11" in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+   <revisionDesc>
+      <change when="2019-07-14" who="#ebb"/>
+   </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="#Id_who"><!--Did someone other than Mitford record a number or some notes at the top of this letter? This is where we'd indicate what was written and who wrote it. Omit if absent.--></add> 
+               <dateline>
+                        <name type="place" ref="#Bertram_house">Bertram House</name> 
+                  <date when="1815-04-03">April 3<hi rend="superscript">rd</hi> 1815</date>. 
+               </dateline>
+            </opener>
+            <p>What a happy device have you found, my dear <persName ref="#Elford_SirWm">Sir William</persName>, to make me write quickly! <q>"Unless you write immediately &amp; write a long letter"</q> say you <q>"I shall be sure that you are married."</q> And then you talk something of being certain that I am in Love &amp; being courted &amp; so forth because I have given you a short respite from the fatigue &amp; diffiulty of deciphering a frankfull of my hieroglyphics once a fortnight. But, <!--LMW L'Estrange starts here; previous sentences cut.-->Alas! my dear friend, you are mistaken, quite mistaken, I assure you! I am not going to be married--no such good luck as <persName ref="#Mitford_Geo">Papa</persName> says--I have not been courted--&amp; I am not in Love. So much for this question--If I ever should happen to be going to be married (elegant construction this!) I will not fail to let you into the secret--but Alas! Alas!! Alas!!! <q>"In such a then I write a never."</q>
+                    <note resp="#lmw">Quotation from <title ref="#AllsWellTEW">All's Well that Ends well</title>, act three, scene two; letter read by Helena: "When thou canst get the ring upon my finger, which shall never come off, and show me a child begotten of thy body, that I am father to, then call me husband, but in such a then I write a never."</note><!--LMW: what follows is cut in L.-->--In the meantime I am infinitely flattered &amp; delighted to find you complaining of short letters. <persName ref="#Mitford_Geo">Papa</persName> has always so scolded me for sending you such long ones &amp; bewailed your hard fate so pitifully in being condemned to read them, that I really began to think in spite of all your politeness &amp; my own vanity that I was doing you a great favour in curtailing my epistles. But now he may scold as long as he pleases I have it under <pb n="2"/>your own hand that you like long letters &amp; long ones you shall have bad good &amp; indifferent--there is a Latin line which I am afraid of writing for fear of blunder <add place="above">but</add>which you doubtless remember which expresses pretty accurately the degree in which the aforesaid qualities are likely to appear in my epistles.--Now my dear <persName ref="#Elford_SirWm">Sir William</persName>, then I have like you &amp; <persName ref="#Cowper">Cowper</persName> done talking of my letter. I will if you please begin writing it. And first of all I must quarrel with you for depriving me of the pleasure of descanting on two such notable subjects as the Corn Laws &amp; <persName ref="#Napoleon">Bonaparte</persName> by being exactly of my opinion &amp; leaving me nothing to say. As to the Corn Laws they, I must confess, are but the Ghost of a subject &amp; even that troubled spirit seems likely enough to be laid in the <placeName ref="#Red_Sea">red Sea</placeName> by the mighty Conjuror of <placeName ref="#France">France</placeName>--but we might neverthless have had a very pretty little dispute about it if we had not happened to be of the same way of thinking--though I believe that I was less an advocate for them than you were (I take it for granted you see that you were for them though you defied me to find out on which side you had ranged yourself) from thinking in common with the best informed people in this neighbourhood that the difference either to the Farmer or the Consumer would be infinitely less than was expected not merely by the mob but by the rational part of their leaders. With regard to the <persName ref="#Napoleon">Emperor</persName> we are exactly of a mind--no country can have a right to dictate to another as to the form of its internal<pb n="3"/> Government, &amp; when a whole nation, consisting of course of those who act &amp; those who acquiesce, when a whole nation by one simultaneous &amp; bloodless revolution deposed one Monarch--a Monarch imposed on <del rend="squiggles" unit="word" quantity="1">them</del>
+                    <add place="above">it</add> by conquering Kings &amp; replaces another of its own free &amp; unbiased choice, &amp; when <placeName ref="#France">France</placeName> is that Nation and <persName ref="#Napoleon">Napoleon</persName> that Monarch none but madmen would interfere &amp; none but fools could expect their interference to succeed. If <persName ref="#Napoleon">Napoleon</persName> be a Tyrant what is that to us! The French have deserved him <metamark rend="caret" place="below"/>
+                    <add place="above">by their treachery to <persName ref="#LouisXVI">Louis</persName>,</add> &amp; if they prefer a King ?? to a King ?? in the name of Heaven let them keep him. If he be not a Tyrant--And surely <placeName ref="#France">France</placeName> ought to know--they have deserved him by their fidelity to himself, &amp; why should we interrupt their happiness by efforts which must mar our own. What a pity it was that <persName ref="#LouisXVI">Louis</persName> did not when he saw as he must have seen that hope was lost retire <del rend="squiggles" unit="word" quantity="1">
+                        <supplied resp="#lmw">presently</supplied>
+                    </del>
+                    <add place="above">tranquilly</add> to <placeName ref="#England">England</placeName> leaving Peace as a parting legacy to <placeName ref="#France">France</placeName> &amp; building for himself a truer a better &amp; a more dignified reputation by relinquishing his throne than any that even a long reign could have gained him. He was good enough to have done this--why was he not great enough?<metamark rend="jerks"/>
+                </p><!--LMW: L'Estrange cut ends here-->
+            <p>Pray have you read the <title ref="#Lord_Isles">Lord of the Isles</title>? I do not mean, as I once unwittingly did in the beginning of our correspondence, to draw you into the scrape of reading a Poem, but if you should by chance have looked at it pray tell me how you like it. It is certainly a thousand times better than <title ref="#Rokeby">Rokeby</title> &amp; yet it does<pb n="4"/> not please me as <persName ref="#Scott_Wal">Scott</persName>'s Poems used to do. I am afraid that I once admired him a great deal too much &amp; now am in some danger of liking him a great deal too little. Nothing so violent as a rebound either <del rend="squiggles">
+                        <unclear/>
+                    </del>
+                    <metamark rend="caret" place="below"/>
+                    <add place="above">of the head or the heart</add>. Once extinquish enthusiasm &amp; all the fire in <placeName ref="#Vesuvius">Vesuvius</placeName> will never light it again. I fancy that the World is something of my mind in this respect &amp; begins to tire of its Idol--only the World is not half so honest &amp; instead of Knocking down one piece of wood contents itself with sticking up another right before it--<q>"It is not"</q> say all the gentle damsels of my acquaintance <q>"that we like <persName ref="#Scott_Wal">Scott</persName> less--we only like <persName ref="#Byron">Lord Byron</persName> better."</q> Now I do not--I like <persName ref="#Scott_Wal">Scott</persName> less--but <persName ref="#Byron">Lord Byron</persName> less still; the only <emph rend="underline">modern</emph> Poet whom I liked better &amp; better is <persName ref="#Campbell_Thos">Campbell</persName>. I have told you my dear friend that I would not trust you in the case to be jingled into a fever by <quote>"mincing poesy"</quote>
+                    <note resp="#lmw">Hotspur in Shakespeare's <title ref="#HenryIVpt1_play">Henry IV Part I</title>, act 3, scene 1: "And that would set my teeth nothing on edge,/ Nothing so much as mincing poetry"</note> but I have found out, to my great satisfaction (for I too am a novel-reader) that there is no danger of affronting you by recommending a prose Epic to your perusal, &amp; I have lately been very much &amp; very unexpectedly pleased with <persName ref="#Owenson_S">Lady Morgan</persName> (ci-devant Miss Owenson's) <title ref="#ODonnel_SO">O'Donnel</title>. I had a great prejudice &amp; dislike to this fair Author ever since I read a certain description of which she was guilty <del rend="squiggles" unit="word" quantity="1">
+                        <unclear/>
+                    </del>
+                    <metamark rend="caret" place="below"/>
+                    <add place="above">where</add> part of a Lady's dress is described as <quote>"an apparent tissue of woven air,"</quote>
+                    <note resp="#lmw">A misattribution. Not from from <persName ref="#Owenson_S">Owenson</persName>'s 1814 novel but from her <title ref="#Woman_Ida">Woman; or Ida of Athens</title>: "She resembled as she lay, the beautiful personification of Bashfulness by Corradini; for an air of vestal innocence, that modesty which is of soul, seemed to diffuse itself over a form whose exquisite symmetry was at once betrayed and concealed by the apparent tissue of woven air which fell like a vapour around her." The <title ref="#QuarterlyRev_per">Quarterly Review</title> and Barrett's novel <title ref="#Heroine">The Heroine</title> also poked fun at this passage.</note> &amp; really took up the book with an idea that nothing but nonsense could come from that quarter. I was however very much disappointed in my <metamark rend="caret" place="below"/>
+                    <add place="above">malicious</add> <!--LMW: something missing?--> of laughing at her &amp; obliged to content myself with laughing with her. Her hero is very interesting--her heroine very amusing--there are some <pb n="5"/> good characters particularly a managing bustling woman of fashion <lang xml:lang="fr">et pour la bonne nouche</lang>
+                    <note resp="#lmw">Colloquially, the best for the last.</note> there is an Irish servant not much if at all inferior to the admirable Irishmen of <persName ref="#Edgeworth_Maria">Miss Edgeworth</persName>. <!--LMW: L'Estrange cuts from here:-->With all this the book has two great faults--Irish politics &amp; Irish Antiquities found admission I by the help of an Author-like fellow feeling have discovered. Poor <persName ref="#Owenson_S">Lady Morgan</persName> meant to have made one of her old romances full of <q>"woven air"</q> &amp; so forth of her work &amp; have collected materials &amp; written a good deal could not find it in her heart to throw it away &amp; so foisted the ODonnel of <persName ref="#ElizI">Elizabeth</persName>'s time into the ODonnel of <persName ref="#GeoIII">George the Third</persName>'s by way of <metamark rend="caret" place="below"/>
+                    <add place="above">an</add> Ancestor. After all the book is very entertaining &amp; the Episode easily <choice>
+                        <sic>skipt</sic>
+                        <reg>skipped</reg>
+                    </choice>.<!--LMW to here--> Apropos to novels.--I have discovered that our great favourite <persName ref="#Austen_Jane">Miss Austen</persName> is my Countrywoman--that <persName ref="#Russell_M">Mama</persName> knew all her family very intimately, &amp; <metamark rend="caret" place="below"/>
+                    <add place="above">that</add> she herself is an old maid (I beg her pardon I mean a young lady) with whom <persName ref="#Russell_M">Mama</persName> <del rend="crossout" unit="word" quantity="2"/> before her marriage <add place="above"> was acquainted.--</add>
+                    <persName ref="#Russell_M">Mama</persName> says that she was then the prettiest silliest most affected husband-hunting butterfly she ever <del rend="squiggles">
+                        <unclear/>
+                    </del> remembers--&amp; a <rs type="person">friend</rs> of mine who visits her now says that she has stiffened into the most perpendicular precise taciturn piece of <quote>"single blessedness"</quote>
+                    <note resp="#lmw">
+                        <title ref="#MidsummerND">A Midsummer Night's Dream</title>, act one, scene one, Theseus to Hermia: "Earthlier happy is the rose distilled/ Than that which withering on the virgin thorn/ Grows, lives and dies in single blessedness."</note>that ever existed, &amp; that till <title ref="#Pride_and_Prejudice">Pride and Prejudice</title> showed <metamark rend="caret" place="below"/>
+                    <add place="above">what</add> a previous gem was hidden in that unbending case she was no more regarded in society than a poker or a fire <choice>
+                        <sic>skreen</sic>
+                        <reg>screen</reg>
+                    </choice> or any other thin upright piece of wood or iron <pb n="6"/>that fills its corner <del rend="squiggles">
+                        <unclear/>
+                    </del> in peace &amp; quietness. The case is very different now--she is still a poker--but a poker of whom every one is afraid. It must be confessed that this silent observation from such an observer is rather formidable--most writers are good humoured chatterers--neither very wise nor very witty--but nine times out of ten--at least in the few that I have known, unaffected &amp; pleasant &amp; quite removing by their conversation any <del rend="squiggles" unit="word" quantity="1">
+                        <supplied resp="#lmw">fear</supplied>
+                    </del>
+                    <add place="above">awe</add> that may have been excited by their works--but a wit, a delineator of character who does not talk is terrific indeed! After all I do not know that I can quite vouch for this account though the <rs type="person">friend</rs> from whom I received it is truth itself--but her family connections must render her disagreeable to <persName ref="#Austen_Jane">Miss Austen</persName> since she is the sister in law of a Gentleman who is at law with <persName ref="#Austen_Jane">Miss A.</persName>'s <rs type="person">brother</rs> for the greater part of his fortune. You must have remarked how much her stories hinge upon entailed estates--doubtless she has learnt to dislike Entails. Her brother was adopted by a <persName ref="#Knight">Mr. Knight</persName> who left him his name &amp; two much better legacies in an estate of five thousand a year in <placeName ref="#Kent">Kent</placeName> &amp; one of nearly double the value in <placeName ref="#Hampshire_county">Hampshire</placeName>, but it seems that he forgot some ceremony--passing a fine I think they call it--with regards to the <placeName ref="#Chawton">
+                        <placeName ref="#Hampshire_county">Hampshire</placeName> property</placeName>, which <persName ref="#Baverstock">Mr. Baverstock</persName> has claimed in right of his <persName>Mother</persName> together with the mesne rents &amp; is likely to be successful.--Before I quite drop the subject of novels I must tell you that I am reading <title ref="#Guy_Mannering">Guy Mannering</title> with great pleasure--I have not finished it nearly so that <pb n="7"/>I speak of it now as any one would do that had read no farther than the second Volume of the <title ref="#Udolpho">Mysteries of Udolpho</title> &amp; that won't be much better than one who had finished it--I do not think that <persName ref="#Scott_Wal">Walter Scott</persName> did write <title ref="#Guy_Mannering">Guy Mannering</title>--it is not nearly so like him as <title ref="#Waverley">Waverley</title> was &amp; the motto is from "<title ref="#Last_Minstrel">The Lay</title>."</p>
+            <p>I am quite happy that you are of my opinion with regard to <title ref="#Bible">Scripture</title> heroes--I always think myself so safe when you agree with me. It was however natural in <persName ref="#Haydon">Mr. Haydon</persName> to wish to draw the bow of <persName ref="#Ulysses">Ulysses</persName>
+                    <note resp="#lmw">Penelope set her unwelcome suitors the task of drawing the bow of her missing husband Ulysses/Odysseus and sending an arrow through twelve rings in succession. Proverbial for a nearly-impossible task.</note> &amp; try the subject which has engrossed all the great Masters. <persName ref="#Eustace">Mr. Eustace</persName> I think it is who has objected to the exaggerated expression of meekness which distinguishes the <persName ref="#Jesus">Christ</persName> of the Italian <del rend="squiggles" unit="word" quantity="1">Masters</del>Painters--In those which I have seen I should rather complain of the entire absence of the expression of Power--Power <gap reason="torn" unit="word" quantity="1"/>
+                    <supplied resp="#Lestrange">latent</supplied> dormant in repose but still Power--still that <gap reason="torn" unit="word" quantity="1"/>
+                    <supplied resp="#Lestrange">power</supplied> which could <del rend="squiggles" unit="word" quantity="1">with</del>
+                    <metamark rend="caret" place="below"/>
+                    <add place="above">without exertion with</add> unaltered calmness heal the sick &amp; <gap reason="torn" unit="word" quantity="1"/>
+                    <supplied resp="#lmw">raise</supplied> the dead. It would be less absurd to paint a sleeping <gap reason="torn" unit="word" quantity="1"/>
+                    <supplied resp="#Lestrange">Hercules</supplied> without the appearance of strength, than to delineate our <persName ref="#Jesus">Saviour</persName> without the expression of Power.--No one can so well supply this defect as <persName ref="#Haydon">Mr. Haydon</persName> &amp; he is very likely to have done it.<metamark rend="jerk"/>
+                </p>
+            <!--LMW: L'Estrange cuts from here to end.-->
+            <p>And so you really were not the Definer of Metaphysics? You really disown the bon mot? Well if you did not say it you might have said it, for it is quite in your way--&amp; I did not make believe to fancy you said it I assure you, neither am I even now remember from whom I heard it--I am quite sure however that it is none of mine--it is a thousand times too good.</p>
+                <metamark rend="jerk"/>
+                <p>I have sent you two monodies on the Death of two of my dearest friends, <persName ref="#Perry_Mrs">Mrs. Perry</persName> and <persName ref="#Webb_Mrs">Mrs. Webb</persName><!--LMW: check name and id. poems. If no attachment to this letter, add <note>.-->. Of <persName ref="#Perry_Mrs">Mrs. Perry</persName> I have before spoken <pb n="8"/>to you--the verses on her Death are perhaps among the least bad I have ever written--they were the offspring of that <del rend="squiggles">
+                        <unclear/>
+                    </del> strong emotion which is almost Genius. Those on <persName ref="#Webb_Mrs">Mrs. Webb</persName> are not worthy of their subject--who was (&amp; it is saying every thing at once) almost as charming a woman as <persName ref="#Russell_M">Mama</persName>. <rs type="person" ref="#Webb_Mary_younger #Webb_Eliza #Webb_Jane">Her daughters</rs> are my most intimate friends--three sweet sweet girls all under twenty. It is <persName ref="#Mitford_Geo">Papa</persName> who send you these dismal ditties he says you will like them--you must forgive the shabby paper they are copies which he has been carrying about &amp; <persName ref="#Russell_M">Mama</persName> who would have written you others is out for a few days. Is not this a long letter? I am not going to be married now am I? Pray write for <persName ref="#Mitford_Geo">Papa</persName> begs his best regards--Shall you be in <placeName ref="#London_city">London</placeName> this year. Pray say yes.--God bless you my dear Friend.</p>
+            <closer>always most affectionately yours<lb/>
+               <persName ref="#MRM">M.R. Mitford</persName>
+                    <lb/>
+            </closer>
+            
+            <postscript>
+                    <p><!--A postscript goes here, outside the <closer>. --></p>
+                </postscript><!--You can include a <pb/> here, or inside the postScript.--><!-- Format for postscripts.  Postscripts do NOT go insider closer tags. Adjust to take into account the order in your letter. Sometimes the signature is on page three, the address on page four, then the postscript follows back on the top of page one, for example.-->
+            
+             <closer>
+                <address>
+            <addrLine>
+                            <lb/>
+                            <placeName ref="#Reading_city">Reading</placeName> <date when="1815-04-05">five April 1815</date>
+                        </addrLine>
+                  <addrLine>
+                            <lb/>
+                            <persName ref="#Elford_SirWm">Sir W<hi rend="superscript">m</hi> Elford Bar<hi rend="superscript">t</hi>
+                            </persName>
+                        </addrLine>
+                  <addrLine>
+                            <lb/>
+                            <placeName ref="#Bickham_village"/>Bickham</addrLine>
+                   <addrLine>
+                            <lb/>
+                            <persName ref="#Simeon_J">J Simeon</persName> <placeName ref="#Plymouth_city">Plymouth</placeName>
+                        </addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div>
+           <listPerson>
+          
+          <!-- 
+             <persName ref="#Simeon_J">John Simeon   SIMEON, John (1756-1824), of Walliscot, Oxon. Reading M.P., franked letter. 
+       <persName ref="#LouisXVI">Louis XVI</persName>
+       <person xml:id="Webb_Mrs"> Jane Elizabeth Webb, wife of James and mother of 3 Webb sisters.
+       <person xml:id="Perry_Mrs">Mrs. Perry, friend of MRM who died
+       [could be Mrs. Perry, wife of editor of the Morning Chronicle, died February 18 1819 at Bordeaux, went to Lisbon for her health; same person reference in the MRM sonnet, went to Lisbon Nov. 1813, captured by Algerian pirates? age: in her 30s. James Perry: in August 1798 he married Anne Hull. MC was Whig in this period; connection to Hazlitt, others.]
+       [https://books.google.com/books?id=SuIaAAAAYAAJ&dq=%22Mrs.%20Perry%22%201815%20died%20Reading&pg=PA311#v=onepage&q=%22Mrs.%20Perry%22%201815%20died%20Reading&f=false]
+       Mr. Eustace Artist or art critic?
+       
+       Austen's brother: Edward Austen-Knight
+       Mr. Knight
+       <persName ref="#Baverstock">Mr. Baverstock</persName> James-Hinton Baverstock
+       MRM's friend, related to Mr. Baverstock [His sister Frances?]
+       [https://www.janeausten.co.uk/mary-russell-mitford-author-of-our-village-and-other-regency-novels/]
+       [http://www.jasna.org/persuasions/on-line/vol30no2/walker.html:  "At Chawton, that adoption suddenly became tangled in a vexed legal contest thirty years later, at the very moment Mansfield Park was published.  A local family—the Hintons of Chawton Lodge and their nephew Mr. Baverstock, a brewer in Alton—contested Edward Knight’s inheritance rights to Knight family property in Hampshire, which among other claims placed the Austen residences in Chawton at serious risk (Nokes 438-41; the lawsuit was finally settled in 1818 for £15,000)."  ]
+       
+       Eaton Stannard Barrett
+       
+       <persName ref="#Ulysses"> Ulysses, title character in Aeneid
+      -->
+          <person xml:id="proposed_new_ID">
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd">
+                            <placeName><!--place of birth--></placeName>
+                        </birth>
+             <death when="yyyy-mm-dd">
+                            <placeName><!--place of death--></placeName>
+                        </death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          
+       </listPerson>
+        
+        <listPlace>
+           <place xml:id="Red_Sea">
+              <placeName>Red Sea</placeName>
+              <placeName>Erythraean Sea</placeName>
+              <location>
+                            <geo>22 38</geo>
+                        </location>
+           </place>
+           
+           <place xml:id="Vesuvius">
+              <placeName>Mount Vesuvius</placeName>
+              <location>
+                            <geo>40.816667 14.433333</geo>
+                        </location>
+              <note resp="#lmw">An active volcano in mainland Europe, on the Gulf of Naples, near Campania, Italy. Its 79 AD eruption buried the Roman cities of Pompeii and Herculaneum. It entered a newly-active phase in 1631 and erupted six times during Mitford's lifetime, including a major eruption in 1794. The remains of Pompeii were rediscovered in 1748 by Rocque Joaquin de Alcubierre.</note>
+           </place>
+           
+           <place xml:id="Chawton_House">
+              <placeName>Chawton House</placeName>
+              <settlement>Chawton</settlement>
+              <region>Hampshire</region>
+              <country>England</country>
+              <location>
+                            <geo>51.1282 -0.9885</geo>
+                        </location>
+              <note resp="#lmw">A grade II listed Elizabethan-era manor house in the village of Chawton in Hampshire. During Mitford's lifetime, the estate was inherited by Edward Austen Knight, the brother of Jane Austen. The building now a research library and the entire village lies within the South Downs National Park.</note>
+           </place>
+           
+        </listPlace>
+          <listBibl>
+             
+             <bibl xml:id="Lord_Isles">
+                <title>The Lord of the Isles: A Poem. In Six Cantos</title>
+                <author ref="#Scott_Wal">Walter Scott</author>
+                <pubPlace>Edinburgh</pubPlace>
+                <publisher>Archibald Constable and Co.</publisher>
+                <pubPlace>London</pubPlace>
+                <publisher>Longman, Hurst, Rees, Orme, and Brown</publisher>
+                <date when="1815"/>
+             </bibl>
+             
+             <bibl xml:id="Rokeby">
+                <title>Rokeby: A Poem. In Six Cantos</title>
+                <author ref="#Scott_Wal">Walter Scott</author>
+                <pubPlace>Edinburgh</pubPlace>
+                <publisher>John Ballantyne and Co.</publisher>
+                <pubPlace>London</pubPlace>
+                <publisher>Longman, Hurst, Rees, Orme, and Brown</publisher>
+                <date when="1813"/>
+             </bibl>
+             
+             <bibl xml:id="Last_Minstrel">
+                <title>The Lay of the Last Minstrel. A Poem</title>
+                <author ref="#Scott_Wal">Walter Scott</author>
+                <pubPlace>Edinburgh</pubPlace>
+                <publisher>John Ballantyne and Co.</publisher>
+                <pubPlace>London</pubPlace>
+                <publisher>Longman, Hurst, Rees, Orme, and Brown</publisher>
+                <date when="1811"/>
+             </bibl>
+             
+             <bibl xml:id="Woman_Ida">
+                <title>Woman; or Ida of Athens</title>
+                <author ref="#Owenson_S">Sydney Owenson</author>
+                <pubPlace>London</pubPlace>
+                <publisher>Longman, Hurst, Rees, and Orme</publisher>
+                <date when="1809"/>
+             </bibl>
+             
+             <bibl xml:id="Heroine">
+                <title>The Heroine; or Adventures of Cherubina</title>
+                <author>Eaton Stannard Barrett</author>
+                <pubPlace>London</pubPlace>
+                <publisher>H. Colburn</publisher>
+                <date when="1814"/>
+             </bibl>
+             
+             <bibl xml:id="Udolpho">
+                <title>The Mysteries of Udolpho; A Romance, Interspersed with Some Pieces of Poetry</title>
+                <author ref="#Radcliffe_Ann">Ann Radcliffe</author>
+                <pubPlace>London</pubPlace>
+                <publisher>G.G. and J. Robinson</publisher>
+                <date when="1794"/>
+             </bibl>
+             
+             <bibl xml:id="MidsummerND">
+                <title>A Midsummer Night's Dream</title>
+                <author ref="#Shakespeare">Shakespeare</author>
+                <note resp="#lmw">Written around 1595, the first printed version appears in 1600. The play was likely acted before 1600, although the first performance for which we have a record took place in 1605.</note>
+             </bibl>
+          </listBibl>
+     </div>
+     </back>
+  </text>
+</TEI>

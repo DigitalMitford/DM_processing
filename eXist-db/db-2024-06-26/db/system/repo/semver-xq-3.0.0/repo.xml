@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo" xmlns:repo="http://exist-db.org/xquery/repo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <description>XQuery Library for Parsing Semantic Versions</description>
+   <author id="joewiz">Joe Wicentowski</author>
+   <website>https://github.com/eXist-db/semver.xq</website>
+   <status>stable</status>
+   <license>The 3-Clause BSD License</license>
+   <copyright>true</copyright>
+   <type>library</type>
+   <changelog>
+      <change version="3.0.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Breaking: Fixes to EXPath Package dependency resolution - <a href="https://github.com/eXist-db/semver.xq/pull/26">#26</a>.</li>
+            </ul>
+      </change>
+      <change version="2.4.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New: Tests to ensure compatibility with recent releases - <a href="https://github.com/eXist-db/semver.xq/pull/13">#13</a>, <a href="https://github.com/eXist-db/semver.xq/pull/14">#14</a>.</li>
+                <li>Fix: The semver:sort#3 function was not returning all results - <a href="https://github.com/eXist-db/semver.xq/pull/15">#15</a>.</li>
+                <li>New: Create a 'watch' and live deploy environment using Docker - <a href="https://github.com/eXist-db/semver.xq/pull/16">#16</a>.</li>
+                <li>New: Add handling for EXPath Package SemVer Templates - <a href="https://github.com/eXist-db/semver.xq/pull/18">#18</a>.</li>
+            </ul>
+      </change>
+      <change version="2.3.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New: Added a function for sorting arbitrary items, semver:sort#3 - <a href="https://github.com/eXist-db/semver.xq/pull/5">#5</a>.</li>
+            </ul>
+      </change>
+      <change version="2.2.2">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix: Fixed a bug in semver:compare - <a href="https://github.com/eXist-db/semver.xq/pull/3">#3</a>.</li>
+            </ul>
+      </change>
+      <change version="2.2.1">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix: Fixed an issue with coercing version strings for comparisons.</li>
+            </ul>
+      </change>
+      <change version="2.2.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>The first EXPath packaged version of semver.xq.</li>
+                <li>Feature: Adds support for coercing non-SemVer version strings into SemVer 2.0.0 compatible version strings.</li>
+            </ul>
+      </change>
+   </changelog>
+<deployed>2023-02-28T03:11:26.919Z</deployed></meta>

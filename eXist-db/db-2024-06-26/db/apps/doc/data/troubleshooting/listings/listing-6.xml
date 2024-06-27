@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Set name="port">
+  <Property name="jetty.http.port" deprecated="jetty.port">
+    <Default>
+      <SystemProperty name="jetty.port" default="8899"/>
+    </Default>
+  </Property>
+</Set>

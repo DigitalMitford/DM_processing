@@ -1,0 +1,26 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide/resources/scripts" version="1" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:13.876Z">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="less.min.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:14.163Z" modified="2023-02-28T03:11:14.163Z" filename="less.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="eXide.min.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:14.112Z" modified="2023-02-28T03:11:14.112Z" filename="eXide.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="modernizr.custom.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:14.106Z" modified="2023-02-28T03:11:14.106Z" filename="modernizr.custom.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="require.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:14.101Z" modified="2023-02-28T03:11:14.101Z" filename="require.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="xqlint.min.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:14.086Z" modified="2023-02-28T03:11:14.086Z" filename="xqlint.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="d3.v3.min.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:14.047Z" modified="2023-02-28T03:11:14.047Z" filename="d3.v3.min.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="eXide.min.js.map" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:13.88Z" modified="2023-02-28T03:11:13.88Z" filename="eXide.min.js.map" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="jquery" filename="jquery"/>
+    <subcollection name="ace" filename="ace"/>
+</collection>

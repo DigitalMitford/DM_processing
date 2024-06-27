@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         
+
+         <titleStmt>
+            <title>Our Village: Sketches of Rural Character and Scenery: Preface</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+
+
+            <editor ref="#scw">Samantha Webb</editor>
+            <editor>Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal ref="#ebb">Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#jmh">Jonathan M. Horanic</persName>
+               <persName ref="#scw">Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title>Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author ref="#MRM">Mary Russell
+                     Mitford</author><pubPlace>London</pubPlace><publisher ref="#Whittaker_Geo">Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date when="1825">1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type="sketch">
+            <pb n="220"/>
+            <head><title level="a" ref="#Mrs_Mosse_OV">MRS. MOSSE</title> 
+            </head><lb/>
+            <p>I do not know whether I ever hinted to the courteous reader that I had been in my
+               younger days, without prejudice to my present condition, somewhat of a spoiled child.
+               The person who, next after <persName ref="#OVNarratorsFather">my father</persName> and <persName ref="#OVNarratorsMother">mother</persName>, contributed most materially to this
+               melancholy catastrophe, was an old female domestic, <persName ref="#Mosse_Eliz_OV">Mrs. Elizabeth Mosse</persName>, who, at the
+               time of her death, had lived nearly sixty years in our house and that of <rs type="person" ref="#Russell_Richard_OV">my maternal
+                  grandfather</rs>. Of course, during the latter part of this long period, the common forms
+               and feelings of servant and master were entirely swept away. She was a member of the
+               family, an humble friend—happy are they who have such a friend!—living as she liked
+               up-stairs or down, in the kitchen or the nursery, considered, consulted, and beloved
+               by the whole household.</p>
+            <p><persName ref="#Mosse_Eliz_OV">Mossy</persName> (for by that fondling nursery name she best liked to be called) had never been
+               married, so that the<pb n="221"/> family of <persName ref="#OVNarratorsFather #OVNarratorsMother">her master and mistress</persName> had no rival in
+               her heart, and on <persName ref="#OVNarrator">me, their only child</persName>, was concentrated that intensity of affection
+               which distinguishes the attachments of age. I loved her dearly too, as dearly as a
+               spoiled child can love its prime spoiler,—but, oh! how selfish was my love, compared
+               to the depth, the purity, the indulgence, the self-denial of hers! Dear <persName ref="#Mosse_Eliz_OV">Mossy</persName>! I
+               shall never do her justice; and yet I must try.</p>
+            <p><persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName>, in her appearance, was in the highest degree what is called respectable.
+               She must have been tall when young; for even when bent with age, she was above the
+               middle height, a large-made though meagre woman. She walked with feebleness and
+               difficulty, from the attacks of hereditary gout, which not even her temperance and
+               activity could ward off. There was something very interesting in this tottering
+               helplessness, clinging to the balusters, or holding by doors and chairs like a child.
+               It had nothing of vulgar lameness; it told of age, venerable age. Out of doors she
+               seldom ventured, unless on some sunny afternoon I could entice her into the air, and
+               then once round the garden, or to the lawn gate and back again, was the extent of her
+               walk, propped by a very aristocratic walking-stick (once the property of a duchess)
+               as tall as herself, with a hooked ivory handle, joined to the cane by a rim of gold.
+               Her face was as venerable<pb n="222"/> as her person. She must have been very
+               handsome; indeed she was so still, as far as regular and delicate features, a pale
+               brown complexion, dark eyes still retaining the intelligence and animation of youth,
+               and an expression perfectly gentle and feminine, could make her so. It is one of the
+               worst penalties that woman pays to age, that often, when advanced in life, the face
+               loses its characteristic softness; in short, but for the difference in dress, many an
+               old woman’s head might pass for that of an old man. This misfortune could never have
+               happened to <persName ref="#Mosse_Eliz_OV">Mossy</persName>. No one could mistake the sex of that sweet countenance.</p>
+            <p>Her dress manifested a good deal of laudable coquetry, a nice and minute attention to
+               the becoming. I do not know at what precise date her costume was fixed: but, as long
+               as I remember her, fixed it was, and stood as invariably at one point of fashion, as
+               the hand of an unwound clock stands at one hour of the day. It consisted (to begin
+               from the feet and describe upwards) of black shoes of shining stuff, with very
+               pointed toes, high heels, and a peak up the instep, showing to advantage her
+               delicately white cotton stockings, and peeping beneath petticoats so numerous and
+               substantial, as to give a rotundity and projection almost equal to a hoop. Her
+               exterior garment was always quilted, varying according to the season or the occasion
+               from simple stuff, or fine white dimity, or an obsolete<pb n="223"/> manufacture
+               called Marseilles, up to silk and satin;— for, as the wardrobes of my three
+               grandmothers (pshaw! I mean <rs type="person" ref="#Russell_Richard_OV">my grandfather</rs>’s three wives!) had fallen to her lot, few
+               gentlewomen of the last century could boast a greater variety of silks that stood on
+               end. Over the quilted petticoat came an open gown, whose long waist reached to the
+               bottom of her stiff stays, and whose very full tail, about six inches longer than the
+               petticoat, would have formed a very inconvenient little train, if it had been
+               permitted to hang down; but that inconvenience never happened, and could scarcely
+               have been contemplated by the designer. The tail was constantly looped up, so as to
+               hang behind in a sort of bunchy festoon, exhibiting on each side the aforesaid
+               petticoat. In material the gown also varied with the occasion, although it was always
+               either composed of dark cotton or of the rich silks and satins of <persName ref="#Russell_MaryDicker_OV">my grandmamma</persName>’s
+               wardrobe. The sleeves came down just below the elbow, and were finished by a narrow
+               white ruffle meeting her neat mittens. On her neck she wore a snow-white double
+               muslin kerchief, pinned over the gown in front, and confined by an apron also of
+               muslin; and, over all, a handsome silk shawl, so pinned back as to show a part of the
+               snowy neck-kerchief. Her head-dress was equally becoming, and more particularly
+               precise; for, if ever she betrayed an atom of old-maidishness, it was on the score of
+               her caps. From<pb n="224"/> a touch of the gout in her hands, which had enlarged and
+               stiffened the joints, she could do no work which required nicety, and the successive
+               <orgName type="person" ref="#MrsMosse_Maids_OV">lady’s maids</orgName>, on whom the operation devolved, used to say that they would rather make
+               up ten caps for <persName ref="#OVNarratorsMother">their mistress</persName> than one for <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName>; and yet the construction
+               seemed simple enough. A fine plain clear-starched caul, sticking up rather high and
+               peaked in front, was plaited on a Scotch gauze headpiece; (I remember there used to
+               be exactly six plaits on each side—woe to the damsel who should put more or less!)
+               and, on the other side, a border, consisting of a strip of fine muslin, edged with
+               narrow lace, clear-starched and crimped, was plaited on with equal precision. In one
+               part of this millinery I used to assist. I dearly loved to crimp <persName ref="#Mosse_Eliz_OV">Mossy</persName>’s frills, and
+               she with her usual indulgence used frequently to let me, keeping however a pretty
+               close eye on her laces and muslins, whilst I was passing them with triumphant
+               rapidity between the small wooden machine notched longitudinally, and the
+               corresponding roller. Perhaps a greater proof of indulgence could hardly have been
+               shewn, since she must, during this operation, have been in double fear for her own
+               cap strips, which did occasionally get a rent, and for my fingers, which were
+               sometimes well pinched—then she would threaten that I should never crimp her muslin
+               again—a never which seldom lasted beyond the next<pb n="225"/> cap-making. The
+               head-piece was then concealed by a satin riband fastened in a peculiar bow, something
+               between a bow and a puffing behind, whilst the front was adorned with an equally
+               peculiar small knot, of which the two bows were pinned down flat and the two ends
+               left sticking up, cut into scallops of a prodigious regularity. The purchase of the
+               ribands formed another branch of the cap-making department to which I laid claim.
+               From the earliest period at which I could distinguish one colour from another, I had
+               been purveyor of ribands to <persName ref="#Mosse_Eliz_OV">Mossy</persName>, and indeed at all fairs, or whenever I received a
+               present or entered a shop, (and I was so liberally supplied that there was nothing
+               like generosity in the case,) it was the first and pleasantest destination of money
+               that occurred to me;—so that the <rs type="person" ref="#Mosse_Eliz_OV">dear woman</rs> used to complain, that <rs type="person" ref="#OVNarrator">Miss</rs> bought her so
+               many ribands, that they spoiled in keeping. We did not quite agree either in our
+               taste. White, as both acknowledged, was the only wear for Sundays and holidays; but
+               then she loved plain white, and I could not always control a certain wandering
+               inclination for figured patterns and pearl edges. If <persName ref="#Mosse_Eliz_OV">Mossy</persName> had an aversion to any
+               thing, it was to a pearl edge. I never could persuade her to wear that simple piece
+               of finery but once; and then she made as many wry faces as a child eating olives, and
+               stood before a glass eyeing the obnoxious riband with so much discomposure, that I<pb n="226"/> was fain to take it out myself, and promise to buy no more pearl edges.
+               The every-day ribands were coloured; and there, too, we had our little differences of
+               taste and opinion. Both agreed in the propriety of grave colours; but then my reading
+               of a grave colour was not always the same as hers. My eyes were not old enough. She
+               used to accuse my French greys of blueness, and my crimsons of redness, and my greens
+               of their greenness. She had a penchant for brown, and to brown I had a repugnance
+               only to be equalled by that which she professed towards a pearl edge;—indeed I retain
+               my dislike to this hour;—it is such an exceedingly cross and frumpish-looking
+               colour—and then its ugliness! Show me a brown flower! No! I could not bring myself to
+               buy brown;—so after fighting many battles about grey and green, we at last settled on
+               purple as a sort of neutral tint, a hue which pleased both parties. To return to the
+               cap which we have been so long making—the finish both to that and to my description
+               was a strip of crimped muslin, with edging on both sides to match the border, quilled
+               on a piece of tape, and fastened on a cap at each ear. This she called the chinnum. A
+               straight short row of hair rather grey, but still very dark for her age, just
+               appeared under the plaited lace; and a pair of silver-mounted spectacles completed
+               her equipment. If I live to the age of seventy, I will dress so too, with an
+                  exception<pb n="227"/> of the stiff stays. Only a waist native to the fashion
+               could endure that whalebone armour.</p>
+            <p>Her employments were many and various. No work was required of her from <rs type="person" ref="#OVNarratorsMother">her mistress</rs>;
+               but idleness was misery to her habits of active usefulness, and it was astonishing
+               how much those crippled fingers could do. She preferred coarse needle-work, as it was
+               least difficult to her eyes and hands; and she attended also to those numerous and
+               undefined avocations of a gentleman’s family which come under the denomination of
+               odd jobs—shelling peas, paring apples, splitting French beans, washing china,
+               darning stockings, hemming and mending dusters and housecloths, making cabbage-nets,
+               and knitting garters. These were her daily avocations, the amusements which she
+               loved. The only more delicate operation of needle-work that she ever undertook was
+               the making of pincushions, a manufacture in which she delighted—not the quips and
+               quiddities of these degenerate days, little bits of riband, and pasteboard, and gilt
+               paper, in the shape of books or butterflies, by which, at charitable repositaries,
+               half-a-dozen pins are smuggled into a lady’s pocket, and shillings and half-crowns
+               are smuggled out;—no! <persName ref="#Mosse_Eliz_OV">Mossy</persName>’s were real solid old-fashioned silken pincushions, such
+               as <persName ref="#Autolycus_WS">Autolycus</persName> might have carried about amongst his pedlery-ware, square and roomy, and
+               capable, at a moderate<pb n="228"/> computation, of containing a whole paper of
+               <emph rend="italics">short-whites</emph>, and another of <emph rend="italics">middlings</emph>.<note resp="#scw">Short whites and middlings are types of pins.</note> It was delightful to observe her enjoyment of
+               this play-work; the conscious importance with which she produced her satins and
+               brocades, and her cards of sewing silks (she generally made a whole batch at
+               once)—the deliberation with which she assorted the colours;—the care with which she
+               tacked and fitted side to side, and corner to corner;—the earnestness with which,
+               when all was sewed up except one small aperture for the insertion of the stuffing,
+               she would pour in the bran, or stow in the wool;—then the care with which she poked
+               the stuffing into every separate corner, ramming it down with all her strength, and
+               making the little bag (so to say) hold more than it would hold, until it became
+               almost as hard as a cricket-ball;—then how she drew the aperture together by main
+               force, putting so many last stitches, fastening off with such care;—and then
+               distributing them to all around her (for her ladylike spirit would have scorned the
+               idea of selling them), and always reserving the gayest and the prettiest for me. Dear
+               old soul! I have several of them still.</p>
+            <p>But, if I should begin to enumerate all the instances of kindness which I experienced
+               at her hands, through the changes and varieties of troublesome childhood and
+               fantastic youth; from the time when I was a puling baby, to the still more exacting
+               state of a young<pb n="229"/> girl at home in the holidays, I should never know when
+               to end. Her sweet and loving temper was self-rewarded. She enjoyed the happiness she
+               gave. Those were pleasant evenings when <persName ref="#OVNarratorsFather">my father</persName> and <persName ref="#OVNarratorsMother">mother</persName> were engaged in the
+               Christmas-dinner visits of a gay and extensive neighbourhood, and <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName> used to
+               put on her handsomest shawl and her kindest smile, and totter up stairs to drink tea
+               with me, and keep me company. From those evenings I imbibed, in the first place, a
+               love of strong green tea, for which gentle-womanly excitation <persName ref="#Mosse_Eliz_OV">Mossy</persName> had a remarkable
+               predilection; secondly, a very discreditable and unlady-like partiality, of which I
+               am quite ashamed, which I keep a secret from my most intimate friends, and would not
+               mention for the world—a sort of sneaking kindness for her favourite game of cribbage;<note resp="#scw">Cribbage is a card game generally played with two players that involves accumulating one hundred and twenty-one points. Games can be played with more than two players, and for these, participants usually arrange themselves into teams. Scores are kept on a peg board.</note>
+               an old-fashioned vulgarity, which, in my mind, beats the genteeler pastimes of whist
+               and picquet<note resp="#scw">Whist is a card game of suits played in pairs of partners, while picquet is a trick game played with a thirty-two card deck, the object of which is to score as many points as possible.</note>, and every game, except quadrille, out and out. <note resp="#scw">Quadrille is a card game played with a forty-card deck, largely associated with the upper classes.</note> I make no exception in
+               favour of chess, because, thanks to my stupidity, I never could learn that recondite
+               diversion; moreover, judging from the grave faces and fatiguing silence of the
+               initiated, I cannot help suspecting that, board for board, we cribbage-players are as
+               well amused as they. Dear <persName ref="#Mosse_Eliz_OV">Mossy</persName> could neither feel to deal and shuffle, nor see to
+               peg; so that the greater part of the business fell to my share. The<pb n="230"/>
+               success was pretty equally divided. Three rubbers were our stint; and we were often
+               game and game in the last before victory declared itself. She was very anxious to
+               beat, certainly—(<abbr>N.B.</abbr> we never played for any thing)—she liked to win; and yet she
+               did not quite like that I should lose. If we could both have won—if it had been
+               four-handed cribbage, and she my partner—still there would have been somebody to be
+               beaten and pitied, but then that somebody would not have been <quote>“<rs type="person" ref="#OVNarrator">Miss</rs>.”</quote></p>
+            <p>The cribbage hour was pleasant; but I think the hours of chat which preceded and
+               followed it were pleasanter still. <persName ref="#Mosse_Eliz_OV">Mossy</persName> was a most agreeable companion, sensible,
+               modest, simple, shrewd, with an exactness of recollection, an honesty of memory, that
+               gave exceeding interest to her stories. You were sure that you heard the truth. There
+               was one striking peculiarity in her manner of talking, or rather one striking
+               contrast. The voice and accent were quite those of a gentlewoman, as sweet-toned and
+               correct as could be; the words and their arrangement were altogether those of a
+               common person, provincial and ungrammatical in every phrase and combination. I
+               believe it is an effect of association, from the little slips in her grammar, that I
+               have contracted a most unscholar-like prejudice in favour of false syntax, which is
+               so connected in my mind with right notions, that I<pb n="231"/> no sooner catch the
+               sound of bad English than I begin to listen for good sense; and really they often go
+               together (always supposing that the bad English be not of the order called slang),
+               they meet much more frequently than those exclusive people, ladies and gentlemen, are
+               willing to allow. In her they were always united. But the charm of her conversation
+               was in the old family stories, and the unconscious peeps at old manners which they
+               afforded.</p>
+            <p><rs type="person" ref="#Russell_Richard_OV">My grandfather</rs>, with whom she had lived in his <rs type="person" ref="#Mrs_R_1stWife_OV">first wife</rs>’s time, full twenty years
+               before <persName ref="#OVNarratorsMother">my mother</persName>’s birth, was a most respectable clergyman, who, after passing a few
+               years in <placeName ref="#London_city">London</placeName> amongst the wits and poets of the day, seeing the star of <persName ref="#Pope_Alex">Pope</persName> in its
+               decline, and that of <persName ref="#Johnson">Johnson</persName> in its rise, had retired into the country, where he held
+               two adjoining livings of considerable value, both of which he served for above forty
+               years, until the duty becoming too severe, he resigned one of them under an
+               old-fashioned notion, that he who did the duty ought to receive the remuneration. I
+               am very proud of <rs type="person" ref="#Russell_Richard_OV">my venerable ancestor</rs>. We have a portrait of him taken shortly after
+               he was ordained, in his gown and band, with a curious flowing wig, something like
+               that of a judge, fashionable doubtless, at the time, but which at present rather
+               discomposes one’s notions of clerical costume. He seems to have been a dark little
+               man, with a sensible counte-<pb n="232"/>nance, and a pair of black eyes, that even in
+               the picture look you through. He was a votary of the <orgName ref="#Muses">Muses</orgName>, too; a contributor to
+               <title ref="#Lewis_Misc">Lewis’s Miscellany</title>; (did my readers ever hear of that collection?) translated <persName ref="#Horace">Horace</persName>,
+               as all gentlemen do; and wrote love-verses, which had the unusual good fortune of
+               obtaining their object, being, as <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName> was wont to affirm, the chief engine and
+               implement by which at fifty he gained the heart of his third wife, <rs type="person" ref="#Russell_MaryDicker_OV">my real
+                  grandmamma</rs>, the beautiful daughter of a neighbouring ‘squire. Of <persName ref="#Russell_Richard_OV">Dr. R.</persName>, his wives,
+               and his sermons, the bishops who visited, and the poets who wrote to him, <persName ref="#Mosse_Eliz_OV">Mossy</persName>’s
+               talk was mainly composed; chiefly of the wives.</p>
+            <p><persName ref="#Mrs_R_1stWife_OV">Mrs. R.</persName>, the first, was a fine <placeName ref="#London_city">London</placeName> lady, a widow, and considerably older than her
+               spouse, inasmuch as <rs type="person" ref="#Russell_Richard_OV">my grand-papa</rs>’s passion for her commenced when he and <persName ref="#Mrs_R_1stWife_son_OV">her son</persName>, by
+               <rs type="person" ref="#Mrs_R_1stWife_formerHusband_OV">a former husband</rs>, were school-fellows at Westminster. <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName> never talked much of
+               her, and, I suspect, did not much like her, though, when closely questioned, she
+               would say that <rs type="person" ref="#Mrs_R_1stWife_OV">madam</rs> was a fine, portly lady, stately and personable, but rather too
+               high. <persName ref="#Mrs_R_1stWife_son_OV">Her son</persName> made a sad mesalliance. He ran away with the <rs type="person" ref="#MrsMosse_sextonsDaughter_OV">sexton’s daughter</rs>, an
+               adventure which cost the <persName ref="#MrsMosse_sexton_OV">sexton</persName> his post, and <persName ref="#Mrs_R_1stWife_son_OV">his mother</persName> her pride: she never looked
+               up after it. That disgrace, and a cold caught by bumping on a pillion six miles
+               through the rain, sent her to her grave.</p>
+            <pb n="233"/>
+            <p>Of the second <persName ref="#Mrs_R_2ndWife_OV">Mrs. R.</persName> little remains on record, except a gown and petticoat of
+               primrose silk, curiously embossed and embroidered with gold and silver thread and
+               silks of all colours, in an enormous running pattern of staring flowers, wonderfully
+               unlike nature; also various recipes in the family receipt-book, which show a delicate
+               Italian hand, and a bold originality of orthography. The chief event of her married
+               life appears to have been the small-pox. She and <orgName type="person" ref="#Mrs_R_2ndWife_sisters_OV">two of her sisters</orgName>, and <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName>,
+               were all inoculated together. The <orgName ref="#MrsMosse_servants_OV">other servants</orgName>, who had not gone through the
+               disorder, were sent out of the house: <persName ref="#Russell_Richard_OV">Dr. R.</persName> himself took refuge with a neighbouring
+               friend, and <orgName type="person" ref="#MrsMosse_inoculation_party_OV">the patients</orgName> were consigned to the care of <orgName type="person" ref="#MrsMosse_nurses_OV">two or three nurses</orgName>, gossips
+               by profession, hired from the next town. The best parlour, (in those days
+               drawing-rooms were not) was turned into a hospital; a quarantine, almost as strict as
+               would be required in the plague, was kept up, and the preparation, the disease, and
+               the recovery, consumed nearly two months. <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName> always spoke of it as one of the
+               pleasantest passages of her life. None of them suffered much; there was nothing to
+               do; plenty of gossiping; a sense of self-importance, such as all prisoners must feel
+               more or less; and for amusement they had <title level="m" ref="#Pamela_SR">Pamela</title>, <title level="j" ref="#Spectator">the Spectator</title>, and <title level="m" ref="#Chas_Grandison_novel">
+                  Sir Charles Grandison</title>. <rs type="person" ref="#Russell_Richard_OV">My grandfather</rs> had a very fine library; but <title level="m" ref="#Chas_Grandison_novel">Sir Charles</title> was a female<pb n="234"/> book, having been purchased by the joint contributions of <orgName type="person" ref="#MrsMosse_LibraryLadies_OV">six young
+                     ladies</orgName>, and circulated amongst them once a year, sojourning two months with each fair
+               partner, till death or marriage broke up the coterie. Is not that fame?— Well the
+               <persName ref="#Mrs_R_2ndWife_OV">second Mrs. R.</persName> died in the course of time, though not of the small-pox; and <rs type="person" ref="#Russell_Richard_OV">my
+                  grandfather</rs>, faithful to his wives, but not to their memories, married again as
+               usual.</p>
+            <p>His third adventure in that line was particularly happy; for <rs type="person" ref="#Russell_MaryDicker_OV">my grandmother</rs>, beside
+               being a celebrated beauty, appears to have been one of the best and kindest women
+               that ever gladdened a country-home. She had a large household; for the tithes of one
+               rich rectory were taken in kind, and the glebe cultivated; so that the cares of a
+               farm-house were added to the hospitality of a man of good fortune, and to the sort of
+               stateliness which in those primitive days appertained to a doctor of divinity. The
+               superintendance of that large household seems to have been at once her duty and her
+               delight. It was a plenty and festivity almost resembling that of Camacho’s wedding,<note resp="#scw">An allusion to a scene in <title level="m" ref="#Don_Quixote_novel">Don Quixote</title>, in which a wedding feast is described in intense, pleasurable detail.</note>
+               guided by a wise and liberal oeconomy, and a spirit of indefatigable industry. Oh the
+               saltings, the picklings, the preservings, the cake-makings, the unnamed and
+               unnameable confectionary doings over which she presided! The very titles of her
+               territories denoted the extent of her stores. The<pb n="235"/> apple-room, the
+               pear-bin, the cheese-loft, the minced-meat closet, were household words as familiar
+               in <persName ref="#Mosse_Eliz_OV">Mossy</persName>’s mouth as the dairy or the poultry-yard. And <rs type="person" ref="#Russell_MaryDicker_OV">my grandmamma</rs> was no hoarder
+               for hoarding’s sake, no maker of good things which were not to be eaten—as I have
+               sometimes noted amongst your managing ladies; the object of her cares and stores was
+               to contribute to the comfort of all who came within her influence. The large
+               parsonage-house was generally overflowing with guests; and from the <rs type="person" ref="#MrsMosse_OxfordProf_OV">Oxford professor</rs>,
+               who, with <rs type="person" ref="#MrsMosse_OxfordProfWife_OV">his wife</rs>, <orgName type="person" ref="#MrsMosse_OxfordProfChildren_OV">children</orgName>, <orgName type="person" ref="#MrsMosse_OxfordProfServants_OV">servants</orgName>, and horses, passed his vacations there, to
+               the poor <rs type="person" ref="#MrsMosse_pewOpener_OV">pew-opener</rs>, who came with <orgName type="person" ref="#MrsMosse_pewOpener_Children_OV">her little ones</orgName> at tide-times, all felt the charm
+               of her smiling graciousness, her sweet and cheerful spirit, her open hand and open
+               heart. It is difficult to imagine a happier couple than my venerable <rs type="person" ref="#Russell_Richard_OV">grandfather</rs> and
+               his <rs type="person" ref="#Russell_MaryDicker_OV">charming wife</rs>. He retained to the last his studious habits, his love of
+               literature, and his strong and warm family affections; while she cast the sunshine of
+               her innocent gaiety over his respectable age, proud of his scholarship, and prouder
+               still of his virtues. Both died long ago. But <persName ref="#Mosse_Eliz_OV">Mossy</persName> was an <quote>“honest chronicler,”</quote><note resp="#scw">Mitford is quoting from Shakespeare's <title ref="#HenryVIII_play">Henry VIII</title>, Act IV, scene 2, line 78. The words are spoken by Katherine to Griffith.</note> and
+               never weary of her theme. Even the daily airings of <rs type="person" ref="#Russell_Richard_OV">the good doctor</rs> (who, in spite of
+               his three wives, had a little of the peculiar preciseness in his studies and his<pb n="236"/> exercise, which one is apt to attribute exclusively to that dreary
+               person, an old bachelor) even those airings from twelve to two, four miles on the
+               turnpike-road and four miles back, with the fat horses and the grey-haired <rs type="person" ref="#MrsMosse_coachman_OV">coachman</rs>,
+               became vivid and characteristic in her description. The very carriage-dog, <persName ref="#Sancho_dog">Sancho</persName>,
+               was individualized; we felt that he belonged to the people and the time.</p>
+            <p>Of these things we talked, mingled with many miscellaneous anecdotes of the same date
+               ;—how an <rs type="person" ref="#MrsMosse_electDuke_OV">electioneering duke</rs> saluted <persName ref="#Russell_MaryDicker_OV">madam</persName>, and lost <rs type="person" ref="#Russell_Richard_OV">master</rs>’s interest by the
+               freedom; how <persName ref="#MrsMosse_SirThomasS_OV">Sir Thomas S.</persName>, the Lovelace of his day, came in his chariot and six,
+               full twenty miles out of his way, to show himself to <persName ref="#Russell_Fanny_OV">Miss Fanny</persName> in a Spanish
+               masquerade-dress, white satin slashed with blue, a blue cloak embroidered with
+               silver, and point-lace that might have won any woman’s heart, except that of his fair
+               but obdurate mistress; and lastly, how <persName ref="#Fielding_Henry">Henry Fielding</persName>, when on a visit in the
+               neighbourhood, had been accustomed to come and swing the children in the great barn;
+               he had even swung <persName ref="#Mosse_Eliz_OV">Mossy</persName> herself, to her no small edification and delight—only think
+               of being chucked backwards and forwards by the man who wrote about <persName ref="#Parson_Adams_HF">Parson Adams</persName> and
+               <persName ref="#Squire_Allworthy_HF">‘Squire Allworthy</persName>! I used to envy her that felicity. Then from authors we got to
+               books. She could not see in my time to read any thing but the folio <title level="m" ref="#Bible">Bible</title>, and <title level="m" ref="#Book_Common_Prayer">Com-<pb n="237"/>mon Prayer-Book</title>, with which my <persName ref="#OVNarratorsMother">dear mother</persName> had furnished her; but in her
+               younger days she had seen or heard parts at least of a variety of books, and entered
+               into them with a very keen though uncritical relish. Her chief favourites were, the
+               <title level="m" ref="#PilgrimsProgress">Pilgrim’s Progress</title>, <title level="m" ref="#Don_Quixote_novel">Don Quixote</title>, <title level="m" ref="#GulliversTr_JS">Gulliver’s Travels</title>, <title level="m" ref="#RobinsonCrusoe_DD">Robinson Crusoe</title>, and the equally
+               apocryphal but still truer-seeming <title level="m" ref="#Journal_Plague_DD">History of the Plague in London</title>, by the same
+               author, all of which she believed with the most earnest simplicity. I used frequently
+               to read to her the passages she liked best; and she in her turn would repeat to me
+               songs and ballads, good, bad, and indifferent—a strange medley, and strangely
+               confounded in her memory; and so the time passed till ten o’clock. Those were
+               pleasant evenings for her and for me.</p>
+            <p>I have sometimes, on recollection, feared that her down-stair life was less happy.
+               All that the orders of a mistress could effect for her comfort was done. But we were
+               rich then unluckily; and there were skip-jacks of <orgName type="person" ref="#MrsMosse_footmen_OV">footmen</orgName>, and surly <orgName type="person" ref="#MrsMosse_coachmen_OV">coachmen</orgName>, and
+               affected <orgName type="person" ref="#MrsMosse_Maids_OV">waiting-maids</orgName>, and vixenish <orgName type="person" ref="#MrsMosse_cooks_OV">cooks</orgName>, with tempers red-hot like their coals, to
+               vex and tease our <rs type="person" ref="#Mosse_Eliz_OV">dear old woman</rs>. She must have suffered greatly between her ardent
+               zeal for <rs type="person" ref="#Russell_Richard_OV">her master</rs>’s interest, and that strange principle of concealing evil doings
+               which servants call honour, and of which she was perpetually the slave<pb n="238"/>
+               and the victim. She had another infirmity, too, an impossibility of saying no, which,
+               added to an unbounded generosity of temper, rendered her the easy dupe of the artful
+               and designing. She would give any thing to the appearance of want, or the pretence of
+               affection; in short, to importunity, however clothed. It was the only point of
+               weakness in her character; and to watch that she did not throw away her own little
+               comforts, to protect her from the effects of her over-liberality, was the chief care
+               of <rs type="person" ref="#OVNarratorsMother">her mistress</rs>. <orgName ref="#MrsMosse_inferior_servants_OV">Three inferior servants</orgName> were successively turned away for
+               trespassing on <persName ref="#Mosse_Eliz_OV">Mossy</persName>’s goodness, drinking her green tea, eating her diet-bread,
+               begging her gowns. But the evil was incurable; she could dispense with any pleasure,
+               except that of giving. So she lived on, beloved as the kind, the gentle, and the
+               generous must be, till I left school—an event that gave her great satisfaction.</p>
+            <p>We passed the succeeding spring in <placeName ref="#London_city">London</placeName>; and she took the opportunity to pay a
+               long-promised visit to a half-nephew and niece, or rather a half-niece and her
+               husband, who lived in <placeName ref="#Barbican">Prince’s-street, Barbican</placeName>. <persName ref="#MrsMosse_Beck_Mrs_OV">Mrs. Beck</persName> (one naturally mentions
+               her first as the person of most consequence) was the only real woman who ever came up
+               to the magnificent abstract idea of the <quote>“fat woman of Brentford,”</quote><note resp="#scw">A quote from Shakespeare's <title level="m" ref="#Merry_Wives_play">The Merry Wives of Windsor</title> in Act IV, scene 2, line 2033-4. The line is spoken by Mistress Ford in reference to her maid's aunt, who owns a dress large enough to conceal Falstaff.</note> the only being for
+               whom <persName ref="#Falstaff_WS">Sir John Falstaff</persName> might have passed undetected.<pb n="239"/> She was indeed a
+               mountain of flesh, exuberant, rubicund, and bearded like a man; and she spoke, in a
+               loud deep mannish voice, a broad <placeName ref="#Wiltshire_county">Wiltshire</placeName> dialect; but she was hearty and jovial
+               withal, a thorough good-fellow in petticoats. <persName ref="#MrsMosse_Beck_Mr_OV">Mr. Beck</persName>, on the other hand, was a
+               little, insignificant, perking, sharp-featured man, with a Jerry-Sneak expression <note resp="#scw">The term jerry-sneak means one who is dominated or intimidated.</note>in
+               his pale whey-face, a thin squeaking voice, and a Cockney accent. He had been lucky
+               enough to keep a little shop in an independent borough, at the time of a violent
+               contested election; and having adroitly kept back his vote till votes rose to their
+               full value (I hope this is no breach of privilege), and then voted on the stronger
+               side, he was at the time of which I speak comfortably settled in the excise as a
+               tide-waiter, had a pretty neat house, brought up his family in good repute, wore a
+               flaming red waistcoat, attended a dissenting meeting, and owed no man a shilling.</p>
+            <p>These good people were very fond of their aunt, who had indeed, before they were so
+               well off, shown them innumerable kindnesses. Perhaps there might be in the case a
+               little gratitude for favours to come; for she had three or four hundred pounds to
+               bequeath, partly her own savings, and partly a legacy from a distant relative; and
+               they were her natural heirs. However that might be, they paid her all possible
+               attention, and when we were about to return into the<pb n="240"/> country, petitioned
+               so vehemently for a few weeks more, that, yielding to the above-mentioned infirmity,
+               she consented to stay. I had myself been the ambassadress to Barbican to fetch our
+               dear old friend; and I remember, as if it were yesterday, how earnestly I entreated
+               her to come with me, and how seriously I lectured <persName ref="#MrsMosse_Beck_Mrs_OV">Mrs. Beck</persName> for her selfishness, in
+               wishing to keep <rs type="person" ref="#Mosse_Eliz_OV">her aunt</rs> in <placeName ref="#London_city">London</placeName> during the heat of June. I even, after taking
+               leave, sprang out of the carriage, and ran again up stairs to persuade her to come
+               with me. <persName ref="#Mosse_Eliz_OV">Mossy</persName>’s wishes were evidently on my side; but she had promised, and the
+               performance of her promise was peremptorily claimed: so with a heavy heart I left
+               her. I never saw her again. There is surely such a thing as presentiment. A violent
+               attack of gout in the stomach carried her off in a few hours. Hail to thy memory! for
+               thou wast of the antique world, when <quote>“service sweat for duty, not for meed!”</quote><note resp="#scw">A quote from <title level="m" ref="#As_You_Like_It_play">As You Like It</title>, Act II, scene 3, line 59. The line is spoken by Orlando to Adam.</note></p>
+         </div>
+      </body>
+      <back>
+         <listPerson sortKey="fictPersons">
+            
+            <person xml:id="Mosse_Eliz_OV" sex="f">
+               <persName ref="#Mosse_Eliz_OV">
+                  <surname>Mosse</surname>
+                  <forename>Elizabeth</forename>
+                  <surname type="nick">Mossy</surname>
+               </persName>
+               <note resp="#scw">The title character of the <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. In the sketch, Mossy is recalled as an elderly servant, based on the real <persName ref="#Cropp_Mrs">Elizabeth Cropp</persName>, who worked in the household of <persName ref="#Russell_Richard">Dr. Richard Russell</persName> before <persName ref="#Russell_M">Mary Russell</persName> was born.</note>
+            </person>
+            <person xml:id="MrsMosse_Beck_Mr_OV" sex="m">
+               <persName>
+                  <surname>Beck</surname>
+                  <forename>not given</forename>
+               </persName>
+               <occupation type="trade" subtype="clerk"/>
+               <occupation type="government" subtype="taxCollector"/>
+               <note resp="#scw">Half-nephew and natural heir of <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName>, the title character of the <title level="m" ref="#OV">Our Village</title> sketch. He and his wife are said to live in Prince's Street, Barbican.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_Beck_Mrs_OV" sex="f">
+               <persName>
+               <surname type="married">Beck</surname>
+               <forename>not given</forename>  
+               </persName>
+               <note resp="#scw">Half-niece by marriage of <persName ref="#Mosse_Eliz_OV">Mrs. Mosse</persName>, the title character of the <title level="m" ref="#OV">Our Village</title> sketch. She and her husband are said to live in Prince's Street, Barbican.</note>
+            </person>
+            
+            
+            <person xml:id="Russell_Richard_OV" sex="m">
+               <persName ref="#Russell_Richard_OV">
+                  <surname>Russell</surname>
+                  <forename>Richard</forename>
+               </persName>
+               <occupation type="religious" subtype="clergy"/>
+               <note resp="#scw"><persName ref="#MRM">Mary Russell Mitford</persName>'s maternal grandfather, <persName ref="#Russell_Richard">Richard Russell</persName>, as he is described but not named in the <title level="m" ref="#OV">Our Village</title> sketch, <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>.</note>
+            </person>
+            
+            <person xml:id="Mrs_R_1stWife_OV" sex="f"><!--scw: There's a discrepancy in the SI in the bio of MRM's mother. If we take this sketch as evidence, her mother's father married 3 times, not 2, as the the SI has it. I did not cross-ref wife names in entries here given this discrepancy-->
+               <persName ref="#Mrs_R_1stWife_OV">
+                  <surname type="married">Russell</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">The first wife of <persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName>. She is recalled in the <title level="m" ref="#OV">Our Village</title> sketch, <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> as a wealthy widow with a son, considerably older than her husband, and someone who thought herself better than other people. </note>
+            </person>
+            
+            <person xml:id="Mrs_R_1stWife_formerHusband_OV" sex="m">
+               <persName ref="#Mrs_R_1stWife_formerHusband_OV">
+                  <surname type="married">not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">The first husband of <persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName>'s <persName ref="#Mrs_R_1stWife_OV">first wife</persName>. He is mentioned in the <title level="m" ref="#OV">Our Village</title> sketch, <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>.</note>
+            </person>
+            
+            <person xml:id="Mrs_R_1stWife_son_OV" sex="m">
+               <persName ref="#Mrs_R_1stWife_son_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">The son of <persName ref="#Mrs_R_1stWife_OV">the first wife of </persName><persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName>, who makes a bad marital match that shames his mother. He is recalled in the <title level="m" ref="#OV">Our Village</title> sketch, <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>.</note>
+            </person>
+            
+            <person xml:id="Mrs_R_2ndWife_OV" sex="f"><!--scw: There's a discrepancy in the SI in the bio of MRM's mother. If we take this sketch as evidence, her mother's father married 3 times, not 2, as the the SI has it. I did not cross-ref wife names in entries here given this discrepancy-->
+               <persName ref="#Mrs_R_2ndWife_OV">
+                  <surname type="married">Russell</surname>
+                  <forename>not given</forename>
+               </persName>
+               <persName resp="#scw">The second wife of <persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName>. She is recalled in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>, and is remembered chiefly for participating in <orgName ref="#MrsMosse_inoculation_party_OV">an innoculation party</orgName>.</persName>
+            </person>
+            
+            <person xml:id="Russell_MaryDicker_OV" sex="f"><!--SCW: Note potential correction below for site index-->
+               <persName ref="#Russell_MaryDicker_OV">
+                  <surname type="married">Russell</surname>
+                  <surname type="paternal">Dicker</surname>
+                  <forename>Mary</forename>
+               </persName>
+               <note resp="#scw">The third wife of <persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName>, and Mitford's maternal grandmother, <persName ref="#Russell_MaryDicker">Mary Dicker Russell</persName>. She is recalled fondly in the <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>.</note><!--6/29/21: Site Index entry says MRM's grandmother was the 2nd wife of Dr. Russell; "Mrs. Mosse" sketch says she was the third.-->
+            </person>
+            
+            <person xml:id="MrsMosse_coachman_OV" sex="m">
+               <persName ref="#MrsMosse_coachman_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <occupation type="service" subtype="coachman"/>
+               <note resp="#scw">A person whom the title character of <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> remembers.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_electDuke_OV" sex="m">
+               <persName ref="#MrsMosse_electDuke_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. He offends <persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName> by saluting <rs type="person" ref="#Russell_MaryDicker_OV">his wife</rs>.</note>
+            </person>
+            
+            <person xml:id="Russell_Fanny_OV" sex="f"><!--scw 6/29/21: Check to see whether this person may be Mrs. Fanny from "Modern Antiques".--><!--scw 5/25/22: It's possible this Fanny is the same as in Modern Antiques, but I haven't confirmed from dates and the story is elusive-->
+               <persName ref="#Russell_Fanny_OV">Fanny
+                  <surname>not given</surname>
+                  <forename>Frances</forename>
+                  <forename type="nick">Fanny</forename><!--scw: change to addName-->
+               </persName>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>, likely referring to the real-life sister of <persName ref="#Russell_Mary">Mary Russell</persName>. In the sketch, she gains the attentions of the neighborhood rake, <persName ref="#MrsMosse_SirThomasS_OV">Sir Thomas S.</persName>.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_OxfordProf_OV" sex="m">
+               <persName ref="#MrsMosse_OxfordProf_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <occupation type="educator" subtype="teacher"/>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. He is among the many visitors to <persName ref="#Russell_MaryDicker_OV">Mitford's maternal grandmother</persName>'s home.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_OxfordProfWife_OV" sex="f">
+               <persName ref="#MrsMosse_OxfordProfWife_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. She is among the many visitors to <persName ref="#Russell_MaryDicker_OV">Mitford's maternal grandmother</persName>'s home.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_pewOpener_OV" sex="m">
+               <persName ref="#MrsMosse_pewOpener_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. He is among the many visitors to <persName ref="#Russell_MaryDicker_OV">Mitford's maternal grandmother</persName>'s home.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_sexton_OV" sex="m">
+               <persName ref="#MrsMosse_sexton_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <occupation type="religious"/>
+               <note resp="#scw">Charactor mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>, whose daughter imprudently marries the son of <persName ref="#Russell_Richard_OV">Dr. Russell</persName>'s first wife.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_sextonsDaughter_OV" sex="f">
+               <persName ref="#MrsMosse_sextonsDaughter_OV">
+                  <surname>not given</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>, who imprudently marries the son of <persName ref="#Russell_Richard_OV">Dr. Russell</persName>'s first wife.</note>
+            </person>
+            
+            <person xml:id="MrsMosse_SirThomasS_OV" sex="m">
+               <persName ref="#MrsMosse_SirThomasS_OV">
+                  <surname><abbr>S.</abbr></surname>
+                  <forename>Thomas</forename>
+               </persName>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>, who is considered the area rake and shows interest in <persName ref="#Russell_Fanny_OV">Fanny</persName>.</note>
+            </person>
+            
+            <person xml:id="Parson_Adams_HF" sex="m">
+               <persName ref="#Parson_Adams_HF"/>
+               <note resp="#scw">Character in <persName ref="#Fielding_Henry">Henry Fielding</persName>'s novel, <title level="m" ref="#JosephAndrews_HF">Joseph Andrews</title>. He believes the best of everyone, and is often the victim of deceit.</note>
+            </person>
+            
+            <person xml:id="Sancho_dog" sex="m">
+               <persName ref="#Sancho_dog">Sancho</persName>
+               <note resp="#scw">The dog who belonged to Mitford's maternal grandfather, and that is described vividly by the title character in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>.</note>
+            </person>
+            
+            <person xml:id="Squire_Allworthy_HF" sex="m">
+               <persName ref="#Squire_Allworthy_HF"/>
+               <note resp="#scw">Character in <persName ref="#Fielding_Henry">Henry Fielding</persName>'s novel, <title ref="#TomJones_HF">Tom Jones</title>. He is the good-natured guardian of the novel's title character.</note>
+            </person>
+            
+            <person xml:id="Autolycus_WS" sex="m">
+               <persName ref="#Autolycus_WS">Autolycus</persName>
+               <note resp="#scw">The peddler and thief who appears in <persName ref="#Shakespeare">Shakespeare</persName>'s <title ref="#Winters_Tale_play">The Winter's Tale</title>.</note>
+            </person>
+            
+            
+         </listPerson>
+        
+         
+         <listOrg sortKey="fictOrgs">
+            
+            <org xml:id="Mrs_R_2ndWife_sisters_OV">
+               <orgName ref="#Mrs_R_2ndWife_sisters_OV"/>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. They are the sisters of the second wife of <persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName> who populate the household.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_coachmen_OV">
+               <orgName ref="#MrsMosse_coachmen_OV">coachmen in Mrs. Mosse
+               </orgName>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> as servants in the <orgName ref="#Mitfords">Mitford</orgName> household who take advantage of the title character in her old age.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_cooks_OV">
+               <orgName ref="#MrsMosse_cooks_OV">cooks in Mrs. Mosse</orgName>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> as servants in the <orgName ref="#Mitfords">Mitford</orgName> household who take advantage of the title character in her old age.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_footmen_OV">
+               <orgName ref="#MrsMosse_footmen_OV">footmen in Mrs. Mosse</orgName>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> as servants in the <orgName ref="#Mitfords">Mitford</orgName> household who take advantage of the title character in her old age.</note>
+            </org>       
+            
+            <org xml:id="MrsMosse_inferior_servants_OV">
+               <orgName ref="#MrsMosse_inferior_servants_OV">inferior servants in Mrs. Mosse</orgName>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> as servants in the <orgName ref="#Mitfords">Mitford</orgName> household who are dismissed for taking advantage of the title character in her old age.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_inoculation_party_OV">
+               <orgName ref="#MrsMosse_inoculation_party_OV"/>
+               <note resp="#scw">This set of characters, participants in a smallpox inoculation party at the home of <persName ref="#Russell_Richard_OV">Mitford's maternal grandfather</persName>, appear in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>, and include <persName ref="#Mrs_R_2ndWife_OV">his second wife</persName>.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_ladysMaids_OV">
+               <orgName ref="#MrsMosse_ladysMaids_OV"/>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> as servants in the <orgName ref="#Mitfords">Mitford</orgName> household who take advantage of the title character in her old age.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_LibraryLadies_OV">
+               <orgName ref="#MrsMosse_LibraryLadies_OV"/>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. They are said to be six young ladies who once contributed to the purchase of <title level="m" ref="#Chas_Grandison_novel">Sir Charles Grandison</title> for the lending library so they could circulate the book among themselves.</note>
+            </org>  
+            
+            <org xml:id="MrsMosse_nurses_OV">
+               <orgName ref="#MrsMosse_nurses_OV"/>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. They attend the smallpox inoculation party that includes the <persName ref="#Mrs_R_2ndWife_OV">second wife of Mitford's maternal grandfather</persName>.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_OxfordProfChildren_OV">
+               <orgName ref="#MrsMosse_OxfordProfChildren_OV"/>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. They are among the many visitors to <persName ref="#Russell_MaryDicker_OV">Mitford's maternal grandmother</persName>'s home.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_OxfordProfServants_OV">
+               <orgName ref="#MrsMosse_OxfordProfServants_OV"/>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. They are among the many visitors to <persName ref="#Russell_MaryDicker_OV">Mitford's maternal grandmother</persName>'s home.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_pewOpener_Children_OV">
+               <orgName ref="#MrsMosse_pewOpener_Children_OV"/>
+               <note resp="#scw">Character mentioned in <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. They are among the many visitors to <persName ref="#Russell_MaryDicker_OV">Mitford's maternal grandmother</persName>'s home.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_servants_OV">
+               <orgName ref="#MrsMosse_servants_OV"/>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title>. They are sent away during the smallpox innoculation party that includes the <persName ref="#Mrs_R_2ndWife_OV">second wife of Mitford's maternal grandfather</persName>.</note>
+            </org>
+            
+            <org xml:id="MrsMosse_Maids_OV">
+               <orgName ref="#MrsMosse_Maids_OV"/>
+               <note resp="#scw">These characters are mentioned in the sketch <title level="a" ref="#Mrs_Mosse_OV">Mrs. Mosse</title> as servants in the <orgName ref="#Mitfords">Mitford</orgName> household who take advantage of the title character in her old age.</note>
+            </org>                        
+         </listOrg>
+         
+         
+         
+         <listPlace sortKey="histPlaces">
+            <place xml:id="Wiltshire_county">
+            <placeName ref="#Wiltshire_county">Wiltshire, England</placeName>
+               <region>South West England</region>
+               <country>England</country>
+               <location>
+                  <geo>	geo:51.333333,-1.916667</geo>
+               </location>
+               <note resp="#scw">A landlocked county that borders Berkshire, Gloucesteshire, Oxfordshire, Hampshire, Somerset, Hampshire, and Dorset. It encompasses Old Sarum, Salisbury, Salisbury Plain, and the Stonehenge site.</note>
+            </place>
+            
+            
+         </listPlace>
+         
+         <listBibl sortKey="schol"><!--scw: check on this attribute as it's not related to MRM scholarship-->
+            <bibl xml:id="Book_Common_Prayer">
+               <title level="m" ref="#Book_Common_Prayer">The Book of Common Prayer and Administration of the Sacraments and other Rites and Ceremonies of the Church, according to the use of the Church of England, Together with the Psalter or Psalms of David, pointed as they are to be Sung or said in churches</title>
+               <author>Thomas Cranmer</author>
+               <pubPlace ref="#London_city">London</pubPlace>
+               <publisher>Edward Whytchurche</publisher>
+               <date when="1549">1549</date>
+               <note resp="#scw">The established liturgy of the Church of England. The book was first composed during the English Reformation, and aimed to make the rituals of the church more accessible to the worshippers by describing them in English rather than Latin. It encompasses forms of worship, service, prayers, and sacraments. Its use was authorized by Parliament in <date when="1549">1549</date>, and it has undergone important revisions over the centuries. Many phrases from the book have gone into common discourse.</note>
+               <note>
+                  <ref target="http://justus.anglican.org/resources/bcp/1549/BCP_1549.htm"/>
+               </note>
+            </bibl>
+            
+            <bibl xml:id="PilgrimsProgress">
+               <title level="m" ref="#PilgrimsProgress">Pilgrim's Progress from This World, to that Which is to Come</title>
+               <author>John Bunyan</author>
+               <pubPlace ref="#London_city">London</pubPlace>
+               <publisher>Nathaniel Ponder</publisher>
+               <date from="1678" to="1684">1678-1684</date>
+               <note resp="#scw">Allegorical novel that tells the story of a protagonist named Christian on a journey from the City of Destruction to the Celestial City. On his way, he meets various characters like Evangelist, Pliable, Mr. Legality and his son, Civility, as he roams through the Shadow of Death, the Slough of Despond, the Hill of Difficulty, and Wicket Gate. The first part of the book was written while Bunyan was in imprisoned in the county jail. He published the second part, which deals with Christian's wife and sons, several years later.</note>
+            </bibl>
+            
+            <bibl xml:id="Journal_Plague_DD">
+               <title level="m" ref="#Journal_Plague_DD">A Journal of the Plague Year</title>
+               <title type="alt">History of the Plague in London</title>
+               <author ref="#Defoe_D">Daniel Defoe</author>
+               <author role="pseud">H.F.</author> 
+               <pubPlace ref="#London_city">London</pubPlace>
+               <publisher>E. Nutt</publisher>
+               <date when="1722">1722</date>
+               <note resp="#scw">Often described as a historical novel, Defoe's work is presented as the eyewitness account of a London saddler to the events of the bubonic plague outbreak in London in the year <date when="1665">1665</date>. Defoe was about five years old when the plague broke out, so it is unlikely that the narrative of events and places are from his own perspective or are meant to be taken as a genuine eyewitness account, despite the verisimilitude of the text. Defoe may have consulted the journals of his uncle, Henry Foe, the H.F. of the pseudonym, for some of his material.</note>
+            </bibl>
+            
+            <bibl xml:id="Lewis_Misc"><!--scw: cannot find any information about this title-->
+               <title ref="#Lewis_Misc">Lewis's Miscellany</title>
+               
+            </bibl>
+            <bibl xml:id="Pamela_SR">
+               <title level="m" ref="#Pamela_SR">Pamela; or, Virtue Rewarded</title>
+               <author ref="#Richardson_Sam">Samuel Richardson</author>
+               <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+               <publisher>Rivington and Osborn</publisher>
+               <date when="1740">1740</date>
+               <note resp="#scw">This acclaimed, influential, but controversial epistolary novel tells the story of fifteen-year old Pamela Andrews, the daughter of laboring-class parents, as she fends off the sexual advances of her rakish employer, Mr. B. When he eventually proposes to her, she doubts his sincerity, but later realizes that she loves him, and accepts his proposal. The novel interrogates issues of class and gender as they affect feeling.</note>
+               
+            </bibl>
+            
+            <bibl xml:id="JosephAndrews_HF">
+               <title ref="#JosephAndrews_HF">The History of the Adventures of Joseph Andrews and of his friend Mr. Abraham Adams</title>
+               <author ref="#Fielding_Henry">Henry Fielding</author>
+               <pubPlace><placeName ref="#London_city">London</placeName></pubPlace>
+               <publisher>A. Millar</publisher>
+               <date when="1742">1742</date>
+               <note resp="#scw">This picaresque novel, a loose satirical response to <title ref="#Pamela_SR">Pamela</title>, tells of her brother's adventures on his way to London with his companion Parson Adams. Joseph is dismissed from service for rejecting the advances of Lady Booby, the wife of his deceased employer, and meets Adams who is on the way to sell his sermons in <placeName ref="#London_city">London</placeName>. </note>
+            </bibl>
+            
+
+         </listBibl>
+         
+         
+      </back>
+   </text>
+</TEI>

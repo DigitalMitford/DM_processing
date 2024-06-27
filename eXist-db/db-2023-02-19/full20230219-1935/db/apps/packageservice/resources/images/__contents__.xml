@@ -1,0 +1,13 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/packageservice/resources/images" version="1" owner="packageservice" group="packageservice" mode="775" created="2021-12-31T06:13:37.999Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="error.svg" skip="no" owner="packageservice" group="packageservice" mode="775" created="2021-12-31T06:13:38.004Z" modified="2021-12-31T06:13:38.004Z" filename="error.svg" mimetype="image/svg+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="x.svg" skip="no" owner="packageservice" group="packageservice" mode="775" created="2021-12-31T06:13:38.019Z" modified="2021-12-31T06:13:38.018Z" filename="x.svg" mimetype="image/svg+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="package.png" skip="no" owner="packageservice" group="packageservice" mode="775" created="2021-12-31T06:13:38.009Z" modified="2021-12-31T06:13:38.009Z" filename="package.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="GitHub-Mark" filename="GitHub-Mark"/>
+</collection>

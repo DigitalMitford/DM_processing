@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>This package contains the HTML templating library for eXist, which was previously part of the now deprecated 'shared-resources'</description>
+    <author>eXist-db Project</author>
+    <website>https://github.com/eXist-db/templating</website>
+    <status>stable</status>
+    <license>LGPL-2.1</license>
+    <copyright>true</copyright>
+    <type>library</type>
+    <changelog>
+        <change version="1.1.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New: Facility for filtering of templating-specific data attributes from output - <a href="https://github.com/eXist-db/templating/pull/15">#15</a></li>
+                <li>New: Improved CI with test on minimum required version and ability to run exist as service - <a href="https://github.com/eXist-db/templating/pull/16">#16</a></li>
+                <li>Fix: Handling of integer types in function signatures - <a href="https://github.com/eXist-db/templating/pull/19">#19</a></li>
+            </ul>
+        </change>
+        <change version="1.0.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fix form control: radio button &amp; checkbox inputs - <a href="https://github.com/eXist-db/templating/pull/9">#9</a></li>
+                <li>Performance boost by eliminating not() - <a href="https://github.com/eXist-db/templating/pull/10">#10</a></li>
+                <li>Fix test scenario requiring HTTP and update to latest gulp-exist - <a href="https://github.com/eXist-db/templating/pull/12">#12</a></li>
+                <li>Reverted "rename static params 'start' and 'end'" commit, as these were discovered to be a breaking change - <a href="https://github.com/eXist-db/templating/pull/13">#13</a></li>
+            </ul>
+        </change>
+        <change version="1.0.3">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>fix(lib:parse-params): rename static params 'start' and 'end' to 'delim-start' and 'delim-end', so it's less likely that they conflict with frequently used, user provided parameters.</li>
+                <li>Note: this version was not released to GitHub Releases or the eXist-db public-repo.</li>
+            </ul>
+        </change>
+        <change version="1.0.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Replace lib:resolve-apps with a faster version.</li>
+            </ul>
+        </change>
+        <change version="1.0.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Change author strings.</li>
+            </ul>
+        </change>
+        <change version="1.0.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>First release of the new HTML templating package. This now hosts the templating library which was previously shipped with the shared-resources package.</li>
+            </ul>
+        </change>
+    </changelog>
+<deployed>2023-02-28T03:11:31.9Z</deployed></meta>

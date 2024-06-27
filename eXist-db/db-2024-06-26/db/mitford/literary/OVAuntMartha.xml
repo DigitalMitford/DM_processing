@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?><!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>--><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+        
+
+         <titleStmt>
+            <title ref="#OV">Our Village: Sketches of Rural Character and Scenery</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+
+
+            <editor ref="#scw">Samantha Webb</editor>
+            <editor ref="#ad">Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal ref="#ebb">Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#jmh">Jonathan M. Horanic</persName>
+               <persName ref="#scw">Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title ref="#OV">Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author ref="#MRM">Mary Russell
+                     Mitford</author><pubPlace ref="#London_city">London</pubPlace><publisher ref="#Whittaker_Geo">Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type="sketch">
+            <pb n="250"/>
+            <head><title level="a" ref="#Aunt_Martha_OV">AUNT MARTHA</title>. <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p>One of the pleasantest habitations I have ever known is an old white house, built at
+               right angles, with the pointed roofs and clustered chimneys of <persName ref="#ElizI">Elizabeth</persName>’s day,
+               covered with <rs type="plant" ref="#rose">roses</rs>, <rs type="plant" ref="#vine">vines</rs>, and <rs type="plant" ref="#passion_flower"/>passion-flowers, and parted by a green sloping meadow
+               from a straggling picturesque village street. In this charming abode resides a more
+               charming <orgName ref="#AuntMartha_family_OV">family</orgName>: a <persName ref="#AuntMartha_patriarch_OV">gentleman</persName>, <quote> “<l>Polite as all his life in courts
+                  had been,</l> <l>And good as he the world had never seen;</l>“ </quote><note resp="#scw">This quotation is an adaptation of lines 3-4 of <persName ref="#Lyttelton_Geo">George Lyttleton</persName>'s <title level="a" ref="#Verses_EpitaphSameLady_Lyt">Verses Making Part of an Epitaph on the Same Lady</title>. In the original poem, the subject is gendered female.</note> <orgName ref="#AuntMartha_nieces_OV">two daughters</orgName>
+               full of sweetness and talent; and <persName ref="#Martha_Aunt_OV">aunt Martha</persName>—the most delightful of old maids! She
+               has another appellation, I suppose,—she must have one;—but I scarcely know it: <persName ref="#Martha_Aunt_OV">Aunt
+                  Martha</persName> is the name that belongs to her—the name of affection. Such is the universal
+               feeling which she inspires, that all her friends, all her acquaintances, (in this
+               case the terms are almost synonymous,) speak of her like her own family:—she<pb n="251"/> is every body’s <persName ref="#Martha_Aunt_OV">Aunt Martha</persName>—and a very charming <persName ref="#Martha_Aunt_OV">Aunt Martha</persName> she is.</p>
+            <p>First of all, she is, as all women should be if they can, remarkably handsome. She
+               may be—it is a delicate matter to speak of a lady’s age!—she must be five-and-forty;
+               but few beauties of twenty could stand a comparison with her loveliness. It is such a
+               fulness of bloom, so luxuriant, so satiating; just tall enough to carry off the
+               plumpness which at forty-five is so becoming; a brilliant complexion; curled pouting
+               lips! long, clear, bright grey eyes—the colour for expression, that which unites the
+               quickness of the black with the softness of the blue; a Roman regularity of feature;
+               and a profusion of rich brown hair.—Such is <persName ref="#Martha_Aunt_OV">Aunt Martha</persName>. Add to this a very gentle
+               and pleasant speech, always kind, and generally lively; the sweetest temper; the
+               easiest manners; a singular rectitude and singleness of mind; a perfect
+               open-heartedness; and a total unconsciousness of all these charms; and you will
+               wonder a little that she is <persName ref="#Martha_Aunt_OV">Aunt Martha</persName> still. I have heard hints of an early
+               engagement broken by the fickleness of man;—and there is about her an aversion to
+               love in one particular direction—the love matrimonial—and an overflowing of affection
+               in all other channels, that it seems as if the natural course of the stream had been
+               violently dammed up. She has many lovers—admirers I should say,—for there is, amidst
+                  her<pb n="252"/> good-humoured gaiety, a coyness that forbids their going farther;
+               a modesty almost amounting to shyness, that checks even the laughing girls, who
+               sometimes accuse her of stealing away their beaux. I do not think any man on earth
+               could tempt her into wed-lock;—it would be a most unpardonable monopoly if any one
+               should; an intolerable engrossing of a general blessing; a theft from the whole
+               community.</p>
+            <p>Her usual home is the white house covered with roses; and her station in the <orgName ref="#AuntMartha_family_OV">family</orgName>
+               is rather doubtful. She is not the mistress, for her <orgName ref="#AuntMartha_nieces_OV">charming nieces</orgName> are old enough
+               to take and to adorn the head of the table; nor the <persName ref="#AuntMartha_housekeeper_OV">housekeeper</persName>, though, as she is
+               the only lady of the establishment who wears pockets, those ensigns of authority, the
+               keys will sometimes be found, with other strays, in that goodly receptacle: nor a
+               guest; her spirit is too active for that lazy post; her real vocation there, and
+               every where, seems to be comforting, cheering, welcoming, and spoiling every thing
+               that comes in her way; and, above all, nursing and taking care. Of all kind
+               employments, these are her favourites. Oh the shawlings, the cloakings, the
+               cloggings! the cautions against cold, or heat, or rain, or sun! the remedies for
+               diseases not arrived! colds uncaught! incipient tooth-aches! rheumatisms to come! She
+               loves nursing so well, that we used to accuse her of inventing maladies for other
+               people, that she might have the pleasure<pb n="253"/> of curing them; and when they
+               really come—as come they will sometimes in spite of <persName ref="#Martha_Aunt_OV">Aunt Martha</persName>—what a nurse she is!
+               It is worth while to be a little sick to be so attended. All the <orgName ref="#AuntMartha_cousins_OV">cousins, and
+                  cousins’ cousins</orgName> of her connection, as regularly send for her on the occasion of a
+               lying-in, as for the midwife. I suppose she has undergone the ceremony of dandling
+               the baby, sitting up with the new mamma, and dispensing the caudle, twenty times at
+               least. She is equally important at weddings or funerals. Her humanity is
+               inexhaustible. She has an intense feeling of fellowship with her kind, and grieves or
+               rejoices in the sufferings or happiness of others with a reality as genuine as it is
+               rare.</p>
+            <p>Her accomplishments are exactly of this sympathetic order; all calculated to
+               administer much to the pleasure of her companions, and nothing to her own importance
+               or vanity. She leaves to the sirens, her <orgName ref="#AuntMartha_nieces_OV">nieces</orgName>, the higher enchantments of the
+               piano, the harp, and the guitar, and that noblest of instruments, the human voice;
+               ambitious of no other musical fame than such as belongs to the playing of quadrilles
+               and waltzes for their little dances, in which she is indefatigable: she neither
+               caricatures the face of man nor of nature under pretence of drawing figures or
+               landscapes; but she ornaments the reticules, bell-ropes, ottomans, and chair-covers
+               of all her acquaintance, with flowers as rich and luxuriant as her own beauty. She
+               draws patterns for the igno-<pb n="254"/>rant, and works flounces, frills, and
+               baby-linen, for the idle; she reads aloud to the sick, plays at cards with the old,
+               and loses at chess to the unhappy. Her gift in gossiping, too, is extraordinary; she
+               is a gentle newsmonger, and turns her scandal on the sunny side. But she is an old
+               maid still; and certain small peculiarities hang about her. She is a thorough
+               hoarder: whatever fashion comes up, she is sure to have something of the sort by
+               her—or, at least, something thereunto convertible. She is a little superstitious;
+               sees strangers in her tea-cup, gifts in her finger-nails, letters and winding-sheets
+               in the candle, and purses and coffins in the fire; would not spill the salt <quote>“for all
+                  the worlds that one ever has to give;”</quote><note resp="#scw">This is a slight misquote from <title level="m" ref="#Emma_JA">Emma</title>, volume II, chapter 10. It is spoken by <persName ref="#Churchill_Frank_JA">Frank Churchill</persName> to <persName ref="#Fairfax_Jane_JA">Jane Fairfax</persName>.</note> and looks with dismay on a crossed knife and
+               fork. Moreover, she is orderly to fidgetiness;—that is her greatest calamity!—for
+               young ladies now-a-days are not quite so tidy as they should be,—and ladies’ maids
+               are much worse; and drawers are tumbled, and drawing-rooms in a litter. Happy she to
+               whom a disarranged drawer can be a misery! Dear and happy <persName ref="#Martha_Aunt_OV">Aunt Martha</persName>!</p>
+         </div>
+      </body>
+      <back>
+         <listPerson sortKey="fictPersons">
+            <person xml:id="AuntMartha_patriarch_OV" sex="m">
+               <persName ref="#AuntMartha_patriarch_OV">Aunt Martha patriarch</persName>
+               <note resp="#scw">The beloved patriarch of the household in which <persName ref="#Martha_Aunt_OV">Aunt Martha</persName> lives in <title level="a" ref="#Aunt_Martha_OV">Aunt Martha</title>. He may be the fictionalized portrait of <persName ref="#Webb_James">James Webb</persName>.</note>
+               
+            </person>
+            <person xml:id="AuntMartha_housekeeper_OV">
+               <persName ref="#AuntMartha_housekeeper_OV">Aunt Martha housekeeper</persName>
+               <occupation type="service" subtype="housekeeper"/>
+               <note resp="#scw">Character of the housekeeper mentioned in <title level="a" ref="#Aunt_Martha_OV">Aunt Martha</title>.</note>
+            </person>
+            
+            <person xml:id="Churchill_Frank_JA" sex="m">
+               <persName ref="#Churchill_Frank_JA">Frank Churchill
+                  <surname>Churchill</surname>
+                  <forename>Francis</forename>
+                  <forename type="nick">Frank</forename>
+               </persName>
+               <note resp="#scw">Character in <title level="m" ref="#Emma_JA">Emma</title> who flirts with the title character.</note>
+            </person>
+            
+            <person xml:id="Fairfax_Jane_JA" sex="f">
+               <persName ref="#Fairfax_Jane_JA">Jane Fairfax
+                  <surname>Fairfax</surname>
+                  <forename>Jane</forename>
+               </persName>
+               <note resp="#scw">Character in <title level="m" ref="#Emma_JA">Emma</title> who has little money or prospects.</note>
+            </person>
+            
+            <person xml:id="Martha_Aunt_OV" sex="f">
+               <persName ref="#Martha_Aunt_OV">Aunt Martha
+                  <surname>not given</surname>
+                  <forename>Martha</forename>
+               </persName>
+               <note resp="#scw">Title character of <title level="a" ref="#Aunt_Martha_OV">Aunt Martha</title>, who is described as a beloved unmarried member of a <persName ref="#AuntMartha_patriarch_OV">a gentleman</persName> and <orgName ref="#AuntMartha_nieces_OV">his daughters</orgName>' household. It has been speculated that she is a fictionalized portrait of <persName ref="#Webb_Mary_elder">Mary Webb</persName>.</note>
+            </person>
+            
+         </listPerson>
+         
+         <listPerson sortKey="histPersons">
+            <person xml:id="Lyttelton_Geo" sex="m">
+               <persName ref="#Lyttelton_Geo">George Lyttleton
+                  <surname>Lyttelton</surname>
+                  <forename>George</forename>
+                  <roleName><date from="1756" to="1773"/>1st Baron Lyttelton</roleName>
+                  <roleName>Sir George Lyttelton, 5th Baronet<date from="1751" to="1773"/></roleName>
+               </persName>
+               <birth when="1709-01-17"><placeName>Hagley, Worcestershire</placeName></birth>
+               <death when="1773-08-22"><placeName>Hagley, Worcestershire</placeName></death>
+               <occupation type="government"/> 
+               <occupation type="literary" subtype="poet"/>
+               <note resp="#scw">Whig Member of Parliament for Okehampton between <date when="1735">1735</date> and <date when="1756">1756</date>, Lyttelton held several political positions, including Chancellor of the Exchecquer from <date when="1755">1755</date> to <date when="1756">1756</date>. He was also a poet and patron of artists and other poets, praised by <persName ref="#Pope_Alex">Alexander Pope</persName>, and the dedicatee of <title level="m" ref="#TomJones_HF">Tom Jones</title>. While his own works were generally published in edited anthologies, during the nineteenth century, he was chiefly remembered for his elegies written for his first wife.</note>
+            </person>
+         </listPerson>
+         
+         <listOrg sortKey="fictOrgs">
+            <org xml:id="AuntMartha_cousins_OV">
+               <orgName ref="#AuntMartha_cousins_OV"/>
+               <note resp="#scw">The group of characters mentioned in <title level="a" ref="#Aunt_Martha_OV">Aunt Martha</title> who call for the title character to help them with their lyings-in.</note>
+            </org>
+            
+            <org xml:id="AuntMartha_family_OV"><!--scw: comparing more closely the facts of the Webb family with this sketch, I think Needham's speculation that this sketch is based on the Webbs is suspect. However, in the SI, the info is framed as his speculation, not as fact.-->
+               <orgName ref="#AuntMartha_family_OV">Aunt Martha family</orgName>
+               <note resp="#scw">The family with whom <persName ref="#Martha_Aunt_OV">Aunt Martha</persName> lives in <title level="a" ref="#Aunt_Martha_OV">Aunt Martha</title>. While they are unnamed in the sketch, it has been suggested that they are the fictional counterparts of <persName ref="#Webb_James">James Webb</persName>'s family, all of whom were good friends of <persName ref="#MRM">Mitford</persName>. The sketch mentions two daughters, but the Webbs had three: <persName ref="#Webb_James">James Webb</persName>, <persName ref="#Webb_Jane">Jane</persName>, <persName ref="#Webb_Eliza">Eliza</persName>, and <persName ref="#Webb_Mary_younger">Mary</persName>.</note>
+            </org>
+            
+            <org xml:id="AuntMartha_nieces_OV">
+               <orgName ref="#AuntMartha_nieces_OV"/>
+               <note resp="#scw">In <title level="a" ref="#Aunt_Martha_OV">Aunt Martha</title>, these are the <rs type="person" ref="#Martha_Aunt_OV">title character</rs>'s two nieces in whose household she lives. These characters may the fictional counterparts of two of the Webb girls, <persName ref="#Webb_Mary_younger">Mary</persName>, <persName ref="#Webb_Eliza">Eliza</persName>, or <persName ref="#Webb_Jane">Jane</persName>.</note>
+            </org>
+            
+            
+         </listOrg>
+         
+         <list sortKey="plants">
+            <item xml:id="passion_flower"/>
+            <item xml:id="vine"/>
+         </list>
+         
+         <listBibl sortKey="schol">
+            <bibl xml:id="Our_Miss_Austen">
+               <title level="a" ref="#Our_Miss_Austen">Our Miss Austen: Jane Austen and Mary Russell Mitford--A New Appraisal</title>
+               <title level="j">Persuasions: The Jane Austen Journal</title>
+               <author>Azar Hussain</author>
+               <date when="2018">2018</date>
+               <biblScope unit="volume">40</biblScope>
+               <biblScope unit="page" from="238" to="254">238-254</biblScope>
+            </bibl>
+            
+            <bibl xml:id="Verses_EpitaphSameLady_Lyt">
+               <title level="a" ref="#Verses_EpitaphSameLady_Lyt">Verses Making Part of an Epitaph on the Same Lady</title>
+               <title level="m">A Collection of Poems in Six Volumes. By Several Hands.</title>
+               <author ref="#Lyttelton_Geo">George Lyttelton</author>
+               <editor>Robert Dodsley</editor>
+               <publisher>J. Hughs</publisher>
+               <pubPlace ref="#London_city"><date when="1757"/></pubPlace>
+               <note resp="#scw">A twelve-line elegy to <persName ref="#Lyttelton_Geo">George Lyttelton</persName>'s first wife, which also became the inscription on her tombstone. It was much-quoted (and misquoted) into the nineteenth century, often with the gender changed to male and outside the context of elegy.</note>
+            </bibl>
+            
+         </listBibl>
+         
+      </back>
+   </text>
+</TEI>

@@ -1,0 +1,52 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/fundocs" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:51.301Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="cxan.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.314Z" modified="2021-12-31T06:13:51.314Z" filename="cxan.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="view.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.315Z" modified="2021-12-31T06:13:51.315Z" filename="view.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="browse.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.316Z" modified="2021-12-31T06:13:51.316Z" filename="browse.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="index.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.321Z" modified="2021-12-31T06:13:51.321Z" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.323Z" modified="2021-12-31T06:13:51.323Z" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.324Z" modified="2021-12-31T06:13:51.324Z" filename="error-page.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.497Z" modified="2021-12-31T06:13:51.497Z" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.302Z" modified="2021-12-31T06:13:51.302Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="exist.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.303Z" modified="2021-12-31T06:13:51.303Z" filename="exist.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="ajax.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.307Z" modified="2021-12-31T06:13:51.307Z" filename="ajax.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:51.312Z" modified="2021-12-31T06:13:51.312Z" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:51.318Z" modified="2021-12-31T06:13:51.318Z" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.304Z" modified="2021-12-31T06:13:51.304Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LICENSE" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.309Z" modified="2021-12-31T06:13:51.309Z" filename="LICENSE" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.311Z" modified="2021-12-31T06:13:51.311Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="resources" filename="resources"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="data" filename="data"/>
+    <subcollection name="modules" filename="modules"/>
+</collection>

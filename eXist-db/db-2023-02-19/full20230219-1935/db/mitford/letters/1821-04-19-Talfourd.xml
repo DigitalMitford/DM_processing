@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+ 
+ <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter to <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, <date when="1821-04-19">April 19, 1821</date>.</title> 
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#scw">Samantha Webb</editor> 
+            <sponsor>
+                    <orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName>
+                </sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <sponsor>Pittsburgh Supercomputing Center</sponsor>
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#scw">Samantha Webb</persName>  
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2016-09-01">2016-09-01</date>. P5.</edition> 
+            <respStmt>
+                    <resp>Edition made with help from photos taken by</resp>
+                    <orgName>Digital Mitford editors</orgName>
+                </respStmt>
+            <respStmt>
+                    <orgName>Digital Mitford</orgName>
+                    <resp>
+                        <idno>photo files: 1821-04-19-[Talfourd].PDF</idno>
+                    </resp>
+                </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>         
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>Collected in a ringed binder in Reading Central Library.</collection><!--scw: letter not listed on spreadsheet, so improvised listing here.-->
+                  <idno>1821-04-19-[Talfourd].PDF</idno><!--SCW: Letters are contained in pdf file rather than photo files, so I record here, fwiw-->
+               </msIdentifier>
+               <head> Letter from <persName ref="#MRM">Mary Russell Mitford</persName> to <persName ref="#Talfourd_Thos">Thomas Noon Talfourd</persName>, <date when="1821-04-19">April 19, 1821</date>.
+                 
+               </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support>
+                                    <p>One folio sheet of <material>paper</material>, with correspondence on recto and verso 1-4. This is a partial letter, as the correspondence at end of page 4 ends abruptly, and no address or postal markings appear. The pages are folded in half lengthwise, in half width-wise, and again in thirds for posting. </p> 
+                        <p>No address, postmarks, or fees recorded.
+                        </p> 
+                     </support>
+                     <condition>
+                        <p>Slight fraying and darkening of page edges, along with some fading ink at page edges, and darkening of page 5.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Seal absent.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered <q>2</q> on the top center of the first leaf. Above the number and diagonally to its left, in the left corner of the first leaf, is written <q>To TN Talfourd.</q> A line is drawn under these words, and the words <q>from Miss Mitford</q> appear.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+    <revisionDesc>
+       <change when="2019-07-14" who="#ebb">Repaired some xml:ids and corrected back-list entries, updated header, started this change-log.</change>
+       <change when="2016-09-20" who="#lmw">Proofed against ms.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener>  
+             <!-- ebb: I've added this info to the TEI header. <add hand="#pencil">The number "2" appears in the center top of the first leaf. Above the number and diagonally to its left, in the left corner of the first leaf, is written "To TN Talfourd." A line is drawn under these words, and the words "from Miss Mitford" appear.</add>--><!--LMW: if you're going to DESCRIBE the add hand (as you do here), put that info in the header.  If you're going to CODE the actual text added in the addHand, put that here. or do both . . . .  --><!--SCW: OK, that part has been unclear to me-->
+               
+               <add hand="#pencil">
+                        <lb/>To<lb/>
+                        <emph rend="underline">T N Talfourd</emph>
+                        <lb/>from Miss Mitford<lb/>2.</add>
+               <dateline>
+                  <placeName ref="#ThreeMileCross">Three Mile Cross</placeName> 
+                  <date when="1821-04-19">April 19<hi rend="superscript">th</hi> 1821</date>. 
+               </dateline>
+               <salute>My dear <rs type="person" ref="#Talfourd_Thos">Sir</rs>
+                    </salute>
+            </opener>
+            <p>Your kind letter gave all the pleasure that your good nature could desire--It is a
+               great comfort to know that my trifles have, some of them at least, a chance of being
+               accepted, &amp; it is no less a one that <rs type="title" ref="#Fiesco_MRMplay">my
+                  Tragedy</rs> is not yet rejected. I enclose a good for nothing essay for <persName ref="#Colburn">Mr Colburn</persName>.<note resp="#scw #ebb">Mitford mentions around this time in her Journal of 1819-1823 that she is working on an <title level="a">Essay on Letters</title>, and an <title level="a">Essay on Thomas May</title>, either of which might be what she is referring to here. The Essay on Thomas May was published as <bibl>
+                            <title level="a">On the Comedies of Thomas May</title>, <title level="j">New Monthly Magazine</title>: <biblScope unit="series" n="NS_2">NS 2</biblScope>, <date when="1821">1821</date> <biblScope unit="page" n="70">70</biblScope>.</bibl> <!--scw: 6/12/17: Thought I'd identified this "good for nothing" but can't be certain. Journal mentions she's working on an Essay on Letters (I do not know what this is), and an Essay on Thomas May (confirmed published). Both are possible, though Essay on Thomas May could have been sent to Talfourd earlier in March, since she mentions it in Journal before a large packet of stuff sent to Talfourd on 16 March. So likely not part of this letter. -->
+                    </note> I have nearly finished another little Drama for
+                  <persName ref="#Baldwin_R">Mr Baldwin</persName>--You will wonder at my loading
+               you with so many of these slight Sketches, but I wish to accumulate a little stock of
+               them that if a series should be inserted in the <rs type="title" ref="#LondonMag">Magazine</rs> I may not be interrupted when I begin another Tragedy,<note resp="#scw">The tragedy that <persName ref="#MRM">Mitford</persName> subsequently
+                  began was <title ref="#Foscari_MRMplay">Foscari</title>.</note> which I shall
+               certainly do as soon as I hear that <title ref="#Fiesco_MRMplay">Fiesco</title> is
+               rejected. Was the last little Drama
+                  <!--LMW: I think she refers to one or more of the dramatic sketches here, some of which came out first in magazines. The journal gives some details on which ones she is writing (see part 4) The first one to come out was I think Emily.--><!--SCW, 6/10/17 TO LMW: Thanks, and check my notes following. Pretty sure the Dramatic Sketches are Emily and Claudia's Dream, based on the Journal-->
+                    <note resp="#scw">Mitford is likely referring to <title ref="#Emily_DS">Emily</title>.
+                  She records in her notebook on <date when="1821-03-23">March 23, 1821</date> that
+                  she sent it to <persName ref="#Talfourd_Thos">Talfourd</persName> on that
+                  date.</note>too long? too artificial? Too like a play? I am afraid it was--&amp;
+                  this<note resp="#scw">
+                        <persName ref="#MRM">Mitford</persName>may be referring to
+                  the dramatic sketch, <title ref="#Claudias_Dr">Claudia's Dream</title>. In her
+                  notebook, she refers to this sketch by name on <date when="1821-04-03">April
+                     3</date>. She mentions beginning another sketch on <date when="1821-04-12">April 12</date>, and records finishing a sketch on <date when="1821-04-21">April 21 </date>, which indicates the rapid pace at which she was composing
+                  for magazines around this time.</note> will not be much shorter. Nothing seems to
+               me so difficult <pb n="2"/>(writing prose always excepted) as to tell a story rapidly
+               in dialogue that tries to be easy &amp; natural.</p>     
+            <p>You will find a copy of the Sonnet<note resp="#lmw">This is the sonnet <persName ref="#MRM">Mitford</persName> wrote on
+               <persName ref="#Talfourd_Thos">Talfourd</persName>'s pleading in court, written <date when="1819-03-09">March 9, 1819</date>, printed in the 1827 poems,
+                  sonnet #13, page 306: <lb/>XIII. <lb/>ON HEARING <persName ref="#Talfourd_Thos">MR. TALFOURD</persName> PLEAD IN THE <placeName>ASSIZE- <lb/>HALL</placeName>
+                  AT <placeName>READING</placeName>, ON HIS FIRST CIRCUIT, <lb/>
+                        <date when="1821-03">March 1821</date>.</note>which you desire so flatteringly. Short as it falls
+               of its object I certainly never expected that you would send that sonnet to either
+               Magazine<!--LMW I wonder what the second magazine was?--><!--SCW: Thanks for this identification and note! The way I read the foregoing passage, Talfourd did not send the sonnet anywhere, but could have sent it to either the New Monthly or the London had he been inclined, despite the past tense that suggests he did send to both? In any case, should the mags be noted, do you think?-->--to
+               have thought that would have <choice>
+                  <sic>shewn</sic>
+                  <reg/>
+               </choice> a want of knowledge of <emph rend="underline">you</emph> equal to the <rs type="person" ref="#Valpy_Richard">Dear Doctor</rs>'s enquiry respecting Judge
+               Garrow's compliment.<note resp="#scw">The anecdote is obscure, but <persName ref="#MRM">Mitford</persName> may be referring to Judge William Garrow, a
+                  lawyer who made his name during the Treason Trials, who became a judge and later a
+                  Member of Parliament who helped shape the rules of evidence and the modern
+                  adversarial
+               system.</note><!--LMW: maybe we don't need the note, if we have the tags?--><!--SCW TO LMW: Good point. I think I'd rather signal uncertainty about the reference. In that spirit, I've left the xml:id and info in the <back> for harvesting, but have not tagged him here. I don't like the idea of tagging him if the reference is uncertain, but a speculative in-text note is ok, imo. So, if William Garrow turns up again in this project, he'll have an xml:id ready to go.:-) Or am I off-base in my thinking? Open to re-thinking.-->and
+               besides I would not for the world make that which was a mere relief to my own
+               feelings an object of barter--No! that sonnet shall never be printed for money--but
+               would you dislike if sometime hence--not for a long while--it should slip, nobody
+               knows how, into the <title ref="#LondonMag">London Magazine</title>? If you should
+               dislike it you must tell me so. If not I could send it to <persName ref="#Haydon">Mr
+                  Haydon</persName> who has often had the goodness to offer to perform any
+               commission--It would be a nice little job for him--but not just now for he is very
+               angry and with reason at the unprovoked attack that one of <persName ref="#Baldwin_R">Mr Baldwin</persName>'s writers has made on his character. I cannot imagine how
+               anything so malicious could creep into so respectable a publication. <note resp="#scw">It is difficult to tell with certainty which article <persName ref="#MRM">Mitford</persName> may be referring to here. The long friendship
+                  between <persName ref="#Haydon">Benjamin Robert Haydon</persName> and <persName ref="#Scott_John">Scott</persName> had become irreparably strained just before
+                  the latter's death in <date when="1821-02">February 1821</date> in <label corresp="#ScottChristie_Duel">a duel</label>. <persName ref="#Haydon">Haydon</persName> felt that <persName ref="#Scott_John">Scott</persName> had
+                  slighted his character on numerous occasions, and wrote feelingly to <persName ref="#MRM">Mitford</persName> about it in <date when="1821-03">March of that
+                     year</date>. (See <title level="m" ref="#Haydon_Corresp">Benjamin Robert Haydon:
+                     Correspondence and Table Talk</title>, Vol. II, pp. 69-71 and <bibl>
+                            <title level="j" ref="#LondonMag">London Magazine</title> <biblScope unit="volume" n="3">Vol. III</biblScope>, <date from="1820-01" to="1820-06">January-June 1820</date>
+                        </bibl>.</note> I suppose its <del rend="squiggles" unit="word" n="1"/>for want of an
+               Editor,<!--I checked June-Dec. 1820, and Feb, March and April 1821 issues of London Mag, and didn't see anything that seemed like an attack, veiled or otherwise, on Haydon.-->my
+               dear Mr Editor-that-<choice>
+                  <sic>wont</sic>
+                  <reg>won't</reg>
+               </choice>-be--<pb n="3"/>shall you really have the courage &amp; constancy to
+                  refuse<hi rend="superscript">£</hi>600 a year? I am afraid you are right--your
+               prospects are in my mind well worth £6000--though if the limits could be managed
+               there is <persName ref="#Jeffrey_Francis">Mr Jeffrey</persName> to prove that the
+               characters of a great Editor &amp; a great Lawyer are perfectly compatible. <rs type="person" ref="#Mitford_Geo">My Father</rs> desires me to say that he fears
+               the <placeName ref="#Reading_city">Reading</placeName> Town Sessions would be hardly
+               worth attending. He went into <placeName ref="#Hampshire_county">Hampshire</placeName> within half an hour after <add place="above">
+                        <metamark place="below" function="insertion" rend="caret">my</metamark>
+                    </add> receiving
+               your kind letter &amp; is not yet returned--but he will be back on <date when="1819-04-24">Saturday</date>time enough to take my packet to our unwearied
+               friend <persName ref="#Monck_JB">Mr Monck</persName>--will make enquiry of Mr <del rend="squiggles" quantity="5" unit="char">Annes</del>
+                    <add place="above">Annesley</add> &amp; the Town Clerk as to the general business more especially as
+               to any that is expected this Sessions, &amp; will slide in a note if any should offer
+               worth having--I wish with all my heart there may--&amp; half of this wish is very
+               selfish for then we shall have a chance of seeing you in our smoky cabin.</p>
+            <p>Two things in this neighbourhood annoy me very much. First &amp; most <persName ref="#Dickinson_Charles">Mr Dickinson</persName>--who having all his life amused himself with combating the received Theories of medicine especially what he calls the <persName ref="#Sangrado_GilBlas">Sangrado</persName> system<!--LMW: I recall looking this up: it's a medical theory advocating bleeding and purging. There is much railing against it by the later 19th c. So of course, Mr. D. has history on his side! He was right and it was a bad idea. Apparently Sangrado is a character in Gil Blas who bleeds his patients to death.--><!--SCW: Thanks! I did SI entries for Sangrado and Gil Blas reflecting this info.-->
+(which was all very well whilst his objections were confined to mere speculative harangues)--is now reducing <del rend="strikethrough">reducing</del> his principles to practice &amp; with every symptom of approach-<pb n="4"/>ing Apoplexy killing himself from sheer obstinacy--<choice>
+                        <sic>chusing</sic>
+                        <reg>choosing</reg>
+                    </choice> rather to die of the blood which rushes to his head than to give up his opinion &amp; live by the lancet. Is not this grievous in an old friend whom one loves so well? He has no right to take himself out of the world in this malicious way
+<unclear>
+                        <supplied resp="#scw">when</supplied>
+                    </unclear> people wish him to
+               live--Has he? My other misfortune need not concern me the least in the world--The <rs type="person" ref="#Wellesley_Art_jr #Wellesley_Chas">Duke of Wellington's sons</rs> are at home for the <orgName ref="#Eton">Eton</orgName> holiday &amp; they come every day to <rs type="place">a little Alehouse next door</rs> to learn French of a <rs type="person" ref="#Wellington_French_tutor">Jew who lodges there</rs> purposely to teach them. <said who="#Swan_Inn_landlord">"The <rs type="person" ref="#Wellesley_Art_jr #Wellesley_Chas">poor little lads</rs> Ma'am"</said>said my neighbour the <persName ref="#Swan_Inn_landlord">landlord</persName>
+                    <said who="#Swan_Inn_landlord">"are kept very strict--they never look up but their <persName ref="#Wellington_French_tutor">tutor</persName> corrects them--&amp; there they sit in my parlour from eleven to half past four &amp; never have a glass of anything."</said> Without sympathising very deeply in the last &amp; principal grief ennumerated by <rs type="person" ref="#Swan_Inn_landlord">my friend of the tap room</rs>, I am quite indignant at the <rs type="person" ref="#Wellesley_Art_jr #Wellesley_Chas">poor little boys</rs> being cheated of
+their holiday. Is it not abominable? a worse inequity than beating <persName ref="#Napoleon">Napoleon</persName>--learning French <rs type="person" ref="#Wellesley_Art_jr #Wellesley_Chas">poor little souls</rs> when they ought to be stealing birdsnests &amp; playing cricket &amp; doing mischief! The <rs type="event" ref="#Waterloo">Battle of Waterloo</rs> was a joke to this wickedness. The only thing that looks like the holidays is their mode of conveyance which is generally five in a gig rain or shine.<note resp="#scw">The rest of the letter is missing.</note>
+                </p>
+           
+         </div>
+      </body>
+     
+     <back>
+        <div> 
+       <listPerson sortKey="histPersons">
+          
+          <person xml:id="Jeffrey_Francis" sex="m">
+             <persName>Francis Jeffrey</persName>
+             <persName>
+                <surname>Jeffrey</surname>
+                <forename>Francis</forename>
+                <roleName>Sir</roleName>
+             </persName>
+             <birth when="1773-10-23">
+                <placeName>Edinburgh, Scotland</placeName>
+             </birth>
+             <death when="1850-01-26">
+                <placeName>Edinburgh, Scotland</placeName>
+             </death>
+             <occupation type="legal"/>
+             <occupation type="legal" subtype="judge"/>
+             <occupation type="literary"/>
+             <occupation type="literary" subtype="editor"/>
+             <occupation type="government" subtype="politician"/>
+             <note resp="#scw">Advocate, judge, Member of Parliament, and founding editor of the <title ref="#EdinburghRev_per">Edinburgh Review</title>, Jeffrey was an influential critic for many years in his role as editor and essayist.</note>
+             <note>
+                            <ref target="http://www.historyofparliamentonline.org/volume/1820-1832/member/jeffrey-francis-1773-1850"/>
+                        </note>
+          <note>
+                            <ref target="http://viaf.org/viaf/52485486"/>
+                        </note>
+          </person>
+          
+          <person xml:id="Annesley_Martin" sex="m">
+             <persName>Martin Annesley</persName>
+             <persName>
+                <surname>Annesley</surname>
+                <forename>Martin</forename>
+                <roleName type="honorific">Mr.</roleName>
+                <roleName type="office">Esq.</roleName>
+             </persName>
+             <birth notBefore="1740"/>
+             <death when="1822-06-29"/>
+             <occupation type="government" subtype="politician"/>
+             <occupation type="legal" subtype="magistrate"/>
+             <note type="bio" resp="#scw">
+                            <placeName ref="#Reading_city">Reading</placeName> mayor in <date when="1784">1784</date>, <date when="1794">1794</date>, and <date when="1806">1806</date>. A friend of <persName ref="#Valpy_Richard">Richard Valpy</persName>, he was also a magistrate and local philanthropist. Sources: <bibl corresp="#Hist_Antiq_Reading">History and Antiquities of Reading</bibl>; The Gentleman's Magazine, Vol. 92, Part 2, page 90; The Royal County of Berkshire History.<!--LMW: no VIAF # -->
+                        </note>
+             <note>
+                <ref target="http://www.berkshirehistory.com/bios/index.html"/>
+             </note>
+          </person>
+          
+          <person xml:id="Wellesley_Art_jr" sex="m">
+             <persName>Arthur Wellesley, Jr.</persName>
+             <persName>
+                <surname>Wellesley</surname>
+                <forename>Arthur</forename>
+               
+                   <placeName ref="#Brighton">Brighton, Sussex, England</placeName>
+                <roleName type="nobility">
+                   <date from="1812-02" to="1812-08">Viscount Wellington</date>
+                   <date from="1812" to="1814">Earl of Wellinton</date>
+                   <date when="1852">Second Duke of Wellington</date>
+                   <date from="1814" to="1852">Marquess of Douro</date>
+                            </roleName>
+                <roleName type="office">
+                   <date from="1829" to="1832">Member of Parliament for Aldeburgh</date>
+                   <date from="1837" to="1852">Member of Parliament for Norwich</date>
+                </roleName>
+             </persName>
+             <birth when="1807-02-03">Marylebone,
+                <placeName ref="#London_city">London</placeName>, England
+             </birth>
+             <death when="1884-08-13"/>
+             <occupation type="military"/>
+             <occupation type="government" subtype="politician"/>
+             <note type="bio" resp="#scw">Elder son of <persName ref="#Wellington_Duke">the First Duke of Wellington</persName>, who succeeded his father to the dukedom, and became Member of Parliament for <placeName>Aldeburgh</placeName>, and later for Norwich. Source: History of Parliament Online.</note>
+             <note>
+                            <ref target="http://viaf.org/viaf/45383578"/>
+                        </note>
+             <note>
+             <ref target="http://www.historyofparliamentonline.org/volume/1820-1832/member/wellesley-arthur-1807-1884"/>
+             </note>
+          </person>
+          
+          <person xml:id="Wellesley_Chas" sex="m">
+             <persName>Charles Wellesley</persName>
+             <persName>
+                <surname>Wellesley</surname>
+                <forename>Charles</forename>
+                <roleName>Major General Lord</roleName>
+                <roleName>Member of Parliament for Hampshire Southern
+                   <date from="1842" to="1852">1842-1852</date>
+                </roleName>
+                <roleName>Member of Parliament for Windsor
+                   <date from="1852" to="1855">1852-1855</date>
+                </roleName>
+             </persName>
+             <birth when="1808-01-16"/>
+             <death when="1858-10-09"/>
+             <occupation type="military"/>
+             <occupation type="government" subtype="courtier"/>
+             <occupation type="government" subtype="politician"/>
+             <note type="bio" resp="#scw">Second son of <persName ref="#Wellington_Duke">the first Duke of Wellington</persName>. He grew up to serve as Chief Equerry and Clerk Marshall to <persName>Queen Victoria</persName>, and later in Parliament. His elder and subsequently his second son succeeded his brother, <persName ref="#Wellesley_Art_jr">Arthur Wellesley, jr.</persName>, to the Wellington dukedom.</note>
+          </person>
+          
+          <person xml:id="Wellington_French_tutor" sex="m">
+             <persName>Wellington French tutor</persName>
+          <note resp="#scw">No information about this individual. More research needed.</note>
+          </person>
+          
+          <person xml:id="Swan_Inn_landlord" sex="m"><!--scw: NOTE TO SELF: cross-ref with entry on Rose Inn landlord-->
+             <persName>Swan Inn landlord</persName>
+             <occupation type="trade" subtype="innkeeper"/>
+             <note resp="#scw">More research needed. In keeping with <persName ref="#MRM">Mitford</persName>’s admitted practice in <title ref="#OV">Our Village</title>, this person is likely the model for the <persName ref="#RoseInn_Landlord_OV">Rose Inn landlord</persName>.</note>
+             
+             <!--scw: have checked VIAF, BRO records online and Berks PO listings which records much later proprietorship.-->
+             <!--LMW: This site is sometimes helpful, but for the Swan, it begins in 1847: http://pubshistory.com/Berkshire/Shinfield/Swan.shtml It has a long list of pubs in the parish of Shinfield, which includes three miles cross and grazeley (where bertram house was.) -->
+             
+          </person>
+          <person xml:id="Garrow_Wm" sex="m">
+             <persName>William Garrow</persName>
+             <persName>
+                <surname>Garrow</surname>
+                <forename>William</forename>
+                <roleName type="office">Judge</roleName>
+                <roleName type="nobility">Sir</roleName>
+                <roleName type="office">Member of Parliament</roleName>
+                <roleName type="office">Solicitor-General to the Prince of Wales
+                   <date from="1812" to="1813">1812 to 1813</date>
+                </roleName>
+                <roleName type="office">Attorney-General
+                   <date from="1813" to="1817">1813 to 1817</date>
+                </roleName>
+                <roleName type="nobility">puisne Baron of the court of the Exchequer</roleName>
+             </persName>
+             <birth when="1760-04-13">
+                <placeName>Monken Hadley, Middlesex, England</placeName>
+             </birth>
+             <death when="1840-09-24">September 24, 1840
+                <placeName>Ramsgate, Kent, England</placeName>
+             </death>
+             <occupation type="legal" subtype="barrister"/>
+             <occupation type="legal" subtype="judge"/>
+             <occupation type="government" subtype="politician"/>
+             <note type="bio" resp="#scw">Barrister and judge who began his career as a prosecutor during the Treason Trials of <date when="1794">1794</date>, and later who served a Member of Parliament for <placeName>Gatton</placeName>, <placeName>Callington</placeName>, and  <placeName>Eye</placeName>. He is most known today for having shaped the modern adversarial system and the rules of evidence, particularly for defendants. Source: ODNB.</note>
+             <note>
+                <ref target="http://viaf.org/viaf/11862816/"/>
+                        </note>
+
+          </person>
+          
+          <person xml:id="Sangrado_GilBlas" sex="m">
+             <persName ref="#Sangrado_GilBlas">Doctor Sangrado
+                <surname>Sangrado</surname>
+                <forename/><!--SCW: Leaving blank b/s not sure if given in novel-->
+             </persName>
+             <note resp="#scw #lmw">Character from <persName>Alain Rene Le Sage</persName>'s <title ref="#GilBlas_novel">Gil Blas de Santillane</title> whose medical system involves bleeding patients to death.</note>
+             
+          </person>
+       </listPerson>
+
+        <listPlace sortKey="histPlaces">
+           <place xml:id="Swan_Inn">
+              <placeName>Swan Inn</placeName>
+              <location>
+                            <geo>51.2936362 -1.1080922</geo>
+                        </location>
+              <note resp="#scw">Alehouse located next door to the <persName ref="#Mitfords">Mitford</persName> residence in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName> during this time. The establishment is featured in <title ref="#OV">Our Village</title>, but renamed <placeName ref="#Rose_Inn_OV">The Rose Inn</placeName>.</note>
+           </place>
+        </listPlace>
+          <listPlace sortKey="fictPlaces"> 
+           <place xml:id="Rose_Inn_OV">
+              <placeName>Rose Inn</placeName>
+              <note resp="#scw">An alehouse featured in <title ref="#OV">Our Village</title>, introduced in the <title ref="#OurVillage_story_OV">first sketch of the series</title>. It was modeled on the <placeName ref="#Swan_Inn">Swan Inn</placeName>, the alehouse located near the <orgName ref="#Mitfords">Mitford</orgName> household in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>.</note>
+           </place>
+        </listPlace>
+           
+           
+          <listBibl sortKey="work_MRM">
+                        
+             <bibl xml:id="Hist_Antiq_Reading">
+             <title>The History and Antiquities of the Town and Borough of Reading in Berkshire</title>
+             <author>J. Doran, Esq.</author>
+             <publisher>Samuel Reade
+                <placeName ref="#Reading_city">Reading</placeName>
+             </publisher>
+             <publisher>Hamilton, Adams, &amp; Co.
+                <placeName ref="#London_city">London</placeName>
+             </publisher>
+             <date when="1835">1835</date>
+                <note resp="#scw">Full text and page images available through Google Books.</note>
+               </bibl>
+             
+             <bibl xml:id="GilBlas_novel">
+                <title ref="#GilBlas_novel">The History of Gil Blas of Santillane</title>
+                <author>Alain-Rene Le Sage</author>
+                <date from="1715" to="1735">1715-1735</date>
+                <publisher/>
+                <note resp="#scw">This influential picaresque novel features a humbly-born title character who takes on different jobs that allow him to observe the different levels of society. He becomes involved with rogues, criminals, and quacks on his way to a quiet country retirement. </note>
+             </bibl>
+             
+             <bibl xml:id="Haydon_Corresp"><!--scw: xml:id already in SI. Need to incorporate vol. 2 in BiblScope-->
+                <title level="m">Benjamin Robert Haydon: Correspondence and Table-Talk</title>
+                <biblScope unit="volume" n="2">vol. 2 of 2</biblScope>.
+                
+             </bibl>
+             <bibl>
+                        <author ref="#MRM">Mary Russell Mitford</author>
+                        <title level="a">On the Comedies of Thomas May</title>
+                <title level="j">New Monthly Magazine</title>
+                <biblScope unit="series" n="NS_2">NS 2</biblScope>
+                <date when="1821">1821</date>
+                <biblScope unit="page" n="70">70</biblScope>
+                <note resp="#ebb">Source: <ref target="http://spenserians.cath.vt.edu"/>
+                        </note>
+             </bibl>
+          </listBibl>
+     </div>
+     </back>
+  </text>
+</TEI>

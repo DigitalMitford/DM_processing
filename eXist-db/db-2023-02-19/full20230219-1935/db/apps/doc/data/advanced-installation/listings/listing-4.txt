@@ -1,0 +1,13 @@
+[Unit]
+Description=eXist-db Server
+Documentation=https://exist-db.org/exist/apps/doc/
+After=syslog.target
+
+[Service]
+Type=simple
+User=existdb
+Group=existdb
+ExecStart=/path/to/exist-5.0.0/bin/startup.sh
+
+[Install]
+WantedBy=multi-user.target

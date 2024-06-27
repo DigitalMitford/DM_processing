@@ -1,0 +1,43 @@
+{
+	"name": "exide",
+	"version": "3.5.0",
+	"description": "a web-based XQuery IDE",
+	"main": "main.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"build": "node scripts/build.js prepare && npm run xqlint && node scripts/build.js",
+		"build:dev": "node scripts/build.js prepare && npm run xqlint && node scripts/build.js --dev",
+		"clean": "node scripts/build.js clean",
+		"xqlint": "cd support/xqlint && node r.js -o build.js && cd ../..",
+		"cypress": "cypress run"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eXist-db/eXide.git"
+	},
+	"keywords": [
+		"exist-db",
+		"xquery",
+		"ide"
+	],
+	"author": "Wolfgang Meier",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/eXist-db/eXide/issues"
+	},
+	"homepage": "https://github.com/eXist-db/eXide#readme",
+	"devDependencies": {
+		"chalk": "^4.1.2",
+		"command-line-args": "^5.2.1",
+		"cypress": "^9.7.0",
+		"esbuild": "^0.16.14",
+		"micro-fs": "^1.0.3",
+		"request": "^2.88.2"
+	},
+	"dependencies": {
+		"@ag-grid-community/core": "^26.2.1",
+		"@ag-grid-community/infinite-row-model": "^27.0.0"
+	}
+}

@@ -1,0 +1,10 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/system/repo/functx-1.0.1" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:37.11Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.143Z" modified="2021-12-31T06:13:37.143Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:37.495Z" modified="2021-12-31T06:13:37.495Z" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="functx" filename="functx"/>
+</collection>

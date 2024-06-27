@@ -1,0 +1,49 @@
+<html><head><link rel="import" href="../polymer/polymer.html"><link rel="import" href="../iron-location/iron-location.html"><link rel="import" href="../iron-location/iron-query-params.html"><link rel="import" href="app-route-converter-behavior.html"></head><body><dom-module id="app-location"><template><iron-query-params params-string="{{__query}}" params-object="{{queryParams}}"></iron-query-params><iron-location path="{{__path}}" query="{{__query}}" hash="{{__hash}}" url-space-regex="[[urlSpaceRegex]]" dwell-time="[[dwellTime]]"></iron-location></template><script>(function(){'use strict';Polymer({is:"app-location",properties:{/**
+         * A model representing the deserialized path through the route tree, as
+         * well as the current queryParams.
+         */route:{type:Object,notify:!0},/**
+         * In many scenarios, it is convenient to treat the `hash` as a stand-in
+         * alternative to the `path`. For example, if deploying an app to a static
+         * web server (e.g., Github Pages) - where one does not have control over
+         * server-side routing - it is usually a better experience to use the hash
+         * to represent paths through one's app.
+         *
+         * When this property is set to true, the `hash` will be used in place of
+
+         * the `path` for generating a `route`.
+         */useHashAsPath:{type:Boolean,value:!1},/**
+         * A regexp that defines the set of URLs that should be considered part
+         * of this web app.
+         *
+         * Clicking on a link that matches this regex won't result in a full page
+         * navigation, but will instead just update the URL state in place.
+         *
+         * This regexp is given everything after the origin in an absolute
+         * URL. So to match just URLs that start with /search/ do:
+         *     url-space-regex="^/search/"
+         *
+         * @type {string|RegExp}
+         */urlSpaceRegex:{type:String,notify:!0},/**
+         * A set of key/value pairs that are universally accessible to branches
+         * of the route tree.
+         */__queryParams:{type:Object},/**
+         * The pathname component of the current URL.
+         */__path:{type:String},/**
+         * The query string portion of the current URL.
+         */__query:{type:String},/**
+         * The hash portion of the current URL.
+         */__hash:{type:String},/**
+         * The route path, which will be either the hash or the path, depending
+         * on useHashAsPath.
+         */path:{type:String,observer:"__onPathChanged"},/**
+         * Whether or not the ready function has been called.
+         */_isReady:{type:Boolean},/**
+         * If the user was on a URL for less than `dwellTime` milliseconds, it
+         * won't be added to the browser's history, but instead will be
+         * replaced by the next entry.
+         *
+         * This is to prevent large numbers of entries from clogging up the
+         * user's browser history. Disable by setting to a negative number.
+         *
+         * See `iron-location` for more information.
+         */dwellTime:{type:Number}},behaviors:[Polymer.AppRouteConverterBehavior],observers:["__computeRoutePath(useHashAsPath, __hash, __path)"],ready:function(){this._isReady=!0},__computeRoutePath:function(){this.path=this.useHashAsPath?this.__hash:this.__path},__onPathChanged:function(){if(!this._isReady){return}if(this.useHashAsPath){this.__hash=this.path}else{this.__path=this.path}}})})();</script></dom-module></body></html>

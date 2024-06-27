@@ -1,0 +1,130 @@
+/* Application styles could go here */
+.profiling .nav {
+    margin-top: 10px;
+}
+
+body > .header .logo {
+    /* background-color: #FFFFFF; */
+    text-align: left;
+}
+
+#console tr>td:nth-child(1) {
+    width: 10%;
+}
+
+#console tr>td:nth-child(2) {
+    width: 10%;
+}
+
+#console tr>td:nth-child(3) {
+    width: 10%;
+}
+
+#console tr>td:nth-child(4), #console tr>th:nth-child(4) {
+    width: 65%;
+}
+
+#console tr>td:nth-child(5), #console tr>th:nth-child(5) {
+    width: 5%;
+}
+
+#console .source {
+    cursor: pointer;
+}
+
+#visualizer .node {
+    border: solid 1px Ghostwhite;
+    font: 10px;
+    line-height: 16px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 2px;
+    color:Ghostwhite;
+}
+
+.sidebar .powered-by img {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .svg .sidebar .powered-by img {
+        position: fixed;
+        display: block;
+        bottom: 10px;
+        width: 120px;
+        left: 15px;
+        margin: 0 auto;
+    }
+}
+
+.sidebar .sidebar-menu .treeview-menu {
+    display: block;
+}
+
+.sidebar .sidebar-menu .treeview-menu li {
+    padding-left: 10px;
+}
+
+.skin-black .sidebar > .sidebar-menu > li > .treeview-menu {
+    background: inherit;
+}
+
+.treeview-menu .active {
+    color: #f6f6f6;
+    background: #444;
+}
+
+.form-inline .form-control {
+    width: auto;
+    margin-right: .5em;
+}
+
+.form-inline label, .form-inline .form-group, .form-inline label input {
+    margin-right: .5em;
+}
+
+.form-inline .fa-refresh {
+    display: none;
+    margin-left: 55px;
+}
+
+.running-queries td:nth-child(1), .running-queries th:nth-child(1) {
+    width: 20%;
+}
+
+.running-queries td:nth-child(2), .running-queries th:nth-child(2) {
+    width: 20%;
+}
+
+.running-queries td:nth-child(3), .running-queries th:nth-child(3) {
+    width: 50%;
+}
+
+.running-queries td:nth-child(4), .running-queries th:nth-child(4) {
+    width: 10%;
+}
+
+.content-header .previous {
+    margin-right: 10px;
+}
+
+.content-header .next {
+    margin-left: 10px;
+}
+
+.content-header .edit-buttons {
+    margin-right: 8px;
+}
+
+.stacktrace {
+    max-width: 100%;
+}
+
+.stacktrace pre {
+    word-break: normal;
+}
+
+.scrollable {
+    max-height: 400px;
+    overflow-y: auto;
+}

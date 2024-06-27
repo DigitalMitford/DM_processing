@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <snippet abbrev="for-return">
+        <description>Basic for-in-return statement</description>
+        <code>for $${1:item} in ${2:expression}
+return
+    $${1}</code>
+    </snippet>
+    <snippet abbrev="let-return">
+        <description>Basic let-return expression</description>
+        <code>let $${1:item} := ${2:expression}
+return
+    $${1}</code>
+    </snippet>
+    <snippet abbrev="let">
+        <description>Single let statement without return</description>
+        <code>let $${1:item} := ${2:expression}</code>
+    </snippet>
+    <snippet abbrev="log">
+        <description>util:log statement</description>
+        <code>util:log("DEBUG", ${1:expression})</code>
+    </snippet>
+    <snippet abbrev="fun">
+        <description>Function declaration</description>
+        <code>declare function ${1:name}($${2:argument}) {
+    ${3:()}
+};</code>
+    </snippet>
+    <snippet abbrev="template-fun">
+        <description>HTML templating function</description>
+        <code>declare function ${1:name}($node as node(), $model as map(*)) {
+};</code>
+    </snippet>
+    <snippet abbrev="import" completion="true">
+        <description>Module import</description>
+        <code>import module namespace ${1:prefix}="${2:http://module.com}" at "${3:location}";</code>
+    </snippet>
+    <snippet abbrev="declare-ns">
+        <description>Declare namespace</description>
+        <code>declare namespace ${1:prefix}="${2:http://my.namespace.com}";</code>
+    </snippet>
+    <snippet abbrev="declare-option">
+        <description>Serialization declaration</description>
+        <code>declare option exist:serialize "${1:method=html5 media-type=text/html}";</code>
+    </snippet>
+    <snippet abbrev="html-output">
+        <description>Option declaration for HTML5 output</description>
+        <code>declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
+
+declare option output:method "html5";
+declare option output:media-type "text/html";</code>
+    </snippet>
+    <snippet abbrev="if">
+        <description>If-then-else statement</description>
+        <code>if (${1:condition}) then
+    ${2:()}
+else
+    ${3:()}</code>
+    </snippet>
+    <snippet abbrev="declare-var">
+        <description>Variable declaration</description>
+        <code>declare variable $${1:name} := ${2:()};</code>
+    </snippet>
+    <snippet abbrev="typeswitch">
+        <description>Typeswitch statement</description>
+        <code>typeswitch ( $${1:node} )
+    case element( ${2:name} ) return
+        ${3:()}
+    default return
+        ${4:()}</code>
+    </snippet>
+    <snippet abbrev="switch">
+        <description>XQuery 3.0 switch statement</description>
+        <code>switch ($${1:key})
+    case ${2:"value"} return ${3:()}
+    default return ${4:()}</code>
+    </snippet>
+    <snippet abbrev="case">
+        <description>Case clause in typeswitch or switch</description>
+        <code>case element(${1:name}) return</code>
+    </snippet>
+    <snippet abbrev="comment (for function)">
+        <description>Insert an XQDoc comment for a function declaration</description>
+        <code>(:~
+ : ${1:Description}
+ :)</code>
+    </snippet>
+    <snippet abbrev="json">
+        <description>JSON namespace declaration</description>
+        <code>declare namespace json="http://www.json.org";</code>
+    </snippet>
+    <snippet abbrev="tei">
+        <description>TEI namespace declaration</description>
+        <code>declare namespace tei="http://www.tei-c.org/ns/1.0";</code>
+    </snippet>
+</snippets>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Set name="port">
+  <Property name="jetty.ssl.port" deprecated="ssl.port">
+    <Default>
+      <SystemProperty name="jetty.ssl.port" deprecated="ssl.port" default="8444"/>
+    </Default>
+  </Property>
+</Set>
