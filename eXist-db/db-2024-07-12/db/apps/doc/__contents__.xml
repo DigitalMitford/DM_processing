@@ -1,0 +1,49 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:46.948Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:46.954Z" modified="2021-12-31T06:13:46.954Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="exist.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:46.956Z" modified="2021-12-31T06:13:46.956Z" filename="exist.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="diagnostics.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:46.969Z" modified="2021-12-31T06:13:46.969Z" filename="diagnostics.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="cxan.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:46.996Z" modified="2021-12-31T06:13:46.996Z" filename="cxan.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="search.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.002Z" modified="2021-12-31T06:13:47.002Z" filename="search.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="editorial-view.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.017Z" modified="2021-12-31T06:13:47.016Z" filename="editorial-view.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.022Z" modified="2021-12-31T06:13:47.022Z" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="error-page.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:47.024Z" modified="2021-12-31T06:13:47.024Z" filename="error-page.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:51.031Z" modified="2021-12-31T06:13:51.031Z" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:46.957Z" modified="2021-12-31T06:13:46.957Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LICENSE" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:46.971Z" modified="2021-12-31T06:13:46.971Z" filename="LICENSE" mimetype="application/octet-stream">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:46.974Z" modified="2021-12-31T06:13:46.974Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:46.976Z" modified="2021-12-31T06:13:46.976Z" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:47.005Z" modified="2021-12-31T06:13:47.005Z" filename="pre-install.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="resources" filename="resources"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="data" filename="data"/>
+    <subcollection name="modules" filename="modules"/>
+</collection>

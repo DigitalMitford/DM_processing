@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html><head/><body><dom-module id="repo-app"><template><style>:host{display:block;position:relative;cursor:pointer;}:focus{border:none;outline:0;box-shadow:0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                0 5px 5px -3px rgba(0, 0, 0, 0.4);background:white;}:host(.update) packagemanager-app ::slotted(repo-version){display:none;}</style><template is="dom-if" if="{{_isLauncher()}}"><launcher-app id="launcherItem" path="{{path}}" type="{{type}}" status="{{status}}"><slot/><slot name="icon"/></launcher-app></template><template is="dom-if" if="{{_isPackageManager()}}"><packagemanager-app type="{{type}}" abbrev="{{abbrev}}" version="{{version}}" action="{{action}}" status="{{status}}" installed="{{installed}}" available="{{available}}" url="{{url}}" package-title="{{packageTitle}}" path="{{path}}" readonly="{{readonly}}"><slot/></packagemanager-app></template></template><script>class RepoApp extends Polymer.Element{static get is(){return"repo-app"}static get properties(){return{type:{type:String,reflectToAttribute:!0},abbrev:{type:String,reflectToAttribute:!0},version:{type:String,reflectToAttribute:!0},action:{type:String,reflectToAttribute:!0},status:{type:String,reflectToAttribute:!0/*
+                        notify: true,
+                        observer: '_handleStatus'
+*/},installed:{type:String},available:{type:String},url:{type:String,reflectToAttribute:!0},packageTitle:{type:String,reflectToAttribute:!0,notify:!0},/*
+                                        showAll: {
+                                            type: Boolean,
+                                            reflectToAttribute: true
+                                        },
+                    */path:{type:String,reflectToAttribute:!0},readonly:{type:String,reflectToAttribute:!0}}}connectedCallback(){super.connectedCallback();//                console.log('RepoApp connected');
+}_isLauncher(){//                console.log('RepoApp connected parent ', this.parentNode.parentNode);
+if("launcher"==this.parentNode.parentNode.getAttribute("type")){return!0}else{return!1}}_isPackageManager(){//                console.log('RepoApp connected parent ', this.parentNode.parentNode);
+if("packagemanager"==this.parentNode.parentNode.getAttribute("type")){return!0}else{return!1}}}window.customElements.define(RepoApp.is,RepoApp);</script></dom-module></body></html>

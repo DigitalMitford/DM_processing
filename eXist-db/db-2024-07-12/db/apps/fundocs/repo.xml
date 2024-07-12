@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo" xmlns:repo="http://exist-db.org/xquery/repo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <description/>
+   <author id="exist-db">eXist-db</author>
+   <website>https://www.github.com/exist-db/documentation</website>
+   <status>stable</status>
+   <license>GNU Lesser General Public License, version 2.1</license>
+   <copyright>true</copyright>
+   <type>application</type>
+   <target>fundocs</target>
+   <prepare>pre-install.xql</prepare>
+   <changelog>
+      <change version="1.1.2">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>New: Implementation-specific notes about fn:xml-to-json</li>
+         </ul>
+      </change>
+      <change version="1.1.1">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>Fixed: Removed deprecated draft map constructor for compatibility with forthcoming eXist 5.0.0-RC8</li>
+         </ul>
+      </change>
+      <change version="1.1.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>Improved process:execute examples - <a href="https://github.com/eXist-db/function-documentation/pull/28">#28</a>
+            </li>
+            <li>Fix use of deprecated functions for compatibility with 5.0 - <a href="https://github.com/eXist-db/function-documentation/pull/30">#30</a>
+            </li>
+         </ul>
+      </change>
+      <change version="1.0.0">
+         <ul xmlns="http://www.w3.org/1999/xhtml">
+            <li>Adopt correct syntax for empty-sequence node test, supported from eXist-db 4.0.0</li>
+         </ul>
+      </change>
+   </changelog>
+<deployed>2021-12-31T06:13:51.496Z</deployed></meta>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist://localhost:8080/exist/xmlrpc" user="admin" dir="${backup.dir}/db/home"/>

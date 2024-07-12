@@ -1,0 +1,7 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/doc/data/integration-testing" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:49.137Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="integration-testing.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:49.138Z" modified="2021-12-31T06:13:49.138Z" filename="integration-testing.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="listings" filename="listings"/>
+</collection>

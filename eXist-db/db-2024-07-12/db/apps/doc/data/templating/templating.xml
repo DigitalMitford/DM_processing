@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng"
+        schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng" type="application/xml"
+        schematypens="http://purl.oclc.org/dsdl/schematron"?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>HTML Templating Module</title>
+        <date>2Q21</date>
+        <keywordset>
+            <keyword>application-development</keyword>
+        </keywordset>
+    </info>
+
+    <!-- ================================================================== -->
+
+    <para>The HTML templating framework makes creating XQuery applications that produce HTML pages
+        more easy.</para>
+
+    <!-- ================================================================== -->
+
+    <sect1 xml:id="intro">
+        <title>Introduction</title>
+
+        <para>The main goal of the HTML templating framework is a clean separation of concerns.
+            Generating entire pages in XQuery is quick and dirty, but makes maintenance and code
+            sharing difficult. Ideally people should be able to look at the HTML view of an
+            application and modify its look and feel without knowing XQuery. The application logic,
+            written in XQuery, should be kept separate. Likewise, the XQuery developer should only
+            have to deal with the minimal amount of HTML (generated dynamically).</para>
+        <para>The templating module also handles most of the HTTP processing an application
+            requires. It does so using sophisticated features like automatic parameter injection and
+            type conversion. The goal was to remove repeating code like:</para>
+        <programlisting language="xquery" xlink:href="listings/listing-1.txt"/>
+        <para>In fact you should not see many calls to the HTTP request or session module inside a
+            templating function. This is all handled by parameter injection. </para>
+        <note>
+            <para>Working examples for the templating module can be found in the <link xlink:href="{demo}/examples/templating/templates.html">demo
+                application</link>.</para>
+        </note>
+    </sect1>
+
+    <!-- ================================================================== -->
+
+    <sect1 xml:id="write-html">
+        <title>Writing the HTML</title>
+
+        <para>The templating module is based mainly on conventions. Wherever possible it tries to
+            make a best guess instead of requiring additional code or annotations. This works as
+            long as the conventions used are sufficiently clear.</para>
+        <para>The input for the templating framework is always a plain HTML file. The module scans
+            the HTML view for elements with <code>data-template</code> attributes 
+            following a simple convention and tries to translate them into XQuery
+            function calls. By using <code>data-*</code> attributes, the HTML remains sufficiently clean and does
+            not get messed up with application code. A web designer could take the HTML files and
+            work on it without being bothered by the extra class names.</para>
+        <para>To start with the usual "Hello world" example:</para>
+        <programlisting language="xml" xlink:href="listings/listing-2.xml"/>
+
+        <para>When the module encounters <code>data-template="demo:hello"</code>, it will try to find a function named
+            <literal>demo:hello</literal> in all the modules known within the current XQuery context. If a function is found and its signature
+            follows a certain convention, it will be called and the <tag>div</tag> will
+            either be replaced or enhanced by whatever the function returns.</para>
+
+        <para>The <literal>data-template</literal> attribute must follow the function naming pattern.
+            It is also possible to pass static parameters to a template call.
+            Additional parameters go into one or more attributes
+            <literal>data-template-*</literal>, where the * should be replace by the name of the parameter, 
+            e.g. <literal>data-template-path="menu.html"</literal>.</para>
+    </sect1>
+
+    <!-- ================================================================== -->
+
+    <sect1 xml:id="templating">
+        <title>Templating Functions</title>
+
+        <para>A templating function is an ordinary XQuery function in a module which takes at least
+            two parameters of a specific type. Additional parameters are allowed. If a function does
+            not follow this convention it will be ignored by the framework.</para>
+        <para> For example, our "Hello world!" function could be defined as follows:</para>
+        <programlisting language="xquery" xlink:href="listings/listing-5.txt"/>
+        <para>The two required parameters are <code>$node</code> and <code>$model</code>: </para>
+        <itemizedlist>
+            <listitem>
+                <para> <code>$node</code> contains the HTML node currently being processed: in this
+                    case, the <tag>div</tag> element. </para>
+            </listitem>
+            <listitem>
+                <para><code>$model</code> is an XQuery map with application data. It will be empty
+                    for now, but we'll see later why it is important.</para>
+            </listitem>
+        </itemizedlist>
+
+    </sect1>
+
+    <!-- ================================================================== -->
+
+    <sect1 xml:id="parameter">
+        <title>Parameter Injection and Type Conversion</title>
+
+        <para>The additional parameters in the example above, <code>$language</code> and
+            <code>$user</code>, will be injected automatically. The templating framework tries to
+            make a best guess how to fill those parameters with values. It checks the following 3
+            contexts for parameters with the same name (in the order below):</para>
+        <orderedlist>
+            <listitem>
+                <para>if the current <emphasis>HTTP request</emphasis> contains a (non-empty)
+                    parameter with the same name as the parameter variable, this is used to set the
+                    value of the variable</para>
+            </listitem>
+            <listitem>
+                <para>if the <emphasis>HTTP session</emphasis> contains an attribute with the same
+                    name as the parameter variable, this is used to set the value of the
+                    variable</para>
+            </listitem>
+            <listitem>
+                <para>if the <emphasis>static parameters</emphasis> passed to the template call
+                    contain a parameter matching the variable name, it will be used</para>
+            </listitem>
+        </orderedlist>
+        <para>If neither 1 nor 2 lead to a non-empty value, the function signature will be checked
+            for an annotation <code>%templates:default("name", "value1", ..., "valueN")</code>. See
+            below.</para>
+        <para>If "language" is passed as a parameter in the HTTP request, it will overwrite the
+            static parameter we provided because the HTTP request is checked first. </para>
+        <para>The templating framework will also attempt automatic type conversion for all
+            parameters. If the parameter has a declared type of <code>xs:integer</code>, it will try
+            to cast a parameter it finds into an integer. If the type is <code>node()</code>, the
+            parameter value will be parsed into XML. These conversions may fail and this results in
+            an error passing a parameter with the wrong type.</para>
+    </sect1>
+
+    <!-- ================================================================== -->
+
+    <sect1 xml:id="annotations">
+        <title>Additional Annotations</title>
+
+        <para>Our "Hello world" example above does not preserve the div from which it was called,
+            but replaces it with a new one which lacks the "grey-box" class. This is the default
+            behavior. To preserve the enclosing div, we should add the XQuery annotation
+            <code>%templates:wrap</code> to the function signature.</para>
+        <para>Another annotation can be used to provide a default value for a parameter:
+            <code>%templates:default("parameter", "value1", "value2", ...)</code>. The first
+            parameter of the annotation must match the name of the parameter variable. All other
+            parameters in the annotation are used as values for the variable. </para>
+        <para>For example, set <code>$language</code> to <code>en</code> if the value cannot be
+            determined otherwise:</para>
+        <programlisting language="xquery" xlink:href="listings/listing-6.txt"/>
+        <para>Because of the <code>%templates:wrap</code> we can now remove the wrapping
+            <tag>div</tag> in the function and just return a string now. </para>
+    </sect1>
+
+    <!-- ================================================================== -->
+
+    <sect1 xml:id="model">
+        <title>Using the Model to Keep Application Data</title>
+
+        <para>In a more complex application, a view will have many templating functions which all
+            access the same data. For example, take a typical search page: there might be one HTML
+            element to display the number of hits, one to show the query, and another one for
+            printing out the results. All those components need to access the search result. How to
+            do this in a templating framework?</para>
+        <para>This is where the <code>$model</code> parameter comes into play. It is passed to all
+            template functions and they can add data to it. This is available to nested template
+            calls. </para>
+        <para>For example a search page:</para>
+        <programlisting language="xml" xlink:href="listings/listing-7.xml"/>
+        <para> The <code>demo:hit-count</code> and <code>demo:result-list</code> occur inside the
+            <tag>div</tag> calling <code>demo:search</code>. They are <emphasis>nested</emphasis>
+            template calls. <code>demo:search</code> will perform the actual search operation, based
+            on the parameters passed by the user. Instead of directly printing the search result in
+            HTML, it delegates this to the nested templates.</para>
+        <para> <code>demo:search</code> can be implemented as: </para>
+        <programlisting language="xquery" xlink:href="listings/listing-8.txt"/>
+        <para> <code>demo:search</code> differs from the functions we have seen so far in that it
+            returns an XQuery map and not HTML or some atomic type. If a templating function returns
+            a map, the templating framework will proceed as follows:</para>
+        <orderedlist>
+            <listitem>
+                <para>Add the returned map to the current <code>$model</code> map (adding it to the
+                    map keeps entries produced by any ancestor templates)</para>
+            </listitem>
+            <listitem>
+                <para>resume processing the children of the current HTML node</para>
+            </listitem>
+        </orderedlist>
+        <para>The <code>demo:hit-count</code> can now access the query results in
+            <code>$model</code>:</para>
+        <programlisting language="xquery" xlink:href="listings/listing-9.txt"/>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="manual-processing">
+            <title>Manual Processing Control</title>
+
+            <para>Inside a templating function, you can also call <code>templates:process($nodes as
+                node()*, $model as map(*))</code> to have the templating module process the given
+                node sequence. </para>
+            <warning>
+                <para>You need to make sure you are not running into an endless loop by calling
+                    <code>templates:process</code> on the currently processed node.</para>
+            </warning>
+            <para> A common pattern is to trigger <code>templates:process</code> on the children of
+                the current node:</para>
+            <programlisting language="xquery">templates:process($node/node(), $model)</programlisting>
+            <para>This is comparable to calling <tag>xsl:apply-templates</tag> in XSLT and will have
+                the same effect as returning a map (see the section above), but with your templating
+                function having full control.</para>
+            <para>For example, it is sometimes necessary to first process all the descendant nodes
+                of the current element, then apply some action to the processed tree. The
+                documentation app has a function, <code>config:expand-links</code>, which scans the
+                final document tree for links and expands them. The function is implemented as
+                follows:</para>
+            <programlisting language="xquery" xlink:href="listings/listing-11.txt"/>
+        </sect2>
+    </sect1>
+
+    
+    <!-- ================================================================== -->
+    
+    <sect1 xml:id="set-up">
+        <title>Set-Up</title>
+        
+        <para>The templating module is entirely implemented in XQuery. It provides a single public
+            function, <code>templates:apply</code>.</para>
+        
+        <sect2 xml:id="deprecation">
+            <title>Important Note</title>
+            <para>The old version of the templating module used to be part of the <emphasis>deprecated</emphasis>
+                shared-resources package, while a <link xlink:href="https://github.com/eXist-db/templating/">new and improved version</link> 
+                is now available in its own
+                expath package. We recommend to update to the new package with the short name
+                <emphasis>templating</emphasis>, available on the eXist-db dashboard. To update, follow the 3 steps below:</para>
+            <orderedlist>
+                <listitem>
+                    <para>change any dependency on shared-resources in your expath-pkg.xml to point to this package:</para>
+                    <programlisting language="xml" xlink:href="listings/listing-14.xml"/>
+                </listitem>
+                <listitem>
+                    <para>update the module URI for any imports of the templating module:</para>
+                    <programlisting language="xquery" xlink:href="listings/listing-15.txt"/>
+                </listitem>
+                <listitem>
+                    <para>New standard templating functions will go into a separate module, so you may want to add the following import in addition to the one above, which will give you access to the lib:parse-params template function (and others in the future):</para>
+                    <programlisting language="xquery" xlink:href="listings/listing-16.txt"/>
+                </listitem>
+            </orderedlist>
+        </sect2>
+        <sect2 xml:id="main-xquery">
+            <title>Calling the Templating from a Main XQuery</title>
+            <para>A complete main module which calls the
+                templating framework to process an HTML file passed in the HTTP request body could look
+                as follows:</para>
+            <programlisting language="xquery" xlink:href="listings/listing-12.txt"/>
+            <para>This module would be called from the URL rewriting controller. For example, we could
+                add a rule to <literal>controller.xq</literal> to pass any .html resource to the above
+                main query (saved to <literal>modules/view.xq</literal>):</para>
+            <programlisting language="xquery" xlink:href="listings/listing-13.txt"/>
+            <para>The only part of the main module code which might look a bit unusual is the inline
+                lookup function: the templating module uses dynamic function calls to execute template
+                functions in application modules. But unfortunately, XQuery modules can only "see"
+                functions in their own context. There is therefore no way for the templating module to
+                determine what functions are defined in application modules which are outside its
+                context. So it needs to be "helped" by providing a callback function to resolve function
+                references. The lookup function is defined in the main context and can access all the
+                modules imported into the main module.</para>
+            <para>Normally you can just copy and paste the main module code as given above. To adapt it
+                to your own application, just import your application modules and you're done.</para>
+        </sect2>
+    </sect1>
+
+    <!-- ================================================================== -->
+
+    <sect1 xml:id="pre-defined-commands">
+        <title>Pre-defined Template Commands</title>
+
+        <para>The templating module defines a number of general-purpose templating functions which
+            are described below. Functions marked as <emphasis>deprecated</emphasis> should not be used
+            anymore. Those labelled with <emphasis>removed</emphasis> did exist in the old templating
+            module (which was shipped in the shared-resources package) and has been removed from the newer
+            templating package.</para>
+        <para>Functions marked as <emphasis>new</emphasis> have been added in the new templating package
+            and are not available in the older module.</para>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="include">
+            <title>templates:include (deprecated)</title>
+
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colwidth="30%"/>
+                    <colspec/>
+                    <thead>
+                        <row>
+                            <entry><para>Parameter</para></entry>
+                            <entry><para>Description</para></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><para>path</para></entry>
+                            <entry><para>path to the resources</para></entry>
+                        </row>
+                    </tbody>                 
+                </tgroup>
+            </informaltable>
+            <para>Includes the content of the resource given by parameter <code>path</code> into the current
+                element. <code>path</code> is always interpreted relative to the current application
+                directory or collection.</para>
+        </sect2>
+        
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        
+        <sect2 xml:id="lib_include">
+            <title>lib:include (new)</title>
+            
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colwidth="30%"/>
+                    <colspec/>
+                    <thead>
+                        <row>
+                            <entry><para>Parameter</para></entry>
+                            <entry><para>Description</para></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><para>path</para></entry>
+                            <entry><para>path to the resources</para></entry>
+                        </row>
+                    </tbody>                 
+                </tgroup>
+            </informaltable>
+            <para>Includes the content of the resource given by <code>path</code> into the current
+                element. <code>path</code> is always interpreted relative to the current application
+                directory or collection.</para>
+            <para>The children (if any) of the including element (i.e. the one triggering the lib:include function)
+                are merged into the included content. To define where a child element should be
+                inserted, you must use a @data-target attribute referencing an HTML id which must exist
+                within the included fragment. If @data-target is missing, the element will be discarded.</para> 
+            <para>This is a mechanism to inject content from the including element into the included content. For example, if the same menu
+                or toolbar is included into every page of an application, but some pages should have
+                additional options, you can use lib:include with lib:block to define the additional HTML
+                to be inserted in a specific place.</para>
+        </sect2>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="each">
+            <title>templates:each</title>
+
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colwidth="30%"/>
+                    <colspec/>
+                    <thead>
+                        <row>
+                            <entry><para>Parameter</para></entry>
+                            <entry><para>Description</para></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><para>from</para></entry>
+                            <entry><para>references a property in the model map which should be used as the source sequence to iterate</para></entry>
+                        </row>
+                        <row>
+                            <entry><para>to</para></entry>
+                            <entry><para>the name of the property to be added to the model map. This will contain the current iteration item.</para></entry>
+                        </row>
+                    </tbody>                 
+                </tgroup>
+            </informaltable>
+            <para>Retrieve the sequence identified by the map key <literal>from</literal> in the
+                <code>$model</code> map. If it exists, iterate over the items in its value (as a
+                sequence) and process any nested content once. During each iteration, the current
+                item is added to the <code>$model</code> map using the key
+                <literal>to</literal>.</para>
+        </sect2>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="if-set">
+            <title>templates:if-parameter-set</title>
+
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colwidth="30%"/>
+                    <colspec/>
+                    <thead>
+                        <row>
+                            <entry><para>Parameter</para></entry>
+                            <entry><para>Description</para></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><para>name</para></entry>
+                            <entry><para>name of the parameter to check</para></entry>
+                        </row>
+                    </tbody>                 
+                </tgroup>
+            </informaltable>
+            <para>Conditionally includes content only if the given request parameter is set and not
+                empty.</para>
+        </sect2>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="if-unset">
+            <title>templates:if-parameter-unset</title>
+
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colwidth="30%"/>
+                    <colspec/>
+                    <thead>
+                        <row>
+                            <entry><para>Parameter</para></entry>
+                            <entry><para>Description</para></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><para>param</para></entry>
+                            <entry><para>name of the parameter to check</para></entry>
+                        </row>
+                    </tbody>                 
+                </tgroup>
+            </informaltable>
+            <para>Conditionally includes content only if the given request parameter is
+                <emphasis>not</emphasis> set or empty.</para>
+        </sect2>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="surround">
+            <title>templates:surround (deprecated)</title>
+
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colwidth="30%"/>
+                    <colspec/>
+                    <thead>
+                        <row>
+                            <entry><para>Parameter</para></entry>
+                            <entry><para>Description</para></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><para>with</para></entry>
+                            <entry><para>path to the resource which should be used as surrounding container</para></entry>
+                        </row>
+                        <row>
+                            <entry><para>at</para></entry>
+                            <entry><para>id of the HTML element which should be surrounded</para></entry>
+                        </row>
+                        <row>
+                            <entry><para>using</para></entry>
+                            <entry><para>(optional) id of an HTML element in the resource specified by with. If specified,
+                            only this element will be used as surrounding container - not the entire document.</para></entry>
+                        </row>
+                    </tbody>                 
+                </tgroup>
+            </informaltable>
+            <para>Surrounds its content with the contents of the XML resource specified in
+                <code>with</code>. The <code>at</code> parameter determines where the content is
+                inserted into the surrounding XML. It should match an existing HTML <code>id</code>
+                in the template.</para>
+            <para>The <code>using</code> parameter is optional and specifies the <code>id</code> of
+                an element in the <code>with</code> resource. The current content will be surrounded
+                by this element. If this parameter is missing, the entire document given in
+                <code>with</code> will be used.</para>
+            <para>The surround template instruction is used by all pages of the <link xlink:href="{demo}/index.html">Demo</link> application. The header, basic page
+                structure and menus are the same for all pages. Each page only contains a simple
+                <tag>div</tag> with a template instruction:</para>
+            <programlisting language="xquery">templates:surround?with=templates/page.html&amp;at=content</programlisting>
+            <para>The instruction takes the content of the current element and injects it into the
+                template page.</para>
+        </sect2>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="form-control">
+            <title>templates:form-control</title>
+
+            <programlisting language="xquery">templates:form-control</programlisting>
+            <para>Use on <tag>input</tag> and <tag>select</tag> elements: checks the HTTP request
+                for a parameter matching the name of the form control and fills it into the value of
+                an input or selects the corresponding option of a select.</para>
+        </sect2>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <sect2 xml:id="load-source">
+            <title>templates:load-source (removed)</title>
+
+            <programlisting language="xquery">templates:load-source</programlisting>
+            <para>Commonly used with an <tag>a</tag> element: opens the document referenced in the
+                <code>href</code> attribute in eXide.</para>
+        </sect2>
+        
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        
+        <sect2 xml:id="parse-params">
+            <title>lib:parse-params (new)</title>
+            
+            <para>Recursively expand template expressions appearing in attributes or text content,
+                trying to expand them from request/session parameters or the current model.</para>
+                
+            <para>Template expressions should have the form <code>${paramName:default text}</code>.
+                Specifying a default is optional. If there is no default and the parameter
+                cannot be expanded, the empty string is output.</para>
+
+            <para>To support navigating the map hierarchy of the model, paramName may be a sequence 
+                of map keys separated by ?, i.e. <code>${address?street}</code> would first retrieve the map
+                property called "address" and then look up the property "street" on it.</para>
+                
+            <para>The templating function should fail gracefully if a parameter or map lookup cannot
+                be resolved, a lookup resolves to multiple items, a map or an array.</para>
+        </sect2>
+    </sect1>
+</article>

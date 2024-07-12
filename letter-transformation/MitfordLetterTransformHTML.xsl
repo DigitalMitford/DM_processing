@@ -477,7 +477,8 @@
                     <xsl:text>. </xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:variable name="AuthorLookup" select="$siBibl//author/@ref"/> 
+                    <xsl:variable name="AuthorLookup" select="$siBibl//bibl/author/@ref"/> 
+                    <!-- 2024-06-27 ebb: altering this slightly so the author lookup doesn't look inside note elements in a bibl -->
                     
                     <xsl:if test="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName[forename]">
                         <xsl:value-of select="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName/forename[1]"/>

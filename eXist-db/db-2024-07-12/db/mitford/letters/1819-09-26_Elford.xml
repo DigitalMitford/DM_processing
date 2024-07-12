@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="MRM1748">Letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>, September 26, 1819</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+            <editor ref="#lmw">Lisa M. Wilson</editor> 
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford Project</orgName></sponsor>
+              <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            
+            <principal>Elisa Beshero-Bondar</principal>
+        
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+                  <persName ref="#lmw">Lisa M. Wilson</persName> 
+               <persName ref="#ssc">Shawntel Courtney</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Date last checked: <date when="2018-07-16">2018-07-16</date>
+                  <date when="2019-01-21">2019-01-21</date>
+               Proofing and corrections by</resp>
+               <!-- List all proofreaders here, <persName> by <persName>.--> 
+               <persName ref="#lmw">Lisa M. Wilson</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date when="2017-08-02">August 2, 2017</date>. P5.</edition> 
+            <respStmt><resp>Edition made with help from photos taken by</resp><orgName>Digital Mitford editors</orgName></respStmt>
+            <respStmt><orgName>Digital Mitford</orgName><resp> photo files: <idno>P1020296.jpg, P1020297.jpg, P1020298.jpg, P1020299.jpg, P1020300.jpg, P1020301.jpg, P1020302.jpg, P1020303.jpg, P1020304.jpg, P1020305.jpg, P1020306.jpg, P1020307.jpg, P1020308.jpg, P1020309.jpg P1020320.jpg</idno></resp></respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+               </p>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford Letters: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+       <sourceDesc>
+            <msDesc>
+               <msIdentifier> 
+                  <repository ref="#ReadingCL">Reading Central Library</repository>
+                  <collection>The letters of Mary Russell Mitford, vol. 4, 1819-1823</collection>
+                  <idno>qB/TU/MIT Vol. 4 Horizon No.: 1361550 ff. 383</idno>
+               </msIdentifier>
+               <head>Letter from Mary Russell Mitford to Sir William Elford, <date when="1819-09-26">1819 September 26</date>. 
+               <note resp="#lmw">The letter is dated thus in Mitford's hand. The address block is labeled October 4 and the postmark is October 6.</note>
+              </head> 
+              
+               <physDesc>
+               <objectDesc>
+                  <supportDesc>
+                     <support><p>Four sheets of <material>paper</material> eight surfaces photographed. Folded in half vertically then in thirds horizontally.</p> 
+                        <p>Address leaf bearing two black postmarks, partially illegible, reading: <stamp><lb/><placeName>PLYMOUTH</placeName><lb/>6 OC 6<lb/>1819</stamp> and <stamp>RE<unclear> <supplied resp="lmw">ADING</supplied></unclear><lb/></stamp></p>
+                     </support>
+                     <condition>
+                        <p>Sheet (pages seven and eight) torn on right edge of page three where wax seal was removed.</p>
+                     </condition>
+               </supportDesc>
+               </objectDesc>
+                  <sealDesc>
+                     <p>Red wax seal, complete, imprinted "Mary," complete, adhered to page eight.</p> 
+                  </sealDesc> 
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <handNotes>
+           <handNote corresp="#Id_who"><!--Description of role in this mansuscript.--><!--LMW: Someone, perhaps Plymouth postmaster? changes address; need new handnote--></handNote>
+           <handNote corresp="#rc" medium="red_crayon"> Red crayon or thick red pencil. Probably a different hand from Mitford's that marks many of her letters, sometimes drawing diagonal lines across pages, and sometimes writing words overtop and perpendicularly across Mitford's writing. A red line is drawn from top left to bottom right of each of the first five leaves. On leaf six, a red line is drawn from top left to bottom right across each of the two text blocks. There is no red crayon across the address text block.</handNote>
+           <handNote corresp="#pencil" medium="pencil"> Someone, apparently other than Mitford, perhaps cataloging letters and describing them, who left grey pencil marks and numbered her letters now in the Reading Central Library's collection. This letter is numbered "17" in the top left of the first leaf.
+           </handNote>
+        </handNotes>
+     </profileDesc>
+     <encodingDesc>
+        <editorialDecl>
+              <p>Mitford’s spelling and punctuation are retained, except where a word is split at the end of a line and the beginning of the next in the manuscript. Where Mitford’s spelling and hyphenation of words deviates from the standard, in order to facilitate searching we are using the TEI elements “choice," “sic," and “reg" to encode both Mitford’s spelling and the regular international standard of Oxford English spelling, following the first listed spelling in the Oxford English Dictionary. The long s and ligatured forms are not encoded.</p> 
+           </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="letter">
+            <opener> 
+               <add hand="penAnnot_RCL">To Sir W. Elford</add> 
+               <add hand="pencil">17</add>
+               <dateline>
+                  <name type="place" ref="#Bertram_house">Bertram House</name>(this pen won't write)
+                  <date when="1819-09-26">Sept<hi rend="superscript">r</hi>. 26<hi rend="superscript">th</hi> 1819</date>. 
+                  
+               </dateline>
+            </opener>
+            <p><pb n="1" facs="P1020297"/>Our letters always cross, my dear Sir William that is certain--within half an hour after Mr. Maitland had taken <emph rend="underline">my</emph> packet to frank, <emph rend="underline">yours</emph> came to hand. You really do write in a vein more Walpolian than ever--that letter was charming--I shall some day or other make them into a book &amp; make my fortune--of that you may be assured. First of all to answer your kind questions--I can’t tell where we go nor when--the matter though settled is not finished--there is no more Chancery suit that is certain--but the writings are not drawn, money not paid &amp; so forth--&amp; till then we shall remain here. The Where is even more uncertain than the When. I have not however any notion that we shall migrate far from this neighborhood &amp; to tell you the truth am desperately afraid of the famous &amp; patriotic Borough of <placeName ref="#Reading_city">Reading</placeName> which <persName ref="#Mitford_Geo">Papa</persName> likes for its newspaper &amp; its justice rooms &amp; its elections, &amp; which I dislike for various negative reasons--A Town of negations that <placeName ref="#Reading_city">Reading</placeName> is--no trees no flowers, no green fields, no wit, no Literature, no elegance! neither the society of London nor the freedom of the country. We never say a word about it for or against--never mention the illustrious dull <rs type="place" ref="#Reading_city">Town</rs>--but I expect that some fine morning Papa will come back &amp; have taken a house there--&amp; my only comfort is that I fore-know that after a little grumbling &amp; pining at the transplantation (Dear me I was first going to write transportation—I beg Botany Bay's pardon) after a little shrivelling &amp; withering just at first I shall settle in the new earth, put out fresh leaves &amp; be as sound at heart as a transplanted cabbage or any other housewifely vegetable.--The middle course &amp; that I believe to which my dear Mama inclines is a Cottage within a walk of Reading which<pb n="2" facs="P1020298"/> if such a thing could be procured I should like exceedingly--that would suit us all. Wherever we go you shall hear all about it--never I hope out of your way, my dear Sir William--It would be too much to lose at once our friends &amp; our nightingales--&amp; at or near Reading we shall be more in your road than ever.<metamark rend="jerks"/></p>
+            <p>So you do not like Mr. Crabbe! Neither, to speak of his <metamark rend="caret" place="below"/><add place="above" unit="word" n="1">poems</add> en masse, do I. But there are passages in <del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">preference</supplied></del><add place="above">several of them</add> both of humour &amp; pathos that are I think very fine &amp; the finishing of some of his pictures particularly the Interiors is <del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">quite</supplied></del> unrivalled. I do not quite agree with you respecting his versification there is too much antithesis--too much point--his poems are often only a series of couplets--but that in this last publication is a good deal done away with--there are many passages of which the flow is exceedingly grand &amp; sweeping &amp; some triplets that are absolutely Drydenish. The general tone is of course low &amp; subdued as in so long a poem it must of necessity be--there was however no sort of necessity for its being so long &amp; that in reality is M<hi rend="superscript">r</hi>. Crabbe's Cardinal Sin.--As to Mazeppa I have nothing more to say--It is a spirited sketchy thing, but not worth disputing about. I was never you know one of Lord Byron's Idolaters &amp; I certainly am not going to begin now.--I have just seen your fair enemy Mrs. D<del rend="strikethrough" resp="#rc">ickinson</del> who takes your complimentary criticism in very good part &amp; returns you your message that you are a charming man &amp; a very persevering &amp; able advocate in a bad cause. So far so good. I must tell you a piece of news respecting the dear M<hi rend="superscript">rs</hi>.  D<del rend="strikethrough" resp="#rc">ickinson</del>, after eleven years marriage without any such prospect she is now in the family way. Nothing can be so delightful as this circumstance there is a large estate entailed either upon son or daughter which in failure of issue would have come to a lubberly half nephew of M<hi rend="superscript">r</hi>. Dickinson's--a man who after marrying one of his Father's maid servants &amp; living with her a week ran away with the other <metamark rend="carat" place="below"/><add place="above">maid servant</add> with whom he has lived ever since. M<hi rend="superscript">r</hi>. D. is as you may imagine enchanted <pb n="3" facs="P1020299"/> with this prospect &amp; so is she.</p><metamark rend="jerks"/><p>A friend of ours has been spending a day or two with us this week &amp; brought with her a lady most astonishingly like you. I never saw so striking a likeness of feature complexion countenance &amp; expression--the likeness extended even to voice &amp; manner--she talked like you &amp; looked like you--&amp; was just as good &amp; kind to me as you are. I took to her amazingly &amp; asked her a dozen times if she really was You or herself. She insisted that she was herself--&amp; I believe her the rather because I think the real you would in petticoats have looked larger &amp; taller. In fact she is much the same size for a woman that you are for a man--&amp; then I enquired if she was no relation no sister or cousin--but she says she is not--&amp; has not even the honour of your acquaintance--Her name is Greenwell &amp; she lives in London--of course she is very pleasant &amp; very pleasant looking--<lang xml:id="fr">cela sans dire</lang><note resp="#ssc">Loosely translates as: "It goes without saying."</note> Should not you like to see her?</p><metamark rend="jerks"/>
+            <p>I have not seen the Welsh Mountaineers--but your <del rend="squiggles" unit="word" n="1"><supplied resp="#lmw">character</supplied></del><add place="above">account</add> of the book is exactly to my taste--I care nothing for story &amp; all for character--I have set afoot a general searching &amp; begging system for this novel (Which they have not got in Reading--stupid place!) &amp; do not doubt of seeing it before I write again. In the mean time I am going to read a book by the same Author I believe (Is not the Welch Mountaineers written by Catherine Hutton)(I beg you to observe <del rend="squiggles" unit="char" n="2"/>how carefully not knowing the true orthography I have spelt Welch, Welsh in one place Welch in another &amp; Wel*sc*h (in a happy betweenity--a sort of compound letter) in the third) (I flatter myself that this congeries of parentheses outdoes your outdoings in that way) called the Miser Married--which when I have read I shall tell you all about--</p><metamark rend="jerks"/>
+            <p>Oh you are greatly mistaken when you think me a Huntite--I think one of the worst consequences of this sad affair at Manchester was bringing out the unsuspected good qualities of that vulgar &amp; dangerous<pb n="4" facs="P1020300"/> Demagogue. His acuteness, presence of mind, &amp; moral courage so contrary to the general opinion of his cowardice, have given him a temporary popularity which doubtless his impudence &amp; his astonishing talent for grovelling will soon overset--but at present it certainly does exist in an alarming degree--&amp; that it exists at all is solely owing to the rash &amp; unadvised conduct of the Magistrates &amp; yeomanry--who acted as it seems to me with all the hasty cruelty of Fear. This is my Manchester creed--What is yours? I do not doubt your lamenting as much as I do the victims on both sides.</p><metamark rend="jerks"/>
+            <p>I am not going to make any speech about your illness--though I must say that I hope it has not returned (you'll let me do that I am sure). Mama has a follow feeling for you--having been a sufferer from the same cause this summer--She is quite well now.--Good night my dear Sir William--It is bed time &amp; I find that I have made fifty mistakes which I know you will forgive--Anybody in the world but myself would be ashamed to send you such interlined scrawls--but I am incorrigible <del rend="rc">&amp; you spoil me.</del> Good night--God bless you!--</p>
+               <p>Monday Sep<hi rend="superscript">t.</hi> 27. (see how I improve) What you say of Hamlet agrees perfectly with my feelings--though it is a thing you know that one scarcely dares to say. I remember the observation in Mr. Northcote's Life of Sir Joshua--&amp; remember thinking at the time that Mr. Fox's objection to Hamlet probably arose from the very different treatment of a nearly similar story in his favorite Greek Dramatists--the Orestes however cruel &amp; barbarous is certainly a much more dramatic personage than the Hamlet--&amp; again I must confess that in spite of the admirable writing of great part of the play &amp; the inimitable effect of the opening of which the preparation, the familiarity, the awefulness, the art or the artlessness, seem to me unrivalled even in Shakespeare, in spite of all this Hamlet is no favorite of mine. This is a terrible heresy--but with Mr. Fox &amp; Sir William Elford <pb n="5" facs="P1020301"/>to keep me in countenance heresy begins to look like reformation. And to tell the truth I am not sure that one reason of my dislike for the play is not the stupendous quantity of eloquent nonsense that has been written in praise of it. That character cannot be very clearly defined of which every critic offers a fresh explanation--&amp; how Warburton to Schlegel every body who talks of Hamlet has some new theory to produce &amp; some old one to overset--The German writers in particular &amp; that Germanized French woman Madame de Staël talk "about it &amp; about it" till one is sick of the very name. Now good bye again till I can hear of an M.P. &amp; have read The Miser Married--which will be the text for a fresh sermon. Good bye my dear Friend.</p>
+               <p>October 2<hi rend="superscript">nd</hi> No--no sermon on that text--the novel is a sprightly amusing thing enough, but not <del rend="squiggles" unit="word" n="2"/><supplied resp="#lmw">good enough</supplied><add place="above">sufficiently good</add> to pull to pieces--You know they are only beauties that one examines feature by feature, &amp; roses &amp; carnations that one picks leaf by leaf--Daisies &amp; <del rend="squiggles"><unclear/></del> ugly faces escape untouched. After all there is some talent in it--as much perhaps of the germ of talent as there was in Miss Austen's Sense &amp; Sensibility--if the next resemble Pride &amp; Prejudice what can be wished for more. The Miser Married is Miss Hutton's first production &amp; was written 5 years ago. You see I proceed on the supposition that Miss Hutton is the Authoress of the Welsh Mountaineers though I have only a vague recollection of an advertisement in the newspaper. Tell me if I am right. <metamark rend="jerks"/> I have likewise been reading the last Edinburgh Review &amp; find there a disquisition on Mr. Crabbe's Poetry which might have spared you the trouble of reading any of my trash on the same subject--It is written in Jeffrey's very best style--full of subtility &amp; eloquence--more poetical even than his subject &amp; possessing every power <pb n="6" facs="P1020303.JPG"/><del rend="strikethrough">(skip this page &amp; go on to the next)</del>           <metamark rend="dotted_cross"/><note resp="#penAnnotRCL">insert this when I <unclear/> or carry <unclear/> Mark on the other page.</note>
+            
+           From Mr. Wordsworth's Poem on the Yew Trees
+              
+              <!--<indent rend="5"/>-->But worthier still of note
+              Are those fraternal Four of Borrowdale
+              Joined in one solmen &amp; capacious grove.
+              Huge trunks! &amp; each particular trunk a growth
+              Of intertwisted fibres serpentine
+              Upcoiling &amp; inveterately convolved,--
+              Not uninformed with phantasy &amp; Looks
+              That threaten the prophase, a pillared shade
+              Upon whose grassless floor of red brown hue
+              By sheddings from the final umbrage tinged
+              Perennially, beneath whose sable roof
+              Of boughs, as if for festal purpose decked
+              With unrejoicing berries, ghostly shapes
+              May meet at noontide; Fear &amp; trembling Hope,
+              Silence &amp; Foresight, Death the Skeleton
+              And Time the shadow; there to celebrate
+              As in a natural temple scattered o'er
+              With altars undistrubed of mossy store
+              United worship; or in mute repose
+              To lie &amp; listen to the mountain flood
+              Murmuring from Glenamara's inmost Cave.
+              
+              <!--line--></p>
+              <p>If you admire nothing else in this extract you will admire (in the old sense of wonder) as my pretty schoolgirl's writing my vs. &amp; ks &amp; ms. Which are generally all alike, now blazoned as the herald's  bay with a difference.--Oh if any body had told me I should ever mind my ps &amp; qs--how I should have laughed at them!--I hope you won't take a fancy to me desire me always to write legibly.--</p>
+            <p><add place="above">except the power</add><del rend="squiggles" unit="word" n="6">is a greater degree than that</del> of communicating to his readers the enthusiasm that he professes to feel. Mr. Jeffrey's admiration may be very sincere--it is certainly not contagious--He is a much greater "Puller down" than "Setter up" &amp; knows better how to depress Mr. Wordsworth than to elevate Mr. Crabbe. A matchless writer after all is Mr. Jeffrey--&amp; the Review which I have thought languishing lately seems regaining some of its old vivacity in this number--particularly in the articles on Botany Bay &amp; Buonaparte. (I hope you won't be wicked enough to think this juxtaposition betokens any failure of allegiance to the Emperor of my affections--whom I admire more than ever from some of the tracts brought against him--especially that one of tossing the books he did not like out of his carriage windows--don't you?)--Apropos to Mr. Jeffrey and Mr. Wordsworth--I want you to read one fair specimen of the great Laker.--&amp; I think his best chance is to be put in the shape of a long Parenthesis (a thing which you &amp; I both like you know) into my letter. There's vanity for you! I have chosen the Yew Trees because I think it exceedingly opposite to your notion of Mr. Wordsworth's writing &amp; likewise (to be perfectly fair on my side) because I think the lives the finest he ever wrote--but in the whole range of English poetry it would be difficult to find any finer <!--metamark: dotted cross-->--The long words will remind you of Milton as well as the structure of the verse, but--(pray don't tell)--I have sometimes thought Milton's long crabbed words just for the sake of their length &amp; their out-of-the-way-ness--Now Wordsworth's could <del rend="squiggles"/> not be supplied by any other--It is a perfect picture &amp; no other colours could have given the effect--The truth of the touch is quite inimitable--&amp; so are the magnificent personifications--Now do tell me what you think of them--Don't fancy I am going Wordsworth mad--I think just as you do of Mr. Wordsworth's system &amp; of his vanity--but I think differently of <pb n="7" facs="P1020307.JPG"/>his powers--so would you if you had ever read the last edition of the Lyrical ballads--&amp; part of the Excursion &amp; <del rend="squiggles"/> the White Doe of Rylestone. Mind--I have not the slightest intention to recommend them to your Worship's perusal--I shall be quite content if you read the 20 lines I send you.--My dear dear friend I must make up my mind to pause &amp; seal up my letter--It grows like a snowball &amp; if I do not fling it forthwith at your unlucky pate, it will turn into an Avalanche &amp; crush you with its weight.--fare well my dear Sir William--Best &amp; kindest &amp; most patient of Correspondents farewell!--Papa &amp; Mama send their best regards--</p>
+            <closer>Ever most affectionately your's. Pray write soon--that is my last word--write soon!) <persName ref="#MRM">M. R. Mitford</persName>.</closer>
+              
+              <closer>
+               <address>
+                  <addrLine><lb/><placeName ref="#Reading_city">Reading</placeName> <date when="1819-10-04">October 4 1819</date></addrLine>
+                  <addrLine><lb/><persName ref="#Elford_SirWm">Sir W. Elford B<hi rend="superscript">t</hi></persName>.</addrLine>
+                  <addrLine><lb/><placeName ref="#Bickham_village">Bickham</placeName></addrLine>
+                  <addrLine><lb/><placeName ref="#Plymouth">Plymouth</placeName></addrLine>
+            </address>
+            </closer> 
+         </div>
+      </body>
+     
+     <back>
+        <div> <!-- In this section, place any NEW xml:id's generated by this letter (ie, id's not already included in our SI), then research and write entries for each. Under resp="", use your xml:id. NOTE: The <div> element must be present, nested inside <back>. -->
+       <listPerson>
+          <!--LMW: NEW PERSON ENTRIES:
+             Mr. Maitland: identify
+             George Crabbe the poet
+             )female) Greenwell (Miss or Mrs.?)
+             James Northcote the artist
+             Sir Joshua Reynolds the artist
+             Warburton German writer
+             Schlegel German writer
+             ?half nephew of Mr. Dickinson; two maidservants he married: identify
+             Catherine Hutton (author) (11 February 1756 – 13 March 1846) 
+             -->
+          <person xml:id="proposed_new_ID">
+             <persName>
+                <surname><!--last name--></surname>
+                <forename><!--first name --></forename>
+                <forename><!--middle name --></forename>
+                <forename><!--if necessary, more middle names--></forename>
+             </persName>
+             <persName><!--alternate persName, such as a nickname?--></persName>
+             <persName><!--Use as many of these as necessary to catch alternate names of this person.--></persName>
+             <birth when="yyyy-mm-dd"><placeName><!--place of birth--></placeName></birth>
+             <death when="yyyy-mm-dd"><placeName><!--place of death--></placeName></death>
+             <!--Other tags can go here: See Codebook for more details.-->
+             <note resp="#Your_Editor_ID"><!--Biographical notes of interest. You don't need to tell the person's life story if they're already well-known, like Napoleon. But do indicate the person's significance in Mitford's world. More on this in the Site Index.--></note>
+          </person>
+          <person xml:id="proposed_new_ID2"><!--Here's a minimal entry-->
+             <persName>...</persName>
+             <note resp="#Your_Editor_ID"><!--Some information here.--></note>
+          </person>
+       </listPerson>
+        
+        <listPlace>
+           
+           <!-- Additional places:
+              Botany Bay (australia) -->
+           <place xml:id="proposed_new_ID3">
+              <placeName><!--best-known name of the place--></placeName>
+              <placeName><!--alternate place name--></placeName>
+              <location><geo><!--Latitude followed by longitude, separated by a white space like this:
+              53.226658 -0.541254
+              --></geo></location>
+           </place>
+        </listPlace>
+          <listBibl>
+             <!-- Additional literary works:
+                Mazeppa, work by Byron
+                Life of Sir Joshua Reynolds by Northcote (might be letters?)
+                The Miser Married by Catherine Hutton (1813)
+                The Welch Mountaineers by Hutton (1817)
+             -->
+             <bibl xml:id="proposed_new_ID4">
+                <title><!--Title--></title>
+                <author><!--Author--></author>
+                <editor><!--if indicated--></editor>
+                <pubPlace><!--where published--></pubPlace>
+                <publisher><!--publisher--></publisher>
+                <date when="yyyy"><!--Date. The @when attribute can be yyyy, yyyy-mm, or yyyy-mm-dd.--></date>
+             </bibl>
+          </listBibl>
+           <!--A few other kinds of lists apply. See Codebook and Site Index at http://digitalmitford.org/si.xml for guides.-->
+     </div>
+     </back>
+  </text>
+</TEI>
