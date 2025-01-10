@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?><!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>--><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         
+
+         <titleStmt>
+            <title ref="#OV">Our Village: Sketches of Rural Character and Scenery</title>
+            <author ref="#MRM">Mary Russell Mitford</author>
+
+
+            <editor ref="#scw">Samantha Webb</editor>
+            <editor ref="#ad">Alexandra Drayton</editor>
+
+            <sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
+               Project</orgName></sponsor>
+            <sponsor>University of Pittsburgh at Greensburg</sponsor>
+            <principal ref="#ebb">Elisa Beshero-Bondar</principal>
+
+            <respStmt>
+               <resp>Transcription and coding by</resp>
+               <persName ref="#jmh">Jonathan M. Horanic</persName>
+               <persName ref="#scw">Samantha Webb</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofing and corrections by</resp>
+               <persName ref="#ebb">Elisa Beshero-Bondar</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>This is optional, used to describe this edition, and “should contain phrases
+               describing the edition or version”: First digital edition in TEI, date: 2 June 2013.
+               P5.</edition>
+            <respStmt>
+               <resp>We can include a respStmt here.</resp>
+               <persName>Who?</persName>
+            </respStmt>
+
+         </editionStmt>
+
+
+
+         <publicationStmt>
+            <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2013</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+
+         </publicationStmt>
+         <seriesStmt>
+            <title>Digital Mitford: The Mary Russell Mitford Archive</title>
+         </seriesStmt>
+
+         <notesStmt>
+            <note>Any special notes on this text? (optional)</note>
+            <note>You can have multiple notes here.</note>
+         </notesStmt>
+
+         <sourceDesc>
+            <!--2017-01-10 ebb: We need to change this sourceDesc to indicate we’re checking each text and altering it to represent the 1824 edition as published in NCCO. -->
+            <!--Notice, this is simpler than the sourceDesc we used in our Letters file.-->
+            <p>Our text is based on public domain, Google-digitized text<bibl>
+                  <title ref="#OV">Our Village: Sketches of Rural Character and Scenery</title><edition>Third
+                     Edition</edition> by <author ref="#MRM">Mary Russell
+                     Mitford</author><pubPlace ref="#London_city">London</pubPlace><publisher ref="#Whittaker_GB_pub">Geo. B.
+                     Whittaker</publisher><placeName>Ave Maria Lane</placeName><date>1825</date>.
+               </bibl> This text appears to be identical in pagination and content to the first
+               edition published in 1824. </p>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <editorialDecl>
+            <p>Describes our editorial practice.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <div type="sketch">
+            <pb n="241"/>
+            <head><title level="s" ref="#Walks_Country_OV">WALKS IN THE COUNTRY</title>.<lb/><title level="a" ref="#Walks_Nutting_OV">NUTTING</title>.
+               <!--ebb: If there’s a subtitle use an <lb/> element to separate -->
+            </head>
+            <p><date when="--11-26">September 26th</date>.—One of those delicious autumnal days, when the air, the sky, and the
+               earth, seem lulled into an universal calm, softer and milder even than May. <persName ref="#OVNarrator #Lizzy_OV #May-Flower_OV">We</persName>
+               sallied forth for a walk, in a mood congenial to the weather and the season,
+               avoiding, by mutual consent, the bright and sunny common, and the gay high road, and
+               stealing through shady unfrequented lanes, where we were not likely to meet any
+               one,—not even the pretty family procession which in other years we used to
+               contemplate with so much interest—<orgName ref="#Nutting_gleanerFamily_OV">the father, mother, and children</orgName>, returning from
+               the wheat-field, the little ones laden with bristling close-tied bunches of
+               <rs type="plant" ref="#wheat">wheat-ears</rs>, their own gleanings, or a bottle and a basket which had contained their
+               frugal dinner, whilst the mother would carry her babe hushing and lulling it, and the
+               father and an elder child trudged after with the cradle, all seeming<pb n="242"/>
+               weary, and all happy. We shall not see such a procession as this to-day; for the
+               harvest is nearly over, the fields are deserted, the silence may almost be felt.
+               Except the wintry notes of the <rs type="animal" ref="#robin">red-breast</rs>, nature herself is mute. But how beautiful,
+               how gentle, how harmonious, how rich! The rain has preserved to the herbage all the
+               freshness and verdure of spring, and the world of leaves has lost nothing of its
+               midsummer brightness, and the <rs type="plant" ref="#harebell">hare-bell</rs> is on the banks and the <rs type="plant" ref="#woodbine">woodbine</rs> in the
+               hedges, and the low <rs type="plant" ref="#furze">furze</rs>, which the <rs type="animal" ref="#sheep">lambs</rs> cropped in the spring, has burst again
+               into its golden blossoms.</p>
+            <p>All is beautiful that the eye can see; perhaps the more beautiful for being shut in
+               with a forest-like closeness. We have no prospect in this labyrinth of lanes,
+               cross-roads, mere cart-ways, leading to the innumerable little farms into which this
+               part of the parish is divided. Uphill or down, these quiet woody lanes scarcely give
+               us a peep at the world, except when, leaning over a gate, we look into one of the
+               small enclosures, hemmed in with hedgerows, so closely set with growing timber, that
+               the meady opening looks almost like a glade in a wood, or when some cottage, planted
+               at a corner of one of the little greens formed by the meeting of these cross-ways,
+               almost startles us by the unexpected sight of the dwellings of men in such a
+               solitude. But that we have more of hill and<pb n="243"/> dale, and that our
+               cross-roads are excellent in their kind, this side of our parish would resemble the
+               description given of <placeName ref="#Vendee">La Vendée</placeName>, in <persName ref="#Rochejacquelein_Victoire">Madame Laroche-jacquelin</persName>’s most interesting book
+                  *.<note type="author" anchored="true">* An almost equally interesting account of
+                     that very peculiar and interesting scenery, may be found in <q>“<title ref="#Maid_LaVendee_novel">The Maid of La
+                        Vendée</title>,”</q> an English novel, remarkable for its simplicity and truth of painting,
+                     written by <persName ref="#LeNoir_Eliz">Mrs. Le Noir</persName>, tbe daughter of <persName ref="#Smart_Chris">Christopher Smart</persName>, and inheritrix of much
+                  of his talent. Her works deserve to be better known.</note> I am sure if wood can
+               entitle a country to be called Le Bocage,<note resp="#scw"><emph><foreign>Bocage</foreign></emph> is a French word describing farmlands that are interspersed with hedges and trees.</note> none can have a better right to the name.
+               Even this pretty snug farm-house on the hill side, with its front covered with the
+               rich <rs type="plant" ref="#vine">vine</rs>, which goes wreathing up to the very top of the clustered chimney, and its
+               sloping orchard full of fruit—even this pretty quiet nest can hardly peep out of its
+               leaves. Ah! they are gathering in the orchard-harvest. Look at that <rs type="person" ref="#Brooker_secondSon_OV">young rogue</rs> in
+               the old mossy <rs type="plant" ref="#apple_tree">apple-tree</rs>—that great tree, bending with the weight of its
+               golden-rennets—see how he pelts his <rs type="person" ref="#Brooker_daughter_OV">little sister</rs> beneath with apples as red and as
+               round as her own cheeks, while she, with her outstretched frock, is trying to catch
+               them, and laughing and offering to pelt again as often as one bobs against her; and
+               look at that still <rs type="person" ref="#Brooker_Willy_OV">younger imp</rs>, who, as grave as a judge, is creeping on hands and
+               knees under the tree, picking up the <rs type="plant" ref="#apple">apples</rs> as they fall so<pb n="244"/> deedily
+               *<note type="author" anchored="true">*<q>“Deedily,”</q>—I am not quite sure that this
+                  word is good English; but it is genuine <placeName ref="#Hampshire_county">Hampshire</placeName>, and is used by the most correct
+                  of female writers, <persName ref="#Austen_Jane">Miss Austen</persName>.<note resp="#scw">Mitford is likely referring to Austen's use of the term <q>'deedily'</q> in <title level="m" ref="#Emma_JA">Emma</title>, where she describes an assembly of characters at the Bates home.</note> It means (and it is no small merit that it has no
+                  exact synonyme) any thing done with a profound and plodding attention, an action
+                  which engrosses all the powers of mind and body.</note>, and depositing them so
+               honestly in the great basket on the grass, already fixed so firmly and opened so
+               widely, and filled almost to overflowing by the brown rough fruitage of the golden
+               rennet’s next neighbour the russeting; and see that <rs type="person" ref="#Brooker_youngestChild_OV">smallest urchin of all</rs> seated
+               apart in infantine state on the turfy bank, with that toothsome piece of deformity a
+               crumpling in each hand, now biting from one sweet hard juicy morsel, and now from
+               another.—Is not that a pretty English picture? And then, farther up the orchard, that
+               bold hardy lad, the <rs type="person" ref="#Brooker_eldestSon_OV">eldest-born</rs>, who has scaled (Heaven knows how!) the tall straight
+               upper branch of that great <rs type="plant" ref="#pear">pear-tree</rs>, and is sitting there as securely and as
+               fearlessly, in as much real safety and apparent danger, as a sailor on the top-mast.
+               Now he shakes the tree with a mighty swing that brings down a pelting shower of stony
+               bergamots, which <rs type="person" ref="#Brooker_Mr_OV">the father</rs> gathers rapidly up, whilst <rs type="person" ref="#Brooker_Mrs_OV">the mother</rs> can hardly assist
+               for her motherly fear,—a fear which only spurs the <rs type="person" ref="#Brooker_eldestSon_OV">spirited boy</rs> to bolder ventures.
+               Is not that a pretty picture? And they are such a handsome family, too,<pb n="245"/>
+               <orgName ref="#Brooker_family_OV">the Brookers</orgName>. I do not know that there is any gipsey blood, but there is the true
+               gipsey complexion, richly brown, with cheeks and lips so deeply red, black hair
+               curling close to their heads in short crisp rings, white shining teeth—and such
+               eyes!—That sort of beauty entirely eclipses your mere roses and lilies. Even <persName ref="#Lizzy_OV">Lizzy</persName>,
+               the prettiest of fair children, would look poor and watery by the side of <persName ref="#Brooker_Willy_OV">Willy
+                  Brooker</persName>, the sober little personage who is picking up the apples with his small
+               chubby hands, and filling the basket so orderly, next to <rs type="person" ref="#Brooker_Mr_OV">his father</rs> the most useful
+               man in the field. <said who="#Lizzy_OV"><quote>“Willy!”</quote></said> He hears without seeing; for we are quite hidden by the
+               high bank, and a spreading <rs type="plant" ref="#hawthorn">hawthorn-bush</rs> that overtops it, though between the lower
+               branches and the grass we have found a convenient peep-hole. <said who="#Lizzy_OV"><quote>“Willy!”</quote></said> The voice
+               sounds to him like some fairy dream, and the black eyes are raised from the ground
+               with sudden wonder, the long silky eye-lashes thrown back till they rest on the
+               delicate brow, and a deeper blush is burning in those dark cheeks, and a smile is
+               dimpling about those scarlet lips. But the voice is silent now, and the <rs type="person" ref="#Brooker_Willy_OV">little quiet
+                  boy</rs>, after a moment’s pause, is gone coolly to work again. He is indeed a most lovely
+               child. I think some day or other he must marry <persName ref="#Lizzy_OV">Lizzy</persName>; I shall propose the match to
+               <rs type="person" ref="#Brooker_Mrs_OV #LizzysMother_OV">their respective mammas</rs>. At present the parties are rather too young for a
+               wedding—the<pb n="246"/> <rs type="person" ref="#Brooker_Willy_OV">intended bridegroom</rs> being, as I should judge, six, or
+               thereabout, and the <rs type="person" ref="#Lizzy_OV">fair bride</rs> barely five,—but at least we might have a betrothment
+               after the royal fashion,—there could be no harm in that. <persName ref="#Lizzy_OV">Miss Lizzy</persName>, I have no doubt,
+               would be as demure and coquettish as if ten winters more had gone over her head, and
+               poor <persName ref="#Brooker_Willy_OV">Willy</persName> would open his innocent black eyes, and wonder what was going forward.
+               They would be the very <persName ref="#Oberon_WS">Oberon</persName> and <persName ref="#Titania_WS">Titania</persName> of the village, the fairy king and
+               queen.</p>
+            <p>Ah! here is the hedge along which the <rs type="plant" ref="#periwinkle">periwinkle</rs> wreathes and twines so profusely,
+               with its ever-green leaves shining like the myrtle, and its starry blue flowers. It
+               is seldom found wild in this part of England; but, when we do meet with it, it is so
+               abundant and so welcome,—the very robin-redbreast of flowers, a winter friend. Unless
+               in those unfrequent frosts which destroy all vegetation, it blossoms from September
+               to June, surviving the last lingering <rs type="plant" ref="#geranium">crane’s-bill</rs>, forerunning the earliest
+               <rs type="plant" ref="#primrose">primrose</rs>, hardier even than the <rs type="plant" ref="#daisy">mountain daisy</rs>,—peeping out from beneath the snow,
+               looking at itself in the ice, smiling through the tempests of life,and yet welcoming
+               and enjoying the sunbeams. Oh, to be like that flower!</p>
+            <p>The little spring that has been bubbling under the hedge all along the hill-side,
+               begins, now that we have mounted the eminence and are imperceptibly descending, to
+               deviate into a capricious variety of clear deep<pb n="247"/> pools and channels, so
+               narrow and so choked with weeds, that a child might overstep them. The hedge has also
+               changed its character. It is no longer the close compact vegetable wall of <rs type="plant" ref="#hawthorn">hawthorn</rs>,
+               and <rs type="plant" ref="#maple">maple</rs>, and <rs type="plant" ref="#sweet_briar">briar roses</rs>, intertwined with <rs type="plant" ref="#bramble">bramble</rs> and <rs type="plant" ref="#woodbine">woodbine</rs>, and crowned with
+               large <rs type="plant" ref="#elm">elms</rs> or thickly set saplings. No! the pretty meadow which rises high above us,
+               backed and almost surrounded by a tall coppice, needs no defence on our side but its
+               own steep bank, garnished with tufts of <rs type="plant" ref="#broom">broom</rs>, with <rs type="plant" ref="#oak">pollard oaks</rs> wreathed with <rs type="plant" ref="#ivy">ivy</rs>,
+               and here and there with long patches of <rs type="plant" ref="#hazel">hazel</rs> overhanging the water. <said who="#Brooker_Willy_OV">“Ah there are
+                  still nuts on that bough!”</said> and in an instant <rs type="person" ref="#Brooker_Willy_OV">my dear companion</rs>, active and eager and
+               delighted as a boy, has hooked down with his walking-stick one of the lissome hazel
+                  stalks, and cleared it of its tawny clusters, and in another moment he has mounted
+               the bank, and is in the midst of the nuttery, now transferring the spoil from the
+               lower branches into that vast variety of pockets which gentlemen carry about them,
+               now bending the tall tops into the lane, holding them down by main force, so that I
+               might reach them and enjoy the pleasure of collecting some of the plunder myself. A
+               very great pleasure he knew it would be. I doffed my shawl, tucked up my flounces,
+               turned my straw bonnet into a basket, and began gathering and scrambling—for, manage
+               it how you may, nutting is scrambling work,—those boughs,<pb n="248"/> however
+               tightly you may grasp them by the young fragrant twigs and the bright green leaves,
+               will recoil and burst away; but there is a pleasure even in that; so on we go,
+               scrambling and gathering with all our might and all our glee. Oh what an enjoyment!
+               All my life long I have had a passion for that sort of seeking which implies finding,
+               (the secret, I believe, of the love of field-sports, which is in man’s mind a natural
+               impulse,)—therefore I love violeting,—therefore, when we had a fine garden I used to
+               love to gather <rs type="plant" ref="#strawberry">strawberries</rs>, and cut <rs type="plant" ref="#asparagus">asparagus</rs>, and, above all, to collect the
+               <rs type="plant" ref="#filbert">filberts</rs> from the shrubberies: but this hedge-row nutting beats that sport all to
+               nothing. That was a make-believe thing, compared with this; there was no surprise, no
+               suspense, no unexpectedness—it was as inferior to this wild nutting, as the turning
+               out of a <rs type="animal" ref="#fox">bag-fox</rs> is to unearthing the fellow in the eyes of a stanch fox-hunter.</p>
+            <p>Oh what an enjoyment this nut-gathering is! They are in such abundance, that it seems
+               as if there were not a boy in the parish, nor a young man, nor a young woman,—for a
+               basket of nuts is the universal tribute of country gallantry; our pretty damsel
+               <persName ref="#Harriet_ShopLodger_OV">Harriet</persName> has had at least half a dozen this season; but no one has found out these.
+               And they are so full too, we lose half of them from over-ripeness; they drop from the
+               socket at the slightest motion. If we lose, there is one who<pb n="249"/> finds. <persName ref="#May-flower_OV">May</persName>
+               is as fond of nuts as a squirrel, and cracks the shell and extracts the kernel with
+               equal dexterity. Her white glossy head is upturned now to watch them as they fall.
+               See how her neck is thrown back like that of a swan, and how beautifully her folded
+               ears quiver with expectation, and how her quick eye follows the rustling noise, and
+               her light feet dance and pat the ground, and leap up with eagerness, seeming almost
+               sustained in the air, just as I have seen her when <persName ref="#Brush_dog_OV">Brush</persName> is beating a hedgerow, and
+               she knows from his questing that there is a <rs type="animal" ref="#hare">hare</rs> afoot. See, she has caught that <rs type="plant" ref="#hazel">nut</rs>
+               just before it touched the water; but the water would have been no defence,—she
+               fishes them from the bottom, she delves after them amongst the matted grass—even my
+               bonnet—how beggingly she looks at that! <said who="#OVNarrator">“Oh what a pleasure nutting is!—Is it not,
+                  <persName ref="#May-flower_OV">May</persName>? But the pockets are almost full, and so is the basket-bonnet, and that bright
+               watch the sun says it is late;—and after all it is wrong to rob the poor
+               boys—<q>‘pleasant but wrong’</q><note resp="#scw">This much disseminated quote comes from <persName ref="#Foote_Samuel">Samuel Foote</persName>'s play, <title level="m" ref="#The_Minor_play">The Minor</title>, towards the end of Act 2. It is spoken by Smirk to Sir George Wealthy.</note>—is it not, <persName ref="#May-flower_OV">May</persName>?”</said>—<persName ref="#May-flower_OV">May</persName> shakes her graceful head denyingly, as
+               if she understood the question—<said who="#OVNarrator">“And we must go home now—must we not? But we will come
+                  nutting again some time or other—shall we not, my <persName ref="#May-flower_OV">May</persName>?”</said></p>
+         </div>
+      </body>
+      <back>
+         <listPerson sortKey="histPersons">
+           
+            
+            <person xml:id="Newbery_John" sex="m">
+               <persName ref="#Newbery_John">John Newbery
+                  <surname>Newbery</surname>
+                  <forename>John</forename>
+               </persName>
+               <birth when="1713-07-09"><placeName>Waltham St. Lawrence</placeName></birth>
+               <death when="1767-12-22"><placeName ref="#London_city">London</placeName></death>
+               <occupation type="bookProducer" subtype="publisher"/>
+               <note resp="#scw">Widely considered the most influential publisher of children's books of his time, Newbery  began his career as a printer's apprentice in <placeName ref="#Reading_city">Reading</placeName>, working for the founder of the <title level="j" ref="#ReadingMer_per">Reading Mercury</title>, <persName>William Carnan</persName>. He later married <persName>Carnan</persName>'s widow, and adopted her three children. In <date when="1744">1744</date>, he moved his business to St. Paul's Churchyard, <placeName ref="#London_city">London</placeName>, and opened the <orgName>Juvenile Library</orgName>, recruiting well-known authors to produce children's books that would change the face of children's literature. Some of Newbery's notable works include <title level="m">A Little Pretty Pocket Book</title>, <title level="m">The History of Margery Two-Shoes</title> and <title level="j">The Liliputian Magazine</title>. Newbery's sons and newphew carried on the business after his death. His step-daughter, <persName>Anna Maria Smart</persName> and step-granddaughter, <persName>Mary Anne Cowslade</persName> continued operating the <title level="m" ref="#ReadingMer_per">Reading Mercury</title>. His second step-granddaughter, <persName ref="#LeNoir_Eliz">Elizabeth LeNoir</persName> became a novelist.</note>
+               <note><ref target="http://viaf.org/viaf/76370928"/></note>
+            </person>
+            
+            <person xml:id="LeNoir_Eliz" sex="f">
+               <persName ref="#LeNoir_Eliz">Elizabeth Anne LeNoir
+                  <surname type="married">LeNoir</surname>
+                  <surname type="paternal">Smart</surname>
+                  <forename>Elizabeth</forename>
+                  <forename>Anne</forename>   
+               </persName>
+               <birth notBefore="1744-01-01" notAfter="1745-12-31">1744 or 1745
+                  <placeName ref="#London_city">London</placeName>
+               </birth>
+               <death when="1841-05-06">
+               <placeName>the Priory, Caversham</placeName></death>
+               <occupation type="literary" subtype="novelist"/>
+               <occupation type="literary" subtype="poet"/>
+               <note resp="#scw">The daughter of <persName ref="#Smart_Chris">Christopher Smart</persName>, and step-granddaughter of <persName ref="#Newbery_John">John Newbery</persName>, LeNoir grew up in <placeName ref="#Ireland">Ireland</placeName> but subsequently moved with her family to <placeName ref="#Reading_city">Reading</placeName>in <date when="1762">1762</date>. After her father's imprisonment for debt and death, her grandfather employed her as a writer and editor at the <title ref="#ReadingMer_per">Reading Mercury</title>. On <persName ref="#Newbery_John">John Newbery</persName>'s death, she, together with <persName>her mother</persName> and her sister, <persName>Mary Anne Cowslade</persName> later inherited partial ownership of the periodical. She married French emigre, <persName>Jean Baptiste LeNoir de la Brosse</persName> in <date when="1795">1795</date>. Between <date when="1803">1803</date> and <date when="1825">1825</date>, LeNoir published five novels and one book of poetry. The novels contain original poetry, and are frequently set in rural scenes. <persName ref="#MRM">Mitford</persName> admired her works, mentioning them in <title level="m" ref="#Recollections">Recollections of a Literary Life</title>, where she says that she is personally acquainted with LeNoir's nieces. In <title level="a" ref="#Walks_Nutting_OV">Nutting</title>, <persName ref="#MRM">Mitford</persName> praises her fourth novel, <title level="a" ref="#Maid_LaVendee_novel">The Maid of La Vendee</title>. </note>
+               <note><ref target="https://extra.shu.ac.uk/corvey/corinne/Corinne%20authors/Le%20Noir/Le%20Noir%20biography.htm#"/>Biography of Elizabeth LeNoir by Laura Ridley. Corvey <q>'Adopt an Author'</q></note>
+               <note><ref target="http://viaf.org/viaf/98146998434618940274                "/></note>
+            </person>
+            
+            <person xml:id="Rochejacquelein_Victoire" sex="f">
+               <persName ref="#Rochejacquelein_Victoire">Victoire de Donissan de Lescure de la Rochejacquelein
+                  <surname type="married">de la Rochejacquelein</surname>
+                  <surname type="married">de Lescure</surname>
+                  <surname type="paternal">de Donissan</surname>
+                  <forename>Marie-Louise-Victoire</forename>
+                  <roleName>marquise de Lescure<date from="1791" to="1793-11-04"/></roleName>
+                  <roleName>marquise douaniere de Lescure<date from="1793-11-05" to="1802-03"/></roleName>
+                  <roleName>marquise douaniere de Lescure, comtesse de la Rochejacquelein<date from="1802-03" to="1802-09-06"/></roleName>
+                  <roleName>marquise douaniere de Lescure, marquise de la Rochejacquelein<date from="1802-09-06" to="1815-07-15"/></roleName>
+                  <roleName>marquise douaniere de Lescure et de la Rochejacquelein<date from="1815-07-15" to="1857-02-15"/></roleName>
+               </persName>
+               <birth when="1772-10-25"><placeName>Versailles, France</placeName></birth>
+               <death when="1857-02-15"><placeName>Orleans, France</placeName></death>
+               <occupation type="literary" subtype="autobiographer"/>
+               <note resp="#scw">French aristocrat of the Revolutionary period whose autobiography, <title level="m">Memoire de Madame de la marquise de la Rochejacquelein</title>, recounts her harrowing escape from <placeName ref="#Paris">Paris</placeName> during the Revolution, and her subsequent sufferings through the Vendeean uprisings, during which she lost her first husband, <persName>Louis Marie de Salgue</persName>, the marquis de Lescure. She later married his cousin, <persName>Louis du Vergier de la Rochejacquelein</persName>, and together they continued to advocate for royalist ascendancy in France.</note>
+               <note><ref target="https://fr.wikipedia.org/wiki/Victoire_de_Donnissan_de_La_Rochejaquelein"/></note>
+               <!--scw: No viaf-->
+            </person>
+            
+            
+            <person xml:id="Smart_Chris" sex="m">
+               <persName ref="#Smart_Chris">Christopher Smart
+                  <surname>Smart</surname>
+                  <forename>Christopher</forename>
+               </persName>
+               <persName type="pseudo">Mrs. Mary Midnight</persName>
+               <persName type="pseudo">Ebenezer Pentweazle</persName>
+               <birth when="1722-04-11"><placeName>Shipbourne, England</placeName></birth>
+               <death when="1771-05-01"><placeName ref="#London_city">London</placeName></death>
+               <occupation type="literary" subtype="poet"/>
+               <occupation type="literary" subtype="translator"/>
+               <occupation type="literary" subtype="editor"/>
+               <occupation type="literary" subtype="playwright"/>
+               <note resp="#scw">Smart was a prolific writer and translator of religious, lyrical, and satirical verse. He was an acquaintance of <persName ref="#Pope_Alex">Alexander Pope</persName> (whose <title>Ode to St. Cecilia</title> he translated into Latin), <persName ref="#Johnson">Samuel Johnson</persName>, and <persName ref="#Collins_Wm">William Collins</persName>, all of whom expressed admiration for his work. After attending Cambridge and becoming praelector of Philosophy and keeper of the common chest in <date when="1745">1745</date>, Smart began to write poetry and plays, but also to accumulate debts that would follow him for the rest of his life. He began contributing to the magazine <title level="m">The Student</title> under the pseudonym <persName type="pseudo">Ebenezer Pentweazle</persName>. As a result of debt and a struggle with mental illness, he lost his place at Cambridge. Smart had met and married the step-daughter of <persName ref="#Newbery_John">John Newbery</persName>, who at the time was part-owner with his wife of the <title level="m" ref="#ReadingMer_per">Reading Mercury</title>. <persName ref="#Newbery_John">Newbery</persName> employed Smart to produce material for his publishing and advertising ventures, including a periodical entitled <title level="m">The Midwife; or the Old Woman's Magazine</title>. <persName ref="#Newbery_John">Newbery</persName> also published Smart's first major work, <title level="m">Poems on Several Occasions</title>, which included his lengthy georgic, <title>The Hop Garden</title>. Smart also produced a prose translation of <persName ref="#Horace">Horace</persName>'s works. In <date when="1763">1763</date>, Smart again suffered a bout of mental illness which took the form of a sort of religious mania, and was confined to an asylum. During his confinement, he composed his most famous works, <title level="a">Song to David</title> and <title level="a">Jubilate Agno</title>. He died in the king's bench prison, where he had been imprisoned for debt. His widow, <persName>Anna Maria Smart</persName> and daughter, <persName>Mary Anne Cowslade</persName> continued to operate the <title level="j" ref="#ReadingMer_per">Reading Mercury</title> for several decades after his death, while his second daughter, <persName ref="#LeNoir_Eliz">Elizabeth LeNoir</persName> became a novelist.</note>
+               <note><ref target="http://viaf.org/viaf/51703197"/></note>
+            </person>
+            
+            
+         </listPerson>
+         
+         <listPerson sortKey="fictPersons">
+            
+            <person xml:id="Brooker_daughter_OV" sex="f">
+            <persName ref="#Brooker_daughter_OV">the Brookers' daughter
+               <surname type="paternal">Brooker</surname>
+               <forename>not given</forename>
+            </persName>
+               <note resp="#scw">This young girl appears in <title ref="#Walks_Nutting_OV">Nutting</title>, where she is seen happily gathering the apples that her <rs type="person" ref="#Brooker_secondSon_OV">older brother</rs> flings down from a tree.</note>
+            </person>
+            
+            <person xml:id="Brooker_eldestSon_OV" sex="m">
+               <persName ref="#Brooker_eldestSon_OV">the Brookers' eldest son
+               <surname>Brooker</surname>
+               <forename>not given</forename>  
+               </persName>
+               <note resp="#scw">This character appears in <title level="a" ref="#Walks_Nutting_OV">Nutting</title>, in which he is shown climbing to the top of a pear-tree and shaking down the fruit during the harvest.</note>
+            </person>
+            
+            <person xml:id="Brooker_Mr_OV" sex="m">
+               <persName ref="#Brooker_Mr_OV">Mr. Brooker
+               <surname>Brooker</surname>
+               <forename>not given</forename>
+               </persName>
+               <occupation type="trade" subtype="farmer"/>
+               <note resp="#scw">This character appears in the sketch <title level="a" ref="#Walks_Nutting_OV">Nutting</title>. He farms an apple and pear orchard together with his large family.</note>
+            </person>
+            
+            <person xml:id="Brooker_Mrs_OV" sex="f">
+               <persName ref="#Brooker_Mrs_OV">Mrs. Brooker
+               <surname type="married">Brooker</surname>
+                  <surname type="paternal">not given</surname>
+               <forename>not given</forename>
+               </persName>
+               <occupation type="trade" subtype="farmer"/>
+               <note resp="#scw">This character appears in <title level="a" ref="#Walks_Nutting_OV">Nutting</title>, in which she is seen at the fruit harvest with her family.</note>
+            </person>
+            
+            <person xml:id="Brooker_secondSon_OV" sex="m">
+               <persName ref="#Brooker_secondSon_OV">Brooker second son
+                  <surname>Brooker</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">This character appears in <title level="a" ref="#Walks_Nutting_OV">Nutting</title>, where he is seen pelting apples down from a tree at his <rs type="person" ref="#Brooker_daughter_OV">younger sister</rs> during the harvest.</note>
+            </person>
+            
+            <person xml:id="Brooker_Willy_OV" sex="m">
+               <persName ref="#Brooker_Willy_OV">Willy Brooker
+               <surname>Brooker</surname>
+                  <forename>William</forename>
+                  <forename type="nick">Willy</forename>
+               </persName>
+               <note resp="#scw">This character appears in <title level="a" ref="#Walks_Nutting_OV">Nutting</title> at the fruit harvest with his family, and later gathers nuts with <persName ref="#OVNarrator">the narrator</persName>. He is said to be about six- or seven-years old, and <persName ref="#OVNarrator">the narrator</persName> imagines him betrothed to <persName ref="#Lizzy_OV">Lizzy</persName>.</note>
+            </person>
+            
+            <person xml:id="Brooker_youngestChild_OV" sex="u">
+               <persName ref="#Brooker_youngestChild_OV">youngest Brooker child
+               <surname>Brooker</surname>
+                  <forename>not given</forename>
+               </persName>
+               <note resp="#scw">This character, an infant, is observed in <title level="a" ref="#Walks_Nutting_OV">Nutting</title> eating some of the harvested fruit.</note>
+            </person>
+            
+            <person xml:id="Brush_dog_OV" sex="m">
+               <persName ref="#Brush_dog_OV">Brush</persName>
+               <note resp="#scw">A hunting dog mentioned in <title level="a" ref="#Walks_Nutting_OV">Nutting</title>.</note>
+            </person>
+            
+            
+            
+            <person xml:id="Oberon_WS" sex="m">
+               <persName ref="#Oberon_WS">Oberon</persName>
+               <note resp="#scw">In Shakespeare's <title level="m" ref="#Tempest_play">The Tempest</title>, he is King of the Fairies, married to <persName ref="#Titania_WS">Titania</persName>. In order to win a dispute with his wife over the fate of a child, Oberon causes his wife to fall in love with a human whose head has been turned into a donkey's.</note>
+            </person>
+               
+           
+            
+            <person xml:id="Titania_WS" sex="f">
+               <persName ref="#Titania_WS">Titania</persName>
+               <note resp="#scw">In Shakespeare's <title level="m" ref="#Tempest_play">The Tempest</title>, she is Queen of the Fairies. As a result of a marital dispute over the fate of a child, she is tricked by her husband, <persName ref="#Oberon_WS">Oberon</persName>, to fall in love with a human whose head has been transformed into that of a donkey.</note>
+            </person>
+            
+            
+         </listPerson>
+         
+         
+         
+         <listOrg sortKey="fictOrgs">
+            <org xml:id="Brooker_family_OV">
+               <orgName ref="#Brooker_family_OV">the Brooker family</orgName>
+               <note resp="#scw">A farming family featured in <title level="a" ref="#Walks_Nutting_OV">Nutting</title> that includes <rs type="person" ref="#Brooker_Mr_OV #Brooker_Mrs_OV #Brooker_eldestSon_OV #Brooker_secondSon_OV #Brooker_daughter_OV #Brooker_Willy_OV #Brooker_youngestChild_OV">the parents and five children</rs>. They are observed harvesting their pear and apple trees.</note>
+            </org>
+            
+            <org xml:id="Nutting_gleanerFamily_OV">
+               <orgName ref="#Nutting_gleanerFamily_OV">gleaner family
+               </orgName>
+               <note resp="#scw">These characters are not literally seen, but recalled as ones that <persName ref="#OVNarrator">the narrator</persName> would expect to meet in <title level="a" ref="#Walks_Nutting_OV">Nutting</title>.</note>
+            </org>
+            
+         </listOrg>
+         
+         <listPlace sortKey="histPlaces">
+            <place xml:id="Vendee">
+               <placeName ref="#Vendee">Vendee</placeName>
+               <region>Pays de la Loire</region>
+               <country>France</country>
+               <location>
+                  <geo>46.670556, -1.426667</geo>
+               </location>
+               <note resp="#scw">Department in western France, traditionally believed to be the birthplace of <persName>Elinor of Acquitaine</persName>. During the French Revolution, the Vendee mounted a fierce resistance to the revolutionary government and later refused to recognize <persName ref="#Napoleon">Napoleon</persName>'s legitimacy after his escape from Elba.</note>
+               
+            </place>
+         </listPlace>
+         
+         <listBibl sortKey="schol">
+            <bibl xml:id="The_Minor_play">
+               <title level="a" ref="#The_Minor_play">The Minor</title>
+               <pubPlace ref="#London_city"><placeName/></pubPlace>
+               <publisher>J. Coote</publisher>
+               <date when="1760">1760</date>
+               <note resp="#scw">A comic play that ridiculed the Methodist preacher, <persName>George Whitefield</persName>. It was performed at <placeName ref="#Haymarket_Theatre">The Haymarket</placeName> in <date when="1760">1760</date>, and subsequently moved to <placeName ref="#Drury_Lane_Theatre">Drury Lane</placeName> later that year.</note>
+               <!--scw: publication info found in:<note><ref target="https://www.google.com/books/edition/Bibliotheca_Cornubiensis_A_O/JV0vAAAAMAAJ?hl=en&gbpv=1"/>Bibliotheca Cornubiensis</note>--><!--scw: notation from google books is not accepted-->
+            </bibl>
+            
+            <bibl xml:id="Maid_LaVendee_novel"><!--scw: Need to learn how to structure an entry containing 2 editions, different titles and and pub info-->
+               <title level="m" ref="#Maid_LaVendee_novel">The Maid of La Vendee, being a second edition of Clara de Montfier</title>
+               <title type="alt" level="m">Clara de Monfier; a moral tale</title>
+               <author ref="#LeNoir_Eliz">Elizabeth Anne LeNoir</author>
+               <publisher>A.M. Smart</publisher><!--scw: This publisher name is likely that of LeNoir's mother, Anna Maria Smart, who was a part-owner of the Reading Mercury-->
+               <date when="1808">1808</date>
+               <pubPlace ref="#Reading_city">Reading</pubPlace>
+               <date when="1810">1810</date><!--scw: 2nd edition, acc. to Corvey website-->
+               <publisher>M. Cowslade and Co.</publisher><!--scw: This publisher name is likely that of LeNoir's sister, Mary Anne, who was part owner of the Reading Mercury-->
+               <note resp="#scw">The Maid of La Vendee is the re-titled second edition of Elizabeth LeNoir's <date when="1808">1808</date> novel, <title level="m" type="alt">Clara de Montfier</title>. Both editions appear to have been published by members of LeNoir's family, who owned and operated <title level="j" ref="#ReadingMer_per">the Reading Mercury</title>.</note>
+               <note> <ref target="https://extra.shu.ac.uk/corvey/corinne/Corinne%20authors/Le%20Noir/Le%20Noir%20biography.htm#"/>Biography of Elizabeth LeNoir by Laura Ridley. Corvey <q>'Adopt an Author'</q></note>
+               
+               
+               
+            </bibl>
+         </listBibl>
+         
+         <list sortKey="plants">
+            
+            <item xml:id="apple"/>
+            <item xml:id="asparagus"/>
+            <item xml:id="vine"/>
+            <item xml:id="woodbine"/>
+            
+         </list>
+         
+         <list sortKey="animals">
+            <item xml:id="hare"/><!--scw: Already in the siADDNEW Stubs IP file, but i include here so my file will scan properly-->
+            <item xml:id="sheep"/><!--scw: Already in the siADDNEW Stubs IP file, but i include here so my file will scan properly-->
+            <item xml:id="fox"/>
+         </list>
+      </back>
+   </text>
+</TEI>

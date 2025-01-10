@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Shared resources used by other apps</description>
+    <author>Wolfgang Meier</author>
+    <website>https://github.com/eXist-db/shared-resources</website>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>library</type>
+    <target>shared-resources</target>
+    <prepare/>
+    <finish/>
+    <permissions user="admin" group="dba" mode="0775"/>
+    <changelog>
+        <change version="0.3.5">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Move site-wide CSS to shared-resources. Modularize design using less.</li>
+                <li>Added bootstrap</li>
+                <li>Bug fixes and minor improvements in templating</li>
+                <li>Updated ace</li>
+            </ul>
+        </change>
+        <change version="0.3.6">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Small syntax error in templates.xql</li>
+            </ul>
+        </change>
+        <change version="0.3.7">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Externalised parameter value resolution in templating. Now useable outside XQuery URL Rewrite context.</li>
+                <li>Updated ace</li>
+            </ul>
+        </change>
+        <change version="0.3.8">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed permission checks in dbutil module: functions should not fail if user lacks the permission to browse into a collection.</li>
+                <li>Updated ace</li>
+                <li>Fixed templates:surround to report a proper error if a template could not be found.</li>
+            </ul>
+        </change>
+        <change version="0.3.9">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>No release notes prepared for this version.</li>
+            </ul>
+        </change>
+        <change version="0.4.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>No release notes prepared for this version.</li>
+            </ul>
+        </change>
+        <change version="0.4.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed templates:each to not output empty element.</li>
+                <li>Improved HTML output by stripping data-template attributes unless configuration option "debug" is set to true.</li>
+                <li>Aligned limit of template:resolve to the max arity number in templates:call-with-args.</li>
+                <li>Fixed for erroneous return type from two functions in apputil module affecting package installation.</li>
+            </ul>
+        </change>
+        <change version="0.4.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Restore package/@abbrev value to prevent problems on older systems querying public-repo - <a href="https://github.com/eXist-db/shared-resources/pull/22">#22</a></li>
+            </ul>
+        </change>
+        <change version="0.5.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>New: Template functions can now accept an arbitrary number of parameters, previously limited to 15 - <a href="https://github.com/eXist-db/shared-resources/pull/29">#29</a></li>
+                <li>New: Templates can be loaded from HTTP and HTTPS URLs - <a href="https://github.com/eXist-db/shared-resources/pull/24">#24</a></li>
+                <li>Fixed: Build problems - <a href="https://github.com/eXist-db/shared-resources/pull/28">#28</a></li>
+            </ul>
+        </change>
+        <change version="0.6.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Split some functions into calls to smaller functions. Backwards compatible.</li>
+            </ul>
+        </change>
+        <change version="0.7.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Improved: Internal function documentation</li>
+            </ul>
+        </change>
+        <change version="0.8.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Infinite loop in function lookup - <a href="https://github.com/eXist-db/shared-resources/issues/33">#33</a></li>
+            </ul>
+        </change>
+        <change version="0.8.1">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Restore legacy difference between package abbrev and app name - <a href="https://github.com/eXist-db/shared-resources/issues/36">#36</a></li>
+            </ul>
+        </change>
+        <change version="0.8.2">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Hotfix: Restore ACE editor components <a href="https://github.com/eXist-db/shared-resources/issues/38">#38</a></li>
+            </ul>
+        </change>
+        <change version="0.8.3">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Switched from deprecated xmldb functions to security manager module for compatibility with forthcoming eXist 5.0.0-RC8</li>
+            </ul>
+        </change>
+        <change version="0.8.4">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Fixed: Removed deprecated draft map constructor for compatibility with forthcoming eXist 5.0.0-RC8</li>
+            </ul>
+        </change>
+    </changelog>
+    
+<deployed>2020-08-07T22:43:16.657Z</deployed></meta>

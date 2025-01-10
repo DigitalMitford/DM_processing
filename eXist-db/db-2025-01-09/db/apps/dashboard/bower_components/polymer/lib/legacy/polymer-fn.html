@@ -1,0 +1,19 @@
+<html><head><link rel="import" href="class.html"><script>(function(){'use strict';/**
+     * Legacy class factory and registration helper for defining Polymer
+     * elements.
+     *
+     * This method is equivalent to
+     * `customElements.define(info.is, Polymer.Class(info));`
+     *
+     * See `Polymer.Class` for details on valid legacy metadata format for `info`.
+     *
+     * @global
+     * @override
+     * @function Polymer
+     * @param {!PolymerInit} info Object containing Polymer metadata and functions
+     *   to become class methods.
+     * @return {function(new: HTMLElement)} Generated class
+     * @suppress {duplicate, invalidCasts, checkTypes}
+     */window.Polymer._polymerFn=function(info){// if input is a `class` (aka a function with a prototype), use the prototype
+// remember that the `constructor` will never be called
+let klass;if("function"===typeof info){klass=info}else{klass=Polymer.Class(info)}customElements.define(klass.is,/** @type {!HTMLElement} */klass);return klass}})();</script></head><body></body></html>

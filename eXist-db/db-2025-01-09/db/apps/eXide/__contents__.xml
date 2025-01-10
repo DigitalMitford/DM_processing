@@ -1,0 +1,53 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/eXide" version="1" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.347Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="help.html" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.472Z" modified="2023-02-28T03:11:12.472Z" filename="help.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="collection.xconf" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.651Z" modified="2023-02-28T03:11:12.651Z" filename="collection.xconf" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="expath-pkg.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.383Z" modified="2023-02-28T03:11:12.383Z" filename="expath-pkg.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="index.html" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.522Z" modified="2023-02-28T03:11:12.522Z" filename="index.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="configuration.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.517Z" modified="2023-02-28T03:11:12.517Z" filename="configuration.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="repo.xml" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:19.586Z" modified="2023-02-28T03:11:19.586Z" filename="repo.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="pre-install.xq" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.487Z" modified="2023-02-28T03:11:12.487Z" filename="pre-install.xq" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="package.json" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.465Z" modified="2023-02-28T03:11:12.465Z" filename="package.json" mimetype="application/json">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="icon.png" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.46Z" modified="2023-02-28T03:11:12.46Z" filename="icon.png" mimetype="image/png">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="LICENSE.txt" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.449Z" modified="2023-02-28T03:11:12.449Z" filename="LICENSE.txt" mimetype="text/plain">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="keybindings.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.445Z" modified="2023-02-28T03:11:12.445Z" filename="keybindings.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xq" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.438Z" modified="2023-02-28T03:11:12.438Z" filename="controller.xq" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="README.md" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.401Z" modified="2023-02-28T03:11:12.401Z" filename="README.md" mimetype="text/markdown">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="build.js" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.512Z" modified="2023-02-28T03:11:12.512Z" filename="build.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="cypress.json" skip="no" owner="eXide" group="eXide" mode="775" created="2023-02-28T03:11:12.497Z" modified="2023-02-28T03:11:12.497Z" filename="cypress.json" mimetype="application/json">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="resources" filename="resources"/>
+    <subcollection name="src" filename="src"/>
+    <subcollection name="templates" filename="templates"/>
+    <subcollection name="modules" filename="modules"/>
+    <subcollection name="docs" filename="docs"/>
+</collection>

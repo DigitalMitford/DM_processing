@@ -1,0 +1,31 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/dashboard/bower_components/existdb-packagemanager" version="1" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:44.038Z">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="icon.svg" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.04Z" modified="2021-12-31T06:13:44.04Z" filename="icon.svg" mimetype="image/svg+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="existdb-packages.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.094Z" modified="2021-12-31T06:13:44.094Z" filename="existdb-packages.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="configuration.xml" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.097Z" modified="2021-12-31T06:13:44.096Z" filename="configuration.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="existdb-packagemanager.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.045Z" modified="2021-12-31T06:13:44.045Z" filename="existdb-packagemanager.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="existdb-package-remove-action.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.05Z" modified="2021-12-31T06:13:44.05Z" filename="existdb-package-remove-action.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="controller.xql" skip="no" owner="SYSTEM" group="dba" mode="755" created="2021-12-31T06:13:44.053Z" modified="2021-12-31T06:13:44.053Z" filename="controller.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="packagemanager-app.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.081Z" modified="2021-12-31T06:13:44.081Z" filename="packagemanager-app.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="existdb-package-install-action.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.084Z" modified="2021-12-31T06:13:44.084Z" filename="existdb-package-install-action.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="dependencies.html" skip="no" owner="SYSTEM" group="dba" mode="644" created="2021-12-31T06:13:44.09Z" modified="2021-12-31T06:13:44.09Z" filename="dependencies.html" mimetype="text/html">
+        <acl entries="0" version="1"/>
+    </resource>
+    <subcollection name="modules" filename="modules"/>
+</collection>
